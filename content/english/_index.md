@@ -24,7 +24,7 @@ feature:
   - name: Value For Money
     icon: fas fa-heart
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Techno-ethical Jurisprudence
+  - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
     content: From our work guidelines and best practices emerge for code developers
       and data scientists to develop ethical algorithms
