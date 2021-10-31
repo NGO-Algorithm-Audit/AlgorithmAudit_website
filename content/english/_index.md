@@ -22,7 +22,7 @@ feature:
     icon: fas fa-rainbow
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Auditing algorithms
-    icon: fas fa-heart
+    icon: fas fa-search
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
