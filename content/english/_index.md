@@ -10,10 +10,10 @@ banner:
     link: contact
 feature:
   enable: true
-  title: Something You Need To Know
+  title: How we work
   feature_item:
-  - name: Clean Code
-    icon: fas fa-code
+  - name: Interdisciplinary
+    icon: far fa-send-back
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Object Oriented
     icon: fas fa-object-group
