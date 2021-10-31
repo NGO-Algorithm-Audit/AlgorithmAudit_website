@@ -5,18 +5,18 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "Blog"
-url = "blog"
+name = "How we work"
+url = "work"
 weight = 2
 
 [[main]]
-name = "Pricing"
-url = "pricing"
+name = "Cases"
+url = "cases"
 weight = 3
 
 [[main]]
-name = "Contact"
-url = "contact"
+name = "Reading list"
+url = "readings"
 weight = 4
 
 [[main]]
@@ -24,42 +24,7 @@ name = "FAQ"
 url = "faq"
 weight = 5
 
-# footer menu left
-[[footer_left]]
-name = "About Us"
-url = "#"
-
-[[footer_left]]
-name = "Quick Start"
-url = "#"
-
-[[footer_left]]
-name = "Pricing"
-url = "pricing"
-
-
-# footer menu middle
-[[footer_middle]]
-name = "Pricing"
-url = "pricing"
-
-[[footer_middle]]
-name = "Platform"
-url = "#"
-
-[[footer_middle]]
-name = "Features"
-url = "#"
-
-# footer menu right
-[[footer_right]]
-name = "Privacy Policy"
-url = "privacy-policy"
-
-[[footer_right]]
-name = "Terms & Conditions"
-url = "terms-conditions"
-
-[[footer_right]]
-name = "FAQ"
+[[main]]
+name = "About"
 url = "faq"
+weight = 6

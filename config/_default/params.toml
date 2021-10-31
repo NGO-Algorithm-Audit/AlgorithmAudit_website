@@ -31,21 +31,6 @@ button = "I Accept"
   
 ############################# social site ########################
 [[social]]
-title = "facebook"
-icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "twitter"
-icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "skype"
-icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
 title = "linkedin"
 icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
 link = "#"
