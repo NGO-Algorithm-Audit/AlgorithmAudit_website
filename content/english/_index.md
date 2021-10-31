@@ -16,7 +16,7 @@ feature:
     icon: fas fa-object-group
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Academic
-    icon: fab fa-stack-overflow
+    icon: fas fa-graduation-cap
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Diversity
     icon: fas fa-user-clock
