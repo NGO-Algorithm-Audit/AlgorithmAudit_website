@@ -26,7 +26,7 @@ feature:
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Techno-ethical Jurisprudence
     icon: fas fa-book-reader
-    content: 'Guidelines and best practices emerge from our work for code developers
+    content: 'From our work guidelines and best practices emerge for code developers
       and data scientists '
   - name: Cloud Support
     icon: fas fa-cloud
