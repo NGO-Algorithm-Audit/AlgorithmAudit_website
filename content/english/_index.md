@@ -25,7 +25,7 @@ feature:
     icon: fas fa-heart
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Techno-ethical Jurisprudence
-    icon: fas fa-tachometer-alt
+    icon: fas fa-book-reader
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Cloud Support
     icon: fas fa-cloud
