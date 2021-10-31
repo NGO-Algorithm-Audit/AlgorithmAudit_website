@@ -13,7 +13,7 @@ feature:
   title: What we do
   feature_item:
   - name: Independent
-    icon: fas fa-object-group
+    icon: fas fa-star-of-life
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Academic
     icon: fas fa-graduation-cap
@@ -21,7 +21,7 @@ feature:
   - name: Diversity
     icon: fas fa-user-clock
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Value For Money
+  - name: Auditing algorithms
     icon: fas fa-heart
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Techno-ethical jurisprudence
