@@ -10,7 +10,7 @@ banner:
     link: contact
 feature:
   enable: true
-  title: How we work
+  title: What we do
   feature_item:
   - name: Independent
     icon: fas fa-object-group
