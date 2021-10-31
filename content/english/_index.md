@@ -1,6 +1,6 @@
 ---
 banner:
-  title: Hoer us solve your critical website <br> development challenges
+  title: Case-based advice for ethical issues  in data-analyses  and algorithmic models
   image: images/banner-art.svg
   content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim
     maxime corporis cumque <br> totam aliquid nam sint inventore optio modi neque
