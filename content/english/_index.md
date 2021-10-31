@@ -1,10 +1,8 @@
 ---
 banner:
-  title: 'Case-based ethical advice '
+  title: Algorithm Audit Foundation
   image: images/banner-art.svg
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim
-    maxime corporis cumque <br> totam aliquid nam sint inventore optio modi neque
-    laborum officiis necessitatibus
+  content: Case-based advice for ethical issues in data-analyses and algorithmic models
   button:
     enable: false
     label: Contact Us
