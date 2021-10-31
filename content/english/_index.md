@@ -12,13 +12,13 @@ feature:
   enable: true
   title: How we work
   feature_item:
-  - name: 'Interdisciplinary '
-    icon: fab fa-stack-overflow
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Experts
+  - name: Independent
     icon: fas fa-object-group
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Diverse
+  - name: Academic
+    icon: fab fa-stack-overflow
+    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
+  - name: Diversity
     icon: fas fa-user-clock
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Value For Money
