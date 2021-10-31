@@ -19,7 +19,7 @@ feature:
     icon: fas fa-graduation-cap
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Diversity
-    icon: fas fa-user-clock
+    icon: fas fa-rainbow
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Auditing algorithms
     icon: fas fa-heart
