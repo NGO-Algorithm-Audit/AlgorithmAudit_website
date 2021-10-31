@@ -1,8 +1,8 @@
 ---
 banner:
-  title: Algorithm Audit Foundation
+  title: 'Case-based ethics for algorithmic fairness '
   image: images/banner-art.svg
-  content: Case-based advice for ethical issues in data-analyses and algorithmic models
+  content: Nonprofit advice for ethical issues in data-analyses and algorithmic models
   button:
     enable: false
     label: Contact Us
