@@ -13,7 +13,7 @@ feature:
   title: How we work
   feature_item:
   - name: Interdisciplinary
-    icon: far fa-send-back
+    icon: fab fa-stack-overflow
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Object Oriented
     icon: fas fa-object-group
