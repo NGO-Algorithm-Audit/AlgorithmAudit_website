@@ -1,8 +1,9 @@
 ---
 banner:
-  title: 'Case-based ethics for algorithmic fairness '
+  title: Case-based ethics for algorithmic fairness nonprofit
   image: images/banner-art.svg
-  content: Nonprofit advice for ethical issues in data-analyses and algorithmic models
+  content: We ask international experts to give advice on ethical issues in data-analyses
+    and algorithmic models
   button:
     enable: false
     label: Contact Us
