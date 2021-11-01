@@ -12,7 +12,7 @@ feature:
   enable: true
   title: What we do
   feature_item:
-  - name: Independent
+  - name: Independency
     icon: fas fa-star-of-life
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Academic
