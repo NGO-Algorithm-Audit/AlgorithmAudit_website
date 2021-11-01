@@ -89,7 +89,7 @@ screenshot:
   title: Experience the best <br> workflow with us
   image: images/screenshot.svg
 call_to_action:
-  enable: true
+  enable: false
   title: Ready to get started?
   image: images/cta.svg
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique
