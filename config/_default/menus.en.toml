@@ -6,7 +6,7 @@ weight = 1
 
 [[main]]
 name = "How we work"
-url = "work"
+url = "howwework"
 weight = 2
 
 [[main]]
@@ -16,7 +16,7 @@ weight = 3
 
 [[main]]
 name = "Reading list"
-url = "readings"
+url = "readinglist"
 weight = 4
 
 [[main]]

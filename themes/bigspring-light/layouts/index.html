@@ -5,6 +5,10 @@
 <section class="banner">
   <div class="container">
     <div class="row">
+      <!-- image -->
+      {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="750px" style="margin-left: auto; margin-right: auto; margin-bottom: 100px;">{{end}}
+
+      <!-- text -->
       <div class="col-lg-10 mx-auto text-center">
         <h1 class="mb-3">{{ .title | markdownify }}</h1>
         <p class="mb-4">{{ .content | markdownify }}</p>
@@ -13,8 +17,6 @@
         <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
         {{ end }}
         {{ end }}
-
-        {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="750px">{{end}}
       </div>
     </div>
   </div>
