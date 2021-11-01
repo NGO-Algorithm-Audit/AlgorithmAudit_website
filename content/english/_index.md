@@ -5,7 +5,7 @@ banner:
   content: We work with international experts to formulate best-practices on ethical
     issues in data-analyses and algorithmic modelling
   button:
-    enable: false
+    enable: true
     label: Contact Us
     link: contact
 feature:
