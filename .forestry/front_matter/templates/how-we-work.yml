@@ -12,5 +12,4 @@ fields:
   name: description
   label: description
 pages:
-- content/english/cases.md
 - content/english/howwework/how-we-work.md
