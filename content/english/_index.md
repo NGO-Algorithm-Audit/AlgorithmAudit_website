@@ -44,7 +44,7 @@ service:
       consquat.
     button:
       enable: true
-      label: Check it out
+      label: Cases we work on
       link: "#"
 screenshot:
   enable: true
