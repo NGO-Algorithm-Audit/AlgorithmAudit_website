@@ -297,7 +297,7 @@ textarea.form-control {
   transition: .2s ease;
   background-color: #fff; }
   .feature-card svg, .feature-card i {
-    font-size: 60px;
+    font-size: 30px;
     color: #0AA8A7;
     display: inline-block; }
 
