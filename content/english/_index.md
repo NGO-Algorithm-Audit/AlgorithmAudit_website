@@ -47,8 +47,8 @@ service:
       label: Check it out
       link: "#"
 screenshot:
-  enable: false
-  title: Experience the best <br> workflow with us
+  enable: true
+  title: Build the digital future together
   image: images/screenshot.svg
 call_to_action:
   enable: false
