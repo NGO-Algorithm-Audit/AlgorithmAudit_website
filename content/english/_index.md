@@ -45,7 +45,7 @@ service:
     button:
       enable: true
       label: Cases we work on
-      link: "#"
+      link: "#/cases"
 screenshot:
   enable: true
   title: Build the digital future together
