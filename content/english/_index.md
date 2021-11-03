@@ -34,7 +34,7 @@ feature:
 service:
   enable: true
   service_item:
-  - title: It’s a team of experienced and skilled people with distributions
+  - title: We work in collaboration with international experts in algorithmic fairness
     images:
     - images/service-2.png
     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique
