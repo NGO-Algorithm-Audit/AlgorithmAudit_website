@@ -21,9 +21,6 @@ feature:
   - name: Nonprofit
     icon: fas fa-star-of-life
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Diversity
-    icon: fas fa-rainbow
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
     content: From our work guidelines and best practices emerge for code developers
