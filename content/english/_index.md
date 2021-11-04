@@ -12,11 +12,11 @@ feature:
   enable: true
   title: What we do
   feature_item:
-  - name: Independent
+  - name: Nonprofit
     icon: fas fa-star-of-life
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
-  - name: Academic
-    icon: fas fa-graduation-cap
+  - name: Independent
+    icon: fas fa-star-of-life
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
   - name: Diversity
     icon: fas fa-rainbow
