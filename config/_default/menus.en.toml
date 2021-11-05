@@ -5,26 +5,21 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "How we work"
-url = "howwework"
+name = "Cases"
+url = "cases"
 weight = 2
 
 [[main]]
-name = "Cases"
-url = "cases"
+name = "Knowledge base"
+url = "knowledgebase"
 weight = 3
-
-[[main]]
-name = "Reading list"
-url = "readinglist"
-weight = 4
 
 [[main]]
 name = "FAQ"
 url = "faq"
-weight = 5
+weight = 4
 
 [[main]]
 name = "About"
 url = "faq"
-weight = 6
+weight = 5
