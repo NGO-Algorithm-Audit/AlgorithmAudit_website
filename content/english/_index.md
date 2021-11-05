@@ -47,7 +47,7 @@ service:
       link: "#/cases"
 screenshot:
   enable: true
-  title: Build the digital future together
+  title: Public knowledge building for ethical algorithms
   image: images/screenshot.svg
 call_to_action:
   enable: false
