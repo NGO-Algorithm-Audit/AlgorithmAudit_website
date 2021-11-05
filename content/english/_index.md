@@ -2,8 +2,7 @@
 banner:
   title: Public knowledge building for ethical algorithms
   image: images/banner-art.svg
-  content: We work with international experts to formulate best-practices on ethical
-    issues in data-analyses and algorithmic modelling [Ariën]
+  content: Algorithms are everywhere... [Ariën]
   button:
     enable: false
     label: Contact Us
