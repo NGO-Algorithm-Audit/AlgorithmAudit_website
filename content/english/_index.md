@@ -1,7 +1,7 @@
 ---
 banner:
   title: Public knowledge building for ethical algorithms
-  image: images/banner-art.svg
+  image: images/banner2.png
   content: Algorithms are everywhere... [Ariën]
   button:
     enable: false
