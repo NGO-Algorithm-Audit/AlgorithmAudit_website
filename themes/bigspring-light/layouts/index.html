@@ -2,15 +2,16 @@
 
 <!-- banner -->
 {{ with .Params.banner }}
-<section class="banner">
+<section class="banner" style="padding: 0 0 0 0;">
   <div class="container">
     <div class="row">
-      <!-- image -->
-      {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="500px" style="margin-left: auto; margin-right: auto; margin-bottom: 100px;">{{end}}
 
+       <!-- image -->
+       {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="500px" style="margin-left: auto; margin-right: auto; margin-bottom: 100px;">{{end}}
+      
       <!-- text -->
       <div class="col-lg-10 mx-auto text-center">
-        <h1 class="mb-3" style="font-size: 36px;">{{ .title | markdownify }}</h1>
+        <h1 class="mb-3" style="font-size: 36px; color: #305494;">{{ .title | markdownify }}</h1>
         <p class="mb-4" style="width:50%; margin-left: auto; margin-right: auto; margin-top: 50px;">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
@@ -18,6 +19,7 @@
         {{ end }}
         {{ end }}
       </div>
+
     </div>
   </div>
 </section>
@@ -31,13 +33,13 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
       </div>
       {{ range .feature_item }}
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="feature-card text-center">
           <i class="{{.icon}} mb-3" style="color: #305494;"></i>
-          <h4 class="mb-2" style="text-transform:none">{{ .name | title }}</h4>
+          <h4 class="mb-2" style="text-transform:none; color: #305494;">{{ .name | title }}</h4>
           <p>{{ .content | markdownify }}</p>
         </div>
       </div>
