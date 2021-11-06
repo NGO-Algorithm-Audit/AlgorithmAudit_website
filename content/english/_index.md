@@ -29,7 +29,7 @@ feature:
       on explicit conditions of autonomy and transparency. We do not cooperate in
       ethics washing.
   - name: Nonprofit
-    icon: fas fa-star-of-life
+    icon: fas fa-leaf
     content: We are a foundation that works nonprofit for building public knowledge.
       We are supported by independent public funding and our case-specific expenses
       are covered by partners under explicit conditions that guarantee autonomous
