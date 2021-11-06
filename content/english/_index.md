@@ -2,7 +2,12 @@
 banner:
   title: Public knowledge building for ethical algorithms
   image: images/banner2.png
-  content: Algorithms are everywhere... [Ariën]
+  content: Algorithm Audit is a non-profit foundation that increases public knowledge
+    of algorithmic ethics. We believe in a bottom-up approach to algorithmic ethics
+    that starts from concrete case-based experience. We form independent audit commissions
+    that give ethical advice on concrete cases from industry and the public sector.
+    By making the reports publicly available, we contribute to the knowledge and experience
+    in algorithmic ethics of experts, policy makers and the wider public.
   button:
     enable: false
     label: Contact Us
@@ -13,13 +18,22 @@ feature:
   feature_item:
   - name: Auditing algorithms
     icon: fas fa-search
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
+    content: We review algorithmic decision and prediction models, the data that is
+      used and the larger processes in which they are involved. We believe a balanced
+      ethical judgment of algorithmic processes must be context-sensitive and mindful
+      of the real societal impact.
   - name: Independent
     icon: fas fa-star-of-life
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
+    content: Our audit commissions are made up of independent, academic experts with
+      no ties to the involved industry or organization. We work together with partners
+      on explicit conditions of autonomy and transparency. We do not cooperate in
+      ethics washing.
   - name: Nonprofit
     icon: fas fa-star-of-life
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
+    content: We are a foundation that works nonprofit for building public knowledge.
+      We are supported by independent public funding and our case-specific expenses
+      are covered by partners under explicit conditions that guarantee autonomous
+      evaluation by our commissions.
   - name: Public knowledge
     icon: ''
     content: ''
@@ -27,9 +41,12 @@ feature:
     icon: fas fa-book-reader
     content: From our work guidelines and best practices emerge for code developers
       and data scientists to develop ethical algorithms
-  - name: Public-private
+  - name: Public and private partners
     icon: fas fa-university
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil
+    content: 'We review concrete cases emerging from the field of industry and government,
+      big or small. Similar ethical concerns arise in both private and public use
+      of algorithms, and we believe in a broad, comprehensive approach to algorithmic
+      ethics.   '
 service:
   enable: true
   service_item:
