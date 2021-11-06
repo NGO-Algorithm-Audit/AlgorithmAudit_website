@@ -148,7 +148,7 @@ body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #0AA8A7;
+  background-color: #305494;
   outline: 2px solid #fff; }
 
 /* preloader */
