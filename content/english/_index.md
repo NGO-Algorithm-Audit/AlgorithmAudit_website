@@ -52,7 +52,7 @@ service:
   service_item:
   - title: How we work
     images:
-    - images/service-2.png
+    - images/howwework.svg
     content: |-
       1. Case
       2. Hoer
