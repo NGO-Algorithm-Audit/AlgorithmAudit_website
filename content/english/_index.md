@@ -1,6 +1,6 @@
 ---
 banner:
-  title: Case-based advice for ethical issues in data-analyses and algorithmic models
+  title: Case-based advice for ethical issues in data-analyses and algorithmic methods
   image: images/banner2.png
   content: Algorithm Audit is a non-profit foundation that increases public knowledge
     of algorithmic ethics. We believe in a bottom-up approach to algorithmic ethics
