@@ -35,14 +35,14 @@ feature:
       are covered by partners under explicit conditions that guarantee autonomous
       evaluation by our commissions.
   - name: Public knowledge
-    icon: fas fa-hands-helping
+    icon: fab fa-slideshare
     content: ''
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
     content: From our work guidelines and best practices emerge for code developers
       and data scientists to develop ethical algorithms
   - name: Partners
-    icon: fas fa-university
+    icon: fas fa-hands-helping
     content: 'We review concrete cases emerging from public and private organisations.
       Industry players and government institutions, big or small. Similar ethical
       concerns arise in both private and public use of algorithms, and we believe
