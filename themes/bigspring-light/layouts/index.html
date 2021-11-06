@@ -27,7 +27,7 @@
 <!-- feature -->
 {{ with .Params.feature }}
 {{ if .enable }}
-<section class="section bg-light">
+<section class="section bg-light" style="background-color: #d0e1fd !important;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
@@ -36,7 +36,7 @@
       {{ range .feature_item }}
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="feature-card text-center">
-          <i class="{{.icon}} mb-3"></i>
+          <i class="{{.icon}} mb-3" style="color: #305494;"></i>
           <h4 class="mb-2" style="text-transform:none">{{ .name | title }}</h4>
           <p>{{ .content | markdownify }}</p>
         </div>
@@ -77,7 +77,7 @@
   </div>
 </section>
 {{ else }}
-<section class="section bg-light">
+<section class="section bg-light" style="background-color: #cfe2f3 !important;">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
