@@ -35,7 +35,7 @@ feature:
       are covered by partners under explicit conditions that guarantee autonomous
       evaluation by our commissions.
   - name: Public knowledge
-    icon: fab fa-slideshare
+    icon: fas fa-hands-helping
     content: ''
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
