@@ -41,12 +41,12 @@ feature:
     icon: fas fa-book-reader
     content: From our work guidelines and best practices emerge for code developers
       and data scientists to develop ethical algorithms
-  - name: Public and private partners
+  - name: Partners
     icon: fas fa-university
-    content: 'We review concrete cases emerging from the field of industry and government,
-      big or small. Similar ethical concerns arise in both private and public use
-      of algorithms, and we believe in a broad, comprehensive approach to algorithmic
-      ethics.   '
+    content: 'We review concrete cases emerging from public and private organisations.
+      Industry players and government institutions, big or small. Similar ethical
+      concerns arise in both private and public use of algorithms, and we believe
+      in a broad, comprehensive approach to algorithmic ethics.   '
 service:
   enable: true
   service_item:
