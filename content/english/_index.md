@@ -53,18 +53,16 @@ service:
   - title: We work together with international experts in algorithmic fairness
     images:
     - images/service-2.png
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique
-      eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet
-      sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet,
-      tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel
-      consquat.
+    content: |-
+      1. Case
+      2. Hoer
     button:
       enable: true
       label: Cases we work on
       link: "#/cases"
 screenshot:
   enable: true
-  title: Public knowledge building for ethical algorithms
+  title: We build public knowledge for ethical algorithms
   image: images/screenshot.svg
 call_to_action:
   enable: false
