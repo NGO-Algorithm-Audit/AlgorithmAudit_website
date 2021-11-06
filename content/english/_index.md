@@ -50,7 +50,7 @@ feature:
 service:
   enable: true
   service_item:
-  - title: We work together with international experts in algorithmic fairness
+  - title: How we work
     images:
     - images/service-2.png
     content: |-
