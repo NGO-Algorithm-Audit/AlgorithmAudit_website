@@ -1,8 +1,8 @@
 // Color Variables
 {{ with site.Params.variables }}
-$primary-color: {{.primary_color | default "#0AA8A7"}};
-$text-color: {{.text_color | default "#777"}};
-$text-color-dark: {{.text_color_dark | default "#222"}};
+$primary-color: {{.primary_color | default "#305494"}};
+$text-color: {{.text_color | default "#305494"}};
+$text-color-dark: {{.text_color_dark | default "#305494"}};
 $body-color: {{.body_color | default "#fff"}};
 $border-color: {{.border_color | default "#ECECEC"}};
 $black: {{.black | default "#000"}};

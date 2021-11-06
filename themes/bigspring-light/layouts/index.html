@@ -12,7 +12,7 @@
       <!-- text -->
       <div class="col-lg-10 mx-auto text-center">
         <h1 class="mb-3" style="font-size: 36px; color: #305494;">{{ .title | markdownify }}</h1>
-        <p class="mb-4" style="width:50%; margin-left: auto; margin-right: auto; margin-top: 50px;">{{ .content | markdownify }}</p>
+        <p class="mb-4" style="width:75%; margin-left: auto; margin-right: auto; margin-top: 50px;">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
         <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
@@ -60,11 +60,11 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #305494;">{{ .label }} <i class="fas fa-arrow-right"></i></a>
         {{ end }}
         {{ end }}
       </div>
