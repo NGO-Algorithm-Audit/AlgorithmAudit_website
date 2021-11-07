@@ -66,7 +66,7 @@ Whith_whom_we_work:
     - images/howwework.svg
     content: ''
     button:
-      enable: true
+      enable: false
       label: Cases we work on
       link: "#/cases"
 screenshot:
