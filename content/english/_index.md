@@ -65,7 +65,7 @@ With_whom_we_work:
     images:
     - images/howwework.svg
     content: 'We work together with international experts from various background,
-      e.g. ethics, law, legal professionals, data scientists. The composition of audit
+      e.g. ethics, legal professionals, data scientists. The composition of audit
       commissions differ per case. Most of the experts are affiliated to academic
       institutions, among others:'
     button:
