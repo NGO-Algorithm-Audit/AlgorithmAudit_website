@@ -59,7 +59,8 @@ service:
       label: Cases we work on
       link: "#/cases"
   - title: Hoer
-    images: ''
+    images:
+    - images/service-1.png
     content: ''
     button: ''
 screenshot:
