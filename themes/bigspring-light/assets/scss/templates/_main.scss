@@ -32,6 +32,21 @@
   }
 }
 
+.custom_div_parent {
+  position: relative;
+}
+
+.custom_div_child {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.social-icons{
+  position:absolute;
+  left:50%;
+  top:50%;
+}
+
 .social-icons a {
   color: #305494;
   text-align: center;

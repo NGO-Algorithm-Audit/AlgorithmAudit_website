@@ -206,6 +206,9 @@ a:hover {
   padding-top: 30px;
   padding-bottom: 70px; }
 
+.padding_text {
+  padding-top: 5%; }
+
 .bg-cover {
   background-size: cover;
   background-position: center center;
@@ -316,6 +319,18 @@ textarea.form-control {
   margin: 8px 0; }
   .footer-list a:hover {
     color: #0AA8A7; }
+
+.custom_div_parent {
+  position: relative; }
+
+.custom_div_child {
+  width: 50%;
+  margin: 0 auto; }
+
+.social-icons {
+  position: absolute;
+  left: 50%;
+  top: 50%; }
 
 .social-icons a {
   color: #305494;

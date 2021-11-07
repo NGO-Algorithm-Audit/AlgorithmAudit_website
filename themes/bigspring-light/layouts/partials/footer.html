@@ -3,10 +3,10 @@
     <div class="row">
 
       <!-- Logo -->
-      <div class="col-md-6 col-sm-6 mb-5">
+      <div class="col-md-5 col-sm-6 mb-5">
         <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">
           {{ with site.Params.logo}}
-          <div class="wrapper" style="width:65%; margin-left: auto; margin-right: auto;">
+          <div class="wrapper" style="width:65%; float: right;">
             <img class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
           </div>
           {{ else }}{{site.Title}}{{end}}
@@ -16,22 +16,24 @@
 
       <!-- Text -->
       <div class="col-md-4 col-sm-6 mb-5">
-          <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
+          <p class="mb-4 padding_text">{{ site.Params.footer_content | markdownify }}</p>
       </div>
       <!-- /Text -->
 
       <!-- Text -->
-      <div class="col-md-2 col-sm-6 mb-5">
+      <div class="col-md-3 col-sm-6 mb-5 custom_div_parent">
+        <div class="custom_div_child">
+          <p style="font-size:12px;">Follow us on LinkedIn:</p>
+        </div>
         {{ with site.Params.social }}
-        <ul class="list-inline social-icons">
-          {{ range . }}
-          <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i class="{{ .icon }}"></i></a></li>
+          <div class="social-icons">
+            {{ range . }}
+            <a href="{{ .link | safeURL }}" title="{{ .title }}"><i class="{{ .icon }}"></i></a>
+            {{ end }}
+          </div>
           {{ end }}
-        </ul>
-        {{ end }}
-    </div>
-    <!-- /Text -->
-
+      </div>
+      <!-- /Text -->
 
     </div>
   </div>
