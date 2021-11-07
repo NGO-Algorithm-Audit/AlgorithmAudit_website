@@ -12,7 +12,7 @@ banner:
     enable: false
     label: Contact Us
     link: contact
-feature:
+features:
   enable: true
   title: What we do
   feature_item:
@@ -47,7 +47,7 @@ feature:
       Industry players and government institutions, big or small. Similar ethical
       concerns arise in both private and public use of algorithms, and we believe
       in a broad, comprehensive approach to algorithmic ethics.   '
-service:
+howwework:
   enable: true
   service_item:
   - title: How we work
@@ -58,10 +58,10 @@ service:
       enable: true
       label: Cases we work on
       link: "#/cases"
-whithwhom:
+whithwhomwework:
   enable: true
   service_item:
-  - title: How we work
+  - title: With whom we work
     images:
     - images/howwework.svg
     content: ''

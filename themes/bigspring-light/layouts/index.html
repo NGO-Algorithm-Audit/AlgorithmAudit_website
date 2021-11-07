@@ -107,20 +107,24 @@
 {{ end }}
 <!-- /How we work -->
 
-<!-- With who do we work -->
+<!-- With whom we work -->
 {{ with .Params.service }}
 {{ if .enable }}
 {{ range $i,$p := .service_item }}
 {{if modBool $i 2}}
-<section class="section" style="background-color: #d0e1fd !important;">
+<section class="section">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1">
-        <h2 class="section-title" style="color: #305494;">With whom we work</h2>
+        <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #305494;">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+        {{ end }}
+        {{ end }}
       </div>
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        
         <div {{if gt (len .images) 1}} class="slider" {{end}}>
           {{ range .images }}
           <img src="{{ . | relURL }}" alt="" class="img-fluid">
@@ -144,6 +148,11 @@
       <div class="col-md-6">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+        {{ end }}
+        {{ end }}
       </div>
     </div>
   </div>
@@ -152,7 +161,7 @@
 {{ end }}
 {{ end }}
 {{ end }}
-<!-- /With who do we work -->
+<!-- /With whom we work -->
 
 <!-- screenshot -->
 {{ with .Params.screenshot }}
