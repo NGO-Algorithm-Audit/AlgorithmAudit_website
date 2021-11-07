@@ -51,7 +51,8 @@ service:
   enable: true
   service_item:
   - title: How we work
-    images: []
+    images:
+    - images/howwework2.svg
     content: ''
     button:
       enable: true
