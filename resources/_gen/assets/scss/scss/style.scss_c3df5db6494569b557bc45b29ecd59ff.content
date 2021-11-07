@@ -97,12 +97,12 @@ h6,
     font-size: 15px; }
 
 .btn-primary {
-  background-color: #0AA8A7;
+  background-color: #305494;
   color: #fff;
-  border-color: #0AA8A7; }
+  border-color: #305494; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active {
-    background-color: #0AA8A7 !important;
-    border-color: #0AA8A7 !important; }
+    background-color: #d0e1fd;
+    border-color: #d0e1fd; }
 
 .btn-outline-primary {
   background-color: transparent;
@@ -237,7 +237,7 @@ a:hover {
 
 .form-control:focus {
   outline: 0;
-  border-color: #0AA8A7;
+  border-color: #305494;
   box-shadow: none; }
 
 .form-control::placeholder {

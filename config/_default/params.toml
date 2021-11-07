@@ -34,7 +34,3 @@ button = "I Accept"
 title = "linkedin"
 icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
 link = "https://www.linkedin.com/"
-
-title = "mail"
-icon = "far fa-envelope"
-link = "https://www.jfparie.com/"

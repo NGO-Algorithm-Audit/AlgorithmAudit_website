@@ -46,16 +46,16 @@
 }
 
 .btn-primary {
-  background-color: $primary-color;
+  background-color: #305494;
   color: $white;
-  border-color: $primary-color;
+  border-color: #305494;
 
   &:active,
   &:hover,
   &.focus,
   &.active {
-    background-color: $primary-color !important;
-    border-color: $primary-color !important;
+    background-color: #d0e1fd;
+    border-color: #d0e1fd;
   }
 }
 
