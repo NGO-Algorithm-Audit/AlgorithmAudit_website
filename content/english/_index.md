@@ -58,6 +58,17 @@ service:
       enable: true
       label: Cases we work on
       link: "#/cases"
+whithwhom:
+  enable: true
+  service_item:
+  - title: How we work
+    images:
+    - images/howwework.svg
+    content: ''
+    button:
+      enable: true
+      label: Cases we work on
+      link: "#/cases"
 screenshot:
   enable: true
   title: We build public knowledge for ethical algorithms

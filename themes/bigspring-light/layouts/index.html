@@ -120,6 +120,7 @@
         <p>{{ .content | markdownify }}</p>
       </div>
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        
         <div {{if gt (len .images) 1}} class="slider" {{end}}>
           {{ range .images }}
           <img src="{{ . | relURL }}" alt="" class="img-fluid">
