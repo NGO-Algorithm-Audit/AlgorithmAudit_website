@@ -63,7 +63,7 @@ screenshot:
   title: We build public knowledge for ethical algorithms
   image: images/screenshot.svg
 call_to_action:
-  enable: false
+  enable: true
   title: Ready to get started?
   image: images/cta.svg
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique
