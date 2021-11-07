@@ -65,9 +65,8 @@ With_whom_we_work:
     images:
     - images/howwework.svg
     content: 'We work together with international algorithmic fairness experts. The
-      composition of audit commissions differ per case. Almost all experts we work
-      with hold a doctoral degree and are affiliated to academic institutions, among
-      others:'
+      composition of audit commissions differ per case. Most of the experts are affiliated
+      to academic institutions, among others:'
     button:
       enable: false
       label: Cases we work on
