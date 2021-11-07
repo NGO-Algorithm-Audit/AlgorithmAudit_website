@@ -370,7 +370,7 @@ a.post-title {
 .content h4,
 .content h5,
 .content h6 {
-  margin-bottom: 15px; }
+  margin-bottom: col; }
 
 .content strong {
   font-weight: 600; }
