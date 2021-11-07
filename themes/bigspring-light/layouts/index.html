@@ -117,7 +117,6 @@
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1">
         <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
         <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #305494;">{{ .label }} <i class="fas fa-arrow-right"></i></a>
@@ -126,9 +125,7 @@
       </div>
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
         <div {{if gt (len .images) 1}} class="slider" {{end}}>
-          {{ range .images }}
-          <img src="{{ . | relURL }}" alt="" class="img-fluid">
-          {{ end }}
+          <p class="mb-4" style="">{{ .content | markdownify }}</p>
         </div>
       </div>
     </div>
@@ -140,14 +137,11 @@
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
         <div {{if gt (len .images) 1}}class="slider" {{end}}>
-          {{ range .images }}
-          <img src="{{ . | relURL }}" alt="" class="img-fluid">
-          {{ end }}
+          <p class="mb-4" style="">{{ .content | markdownify }}</p>
         </div>
       </div>
       <div class="col-md-6">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
         <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
