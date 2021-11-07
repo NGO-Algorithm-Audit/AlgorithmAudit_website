@@ -52,7 +52,7 @@
 <!-- /Features -->
 
 <!-- How we work -->
-{{ with .Params.How_we_work}}
+{{ with .Params.How_we_work }}
 {{ if .enable }}
 {{ range $i,$p := .service_item }}
 {{if modBool $i 2}}
@@ -108,7 +108,7 @@
 <!-- /How we work -->
 
 <!-- With whom we work -->
-{{ with .Params.service }}
+{{ with .Params.With_whom_we_work }}
 {{ if .enable }}
 {{ range $i,$p := .service_item }}
 {{if modBool $i 2}}

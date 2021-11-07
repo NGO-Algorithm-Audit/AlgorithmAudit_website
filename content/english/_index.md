@@ -58,7 +58,7 @@ How_we_work:
       enable: true
       label: Cases we work on
       link: "#/cases"
-Whith whom we work:
+Whith_whom_we_work:
   enable: true
   service_item:
   - title: With whom we work
