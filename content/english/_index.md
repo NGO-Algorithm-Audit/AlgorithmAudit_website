@@ -47,7 +47,7 @@ Features:
       Industry players and government institutions, big or small. Similar ethical
       concerns arise in both private and public use of algorithms, and we believe
       in a broad, comprehensive approach to algorithmic ethics.   '
-How we work:
+How_we_work:
   enable: true
   service_item:
   - title: How we work

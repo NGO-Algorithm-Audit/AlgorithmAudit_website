@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<!-- banner -->
+<!-- Banner -->
 {{ with .Params.banner }}
 <section class="banner" style="padding: 0 0 0 0;">
   <div class="container">
@@ -24,10 +24,10 @@
   </div>
 </section>
 {{ end }}
-<!-- /banner -->
+<!-- /Banner -->
 
-<!-- What we do -->
-{{ with .Params.feature }}
+<!-- Features -->
+{{ with .Params.Features }}
 {{ if .enable }}
 <section class="section bg-light" style="background-color: #d0e1fd !important;">
   <div class="container">
@@ -49,10 +49,10 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /What we do -->
+<!-- /Features -->
 
 <!-- How we work -->
-{{ with .Params.service }}
+{{ with .Params.How_we_work}}
 {{ if .enable }}
 {{ range $i,$p := .service_item }}
 {{if modBool $i 2}}
