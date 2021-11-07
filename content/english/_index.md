@@ -1,5 +1,5 @@
 ---
-banner:
+Banner:
   title: Case-based advice for ethical algorithms
   image: images/banner2.png
   content: Algorithm Audit is a non-profit foundation that increases public knowledge
@@ -12,7 +12,7 @@ banner:
     enable: false
     label: Contact Us
     link: contact
-features:
+Features:
   enable: true
   title: What we do
   feature_item:
@@ -47,7 +47,7 @@ features:
       Industry players and government institutions, big or small. Similar ethical
       concerns arise in both private and public use of algorithms, and we believe
       in a broad, comprehensive approach to algorithmic ethics.   '
-howwework:
+How we work:
   enable: true
   service_item:
   - title: How we work
@@ -58,7 +58,7 @@ howwework:
       enable: true
       label: Cases we work on
       link: "#/cases"
-whithwhomwework:
+Whith whom we work:
   enable: true
   service_item:
   - title: With whom we work
