@@ -275,9 +275,9 @@ textarea.form-control {
     font-weight: 700; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #222; }
+  color: #305494; }
   .navbar-light .navbar-nav .nav-link:hover {
-    color: #0AA8A7; }
+    text-decoration: underline; }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 20px; }

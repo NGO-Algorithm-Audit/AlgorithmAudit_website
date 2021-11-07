@@ -8,10 +8,10 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: $text-color-dark;
+  color: #305494;
 
   &:hover {
-    color: $primary-color;
+    text-decoration: underline;
   }
 }
 

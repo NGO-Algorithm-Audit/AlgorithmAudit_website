@@ -29,7 +29,7 @@
           </li>
           {{ else }}
           <li class="nav-item">
-            <a class="nav-link" style="text-transform:none; padding: 15px;" onmouseover="this.style.color='#305494'" onmouseout="this.style.color='#000000'" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+            <a class="nav-link" style="text-transform:none; padding: 15px;" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
