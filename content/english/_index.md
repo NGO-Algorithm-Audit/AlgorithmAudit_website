@@ -79,6 +79,6 @@ Get_in_touch:
     ideas. Let us know! '
 Motto:
   enable: true
-  title: 
+  title: We build public knowledge for ethical algorithms
 
 ---
