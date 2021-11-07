@@ -51,11 +51,8 @@ service:
   enable: true
   service_item:
   - title: How we work
-    images:
-    - images/howwework.svg
-    content: |-
-      1. Case
-      2. Hoer
+    images: []
+    content: ''
     button:
       enable: true
       label: Cases we work on
