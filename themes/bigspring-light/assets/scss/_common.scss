@@ -4,7 +4,7 @@ body {
 }
 
 ::selection {
-  background-color:darken($color: $primary-color, $amount: 10);
+  background-color:darken($color: #305494, $amount: 10);
   color: $white;
 }
 

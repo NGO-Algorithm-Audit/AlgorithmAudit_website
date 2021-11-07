@@ -138,7 +138,7 @@ body {
   overflow-x: hidden; }
 
 ::selection {
-  background-color: #077877;
+  background-color: #243e6d;
   color: #fff; }
 
 body::-webkit-scrollbar {
