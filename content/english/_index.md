@@ -58,6 +58,10 @@ service:
       enable: true
       label: Cases we work on
       link: "#/cases"
+  - title: Hoer
+    images: ''
+    content: ''
+    button: ''
 screenshot:
   enable: true
   title: We build public knowledge for ethical algorithms
