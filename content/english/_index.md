@@ -78,8 +78,7 @@ With_whom_we_work:
 Get_in_touch:
   enable: true
   title: 
-  image:
-    content: '' 
+  content: '' 
 
 screenshot:
   enable: true
