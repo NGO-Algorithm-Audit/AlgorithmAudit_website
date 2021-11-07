@@ -1,37 +1,7 @@
 <footer class="bg-light section pb-0">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-6 mb-5">
-        {{ if site.Menus.footer_left }}
-        <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>
-        <ul class="list-unstyled footer-list">
-          {{ range site.Menus.footer_left }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-      <div class="col-md-3 col-sm-6 mb-5">
-        {{ if site.Menus.footer_middle }}
-        <div class="h3 mb-4">{{ site.Params.footer_menu_middle }}</div>
-        <ul class="list-unstyled footer-list">
-          {{ range site.Menus.footer_middle }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-      <div class="col-md-3 col-sm-6 mb-5">
-        {{ if site.Menus.footer_right }}
-        <div class="h3 mb-4">{{ site.Params.footer_menu_right }}</div>
-        <ul class="list-unstyled footer-list">
-          {{ range site.Menus.footer_right }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-      <div class="col-md-3 col-sm-6 mb-5">
+      <div class="col-md-8 col-sm-6 mb-5">
         <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">
           {{ with site.Params.logo}}
           <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">

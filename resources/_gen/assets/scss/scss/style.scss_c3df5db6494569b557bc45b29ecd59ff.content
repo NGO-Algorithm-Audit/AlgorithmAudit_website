@@ -101,8 +101,8 @@ h6,
   color: #fff;
   border-color: #305494; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active {
-    background-color: #d0e1fd;
-    border-color: #d0e1fd; }
+    background-color: #305494;
+    border-color: #305494; }
 
 .btn-outline-primary {
   background-color: transparent;
@@ -224,7 +224,7 @@ a:hover {
   background-color: #0AA8A7 !important; }
 
 .bg-light {
-  background-color: #EDF6F5 !important; }
+  background-color: #cfe2f3 !important; }
 
 .text-primary {
   color: #0AA8A7 !important; }
@@ -311,17 +311,17 @@ textarea.form-control {
     color: #0AA8A7; }
 
 .social-icons a {
-  color: #0AA8A7;
+  color: #305494;
   text-align: center;
   height: 35px;
   width: 35px;
   line-height: 35px;
-  border: 1px solid #0AA8A7;
+  border: 1px solid #305494;
   border-radius: 50%;
   display: block; }
   .social-icons a:hover {
     color: #fff;
-    background-color: #0AA8A7; }
+    background-color: #305494; }
 
 .card-img {
   object-fit: cover;

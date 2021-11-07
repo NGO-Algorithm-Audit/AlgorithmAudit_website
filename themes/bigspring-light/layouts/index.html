@@ -142,7 +142,7 @@
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
         <div {{if gt (len .images) 1}}class="slider" {{end}}>
-          <p class="mb-4" style="">{{ .content | markdownify }}</p>
+          <p class="mb-4" >{{ .content | markdownify }}</p>
         </div>
       </div>
       <div class="col-md-6">
@@ -169,7 +169,9 @@
     <div class="row">
       <div class="col-lg-5 content">
         <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
+        <div class="wrapper" style="width:75%">
+          <p>{{ .content | markdownify }}</p>
+        </div>
       </div>
 
       <!-- Form -->
@@ -193,11 +195,11 @@
 
 <!-- Motto -->
 {{ with .Params.Motto }}
-<section class="section bg-white">
+<section class="section bg-white" style="background-color: #cfe2f3 !important;">
   <div class="container">
     <div class="row">
-      <div class="col-lg-5 content">
-        <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
+      <div class="col-lg-12 content">
+        <h2 class="section-title" style="color: #305494; text-align:center">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
       </div>
     </div>
