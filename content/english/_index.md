@@ -64,7 +64,8 @@ With_whom_we_work:
   - title: With whom we work
     images:
     - images/howwework.svg
-    content: Hoer hallo
+    content: 'We work together with international algorithmic fairness experts, primarily
+      affiliated to academic institutions.  '
     button:
       enable: false
       label: Cases we work on
