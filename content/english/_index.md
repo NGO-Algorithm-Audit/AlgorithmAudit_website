@@ -64,7 +64,7 @@ With_whom_we_work:
   - title: With whom we work
     images:
     - images/howwework.svg
-    content: ''
+    content: Hoer hallo
     button:
       enable: false
       label: Cases we work on
