@@ -11,5 +11,3 @@ fields:
 - type: text
   name: description
   label: description
-pages:
-- content/english/cases/cases.md
