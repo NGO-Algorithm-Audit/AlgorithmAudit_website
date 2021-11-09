@@ -84,11 +84,10 @@ Get_in_touch:
     know!
 Supported_by:
   enable: true
-  title: ''
-  images:
-  - images/howwework.svg
-  - images/howwework.svg
+  title: Our initiative is supported by
+  images: []
 Motto:
   enable: true
   title: We build public knowledge for ethical algorithms
+
 ---
