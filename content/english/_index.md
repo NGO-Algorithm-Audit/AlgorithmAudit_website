@@ -69,10 +69,10 @@ With_whom_we_work:
   - title: With whom we work
     images:
     - images/howwework.svg
-    content: 'We work together with international experts from various background,
+    content: We work together with international experts from various backgrounds,
       e.g. ethicists, legal professionals, data scientists. The composition of audit
-      commissions differ per case. Most of the experts are affiliated to academic
-      institutions, among others:'
+      commissions varies per case. Most of the experts are affiliated to academic
+      institutions.
     button:
       enable: false
       label: Cases we work on
