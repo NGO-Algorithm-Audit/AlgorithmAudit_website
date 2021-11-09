@@ -80,8 +80,8 @@ With_whom_we_work:
 Get_in_touch:
   enable: true
   title: Get in touch
-  content: 'Do you want to inform us about an ethical issue or get in contact to share
-    ideas. Let us know! '
+  content: Do you have an ethical issue for review? Or want to share ideas? Let us
+    know!
 Motto:
   enable: true
   title: We build public knowledge for ethical algorithms
