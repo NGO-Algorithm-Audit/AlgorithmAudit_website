@@ -84,7 +84,7 @@ Get_in_touch:
     know!
 Supported_by:
   enable: true
-  title: ''
+  title: Our initiative is supported by
   content: ''
 Motto:
   enable: true
