@@ -19,10 +19,10 @@ Features:
   feature_item:
   - name: Auditing algorithms
     icon: fas fa-search
-    content: We review algorithmic decision and prediction models, the data that is
-      used and the larger processes in which they are involved. We believe a balanced
-      ethical judgment of algorithmic processes must be context-sensitive and mindful
-      of the real societal impact.
+    content: We review algorithmic decision and prediction models, the data used and
+      the processes in which they are involved. We believe a balanced ethical judgment
+      of algorithmic processes must be context-sensitive and mindful of its societal
+      impact.
   - name: Independent
     icon: fas fa-star-of-life
     content: Our audit commissions are made up of independent, academic experts with
