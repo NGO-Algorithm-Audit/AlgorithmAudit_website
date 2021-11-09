@@ -89,7 +89,7 @@ Supported_by:
 Motto:
   enable: true
   title: We build public knowledge for ethical algorithms
-  images:
+    images:
     - images/howwework.svg
     - images/howwework.svg
 ---
