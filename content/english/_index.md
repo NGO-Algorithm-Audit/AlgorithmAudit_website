@@ -48,10 +48,10 @@ Features:
       techno-ethical issues emerges over time.
   - name: Partners
     icon: fas fa-hands-helping
-    content: 'We review concrete cases emerging from public and private organisations.
-      Industry players and government institutions, big or small. Similar ethical
-      concerns arise in both private and public use of algorithms, and we believe
-      in a broad, comprehensive approach to algorithmic ethics.   '
+    content: We review concrete ethical issues that emerge in algorithmic methods
+      used by public and private organizations. Because similar ethical concerns arise
+      in disparate organizations, we are devoted to removing boundaries to approach
+      ethical algorithms ethics collectively.
 How_we_work:
   enable: true
   service_item:
