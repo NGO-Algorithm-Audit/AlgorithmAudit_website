@@ -54,7 +54,7 @@ Features:
       ethical algorithms ethics collectively.
 How_we_work:
   enable: true
-  service_item:
+  image:
   - title: How we work
     images:
     - images/howwework.svg
@@ -89,5 +89,7 @@ Supported_by:
 Motto:
   enable: true
   title: We build public knowledge for ethical algorithms
-
+  images:
+    - images/howwework.svg
+    - images/howwework.svg
 ---
