@@ -37,7 +37,10 @@ Features:
       publication of results.
   - name: Public knowledge
     icon: fab fa-slideshare
-    content: ''
+    content: All our cases and corresponding advice are made publicly available on
+      this website, increasing public knowledge how to devise and use algorithms in
+      an ethical way. We interact with international experts, policy makers and the
+      wider public to foster circulation of knowledge.
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
     content: From our work guidelines and best practices emerge for code developers
