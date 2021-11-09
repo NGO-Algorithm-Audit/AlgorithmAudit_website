@@ -9,21 +9,20 @@
 	.st3{fill:#FFFFFF;stroke:#305495;stroke-width:13;stroke-miterlimit:10;}
 	.st4{fill:#FFFFFF;stroke:#5875AE;stroke-width:13;stroke-miterlimit:10;}
 	.st5{fill:#A7BCE1;}
-	.st6{font-family:"Lato:wght@400" sans-serif;}
+	.st6{font-family:'Lato-Regular';}
 	.st7{font-size:18px;}
 	.st8{fill:#7F98C8;}
 	.st9{fill:#5875AE;}
 	.st10{fill:#FFFFFF;}
-	.st11{opacity:0.75;fill:#5875AE;}
-	.st12{opacity:0.75;fill:#305495;}
-	.st13{opacity:0.75;fill:#7F98C8;}
+	.st11{opacity:0.75;fill:#5875AE;enable-background:new    ;}
+	.st12{opacity:0.75;fill:#305495;enable-background:new    ;}
+	.st13{opacity:0.75;fill:#7F98C8;enable-background:new    ;}
 	.st14{fill:none;}
 	.st15{font-size:14px;}
 	.st16{fill:#787878;}
-	.st17{font-family:'Lato-Regular';}
-	.st18{font-size:10px;}
-	.st19{fill:#305496;}
-	.st20{fill:#707071;}
+	.st17{font-size:10px;}
+	.st18{fill:#305496;}
+	.st19{fill:#707071;}
 </style>
 <path class="st0" d="M433.74,200c0-36.93,29.94-66.87,66.87-66.87s66.87,29.94,66.87,66.87"/>
 <path class="st0" d="M433.74,199.96c0,36.93-29.94,66.87-66.87,66.87S300,236.9,300,199.96"/>
@@ -39,21 +38,32 @@
 <text transform="matrix(1 0 0 1 472.3765 309.3905)" class="st9 st6 st7">STEP 4</text>
 <circle class="st10" cx="300" cy="199.96" r="10"/>
 <path class="st11" d="M300,213.46c-7.44,0-13.5-6.06-13.5-13.5s6.06-13.5,13.5-13.5s13.5,6.06,13.5,13.5S307.44,213.46,300,213.46z
-	 M300,193.46c-3.58,0-6.5,2.92-6.5,6.5c0,3.58,2.92,6.5,6.5,6.5s6.5-2.92,6.5-6.5C306.5,196.38,303.58,193.46,300,193.46z"/>
+	 M300,193.46c-3.58,0-6.5,2.92-6.5,6.5s2.92,6.5,6.5,6.5s6.5-2.92,6.5-6.5S303.58,193.46,300,193.46z"/>
 <circle class="st10" cx="433.74" cy="199.96" r="10"/>
 <path class="st12" d="M433.74,213.46c-7.44,0-13.5-6.06-13.5-13.5s6.06-13.5,13.5-13.5s13.5,6.06,13.5,13.5
-	S441.19,213.46,433.74,213.46z M433.74,193.46c-3.58,0-6.5,2.92-6.5,6.5c0,3.58,2.92,6.5,6.5,6.5s6.5-2.92,6.5-6.5
-	C440.24,196.38,437.33,193.46,433.74,193.46z"/>
+	S441.19,213.46,433.74,213.46z M433.74,193.46c-3.58,0-6.5,2.92-6.5,6.5s2.92,6.5,6.5,6.5s6.5-2.92,6.5-6.5
+	S437.33,193.46,433.74,193.46z"/>
 <circle class="st10" cx="166.26" cy="199.96" r="10"/>
 <path class="st13" d="M166.26,213.46c-7.44,0-13.5-6.06-13.5-13.5s6.06-13.5,13.5-13.5s13.5,6.06,13.5,13.5
-	S173.7,213.46,166.26,213.46z M166.26,193.46c-3.58,0-6.5,2.92-6.5,6.5c0,3.58,2.92,6.5,6.5,6.5s6.5-2.92,6.5-6.5
-	C172.76,196.38,169.84,193.46,166.26,193.46z"/>
+	S173.7,213.46,166.26,213.46z M166.26,193.46c-3.58,0-6.5,2.92-6.5,6.5s2.92,6.5,6.5,6.5s6.5-2.92,6.5-6.5
+	S169.84,193.46,166.26,193.46z"/>
 <rect x="37.17" y="296.01" class="st14" width="124.44" height="90.66"/>
-<text transform="matrix(1 0 0 1 57.6282 306.4159)"><tspan x="0" y="0" class="st5 st6 st15">Identify issue</tspan><tspan x="-13.62" y="25" class="st16 st17 st18">Identiy a concrete ethical </tspan><tspan x="-16.43" y="38" class="st16 st17 st18">concern in a real algorithm </tspan><tspan x="-2.57" y="51" class="st16 st17 st18">or data-analysis tool</tspan></text>
+<text transform="matrix(1 0 0 1 57.6282 306.4159)" class="st5 st6 st15">Identify issue</text>
+<text transform="matrix(1 0 0 1 44.0082 331.4159)" class="st16 st6 st17">Identify a concrete ethical </text>
+<text transform="matrix(1 0 0 1 41.1982 344.4159)" class="st16 st6 st17">concern in a real algorithm </text>
+<text transform="matrix(1 0 0 1 55.0582 357.4159)" class="st16 st6 st17">or data-analysis tool</text>
 <rect x="170.91" y="42.47" class="st14" width="124.44" height="90.66"/>
-<text transform="matrix(1 0 0 1 177.4652 52.8691)"><tspan x="0" y="0" class="st8 st6 st15">Audit commission</tspan><tspan x="-0.81" y="25" class="st16 st17 st18">Form an independent and </tspan><tspan x="-5.48" y="38" class="st16 st17 st18">diverse audit commission of </tspan><tspan x="39.31" y="51" class="st16 st17 st18">experts</tspan></text>
+<text transform="matrix(1 0 0 1 177.4652 52.8691)" class="st8 st6 st15">Audit commission</text>
+<text transform="matrix(1 0 0 1 176.6552 77.8691)" class="st16 st6 st17">Form an independent and </text>
+<text transform="matrix(1 0 0 1 171.9852 90.8691)" class="st16 st6 st17">diverse audit commission of </text>
+<text transform="matrix(1 0 0 1 216.7752 103.8691)" class="st16 st6 st17">experts</text>
 <rect x="438.39" y="42.47" class="st14" width="124.44" height="90.66"/>
-<text transform="matrix(1 0 0 1 479.1936 52.8691)"><tspan x="0" y="0" class="st19 st6 st15">Advice</tspan><tspan x="-39.66" y="25" class="st16 st17 st18">Advice by audit commission </tspan><tspan x="-29.72" y="38" class="st16 st17 st18">is published and shared</tspan></text>
-<rect x="290.72" y="294.95" class="st14" width="152.3" height="73.87"/>
-<text transform="matrix(1 0 0 1 341.1464 305.3535)"><tspan x="0" y="0" class="st9 st6 st15">Analysis</tspan><tspan x="-37.59" y="25" class="st20 st17 st18">Comprehensive independent </tspan><tspan x="-26.19" y="38" class="st20 st17 st18">review of issue by audit </tspan><tspan x="-0.08" y="51" class="st20 st17 st18">commission</tspan></text>
+<text transform="matrix(1 0 0 1 479.1936 52.8691)" class="st18 st6 st15">Advice</text>
+<text transform="matrix(1 0 0 1 439.5336 77.8691)" class="st16 st6 st17">Advice by audit commission </text>
+<text transform="matrix(1 0 0 1 449.4736 90.8691)" class="st16 st6 st17">is published and shared</text>
+<rect x="290.72" y="192.96" class="st14" width="152.3" height="73.87"/>
+<text transform="matrix(1 0 0 1 344.0898 307.6209)" class="st9 st6 st15">Analysis</text>
+<text transform="matrix(1 0 0 1 306.4998 332.6209)" class="st19 st6 st17">Comprehensive independent </text>
+<text transform="matrix(1 0 0 1 317.8997 345.6209)" class="st19 st6 st17">review of issue by audit </text>
+<text transform="matrix(1 0 0 1 344.0098 358.6209)" class="st19 st6 st17">commission</text>
 </svg>
