@@ -82,6 +82,10 @@ Get_in_touch:
   title: Get in touch
   content: Do you have an ethical issue for review? Or want to share ideas? Let us
     know!
+Supported_by:
+  enable: true
+  title: ''
+  content: ''
 Motto:
   enable: true
   title: We build public knowledge for ethical algorithms
