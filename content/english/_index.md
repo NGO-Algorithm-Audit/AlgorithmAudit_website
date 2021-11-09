@@ -43,8 +43,9 @@ Features:
       wider public to foster circulation of knowledge.
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
-    content: From our work guidelines and best practices emerge for code developers
-      and data scientists to develop ethical algorithms
+    content: From our case-based knowledge developers and data scientists can distill
+      best practices to develop ethical algorithms. We hope a helpful resource for
+      techno-ethical issues emerges over time.
   - name: Partners
     icon: fas fa-hands-helping
     content: 'We review concrete cases emerging from public and private organisations.
