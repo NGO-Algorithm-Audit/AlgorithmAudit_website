@@ -84,8 +84,12 @@ Get_in_touch:
     know!
 Supported_by:
   enable: true
-  title: Our initiative is supported by
-  images: []
+  Suported_by:
+  - title: Our initiative is supported by
+    img1: 
+    - images/sidn.png
+    img2:
+    - 
 Motto:
   enable: true
   title: We build public knowledge for ethical algorithms

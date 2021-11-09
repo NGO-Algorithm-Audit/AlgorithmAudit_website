@@ -176,7 +176,8 @@
 
 <!-- Supported by -->
 {{ with .Params.Supported_by }}
-<section class="section2 bg-white" style="background-color: #cfe2f3 !important;">
+{{ range $i,$p := .Suported_by }}
+<section class="section2 bg-white" style="background-color: #ffffff !important;">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 content">
@@ -187,16 +188,20 @@
       </div>
 
       <div class="col-lg-4 mb-4 mb-lg-0">
-        {{ range .images }}
-        <img src="{{ . | relURL }}" alt="" class="img-fluid">
+        {{ range .img1 }}
+        <img src="{{ . | relURL }}" style="width:75%;" alt="" class="img-fluid">
         {{ end }}
       </div>
 
       <div class="col-lg-4 mb-4 mb-lg-0">
+        {{ range .img2 }}
+        <img src="{{ . | relURL }}" alt="" class="img-fluid">
+        {{ end }}
       </div>
     </div>
   </div>
 </section>
+{{ end }}
 {{ end }}
 <!-- /Supported by -->
 
