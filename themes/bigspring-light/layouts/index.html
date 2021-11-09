@@ -179,14 +179,20 @@
 <section class="section2 bg-white" style="background-color: #cfe2f3 !important;">
   <div class="container">
     <div class="row">
-      <div class="col-lg-5 content">
-        <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
+      <div class="col-lg-4 content">
+        <h2 class="section-title" style="font-size:16px; color: #305494;">{{ .title | markdownify }}</h2>
         <div class="wrapper" style="width:75%">
           <p>{{ .content | markdownify }}</p>
         </div>
       </div>
 
-      <div class="col-lg-7 mb-4 mb-lg-0">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        {{ range .images }}
+        <img src="{{ . | relURL }}" alt="" class="img-fluid">
+        {{ end }}
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
       </div>
     </div>
   </div>
