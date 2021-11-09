@@ -25,9 +25,9 @@ Features:
       impact.
   - name: Independent
     icon: fas fa-star-of-life
-    content: Our audit commissions are made up of independent, academic experts with
-      no ties to the involved industry or organization. We work together with partners
-      on explicit conditions of autonomy and transparency. We do not cooperate in
+    content: Our audit commissions are independent, academic, multi-disciplinary and
+      diverse. Participating experts have no ties to the algorithmic methods or organizations
+      under review. We work together with partners under explicit conditions to avoid
       ethics washing.
   - name: Nonprofit
     icon: fas fa-leaf
