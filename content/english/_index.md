@@ -89,7 +89,7 @@ Supported_by:
     img1: 
     - images/sidn.png
     img2:
-    - 
+    -
 Motto:
   enable: true
   title: We build public knowledge for ethical algorithms
