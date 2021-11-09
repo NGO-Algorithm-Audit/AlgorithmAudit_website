@@ -31,10 +31,10 @@ Features:
       ethics washing.
   - name: Nonprofit
     icon: fas fa-leaf
-    content: We are a foundation that works nonprofit for building public knowledge.
-      We are supported by independent public funding and our case-specific expenses
-      are covered by partners under explicit conditions that guarantee autonomous
-      evaluation by our commissions.
+    content: We are a nonprofit organization supported by independent public funding.
+      Occasionally, case-specific expenses are covered by partners under conditions
+      that guarantee independent evaluation by our audit commissions and transparant
+      publication of results.
   - name: Public knowledge
     icon: fab fa-slideshare
     content: ''
