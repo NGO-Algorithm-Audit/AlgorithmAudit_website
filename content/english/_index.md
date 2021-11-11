@@ -3,12 +3,7 @@ Banner:
   title: Case-based knowledge for ethical algorithms
   image: images/banner2.png
   content: Algorithm Audit is a nonprofit organization that builds and shares knowledge
-    of ethical algorithms. We believe in a bottom-up approach. That’s why we start
-    from concrete case-based experience. We form independent audit commissions to
-    give advice on ethical issues that arise in industry and the public sector. By
-    making advisory reports publicly available, we foster collective knowledge and
-    experience in the ethics of algorithmic systems, serving the international community
-    of experts, policy makers and the wider public.
+    of ethical algorithms.
   button:
     enable: false
     label: Contact Us
@@ -86,10 +81,10 @@ Supported_by:
   enable: true
   Suported_by:
   - title: Our initiative is supported by
-    img1: 
+    img1:
     - images/sidn.png
     img2:
-    -
+    - 
 Motto:
   enable: true
   title: We build public knowledge for ethical algorithms
