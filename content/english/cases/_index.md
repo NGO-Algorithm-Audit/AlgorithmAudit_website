@@ -1,6 +1,7 @@
 ---
 Cases:
     title: "Cases"
-    image: images/screenshot.svg
-    content: 
+    service_item:
+    images:
+    - images/howwework.svg
 ---
