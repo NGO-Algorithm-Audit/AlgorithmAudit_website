@@ -5,7 +5,7 @@ Banner:
   content: Algorithm Audit is a nonprofit organization that builds and shares knowledge
     of ethical algorithms.
   button:
-    enable: false
+    enable: true
     label: Contact Us
     link: contact
 Features:
