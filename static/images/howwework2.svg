@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 400" style="enable-background:new 0 0 600 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#F1F2F2;stroke-width:13;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#8EAEC8;stroke-width:13;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#C6D5D6;stroke-width:13;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#015BA7;stroke-width:13;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;stroke:#5789BA;stroke-width:13;stroke-miterlimit:10;}
+	.st5{fill:#C6D5D6;}
+	.st6{font-family:"Lato", sans-serif;}
+	.st7{font-size:18px;}
+	.st8{fill:#8EAEC8;}
+	.st9{fill:#5689BB;}
+	.st10{fill:#025CA7;}
+	.st11{fill:#FFFFFF;}
+	.st12{opacity:0.75;fill:#5875AE;}
+	.st13{opacity:0.75;fill:#305495;}
+	.st14{opacity:0.75;fill:#7F98C8;}
+	.st15{fill:none;}
+	.st16{font-size:14px;}
+	.st17{fill:#787878;}
+	.st18{font-family:"Lato", sans-serif;}
+	.st19{font-size:10px;}
+	.st20{fill:#707071;}
+</style>
+<path class="st0" d="M433.74,200c0-36.93,29.94-66.87,66.87-66.87s66.87,29.94,66.87,66.87"/>
+<path class="st0" d="M433.74,199.96c0,36.93-29.94,66.87-66.87,66.87S300,236.9,300,199.96"/>
+<path class="st0" d="M166.26,200c0,36.93-29.94,66.87-66.87,66.87S32.52,236.93,32.52,200"/>
+<path class="st1" d="M300,199.96c0,36.93-29.94,66.87-66.87,66.87s-66.87-29.94-66.87-66.87"/>
+<path class="st0" d="M166.26,199.96c0-36.93,29.94-66.87,66.87-66.87S300,163.03,300,199.96"/>
+<path class="st2" d="M32.52,200c0-36.93,29.94-66.87,66.87-66.87s66.87,29.94,66.87,66.87"/>
+<path class="st3" d="M567.48,200c0,36.93-29.94,66.87-66.87,66.87s-66.87-29.94-66.87-66.87"/>
+<path class="st4" d="M300,199.96c0-36.93,29.94-66.87,66.87-66.87s66.87,29.94,66.87,66.87"/>
+<text transform="matrix(1 0 0 1 71.1494 114.2583)" class="st5 st6 st7">STEP 1</text>
+<text transform="matrix(1 0 0 1 204.8918 309.1712)" class="st8 st6 st7">STEP 2</text>
+<text transform="matrix(1 0 0 1 338.6342 114.4777)" class="st9 st6 st7">STEP 3</text>
+<text transform="matrix(1 0 0 1 472.3765 309.3905)" class="st10 st6 st7">STEP 4</text>
+<circle class="st11" cx="300" cy="199.96" r="10"/>
+<path class="st12" d="M300,213.46c-7.44,0-13.5-6.06-13.5-13.5s6.06-13.5,13.5-13.5s13.5,6.06,13.5,13.5S307.44,213.46,300,213.46z
+	 M300,193.46c-3.58,0-6.5,2.92-6.5,6.5c0,3.58,2.92,6.5,6.5,6.5s6.5-2.92,6.5-6.5C306.5,196.38,303.58,193.46,300,193.46z"/>
+<circle class="st11" cx="433.74" cy="199.96" r="10"/>
+<path class="st13" d="M433.74,213.46c-7.44,0-13.5-6.06-13.5-13.5s6.06-13.5,13.5-13.5s13.5,6.06,13.5,13.5
+	S441.19,213.46,433.74,213.46z M433.74,193.46c-3.58,0-6.5,2.92-6.5,6.5c0,3.58,2.92,6.5,6.5,6.5s6.5-2.92,6.5-6.5
+	C440.24,196.38,437.33,193.46,433.74,193.46z"/>
+<circle class="st11" cx="166.26" cy="199.96" r="10"/>
+<path class="st14" d="M166.26,213.46c-7.44,0-13.5-6.06-13.5-13.5s6.06-13.5,13.5-13.5s13.5,6.06,13.5,13.5
+	S173.7,213.46,166.26,213.46z M166.26,193.46c-3.58,0-6.5,2.92-6.5,6.5c0,3.58,2.92,6.5,6.5,6.5s6.5-2.92,6.5-6.5
+	C172.76,196.38,169.84,193.46,166.26,193.46z"/>
+<rect x="37.17" y="296.01" class="st15" width="124.44" height="90.66"/>
+<text transform="matrix(1 0 0 1 57.6282 306.4159)"><tspan x="0" y="0" class="st5 st6 st16">Identify issue</tspan><tspan x="-13.62" y="25" class="st17 st18 st19">Identiy a concrete ethical </tspan><tspan x="-16.43" y="38" class="st17 st18 st19">concern in a real algorithm </tspan><tspan x="-2.57" y="51" class="st17 st18 st19">or data-analysis tool</tspan></text>
+<rect x="170.91" y="42.47" class="st15" width="124.44" height="90.66"/>
+<text transform="matrix(1 0 0 1 177.4652 52.8691)"><tspan x="0" y="0" class="st8 st6 st16">Audit commission</tspan><tspan x="-0.81" y="25" class="st17 st18 st19">Form an independent and </tspan><tspan x="-5.48" y="38" class="st17 st18 st19">diverse audit commission of </tspan><tspan x="39.31" y="51" class="st17 st18 st19">experts</tspan></text>
+<rect x="438.39" y="42.47" class="st15" width="124.44" height="90.66"/>
+<text transform="matrix(1 0 0 1 479.1936 52.8691)"><tspan x="0" y="0" class="st10 st6 st16">Advice</tspan><tspan x="-39.66" y="25" class="st17 st18 st19">Advice by audit commission </tspan><tspan x="-29.72" y="38" class="st17 st18 st19">is published and shared</tspan></text>
+<rect x="290.72" y="294.95" class="st15" width="152.3" height="73.87"/>
+<text transform="matrix(1 0 0 1 341.1464 305.3535)"><tspan x="0" y="0" class="st9 st6 st16">Analysis</tspan><tspan x="-37.59" y="25" class="st20 st18 st19">Comprehensive independent </tspan><tspan x="-26.19" y="38" class="st20 st18 st19">review of issue by audit </tspan><tspan x="-0.08" y="51" class="st20 st18 st19">commission</tspan></text>
+</svg>

@@ -1,49 +1,51 @@
 {{ "<!-- navigation -->" | safeHTML }}
 
-<header class="navigation site-header gradient-background col-md-12">
-  <div class="container">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
-        {{ with site.Params.logo}}
-        <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relLangURL }}" alt="{{ site.Title }}">
-        {{ else }}{{site.Title}}{{end}}
-      </a>
+<div class="nav-wrapper">
+  <header class="navigation site-header gradient-background col-md-12">
+    <div class="container">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
+          {{ with site.Params.logo}}
+          <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relLangURL }}" alt="{{ site.Title }}">
+          {{ else }}{{site.Title}}{{end}}
+        </a>
 
-      <div class="collapse navbar-collapse text-center" id="navigation" >
-        <div class="wrapper" style="margin-left: auto; margin-right: 0;">
-        <ul class="navbar-nav mx-auto">
-          {{ range site.Menus.main }}
-          {{ if .HasChildren }}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-              {{ .Name }}
-            </a>
-          </li>
-          {{ else }}
-          <li class="nav-item">
-            <a class="nav-link" style="text-transform:none; padding: 15px;" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
-          </li>
-          {{ end }}
-          {{ end }}
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse text-center" id="navigation" >
+          <div class="wrapper" style="margin-left: auto; margin-right: auto;">
+          <ul class="navbar-nav mx-auto">
+            {{ range site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                {{ .Name }}
+              </a>
+            </li>
+            {{ else }}
+            <li class="nav-item">
+              <a class="nav-link" style="text-transform:none; padding: 15px;" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+          </ul>
+        </div>
 
-        <!-- {{ if site.Params.navigation_button.enable }}
-        {{ with site.Params.navigation_button }}
-        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-sm btn-primary ml-3">{{ .label }}</a>
-        {{ end }}
-        {{ end }} -->
-      </div>
-    </nav>
-  </div>
-</header>
+          <!-- {{ if site.Params.navigation_button.enable }}
+          {{ with site.Params.navigation_button }}
+          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-sm btn-primary ml-3">{{ .label }}</a>
+          {{ end }}
+          {{ end }} -->
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script>
   (function ($) {
     $(window).on('scroll', function () {
-      if ($(window).scrollTop() > 10) {
+      if ($(window).scrollTop() > 0) {
         $('.site-header').addClass('adjusted-header');
         // $('.site-header').removeClass('gradient-background');
       } else {

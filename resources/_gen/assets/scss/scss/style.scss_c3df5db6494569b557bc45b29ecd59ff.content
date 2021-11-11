@@ -97,12 +97,12 @@ h6,
     font-size: 15px; }
 
 .btn-primary {
-  background-color: #305494;
+  background-color: #005aa7;
   color: #fff;
-  border-color: #305494; }
+  border-color: #005aa7; }
   .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active {
-    background-color: #305494;
-    border-color: #305494; }
+    background-color: #005aa7;
+    border-color: #005aa7; }
 
 .btn-outline-primary {
   background-color: transparent;
@@ -285,7 +285,7 @@ textarea.form-control {
     font-weight: 700; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #305494; }
+  color: #005aa7; }
   .navbar-light .navbar-nav .nav-link:hover {
     color: #fffde4; }
 
@@ -300,6 +300,9 @@ textarea.form-control {
 
 .gradient-background {
   background: linear-gradient(to left, #005aa7, #fffde4); }
+
+.nav-wrapper {
+  height: 100px; }
 
 .adjusted-header {
   position: fixed;

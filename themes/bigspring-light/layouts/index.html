@@ -7,8 +7,8 @@
     <div class="row" style="display: flex; align-items: center;">
 
       <!-- text -->
-      <div class="col-md-6" style="">
-        <h1 class="mb-3" style="font-size: 36px; color: #305494; width:90%; margin-left: 0; margin-right: auto;">{{ .title | markdownify }}</h1>
+      <div class="col-md-6">
+        <h1 class="mb-3" style="font-size: 36px; color: #005aa7; width:90%; margin-left: 0; margin-right: auto;">{{ .title | markdownify }}</h1>
         <p class="mb-4" style="width:80%; margin-left: 0; margin-right: auto; padding: 10px 0 25px 0;">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
@@ -33,17 +33,18 @@
 <!-- Features -->
 {{ with .Params.Features }}
 {{ if .enable }}
-<section class="section bg-light" style="background: linear-gradient(to left, #005aa7, #fffde4);">
+<!-- <section class="section bg-light" style="background: linear-gradient(to left, #005aa7, #fffde4);"> -->
+<section class="section bg-light" style="background-image: url('/images/gradient.svg'); background-size: cover;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
-        <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
+        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
       </div>
       {{ range .feature_item }}
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="feature-card text-center">
-          <i class="{{.icon}} mb-3" style="color: #305494;"></i>
-          <h4 class="mb-2" style="text-transform:none; color: #305494;">{{ .name | title }}</h4>
+          <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
+          <h4 class="mb-2" style="text-transform:none; color: #005aa7;">{{ .name | title }}</h4>
           <p>{{ .content | markdownify }}</p>
         </div>
       </div>
@@ -64,11 +65,11 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-4 order-2 order-md-1">
-        <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
+        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #305494;">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #005aa7;">{{ .label }} <i class="fas fa-arrow-right"></i></a>
         {{ end }}
         {{ end }}
       </div>
@@ -120,10 +121,10 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1">
-        <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
+        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #305494;">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #005aa7;">{{ .label }} <i class="fas fa-arrow-right"></i></a>
         {{ end }}
         {{ end }}
       </div>
@@ -131,9 +132,9 @@
         <div {{if gt (len .images) 1}} class="slider" {{end}}>
           <p class="mb-4" style="">{{ .content | markdownify }}</p>
           <!-- <ul class="fa-ul">
-            <li><span class="fa-li" style="color: #305494;"><i class="fas fa-graduation-cap"></i></span>Radboud University, The Netherlands</li>
-            <li><span class="fa-li" style="color: #305494;"><i class="fas fa-graduation-cap"></i></span>Stanford University, USA</li>
-            <li><span class="fa-li" style="color: #305494;"><i class="fas fa-graduation-cap"></i></span>ETH Zürich, Switzerland.</li>
+            <li><span class="fa-li" style="color: #005aa7;"><i class="fas fa-graduation-cap"></i></span>Radboud University, The Netherlands</li>
+            <li><span class="fa-li" style="color: #005aa7;"><i class="fas fa-graduation-cap"></i></span>Stanford University, USA</li>
+            <li><span class="fa-li" style="color: #005aa7;"><i class="fas fa-graduation-cap"></i></span>ETH Zürich, Switzerland.</li>
           </ul> -->
         </div>
       </div>
@@ -153,7 +154,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-5 content">
-        <h2 class="section-title" style="color: #305494;">{{ .title | markdownify }}</h2>
+        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
         <div class="wrapper" style="width:75%">
           <p>{{ .content | markdownify }}</p>
         </div>
@@ -185,7 +186,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4 content">
-        <h2 class="section-title" style="font-size:16px; text-decoration: underline; color: #305494;">{{ .title | markdownify }}</h2>
+        <h2 class="section-title" style="font-size:16px; text-decoration: underline; color: #005aa7;">{{ .title | markdownify }}</h2>
         <div class="wrapper" style="width:75%">
           <p>{{ .content | markdownify }}</p>
         </div>
