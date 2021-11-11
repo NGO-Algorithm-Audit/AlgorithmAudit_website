@@ -3,7 +3,7 @@ Banner:
   title: Case-based knowledge for ethical algorithms
   image: images/banner2.png
   content: Algorithm Audit is a nonprofit organization that builds and shares knowledge
-    of ethical algorithms.
+    about ethical algorithms
   button:
     enable: true
     label: Read our white paper
@@ -57,7 +57,7 @@ How_we_work:
     button:
       enable: true
       label: Cases we work on
-      link: "cases"
+      link: cases
 With_whom_we_work:
   enable: true
   service_item:
