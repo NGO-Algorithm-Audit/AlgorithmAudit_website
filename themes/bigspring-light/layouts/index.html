@@ -2,7 +2,7 @@
 
 <!-- Banner -->
 {{ with .Params.banner }}
-<section class="banner" style="padding: 100px 0 0 0;">
+<section class="banner gradient-background" style="padding: 100px 0 0 0; ">
   <div class="container">
     <div class="row" style="display: flex; align-items: center;">
 
@@ -33,7 +33,7 @@
 <!-- Features -->
 {{ with .Params.Features }}
 {{ if .enable }}
-<section class="section bg-light" style="background-color: #d0e1fd !important;">
+<section class="section bg-light" style="background: linear-gradient(to left, #005aa7, #fffde4);">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
@@ -208,20 +208,5 @@
 {{ end }}
 {{ end }}
 <!-- /Supported by -->
-
-<!-- Motto -->
-{{ with .Params.Motto }}
-<section class="section2 bg-white" style="background-color: #cfe2f3 !important;">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 content">
-        <h2 class="section-title" style="color: #305494; text-align:center">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-<!-- /Motto -->
 
 {{ end }}
