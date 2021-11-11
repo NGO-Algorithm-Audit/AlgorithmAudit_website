@@ -11,12 +11,12 @@ weight = 2
 
 [[main]]
 name = "Partners and publications"
-url = "partnersandpublications"
+url = "partners_and_publications"
 weight = 3
 
 [[main]]
 name = "Knowledge base"
-url = "knowledgebase"
+url = "knowledge_base"
 weight = 4
 
 [[main]]
@@ -26,5 +26,5 @@ weight = 5
 
 [[main]]
 name = "About"
-url = "faq"
+url = "about"
 weight = 6
