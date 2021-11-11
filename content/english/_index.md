@@ -6,8 +6,8 @@ Banner:
     of ethical algorithms.
   button:
     enable: true
-    label: Contact Us
-    link: contact
+    label: Read our white paper
+    link: knowledgebase
 Features:
   enable: true
   title: What we do
@@ -57,7 +57,7 @@ How_we_work:
     button:
       enable: true
       label: Cases we work on
-      link: "#/cases"
+      link: "cases"
 With_whom_we_work:
   enable: true
   service_item:

@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://examplesite.org/"
+baseURL = "localhost:1313/"
 title = "Bigspring Light"
 theme = "bigspring-light"
 # post pagination
