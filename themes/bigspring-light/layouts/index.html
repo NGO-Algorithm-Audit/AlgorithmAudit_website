@@ -4,23 +4,25 @@
 {{ with .Params.banner }}
 <section class="banner" style="padding: 0 0 0 0;">
   <div class="container">
-    <div class="row">
+    <div class="row" style="display: flex; align-items: center;">
 
-      <!-- image -->
-      <div class="col-md-6">
-        {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="500px" style="margin-left: auto; margin-right: auto; margin-bottom: 100px;">{{end}}
-      </div>
       <!-- text -->
-
       <div class="col-md-6" style="">
-        <h1 class="mb-3" style="font-size: 36px; color: #305494; width:90%; margin-left: auto; margin-right: 0;">{{ .title | markdownify }}</h1>
-        <p class="mb-4" style="width:75%; margin-left: auto; margin-right: auto; padding: 10px 0 25px 0;">{{ .content | markdownify }}</p>
+        <h1 class="mb-3" style="font-size: 36px; color: #305494; width:90%; margin-left: 0; margin-right: auto;">{{ .title | markdownify }}</h1>
+        <p class="mb-4" style="width:80%; margin-left: 0; margin-right: auto; padding: 10px 0 25px 0;">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
         <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
         {{ end }}
         {{ end }}
       </div>
+      <!-- text -->
+
+      <!-- image -->
+      <div class="col-md-6">
+        {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="500px" style="margin-left: auto; margin-right: auto; margin-bottom: 100px;">{{end}}
+      </div>
+      <!-- image -->
 
     </div>
   </div>
