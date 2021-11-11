@@ -85,8 +85,5 @@ Supported_by:
     - images/sidn.png
     img2:
     - 
-Motto:
-  enable: true
-  title: We build public knowledge for ethical algorithms
 
 ---
