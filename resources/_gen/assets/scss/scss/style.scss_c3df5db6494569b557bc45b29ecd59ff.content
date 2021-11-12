@@ -299,7 +299,7 @@ textarea.form-control {
   font-weight: 700; }
 
 .gradient-background {
-  background: linear-gradient(to left, #005aa7, #fffde4); }
+  background: linear-gradient(to left, #618EC7, #fffde4); }
 
 .nav-wrapper {
   height: 100px; }
@@ -349,12 +349,12 @@ textarea.form-control {
   height: 35px;
   width: 35px;
   line-height: 35px;
-  border: 1px solid #305494;
+  border: 1px solid #005aa7;
   border-radius: 50%;
   display: block; }
   .social-icons a:hover {
     color: #fff;
-    background-color: #305494; }
+    background-color: #005aa7; }
 
 .card-img {
   object-fit: cover;
