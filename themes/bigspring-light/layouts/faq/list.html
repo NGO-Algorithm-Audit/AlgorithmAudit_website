@@ -9,11 +9,28 @@
     </div>
   </div>
 </section>
-{{ "<!-- /faq -->" | safeHTML }}
 
-
-<!-- call to action -->
-
-<!-- /call to action -->
+<!-- Contact form -->
+<section class="section bg-white" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 content text-center">
+        <h2 class="section-title" style="color: #005aa7;">Get in touch</h2>
+      </div>
+      <div class="col-lg-8 mb-4 mb-lg-0" style="margin-left: auto; margin-right: auto;">
+        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
+          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Name">
+          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Email">
+          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject">
+          <textarea name="message" id="message" class="form-control mb-3" placeholder="Message"></textarea>
+          <div class="wrapper" style="text-align:center;">
+            <button type="submit" value="send" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Contact form -->
 
 {{ end }}
