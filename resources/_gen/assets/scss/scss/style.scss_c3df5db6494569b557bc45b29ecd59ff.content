@@ -459,7 +459,7 @@ textarea.form-control {
   height: 10vw; }
 
 a.post-title {
-  color: #222;
+  color: #005aa7;
   display: block; }
   a.post-title:hover {
     color: #0AA8A7; }
@@ -639,16 +639,16 @@ a.post-title {
     padding: 0;
     margin-right: 10px;
     border: 0;
-    color: #777; }
+    color: #005aa7; }
     .pagination .page-item .page-link:hover {
-      background: #0AA8A7;
+      background: #005aa7;
       color: #fff; }
     .pagination .page-item .page-link:focus {
       box-shadow: none; }
   .pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {
     border-radius: 5px; }
   .pagination .page-item.active .page-link {
-    background: #0AA8A7;
+    background: #005aa7;
     color: #fff; }
 
 .slick-dots {

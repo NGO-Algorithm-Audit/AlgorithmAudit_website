@@ -1,5 +1,5 @@
 ---
-title: "screens with built in Present and Dismiss animations."
+title: "Paper Z"
 date: 2020-04-18T10:07:21+06:00
 # post image
 image: "images/blog/post-3.jpg"
