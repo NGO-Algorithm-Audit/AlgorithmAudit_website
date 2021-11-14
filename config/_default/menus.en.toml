@@ -10,21 +10,16 @@ url = "cases"
 weight = 2
 
 [[main]]
-name = "Partners and publications"
-url = "partners_and_publications"
-weight = 3
-
-[[main]]
 name = "Knowledge base"
 url = "knowledge_base"
-weight = 4
+weight = 3
 
 [[main]]
 name = "FAQ"
 url = "faq"
-weight = 5
+weight = 4
 
 [[main]]
 name = "About"
 url = "about"
-weight = 6
+weight = 5

@@ -1,10 +1,11 @@
 ---
-title: "Knowledge and publication"
+title: "About"
+subtitle: "Who we are"
 featured: true
 categories: [""]
 draft: false
 ---
 
-### Knowledge and publication
+### The team
 
 Hii

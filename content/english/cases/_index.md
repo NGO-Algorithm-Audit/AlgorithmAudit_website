@@ -1,6 +1,6 @@
 ---
 title: "Cases"
-image: "images/01.jpg"
+subtitle: "Cases we work on… [aanvullen @Ariën]"
 featured: true
 categories: [""]
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
-subtitle: ""
+subtitle: "What we do and what we do not… [aanvullen @Ariën]"
 # meta description
 description: "This is meta description"
 draft: false

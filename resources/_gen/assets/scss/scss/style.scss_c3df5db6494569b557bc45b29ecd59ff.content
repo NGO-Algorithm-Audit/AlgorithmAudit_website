@@ -193,14 +193,21 @@ a:hover {
 .slick-slide {
   outline: 0; }
 
+.page-title {
+  padding: 50px 0 100px 16.67%; }
+
 .section {
   padding-top: 70px;
   padding-bottom: 70px; }
   .section-title {
     margin-bottom: 30px; }
 
-.section2 {
-  padding-top: 70px; }
+.section-top {
+  padding-top: 0px; }
+
+.section-bottom {
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .footer {
   padding-top: 30px;
