@@ -110,13 +110,13 @@ h6,
   border-color: transparent; }
   .btn-outline-primary:active, .btn-outline-primary:hover, .btn-outline-primary.focus, .btn-outline-primary.active {
     background-color: transparent !important;
-    border-color: #0AA8A7 !important;
-    color: #0AA8A7; }
+    border-color: #005aa7 !important;
+    color: #005aa7; }
   .btn-outline-primary::before {
-    border-color: #0AA8A7; }
+    border-color: #005aa7; }
 
 .btn-link {
-  color: #0AA8A7; }
+  color: #005aa7; }
   .btn-link i,
   .btn-link svg {
     font-size: 12px;
@@ -124,7 +124,7 @@ h6,
     margin-bottom: 1px;
     transition: .2s ease; }
   .btn-link:active, .btn-link:hover, .btn-link.focus, .btn-link.active {
-    color: #0AA8A7;
+    color: #005aa7;
     text-decoration: none; }
     .btn-link:active i,
     .btn-link:active svg, .btn-link:hover i,

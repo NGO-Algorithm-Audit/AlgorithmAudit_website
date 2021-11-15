@@ -1,9 +1,6 @@
 ---
 title: "Cases"
-subtitle: "Cases we work on. 
-
-
-More cases we are working on are listed here in the future."
+subtitle: "Cases we work on. More cases we are working on are listed here in the future. Please reach out to us when you have ethical issues for review."
 ---
 
 {{< cases "Ethical risk assessment tool" "The composition of the audit commission for this case is made publicly available once the final advice of the commission is published.">}}

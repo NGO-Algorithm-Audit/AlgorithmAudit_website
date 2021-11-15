@@ -69,16 +69,16 @@
   &.focus,
   &.active {
     background-color: transparent !important;
-    border-color: $primary-color !important;
-    color: $primary-color;
+    border-color: #005aa7 !important;
+    color: #005aa7;
   }
   &::before{
-    border-color: $primary-color;
+    border-color: #005aa7;
   }
 }
 
 .btn-link {
-  color: $primary-color;
+  color: #005aa7;
 
   i,
   svg {
@@ -92,7 +92,7 @@
   &:hover,
   &.focus,
   &.active {
-    color: $primary-color;
+    color: #005aa7;
     text-decoration: none;
 
     i,
