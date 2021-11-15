@@ -7,26 +7,30 @@ draft: false
 ---
 
 
-{{< faq-leaf "Why do you work non-profit?" >}}
-Xx yy
+{{< faq-review "What do you review exactly?" >}}
+We review algorithmic decision and prediction models, the data and variables used and the organizational processes in which the models are involved. We believe a balanced ethical judgment of algorithmic processes must take the larger context into account. This means that our commissions will for example look at the nature of the provided product or service, the individual and social consequences of algorithmic predictions or decisions, the possibility of appeal, the level of internal control.
+{{</ faq-review >}}
+
+{{< faq "What organizations may present a case?" >}}
+Basically every organization, public or private, big or small, is welcome to present a case. Depending on the nature of the case, we decide whether it is suitable for review by an audit commission.
+{{</ faq >}}
+
+{{< faq-leaf "Why do you work nonprofit?" >}}
+We are committed to balanced, careful and independent review of ethical issues. We depend on the experts in our audit commissions to carry out these evaluations. And we serve the community by making all our advice and knowledge public. Working nonprofit suits our activities and goals best.
 {{</ faq-leaf >}}
 
 {{< faq-weight_scale "What is your legitimacy?" >}}
-Independent, diverse commissions of expert
+The audit commissions that carry out the reviews are independent, academic, multi-disciplinary and diverse. The people we ask to join a commission have an outstanding academic and public track record in the field relevant to the case. Participating experts have no ties to the algorithmic methods or organizations under review. We work together with partners under explicit conditions to avoid ethics washing.
 {{</ faq-weight_scale >}}
 
 {{< faq-money "How are you funded?" >}}
-Public funding
+We are a nonprofit organization supported by independent public funding. Occasionally, case-specific expenses are covered by partners under conditions that guarantee independent evaluation by our audit commissions and transparant publication of results.
 {{</ faq-money >}}
 
 {{< faq-share "How can I share ethical issues or knowledge?" >}}
-Reach out to us here
+We are happy to receive new cases for review. And we are always open to discuss issues and knowledge in ethical algorithms. Reach out to us here.
 {{</ faq-share >}}
 
 {{< faq-washing "How do you prevent ethics washing?" >}}
-We do 
-
-1. X
-
-2. Y
+Ethics washing refers to the practice where a company pays lip service to ethics or ethical review, to make it seem outwardly as though it operates in a responsible way, whereas it does not actually wish to implement responsible practices in a meaningful way. We do not participate in ethical reviews as branding. As an organization we do not confer ethics certificates or labels to our partners. We clearly communicate that our commissions only give ethical advice and may not be used as stand-in for internal control or external accountability. This is established in explicit conditions under which we work and that we discuss with our partners beforehand. A concrete measure we will regularly adopt is making the partner anonymous in our publication of the case and reports.
 {{</ faq-washing >}}

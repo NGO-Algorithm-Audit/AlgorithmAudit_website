@@ -1,12 +1,7 @@
 ---
 title: "Cases"
 subtitle: "Cases we work on… [aanvullen @Ariën]"
-featured: true
-categories: [""]
-draft: false
 ---
-
-{{< embed-pdf url="/uploads/Detecting_payfraud.pdf" >}}
 
 ### Ethical risk assessment tool 
 

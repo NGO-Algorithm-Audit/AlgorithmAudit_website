@@ -272,13 +272,31 @@ textarea.form-control {
   .check-mark::before {
     position: absolute;
     content: "\f058";
-    color: #0AA8A7;
+    color: #005aa7;
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
     top: 3px; }
   .check-mark svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 3px; }
+
+.review {
+  position: relative; }
+  .review::before {
+    position: absolute;
+    content: "\f002";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -30px;
+    top: 3px; }
+  .review svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
