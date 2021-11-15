@@ -4,7 +4,7 @@ logo_width = "200px"
 # OpenGraph / Twitter Card metadata
 description = "Algorithm Audit ethical algorithm"
 author = "JFParie"
-image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+image = "images/logo2.png" # this image will be used as fallback if a page has no image of its own
 # contact form action
 contact_form_action = "https://formspree.io/f/mrgrwnyo" # contact form works with https://formspree.io
 

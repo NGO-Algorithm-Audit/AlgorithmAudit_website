@@ -4,7 +4,7 @@ body {
 }
 
 ::selection {
-  background-color:darken($color: #305494, $amount: 10);
+  background-color:darken($color: #005aa7, $amount: 10);
   color: $white;
 }
 
@@ -320,4 +320,36 @@ textarea.form-control {
     left: -30px;
     top: 3px;
   }
+}
+
+.ranking{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "\f682";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: $icon-font;
+    font-weight: 900;
+    left: -30px;
+    top: 3px;
+  }
+  svg{
+    position: absolute;
+    color: $primary-color;
+    font-size: 25px;
+    left: -30px;
+    top: 3px;
+  }
+}
+
+.column {
+  display: table-row;
+  margin-top: 50px;
+  float: left;
+  width: 50%;
+}
+
+.column-text {
+padding: 0 50px 0 50px;
 }
