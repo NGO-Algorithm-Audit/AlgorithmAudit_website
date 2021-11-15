@@ -1,6 +1,6 @@
 ---
 title: "About"
-subtitle: "Who we are"
+subtitle: "Who we are... [aanvullen @Ariën]"
 ---
 
 ### The team
