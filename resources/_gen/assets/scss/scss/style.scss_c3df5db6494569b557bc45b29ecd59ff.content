@@ -511,7 +511,7 @@ a.post-title {
   color: #005aa7;
   display: block; }
   a.post-title:hover {
-    color: #0AA8A7; }
+    color: #8BAAD5; }
 
 .content * {
   word-break: break-word;

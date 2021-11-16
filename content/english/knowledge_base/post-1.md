@@ -6,7 +6,7 @@ image: "images/blog/ethical_algorithm.jpg"
 # post type (regular/featured)
 type: "featured"
 # meta description
-description: "This is meta description"
+description: ""
 # post draft
 draft: false
 ---

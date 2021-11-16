@@ -1,13 +1,12 @@
 ---
 title: "Frequently Asked Questions"
-subtitle: "What we do and what we do not… [aanvullen @Ariën]"
+subtitle: "Algorithm Audit holds high standards regarding integrity, independence and autonomy of our organization. We are 100% transparant in the way we work. We answer some pressing do's and don'ts below."
 # meta description
-description: "This is meta description"
+description: ""
 draft: false
 ---
 
-
-{{< faq-review "What do you review exactly?" >}}
+{{< faq-review "What exactly do you review?" >}}
 We review algorithmic decision and prediction models, the data and variables used and the organizational processes in which the models are involved. We believe a balanced ethical judgment of algorithmic processes must take the larger context into account. This means that our commissions will for example look at the nature of the provided product or service, the individual and social consequences of algorithmic predictions or decisions, the possibility of appeal, the level of internal control.
 {{</ faq-review >}}
 
@@ -19,7 +18,11 @@ Basically every organization, public or private, big or small, is welcome to pre
 We are committed to balanced, careful and independent review of ethical issues. We depend on the experts in our audit commissions to carry out these evaluations. And we serve the community by making all our advice and knowledge public. Working nonprofit suits our activities and goals best.
 {{</ faq-leaf >}}
 
-{{< faq-weight_scale "What is your legitimacy?" >}}
+{{< faq-leaf "Is your work open-source?" >}}
+...
+{{</ faq-leaf >}}
+
+{{< faq-weight_scale "What is the legitimacy of your organization?" >}}
 The audit commissions that carry out the reviews are independent, academic, multi-disciplinary and diverse. The people we ask to join a commission have an outstanding academic and public track record in the field relevant to the case. Participating experts have no ties to the algorithmic methods or organizations under review. We work together with partners under explicit conditions to avoid ethics washing.
 {{</ faq-weight_scale >}}
 
