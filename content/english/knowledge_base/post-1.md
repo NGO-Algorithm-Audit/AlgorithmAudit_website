@@ -1,8 +1,8 @@
 ---
-title: "Paper X"
-date: 2020-04-18T10:07:21+06:00
+title: "The Ethical Algorithm"
+date: 2021-11-16
 # post image
-image: "images/blog/post-1.jpg"
+image: "images/blog/ethical_algorithm.jpg"
 # post type (regular/featured)
 type: "featured"
 # meta description
