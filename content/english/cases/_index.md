@@ -1,8 +1,9 @@
 ---
-title: "Cases"
-subtitle: "Cases we work on. More cases we are working on are listed here in the future. Please reach out to us when you have ethical issues for review."
----
+title: Cases
+subtitle: Cases we work on. More cases we are working on will be listed here in the
+  future. Please reach out to us when you have ethical issues for review.
 
+---
 {{< cases "Ethical risk assessment tool" "The composition of the audit commission for this case is made publicly available once the final advice of the commission is published.">}}
 This project sheds light into pressing ethical issues which arise in risk assessment tools. When should characteristics of citizens and customers be considered as protected variables? When do variables act as proxies for protected characteristics? 
 
