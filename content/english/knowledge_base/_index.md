@@ -1,8 +1,7 @@
 ---
-title: "Knowledge base"
-subtitle: "Information hub on algorithmic fairness… [aanvullen @Ariën]"
-# meta description
-description: "This is meta description"
-draft: false
----
+title: Knowledge base
+subtitle: 'In this knowledge base we keep track of articles, books and other publications
+  that are relevant to learn more about algorithmic fairness. '
+description: ''
 
+---
