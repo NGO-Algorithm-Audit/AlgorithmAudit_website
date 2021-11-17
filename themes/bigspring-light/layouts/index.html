@@ -128,7 +128,7 @@
 <section class="section">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1">
+      <div class="col-md-6">
         <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
@@ -137,12 +137,10 @@
         {{ end }}
         {{ end }}
       </div>
-      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <div {{if gt (len .images) 1}} class="slider" {{end}}>
+      <div class="col-md-6">
           {{ range .images }}
-          <img src="{{ . | relURL }}" alt="" class="img-fluid" style='height: 400px; width: 267px;' style="display: block; margin-left: auto; margin-right: auto">
+          <img src="{{ . | relURL }}" alt="" class="img-fluid" style="width: 50%; height: 50%; margin-left:25%; margin-right:25%;">
           {{ end }}
-        </div>
       </div>
     </div>
   </div>
