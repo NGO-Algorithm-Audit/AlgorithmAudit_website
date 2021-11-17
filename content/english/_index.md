@@ -69,8 +69,16 @@ Societal_impact:
   service_item:
     - title : Societal impact
       images:
-      - "images/service-1.png"
-      content: Hoer
+      - "images/societal_impact.svg"
+      content: "Current and proposed legislation does not provide answers for ethical issues in algorithmic methods. 
+      
+      - GDPR Article 22 about automated decision-making, including profiling, gives room for broad interpretation.
+
+      
+      - The new proposed AI Act of the European Commission is a playground for legal experts. The Act aims to minimise the risk of algorithmic discrimination, but is not clear how to realise this.
+
+      
+      New initiatives, such as Algorithm Audit, are therefore necessary to contribute from the bottom-up to ethical algorithms. As such, we contribute to SDG16 – Peace, Justice and Strong Institutions."
 Get_in_touch:
   enable: true
   title: Get in touch
