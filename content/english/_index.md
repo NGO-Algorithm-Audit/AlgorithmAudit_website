@@ -63,6 +63,14 @@ With_whom_we_work:
       enable: false
       label: Cases we work on
       link: "#/cases"
+Societal_impact:
+  enable: true
+  content: Current legislation falls short to 
+  service_item:
+    - title : Societal impact
+      images:
+      - "images/service-1.png"
+      content: Hoer
 Get_in_touch:
   enable: true
   title: Get in touch

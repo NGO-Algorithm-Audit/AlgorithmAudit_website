@@ -1,13 +1,12 @@
 ---
 title: Cases
-subtitle: Cases we work on. More cases we are working on will be listed here in the
-  future. Please reach out to us when you have ethical issues for review.
+subtitle: We work on a variety of cases of which some are listed below. Once an audit commission has gathered and formulated an advice, the original problem statement and corresponding advice will be publish here. Please reach out to us when you have an ethical issue for review.
 
 ---
 {{< cases "Ethical risk assessment tool" "The composition of the audit commission for this case is made publicly available once the final advice of the commission is published.">}}
 This project sheds light into the complex tension between ethics and statistics in risk assessment tools. When should characteristics of citizens and customers be considered as protected variables? When do variables act as proxies for protected characteristics?
 
-In April 2020, the Rotterdam Court of Auditors ruled that a risk assessment tool as used by the Municipality of Rotterdam was biased. Why? Due to the presence of ‘illiteracy’ as a predictor variable to select welfare claimants for re-examination. The Court of Auditors considered this variable as a proxy for non-Dutch origin. Therefore, the algorithm used by the Municipality was perceived as discriminatory. 
+In April 2020, the Rotterdam Court of Auditors ruled that a risk assessment tool used by the Municipality of Rotterdam was biased. Why? Due to the presence of ‘illiteracy’ as a predictor variable to select welfare claimants for re-examination. The Court of Auditors considered this variable as a proxy for non-Dutch origin. Therefore, the algorithm used by the Municipality was perceived as discriminatory. 
 
 However, from a statistical perspective, the argumentation to qualify an algorithm as biased solely on presence of proxy variables is flawed. Why? Because all variables in a prediction model are to a certain extent correlated to protected variables and can therefore be considered as proxy variables. Only statistically independent variables are not correlated and do therefore not act as proxy variables. In practice this means that nearly all variables included in a prediction models act as proxy variables. At Algorithm Audit, we coined a term for this impasse: the ethical-statistical gridlock.
 
