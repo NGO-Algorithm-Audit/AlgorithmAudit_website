@@ -75,7 +75,7 @@ Societal_impact:
       - GDPR Article 22 about automated decision-making, including profiling, gives room for broad interpretation.
 
       
-      - The new proposed AI Act of the European Commission is a playground for legal experts. The Act aims to minimise the risk of algorithmic discrimination, but is not clear how to realise this.
+      - The new proposed AI Act of the European Commission is a playground for legal experts. The Act aims to minimise the risk of algorithmic discrimination, but does not provide guidelines how to identify discrimination in the context of algorithmic tools and methods.
 
       
       New bottom-up initiatives like Algorithm Audit are therefore necessary to realise ethical algorithms. As such, we contribute to SDG16 – Peace, Justice and Strong Institutions."
