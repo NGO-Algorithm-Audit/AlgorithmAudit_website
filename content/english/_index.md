@@ -72,19 +72,19 @@ Societal_impact:
       - "images/societal-impact.svg"
       content: "Current and proposed legislations alone are not enough to realise ethical algorithms. Why not?
 
-      - The conditions given in GDPR Article 22 (2) under which automated decision-making, including profiling is allowed are open for broad interpretation.
+      - The conditions given in GDPR Article 22 (2) under which automated decision-making, including profiling is allowed are open for broad interpretation. Opening the door for unethical algorithmic practices without public awareness.
       
 
       - The new proposed AI Act of the European Commission is a playground for legal experts. The AI Act aims to minimise the risk of algorithmic discrimination, but does not provide guidelines how to identify and mitigate discrimination in the context of algorithms. 
       
 
-      - Perspective 3.3.1 in the Guidelines for Algorithms of the Dutch Court of Auditors argues that ethical algorithms are not allowed to “discriminate and that bias should be minimised”. Methods to determine what constitutes bias and discrimination in different context are not discussed.
+      - Perspective 3.3.1 in the Guidelines for Algorithms of the Dutch Court of Auditors argues that ethical algorithms are not allowed to “discriminate and that bias should be minimised”. Methods to determine what constitutes bias and what is discriminatory in different contexts are not discussed.
       
 
-      - The Impact Assessment Human Rights and Algorithms (IAMA) and the Handbook for Non-Discrimination, developed by the Dutch government, mainly assess discriminatory practice by asking questions and does not provide answers.
+      - The Impact Assessment Human Rights and Algorithms (IAMA) and the Handbook for Non-Discrimination, both developed by the Dutch government, mainly assess discriminatory practice by asking questions and do not provide answers how to realise ethical algorithms.
 
 
-      Besides, taking all contested algorithmic methods to court to assess discriminatory practices is practically infeasible. Therefore, new bottom-up initiatives like Algorithm Audit are necessary to build public knowledge how to realise ethical algorithms. As such, we contribute to SDG16 – Peace, Justice and Strong Institutions.
+      Taking all contested algorithmic methods ultimatelly to court to assess discriminatory practices is practically infeasible. Therefore, new bottom-up initiatives like Algorithm Audit are necessary. Public knowledge should be build how to realise ethical algorithms. As such, we contribute to SDG16 – Peace, Justice and Strong Institutions.
 "
 Get_in_touch:
   enable: true
