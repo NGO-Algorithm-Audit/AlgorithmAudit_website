@@ -1,6 +1,6 @@
 ---
 title: Cases
-subtitle: We work on a variety of cases. Once an audit commission has gathered and formulated an advice, the original problem statement and corresponding advice will be publish here. Please [<span style="color:#005aa7"> reach out</span>](index.html#contactform) to us when you have an ethical issue for review. 
+subtitle: We work on a variety of cases. Once an audit commission has gathered and formulated an advice, the original problem statement and corresponding advice will be published here. Please [<span style="color:#005aa7"> reach out</span>](index.html#contactform) to us when you have an ethical issue for review. 
 image: images/illustration2.jpeg
 
 ---
@@ -11,12 +11,15 @@ This project sheds light into the complex tension between ethics and statistics 
 In April 2020, the Rotterdam Court of Auditors ruled that a risk assessment tool used by the Municipality of Rotterdam was biased. Why? Due to the presence of ‘illiteracy’ as a predictor variable to select welfare claimants for re-examination. The Court of Auditors considered this variable as a proxy for non-Dutch origin. Therefore, the algorithm used by the Municipality was perceived as discriminatory. 
 
 ###### <span style="color:#005aa7">Ethical-statistical gridlock</span>
-However, from a statistical perspective, the argumentation to qualify an algorithm as biased solely on presence of proxy variables is flawed. Why? Because all variables in a prediction model are to a certain extent correlated to protected variables and can therefore be considered as proxy variables. Only statistically independent variables are not correlated and do therefore not act as proxy variables. In practice this means that nearly all variables included in a prediction models act as proxy variables. At Algorithm Audit, we coined a term for this impasse: the ethical-statistical gridlock.
+However, from a statistical perspective, the argumentation to qualify an algorithm as biased solely on presence of proxy variables is flawed. Why? Because all variables in a prediction model are to a certain extent correlated to protected variables and can therefore be considered as proxy variables. Only statistically independent variables are not correlated and do therefore not act as proxy variables. In practice this means that nearly all variables included in a prediction models act as proxy variables. At Algorithm Audit, we coined a term for this impasse: the *ethical-statistical gridlock*.
 
 ###### <span style="color:#005aa7">Fair ML research</span>
-How to resolve this gridlock? On the one side, researchers in fair machine learning warn not to debate ‘At which correlation rate variables act as predictor variable or not’? Instead, researchers advise to examine whether including protected variables in the model hold predictive power. If so, researchers advise to include protected variables in the prediction model such that the role of proxies becomes moot. 
+How to resolve this gridlock? Researchers in fair machine learning warn not to debate ‘At what correlation rate variables act as predictor variables or not?' (see [<span style="color:#005aa7">paper</span>](https://arxiv.org/abs/1808.00023)). Instead, researchers advise to examine whether including protected variables in the model hold predictive power. If so, researchers advocate to include protected variables in the prediction model such that the role of proxies becomes moot. 
 
-###### <span style="color:#005aa7"> Deliberation</span>
-However, including protected variables – such as gender, race and age – in algorithmic models is not always desirable or even practically achievable. In fact, this scenario aligns best with the daily practice in which algorithmic tools are developed. In such, selecting legitimate variables on which fair decisions can be made needs careful inspection and deliberation. By composing independent, professional and diverse audit commissions, Algorithm Audit provides ethical reviews of the ethical-statistical gridlock in a holistic and context-sensitive way that is mindful of societal impact. Hence, we are working on an advice regarding the above-mentioned ethical issue that arose in Rotterdam.
+###### <span style="color:#005aa7"> Achieving ethical algorithms trough deliberation</span>
+However, including protected variables – such as gender, race and age – in algorithmic models is not always desirable or even practically achievable. In fact, this aligns best with daily practices in which algorithms are developed. In such, selecting legitimate variables on which fair decisions can be made needs careful inspection and deliberation. By composing independent, professional and diverse audit commissions, Algorithm Audit provides ethical reviews of the ethical-statistical gridlock in a holistic and context-sensitive way that is mindful of societal impact. 
+
+###### <span style="color:#005aa7">Case</span>
+We are working with academic partners on an advice regarding the above-mentioned ethical issue that emerged at the Municipality of Rotterdam. For this project we are supported by the [<span style="color:#005aa7">SIDN Fund</span>](https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool).
 
 {{</ cases >}}
