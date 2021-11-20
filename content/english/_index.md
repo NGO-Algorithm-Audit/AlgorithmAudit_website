@@ -4,7 +4,7 @@ Banner:
   image: images/illustration.jpeg
   content: Algorithm Audit is a nonprofit organization that builds and shares knowledge
     of ethical algorithms. Our independent audit commissions shed light on ethical
-    issues that arise in the use of algorithmic tools and methods.
+    issues that arise in concrete use cases of algorithmic tools and methods.
   button:
     enable: false
     label: Read our white paper
@@ -53,7 +53,7 @@ How_we_work:
 With_whom_we_work:
   enable: true
   service_item:
-  - title: With whom we work
+  - title: Who we work with
     images:
     - images/howwework.svg
     content: We work together with international experts from various backgrounds,
