@@ -8,16 +8,16 @@ other="Translations"
 other = "We are really sorry but there seems to be nothing here."
 
 [yourname]
-other = "Your Name"
+other = "Name"
 
 [youremail]
-other = "Your Email"
+other = "Email"
 
 [subject]
 other = "Subject"
 
 [yourmessage]
-other = "Your Message"
+other = "Message"
 
 [sendnow]
 other = "Send"
