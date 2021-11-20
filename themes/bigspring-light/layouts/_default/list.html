@@ -27,10 +27,10 @@
       {{ end }}
       {{ $paginator := .Paginate  (where .Data.Pages "Type" "!=" "featured") }}
       {{ range $paginator.Pages }}
-      <div class="col-lg-4 col-sm-6 mb-5 p-5 shadow rounded-lg">
-        <div class="card border-0">
+      <div class="col-md-6 mb-4">
+        <div class="p-5 shadow rounded-lg">
           <div style=" margin-left: auto; margin-right: auto;">
-            <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" class="card-img rounded-lg mb-4" style='height: 276px;'>
+            <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" style='height: 276px; margin-bottom: 20px;'>
           </div>
           <div class="card-body p-0">
             <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title" style="width:90%;">{{ .Title }}</a></h3>
