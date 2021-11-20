@@ -69,7 +69,7 @@ With_whom_we_work:
       enable: false
       label: Cases we work on
       link: "#/cases"
-Societal_impact:
+Why_we_exist:
   enable: true
   content: Current legislation falls short to
   service_item:
