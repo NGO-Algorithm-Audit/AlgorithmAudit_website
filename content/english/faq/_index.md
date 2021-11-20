@@ -1,9 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 subtitle: "Algorithm Audit holds high standards regarding integrity, independence and autonomy of our organization. We are 100% transparant in the way we work. We answer some pressing do's and don'ts below."
-# meta description
-description: ""
-draft: false
+image: images/illustration4.jpeg
 ---
 
 {{< faq-review "What exactly do you review?" >}}

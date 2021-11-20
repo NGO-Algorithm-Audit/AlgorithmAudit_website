@@ -1,11 +1,17 @@
 <section class="section-top pb-0">
   <div class="gradient-background">
-    <div class="page-title">
-      <h1 class="mb-3" style="font-size: 36px; color: #005aa7;">{{ .Title | markdownify }}</h1>
-      {{ with .Params.subtitle }}
-      <p style="width:45%">{{ . | markdownify }}</p>
-      {{ end }}
-      <!-- <a href="index.html#contactform" class="btn-link">Get in touch <i class="fas fa-arrow-right"></i></a> -->
+    <div class="page-title row" style="display: flex; align-items: center;">
+
+      <div class="col-md-6" style="width:90%;">
+        <h1 class="mb-3" style="font-size: 36px; color: #005aa7;">{{ .Title | markdownify }}</h1>
+        {{ with .Params.subtitle }}
+        <p>{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+
+      <div class="col-md-6 illustration">
+        {{with .Params.image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="500px" style="width: 33%; height: 33%; margin-left:25%; margin-right:25%;">{{end}}
+      </div>
     </div>
   </div>
 </section>
