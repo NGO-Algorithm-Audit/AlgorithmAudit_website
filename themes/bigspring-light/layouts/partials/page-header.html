@@ -2,10 +2,12 @@
   <div class="gradient-background">
     <div class="page-title row" style="display: flex; align-items: center;">
 
-      <div class="col-md-6" style="width:90%;">
+      <div class="col-md-6">
         <h1 class="mb-3" style="font-size: 36px; color: #005aa7;">{{ .Title | markdownify }}</h1>
         {{ with .Params.subtitle }}
-        <p>{{ . | markdownify }}</p>
+        <div style="width:80%;">
+          <p>{{ . | markdownify }}</p>
+        </div>
         {{ end }}
       </div>
 

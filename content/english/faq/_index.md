@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
-subtitle: "Algorithm Audit holds high standards regarding integrity, independence and autonomy of our organization. We are 100% transparant in the way we work. We answer some pressing do's and don'ts below."
+subtitle: "At Algorithm Audit, we hold high standards regarding integrity, independence and autonomy. We are 100% transparant in the way we work. We are open about do's and don'ts."
 image: images/illustration4.jpeg
 ---
 

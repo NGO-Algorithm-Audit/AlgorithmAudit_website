@@ -1,6 +1,6 @@
 ---
 title: Knowledge base
-subtitle: 'This knowledge base is a collection of readworthy articles, books and other publications from various disciplines about algorithmic fairness. Each piece of writing has been summarized and reviewed by our team.'
+subtitle: 'This knowledge base is a collection of readworthy articles, books and other publications from various disciplines about algorithmic fairness. Each piece of writing has been summarized and reviewed.'
 description: ''
 image: images/illustration3.jpeg
 ---
