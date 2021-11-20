@@ -15,8 +15,8 @@ Features:
   feature_item:
   - name: Auditing algorithms
     icon: fas fa-search
-    content: The audit commission we compose perform ethical review of algorithms
-      in a holistic and context-sensitive way that is mindful of societal impact.
+    content: Our audit commissions conduct ethical reviews of algorithms in a holistic
+      and context-sensitive way that is mindful of societal impact.
   - name: Independent
     icon: fas fa-star-of-life
     content: We are a nonprofit organization and our conditions ensure the independence,
