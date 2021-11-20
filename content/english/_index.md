@@ -68,31 +68,45 @@ Societal_impact:
   enable: true
   content: Current legislation falls short to
   service_item:
-  - title: Societal impact
+  - title: Why we exist
     images:
     - images/societal-impact.svg
-    content: "Existing and proposed legislations are not enough to realise ethical
+    content: "Algorithm Audit was founded on the idea that ethics in AI and machine
+      learning urgently needs case-based experience and a bottom-up approach. We believe
+      existing and proposed legislation is and will not suffice to realize ethical
       algorithms. Why not?\n- The conditions given in [GDPR Article 22 (2)](https://gdpr-info.eu/art-22-gdpr/)
-      under which automated decision-making (ADM), including profiling, is allowed
-      are open for broad interpretation. Allowing ADM for the sake of contract agreement
-      opens the door for large scale unethical algorithmic practices without public
-      awareness.\n- The new proposed AI Act of the European Commission is a playground
-      for legal experts. The AI Act aims to minimise the risk of algorithmic discrimination,
-      but does not provide guidelines how to identify and mitigate discrimination
-      in the context of algorithms.\n\n- [Perspective 3.1.1](https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek)
+      under which automated decision-making (ADM) and profiling is allowed are open
+      for broad interpretation. Allowing wide-ranging ADM under the sole condition
+      of contract agreement opens the door for large scale unethical algorithmic practices
+      without accountability and public awareness.\n- The newly proposed [AI Act of
+      the European Commission](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206)
+      aims to regulate the use of high-risk algorithms, but remains too generic. For
+      example, it does not provide precise guidelines how to identify and mitigate
+      ethical issues such as algorithmic discrimination. The legal measures, which
+      only become effective in several years, will become a playground for legal experts
+      and lawyers. Hence, we expect that organizations will still need to make up
+      their own mind about context-sensitive ethical guidelines and procedures in
+      their use of machine learning.\n\n- [Perspective 3.1.1](https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek)
       in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
       ethical algorithms are not allowed to “discriminate and that bias should be
-      minimised”. Methods to determine what constitutes bias and what is discriminatory
-      in different contexts are not discussed.\n\n- The Impact Assessment Human Rights
-      and Algorithms (IAMA) and the Handbook for Non-Discrimination, both developed
-      by the Dutch government, mainly assess discriminatory practice by asking questions
-      and do not provide answers how to realise ethical algorithms.\n\nCase-based
-      and context sensitive is the only way to devise ethical algorithms. Taking all
-      contested algorithmic methods ultimately to court to assess discriminatory practices
-      is practically infeasible. Therefore, new bottom-up initiatives like Algorithm
-      Audit are necessary. Public knowledge should be built to debate what constitutes
-      ethical algorithms in different contexts. As such, we contribute to SDG16 –
-      Peace, Justice and Strong Institutions in the digital domain. "
+      minimised”. Missing from this judgment is a discussion of what precisely constitutes
+      bias in the context of machine learning and what would be good methods to ascertain
+      and mitigate algorithmic discrimination. Absent a clear legal framework, it
+      is up to organizations to formulate approaches to combat discrimination.\n\n-
+      The Impact Assessment Human Rights and Algorithms (IAMA) and the Handbook for
+      Non-Discrimination, both developed by the Dutch government, assess discriminatory
+      practice mainly by asking questions that is meant to stimulate self-reflection.
+      It does not provide answers or concrete guidelines how to realise ethical algorithms.\n\nAt
+      Algorithm Audit, we believe a case-based and context sensitive approach is indispensible
+      for a practical approach to ethical algorithms. We should not expect everything
+      from top-down regulation and legislation. Taking all contested algorithmic cases
+      to court is practically infeasible. Moreover, we strongly believe organizations
+      carry their own responsibility for ethical algorithms within and beyond the
+      obligation of legal compliance. Hence, new bottom-up initiatives like Algorithm
+      Audit are necessary to strengthen ethical practice in ADM and machine learning.
+      We increase public knowledge, fostering an informed debate about what ethical
+      algorithms we desire in various contexts. As such, Algorithm Audit contributes
+      to SDG16 – Peace, Justice and Strong Institutions in the digital domain. "
 Get_in_touch:
   enable: true
   title: Get in touch
