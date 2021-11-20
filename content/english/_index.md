@@ -59,7 +59,11 @@ With_whom_we_work:
     content: We work together with international experts from various backgrounds,
       e.g. ethicists, legal professionals, data scientists. The composition of audit
       commissions varies per case. Most of the experts are affiliated to academic
-      institutions.
+      institutions. The Algorithm Audit team facilitates the procurement of sufficient
+      data and context about the case, after which the experts conduct an in-depth
+      study, first individually and then collectively. Our team drafts a report that
+      condenses the varied views of the commission.The report published by Algorithm
+      Audit has been agreed upon by the commission members.
     button:
       enable: false
       label: Cases we work on
