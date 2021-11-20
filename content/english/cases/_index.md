@@ -1,6 +1,9 @@
 ---
 title: Cases
-subtitle: We work on a variety of cases. Once an audit commission has gathered and formulated an advice, the original problem statement and corresponding advice will be published here. Please [<span style="color:#005aa7"> reach out</span>](index.html#contactform) to us when you have an ethical issue for review. 
+subtitle: We are currently working on a variety of cases. Once an audit commission
+  has formulated an advice, the original problem statement and corresponding advice
+  will be published here. We are open to new cases. Please [<span style="color:#005aa7">
+  reach out</span>](index.html#contactform) to us when you a case for review.
 image: images/illustration2.jpeg
 
 ---
