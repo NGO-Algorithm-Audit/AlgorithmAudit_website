@@ -1,9 +1,7 @@
 ---
 title: "Why fairness cannot be automated"
-date: 2021-11-20
-# post image
+author: Sandra Wachter, Brent Mittelstadt, Chris Russell
 image: "images/knowledge_base/fairness_automated.png"
-# post type (regular/featured)
 type: "regular"
 ---
 

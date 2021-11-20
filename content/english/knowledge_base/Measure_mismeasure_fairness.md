@@ -1,9 +1,7 @@
 ---
 title: "The measure and mismeasure of fairness"
-date: 2021-11-20
-# post image
+author: Sam Corbett-Davies, Sharad Goel
 image: "images/knowledge_base/measure_mismeasure.png"
-# post type (regular/featured)
 type: "regular"
 ---
 
