@@ -29,7 +29,7 @@ We are a nonprofit organization supported by independent public funding. Occasio
 {{</ faq-money >}}
 
 {{< faq-share "How can I share ethical issues or knowledge?" >}}
-We are happy to receive new cases for review. And we are always open to discuss issues and knowledge in ethical algorithms. Reach out to us <a href="index.html#contactform" style="text-decoration:underline;" class="btn-link">here</a>.
+We are happy to receive new cases for review. And we are always open to discuss issues and knowledge in ethical algorithms. Reach out to us <a href="index.html#contactform" class="btn-link">here</a>.
 {{</ faq-share >}}
 
 {{< faq-washing "How do you prevent ethics washing?" >}}
