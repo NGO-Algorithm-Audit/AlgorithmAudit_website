@@ -1,13 +1,7 @@
 ---
 title: "Digitisation and the (dis)balance within the Trias Politica"
-date: 2021-11-20
-# post image
 image: "images/knowledge_base/digitalisering_disbalans_trias.png"
-# post type (regular/featured)
 type: "regular"
-# meta description
-description: "This is meta description"
-# post draft
 draft: false
 ---
 

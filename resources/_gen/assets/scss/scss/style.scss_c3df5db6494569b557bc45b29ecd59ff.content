@@ -124,7 +124,7 @@ h6,
     transition: .2s ease; }
   .btn-link:active, .btn-link:hover, .btn-link.focus, .btn-link.active {
     color: #005aa7;
-    text-decoration: none; }
+    text-decoration: underline; }
     .btn-link:active i,
     .btn-link:active svg, .btn-link:hover i,
     .btn-link:hover svg, .btn-link.focus i,
@@ -508,8 +508,6 @@ textarea.form-control {
 a.post-title {
   color: #005aa7;
   display: block; }
-  a.post-title:hover {
-    color: #8BAAD5; }
 
 .content * {
   word-break: break-word;

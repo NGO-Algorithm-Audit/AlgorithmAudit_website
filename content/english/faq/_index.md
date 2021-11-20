@@ -17,7 +17,7 @@ We are committed to balanced, careful and independent review of ethical issues. 
 {{</ faq-leaf >}}
 
 {{< faq-leaf "Is your work open-source?" >}}
-...
+All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open-source. However, not all material of audit commission gatherings we be published. Only the final advice will be published on our website.
 {{</ faq-leaf >}}
 
 {{< faq-weight_scale "What is the legitimacy of your organization?" >}}

@@ -1,16 +1,14 @@
 ---
-title: "The Ethical Algorithm"
+title: "The ethical algorithm"
+author: Michael Kearns, Aaron Roth
 date: 2021-11-16
-# post image
 image: "images/knowledge_base/ethical_algorithm.jpg"
-# post type (regular/featured)
 type: "featured"
+summary: Technically accesible and compelling book. Filled with fresh thoughts from a frontier in the fair ML community. Written by two top-tier computer scientists.
 ---
 
 
 #### Heading example
-
-Here is example of hedings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6.
 
 # Heading 1 
 <br>

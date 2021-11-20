@@ -10,13 +10,16 @@
     <div class="row">
       {{ range first 1 (where .Data.Pages "Type" "featured") }}
       <div class="col-12 mb-5 pb-5">
-        <div class="row align-items-center">
+        <div class="row align-items-center shadow rounded-lg">
           <div class="col-md-6 mb-4 mb-md-0">
-            <img src="{{ .Params.image | relURL }}" alt="{{.Title}}" class="img-fluid rounded-lg w-100" style='height: 276px; width: 420px; object-fit: contain'>
+            <div style=" margin-left: auto; margin-right: auto;">
+              <img src="{{ .Params.image | relURL }}" alt="{{.Title}}" class="img-fluid rounded-lg w-100" style='height: 276px; width: 420px; object-fit: contain;'>
+            </div>
           </div>
           <div class="col-md-6">
             <h2><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h2>
-            <p class="card-text">{{ .Summary }}</p>
+            <p class="card-text">Author: {{ .Params.author }}</p>
+            <p class="card-text">{{ .Params.summary }}</p>
             <a href="{{.Permalink}}" title="{{ i18n "readmore" }} - {{ .Title }}" class="btn btn-primary">{{ i18n "readmore" }}</a>
           </div>
         </div>
@@ -24,11 +27,14 @@
       {{ end }}
       {{ $paginator := .Paginate  (where .Data.Pages "Type" "!=" "featured") }}
       {{ range $paginator.Pages }}
-      <div class="col-lg-4 col-sm-6 mb-5">
+      <div class="col-lg-4 col-sm-6 mb-5 shadow rounded-lg">
         <div class="card border-0">
-          <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" class="card-img rounded-lg mb-4" style='height: 276px; width: 420px; object-fit: contain; margin-left: auto; margin-right: 0;'>
+          <div style=" margin-left: auto; margin-right: auto;">
+            <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" class="card-img rounded-lg mb-4" style='height: 276px;'>
+          </div>
           <div class="card-body p-0">
             <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title" style="width:90%;">{{ .Title }}</a></h3>
+            <p class="card-text">Author: {{ .Params.author }}</p>
             <p class="card-text">{{ .Summary }}</p>
             <a href="{{.Permalink}}" title="{{ i18n "readmore" }} - {{ .Title }}" class="btn btn-primary btn-sm">{{ i18n "readmore" }}</a>
           </div>
