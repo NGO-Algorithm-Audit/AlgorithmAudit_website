@@ -3,8 +3,8 @@ Banner:
   title: Case-based knowledge for ethical algorithms
   image: images/illustration.jpeg
   content: Algorithm Audit is a nonprofit organization that builds and shares knowledge
-    of ethical algorithms. We compose audit commissions that shed light
-    into ethical issues that arise in algorithmic tools and methods.
+    of ethical algorithms. Our independent audit commissions shed light on ethical
+    issues that arise in the use of algorithmic tools and methods.
   button:
     enable: false
     label: Read our white paper
@@ -15,11 +15,13 @@ Features:
   feature_item:
   - name: Auditing algorithms
     icon: fas fa-search
-    content: The audit commission we compose perform ethical review of algorithms in a holistic and context-sensitive way that is mindful of societal impact.
+    content: Our audit commissions conduct case-based ethical reviews of algorithms
+      in a holistic and context-sensitive way that is mindful of societal impact.
   - name: Independent
     icon: fas fa-star-of-life
-    content: We are a nonprofit organization and our conditions ensure the independence,
-      academic quality and diversity of our audit commissions.
+    content: By working nonprofit and under explicit terms and conditions, we ensure
+      the independence, academic quality and diversity of our audit commissions and
+      our ethical advice.
   - name: Ethics beyond compliance
     icon: fas fa-leaf
     content: We help organizations committed to ethical algorithms to make judgments
@@ -30,7 +32,7 @@ Features:
       collective knowledge how to devise and use algorithms in an ethical way.
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
-    content: From our case-based knowledge data scientists can distill best practices
+    content: From our case-based knowledge, data scientists can distill best practices
       for ethical algorithms. Over time a helpful resource for techno-ethical issues
       will emerge.
   - name: Partners
@@ -64,26 +66,33 @@ With_whom_we_work:
       link: "#/cases"
 Societal_impact:
   enable: true
-  content: Current legislation falls short to 
+  content: Current legislation falls short to
   service_item:
-    - title : Societal impact
-      images:
-      - "images/societal-impact.svg"
-      content: "Existing and proposed legislations are not enough to realise ethical algorithms. Why not?
-
-      - The conditions given in [GDPR Article 22 (2)](https://gdpr-info.eu/art-22-gdpr/) under which automated decision-making (ADM), including profiling, is allowed are open for broad interpretation. Allowing ADM for the sake of contract agreement opens the door for large scale unethical algorithmic practices without public awareness.      
-
-      - The new proposed AI Act of the European Commission is a playground for legal experts. The AI Act aims to minimise the risk of algorithmic discrimination, but does not provide guidelines how to identify and mitigate discrimination in the context of algorithms. 
-      
-
-      - [Perspective 3.1.1](https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek) in the Guidelines for Algorithms of the Dutch Court of Auditors argues that ethical algorithms are not allowed to “discriminate and that bias should be minimised”. Methods to determine what constitutes bias and what is discriminatory in different contexts are not discussed.
-      
-
-      - The Impact Assessment Human Rights and Algorithms (IAMA) and the Handbook for Non-Discrimination, both developed by the Dutch government, mainly assess discriminatory practice by asking questions and do not provide answers how to realise ethical algorithms.
-
-
-      Case-based and context sensitive is the only way to devise ethical algorithms. Taking all contested algorithmic methods ultimately to court to assess discriminatory practices is practically infeasible. Therefore, new bottom-up initiatives like Algorithm Audit are necessary. Public knowledge should be built to debate what constitutes ethical algorithms in different contexts. As such, we contribute to SDG16 – Peace, Justice and Strong Institutions in the digital domain.
-"
+  - title: Societal impact
+    images:
+    - images/societal-impact.svg
+    content: "Existing and proposed legislations are not enough to realise ethical
+      algorithms. Why not?\n- The conditions given in [GDPR Article 22 (2)](https://gdpr-info.eu/art-22-gdpr/)
+      under which automated decision-making (ADM), including profiling, is allowed
+      are open for broad interpretation. Allowing ADM for the sake of contract agreement
+      opens the door for large scale unethical algorithmic practices without public
+      awareness.\n- The new proposed AI Act of the European Commission is a playground
+      for legal experts. The AI Act aims to minimise the risk of algorithmic discrimination,
+      but does not provide guidelines how to identify and mitigate discrimination
+      in the context of algorithms.\n\n- [Perspective 3.1.1](https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek)
+      in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
+      ethical algorithms are not allowed to “discriminate and that bias should be
+      minimised”. Methods to determine what constitutes bias and what is discriminatory
+      in different contexts are not discussed.\n\n- The Impact Assessment Human Rights
+      and Algorithms (IAMA) and the Handbook for Non-Discrimination, both developed
+      by the Dutch government, mainly assess discriminatory practice by asking questions
+      and do not provide answers how to realise ethical algorithms.\n\nCase-based
+      and context sensitive is the only way to devise ethical algorithms. Taking all
+      contested algorithmic methods ultimately to court to assess discriminatory practices
+      is practically infeasible. Therefore, new bottom-up initiatives like Algorithm
+      Audit are necessary. Public knowledge should be built to debate what constitutes
+      ethical algorithms in different contexts. As such, we contribute to SDG16 –
+      Peace, Justice and Strong Institutions in the digital domain. "
 Get_in_touch:
   enable: true
   title: Get in touch
