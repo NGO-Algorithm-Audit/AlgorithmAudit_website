@@ -22,7 +22,7 @@ Features:
     icon: fas fa-star-of-life
     content: By working nonprofit and under explicit terms and conditions, we ensure
       the independence, academic quality and diversity of our audit commissions and
-      our ethical advice.
+      of our ethical advice.
   - name: Ethics beyond compliance
     icon: fas fa-leaf
     content: We help organizations committed to ethical algorithms to make judgments
@@ -59,7 +59,7 @@ With_whom_we_work:
     - images/howwework.svg
     content: We work together with international experts from various backgrounds,
       e.g. ethicists, legal professionals, data scientists. The composition of audit
-      commissions varies per case. Most of the experts are affiliated to academic
+      commissions varies per case. Most of the experts are affiliated with academic
       institutions. The Algorithm Audit team facilitates the procurement of sufficient
       data and context about the case, after which the experts conduct an in-depth
       study, first individually and then collectively. Our team drafts a report that
@@ -87,31 +87,35 @@ Societal_impact:
       the European Commission](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206)
       aims to regulate the use of high-risk algorithms, but remains too generic. For
       example, it does not provide precise guidelines how to identify and mitigate
-      ethical issues such as algorithmic discrimination. The legal measures, which
-      only become effective in several years, will become a playground for legal experts
-      and lawyers. Hence, we expect that organizations will still need to make up
-      their own mind about context-sensitive ethical guidelines and procedures in
-      their use of machine learning.\n\n- [Perspective 3.1.1](https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek)
+      ethical issues such as algorithmic discrimination. In addition, machine learning
+      practice that falls outside the high-risk category is not exempt from major
+      ethical concerns. The legal measures, which only become effective in several
+      years, will become a playground for legal experts and lawyers and will not directly
+      offer concrete and extensive guidelines on ethical algorithms for organizations
+      in industry and government. Hence, organizations will still need to make up
+      their own mind about context-specific ethical guidelines and procedures in their
+      use of machine learning.\n\n- [Perspective 3.1.1](https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek)
       in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
       ethical algorithms are not allowed to “discriminate and that bias should be
       minimised”. Missing from this judgment is a discussion of what precisely constitutes
       bias in the context of machine learning and what would be good methods to ascertain
       and mitigate algorithmic discrimination. Absent a clear legal framework, it
-      is up to organizations to formulate approaches to combat discrimination.\n\n-
+      is up to organizations to formulate context-sensitive approaches to combat discrimination.\n\n-
       The Impact Assessment Human Rights and Algorithms (IAMA) and the Handbook for
       Non-Discrimination, both developed by the Dutch government, assess discriminatory
-      practice mainly by asking questions that is meant to stimulate self-reflection.
-      It does not provide answers or concrete guidelines how to realise ethical algorithms.\n\nAt
-      Algorithm Audit, we believe a case-based and context sensitive approach is indispensible
-      for a practical approach to ethical algorithms. We should not expect everything
-      from top-down regulation and legislation. Taking all contested algorithmic cases
-      to court is practically infeasible. Moreover, we strongly believe organizations
-      carry their own responsibility for ethical algorithms within and beyond the
-      obligation of legal compliance. Hence, new bottom-up initiatives like Algorithm
-      Audit are necessary to strengthen ethical practice in ADM and machine learning.
-      We increase public knowledge, fostering an informed debate about what ethical
-      algorithms we desire in various contexts. As such, Algorithm Audit contributes
-      to SDG16 – Peace, Justice and Strong Institutions in the digital domain. "
+      practice mainly by asking questions that are meant to stimulate self-reflection.
+      It does not provide answers or concrete guidelines how to realise ethical algorithms.\n\nWe
+      believe a case-based and context sensitive approach is indispensible for a practical
+      approach to ethical algorithms. We should not expect everything from top-down
+      regulation and legislation. Taking all contested algorithmic cases to court
+      is practically infeasible. Moreover, we strongly believe organizations carry
+      their own responsibility for ethical algorithms within and beyond the obligation
+      of legal compliance. Hence, new bottom-up initiatives like Algorithm Audit are
+      necessary to support these organizations and to strengthen ethical practice
+      in ADM and machine learning. We increase public knowledge and stimulate an informed
+      debate about what ethical algorithms we desire as a society in various contexts.
+      As such, Algorithm Audit contributes to SDG16 – Peace, Justice and Strong Institutions
+      in the digital domain. "
 Get_in_touch:
   enable: true
   title: Get in touch
