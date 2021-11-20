@@ -106,16 +106,18 @@ Societal_impact:
       practice mainly by asking questions that are meant to stimulate self-reflection.
       It does not provide answers or concrete guidelines how to realise ethical algorithms.\n\nWe
       believe a case-based and context sensitive approach is indispensible for a practical
-      approach to ethical algorithms. We should not expect everything from top-down
-      regulation and legislation. Taking all contested algorithmic cases to court
-      is practically infeasible. Moreover, we strongly believe organizations carry
-      their own responsibility for ethical algorithms within and beyond the obligation
-      of legal compliance. Hence, new bottom-up initiatives like Algorithm Audit are
-      necessary to support these organizations and to strengthen ethical practice
-      in ADM and machine learning. We increase public knowledge and stimulate an informed
-      debate about what ethical algorithms we desire as a society in various contexts.
-      As such, Algorithm Audit contributes to SDG16 – Peace, Justice and Strong Institutions
-      in the digital domain. "
+      approach to ethical algorithms. We should not expect top-down regulation and
+      legislation to solve all ethical problems in AI and machine learning. Taking
+      all contested algorithmic cases to court is practically infeasible. More importantly,
+      organizations will always carry their own responsibility for ethical algorithms
+      within and beyond the obligation of legal compliance. Hence, new bottom-up initiatives
+      like Algorithm Audit are necessary to support these organizations and to strengthen
+      ethical practice in ADM and machine learning. We provide a platform where experts
+      in AI ethics can interact with, learn from and steer actual algorithmic practice
+      and surrounding ethical concerns. We increase public knowledge and stimulate
+      an informed debate about what ethical algorithms we desire as a society in various
+      contexts. As such, Algorithm Audit contributes to SDG16 – Peace, Justice and
+      Strong Institutions in the digital domain. "
 Get_in_touch:
   enable: true
   title: Get in touch
