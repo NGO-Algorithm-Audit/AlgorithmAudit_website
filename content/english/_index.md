@@ -15,12 +15,13 @@ Features:
   feature_item:
   - name: Auditing algorithms
     icon: fas fa-search
-    content: Our audit commissions conduct ethical reviews of algorithms in a holistic
-      and context-sensitive way that is mindful of societal impact.
+    content: Our audit commissions conduct case-based ethical reviews of algorithms
+      in a holistic and context-sensitive way that is mindful of societal impact.
   - name: Independent
     icon: fas fa-star-of-life
-    content: We are a nonprofit organization and our conditions ensure the independence,
-      academic quality and diversity of our audit commissions.
+    content: By working nonprofit and under explicit terms and conditions, we ensure
+      the independence, academic quality and diversity of our audit commissions and
+      our ethical advice.
   - name: Ethics beyond compliance
     icon: fas fa-leaf
     content: We help organizations committed to ethical algorithms to make judgments
@@ -31,7 +32,7 @@ Features:
       collective knowledge how to devise and use algorithms in an ethical way.
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
-    content: From our case-based knowledge data scientists can distill best practices
+    content: From our case-based knowledge, data scientists can distill best practices
       for ethical algorithms. Over time a helpful resource for techno-ethical issues
       will emerge.
   - name: Partners
