@@ -1,8 +1,8 @@
 ---
-title: "Book ∆"
-date: 2020-04-18T10:07:21+06:00
+title: "Digitisation and the (dis)balance within the Trias Politica"
+date: 2021-11-20
 # post image
-image: "images/blog/post-5.jpg"
+image: "images/knowledge_base/digitalisering_disbalans_trias.png"
 # post type (regular/featured)
 type: "regular"
 # meta description

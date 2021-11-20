@@ -1,14 +1,10 @@
 ---
-title: "Paper Z"
-date: 2020-04-18T10:07:21+06:00
+title: "The measure and mismeasure of fairness"
+date: 2021-11-20
 # post image
-image: "images/blog/post-3.jpg"
+image: "images/knowledge_base/measure_mismeasure.png"
 # post type (regular/featured)
 type: "regular"
-# meta description
-description: "This is meta description"
-# post draft
-draft: false
 ---
 
 

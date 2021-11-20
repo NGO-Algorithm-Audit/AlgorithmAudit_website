@@ -1,14 +1,10 @@
 ---
-title: "Article ß"
-date: 2020-04-18T10:07:21+06:00
+title: "The Ethical Algorithm"
+date: 2021-11-16
 # post image
-image: "images/blog/post-4.jpg"
+image: "images/knowledge_base/ethical_algorithm.jpg"
 # post type (regular/featured)
-type: "regular"
-# meta description
-description: "This is meta description"
-# post draft
-draft: false
+type: "featured"
 ---
 
 
