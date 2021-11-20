@@ -1,25 +1,22 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
-<div class="row">
-  <div class="col-12 mb-5 pb-5"></div>
 
-    <div class="col-md-6">
-      <div class="p-5 shadow rounded-lg">
-        <h3 class="mb-4 commission" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
-        <div class="col-md-12">
+<div class="container">
+  <div class="row" style="display: flex; align-items: center;">
+
+      <div class="col-md-6">
+        <div class="p-5 shadow rounded-lg">
+          <h3 class="mb-4 commission" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
           <p>{{ .Get 2 | markdownify }}</p>
         </div>
-
       </div>
-    </div>
 
-    <div class="col-md-6">
-      <div class="p-5 shadow rounded-lg">
-        <h3 class="mb-4 advisory" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 1 | markdownify }}</h3>
-        <p>{{ .Get 3 | markdownify }}</p>
-        <p>{{ .Inner | markdownify }}</p>
+      <div class="col-md-6">
+        <div class="p-5 shadow rounded-lg">
+          <h3 class="mb-4 advisory" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 1 | markdownify }}</h3>
+          <p>{{ .Get 3 | markdownify }}</p>
+        </div>
       </div>
-    </div>
 
   </div>
 </div>
