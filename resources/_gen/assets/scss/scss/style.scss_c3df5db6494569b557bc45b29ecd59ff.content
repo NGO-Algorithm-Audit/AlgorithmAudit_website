@@ -410,6 +410,60 @@ textarea.form-control {
     left: -30px;
     top: 3px; }
 
+.board {
+  position: relative; }
+  .board::before {
+    position: absolute;
+    content: "\f2b9";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -30px;
+    top: 3px; }
+  .board svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 3px; }
+
+.commission {
+  position: relative; }
+  .commission::before {
+    position: absolute;
+    content: "\f086";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -30px;
+    top: 3px; }
+  .commission svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 3px; }
+
+.advisory {
+  position: relative; }
+  .advisory::before {
+    position: absolute;
+    content: "\f059";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -30px;
+    top: 3px; }
+  .advisory svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 3px; }
+
 .column {
   display: table-row;
   margin-top: 50px;
