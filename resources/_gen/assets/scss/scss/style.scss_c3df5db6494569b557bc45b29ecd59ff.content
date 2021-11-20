@@ -66,7 +66,6 @@ h6,
   font-size: 16px;
   font-family: "Lato", sans-serif;
   font-weight: 600;
-  text-transform: capitalize;
   padding: 15px 30px;
   border-radius: 30px;
   border: 0;
@@ -188,7 +187,8 @@ select {
     outline: 0; }
 
 a:hover {
-  color: #0AA8A7; }
+  color: #005aa7;
+  text-decoration: underline; }
 
 .slick-slide {
   outline: 0; }
@@ -427,7 +427,6 @@ textarea.form-control {
 .nav-item {
   margin: 0; }
   .nav-item .nav-link {
-    text-transform: capitalize;
     font-weight: 700; }
 
 .navbar-light .navbar-nav .nav-link {
@@ -472,10 +471,10 @@ textarea.form-control {
   display: block;
   padding: 5px 0;
   font-size: 16px;
-  color: #777;
+  color: #005aa7;
   margin: 8px 0; }
   .footer-list a:hover {
-    color: #0AA8A7; }
+    color: #005aa7; }
 
 .custom_div_parent {
   position: relative; }
@@ -490,7 +489,7 @@ textarea.form-control {
   top: 50%; }
 
 .social-icons a {
-  color: #305494;
+  color: #005aa7;
   text-align: center;
   height: 35px;
   width: 35px;
@@ -533,10 +532,10 @@ a.post-title {
   font-weight: 600; }
 
 .content a {
-  color: #777;
+  color: #005aa7;
   border-bottom: 1px dotted #ECECEC; }
   .content a:hover {
-    color: #0AA8A7; }
+    color: #005aa7; }
 
 .content ol,
 .content ul {

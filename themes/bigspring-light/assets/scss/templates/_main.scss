@@ -24,11 +24,11 @@
   display: block;
   padding: 5px 0;
   font-size: 16px;
-  color: $text-color;
+  color: #005aa7;
   margin: 8px 0;
 
   &:hover {
-    color: $primary-color;
+    color: #005aa7;
   }
 }
 
@@ -48,7 +48,7 @@
 }
 
 .social-icons a {
-  color: #305494;
+  color: #005aa7;
   text-align: center;
   height: 35px;
   width: 35px;
@@ -106,11 +106,11 @@ a.post-title {
   }
 
   a {
-    color: $text-color;
+    color: #005aa7;
     border-bottom: 1px dotted $border-color;
 
     &:hover {
-      color: $primary-color;
+      color: #005aa7;
     }
   }
 
