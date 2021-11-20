@@ -420,13 +420,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .board svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .commission {
   position: relative; }
@@ -438,13 +438,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .commission svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .advisory {
   position: relative; }
@@ -456,13 +456,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .advisory svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .column {
   display: table-row;

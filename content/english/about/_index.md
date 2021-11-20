@@ -4,10 +4,8 @@ subtitle: "Algorithm Audit consists of an executive board, audit commissions and
 image: images/illustration5.jpeg
 ---
 
-{{< about_board "Board members">}}
-Hooi
-{{</ about_board >}}
+{{< about_board "Board members" "Jurriaan Parie" "Heeyjooh" "Ariën Voogt" "Heeyjaah">}}
 
-{{< about_commission_advisory "Audit commissions" "Advisory board">}}
+{{< about_commission_advisory "Audit commissions" "Advisory board" "1" "2">}}
 Hooi
 {{</ about_commission_advisory >}}

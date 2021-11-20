@@ -7,7 +7,7 @@
       <div class="p-5 shadow rounded-lg">
         <h3 class="mb-4 commission" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
         <div class="col-md-12">
-          <p>{{ .Inner | markdownify }}</p>
+          <p>{{ .Get 2 | markdownify }}</p>
         </div>
 
       </div>
@@ -16,6 +16,7 @@
     <div class="col-md-6">
       <div class="p-5 shadow rounded-lg">
         <h3 class="mb-4 advisory" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 1 | markdownify }}</h3>
+        <p>{{ .Get 3 | markdownify }}</p>
         <p>{{ .Inner | markdownify }}</p>
       </div>
     </div>
