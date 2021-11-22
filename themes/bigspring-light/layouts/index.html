@@ -9,7 +9,7 @@
       <!-- text -->
       <div class="col-md-5">
         <h1 class="mb-3" style="font-size: 36px; color: #005aa7; width:90%; margin-left: 0; margin-right: auto;">{{ .title | markdownify }}</h1>
-        <p class="mb-4" style="width:80%; margin-left: 0; margin-right: auto; padding: 10px 0 25px 0;">{{ .content | markdownify }}</p>
+        <p class="mb-4" style="width:100%; margin-left: 0; margin-right: auto; padding: 10px 0 25px 0;">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
         <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary" style="text-transform:none;">{{ .label }}</a></div>
