@@ -1,8 +1,10 @@
 ---
 title: "About"
-subtitle: "Algorithm Audit consists of an executive board, audit commissions and an advisory board. Learn more about the people affiliated to Algorithm Audit."
+subtitle: "Algorithm Audit consists of an executive board, audit commissions and an advisory board. Learn more about Algorithm Audit."
 image: images/illustration5.jpeg
 ---
+
+{{< about_algorithm_audit "About Algorithm Audit" "Algorithm Audit was founded in the summer of 2021, ... ">}}
 
 {{< about_board "Board members" "Jurriaan Parie" "Heeyjooh" "Ariën Voogt" "Heeyjaah">}}
 

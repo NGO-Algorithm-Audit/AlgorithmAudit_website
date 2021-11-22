@@ -410,6 +410,24 @@ textarea.form-control {
     left: -30px;
     top: 3px; }
 
+.balance {
+  position: relative; }
+  .balance::before {
+    position: absolute;
+    content: "\f24e";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -30px;
+    top: 0px; }
+  .balance svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 0px; }
+
 .board {
   position: relative; }
   .board::before {
