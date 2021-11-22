@@ -45,7 +45,7 @@ How_we_work:
   service_item:
   - title: How we work
     images:
-    - images/howwework2.svg
+    - images/howwework.svg
     content: ''
     button:
       enable: true
