@@ -4,7 +4,7 @@ subtitle: "Algorithm Audit consists of an executive board, audit commissions and
 image: images/illustration5.jpeg
 ---
 
-{{< about_algorithm_audit "About Algorithm Audit" "Algorithm Audit was founded in the summer of 2021, ... ">}}
+{{< about_algorithm_audit "About Algorithm Audit" "Algorithm Audit was founded on the idea that ethics in algorithmic methods urgently needs case-based experience and a bottom-up approach.">}}
 
 {{< about_board "Board members" "Jurriaan Parie" "Heeyjooh" "Ariën Voogt" "Heeyjaah">}}
 

@@ -38,8 +38,8 @@ Features:
       will emerge.
   - name: Partners
     icon: fas fa-hands-helping
-    content: Removing boundaries between public and private organizations that have
-      similar ethical concerns, we believe in a collective approach to ethical algorithms.
+    content: Let's remove boundaries between public and private organizations that face
+      similar ethical concerns. We believe in a collective approach to realise ethical algorithms.
 How_we_work:
   enable: true
   service_item:
@@ -61,7 +61,7 @@ With_whom_we_work:
       e.g. ethicists, legal professionals, data scientists. The composition of audit
       commissions varies per case. Most of the experts are affiliated with academic
       institutions. The Algorithm Audit team facilitates the procurement of sufficient
-      data and context about the case, after which the experts conduct an in-depth
+      background information about the case, after which the experts conduct an in-depth
       study, first individually and then collectively. Our team drafts a report that
       condenses the varied views of the commission.The report published by Algorithm
       Audit has been agreed upon by the commission members.
@@ -76,8 +76,7 @@ Why_we_exist:
   - title: Why we exist
     images:
     - images/societal-impact.svg
-    content: "Algorithm Audit was founded on the idea that ethics in AI and machine
-      learning urgently needs case-based experience and a bottom-up approach. We believe
+    content: "Algorithm Audit was founded on the idea that ethics in algorithmic methods urgently needs case-based experience and a bottom-up approach. We believe
       existing and proposed legislation is and will not suffice to realize ethical
       algorithms. Why not?\n- The conditions given in [GDPR Article 22 (2)](https://gdpr-info.eu/art-22-gdpr/)
       under which automated decision-making (ADM) and profiling is allowed are open
