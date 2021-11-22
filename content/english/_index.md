@@ -75,7 +75,7 @@ Why_we_exist:
   service_item:
   - title: Why we exist
     images:
-    - images/societal-impact.svg
+    - images/societal_impact.svg
     content: "Algorithm Audit was founded on the idea that ethics in algorithmic methods urgently needs case-based experience and a bottom-up approach. We believe
       existing and proposed legislation is and will not suffice to realize ethical
       algorithms. Why not?\n- The conditions given in [GDPR Article 22 (2)](https://gdpr-info.eu/art-22-gdpr/)
