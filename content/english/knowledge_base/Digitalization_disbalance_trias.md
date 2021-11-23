@@ -1,5 +1,5 @@
 ---
-title: "Digitalization and the (dis)balance within the Trias Politica"
+title: "Digitalization and the (dis)balanced Trias Politica"
 author: Reijer Passchier
 image: "images/knowledge_base/digitalisering_disbalans_trias.png"
 type: "regular"
@@ -9,7 +9,7 @@ draft: false
 
 #### Heading example
 
-Here is example of hedings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6.
+Here is example of headings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6.
 
 # Heading 1 
 <br>
