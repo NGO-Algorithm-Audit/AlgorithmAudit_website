@@ -1,5 +1,5 @@
 ---
-title: "Why fairness cannot be automated"
+title: "Why Fairness cannot be Automated"
 author: Sandra Wachter, Brent Mittelstadt, Chris Russell
 image: "images/knowledge_base/fairness_automated.png"
 type: "regular"

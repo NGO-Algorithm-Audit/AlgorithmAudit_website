@@ -1,5 +1,5 @@
 ---
-title: "Digitalization and the (dis)balanced Trias Politica"
+title: "Digitalization and the (Dis)balanced Trias Politica"
 author: Reijer Passchier
 image: "images/knowledge_base/digitalisering_disbalans_trias.png"
 type: "regular"
