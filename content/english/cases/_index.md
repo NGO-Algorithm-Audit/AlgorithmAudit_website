@@ -24,11 +24,11 @@ From a statistical perspective, to qualify an algorithm as discriminatory, solel
 
 How to resolve this gridlock? Researchers in fair machine learning warn not to debate ‘At what correlation rate variables act as predictor variables or not?' (see [<span style="color:#005aa7">paper</span>](https://arxiv.org/abs/1808.00023)). Instead, researchers advise to examine whether including protected variables in the model hold predictive power. If so, researchers advocate to include protected variables in the prediction model such that the role of proxies becomes moot.
 
-###### <span style="color:#005aa7"> Achieving ethical algorithms trough deliberation</span>
+###### <span style="color:#005aa7"> Deliberation</span>
 
 However, including protected variables – such as gender, race and age – in algorithmic models is not always desirable or even practically achievable. In fact, this aligns best with daily practices in which algorithms are developed. In such, selecting legitimate variables on which fair decisions can be made needs careful inspection and deliberation. By composing independent, professional and diverse audit commissions, Algorithm Audit provides ethical reviews of the ethical-statistical gridlock in a holistic and context-sensitive way that is mindful of societal impact.
 
-###### <span style="color:#005aa7">Case</span>
+###### <span style="color:#005aa7">Partners</span>
 
 We are working with academic partners on an advice regarding the above-mentioned ethical issue that emerged at the Municipality of Rotterdam. For this project we are supported by the [<span style="color:#005aa7">SIDN Fund</span>](https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool).
 
