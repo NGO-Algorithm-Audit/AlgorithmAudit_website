@@ -7,7 +7,7 @@ subtitle: We are currently working on a variety of cases. Once an audit commissi
   
   We are open to new cases. Please [<span style="color:#005aa7">
   reach out</span>](index.html#contactform) to us when you know a case for review.
-image: images/illustration2.jpeg
+image: /images/illustration_cases.svg
 
 ---
 {{< cases "Ethical risk assessment tool" "The composition of the audit commission for this case is made publicly available once the final advice of the commission is published.">}} This project sheds light on the complex tension between fairness, non-discrimination and statistics in risk assessment tools. Which characteristics of citizens and customers should be considered as protected variables and proxies for protected variables? To what extent and under what circumstances should these (proxy)variables be included or excluded from algorithmic predictions?
