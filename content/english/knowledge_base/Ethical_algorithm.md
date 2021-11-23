@@ -7,8 +7,6 @@ summary: Technically accesible and compelling book. Filled with fresh thoughts f
   a frontier in the fair ML community. Written by two top-tier computer scientists.
 
 ---
-#### The Ethical Algorithm
-
 ###### **Authors: Michael Kearns, Aaron Roth**
 
 Books on ethics and algorithms are mushrooming. In this rapidly growing domain, _The Ethical Algorithm_ is a must-read for both technical and non-technical readers.
