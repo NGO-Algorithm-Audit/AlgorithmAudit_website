@@ -17,7 +17,7 @@ At the same time, the authors (two heavyweight researchers in theoretical comput
 
 Although the linkage between the two main parts of the book (algorithmic privacy and algorithmic fairness) remains unexplained, the concepts discussed in both parts are utmost compelling. Like the concept of _Pareto frontiers_ that constitute sets of “reasonable” choices for the trade-off between accuracy and fairness of algorithmic models. Pareto frontiers make tradeoffs between accuracy and fairness as quantitative as possible, but no more so. The numeric curves are “necessarily silent about which point we should choose along the frontier, because that is a matter of judgment about the relative importance of accuracy and fairness”. Kearns and Roth argue that “we must accept this bargain for strong fairness guarantees”.
 
-Why not to avoid/use algorithms altogether? _The_ _Ethical Algorithm_ presents solid answers on fundamental questions as:
+Why not to avoid/use algorithms altogether? _The_ _Ethical Algorithm_ presents solid answers on fundamental questions:
 
 > “Trade-offs between how fair decision-making models are and how accurate they are have always been implicitly present in human decision-making; the data centric, algorithmic era has just brought them to the fore and encouraged us to reason about them more precisely.”
 
