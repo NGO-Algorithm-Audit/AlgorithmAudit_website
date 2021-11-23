@@ -21,4 +21,4 @@ Why not to avoid/use algorithms altogether? _The_ _Ethical Algorithm_ presents s
 
 > “Trade-offs between how fair decision-making models are and how accurate they are have always been implicitly present in human decision-making; the data centric, algorithmic era has just brought them to the fore and encouraged us to reason about them more precisely.”
 
-Guided by books of this quality, the daunting task to realize a fair digital future gets a little bit less complicated.
+Guided by books of this quality, the daunting task to realize a fair digital future becomes a little bit less complicated.
