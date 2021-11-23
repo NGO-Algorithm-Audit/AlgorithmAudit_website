@@ -595,7 +595,8 @@ a.post-title {
 .content h4,
 .content h5,
 .content h6 {
-  margin-bottom: col; }
+  margin-bottom: col;
+  color: #005aa7; }
 
 .content strong {
   font-weight: 600; }

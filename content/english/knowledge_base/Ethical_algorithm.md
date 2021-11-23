@@ -1,5 +1,5 @@
 ---
-title: The ethical algorithm
+title: The Ethical Algorithm
 author: Michael Kearns, Aaron Roth
 image: images/knowledge_base/ethical_algorithm.png
 type: featured
