@@ -1,13 +1,10 @@
 ---
 title: Cases
-subtitle: We are working on a variety of cases. Once an audit commission
-  has gathered and examined the ethical issue, the original problem statement and corresponding advice
-  will be published on this website.
-  
-  
-  We are open to new cases. Please [<span style="color:#005aa7">
-  reach out</span>](index.html#contactform) to us when you know a case for review.
-image: /images/illustration_cases.svg
+subtitle: |-
+  We are working on a variety of cases. Once an audit commission has gathered and examined the ethical issue, the original problem statement and corresponding advice will be published on this website.
+
+  We are open to new cases. Please [<span style="color:#005aa7"> reach out</span>](index.html#contactform) to us when you know a case for review.
+image: "/images/illustration_cases.svg"
 
 ---
 {{< cases "Ethical risk assessment tool" "The composition of the audit commission for this case is made publicly available once the final advice of the commission is published.">}} This project sheds light on the complex tension between fairness, non-discrimination and statistics in risk assessment tools. Which characteristics of citizens and customers should be considered as protected variables and proxies for protected variables? To what extent and under what circumstances should these (proxy)variables be included or excluded from algorithmic predictions?
@@ -22,11 +19,11 @@ From a statistical perspective, to qualify an algorithm as discriminatory, solel
 
 ###### <span style="color:#005aa7">Fair ML research</span>
 
-How to resolve this gridlock? Researchers in fair machine learning warn not to debate ‘At what correlation rate variables act as predictor variables or not?' (see [<span style="color:#005aa7">paper</span>](https://arxiv.org/abs/1808.00023)). Instead, researchers advise to examine whether including protected variables in the model hold predictive power. If so, researchers advocate to include protected variables in the prediction model such that the role of proxies becomes moot.
+How to resolve this gridlock? Researchers in fair machine learning warn not to debate at what correlation rate variables act as predictor variables or not (see [<span style="color:#005aa7">paper</span>](https://arxiv.org/abs/1808.00023)). Instead, researchers advise to examine whether including protected variables in the model hold predictive power. If so, researchers frequently advocate to include protected variables in the prediction model such that the role of proxies becomes moot. The deliberate use of protected variables might sound counter-intuitive, but it allows to check and correct the algorithmic model for actual discriminatory bias.
 
 ###### <span style="color:#005aa7"> Deliberation</span>
 
-However, including protected variables – such as gender, race and age – in algorithmic models is not always desirable or even practically achievable. In fact, this aligns best with daily practices in which algorithms are developed. In such, selecting legitimate variables on which fair decisions can be made needs careful inspection and deliberation. By composing independent, professional and diverse audit commissions, Algorithm Audit provides ethical reviews of the ethical-statistical gridlock in a holistic and context-sensitive way that is mindful of societal impact.
+However, including protected variables – such as gender, race and age – in algorithmic models is not always desirable. Moreover, it is often not even practically achievable. Selecting legitimate variables on which fair decisions can be made needs careful inspection and deliberation. By composing independent, professional and diverse audit commissions, Algorithm Audit provides ethical reviews of the ethical-statistical gridlock in a holistic and context-sensitive way that is mindful of societal impact.
 
 ###### <span style="color:#005aa7">Partners</span>
 
