@@ -1,5 +1,5 @@
 #################### default parameters ################################
-logo = "uploads/logo_en_tekst_aa_v2.png"
+logo = "images/logo.svg"
 logo_width = "200px"
 # OpenGraph / Twitter Card metadata
 description = "Algorithm Audit ethical algorithm"
