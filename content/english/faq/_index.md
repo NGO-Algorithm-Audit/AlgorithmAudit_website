@@ -1,12 +1,13 @@
 ---
-title: "Frequently Asked Questions"
-subtitle: "At Algorithm Audit, we hold high standards regarding integrity, independence and autonomy. We are 100% transparant in the way we work. We are open about do's and don'ts."
+title: Frequently Asked Questions
+subtitle: Algorithm Audit commits to high standards regarding integrity, independence
+  and accountability. We want to be 100% transparant in the way we work. We are open
+  to your questions and remarks. Have something to share? <a href="index.html#contactform"
+  class="btn-link">Contact us</a>.
 image: images/illustration4.jpeg
----
 
-{{< faq-review "What exactly do you review?" >}}
-We review algorithmic decision and prediction models, the data and variables used and the organizational processes in which the models are involved. We believe a balanced ethical judgment of algorithmic processes must take the larger context into account. This means that our commissions will for example look at the nature of the provided product or service, the individual and social consequences of algorithmic predictions or decisions, the possibility of appeal, the level of internal control.
-{{</ faq-review >}}
+---
+{{< faq-review "What exactly do you review?" >}} We review algorithmic decision and prediction models, the type of data and variables used and the organizational processes in which the models are involved. We believe a balanced ethical judgment of algorithmic processes must take the larger context into account. This means that our commissions will for example look at the nature of the provided product or service, the individual and social consequences of algorithmic predictions or decisions, the possibility of appeal, the level of internal control. {{</ faq-review >}}
 
 {{< faq "What organizations may present a case?" >}}
 Basically every organization, public or private, big or small, is welcome to present a case. Depending on the nature of the case, we decide whether it is suitable for review by an audit commission.
@@ -16,9 +17,7 @@ Basically every organization, public or private, big or small, is welcome to pre
 We are committed to balanced, careful and independent review of ethical issues. We depend on the experts in our audit commissions to carry out these evaluations. And we serve the community by making all our advice and knowledge public. Working nonprofit suits our activities and goals best.
 {{</ faq-leaf >}}
 
-{{< faq-leaf "Is your work open-source?" >}}
-All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open-source. However, not all material of audit commission gatherings we be published. Only the final advice will be published on our website.
-{{</ faq-leaf >}}
+{{< faq-leaf "Is your work open source?" >}} All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open source. However, we only publish the final advice on our website and not other materials and documentation internal to the case, because this often contains sensitive information. {{</ faq-leaf >}}
 
 {{< faq-weight_scale "What is the legitimacy of your organization?" >}}
 The audit commissions that carry out the reviews are independent, academic, multi-disciplinary and diverse. The people we ask to join a commission have an outstanding academic and public track record in the field relevant to the case. Participating experts have no ties to the algorithmic methods or organizations under review. We work together with partners under explicit conditions to avoid ethics washing.
