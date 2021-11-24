@@ -23,7 +23,7 @@ How to resolve this gridlock? Researchers in fair machine learning warn not to d
 
 ###### <span style="color:#005aa7"> Deliberation</span>
 
-However, including protected variables – such as gender, race and age – in algorithmic models is not always desirable. Moreover, it is often not even practically achievable. Selecting legitimate variables on which fair decisions can be made needs careful inspection and deliberation. By composing independent, professional and diverse audit commissions, Algorithm Audit provides ethical reviews of the ethical-statistical gridlock in a holistic and context-sensitive way that is mindful of societal impact.
+However, including protected variables – such as gender, race and age – in algorithmic models is not always desirable. Moreover, it is often not even practically achievable. What is to be done to escape this gridlock? Selecting legitimate variables on which fair decisions can be made needs careful inspection and deliberation. By composing independent, professional and diverse audit commissions, Algorithm Audit provides ethical reviews of the ethical-statistical gridlock in a holistic and context-sensitive way that is mindful of societal impact.
 
 ###### <span style="color:#005aa7">Partners</span>
 
