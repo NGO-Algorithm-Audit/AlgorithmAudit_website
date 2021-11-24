@@ -40,7 +40,8 @@ Features:
     icon: fas fa-hands-helping
     content: Let's remove boundaries between public and private organizations that
       face similar ethical concerns. We believe in a collective approach to realise
-      ethical algorithms.
+      ethical algorithms. We offer a platform of collaboration for academics, developers
+      and policy makers.
 How_we_work:
   enable: true
   service_item:
