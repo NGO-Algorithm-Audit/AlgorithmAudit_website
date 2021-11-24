@@ -38,8 +38,9 @@ Features:
       will emerge.
   - name: Partners
     icon: fas fa-hands-helping
-    content: Let's remove boundaries between public and private organizations that face
-      similar ethical concerns. We believe in a collective approach to realise ethical algorithms.
+    content: Let's remove boundaries between public and private organizations that
+      face similar ethical concerns. We believe in a collective approach to realise
+      ethical algorithms.
 How_we_work:
   enable: true
   service_item:
@@ -76,9 +77,10 @@ Why_we_exist:
   - title: Why we exist
     images:
     - images/societal_impact.svg
-    content: "Algorithm Audit was founded on the idea that ethics in algorithmic methods urgently needs case-based experience and a bottom-up approach. We believe
-      existing and proposed legislation is and will not suffice to realize ethical
-      algorithms. Why not?\n- The conditions given in [GDPR Article 22 (2)](https://gdpr-info.eu/art-22-gdpr/)
+    content: "Algorithm Audit was founded on the idea that ethics in algorithmic methods
+      urgently needs case-based experience and a bottom-up approach. We believe existing
+      and proposed legislation is and will not suffice to realize ethical algorithms.
+      Why not?\n- The conditions given in [GDPR Article 22 (2)](https://gdpr-info.eu/art-22-gdpr/)
       under which automated decision-making (ADM) and profiling is allowed are open
       for broad interpretation. Allowing wide-ranging ADM under the sole condition
       of contract agreement opens the door for large scale unethical algorithmic practices
@@ -104,7 +106,7 @@ Why_we_exist:
       Non-Discrimination, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
       It does not provide answers or concrete guidelines how to realise ethical algorithms.\n\nWe
-      believe a case-based and context sensitive approach is indispensible for a practical
+      believe a case-based and context sensitive approach is indispensible to a practical
       approach to ethical algorithms. We should not expect top-down regulation and
       legislation to solve all ethical problems in AI and machine learning. Taking
       all contested algorithmic cases to court is practically infeasible. More importantly,
