@@ -2,7 +2,7 @@
 
 <!-- Banner -->
 {{ with .Params.banner }}
-<section class="banner gradient-background" style="padding: 0px 0 0 0; ">
+<section class="banner gradient-background">
   <div class="container">
     <div class="row" style="display: flex; align-items: center;">
 
@@ -199,7 +199,9 @@
 
       <div class="col-lg-4 mb-4 mb-lg-0">
         {{ range .img1 }}
-        <img src="{{ . | relURL }}" style="width:75%;" alt="" class="img-fluid">
+        <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
+          <img src="{{ . | relURL }}" style="width:75%;" alt="" class="img-fluid">
+        </a>
         {{ end }}
       </div>
 

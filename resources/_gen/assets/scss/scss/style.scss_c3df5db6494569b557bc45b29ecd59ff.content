@@ -195,6 +195,9 @@ a:hover {
 .page-title {
   padding: 50px 0 100px 16.67%; }
 
+.banner {
+  padding: 100px 0 00px; }
+
 .section {
   padding-top: 70px;
   padding-bottom: 70px; }
@@ -238,9 +241,6 @@ a:hover {
 
 .bg-primary {
   background-color: #0AA8A7 !important; }
-
-.bg-light {
-  background-color: #cfe2f3 !important; }
 
 .text-primary {
   color: #0AA8A7 !important; }
@@ -521,9 +521,6 @@ textarea.form-control {
   height: 100px;
   position: fixed;
   z-index: 9999; }
-
-.banner {
-  padding: 100px 0 50px; }
 
 .feature-card {
   border-radius: 10px;
