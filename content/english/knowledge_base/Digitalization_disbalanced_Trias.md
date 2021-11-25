@@ -3,7 +3,7 @@ title: "Digitalization and the (Dis)balanced Trias Politica"
 author: Reijer Passchier
 image: "images/knowledge_base/digitalisering_disbalans_trias.png"
 type: "regular"
-draft: false
+summary: Fair algorithms are a political-institutional problem. Why new checks and balances are needed to guarantee a separation of state powers in the digital era。
 ---
 
 
