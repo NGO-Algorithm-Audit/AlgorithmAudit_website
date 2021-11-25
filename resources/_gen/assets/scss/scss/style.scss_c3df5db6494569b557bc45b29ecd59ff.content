@@ -518,15 +518,9 @@ textarea.form-control {
   background: linear-gradient(to left, #618EC7, #fffde4); }
 
 .nav-wrapper {
-  height: 100px; }
-
-.adjusted-header {
+  height: 100px;
   position: fixed;
-  background-color: #ffffff;
   z-index: 9999; }
-
-.cd-fixed-bg {
-  overflow: auto; }
 
 .banner {
   padding: 100px 0 50px; }
