@@ -96,30 +96,29 @@ Why_we_exist:
       offer concrete and extensive guidelines on ethical algorithms for organizations
       in industry and government. Hence, organizations will still need to make up
       their own mind about context-specific ethical guidelines and procedures in their
-      use of machine learning.\n\n- [Perspective 3.1.1](https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek)
+      use of algorithmic methods.\n\n- [Perspective 3.1.1](https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek)
       in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
       ethical algorithms are not allowed to “discriminate and that bias should be
       minimised”. Missing from this judgment is a discussion of what precisely constitutes
-      bias in the context of machine learning and what would be good methods to ascertain
-      and mitigate algorithmic discrimination. Absent a clear legal framework, it
+      bias in the context of algorithms and what would be appropriate methods to ascertain
+      and mitigate algorithmic discrimination. In the absence of a clear ethical framework, it
       is up to organizations to formulate context-sensitive approaches to combat discrimination.\n\n-
       The Impact Assessment Human Rights and Algorithms (IAMA) and the Handbook for
       Non-Discrimination, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
       It does not provide answers or concrete guidelines how to realise ethical algorithms.\n\nWe
-      believe a case-based and context sensitive approach is indispensible to a practical
-      approach to ethical algorithms. We should not expect top-down regulation and
+      believe a case-based and context sensitive approach is indispensible to develop ethical algorithms. One should not expect top-down regulation and
       legislation to solve all ethical problems in AI and machine learning. Taking
       all contested algorithmic cases to court is practically infeasible. More importantly,
       organizations will always carry their own responsibility for ethical algorithms
       within and beyond the obligation of legal compliance. Hence, new bottom-up initiatives
       like Algorithm Audit are necessary to support these organizations and to strengthen
-      ethical practice in ADM and machine learning. We provide a platform where experts
-      in AI ethics can interact with, learn from and steer actual algorithmic practice
+      ethical practice in ADM and decision support.\n\nWe provide a platform where experts
+      in AI ethics from various disciplines can interact with, learn from and steer actual algorithmic practice
       and surrounding ethical concerns. We increase public knowledge and stimulate
-      an informed debate about what ethical algorithms we desire as a society in various
-      contexts. As such, Algorithm Audit contributes to SDG16 – Peace, Justice and
-      Strong Institutions in the digital domain. "
+      an informed and open debate about what ethical algorithms we desire as a society in various
+      contexts. Our audit commissions shape future public values through discussion and deliberation. As such, Algorithm Audit contributes in the digital realm to SDG16 – Peace, Justice and
+      Strong Institutions. "
 Get_in_touch:
   enable: true
   title: Get in touch
