@@ -3,6 +3,7 @@ title: "The Measure and Mismeasure of Fairness"
 author: Sam Corbett-Davies, Sharad Goel
 image: "images/knowledge_base/measure_mismeasure.png"
 type: "regular"
+draft: true
 ---
 
 

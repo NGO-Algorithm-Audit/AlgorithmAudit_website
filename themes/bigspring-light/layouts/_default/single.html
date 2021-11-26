@@ -4,7 +4,7 @@
 {{ if or (or (eq .Section "post") (eq .Section "knowledge_base")) (or (eq .Section "categories") (eq .Section "tags") )}}
 
 <section class="section">
-  <div class="container">
+  <div class="container" style="padding-top: 150px;">
     <div class="row">
       <div class="col-lg-8 mx-auto">
         <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="img-fluid w-100 rounded mb-4" style='height: 276px; width: 420px; object-fit: contain'>
