@@ -118,7 +118,7 @@ Why_we_exist:
       and surrounding ethical concerns. We increase public knowledge and stimulate
       an informed and open debate about what ethical algorithms we desire as a society in various
       contexts. Our audit commissions shape future public values through discussion and deliberation. As such, Algorithm Audit contributes in the digital realm to SDG16 – Peace, Justice and
-      Strong Institutions. "
+      Strong Institutions." 
 Get_in_touch:
   enable: true
   title: Get in touch

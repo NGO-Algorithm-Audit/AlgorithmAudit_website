@@ -39,6 +39,7 @@ body::-webkit-scrollbar-thumb {
 ol,
 ul {
   margin: 0px;
+  color: #005aa7;
 }
 
 img {
@@ -57,6 +58,7 @@ button,
 select {
   cursor: pointer;
   transition: .2s ease;
+  color: #005aa7;
 
   &:focus {
     outline: 0;
