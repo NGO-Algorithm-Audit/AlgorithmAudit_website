@@ -1,6 +1,6 @@
 #################### default parameters ################################
 logo = "images/logo.svg"
-logo_width = "200px"
+logo_width = "150px"
 # OpenGraph / Twitter Card metadata
 description = "Algorithm Audit ethical algorithm"
 author = "JFParie"
