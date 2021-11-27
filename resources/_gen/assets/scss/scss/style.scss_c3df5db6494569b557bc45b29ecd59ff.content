@@ -528,6 +528,10 @@ textarea.form-control {
 .navigation {
   height: 12%; }
 
+@media (min-width: 434px) {
+  .navbar-collapse {
+    background: linear-gradient(to left, #618EC7, #fffde4); } }
+
 .feature-card {
   border-radius: 10px;
   padding: 20px;
