@@ -66,7 +66,7 @@
 <section class="section">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-4 order-2 order-md-1">
+      <div class="col-md-4 order-1">
         <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
@@ -75,7 +75,7 @@
         {{ end }}
         {{ end }}
       </div>
-      <div class="col-md-8 order-1 order-md-2 mb-4 mb-md-0">
+      <div class="col-md-8 order-2 mb-4 mb-md-0">
         <div {{if gt (len .images) 1}} class="slider" {{end}}>
           {{ range .images }}
           <img src="{{ . | relURL }}" alt="" class="img-fluid">
@@ -97,7 +97,7 @@
 <section class="section" style="background-color: #b1c4d5 !important;">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1">
+      <div class="col-md-6 order-1">
         <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
         {{ if .button.enable }}
         {{ with .button }}
@@ -105,7 +105,7 @@
         {{ end }}
         {{ end }}
       </div>
-      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+      <div class="col-md-6 order-2 mb-4 mb-md-0">
         <div {{if gt (len .images) 1}} class="slider" {{end}}>
           <p class="mb-4" style="">{{ .content | markdownify }}</p>
           <!-- <ul class="fa-ul">
