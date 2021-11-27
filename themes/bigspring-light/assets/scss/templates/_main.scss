@@ -32,6 +32,23 @@
   }
 }
 
+.img-wrapper{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.img-wrapper{
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (min-width : 768px) {
+  .img-wrapper{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
 .custom_div_parent {
   position: relative;
 }
@@ -42,6 +59,7 @@
 }
 
 .social-icons{
+  margin-top: 30px;
   position:absolute;
   left:50%;
   top:50%;

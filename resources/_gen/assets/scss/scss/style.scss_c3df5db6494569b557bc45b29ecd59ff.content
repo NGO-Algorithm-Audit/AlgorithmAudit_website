@@ -551,6 +551,19 @@ textarea.form-control {
   .footer-list a:hover {
     color: #005aa7; }
 
+.img-wrapper {
+  width: 75%;
+  margin: 0 auto; }
+
+.img-wrapper {
+  width: 50%;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .img-wrapper {
+    width: 75%;
+    margin: 0 auto; } }
+
 .custom_div_parent {
   position: relative; }
 
@@ -559,6 +572,7 @@ textarea.form-control {
   margin: 0 auto; }
 
 .social-icons {
+  margin-top: 30px;
   position: absolute;
   left: 50%;
   top: 50%; }
