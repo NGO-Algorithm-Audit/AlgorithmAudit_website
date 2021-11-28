@@ -9,7 +9,7 @@ Banner:
     enable: false
     label: Read our white paper
     link: knowledgebase
-Features:
+What_we_do:
   enable: true
   title: What we do
   feature_item:
