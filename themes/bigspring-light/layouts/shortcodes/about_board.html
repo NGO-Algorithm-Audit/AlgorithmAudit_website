@@ -2,35 +2,33 @@
 
 
 <div class="row">
-  <div class="col-md-12">
-    <div class="p-5 shadow rounded-lg">
-      
-      <h3 class="mb-4 board" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+  <div class="p-5 shadow rounded-lg">
+    <h3 class="mb-4 board" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
 
-      <div class="col-md-12" style="display: flex; margin-top: 50px;">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 row" style="margin-top: 50px;">
 
-      <div class="col-md-6">
-        <div style="margin-left: auto; margin-right: auto;">
-          <img src="images/JFP.svg" style="display:block; height: 100px; width: 100px;">
-        </div>
-
-        <div>
-          <p style="color: #005aa7; font-weight: bold;">{{ .Get 1 | markdownify }}</p> 
-          <p>{{ .Get 2 | markdownify }}</p> 
-        </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 column-left column-switch">
+      <div>
+        <img src="images/JFP.svg" style="display:block; height: 100px; width: 100px;">
       </div>
 
-      <div class="col-md-6">
-        <div style="margin-left: auto; margin-right: auto;">
-          <img src="images/AV.svg" style="display:block; height: 100px; width: 100px;">
-        </div>
-
-        <div>
-          <p style="color: #005aa7; font-weight: bold;">{{ .Get 3 | markdownify }}</p> 
-          <p>{{ .Get 4 | markdownify }}</p> 
-        </div>
+      <div>
+        <p style="color: #005aa7; font-weight: bold;">{{ .Get 1 | markdownify }}</p> 
+        <p>{{ .Get 2 | markdownify }}</p> 
       </div>
 
     </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 column-right column-switch">
+      <div>
+        <img src="images/AV.svg" style="display:block; height: 100px; width: 100px;">
+      </div>
+
+      <div>
+        <p style="color: #005aa7; font-weight: bold;">{{ .Get 3 | markdownify }}</p> 
+        <p>{{ .Get 4 | markdownify }}</p> 
+      </div>
+    </div>
+
   </div>
 </div>
