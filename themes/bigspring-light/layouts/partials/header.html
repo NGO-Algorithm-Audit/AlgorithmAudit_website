@@ -5,7 +5,7 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0;">
-      <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}" style="padding-left: 10%;">
+      <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
         {{ with site.Params.logo}}
         <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relLangURL }}" alt="{{ site.Title }}">
         {{ else }}{{site.Title}}{{end}}

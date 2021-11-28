@@ -542,6 +542,10 @@ textarea.form-control {
   #header-containers {
     padding: 0; } }
 
+@media (min-width: 992px) {
+  .navbar-brand {
+    padding-left: 10%; } }
+
 .feature-card {
   border-radius: 10px;
   padding: 20px;
