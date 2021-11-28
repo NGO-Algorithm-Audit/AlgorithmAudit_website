@@ -8,7 +8,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #005aa7;
+  color: #005aa7;site-header
 
   &:hover {
     color: #fffde4;
@@ -35,16 +35,15 @@
 .nav-wrapper {
   height: 10%;
   position: fixed;
-  z-index: 9999;
-  padding: 0;
+  z-index: 1;
 }
 
 .navigation{
   height: 10%;
 }
 
-// @media (min-width: 434px) {
-//   .navbar-collapse{
-//   background: linear-gradient(to left, #618EC7, #fffde4);
-//   }  
-// }
+@media (max-width: 768px) {
+  #navigation {
+    background: linear-gradient(to left, #618EC7, #fffde4);
+  }
+}

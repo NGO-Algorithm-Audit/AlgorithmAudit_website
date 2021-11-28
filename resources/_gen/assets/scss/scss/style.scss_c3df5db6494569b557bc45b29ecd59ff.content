@@ -504,7 +504,8 @@ textarea.form-control {
 
 .navbar-light .navbar-nav .nav-link {
   color: #005aa7; }
-  .navbar-light .navbar-nav .nav-link:hover {
+  site-header
+.navbar-light .navbar-nav .nav-link:hover {
     color: #fffde4; }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -522,11 +523,14 @@ textarea.form-control {
 .nav-wrapper {
   height: 10%;
   position: fixed;
-  z-index: 9999;
-  padding: 0; }
+  z-index: 1; }
 
 .navigation {
   height: 10%; }
+
+@media (max-width: 768px) {
+  #navigation {
+    background: linear-gradient(to left, #618EC7, #fffde4); } }
 
 .feature-card {
   border-radius: 10px;
