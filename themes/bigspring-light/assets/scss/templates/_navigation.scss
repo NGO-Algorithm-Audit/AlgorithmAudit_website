@@ -33,18 +33,18 @@
 }
 
 .nav-wrapper {
-  height: 12%;
+  height: 10%;
   position: fixed;
   z-index: 9999;
   padding: 0;
 }
 
 .navigation{
-  height: 12%;
+  height: 10%;
 }
 
-@media (min-width: 434px) {
-  .navbar-collapse{
-  background: linear-gradient(to left, #618EC7, #fffde4);
-  }  
-}
+// @media (min-width: 434px) {
+//   .navbar-collapse{
+//   background: linear-gradient(to left, #618EC7, #fffde4);
+//   }  
+// }

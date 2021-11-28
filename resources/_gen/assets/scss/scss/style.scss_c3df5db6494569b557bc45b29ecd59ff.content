@@ -520,17 +520,13 @@ textarea.form-control {
   background: linear-gradient(to left, #618EC7, #fffde4); }
 
 .nav-wrapper {
-  height: 12%;
+  height: 10%;
   position: fixed;
   z-index: 9999;
   padding: 0; }
 
 .navigation {
-  height: 12%; }
-
-@media (min-width: 434px) {
-  .navbar-collapse {
-    background: linear-gradient(to left, #618EC7, #fffde4); } }
+  height: 10%; }
 
 .feature-card {
   border-radius: 10px;
