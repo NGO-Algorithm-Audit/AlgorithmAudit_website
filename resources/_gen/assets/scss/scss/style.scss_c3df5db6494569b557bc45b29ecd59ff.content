@@ -520,15 +520,14 @@ textarea.form-control {
 .gradient-background {
   background: linear-gradient(to left, #618EC7, #fffde4); }
 
-.nav-wrapper {
-  height: 10%;
-  position: fixed;
-  z-index: 1; }
-
 .navigation {
-  height: 10%; }
+  height: 10%;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #navigation {
     background: linear-gradient(to left, #618EC7, #fffde4); } }
 
@@ -553,10 +552,6 @@ textarea.form-control {
 
 .img-wrapper {
   width: 75%;
-  margin: 0 auto; }
-
-.img-wrapper {
-  width: 50%;
   margin: 0 auto; }
 
 @media (min-width: 768px) {
@@ -806,14 +801,3 @@ a.post-title {
       border: 1px solid #0AA8A7;
       background-color: transparent;
       transition: .2s ease; }
-
-.col-recommended {
-  margin: -2rem -1.5rem;
-  z-index: 1; }
-  @media (max-width: 991px) {
-    .col-recommended {
-      margin: 0;
-      margin-bottom: 40px; } }
-.price {
-  font-size: 50px;
-  color: #222; }

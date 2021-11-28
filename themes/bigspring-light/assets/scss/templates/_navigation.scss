@@ -32,17 +32,15 @@
   background: linear-gradient(to left, #618EC7, #fffde4);
 }
 
-.nav-wrapper {
-  height: 10%;
-  position: fixed;
-  z-index: 1;
-}
-
 .navigation{
   height: 10%;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #navigation {
     background: linear-gradient(to left, #618EC7, #fffde4);
   }

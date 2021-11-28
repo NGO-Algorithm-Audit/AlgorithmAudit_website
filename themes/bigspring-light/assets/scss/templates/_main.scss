@@ -37,11 +37,6 @@
   margin: 0 auto;
 }
 
-.img-wrapper{
-  width: 50%;
-  margin: 0 auto;
-}
-
 @media (min-width : 768px) {
   .img-wrapper{
     width: 75%;
@@ -379,19 +374,4 @@ a.post-title {
       transition: .2s ease;
     }
   }
-}
-
-// pricing table
-.col-recommended {
-  margin: -2rem -1.5rem;
-  z-index: 1;
-  @include desktop {
-    margin: 0;
-    margin-bottom: 40px;
-  }
-}
-
-.price{
-  font-size: 50px;
-  color: $text-color-dark;
 }
