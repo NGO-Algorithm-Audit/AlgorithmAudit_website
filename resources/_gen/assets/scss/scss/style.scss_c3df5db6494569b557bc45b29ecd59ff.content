@@ -546,10 +546,6 @@ textarea.form-control {
   .navbar-brand {
     padding-left: 10%; } }
 
-@media (max-width: 992px) {
-  #banner-text {
-    width: 75%; } }
-
 .feature-card {
   border-radius: 10px;
   padding: 20px;
