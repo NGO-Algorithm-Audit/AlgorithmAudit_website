@@ -58,14 +58,38 @@
 }
 
 @media (max-width: 992px) {
-  #header-containers {
+  #header-container {
     padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-toggler {
+    padding-right: 5%;
   }
 }
 
 @media (min-width: 992px) {
   .navbar-brand {
-    padding-left: 10%;
+    padding-left: 16.67%;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    padding-right: 0;
   }
 }
 
