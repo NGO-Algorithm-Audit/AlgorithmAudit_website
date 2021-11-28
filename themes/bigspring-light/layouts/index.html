@@ -7,7 +7,7 @@
     <div class="row" style="display: flex; align-items: center;">
 
       <!-- text -->
-      <div class="col-md-5 col-sm-12">
+      <div class="col-md-8 col-sm-12">
         <h1 class="mb-3" style="font-size: 36px; color: #005aa7; width:90%; margin-left: 0; margin-right: auto;">{{ .title | markdownify }}</h1>
         <p class="mb-4" id="banner-text" style="margin-left: 0; margin-right: auto; padding: 10px 0 25px 0;">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
@@ -19,7 +19,7 @@
       <!-- text -->
 
       <!-- image -->
-      <div class="col-md-7 col-sm-12">
+      <div class="col-md-12 col-sm-12">
         {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" style="margin-left: auto; margin-right: auto;">{{end}}
       </div>
       <!-- image -->
@@ -40,7 +40,7 @@
         <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
       </div>
       {{ range .feature_item }}
-      <div class="col-md-4 col-sm-6 mb-4">
+      <div class="col-md-6 col-sm-6 mb-4">
         <div class="feature-card text-center">
           <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
           <h4 class="mb-2" style="color: #005aa7;">
@@ -127,33 +127,33 @@
         <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <p>{{ .intro_content | markdownify }}</p>
         <ul style="color:#777777; margin-top: 15px;">
           <li style="line-height: 1.75em;">{{ .gdpr_content | markdownify }}</li>
         </ul>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="img-full">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="img-full">
         <img src="{{ .image1 | relURL }}" alt="" class="img-fluid" style="width: 65%; height: 65%; margin-left:25%; margin-right:25%;">
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <ul style="color:#777777; margin-top: 15px;">
           <li style="line-height: 1.75em;">{{ .ai_act_content | markdownify }}</li>
         </ul>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="img-full">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="img-full">
         <img src="{{ .image2 | relURL }}" alt="" class="img-fluid" style="width: 50%; height: 50%; margin-left:25%; margin-right:25%;">
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
         <ul style="color:#777777; margin-top: 15px;">
           <li style="line-height: 1.75em;">{{ .rekenkamer_content | markdownify }}</li>
           <li style="line-height: 1.75em; margin-top: 15px;">{{ .iama_content | markdownify }}</li>
         </ul>
         <p style="margin-top: 15px;">{{ .content1 | markdownify }}</p>
       </div>
-      <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" id="img-full">
+      <div class=" col-lg-6 col-md-12 col-sm-12 col-xs-12" id="img-full">
         <img src="{{ .image3 | relURL }}" alt="" class="img-fluid" style="width: 40%; height: 40%; margin-left:25%; margin-right:25%;">
       </div>
       

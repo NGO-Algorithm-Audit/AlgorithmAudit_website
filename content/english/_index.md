@@ -79,15 +79,14 @@ Why_we_exist:
     intro_content: Algorithm Audit was founded on the idea that ethics in algorithmic methods
       urgently needs case-based experience and a bottom-up approach. We believe existing
       and proposed legislation is and will not suffice to realize ethical algorithms.
-      Why not?
-    gdpr_content: The conditions given in [GDPR Article 22 (2)](https://gdpr-info.eu/art-22-gdpr/)
+      Why not? 
+    gdpr_content: The conditions given in <a href="https://gdpr-info.eu/art-22-gdpr/" target="_blank">GDPR Article 22 (2)</a>
       under which automated decision-making (ADM) and profiling is allowed are open
       for broad interpretation. Allowing wide-ranging ADM under the sole condition
       of contract agreement opens the door for large scale unethical algorithmic practices
       without accountability and public awareness.
     image1: images/gdpr.svg
-    ai_act_content:  The newly proposed [AI Act of
-      the European Commission](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206)
+    ai_act_content:  The newly proposed <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI Act </a> of the European Commission
       aims to regulate the use of high-risk algorithms, but remains too generic. For
       example, it does not provide precise guidelines how to identify and mitigate
       ethical issues such as algorithmic discrimination. In addition, machine learning
@@ -99,16 +98,15 @@ Why_we_exist:
       their own mind about context-specific ethical guidelines and procedures in their
       use of algorithmic methods.
     image2: images/AI_act.png
-    rekenkamer_content: "[Perspective 3.1.1](https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek)
-      in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
+    rekenkamer_content: <a href="https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek" target="_blank">Perspective 3.1.1</a> in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
       ethical algorithms are not allowed to “discriminate and that bias should be
       minimised”. Missing from this judgment is a discussion of what precisely constitutes
       bias in the context of algorithms and what would be appropriate methods to ascertain
       and mitigate algorithmic discrimination. In the absence of a clear ethical framework, it
       is up to organizations to formulate context-sensitive approaches to combat discrimination."
     image3: images/SDG16.png
-    iama_content: The Impact Assessment Human Rights and Algorithms (IAMA) and the Handbook for
-      Non-Discrimination, both developed by the Dutch government, assess discriminatory
+    iama_content: The <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes" target="_blank">Impact Assessment Human Rights and Algorithms (IAMA)</a> and the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design" target="_blank">Handbook for
+      Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
       It does not provide answers or concrete guidelines how to realise ethical algorithms.
     content1:  We believe a case-based and context sensitive approach is indispensible to develop ethical algorithms. One should not expect top-down regulation and
