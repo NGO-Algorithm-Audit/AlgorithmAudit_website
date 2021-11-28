@@ -2,8 +2,8 @@
   <div class="gradient-background">
     <div class="page-title row" style="display: flex; align-items: center;">
 
-      <div class="col-md-6" style="margin-top: 100px;">
-        <h1 class="mb-3" style="font-size: 36px; color: #005aa7;">{{ .Title | markdownify }}</h1>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top: 100px;">
+        <h1 class="mb-3" style="font-size: 36px; color: #005aa7; ">{{ .Title | markdownify }}</h1>
         {{ with .Params.subtitle }}
         <div style="width:80%;">
           <p>{{ . | markdownify }}</p>
@@ -11,8 +11,8 @@
         {{ end }}
       </div>
 
-      <div class="col-md-6 illustration">
-        {{with .Params.image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" style="width: 50%; margin-left:auto; margin-right:auto;">{{end}}
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 illustration">
+        {{with .Params.image}}<img src="{{ . | relURL }}" id="page-header-illustration" class="img-fluid mt-5">{{end}}
       </div>
     </div>
   </div>

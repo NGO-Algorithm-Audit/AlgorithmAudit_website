@@ -194,8 +194,13 @@ a:hover {
 .slick-slide {
   outline: 0; }
 
-.page-title {
-  padding: 50px 0 100px 16.67%; }
+@media (max-width: 992px) {
+  .page-title {
+    padding: 50px 0 100px 15px; } }
+
+@media (min-width: 992px) {
+  .page-title {
+    padding: 50px 0 100px 16.67%; } }
 
 .banner {
   padding: 100px 0 00px; }
@@ -839,3 +844,15 @@ a.post-title {
 @media (max-width: 992px) {
   #img-full {
     margin: 50px 0; } }
+
+@media (min-width: 992px) {
+  #page-header-illustration {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 992px) {
+  #page-header-illustration {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; } }

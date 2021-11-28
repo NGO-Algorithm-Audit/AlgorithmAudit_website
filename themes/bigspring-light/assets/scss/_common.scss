@@ -73,8 +73,16 @@ a:hover {
   outline: 0;
 }
 
-.page-title{
-  padding: 50px 0 100px 16.67%;
+@media (max-width: 992px) {
+  .page-title{
+    padding: 50px 0 100px 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-title{
+    padding: 50px 0 100px 16.67%;
+  }
 }
 
 .banner {
