@@ -1,15 +1,15 @@
 {{ "<!-- navigation -->" | safeHTML }}
-<header class="navigation col-12 gradient-background">
+<header class="navigation col-12 gradient-background" style="padding: 0;">
   <div class="container col-12" style="padding: 0;">
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0;">
-      <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
+      <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}" style="padding-left: 5%;">
         {{ with site.Params.logo}}
         <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relLangURL }}" alt="{{ site.Title }}">
         {{ else }}{{site.Title}}{{end}}
       </a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-label="menu">
+      <button class="navbar-toggler border-0" style="padding-right: 5%;" type="button" data-toggle="collapse" data-target="#navigation" aria-label="menu">
         <i class="fas fa-bars" style="color:#005aa7"></i>
       </button>
 
