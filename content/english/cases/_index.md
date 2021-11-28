@@ -19,7 +19,7 @@ From a statistical perspective, to qualify an algorithm as discriminatory, solel
 
 ###### <span style="color:#005aa7">Fair ML research</span>
 
-How to resolve this gridlock? Researchers in fair machine learning warn not to debate at what correlation rate variables act as predictor variables or not (see [<span style="color:#005aa7">paper</span>](https://arxiv.org/abs/1808.00023)). Instead, researchers advise to examine whether including protected variables in the model hold predictive power. If so, researchers frequently advocate to include protected variables in the prediction model such that the role of proxies becomes moot. The deliberate use of protected variables might sound counter-intuitive, but it allows to check and correct the algorithmic model for actual discriminatory bias.
+How to resolve this gridlock? Researchers in fair machine learning warn not to debate at what correlation rate variables act as predictor variables or not (see <a href="https://arxiv.org/abs/1808.00023" target="_blank">paper</a>). Instead, researchers advise to examine whether including protected variables in the model hold predictive power. If so, researchers frequently advocate to include protected variables in the prediction model such that the role of proxies becomes moot. The deliberate use of protected variables might sound counter-intuitive, but it allows to check and correct the algorithmic model for actual discriminatory bias.
 
 ###### <span style="color:#005aa7"> Deliberation</span>
 
@@ -27,6 +27,6 @@ However, including protected variables – such as gender, race and age – in a
 
 ###### <span style="color:#005aa7">Partners</span>
 
-We are working with academic partners on an advice regarding the above-mentioned ethical issue that emerged at the Municipality of Rotterdam. For this project we are supported by the [<span style="color:#005aa7">SIDN Fund</span>](https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool).
+We are working with academic partners on an advice regarding the above-mentioned ethical issue that emerged at the Municipality of Rotterdam. For this project we are supported by the <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">SIDN Fund</a>.
 
 {{</ cases >}}

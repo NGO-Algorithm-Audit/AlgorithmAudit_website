@@ -64,25 +64,19 @@
 }
 
 @media (max-width: 992px) {
-  .navbar {
-    padding: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  .navbar-brand {
+  .navbar-div{
     padding-left: 5%;
   }
 }
 
 @media (max-width: 992px) {
-  .navbar-toggler {
+  .button-div {
     padding-right: 5%;
   }
 }
 
 @media (min-width: 992px) {
-  .navbar-brand {
+  .navbar-div {
     padding-left: 16.67%;
   }
 }
@@ -97,6 +91,16 @@
   #banner-text {
     width: 90%;
   }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    padding-bottom: 10px;
+  }
+}
+
+.navbar{
+  padding: 0;
 }
 
 

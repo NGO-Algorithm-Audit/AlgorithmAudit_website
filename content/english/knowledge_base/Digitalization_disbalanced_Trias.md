@@ -7,7 +7,7 @@ summary: Fair algorithms are a political-institutional problem. Why new checks a
   balances are needed to guarantee a separation of state powers in the digital era.
 
 ---
-*The original version of the article can be found [here](https://www.universiteitleiden.nl/binaries/content/assets/rechtsgeleerdheid/instituut-voor-publiekrecht/staats--en-bestuursrecht/digitalisering-en-de-disbalans-binnen-de-trias-politica.pdf "here").*
+*The original version of the article can be found <a href="https://www.universiteitleiden.nl/binaries/content/assets/rechtsgeleerdheid/instituut-voor-publiekrecht/staats--en-bestuursrecht/digitalisering-en-de-disbalans-binnen-de-trias-politica.pdf" target="_blank">here</a>).*
 
 Although many projects are going well, the Dutch state has a controversial reputation when it comes to use of algorithms for autonomous decision making and decision support. Through the lens of political theory and constitutional law this article argues that:
 
