@@ -2,7 +2,7 @@
 logo = "images/logo.svg"
 logo_width = "150px"
 # OpenGraph / Twitter Card metadata
-description = "Algorithm Audit ethical algorithm"
+description = "Algorithm Audit"
 author = "JFParie"
 image = "images/logo2.png" # this image will be used as fallback if a page has no image of its own
 # contact form action
