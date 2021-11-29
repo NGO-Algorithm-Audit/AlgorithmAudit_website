@@ -599,6 +599,12 @@ textarea.form-control {
 .navbar {
   padding: 0; }
 
+.navbar-toggler > .cross {
+  display: inline; }
+
+.navbar-toggler.collapsed > .cross, .navbar-toggler:not(.collapsed) > .navbar-toggler-menu {
+  display: none; }
+
 html, body {
   overflow-x: hidden; }
 
