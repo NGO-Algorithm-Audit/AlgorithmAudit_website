@@ -20,7 +20,7 @@ Basically every organization, public or private, big or small, is welcome to pre
 We are committed to balanced, careful and independent review of ethical issues. We depend on the experts in our audit commissions to carry out these evaluations. And we serve the community by making all our advice and knowledge public. Working nonprofit suits our activities and goals best.
 {{</ faq-leaf >}}
 
-{{< faq-leaf "Is your work open source?" >}} All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open source. However, we only publish the final advice on our website and not other materials and documentation internal to the case, because this often contains sensitive information. {{</ faq-leaf >}}
+{{< faq-osi "Is your work open source?" >}} All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open source. However, we only publish the final advice on our website and not other materials and documentation internal to the case, because this often contains sensitive information. {{</ faq-leaf >}}
 
 {{< faq-weight_scale "What is the legitimacy of your organization?" >}}
 The audit commissions that carry out the reviews are independent, academic, multi-disciplinary and diverse. The people we ask to join a commission have an outstanding academic and public track record in the field relevant to the case. Participating experts have no ties to the algorithmic methods or organizations under review. We work together with partners under explicit conditions to avoid ethics washing.

@@ -327,6 +327,24 @@ textarea.form-control {
     left: -30px;
     top: 3px; }
 
+.open-source {
+  position: relative; }
+  .open-source::before {
+    position: absolute;
+    content: "\f2b6";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -30px;
+    top: 3px; }
+  .open-source svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 3px; }
+
 .weight-scale {
   position: relative; }
   .weight-scale::before {

@@ -1,4 +1,4 @@
 baseURL = 'localhost:1313/'
 languageCode = 'en-us'
-title = 'Algorithm Audit Foundation'
+title = 'Algorithm Audit'
 theme = "bigspring-light"

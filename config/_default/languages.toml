@@ -1,7 +1,7 @@
 ############################# English ############################
 [en]
 languageName = "En"
-title = "Stichting Algorithm Audit Foundation"
+title = "Algorithm Audit"
 contentDir = "content/english" # content/english
 weight = 1
 ########### footer content ##########

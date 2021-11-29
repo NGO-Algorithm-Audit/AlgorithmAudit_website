@@ -251,6 +251,27 @@ textarea.form-control {
   }
 }
 
+.open-source{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "\f2b6";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: $icon-font;
+    font-weight: 900;
+    left: -30px;
+    top: 3px;
+  }
+  svg{
+    position: absolute;
+    color: $primary-color;
+    font-size: 25px;
+    left: -30px;
+    top: 3px;
+  }
+}
+
 .weight-scale{
   position: relative;
   &::before{
