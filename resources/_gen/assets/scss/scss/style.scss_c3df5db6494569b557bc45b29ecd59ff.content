@@ -855,7 +855,7 @@ a.post-title {
 
 @media (min-width: 992px) {
   #page-header-illustration {
-    width: 50%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto; } }
 

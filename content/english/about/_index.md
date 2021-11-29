@@ -3,7 +3,7 @@ title: About
 subtitle: Algorithm Audit consists of an executive board, an advisory board and works
   with audit commissions composed of independent experts. Learn more about Algorithm
   Audit.
-image: images/illustration5.jpeg
+image: images/about.svg
 
 ---
 {{< about_algorithm_audit "About Algorithm Audit" "In 2021, Algorithm Audit was founded on the idea that ethics in algorithmic methods urgently needs case-based experience and a bottom-up approach. We are registred as a Dutch nonprofit organization (stichting). Currently we are working on our first cases. In the near future we hope to contribute to the public debate by publishing white papers and opinion pieces about ethical algorithms.">}}
