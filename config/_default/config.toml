@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "localhost:1313/"
-title = "Bigspring Light"
+title = "Algorithm Audit"
 theme = "bigspring-light"
 # post pagination
 paginate = "3"
