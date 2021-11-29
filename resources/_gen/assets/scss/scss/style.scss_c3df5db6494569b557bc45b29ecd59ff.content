@@ -530,7 +530,6 @@ textarea.form-control {
   background: linear-gradient(to left, #618EC7, #fffde4); }
 
 .navigation {
-  height: 10%;
   top: 0;
   position: fixed;
   z-index: 9999;
@@ -577,6 +576,12 @@ textarea.form-control {
 
 .navbar {
   padding: 0; }
+
+html, body {
+  overflow-x: hidden; }
+
+body {
+  position: relative; }
 
 .feature-card {
   border-radius: 10px;
