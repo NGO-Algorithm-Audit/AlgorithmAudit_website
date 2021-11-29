@@ -484,4 +484,9 @@ padding: 0 50px 0 0px;
       padding: 0 50px 0 0px;
     }
   }
-  
+
+  @media (min-width: 992px) {
+    .board-wrapper {
+      display: flex; 
+    }
+  }
