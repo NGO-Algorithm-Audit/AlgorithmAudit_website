@@ -6,7 +6,7 @@ subtitle: Our knowledge base is a collection of readworthy articles, books and o
   
   
   Do you want to contribute? <a
-  href="index.html#contactform" class="btn-link">Let us know!</a>
+  href="/index.html#contactform" class="btn-link">Let us know!</a>
 description: ''
 image: images/knowledge_base.svg
 

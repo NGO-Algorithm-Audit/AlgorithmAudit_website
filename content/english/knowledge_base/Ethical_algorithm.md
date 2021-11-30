@@ -11,7 +11,7 @@ summary: Technically accesible and compelling book. Filled with fresh thoughts f
 
 Books on ethics and algorithms are mushrooming. In this rapidly growing domain, _The Ethical Algorithm_ is a must-read for both technical and non-technical readers.
 
-From various disciplines the book brings together an overview of cutting-edge thinking on ethics and algorithms. Theoretical concepts as _k_-anonymity, _p_-hacking and differential privacy are explained clearly through comprehensible and illustrated examples. At the start of the book, a sorting algorithm is discussed step-by-step to give non-technical readers a taste what algorithms are about.
+From various disciplines the book collects cutting-edge thinking how to space of ethics and algorithms collide. Theoretical concepts as _k_-anonymity, _p_-hacking and differential privacy are explained clearly through comprehensible and illustrated examples. At the start of the book, a sorting algorithm is discussed step-by-step to give non-technical readers a taste what algorithms are about.
 
 At the same time, the authors (two heavyweight researchers in theoretical computer science) share a broad understanding of what constitutes fair algorithms. As a central these it is posed that users often play with algorithms for their own benefit. At the same time, sensitive topics are treated with care, for example the question ‘Whether protected variables should be included or excluded from algorithmic tools?’. In such, _The Ethical Algorithm_ takes a realistic stance on sociological and political ramifications that emerge while discussing analogue and digital notions of fairness.
 

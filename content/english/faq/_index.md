@@ -5,7 +5,7 @@ subtitle: Algorithm Audit commits to high standards regarding integrity, indepen
   to your questions and remarks. 
   
   
-  You want to share something? <a href="index.html#contactform"
+  You want to share something? <a href="/index.html#contactform"
   class="btn-link">Contact us.</a>
 image: /images/faq.svg
 
