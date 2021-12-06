@@ -5,4 +5,4 @@ title = "Algorithm Audit"
 contentDir = "content/english" # content/english
 weight = 1
 ########### footer content ##########
-footer_content = "Stichting Algorithm Audit is a nonprofit organization registred under license number 83979212 at the Dutch Chambre of Commerce."
+footer_content = "Stichting Algorithm Audit is a nonprofit organization registered under license number 83979212 at the Dutch Chambre of Commerce."
