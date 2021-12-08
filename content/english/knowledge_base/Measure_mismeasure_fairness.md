@@ -3,165 +3,60 @@ title: "The Measure and Mismeasure of Fairness"
 author: Sam Corbett-Davies, Sharad Goel
 image: "images/knowledge_base/measure_mismeasure.png"
 type: "regular"
-draft: true
+draft: false
+summary: ...
 ---
 
+*The original version of the article can be found <a href="https://arxiv.org/pdf/1808.00023.pdf," target="_blank">here</a>.*
 
-#### Heading example
+### Short summary
 
-Here is example of hedings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6.
+This scientific paper elaborates on incompatibilities between various popular formalisations of fairness. It is argued why formal definitions of fairness typically do not map on to traditional social, economic or legal understandings of the concept and why these formalisations are often ill-suited either as diagnostics or as design constraints for 'fair' algorithms. Besides, pros and cons of utility-based frameworks for decisions making are discussed, e.g., risk assessment tool including threshold policies. Some common misconceptions that occur in informal discussions on fairness are shared. For instance: If protected attributes are not predictive, one could in theory build an accurate risk model using only examples from one particular group (e.g., white men). Given enough examples of white men, the model would learn the relationship between features and risk, which by our assumption would generalise to the entire population. This phenomenon highlights a tension between advocating both for representative training data and for the exclusion of protected attributes. The central these of this paper is that representative data are often most important precisely when protected attributes add information, in which case their use is arguably justified. Finally, the focus shifts from identiying the shortcomings of formal definitions of fairness, to a path forward how to ensure future algorithmic decisions are fair.  
 
-# Heading 1 
-<br>
+### Long summary 
 
-## Heading 2 
+#### 1. Introduction 
 
-<br>
+The main components of this paper are introduced and discussed in more detail in Section 2-4.
 
-### Heading 3 
-
-<br>
-
-#### Heading 4 
-
-<br>
-
-##### Heading 5 
-
-<br>
-
-###### Heading 6
+##### Formal definitions of fairness
+From the fair ML research community, three classes of fairness definitions have gained prominence:
 
 
-<hr>
-
-##### Emphasis
-
-Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
-<hr>
-
-##### Link
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.themefisher.com
-[1]: https://gethugothemes.com
-[link text itself]: https://www.getjekyllthemes.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### Ordered List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
-<hr>
-
-##### Unordered List
-
-* List item
-* List item
-* List item
-* List item
-* List item
-
-<hr>
-
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-<hr>
-
-##### Blockquote
-
-> This is a blockquote example.
-
-<hr>
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+<span style="color:#005aa7; font-weight: bold;">1\.</span> Anti-classification: risk assessment algorithms do not consider protected characteristics—like race, gender, or their proxies—when deriving estimates 
 
 
-<hr>
+<span style="color:#005aa7; font-weight: bold;">2\.</span> Classification parity: certain common measures of predictive performance are required be equal across groups defined by the protected attributes. For example, a risk assessment algorithm that predicts loan default might be required to produce similar false negative rates for white and black applicants. 
 
-##### Tables
 
-Colons can be used to align columns.
+<span style="color:#005aa7; font-weight: bold;">3\.</span> Calibration: Outcomes are independent of protected attributes after controlling for estimated risk. For example, among loan applicants estimated to have a 10% chance of default, calibration requires that whites and blacks default at similar rates. 
+These formalisations of fairness have considerable intuitive appeal, but suffer from deep statistical limitations. In particular, they are poor measures for detecting discriminatory algorithms and, even more importantly, designing algorithms to satisfy these definitions can, perversely, negatively impact the well-being of minority and majority communities alike. 
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
+##### Protected variables and the concept of infra-marginality
+In contrast to the principle of anti-classification, it is often necessary for equitable risk assessment algorithms to explicitly consider protected characteristics. In the criminal justice system, for example, women are typically less likely to commit a future violent crime than men with similar criminal histories. As a result, gender-neutral risk scores can systematically overestimate a woman’s recidivism risk, and can in turn encourage unnecessarily harsh judicial decisions. When the true underlying distribution of risk varies across groups, differences in group-level error rates are an expected consequence of algorithms that accurately capture each individual’s risk. This general statistical phenomenon is known as the problem of infra-marginality.
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+Besides, it is shown that calibration, while generally desirable, provides only a weak guarantee of equity.
 
-<hr>
+##### Risk score threshold policies
+Practitioners have long designed tools that adhere to an alternative fairness concept: (risk score) threshold policies. This decision strategy follows widely accepted legal standards of fairness. However, this thresholding approach will in general violate classification parity, and may additionally violate anti-classification, as some risk assessments use protected characteristics.
 
-##### Image
+Training data 
+Two ways are considered in which problems with the training data can corrupt risk scores:
 
-![image](../../images/blog/post-6.jpg)
 
-<hr>
+<span style="color:#005aa7; font-weight: bold;">1\.</span> Label bias. Consists of two components:
 
-##### Youtube video
+<span style="color:#005aa7; font-weight: bold;">Measurement problem</span> Not all subgroups are measured alike, for instance in the criminal justice system, whites and blacks who commit the same offence are often arrested and convicted for those offences at different rates, particularly for low-level crimes, like minor drug use. There is no easy solution for this measurement problem.
 
-{{< youtube C0DPdy98e4c >}}
+<span style="color:#005aa7; font-weight: bold;">Subgroup validity</span> The predictive power of features can vary across groups, what Ayres (2002) calls the problem of subgroup validity.  Even when labels are accurately measured, the relationship between predictor variables and outcomes might differ across groups. This phenomenon can be countered by fitting group-specific risk models that learn such idiosyncratic patterns—violating anti-classification. Indeed, as mentioned above, this is precisely the rationale for employing gender-specific recidivism models. 
+
+
+<span style="color:#005aa7; font-weight: bold;">2\.</span> Sample bias. Buolamwini and Gebru (2018) found that commercial image analysis programs have difficulty classifying the gender of dark-skinned individuals, a shortcoming that is potentially due to the relative dearth of dark-skinned faces in popular facial analysis datasets.
+
+##### Externalities and equilibrium effects
+While single-threshold policies are often a useful starting point, they do not work in all circumstances, particularly when externalities and equilibrium effects may dominate the immediate, localised costs and benefits of decisions. For example in university admissions, a diverse student body may benefit the entire institution, creating interdependencies between applicants. Importantly, though, this complexity does not mean that the popular formalisations of fairness we study can help one achieve equitable outcomes. Indeed, requiring either anti-classification or classification parity can in fact exacerbate these problems. 
+
+#### 2. Background 
+
+...
