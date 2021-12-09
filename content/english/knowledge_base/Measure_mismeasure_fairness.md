@@ -4,7 +4,7 @@ author: Sam Corbett-Davies, Sharad Goel
 image: "images/knowledge_base/measure_mismeasure.png"
 type: "regular"
 draft: false
-summary: Technical but clear explanation why formulas for fairness are troublesome
+summary: Why are formulas for fairness troublesome? Why prevailing definitions of fairness typically do not map on to traditional social, economic or legal understandings of the concept? This paper explains why.
 ---
 
 *The original version of the article can be found <a href="https://arxiv.org/pdf/1808.00023.pdf," target="_blank">here</a>.*
