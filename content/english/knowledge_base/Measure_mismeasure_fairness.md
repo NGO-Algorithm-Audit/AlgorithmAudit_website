@@ -4,7 +4,7 @@ author: Sam Corbett-Davies, Sharad Goel
 image: "images/knowledge_base/measure_mismeasure.png"
 type: "regular"
 draft: false
-summary: ...
+summary: Technical but clear explanation why formulas for fairness are troublesome
 ---
 
 *The original version of the article can be found <a href="https://arxiv.org/pdf/1808.00023.pdf," target="_blank">here</a>.*
