@@ -41,7 +41,7 @@
         {{ with site.Params.social }}
           <div class="social-icons">
             {{ range . }}
-            <a href="{{ .link | safeURL }}" title="{{ .title }}"><i class="{{ .icon }}"></i></a>
+            <a href="{{ .link | safeURL }}" target="_blank" title="{{ .title }}"><i class="{{ .icon }}"></i></a>
             {{ end }}
           </div>
           {{ end }}
