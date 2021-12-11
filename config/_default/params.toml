@@ -2,7 +2,7 @@
 logo = "images/logo.svg"
 logo_width = "150px"
 # OpenGraph / Twitter Card metadata
-description = "Algorithm Audit"
+description = "Case-based knowledge for ethical algorithms"
 author = "JFParie"
 favicon = "/images/favicon.ico"
 image = "images/logo2.png" # this image will be used as fallback if a page has no image of its own
