@@ -103,7 +103,7 @@ Why_we_exist:
       minimised”. Missing from this judgment is a discussion of what precisely constitutes
       bias in the context of algorithms and what would be appropriate methods to ascertain
       and mitigate algorithmic discrimination. In the absence of a clear ethical framework, it
-      is up to organizations to formulate context-sensitive approaches to combat discrimination."
+      is up to organizations to formulate context-sensitive approaches to combat discrimination.
     image3: images/SDG16.png
     iama_content: The <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes" target="_blank">Impact Assessment Human Rights and Algorithms (IAMA)</a> and the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design" target="_blank">Handbook for
       Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
