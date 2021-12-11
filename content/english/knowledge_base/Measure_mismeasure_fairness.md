@@ -17,7 +17,7 @@ This scientific paper elaborates on incompatibilities between various popular fo
 
 #### 1. Introduction 
 
-The main components of this paper are introduced and discussed in more detail in Section 2-4.
+The main topics discusses in this paper are introduced in this section. The topics are discussed in greater detail in Section 2-4.
 
 ##### Formal definitions of fairness
 From the fair ML research community, three classes of fairness definitions have gained prominence:
