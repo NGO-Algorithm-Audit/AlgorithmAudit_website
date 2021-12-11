@@ -7,7 +7,7 @@ draft: false
 summary: Why are formulas for fairness troublesome? Why prevailing definitions of fairness typically do not map on to traditional social, economic or legal understandings of the concept? This paper provides answers.
 ---
 
-*The original version of the article can be found <a href="https://arxiv.org/pdf/1808.00023.pdf," target="_blank">here</a>.*
+*The article can be found <a href="https://arxiv.org/pdf/1808.00023.pdf," target="_blank">here</a>.*
 
 ### Short summary
 
