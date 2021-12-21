@@ -33,7 +33,7 @@ What_we_do:
       collective knowledge how to devise and use algorithms in an ethical way.
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
-    content: From our case-based knowledge, data scientists can distill best practices
+    content: From our case-based knowledge, data scientists can distil best practices
       for ethical algorithms. Over time a helpful resource for techno-ethical issues
       will emerge.
   - name: Joint effort
