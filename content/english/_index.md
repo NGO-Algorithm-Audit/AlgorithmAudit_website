@@ -109,7 +109,7 @@ Why_we_exist:
       Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
       It does not provide answers or concrete guidelines how to realise ethical algorithms.
-    content1:  We believe a case-based and context sensitive approach is indispensible to develop ethical algorithms. One should not expect top-down regulation and
+    content1:  We believe a case-based and context sensitive approach is indispensable to develop ethical algorithms. One should not expect top-down regulation and
       legislation to solve all ethical problems in AI and machine learning. Taking
       all contested algorithmic cases to court is practically infeasible. More importantly,
       organizations will always carry their own responsibility for ethical algorithms
