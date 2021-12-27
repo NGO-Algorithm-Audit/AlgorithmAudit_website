@@ -2,7 +2,7 @@
 title: The Ethical Algorithm
 author: Michael Kearns, Aaron Roth
 image: images/knowledge_base/ethical_algorithm.png
-type: featured
+type: regular
 summary: Technically accesible and compelling book. Filled with fresh thoughts from
   a frontier in the fair ML community. Written by two top-tier computer scientists.
 
@@ -17,7 +17,7 @@ The authors (two heavyweight researchers in theoretical computer science) presen
 
 Although the linkage between the two main parts of the book (algorithmic privacy and algorithmic fairness) remains unexplained, the concepts discussed in both parts are compelling. The concept of _Pareto frontiers_ fits the book nicely. Pareto frontiers constitute sets of “reasonable” choices for the trade-off between accuracy and fairness of algorithmic models. Pareto frontiers make those tradeoffs as quantitative as possible, but no more so. The numeric curves are “necessarily silent about which point we should choose along the frontier, because that is a matter of judgment about the relative importance of accuracy and fairness”. Kearns and Roth argue that “we must accept this bargain for strong fairness guarantees”.
 
-![](/images/pareto_frontier.png "")
+![](/images/pareto_frontier.png)
 
 *Pareto frontier – Any model not on the boundary is a "bad" model.* Source: The Ethical Algorithm
 
