@@ -33,7 +33,7 @@ The book concludes with the claim that “Law is the ultimate arbiter of what ma
 Practical Fairness is a useful handbook to assess qualitative and quantitative arguments which need to be made case-by-case to define digital fairness.
 
 
-_Update 28-12-2021_
+<!-- _Update 28-12-2021_
 
-We are happy to announce Aileen Nielsen is now part of Algorithm Audit’s Board of Advice.
+We are happy to announce Aileen Nielsen is now part of Algorithm Audit’s Board of Advice. -->
 
