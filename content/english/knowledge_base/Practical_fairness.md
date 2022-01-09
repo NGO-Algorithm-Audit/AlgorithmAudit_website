@@ -28,14 +28,14 @@ And regarding discrimination versus differentiation:
 
 > “Note that discrimination—in the basic sense of sorting or segmenting people—is not necessarily wrong, as arguably all equity-oriented systems discriminate among individuals. The important consideration is the basis for discrimination—that is, the quality that is being used to sort and segment people. When the basis of discrimination is wrong, because it is immoral, prohibited by law, or unrelated to the ultimate goal of a system, such discrimination is improper.”
 
-From a quantitative, technical point of view, the book relies heavily on open-source modules prepared by IBM, including <a href="https://aif360.mybluemix.net/" target="_blank">AIF360</a>, <a href="https://aix360.mybluemix.net/" target="_blank">AIX360</a> and <a href="https://adversarial-robustness-toolbox.org/" target="_blank">Adversarial Robustness Toolbox (ART)</a>. Technical topics – like fair data sets, fairness interventions (pre-, in- and post-processing), interpretability and explainability algorithms – are all discussed at length in distinct chapters. Comprehensible code fragments are applied on widely cited data sets. In doing so, the book provides data and AI ethics practitioners with a broad overview of state-of-the-art academic research, mathematical notions of fairness and legal concerns.
+From a quantitative, technical point of view, the book relies heavily on open-source modules prepared by IBM, including the <a href="https://aif360.mybluemix.net/" target="_blank">AI Fairness 360</a>, <a href="https://aix360.mybluemix.net/" target="_blank">AI Explainability 360</a> and <a href="https://adversarial-robustness-toolbox.org/" target="_blank">Adversarial Robustness Toolbox (ART)</a>. Technical topics – like fair historical data sets, fairness interventions (pre-, in- and post-processing), interpretability and explainability algorithms – are all discussed at length in distinct chapters. Comprehensible code fragments are applied on widely cited data sets. In doing so, the book provides data and AI ethics practitioners with a broad overview of state-of-the-art academic research, mathematical notions of fairness and pressing moral concerns.
 
 The book concludes with the claim that “Law is the ultimate arbiter of what matters for fairness in machine learning, and that’s a good thing”. As you might expect, at Algorithm Audit we agree with this standpoint. We support the idea that qualitative reasoning is always needed to define (algorithmic) fairness. But, at the same time we want to stress that legislation in itself is and will not suffice to realize ethical algorithms. Algorithm Audit advocates that organizations will always carry their own responsibility for ethical algorithms within and beyond the obligation of legal compliance. Why this is the case? Read the rationale for this viewpoint in the section _Why we exist_ on the home page of <a href="www.algorithmaudit.eu/" target="_blank">www.algorithmaudit.eu</a>. 
 
-To conclude, Practical Fairness is a bright handbook for practicioners to assess qualitative and quantitative arguments which need to be made case-by-case to define algorithmic fairness.
+To conclude, Practical Fairness is a cutting edge guidebook for data and AI ethics practicioners to assess fairness both in qualitative and quantitative terms.
 
 
-<!-- _Update 28-12-2021_
+_Update 09-01-2022_
 
-We are happy to announce Aileen Nielsen is now part of Algorithm Audit’s Board of Advice. -->
+We are happy to announce Aileen Nielsen is now part of Algorithm Audit’s Board of Advice.
 
