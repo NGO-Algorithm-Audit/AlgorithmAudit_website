@@ -20,7 +20,7 @@ The book starts with raising three fundamental, pragmatic, and unavoidable quest
 
 <span style="color:#005aa7; font-weight: bold;">3\.</span> Is it fairer to let people know how decisions are made or to have an opaque system to prevent cheating? _Transparency_ or _security_?
 
-In elaborating on these questions, the multi-disciplinary background of the author in data science, anthropology and law is of added value. From a qualitative, legal point of view it is insightful to see approach fairness through the following lens:
+In elaborating on these questions, the multi-disciplinary background of the author in data science, anthropology and law is very informative. From a qualitative, legal point of view it is insightful to approach fairness through the following lens:
 
 > “Equity itself is not a simple one-size-fits-all solution. Equity involves discerning merit—who might deserve more or less depends on the features we think are relevant.”
 
