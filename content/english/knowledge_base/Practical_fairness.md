@@ -35,7 +35,7 @@ The book concludes with the claim that “Law is the ultimate arbiter of what ma
 To conclude, Practical Fairness is a cutting edge guidebook for data and AI ethics practicioners to assess fairness both in qualitative and quantitative terms.
 
 
-_Update 09-01-2022_
+_Update 10-01-2022_
 
 _We are happy to announce Aileen Nielsen is now part of Algorithm Audit’s Board of Advice._
 
