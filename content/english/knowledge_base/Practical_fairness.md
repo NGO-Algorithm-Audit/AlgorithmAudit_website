@@ -37,5 +37,5 @@ To conclude, Practical Fairness is a cutting edge guidebook for data and AI ethi
 
 _Update 09-01-2022_
 
-We are happy to announce Aileen Nielsen is now part of Algorithm Audit’s Board of Advice.
+_We are happy to announce Aileen Nielsen is now part of Algorithm Audit’s Board of Advice._
 
