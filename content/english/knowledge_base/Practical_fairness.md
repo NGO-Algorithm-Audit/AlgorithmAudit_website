@@ -8,7 +8,7 @@ summary: A wide-ranging book that informs data and AI ethics practitioners about
 ---
 ###### **Author: Aileen Nielsen**
 
-How to make fairness tangible? Don’t take the philosophical route, use practical legal and technological frameworks to assess fairness – that’s the adage of this book. Hands-on experience with coding machine learning and statistics might be useful to digest the discussed topics, ranging from interpretable models to explainability algorithms and quantitative fairness metrics to laws for machine learning. 
+How to make fairness tangible? Don’t take the philosophical route, use practical legal and technological frameworks to assess fairness – that’s the adage of this book. Hands-on experience with coding machine learning and statistics might be useful to digest the discussed topics. 
 
 Fairness is examined in three main domains: 1) Anti-discrimination, 2) Security and 3) Privacy. Although most attention regarding fairness is (as expected) absorbed by anti-discrimination, the book advocates convincingly why security and privacy should be part of the fairness equation. “What do we think about stealing someone’s time and subverting their autonomy?” Indeed, social media platforms and apps written for smart homes can be considered as fairness problems too. By linking anti-discrimination to security and privacy, this work is a broad guidebook to define notions of fairness for the digital future.
 
