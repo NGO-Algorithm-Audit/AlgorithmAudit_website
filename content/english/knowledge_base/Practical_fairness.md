@@ -22,9 +22,9 @@ The book starts with raising three fundamental, pragmatic, and unavoidable quest
 
 In elaborating on these questions, the multi-disciplinary background of the author in data science, anthropology and law is very educational. From a qualitative point of view it is insightful to approach fairness from the following starting point:
 
-> “Equity itself is not a simple one-size-fits-all solution. Equity involves discerning merit—who might deserve more or less depends on the features we think are relevant. ... Our current definitions of virtue might ultimately prove outmoded, sociologically naive, or downright illogical when evaluated by other societies. For example, in history we see societies that valued quite different virtues for meritocracies, such as ability to memorize ancient texts, skill in warfare, religiosity, and ability to have children. So we should have some humility, recognizing that our current ideas of meritocracy [and equity] might not age well”
+> “Equity itself is not a simple one-size-fits-all solution. Equity involves discerning merit—who might deserve more or less depends on the features we think are relevant. [...] Our current definitions of virtue might ultimately prove outmoded, sociologically naive, or downright illogical when evaluated by other societies. For example, in history we see societies that valued quite different virtues for meritocracies, such as ability to memorize ancient texts, skill in warfare, religiosity, and ability to have children. So we should have some humility, recognizing that our current ideas of meritocracy [and equity] might not age well”
 
-And:
+And regarding discrimination versus differentiation:
 
 > “Note that discrimination—in the basic sense of sorting or segmenting people—is not necessarily wrong, as arguably all equity-oriented systems discriminate among individuals. The important consideration is the basis for discrimination—that is, the quality that is being used to sort and segment people. When the basis of discrimination is wrong, because it is immoral, prohibited by law, or unrelated to the ultimate goal of a system, such discrimination is improper.”
 
