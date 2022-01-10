@@ -10,4 +10,6 @@ image: images/about.svg
 
 {{< about_board "Board members" "Jurriaan Parie" "Jurriaan has a background in statistics and data science. He was affiliated to ETH Zürich as a PhD-candidate in Applied Data Science for one year, but quit the progam. Now, Jurriaan works as a data scientist at IBM Amsterdam." "Ariën Voogt" "Ariën has a background in physics and philosophy. He currently pursues a PhD in philosophy and theology at the Protestant Theological University Amsterdam.">}} 
 
-{{< about_commission_advisory "Audit commissions" "Advisory board" " The composition of audit commissions varies per case. The exact makeup of commissions is shared once the final advice is published." "Work in progress. Updates follow soon.">}}
+{{< about_commissions "Audit commissions" " The composition of audit commissions varies per case. The exact makeup of commissions is shared once the final advice is published.">}}
+
+{{< about_BoA "Advisory board" "• Aileen Nielsen, doctoral researcher in Law and Economics ETH Zürich. Author of the book Practical fariness.">}}
