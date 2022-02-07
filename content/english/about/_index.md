@@ -12,4 +12,7 @@ image: images/about.svg
 
 {{< about_commissions "Audit commissions" " The composition of audit commissions varies per case. The exact makeup of commissions is shared once the final advice is published.">}}
 
-{{< about_BoA "Advisory board" "Aileen Nielsen, Fellow in Law&Tech at the ETH Zürich, author of the book " "Edgar Whitley, Associate Professor of Information Systems at the London School of Economics and Political Sciences">}}
+{{< about_BoA "Advisory board" 
+"Fellow in Law&Tech at the ETH Zürich, author of the book " 
+"Associate Professor of Information Systems at the London School of Economics and Political Sciences"
+"Professor Public Law & Governance of Artificial Intelligence (AI) at Leiden University">}}
