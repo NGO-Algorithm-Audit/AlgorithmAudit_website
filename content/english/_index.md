@@ -6,9 +6,9 @@ Banner:
     about ethical algorithms. Our independent audit commissions shed light on ethical
     issues that arise in concrete use cases of algorithmic tools and methods.
   button:
-    enable: false
-    label: Read our white paper
-    link: knowledgebase
+    enable: True
+    label: Read our new advice report
+    link: cases
 What_we_do:
   enable: true
   title: What we do
