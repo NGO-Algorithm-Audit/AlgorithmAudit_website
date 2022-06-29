@@ -1,0 +1,15 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+  <div class="p-5 col-lg-12 col-md-12 col-sm-12 col-xs-12 shadow rounded-lg"  style="display: table;">
+
+    <div>
+      <h3 class="mb-4" style="font-size: 16px; text-decoration: none; color:#005aa7;">{{ .Get 0 | markdownify }}</h3>
+      <p>Dowload the {{ .Get 1 | markdownify }} <a href="{{ .Get 2 }}" target="_blank">here</a>.</p>
+    </div>
+
+    <div style="text-align:center">
+      <!-- width="420" height="594"  -->
+      <iframe src={{ .Get 2 }} width="50%" height="594px" allow="autoplay"></iframe>
+    </div>
+
+  </div>
