@@ -4,7 +4,7 @@ author: Sandra Wachter, Brent Mittelstadt, Chris Russell
 image: "images/knowledge_base/fairness_automated.png"
 type: "regular"
 draft: false
-summary: Xx
+summary: Must-read scientific paper trying to bridge the qualitative legal and quantitative statistical doctrine
 ---
 
 #### **Authors: Sandra Wachter, Brent Mittelstadt, Chris Russell**
