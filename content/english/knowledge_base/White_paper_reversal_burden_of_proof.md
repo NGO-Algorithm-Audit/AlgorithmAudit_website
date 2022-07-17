@@ -1,9 +1,9 @@
 ---
 title: White paper – Reversing the burden of proof
-author: Non-profit Algorithm Audit
+author: Algorithm Audit
 image: /images/knowledge_base/white-paper-1.png
 type: featured
-summary: First white paper on the reversal of Algorithm Audit on  the burden of proof in the context of (semi-)automated decision-making
+summary: Algorithm Audit's first white paper on the reversal on the burden of proof in the context of (semi-)automated decision-making
 
 ---
 Algorithm Audit has published its first white paper🥇 Reversing the burden of proof is a promising approach to protect against discrimination in the context of (semi-)automated decision-making (ADM). Yet to make it feasible we need to overcome some hurdles.

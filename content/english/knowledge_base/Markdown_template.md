@@ -1,9 +1,9 @@
 ---
-title: "Why Fairness cannot be Automated"
-author: Sandra Wachter, Brent Mittelstadt, Chris Russell
+title: "Markdown template"
+author: None
 image: "images/knowledge_base/fairness_automated.png"
 type: "regular"
-draft: true
+draft: true 
 ---
 
 
@@ -158,7 +158,7 @@ Markdown | Less | Pretty
 
 ##### Image
 
-![image](../../images/blog/post-6.jpg)
+![image](/images/blog/post-6.jpg)
 
 <hr>
 
