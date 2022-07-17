@@ -10,7 +10,7 @@ image: images/about.svg
 
 {{< about_board "Board members" "Jurriaan Parie" "Jurriaan has a background in statistics and data science. He was affiliated as a PhD-candidate in Applied Data Science to ETH Zürich, but quit the progam. Now, Jurriaan works as a data scientist at IBM Amsterdam." "Ariën Voogt" "Ariën has a background in physics and philosophy. He currently pursues a PhD in philosophy and theology at the Protestant Theological University Amsterdam.">}} 
 
-{{< about_commissions "Audit commissions" " The composition of audit commissions varies per case. The exact makeup of commissions is shared once the final advice is published. For more information see ">}}
+{{< about_commissions "Audit commissions" " The composition of audit commissions varies per case. The exact makeup of commissions is shared here: ">}}
 
 {{< about_BoA "Advisory board" 
 "Fellow in Law&Tech at the ETH Zürich, author of the book " 
