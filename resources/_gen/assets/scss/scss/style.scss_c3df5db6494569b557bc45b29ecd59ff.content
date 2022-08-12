@@ -727,7 +727,7 @@ body {
     display: inline-block; }
 
 .footer-list a {
-  display: block;
+  display: inline;
   padding: 5px 0;
   font-size: 16px;
   color: #005aa7;
@@ -752,10 +752,9 @@ body {
   margin: 0 auto; }
 
 .social-icons {
-  margin-top: 30px;
   position: absolute;
-  left: 50%;
-  top: 50%; }
+  width: 50%;
+  left: 50%; }
 
 .social-icons a {
   color: #005aa7;

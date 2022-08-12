@@ -3,7 +3,7 @@ baseURL = "localhost:1313/"
 title = "Algorithm Audit"
 theme = "bigspring-light"
 # post pagination
-paginate = "4"
+paginate = "6"
 # post excerpt
 summaryLength = "15"
 # disqus short name

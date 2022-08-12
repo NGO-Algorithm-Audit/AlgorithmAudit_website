@@ -28,7 +28,7 @@ body {
 }
 
 .footer-list a {
-  display: block;
+  display: inline;
   padding: 5px 0;
   font-size: 16px;
   color: #005aa7;
@@ -61,10 +61,9 @@ body {
 }
 
 .social-icons{
-  margin-top: 30px;
   position:absolute;
+  width: 50%;
   left:50%;
-  top:50%;
 }
 
 .social-icons a {
