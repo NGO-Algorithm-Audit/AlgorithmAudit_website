@@ -10,16 +10,22 @@ url = "cases"
 weight = 2
 
 [[main]]
+name = "Bias scan"
+url = "bias_scan"
+weight = 3
+
+[[main]]
 name = "Knowledge base"
 url = "knowledge_base"
-weight = 3
+weight = 4
 
 [[main]]
 name = "FAQ"
 url = "faq"
-weight = 4
+weight = 5
 
 [[main]]
 name = "About"
 url = "about"
-weight = 5
+weight = 6
+

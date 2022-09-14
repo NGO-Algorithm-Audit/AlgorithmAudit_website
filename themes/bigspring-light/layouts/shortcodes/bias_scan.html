@@ -1,0 +1,105 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<script src="https://unpkg.com/vue@1.0.28/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.2.1/dist/axios.min.js"></script>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="p-5 shadow rounded-lg">
+      
+      <h3 class="mb-4 balance" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+
+      <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 50px;">
+        <div>
+          <p>{{ .Get 1 | markdownify }}</p> 
+        </div>
+        <div id="app">
+          <div v-if="!file">
+              <h4>Select a file</h4>
+              <input type="file" @change="onFileChange">
+          </div>
+          <div v-else>
+              <div>File loaded </div>
+              <button v-if="!uploadURL" @click="removeFile">Remove file</button>
+              <button v-if="!uploadURL" @click="uploadFile">Upload file</button>
+          </div>
+          <h2 v-if="uploadURL">Success! File uploaded to bucket.</h2>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  const MAX_FILE_SIZE = 1000000
+
+  /* ENTER YOUR ENDPOINT HERE */
+  const API_ENDPOINT = 'https://0zk5jxvu1c.execute-api.us-east-1.amazonaws.com/uploads'
+  // e.g. https://ab1234ab123.execute-api.us-east-1.amazonaws.com/uploads
+
+  new Vue({
+      el: "#app",
+      data: {
+          file: '',
+          uploadURL: '',
+          name: ''
+      },
+      methods: {
+          onFileChange (e) {
+              let files = e.target.files || e.dataTransfer.files
+              if (!files.length) return
+              this.createFile(files[0])
+          },
+          createFile (file) {
+              let reader = new FileReader()
+              this.name = file.name
+              console.log(this.name)
+              reader.readAsText(file, 'UTF-8');
+              reader.onload = (e) => {
+                  if (e.target.result.length > MAX_FILE_SIZE) {
+                      return alert('File is loo large.')
+                  }
+                  this.file = e.target.result
+              }
+          },
+          removeFile: function (e) {
+              console.log('Remove clicked')
+              this.file = ''
+          },
+          uploadFile: async function (e) {
+              console.log('Upload clicked', this.name)
+              // Get the presigned URL
+              const response = await axios({
+                  method: 'GET',
+                  url: API_ENDPOINT+'?filename='+this.name
+              })
+              console.log('Response: ', response)
+              let blobData = new Blob([this.file], {type: 'text/csv'})
+              console.log('Uploading to: ', response.uploadURL)
+              const result = await fetch(response.uploadURL, {
+                  method: 'PUT',
+                  body: blobData
+              })
+              console.log('Result: ', result)
+              // Final URL for the user doesn't need the query string params
+              this.uploadURL = response.uploadURL.split('?')[0]
+          }
+      }
+  })
+</script>
+<style type="text/css">
+
+  #app {
+      background: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      transition: all 0.2s;
+      text-align: center;
+  }
+  #logo {
+      width: 100px;
+  }
+</style>
