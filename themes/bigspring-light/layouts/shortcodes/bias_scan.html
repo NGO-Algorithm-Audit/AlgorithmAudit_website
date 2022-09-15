@@ -23,10 +23,8 @@
           <p style="color:#005aa7; font-size:12px; font-weight: bold;">Requirements of input data:</p>
           <p style="font-size:12px;"><span style="color:#005aa7; font-weight: bold;">-</span> File format .csv, max. 10mb;</p>
           <p style="font-size:12px;"><span style="color:#005aa7; font-weight: bold;">-</span> 2 columns: predicted labels by classifier, ground truth labels.</p>
-
-          
-
         </div>
+
         <div id="app">
           <div v-if="!file">
               <h4>Select a file</h4>
@@ -40,6 +38,11 @@
           <h2 v-if="uploadURL">Success! File uploaded to bucket.</h2>
         </div>
       </div>
+
+      <div>
+
+      </div>
+      <p>The implementation of the bias scan tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">[Github].</a></p> 
       <div>
         <img src="https://www.mijntreintje.nl/images/banners/under-construction-image.jpeg" alt="Under construction" width="50%"/>
       </div>
