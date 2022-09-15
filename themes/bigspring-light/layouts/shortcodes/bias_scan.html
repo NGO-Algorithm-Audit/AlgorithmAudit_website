@@ -13,9 +13,18 @@
         <div>
           <p>{{ .Get 1 | markdownify }}</p> 
           <p>The implemented bias scan tool is based on the k-means Hierarchical Bias-Aware Clustering (HBAC) method as described in Misztal-Radecka, Indurkya, Information Processing and Management. Bias-Aware Hierarchical Clustering for detecting the discriminated groups of users in recommendation systems (2021) <a href="https://fpf.org/blog/fpf-report-automated-decision-making-under-the-gdpr-a-comprehensive-case-law-analysis/" target="_blank">[link].</a></p> 
-          <p style="color:#005aa7; font-weight: bold;">Requirements of input data:</p>
-          <p><span style="color:#005aa7; font-weight: bold;">-</span> File format .csv, max. 10mb;</p>
-          <p><span style="color:#005aa7; font-weight: bold;">-</span> 2 columns: predicted labels by classifier, ground truth labels.</p>
+          
+          <p style="color:#005aa7; font-weight: bold;">How to use the bias scan tool?</p>
+          <p><span style="color:#005aa7; font-weight: bold;">1.</span> Upload model predictions. See input data requirements below;</p>
+          <p><span style="color:#005aa7; font-weight: bold;">2.</span> Analyse results:</p>
+          <p>- Plot with identified clusters:</p>
+          <p>- Statistical values:</p>
+          
+          <p style="color:#005aa7; font-size:12px; font-weight: bold;">Requirements of input data:</p>
+          <p style="font-size:12px;"><span style="color:#005aa7; font-weight: bold;">-</span> File format .csv, max. 10mb;</p>
+          <p style="font-size:12px;"><span style="color:#005aa7; font-weight: bold;">-</span> 2 columns: predicted labels by classifier, ground truth labels.</p>
+
+          
 
         </div>
         <div id="app">
