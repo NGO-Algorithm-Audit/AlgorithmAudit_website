@@ -11,23 +11,73 @@
 
       <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 50px;">
         <div>
-          <p>{{ .Get 1 | markdownify }}</p> 
-          <p>The implemented bias scan tool is based on the k-means Hierarchical Bias-Aware Clustering (HBAC) method as described in Misztal-Radecka, Indurkya, Information Processing and Management. Bias-Aware Hierarchical Clustering for detecting the discriminated groups of users in recommendation systems (2021) <a href="https://fpf.org/blog/fpf-report-automated-decision-making-under-the-gdpr-a-comprehensive-case-law-analysis/" target="_blank">[link].</a></p> 
-          
-          <p style="color:#005aa7; font-weight: bold;">How to use the bias scan tool?</p>
-          <p><span style="color:#005aa7; font-weight: bold;">1.</span> Upload model predictions. See input data requirements below;</p>
-          <p><span style="color:#005aa7; font-weight: bold;">2.</span> Analyse results:</p>
-          <p>- Plot with identified clusters:</p>
-          <p>- Statistical values:</p>
-          
-          <p style="color:#005aa7; font-size:12px; font-weight: bold;">Requirements of input data:</p>
-          <p style="font-size:12px;"><span style="color:#005aa7; font-weight: bold;">-</span> File format .csv, max. 10mb;</p>
-          <p style="font-size:12px;"><span style="color:#005aa7; font-weight: bold;">-</span> 2 columns: predicted labels by classifier, ground truth labels.</p>
-        </div>
+          <p><span style="color:#005aa7; font-weight: bold;">What is a bias scan tool?</span></p> 
+          <p>A statistical tool to identify potentially discriminated groups of similar users in the vast amount of data AI systems output.</p> 
+          <p><span style="color:#005aa7; font-weight: bold;">What does the tool compute?</span></p> 
+          <p>...</p> 
+          <p><span style="color:#005aa7; font-weight: bold;">For what type of AI systems does the tool work?</span></p> 
+          <p>Currently, only <a href="https://en.wikipedia.org/wiki/Binary_classification" target="_blank">binary classification</a> algorithms can be scanned, i.e., loan approval .</p> 
+          <p><span style="color:#005aa7; font-weight: bold;">What input does the bias scan tool need?</span></p> 
+          <p>A csv file of max. 10 mb, with columns structured as follows: <i>features, predicted labels, ground truth labels</i>.</p>
+          <p><span style="font-weight: bold;">Features:</span> unscaled numeric values, e.g., <i>feat_1, feat_2, ..., feat_n</i>;</p>
+          <p><span style="font-weight: bold;">Predicted label:</span> 0 or 1;</p>
+          <p><span style="font-weight: bold;">Truth label:</span> 0 or 1.</p>
+          <p><u>Example:</u></p>
+          <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-uoz0{border-color:#005aa7;text-align:left;vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-uoz0">feat_1</th>
+                <th class="tg-uoz0">feat_2</th>
+                <th class="tg-uoz0">...</th>
+                <th class="tg-uoz0">feat_n</th>
+                <th class="tg-uoz0">pred_label</th>
+                <th class="tg-uoz0">truth_label</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-uoz0">10</td>
+                <td class="tg-uoz0">1</td>
+                <td class="tg-uoz0">...</td>
+                <td class="tg-uoz0">0.1</td>
+                <td class="tg-uoz0">1</td>
+                <td class="tg-uoz0">1</td>
+              </tr>
+              <tr>
+                <td class="tg-uoz0">20</td>
+                <td class="tg-uoz0">2</td>
+                <td class="tg-uoz0">...</td>
+                <td class="tg-uoz0">0.2</td>
+                <td class="tg-uoz0">1</td>
+                <td class="tg-uoz0">0</td>
+              </tr>
+              <tr>
+                <td class="tg-uoz0">30</td>
+                <td class="tg-uoz0">3</td>
+                <td class="tg-uoz0">...</td>
+                <td class="tg-uoz0">0.3</td>
+                <td class="tg-uoz0">0</td>
+                <td class="tg-uoz0">0</td>
+              </tr>
+            </tbody>
+            </table>
 
-        <div id="app">
+          <p>Note: No a priori information is needed about sensitive (protected) attributes.</p>
+        </div>
+        <p><span style="color:#005aa7; font-weight: bold;">Upload a file</span></p> 
+        <p>Wait 10 seconds</p> 
+
+        <div id="app" style="background-color:#FEFCE6;">
           <div v-if="!file">
-              <h4>Select a file</h4>
+              <h4 >Select a file</h4>
               <input type="file" @change="onFileChange">
           </div>
           <div v-else>
@@ -36,17 +86,14 @@
               <button v-if="!uploadURL" @click="uploadFile">Upload file</button>
           </div>
           <h2 v-if="uploadURL">Success! File uploaded to bucket.</h2>
+
+          <a :href="`https://bias-scan.s3.amazonaws.com/${str_name}.pdf`">Download bias scan report</a>
+
         </div>
-      </div>
 
-      <div>
-
+        <p><span style="color:#005aa7; font-weight: bold;">Note –</span> As explained in the bias scan report, outcomes of this tool do not establish prohibited <i>prima facie</i> discrimination. Rather, the identified disparities serve as a starting point to assess potential discrimination according to the context-sensitive legal doctrine, i.e., assessment of the legitimacy of the aim pursued and whether the means of achieving that aim are appropriate and necessary. </p>
+        <p><span style="color:#005aa7; font-weight: bold;">Algorithm –</span> The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://fpf.org/blog/fpf-report-automated-decision-making-under-the-gdpr-a-comprehensive-case-law-analysis/" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found in <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a></p> 
       </div>
-      <p>The implementation of the bias scan tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">[Github].</a></p> 
-      <div>
-        <img src="https://www.mijntreintje.nl/images/banners/under-construction-image.jpeg" alt="Under construction" width="50%"/>
-      </div>
-      
     </div>
   </div>
 </div>
@@ -58,14 +105,14 @@
 
   /* ENTER YOUR ENDPOINT HERE */
   const API_ENDPOINT = 'https://0zk5jxvu1c.execute-api.us-east-1.amazonaws.com/uploads'
-  // e.g. https://ab1234ab123.execute-api.us-east-1.amazonaws.com/uploads
 
   new Vue({
       el: "#app",
       data: {
           file: '',
           uploadURL: '',
-          name: ''
+          name: '',
+          str_name: ''
       },
       methods: {
           onFileChange (e) {
@@ -77,6 +124,9 @@
               let reader = new FileReader()
               this.name = file.name
               console.log(this.name)
+              let str = file.name
+              this.str_name = str.substring(0, str.length - 4);
+              console.log(this.str_name)
               reader.readAsText(file, 'UTF-8');
               reader.onload = (e) => {
                   if (e.target.result.length > MAX_FILE_SIZE) {
@@ -106,10 +156,11 @@
               console.log('Result: ', result)
               // Final URL for the user doesn't need the query string params
               this.uploadURL = response.uploadURL.split('?')[0]
-          }
+          },
       }
   })
 </script>
+
 <style type="text/css">
 
   #app {
