@@ -1,0 +1,56 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("toggle");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more...";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less...";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="p-5 shadow rounded-lg">
+      
+      <h3 class="mb-4 faq" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+
+      <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 50px;">
+        <div>
+          <p><span style="color:#005aa7; font-weight: bold;">What is a bias scan tool?</span> 
+          <br>An algorithm to identify bias in algorithms. It detects potentially discriminated groups of similar users in the predicted outcomes of AI systems, without specifying any <i>a priori</i> information on protected attributes.</p> 
+
+          <div>
+            <a style="color:#005aa7;" onclick="myFunction()" id="toggle">Read more...</a>
+            <span id="dots"></span>
+          </div>
+
+          <div id="more" style="display: none;">
+            <p><span style="color:#005aa7; font-weight: bold;">By whom can the bias scan be used?</span> 
+            <br>The bias scan tool is a first step to allow all stakeholders, e.g., data scientists, journalists, policy makers and others, to leverage quantitative methods to assess bias in AI systems.</p> 
+            
+            <p><span style="color:#005aa7; font-weight: bold;">What does the tool compute?</span>
+            <br>A statistical method is used to compute which groups (or: clusters) are relatively often assigned negative outcomes by an AI system. The tool returns a report in which identified clusters are visualized and statistical significant differences are tested.</p> 
+
+            <p><span style="color:#005aa7; font-weight: bold;">The tool detects prohibited discrimination in AI?</span>
+            <br>No, the identified disparities serve as a starting point to assess potentially discriminatory AI classifiers with help of subject-matter expertise following the context-sensitive legal doctrine, i.e., assessment of the legitimacy of the aim pursued and whether the means of achieving that aim are <i>appropriate</i> and <i>necessary</i>.</p> 
+
+            <p><span style="color:#005aa7; font-weight: bold;">For what type of AI does the tool work?</span> 
+            <br>Currently, only <a href="https://en.wikipedia.org/wiki/Binary_classification" target="_blank">binary classification</a> algorithms can be scanned. For instance, prediction of loan approval (yes/no) or disease detection (positive/negative).</p> 
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
