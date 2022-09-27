@@ -8,7 +8,7 @@
     <div class="p-5 shadow rounded-lg">
       
       <h3 class="mb-4 review" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
-        <div id="app" style="background-color:#FEFCE6; padding: 50px 0px; border-radius: 25px; border-color:#005aa7;border-style:solid;border-width:0px;">
+        <div id="app" style="background-color:#FFFFF0; padding: 50px 0px; border-radius: 25px; border-color:#005aa7;border-style:solid;border-width:0px;">
           <div v-if="!file">
               <h4 style="margin-bottom: 30px">Select a file</h4>
               <input type="file" @change="onFileChange">
@@ -18,17 +18,17 @@
               <button v-if="!uploadURL" @click="removeFile">Remove file</button>
               <button v-if="!uploadURL" @click="uploadFile">Upload file</button>
           </div>
-          <h4 v-if="uploadURL">Success! The file is scanned now:</h4>
+          <h4 v-if="uploadURL">Uploaded! The file is scanned now:</h4>
 
           <div v-if="uploadURL">
             <div>
               <progress style="padding: 0px 0px; margin: auto 100px; background: linear-gradient(to left, #618EC7, #fffde4);" value="0" max="20" id="progressBar"></progress>
             </div>
-            <a :href="`https://bias-scan.s3.amazonaws.com/${str_name}.pdf`">Download bias scan report</a>
+            <a :href="`https://output-pdf-download.s3.amazonaws.com/${str_name}.pdf`">Download bias scan report</a>
           </div>
         </div>
         <p><span style="color:#005aa7; font-weight: bold;">Algorithm –</span> The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://fpf.org/blog/fpf-report-automated-decision-making-under-the-gdpr-a-comprehensive-case-law-analysis/" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found in <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a></p> 
-        <p>Download an example report</p> 
+        <p><a href="https://static-files-pdf.s3.amazonaws.com/BERT_disinfo_classifier.pdf" target="_blank">Download an example report</a></p> 
       </div>
     </div>
   </div>
