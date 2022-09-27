@@ -22,7 +22,7 @@
 
           <div v-if="uploadURL">
             <div>
-              <progress style="padding: 0px 0px; margin: auto 100px; background: linear-gradient(to left, #618EC7, #fffde4);" value="0" max="20" id="progressBar"></progress>
+              <progress style="padding: 0px 0px; margin: auto 100px; background: linear-gradient(to left, #618EC7, #fffde4);" value="0" max="10" id="progressBar"></progress>
             </div>
             <a :href="`https://output-pdf-download.s3.amazonaws.com/${str_name}.pdf`">Download bias scan report</a>
           </div>
@@ -92,12 +92,12 @@
               this.uploadURL = response.uploadURL.split('?')[0]
 
               // countdown progress bar
-              var timeleft = 20;
+              var timeleft = 10;
               var downloadTimer = setInterval(function(){
                 if(timeleft <= 0){
                   clearInterval(downloadTimer);
                 }
-                document.getElementById("progressBar").value = 20 - timeleft;
+                document.getElementById("progressBar").value = 10 - timeleft;
                 timeleft -= 1;
               }, 1000);
           },
