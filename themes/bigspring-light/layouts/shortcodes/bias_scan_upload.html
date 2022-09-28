@@ -29,6 +29,13 @@
         </div>
         <p><span style="color:#005aa7; font-weight: bold;">Algorithm –</span> The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://fpf.org/blog/fpf-report-automated-decision-making-under-the-gdpr-a-comprehensive-case-law-analysis/" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found in <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a></p> 
         <p><a href="https://static-files-pdf.s3.amazonaws.com/BERT_disinfo_classifier.pdf" target="_blank">Download an example report</a></p> 
+        <p>Interpretation of identified clusters in the example report: The HBAC scan identifies bias of an AI disinformation classifier on the basis of:
+          <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> verified profile of Twitter users;
+          <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> #mentions used by users in a tweet;
+          <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> sentiment score of the tweet (as computed by the <a href="https://github.com/cjhutto/vaderSentiment" target="_blank">VADER</a> library);
+          <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> #URLs used by users in a tweet.
+        <br> Tweets of users with the above characteristics are classified relatively more often as disinfonformation by <a href="https://github.com/NGO-Algorithm-Audit" target="_blank">this</a> AI classifier. 
+        </p>
       </div>
     </div>
   </div>

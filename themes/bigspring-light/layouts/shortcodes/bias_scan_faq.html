@@ -27,7 +27,7 @@ function myFunction() {
       <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 50px;">
         <div>
           <p><span style="color:#005aa7; font-weight: bold;">What is a bias scan tool?</span> 
-          <br>An algorithm that identifies bias in AI classifiers. It detects potentially discriminated groups of similar users in the predicted outcomes of AI systems, without specifying <i>a priori</i> information on protected attributes.</p> 
+          <br>An algorithm that identifies bias in AI systems. It identifies potentially discriminated groups of similar users.</p> 
 
           <div>
             <a style="color:#005aa7;" onclick="myFunction()" id="toggle">Read more...</a>
@@ -35,20 +35,25 @@ function myFunction() {
           </div>
 
           <div id="more" style="display: none;">
-            <p><span style="color:#005aa7; font-weight: bold;">Why a bias scan?</span> 
-              <br>Due to the vast amount of data, statistical methods are indispensable to detect prohibited discrimination in AI systems. Our unsupervised learning approach offers a solution for a common pitfall that hampers the application of quantitative bias detection and mitigation techniques in practice: data on protected characteristics is often not available due to data protection directives. This tool does not require <i>a priori</i> information about existing disparities and protected attributes in the data. <i>Post hoc</i> examination should be conducted to assess whether cluster disparities are critically linked to protected ground exists.</p> 
+            <p><span style="color:#005aa7; font-weight: bold;">Why this bias scan?</span> 
+              <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> No data needed on protected attributes of users;
+              <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> Model-agnostic (AI binary classifiers only);
+              <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> Developed open-source and not-for-profit.
 
             <p><span style="color:#005aa7; font-weight: bold;">By whom can the bias scan be used?</span> 
-            <br>The bias scan tool allows various stakeholders, e.g., data scientists, journalists, policy makers and others, to leverage quantitative methods to examine bias in AI systems. The tool serves as a first step to demystify AI. That is: identifying normative modeling choices, translating those questions into clear language and deliberating with a diverse group of stakeholders what is the 'best' way forward.</p> 
+            <br>The bias scan tool allows the entire ecosystem involved in auditing AI, e.g., data scientists, journalists, policy makers, public- and private auditors, to use quantitative methods to detect bias in AI systems.</p> 
             
             <p><span style="color:#005aa7; font-weight: bold;">What does the tool compute?</span>
             <br>A statistical method is used to compute which clusters are relatively often assigned negative outcomes by an AI system. A cluster is a group of data points sharing similar features. The tool returns a report in which identified clusters are visualized and statistical significant feature differences are tested (Welch’s two-samples t-test for unequal variances).</p> 
 
             <p><span style="color:#005aa7; font-weight: bold;">The tool detects prohibited discrimination in AI?</span>
-            <br>No. The bias scan tool serves as a starting point to assess potentially discriminatory AI classifiers with the help of subject-matter expertise following the context-sensitive legal doctrine, i.e., assessment of the legitimacy of the aim pursued and whether the means of achieving that aim are <i>appropriate</i> and <i>necessary</i>.</p> 
+            <br>No. The bias scan tool serves as a starting point to assess potentially discriminatory AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured bias is legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are <i>appropriate</i> and <i>necessary</i>.</p> 
 
             <p><span style="color:#005aa7; font-weight: bold;">For what type of AI does the tool work?</span> 
             <br>Currently, only <a href="https://en.wikipedia.org/wiki/Binary_classification" target="_blank">binary classification</a> algorithms can be scanned. For instance, prediction of loan approval (yes/no) or disease detection (positive/negative).</p> 
+
+            <p><span style="color:#005aa7; font-weight: bold;">Summary</span> 
+            <img class="img-fluid" src="/images/quantitative_qualitatitive.png">
             
           </div>
         </div>
