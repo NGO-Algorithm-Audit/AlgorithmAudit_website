@@ -1,6 +1,6 @@
 ---
 title: Bias scan
-subtitle: Open-source bias scan tool to identify potentially discriminated groups of similar users in AI systems. Based on k-means Hierarchical Bias-Aware Clustering (HBAC). 
+subtitle: Unsupervised bias detection tool. To identify potentially discriminated groups of similar users in AI systems. No _a prioti_ data needed on pretected attributes.
 image: images/illustration_cases.svg
 ---
 {{< bias_scan_faq "Bias scan tool – What is it?">}} 
