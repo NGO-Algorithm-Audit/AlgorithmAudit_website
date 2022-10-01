@@ -1,9 +1,9 @@
 ---
 title: Bias scan
-subtitle: Unsupervised bias detection tool. To identify potentially discriminated groups of similar users in AI systems. No data needed on protected attributes.
-image: images/illustration_cases.svg
+subtitle: Unsupervised bias detection tool. To identify potentially discriminated groups of similar users in AI systems. Including qualitative approach how to assess quantitative disparities.
+image: "/images/illustration_cases.svg"
 ---
-{{< bias_scan_faq "Bias scan tool – What is it?">}} 
+{{< bias_scan_faq "Bias scan tool FAQ – What is it?">}} 
 
 {{< bias_scan_data "Bias scan tool – Input data">}} 
 
