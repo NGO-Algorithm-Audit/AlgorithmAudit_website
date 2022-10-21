@@ -134,8 +134,8 @@ Supported_by:
   Suported_by:
   - title: Our initiative is supported by
     img1:
-    - images/sidn.png
+    - images/EUAIFund.svg
     img2:
-    - 
+    - images/sidn.png
 
 ---
