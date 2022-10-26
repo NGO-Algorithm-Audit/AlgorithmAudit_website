@@ -4,7 +4,7 @@ subtitle: We are working on a variety of cases. Once an audit commission has gat
 
 
   We are open to new cases. Please [<span style="color:#005aa7"> reach out</span>](/index.html#contactform) to us when you know a case for review.
-image: "/images/illustration_cases.svg"
+image: "/images/case_repository.svg"
 
 ---
 {{< case1 "Type of SIM card as a predictor variable to detect payment fraud" "Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University" "Jan Overgoor, PhD Management Science and Engineering, Stanford University" "Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg University" "Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft">}}
