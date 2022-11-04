@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+
+{{ "<!-- faq -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,50 @@
+{{ "<!-- navigation -->" | safeHTML }}
+
+<header class="navigation col-12" id="header-navigation">
+  <div class="container col-12" id="header-container">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="navbar-div">
+        <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
+          {{ with site.Params.logo}}
+          <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relLangURL }}" alt="{{ site.Title }}">
+          {{ else }}{{site.Title}}{{end}}
+        </a>
+      </div>
+      <div class="button-div">
+        <button class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-label="menu">
+            <i class="fas fa-bars navbar-toggler-menu" id="bars" style="color:#005aa7"></i>
+            <i class="fas fa-times cross" style="color:#005aa7"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          {{ range site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu">
+              {{ range .Children }}
+              <a class="dropdown-item" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+      <!-- navbar -->
+      
+    </nav>
+  </div>
+</header>
+
+{{ "<!-- /navigation -->" | safeHTML }}
