@@ -584,32 +584,19 @@ $accent: #FF4081;
 }
 
 .timeline-item {
+  display: table;
+  height: 100%;
   width: 100%;
   margin-bottom: 0px;
 
-  &:nth-child(even) {
+  .timeline-content {
+    float: right;
+    padding: 10px 30px 10px 30px;
+  }
 
-    .timeline-content {
-      float: right;
-      padding: 10px 30px 10px 30px;
-
-      .date {
-        right: auto;
-        left: 0;
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        border-style: solid;
-        width: 0;
-        height: 0;
-        top: 30px;
-        left: -15px;
-        border-width: 10px 15px 10px 0;
-        border-color: transparent #f5f5f5 transparent transparent;
-      }
-    }
+  .timeline-content-left {
+    float: left;
+    padding: 10px 30px 10px 30px;
   }
 
   &::after {
@@ -619,8 +606,28 @@ $accent: #FF4081;
   }
 }
 
-
 .timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0px;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+}
+
+.timeline-content-left {
   position: relative;
   width: 45%;
   padding: 10px 30px;
@@ -652,7 +659,24 @@ $accent: #FF4081;
   margin-left: -15px;
 }
 
+.timeline-date-right {
+  position: absolute;
+  width: 45%;
+  left: 52.5%;
+  margin-top: 27.5px;
+}
 
+.timeline-date-left {
+  position: absolute;
+  width: 45%;
+  left: 40%;
+  margin-top: 27.5px;
+  color: $primary;
+}
+
+.timeline-logo {
+  position: absolute;
+}
 
 .timeline-card {
   padding: 0!important;

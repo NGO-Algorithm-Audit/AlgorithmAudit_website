@@ -20,12 +20,17 @@ url = "knowledge_base"
 weight = 4
 
 [[main]]
+name = "Events"
+url = "events"
+weight = 5
+
+[[main]]
 name = "FAQ"
 url = "faq"
-weight = 5
+weight = 6
 
 [[main]]
 name = "About"
 url = "about"
-weight = 6
+weight = 7
 

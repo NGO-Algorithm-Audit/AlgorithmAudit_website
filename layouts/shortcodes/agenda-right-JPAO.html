@@ -1,0 +1,18 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<div class="timeline timeline-item">
+    <div class="timeline-logo" style="left: 15%;">
+        <img style="width: 25%; margin-top: 30px;" src="images/JPAO.jpg">
+    </div>
+    <div class="timeline-date-left">
+        <p style="color: #005aa7; font-weight: bold;">{{ .Get 0| markdownify }}</p> 
+    </div>
+    <div class="timeline-img"></div>
+    <div class="timeline-content">
+        <h3><span class="post-title">{{ .Get 1 | markdownify }}</span></h3>
+        <div>{{ .Get 2| markdownify }}</div>
+        <p>
+            {{ .Get 3| markdownify }}
+        </p> 
+    </div>
+</div>  
