@@ -4,6 +4,7 @@ subtitle: Knowledge sharing is an integral part of Algorithm Audit's mission. Me
 image: "/images/about.svg"
 resources: "/images/about.svg"
 ---
+{{< agenda-right-EUAI "Nov 2022" "EU AI Fund digital policy convening" "2-day gathering of people working on tech policy in Europe, Brussels">}}
 {{< agenda-left-Leiden "Nov 2022" "Governance of Artificial Intelligence" "Master seminar part of minor AI & society, Leiden University">}}
 {{< agenda-right-JPAO "Sep 2022" "AI: Equal treatment and automated decision-making" "Lunch seminar, Post-academic legal education (JPAO), Leiden University">}}
 {{< agenda-left-Erasmus "Aug 2022" "Technological (im)possibilities of legal tech" "Master seminar part of minor LegalTech, Erasmus School of Law, Erasmus University">}}

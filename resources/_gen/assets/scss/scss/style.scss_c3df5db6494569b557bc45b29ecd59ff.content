@@ -662,7 +662,6 @@ textarea.form-control {
   margin-top: 27.5px; }
 
 .timeline-date-left {
-  text-align: center;
   margin-top: 27.5px;
   color: #005aa7; }
 
