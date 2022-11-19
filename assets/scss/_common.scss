@@ -569,18 +569,7 @@ $accent: #FF4081;
 
 
 .timeline {
-
   position: relative;
-
-  &::before {
-    content: '';
-    background: $light-primary;
-    width: 5px;
-    height: 125%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 .timeline-item {
@@ -608,7 +597,7 @@ $accent: #FF4081;
 
 .timeline-content {
   position: relative;
-  width: 45%;
+  width: 100%;
   padding: 10px 30px;
   border-radius: 4px;
   background: #f5f5f5;
@@ -629,7 +618,7 @@ $accent: #FF4081;
 
 .timeline-content-left {
   position: relative;
-  width: 45%;
+  width: 100%;
   padding: 10px 30px;
   border-radius: 4px;
   background: #f5f5f5;
@@ -649,33 +638,44 @@ $accent: #FF4081;
 }
 
 .timeline-img {
-  width: 30px;
-  height: 30px;
-  background: $primary;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  margin-top: 25px;
-  margin-left: -15px;
+
+  &::before {
+    content: '';
+    background: $primary;
+    width: 5px;
+    height: 130%;
+    left: 0%;
+    position: absolute;
+  }
+}
+
+.timeline-img-left {
+
+  &::before {
+    content: '';
+    background: $primary;
+    width: 5px;
+    height: 130%;
+    left: 100%;
+    position: absolute;
+  }
 }
 
 .timeline-date-right {
-  position: absolute;
+  // position: absolute;
   width: 45%;
-  left: 52.5%;
+  // left: 52.5%;
   margin-top: 27.5px;
 }
 
 .timeline-date-left {
-  position: absolute;
-  width: 45%;
-  left: 40%;
+  text-align: center;
   margin-top: 27.5px;
   color: $primary;
 }
 
 .timeline-logo {
-  position: absolute;
+  position: relative;
 }
 
 .timeline-card {
@@ -687,26 +687,5 @@ $accent: #FF4081;
 
   a {
     margin-left: 20px;
-  }
-}
-
-.timeline-item {
-  .timeline-img-header {
-      background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('https://picsum.photos/1000/800/?random') center center no-repeat;
-      background-size: cover;
-    }
-}
-
-.timeline-img-header {
-
-  height: 200px;
-  position: relative;
-  margin-bottom: 0px;
-
-  h2 {
-    color: $text;
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
   }
 }
