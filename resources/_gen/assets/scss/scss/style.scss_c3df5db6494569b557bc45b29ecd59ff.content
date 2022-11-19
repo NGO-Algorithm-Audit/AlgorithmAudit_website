@@ -658,12 +658,11 @@ textarea.form-control {
   position: absolute; }
 
 .timeline-date-right {
-  width: 45%;
   margin-top: 27.5px; }
 
 .timeline-date-left {
-  margin-top: 27.5px;
-  color: #005aa7; }
+  text-align: right;
+  margin-top: 27.5px; }
 
 .timeline-logo {
   position: relative; }

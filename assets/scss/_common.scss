@@ -662,13 +662,12 @@ $accent: #FF4081;
 }
 
 .timeline-date-right {
-  width: 45%;
   margin-top: 27.5px;
 }
 
 .timeline-date-left {
+  text-align: right;
   margin-top: 27.5px;
-  color: $primary;
 }
 
 .timeline-logo {
