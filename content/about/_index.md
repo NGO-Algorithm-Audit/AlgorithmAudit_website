@@ -16,7 +16,6 @@ image: images/about.svg
 "Professor Public Law & Governance of Artificial Intelligence (AI) at Leiden University"
 "Lecturer in EU Law at Edinburgh Law School. Marie Skłodowska-Curie Fellow at iCourts at the University of Copenhagen. Co-author of the EU report">}}
 
-{{< about_board "Contributors" 
-"xx">}}
+{{< about_contributors "Contributors" "International experts from a range of disciplines and professional backgrounds contribute to the work of Algorithm Audit. Expertise from among others data science, policy making, law and ethics strenghtens our problem statements, white papers and advocay work.">}}
 
 {{< about_commissions "Audit commissions" " The composition of audit commissions varies per case. The exact makeup of commissions is shared here: ">}}

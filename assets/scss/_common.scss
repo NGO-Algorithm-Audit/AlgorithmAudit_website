@@ -466,7 +466,7 @@ textarea.form-control {
   position: relative;
   &::before{
     position: absolute;
-    content: "\f2b9";
+    content: "\f0c0";
     color: #005aa7;
     font-size: 25px;
     font-family: $icon-font;
@@ -488,6 +488,27 @@ textarea.form-control {
   &::before{
     position: absolute;
     content: "\f086";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: $icon-font;
+    font-weight: 900;
+    left: -30px;
+    top: 0px;
+  }
+  svg{
+    position: absolute;
+    color: $primary-color;
+    font-size: 25px;
+    left: -30px;
+    top: 0px;
+  }
+}
+
+.contributors{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "\f2b9";
     color: #005aa7;
     font-size: 25px;
     font-family: $icon-font;

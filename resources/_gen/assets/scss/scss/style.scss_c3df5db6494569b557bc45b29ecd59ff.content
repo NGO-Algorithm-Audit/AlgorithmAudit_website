@@ -511,7 +511,7 @@ textarea.form-control {
   position: relative; }
   .board::before {
     position: absolute;
-    content: "\f2b9";
+    content: "\f0c0";
     color: #005aa7;
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
@@ -537,6 +537,24 @@ textarea.form-control {
     left: -30px;
     top: 0px; }
   .commission svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 0px; }
+
+.contributors {
+  position: relative; }
+  .contributors::before {
+    position: absolute;
+    content: "\f2b9";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -30px;
+    top: 0px; }
+  .contributors svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;

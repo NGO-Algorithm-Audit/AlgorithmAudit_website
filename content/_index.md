@@ -42,6 +42,14 @@ What_we_do:
       face similar ethical concerns. We believe in a collective approach to realise
       ethical algorithms. We offer a platform of collaboration for academics, developers
       and policy makers.
+Supported_by:
+  enable: true
+  Suported_by:
+  - title: We are supported by
+    img1:
+    - images/sidn.png
+    img2:
+    - images/EUAIFund.png
 How_we_work:
   enable: true
   service_item:
@@ -129,13 +137,5 @@ Get_in_touch:
   title: Get in touch
   content: Do you have an ethical issue for review? Or want to share ideas? Let us
     know!
-Supported_by:
-  enable: true
-  Suported_by:
-  - title: Our initiative is supported by
-    img1:
-    - images/sidn.png
-    img2:
-    - images/EUAIFund.png
 
 ---

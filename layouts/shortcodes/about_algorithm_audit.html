@@ -7,7 +7,51 @@
       
       <h3 class="mb-4 balance" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
 
-      <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 50px;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p>{{ .Get 1 | markdownify }}</p>
+          </div>
+
+          <!-- i) audit commissions -->
+          <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+              <img src="/images/audit_commission.svg">
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <span style="color:#005aa7; font-weight: bold;">i) Audit commissions</span>
+          </div>
+          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <p>Forming independent audit commissions for advising on ethical issues emerging in concrete algorithmic practices. Resulting over time in a case repository.</p>
+          </div>
+
+          <!-- ii) technical tooling -->
+          <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+            <img src="/images/tooling.svg">
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <span style="color:#005aa7; font-weight: bold;">ii) Technical tooling</span>
+          </div>
+          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <p>Implemening and testsing technical tools to detect and mitigate bias in practice. See our <a href="https://www.algorithmaudit.eu/bias_scan/" target="_blank">bias scan tool</a>.</p>
+          </div>
+
+          <!-- iii) advocacy commissions -->
+          <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12">
+            <img src="/images/advocacy.svg">
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <span style="color:#005aa7; font-weight: bold;">iii) Advocacy</span>
+          </div>
+          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <p>By connecting international professionals and sharing knowledge with society and policy makers.</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 50px;">
         <div>
           <p>{{ .Get 1 | markdownify }} 
           <br>
@@ -18,7 +62,7 @@
           <span style="color:#005aa7; font-weight: bold;">iii) </span>Conducting advocacy work, by connecting international professionals and sharing knowledge with society and policy makers. Algorithm Audit enables the normative capabilities of humans to work in tandem with the scalable capacity of statistics to define fair AI on a case-by-case basis. 
           </p>
         </div>
-      </div>
+      </div> -->
       
     </div>
   </div>

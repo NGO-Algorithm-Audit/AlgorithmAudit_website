@@ -57,6 +57,43 @@
 {{ end }}
 <!-- /What we do -->
 
+<!-- Supported by -->
+{{ with .Params.Supported_by }}
+{{ range $i,$p := .Suported_by }}
+<section class="section-bottom bg-white" style="background-color: #ffffff !important;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 content">
+        <h2 class="section-title" style="font-size:16px; color: #005aa7;">{{ .title | markdownify }}</h2>
+        <div class="wrapper" style="width:75%">
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner">
+        {{ range .img1 }}
+        <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
+          <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
+        </a>
+        {{ end }}
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner">
+        {{ range .img2 }}
+        <div>
+          <a href="https://europeanaifund.org/announcing-our-2022-open-call-grantees/" target="_blank">
+            <img src="{{ . | relURL }}" style="max-height: 75px;" alt="" class="img-fluid">
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /Supported by -->
+
 <!-- How we work -->
 {{ with .Params.How_we_work }}
 {{ if .enable }}
@@ -196,42 +233,5 @@
 </section>
 {{ end }}
 <!-- /Contact form -->
-
-<!-- Supported by -->
-{{ with .Params.Supported_by }}
-{{ range $i,$p := .Suported_by }}
-<section class="section-bottom bg-white" style="background-color: #ffffff !important;">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 content">
-        <h2 class="section-title" style="font-size:16px; color: #005aa7;">{{ .title | markdownify }}</h2>
-        <div class="wrapper" style="width:75%">
-          <p>{{ .content | markdownify }}</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0" style="display: flex; align-items: center;">
-        {{ range .img1 }}
-        <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
-          <img src="{{ . | relURL }}" style="width:75%;" alt="" class="img-fluid">
-        </a>
-        {{ end }}
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        {{ range .img2 }}
-        <div>
-          <a href="https://europeanaifund.org/announcing-our-2022-open-call-grantees/" target="_blank">
-            <img src="{{ . | relURL }}" style="width:75%;" alt="" class="img-fluid">
-          </a>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /Supported by -->
 
 {{ end }}
