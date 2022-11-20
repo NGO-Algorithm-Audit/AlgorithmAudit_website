@@ -668,6 +668,11 @@ $accent: #FF4081;
 .timeline-date-left {
   text-align: right;
   margin-top: 27.5px;
+
+  @media (max-width: 575.98px) {
+    text-align: left;
+  }
+
 }
 
 .timeline-logo {
