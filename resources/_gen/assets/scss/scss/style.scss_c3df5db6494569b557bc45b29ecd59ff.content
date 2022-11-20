@@ -789,14 +789,12 @@ body {
 .custom_div_parent {
   position: relative; }
 
-.custom_div_child {
+.social-icons {
+  position: relative; }
+
+.inner {
   width: 50%;
   margin: 0 auto; }
-
-.social-icons {
-  position: absolute;
-  width: 50%;
-  left: 50%; }
 
 .social-icons a {
   color: #005aa7;
@@ -806,7 +804,7 @@ body {
   line-height: 35px;
   border: 1px solid #005aa7;
   border-radius: 50%;
-  display: block; }
+  display: inline-block; }
   .social-icons a:hover {
     color: #fff;
     background-color: #005aa7; }

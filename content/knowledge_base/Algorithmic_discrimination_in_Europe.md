@@ -41,9 +41,9 @@ Six major challenges that algorithms pose to gender equality and non-discriminat
 <span style="color:#005aa7; font-weight: bold;">- E</span>XPLAIN: establish explainability, accountability and information requirements; 
 
 
-<span style="color:#005aa7; font-weight: bold;">- C</span>ONTROL: active human involvement (human-centred AI), e.g. in the form of human-in-the-loop (HITL) systems designed to avoid rubber-stamping, complemented by supervision and consultation  mechanisms (chain of control and consultation with users). 
+<span style="color:#005aa7; font-weight: bold;">- C</span>ONTROL: active human involvement (human-centred AI), e.g. in the form of human-in-the-loop (HITL) systems designed to avoid rubber-stamping, complemented by supervision and consultation mechanisms (chain of control and consultation with users). 
 
-<span style="color:#005aa7; font-weight: bold;">- T</span>EST: continuously monitor high-risk algorithms and their output, set up auditing, labelling and  certification mechanisms. 
+<span style="color:#005aa7; font-weight: bold;">- T</span>EST: continuously monitor high-risk algorithms and their output, set up auditing, labelling and certification mechanisms. 
 
 
 _Update 14-07-2022_

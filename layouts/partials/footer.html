@@ -12,32 +12,22 @@
     <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px 0 50px 0;">
 
       <!-- Logo -->
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 order-sm-1 order-lg-2 mb-5">
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4">
+      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 order-sm-1 order-lg-2 mb-5">
+        <div class="inner">
           <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">
             {{ with site.Params.logo}}
             <div class="img-wrapper">
-              <img class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
+              <img class="img-fluid" style="max-height: 125px;" src="{{ . | relURL }}" alt="{{ site.Title }}">
             </div>
             {{ else }}{{site.Title}}{{end}}
           </a>
         </div>
-        <div class="col-xs-4"></div>
       </div>
       <!-- /Logo -->
 
-      <!-- Text -->
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 order-sm-2 order-lg-3 mb-5">
-          <p class="mb-4 padding_text">{{ site.Params.footer_content | markdownify }}</p>
-      </div>
-      <!-- /Text -->
-
       <!-- Follow us -->
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-sm-4 order-lg-4 mb-5 custom_div_parent">
-        <div class="custom_div_child text-center">
           <p style="font-size:12px; color: #005aa7;">Follow us:</p>
-        </div>
         {{ with site.Params.social }}
           <div class="social-icons">
             {{ range . }}
@@ -57,6 +47,7 @@
           <li><a href="/cases"><p style="color: #005aa7; margin:0 0 0px 0;">Cases</p></a></li>
           <li><a href="/bias_scan"><p style="color: #005aa7; margin:0 0 0px 0;">Bias scan</p></a></li>
           <li><a href="/knowledge_base"><p style="color: #005aa7;  margin:0 0 0px 0;">Knowledge base</p></a></li>
+          <li><a href="/events"><p style="color: #005aa7;  margin:0 0 0px 0;">Events</p></a></li>
           <li><a href="/faq"><p style="color: #005aa7; margin:0 0 0px 0;">FAQ</p></a></li>
           <li><a href="/about"><p style="color: #005aa7;  margin:0 0 0px 0;">About</p></a></li>
         </ul>

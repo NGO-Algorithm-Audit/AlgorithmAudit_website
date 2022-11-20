@@ -55,15 +55,13 @@ body {
   position: relative;
 }
 
-.custom_div_child {
-  width: 50%;
-  margin: 0 auto;
+.social-icons{
+  position:relative;
 }
 
-.social-icons{
-  position:absolute;
+.inner{
   width: 50%;
-  left:50%;
+  margin: 0 auto;
 }
 
 .social-icons a {
@@ -74,7 +72,7 @@ body {
   line-height: 35px;
   border: 1px solid #005aa7;
   border-radius: 50%;
-  display: block;
+  display: inline-block;
 
   &:hover {
     color: $white;
