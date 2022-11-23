@@ -45,11 +45,13 @@ What_we_do:
 Supported_by:
   enable: true
   Suported_by:
-  - title: We are supported by
+  - title: Supported by
     img1:
     - images/sidn.png
     img2:
     - images/EUAIFund.png
+    img3:
+    - images/NLAIC.png
 How_we_work:
   enable: true
   service_item:
