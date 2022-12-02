@@ -1,8 +1,7 @@
 ---
 title: Events
 subtitle: Knowledge sharing is an integral part of Algorithm Audit's mission. Members of our team speak at events. [<span style="color:#005aa7"> Reach out</span>](/index.html#contactform) to discuss contributions.
-image: "/images/about.svg"
-resources: "/images/about.svg"
+image: "/images/events.svg"
 ---
 {{< event-left-BZK "Nov 2022" "Algorithmic supervisory body" "Expert session on algorithmic supervision, Dutch Ministry of the Interior and Kingdom Relations">}}
 {{< event-right-EUAI "Nov 2022" "EU AI Fund digital policy convening" "2-day gathering of people working on tech policy in Europe, Brussels">}}
