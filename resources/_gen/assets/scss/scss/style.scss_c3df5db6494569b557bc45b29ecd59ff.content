@@ -607,6 +607,11 @@ textarea.form-control {
 .timeline {
   position: relative; }
 
+.timeline-row {
+  margin-top: 100px; }
+  @media (max-width: 575.98px) {
+    .timeline-row {
+      margin-top: 0px; } }
 .timeline-item {
   display: table;
   height: 100%;
@@ -663,7 +668,15 @@ textarea.form-control {
   content: '';
   background: #005aa7;
   width: 5px;
-  height: 130%;
+  height: 190%;
+  left: 0%;
+  position: absolute; }
+
+.timeline-last::before {
+  content: '';
+  background: #005aa7;
+  width: 5px;
+  height: 110%;
   left: 0%;
   position: absolute; }
 
@@ -671,7 +684,7 @@ textarea.form-control {
   content: '';
   background: #005aa7;
   width: 5px;
-  height: 130%;
+  height: 190%;
   left: 100%;
   position: absolute; }
 
