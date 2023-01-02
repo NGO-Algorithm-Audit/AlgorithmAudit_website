@@ -7,8 +7,8 @@ Banner:
     issues that arise in concrete use cases of algorithmic tools and methods.
   button:
     enable: True
-    label: Check our bias scan tool
-    link: /bias_scan/
+    label: Read our new white paper
+    link: /knowledge_base/
 What_we_do:
   enable: true
   title: What we do

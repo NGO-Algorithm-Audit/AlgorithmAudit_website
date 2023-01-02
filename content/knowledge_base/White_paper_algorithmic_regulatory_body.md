@@ -3,7 +3,7 @@ title: White paper – A new algorithmic regulatory body in The Netherlands
 author: Algorithm Audit
 image: /images/knowledge_base/white-paper-2.png
 type: featured
-summary: A new algorithmic regulatory body is institutionalized in The Netherlands. We say – Make it a bulldog 🐺. Not a lap dog 🐶.
+summary: 'A new algorithmic regulatory body is institutionalized in The Netherlands. We say: Make it a bulldog 🐺. Not a lap dog 🐶.'
 
 ---
 A new white paper on algorithmic supervision. We reflect on announced plans to institutionalize an algorithmic watchdog. We say: Make it a bulldog <span style="font-size: 25px;">🐺</span>. Not a lap dog <span style="font-size: 25px;">🐶</span>.
