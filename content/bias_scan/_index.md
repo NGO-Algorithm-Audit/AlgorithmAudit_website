@@ -1,6 +1,6 @@
 ---
 title: Bias scan
-subtitle: "Unsupervised bias detection: To identify potentially discriminated groups of similar users in AI systems. Working in tandem with the qualitative doctrine of law and ethics to assess fair AI."
+subtitle: "Unsupervised bias detection: To identify potentially unfair treated groups of similar users in AI systems. Working in tandem with the qualitative doctrine of law and ethics to assess fair AI."
 image: "/images/illustration_cases.svg"
 ---
 {{< bias_scan_faq "Bias scan tool FAQ – What is it?">}} 
