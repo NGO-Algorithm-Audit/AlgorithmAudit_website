@@ -16,7 +16,7 @@ This is what we advise policy makers across the EU to facilitate reversing the b
 
 <span style="font-size: 25px;">📚</span>Train staff of courts, parliament, ministries, and other authorities in interpreting (semi-)ADM qualitatively. 
 
-We'd love to hear your thoughts!
+<span style="font-size: 14px; font-style:italic">This white paper is published as an [op-ed](https://fd.nl/opinie/1436425/we-moeten-ons-bezinnen-op-het-bestaansrecht-van-algoritmen) in the Dutch newspaper _Het Financieele Dagblad_ on April 13th 2022.</span>
 
 ###### **Summary**
 
