@@ -6,7 +6,7 @@ type: featured
 summary: 'A new algorithmic regulatory body is institutionalized in The Netherlands. We say: Make it a bulldog 🐺. Not a lap dog 🐶.'
 
 ---
-New white paper on algorithmic supervision. We reflect on recently announced plans by the Dutch Minister of Digitalization to institutionalize a national algorithmic watchdog. Make it a bulldog <span style="font-size: 25px;">🐺</span>. Not a lap dog <span style="font-size: 25px;">🐶</span>.
+New white paper on algorithmic supervision. We reflect on recently announced plans by the Dutch Minister of Digitalization to institutionalize a national algorithmic watchdog. We say: Make it a bulldog <span style="font-size: 25px;">🐺</span>. Not a lap dog <span style="font-size: 25px;">🐶</span>.
 
 ###### **Summary**
 The new regulatory body seems to rely on the principle of ‘market supervises market’. As an effect, commercial firms get a key position in defining wat is ‘fair’ and what not. But, this is a public tasks that ought to be performed in the democratic sight. Read the full white paper (2 pages) below.
