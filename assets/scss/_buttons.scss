@@ -1,6 +1,15 @@
 /* Button style */
+.alt_btn {
+  margin-bottom: 50px;
+  background-color: #FFFFF0;
+  border: none;
+  color: #777777;
+  text-decoration: underline;
+}
+
 .btn {
   font-size: 16px;
+  color: white;
   font-family: $primary-font;
   font-weight: 600;
   // text-transform: capitalize;
@@ -23,13 +32,14 @@
     z-index: -1;
     border-radius: inherit;
     transition: inherit;
-    background-color: inherit;
+    background-color: #005aa7;
     border: 1px solid transparent;
   }
 
   &:hover,
   &:active,
   &:focus {
+    color: white;
     outline: 0;
     @extend .shadow;
 

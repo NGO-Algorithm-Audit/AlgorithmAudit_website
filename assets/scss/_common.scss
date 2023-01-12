@@ -188,6 +188,17 @@ textarea.form-control {
   }
 }
 
+#upload_section {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+  text-align: center;
+}
+#logo {
+  width: 100px;
+}
+
 .check-mark{
   position: relative;
   padding-left: 0px;
@@ -450,8 +461,8 @@ textarea.form-control {
     font-size: 25px;
     font-family: $icon-font;
     font-weight: 900;
-    left: -30px;
-    top: 0px;
+    left: -20px;
+    top: -5px;
   }
   svg{
     position: absolute;
@@ -471,8 +482,8 @@ textarea.form-control {
     font-size: 25px;
     font-family: $icon-font;
     font-weight: 900;
-    left: -30px;
-    top: 0px;
+    left: -20px;
+    top: -5px;
   }
   svg{
     position: absolute;
@@ -481,6 +492,49 @@ textarea.form-control {
     left: -30px;
     top: 0px;
   }
+}
+
+.team{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "\f234";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: $icon-font;
+    font-weight: 900;
+    left: -20px;
+    top: -5px;
+  }
+  svg{
+    position: absolute;
+    color: $primary-color;
+    font-size: 25px;
+    left: -30px;
+    top: 0px;
+  }
+}
+
+.crossfade {
+  position:relative;
+  display:inline-block;
+  width:75px;
+  height:75px;
+  margin-top:0px;
+}
+
+.center-vert {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.about-img{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .commission{
@@ -492,8 +546,8 @@ textarea.form-control {
     font-size: 25px;
     font-family: $icon-font;
     font-weight: 900;
-    left: -30px;
-    top: 0px;
+    left: -20px;
+    top: -5px;
   }
   svg{
     position: absolute;
@@ -513,8 +567,8 @@ textarea.form-control {
     font-size: 25px;
     font-family: $icon-font;
     font-weight: 900;
-    left: -30px;
-    top: 0px;
+    left: -20px;
+    top: -5px;
   }
   svg{
     position: absolute;
@@ -534,8 +588,8 @@ textarea.form-control {
     font-size: 25px;
     font-family: $icon-font;
     font-weight: 900;
-    left: -30px;
-    top: 0px;
+    left: -20px;
+    top: -5px;
   }
   svg{
     position: absolute;
@@ -576,6 +630,45 @@ padding: 0 50px 0 0px;
     }
   }
 
+.enlight:hover{
+  border: 1px solid #005aa7; 
+  cursor: pointer;
+}
+
+.bias-metric-inner {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.box {
+  border: 1px solid #ccc; 
+  border-radius: 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+input {
+  // accent-color: #005aa7;
+}
+
+input[type=file] {
+  background-color: #005aa7;
+  color: $white;
+  border-color: #005aa7;
+  padding:5px 15px; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+}
+
+.selected {
+  border :1px solid #005aa7;
+  background-color: #f0f9ff;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
 
 $primary: #005aa7;
 $light-primary: #005aa7;

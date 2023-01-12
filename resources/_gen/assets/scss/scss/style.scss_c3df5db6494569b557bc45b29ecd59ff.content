@@ -62,8 +62,16 @@ h6,
   font-size: 3.5rem; }
 
 /* Button style */
+.alt_btn {
+  margin-bottom: 50px;
+  background-color: #FFFFF0;
+  border: none;
+  color: #777777;
+  text-decoration: underline; }
+
 .btn {
   font-size: 16px;
+  color: white;
   font-family: "Avenir", sans-serif;
   font-weight: 600;
   padding: 15px 30px;
@@ -84,9 +92,10 @@ h6,
     z-index: -1;
     border-radius: inherit;
     transition: inherit;
-    background-color: inherit;
+    background-color: #005aa7;
     border: 1px solid transparent; }
   .btn:hover, .btn:active, .btn:focus {
+    color: white;
     outline: 0; }
     .btn:hover::before, .btn:active::before, .btn:focus::before {
       height: 110%;
@@ -271,6 +280,16 @@ textarea.form-control {
 
 .list-unstyled li {
   margin-bottom: 10px; }
+
+#upload_section {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+  text-align: center; }
+
+#logo {
+  width: 100px; }
 
 .check-mark {
   position: relative;
@@ -498,8 +517,8 @@ textarea.form-control {
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    left: -30px;
-    top: 0px; }
+    left: -20px;
+    top: -5px; }
   .balance svg {
     position: absolute;
     color: #0AA8A7;
@@ -516,14 +535,51 @@ textarea.form-control {
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    left: -30px;
-    top: 0px; }
+    left: -20px;
+    top: -5px; }
   .board svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
     top: 0px; }
+
+.team {
+  position: relative; }
+  .team::before {
+    position: absolute;
+    content: "\f234";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -20px;
+    top: -5px; }
+  .team svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 0px; }
+
+.crossfade {
+  position: relative;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  margin-top: 0px; }
+
+.center-vert {
+  display: table-cell;
+  vertical-align: middle; }
+
+.about-img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 .commission {
   position: relative; }
@@ -534,8 +590,8 @@ textarea.form-control {
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    left: -30px;
-    top: 0px; }
+    left: -20px;
+    top: -5px; }
   .commission svg {
     position: absolute;
     color: #0AA8A7;
@@ -552,8 +608,8 @@ textarea.form-control {
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    left: -30px;
-    top: 0px; }
+    left: -20px;
+    top: -5px; }
   .contributors svg {
     position: absolute;
     color: #0AA8A7;
@@ -570,8 +626,8 @@ textarea.form-control {
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    left: -30px;
-    top: 0px; }
+    left: -20px;
+    top: -5px; }
   .advisory svg {
     position: absolute;
     color: #0AA8A7;
@@ -600,6 +656,37 @@ textarea.form-control {
 @media (min-width: 992px) {
   .board-wrapper {
     display: flex; } }
+
+.enlight:hover {
+  border: 1px solid #005aa7;
+  cursor: pointer; }
+
+.bias-metric-inner {
+  margin-top: 10px;
+  margin-left: 10px; }
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  cursor: pointer; }
+
+input[type=file] {
+  background-color: #005aa7;
+  color: #fff;
+  border-color: #005aa7;
+  padding: 5px 15px;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+.selected {
+  border: 1px solid #005aa7;
+  background-color: #f0f9ff;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  cursor: pointer; }
 
 .post-title {
   font-size: 20px; }
@@ -851,8 +938,7 @@ a.post-title {
 
 .content * {
   word-break: break-word;
-  overflow-wrap: break-word;
-  margin-bottom: 20px; }
+  overflow-wrap: break-word; }
 
 .content img {
   max-width: 100%; }
@@ -902,7 +988,6 @@ a.post-title {
 .content table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
   border: 1px solid #005aa7; }
 
 .content table td,
