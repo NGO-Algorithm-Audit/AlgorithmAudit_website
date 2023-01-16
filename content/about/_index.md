@@ -11,7 +11,7 @@ image: images/about.svg
 
 {{< about_board "Board" "Jurriaan Parie" "Jurriaan has a background in statistics and data science. He has been working in academia and industry on Trustworthy AI." "Ariën Voogt" "Ariën has a background in physics and philosophy. He currently pursues a PhD in philosophy and theology at the Protestant Theological University Amsterdam.">}}
 {{< about_core_team "Core team" 
-"Joel Persson" "Joel is a PhD-candidate in Causal Inference & Data Science at ETH Zürich. With industry experience in fair ML decision-making." 
+"Joel Persson" "Joel is a PhD-candidate in Causal Inference & Data Science at ETH Zürich with industry experience in fairness for algorithmic decision-making." 
 "XX YY" "XX YY has ... a background in law. ... currently ... "
 "Vahid Niamadpour" "Vahid is a PhD-researcher in Applied Linguistics at Leiden University. Among other things, he applies discourse analysis to speech and NLP.">}}
 
