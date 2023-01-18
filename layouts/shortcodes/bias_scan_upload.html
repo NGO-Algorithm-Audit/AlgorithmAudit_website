@@ -66,7 +66,7 @@
             <h4 style="text-decoration:underline;">Upload data</h4>
           </div>
           <div id="upload_section" style="height:300px; width:100%; position:relative; background-color:#FFFFF0; border-radius:10px; border-color:#005aa7; border-style: dashed; border-width:1px;">
-            <div v-if="!file" style="width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+            <div v-if="!file" style="width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
                 <div style="margin: 0px 0px 50px 0px">
                   <img src="/images/upload.svg" height="75px"/>
                 </div>
@@ -101,20 +101,27 @@
       </div> 
 
       <!-- Algorithm -->
-      <div style="margin-top:25px;">
+      <div style="margin-top:15px;">
         <div class="row col-lg-12">
-          <span style="color:#005aa7; font-weight: bold;">Algorithm</span>
+          <span style="color:#005aa7; font-weight: bold; margin-bottom:10px;">Algorithm</span>
 
           <!-- GitHub -->
           <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1">
+            <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
                 <p class="crossfade"></p>
                 <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan" target="_blank">
                   <img class="about-img" style="height:30px;" src="/images/GitHub.svg">
                 </a>
             </div>
-            <div class="col-lg-11 col-md-11 col-sm-11" style="display:table;">
-              <p class="center-vert" style="font-size: 14px;">The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a></p>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="display:table;">
+              <p class="center-vert" style="font-size: 14px;">
+                The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a>            
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <p class="center-vert" style="font-size:11px;">
+                <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Download</a> an example data set to use the bias scan tool.
+              </p>
             </div>
           </div>
           
