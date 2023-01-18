@@ -19,7 +19,7 @@ image: images/about.svg
 "Fellow in Law&Tech at the ETH Zürich, author of the book " 
 "Associate Professor of Information Systems at the London School of Economics and Political Sciences"
 "Professor Public Law & Governance of Artificial Intelligence (AI) at Leiden University"
-"Lecturer in EU Law at Edinburgh Law School. Marie Skłodowska-Curie Fellow at iCourts at the University of Copenhagen. Co-author of the EU report">}}
+"Associate Professor in EU law at Sciences Po. Co-author of the EU report">}}
 
 {{< about_contributors "Contributors" "International experts from a range of disciplines and professional backgrounds contribute to the work of Algorithm Audit. Expertise from among others data science, policy making, law and ethics strenghtens our problem statements, white papers and advocay work.">}}
 
