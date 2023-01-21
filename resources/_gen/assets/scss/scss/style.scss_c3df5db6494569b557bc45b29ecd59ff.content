@@ -302,31 +302,49 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .check-mark svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
-.review {
+.upload {
   position: relative; }
-  .review::before {
+  .upload::before {
     position: absolute;
-    content: "\f002";
+    content: "\f15b";
     color: #005aa7;
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    left: -30px;
-    top: 3px; }
-  .review svg {
+    left: -20px;
+    top: -3px; }
+  .upload svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
-    left: -30px;
-    top: 3px; }
+    left: -20px;
+    top: 0px; }
+
+.example-report {
+  position: relative; }
+  .example-report::before {
+    position: absolute;
+    content: "\f15b";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -20px;
+    top: -3px; }
+  .example-report svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -20px;
+    top: 0px; }
 
 .data {
   position: relative; }
@@ -337,14 +355,14 @@ textarea.form-control {
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    left: -30px;
-    top: 3px; }
+    left: -20px;
+    top: -3px; }
   .data svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .faq {
   position: relative; }
@@ -355,14 +373,32 @@ textarea.form-control {
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    left: -30px;
-    top: 3px; }
+    left: -20px;
+    top: -3px; }
   .faq svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
+
+.info {
+  position: relative; }
+  .info::before {
+    position: absolute;
+    content: "\f002";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -20px;
+    top: -3px; }
+  .info svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 0px; }
 
 .leaf {
   position: relative; }
@@ -374,13 +410,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .leaf svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .open-source {
   position: relative; }
@@ -392,13 +428,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .open-source svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .weight-scale {
   position: relative; }
@@ -410,13 +446,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .weight-scale svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .money {
   position: relative; }
@@ -428,13 +464,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .money svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .share {
   position: relative; }
@@ -446,13 +482,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .share svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .washing {
   position: relative; }
@@ -464,13 +500,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .washing svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .sim-card {
   position: relative; }
@@ -482,13 +518,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .sim-card svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .ranking {
   position: relative; }
@@ -500,13 +536,13 @@ textarea.form-control {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
   .ranking svg {
     position: absolute;
     color: #0AA8A7;
     font-size: 25px;
     left: -30px;
-    top: 3px; }
+    top: 0px; }
 
 .balance {
   position: relative; }
@@ -667,9 +703,10 @@ textarea.form-control {
 
 .box {
   border: 1px solid #ccc;
-  border-radius: 2px;
-  margin-bottom: 10px;
-  cursor: pointer; }
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding-top: 5px; }
 
 input[type=file] {
   background-color: #005aa7;

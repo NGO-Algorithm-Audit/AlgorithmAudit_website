@@ -2,94 +2,50 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-<script>
-  function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("toggle");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more...";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less...";
-      moreText.style.display = "inline";
-    }
-  }
-  </script>
-
 <div class="container-fluid">
-  <div class="row p-5 shadow rounded-lg">
-    <div class="col-md-12">
-      <div class="col-md-12">
-        <h3 class="mb-4 review" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3> 
-      </div>
+  <div class="p-5 shadow rounded-lg">
 
-      <div class="row col-lg-12" style="margin-bottom:60px;">
-        <!-- FPR bias scan -->
-        <div class="shadow rounded-lg col-lg-5 col-md-12 col-sm-12 text-center" style="height:90%;width:90%;">
-          <div style="margin: 30px 0px 0px 0px; width:100%;">
-            <img src="/images/FPR_example.png" width="150px"/>
-          </div>
-          <div style="position:relative; margin-top:25px; padding:0px 20px;">
-            <p >An example report for the <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/audit_commission/Problem%20statement%20disinformation%20detection.pdf" target="_blank">BERT-based disinformation detection (FPR) case study</a></p> 
-          </div>
-          <div style="position: relative; margin:25px 0px;">
+      <h3 class="mb-4 example-report" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3> 
+
+      <!-- FPR -->
+      <div class="row" style="margin-bottom:0px;">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <p class="crossfade"></p>
+          <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan" target="_blank">
+            <img class="about-img" style="height:75px;" src="/images/FPR_example.png">
+          </a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="display:table;">
+          <p class="center-vert" style="font-size: 14px;">
+            An example report for the <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/audit_commission/Problem%20statement%20disinformation%20detection.pdf" target="_blank">BERT-based disinformation detection (FPR) case study</a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="display:table;">
+          <div class="center-vert" style="position: relative; margin:25px 0px;">
             <a href="https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf" target="_blank"><label id="click_btn" class="btn" >Download</label></a>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-1 col-md-12 col-sm-12 text-center" style="height:90%;width:90%;">
-          <br>
-          <br>
-          <br>
+      <!-- FNR -->
+      <div class="row" style="margin-bottom:0px;">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <p class="crossfade"></p>
+          <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan" target="_blank">
+            <img class="about-img" style="height:75px;" src="/images/FPR_example.png">
+          </a>
         </div>
-
-        <!-- FNR bias scan -->
-        <div class="shadow rounded-lg col-lg-5 col-md-12 col-sm-12 text-center" style="height:100%;">
-          <div style="margin: 30px 0px 0px 0px; width:100%;">
-            <img src="/images/FNR_example.png" width="150px"/>
-          </div>
-          <div style="position:relative; margin-top:25px; padding:0px 20px;">
-            <p >An example report for the <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/audit_commission/Problem%20statement%20disinformation%20detection.pdf" target="_blank">BERT-based disinformation detection (FNR) case study</a></p> 
-          </div>
-          <div style="position: relative; margin:25px 0px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="display:table;">
+          <p class="center-vert" style="font-size: 14px;">
+            An example report for the <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/audit_commission/Problem%20statement%20disinformation%20detection.pdf" target="_blank">BERT-based disinformation detection (FNR) case study</a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="display:table;">
+          <div class="center-vert" style="position: relative; margin:25px 0px;">
             <a href="https://static-files-pdf.s3.amazonaws.com/bias_scan_FNR_test_pred_BERT.pdf" target="_blank"><label id="click_btn" class="btn" >Download</label></a>
           </div>
         </div>
       </div>
-
-      <div class="row col-12">
-        <div class="row col-12">
-          <span style="color:#005aa7; font-weight:bold; margin-bottom:20px;">Explanatory note on example reports</span> 
-        </div>
-        <div style="margin-bottom:20px;">
-          <a style="color:#005aa7;" onclick="myFunction()" id="toggle">Read more...</a>
-          <span id="dots"></span>
-        </div>
-
-        <!-- Explanation -->
-        <div id="more" style="display: none;">
-          <div>
-            <p>These bias scans are both based on an <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/classifiers/BERT_disinformation_classifier/test_pred_BERT.csv" target="_blank">example data set</a>.</p>
-          </div>
-          <div>
-            <p><span style="font-weight: bold;">FPR scan: </span> The cluster with highest bias (FPR) deviates 0.08 from the rest of the data set. There are 249 data points in this cluster. This means that, on average, users that:</p>
-            <p>- are verified, have higher #followers, user engagement and #URLs;</p>
-            <p >- use less #hashags and have lower tweet length </p>
-            have more true content classified as false (false positives).
-          </div>
-          <div style="margin-top:30px;">
-            <p><span style="font-weight: bold;">FNR scan: </span> The cluster with highest bias (FNR) deviates 0.13 from the rest of the data set. There are 46 data points in this cluster. This means that, on average, users that:</p>
-            <p>- use more #hashtags and have higher sentiment score;</p>
-            <p >- are non-verified, have less #followers, user engagement and tweet length </p>
-            have more false content classified as true (false negatives).
-          </div>  
-        </div>
-      </div>
-
-    </div>     
+ 
   </div>
 </div>

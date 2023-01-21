@@ -210,35 +210,56 @@ textarea.form-control {
     font-family: $icon-font;
     font-weight: 900;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
-.review{
+.upload{
   position: relative;
   &::before{
     position: absolute;
-    content: "\f002";
+    content: "\f15b";
     color: #005aa7;
     font-size: 25px;
     font-family: $icon-font;
     font-weight: 900;
-    left: -30px;
-    top: 3px;
+    left: -20px;
+    top: -3px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
-    left: -30px;
-    top: 3px;
+    left: -20px;
+    top: 0px;
+  }
+}
+
+.example-report{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "\f15b";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: $icon-font;
+    font-weight: 900;
+    left: -20px;
+    top: -3px;
+  }
+  svg{
+    position: absolute;
+    color: $primary-color;
+    font-size: 25px;
+    left: -20px;
+    top: 0px;
   }
 }
 
@@ -251,15 +272,15 @@ textarea.form-control {
     font-size: 25px;
     font-family: $icon-font;
     font-weight: 900;
-    left: -30px;
-    top: 3px;
+    left: -20px;
+    top: -3px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
@@ -272,15 +293,36 @@ textarea.form-control {
     font-size: 25px;
     font-family: $icon-font;
     font-weight: 900;
-    left: -30px;
-    top: 3px;
+    left: -20px;
+    top: -3px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
+  }
+}
+
+.info{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "\f002";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: $icon-font;
+    font-weight: 900;
+    left: -20px;
+    top: -3px;
+  }
+  svg{
+    position: absolute;
+    color: $primary-color;
+    font-size: 25px;
+    left: -30px;
+    top: 0px;
   }
 }
 
@@ -294,14 +336,14 @@ textarea.form-control {
     font-family: $icon-font;
     font-weight: 900;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
@@ -315,14 +357,14 @@ textarea.form-control {
     font-family: $icon-font;
     font-weight: 900;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
@@ -336,14 +378,14 @@ textarea.form-control {
     font-family: $icon-font;
     font-weight: 900;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
@@ -357,14 +399,14 @@ textarea.form-control {
     font-family: $icon-font;
     font-weight: 900;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
@@ -378,14 +420,14 @@ textarea.form-control {
     font-family: $icon-font;
     font-weight: 900;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
@@ -399,14 +441,14 @@ textarea.form-control {
     font-family: $icon-font;
     font-weight: 900;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
@@ -420,14 +462,14 @@ textarea.form-control {
     font-family: $icon-font;
     font-weight: 900;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
@@ -441,14 +483,14 @@ textarea.form-control {
     font-family: $icon-font;
     font-weight: 900;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
   svg{
     position: absolute;
     color: $primary-color;
     font-size: 25px;
     left: -30px;
-    top: 3px;
+    top: 0px;
   }
 }
 
@@ -642,9 +684,10 @@ padding: 0 50px 0 0px;
 
 .box {
   border: 1px solid #ccc; 
-  border-radius: 2px;
-  margin-bottom: 10px;
+  border-radius: 4px;
   cursor: pointer;
+  margin-top: 10px;
+  padding-top: 5px;
 }
 
 input {

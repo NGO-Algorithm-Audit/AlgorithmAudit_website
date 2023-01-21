@@ -18,111 +18,112 @@
   }
   </script>
 
-<div class="row">
-  <div class="col-md-12">
-    <div class="p-5 shadow rounded-lg">
+<div class="container-fluid">
+  <div class="p-5 shadow rounded-lg">
 
-      <h3 class="mb-4 data" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+    <h3 class="mb-4 data" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
 
-      <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 25px;">
-        <div>
-          <p><span style="color:#005aa7; font-weight: bold;">What input does the bias scan tool need?</span>
-          <br>A .csv file of max. 1GB with feature columns, predicted labels by the classifier and ground truth labels. Only the name of 'pred_label' and 'truth_label' are of importance, not the naming or order of the feature columns. All column values should be numeric and unscaled.</p> 
-          <p><span style="font-weight: bold;">- Features:</span> unscaled numeric values, e.g., <i>feat_1, feat_2, ..., feat_n</i>;</p>
-          <p><span style="font-weight: bold;">- Predicted label:</span> 0 or 1;</p>
-          <p><span style="font-weight: bold;">- Truth label:</span> 0 or 1;</p>
-          <p><span style="font-weight: bold;">- Bias metric:</span> False Positive Rate (FPR), False Negative Rate (FNR) or Accuracy.</p>
-        </div>
+    <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 25px;">
 
-        <!-- Example button -->
-        <div style="margin-bottom:20px;">
-          <a style="color:#005aa7;" onclick="myFunction3()" id="toggle3">See example...</a>
-          <span id="dots3"></span>
-        </div>
-        <div id="more3" style="display: none;">
-          <p><u>Data example</u>:</p>
+      <!-- What input is needed? -->
+      <div>
+        <p><span style="color:#005aa7; font-weight: bold;">What input does the bias scan tool need?</span>
+        <br>A .csv file of max. 1GB with feature columns, predicted labels by the classifier and ground truth labels. Only the name of 'pred_label' and 'truth_label' are of importance, not the naming or order of the feature columns. All column values should be numeric and unscaled.</p> 
+        <p><span style="font-weight: bold;">- Features:</span> unscaled numeric values, e.g., <i>feat_1, feat_2, ..., feat_n</i>;</p>
+        <p><span style="font-weight: bold;">- Predicted label:</span> 0 or 1;</p>
+        <p><span style="font-weight: bold;">- Truth label:</span> 0 or 1;</p>
+        <p><span style="font-weight: bold;">- Bias metric:</span> False Positive Rate (FPR), False Negative Rate (FNR) or Accuracy.</p>
+      </div>
+
+      <!-- Example button -->
+      <div style="margin-bottom:20px;">
+        <a style="color:#005aa7;" onclick="myFunction3()" id="toggle3">See example...</a>
+        <span id="dots3"></span>
+      </div>
+      <div id="more3" style="display: none;">
+        <p><u>Data example</u>:</p>
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-uox0{border-color:#grey;font-weight:bold;text-align:left;vertical-align:top}
+          .tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-uox0">feat_1</th>
+              <th class="tg-uox0">feat_2</th>
+              <th class="tg-uox0">...</th>
+              <th class="tg-uox0">feat_n</th>
+              <th class="tg-uox0">pred_label</th>
+              <th class="tg-uox0">truth_label</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-uoz0">10</td>
+              <td class="tg-uoz0">1</td>
+              <td class="tg-uoz0">...</td>
+              <td class="tg-uoz0">0.1</td>
+              <td class="tg-uoz0">1</td>
+              <td class="tg-uoz0">1</td>
+            </tr>
+            <tr>
+              <td class="tg-uoz0">20</td>
+              <td class="tg-uoz0">2</td>
+              <td class="tg-uoz0">...</td>
+              <td class="tg-uoz0">0.2</td>
+              <td class="tg-uoz0">1</td>
+              <td class="tg-uoz0">0</td>
+            </tr>
+            <tr>
+              <td class="tg-uoz0">30</td>
+              <td class="tg-uoz0">3</td>
+              <td class="tg-uoz0">...</td>
+              <td class="tg-uoz0">0.3</td>
+              <td class="tg-uoz0">0</td>
+              <td class="tg-uoz0">0</td>
+            </tr>
+          </tbody>
+          </table>
+          <br>
+          <p><u>Overview supported bias metrics</u>:</p>
           <style type="text/css">
             .tg  {border-collapse:collapse;border-spacing:0;}
-            .tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-size:14px;
               overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-size:14px;
               font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg .tg-uox0{border-color:#grey;font-weight:bold;text-align:left;vertical-align:top}
-            .tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}
-            </style>
-            <table class="tg">
+            .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+          </style>
+          <table class="tg">
             <thead>
               <tr>
-                <th class="tg-uox0">feat_1</th>
-                <th class="tg-uox0">feat_2</th>
-                <th class="tg-uox0">...</th>
-                <th class="tg-uox0">feat_n</th>
-                <th class="tg-uox0">pred_label</th>
-                <th class="tg-uox0">truth_label</th>
+                <th class="tg-1wig">Metric</th>
+                <th class="tg-1wig">Description</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="tg-uoz0">10</td>
-                <td class="tg-uoz0">1</td>
-                <td class="tg-uoz0">...</td>
-                <td class="tg-uoz0">0.1</td>
-                <td class="tg-uoz0">1</td>
-                <td class="tg-uoz0">1</td>
+                <td class="tg-0lax">False Positive <br>Rate (FPR)</td>
+                <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">The bias scan tool finds the cluster for which most true labels are predicted to</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">be false (False Positive), proportional to all true labels.</span></td>
               </tr>
               <tr>
-                <td class="tg-uoz0">20</td>
-                <td class="tg-uoz0">2</td>
-                <td class="tg-uoz0">...</td>
-                <td class="tg-uoz0">0.2</td>
-                <td class="tg-uoz0">1</td>
-                <td class="tg-uoz0">0</td>
+                <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">False Negative</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">Rate (FN</span>R)</td>
+                <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">The bias scan tool finds the cluster for which most false labels are predicted to</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">be true (False Negative), proportional to all false labels.</span></td>
               </tr>
               <tr>
-                <td class="tg-uoz0">30</td>
-                <td class="tg-uoz0">3</td>
-                <td class="tg-uoz0">...</td>
-                <td class="tg-uoz0">0.3</td>
-                <td class="tg-uoz0">0</td>
-                <td class="tg-uoz0">0</td>
+                <td class="tg-0lax">Accuracy</td>
+                <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">Sum of True Positives (TPs) and True Negatives (TNs), </span><br><span style="font-weight:400;font-style:normal;text-decoration:none">proportional to all predictions.</span></td>
               </tr>
             </tbody>
-            </table>
-            <br>
-            <p><u>Overview supported bias metrics</u>:</p>
-            <style type="text/css">
-              .tg  {border-collapse:collapse;border-spacing:0;}
-              .tg td{border-color:black;border-style:solid;border-width:1px;font-size:14px;
-                overflow:hidden;padding:10px 5px;word-break:normal;}
-              .tg th{border-color:black;border-style:solid;border-width:1px;font-size:14px;
-                font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-              .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-              .tg .tg-0lax{text-align:left;vertical-align:top}
-            </style>
-            <table class="tg">
-              <thead>
-                <tr>
-                  <th class="tg-1wig">Metric</th>
-                  <th class="tg-1wig">Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="tg-0lax">False Positive <br>Rate (FPR)</td>
-                  <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">The bias scan tool finds the cluster for which most true labels are predicted to</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">be false (False Positive), proportional to all true labels.</span></td>
-                </tr>
-                <tr>
-                  <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">False Negative</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">Rate (FN</span>R)</td>
-                  <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">The bias scan tool finds the cluster for which most false labels are predicted to</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">be true (False Negative), proportional to all false labels.</span></td>
-                </tr>
-                <tr>
-                  <td class="tg-0lax">Accuracy</td>
-                  <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">Sum of True Positives (TPs) and True Negatives (TNs), </span><br><span style="font-weight:400;font-style:normal;text-decoration:none">proportional to all predictions.</span></td>
-                </tr>
-              </tbody>
-            </table>
-        </div>
+          </table>
       </div>
     </div>
+
   </div>
 </div>

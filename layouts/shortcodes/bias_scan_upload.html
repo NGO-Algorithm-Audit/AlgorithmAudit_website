@@ -26,108 +26,107 @@
   filename = this.files[0].name;
   console.log(filename);
   });
-  </script>
+</script>
 
 <div class="container-fluid">
-  <div class="row">
-    <div class="grid p-5 shadow rounded-lg">
-        
-      <h3 class="mb-4 review" style="color:#005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3> 
+  <div class="grid p-5 shadow rounded-lg">
+      
+    <h3 class="mb-4 upload" style="color:#005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3> 
 
-      <div id="app" class="row" style="width:100%;"> 
-        <div class="col-lg-5 col-md-6 col-sm-12">
-          <div style="margin-bottom:10px;">
-            <h4 style="text-decoration:underline;">Select a bias metric</h4>
-          </div>
-          <div id="FPR_btn" class="box">
-            <label for="FPR">
-                <input id="FPR" class="bias-metric-inner" @click="first" name="metric" type="radio" value="FPR" v-model="metric" style="margin-top:20px;">
-                <span style="font-size:16px; margin-bottom:0px; text-decoration: bold;">False Positive Rate (FPR)</span>
-                <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom: 10px;">True labels predicted to be false (false positive), proportional to all true labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
-            </label>
-          </div>
-          <div id="FNR_btn" class="box">
-            <label for="FNR">
-                <input id="FNR" class="bias-metric-inner" @click="first" name="metric" type="radio" value="FNR" v-model="metric" style="margin-bottom:0px;">
-                <span style="font-size:16px; margin-bottom:0px; text-decoration: bold;">False Negative Rate (FNR)</span>
-                <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom: 10px;">False labels predicted to be true (false negatives), proportional to all false labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
-            </label>
-          </div>
-          <div id="Acc_btn" class="box">
-            <label for="Acc">
-                <input id="Acc" class="bias-metric-inner" @click="first" name="metric" type="radio" value="Acc" v-model="metric" style="margin-bottom:0px;">
-                <span style="font-size:16px; margin-bottom:0px; text-decoration: bold;">Accuracy (Acc)</span>
-                <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom: 10px;">Sum of true positives (TPs) and true negatives (TNs), proportional to all predictions. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
-            </label>
-          </div>
-        </div>  
-        <div class="col-lg-7 col-md-6 col-sm-12">
-          <div style="margin-bottom:10px;">
-            <h4 style="text-decoration:underline;">Upload data</h4>
-          </div>
-          <div id="upload_section" style="height:300px; width:100%; position:relative; background-color:#FFFFF0; border-radius:10px; border-color:#005aa7; border-style: dashed; border-width:1px;">
-            <div v-if="!file" style="width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-                <div style="margin: 0px 0px 50px 0px">
-                  <img src="/images/upload.svg" height="75px"/>
-                </div>
-                <h4 style="margin-bottom: 50px">Drag & drop or browse</h4>
-                <label id="click_btn" for="file_upload" class="btn">Select .csv file</label>
-                <input id="file_upload" type="file" @change="onFileChange" style="visibility:hidden;">
-            </div>
-            <div v-if="!uploadURL" v-else style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-                <h3 style="margin-bottom: 10px" >File loaded </h3>
-                <button class="alt_btn" style="margin-bottom: 0px;" v-if="!uploadURL" @click="removeFile">Remove file</button>
-                <div>
-                  <br> Selected bias metric:<p id="metric-choice" style="font-weight: bold;" v-html="metric"></p>
-                  <button v-if="hidden" class="btn" style="margin-top:0px;" v-if="!uploadURL" @click="uploadFile">Run bias scan</button>
-                </div>
-                <div v-if="!hidden" style=" width:100%; margin-top:25px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-                  <br>
-                  <p style="margin-top: 60px; font-weight: bold;">No bias scan metric selected</p>
-                </div>
-            </div>
-            <div v-if="uploadURL" style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-              <h4 >Scanning!</h4>
-              <div v-if="uploadURL" style="margin-top:30px;">
-                <div style="margin-bottom:30px;">
-                  <progress style="padding: 0px 0px; margin: auto 100px;" value="0" max="10" id="progressBar"></progress>
-                </div>
-                <a :href="`https://output-pdf-download.s3.amazonaws.com/bias_scan_${download_name}.pdf`">Download the report when finished</a>
+    <div id="app" class="row" style="width:100%;"> 
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div style="margin-bottom:10px;">
+          <h4 style="text-decoration:underline;">Select a bias metric</h4>
+        </div>
+        <div id="FPR_btn" class="box">
+          <label for="FPR" style="margin-bottom:0px;">
+              <input id="FPR" class="bias-metric-inner" @click="first" name="metric" type="radio" value="FPR" v-model="metric">
+              <span style="font-size:16px; text-decoration: bold;">False Positive Rate (FPR)</span>
+              <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">True labels predicted to be false (false positive), proportional to all true labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
+          </label>
+        </div>
+        <div id="FNR_btn" class="box">
+          <label for="FNR" style="margin-bottom:0px;">
+              <input id="FNR" class="bias-metric-inner" @click="first" name="metric" type="radio" value="FNR" v-model="metric" style="margin-bottom:0px;">
+              <span style="font-size:16px; text-decoration: bold;">False Negative Rate (FNR)</span>
+              <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">False labels predicted to be true (false negatives), proportional to all false labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
+          </label>
+        </div>
+        <div id="Acc_btn" class="box">
+          <label for="Acc" style="margin-bottom:0px;">
+              <input id="Acc" class="bias-metric-inner" @click="first" name="metric" type="radio" value="Acc" v-model="metric">
+              <span style="font-size:16px; text-decoration: bold;">Accuracy (Acc)</span>
+              <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">Sum of true positives (TPs) and true negatives (TNs), proportional to all predictions. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
+          </label>
+        </div>
+      </div>  
+      <div class="col-lg-7 col-md-6 col-sm-12">
+        <div style="margin-bottom:10px;">
+          <h4 style="text-decoration:underline;">Upload data</h4>
+        </div>
+        <div id="upload_section" style="height:300px; width:100%; position:relative; background-color:#FFFFF0; border-radius:10px; border-color:#005aa7; border-style: dashed; border-width:1px;">
+          <div v-if="!file" style="width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+              <div style="margin: 0px 0px 50px 0px">
+                <img src="/images/upload.svg" height="75px"/>
               </div>
-              <br><p style="font-size:12px; padding: 0px 50px;">If your report cannot be downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform" target="_blank">contact us</a>.</p>
-            </div>
-          </div>   
-        </div>
-      </div> 
-
-      <!-- Algorithm -->
-      <div style="margin-top:15px;">
-        <div class="row col-lg-12">
-          <span style="color:#005aa7; font-weight: bold; margin-bottom:10px;">Algorithm</span>
-
-          <!-- GitHub -->
-          <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
-                <p class="crossfade"></p>
-                <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan" target="_blank">
-                  <img class="about-img" style="height:30px;" src="/images/GitHub.svg">
-                </a>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="display:table;">
-              <p class="center-vert" style="font-size: 14px;">
-                The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a>            
-              </p>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <p class="center-vert" style="font-size:11px;">
-                <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/classifiers/BERT_disinformation_classifier/test_pred_BERT.csv" target="_blank">Download</a> an example data set to use the bias scan tool.
-              </p>
-            </div>
+              <h4 style="margin-bottom: 50px">Drag & drop or browse</h4>
+              <label id="click_btn" for="file_upload" class="btn">Select .csv file</label>
+              <input id="file_upload" type="file" @change="onFileChange" style="visibility:hidden;">
           </div>
-          
+          <div v-if="!uploadURL" v-else style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+              <h3 style="margin-bottom: 10px" >File loaded </h3>
+              <button class="alt_btn" style="margin-bottom: 0px;" v-if="!uploadURL" @click="removeFile">Remove file</button>
+              <div>
+                <br> Selected bias metric:<p id="metric-choice" style="font-weight: bold;" v-html="metric"></p>
+                <button v-if="hidden" class="btn" style="margin-top:0px;" v-if="!uploadURL" @click="uploadFile">Run bias scan</button>
+              </div>
+              <div v-if="!hidden" style=" width:100%; margin-top:25px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+                <br>
+                <p style="margin-top: 60px; font-weight: bold;">No bias scan metric selected</p>
+              </div>
+          </div>
+          <div v-if="uploadURL" style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+            <h4 >Scanning!</h4>
+            <div v-if="uploadURL" style="margin-top:30px;">
+              <div style="margin-bottom:30px;">
+                <progress style="padding: 0px 0px; margin: auto 100px;" value="0" max="10" id="progressBar"></progress>
+              </div>
+              <a :href="`https://output-pdf-download.s3.amazonaws.com/bias_scan_${download_name}.pdf`">Download the report when finished</a>
+            </div>
+            <br><p style="font-size:12px; padding: 0px 50px;">If your report cannot be downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform" target="_blank">contact us</a>.</p>
+          </div>
+        </div>   
+      </div>
+    </div> 
+
+    <!-- Algorithm -->
+    <div style="margin-top:15px;">
+      <div class="row col-lg-12">
+        <span style="color:#005aa7; font-weight: bold; margin-bottom:10px;">Algorithm</span>
+
+        <!-- GitHub -->
+        <div class="row">
+          <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+              <p class="crossfade"></p>
+              <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan" target="_blank">
+                <img class="about-img" style="height:30px;" src="/images/GitHub.svg">
+              </a>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="display:table;">
+            <p class="center-vert" style="font-size: 14px;">
+              The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a>            
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <p class="center-vert" style="font-size:11px;">
+              <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/classifiers/BERT_disinformation_classifier/test_pred_BERT.csv" target="_blank">Download</a> an example data set to use the bias scan tool.
+            </p>
+          </div>
         </div>
-      </div>         
-    </div>
+        
+      </div>
+    </div>    
+         
   </div>
 </div>
 

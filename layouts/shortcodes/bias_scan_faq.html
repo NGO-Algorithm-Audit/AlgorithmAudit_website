@@ -18,49 +18,52 @@ function myFunction2() {
 }
 </script>
 
-<div class="row">
-  <div class="col-md-12">
-    <div class="p-5 shadow rounded-lg">
-      
-      <h3 class="mb-4 faq" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+<div class="container-fluid">
+  <div class="p-5 shadow rounded-lg">
+    
+    <h3 class="mb-4 faq" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
 
-      <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 25px;">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 25px;">
+      <div>
+
+        <!-- Why this scan? -->
+        <p style="margin-top: 25px;"><span style="color:#005aa7; font-weight: bold;">Why this bias scan?</span> 
+          <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> No data needed on protected attributes of users (unsupervised bias detection);
+          <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> Model-agnostic (AI binary classifiers only);
+          <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> Connecting quantitative tools with qualitative methods to assess fair AI;
+          <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> Developed open-source and not-for-profit.
+        </p>
+
+        <!-- Read more -->
         <div>
-          <p style="margin-top: 25px;"><span style="color:#005aa7; font-weight: bold;">Why this bias scan?</span> 
-            <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> No data needed on protected attributes of users (unsupervised bias detection);
-            <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> Model-agnostic (AI binary classifiers only);
-            <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> Connecting quantitative tools with qualitative methods to assess fair AI;
-            <br><span style="color:#005aa7; font-weight: bold; padding: 0 0 0 15px;">–</span> Developed open-source and not-for-profit.</p>
-
-          <div>
-            <a style="color:#005aa7;" onclick="myFunction2()" id="toggle2">Read more...</a>
-            <span id="dots2"></span>
-          </div>
-
-          <div id="more2" style="display: none;">
-            <p><span style="color:#005aa7; font-weight: bold;">By whom can the bias scan be used?</span> 
-            <br>The bias scan tool allows the entire ecosystem involved in auditing AI, e.g., data scientists, journalists, policy makers, public- and private auditors, to use quantitative methods to detect bias in AI systems.</p> 
-            
-            <p><span style="color:#005aa7; font-weight: bold;">What does the tool compute?</span>
-            <br>A statistical method is used to compute which clusters are relatively often misclassified by an AI system. A cluster is a group of data points sharing similar features. The tool returns a report in which identified differences (between feature means) are visualized and statistical significant feature differences are tested (Welch’s two-samples t-test for unequal variances).</p> 
-
-            <p><span style="color:#005aa7; font-weight: bold;">The tool detects prohibited discrimination in AI?</span>
-            <br>No. The bias scan tool serves as a starting point to assess potentially unfair AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured disparities are legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are <i>appropriate</i> and <i>necessary</i>.</p> 
-
-            <p><span style="color:#005aa7; font-weight: bold;">For what type of AI does the tool work?</span> 
-            <br>Currently, only <a href="https://en.wikipedia.org/wiki/Binary_classification" target="_blank">binary classification</a> algorithms can be scanned. For instance, prediction of loan approval (yes/no), disinformation detection (true/false) or disease detection (positive/negative).</p> 
-
-            <p><span style="color:#005aa7; font-weight: bold;">What happens with my data?</span> 
-            <br>Your .csv file is uploaded to a AWS bucket, where it is processed. Once the clustering algorithm is finised the data is immediately deleted.</p> 
-
-            <p><span style="color:#005aa7; font-weight: bold;">In sum</span> 
-            <br>Quantitative methods, such as unsupervised bias scans, are helpful to discover potentially unfair treated groups of similar users in AI systems in a scalable manner. Automated identification of cluster disparities in AI models allows human experts to assess observed disparities in a qualitative manner, subject to political, social and environmental traits. This two-pronged approach bridges the gap between the qualitative requirements of law and ethics, and the quantitative nature of AI (see figure). In making normative advice, on identified ethical issues publicly available, over time a repository of 'techno-ethical jurisprudence' emerges; from which data scientists and public authorities can distill best practices to build fairer AI (see our <a href="https://www.algorithmaudit.eu/cases/" target="_blank">case reviews</a>). 
-            <img style="margin: 25px 0 0 0;" class="img-fluid" src="/images/Quantitative-qualitative.png">
-            
-          </div>
+          <a style="color:#005aa7;" onclick="myFunction2()" id="toggle2">Read more...</a>
+          <span id="dots2"></span>
         </div>
+
+        <!-- Extra content -->
+        <div id="more2" style="display: none;">
+          <p><span style="color:#005aa7; font-weight: bold;">By whom can the bias scan be used?</span> 
+          <br>The bias scan tool allows the entire ecosystem involved in auditing AI, e.g., data scientists, journalists, policy makers, public- and private auditors, to use quantitative methods to detect bias in AI systems.</p> 
+          
+          <p><span style="color:#005aa7; font-weight: bold;">What does the tool compute?</span>
+          <br>A statistical method is used to compute which clusters are relatively often misclassified by an AI system. A cluster is a group of data points sharing similar features. The tool returns a report in which identified differences (between feature means) are visualized and statistical significant feature differences are tested (Welch’s two-samples t-test for unequal variances).</p> 
+
+          <p><span style="color:#005aa7; font-weight: bold;">The tool detects prohibited discrimination in AI?</span>
+          <br>No. The bias scan tool serves as a starting point to assess potentially unfair AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured disparities are legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are <i>appropriate</i> and <i>necessary</i>.</p> 
+
+          <p><span style="color:#005aa7; font-weight: bold;">For what type of AI does the tool work?</span> 
+          <br>Currently, only <a href="https://en.wikipedia.org/wiki/Binary_classification" target="_blank">binary classification</a> algorithms can be scanned. For instance, prediction of loan approval (yes/no), disinformation detection (true/false) or disease detection (positive/negative).</p> 
+
+          <p><span style="color:#005aa7; font-weight: bold;">What happens with my data?</span> 
+          <br>Your .csv file is uploaded to a AWS bucket, where it is processed. Once the clustering algorithm is finised the data is immediately deleted.</p> 
+
+          <p><span style="color:#005aa7; font-weight: bold;">In sum</span> 
+          <br>Quantitative methods, such as unsupervised bias scans, are helpful to discover potentially unfair treated groups of similar users in AI systems in a scalable manner. Automated identification of cluster disparities in AI models allows human experts to assess observed disparities in a qualitative manner, subject to political, social and environmental traits. This two-pronged approach bridges the gap between the qualitative requirements of law and ethics, and the quantitative nature of AI (see figure). In making normative advice, on identified ethical issues publicly available, over time a repository of 'techno-ethical jurisprudence' emerges; from which data scientists and public authorities can distill best practices to build fairer AI (see our <a href="https://www.algorithmaudit.eu/cases/" target="_blank">case reviews</a>). 
+          <img style="margin: 25px 0 0 0;" class="img-fluid" src="/images/Quantitative-qualitative.png">
+        </div>
+
       </div>
-      
     </div>
+    
   </div>
 </div>

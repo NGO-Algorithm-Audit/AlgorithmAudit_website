@@ -1,19 +1,17 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
-<div class="row">
-  <div class="col-md-12">
-    <div class="p-5 shadow rounded-lg">
-      
-      <h3 class="mb-4 faq" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+<div class="container-fluid">
+  <div class="p-5 shadow rounded-lg">
+    
+    <h3 class="mb-4 info" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
 
-      <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 25px;">
-        <div>
-          <p>This bias scan tool identifies potentially unfairly treated groups of similar users. The tool identifies clusters of users that face a higher misclassification rate compared to the rest of the data set. Clustering is an unsupervised ML method, so no data is needed is required on protected attributes of users. The metric by which bias is defined can be manually chosen in advance: False Negative Rate (FNR), False Positive Rate (FPR), or Accuracy (Acc).</p>
-          <p>The tool returns a report which presents the cluster with the highest bias and describes this cluster by way of the features that characterizes it. This is quantitatively expressed by the (statistically significant) differences in feature means between the identified cluster and the rest of the data. The report also visualizes the outcomes.</p>
-          <p>Try it yourself!</p>
-        </div>
+    <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 25px;">
+      <div>
+        <p>This bias scan tool identifies potentially unfairly treated groups of similar users. The tool identifies clusters of users that face a higher misclassification rate compared to the rest of the data set. Clustering is an unsupervised ML method, so no data is needed is required on protected attributes of users. The metric by which bias is defined can be manually chosen in advance: False Negative Rate (FNR), False Positive Rate (FPR), or Accuracy (Acc).</p>
+        <p>The tool returns a report which presents the cluster with the highest bias and describes this cluster by way of the features that characterizes it. This is quantitatively expressed by the (statistically significant) differences in feature means between the identified cluster and the rest of the data. The report also visualizes the outcomes.</p>
+        <p style="margin-bottom:0px;">Try the tool below. ⬇️</p>
       </div>
-      
     </div>
+    
   </div>
 </div>
