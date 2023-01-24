@@ -40,21 +40,21 @@
         </div>
         <div id="FPR_btn" class="box">
           <label for="FPR" style="margin-bottom:0px;">
-              <input id="FPR" class="bias-metric-inner" @click="first" name="metric" type="radio" value="FPR" v-model="metric">
+              <input id="FPR" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="FPR" v-model="metric">
               <span style="font-size:16px; text-decoration: bold;">False Positive Rate (FPR)</span>
               <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">True labels predicted to be false (false positive), proportional to all true labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
           </label>
         </div>
         <div id="FNR_btn" class="box">
           <label for="FNR" style="margin-bottom:0px;">
-              <input id="FNR" class="bias-metric-inner" @click="first" name="metric" type="radio" value="FNR" v-model="metric" style="margin-bottom:0px;">
+              <input id="FNR" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="FNR" v-model="metric" style="margin-bottom:0px;">
               <span style="font-size:16px; text-decoration: bold;">False Negative Rate (FNR)</span>
               <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">False labels predicted to be true (false negatives), proportional to all false labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
           </label>
         </div>
         <div id="Acc_btn" class="box">
           <label for="Acc" style="margin-bottom:0px;">
-              <input id="Acc" class="bias-metric-inner" @click="first" name="metric" type="radio" value="Acc" v-model="metric">
+              <input id="Acc" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="Acc" v-model="metric">
               <span style="font-size:16px; text-decoration: bold;">Accuracy (Acc)</span>
               <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">Sum of true positives (TPs) and true negatives (TNs), proportional to all predictions. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
           </label>
@@ -70,7 +70,7 @@
                 <img src="/images/upload.svg" height="75px"/>
               </div>
               <h4 style="margin-bottom: 50px">Drag & drop or browse</h4>
-              <label id="click_btn" for="file_upload" class="btn">Select .csv file</label>
+              <label id="click_btn" v-on:click='sendMessage({ "action": "sendMessage", "message": "Hello, is any one there?" })' for="file_upload" class="btn">Select .csv file</label>
               <input id="file_upload" type="file" @change="onFileChange" style="visibility:hidden;">
           </div>
           <div v-if="!uploadURL" v-else style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
@@ -78,7 +78,7 @@
               <button class="alt_btn" style="margin-bottom: 0px;" v-if="!uploadURL" @click="removeFile">Remove file</button>
               <div>
                 <br> Selected bias metric:<p id="metric-choice" style="font-weight: bold;" v-html="metric"></p>
-                <button v-if="hidden" class="btn" style="margin-top:0px;" v-if="!uploadURL" @click="uploadFile">Run bias scan</button>
+                <button v-if="hidden" class="btn" style="margin-top:0px;" v-if="!uploadURL" @click="handler">Run bias scan</button>
               </div>
               <div v-if="!hidden" style=" width:100%; margin-top:25px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
                 <br>
@@ -88,12 +88,9 @@
           <div v-if="uploadURL" style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
             <h4 >Scanning!</h4>
             <div v-if="uploadURL" style="margin-top:30px;">
-              <div style="margin-bottom:30px;">
-                <progress style="padding: 0px 0px; margin: auto 100px;" value="0" max="10" id="progressBar"></progress>
-              </div>
-              <a :href="`https://output-pdf-download.s3.amazonaws.com/bias_scan_${download_name}.pdf`">Download the report when finished</a>
+              <p>The report will be downloaded when ready!</p>
             </div>
-            <br><p style="font-size:12px; padding: 0px 50px;">If your report cannot be downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform" target="_blank">contact us</a>.</p>
+            <br><p style="font-size:12px; padding: 0px 50px;">If your report is not downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform" target="_blank">contact us</a>.</p>
           </div>
         </div>   
       </div>
@@ -147,11 +144,18 @@
           fullname: '',
           download_name: '',
           hidden: false,
-          hidden2: false
+          hidden2: false,
+          connection: null,
+          result: null
       },
       methods: {
-          first(){
+          hide(){
             this.hidden = ! this.hidden2;
+          },
+          sendMessage: function(message) {
+            console.log(message)
+            console.log(this.connection);
+            this.connection.send(message);
           },
           onFileChange (e) {
               let files = e.target.files || e.dataTransfer.files
@@ -198,17 +202,39 @@
               console.log('Result: ', result)
               // Final URL for the user doesn't need the query string params
               this.uploadURL = response.uploadURL.split('?')[0]
-
-              // countdown progress bar
-              var timeleft = 10;
-              var downloadTimer = setInterval(function(){
-                if(timeleft <= 0){
-                  clearInterval(downloadTimer);
-                }
-                document.getElementById("progressBar").value = 10 - timeleft;
-                timeleft -= 1;
-              }, 1000);
           },
+          connect_websocket: function() {
+              console.log("Starting connection to WebSocket Server")
+              this.connection = new WebSocket("wss://rcatiibql6.execute-api.us-east-1.amazonaws.com/production")
+
+              this.connection.onmessage = function(event) {
+                console.log(event);
+              }
+
+              this.connection.onopen = function(event) {
+                console.log(event)
+                console.log("Successfully connected to the echo websocket server...")
+              }
+
+              this.connection.onmessage = (event) => {
+              
+              // process API reaction
+              this.result = event.data;
+              console.log("link:" + event.data);
+
+              // download report
+              const url = 'https://output-pdf-download.s3.amazonaws.com/bias_scan_' + this.download_name + '.pdf'
+              const link = document.createElement('a')
+              link.href = url
+              link.setAttribute('download',  'filename.ext')
+              document.body.appendChild(link)
+              link.click()
+              }
+          },
+          handler: function() {
+              this.connect_websocket();
+              this.uploadFile();
+          }
       }
   })
 </script>
