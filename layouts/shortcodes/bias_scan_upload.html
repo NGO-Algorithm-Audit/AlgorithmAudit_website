@@ -26,6 +26,14 @@
   filename = this.files[0].name;
   console.log(filename);
   });
+
+// Prevent default drag behavior browser
+function dragOverHandler(ev) {
+  console.log('File(s) in drop zone');
+
+  // Prevent default behavior (Prevent file from being opened)
+  ev.preventDefault();
+}
 </script>
 
 <div class="container-fluid">
@@ -64,14 +72,18 @@
         <div style="margin:10px 0px;">
           <h4 style="text-decoration:underline;">Upload data</h4>
         </div>
-        <div id="upload_section" style="height:300px; width:100%; position:relative; background-color:#FFFFF0; border-radius:10px; border-color:#005aa7; border-style: dashed; border-width:1px;">
+        <div id="upload_section" @dragover="dragover" @dragleave="dragleave" @drop="drop"
+        style="height:300px; width:100%; position:relative; background-color:#FFFFF0; border-radius:10px; border-color:#005aa7; border-style: dashed; border-width:1px;">
           <div v-if="!file" style="width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
               <div style="margin: 0px 0px 50px 0px">
                 <img src="/images/upload.svg" height="75px"/>
               </div>
               <h4 style="margin-bottom: 50px">Drag & drop or browse</h4>
-              <label id="click_btn" v-on:click='sendMessage({ "action": "sendMessage", "message": "Hello, is any one there?" })' for="file_upload" class="btn">Select .csv file</label>
-              <input id="file_upload" type="file" @change="onFileChange" style="visibility:hidden;">
+              <label id="click_btn" for="file_upload" class="btn">
+                <div v-if="isDragging">Release to drop files here.</div>
+                <div v-else>Select .csv file</div>
+              </label>
+              <input id="file_upload" type="file" @change="onFileChange" ref="file" accept=".csv" style="visibility:hidden;">
           </div>
           <div v-if="!uploadURL" v-else style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
               <h3 style="margin-bottom: 10px" >File loaded </h3>
@@ -88,9 +100,10 @@
           <div v-if="uploadURL" style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
             <h4 >Scanning!</h4>
             <div v-if="uploadURL" style="margin-top:30px;">
-              <p>The report will be downloaded when ready!</p>
+              <p>The report will be downloaded when ready
+              <br>(in 5-10 seconds)</p>
             </div>
-            <br><p style="font-size:12px; padding: 0px 50px;">If your report is not downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform" target="_blank">contact us</a>.</p>
+            <br><p style="font-size:12px; padding: 0px 25px;">If your report is not downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform" target="_blank">contact us</a>.</p>
           </div>
         </div>   
       </div>
@@ -146,16 +159,26 @@
           hidden: false,
           hidden2: false,
           connection: null,
-          result: null
+          result: null,
+          isDragging: false
       },
       methods: {
           hide(){
             this.hidden = ! this.hidden2;
           },
-          sendMessage: function(message) {
-            console.log(message)
-            console.log(this.connection);
-            this.connection.send(message);
+          dragover(e) {
+            e.preventDefault();
+            this.isDragging = true;
+          },
+          dragleave() {
+            this.isDragging = false;
+          },
+          drop(e) {
+            e.preventDefault();
+            let files = e.target.files || e.dataTransfer.files
+            if (!files.length) return
+            this.isDragging = false;
+            this.createFile(files[0])
           },
           onFileChange (e) {
               let files = e.target.files || e.dataTransfer.files
