@@ -708,6 +708,30 @@ textarea.form-control {
   margin-top: 10px;
   padding-top: 5px; }
 
+.same-height {
+  height: 100%;
+  width: 100%; }
+
+.loader {
+  border-top: 5px solid #D5DED8;
+  border-right: 5px solid #AABFCF;
+  border-bottom: 5px solid #80A1C7;
+  border-left: 5px solid #6B8DC2;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  animation: spin 1.5s linear infinite;
+  margin: auto;
+  left: 0;
+  right: 0; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 input[type=file] {
   background-color: #005aa7;
   color: #fff;

@@ -43,70 +43,90 @@ function dragOverHandler(ev) {
 
     <div id="app" class="row" style="width:100%;"> 
       <div class="col-lg-5 col-md-6 col-sm-12">
-        <div style="margin:10px 0px;">
-          <h4 style="text-decoration:underline;">Select a bias metric</h4>
-        </div>
-        <div id="FPR_btn" class="box">
-          <label for="FPR" style="margin-bottom:0px;">
-              <input id="FPR" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="FPR" v-model="metric">
-              <span style="font-size:16px; text-decoration: bold;">False Positive Rate (FPR)</span>
-              <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">True labels predicted to be false (false positive), proportional to all true labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
-          </label>
-        </div>
-        <div id="FNR_btn" class="box">
-          <label for="FNR" style="margin-bottom:0px;">
-              <input id="FNR" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="FNR" v-model="metric" style="margin-bottom:0px;">
-              <span style="font-size:16px; text-decoration: bold;">False Negative Rate (FNR)</span>
-              <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">False labels predicted to be true (false negatives), proportional to all false labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
-          </label>
-        </div>
-        <div id="Acc_btn" class="box">
-          <label for="Acc" style="margin-bottom:0px;">
-              <input id="Acc" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="Acc" v-model="metric">
-              <span style="font-size:16px; text-decoration: bold;">Accuracy (Acc)</span>
-              <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">Sum of true positives (TPs) and true negatives (TNs), proportional to all predictions. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
-          </label>
+        <div class="same-height">
+          <div style="margin:10px 0px;">
+            <h4 style="text-decoration:underline;">Select a bias metric</h4>
+          </div>
+          <div id="FPR_btn" class="box">
+            <label for="FPR" style="margin-bottom:0px;">
+                <input id="FPR" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="FPR" v-model="metric">
+                <span style="font-size:16px; text-decoration: bold;">False Positive Rate (FPR)</span>
+                <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">True labels predicted to be false (false positive), proportional to all true labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
+            </label>
+          </div>
+          <div id="FNR_btn" class="box">
+            <label for="FNR" style="margin-bottom:0px;">
+                <input id="FNR" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="FNR" v-model="metric" style="margin-bottom:0px;">
+                <span style="font-size:16px; text-decoration: bold;">False Negative Rate (FNR)</span>
+                <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">False labels predicted to be true (false negatives), proportional to all false labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
+            </label>
+          </div>
+          <div id="Acc_btn" class="box">
+            <label for="Acc" style="margin-bottom:0px;">
+                <input id="Acc" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="Acc" v-model="metric">
+                <span style="font-size:16px; text-decoration: bold;">Accuracy (Acc)</span>
+                <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">Sum of true positives (TPs) and true negatives (TNs), proportional to all predictions. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
+            </label>
+          </div>
         </div>
       </div>  
       <div class="col-lg-7 col-md-6 col-sm-12">
-        <div style="margin:10px 0px;">
-          <h4 style="text-decoration:underline;">Upload data</h4>
-        </div>
-        <div id="upload_section" @dragover="dragover" @dragleave="dragleave" @drop="drop"
-        style="height:300px; width:100%; position:relative; background-color:#FFFFF0; border-radius:10px; border-color:#005aa7; border-style: dashed; border-width:1px;">
-          <div v-if="!file" style="width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-              <div style="margin: 0px 0px 50px 0px">
-                <img src="/images/upload.svg" height="75px"/>
-              </div>
-              <h4 style="margin-bottom: 50px">Drag & drop or browse</h4>
-              <label id="click_btn" for="file_upload" class="btn">
-                <div v-if="isDragging">Release to drop files here.</div>
-                <div v-else>Select .csv file</div>
-              </label>
-              <input id="file_upload" type="file" @change="onFileChange" ref="file" accept=".csv" style="visibility:hidden;">
+        <div class="same-height">
+
+          <div style="margin:10px 0px;">
+            <h4 style="text-decoration:underline;">Upload data</h4>
           </div>
-          <div v-if="!uploadURL" v-else style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-              <h3 style="margin-bottom: 10px" >File loaded </h3>
-              <button class="alt_btn" style="margin-bottom: 0px;" v-if="!uploadURL" @click="removeFile">Remove file</button>
-              <div>
-                <br> Selected bias metric:<p id="metric-choice" style="font-weight: bold;" v-html="metric"></p>
-                <button v-if="hidden" class="btn" style="margin-top:0px;" v-if="!uploadURL" @click="handler">Run bias scan</button>
-              </div>
-              <div v-if="!hidden" style=" width:100%; margin-top:25px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-                <br>
-                <p style="margin-top: 60px; font-weight: bold;">No bias scan metric selected</p>
-              </div>
-          </div>
-          <div v-if="uploadURL" style=" width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-            <h4 >Scanning!</h4>
-            <div v-if="uploadURL" style="margin-top:30px;">
-              <p>The report will be downloaded when ready
-              <br>(in 5-10 seconds)</p>
+
+          <!-- Uploading file -->
+          <div id="upload_section" @dragover="dragover" @dragleave="dragleave" @drop="drop"
+          style="height:300px; width:100%; position:relative; background-color:#FFFFF0; border-radius:10px; border-color:#005aa7; border-style: dashed; border-width:1px;">
+            <div v-if="!file" style="width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+                <div style="margin: 0px 0px 50px 0px">
+                  <img src="/images/upload.svg" height="75px"/>
+                </div>
+                <h4 style="margin-bottom: 50px">Drag & drop or browse</h4>
+                <label id="click_btn" for="file_upload" class="btn">
+                  <div v-if="isDragging">Release to drop files here.</div>
+                  <div v-else>Select .csv file</div>
+                </label>
+                <input id="file_upload" type="file" @change="onFileChange" ref="file" accept=".csv" style="visibility:hidden;">
             </div>
-            <br><p style="font-size:12px; padding: 0px 25px;">If your report is not downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform" target="_blank">contact us</a>.</p>
-          </div>
-        </div>   
+
+            <!-- Click for running -->
+            <div v-if="!uploadURL" v-else style=" width:100%; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+                <h3 style="margin-bottom: 10px" >File loaded </h3>
+                <button class="alt_btn" style="margin-bottom: 0px;" v-if="!uploadURL" @click="removeFile">Remove file</button>
+                <div>
+                  <br> Selected bias metric:<p id="metric-choice" style="font-weight: bold;" v-html="metric"></p>
+                  <button v-if="hidden" class="btn" style="margin-top:0px;" v-if="!uploadURL" @click="handler">Run bias scan</button>
+                </div>
+                <div v-if="!hidden" style=" width:100%; margin-top:25px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+                  <br>
+                  <p style="margin-top: 60px; font-weight: bold;">No bias scan metric selected</p>
+                </div>
+            </div>
+
+            <!-- Scanning -->
+            <div v-if="uploadURL" style=" width:100%; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+              <h4 v-if="!hidden3">Scanning!</h4>
+              <h4 v-if="hidden3">Report is downloaded :-)</h4>
+              <div v-if="!hidden3" v-if="uploadURL" style="margin-top:0px;">
+                <p style="margin-bottom:0px;">The report will be downloaded when ready
+                <br>(in 5-10 seconds)</p>
+              </div>
+              <div v-if="!hidden3" class="loader"></div>
+              <div v-if="!hidden3">
+                <p style="font-size:12px; padding: 0px 25px;">If your report is not downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform" target="_blank">contact us</a>.</p>
+              </div>
+              <div v-if="hidden3">
+                <p style="font-size:12px; padding: 0px 25px;">Please read below FAQ section to learn more about the inner workings of this bias scan tool.</p>
+              </div>
+            </div>
+          </div>  
+
+        </div> 
       </div>
+
     </div> 
 
     <!-- Algorithm -->
@@ -160,7 +180,8 @@ function dragOverHandler(ev) {
           hidden2: false,
           connection: null,
           result: null,
-          isDragging: false
+          isDragging: false,
+          hidden3: false
       },
       methods: {
           hide(){
@@ -252,6 +273,9 @@ function dragOverHandler(ev) {
               link.setAttribute('download',  'filename.ext')
               document.body.appendChild(link)
               link.click()
+
+              // hide loader and scanning content
+              this.hidden3 = true
               }
           },
           handler: function() {
