@@ -46,7 +46,7 @@ body {
 
 @media (min-width : 768px) {
   .img-wrapper{
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -62,6 +62,31 @@ body {
 .inner{
   width: 50%;
   margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width : 768px) {
+  .inner{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.section-title{
+  font-size:30px;
+}
+
+@media (max-width: 480px) {
+  .section-title{
+    font-size:25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-xs-6 {
+    width: 50% !important;
+  }
 }
 
 .social-icons a {

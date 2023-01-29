@@ -1,37 +1,34 @@
-<footer class="bg-light footer pb-0" style="background-color: #b1c4d5 !important;">
+<footer class="bg-light footer" style="background-color: #b1c4d5 !important;">
   <div class="container">
 
     <!-- Motto -->
-    <div class="row" style="padding: 30px 0 75px 0;">
+    <div class="row" style="padding: 30px 10%;">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
-        <h2 class="section-title" style="font-size:30px; color: #005aa7; text-align:center">We build public knowledge for ethical algorithms</h2>
+        <h2 class="section-title" style="color: #005aa7; text-align:center">We build public knowledge for ethical algorithms</h2>
       </div>
     </div>
     <!-- /Motto -->
 
-    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px 0 50px 0;">
-
-      <!-- Logo -->
-      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 order-sm-1 order-lg-2 mb-5">
+    <!-- Logo -->
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 order-lg-2 order-sm-1 order-xs-1 mb-5">
         <div class="inner">
-          <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">
             {{ with site.Params.logo}}
-            <div class="img-wrapper">
-              <img class="img-fluid" style="max-height: 125px;" src="{{ . | relURL }}" alt="{{ site.Title }}">
+            <div>
+              <img class="center-block" style="width:75%;" src="{{ . | relURL }}" alt="{{ site.Title }}">
             </div>
             {{ else }}{{site.Title}}{{end}}
-          </a>
         </div>
-        <div style="text-align:center; padding: 0 10%; margin-top:100px;">
+        <div style="text-align:center; padding: 30px 10%;">
           <a style="font-size:14px; cursor: default;">Stichting Algorithm Audit is registred as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212</a>
         </div>
       </div>
-      <!-- /Logo -->
+      <!-- Logo -->
 
       <!-- Follow us -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-sm-4 order-lg-4 mb-5 custom_div_parent">
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 order-lg-3 order-sm-3 order-xs-3 mb-5 custom_div_parent">
           <p style="font-size:12px; color: #005aa7;">Follow us:</p>
-        {{ with site.Params.social }}
+          {{ with site.Params.social }}
           <div class="social-icons">
             {{ range . }}
             <a href="{{ .link | safeURL }}" target="_blank" title="{{ .title }}"><i class="{{ .icon }}"></i></a>
@@ -42,11 +39,11 @@
       <!-- /Follow us -->
 
       <!-- Sitemap -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 order-sm-3 order-lg-1" style="margin-top:50px;">
-        <h3 class="" style="font-size:14px; color: #005aa7;">Sitemap</p>
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 order-lg-1 order-sm-2 order-xs-2 mb-5" style="margin-bottom:40px;">
+        <h3 style="font-size:14px; color:#005aa7;">Sitemap</p>
 
-        <ul style="list-style-type:none; padding-left: 0; font-size:14px; color: #005aa7;">
-          <li><a href="#"><p style="color: #005aa7; margin:0 0 0px 0;">Home</p></a></li>
+        <ul style="list-style-type:none; padding-left:0; font-size:14px; color:#005aa7;">
+          <li><a href="#"><p style="color:#005aa7; margin:0 0 0px 0;">Home</p></a></li>
           <li><a href="/cases"><p style="color: #005aa7; margin:0 0 0px 0;">Cases</p></a></li>
           <li><a href="/bias_scan"><p style="color: #005aa7; margin:0 0 0px 0;">Bias scan</p></a></li>
           <li><a href="/knowledge_base"><p style="color: #005aa7;  margin:0 0 0px 0;">Knowledge base</p></a></li>

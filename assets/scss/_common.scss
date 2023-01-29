@@ -110,7 +110,7 @@ a:hover {
 
 .footer {
   padding-top: 30px;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 
 .padding_text {
@@ -687,7 +687,19 @@ padding: 0 50px 0 0px;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
-  padding-top: 5px;
+  padding-top: 5px; 
+}
+
+.box-text {
+  font-size: 16px;
+}
+
+@media (max-width: 415px) {
+  .box-text {
+    font-size: 13px;
+    // font-weight: bold;
+    text-decoration: underline;
+  }
 }
 
 .same-height {

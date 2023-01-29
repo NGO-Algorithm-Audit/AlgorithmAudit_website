@@ -50,21 +50,21 @@ function dragOverHandler(ev) {
           <div id="FPR_btn" class="box">
             <label for="FPR" style="margin-bottom:0px;">
                 <input id="FPR" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="FPR" v-model="metric">
-                <span style="font-size:16px; text-decoration: bold;">False Positive Rate (FPR)</span>
+                <span class="box-text" style="text-decoration:bold;">False Positive Rate (FPR)</span>
                 <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">True labels predicted to be false (false positive), proportional to all true labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
             </label>
           </div>
           <div id="FNR_btn" class="box">
             <label for="FNR" style="margin-bottom:0px;">
                 <input id="FNR" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="FNR" v-model="metric" style="margin-bottom:0px;">
-                <span style="font-size:16px; text-decoration: bold;">False Negative Rate (FNR)</span>
+                <span class="box-text" style="text-decoration:bold;">False Negative Rate (FNR)</span>
                 <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">False labels predicted to be true (false negatives), proportional to all false labels. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
             </label>
           </div>
           <div id="Acc_btn" class="box">
             <label for="Acc" style="margin-bottom:0px;">
                 <input id="Acc" class="bias-metric-inner" @click="hide" name="metric" type="radio" value="Acc" v-model="metric">
-                <span style="font-size:16px; text-decoration: bold;">Accuracy (Acc)</span>
+                <span class="box-text" style="text-decoration: bold;">Accuracy (Acc)</span>
                 <p style="font-size:12px; margin-left:20px; margin-right:10px; margin-bottom:10px;">Sum of true positives (TPs) and true negatives (TNs), proportional to all predictions. <a href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a></p>
             </label>
           </div>
@@ -112,7 +112,7 @@ function dragOverHandler(ev) {
               <h4 v-if="hidden3">Report is downloaded :-)</h4>
               <div v-if="!hidden3" v-if="uploadURL" style="margin-top:0px;">
                 <p style="margin-bottom:0px;">The report will be downloaded when ready
-                <br>(in 5-10 seconds)</p>
+                <br>(in 5-15 seconds)</p>
               </div>
               <div v-if="!hidden3" class="loader"></div>
               <div v-if="!hidden3">
