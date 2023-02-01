@@ -20,7 +20,7 @@ image: images/about.svg
 "Associate Professor of Information Systems at the London School of Economics and Political Sciences"
 "Professor Public Law & Governance of Artificial Intelligence (AI) at Leiden University"
 "Associate Professor in EU law at Sciences Po Paris. Co-author of the EU report"
-"writer, founder of ">}}
+"Writer, founder of ">}}
 
 {{< about_contributors "Contributors" "International experts from a range of disciplines and professional backgrounds contribute to the work of Algorithm Audit. Expertise from among others data science, policy making, law and ethics strenghtens our problem statements, white papers and advocay work.">}}
 
