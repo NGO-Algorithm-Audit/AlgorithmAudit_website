@@ -1,0 +1,33 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+  <div class="p-5 shadow rounded-lg" id="case-risk-assessment-tool" style="display: table;">
+    <h3 class="mb-4 ranking" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+    <p>{{ .Inner | markdownify }}</p>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3 class="mb-4" style="font-size: 16px; text-decoration: none; color:#005aa7;">Audit commission</h3>
+        <p>{{ .Get 1 | markdownify }}</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3 class="mb-4" style="font-size: 16px; color: #005aa7;">Funded by</h3>
+      </div>
+
+      <div class="center-vert col-lg-4 col-md-6 col-sm-6 col-xs-12" style="display:table;">
+        <p class="center-vert"></p>
+        <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
+          <img src="/images/sidn.png" style="width:70%">
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="display:table;">
+        <p class="center-vert"></p>
+        <a href="https://europeanaifund.org/" target="_blank">
+          <img src="/images/EUAISFund.png" style="width:80%">
+        </a>
+      </div>
+    </div>
+
+  </div>

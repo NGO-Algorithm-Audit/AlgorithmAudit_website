@@ -3,6 +3,7 @@ title: Events
 subtitle: Knowledge sharing is an integral part of Algorithm Audit's mission. Members of our team speak at events. [<span style="color:#005aa7"> Reach out</span>](/index.html#contactform) to discuss contributions.
 image: "/images/events.svg"
 ---
+{{< event-right-MozFest "Mar 2023" "MozFest workshop" "Hosting the 'Be an ethicist' workshop. Reviewing an ethical issue from AI practice with 30-50 participants in break out setting.">}}
 {{< event-left-BZK "Nov 2022" "Algorithmic supervisory body" "Expert session on algorithmic supervision, Dutch Ministry of the Interior and Kingdom Relations">}}
 {{< event-right-EUAI "Nov 2022" "EU AI Fund digital policy convening" "2-day gathering of people working on tech policy in Europe, Brussels">}}
 {{< event-left-Leiden "Nov 2022" "Governance of Artificial Intelligence" "Master seminar part of minor AI & society, Leiden University">}}

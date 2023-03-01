@@ -508,6 +508,24 @@ textarea.form-control {
     left: -30px;
     top: 0px; }
 
+.disinfo {
+  position: relative; }
+  .disinfo::before {
+    position: absolute;
+    content: "\f1ea";
+    color: #005aa7;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: -30px;
+    top: 0px; }
+  .disinfo svg {
+    position: absolute;
+    color: #0AA8A7;
+    font-size: 25px;
+    left: -30px;
+    top: 0px; }
+
 .sim-card {
   position: relative; }
   .sim-card::before {

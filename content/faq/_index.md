@@ -10,7 +10,9 @@ subtitle: Algorithm Audit commits to high standards regarding integrity, indepen
 image: /images/faq.svg
 
 ---
-{{< faq-review "What exactly do you review?" >}} We review algorithmic decision and prediction models, the type of data and variables used and the organizational processes in which the models are involved. We believe a balanced ethical judgment of algorithmic processes must take the larger context into account. This means that our commissions will for example look at the nature of the provided product or service, the individual and social consequences of algorithmic predictions or decisions, the possibility of appeal, the level of internal control. {{</ faq-review >}}
+{{< faq-review "What exactly do you review?" >}} 
+We review algorithmic decision and prediction models, the type of data and variables used and the organizational processes in which the models are involved. We believe a balanced ethical judgment of algorithmic processes must take the larger context into account. This means that our commissions will for example look at the nature of the provided product or service, the individual and social consequences of algorithmic predictions or decisions, the possibility of appeal, the level of internal control. 
+{{</ faq-review >}}
 
 {{< faq "What organizations may present a case?" >}}
 Basically every organization, public or private, big or small, is welcome to present a case. Depending on the nature of the case, we decide whether it is suitable for review by an audit commission.

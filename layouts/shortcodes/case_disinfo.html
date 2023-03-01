@@ -1,0 +1,54 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+  <div id="disinfo-case" class="p-5 col-lg-12 col-md-12 col-sm-12 col-xs-12 shadow rounded-lg"  style="display: table;">
+    <h3 class="mb-4 disinfo" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+
+    <div class="row" style="margin-bottom:25px;">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        <h3 class="mb-4" style="font-size: 16px; text-decoration: none; color:#005aa7;">Summary advice</h3>
+        <p>{{ .Inner | markdownify }}</p>
+
+        <h3 class="mb-4" style="font-size: 16px; text-decoration: none; color:#005aa7;">Source of case</h3>
+        <p>Applying an unsupervised <a href="https://www.algorithmaudit.eu/bias_scan/" target="_blank">bias detection tool</a> on a self-trained BERT-based disinformation classifier on the Twitter1516 dataset. Learn more on <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan" target="_blank">Github</a>.</p>
+
+        <h3 class="mb-4" style="font-size: 16px; text-decoration: none; color:#005aa7;">Stanford AI Audit Competition</h3>
+        <p>This case study, in combination with our <a href="https://www.algorithmaudit.eu/bias_scan/" target="_blank">bias scan tool</a>, has been selected as a finalist for <a href="https://hai.stanford.edu/policy/ai-audit-challenge" target="_blank">Stanford's AI Audit Competition</a>.</p>
+
+        <div>
+          <h3 class="mb-4" style="font-size: 16px; text-decoration: none; color:#005aa7;">Report</h3>
+          <p>Dowload the full report and problem statement <a href="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing" target="_blank">here</a>.</p>
+        </div>
+        <div style="text-align:center">
+          <iframe src="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/preview" width="50%" height="594px" allow="autoplay"></iframe>
+        </div>
+
+        <h3 class="mb-4" style="font-size: 16px; text-decoration: none; color:#005aa7;">Audit commission</h3>
+        <ul>
+          <li style="color:#777777">{{ .Get 1 | markdownify }}</li>
+          <li style="color:#777777">{{ .Get 2 | markdownify }}</li>
+          <li style="color:#777777">{{ .Get 3 | markdownify }}</li>
+          <li style="color:#777777">{{ .Get 4 | markdownify }}</li>
+          <li style="color:#777777">{{ .Get 5 | markdownify }} <a href="https://maldita.es/maldita-es-journalism-to-not-be-fooled/" target="_blank">Maldita.es</a></li>
+          <li style="color:#777777">{{ .Get 6 | markdownify }} <a href="https://demos.co.uk" target="_blank">Demos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom:25px;">
+      <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+        <h3 class="mb-4" style="font-size: 16px; color: #005aa7;">Funded by</h3>
+        <a href="https://europeanaifund.org/" target="_blank">
+          <img src="/images/EUAISFund.png" style="width:70%">
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>

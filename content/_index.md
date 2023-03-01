@@ -7,8 +7,8 @@ Banner:
     issues that arise in concrete use cases of algorithmic tools and methods.
   button:
     enable: True
-    label: Read our new white paper
-    link: /knowledge_base/
+    label: Read our new case study
+    link: /cases/#disinfo-case
 What_we_do:
   enable: true
   title: What we do
@@ -49,7 +49,7 @@ Supported_by:
     img1:
     - images/sidn.png
     img2:
-    - images/EUAIFund.png
+    - images/EUAISFund.png
     img3:
     - images/NLAIC.png
 How_we_work:

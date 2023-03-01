@@ -8,6 +8,7 @@
 
         <div class="board-wrapper">
           <div class='row'>
+
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <h4>Statistics & AI</h4>
               <div style="text-align: center; width:100%; margin-top:25px;">
@@ -24,9 +25,42 @@
 
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <h4>Law & Ethics</h4>
+
               <div style="text-align: center; width:100%; margin-top:25px;">
                 <div>
                   <img src="/images/VN.svg" style="display:inline-block; height:100px; width:100px;">
+                </div>
+              </div>
+
+              <div>
+                <p style="color: #005aa7; font-weight: bold;">{{ .Get 3 | markdownify }}</p> 
+                <p>{{ .Get 4 | markdownify }}</p> 
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="board-wrapper">
+          <div class='row'>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div style="text-align: center; width:100%; margin-top:25px;">
+                <div>
+                  <!-- <img src="/images/JP.svg" style="display:inline-block; height:100px; width:100px;"> -->
+                </div>
+              </div>
+
+              <div>
+                <p style="color:white; font-weight: bold;">.</p> 
+                <p style="color:white; font-weight: bold;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div style="text-align: center; width:100%; margin-top:25px;">
+                <div>
+                  <img src="/images/OAK.png" style="display:inline-block; height:100px; width:100px;">
                 </div>
               </div>
 
@@ -35,6 +69,7 @@
                 <p>{{ .Get 6 | markdownify }}</p> 
               </div>
             </div>
+            
           </div>
         </div>
 

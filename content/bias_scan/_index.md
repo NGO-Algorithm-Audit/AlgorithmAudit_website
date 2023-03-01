@@ -5,6 +5,8 @@ image: "/images/illustration_cases.svg"
 ---
 {{< bias_scan_info "Bias scan tool – What is it?">}} 
 
+{{< bias_scan_alert_case_study "New case study">}} 
+
 {{< bias_scan_upload "Generate a report">}} 
 
 {{< bias_scan_input_data "Input data">}} 
