@@ -52,6 +52,8 @@ Supported_by:
     - images/EUAISFund.png
     img3:
     - images/NLAIC.png
+    img4:
+    - images/HAI.png
 How_we_work:
   enable: true
   service_item:
