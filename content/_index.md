@@ -7,8 +7,8 @@ Banner:
     issues that arise in concrete use cases of algorithmic tools and methods.
   button:
     enable: True
-    label: Read our new case study
-    link: /cases/#disinfo-case
+    label: Read our new white paper
+    link: /knowledge_base/white_paper_dsa_delegated_regulation_feedback/
 What_we_do:
   enable: true
   title: What we do
