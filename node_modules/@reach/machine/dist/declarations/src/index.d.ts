@@ -1,0 +1,70 @@
+import * as React from "react";
+import { assign, createMachine, interpret, InterpreterStatus } from "@xstate/fsm";
+import type { DistributiveOmit } from "@reach/utils/types";
+import type { EventObject as MachineEvent, StateMachine, Typestate } from "@xstate/fsm";
+/**
+ * This `useMachine` works very similiarly to what you get from `@xstate/react`
+ * with some additions.
+ *  - A second argument `refs` is passed to send all of our refs into our
+ *    machine's contextual data object.
+ *  - We wrap the `send` function so that refs are updated included in all of
+ *    our events so we can use their current value (generally DOM nodes)
+ *    anywhere in our actions.
+ *  - We initialize the machine inside the component rather than throwing an
+ *    error if an outside initializer creates a value that doesn't match. This
+ *    is useful as some components may need a different initial state or some
+ *    initial data based on props. We should *generally* just update the state
+ *    with an event via useEffect and depend on a static initial value, but this
+ *    is difficult if that initial value matters for SSR or to prevent some
+ *    layout jank before the first paint. I don't think there's a problem with
+ *    this approach, but we'll see what happens.
+ *
+ * @param initialMachine
+ * @param refs
+ */
+export declare function useMachine<TC extends object, TE extends MachineEventWithRefs = MachineEventWithRefs, TS extends Typestate<TC> = any>(initialMachine: StateMachine.Machine<TC, TE, TS>, refs: MachineToReactRefMap<TE>, DEBUG?: boolean): [
+    Omit<StateMachine.State<TC, TE, TS>, "actions">,
+    StateMachine.Service<TC, DistributiveOmit<TE, "refs">>["send"],
+    StateMachine.Service<TC, TE>
+];
+/**
+ * Converts an object with React refs into an object with the same keys and
+ * the current value of those refs.
+ *
+ * @param refs
+ */
+export declare function unwrapRefs<TE extends MachineEventWithRefs = MachineEventWithRefs>(refs: MachineToReactRefMap<TE>): TE["refs"];
+/**
+ * Most of the time you want to create a static state machine outside of your
+ * component, but in some cases we may need data from props in the first render
+ * cycle. We can create our machine in each component IF we only create it once
+ * and guarantee that it never changes between renders.
+ *
+ * This hook can take a machine definition created by a function inline to use
+ * values defined in the component, and we never change the machine for the
+ * life of the component.
+ *
+ * @param machineDefinition
+ * @param options
+ */
+export declare function useCreateMachine<TC extends object, TE extends MachineEventWithRefs = MachineEventWithRefs, TS extends Typestate<TC> = any>(machineDefinition: StateMachine.Config<TC, TE, TS>, options?: {
+    actions?: StateMachine.ActionMap<TC, TE>;
+}): StateMachine.Machine<TC, TE, TS>;
+/**
+ * Events use in our `useMachine` always have a refs object and will inherit
+ * this interface.
+ */
+export interface MachineEventWithRefs extends MachineEvent {
+    refs: {
+        [key: string]: any;
+    };
+    lastEventType?: MachineEventWithRefs["type"];
+}
+export declare type MachineToReactRefMap<TE extends MachineEventWithRefs> = {
+    [K in keyof TE["refs"]]: React.RefObject<TE["refs"][K]>;
+};
+export declare type MachineState<TC extends object, TE extends MachineEventWithRefs = MachineEventWithRefs, TS extends Typestate<TC> = any> = StateMachine.State<TC, TE, TS>;
+export declare type MachineSend<TC extends object, TE extends MachineEventWithRefs = MachineEventWithRefs> = StateMachine.Service<TC, DistributiveOmit<TE, "refs">>["send"];
+export declare type MachineService<TC extends object, TE extends MachineEventWithRefs = MachineEventWithRefs> = StateMachine.Service<TC, TE>;
+export type { MachineEvent, StateMachine };
+export { InterpreterStatus, createMachine, assign, interpret };

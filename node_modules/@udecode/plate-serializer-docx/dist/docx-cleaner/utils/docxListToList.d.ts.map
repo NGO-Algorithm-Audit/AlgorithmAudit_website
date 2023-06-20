@@ -1,0 +1,1 @@
+{"version":3,"file":"docxListToList.d.ts","sourceRoot":"","sources":["../../../src/docx-cleaner/utils/docxListToList.ts"],"names":[],"mappings":"AAOA,UAAU,MAAM;IACd,IAAI,EAAE,OAAO,GAAG,IAAI,CAAC;IACrB,WAAW,EAAE,OAAO,GAAG,IAAI,CAAC;CAC7B;AAED,eAAO,MAAM,cAAc,YAAa,OAAO,KAAG,MA2CjD,CAAC"}

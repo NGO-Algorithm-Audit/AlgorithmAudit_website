@@ -1,0 +1,26 @@
+export declare enum ListStyleType {
+    Armenian = "armenian",
+    Circle = "circle",
+    CjkIdeographic = "cjk-ideographic",
+    Decimal = "decimal",
+    DecimalLeadingZero = "decimal-leading-zero",
+    Disc = "disc",
+    Georgian = "georgian",
+    Hebrew = "hebrew",
+    Hiragana = "hiragana",
+    HiraganaIroha = "hiragana-iroha",
+    Katakana = "katakana",
+    KatakanaIroha = "katakana-iroha",
+    LowerAlpha = "lower-alpha",
+    LowerGreek = "lower-greek",
+    LowerLatin = "lower-latin",
+    LowerRoman = "lower-roman",
+    None = "none",
+    Square = "square",
+    UpperAlpha = "upper-alpha",
+    UpperLatin = "upper-latin",
+    UpperRoman = "upper-roman",
+    Initial = "initial",
+    Inherit = "inherit"
+}
+//# sourceMappingURL=types.d.ts.map

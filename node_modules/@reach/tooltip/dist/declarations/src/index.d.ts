@@ -1,0 +1,120 @@
+/**
+ * Welcome to @reach/tooltip!
+ *
+ * When the user's mouse or focus rests on an element, a non-interactive popup
+ * is displayed near it.
+ *
+ * Quick definitions:
+ *
+ * - "on rest" or "rested on": describes when the element receives mouse hover
+ *   after a short delay (and hopefully soon, touch longpress).
+ *
+ * - "activation": describes a mouse click, keyboard enter, or keyboard space.
+ *
+ * Only one tooltip can be visible at a time, so we use a global state chart to
+ * describe the various states and transitions between states that are possible.
+ * With all the timeouts involved with tooltips it's important to "make
+ * impossible states impossible" with a state machine.
+ *
+ * It's also okay to use these module globals because you don't server render
+ * tooltips. None of the state is changed outside of user events.
+ *
+ * There are a few features that are important to understand.
+ *
+ * 1. Tooltips don't show up until the user has rested on one, we don't want
+ *    tooltips popping up as you move your mouse around the page.
+ *
+ * 2. Once any tooltip becomes visible, other tooltips nearby should skip
+ *    resting and display immediately.
+ *
+ * 3. Tooltips stick around for a little bit after blur/mouseleave.
+ *
+ * TODO: Research longpress tooltips on Android, iOS - Probably want to position
+ *       it by default above, since your thumb is below and would cover it - I'm
+ *       thinking after longpress, display the tooltip and cancel any click
+ *       events. Then on touchend, so they can read it display the tooltip for a
+ *       little while longer in case their hand was obstructing the tooltip.
+ *
+ * @see Docs     https://reach.tech/tooltip
+ * @see Source   https://github.com/reach/reach-ui/tree/main/packages/tooltip
+ * @see WAI-ARIA https://www.w3.org/TR/wai-aria-practices-1.2/#tooltip
+ */
+import * as React from "react";
+import type * as Polymorphic from "@reach/utils/polymorphic";
+declare const MOUSE_REST_TIMEOUT = 100;
+declare const LEAVE_TIMEOUT = 500;
+/**
+ * useTooltip
+ *
+ * @param params
+ */
+declare function useTooltip<ElementType extends HTMLElement>({ id: idProp, onPointerEnter, onPointerMove, onPointerLeave, onPointerDown, onMouseEnter, onMouseMove, onMouseLeave, onMouseDown, onFocus, onBlur, onKeyDown, disabled, ref: forwardedRef, DEBUG_STYLE, }?: {
+    ref?: React.Ref<ElementType>;
+    disabled?: boolean;
+    DEBUG_STYLE?: boolean;
+} & React.HTMLAttributes<ElementType>): [
+    TriggerParams<ElementType>,
+    TooltipParams,
+    boolean
+];
+/**
+ * Tooltip
+ *
+ * @see Docs https://reach.tech/tooltip#tooltip
+ */
+declare const Tooltip: Polymorphic.ForwardRefComponent<"div", TooltipProps>;
+interface TooltipProps extends Omit<TooltipContentProps, "triggerRect" | "isVisible"> {
+    children: React.ReactNode;
+    DEBUG_STYLE?: boolean;
+}
+/**
+ * TooltipPopup
+ *
+ * @see Docs https://reach.tech/tooltip#tooltippopup
+ */
+declare const TooltipPopup: Polymorphic.ForwardRefComponent<"div", TooltipPopupProps>;
+interface TooltipPopupProps extends TooltipContentProps {
+    children?: React.ReactNode;
+}
+interface TooltipContentProps {
+    ariaLabel?: string;
+    position?: Position;
+    label: React.ReactNode;
+    isVisible?: boolean;
+    triggerRect: DOMRect | null;
+}
+export declare const positionTooltip: Position;
+interface TriggerParams<ElementType extends HTMLElement> {
+    "aria-describedby"?: string | undefined;
+    "data-state": string;
+    "data-reach-tooltip-trigger": string;
+    ref: React.Ref<ElementType>;
+    onPointerEnter: React.ReactEventHandler;
+    onPointerDown: React.ReactEventHandler;
+    onPointerMove: React.ReactEventHandler;
+    onPointerLeave: React.ReactEventHandler;
+    onMouseEnter?: React.ReactEventHandler;
+    onMouseDown?: React.ReactEventHandler;
+    onMouseMove?: React.ReactEventHandler;
+    onMouseLeave?: React.ReactEventHandler;
+    onFocus: React.ReactEventHandler;
+    onBlur: React.ReactEventHandler;
+    onKeyDown: React.ReactEventHandler;
+}
+interface TooltipParams {
+    id: string;
+    triggerRect: DOMRect | null;
+    isVisible: boolean;
+}
+declare type Position = (targetRect?: PRect | null, popoverRect?: PRect | null) => React.CSSProperties;
+declare type PRect = Partial<DOMRect> & {
+    readonly bottom: number;
+    readonly height: number;
+    readonly left: number;
+    readonly right: number;
+    readonly top: number;
+    readonly width: number;
+};
+export default Tooltip;
+export type { Position, TooltipContentProps, TooltipParams, TooltipPopupProps, TooltipProps, TriggerParams, };
+export { MOUSE_REST_TIMEOUT, LEAVE_TIMEOUT, Tooltip, TooltipPopup, useTooltip };

@@ -1,0 +1,1 @@
+{"version":3,"file":"types.d.ts","sourceRoot":"","sources":["../../src/docx-cleaner/types.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,QAAQ;IACvB,GAAG,EAAE,MAAM,CAAC;IACZ,QAAQ,EAAE,MAAM,CAAC;IACjB,IAAI,EAAE,MAAM,CAAC;CACd;AAED,oBAAY,YAAY,GAAG,MAAM,CAAC,QAAQ,CAAC,MAAM,CAAC,EAAE,QAAQ,CAAC,CAAC"}

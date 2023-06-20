@@ -1,0 +1,1 @@
+{"version":3,"file":"getMatchRange.d.ts","sourceRoot":"","sources":["../../src/utils/getMatchRange.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,cAAc,EAAE,UAAU,EAAE,MAAM,UAAU,CAAC;AAEtD,eAAO,MAAM,aAAa;WAIjB,MAAM,GAAG,UAAU;aACjB,cAAc,CAAC,SAAS,CAAC;;;;;CAsBnC,CAAC"}

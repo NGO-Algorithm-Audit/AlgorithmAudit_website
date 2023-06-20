@@ -1,0 +1,366 @@
+/**
+ * Welcome to @reach/listbox!
+ *
+ * See NOTES.md for some background info if you're interested!
+ *
+ * TODO: OS-specific behavior (ie, Enter key on native select on Windows)
+ * TODO: Consider hack to implement focus controls in forms on iOS
+ *       https://github.com/angular/material/issues/8440
+ *       Instead of a hidden select, maybe use a visually hidden select with
+ *       aria-hidden. When that input gets focus, immediate send focus to the
+ *       ListboxButton, then toggle the hidden input's tabIndex to prevent
+ *       re-focusing it (this is just an idea, may not work, no idea how some
+ *       screen-reader would deal with it).
+ * TODO: Write examples showing fallback to a native select menu for users
+ *       without JavaScript enabled and small-screen users.
+ * TODO: Check positioning on mobile near collision points
+ *       https://twitter.com/PipoPeperoni/status/1237597623508275200
+ * TODO: Test arrow key navigation in forms in Firefox.
+ *       Probably similar solution needed for iOS issue above.
+ *       https://twitter.com/GassnerKendall/status/1237778370118598661
+ *
+ * @see Docs     https://reach.tech/listbox
+ * @see Source   https://github.com/reach/reach-ui/tree/main/packages/listbox
+ * @see WAI-ARIA https://www.w3.org/TR/wai-aria-practices-1.2/#Listbox
+ */
+import * as React from "react";
+import type * as Polymorphic from "@reach/utils/polymorphic";
+import type { Descendant } from "@reach/descendants";
+import type { ListboxNodeRefs } from "./machine";
+import type { PopoverProps } from "@reach/popover";
+/**
+ * ListboxInput
+ *
+ * The top-level component and context provider for the listbox.
+ *
+ * @see Docs https://reach.tech/listbox#listboxinput
+ */
+declare const ListboxInput: Polymorphic.ForwardRefComponent<"div", Pick<React.DetailedHTMLProps<React.SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>, "form" | "name" | "required"> & {
+    /**
+     * The composed listbox expects to receive `ListboxButton` and
+     * `ListboxPopover` as children. You can also pass in arbitrary wrapper
+     * elements if desired.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-children
+     */
+    children: React.ReactNode | ((props: ListboxContextValue & {
+        expanded: boolean;
+    }) => React.ReactNode);
+    /**
+     * The default value of an uncontrolled listbox.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-defaultvalue
+     */
+    defaultValue?: string | undefined;
+    /**
+     * Whether or not the listbox is disabled.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-disabled
+     */
+    disabled?: boolean | undefined;
+    /**
+     * The callback that fires when the listbox value changes.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-onchange
+     * @param newValue
+     */
+    onChange?(newValue: ListboxValue): void;
+    /**
+     * The current value of a controlled listbox.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-value
+     */
+    value?: string | undefined;
+} & {
+    __componentName?: string | undefined;
+}>;
+/**
+ * @see Docs https://reach.tech/listbox#listboxinput-props
+ */
+declare type ListboxInputProps = Pick<React.ComponentProps<"select">, "form" | "name" | "required"> & {
+    /**
+     * The composed listbox expects to receive `ListboxButton` and
+     * `ListboxPopover` as children. You can also pass in arbitrary wrapper
+     * elements if desired.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-children
+     */
+    children: React.ReactNode | ((props: ListboxContextValue & {
+        expanded: boolean;
+    }) => React.ReactNode);
+    /**
+     * The default value of an uncontrolled listbox.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-defaultvalue
+     */
+    defaultValue?: ListboxValue;
+    /**
+     * Whether or not the listbox is disabled.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-disabled
+     */
+    disabled?: boolean;
+    /**
+     * The callback that fires when the listbox value changes.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-onchange
+     * @param newValue
+     */
+    onChange?(newValue: ListboxValue): void;
+    /**
+     * The current value of a controlled listbox.
+     *
+     * @see Docs https://reach.tech/listbox#listboxinput-value
+     */
+    value?: ListboxValue;
+};
+/**
+ * Listbox
+ *
+ * High-level listbox API
+ *
+ * @example
+ * <Listbox>
+ *   <ListboxOption value="1">Option 1</ListboxOption>
+ *   <ListboxOption value="2">Option 2</ListboxOption>
+ *   <ListboxOption value="3">Option 3</ListboxOption>
+ * </Listbox>
+ *
+ * @see Docs https://reach.tech/listbox#listbox-1
+ */
+declare const Listbox: Polymorphic.ForwardRefComponent<"div", ListboxProps>;
+/**
+ * @see Docs https://reach.tech/listbox#listbox-props
+ */
+declare type ListboxProps = Omit<ListboxInputProps, "children"> & Pick<React.ComponentProps<"select">, "form" | "name" | "required"> & {
+    /**
+     * Renders a text string or React node to represent an arrow inside the
+     * Listbox button.
+     *
+     * @see Docs https://reach.tech/listbox#listbox-arrow
+     */
+    arrow?: React.ReactNode | boolean;
+    /**
+     * A render function or React node to to render the Listbox button's inner
+     * content. See the API for the ListboxButton children prop for details.
+     *
+     * @see Docs https://reach.tech/listbox#listbox-button
+     */
+    button?: React.ReactNode | ((props: {
+        value: ListboxValue | null;
+        label: string | null;
+    }) => React.ReactNode);
+    children: React.ReactNode;
+    /**
+     * Whether or not the popover should be rendered inside a portal. Defaults to
+     * `true`.
+     *
+     * @see Docs https://reach.tech/listbox#listbox-portal
+     */
+    portal?: boolean;
+};
+declare const ListboxButton: Polymorphic.MemoComponent<"span", ListboxButtonProps>;
+/**
+ * @see Docs https://reach.tech/listbox#listboxbutton-props
+ */
+interface ListboxButtonProps {
+    /**
+     * Renders a text string or React node to represent an arrow inside the
+     * button.
+     *
+     * @see Docs https://reach.tech/listbox#listboxbutton-arrow
+     */
+    arrow?: React.ReactNode | boolean;
+    /**
+     * A render function or React node to to render the Listbox button's inner
+     * content.
+     *
+     * By default, the button will display the text label of the selected option
+     * as its inner content. This label can be pulled from the option's inner
+     * text content or explicitly provided to the ListboxOption component via the
+     * label prop. If you want to render the button differently from its default,
+     * you must pass children.
+     *
+     * It's important to note that the ListboxButton's default inner content
+     * cannot be server-side rendered. On the initial render, the button has no
+     * contextual information about the available options in a Listbox. As each
+     * ListboxOption is rendered, it is registered in a context object and updated
+     * at the top of the Listbox tree, which evaluates the options and their props
+     * to determine which option is selectable and which label to display inside
+     * the button. If you need the inner content of the button on the first render
+     * you must control the listbox's state and keep its options' values and
+     * labels in data at the top of the tree, and render the button directly via
+     * children.
+     *
+     * @example
+     * let options = { one: 'One option', two: 'Another option' }
+     * let [value, setValue] = React.useState(options.one)
+     * return (
+     *   <ListboxInput>
+     *     <ListboxButton>{options[value]}</ListboxButton>
+     *     <ListboxPopover>
+     *       <ListboxList>
+     *         {Object.keys(options).map(option => (
+     *           <ListboxOption key={option} value={option} label={options[option]}>
+     *             {options[option]}
+     *           </ListboxOption>
+     *         ))}
+     *       </ListboxList>
+     *     </ListboxPopover>
+     *   </ListboxInput>
+     * )
+     */
+    children?: React.ReactNode | ((props: {
+        value: ListboxValue | null;
+        label: string;
+        isExpanded: boolean;
+        expanded: boolean;
+    }) => React.ReactNode);
+}
+declare const ListboxArrow: Polymorphic.MemoComponent<"span", ListboxArrowProps>;
+/**
+ * @see Docs https://reach.tech/listbox#listboxarrow-props
+ */
+interface ListboxArrowProps {
+    /**
+     * Children to render as the listbox button's arrow. This can be a render
+     * function that accepts the listbox's expanded state as an argument.
+     */
+    children?: React.ReactNode | ((props: {
+        isExpanded: boolean;
+        expanded: boolean;
+    }) => React.ReactNode);
+}
+declare const ListboxPopover: Polymorphic.MemoComponent<"div", ListboxPopoverProps>;
+/**
+ * @see Docs https://reach.tech/listbox#listboxpopover-props
+ */
+interface ListboxPopoverProps {
+    /**
+     * `ListboxPopover` expects to receive `ListboxList` as its children.
+     *
+     * @see Docs https://reach.tech/listbox#listboxpopover-children
+     */
+    children: React.ReactNode;
+    /**
+     * Whether or not the popover should be rendered inside a portal. Defaults to
+     * `true`
+     *
+     * @see Docs https://reach.tech/listbox#listboxpopover-portal
+     */
+    portal?: boolean;
+    /**
+     * The positioning function for the popover.
+     *
+     * @see Docs https://reach.tech/listbox#listboxpopover-position
+     */
+    position?: PopoverProps["position"];
+    unstable_observableRefs?: PopoverProps["unstable_observableRefs"];
+}
+/**
+ * ListboxList
+ *
+ * The list containing all listbox options.
+ *
+ * @see Docs https://reach.tech/listbox#listboxlist
+ */
+declare const ListboxList: Polymorphic.ForwardRefComponent<"ul", ListboxListProps>;
+/**
+ * @see Docs https://reach.tech/listbox#listboxlist-props
+ */
+interface ListboxListProps {
+}
+/**
+ * ListboxOption
+ *
+ * A selectable option for the listbox.
+ *
+ * @see Docs https://reach.tech/listbox#listboxoption
+ */
+declare const ListboxOption: Polymorphic.ForwardRefComponent<"li", ListboxOptionProps>;
+/**
+ * @see Docs https://reach.tech/listbox#listboxoption-props
+ */
+interface ListboxOptionProps {
+    /**
+     * The option's value. This will be passed into a hidden input field for use
+     * in forms.
+     *
+     * @see Docs https://reach.tech/listbox#listboxoption-value
+     */
+    value: ListboxValue;
+    /**
+     * TODO: Document this!
+     */
+    index?: number;
+    /**
+     * The option's human-readable label. This prop is optional but highly
+     * encouraged if your option has multiple text nodes that may or may not
+     * correlate with the intended value. It is also useful if the inner text node
+     * begins with a character other than a readable letter (like an emoji or
+     * symbol) so that typeahead works as expected for the user.
+     *
+     * @see Docs https://reach.tech/listbox#listboxoption-label
+     */
+    label?: string;
+    /**
+     * Whether or not the option is disabled from selection and navigation.
+     *
+     * @see Docs https://reach.tech/listbox#listboxoption-disabled
+     */
+    disabled?: boolean;
+}
+/**
+ * ListboxGroup
+ *
+ * A group of related listbox options.
+ *
+ * @see Docs https://reach.tech/listbox#listboxgroup
+ */
+declare const ListboxGroup: Polymorphic.ForwardRefComponent<"div", ListboxGroupProps>;
+/**
+ * @see Docs https://reach.tech/listbox#listboxgroup-props
+ */
+interface ListboxGroupProps {
+    /**
+     * The text label to use for the listbox group. This can be omitted if a
+     * group contains a `ListboxGroupLabel` component. The label should always
+     * be human-readable.
+     *
+     * @see Docs https://reach.tech/listbox#listboxgroup-label
+     */
+    label?: React.ReactNode;
+}
+/**
+ * ListboxGroupLabel
+ *
+ * @see Docs https://reach.tech/listbox#listboxgrouplabel
+ */
+declare const ListboxGroupLabel: Polymorphic.ForwardRefComponent<"span", ListboxGroupLabelProps>;
+/**
+ * @see Docs https://reach.tech/listbox#listboxgroup-props
+ */
+interface ListboxGroupLabelProps {
+}
+/**
+ * A hook that exposes data for a given `Listbox` component to its descendants.
+ *
+ * @see Docs https://reach.tech/listbox#uselistboxcontext
+ */
+declare function useListboxContext(): ListboxContextValue;
+declare type ListboxValue = string;
+declare type ListboxDescendant = Descendant<HTMLElement> & {
+    value: ListboxValue;
+    label: string;
+    disabled: boolean;
+};
+interface ListboxContextValue {
+    id: string | undefined;
+    isExpanded: boolean;
+    highlightedOptionRef: React.RefObject<ListboxNodeRefs["highlightedOption"]>;
+    selectedOptionRef: React.RefObject<ListboxNodeRefs["selectedOption"]>;
+    value: ListboxValue | null;
+    valueLabel: string | null;
+}
+export type { ListboxArrowProps, ListboxButtonProps, ListboxContextValue, ListboxDescendant, ListboxGroupLabelProps, ListboxGroupProps, ListboxInputProps, ListboxListProps, ListboxOptionProps, ListboxPopoverProps, ListboxProps, ListboxValue, };
+export { Listbox, ListboxArrow, ListboxButton, ListboxGroup, ListboxGroupLabel, ListboxInput, ListboxList, ListboxOption, ListboxPopover, useListboxContext, };

@@ -1,0 +1,166 @@
+import type { ListboxDescendant, ListboxValue } from "./index";
+import type { MachineEventWithRefs, StateMachine } from "@reach/machine";
+export declare enum ListboxStates {
+    Idle = "IDLE",
+    Open = "OPEN",
+    Navigating = "NAVIGATING",
+    Dragging = "DRAGGING",
+    Interacting = "INTERACTING"
+}
+export declare enum ListboxEvents {
+    ButtonMouseDown = "BUTTON_MOUSE_DOWN",
+    ButtonMouseUp = "BUTTON_MOUSE_UP",
+    Blur = "BLUR",
+    ClearNavSelection = "CLEAR_NAV_SELECTION",
+    ClearTypeahead = "CLEAR_TYPEAHEAD",
+    GetDerivedData = "GET_DERIVED_DATA",
+    KeyDownEscape = "KEY_DOWN_ESCAPE",
+    KeyDownEnter = "KEY_DOWN_ENTER",
+    KeyDownSpace = "KEY_DOWN_SPACE",
+    KeyDownNavigate = "KEY_DOWN_NAVIGATE",
+    KeyDownSearch = "KEY_DOWN_SEARCH",
+    KeyDownTab = "KEY_DOWN_TAB",
+    KeyDownShiftTab = "KEY_DOWN_SHIFT_TAB",
+    OptionTouchStart = "OPTION_TOUCH_START",
+    OptionMouseMove = "OPTION_MOUSE_MOVE",
+    OptionMouseEnter = "OPTION_MOUSE_ENTER",
+    OptionMouseDown = "OPTION_MOUSE_DOWN",
+    OptionMouseUp = "OPTION_MOUSE_UP",
+    OptionClick = "OPTION_CLICK",
+    ListMouseUp = "LIST_MOUSE_UP",
+    OptionPress = "OPTION_PRESS",
+    OutsideMouseDown = "OUTSIDE_MOUSE_DOWN",
+    OutsideMouseUp = "OUTSIDE_MOUSE_UP",
+    ValueChange = "VALUE_CHANGE",
+    PopoverPointerDown = "POPOVER_POINTER_DOWN",
+    PopoverPointerUp = "POPOVER_POINTER_UP",
+    UpdateAfterTypeahead = "UPDATE_AFTER_TYPEAHEAD"
+}
+/**
+ * Initializer for our state machine.
+ *
+ * @param initial
+ * @param props
+ */
+export declare const createMachineDefinition: ({ value, }: {
+    value: ListboxValue | null;
+}) => StateMachine.Config<ListboxStateData, ListboxEvent, ListboxState>;
+/**
+ * Shared partial interface for all of our event objects.
+ */
+export interface ListboxEventBase extends MachineEventWithRefs {
+    refs: ListboxNodeRefs;
+}
+/**
+ * DOM nodes for all of the refs used in the listbox state machine.
+ */
+export declare type ListboxNodeRefs = {
+    button: HTMLElement | null;
+    hiddenInput: HTMLInputElement | null;
+    input: HTMLElement | null;
+    list: HTMLElement | null;
+    popover: HTMLElement | null;
+    selectedOption: HTMLElement | null;
+    highlightedOption: HTMLElement | null;
+};
+/**
+ * Event object for the listbox state machine.
+ */
+export declare type ListboxEvent = ListboxEventBase & ({
+    type: ListboxEvents.Blur;
+    relatedTarget: EventTarget | null;
+} | {
+    type: ListboxEvents.OutsideMouseDown;
+    relatedTarget: EventTarget | null;
+} | {
+    type: ListboxEvents.OutsideMouseUp;
+    relatedTarget: EventTarget | null;
+} | {
+    type: ListboxEvents.GetDerivedData;
+    data: Partial<ListboxStateData>;
+} | {
+    type: ListboxEvents.ButtonMouseDown;
+    disabled: boolean;
+} | {
+    type: ListboxEvents.ButtonMouseUp;
+} | {
+    type: ListboxEvents.ListMouseUp;
+} | {
+    type: ListboxEvents.ClearNavSelection;
+} | {
+    type: ListboxEvents.OptionTouchStart;
+    value: ListboxValue;
+    disabled: boolean;
+} | {
+    type: ListboxEvents.OptionMouseEnter;
+    value: ListboxValue;
+    disabled: boolean;
+} | {
+    type: ListboxEvents.OptionMouseMove;
+    value: ListboxValue;
+    disabled: boolean;
+} | {
+    type: ListboxEvents.ValueChange;
+    value: ListboxValue;
+    callback?: ((newValue: ListboxValue) => void) | null | undefined;
+} | {
+    type: ListboxEvents.KeyDownNavigate;
+    value: ListboxValue | null;
+    disabled: boolean;
+} | {
+    type: ListboxEvents.KeyDownSearch;
+    query: string;
+    disabled: boolean;
+} | {
+    type: ListboxEvents.KeyDownEscape;
+} | {
+    type: ListboxEvents.KeyDownEnter;
+    value?: ListboxValue | null | undefined;
+    disabled?: boolean;
+    callback?: ((newValue: ListboxValue) => void) | null | undefined;
+} | {
+    type: ListboxEvents.KeyDownSpace;
+    value?: ListboxValue | null | undefined;
+    disabled?: boolean;
+    callback?: ((newValue: ListboxValue) => void) | null | undefined;
+} | {
+    type: ListboxEvents.OptionMouseDown;
+} | {
+    type: ListboxEvents.OptionMouseUp;
+    value: ListboxValue | null | undefined;
+    callback?: ((newValue: ListboxValue) => void) | null | undefined;
+    disabled: boolean;
+} | {
+    type: ListboxEvents.OptionClick;
+    value: ListboxValue | null | undefined;
+    callback?: ((newValue: ListboxValue) => void) | null | undefined;
+    disabled: boolean;
+} | {
+    type: ListboxEvents.OptionPress;
+    value: ListboxValue | null | undefined;
+    callback?: ((newValue: ListboxValue) => void) | null | undefined;
+    disabled: boolean;
+} | {
+    type: ListboxEvents.KeyDownTab;
+} | {
+    type: ListboxEvents.KeyDownShiftTab;
+} | {
+    type: ListboxEvents.UpdateAfterTypeahead;
+    query: string;
+    callback?: ((newValue: ListboxValue) => void) | null | undefined;
+} | {
+    type: ListboxEvents.ClearTypeahead;
+});
+/**
+ * State object for the listbox state machine.
+ */
+export declare type ListboxState = {
+    value: ListboxStates;
+    context: ListboxStateData;
+};
+export declare type ListboxStateData = {
+    navigationValue: ListboxValue | null;
+    typeaheadQuery: string | null;
+    value: ListboxValue | null;
+    options: ListboxDescendant[];
+};

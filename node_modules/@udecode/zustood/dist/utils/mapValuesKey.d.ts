@@ -1,0 +1,2 @@
+export declare const mapValuesKey: <VK extends string, T extends Record<VK, any>, R extends Record<keyof R, T>>(key: VK, obj: R) => { [K in keyof R]: R[K][VK]; };
+//# sourceMappingURL=mapValuesKey.d.ts.map

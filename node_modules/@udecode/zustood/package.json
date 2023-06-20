@@ -1,0 +1,42 @@
+{
+  "name": "@udecode/zustood",
+  "version": "1.1.3",
+  "description": "A modular store factory using zustand",
+  "keywords": [
+    "zustand"
+  ],
+  "homepage": "https://github.com/udecode/zustood",
+  "bugs": {
+    "url": "https://github.com/udecode/zustood/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udecode/zustood.git",
+    "directory": "packages/zustood"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc && yarn rollup",
+    "build:w": "yarn rollup -w",
+    "cti": "sh ../../scripts/cti.sh",
+    "rollup": "rollup -c=../../rollup.config.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "immer": "^9.0.6",
+    "react-tracked": "^1.7.9"
+  },
+  "peerDependencies": {
+    "zustand": ">=3.5.10"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
