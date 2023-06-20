@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "localhost:1313/"
+baseURL = "https://www.algorithmaudit.eu"
 title = "Algorithm Audit"
 theme = "bigspring-light"
 # post pagination
