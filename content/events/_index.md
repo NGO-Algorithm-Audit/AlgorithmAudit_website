@@ -1,7 +1,7 @@
 ---
 title: Events
 subtitle: Knowledge sharing is an integral part of Algorithm Audit's mission. Members of our team speak at events. [<span style="color:#005aa7"> Reach out</span>](/index.html#contactform) to discuss contributions.
-image: "/AlgorithmAudit_website/images/events.svg"
+image: "images/events.svg"
 ---
 {{< event-right-MozFest "Mar 2023" "MozFest workshop" "Hosting the 'Be an ethicist' workshop. Reviewing an ethical issue from AI practice with 30-50 participants in break out setting.">}}
 {{< event-left-BZK "Nov 2022" "Algorithmic supervisory body" "Expert session on algorithmic supervision, Dutch Ministry of the Interior and Kingdom Relations">}}
