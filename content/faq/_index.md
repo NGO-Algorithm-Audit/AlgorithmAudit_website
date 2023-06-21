@@ -7,7 +7,7 @@ subtitle: Algorithm Audit commits to high standards regarding integrity, indepen
   
   You want to share something? <a href="/index.html#contactform"
   class="btn-link">Contact us.</a>
-image: /images/faq.svg
+image: /AlgorithmAudit_website/images/faq.svg
 
 ---
 {{< faq-review "What exactly do you review?" >}} 

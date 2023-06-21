@@ -4,7 +4,7 @@ subtitle: We are working on a variety of cases. Once an audit commission has gat
 
 
   We are open to new cases. Please [<span style="color:#005aa7"> reach out</span>](/index.html#contactform) to us when you know a case for review.
-image: "/images/case_repository.svg"
+image: "/AlgorithmAudit_website/images/case_repository.svg"
 
 ---
 <!-- Case disinfo -->
