@@ -8,7 +8,7 @@ Banner:
   button:
     enable: True
     label: Read our new white paper
-    link: /knowledge_base/white_paper_dsa_delegated_regulation_feedback/
+    link: knowledge_base/white_paper_dsa_delegated_regulation_feedback/
 What_we_do:
   enable: true
   title: What we do

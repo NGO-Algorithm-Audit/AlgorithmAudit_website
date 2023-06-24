@@ -1,7 +1,7 @@
 ---
 title: Algorithmic Discrimination in Europe
 author: Janneke Gerards and Raphaële Xenidis
-image: /images/knowledge_base/algorithmic_discrimination_in_europe.png
+image: images/knowledge_base/algorithmic_discrimination_in_europe.png
 type: regular
 summary: This EU report investigates how algorithmic discrimination challenges the set of legal guarantees put in place in Europe to combat discrimination and ensure equal treatment. 
 
@@ -49,4 +49,3 @@ Six major challenges that algorithms pose to gender equality and non-discriminat
 _Update 14-07-2022_
 
 _We are happy to announce Raphaële Xenidis is now part of Algorithm Audit’s Board of Advice._
-

@@ -6,9 +6,9 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="navbar-div">
-        <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
+        <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
           {{ with site.Params.logo}}
-          <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relLangURL }}" alt="{{ site.Title }}">
+          <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
           {{ else }}{{site.Title}}{{end}}
         </a>
       </div>
@@ -29,20 +29,20 @@
             </a>
             <div class="dropdown-menu">
               {{ range .Children }}
-              <a class="dropdown-item" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+              <a class="dropdown-item" href="{{ .URL | relURL }}" title="{{ .Name }}">{{ .Name }}</a>
               {{ end }}
             </div>
           </li>
           {{ else }}
           <li class="nav-item">
-            <a class="nav-link" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+            <a class="nav-link" href="{{ .URL | relURL }}" title="{{ .Name }}">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
         </ul>
       </div>
       <!-- navbar -->
-      
+
     </nav>
   </div>
 </header>

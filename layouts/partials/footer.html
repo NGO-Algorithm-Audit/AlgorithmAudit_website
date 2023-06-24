@@ -43,18 +43,19 @@
         <h3 style="font-size:14px; color:#005aa7;">Sitemap</p>
 
         <ul style="list-style-type:none; padding-left:0; font-size:14px; color:#005aa7;">
+          {{/* Not sure why you're not pulling this from site.Menus.main */}}
           <li><a href="#"><p style="color:#005aa7; margin:0 0 0px 0;">Home</p></a></li>
-          <li><a href="/cases"><p style="color: #005aa7; margin:0 0 0px 0;">Cases</p></a></li>
-          <li><a href="/bias_scan"><p style="color: #005aa7; margin:0 0 0px 0;">Bias scan</p></a></li>
-          <li><a href="/knowledge_base"><p style="color: #005aa7;  margin:0 0 0px 0;">Knowledge base</p></a></li>
-          <li><a href="/events"><p style="color: #005aa7;  margin:0 0 0px 0;">Events</p></a></li>
-          <li><a href="/faq"><p style="color: #005aa7; margin:0 0 0px 0;">FAQ</p></a></li>
-          <li><a href="/about"><p style="color: #005aa7;  margin:0 0 0px 0;">About</p></a></li>
+          <li><a href="{{ `cases` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">Cases</p></a></li>
+          <li><a href="{{ `bias_scan` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">Bias scan</p></a></li>
+          <li><a href="{{ `knowledge_base` | relURL }}"><p style="color: #005aa7;  margin:0 0 0px 0;">Knowledge base</p></a></li>
+          <li><a href="{{ `events` | relURL }}"><p style="color: #005aa7;  margin:0 0 0px 0;">Events</p></a></li>
+          <li><a href="{{ `faq` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">FAQ</p></a></li>
+          <li><a href="{{ `about` | relURL }}"><p style="color: #005aa7;  margin:0 0 0px 0;">About</p></a></li>
         </ul>
       </div>
       <!-- /Sitemap -->
 
-    </div>  
+    </div>
 
   </div>
 </footer>
