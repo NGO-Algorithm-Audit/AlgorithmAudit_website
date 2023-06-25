@@ -26,9 +26,6 @@ primary_font = "Avenir:wght@600"
 primary_font_type = "sans-serif" # [serif/sans-serif]
 icon_font = "Font Awesome 5 Free"
 
-# URLs
-canonifyURLs = true
-
 ############################# Plugins ##############################
 # CSS Plugins
 [[params.plugins.css]]

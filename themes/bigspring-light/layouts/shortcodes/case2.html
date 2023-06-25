@@ -8,11 +8,11 @@
       <h3 class="mb-4" style="font-size: 16px; text-decoration: none; color:#005aa7;">Audit commission</h3>
       <p>{{ .Get 1 | markdownify }}</p>
     </div>
-    
+
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 column-switch column-right">
       <h3 class="mb-4" style="font-size: 16px; color: #005aa7;">Supported by</h3>
       <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
-        <img src="/images/sidn.png" style="width:70%">
+        <img src="{{ `images/sidn.png` | relURL }}" style="width:70%">
       </a>
     </div>
 

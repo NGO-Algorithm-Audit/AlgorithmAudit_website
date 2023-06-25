@@ -1,0 +1,7 @@
+  [[mounts]]
+  source = 'assets'
+  target = 'assets'
+
+  [[mounts]]
+  source = 'static'
+  target = 'assets'

@@ -13,13 +13,13 @@
               <h4>Statistics & AI</h4>
               <div style="text-align: center; width:100%; margin-top:25px;">
                 <div>
-                  <img src="/images/JP.svg" style="display:inline-block; height:75px; width:75px; margin-bottom: 20px;">
-                  <p style="color: #005aa7; font-weight: bold;">{{ .Get 1 | markdownify }}</p> 
+                  <img src="{{ `images/JP.svg` | relURL }}" style="display:inline-block; height:75px; width:75px; margin-bottom: 20px;">
+                  <p style="color: #005aa7; font-weight: bold;">{{ .Get 1 | markdownify }}</p>
                 </div>
               </div>
 
               <div>
-                <p>{{ .Get 2 | markdownify }}</p> 
+                <p>{{ .Get 2 | markdownify }}</p>
               </div>
             </div>
 
@@ -28,13 +28,13 @@
 
               <div style="text-align: center; width:100%; margin-top:25px;">
                 <div>
-                  <img src="/images/VN.svg" style="display:inline-block; height:75px; width:75px; margin-bottom: 20px;">
-                  <p style="color: #005aa7; font-weight: bold;">{{ .Get 3 | markdownify }}</p> 
+                  <img src="{{ `images/VN.svg` | relURL }}" style="display:inline-block; height:75px; width:75px; margin-bottom: 20px;">
+                  <p style="color: #005aa7; font-weight: bold;">{{ .Get 3 | markdownify }}</p>
                 </div>
               </div>
 
               <div>
-                <p>{{ .Get 4 | markdownify }}</p> 
+                <p>{{ .Get 4 | markdownify }}</p>
               </div>
             </div>
 
@@ -47,29 +47,29 @@
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div style="text-align: center; width:100%; margin-top:25px;">
                 <div>
-                  <!-- <img src="/images/JP.svg" style="display:inline-block; height:75px; width:75px;"> -->
+                  <!-- <img src="{{ `images/JP.svg` | relURL }}" style="display:inline-block; height:75px; width:75px;"> -->
                 </div>
               </div>
 
               <div>
-                <p style="color:white; font-weight: bold;">.</p> 
-                <p style="color:white; font-weight: bold;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                <p style="color:white; font-weight: bold;">.</p>
+                <p style="color:white; font-weight: bold;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div style="text-align: center; width:100%; margin-top:25px;">
                 <div>
-                  <img src="/images/OAK.svg" style="display:inline-block; height:75px; width:75px; margin-bottom: 20px;">
+                  <img src="{{ `images/OAK.svg` | relURL }}" style="display:inline-block; height:75px; width:75px; margin-bottom: 20px;">
                 </div>
-                <p style="color: #005aa7; font-weight: bold;">{{ .Get 5 | markdownify }}</p> 
+                <p style="color: #005aa7; font-weight: bold;">{{ .Get 5 | markdownify }}</p>
               </div>
 
               <div>
-                <p>{{ .Get 6 | markdownify }}</p> 
+                <p>{{ .Get 6 | markdownify }}</p>
               </div>
             </div>
-            
+
           </div>
         </div>
 

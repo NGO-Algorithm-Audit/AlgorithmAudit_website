@@ -6,7 +6,7 @@
 <div class="row">
   <div class="col-md-12">
     <div class="p-5 shadow rounded-lg">
-      
+
       <h3 class="mb-4 review" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
         <div id="app" style="background-color:#FFFFF0; padding: 50px 0px; border-radius: 25px; border-color:#005aa7;border-style:solid;border-width:0px;">
           <div v-if="!file">
@@ -27,9 +27,9 @@
             <a :href="`https://output-pdf-download.s3.amazonaws.com/${str_name}.pdf`">Download bias scan report</a>
           </div>
         </div>
-        <br><p style="font-size:12px;">If your report cannot be downloaded, please check your column structure and numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform">contact us</a>.</p>
-        <p><span style="color:#005aa7; font-weight: bold;">Algorithm –</span> The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a></p> 
-        <p><a href="https://static-files-pdf.s3.amazonaws.com/BERT_disinfo_classifier.pdf" target="_blank">Download an example report</a></p> 
+        <br><p style="font-size:12px;">If your report cannot be downloaded, please check your column structure and numeric values. Or <a href="{{ `#contactform` | relURL }}">contact us</a>.</p>
+        <p><span style="color:#005aa7; font-weight: bold;">Algorithm –</span> The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a></p>
+        <p><a href="https://static-files-pdf.s3.amazonaws.com/BERT_disinfo_classifier.pdf" target="_blank">Download an example report</a></p>
         <p><span style="color:#005aa7;font-weight:bold;">Explanatory note on example report</span>
         <br>Statistical significant differences in features between cluster with most negative bias (cluster 4, bias=-0.27) and rest of dataset:
         <table class="tg">
@@ -61,7 +61,7 @@
           </p>
           <p>So, tweets of users with a verified profile, above average sentiment score and below average number of URLs used in their tweets are classified significantly more often as disinformation by the BERT-based classifier. Now, with the help of subject matter experts a qualitative assessment is needed to examine the measured quantitative disparities further.
           <br>
-          <br> More details on this case study can be found <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/HBAC_scan/HBAC_BERT_disinformation_classifier.ipynb" target="_blank">here</a>. 
+          <br> More details on this case study can be found <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/HBAC_scan/HBAC_BERT_disinformation_classifier.ipynb" target="_blank">here</a>.
         </p>
       </div>
     </div>

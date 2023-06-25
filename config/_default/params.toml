@@ -4,7 +4,7 @@ logo_width = "150px"
 # OpenGraph / Twitter Card metadata
 description = "Case-based knowledge for ethical algorithms"
 author = "JFParie"
-favicon = "/images/favicon.ico"
+favicon = "images/favicon.ico"
 image = "images/logo2.png" # this image will be used as fallback if a page has no image of its own
 # contact form action
 contact_form_action = "https://formspree.io/f/mrgrwnyo" # contact form works with https://formspree.io
@@ -29,7 +29,7 @@ enable = false
 expire_days = 2
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
-  
+
 ############################# social site ########################
 [[social]]
 title = "LinkedIn"
@@ -40,3 +40,9 @@ link = "https://www.linkedin.com/company/algorithm-audit/"
 title = "GitHub"
 icon = "fab fa-github" # themify icon : https://themify.me/themify-icons
 link = "https://github.com/NGO-Algorithm-Audit"
+
+[params.render_hooks.image]
+errorLevel = 'error' # ignore (default), warning, or error
+
+[params.render_hooks.link]
+errorLevel = 'error' # ignore (default), warning, or error

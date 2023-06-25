@@ -1,7 +1,7 @@
 ---
 title: Algorithm Audit (white paper) – Reversing the burden of proof
 author: Algorithm Audit
-image: /images/knowledge_base/white-paper-1.png
+image: images/knowledge_base/white-paper-1.png
 type: "regular"
 summary: Algorithm Audit's first white paper on the reversal on the burden of proof in the context of (semi-)automated decision-making
 

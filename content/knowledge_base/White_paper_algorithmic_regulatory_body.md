@@ -1,7 +1,7 @@
 ---
 title: Algorithm Audit (white paper) – A new algorithmic regulatory body in The Netherlands 
 author: Algorithm Audit
-image: /images/knowledge_base/white-paper-2.png
+image: images/knowledge_base/white-paper-2.png
 type: "regular"
 summary: 'A new algorithmic regulatory body is institutionalized in The Netherlands. We say: Make it a bulldog 🐺. Not a lap dog 🐶.'
 

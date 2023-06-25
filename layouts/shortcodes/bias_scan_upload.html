@@ -16,7 +16,7 @@
         else {
           $(this).closest('.box').removeClass('selected')
         }
-      });      
+      });
     console.log( id_click );
     });
   });
@@ -38,10 +38,10 @@ function dragOverHandler(ev) {
 
 <div class="container-fluid">
   <div class="grid p-5 shadow rounded-lg">
-      
-    <h3 class="mb-4 upload" style="color:#005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3> 
 
-    <div id="app" class="row" style="width:100%;"> 
+    <h3 class="mb-4 upload" style="color:#005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+
+    <div id="app" class="row" style="width:100%;">
       <div class="col-lg-5 col-md-6 col-sm-12">
         <div class="same-height">
           <div style="margin:10px 0px;">
@@ -69,7 +69,7 @@ function dragOverHandler(ev) {
             </label>
           </div>
         </div>
-      </div>  
+      </div>
       <div class="col-lg-7 col-md-6 col-sm-12">
         <div class="same-height">
 
@@ -82,7 +82,7 @@ function dragOverHandler(ev) {
           style="height:300px; width:100%; position:relative; background-color:#FFFFF0; border-radius:10px; border-color:#005aa7; border-style: dashed; border-width:1px;">
             <div v-if="!file" style="width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
                 <div style="margin: 0px 0px 50px 0px">
-                  <img src="/images/upload.svg" height="75px"/>
+                  <img src="{{ `images/upload.svg` | relURL }}" height="75px"/>
                 </div>
                 <h4 style="margin-bottom: 50px">Drag & drop or browse</h4>
                 <label id="click_btn" for="file_upload" class="btn">
@@ -116,18 +116,18 @@ function dragOverHandler(ev) {
               </div>
               <div v-if="!hidden3" class="loader"></div>
               <div v-if="!hidden3">
-                <p style="font-size:12px; padding: 0px 25px;">If your report is not downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="https://www.algorithmaudit.eu/index.html#contactform" target="_blank">contact us</a>.</p>
+                <p style="font-size:12px; padding: 0px 25px;">If your report is not downloaded, please check the names of your 'pred_label' and 'truth_label' columns, and whether all column values are numeric values. Or <a href="{{ `#contactform` | relURL }}" target="_blank">contact us</a>.</p>
               </div>
               <div v-if="hidden3">
                 <p style="font-size:12px; padding: 0px 25px;">Please read below FAQ section to learn more about the inner workings of this bias scan tool.</p>
               </div>
             </div>
-          </div>  
+          </div>
 
-        </div> 
+        </div>
       </div>
 
-    </div> 
+    </div>
 
     <!-- Algorithm -->
     <div style="margin-top:15px;">
@@ -139,12 +139,12 @@ function dragOverHandler(ev) {
           <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
               <p class="crossfade"></p>
               <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan" target="_blank">
-                <img class="about-img" style="height:30px;" src="/images/GitHub.svg">
+                <img class="about-img" style="height:30px;" src="{{ `images/GitHub.svg` | relURL }}">
               </a>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" style="display:table;">
             <p class="center-vert" style="font-size: 14px;">
-              The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a>            
+              The implemented bias scan tool is based on k-means Hierarchical Bias-Aware Clustering (HBAC), as described by Misztal-Radecka and Indurkya in <i>Information Processing and Management</i> (2021) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285" target="_blank">[link]</a>. An implementation of the HBAC algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge" target="_blank">Github.</a>
             </p>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -153,10 +153,10 @@ function dragOverHandler(ev) {
             </p>
           </div>
         </div>
-        
+
       </div>
-    </div>    
-         
+    </div>
+
   </div>
 </div>
 
@@ -172,7 +172,7 @@ function dragOverHandler(ev) {
           file: '',
           uploadURL: '',
           name: '',
-          str_name: '', 
+          str_name: '',
           metric: '',
           fullname: '',
           download_name: '',
@@ -261,7 +261,7 @@ function dragOverHandler(ev) {
               }
 
               this.connection.onmessage = (event) => {
-              
+
               // process API reaction
               this.result = event.data;
               console.log("link:" + event.data);

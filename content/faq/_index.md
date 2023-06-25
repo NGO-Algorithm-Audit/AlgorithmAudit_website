@@ -5,9 +5,8 @@ subtitle: Algorithm Audit commits to high standards regarding integrity, indepen
   to your questions and remarks. 
   
   
-  You want to share something? <a href="/index.html#contactform"
-  class="btn-link">Contact us.</a>
-image: /AlgorithmAudit_website/images/faq.svg
+  You want to share something? [<span style="color:#005aa7">Contact us.</span>](/#contactform)
+image: images/faq.svg
 
 ---
 {{< faq-review "What exactly do you review?" >}} 
@@ -33,7 +32,7 @@ We are a nonprofit organization supported by independent public funding. Occasio
 {{</ faq-money >}}
 
 {{< faq-share "How can I share ethical issues or knowledge?" >}}
-We are happy to receive new cases for review. And we are always open to discuss issues and knowledge in ethical algorithms. Reach out to us <a href="/index.html#contactform" class="btn-link">here</a>.
+We are happy to receive new cases for review. And we are always open to discuss issues and knowledge in ethical algorithms. Reach out to us [<span style="color:#005aa7">here</span>](/#contactform).
 {{</ faq-share >}}
 
 {{< faq-washing "How do you prevent ethics washing?" >}}
