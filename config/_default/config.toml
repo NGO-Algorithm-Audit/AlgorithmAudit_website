@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://jfparie.github.io/AlgorithmAudit_website/"
+baseURL = "https://algorithmaudit.eu/AlgorithmAudit_website/"
 title = "Algorithm Audit"
 theme = "bigspring-light"
 # post pagination
