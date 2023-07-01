@@ -1,10 +1,63 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function()
+{
+  var slogan = "We build public knowledge for ethical algorithms";
+  var slogan_NL = "Publieke kennisopbouw voor ethische algoritmes";
+
+  var KvK = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212"
+  var KvK_NL = "Stichting Algorithm Audit is bij de Kamer van Koophandel geregistreed onder nummer 83979212"
+
+  var follow = "Follow us:"
+  var follow_NL = "Volg ons:"
+
+  var cases = "Cases"
+  var cases_NL = "Casuïstiek"
+
+  var knowledge_base = "Knowledge base"
+  var knowledge_base_NL = "Kennisbank"
+
+  var about = "About"
+  var about_NL = "Over AA"
+
+  var location = window.location.href
+  if(location.includes("nl")){
+    var slogan = slogan_NL
+    var KvK = KvK_NL
+    var follow = follow_NL
+    var cases = cases_NL
+    var knowledge_base = knowledge_base_NL
+    var about = about_NL
+    console.log('NL');
+  }else{
+    console.log('EN');
+  }
+
+  // motto
+  $('#motto').text(slogan);
+
+  // KvK
+  $('#KvK').text(KvK);
+
+  // Follow
+  $('#follow').text(follow);
+
+  // Sitemap
+  $('#cases').text(cases);
+  $('#knowledge_base').text(knowledge_base);
+  $('#about').text(about);
+
+});
+</script>
+
 <footer class="bg-light footer" style="background-color: #b1c4d5 !important;">
   <div class="container">
 
     <!-- Motto -->
     <div class="row" style="padding: 30px 10%;">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
-        <h2 class="section-title" style="color: #005aa7; text-align:center">We build public knowledge for ethical algorithms</h2>
+        <h2 class="section-title" id="motto" style="color: #005aa7; text-align:center"></h2>
       </div>
     </div>
     <!-- /Motto -->
@@ -20,14 +73,14 @@
             {{ else }}{{site.Title}}{{end}}
         </div>
         <div style="text-align:center; padding: 30px 10%;">
-          <a style="font-size:14px; cursor: default;">Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212</a>
+          <a id="KvK" style="font-size:14px; cursor: default;"></a>
         </div>
       </div>
       <!-- Logo -->
 
       <!-- Follow us -->
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 order-lg-3 order-sm-3 order-xs-3 mb-5 custom_div_parent">
-          <p style="font-size:12px; color: #005aa7;">Follow us:</p>
+          <p id="follow" style="font-size:12px; color: #005aa7;"></p>
           {{ with site.Params.social }}
           <div class="social-icons">
             {{ range . }}
@@ -45,12 +98,12 @@
         <ul style="list-style-type:none; padding-left:0; font-size:14px; color:#005aa7;">
           {{/* Not sure why you're not pulling this from site.Menus.main */}}
           <li><a href="#"><p style="color:#005aa7; margin:0 0 0px 0;">Home</p></a></li>
-          <li><a href="{{ `cases` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">Cases</p></a></li>
-          <li><a href="{{ `bias_scan` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">Bias scan</p></a></li>
-          <li><a href="{{ `knowledge_base` | relURL }}"><p style="color: #005aa7;  margin:0 0 0px 0;">Knowledge base</p></a></li>
-          <li><a href="{{ `events` | relURL }}"><p style="color: #005aa7;  margin:0 0 0px 0;">Events</p></a></li>
-          <li><a href="{{ `faq` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">FAQ</p></a></li>
-          <li><a href="{{ `about` | relURL }}"><p style="color: #005aa7;  margin:0 0 0px 0;">About</p></a></li>
+          <li><a href="{{ `nl/cases` | relURL }}"><p id="cases" style="color: #005aa7; margin:0 0 0px 0;"></p></a></li>
+          <li><a href="{{ `nl/bias_scan` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">Bias scan</p></a></li>
+          <li><a href="{{ `nl/knowledge_base` | relURL }}"><p id="knowledge_base" style="color: #005aa7;  margin:0 0 0px 0;">Knowledge base</p></a></li>
+          <li><a href="{{ `nl/events` | relURL }}"><p style="color: #005aa7;  margin:0 0 0px 0;">Events</p></a></li>
+          <li><a href="{{ `nl/faq` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">FAQ</p></a></li>
+          <li><a href="{{ `nl/about` | relURL }}"><p id="about" style="color: #005aa7;  margin:0 0 0px 0;">About</p></a></li>
         </ul>
       </div>
       <!-- /Sitemap -->

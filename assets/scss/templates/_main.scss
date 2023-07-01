@@ -105,6 +105,26 @@ body {
   }
 }
 
+// typewriter
+@keyframes cursorBlink {
+  0% {
+    border-right-color: initial;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+#block {
+  border-width: 0;
+  border-style: solid;
+  border-color: black;
+  border-right-width: 8px;
+  white-space: pre-wrap;
+  animation: cursorBlink 0.6s ease-in-out infinite alternate;
+}
+
 // blog card
 .card-img {
   object-fit: cover;

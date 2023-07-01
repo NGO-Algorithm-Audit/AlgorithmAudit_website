@@ -1,0 +1,13 @@
+############################# Dutch ############################
+[NL]
+languageName = "NL"
+title = "Algorithm Audit"
+contentDir = "content/nederlands" 
+weight = 1
+
+############################# English ############################
+[EN]
+languageName = "EN"
+title = "Algorithm Audit"
+contentDir = "content/english"
+weight = 2

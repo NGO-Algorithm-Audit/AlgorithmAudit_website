@@ -1,10 +1,8 @@
 ---
 Banner:
-  title: Case-based knowledge for ethical algorithms
+  title: '_Algoprudence_:'
   image: images/main_illustration.svg
-  content: Algorithm Audit is a nonprofit organization that builds and shares knowledge
-    about ethical algorithms. Our independent audit commissions shed light on ethical
-    issues that arise in concrete use cases of algorithmic tools and methods.
+  content: Algorithm Audit is a European knowledge platform for AI bias testing and normative AI standards. We build and share algoprudence by convening deliberative audit commissions. Audit commissions give normative advice on ethical issues that arise in concrete use cases of algorithmic tools and methods.
   button:
     enable: True
     label: Read our new white paper
@@ -53,6 +51,8 @@ Supported_by:
     img3:
     - images/NLAIC.png
     img4:
+    - images/BZK.jpg
+    img5:
     - images/HAI.png
 How_we_work:
   enable: true

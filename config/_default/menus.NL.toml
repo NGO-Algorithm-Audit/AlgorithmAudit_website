@@ -1,0 +1,36 @@
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Casuïstiek"
+url = "nl/cases"
+weight = 2
+
+[[main]]
+name = "Bias scan"
+url = "nl/bias_scan"
+weight = 3
+
+[[main]]
+name = "Kennisbank"
+url = "nl/knowledge_base"
+weight = 4
+
+[[main]]
+name = "Events"
+url = "nl/events"
+weight = 5
+
+[[main]]
+name = "FAQ"
+url = "nl/faq"
+weight = 6
+
+[[main]]
+name = "Over AA"
+url = "nl/over"
+weight = 7
+

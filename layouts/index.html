@@ -1,4 +1,40 @@
 {{ define "main" }}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function()
+{
+  var typewriter_text = "case-based normative advice for ethical algorithms";
+  var text_NL = "case-based normatief advies voor ethische algoritmes";
+
+  var location = window.location.href
+  if(location.includes("nl")){
+    var typewriter_text = text_NL
+    console.log('NL');
+  }else{
+    console.log('EN');
+  }
+
+    function typeText(typewriter_text, iteration) {
+
+        // Prevent our code executing if there are no letters left
+        if (iteration === typewriter_text.length)
+            return;
+        
+        setTimeout(function() {
+            // Set the name to the current text + the next character
+            // whilst incrementing the iteration variable
+            $('.typewriter').text( $('.typewriter').text() + typewriter_text[iteration++] );
+            
+            // Re-trigger our function
+            typeText(typewriter_text, iteration);
+        }, 40);
+    }
+    
+    // Call the function to begin the typing process
+    typeText(typewriter_text, 0);
+});
+</script>
 
 <!-- Banner -->
 {{ with .Params.banner }}
@@ -7,8 +43,8 @@
     <div class="row" style="display: flex; align-items: center;">
 
       <!-- text -->
-      <div class="col-lg-5 col-md-8 col-sm-12">
-        <h1 class="mb-3" style="font-size: 36px; color: #005aa7; width:90%; margin-left: 0; margin-right: auto;">{{ .title | markdownify }}</h1>
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <h1 class="mb-3" style="font-size: 36px; color: #005aa7; width:90%; margin-left: 0; margin-right: auto;">{{ .title | markdownify }} <span class="typewriter"></span></h1>
         <p class="mb-4" id="banner-text" style="margin-left: 0; margin-right: auto; padding: 10px 0 25px 0;">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
@@ -19,7 +55,7 @@
       <!-- text -->
 
       <!-- image -->
-      <div class="col-lg-7 col-md-12 col-sm-12">
+      <div class="col-lg-6 col-md-12 col-sm-12">
         {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" style="margin-left: auto; margin-right: auto;">{{end}}
       </div>
       <!-- image -->
@@ -43,7 +79,7 @@
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="feature-card text-center">
           <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
-          <h4 class="mb-2" style="color: #005aa7;">
+          <h4 class="" style="color: #005aa7;">
               {{ .name | title }}
           </h4>
           <p>{{ .content | markdownify }}</p>
@@ -81,7 +117,7 @@
       <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center" style="margin-top:50px;">
         {{ range .img2 }}
           <a href="https://europeanaifund.org/announcing-our-2022-open-call-grantees/" target="_blank">
-            <img src="{{ . | relURL }}" style="max-height: 75px;" alt="" class="img-fluid">
+            <img src="{{ . | relURL }}" style="max-height: 60px;" alt="" class="img-fluid">
           </a>
         {{ end }}
       </div>
@@ -94,23 +130,21 @@
         {{ end }}
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center align-items-center" style="margin-top:50px;">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center" style="margin-top:50px;">
         {{ range .img4 }}
-          <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">
+          <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties" target="_blank">
             <img src="{{ . | relURL }}" style="max-height: 50px;" alt="" class="img-fluid">
           </a>
         {{ end }}
       </div>
 
-      <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center" style="margin-top:50px;">
-        {{ range .img4 }}
-        <div>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center" style="margin-top:50px;">
+        {{ range .img5 }}
           <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">
             <img src="{{ . | relURL }}" style="max-height: 50px;" alt="" class="img-fluid">
           </a>
-        </div>
         {{ end }}
-      </div> -->
+      </div>
 
     </div>
   </div>
