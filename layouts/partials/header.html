@@ -41,7 +41,7 @@
           {{ end }}
 
           <!-- Language List -->
-          {{ if .IsTranslated }}
+          <!-- {{ if .IsTranslated }}
           <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
             {{ $siteLanguages := site.Languages}}
             {{ $pageLang := .Page.Lang}}
@@ -60,7 +60,26 @@
             {{ end }}
             {{ end }}
           </select>
+          {{ end }} -->
+
+          <!-- {{ range $.Site.Home.AllTranslations }}
+          <li class="nav-item"><a class="nav-link" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+          {{ end }} -->
+
+          <!-- {{ if eq $.Site.Language.LanguageName "EN" }}
+              <li class="nav-item"><a class="nav-link" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+          {{ end }} -->
+
+          {{ if .IsTranslated }}
+          {{ range .Translations }}
+            {{ if eq .Site.Language.Lang "en" }}
+          <li class="nav-item"><a class="nav-link" title="English" href="{{ .RelPermalink }}">🇬🇧EN</a></li>
+            {{ else }}
+          <li class="nav-item"><a class="nav-link" title="Norsk" href="{{ .RelPermalink }}">🇳🇱NL</a></li>
+            {{ end }}
           {{ end }}
+        {{ end }}
+
         </ul>
       </div>
       <!-- navbar -->

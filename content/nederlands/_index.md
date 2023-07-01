@@ -138,7 +138,7 @@ Why_we_exist:
       Strong Institutions. 
 Get_in_touch:
   enable: true
-  title: Kom in contact
+  title: Denk mee
   content: Do you have an ethical issue for review? Or want to share ideas? Let us
     know!
 
