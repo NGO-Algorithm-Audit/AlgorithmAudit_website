@@ -1,7 +1,7 @@
 # main menu
 [[main]]
 name = "Home"
-url = "/"
+url = "nl/"
 weight = 1
 
 [[main]]
@@ -31,6 +31,6 @@ weight = 6
 
 [[main]]
 name = "Over AA"
-url = "nl/over"
+url = "nl/about"
 weight = 7
 
