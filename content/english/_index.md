@@ -63,7 +63,7 @@ How_we_work:
     content: ''
     button:
       enable: true
-      label: Cases we work on
+      label: Algorithms we work on
       link: cases
 With_whom_we_work:
   enable: true
