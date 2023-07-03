@@ -1,6 +1,6 @@
 ---
 title: Over Algorithm Audit
-subtitle: Stichting Algorithm Audit bestaat uit een bestuur, een Core Team, een Raad van Advies en verschillende auditcommissies. Hier kom je meer te weten over de Algorithm Audit en hoe jij kunt bijdragen.
+subtitle: Stichting Algorithm Audit bestaat uit een bestuur, een Core Team, een Raad van Advies en verschillende auditcommissies. Kom meer te weten over de Algorithm Audit en hoe jij kunt bijdragen.
 image: images/about.svg
 
 ---
