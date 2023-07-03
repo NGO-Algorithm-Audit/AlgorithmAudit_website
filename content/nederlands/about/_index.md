@@ -1,5 +1,5 @@
 ---
-title: About
+title: Over Algorithm Audit
 subtitle: Algorithm Audit consists of an executive board, an advisory board and works
   with audit commissions composed of independent experts. Learn more about Algorithm
   Audit.
@@ -25,5 +25,3 @@ image: images/about.svg
 {{< about_contributors "Contributors" "International experts from a range of disciplines and professional backgrounds contribute to the work of Algorithm Audit. Expertise from among others data science, policy making, law and ethics strenghtens our problem statements, white papers and advocay work.">}}
 
 {{< about_commissions "Audit commissions" " The composition of audit commissions varies per case. The exact makeup of commissions is shared here: ">}}
-
-<!-- Fellow in Law&Tech at the ETH Zürich -->

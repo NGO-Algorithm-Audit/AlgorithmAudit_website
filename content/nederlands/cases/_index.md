@@ -1,9 +1,9 @@
 ---
 title: Casuïstiek
-subtitle: We are working on a variety of cases. Once an audit commission has gathered and examined the ethical issue, the original problem statement and corresponding advice will be published on this website.
+subtitle: We bevragen verschillende algoritmes. Het advies van een auditcommissie, inclusief bijbehorende probleemstelling, wordt gepubliceerd op deze website. Anderen kunnen van deze ‘algoprudentie’ leren, helpen verbeteren of gebruiken bij soortgelijke vraagstukken. 
 
 
-  We are open to new cases. Please [<span style="color:#005aa7"> reach out</span>](/#contactform) to us when you know a case for review.
+  We zoeken nieuwe case studies. Zoek  [<span style="color:#005aa7"> contact</span>](/#contactform) om een algoritme aan te dragen. 
 image: "images/case_repository.svg"
 
 ---

@@ -2,14 +2,14 @@
 Banner:
   title: '_Algoprudentie_:'
   image: images/main_illustration.svg
-  content: Algorithm Audit is een Europees kennisplatform voor het testen van AI-bias en normatieve AI-standaarden. We creëren algoprudentie door het samenstellen van deliberatieve audit commissies. Deze onafhankelijke commissies geven normatief advies over ethische vraagstukken bij inzet van algoritmes.
+  content: Algorithm Audit is een Europees kennisplatform voor het testen van AI-bias en normatieve AI-standaarden. We creëren _algoprudentie_ door het samenstellen van deliberatieve audit commissies. Deze onafhankelijke commissies geven normatief advies over ethische vraagstukken bij de inzet van algoritmes.
   button:
     enable: True
     label: Lees onze nieuwe white paper
     link: knowledge_base/white_paper_dsa_delegated_regulation_feedback/
 What_we_do:
   enable: true
-  title: Dit doen we
+  title: Onderscheidend in
   feature_item:
   - name: Algoritmes auditen
     icon: fas fa-search

@@ -1,5 +1,5 @@
 ---
-title: Knowledge base
+title: Kennisbank
 subtitle: Our knowledge base is a collection of readworthy articles, books and other
   publications from various disciplines about algorithmic fairness. Each piece of
   writing has been summarized and/or reviewed. 

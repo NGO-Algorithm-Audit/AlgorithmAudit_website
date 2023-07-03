@@ -8,16 +8,10 @@ image: "images/case_repository.svg"
 
 ---
 <!-- Case disinfo -->
-{{< case_disinfo "BERT-based disinformation classifier" "Anne Meuwese, Professor in Public Law & AI at Leiden University" "Hinda Haned, Professor in Responsible Data Science at University of Amsterdam" "Raphaële Xenidis, Associate Professor in EU law at Sciences Po Paris" "Aileen Nielsen, Fellow Law&Tech at ETH Zürich" "Carlos Hernández-Echevarría, Assistant Director and Head of Public Policy at the anti-disinformation nonprofit fact-checker" "Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank">}}
-
-The audit commission believes there is a low risk of (higher-dimensional) proxy discrimination by the BERT-based disinformation classifier and that the particular difference in treatment identified by the quantitative bias scan can be justified, if certain conditions apply.
-{{</ case_disinfo >}}
+{{< case_disinfo "BERT-based disinformation classifier" "Anne Meuwese, Professor in Public Law & AI at Leiden University" "Hinda Haned, Professor in Responsible Data Science at University of Amsterdam" "Raphaële Xenidis, Associate Professor in EU law at Sciences Po Paris" "Aileen Nielsen, Fellow Law&Tech at ETH Zürich" "Carlos Hernández-Echevarría, Assistant Director and Head of Public Policy at the anti-disinformation nonprofit fact-checker" "Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank">}}{{</ case_disinfo >}}
 
 <!-- Case SIM -->
-{{< case_SIM "Type of SIM card as a predictor variable to detect payment fraud" "Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University" "Jan Overgoor, PhD Management Science and Engineering, Stanford University" "Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg University" "Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft">}}
-
-The audit commission advises against using type of SIM card as an input variable in algorithmic models that predict payment defaults and block afterpay services for specific customers. As it is likely that type of SIM card acts as a proxy-variable for sensitive demographic categories, the model would run an intolerable risk of disproportionally excluding vulnerable demographic groups from the payment service. Absent reliable data that demonstrates otherwise, the ethical risk of including the SIM card variable outweighs potential benefits. The commission advises to consider a variety of alternatives in dealing with payment defaults.
-{{</ case_SIM >}}
+{{< case_SIM "Type of SIM card as a predictor variable to detect payment fraud" "Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University" "Jan Overgoor, PhD Management Science and Engineering, Stanford University" "Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg University" "Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft">}}{{</ case_SIM >}}
 
 <!-- Case Rotterdam -->
 {{< case_Rotterdam "Ethical risk assessment tool" "The composition of the audit commission for this case is made publicly available once the final advice of the commission is published.">}} This project sheds light on the complex tension between fairness, non-discrimination and statistics in risk assessment tools. Which characteristics of citizens and customers should be considered as protected variables and proxies for protected variables? To what extent and under what circumstances should these (proxy)variables be included or excluded from algorithmic predictions?

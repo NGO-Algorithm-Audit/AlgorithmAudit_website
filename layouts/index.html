@@ -80,7 +80,7 @@ $(document).ready(function()
         <div class="feature-card text-center">
           <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
           <h4 class="" style="color: #005aa7;">
-              {{ .name | title }}
+              {{ .name | markdownify }}
           </h4>
           <p>{{ .content | markdownify }}</p>
         </div>
