@@ -11,24 +11,24 @@ What_we_do:
   enable: true
   title: Onderscheidend in
   feature_item:
-  - name: Algoritmes valideren
+  - name: Algoritmevalidaties
     icon: fas fa-search
-    content: Onze auditcommissie geven normatief advies over ethische kwestie bij inzet van algoritmes. Hierbij is een context-afhankelijke en risico-averse aanpak leidend
+    content: Onze auditcommissie geven normatief advies over ethische kwestie bij inzet van algoritmes. Hierbij is een context-afhankelijke en risico-averse aanpak leidend.
   - name: Onafhankelijk
     icon: fas fa-star-of-life
-    content: We werken zonder winstoogmerk. Met werkafspraken garanderen we onafhankelijkheid, kwaliteit en diversiteit van onze auditcommissie en voortkomend normatief advies
+    content: We werken zonder winstoogmerk. Onze werkafspraken garanderen onafhankelijkheid, kwaliteit en diversiteit van onze auditcommissie en bijbehorend normatief advies.
   - name: Ethiek voorbij compliance
     icon: fas fa-leaf
-    content: We helpen organisaties die zich committeren aan de verantwoorde inzet van algoritmes met biastoetsing en het invullen van open juridische normen
+    content: We helpen organisaties die zich committeren aan de verantwoorde inzet van algoritmes met biastoetsing en het invullen van open juridische normen.
   - name: Public kennisopbouw
     icon: fab fa-slideshare
-    content: Al onze casuïstiek en voortkomend advies (algoprudentie) is openbaar, om een bijdrage te leveren aan de publieke kennisopbouw over de verantwoorde inzet van algoritmes
+    content: Al onze casuïstiek en bijbehorend advies (_algoprudentie_) is openbaar. Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes.
   - name: Techno-ethische jurisprudentie
     icon: fas fa-book-reader
-    content: Belanghebbenden kunnen van onze algoprudentie leren, het helpen verbeteren en het inzetten als referentiemateriaal bij soortgelijke vraagstukken
+    content: Belanghebbenden kunnen van onze algoprudentie leren, het helpen verbeteren en het inzetten als referentiemateriaal bij soortgelijke vraagstukken.
   - name: 'Krachten bundelen'
     icon: fas fa-hands-helping
-    content: Publieke en private organisaties lopen tegen vergelijkbare algoritme-gerelateerde uitdagingen aan. Wij jagen het collectieve leerproces over de verantwoorde inzet van algoritmes aan door overheid, bedrijfsleven, NGOs en wetenschap met elkaar te verbinden
+    content: Publieke en private organisaties lopen tegen vergelijkbare uitdagingen aan. Wij jagen het collectieve leerproces over de verantwoorde inzet van algoritmes aan door overheid, bedrijfsleven, NGOs en wetenschap met elkaar te verbinden. 
 Supported_by:
   enable: true
   Suported_by:

@@ -11,7 +11,7 @@ What_we_do:
   enable: true
   title: Distinctive in
   feature_item:
-  - name: Auditing algorithms
+  - name: Algorithm validations
     icon: fas fa-search
     content: Our audit commissions conduct case-based ethical reviews of algorithmic
       methods, in a holistic and context-sensitive way that is mindful of societal
@@ -20,25 +20,23 @@ What_we_do:
     icon: fas fa-star-of-life
     content: By working nonprofit and under explicit terms and conditions, we ensure
       the independence, academic quality and diversity of our audit commissions and
-      of our ethical advice.
+      of our normative advice.
   - name: Ethics beyond compliance
     icon: fas fa-leaf
     content: We help organizations committed to ethical algorithms to make judgments
-      about fairness and ethics beyond the requirements of legal compliance.
+      about fairness and open legal norms.
   - name: Public knowledge
     icon: fab fa-slideshare
-    content: All our cases and corresponding advice are made publicly available, increasing
+    content: All our cases and corresponding advice (_algoprudence_) are made publicly available, increasing
       collective knowledge how to devise and use algorithms in an ethical way.
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
-    content: From our case-based knowledge, data scientists can distil best practices
-      for ethical algorithms. Over time a helpful resource for techno-ethical issues
-      will emerge.
+    content: Stakeholders can learn from our algoprudence, can help to improve it and can utilize it as a best practice in similar cases.
   - name: Joint effort
     icon: fas fa-hands-helping
     content: Let's remove boundaries between public and private organizations that
       face similar ethical concerns. We believe in a collective approach to realise
-      ethical algorithms. We offer a platform of collaboration for academics, developers
+      ethical algorithms. We offer a platform of collaboration for academics, activists, AI developers
       and policy makers.
 Supported_by:
   enable: true
