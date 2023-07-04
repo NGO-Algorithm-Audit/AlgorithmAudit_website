@@ -2,7 +2,7 @@
 Banner:
   title: '_Algoprudentie_:'
   image: images/main_illustration.svg
-  content: Algorithm Audit is een Europees kennisplatform voor het testen van AI-bias en normatieve AI-standaarden. We creëren _algoprudentie_ door het samenstellen van deliberatieve auditcommissies. Deze onafhankelijke commissies geven normatief advies over ethische vraagstukken bij de inzet van algoritmes.
+  content: Algorithm Audit is een Europees kennisplatform voor het testen van AI-bias en normatieve AI-standaarden. We creëren algoprudentie door het samenbrengen van deliberatieve auditcommissies. Deze commissies geven onafhankelijk normatief advies over ethische vraagstukken bij inzet van algoritmes.
   button:
     enable: True
     label: Lees onze nieuwe white paper
@@ -11,15 +11,15 @@ What_we_do:
   enable: true
   title: Onderscheidend in
   feature_item:
-  - name: Algoritmevalidaties
+  - name: Normatief advies
     icon: fas fa-search
-    content: Onze auditcommissie geven normatief advies over ethische kwestie bij inzet van algoritmes. Hierbij is een context-afhankelijke en risico-averse aanpak leidend.
+    content: Auditcommissies geven normatief advies over concrete ethische vraagtukken die zich voordoen bij gebruik van algoritmes.
   - name: Onafhankelijk
     icon: fas fa-star-of-life
     content: We werken zonder winstoogmerk. Onze werkafspraken garanderen onafhankelijkheid, kwaliteit en diversiteit van onze auditcommissie en bijbehorend normatief advies.
   - name: Ethiek voorbij compliance
     icon: fas fa-leaf
-    content: We helpen organisaties die zich committeren aan de verantwoorde inzet van algoritmes met biastoetsing en het invullen van open juridische normen.
+    content: We helpen organisaties die zich committeren aan de verantwoorde inzet van algoritmes met biastoetsing en het invullen van open juridische normen. 
   - name: Public kennisopbouw
     icon: fab fa-slideshare
     content: Al onze casuïstiek en bijbehorend advies (_algoprudentie_) is openbaar. Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes.

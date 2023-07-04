@@ -2,7 +2,7 @@
 Banner:
   title: '_Algoprudence_:'
   image: images/main_illustration.svg
-  content: Algorithm Audit is a European knowledge platform for AI bias testing and normative AI standards. We build and share _algoprudence_ by convening deliberative audit commissions. Our independent commissions give normative advice on ethical issues that arise in concrete use cases of algorithmic tools and methods.
+  content: Algorithm Audit is a European knowledge platform for AI bias testing and normative AI standards. We build and share _algoprudence_ by convening deliberative audit commissions. Our commissions give independent normative advice on ethical issues that arise in concrete use cases of algorithmic tools and methods.
   button:
     enable: True
     label: Read our new white paper
@@ -11,33 +11,24 @@ What_we_do:
   enable: true
   title: Distinctive in
   feature_item:
-  - name: Algorithm validations
+  - name: Normative advice
     icon: fas fa-search
-    content: Our audit commissions conduct case-based ethical reviews of algorithmic
-      methods, in a holistic and context-sensitive way that is mindful of societal
-      impact.
-  - name: Independent
+    content: Mindful of societal impact our audit commissions provide normative advice on ethical issues that arise in algorithmic use cases.
+  - name: Independence
     icon: fas fa-star-of-life
-    content: By working nonprofit and under explicit terms and conditions, we ensure
-      the independence, academic quality and diversity of our audit commissions and
-      of our normative advice.
+    content: By working nonprofit and under explicit terms and conditions, we ensure the independence, quality and diversity of our audit commissions and of our normative advice.
   - name: Ethics beyond compliance
     icon: fas fa-leaf
-    content: We help organizations committed to ethical algorithms to make judgments
-      about fairness and open legal norms.
+    content: We help organizations committed to ethical algorithms to validate judgments about fairness and open legal norms.
   - name: Public knowledge
     icon: fab fa-slideshare
-    content: All our cases and corresponding advice (_algoprudence_) are made publicly available, increasing
-      collective knowledge how to devise and use algorithms in an ethical way.
+    content: All our cases and corresponding advice (_algoprudence_) are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way.
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
     content: Stakeholders can learn from our algoprudence, can help to improve it and can utilize it as a best practice in similar cases.
   - name: Joint effort
     icon: fas fa-hands-helping
-    content: Let's remove boundaries between public and private organizations that
-      face similar ethical concerns. We believe in a collective approach to realise
-      ethical algorithms. We offer a platform of collaboration for academics, activists, AI developers
-      and policy makers.
+    content: Let’s remove boundaries between public and private organizations that face similar AI quandaries. We offer a collaborative platform for academics, activists, developers and policy makers to define normative standards for AI.
 Supported_by:
   enable: true
   Suported_by:
@@ -61,7 +52,7 @@ How_we_work:
     content: ''
     button:
       enable: true
-      label: Algorithms we work on
+      label: Algorithms we audit
       link: cases
 With_whom_we_work:
   enable: true
