@@ -1,6 +1,6 @@
 ---
 title: Cases
-subtitle: We are working on a variety of cases. Once an audit commission has gathered and examined the ethical issue, the original problem statement and corresponding advice will be published on this website.
+subtitle: We are working on a variety of cases. Once an audit commission has gathered and examined the ethical issue, the original problem statement and corresponding advice will be published on this website. Others learn from our algoprudence, help to improve it and utilize it as a best practice in similar cases.
 
 
   We are open to new cases. Please [<span style="color:#005aa7"> reach out</span>](/#contactform) to us when you know a case for review.

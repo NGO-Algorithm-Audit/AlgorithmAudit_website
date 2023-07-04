@@ -16,16 +16,16 @@ What_we_do:
     content: Mindful of societal impact our audit commissions provide normative advice on ethical issues that arise in algorithmic use cases.
   - name: Independence
     icon: fas fa-star-of-life
-    content: By working nonprofit and under explicit terms and conditions, we ensure the independence, quality and diversity of our audit commissions and of our normative advice.
+    content: By working nonprofit and under explicit terms and conditions, we ensure the independence, quality and diversity of our audit commissions.
   - name: Ethics beyond compliance
     icon: fas fa-leaf
-    content: We help organizations committed to ethical algorithms to validate judgments about fairness and open legal norms.
+    content: We help organizations committed to ethical algorithms to make judgments about fairness and open legal norms.
   - name: Public knowledge
     icon: fab fa-slideshare
-    content: All our cases and corresponding advice (_algoprudence_) are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way.
+    content: All our cases and corresponding advice (_algoprudence_) are made [<span style="color:#005aa7">publicly available</span>](/cases), increasing collective knowledge how to deploy and use algorithms in an ethical way.
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
-    content: Stakeholders can learn from our algoprudence, can help to improve it and can utilize it as a best practice in similar cases.
+    content: Stakeholders learn from our algoprudence, help to improve it and utilize it as a best practice in similar cases.
   - name: Joint effort
     icon: fas fa-hands-helping
     content: Let’s remove boundaries between public and private organizations that face similar AI quandaries. We offer a collaborative platform for academics, activists, developers and policy makers to define normative standards for AI.

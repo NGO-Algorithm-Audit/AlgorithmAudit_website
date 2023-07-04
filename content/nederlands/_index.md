@@ -22,7 +22,7 @@ What_we_do:
     content: We helpen organisaties die zich committeren aan de verantwoorde inzet van algoritmes met biastoetsing en het invullen van open juridische normen. 
   - name: Public kennisopbouw
     icon: fab fa-slideshare
-    content: Al onze casuïstiek en bijbehorend advies (_algoprudentie_) is openbaar. Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes.
+    content: Al onze casuïstiek en bijbehorend advies (_algoprudentie_) is [<span style="color:#005aa7">openbaar</span>](/cases). Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes.
   - name: Techno-ethische jurisprudentie
     icon: fas fa-book-reader
     content: Belanghebbenden kunnen van onze algoprudentie leren, het helpen verbeteren en het inzetten als referentiemateriaal bij soortgelijke vraagstukken.
