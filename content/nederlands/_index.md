@@ -2,7 +2,7 @@
 Banner:
   title: '_Algoprudentie_:'
   image: images/main_illustration.svg
-  content: Algorithm Audit is een Europees kennisplatform voor het testen van AI-bias en normatieve AI-standaarden. We creëren algoprudentie door het samenbrengen van deliberatieve auditcommissies. Deze commissies geven onafhankelijk normatief advies over ethische vraagstukken bij inzet van algoritmes.
+  content: Algorithm Audit is een Europees kennisplatform voor het testen van AI-bias en normatieve AI-standaarden. We creëren algoprudentie door het samenbrengen van deliberatieve auditcommissies. Deze commissies geven onafhankelijk normatief advies over ethische vraagstukken bij inzet van algoritmes
   button:
     enable: True
     label: Lees onze nieuwe white paper
@@ -13,22 +13,22 @@ What_we_do:
   feature_item:
   - name: Normatief advies
     icon: fas fa-search
-    content: Auditcommissies geven normatief advies over concrete ethische vraagtukken die zich voordoen bij gebruik van algoritmes.
+    content: Auditcommissies geven normatief advies over concrete ethische vraagtukken die zich voordoen bij gebruik van algoritmes
   - name: Onafhankelijk
     icon: fas fa-star-of-life
-    content: We werken zonder winstoogmerk. Onze werkafspraken garanderen onafhankelijkheid, kwaliteit en diversiteit van onze auditcommissie en bijbehorend normatief advies.
+    content: We werken zonder winstoogmerk. Onze werkafspraken garanderen onafhankelijkheid, kwaliteit en diversiteit van onze auditcommissies en bijbehorend normatief advies
   - name: Ethiek voorbij compliance
     icon: fas fa-leaf
-    content: We helpen organisaties die zich committeren aan de verantwoorde inzet van algoritmes met biastoetsing en het invullen van open juridische normen. 
+    content: We helpen organisaties die zich committeren aan de verantwoorde inzet van algoritmes met biastoetsing en het invullen van open juridische normen
   - name: Public kennisopbouw
     icon: fab fa-slideshare
-    content: Al onze casuïstiek en bijbehorend advies (_algoprudentie_) is [<span style="color:#005aa7">openbaar</span>](/cases). Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes.
+    content: Al onze casuïstiek en bijbehorend advies (_algoprudentie_) is [<span style="color:#005aa7">openbaar</span>](/cases). Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes
   - name: Techno-ethische jurisprudentie
     icon: fas fa-book-reader
-    content: Belanghebbenden kunnen van onze algoprudentie leren, het helpen verbeteren en het inzetten als referentiemateriaal bij soortgelijke vraagstukken.
+    content: Belanghebbenden kunnen van onze algoprudentie leren, het helpen verbeteren en het inzetten als referentiemateriaal bij soortgelijke vraagstukken
   - name: 'Krachten bundelen'
     icon: fas fa-hands-helping
-    content: Publieke en private organisaties lopen tegen vergelijkbare uitdagingen aan. Wij jagen het collectieve leerproces over de verantwoorde inzet van algoritmes aan door overheid, bedrijfsleven, NGOs en wetenschap met elkaar te verbinden. 
+    content: Publieke en private organisaties lopen tegen vergelijkbare uitdagingen aan. Wij jagen het collectieve leerproces over de verantwoorde inzet van algoritmes aan door overheid, bedrijfsleven, NGOs en wetenschap met elkaar te verbinden
 Supported_by:
   enable: true
   Suported_by:
