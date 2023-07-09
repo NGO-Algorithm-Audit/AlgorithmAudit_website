@@ -33,15 +33,15 @@ Supported_by:
   enable: true
   Suported_by:
   - title: Partners
-    img1:
+    img_SIDN:
     - images/sidn.png
-    img2:
+    img_EUAIS:
     - images/EUAISFund.png
-    img3:
+    img_NLAIC:
     - images/NLAIC.png
-    img4:
+    img_BZK:
     - images/BZK.jpg
-    img5:
+    img_HAI:
     - images/HAI.png
 How_we_work:
   enable: true
@@ -77,39 +77,33 @@ Why_we_exist:
   content: Current legislation falls short to
   new_items:
   - title: Waarom we bestaan
-    intro_content: Algorithm Audit was founded on the idea that ethics in algorithmic methods
-      urgently needs case-based experience and a bottom-up approach. We believe existing
-      and proposed legislation is and will not suffice to realize ethical algorithms.
-      Why not? 
-    gdpr_content: The conditions given in <a href="https://gdpr-info.eu/art-22-gdpr/" target="_blank">GDPR Article 22 (2)</a>
+    intro_content: Algorithm Audit is opgericht vanuit het idee dat de verantwoorde inzet van algoritmes alleen slaagt wanneer normatieve aspecten van datamodelleren openlijk worden gedeeld, bediscussieerd en beslecht. We vinden dat bestaande en toekomstige wetgeving niet afdoende is voor verantwoorde algoritmes. Waarom niet? 
+    ai_act_content:  The newly proposed <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI Act </a> of the European Commission will impose broad new responsibilities to control risks from AI systems without at the same time laying down specific standards they are expected to meet. For instance<a>:</a>
+    aia_image: images/AI_act.png
+    dsa_content1: The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52020PC0825" target="_blank">Digital Services Act (DSA) </a> lacks provisions to disclose normative methodological choices that underlie AI systems (e.g., recommender systems), which is crucial for evaluating associated risks in a meaningful way (as mandated by DSA Article 34). 
+    dsa_content2: We argue that besides technical examinations that ensure robust AI engineering, such as evaluating logging protocols and model monitoring capabilities, normative aspects must get a significantly more prominent role in the risk definition (Article 2), audit methodologies of risk assessment (Section IV) and audit report templates (Annex I) set out by the delegated regulation (DR). 
+    dsa_content3: That is what we sent as feedback to the European Commission.
+    dsa_image: images/DSA.jpg
+    gdpr_content1: Conditions provided in <a href="https://gdpr-info.eu/art-22-gdpr/" target="_blank">GDPR Article 22(2)</a>
       under which automated decision-making (ADM) and profiling is allowed are open
       for broad interpretation. Allowing wide-ranging ADM under the sole condition
       of contract agreement opens the door for large scale unethical algorithmic practices
       without accountability and public awareness.
-    image1: images/gdpr.svg
-    ai_act_content:  The newly proposed <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI Act </a> of the European Commission
-      aims to regulate the use of high-risk algorithms, but remains too generic. For
-      example, it does not provide precise guidelines how to identify and mitigate
-      ethical issues such as algorithmic discrimination. In addition, machine learning
-      practice that falls outside the high-risk category is not exempt from major
-      ethical concerns. The legal measures, which only become effective in several
-      years, will become a playground for legal experts and lawyers and will not directly
-      offer concrete and extensive guidelines on ethical algorithms for organizations
-      in industry and government. Hence, organizations will still need to make up
-      their own mind about context-specific ethical guidelines and procedures in their
-      use of algorithmic methods.
-    image2: images/AI_act.png
-    rekenkamer_content: <a href="https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek" target="_blank">Perspective 3.1.1</a> in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
+    gdpr_content2: <a href="https://gdpr-info.eu/art-35-gdpr/" target="_blank">GDPR Article 35(9)</a>
+      stimulates controller to seek the views of data subjects or their representatives on the intended processing, without prejudice to the protection of commercial or public interests or the security of processing operations.
+    gdpr_image: images/gdpr.svg
+    regulator_content: <a href="https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek" target="_blank">Perspective 3.1.1</a> in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
       ethical algorithms are not allowed to “discriminate and that bias should be
       minimised”. Missing from this judgment is a discussion of what precisely constitutes
       bias in the context of algorithms and what would be appropriate methods to ascertain
       and mitigate algorithmic discrimination. In the absence of a clear ethical framework, it
       is up to organizations to formulate context-sensitive approaches to combat discrimination.
-    image3: images/SDG16.png
-    iama_content: The <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes" target="_blank">Impact Assessment Human Rights and Algorithms (IAMA)</a> and the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design" target="_blank">Handbook for
+    sdg_image: images/SDG16.png
+    hria_content: The <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes" target="_blank">Impact Assessment Human Rights and Algorithms (IAMA)</a> and the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design" target="_blank">Handbook for
       Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
       It does not provide answers or concrete guidelines how to realise ethical algorithms.
+    hria_image: images/FRIA.png
     content1:  We believe a case-based and context sensitive approach is indispensable to develop ethical algorithms. One should not expect top-down regulation and
       legislation to solve all ethical problems in AI and machine learning. Taking
       all contested algorithmic cases to court is practically infeasible. More importantly,
