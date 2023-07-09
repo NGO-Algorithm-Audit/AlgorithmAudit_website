@@ -34,6 +34,44 @@ $(document).ready(function()
     // Call the function to begin the typing process
     typeText(typewriter_text, 0);
 });
+
+// Why we exist AI Act/DSA/GDPR etc.
+$(document).on("click", ".menu2 div", function() {
+	var numberIndex = $(this).index();
+
+	if (!$(this).is("active")) {
+
+    // add active class
+		$(".menu2 div").removeClass("active");
+		$(".gc ul li").removeClass("active");
+
+    // change number index
+		$(this).addClass("active");
+		$(".gc ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+    // scroll to top of overflow:auto div
+    $('.nacc').scrollTop(0);
+	}
+});
+
+// Why we exist (mobile) AI Act/DSA/GDPR etc.
+$(document).on("click", ".menu3 div", function() {
+	var numberIndex = $(this).index();
+
+	if (!$(this).is("active2")) {
+
+    // add active class
+		$(".menu3 div").removeClass("active2");
+		$(".gc2 ul li").removeClass("active2");
+
+    // change number index
+		$(this).addClass("active2");
+		$(".gc2 ul").find("li:eq(" + numberIndex + ")").addClass("active2");
+
+    // scroll to top of overflow:auto div
+    $('.gc2').scrollTop(0);
+	}
+});
 </script>
 
 <!-- Banner -->
@@ -96,50 +134,47 @@ $(document).ready(function()
 <!-- Supported by -->
 {{ with .Params.Supported_by }}
 {{ range $i,$p := .Suported_by }}
-<section class="section-bottom bg-white" style="background-color: #ffffff !important;">
+<section class="section-bottom bg-white" style="background-color: #ffffff !important; padding:50px 0px 0px 0px;">
   <div class="container">
-    <div class="row">
+    <div class="row d-flex flex-wrap align-items-center">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
         <h2 class="section-title" style="font-size:16px; color: #005aa7;">{{ .title | markdownify }}</h2>
-        <div class="wrapper" style="width:75%">
-          <p>{{ .content | markdownify }}</p>
-        </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center" style="margin-top:50px;">
-        {{ range .img1 }}
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+        {{ range .img_SIDN }}
         <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
           <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
         </a>
         {{ end }}
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center" style="margin-top:50px;">
-        {{ range .img2 }}
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+        {{ range .img_EUAIS }}
           <a href="https://europeanaifund.org/announcing-our-2022-open-call-grantees/" target="_blank">
             <img src="{{ . | relURL }}" style="max-height: 60px;" alt="" class="img-fluid">
           </a>
         {{ end }}
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center" style="margin-top:50px;">
-        {{ range .img3 }}
-        <a href="https://nlaic.com/en/" target="_blank">
-          <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
-        </a>
-        {{ end }}
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center" style="margin-top:50px;">
-        {{ range .img4 }}
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+        {{ range .img_BZK }}
           <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties" target="_blank">
             <img src="{{ . | relURL }}" style="max-height: 50px;" alt="" class="img-fluid">
           </a>
         {{ end }}
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center" style="margin-top:50px;">
-        {{ range .img5 }}
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+        {{ range .img_NLAIC }}
+        <a href="https://nlaic.com/en/" target="_blank">
+          <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
+        </a>
+        {{ end }}
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+        {{ range .img_HAI }}
           <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">
             <img src="{{ . | relURL }}" style="max-height: 50px;" alt="" class="img-fluid">
           </a>
@@ -218,43 +253,210 @@ $(document).ready(function()
 {{ range $i,$p := .new_items }}
 <section class="section">
   <div class="container">
+
+    <!-- title -->
     <div class="row align-items-center">
       <div class="col-12">
         <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
       </div>
-
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <p>{{ .intro_content | markdownify }}</p>
-        <ul style="color:#777777; margin-top: 15px;">
-          <li style="line-height: 1.75em;">{{ .gdpr_content | markdownify }}</li>
-        </ul>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="img-full">
-        <img src="{{ .image1 | relURL }}" alt="" class="img-fluid" style="width: 65%; height: 65%; margin-left:25%; margin-right:25%;">
-      </div>
-
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <ul style="color:#777777; margin-top: 15px;">
-          <li style="line-height: 1.75em;">{{ .ai_act_content | markdownify }}</li>
-        </ul>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="img-full">
-        <img src="{{ .image2 | relURL }}" alt="" class="img-fluid" style="width: 50%; height: 50%; margin-left:25%; margin-right:25%;">
-      </div>
-
-      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <ul style="color:#777777; margin-top: 15px;">
-          <li style="line-height: 1.75em;">{{ .rekenkamer_content | markdownify }}</li>
-          <li style="line-height: 1.75em; margin-top: 15px;">{{ .iama_content | markdownify }}</li>
-        </ul>
-        <p style="margin-top: 15px;">{{ .content1 | markdownify }}</p>
-      </div>
-      <div class=" col-lg-6 col-md-12 col-sm-12 col-xs-12" id="img-full">
-        <img src="{{ .image3 | relURL }}" alt="" class="img-fluid" style="width: 40%; height: 40%; margin-left:25%; margin-right:25%;">
-      </div>
-      
-      <div class="col-md-12" id="contactform"></div>
     </div>
+
+    <!-- intro text -->
+    <div class="row">
+      <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+        <p>{{ .intro_content | markdownify }}</p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+    </div>
+
+    <!-- gradient bar -->
+    <div class="row hide-mobile" style="margin-top:15px;">
+      <div class="col-lg-1 col-md-1"></div>
+      <div class="col-lg-8 col-md-8">
+        <div class="bordertest"></div>
+      </div>
+      <div class="col-lg-3 col-md-3"></div>
+    </div>
+
+    <div class="row show-mobile" style="margin-top:15px;">
+      <div class="col-sm-12 col-xs-12">
+        <div class="bordertest-mobile"></div>
+      </div>
+    </div>
+
+    <div class="row hide-mobile" style="width:100%; margin: 0px 0px 0px 0px;">
+      
+      <!-- menu -->
+      <div class="gc col-lg-1 col-md-1" style="padding: 0px;">
+        <div class="menu2">
+          <div class="active"><span>AI Act</span></div>
+          <div><span>DSA</span></div>
+          <div></span><span>GDPR</span></div>
+          <div></span><span>HRIA</span></div>
+          <div></span><span>Regulators</span></div>
+        </div>
+      </div>
+
+      <!-- text -->
+      <div class="gc col-lg-8 col-md-8 col-sm-8 col-xs-8">
+        <ul class="nacc">
+          <li class="active">
+            <div style="overflow-y: scroll; height:190px;">
+              <p style="line-height:1.5; padding:0px;"><span>{{ .ai_act_content | markdownify }}</span></p>
+              <div style="margin-bottom:15px;">
+                <a style="font-weight:700;">> </a>Risk- and quality management systems:<span style="color:#777777;line-height:1.5;"> Requirements set out in Article 9 (risk management system) and Article 17 (quality management system) remain too generic. For example, it does not provide precise guidelines how to identify and mitigate ethical issues such as algorithmic discrimination</span>
+              </div>
+              <div style="margin-bottom:15px;">
+                <a style="font-weight:700;">> </a>Conformity assessment: <span style="color:#777777; line-height:1.5;">The proposed route for self-assessment of conformity (Art. 43) relies too much on the self-reflective capacities of AI producers</span>
+              </div>
+              <div style="margin-bottom:15px;">
+                <a style="font-weight:700;">> </a>Normative standards: <span style="color:#777777; line-height:1.5;">To realize the desired AI harmonization in the EU publicly available technical and normative standards are urgently needed</span>
+              </div>
+              <div style="margin-bottom:15px;">
+                <a href="cases/#rotterdam-case" class="btn-link" style="color: #005aa7;">Read our algoprudence on proxy discrimination<i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div style="overflow-y: scroll; height:190px;">
+              <p style="padding:0px;">{{ .dsa_content1 | markdownify }}</p>
+              <p style="padding:0px;">{{ .dsa_content2 | markdownify }}</p>
+              <p style="padding:0px;">{{ .dsa_content3 | markdownify }}</p>
+              <div style="margin-bottom:15px;">
+                <a href="knowledge_base/white_paper_dsa_delegated_regulation_feedback/" class="btn-link" style="color: #005aa7;">Read our white paper on DSA Art. 37 Delegated Regulation<i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div style="overflow-y: scroll; height:190px;">
+              <p style="padding:0px;">{{ .gdpr_content1 | markdownify }}</p>
+              <p style="padding:0px;">{{ .gdpr_content2 | markdownify }}</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p style="padding:0px;">{{ .hria_content | markdownify }}</p>
+            </div>
+          </li>
+          <li>
+            <div style="overflow-y: scroll; height:190px;">
+              <p style="padding:0px;">{{ .regulator_content | markdownify }}</p>
+              <div style="margin-bottom:15px;">
+                <a href="knowledge_base/white_paper_algorithmic_regulatory_body/" class="btn-link" style="color: #005aa7;">Read our white paper on the Dutch regulatory landscape<i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- images -->
+      <div class="gc col-lg-3 col-md-3 col-sm-2 col-xs-2" id="image-col">
+        <ul class="nacc" style="">
+          <li class="active">
+            <div style="">
+              <img src="{{ .aia_image | relURL }}" height="100px;">  
+            </div>
+          </li>
+          <li>
+            <img src="{{ .dsa_image | relURL }}" height="100px;">
+          </li>
+          <li>
+            <img src="{{ .gdpr_image | relURL }}" height="100px;">
+          </li>
+          <li>
+            <img src="{{ .hria_image | relURL }}" height="150px;">
+          </li>
+          <li>
+            <img src="{{ .sdg_image | relURL }}" height="125px;">
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- mobile menu -->
+    <div class="gc2 row show-mobile" style="margin: 0px 0px 0px 0px;">
+      <div class="menu3 container-fluid d-flex justify-content-center">
+        <div class="col-sm-2 col-xs-2 active2">
+          <span>AI Act</span>
+        </div>
+        <div class="col-sm-2 col-xs-2">
+          <span>DSA</span>
+        </div>
+        <div class="col-sm-2 col-xs-2">
+          <span>GDPR</span>
+        </div>
+        <div class="col-sm-2 col-xs-2">
+          <span>HRIA</span>
+        </div>
+        <div class="col-sm-2 col-xs-2">
+          <span>Regulator</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile text -->
+    <div class="gc2 row show-mobile" style="margin: 20px 0px 0px 0px; height:200px;">
+      <div class="container-fluid">
+        <div class="col-sm-12 col-xs-12 active2">
+          <ul class="nacc2" style="padding:0px;">
+            <li class="active2">
+              <div style="overflow-y: scroll; height:250px;">
+                <p style="line-height:1.5; padding:0px;"><span>{{ .ai_act_content | markdownify }}</span></p>
+                <div style="margin-bottom:15px;">
+                  <a style="font-weight:700;">> </a>Risk- and quality management systems:<span style="color:#777777;line-height:1.5;"> Requirements set out in Article 9 (risk management system) and Article 17 (quality management system) remain too generic. For example, it does not provide precise guidelines how to identify and mitigate ethical issues such as algorithmic discrimination</span>
+                </div>
+                <div style="margin-bottom:15px;">
+                  <a style="font-weight:700;">> </a>Conformity assessment: <span style="color:#777777; line-height:1.5;">The proposed route for self-assessment of conformity (Art. 43) relies too much on the self-reflective capacities of AI producers</span>
+                </div>
+                <div style="margin-bottom:15px;">
+                  <a style="font-weight:700;">> </a>Normative standards: <span style="color:#777777; line-height:1.5;">To realize the desired AI harmonization in the EU publicly available technical and normative standards are urgently needed</span>
+                </div>
+                <div style="margin-bottom:15px;">
+                  <a href="cases/#rotterdam-case" class="btn-link" style="color: #005aa7;">Read our algoprudence on proxy discrimination<i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div style="overflow-y: scroll; height:250px;">
+                <p style="padding:0px;">
+                  {{ .dsa_content1 | markdownify }}
+                </p>
+                <p style="padding:0px;">
+                  {{ .dsa_content2 | markdownify }}
+                </p>
+                <p style="padding:0px;">
+                  {{ .dsa_content3 | markdownify }}
+                </p>
+                <div style="margin-bottom:15px;">
+                  <a href="knowledge_base/white_paper_dsa_delegated_regulation_feedback/" class="btn-link" style="color: #005aa7;">Read our white paper on DSA Art. 37 Delegated Regulation<i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div style="overflow-y: scroll; height:190px;">
+                <p style="padding:0px;">{{ .gdpr_content1 | markdownify }}</p>
+                <p style="padding:0px;">{{ .gdpr_content2 | markdownify }}</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p style="padding:0px;">{{ .hria_content | markdownify }}</p>
+              </div>
+            </li>
+            <li>
+              <div style="overflow-y: scroll; height:220px;">
+                <p style="padding:0px;">{{ .regulator_content | markdownify }}</p>
+                <div style="margin-bottom:15px;">
+                  <a href="knowledge_base/white_paper_algorithmic_regulatory_body/" class="btn-link" style="color: #005aa7;">Read our white paper on the Dutch regulatory landscape<i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 {{ end }}

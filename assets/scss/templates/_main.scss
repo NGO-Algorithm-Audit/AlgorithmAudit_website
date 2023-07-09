@@ -423,3 +423,144 @@ a.post-title {
   }
 }
 
+@media (max-width: 992px) {
+  .sponsor {
+    margin-top: 50px;
+  }
+}
+
+// .naccs {
+//   margin: 0px auto 0;
+// }
+
+@media (min-width: 768px) {
+  .show-mobile {
+    visibility: hidden;
+    height:0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    visibility: hidden;
+    height:0px;
+  }
+}
+ 
+.gc {
+display: inline-block;
+vertical-align: top;
+}
+
+// .light {
+//   font-size: 2px;
+// }
+
+.menu2 div {
+  padding: 5px 0px 5px 0px;
+  margin-bottom: 10px;
+  color: #777777;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  vertical-align: top;
+  font-weight: 650;
+}
+
+.menu2 div.active {
+color: #005AA7;
+padding: 5px 0px 5px 0px;
+text-decoration: underline;
+}
+
+.menu3 div {
+  padding: 15px 0px 5px 0px;
+  margin-bottom: 10px;
+  color: #777777;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  vertical-align: top;
+  font-weight: 650;
+}
+
+.menu3 div.active2 {
+  color: #005AA7;
+  text-decoration: underline;
+}
+
+.active2 {
+  list-style-type: none;
+  z-index: 2;
+  opacity: 1;
+}
+
+ul.nacc2 li {
+  opacity: 0;
+  position: absolute;
+  list-style-type: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+ul.nacc2 li.active2 {
+  list-style-type: none;
+  z-index: 2;
+  opacity: 1;
+}
+  
+ul.nacc2 li p {
+  list-style-type: none;
+  padding: 20px 0px 0px 0px;
+}
+
+@media (max-width: 768px) {
+  #image-col {
+    visibility: hidden;
+  }
+}
+
+ul.nacc li {
+opacity: 0;
+position: absolute;
+list-style-type: none;
+transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li.active {
+list-style-type: none;
+z-index: 2;
+opacity: 1;
+}
+
+ul.nacc li p {
+list-style-type: none;
+padding: 20px 0px 0px 0px;
+}
+
+.bordertest {
+  border-bottom:5px solid #c4268c;
+  position:relative;
+  margin-left:40px;
+}
+.bordertest:first-child:before {
+  content:'';
+  position:absolute;
+  width:100%;
+  height:5px;
+  background:linear-gradient(to left, #fffde4, #618EC7);
+  bottom:-5px;
+}
+
+.bordertest-mobile {
+  border-bottom:5px solid #c4268c;
+  position:relative;
+}
+.bordertest-mobile:first-child:before {
+  content:'';
+  position:absolute;
+  width:100%;
+  height:5px;
+  background:linear-gradient(to left, #fffde4, #618EC7);
+  bottom:-5px;
+}
+
