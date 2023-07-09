@@ -57,7 +57,7 @@ How_we_work:
 With_whom_we_work:
   enable: true
   service_item:
-  - title: Met wie we werken
+  - title: Met wie we samenwerken
     images:
     - images/howwework.svg
     content: We work together with international experts from various backgrounds,
