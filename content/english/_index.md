@@ -52,7 +52,7 @@ How_we_work:
     content: ''
     button:
       enable: true
-      label: Algorithms we audit
+      label: Algorithms we have been assessing
       link: cases
 With_whom_we_work:
   enable: true
@@ -77,7 +77,7 @@ Why_we_exist:
   content: Current legislation falls short to
   new_items:
   - title: Why we exist
-    subtitle: Algorithm Audit's EU AI policy observatory
+    subtitle: EU AI policy observatory
     # menu
     tab1: AI Act
     tab2: DSA

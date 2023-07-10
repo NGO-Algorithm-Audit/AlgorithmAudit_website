@@ -277,15 +277,15 @@ $(document).on("click", ".menu3 div", function() {
     </div>
 
     <!-- gradient bar -->
-    <div class="row hide-mobile" style="margin-top:15px;">
-      <div class="col-lg-1 col-md-1"></div>
-      <div class="col-lg-8 col-md-8">
-        <div class="bordertest"></div>
+    <div class="row hide-mobile" style="margin-top:15px; padding:0px;">
+      <div class="col-lg-0 col-md-0"></div>
+      <div class="col-lg-10 col-md-8">
+        <div class="bordertest" style="margin:0px;"></div>
       </div>
-      <div class="col-lg-3 col-md-3"></div>
+      <div class="col-lg-2 col-md-3"></div>
     </div>
 
-    <div class="row show-mobile" style="margin-top:15px;">
+    <div class="row show-mobile">
       <div class="col-sm-12 col-xs-12">
         <div class="bordertest-mobile"></div>
       </div>
@@ -294,8 +294,8 @@ $(document).on("click", ".menu3 div", function() {
     <div class="row hide-mobile" style="width:100%; margin: 0px 0px 0px 0px;">
       
       <!-- menu -->
-      <div class="gc col-lg-1 col-md-1" style="padding: 0px;">
-        <div class="menu2">
+      <div class="gc col-lg-2 col-md-2" style="padding: 0px 0px 0px 40px; background-color: #F2F2F2; height: 300px;">
+        <div class="menu2" style="margin-top: 20px;">
           <div class="active">
             <span> {{ .tab1 | markdownify }} </span>
           </div>
@@ -315,12 +315,12 @@ $(document).on("click", ".menu3 div", function() {
       </div>
 
       <!-- text -->
-      <div class="gc col-lg-8 col-md-8 col-sm-8 col-xs-8">
-        <ul class="nacc" id="scroll-top">
+      <div class="gc col-lg-8 col-md-8 col-sm-8 col-xs-8" style="background-color:#f9f9f9;">
+        <ul class="nacc" id="scroll-top" style="padding:10px 0px 0px 20px;">
 
           <!-- AI Act -->
-          <li class="active">
-            <div style="overflow-y: scroll; height:190px;">
+          <li class="active" style="padding:0px 25px 0px 0px;">
+            <div style="overflow-y: scroll; height:280px;">
               <p style="line-height:1.5; padding:0px;"><span>{{ .ai_act_content | markdownify }}</span></p>
               <div style="margin-bottom:15px;">
                 <a style="font-weight:700;">> </a> {{ .ai_act_tag_conformity | markdownify }} <span style="color:#777777; line-height:1.5;">{{ .ai_act_content_conformity | markdownify }} </span>
@@ -338,8 +338,8 @@ $(document).on("click", ".menu3 div", function() {
           </li>
           
           <!-- DSA -->
-          <li>
-            <div style="overflow-y: scroll; height:190px;">
+          <li style="padding:0px 25px 0px 0px;">
+            <div style="overflow-y: scroll; height:280px;">
               <p style="line-height:1.5; padding:0px;"><span> {{ .dsa_content | markdownify }} </span></p>
               <div style="margin-bottom:15px;">
                 <a style="font-weight:700;">> </a> {{ .dsa_tag_risk | markdownify }} <span style="color:#777777; line-height:1.5;"> {{ .dsa_content_risk | markdownify }} </span>
@@ -363,23 +363,23 @@ $(document).on("click", ".menu3 div", function() {
           </li>
 
           <!-- GDPR -->
-          <li>
-            <div style="overflow-y: scroll; height:190px;">
+          <li style="padding:0px 25px 0px 0px;">
+            <div style="overflow-y: scroll; height:280px;">
               <p style="padding:0px;">{{ .gdpr_content1 | markdownify }}</p>
               <p style="padding:0px;">{{ .gdpr_content2 | markdownify }}</p>
             </div>
           </li>
 
           <!-- HRIA -->
-          <li>
+          <li style="padding:0px 25px 0px 0px;">
             <div>
               <p style="padding:0px;">{{ .hria_content | markdownify }}</p>
             </div>
           </li>
 
           <!-- Regulatory landscape -->
-          <li>
-            <div style="overflow-y: scroll; height:190px;">
+          <li style="padding:0px 25px 0px 0px;">
+            <div style="overflow-y: scroll; height:280px;">
               <p style="padding:0px;">{{ .regulator_content | markdownify }}</p>
               <div style="margin-bottom:15px;">
                 <a href="knowledge_base/white_paper_algorithmic_regulatory_body/" class="btn-link" style="color: #005aa7;">Read our white paper on the Dutch regulatory landscape<i class="fas fa-arrow-right"></i></a>
@@ -391,7 +391,7 @@ $(document).on("click", ".menu3 div", function() {
       </div>
 
       <!-- images -->
-      <div class="gc col-lg-3 col-md-3 col-sm-2 col-xs-2" id="image-col">
+      <div class="gc col-lg-2 col-md-2" id="image-col">
         <ul class="nacc" style="">
           <li class="active">
             <div style="">
@@ -416,7 +416,7 @@ $(document).on("click", ".menu3 div", function() {
     </div>
 
     <!-- mobile menu -->
-    <div class="gc2 row show-mobile" style="margin: 0px 0px 0px 0px;">
+    <div class="gc2 row show-mobile" style="margin: 0px 0px 0px 0px; background-color: #F2F2F2;">
       <div class="menu3 container-fluid d-flex justify-content-center">
         <div class="col-sm-2 col-xs-2 active2">
           <span> {{ .tab1 | markdownify }} </span>
@@ -437,10 +437,10 @@ $(document).on("click", ".menu3 div", function() {
     </div>
 
     <!-- mobile text -->
-    <div class="gc2 row show-mobile show-mobile-height" style="margin: 20px 0px 0px 0px;">
-      <div class="container-fluid">
-        <div class="col-sm-12 col-xs-12 active2">
-          <ul class="nacc2" style="padding:0px;">
+    <div class="gc2 row show-mobile show-mobile-height" style="margin: 0px 0px 0px 0px; background-color: #f9f9f9; height:290px;">
+      <div class="container-fluid" style="padding:20px 0px 0px 0px">
+        <div class="col-sm-12 col-xs-12 active2" style="padding:0px">
+          <ul class="nacc2" style="padding:0px 0px 0px 20px;">
 
             <!-- AI Act -->
             <li class="active2">
@@ -488,7 +488,7 @@ $(document).on("click", ".menu3 div", function() {
 
             <!-- GDPR -->
             <li>
-              <div style="overflow-y: scroll; height:190px;">
+              <div style="overflow-y: scroll; height:250px;">
                 <p style="padding:0px;">{{ .gdpr_content1 | markdownify }}</p>
                 <p style="padding:0px;">{{ .gdpr_content2 | markdownify }}</p>
               </div>
@@ -496,14 +496,14 @@ $(document).on("click", ".menu3 div", function() {
 
             <!-- HRIA -->
             <li>
-              <div>
+              <div style="overflow-y: scroll; height:250px;">
                 <p style="padding:0px;">{{ .hria_content | markdownify }}</p>
               </div>
             </li>
 
             <!-- Regulatory landscape -->
             <li>
-              <div style="overflow-y: scroll; height:190px;">
+              <div style="overflow-y: scroll; height:250px;">
                 <p style="padding:0px;">{{ .regulator_content | markdownify }}</p>
                 <div style="margin-bottom:15px;">
                   <a href="knowledge_base/white_paper_algorithmic_regulatory_body/" class="btn-link" style="color: #005aa7;">Read our white paper on the Dutch regulatory landscape<i class="fas fa-arrow-right"></i></a>
