@@ -77,6 +77,12 @@ body {
   font-size:30px;
 }
 
+.section-subtitle{
+  font-size:16px;
+  padding:0px;
+  margin: 10px 0px 0px 0px;
+}
+
 @media (max-width: 480px) {
   .section-title{
     font-size:25px;
@@ -444,6 +450,9 @@ a.post-title {
   .hide-mobile {
     visibility: hidden;
     height:0px;
+  }
+  .show-mobile-height{
+    height:200px;
   }
 }
  

@@ -77,13 +77,41 @@ Why_we_exist:
   content: Current legislation falls short to
   new_items:
   - title: Why we exist
-    intro_content: Algorithm Audit was founded on the idea that ethics in algorithmic methods urgently needs case-based experience and a bottom-up approach. We believe existing and proposed legislation is and will not suffice to realize ethical algorithms. Why not? 
-    ai_act_content:  The newly proposed <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI Act </a> of the European Commission will impose broad new responsibilities to control risks from AI systems without at the same time laying down specific standards they are expected to meet. For instance<a>:</a>
-    aia_image: images/AI_act.png
-    dsa_content1: The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52020PC0825" target="_blank">Digital Services Act (DSA) </a> lacks provisions to disclose normative methodological choices that underlie AI systems (e.g., recommender systems), which is crucial for evaluating associated risks in a meaningful way (as mandated by DSA Article 34). 
-    dsa_content2: We argue that besides technical examinations that ensure robust AI engineering, such as evaluating logging protocols and model monitoring capabilities, normative aspects must get a significantly more prominent role in the risk definition (Article 2), audit methodologies of risk assessment (Section IV) and audit report templates (Annex I) set out by the delegated regulation (DR). 
-    dsa_content3: That is what we sent as feedback to the European Commission.
+    subtitle: Algorithm Audit's EU AI policy observatory
+    # menu
+    tab1: AI Act
+    tab2: DSA
+    tab3: GDPR
+    tab4: HRIA
+    tab5: Regulatory landscape 
+
+    # intro
+    intro_content: AI ethics urgently needs case-based experience and a bottom-up approach. We believe existing and proposed legislation is and will not suffice to realize ethical algorithms. Why not? 
+    
+    #AI Act
+    ai_act_content:  The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI Act </a> imposes broad new responsibilities to control risks from AI systems without at the same time laying down specific standards they are expected to meet. For instance<a>:</a>
+    ai_act_tag_conformity: Conformity assessment (Art. 43)<a>:</a>
+    ai_act_content_conformity: The proposed route for internal control relies too much on the self-reflective capacities of producers to assess AI quality management, risk management and bias. Resulting in subjective best-practices;
+    ai_act_tag_risk: Risk- and quality management systems (Art. 9 and 17)<a>:</a>
+    ai_act_content_risk: Requirements set out for risk management systems and quality management systems remain too generic. For example, it does not provide precise guidelines how to identify and mitigate ethical issues such as algorithmic discrimination;
+    ai_act_tag_standards: Normative standards<a>:</a>
+    ai_act_content_standards: To realize AI harmonization across the EU, publicly available technical and normative best-practices for fair AI are urgently needed.
+    ai_act_white_paper: Read our algoprudence on proxy discrimination
+    ai_act_image: images/AIA.png
+
+    #DSA
+    dsa_content: The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52020PC0825" target="_blank">Digital Services Act (DSA) </a> lacks provisions to disclose normative methodological choices that underlie general purpose AI systems. For instance<a>:</a>
+    dsa_tag_risk: Risk definitions<a>:</a>
+    dsa_content_risk: Article 9 of the <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13626-Digital-Services-Act-conducting-independent-audits_en" target="_blank">Delegated Regulation (DR)</a> for independent third party auditing (as mandated under DSA Art. 37) specifies that “audit risk analysis shall consider _inherent risk_, _control risk_ and _detection risk_”. More specific guidance should be provided in Art. 2 of the DR how risks relating to subjective concepts, such as “...the nature, the activity and the use of the audited service”, can be assessed;  
+    dsa_tag_template: Audit template<a>:</a>
+    dsa_content_template: Pursuant to Article 5(1)(a) of the DR, Very Large Open Platforms (VLOPs) and Very Large Online Search Engines (VLOSEs) shall transmit to third-party auditing organisations “benchmarks used [...] to assert or monitor compliance [...], as well as supporting documentation”. We argue that the normative considerations underlying the selection of these benchmarks should be asked out more decisively in this phase of the audit. Therefore, we asked the European Commission (EC) to add this dimension to Question 3(a) of Section D.1 _Audit conclusion for obligation Subsection_ II. _Audit procedures and their results_;
+    dsa_white_paper: Read our feedback to the Europen Commission on DSA Art. 37 Delegated Regulation  
+    dsa_content_feedback: <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13626-Digital-Services-Act-conducting-independent-audits/feedback_en?p_id=32081201" target="_blank">Feedback</a> submitted to the European Commission (EC) on DSA Art. 37 DR showcasts that<a>:</a>
+    dsa_content_feedback_tab1: Private auditors (like PwC and Deloitte) warn that the lack of guidance on criteria against which to audit poses a risk of subjective audits;
+    dsa_content_feedback_tab2: Tech companies (like Snap and Wikipedia) raise concerns about the industry's lack of expertise to audit specific AI products, like company-tailored timeline recommender systems.
     dsa_image: images/DSA.jpg
+
+    #GDPR
     gdpr_content1: Conditions provided in <a href="https://gdpr-info.eu/art-22-gdpr/" target="_blank">GDPR Article 22(2)</a>
       under which automated decision-making (ADM) and profiling is allowed are open
       for broad interpretation. Allowing wide-ranging ADM under the sole condition
@@ -92,6 +120,8 @@ Why_we_exist:
     gdpr_content2: <a href="https://gdpr-info.eu/art-35-gdpr/" target="_blank">GDPR Article 35(9)</a>
       stimulates controller to seek the views of data subjects or their representatives on the intended processing, without prejudice to the protection of commercial or public interests or the security of processing operations.
     gdpr_image: images/gdpr.svg
+
+    #Regulators
     regulator_content: <a href="https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek" target="_blank">Perspective 3.1.1</a> in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
       ethical algorithms are not allowed to “discriminate and that bias should be
       minimised”. Missing from this judgment is a discussion of what precisely constitutes
@@ -99,6 +129,8 @@ Why_we_exist:
       and mitigate algorithmic discrimination. In the absence of a clear ethical framework, it
       is up to organizations to formulate context-sensitive approaches to combat discrimination.
     sdg_image: images/SDG16.png
+
+    #HRIA
     hria_content: The <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes" target="_blank">Impact Assessment Human Rights and Algorithms (IAMA)</a> and the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design" target="_blank">Handbook for
       Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
