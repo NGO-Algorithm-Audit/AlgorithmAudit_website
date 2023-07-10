@@ -5,8 +5,8 @@ url = "nl/"
 weight = 1
 
 [[main]]
-name = "Casuïstiek"
-url = "nl/cases"
+name = "Algoprudentie"
+url = "nl/algoprudentie"
 weight = 2
 
 [[main]]

@@ -137,10 +137,14 @@ $(document).on("click", ".menu3 div", function() {
 <section class="section-bottom bg-white" style="background-color: #ffffff !important; padding:50px 0px 0px 0px;">
   <div class="container">
     <div class="row d-flex flex-wrap align-items-center">
+
+      <!-- title -->
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
         <h2 class="section-title" style="font-size:16px; color: #005aa7;">{{ .title | markdownify }}</h2>
       </div>
+      <!-- /title -->
 
+      <!-- SIDN -->
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
         {{ range .img_SIDN }}
         <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
@@ -148,7 +152,9 @@ $(document).on("click", ".menu3 div", function() {
         </a>
         {{ end }}
       </div>
+      <!-- /SIDN -->
 
+      <!-- EU AI&S -->
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
         {{ range .img_EUAIS }}
           <a href="https://europeanaifund.org/announcing-our-2022-open-call-grantees/" target="_blank">
@@ -156,7 +162,9 @@ $(document).on("click", ".menu3 div", function() {
           </a>
         {{ end }}
       </div>
+      <!-- /EU AI&S -->
 
+      <!-- BZK -->
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
         {{ range .img_BZK }}
           <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties" target="_blank">
@@ -164,7 +172,9 @@ $(document).on("click", ".menu3 div", function() {
           </a>
         {{ end }}
       </div>
+      <!-- /BZK -->
 
+      <!-- NLAIC -->
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
         {{ range .img_NLAIC }}
         <a href="https://nlaic.com/en/" target="_blank">
@@ -172,7 +182,9 @@ $(document).on("click", ".menu3 div", function() {
         </a>
         {{ end }}
       </div>
+      <!-- /NLAIC -->
 
+      <!-- HAI -->
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
         {{ range .img_HAI }}
           <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">
@@ -180,6 +192,7 @@ $(document).on("click", ".menu3 div", function() {
           </a>
         {{ end }}
       </div>
+      <!-- /HAI -->
 
     </div>
   </div>
@@ -260,6 +273,7 @@ $(document).on("click", ".menu3 div", function() {
         <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
       </div>
     </div>
+    <!-- /title -->
 
     <!-- intro text -->
     <div class="row">
@@ -268,6 +282,7 @@ $(document).on("click", ".menu3 div", function() {
       </div>
       <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
     </div>
+    <!-- /intro text -->
 
     <!-- subtitle -->
     <div class="row align-items-center">
@@ -275,6 +290,7 @@ $(document).on("click", ".menu3 div", function() {
         <h4 class="section-subtitle" style="color: #005aa7;">{{ .subtitle | markdownify }}</h2>
       </div>
     </div>
+    <!-- /subtitle -->
 
     <!-- gradient bar -->
     <div class="row hide-mobile" style="margin-top:15px; padding:0px;">
@@ -290,6 +306,7 @@ $(document).on("click", ".menu3 div", function() {
         <div class="bordertest-mobile"></div>
       </div>
     </div>
+    <!-- /gradient bar -->
 
     <div class="row hide-mobile" style="width:100%; margin: 0px 0px 0px 0px;">
       
@@ -336,6 +353,7 @@ $(document).on("click", ".menu3 div", function() {
               </div>
             </div>
           </li>
+          <!-- /AI Act -->
           
           <!-- DSA -->
           <li style="padding:0px 25px 0px 0px;">
@@ -361,6 +379,7 @@ $(document).on("click", ".menu3 div", function() {
               </div>
             </div>
           </li>
+          <!-- /DSA -->
 
           <!-- GDPR -->
           <li style="padding:0px 25px 0px 0px;">
@@ -369,6 +388,7 @@ $(document).on("click", ".menu3 div", function() {
               <p style="padding:0px;">{{ .gdpr_content2 | markdownify }}</p>
             </div>
           </li>
+          <!-- /GDPR -->
 
           <!-- HRIA -->
           <li style="padding:0px 25px 0px 0px;">
@@ -376,6 +396,7 @@ $(document).on("click", ".menu3 div", function() {
               <p style="padding:0px;">{{ .hria_content | markdownify }}</p>
             </div>
           </li>
+          <!-- /HRIA -->
 
           <!-- Regulatory landscape -->
           <li style="padding:0px 25px 0px 0px;">
@@ -389,6 +410,7 @@ $(document).on("click", ".menu3 div", function() {
 
         </ul>
       </div>
+      <!-- /text -->
 
       <!-- images -->
       <div class="gc col-lg-2 col-md-2" id="image-col">
@@ -412,6 +434,7 @@ $(document).on("click", ".menu3 div", function() {
           </li>
         </ul>
       </div>
+      <!-- /images -->
 
     </div>
 
@@ -549,6 +572,7 @@ $(document).on("click", ".menu3 div", function() {
         </form>
       </div>
       <!-- /Form -->
+
     </div>
   </div>
 </section>

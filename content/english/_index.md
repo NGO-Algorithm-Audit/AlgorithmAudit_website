@@ -22,7 +22,7 @@ What_we_do:
     content: We help organizations committed to ethical algorithms to make judgments about fairness and open legal norms
   - name: Public knowledge
     icon: fab fa-slideshare
-    content: All our cases and corresponding advice (_algoprudence_) are made [<span style="color:#005aa7">publicly available</span>](/cases), increasing collective knowledge how to deploy and use algorithms in an ethical way
+    content: All our cases and corresponding advice (_algoprudence_) are made [<span style="color:#005aa7">publicly available</span>](/algoprudence), increasing collective knowledge how to deploy and use algorithms in an ethical way
   - name: Techno-ethical jurisprudence
     icon: fas fa-book-reader
     content: Stakeholders learn from our algoprudence, help to improve it and utilize it as a best practice in similar cases
@@ -52,8 +52,8 @@ How_we_work:
     content: ''
     button:
       enable: true
-      label: Algorithms we have been assessing
-      link: cases
+      label: Algorithms we have reviewed
+      link: algoprudence
 With_whom_we_work:
   enable: true
   service_item:
@@ -71,7 +71,7 @@ With_whom_we_work:
     button:
       enable: false
       label: Cases we work on
-      link: "#/cases"
+      link: "#/algoprudence"
 Why_we_exist:
   enable: true
   content: Current legislation falls short to
@@ -130,7 +130,7 @@ Why_we_exist:
       is up to organizations to formulate context-sensitive approaches to combat discrimination.
     sdg_image: images/SDG16.png
 
-    #HRIA
+    # <!-- Follow us -->
     hria_content: The <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes" target="_blank">Impact Assessment Human Rights and Algorithms (IAMA)</a> and the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design" target="_blank">Handbook for
       Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.

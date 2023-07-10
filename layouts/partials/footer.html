@@ -3,6 +3,7 @@
 <script>
 $(document).ready(function()
 {
+  // info
   var slogan = "We build public knowledge for ethical algorithms";
   var slogan_NL = "Publieke kennisopbouw voor ethische algoritmes";
 
@@ -12,40 +13,69 @@ $(document).ready(function()
   var follow = "Follow us:"
   var follow_NL = "Volg ons:"
 
-  var cases = "Cases"
-  var cases_NL = "Casuïstiek"
+  // home
+  var home_link = "{{ `#` | relURL }}"
+  var home_NL_link = "{{ `nl/#` | relURL }}"
 
+  // algoprudence
+  var algoprudence = "Algoprudence"
+  var algoprudence_NL = "Algoprudentie"
+  var algoprudence_link = "{{ `algoprudence` | relURL }}"
+  var algoprudence_NL_link = "{{ `nl/algoprudence` | relURL }}"
+
+  // knowledge base
   var knowledge_base = "Knowledge base"
   var knowledge_base_NL = "Kennisbank"
+  var knowledge_base_link = "{{ `knowledge_base` | relURL }}"
+  var knowledge_base_NL_link = "{{ `nl/knowledge_base` | relURL }}"
 
+  // about
+  var about_link = "{{ `about` | relURL }}"
+  var about_NL_link = "{{ `nl/about` | relURL }}"
   var about = "About"
   var about_NL = "Over AA"
 
   var location = window.location.href
   if(location.includes("nl")){
+    // info
     var slogan = slogan_NL
     var KvK = KvK_NL
     var follow = follow_NL
-    var cases = cases_NL
+
+    // home
+    var home_link = home_NL_link
+
+    // algoprudence
+    var algoprudence_link = algoprudence_NL_link
+    var algoprudence = algoprudence_NL
+
+    // knowledge base
+    var knowledge_base_link = knowledge_base_NL_link
     var knowledge_base = knowledge_base_NL
+
+    // about
+    var about_link = about_NL_link
     var about = about_NL
     console.log('NL');
   }else{
     console.log('EN');
   }
 
-  // motto
+  // info
   $('#motto').text(slogan);
-
-  // KvK
   $('#KvK').text(KvK);
-
-  // Follow
   $('#follow').text(follow);
 
-  // Sitemap
-  $('#cases').text(cases);
+  // sitemap
+  $("#home-link").attr("href", home_link)
+
+  $("#algoprudence-link").attr("href", algoprudence_link)
+  $('#algoprudence').text(algoprudence);
+
+  $("#knowledge_base-link").attr("href", knowledge_base_link)
   $('#knowledge_base').text(knowledge_base);
+
+  $("#about-link").attr("href", about_link)
   $('#about').text(about);
 
 });
@@ -97,13 +127,13 @@ $(document).ready(function()
 
         <ul style="list-style-type:none; padding-left:0; font-size:14px; color:#005aa7;">
           {{/* Not sure why you're not pulling this from site.Menus.main */}}
-          <li><a href="#"><p style="color:#005aa7; margin:0 0 0px 0;">Home</p></a></li>
-          <li><a href="{{ `nl/cases` | relURL }}"><p id="cases" style="color: #005aa7; margin:0 0 0px 0;"></p></a></li>
+          <li><a id="home-link"><p style="color:#005aa7; margin:0 0 0px 0;">Home</p></a></li>
+          <li><a id="algoprudence-link"><p id="algoprudence" style="color: #005aa7; margin:0 0 0px 0;"></p></a></li>
           <li><a href="{{ `nl/bias_scan` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">Bias scan</p></a></li>
-          <li><a href="{{ `nl/knowledge_base` | relURL }}"><p id="knowledge_base" style="color: #005aa7;  margin:0 0 0px 0;">Knowledge base</p></a></li>
+          <li><a id="knowledge_base-link"><p id="knowledge_base" style="color: #005aa7;  margin:0 0 0px 0;"></p></a></li>
           <li><a href="{{ `nl/events` | relURL }}"><p style="color: #005aa7;  margin:0 0 0px 0;">Events</p></a></li>
           <li><a href="{{ `nl/faq` | relURL }}"><p style="color: #005aa7; margin:0 0 0px 0;">FAQ</p></a></li>
-          <li><a href="{{ `nl/about` | relURL }}"><p id="about" style="color: #005aa7;  margin:0 0 0px 0;">About</p></a></li>
+          <li><a id="about-link"><p id="about" style="color: #005aa7;  margin:0 0 0px 0;">About</p></a></li>
         </ul>
       </div>
       <!-- /Sitemap -->
