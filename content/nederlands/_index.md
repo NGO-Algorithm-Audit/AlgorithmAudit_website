@@ -60,14 +60,7 @@ With_whom_we_work:
   - title: Met wie werken we samen
     images:
     - images/howwework.svg
-    content: We work together with international experts from various backgrounds,
-      e.g. ethicists, legal professionals, data scientists. The composition of audit
-      commissions varies per case. Most of the experts are affiliated with academic
-      institutions. The Algorithm Audit team facilitates the procurement of sufficient
-      background information about the case, after which the experts conduct an in-depth
-      study, first individually and then collectively. Our team drafts a report that
-      condenses the varied views of the commission. The report published by Algorithm
-      Audit has been agreed upon by the commission members.
+    content: We werken samen met internationale experts met verschillende achtergronden, o.a. ethici, juristen en datawetenschappers. De samenstelling van auditcommissies verschilt per vraagstuk. Commissieleden zijn verbonden aan een academische instellingen, zijn domeinexpert of worden zelf onderworpen aan het algoritme. Het team van Algorithm Audit brengt achtergrondinformatie samen over de casus, waarna de experts eerst individueel en daarna gezamenlijk een verdiepend onderzoek doen. Ons team stelt een adviesrapport op dat de (verschillende) standpunten van de commissie samenvat. Het uiteindelijke gepubliceerde advies wordt ondersteund door alle commissieleden.
     button:
       enable: false
       label: Cases we work on
@@ -76,17 +69,20 @@ Why_we_exist:
   enable: true
   content: Current legislation falls short to
   new_items:
-  - title: Why we exist
-    subtitle: Algorithm Audit's EU AI policy observatory
+  - title: Waarom we bestaan
+    subtitle: EU AI beleidsoverzicht
+
     # menu
-    tab1: AI Act
+    tab1: AI Verordening
     tab2: DSA
-    tab3: GDPR
-    tab4: HRIA
-    tab5: Regulatory landscape 
+    tab3: Avg
+    tab4: IAMA
+    tab5: Toezichthouders landschap 
+    tab6: Gesloten ontwikkel-omgeving
+    tab7: Toezicht-houders landschap 
 
     # intro
-    intro_content: AI ethics urgently needs case-based experience and a bottom-up approach. We believe existing and proposed legislation is and will not suffice to realize ethical algorithms. Why not? 
+    intro_content: Het is hard nodig ervaringen te delen hoe algoritmes verantwoord ontwikkeld kunnen worden. Bestaande en komende wetgeving lost niet alle vragen op. Waarom niet?
     
     #AI Act
     ai_act_content:  The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI Act </a> imposes broad new responsibilities to control risks from AI systems without at the same time laying down specific standards they are expected to meet. For instance<a>:</a>
@@ -154,7 +150,6 @@ Why_we_exist:
 Get_in_touch:
   enable: true
   title: Denk mee
-  content: Do you have an ethical issue for review? Or want to share ideas? Let us
-    know!
+  content: Wil je advies over een algoritme? Of wil je nieuwe ideeën met ons uitwerken? Neem contact op.
 
 ---

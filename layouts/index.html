@@ -239,7 +239,9 @@ $(document).on("click", ".menu3 div", function() {
 <section class="section" style="background-color: #b1c4d5 !important;">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 order-1">
+
+      <!-- title -->
+      <div class="col-lg-4 col-md-4 order-1">
         <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
         {{ if .button.enable }}
         {{ with .button }}
@@ -247,11 +249,16 @@ $(document).on("click", ".menu3 div", function() {
         {{ end }}
         {{ end }}
       </div>
-      <div class="col-md-6 order-2 mb-4 mb-md-0">
+      <!-- /title -->
+
+      <!-- text -->
+      <div class="col-lg-8 col-md-8 order-2 mb-4 mb-md-0">
         <div {{if gt (len .images) 1}} class="slider" {{end}}>
           <p class="mb-4" style="">{{ .content | markdownify }}</p>
         </div>
       </div>
+      <!-- /text -->
+
     </div>
   </div>
 </section>
@@ -314,19 +321,22 @@ $(document).on("click", ".menu3 div", function() {
       <div class="gc col-lg-2 col-md-2" style="padding: 0px 0px 0px 40px; background-color: #F2F2F2; height: 300px;">
         <div class="menu2" style="margin-top: 20px;">
           <div class="active">
-            <span> {{ .tab1 | markdownify }} </span>
+            <span style="font-size:13px;"> {{ .tab1 | markdownify }} </span>
           </div>
           <div>
-            <span> {{ .tab2 | markdownify }} </span>
+            <span style="font-size:13px;"> {{ .tab2 | markdownify }} </span>
           </div>
           <div>
-            <span> {{ .tab3 | markdownify }} </span>
+            <span style="font-size:13px;"> {{ .tab3 | markdownify }} </span>
           </div>
           <div>
-            <span> {{ .tab4 | markdownify }} </span>
+            <span style="font-size:13px;"> {{ .tab4 | markdownify }} </span>
           </div>
           <div>
-            <span> {{ .tab5 | markdownify }} </span>
+            <span style="font-size:13px;"> {{ .tab5 | markdownify }} </span>
+          </div>
+          <div>
+            <span style="font-size:13px;"> {{ .tab6 | markdownify }} </span>
           </div>
         </div>
       </div>
@@ -442,19 +452,22 @@ $(document).on("click", ".menu3 div", function() {
     <div class="gc2 row show-mobile" style="margin: 0px 0px 0px 0px; background-color: #F2F2F2;">
       <div class="menu3 container-fluid d-flex justify-content-center">
         <div class="col-sm-2 col-xs-2 active2">
-          <span> {{ .tab1 | markdownify }} </span>
+          <span style="font-size:12px;"> {{ .tab1 | markdownify }} </span>
         </div>
         <div class="col-sm-2 col-xs-2">
-          <span> {{ .tab2 | markdownify }} </span>
+          <span style="font-size:12px;"> {{ .tab2 | markdownify }} </span>
         </div>
         <div class="col-sm-2 col-xs-2">
-          <span> {{ .tab3 | markdownify }} </span>
+          <span style="font-size:12px;"> {{ .tab3 | markdownify }} </span>
         </div>
         <div class="col-sm-2 col-xs-2">
-          <span> {{ .tab4 | markdownify }} </span>
+          <span style="font-size:12px;"> {{ .tab4 | markdownify }} </span>
         </div>
         <div class="col-sm-2 col-xs-2">
-          <span> {{ .tab5 | markdownify }} </span>
+          <span style="font-size:12px;"> {{ .tab7 | markdownify }} </span>
+        </div>
+        <div class="col-sm-2 col-xs-2">
+          <span style="font-size:12px;"> {{ .tab6 | markdownify }} </span>
         </div>
       </div>
     </div>

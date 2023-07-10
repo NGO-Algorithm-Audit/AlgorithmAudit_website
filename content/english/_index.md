@@ -84,6 +84,7 @@ Why_we_exist:
     tab3: GDPR
     tab4: HRIA
     tab5: Regulatory landscape 
+    tab6: Covert data modelling
 
     # intro
     intro_content: AI ethics urgently needs case-based experience and a bottom-up approach. We believe existing and proposed legislation is and will not suffice to realize ethical algorithms. Why not? 
