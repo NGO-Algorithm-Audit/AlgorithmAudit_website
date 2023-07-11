@@ -73,7 +73,7 @@ Why_we_exist:
     subtitle: EU AI beleidsoverzicht
 
     # menu
-    tab1: AI Verordening
+    tab1: AI verordening
     tab2: DSA
     tab3: Avg
     tab4: IAMA

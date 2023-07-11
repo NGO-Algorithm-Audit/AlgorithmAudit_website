@@ -1,6 +1,6 @@
 ---
-title: Casuïstiek
-subtitle: We bevragen verschillende algoritmes. Het advies van een auditcommissie, inclusief bijbehorende probleemstelling, wordt gepubliceerd op deze website. Anderen kunnen van deze ‘algoprudentie’ leren, helpen verbeteren of gebruiken bij soortgelijke vraagstukken. 
+title: Algoprudentie
+subtitle: We onderzoeken verschillende algoritmes. Het advies van een auditcommissie, inclusief bijbehorende probleemstelling, wordt gepubliceerd op deze website. Anderen kunnen van deze ‘algoprudentie’ leren, helpen verbeteren of gebruiken bij soortgelijke vraagstukken. 
 
 
   We zoeken nieuwe case studies. Zoek  [<span style="color:#005aa7"> contact</span>](/#contactform) om een algoritme aan te dragen. 
