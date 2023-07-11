@@ -70,14 +70,14 @@ Why_we_exist:
   content: Current legislation falls short to
   new_items:
   - title: Waarom we bestaan
-    subtitle: EU AI beleidsoverzicht
+    subtitle: EU AI beleidsontwikkelingen
 
     # menu
     tab1: AI verordening
     tab2: DSA
     tab3: Avg
     tab4: IAMA
-    tab5: Toezichthouders landschap 
+    tab5: Toezichthouderslandschap 
     tab6: Gesloten ontwikkel-omgeving
     tab7: Toezicht-houders landschap 
 
