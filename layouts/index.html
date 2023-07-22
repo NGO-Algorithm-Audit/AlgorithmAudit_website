@@ -335,9 +335,9 @@ $(document).on("click", ".menu3 div", function() {
           <div>
             <span style="font-size:13px;"> {{ .tab5 | markdownify }} </span>
           </div>
-          <!-- <div>
+          <div>
             <span style="font-size:13px;"> {{ .tab6 | markdownify }} </span>
-          </div> -->
+          </div>
         </div>
       </div>
 
@@ -348,7 +348,8 @@ $(document).on("click", ".menu3 div", function() {
           <!-- AI Act -->
           <li class="active" style="padding:0px 25px 0px 0px;">
             <div style="overflow-y: scroll; height:280px;">
-              <p style="line-height:1.5; padding:0px;"><span>{{ .ai_act_content | markdownify }}</span></p>
+              <span style="color:#005aa7; font-weight: bold;">AI Act</span>
+              <p style="line-height:1.5;"><span>{{ .ai_act_content | markdownify }}</span></p>
               <div style="margin-bottom:15px;">
                 <a style="font-weight:700;">> </a> {{ .ai_act_tag_conformity | markdownify }} <span style="color:#777777; line-height:1.5;">{{ .ai_act_content_conformity | markdownify }} </span>
               </div>
@@ -368,7 +369,8 @@ $(document).on("click", ".menu3 div", function() {
           <!-- DSA -->
           <li style="padding:0px 25px 0px 0px;">
             <div style="overflow-y: scroll; height:280px;">
-              <p style="line-height:1.5; padding:0px;"><span> {{ .dsa_content | markdownify }} </span></p>
+              <span style="color:#005aa7; font-weight: bold;">DSA</span>
+              <p style="line-height:1.5;"><span> {{ .dsa_content | markdownify }} </span></p>
               <div style="margin-bottom:15px;">
                 <a style="font-weight:700;">> </a> {{ .dsa_tag_risk | markdownify }} <span style="color:#777777; line-height:1.5;"> {{ .dsa_content_risk | markdownify }} </span>
               </div>
@@ -394,16 +396,35 @@ $(document).on("click", ".menu3 div", function() {
           <!-- GDPR -->
           <li style="padding:0px 25px 0px 0px;">
             <div style="overflow-y: scroll; height:280px;">
-              <p style="padding:0px;">{{ .gdpr_content1 | markdownify }}</p>
-              <p style="padding:0px;">{{ .gdpr_content2 | markdownify }}</p>
+              <span style="color:#005aa7; font-weight: bold;">GDPR</span>
+              <p style="line-height:1.5;"><span> {{ .gdpr_content | markdownify }} </span></p>
+              <div style="margin-bottom:15px;">
+                <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-35-gdpr/" class="btn-link" target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_dpia | markdownify }} </a> <span style="color:#777777; line-height:1.5;"> {{ .gdpr_content_dpia | markdownify }} </span>
+              </div>
+              <div style="margin-bottom:15px;">
+                <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/recitals/no-71/" class="btn-link" target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_profiling | markdownify }} </a> <span style="color:#777777; line-height:1.5;"> {{ .gdpr_content_profiling | markdownify }} </span>
+              </div>
+              <div style="margin-bottom:15px;">
+                <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-22-gdpr/" class="btn-link" target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_ADM | markdownify }} </a> <span style="color:#777777; line-height:1.5;"> {{ .gdpr_content_ADM| markdownify }} </span>
+              </div>
             </div>
           </li>
           <!-- /GDPR -->
 
+          <!-- Administrative law -->
+          <li style="padding:0px 25px 0px 0px;">
+            <div>
+              <span style="color:#005aa7; font-weight: bold;">Administrative law</span>
+              <p style="">{{ .administrative_law_content1 | markdownify }}</p>
+            </div>
+          </li>
+          <!-- /Administrative law -->
+
           <!-- HRIA -->
           <li style="padding:0px 25px 0px 0px;">
             <div>
-              <p style="padding:0px;">{{ .hria_content | markdownify }}</p>
+              <span style="color:#005aa7; font-weight: bold;">Fundamental Rights and Human Rights Impact Assessments</span>
+              <p style="">{{ .hria_content | markdownify }}</p>
             </div>
           </li>
           <!-- /HRIA -->
@@ -411,7 +432,8 @@ $(document).on("click", ".menu3 div", function() {
           <!-- Regulatory landscape -->
           <li style="padding:0px 25px 0px 0px;">
             <div style="overflow-y: scroll; height:280px;">
-              <p style="padding:0px;">{{ .regulator_content | markdownify }}</p>
+              <span style="color:#005aa7; font-weight: bold;">Regulatory landscape</span>
+              <p style="">{{ .regulator_content | markdownify }}</p>
               <div style="margin-bottom:15px;">
                 <a href="knowledge_base/white_paper_algorithmic_regulatory_body/" class="btn-link" style="color: #005aa7;">Read our white paper on the Dutch regulatory landscape<i class="fas fa-arrow-right"></i></a>
               </div>
