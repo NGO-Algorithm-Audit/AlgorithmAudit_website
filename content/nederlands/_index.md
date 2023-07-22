@@ -70,21 +70,24 @@ Why_we_exist:
   content: Current legislation falls short to
   new_items:
   - title: Waarom we bestaan
-    subtitle: EU AI beleidsontwikkelingen
+    subtitle: Nationale en Europese AI beleidsontwikkelingen
 
     # menu
-    tab1: AI verordening
+    tab1: AI Act
     tab2: DSA
     tab3: Avg
     tab4: Bestuursrecht
     tab5: IAMA
-    tab6: Algoritmeregister
+    tab6: Algoritmeregisters
     tab7: Toezichthouderslandschap 
+    tab8: Bestuurs-recht 
+    tab9: Algoritme-register 
 
     # intro
     intro_content: Het is hard nodig ervaringen te delen hoe algoritmes verantwoord ontwikkeld kunnen worden. Bestaande en komende wetgeving lost niet alle vragen op. Waarom niet?
     
    #AI Act
+    ai_act_title: AI Verordening
     ai_act_content:  The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI Act </a> imposes broad new responsibilities to control risks from AI systems without at the same time laying down specific standards they are expected to meet. For instance<span>:</span>
     ai_act_tag_conformity: Conformity assessment (Art. 43)<span>:</span>
     ai_act_content_conformity: The proposed route for internal control relies too much on the self-reflective capacities of producers to assess AI quality management, risk management and bias. Resulting in subjective best-practices;
@@ -96,6 +99,7 @@ Why_we_exist:
     ai_act_image: images/AIA.png
 
     #DSA
+    dsa_title: Verordening digitale diensten
     dsa_content: The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52020PC0825" target="_blank">Digital Services Act (DSA) </a> lacks provisions to disclose normative methodological choices that underlie general purpose AI systems. For instance<span>:</span>
     dsa_tag_risk: Risk definitions<span>:</span>
     dsa_content_risk: Article 9 of the <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13626-Digital-Services-Act-conducting-independent-audits_en" target="_blank">Delegated Regulation (DR)</a> for independent third party auditing (as mandated under DSA Art. 37) specifies that “audit risk analysis shall consider _inherent risk_, _control risk_ and _detection risk_”. More specific guidance should be provided in Art. 2 of the DR how risks relating to subjective concepts, such as “...the nature, the activity and the use of the audited service”, can be assessed;  
@@ -108,6 +112,7 @@ Why_we_exist:
     dsa_image: images/DSA.jpg
 
     #GDPR
+    gdpr_title: Algemene verordening gegevensbescherming
     gdpr_content: The current data processing regulation only partially specifies measures to safeguard algorithmic decision-making. For instance<span>:</span> 
     gdpr_tag_dpia: Participatroy DPIA (art. 35 sub 9)<span>:</span>
     gdpr_content_dpia: This provision mandates that in cases where a Data Privacy Impact Assessment (DPIA) is obligatory, the opinions of data subjects regarding the planned data processing shall be seeked. This is a powerful legal mechanism to foster collaborative algorithm development. Nevertheless, the inclusion of data subjects in this manner is scarcely observed in practice;
@@ -118,6 +123,7 @@ Why_we_exist:
     gdpr_image: images/gdpr.svg
 
     #Administrative law
+    administrative_law_title: Algemene wet bestuursrecht
     administrative_law_content: Unifying principles of sound administration with algorithmic methods is challenging. For instance<span>:</span>
     administrative_law_tag_motivation: Motivation principle<span>:</span>
     administrative_law_content_motivation: Decision made by governmental institutions should always be explainable. When using machine learning, for instance for variable selection for risk profiling, presents difficulties. To what extent are arguments based on probability distributions tolerable to be included in a motivation why citizens are selected by a certain profile?
@@ -125,6 +131,7 @@ Why_we_exist:
     administrative_law_image: images/Awb.jpg
 
     #Regulatory landscape
+    regulator_title: Toezichthouderslandschap
     regulator_content: <a href="https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek" target="_blank">Perspective 3.1.1</a> in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
       ethical algorithms are not allowed to “discriminate and that bias should be
       minimised”. Missing from this judgment is a discussion of what precisely constitutes
@@ -134,6 +141,7 @@ Why_we_exist:
     regulator_image: images/FRIA.png
 
     #Human rights and fundamental rights impact assessments
+    hria_title: Impact Assessments Mensenrechten en Algoritmes
     hria_content: The <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes" target="_blank">Impact Assessment Human Rights and Algorithms (IAMA)</a> and the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design" target="_blank">Handbook for
       Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
@@ -141,9 +149,10 @@ Why_we_exist:
     hria_image: images/FRIA.png
 
     #AI registers
-    AI_registers_content: ..
-    AI_registers_image: images/knowledge_base.svg
-    
+    AI_register_title: Algoritmeregisters
+    AI_register_content: ..
+    AI_register_image: images/knowledge_base.svg
+
 Get_in_touch:
   enable: true
   title: Denk mee

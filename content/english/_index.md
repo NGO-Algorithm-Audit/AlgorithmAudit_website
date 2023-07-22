@@ -86,11 +86,14 @@ Why_we_exist:
     tab5: HRIA
     tab6: AI registers
     tab7: Regulatory landscape 
+    tab8: Adminis-trative law 
+    tab9: AI registers
 
     # intro
     intro_content: AI ethics urgently needs case-based experience and a bottom-up approach. We believe existing and proposed legislation is and will not suffice to realize ethical algorithms. Why not? 
     
     #AI Act
+    ai_act_title: AI Act
     ai_act_content:  The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI Act </a> imposes broad new responsibilities to control risks from AI systems without at the same time laying down specific standards they are expected to meet. For instance<span>:</span>
     ai_act_tag_conformity: Conformity assessment (Art. 43)<span>:</span>
     ai_act_content_conformity: The proposed route for internal control relies too much on the self-reflective capacities of producers to assess AI quality management, risk management and bias. Resulting in subjective best-practices;
@@ -102,6 +105,7 @@ Why_we_exist:
     ai_act_image: images/AIA.png
 
     #DSA
+    dsa_title: Digital Service Act
     dsa_content: The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52020PC0825" target="_blank">Digital Services Act (DSA) </a> lacks provisions to disclose normative methodological choices that underlie general purpose AI systems. For instance<span>:</span>
     dsa_tag_risk: Risk definitions<span>:</span>
     dsa_content_risk: Article 9 of the <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13626-Digital-Services-Act-conducting-independent-audits_en" target="_blank">Delegated Regulation (DR)</a> for independent third party auditing (as mandated under DSA Art. 37) specifies that “audit risk analysis shall consider _inherent risk_, _control risk_ and _detection risk_”. More specific guidance should be provided in Art. 2 of the DR how risks relating to subjective concepts, such as “...the nature, the activity and the use of the audited service”, can be assessed;  
@@ -114,6 +118,7 @@ Why_we_exist:
     dsa_image: images/DSA.jpg
 
     #GDPR
+    gdpr_title: General Data Protection Regulation
     gdpr_content: The current data processing regulation only partially specifies measures to safeguard algorithmic decision-making. For instance<span>:</span> 
     gdpr_tag_dpia: Participatroy DPIA (art. 35 sub 9)<span>:</span>
     gdpr_content_dpia: This provision mandates that in cases where a Data Privacy Impact Assessment (DPIA) is obligatory, the opinions of data subjects regarding the planned data processing shall be seeked. This is a powerful legal mechanism to foster collaborative algorithm development. Nevertheless, the inclusion of data subjects in this manner is scarcely observed in practice;
@@ -124,13 +129,15 @@ Why_we_exist:
     gdpr_image: images/gdpr.svg
 
     #Administrative law
+    administrative_law_title: Administrative law
     administrative_law_content: Unifying principles of sound administration with algorithmic methods is challenging. For instance<span>:</span>
-    administrative_law_tag_motivation: Motivation principle<span>:</span>
+    administrative_law_tag_motivation: Obligation to state reasons:</span>
     administrative_law_content_motivation: Decision made by governmental institutions should always be explainable. When using machine learning, for instance for variable selection for risk profiling, presents difficulties. To what extent are arguments based on probability distributions tolerable to be included in a motivation why citizens are selected by a certain profile?
-    algoprudence_rotterdam: Read Algoprudence AA:2023:02 for a review of xgboost model used for risk profiling variable selection
+    algoprudence_rotterdam: Read Algoprudence AA:2023:02 for a review of xgboost machine learning used for risk profiling variable selection
     administrative_law_image: images/Awb.jpg
 
     #Regulatory landscape
+    regulator_title: Regulatory landscape
     regulator_content: <a href="https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek" target="_blank">Perspective 3.1.1</a> in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
       ethical algorithms are not allowed to “discriminate and that bias should be
       minimised”. Missing from this judgment is a discussion of what precisely constitutes
@@ -140,6 +147,7 @@ Why_we_exist:
     regulator_image: images/FRIA.png
 
     #Human rights and fundamental rights impact assessments
+    hria_title: Fundamental Rights and Human Rights Impact Assessments
     hria_content: The <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes" target="_blank">Impact Assessment Human Rights and Algorithms (IAMA)</a> and the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design" target="_blank">Handbook for
       Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
@@ -147,8 +155,9 @@ Why_we_exist:
     hria_image: images/FRIA.png
 
     #AI registers
-    AI_registers_content: ..
-    AI_registers_image: images/knowledge_base.svg
+    AI_register_title: AI registers
+    AI_register_content: ..
+    AI_register_image: images/knowledge_base.svg
 
     #Archive
     content1:  We believe a case-based and context sensitive approach is indispensable to develop ethical algorithms. One should not expect top-down regulation and
