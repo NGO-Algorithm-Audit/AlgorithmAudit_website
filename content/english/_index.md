@@ -123,25 +123,34 @@ Why_we_exist:
     gdpr_content_ADM: Allowing wide-ranging automated decision-making (ADM) and profiling under the sole condition of contract agreement opens the door for large scale unethical algorithmic practices without accountability and public awareness.
     gdpr_image: images/gdpr.svg
 
-    #GDPR
-    administrative_law_content1: Bla bla <a href="https://gdpr-info.eu/art-22-gdpr/" target="_blank">link</a>
-    administrative_law_image: images/gdpr.svg
+    #Administrative law
+    administrative_law_content: Unifying principles of sound administration with algorithmic methods is challenging. For instance<span>:</span>
+    administrative_law_tag_motivation: Motivation principle<span>:</span>
+    administrative_law_content_motivation: Decision made by governmental institutions should always be explainable. When using machine learning, for instance for variable selection for risk profiling, presents difficulties. To what extent are arguments based on probability distributions tolerable to be included in a motivation why citizens are selected by a certain profile?
+    algoprudence_rotterdam: Read Algoprudence AA:2023:02 for a review of xgboost model used for risk profiling variable selection
+    administrative_law_image: images/Awb.jpg
 
-    #Regulators
+    #Regulatory landscape
     regulator_content: <a href="https://www.rekenkamer.nl/onderwerpen/algoritmes-digitaal-toetsingskader/ethiek" target="_blank">Perspective 3.1.1</a> in the Guidelines for Algorithms of the Dutch Court of Auditors argues that
       ethical algorithms are not allowed to “discriminate and that bias should be
       minimised”. Missing from this judgment is a discussion of what precisely constitutes
       bias in the context of algorithms and what would be appropriate methods to ascertain
       and mitigate algorithmic discrimination. In the absence of a clear ethical framework, it
       is up to organizations to formulate context-sensitive approaches to combat discrimination.
-    sdg_image: images/SDG16.png
+    regulator_image: images/FRIA.png
 
-    # <!-- Follow us -->
+    #Human rights and fundamental rights impact assessments
     hria_content: The <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes" target="_blank">Impact Assessment Human Rights and Algorithms (IAMA)</a> and the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design" target="_blank">Handbook for
       Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
       It does not provide answers or concrete guidelines how to realise ethical algorithms.
     hria_image: images/FRIA.png
+
+    #AI registers
+    AI_registers_content: ..
+    AI_registers_image: images/knowledge_base.svg
+
+    #Archive
     content1:  We believe a case-based and context sensitive approach is indispensable to develop ethical algorithms. One should not expect top-down regulation and
       legislation to solve all ethical problems in AI and machine learning. Taking
       all contested algorithmic cases to court is practically infeasible. More importantly,
