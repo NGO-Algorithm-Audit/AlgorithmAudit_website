@@ -77,7 +77,7 @@ Why_we_exist:
   content: Current legislation falls short to
   new_items:
   - title: Why we exist
-    subtitle: EU AI policy observatory
+    subtitle: AI policy observatory
     # menu
     tab1: AI Act
     tab2: DSA
@@ -105,8 +105,8 @@ Why_we_exist:
     ai_act_image: images/AIA.png
 
     #DSA
-    dsa_title: Digital Service Act
-    dsa_content: The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52020PC0825" target="_blank">Digital Services Act (DSA) </a> lacks provisions to disclose normative methodological choices that underlie general purpose AI systems. For instance<span>:</span>
+    dsa_title: Digital Service Act (DSA)
+    dsa_content: The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52020PC0825" target="_blank">DSA</a> lacks provisions to disclose normative methodological choices that underlie general purpose AI systems. For instance<span>:</span>
     dsa_tag_risk: Risk definitions<span>:</span>
     dsa_content_risk: Article 9 of the <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13626-Digital-Services-Act-conducting-independent-audits_en" target="_blank">Delegated Regulation (DR)</a> for independent third party auditing (as mandated under DSA Art. 37) specifies that “audit risk analysis shall consider _inherent risk_, _control risk_ and _detection risk_”. More specific guidance should be provided in Art. 2 of the DR how risks relating to subjective concepts, such as “...the nature, the activity and the use of the audited service”, can be assessed;  
     dsa_tag_template: Audit template<span>:</span>
@@ -118,8 +118,9 @@ Why_we_exist:
     dsa_image: images/DSA.jpg
 
     #GDPR
-    gdpr_title: General Data Protection Regulation
-    gdpr_content: The current data processing regulation only partially specifies measures to safeguard algorithmic decision-making. For instance<span>:</span> 
+    gdpr_title: General Data Protection Regulation (GDPR)
+    gdpr_content1: Organizations that develop algorithms do often not comply with GDPR provisions that foster participatory algorithm development. For example<span>:</span>
+    gdpr_content2: Besides, the current regulation only partially specifies measures to safeguard algorithmic decision-making. For instance<span>:</span> 
     gdpr_tag_dpia: Participatroy DPIA (art. 35 sub 9)<span>:</span>
     gdpr_content_dpia: This provision mandates that in cases where a Data Privacy Impact Assessment (DPIA) is obligatory, the opinions of data subjects regarding the planned data processing shall be seeked. This is a powerful legal mechanism to foster collaborative algorithm development. Nevertheless, the inclusion of data subjects in this manner is scarcely observed in practice;
     gdpr_tag_profiling: Profiling (recital 71)
@@ -130,9 +131,9 @@ Why_we_exist:
 
     #Administrative law
     administrative_law_title: Administrative law
-    administrative_law_content: Unifying principles of sound administration with algorithmic methods is challenging. For instance<span>:</span>
+    administrative_law_content: Unifying principles of sound administration with (semi-) automated decision-making is challenging. For instance<span>:</span>
     administrative_law_tag_motivation: Obligation to state reasons:</span>
-    administrative_law_content_motivation: Decision made by governmental institutions should always be explainable. When using machine learning, for instance for variable selection for risk profiling, presents difficulties. To what extent are arguments based on probability distributions tolerable to be included in a motivation why citizens are selected by a certain profile?
+    administrative_law_content_motivation: Governmental institutions must always provide clear explanations for their decisions. However, when machine learning is employed, such as in variable selection for risk profiling, this transparency may be obscured. This leads to the question of how far arguments based on probability distributions are acceptable as explanations for why certain citizens are chosen for a particular profile.
     algoprudence_rotterdam: Read Algoprudence AA:2023:02 for a review of xgboost machine learning used for risk profiling variable selection
     administrative_law_image: images/Awb.jpg
 

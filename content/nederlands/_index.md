@@ -112,8 +112,9 @@ Why_we_exist:
     dsa_image: images/DSA.jpg
 
     #GDPR
-    gdpr_title: Algemene verordening gegevensbescherming
-    gdpr_content: The current data processing regulation only partially specifies measures to safeguard algorithmic decision-making. For instance<span>:</span> 
+    gdpr_title: Algemene verordening gegevensbescherming (Avg)
+    gdpr_content1: Organizations that develop algorithms do often not comply with GDPR provisions that foster participatory algorithm development. For example<span>:</span>
+    gdpr_content2: Besides, the current regulation only partially specifies measures to safeguard algorithmic decision-making. For instance<span>:</span> 
     gdpr_tag_dpia: Participatroy DPIA (art. 35 sub 9)<span>:</span>
     gdpr_content_dpia: This provision mandates that in cases where a Data Privacy Impact Assessment (DPIA) is obligatory, the opinions of data subjects regarding the planned data processing shall be seeked. This is a powerful legal mechanism to foster collaborative algorithm development. Nevertheless, the inclusion of data subjects in this manner is scarcely observed in practice;
     gdpr_tag_profiling: Profiling (recital 71)
@@ -126,7 +127,7 @@ Why_we_exist:
     administrative_law_title: Algemene wet bestuursrecht
     administrative_law_content: Unifying principles of sound administration with algorithmic methods is challenging. For instance<span>:</span>
     administrative_law_tag_motivation: Motivation principle<span>:</span>
-    administrative_law_content_motivation: Decision made by governmental institutions should always be explainable. When using machine learning, for instance for variable selection for risk profiling, presents difficulties. To what extent are arguments based on probability distributions tolerable to be included in a motivation why citizens are selected by a certain profile?
+    administrative_law_content_motivation: Governmental institutions must always provide clear explanations for their decisions. However, when machine learning is employed, such as in variable selection for risk profiling, this transparency may be obscured. This leads to the question of how far arguments based on probability distributions are acceptable as explanations for why certain citizens are chosen for a particular profile.
     algoprudence_rotterdam: Read Algoprudence AA:2023:02 for a review of xgboost model used for risk profiling variable selection
     administrative_law_image: images/Awb.jpg
 
