@@ -409,43 +409,48 @@ a.post-title {
   }
 }
 
-@media (max-width: 992px) {
-  #img-full {
-    margin: 50px 0;
-  }
+.mobile-footer{
+  margin-top: 20px;
 }
 
+// view >992px
 @media (min-width: 992px) {
   #page-header-illustration {
     width: 65%; margin-left:auto; margin-right:auto;
   }
 }
 
-@media (max-width: 992px) {
-  #page-header-illustration {
-    width: 95%; 
-    margin-left:auto; 
-    margin-right:auto;
-  }
-}
-
+// view ≤992px
 @media (max-width: 992px) {
   .sponsor {
     margin-top: 50px;
   }
+  #img-full {
+    margin: 50px 0;
+  }
+  .mobile-footer-distance{
+    margin-top: 10px;
+  }
 }
 
-// .naccs {
-//   margin: 0px auto 0;
-// }
-
+// view md and lg [768px,)
 @media (min-width: 768px) {
   .show-mobile {
     visibility: hidden;
     height:0px;
   }
+  #page-header-illustration {
+    // width: 95%; 
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  .motto{
+    padding: 0px 10%;
+    margin-top:10px;
+  }
 }
 
+// view sm [576px,768px]
 @media (max-width: 768px) {
   .hide-mobile {
     visibility: hidden;
@@ -454,16 +459,29 @@ a.post-title {
   .show-mobile-height{
     height:290px;
   }
+  .motto{
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+  }
+  .logo{
+    margin: 20px 0px 60px 0px;
+  }
+}
+
+// view xs [0,576px]
+@media (max-width: 576px) {
+  .mobile-footer{
+    padding: 0px 10px;
+  }
+  .motto{
+    margin-top:20px;
+  }
 }
  
 .gc {
 display: inline-block;
 vertical-align: top;
 }
-
-// .light {
-//   font-size: 2px;
-// }
 
 .menu2 div {
   padding: 5px 0px 5px 0px;
@@ -570,4 +588,3 @@ padding: 20px 0px 0px 0px;
   background:linear-gradient(to left, #fffde4, #618EC7);
   bottom:-5px;
 }
-

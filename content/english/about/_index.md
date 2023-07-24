@@ -22,7 +22,7 @@ image: images/about.svg
 "Writer, founder of "
 "Associate Professor in EU law at Sciences Po Paris. Co-author of the EU report">}}
 
-{{< about_contributors "Expert hub" "International experts from a range of disciplines and professional backgrounds contribute to the work of Algorithm Audit. Expertise from among others data science, policy making, law and ethics strenghtens our problem statements, white papers and advocay work.">}}
+{{< about_contributors "Expert hub" "International experts from a range of disciplines and professional backgrounds contribute to the work of Algorithm Audit. Expertise from among others data science, policy making, law and ethics strenghtens our problem statements, white papers and advocacy work.">}}
 
 {{< about_commissions "Audit commissions" " The composition of audit commissions varies per case. The exact makeup of commissions is shared here: ">}}
 
