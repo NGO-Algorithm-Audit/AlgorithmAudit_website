@@ -409,6 +409,19 @@ a.post-title {
   }
 }
 
+.module-border-wrap {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to right, #618EC7, #FFFEE4);
+  padding: 5px;
+}
+
+.module {
+  background: #f9f9f9;
+  padding: 2rem;
+}
+
 .mobile-footer{
   margin-top: 20px;
 }

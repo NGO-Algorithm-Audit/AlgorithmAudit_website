@@ -23,9 +23,9 @@ What_we_do:
   - name: Public knowledge
     icon: fab fa-slideshare
     content: All our cases and corresponding advice (_algoprudence_) are made [<span style="color:#005aa7">publicly available</span>](/algoprudence), increasing collective knowledge how to deploy and use algorithms in an ethical way
-  - name: Techno-ethical jurisprudence
+  - name: Algoprudence
     icon: fas fa-book-reader
-    content: Stakeholders learn from our algoprudence, help to improve it and utilize it as a best practice in similar cases
+    content: Stakeholders learn from our [<span style="color:#005aa7">techno-ethical jurisprudence</span>](/algoprudence), can help to improve it and can utilize it as a best practice in similar cases
   - name: Joint effort
     icon: fas fa-hands-helping
     content: Let’s remove boundaries between public and private organizations that face similar AI quandaries. We offer a collaborative platform for academics, activists, developers and policy makers to define normative standards for AI
@@ -54,27 +54,21 @@ How_we_work:
       enable: true
       label: Algorithms we have reviewed
       link: algoprudence
-With_whom_we_work:
+AA_expert_hub:
   enable: true
   service_item:
   - title: Who we work with
+    expert_hub_title: AI Auditing Expert hub
+    expert_hub_content: Connect with the international AI audit community. Join the Slack channel<span>.</span>
     images:
-    - images/howwework.svg
-    content: We work together with international experts from various backgrounds,
-      e.g. ethicists, legal professionals, data scientists. The composition of audit
-      commissions varies per case. Most of the experts are affiliated with academic
-      institutions. The Algorithm Audit team facilitates the procurement of sufficient
-      background information about the case, after which the experts conduct an in-depth
-      study, first individually and then collectively. Our team drafts a report that
-      condenses the varied views of the commission.The report published by Algorithm
-      Audit has been agreed upon by the commission members.
+    - images/slack.png
+    content: We work together with international experts from various backgrounds, e.g. ethicists, legal professionals, data scientists. The composition of audit commissions varies per case. Most of the experts are affiliated with academic institutions. 
     button:
-      enable: false
-      label: Cases we work on
-      link: "#/algoprudence"
+      enable: true
+      label: Get involved
+      link: "mailto:experthub@algorithmaudit.eu?subject=Request to join AI Auditing Expert Hub Slack channel&body=Hi Algorithm Audit,\n\nCan you add me to the Slack channel?\n\nName:\nAffiliation:\nMotivation to join:\n\nBest,"
 Why_we_exist:
   enable: true
-  content: Current legislation falls short to
   new_items:
   - title: Why we exist
     subtitle: AI policy observatory
