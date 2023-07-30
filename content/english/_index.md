@@ -59,7 +59,7 @@ AA_expert_hub:
   service_item:
   - title: Who we work with
     expert_hub_title: AI Auditing Expert hub
-    expert_hub_content: Connect with the international AI audit community. Join the Slack channel<span>.</span>
+    expert_hub_content: Connect with the international AI auditing community. Join the Slack channel<span>.</span>
     images:
     - images/slack.png
     content: We work together with international experts from various backgrounds, e.g. ethicists, legal professionals, data scientists. The composition of audit commissions varies per case. Most of the experts are affiliated with academic institutions. 

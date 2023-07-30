@@ -54,17 +54,19 @@ How_we_work:
       enable: true
       label: Onderzochte algoritmes
       link: nl/algoprudence
-With_whom_we_work:
+AA_expert_hub:
   enable: true
   service_item:
-  - title: Met wie werken we samen
+  - title: Who we work with
+    expert_hub_title: AI Auditing Expert hub
+    expert_hub_content: Kom in aanraking met de internationale AI auditing community. Word onderdeel van het Slack channel<span>.</span>
     images:
-    - images/howwework.svg
-    content: We werken samen met internationale experts met verschillende achtergronden, o.a. ethici, juristen en datawetenschappers. De samenstelling van auditcommissies verschilt per vraagstuk. Commissieleden zijn verbonden aan een academische instellingen, zijn domeinexpert of worden zelf onderworpen aan het algoritme. Het team van Algorithm Audit brengt achtergrondinformatie samen over de casus, waarna de experts eerst individueel en daarna gezamenlijk een verdiepend onderzoek doen. Ons team stelt een adviesrapport op dat de (verschillende) standpunten van de commissie samenvat. Het uiteindelijke gepubliceerde advies wordt ondersteund door alle commissieleden.
+    - images/slack.png
+    content: We werken samen met internationale experts van verschillende achtergronden, o.a. ethici, juristen en datawetenschappers. De samenstelling van auditcommissies verschilt per vraagstuk. Commissieleden zijn verbonden aan een academische instellingen, zijn domeinexpert of worden onderworpen aan het algoritme. 
     button:
-      enable: false
-      label: Cases we work on
-      link: "nl/algoprudence"
+      enable: true
+      label: Aanmelden
+      link: "mailto:experthub@algorithmaudit.eu?subject=Request to join AI Auditing Expert Hub Slack channel&body=Hi Algorithm Audit,\n\nCan you add me to the Slack channel?\n\nName:\nAffiliation:\nMotivation to join:\n\nBest,"
 Why_we_exist:
   enable: true
   content: Current legislation falls short to
