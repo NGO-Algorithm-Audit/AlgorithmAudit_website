@@ -1,8 +1,3 @@
-// banner
-// .banner {
-//   padding: 100px 0 50px;
-// }
-
 html, body {
   overflow-x: hidden;
 }
@@ -69,7 +64,7 @@ body {
   text-align: center;
 }
 
-@media (max-width : 768px) {
+@media (max-width: 768px) {
   .inner{
     width: 75%;
     margin: 0 auto;
@@ -430,6 +425,15 @@ a.post-title {
   margin-top: 20px;
 }
 
+.split{
+  flex-direction: column;
+  height: 40%;
+}
+
+.split div {
+  flex-grow:1;
+}
+
 // view >992px
 @media (min-width: 992px) {
   #page-header-illustration {
@@ -487,6 +491,12 @@ a.post-title {
 
 // view xs [0,576px]
 @media (max-width: 576px) {
+  .margin-slack{
+    margin-top: 20px;
+  }
+  .padding-adjust{
+    padding-bottom:0px;
+  }
   .mobile-footer{
     padding: 0px 10px;
   }
