@@ -13,9 +13,9 @@ $(document).ready(function(){
     console.log('NL');
 
     // Add img1
-    $("#img1").append("<img class='img-prop' src='../images/svg-text-illustrations/knowledge_platform1_NL.svg'>")
-    $("#img1").append("<img class='img-prop' src='../images/svg-text-illustrations/knowledge_platform2_NL.svg'>")
-    $("#img1").append("<img class='img-prop' src='../images/svg-text-illustrations/knowledge_platform3_NL.svg'>")
+    $("#img1").append("<img class='img-prop' src='../images/svg-text-illustrations/knowledge_platform1_NL.png'>")
+    $("#img1").append("<img class='img-prop' src='../images/svg-text-illustrations/knowledge_platform2_NL.png'>")
+    $("#img1").append("<img class='img-prop' src='../images/svg-text-illustrations/knowledge_platform3_NL.png'>")
     
     // Remove img1 after 2 sec and start type writing process
     window.setTimeout(function (){
@@ -25,24 +25,24 @@ $(document).ready(function(){
     }, 2000);
 
     window.setTimeout(function() {
-      $("#img2").append("<img class='img-prop' src='../images/svg-text-illustrations/algoprudence1_NL.svg'>")
+      $("#img2").append("<img class='img-prop' src='../images/svg-text-illustrations/algoprudence1_NL.png'>")
     }, 2000);
 
     window.setTimeout(function() {
-      $("#img2").append("<img class='img-prop' src='../images/svg-text-illustrations/algoprudence2_NL.svg'>")
+      $("#img2").append("<img class='img-prop' src='../images/svg-text-illustrations/algoprudence2_NL.png'>")
     }, 3000);
 
     setTimeout(function() {
-      $("#img2").append("<img class='img-prop' src='../images/svg-text-illustrations/algoprudence3_NL.svg'>")
+      $("#img2").append("<img class='img-prop' src='../images/svg-text-illustrations/algoprudence3_NL.png'>")
     }, 4000);
     
   }else{
     console.log('EN');
 
     // Add img1
-    $("#img1").append("<img class='img-prop' src='images/svg-text-illustrations/knowledge_platform1.svg'>")
-    $("#img1").append("<img class='img-prop' src='images/svg-text-illustrations/knowledge_platform2.svg'>")
-    $("#img1").append("<img class='img-prop' src='images/svg-text-illustrations/knowledge_platform3.svg'>")
+    $("#img1").append("<img class='img-prop' src='images/svg-text-illustrations/knowledge_platform1.png'>")
+    $("#img1").append("<img class='img-prop' src='images/svg-text-illustrations/knowledge_platform2.png'>")
+    $("#img1").append("<img class='img-prop' src='images/svg-text-illustrations/knowledge_platform3.png'>")
     
     // Remove img1 after 2 sec and start type writing process
     window.setTimeout(function (){
