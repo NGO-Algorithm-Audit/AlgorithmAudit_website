@@ -52,15 +52,15 @@ $(document).ready(function(){
     }, 2000);
 
     window.setTimeout(function() {
-      $("#img2").append("<img class='img-prop' src='images/svg-text-illustrations/algoprudence1.svg'>")
+      $("#img2").append("<img class='img-prop' src='images/svg-text-illustrations/algoprudence1.png'>")
     }, 2000);
 
     window.setTimeout(function() {
-      $("#img2").append("<img class='img-prop' src='images/svg-text-illustrations/algoprudence2.svg'>")
+      $("#img2").append("<img class='img-prop' src='images/svg-text-illustrations/algoprudence2.png'>")
     }, 3000);
 
     setTimeout(function() {
-      $("#img2").append("<img class='img-prop' src='images/svg-text-illustrations/algoprudence3.svg'>")
+      $("#img2").append("<img class='img-prop' src='images/svg-text-illustrations/algoprudence3.png'>")
     }, 4000);
     }
 });
