@@ -1,120 +1,6 @@
 {{ define "main" }}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-<script>
-
-// Typewriter Algoprudence
-$(document).ready(function()
-{
-  var typewriter_text = "case-based normative advice for ethical algorithms";
-  var text_NL = "case-based normatief advies voor ethische algoritmes";
-
-  var location = window.location.href
-  if(location.includes("nl")){
-    var typewriter_text = text_NL
-    console.log('NL');
-  }else{
-    console.log('EN');
-  }
-
-    function typeText(typewriter_text, iteration) {
-
-        // Prevent our code executing if there are no letters left
-        if (iteration === typewriter_text.length)
-            return;
-        
-        setTimeout(function() {
-            // Set the name to the current text + the next character
-            // whilst incrementing the iteration variable
-            $('.typewriter').text( $('.typewriter').text() + typewriter_text[iteration++] );
-            
-            // Re-trigger our function
-            typeText(typewriter_text, iteration);
-        }, 40);
-    }
-    
-    // Call the function to begin the typing process
-    typeText(typewriter_text, 0);
-});
-
-
-// Hide header on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If scrolled down and past the navbar, add class .nav-up.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up');
-        }
-    }
-  
-    lastScrollTop = st;
-}
-
-
-// Why we exist AI Act/DSA/GDPR etc.
-$(document).on("click", ".menu2 div", function() {
-	var numberIndex = $(this).index();
-
-	if (!$(this).is("active")) {
-
-    // add active class
-		$(".menu2 div").removeClass("active");
-		$(".gc ul li").removeClass("active");
-
-    // change number index
-		$(this).addClass("active");
-		$(".gc ul").find("li:eq(" + numberIndex + ")").addClass("active");
-
-    // scroll to top of overflow:auto div
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-	}
-});
-
-// Why we exist (mobile) AI Act/DSA/GDPR etc.
-$(document).on("click", ".menu3 div", function() {
-	var numberIndex = $(this).index();
-
-	if (!$(this).is("active2")) {
-
-    // add active class
-		$(".menu3 div").removeClass("active2");
-		$(".gc2 ul li").removeClass("active2");
-
-    // change number index
-		$(this).addClass("active2");
-		$(".gc2 ul").find("li:eq(" + numberIndex + ")").addClass("active2");
-
-    // scroll to top of overflow:auto div
-    $('.gc2').scrollTop(0);
-	}
-});
-</script>
+<script src="{{ .Site.BaseURL }}js/index_script.js"></script>
 
 <!-- Banner -->
 {{ with .Params.banner }}
@@ -122,21 +8,32 @@ $(document).on("click", ".menu3 div", function() {
   <div class="container">
     <div class="row" style="display: flex; align-items: center;">
 
-      <!-- text -->
-      <div class="col-lg-6 col-md-8 col-sm-12">
-        <h1 class="mb-3" style="font-size: 36px; color: #005aa7; width:90%; margin-left: 0; margin-right: auto;">{{ .title | markdownify }} <span class="typewriter"></span></h1>
-        <p class="mb-4" id="banner-text" style="margin-left: 0; margin-right: auto; padding: 10px 0 25px 0;">{{ .content | markdownify }}</p>
+      <!-- text illustrations -->
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-lg-1 text-center">
+        
+        <div class="row" id="img1" style="display:inline-block; margin:50px 0px;">
+          <div class="row" id="img2" style="display:inline-block;">
+          </div>
+        </div>
+
+      </div>
+      <!-- text illustrations -->
+
+      <!-- button -->
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-2 order-lg-3">
         {{ if .button.enable }}
         {{ with .button }}
-        <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary" style="text-transform:none;">{{ .label }}</a></div>
+        <div style="margin-top:0px;">
+          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary" style="text-transform:none;">{{ .label }}</a>
+        </div>
         {{ end }}
         {{ end }}
       </div>
-      <!-- text -->
+      <!-- /button -->
 
       <!-- image -->
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" style="margin-left: auto; margin-right: auto;">{{end}}
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-3 order-lg-2">
+        <img src='{{ .image2 | relURL }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
       </div>
       <!-- image -->
 

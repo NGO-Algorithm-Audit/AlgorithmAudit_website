@@ -1,8 +1,9 @@
 ---
 Banner:
-  title: '_Algoprudence_:'
-  image: images/main_illustration.svg
-  content: Algorithm Audit is a European knowledge platform for AI bias testing and normative AI standards. We build and share _algoprudence_ by convening deliberative audit commissions. Our commissions give independent normative advice on ethical issues that arise in concrete use cases of algorithmic tools and methods
+  title: 'Building _algoprudence_:' 
+  image1: images/EU_knowledge_platform.svg
+  image2: images/main_illustration.svg
+  # content: Algorithm Audit is a European knowledge platform for AI bias testing and normative AI standards. We build and share _algoprudence_ by convening deliberative audit commissions. Our commissions give independent normative advice on ethical issues that arise in concrete use cases of algorithmic tools and methods
   button:
     enable: True
     label: Read our new white paper

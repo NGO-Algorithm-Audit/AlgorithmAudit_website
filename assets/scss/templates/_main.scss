@@ -436,6 +436,10 @@ a.post-title {
 
 // view >992px
 @media (min-width: 992px) {
+  .margin-banner-image {
+    width:85%;
+    margin-top:50px;
+  }
   #page-header-illustration {
     width: 65%; margin-left:auto; margin-right:auto;
   }
@@ -443,6 +447,10 @@ a.post-title {
 
 // view ≤992px
 @media (max-width: 992px) {
+    .margin-banner-image {
+    width:70%;
+    margin-top:50px;
+  }
   .sponsor {
     margin-top: 50px;
   }
@@ -471,8 +479,19 @@ a.post-title {
   }
 }
 
+// view sm [768px,992px]
+@media (max-width: 768px) {
+  .margin-banner-image {
+    width:90%;
+    margin-top:50px;
+  }
+}
+
 // view sm [576px,768px]
 @media (max-width: 768px) {
+  .img-prop{
+    height:50px;
+  }
   .hide-mobile {
     visibility: hidden;
     height:0px;
@@ -489,8 +508,18 @@ a.post-title {
   }
 }
 
+// view xs [576px,)
+@media (min-width: 576px) {
+.img-prop{
+  height:75px;
+}
+}
+
 // view xs [0,576px]
 @media (max-width: 576px) {
+  .img-prop{
+    height:65px;
+  }
   .margin-slack{
     margin-top: 20px;
   }
