@@ -60,7 +60,7 @@ AA_expert_hub:
   service_item:
   - title: Met wie werken we samen
     expert_hub_title: AI Auditing Expert hub
-    expert_hub_content: Deel ervaringen met de internationale AI auditing community. Word onderdeel van het Slack channel<span>.</span>
+    expert_hub_content: Deel ervaringen met de internationale AI auditing community. Word onderdeel van ons Slack channel<span>.</span>
     images:
     - images/slack.png
     content: We werken samen met internationale experts van verschillende achtergronden, o.a. ethici, juristen en datawetenschappers. De samenstelling van auditcommissies verschilt per vraagstuk. Commissieleden zijn verbonden aan een academische instellingen, zijn domeinexpert of worden onderworpen aan het algoritme. 
