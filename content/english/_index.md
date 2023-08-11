@@ -59,15 +59,15 @@ AA_expert_hub:
   enable: true
   service_item:
   - title: Who we work with
-    expert_hub_title: AI Auditing Expert hub
-    expert_hub_content: Connect with the international AI auditing community. Join our Slack channel<span>.</span>
-    images:
-    - images/slack.png
     content: We work together with international experts from various backgrounds, e.g. ethicists, legal professionals, data scientists. The composition of audit commissions varies per case. Most of the experts are affiliated with academic institutions. 
-    button:
-      enable: true
-      label: Get involved
-      link: "mailto:experthub@algorithmaudit.eu?subject=Request to join AI Auditing Expert Hub Slack channel&body=Hi Algorithm Audit,\n\nCan you add me to the Slack channel?\n\nName:\nAffiliation:\nMotivation to join:\n\nBest,"
+    # expert_hub_title: AI Auditing Expert hub
+    # expert_hub_content: Connect with the international AI auditing community. Join our Slack channel<span>.</span>
+    # images:
+    # - images/slack.png
+    # button:
+    #   enable: true
+    #   label: Get involved
+    #   link: "mailto:experthub@algorithmaudit.eu?subject=Request to join AI Auditing Expert Hub Slack channel&body=Hi Algorithm Audit, %0D%0A %0D%0A Can you add me to the Slack channel? %0D%0A %0D%0A Name: %0D%0A Affiliation: %0D%0A Motivation to join: %0D%0A %0D%0A Best,"
 Why_we_exist:
   enable: true
   new_items:
