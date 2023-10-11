@@ -88,6 +88,10 @@ union DocumentNode = Post | Folder
 
 type Post implements Node & Document {
   title: String!
+  author: String!
+  image: String!
+  type: String!
+  summary: String!
   body: JSON
   id: ID!
   _sys: SystemInfo!
@@ -95,6 +99,13 @@ type Post implements Node & Document {
 }
 
 input StringFilter {
+  startsWith: String
+  eq: String
+  exists: Boolean
+  in: [String]
+}
+
+input ImageFilter {
   startsWith: String
   eq: String
   exists: Boolean
@@ -109,6 +120,10 @@ input RichTextFilter {
 
 input PostFilter {
   title: StringFilter
+  author: StringFilter
+  image: ImageFilter
+  type: StringFilter
+  summary: StringFilter
   body: RichTextFilter
 }
 
@@ -143,6 +158,10 @@ input DocumentMutation {
 
 input PostMutation {
   title: String
+  author: String
+  image: String
+  type: String
+  summary: String
   body: JSON
 }
 

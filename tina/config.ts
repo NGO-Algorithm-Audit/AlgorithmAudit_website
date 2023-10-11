@@ -1,20 +1,23 @@
-// tina/config.ts
 import { defineConfig } from "tinacms";
-var branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
-var config_default = defineConfig({
+
+// Your hosting provider likely exposes this as an environment variable
+const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
+
+export default defineConfig({
   branch,
   clientId: "059ef0ec-ed5e-4000-96bf-661a22ce4691",
   token: "460783b4311d691899223f800d62864797311b1c",
   client: { skip: true },
+
   build: {
     outputFolder: "admin",
-    publicFolder: "static"
+    publicFolder: "static",
   },
   media: {
     tina: {
       mediaRoot: "",
-      publicFolder: "static"
-    }
+      publicFolder: "static",
+    },
   },
   schema: {
     collections: [
@@ -28,29 +31,29 @@ var config_default = defineConfig({
             name: "title",
             label: "Title",
             isTitle: true,
-            required: true
+            required: true,
           },
           {
             type: "string",
             name: "author",
             label: "author",
-            required: true
+            required: true,
           },
           {
             type: "image",
             name: "image",
             label: "image",
-            required: true
+            required: true,
           },
           {
             type: "string",
             name: "type",
             label: "type",
             required: true,
-            options: [
+            options:[
               {
-                value: "regular",
-                label: "regular"
+                value:"regular",
+                label:"regular"
               }
             ]
           },
@@ -58,19 +61,16 @@ var config_default = defineConfig({
             type: "string",
             name: "summary",
             label: "summary",
-            required: true
+            required: true,
           },
           {
             type: "rich-text",
             name: "body",
             label: "Body",
-            isBody: true
-          }
-        ]
-      }
-    ]
-  }
+            isBody: true,
+          },
+        ],
+      },
+    ],
+  },
 });
-export {
-  config_default as default
-};
