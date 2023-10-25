@@ -1,7 +1,53 @@
-import { defineConfig } from "tinacms";
+import { TinaField, defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
+
+let knowledge_base_fields : TinaField[] = [
+  {
+    type: "string",
+    name: "title",
+    label: "Title",
+    isTitle: true,
+    required: true,
+  },
+  {
+    type: "string",
+    name: "author",
+    label: "author",
+    required: true,
+  },
+  {
+    type: "image",
+    name: "image",
+    label: "image",
+    required: true,
+  },
+  {
+    type: "string",
+    name: "type",
+    label: "type",
+    required: true,
+    options:[
+      {
+        value:"regular",
+        label:"regular"
+      }
+    ]
+  },
+  {
+    type: "string",
+    name: "summary",
+    label: "summary",
+    required: true,
+  },
+  {
+    type: "rich-text",
+    name: "body",
+    label: "Body",
+    isBody: true,
+  },
+];
 
 export default defineConfig({
   branch,
@@ -22,54 +68,16 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
+        name: "nl_knowledgebase",
         label: "Knowledge Base (NL)",
         path: "content/nederlands/knowledge_base",
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "string",
-            name: "author",
-            label: "author",
-            required: true,
-          },
-          {
-            type: "image",
-            name: "image",
-            label: "image",
-            required: true,
-          },
-          {
-            type: "string",
-            name: "type",
-            label: "type",
-            required: true,
-            options:[
-              {
-                value:"regular",
-                label:"regular"
-              }
-            ]
-          },
-          {
-            type: "string",
-            name: "summary",
-            label: "summary",
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
-        ],
+        fields: knowledge_base_fields,
+      },
+      {
+        name: "en_knowledgebase",
+        label: "Knowledge Base (EN)",
+        path: "content/english/knowledge_base",
+        fields: knowledge_base_fields,
       },
     ],
   },
