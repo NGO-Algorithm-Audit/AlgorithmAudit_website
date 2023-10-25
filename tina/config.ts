@@ -46,6 +46,40 @@ let knowledge_base_fields : TinaField[] = [
     name: "body",
     label: "Body",
     isBody: true,
+    templates: [
+      {
+        name: 'pdfframe',
+        label: 'PDF Frame',
+        match: {
+          start: '{{<',
+          end: '>}}',
+          name: 'pdf-frame'
+        },
+        fields: [
+          {
+            name: 'title',
+            label: 'Title',
+            type: 'string',
+            description: '',
+            required: true,
+          },
+          {
+            name: 'name',
+            label: 'Name',
+            type: 'string',
+            description: '',
+            required: true,
+          },
+          {
+            name: 'articleUrl',
+            label: 'Article Url',
+            type: 'string',
+            description: '',
+            required: true,
+          },
+        ],
+      },
+    ]
   },
 ];
 
@@ -71,12 +105,18 @@ export default defineConfig({
         name: "nl_knowledgebase",
         label: "Knowledge Base (NL)",
         path: "content/nederlands/knowledge_base",
+        match: {
+          exclude: '**/_index',
+        },
         fields: knowledge_base_fields,
       },
       {
         name: "en_knowledgebase",
         label: "Knowledge Base (EN)",
         path: "content/english/knowledge_base",
+        match: {
+          exclude: '**/_index',
+        },
         fields: knowledge_base_fields,
       },
     ],
