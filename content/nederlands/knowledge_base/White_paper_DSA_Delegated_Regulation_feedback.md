@@ -1,7 +1,7 @@
 ---
 title: White paper – Feedback on DSA Delegated Regulation (conducting independent audits)
 author: Algorithm Audit
-image: images/knowledge_base/white-paper-3.png
+image: /images/knowledge_base/white-paper-3.png
 type: featured
 summary: 'Plea to include the normative dimension of AI auditing in delegated regulation of the Digital Services Act (DSA). Current limitations are illustrated by focussing on a recommender systems example'
 

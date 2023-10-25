@@ -23,7 +23,7 @@ export default defineConfig({
     collections: [
       {
         name: "post",
-        label: "Posts",
+        label: "Knowledge Base (NL)",
         path: "content/nederlands/knowledge_base",
         fields: [
           {

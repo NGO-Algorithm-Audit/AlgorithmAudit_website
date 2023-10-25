@@ -1,7 +1,7 @@
 ---
 title: "Markdown template"
 author: None
-image: "images/knowledge_base/fairness_automated.png"
+image: "/images/knowledge_base/fairness_automated.png"
 type: "regular"
 draft: true 
 ---
