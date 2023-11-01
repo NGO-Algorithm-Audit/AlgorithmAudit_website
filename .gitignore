@@ -4,3 +4,5 @@ public/
 node_modules/
 .hvm
 .DS_Store
+.vs/
+node_modules

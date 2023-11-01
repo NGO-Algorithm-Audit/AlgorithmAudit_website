@@ -1,7 +1,7 @@
 ---
 title: "Automated Decision-Making Under the GDPR – A comphrehensive case-law analysis"
 author: Sebastião Barros Vale, Gabriela Zanfir-Fortuna
-image: "images/knowledge_base/FPF_report.png"
+image: "/images/knowledge_base/FPF_report.png"
 type: "regular"
 draft: false
 summary: The Future of Privacy Forum (FPF) launched a comprehensive report analyzing case-law under the General Data Protection Regulation (GDPR) applied to real-life cases involving Automated Decision Making (ADM).

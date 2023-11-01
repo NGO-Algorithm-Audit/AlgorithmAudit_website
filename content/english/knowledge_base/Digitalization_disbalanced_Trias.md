@@ -1,7 +1,7 @@
 ---
 title: Digitalization and the (Dis)balanced Trias Politica
 author: Reijer Passchier
-image: images/knowledge_base/digitalisering_disbalans_trias.png
+image: /images/knowledge_base/digitalisering_disbalans_trias.png
 type: regular
 summary: Scientific legal paper arguing why new checks and balances are needed to guarantee a separation of state powers in the digital era.
 ---

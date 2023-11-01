@@ -1,7 +1,7 @@
 ---
 title: Algorithm Audit (white paper) – Reversing the burden of proof
 author: Algorithm Audit
-image: images/knowledge_base/white-paper-1.png
+image: /images/knowledge_base/white-paper-1.png
 type: "regular"
 summary: Algorithm Audit's first white paper on the reversal on the burden of proof in the context of (semi-)automated decision-making
 
@@ -22,4 +22,4 @@ This is what we advise policy makers across the EU to facilitate reversing the b
 
 This document formulates actionable suggestions to improve legal protection for citizens and consumers in the European Union in the context for (semi-)automated decision-making (ADM). The suggestions in this document are linked to an existing concept in EU non- discrimination law: the reversal of the burden of proof.
 
-{{< pdf-frame "White-paper" "white-paper" "https://drive.google.com/file/d/1RHdqoGVgwv-FTv8qC9fAlsVl8eUTcR7s/preview" >}}
+{{< pdf-frame title="White-paper" name="white-paper" articleUrl="https://drive.google.com/file/d/1RHdqoGVgwv-FTv8qC9fAlsVl8eUTcR7s/preview" >}}
