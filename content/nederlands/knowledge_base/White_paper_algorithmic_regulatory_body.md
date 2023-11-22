@@ -1,6 +1,6 @@
 ---
 title: >-
-  Algorithm Audit (position paper) – A new algorithmic regulatory body in The
+  Algorithm Audit (white paper) – A new algorithmic regulatory body in The
   Netherlands
 author: Algorithm Audit
 image: /images/knowledge_base/white-paper-2.png
