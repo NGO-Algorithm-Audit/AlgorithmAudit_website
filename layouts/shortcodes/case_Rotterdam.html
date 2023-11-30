@@ -1,33 +1,124 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
-  <div id="rotterdam-case" class="p-5 shadow rounded-lg" id="case-risk-assessment-tool" style="display: table;">
-    <h3 class="mb-4 ranking" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
-    <p>{{ .Inner | markdownify }}</p>
+<div id="rotterdam-case" class="p-5 shadow rounded-lg" id="risk-profiling-social-welfare" style="display: table;">
+  <h3 class="mb-4 risk-profiling" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+  <!-- <p>{{ .Inner | markdownify }}</p> -->
 
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h3 class="mb-4" style="font-size: 16px; text-decoration: none; color:#005aa7;">Audit commission</h3>
-        <p>{{ .Get 1 | markdownify }}</p>
+  <div class="row" style="margin-bottom:25px;">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+      <!-- Key takeaways -->
+      <span style="color:#005aa7; font-size: 18px; font-weight:bold;">Key takeaways normative advice commission</span>
+      <div class="row" style="margin: 0px 0px 10px 0px;">
+
+        <!-- #1 -->
+        <span style="color:#005aa7; font-size:16px; font-weight: bold; margin: 25px 0px 0px 0px;">> Algorithmic profiling is possible under strict conditions</span>
+        <p class="center-vert" style="font-size: 16px;">
+          The use of algorithmic profiling to re-examine whether social welfare benefits have been duly granted, is acceptable if applied responsibly.
+        </p>
+
+        <!-- #2 -->
+        <span style="color:#005aa7; font-size:16px; font-weight: bold; margin: 5px 0px 0px 0px;">> Profiling must not equate suspicion</span>
+        <p class="center-vert" style="font-size: 16px;">
+          Re-examination needs to be based more on service and less on distrust. <span style="font-size:1px; color:white;">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est</span>  
+        </p>
+
+        <!-- #3 -->
+        <span style="color:#005aa7; font-size:16px; font-weight: bold; margin: 5px 0px 0px 0px;">> Diversity in selection methods</span>
+        <p class="center-vert" style="font-size: 16px;">
+          To avoid tunnel vision and negative feedback loops, algorithmic profiling ought to be combined with expert-driven profiling and random sampling.
+        </p>
+
+        <!-- #4 -->
+        <span style="color:#005aa7; font-size:16px; font-weight: bold; margin: 5px 0px 0px 0px;">> Well-considered use of profiling criteria</span>
+        <p class="center-vert" style="font-size: 16px;">
+          Caring to avoid (proxy) discrimination and other undesirable forms of differentiation, the normative advice commission assessed variables individually on their eligibility for profiling (see Infographic).
+        </p>
+
+        <!-- #5 -->
+        <span style="color:#005aa7; font-size:16px; font-weight: bold; margin: 5px 0px 0px 0px;">> Explainability requirements for machine learning</span>
+        <p class="center-vert" style="font-size: 16px;">
+          It is necessary that the sampling of residents can be explained throughout the entire decision-making process. Complex training methods for variable selection, such as the xgboost algorithm discussed in this case study, are considered too complex to meet explainability requirements.
+        </p>
+
       </div>
+
+      <!-- Summary advice -->
+      <span style="color:#005aa7; font-size: 18px; font-weight:bold;">Summary advice</span>
+      <div class="row" style="margin: 0px 0px 25px 0px;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding:0px 25px 0px 0px;">
+          <p class="center-vert" style="font-size: 16px;">
+            The commission judges that algorithmic risk profiling can be used under strict conditions for sampling residents receiving social welfare for re-examination. The aim of re-examination is a leading factor in judging profiling criteria. If re-examination were based less on distrust and adopts a more service-oriented approach, then the advice commission judges a broader use of profiling variables permissible to enable more precise targeting of individuals in need of assistance. For various variables used by the Municipality of Rotterdam during the period 2017-2021, the commission gives an argued judgement why these variables are or are not eligible as a profiling selection criterion (see Infographic). A combined use of several sampling methods (including expert-driven profiling and random sampling) is recommended to avoid tunnel vision and negative feedback loops. The commission advises stricter conditions for the selection of variables for use by algorithms than for selection by domain experts. The commission states that algorithms used to sample citizens for re-examination must be explainable. Complex training methods, such as the xgboost model used by the Municipality of Rotterdam, do not meet this explainability criterion. This advice is directed towards all Dutch and European municipalities that use or consider using profiling methods in the context of social services.
+          </p>
+        </div>
+      </div>
+
+      <!-- Presentation -->
+      <span style="color:#005aa7; font-size: 18px; font-weight: bold;">Presentation</span>
+      <div class="row" style="margin: 0px 0px 25px 0px;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding:0px 25px 0px 0px;">
+          <p class="center-vert" style="font-size: 16px;">
+            The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found here later.
+          </p>
+        </div>
+      </div>
+
+      <!-- Report -->
+      <span style="color:#005aa7; font-size: 18px;font-weight: bold;">Report</span>
+      <div class="row" style="margin: 0px 0px 25px 0px;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding:0px 25px 0px 0px;">
+          <p class="center-vert" style="font-size: 16px;">
+            Dowload the full advice report (AA:2023:02:A) <a href="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing" target="_blank">here</a> and problem statement (AA:2023:02:P) <a href="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing" target="_blank">here</a>.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 0px 0px 45px 0px; display:table;">
+        <iframe src="https://drive.google.com/file/d/1zRRUYRfaIzdKFA2hQtW9yeM4jrD-Abef/preview" width="50%" height="594px" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/11sQMVJQd3ZJlW0R6HjU01b4N4CmuFw2q/preview" width="50%" height="594px" allow="autoplay"></iframe>
+      </div>
+
+      <!-- Advice commission -->
+      <span style="color:#005aa7; font-size: 18px; font-weight: bold;">Normative advice commission</span>
+      <div class="row" style="margin: 45px 0px 25px 0px;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding:0px 25px 0px 0px;">
+          <p class="center-vert" style="font-size: 16px;">
+            <ul>
+              <li style="color:#777777">Abderrahman El Aazani, Researcher at the Ombudsman Rotterdam-Rijnmond</li>
+              <li style="color:#777777">Francien Dechesne, Associate Professor Law and Digital Technologies, Leiden University</li>
+              <li style="color:#777777">Maarten van Asten, Alderman Finance, Digitalization, Sports and Events Municipality of Tilburg</li>
+              <li style="color:#777777">Munish Ramlal, Ombudsman Metropole region Amsterdam</li>
+              <li style="color:#777777">Oskar Gstrein, Assistant Professor Governance and Innovation, University of Groningen</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- Funded by -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h3 class="mb-4" style="font-size: 18px; color: #005aa7;">Funded by</h3>
+        </div>
+
+        <div class="center-vert col-lg-4 col-md-6 col-sm-6 col-xs-12" style="display:table;">
+          <p class="center-vert"></p>
+          <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
+            <img src="{{ `images/sidn.png` | relURL }}" style="width:70%">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="display:table;">
+          <p class="center-vert"></p>
+          <a href="https://europeanaifund.org/" target="_blank">
+            <img src="{{ `images/EUAISFund.png` | relURL }}" style="width:80%">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="display:table;">
+          <p class="center-vert"></p>
+          <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties" target="_blank">
+            <img src="{{ `images/BZK.jpg` | relURL }}" style="width:80%">
+          </a>
+        </div>
+      </div>
+
     </div>
-
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h3 class="mb-4" style="font-size: 16px; color: #005aa7;">Funded by</h3>
-      </div>
-
-      <div class="center-vert col-lg-4 col-md-6 col-sm-6 col-xs-12" style="display:table;">
-        <p class="center-vert"></p>
-        <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
-          <img src="{{ `images/sidn.png` | relURL }}" style="width:70%">
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="display:table;">
-        <p class="center-vert"></p>
-        <a href="https://europeanaifund.org/" target="_blank">
-          <img src="{{ `images/EUAISFund.png` | relURL }}" style="width:80%">
-        </a>
-      </div>
-    </div>
-
   </div>
+</div>
