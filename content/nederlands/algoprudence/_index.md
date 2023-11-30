@@ -8,7 +8,7 @@ image: "images/case_repository.svg"
 
 ---
 <!-- Case Rotterdam -->
-{{< case_Rotterdam_NL "Risicoprofilering heronderzoek bijstandsuitkering" >}} {{</ case_Rotterdam_NL >}}
+{{< case_Rotterdam_NL "Risicoprofilering heronderzoek bijstandsuitkering (AA:2023:02)" >}} {{</ case_Rotterdam_NL >}}
 
 <!-- Case disinfo -->
 {{< case_disinfo "BERT-based disinformation classifier" "Anne Meuwese, Professor in Public Law & AI at Leiden University" "Hinda Haned, Professor in Responsible Data Science at University of Amsterdam" "Raphaële Xenidis, Associate Professor in EU law at Sciences Po Paris" "Aileen Nielsen, Fellow Law&Tech at ETH Zürich" "Carlos Hernández-Echevarría, Assistant Director and Head of Public Policy at the anti-disinformation nonprofit fact-checker" "Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank">}}
