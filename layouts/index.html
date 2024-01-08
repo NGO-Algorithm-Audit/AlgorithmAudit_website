@@ -184,6 +184,54 @@
 {{ end }}
 <!-- /How we work -->
 
+{{ with .Params.Activity_Feed}}
+{{ if .enable }}
+<section class="section">
+  <div class="container">
+    <div class="row d-flex flex-wrap align-items-center">
+      <div class="col-md-12 order-1">
+        <div class="container">
+          <div class="row d-flex">
+            <h2 class="section-title col-md-4" style="color: #005aa7;">{{ .title | markdownify }}</h2>
+            <a class="float-right" href="{{.view_all_link}}">{{.view_all_text}}</a>
+          </div>
+        </div>
+        
+        <div class="container">
+          <div class="row">
+            {{ range $i,$featured_article := .Featured_Articles }}
+              <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+                <a href="{{$featured_article.link}}">
+                  <div class="container">
+                    <div class="row">
+                      {{if $featured_article.image }}
+                        <div class="col-md-4">
+                          <img src="{{ $featured_article.image }}" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                          <p>{{ $featured_article.type  }}</p>
+                          <h3>{{ $featured_article.title  }}</h3>
+                        </div>
+                      {{ else }}
+                        <div class="col-md-12">
+                          <p>{{ $featured_article.type  }}</p>
+                          <h3>{{ $featured_article.title  }}</h3>
+                        </div>
+                      {{ end }}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
 <!-- AA Expert hub -->
 {{ with .Params.AA_expert_hub }}
 {{ if .enable }}

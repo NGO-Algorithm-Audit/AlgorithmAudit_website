@@ -70,18 +70,34 @@ export default [
                 type: "object",
                 name: "Featured_Articles",
                 list: true,
-                templates: 
+                fields: 
                 [
                     {
-                        label: "Article",
-                        name: "article",
-                        fields:
+                        label: "Title",
+                        type: "string",
+                        name: "title",
+                        isTitle: true,
+                        required: true,
+                    },
+                    {
+                        label: "Link",
+                        type: "string",
+                        name: "link",
+                    },
+                    {
+                        label: "Image",
+                        type: "image",
+                        name: "image",
+                    },
+                    {
+                        label: "Type",
+                        type: "string",
+                        name: "type",
+                        options: 
                         [
                             {
-                                label: "featured article",
-                                name: "featured_article",
-                                type: "reference",
-                                collections: ['en_knowledgebase', 'nl_knowledgebase']
+                                value:"regular",
+                                label:"regular"
                             }
                         ]
                     }
