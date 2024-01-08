@@ -8,6 +8,22 @@ weight = 1
 name = "Algoprudence"
 url = "algoprudence"
 weight = 2
+hasChildren = true
+  [[main]]
+  parent = "Algoprudence"
+  name = "Dropdown Item 1"
+  url = "algoprudence"
+  weight = 1
+  [[main]]
+  parent = "Algoprudence"
+  name = "Dropdown Item 2"
+  url = "algoprudence"
+  weight = 1
+  [[main]]
+  parent = "Algoprudence"
+  name = "Dropdown Item 3"
+  url = "algoprudence"
+  weight = 1
 
 [[main]]
 name = "Bias scan"
