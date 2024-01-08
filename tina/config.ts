@@ -1,6 +1,8 @@
 import { TinaField, defineConfig } from "tinacms";
 import knowledge_base_nl from "./collections/knowledge_base/nl";
 import knowledge_base_en from "./collections/knowledge_base/en";
+import home_en from "./collections/home/en";
+import home_nl from "./collections/home/nl";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
@@ -22,6 +24,8 @@ export default defineConfig({
   },
   schema: {
     collections: [
+      home_en,
+      home_nl,
       knowledge_base_nl,
       knowledge_base_en
     ],
