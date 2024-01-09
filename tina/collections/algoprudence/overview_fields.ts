@@ -52,6 +52,7 @@ export default [
                         name: "value",
                         label: "Value",
                         required: true,
+                        description: "Without the group name value as prefix (i.e. deeplearning)"
                     },
                     {
                         type: "string",
@@ -104,6 +105,7 @@ export default [
                             name: "value",
                             label: "Value",
                             required: true,
+                            description: "With the group name value as prefix (i.e. method_deeplearning)"
                         },
                         {
                             type: "string",
