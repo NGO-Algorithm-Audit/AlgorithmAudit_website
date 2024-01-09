@@ -24,8 +24,8 @@ export default defineConfig({
   },
   schema: {
     collections: [
-      home_en,
       home_nl,
+      home_en,
       knowledge_base_nl,
       knowledge_base_en
     ],
