@@ -54,8 +54,16 @@
       <div class="col-12 text-center">
         <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
       </div>
+      {{$width_m := 4}}
+      {{$width_s := 2}}
+      {{if .width_m}}
+        {{$width_m = .width_m}}
+      {{end}}
+      {{if .width_s}}
+        {{$width_s = .width_s}}
+      {{end}}
       {{ range .feature_item }}
-      <div class="col-md-4 col-sm-6 mb-4">
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
         <div class="feature-card text-center">
           <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
           <h4 class="" style="color: #005aa7;">
