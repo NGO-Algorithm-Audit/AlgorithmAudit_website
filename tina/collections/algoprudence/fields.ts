@@ -110,9 +110,9 @@ export default [
                     fields:
                     [
                         {
-                            type: "string",
+                            type: "rich-text",
                             name: "name",
-                            label: "Name, function (and department), university",
+                            label: "Name, function (and department), university, link",
                             required: true,
                         }
                     ]
