@@ -118,6 +118,27 @@ export default [
                     ]
                 },
                 {
+                    type: "object",
+                    name: "additional_content",
+                    label: "Additinonal Content",
+                    list: true,
+                    fields:
+                    [
+                        {
+                            type: "string",
+                            name: "title",
+                            label: "Title",
+                            required: true,
+                        },
+                        {
+                            type: "rich-text",
+                            name: "content",
+                            label: "Content",
+                            required: true,
+                        }
+                    ]
+                },
+                {
                     type: "rich-text",
                     name: "sources",
                     label: "Sources",

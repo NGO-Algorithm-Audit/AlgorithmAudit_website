@@ -43,6 +43,34 @@
                                     </div>
                                 </div>
 
+                                <!-- Source of case -->
+                                {{ if $algoprudence.sources }}
+                                <span style="color:#005aa7; font-weight: bold;">Source of case</span>
+                                <div class="row" style="margin: 0px 0px 25px 0px;">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                        style="display:table; padding:0px 25px 0px 0px;">
+                                        <p class="center-vert" style="font-size: 16px;">
+                                            {{$algoprudence.sources | markdownify}}
+                                        </p>
+                                    </div>
+                                </div>
+                                {{end}}
+
+                                <!-- Additional Content -->
+                                {{ if $algoprudence.additional_content }}
+                                {{ range $additional_content_index, $additional_content := $algoprudence.additional_content }}
+                                <span style="color:#005aa7; font-weight: bold;">{{$additional_content.title}}</span>
+                                <div class="row" style="margin: 0px 0px 25px 0px;">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                        style="display:table; padding:0px 25px 0px 0px;">
+                                        <p class="center-vert" style="font-size: 16px;">
+                                            {{$additional_content.content | markdownify}}
+                                        </p>
+                                    </div>
+                                </div>
+                                {{end}}
+                                {{end}}
+
                                 <!-- Presentation -->
                                 {{if $algoprudence.presentation}}
                                 <span style="color:#005aa7; font-size: 18px; font-weight: bold;">Presentation</span>
