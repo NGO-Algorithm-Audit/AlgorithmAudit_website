@@ -1,8 +1,8 @@
 import { TinaField, defineConfig } from "tinacms";
 import knowledge_base_nl from "./collections/knowledge_base/nl";
 import knowledge_base_en from "./collections/knowledge_base/en";
-import algoprudence_en from "./collections/algoprudence/en";
-import algoprudence_nl from "./collections/algoprudence/nl";
+import algoprudence_overview_en from "./collections/algoprudence/overview_en";
+import algoprudence_overview_nl from "./collections/algoprudence/overview_nl";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
@@ -26,8 +26,8 @@ export default defineConfig({
     collections: [
       knowledge_base_nl,
       knowledge_base_en,
-      algoprudence_nl,
-      algoprudence_en
+      algoprudence_overview_nl,
+      algoprudence_overview_en
     ],
   },
 });

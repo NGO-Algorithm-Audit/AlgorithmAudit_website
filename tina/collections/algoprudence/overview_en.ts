@@ -2,14 +2,14 @@
  * @type {import('tinacms').Collection}
  */
 
-import fields from "./fields";
+import fields from "./overview_fields";
 
 export default {
-    name: "en_algoprudence",
-    label: "Algoprudence (EN)",
+    name: "en_algoprudence_overview",
+    label: "Algoprudence overview (EN)",
     path: "content/english/algoprudence",
     match: {
-      include: '**',
+      include: '**/_index',
     },
     fields: fields,
   };
