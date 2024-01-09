@@ -34,6 +34,13 @@ export default [
                 required: true,
             },
             {
+                type: "string",
+                name: "value",
+                label: "Value",
+                required: true,
+                description: "Lowercase without any special characters"
+            },
+            {
                 type: "object",
                 name: "facets",
                 label: "Facets",
