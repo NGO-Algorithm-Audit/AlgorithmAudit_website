@@ -60,15 +60,19 @@
           <!-- Language toggle -->
           {{ if .IsTranslated }}
           {{ range .Translations }}
-          {{ if eq .Site.Language.Lang "en" }}
-          <li class="nav-item">
-            <a class="nav-link pt-3" style="font-weight:350;" title="English" href="{{ .RelPermalink }}"><img style="width: 28px;" src="/images/flag-gb-svgrepo-com.svg" alt="🇬🇧EN" /></a>
+          <li class="nav-item d-inline-block">
+            {{ if eq .Site.Language.Lang "en" }}
+            <a class="nav-link d-inline-block" title="English" href="{{ .RelPermalink }}">EN</a>
+            {{ else }}
+            <a class="nav-link d-inline-block" style="font-weight: 350;" title="English" href="{{ .RelPermalink }}">EN</a>
+            {{ end }}
+            |
+            {{ if eq .Site.Language.Lang "nl" }}
+            <a class="nav-link d-inline-block" title="Dutch" href="{{ .RelPermalink }}">NL</a>
+            {{ else }}
+            <a class="nav-link d-inline-block" style="font-weight: 350;" title="Dutch" href="{{ .RelPermalink }}">NL</a>
+            {{ end }}
           </li>
-          {{ else }}
-          <li class="nav-item">
-            <a class="nav-link pt-3" style="font-weight:350;" title="Dutch" href="{{ .RelPermalink }}"><img style="width: 28px;" src="/images/flag-nl-svgrepo-com.svg" alt="🇳🇱NL"/></a>
-          </li>
-          {{ end }}
           {{ end }}
           {{ end }}
           <!-- /Language toggle -->
