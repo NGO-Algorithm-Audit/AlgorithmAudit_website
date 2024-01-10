@@ -6,29 +6,48 @@ weight = 1
 
 [[main]]
 name = "Algoprudence"
-url = "algoprudence"
 weight = 2
 hasChildren = true
   [[main]]
   parent = "Algoprudence"
-  name = "Dropdown Item 1"
-  url = "algoprudence"
+  name = "Submit a case for review"
+  url = "/submit-case"
   weight = 1
+  [[main.params]]
+    featured = true
   [[main]]
   parent = "Algoprudence"
-  name = "Dropdown Item 2"
-  url = "algoprudence"
-  weight = 1
+  name = "Cases"
+  url = "/algoprudence"
+  weight = 2
+  [[main.params]]
+    icon = "fa-database"
   [[main]]
   parent = "Algoprudence"
-  name = "Dropdown Item 3"
-  url = "algoprudence"
-  weight = 1
+  name = "How we work"
+  url = "/how-we-work"
+  weight = 3
+  [[main.params]]
+    icon = "fa-question"
 
 [[main]]
-name = "Bias scan"
-url = "bias_scan"
+name = "Technical Tools"
 weight = 3
+hasChildren = true
+  [[main]]
+  parent = "Technical Tools"
+  name = "Bias detection tool"
+  url = "/bias_scan"
+  weight = 1
+  [[main.params]]
+    icon = "fa-toolbox"
+  [[main]]
+  parent = "Technical Tools"
+  name = "Synthetic data generation"
+  url = "/bias_scan"
+  weight = 2
+  [[main.params]]
+    icon = "fa-table"
 
 [[main]]
 name = "Knowledge base"
