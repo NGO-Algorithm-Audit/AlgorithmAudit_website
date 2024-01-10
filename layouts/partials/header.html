@@ -31,7 +31,10 @@
             </a>
             <div class="dropdown-menu" style="padding: 1rem 0.25rem;">
               {{ range .Children }}
-              <a class="dropdown-item" href="{{ .URL | relURL }}" title="{{ .Name }}" style="padding: 0.5rem 1.5rem;color: #005aa7;">
+              {{if .Params.subtitle}}
+              <p class="mb-0 mt-1 ml-3" style="color:#005aa7; font-weight:550; font-size:13px;">{{.Params.subtitle}}</p>
+              {{end}}
+              <a class="dropdown-item" href="{{ .URL | relURL }}" title="{{ .Name }}" style="padding: 0.75rem 1.5rem;color: #005aa7;">
                 {{if .Params.icon}}
                 <i class="fas {{.Params.icon}} mr-3"></i>
                 {{end}}

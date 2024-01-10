@@ -41,6 +41,7 @@ hasChildren = true
   weight = 1
   [[main.params]]
     icon = "fa-toolbox"
+    subtitle = "Open source AI auditing tools"
   [[main]]
   parent = "Technical Tools"
   name = "Synthetic data generation"
@@ -48,6 +49,14 @@ hasChildren = true
   weight = 2
   [[main.params]]
     icon = "fa-table"
+  [[main]]
+  parent = "Technical Tools"
+  name = "Github code"
+  url = "https://github.com/jfparie/AlgorithmAudit_website"
+  weight = 3
+  [[main.params]]
+    subtitle = "Code repository"
+    icon = "fa-code"
 
 [[main]]
 name = "Knowledge base"
