@@ -29,7 +29,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
               {{ .Name }}
             </a>
-            <div class="dropdown-menu" style="padding: 1rem 0.25rem;">
+            <div class="dropdown-menu shadow-lg" style="padding: 1rem 0.25rem;">
               {{ range .Children }}
               {{if .Params.subtitle}}
               <p class="mb-0 mt-1 ml-3" style="color:#005aa7; font-weight:550; font-size:13px;">{{.Params.subtitle}}</p>
@@ -62,11 +62,11 @@
           {{ range .Translations }}
           {{ if eq .Site.Language.Lang "en" }}
           <li class="nav-item">
-            <a class="nav-link" style="font-weight:350;" title="English" href="{{ .RelPermalink }}">🇬🇧EN</a>
+            <a class="nav-link pt-3" style="font-weight:350;" title="English" href="{{ .RelPermalink }}"><img style="width: 28px;" src="/images/flag-gb-svgrepo-com.svg" alt="🇬🇧EN" /></a>
           </li>
           {{ else }}
           <li class="nav-item">
-            <a class="nav-link" style="font-weight:350;" title="Dutch" href="{{ .RelPermalink }}">🇳🇱NL</a>
+            <a class="nav-link pt-3" style="font-weight:350;" title="Dutch" href="{{ .RelPermalink }}"><img style="width: 28px;" src="/images/flag-nl-svgrepo-com.svg" alt="🇳🇱NL"/></a>
           </li>
           {{ end }}
           {{ end }}

@@ -96,6 +96,40 @@ weight = 6
 
 [[main]]
 name = "About"
-url = "about"
 weight = 7
-
+hasChildren = true
+  [[main]]
+  parent = "About"
+  name = "Teams"
+  url = "/teams"
+  weight = 1
+  [[main.params]]
+    icon = "fa-users"
+  [[main]]
+  parent = "About"
+  name = "Boards"
+  url = "/boards"
+  weight = 2
+  [[main.params]]
+    icon = "fa-user-friends"
+  [[main]]
+  parent = "About"
+  name = "Funding"
+  url = "/funding"
+  weight = 3
+  [[main.params]]
+    icon = "fa-money-check"
+  [[main]]
+  parent = "About"
+  name = "Annual reports"
+  url = "/annual-reports"
+  weight = 4
+  [[main.params]]
+    icon = "fa-calendar-alt"
+  [[main]]
+  parent = "About"
+  name = "Job openings"
+  url = "/job-openings"
+  weight = 4
+  [[main.params]]
+    icon = "fa-user-check"
