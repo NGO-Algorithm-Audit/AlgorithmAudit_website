@@ -59,9 +59,30 @@ hasChildren = true
     icon = "fa-code"
 
 [[main]]
-name = "Knowledge base"
-url = "knowledge_base"
+name = "Knowledge platform"
 weight = 4
+hasChildren = true
+  [[main]]
+  parent = "Knowledge platform"
+  name = "AI Act standards"
+  url = "/ai-act-standards"
+  weight = 1
+  [[main.params]]
+    icon = "fa-check"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "AI policy observatory"
+  url = "/ai-policy-observatory"
+  weight = 2
+  [[main.params]]
+    icon = "fa-search"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "Knowledge base"
+  url = "/knowledge_base"
+  weight = 3
+  [[main.params]]
+    icon = "fa-brain"
 
 [[main]]
 name = "Events"
