@@ -4,57 +4,67 @@
 
 <script>
     $(document).ready(function () {
-        $('.facet-checkbox').change(function () {
-            let checkedItemsHelper = {};
-            $('.facet-group').each(function () {
-                // Atleast one element is checked
-                if ($(this).find('input:checkbox:checked').length > 0) {
-                    let group_name = $(this).attr('data-facet-group');
-                    checkedItemsHelper[group_name] = [];
-                    $(this).find('input:checkbox:checked').each(function () {
-                        checkedItemsHelper[group_name].push(this.id);
-                    })
-                }
-            });
-
-            // Show all items
-            $('.algoprudence-article').each(function() {
-                $(this).show();
-            });
-
-            // Hide those without the right facets
-            // The logic is as follow
-            // We loop through all selected groups, as we dont want to filter on non-selected groups
-            // Then we get all articles and loop through their facets
-            // If none of them match any filters within the group, hide it.
-
-            // Loop through all groups
-            $.each(checkedItemsHelper, function(groupName, selectedFacets) {
-                // Get all articles
-                $('.algoprudence-article').each(function() {
-
-                    // Loop through their facets
-                    var facets_on_article = $(this).attr('data-facets').split('{{$split_char}}');
-                    if(!$(facets_on_article).is(function(index_facet_on_article) {
-                        let facet_on_article = facets_on_article[index_facet_on_article];
-
-                        // Loop through the selected facets of this group
-                        return $(selectedFacets).is(function(index_of_selected_facet) {
-                            let selectedFacet = selectedFacets[index_of_selected_facet];
-
-                            // Check if they match
-                            return selectedFacet == facet_on_article;
-                        });
-
-                    }))
-                    {
-                        $(this).hide();
-                    }
-                })
-            })
-
-        });
+        $('.facet-checkbox').change(filterItems);
     });
+
+    function filterItems() {
+        let checkedItemsHelper = {};
+        $('.facet-group').each(function () {
+            // Atleast one element is checked
+            if ($(this).find('input:checkbox:checked').length > 0) {
+                let group_name = $(this).attr('data-facet-group');
+                checkedItemsHelper[group_name] = [];
+                $(this).find('input:checkbox:checked').each(function () {
+                    checkedItemsHelper[group_name].push(this.id);
+                })
+            }
+        });
+
+        // Show all items
+        $('.algoprudence-article').each(function () {
+            $(this).show();
+        });
+
+        // Hide those without the right facets
+        // The logic is as follow
+        // We loop through all selected groups, as we dont want to filter on non-selected groups
+        // Then we get all articles and loop through their facets
+        // If none of them match any filters within the group, hide it.
+
+        // Loop through all groups
+        $.each(checkedItemsHelper, function (groupName, selectedFacets) {
+            // Get all articles
+            getAllArticles().each(function () {
+
+                // Loop through their facets
+                var facets_on_article = getFacetsOnArticle(this);
+                if (!anyFacetMatches(facets_on_article, selectedFacets)) {
+                    $(this).hide();
+                }
+            })
+        })
+    }
+
+    function getAllArticles() {
+        return $('.algoprudence-article');
+    }
+
+    function getFacetsOnArticle(article) {
+        return $(article).attr('data-facets').split('{{$split_char}}');
+    }
+
+    function anyFacetMatches(facetsA, facetsB) {
+        return $(facetsA).is(function (index_facet_a) {
+            let facet_a = facetsA[index_facet_a];
+            return $(facetsB).is(function (index_facet_b) {
+                let facet_b = facetsB[index_facet_b];
+
+                // Check if they match
+                return facet_b == facet_a;
+            });
+
+        })
+    }
 </script>
 
 <section class="section">
@@ -93,7 +103,8 @@
                             {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
                             $facet.value | printf "%s" }}
                             {{ end }}
-                            <div class="row p-5 shadow rounded-lg algoprudence-article" data-facets="{{$facets_for_data_attribute}}">
+                            <div class="row p-5 shadow rounded-lg algoprudence-article"
+                                data-facets="{{$facets_for_data_attribute}}">
 
                                 {{ range $facet := $algoprudence.facets }}
                                 <span class="mr-1 mb-2">{{$facet.label}}</span>
