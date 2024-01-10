@@ -8,6 +8,8 @@
             filterItems();
             updateFacetCount();
         });
+
+        updateFacetCount();
     });
 
     function filterItems() {
@@ -40,7 +42,7 @@
 
     function updateFacetCount()
     {
-        // Create helper with {groupname:facets[]}
+        // Create helper with {groupname:facets[]} for all groups
         let groups = {};
         $('.facet-group').each(function () {
             let group_name = $(this).attr('data-facet-group');
@@ -50,34 +52,36 @@
             })
         });
 
-        let selectedGroups = getSelectedGroups();
-
+        // Loop through all groups so we can handle their facets
         $.each(groups, function (groupName, facets) {
             let articles = getAllArticles();
 
-            // Remove articles not in facets of other groups
-            $.each(selectedGroups, function(selectedGroupName, selectedFacets) {
+            // Remove articles which are selected/filtered through other selected groups
+            $.each(getSelectedGroups(), function(selectedGroupName, selectedFacets) {
 
+                // skip our own group, because other facets within this group don't filter. (OR logic within groups) 
                 if(groupName == selectedGroupName)
                 {
-                    // skip because facets within this group aren't needed for the count. 
                     return true;
                 }
 
+                // filter all articles matching the selected facets
                 articles = articles.filter(function() {
                     return anyFacetMatches(getFacetsOnArticle(this), selectedFacets);
                 });
             })
 
+            // Loop through all facets within this group so we can update their count
             $(facets).each(function(facet_index)
             {
+                // Calculate the matching articles for this facet
                 let facet = facets[facet_index];
                 let facetCount = articles.filter(function()
                 {
                     return anyFacetMatches(getFacetsOnArticle(this), [facet]);
                 }).length;
 
-
+                // Update the label according to the count
                 let facetCheckbox = $('#' + facet);
                 let facetLabel = facetCheckbox.attr('name');
                 let facetLabelWithCount = facetLabel + ' (' + facetCount + ')';
