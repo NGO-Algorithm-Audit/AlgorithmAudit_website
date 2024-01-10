@@ -4,24 +4,18 @@
 
 <script>
     $(document).ready(function () {
-        $('.facet-checkbox').change(filterItems);
+        $('.facet-checkbox').change(function() {
+            filterItems();
+            updateFacetCount();
+        });
     });
 
     function filterItems() {
-        let checkedItemsHelper = {};
-        $('.facet-group').each(function () {
-            // Atleast one element is checked
-            if ($(this).find('input:checkbox:checked').length > 0) {
-                let group_name = $(this).attr('data-facet-group');
-                checkedItemsHelper[group_name] = [];
-                $(this).find('input:checkbox:checked').each(function () {
-                    checkedItemsHelper[group_name].push(this.id);
-                })
-            }
-        });
+        // Create helper with {groupname:facets[]}
+        let selectedGroups = getSelectedGroups();
 
         // Show all items
-        $('.algoprudence-article').each(function () {
+        getAllArticles().each(function () {
             $(this).show();
         });
 
@@ -32,10 +26,9 @@
         // If none of them match any filters within the group, hide it.
 
         // Loop through all groups
-        $.each(checkedItemsHelper, function (groupName, selectedFacets) {
+        $.each(selectedGroups, function (groupName, selectedFacets) {
             // Get all articles
             getAllArticles().each(function () {
-
                 // Loop through their facets
                 var facets_on_article = getFacetsOnArticle(this);
                 if (!anyFacetMatches(facets_on_article, selectedFacets)) {
@@ -43,6 +36,55 @@
                 }
             })
         })
+    }
+
+    function updateFacetCount()
+    {
+        // Create helper with {groupname:facets[]}
+        let groups = {};
+        $('.facet-group').each(function () {
+            let group_name = $(this).attr('data-facet-group');
+            groups[group_name] = [];
+            $(this).find('input:checkbox').each(function () {
+                groups[group_name].push(this.id);
+            })
+        });
+
+        let selectedGroups = getSelectedGroups();
+
+        $.each(groups, function (groupName, facets) {
+            let articles = getAllArticles();
+
+            // Remove articles not in facets of other groups
+            $.each(selectedGroups, function(selectedGroupName, selectedFacets) {
+
+                if(groupName == selectedGroupName)
+                {
+                    // skip because facets within this group aren't needed for the count. 
+                    return true;
+                }
+
+                articles = articles.filter(function() {
+                    return anyFacetMatches(getFacetsOnArticle(this), selectedFacets);
+                });
+            })
+
+            $(facets).each(function(facet_index)
+            {
+                let facet = facets[facet_index];
+                let facetCount = articles.filter(function()
+                {
+                    return anyFacetMatches(getFacetsOnArticle(this), [facet]);
+                }).length;
+
+
+                let facetCheckbox = $('#' + facet);
+                let facetLabel = facetCheckbox.attr('name');
+                let facetLabelWithCount = facetLabel + ' (' + facetCount + ')';
+                facetCheckbox.text(facetLabelWithCount);
+                $('label[for="'+facet+'"]').text(facetLabelWithCount);
+            });
+        });
     }
 
     function getAllArticles() {
@@ -64,6 +106,22 @@
             });
 
         })
+    }
+
+    function getSelectedGroups()
+    {
+        let selectedGroups = {};
+        $('.facet-group').each(function () {
+            // Atleast one element is checked
+            if ($(this).find('input:checkbox:checked').length > 0) {
+                let group_name = $(this).attr('data-facet-group');
+                selectedGroups[group_name] = [];
+                $(this).find('input:checkbox:checked').each(function () {
+                    selectedGroups[group_name].push(this.id);
+                })
+            }
+        });
+        return selectedGroups;
     }
 </script>
 
