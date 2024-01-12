@@ -173,7 +173,7 @@
                                                 {{$algoprudence.title}}
                                             </h4>
                                             <p>{{$algoprudence.intro | markdownify}} <a
-                                                    href="{{$algoprudence.link | relURL}}">Read more...</a> </p>
+                                                    href="{{$algoprudence.link | relURL}}">{{ i18n "read_more" }}</a> </p>
                                         </div>
                                         <div class="row">
                                             {{ range $facet := $algoprudence.facets }}

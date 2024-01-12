@@ -21,3 +21,21 @@ other = "Message"
 
 [sendnow]
 other = "Send"
+
+[read_more]
+other = "Read more..."
+
+[key_takeaways_normative_advice_commission]
+other = "Key takeaways normative advice commission"
+
+[summary-advice]
+other = "Summary advice"
+
+[source_of_case]
+other = "Source of case"
+
+[normative-advice-commission]
+other = "Normative advice commission"
+
+[funded-by]
+other = "Funded by"
