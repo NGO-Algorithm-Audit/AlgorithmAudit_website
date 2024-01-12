@@ -27,18 +27,19 @@ export default [
         list: true,
         fields: 
         [
-            {
-                type: "string",
-                name: "title",
-                label: "Title",
-                required: true,
-            },
+            
             {
                 type: "string",
                 name: "value",
                 label: "Value",
                 required: true,
                 description: "Lowercase without any special characters"
+            },
+            {
+                type: "string",
+                name: "title",
+                label: "Title",
+                required: true,
             },
             {
                 type: "object",

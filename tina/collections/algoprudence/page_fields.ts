@@ -10,6 +10,12 @@ export default [
         required: true,
     },
     {
+        type: "string",
+        name: "icon",
+        label: "Icon",
+        description: "font awesome (i.e. fa-poll-h)"
+    },
+    {
         type: "object",
         name: "key_takeaways",
         label: "Key takeaways normative advice commission.",

@@ -13,15 +13,40 @@ subtitle: >
   out</span>](/#contactform) to us when you know a case for review.
 image: /images/AIA.jpg
 facet_groups:
-  - title: Year
-    value: year
+  - value: year
+    title: Year
     facets:
       - value: '2023'
         label: '2023'
       - value: '2022'
         label: '2022'
+  - value: owner
+    title: Algorithm owned by
+    facets:
+      - value: public
+        label: Public organisation
+      - value: private
+        label: Private organisation
+      - value: self
+        label: Algorithm Audit
+  - value: type_of_algorithm
+    title: Type of Algorithm
+    facets:
+      - value: profiling
+        label: Profiling
+      - value: ml
+        label: Machine Learning (ML)
+      - value: bias_detection_tool
+        label: Bias Detection Tool
+  - value: ethical_issue
+    title: Ethical issue
+    facets:
+      - value: proxy
+        label: Proxy discrimination
+      - value: fp_fn_balancing
+        label: FP-FN balancing
 algoprudences:
-  - title: 'Risk Profiling for Social Welfare Reexamination (AA:2023:02)'
+  - title: Risk Profiling for Social Welfare Reexamination
     intro: >-
       The commission judges that algorithmic risk profiling can be used under
       strict conditions for sampling residents receiving social welfare for
@@ -31,9 +56,19 @@ algoprudences:
       /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
     link: /algoprudence/risk-profiling-for-social-welfare-reexamination-aa202302/
     facets:
+      - value: aa202302
+        label: 'AA:2023:02'
       - value: year_2023
         label: '2023'
-  - title: 'BERT-based disinformation classifier (AA:2023:01)'
+      - value: owner_public
+        label: Public organisation
+      - value: type_of_algorithm_profiling
+        label: Profiling
+      - value: type_of_algorithm_ml
+        label: ML
+      - value: ethical_issue_proxy
+        label: Proxy discrimination
+  - title: BERT-based disinformation classifier
     intro: >-
       The audit commission believes there is a low risk of (higher-dimensional)
       proxy discrimination by the BERT-based disinformation classifier and that
@@ -42,11 +77,19 @@ algoprudences:
     image: /images/algoprudence/en_bert-based-disinformation-classifier-aa202301.png
     link: /algoprudence/bert-based-disinformation-classifier-aa202301
     facets:
+      - value: aa_2023_01
+        label: 'AA:2023:01'
       - value: year_2023
         label: '2023'
-  - title: >-
-      Type of SIM card as a predictor variable to detect payment fraud
-      (AA:2022:01)
+      - value: owner_self
+        label: Algorithm Audit
+      - value: type_of_algorithm_bias_detection_tool
+        label: Bias Detection Tool
+      - value: type_of_algorithm_ml
+        label: ML
+      - value: ethical_issue_fp_fn_balancing
+        label: FP-FN balancing
+  - title: Type of SIM card as a predictor variable to detect payment fraud
     intro: >-
       The audit commission advises against using type of SIM card as an input
       variable in algorithmic models that predict payment defaults and block
@@ -59,7 +102,15 @@ algoprudences:
     link: >-
       /algoprudence/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
     facets:
+      - value: AA-2022-01
+        label: 'AA:2022:01'
       - value: year_2022
         label: '2022'
+      - value: owner_private
+        label: Private organisation
+      - value: type_of_algorithm_profiling
+        label: Profiling
+      - value: ethical_issue_proxy
+        label: Proxy discrimination
 ---
 
