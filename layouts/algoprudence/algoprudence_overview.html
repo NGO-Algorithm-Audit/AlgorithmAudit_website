@@ -4,7 +4,7 @@
 
 <script>
     $(document).ready(function () {
-        $('.facet-checkbox').change(function() {
+        $('.facet-checkbox').change(function () {
             filterItems();
             updateFacetCount();
         });
@@ -40,8 +40,7 @@
         })
     }
 
-    function updateFacetCount()
-    {
+    function updateFacetCount() {
         // Create helper with {groupname:facets[]} for all groups
         let groups = {};
         $('.facet-group').each(function () {
@@ -57,27 +56,24 @@
             let articles = getAllArticles();
 
             // Remove articles which are selected/filtered through other selected groups
-            $.each(getSelectedGroups(), function(selectedGroupName, selectedFacets) {
+            $.each(getSelectedGroups(), function (selectedGroupName, selectedFacets) {
 
                 // skip our own group, because other facets within this group don't filter. (OR logic within groups) 
-                if(groupName == selectedGroupName)
-                {
+                if (groupName == selectedGroupName) {
                     return true;
                 }
 
                 // filter all articles matching the selected facets
-                articles = articles.filter(function() {
+                articles = articles.filter(function () {
                     return anyFacetMatches(getFacetsOnArticle(this), selectedFacets);
                 });
             })
 
             // Loop through all facets within this group so we can update their count
-            $(facets).each(function(facet_index)
-            {
+            $(facets).each(function (facet_index) {
                 // Calculate the matching articles for this facet
                 let facet = facets[facet_index];
-                let facetCount = articles.filter(function()
-                {
+                let facetCount = articles.filter(function () {
                     return anyFacetMatches(getFacetsOnArticle(this), [facet]);
                 }).length;
 
@@ -86,7 +82,7 @@
                 let facetLabel = facetCheckbox.attr('name');
                 let facetLabelWithCount = facetLabel + ' (' + facetCount + ')';
                 facetCheckbox.text(facetLabelWithCount);
-                $('label[for="'+facet+'"]').text(facetLabelWithCount);
+                $('label[for="' + facet + '"]').text(facetLabelWithCount);
             });
         });
     }
@@ -112,8 +108,7 @@
         })
     }
 
-    function getSelectedGroups()
-    {
+    function getSelectedGroups() {
         let selectedGroups = {};
         $('.facet-group').each(function () {
             // Atleast one element is checked
@@ -132,11 +127,11 @@
 <section class="section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="content">
+            <div class="col mx-auto">
+                <div class="content container">
                     <div class="row" style="margin-bottom:25px;">
                         <!-- Facets -->
-                        <div class="mt-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="mt-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
                             {{ range $facet_group := .Params.facet_groups}}
                             <div class="facet-group" data-facet-group="{{$facet_group.value}}">
                                 <fieldset>
@@ -154,7 +149,7 @@
                         </div>
 
                         <!-- Articles -->
-                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                             {{ if .Params.algoprudences }}
                             {{ range $algoprudence := .Params.algoprudences }}
 
@@ -165,39 +160,37 @@
                             {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
                             $facet.value | printf "%s" }}
                             {{ end }}
-                            <div class="row p-5 shadow rounded-lg algoprudence-article"
+
+                            <div class="grid p-5 shadow rounded-lg algoprudence-article"
                                 data-facets="{{$facets_for_data_attribute}}">
-
-                                {{ range $facet := $algoprudence.facets }}
-                                <span class="mr-1 mb-2">{{$facet.label}}</span>
-                                {{end}}
-
-                                <a href="{{$algoprudence.link}}">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <img class="img-responsive" src="{{$algoprudence.image}}" />
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                        <div class="row align-items-center">
                                             <h3 class="mb-4" style="color: #005aa7;">
                                                 {{$algoprudence.title}}
                                             </h3>
-
-                                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <p>{{$algoprudence.intro | markdownify}}</p>
-
-                                            </div>
+                                            <p>{{$algoprudence.intro | markdownify}} <a
+                                                    href="{{$algoprudence.link | relURL}}">Read more...</a> </p>
                                         </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                            <div class="center-vert" style="position:relative;margin:25px 0"><label
-                                                    class="btn">Read more</label></div>
+                                        <div class="row">
+                                            {{ range $facet := $algoprudence.facets }}
+                                            <span class="mr-1 mb-2">{{$facet.label}}</span>
+                                            {{end}}
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             {{end}}
-                            {{end}}
                         </div>
+                        {{end}}
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 {{ end }}
