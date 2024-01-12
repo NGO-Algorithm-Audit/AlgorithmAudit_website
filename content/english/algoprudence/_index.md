@@ -11,7 +11,7 @@ subtitle: >
 
   We are open to new cases. Please [<span style="color:#005aa7"> reach
   out</span>](/#contactform) to us when you know a case for review.
-image: /images/AIA.jpg
+image: /images/case_repository.svg
 facet_groups:
   - value: year
     title: Year
