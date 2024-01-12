@@ -40,7 +40,7 @@ algoprudences:
       the particular difference in treatment identified by the quantitative bias
       scan can be justified, if certain conditions apply.
     image: /images/algoprudence/en_bert-based-disinformation-classifier-aa202301.png
-    link: /algoprudence/BERT-based-disinformation-classifier-AA202301
+    link: /algoprudence/bert-based-disinformation-classifier-aa202301
     facets:
       - value: year_2023
         label: '2023'
