@@ -164,10 +164,14 @@
                             <div class="grid p-5 shadow rounded-lg algoprudence-article"
                                 data-facets="{{$facets_for_data_attribute}}">
                                 <div class="row">
-                                    <div class="col-3 pr-4">
-                                        <img class="img-fluid" src="{{$algoprudence.image}}" />
+                                    <div class="col-md-3 col-sm-12 pr-4">
+                                        <div class="row justify-content-center">
+                                            <div class="col-8 col-md-12 mb-5">
+                                                <img class="img-fluid" src="{{$algoprudence.image}}" />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-md-9 col-sm-12">
                                         <div class="row align-items-center">
                                             <h4 class="mb-4" style="color: #005aa7;">
                                                 {{$algoprudence.title}}
