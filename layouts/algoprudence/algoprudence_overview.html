@@ -149,8 +149,8 @@
                         </div>
 
                         <!-- Articles -->
+                        {{ if .Params.algoprudences }}
                         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                            {{ if .Params.algoprudences }}
                             {{ range $algoprudence := .Params.algoprudences }}
 
                             {{ $facets_for_data_attribute := "" }}
@@ -161,7 +161,7 @@
                             $facet.value | printf "%s" }}
                             {{ end }}
 
-                            <div class="grid p-5 shadow rounded-lg algoprudence-article"
+                            <div class="grid p-5 shadow rounded-lg"
                                 data-facets="{{$facets_for_data_attribute}}">
                                 <div class="row">
                                     <div class="col-3 pr-4">
@@ -173,11 +173,13 @@
                                                 {{$algoprudence.title}}
                                             </h4>
                                             <p>{{$algoprudence.intro | markdownify}} <a
-                                                    href="{{$algoprudence.link | relURL}}">{{ i18n "read_more" }}</a> </p>
+                                                    href="{{$algoprudence.link | relURL}}">{{ i18n "read_more" }}</a>
+                                            </p>
                                         </div>
                                         <div class="row">
                                             {{ range $facet := $algoprudence.facets }}
-                                            <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">{{$facet.label}}</span>
+                                            <span style="background-color: #005aa7; color: #ffffff;"
+                                                class="mr-1 mb-2 px-2 py-1 mx-1">{{$facet.label}}</span>
                                             {{end}}
                                         </div>
                                     </div>
