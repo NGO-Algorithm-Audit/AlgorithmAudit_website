@@ -160,10 +160,9 @@
                             {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
                             $facet.value | printf "%s" }}
                             {{ end }}
-
-                            <div class="grid p-5 shadow rounded-lg"
-                                data-facets="{{$facets_for_data_attribute}}">
-                                <div class="row">
+                            
+                            <div class="clickable-wrapper" data-href="{{$algoprudence.link | relURL }}">
+                                <div class="row p-5 shadow rounded-lg" data-facets="{{$facets_for_data_attribute}}">
                                     <div class="col-3 pr-4">
                                         <img class="img-fluid" src="{{$algoprudence.image}}" />
                                     </div>

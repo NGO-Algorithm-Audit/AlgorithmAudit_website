@@ -8,3 +8,7 @@
 	float: left;
 	padding-top: 100%; 	/* initial ratio of 1:1*/
 }
+
+.clickable-wrapper:hover {
+    text-decoration: underline;
+}

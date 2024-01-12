@@ -52,5 +52,12 @@ $(document).ready(function()
   $('#KvK').text(KvK);
   $('#follow').text(follow);
 
+
+  $('.clickable-wrapper').each(function() {
+    let clickable_item = $(this);
+    clickable_item.click(function() {
+      window.location = clickable_item.attr('data-href');
+    })
+  });
 });
 </script>

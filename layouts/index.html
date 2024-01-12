@@ -59,18 +59,17 @@
           <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "featured" }}</h2>
         </div>
         {{ range .featured_activities }}
-        <div class="row" style="background-color: #ffffff;">
-          <div class="grid p-5 shadow rounded-lg">
-            <div class="row">
-              <div class="col-3 pr-4">
-                <img class="img-fluid" src="{{.image}}" />
-              </div>
-              <div class="col-9">
+        <div class="clickable-wrapper" data-href="{{.link | relURL }}">
+          <div class="row p-5" style="background-color: #ffffff;">
+            <div class="col-3 pr-4">
+              <img class="img-fluid" src="{{.image}}" />
+            </div>
+            <div class="col-9">
                 <div class="row align-items-center">
                   <h4 class="mb-4" style="color: #005aa7;">
                     {{.title}}
                   </h4>
-                  <p>{{.intro | markdownify}} <a href="{{.link | relURL}}">{{ i18n
+                  <p style="color: #777">{{.intro | markdownify}} <a href="{{.link | relURL}}">{{ i18n
                       "read_more" }}</a>
                   </p>
                 </div>
@@ -86,7 +85,6 @@
                   </span>
                   {{ end }}
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -98,36 +96,38 @@
           <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "recent-activity" }}</h2>
         </div>
         {{ range .activities }}
-        <div class="row justify-content-between my-4">
-          <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
-            <img class="img-fluid about-img p-5" src="{{.image}}" />
-          </div>
-          <div class="col" style="background-color: #ffffff;">
-            <div class="row align-items-center">
-              <h4 class="my-4 mx-3" style="color: #005aa7;">
-                {{.title}}
-              </h4>
+        <a href="{{ .link | relURL }}">
+          <div class="row justify-content-between my-4">
+            <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
+              <img class="img-fluid about-img p-5" src="{{.image}}" />
             </div>
-            <div class="row" style="position: absolute; bottom: 0;">
-              {{ if .date }}
-              <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
-                {{.date }}
-              </span>
-              {{ end }}
-              {{ if .type }}
-              <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">
-                {{ .type }}
-              </span>
-              {{ end }}
+            <div class="col" style="background-color: #ffffff;">
+              <div class="row align-items-center">
+                <h4 class="my-4 mx-3" style="color: #005aa7;">
+                  {{.title}}
+                </h4>
+              </div>
+              <div class="row" style="position: absolute; bottom: 0;">
+                {{ if .date }}
+                <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                  {{.date }}
+                </span>
+                {{ end }}
+                {{ if .type }}
+                <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                  {{ .type }}
+                </span>
+                {{ end }}
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         {{end}}
         <!-- /Activities -->
 
         <!-- More -->
         <div class="row mt-4 pb-3 justify-content-center d-flex">
-            <a href="{{.view_all_link}}"><label class="btn">{{.view_all_text}}</label></a>
+          <a href="{{.view_all_link}}"><label class="btn">{{.view_all_text}}</label></a>
         </div>
         <!-- /More -->
 
