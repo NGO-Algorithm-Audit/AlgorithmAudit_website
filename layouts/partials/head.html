@@ -23,3 +23,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 <meta name="msapplication-TileColor" content="{{site.Params.variables.primary_color | default `#da532c`}}">
 <meta name="theme-color" content="{{site.Params.variables.body_color | default `#ffffff` }}">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function()
+{
+  // info
+  var slogan = "We build public knowledge for ethical algorithms";
+  var slogan_NL = "Publieke kennisopbouw voor ethische algoritmes";
+
+  var KvK = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212."
+  var KvK_NL = "Stichting Algorithm Audit is bij de Kamer van Koophandel geregistreerd onder nummer 83979212."
+
+  var follow = "Follow us:"
+  var follow_NL = "Volg ons:"
+
+  var location = window.location.href
+  if(location.includes("nl")){
+    // info
+    var slogan = slogan_NL
+    var KvK = KvK_NL
+    var follow = follow_NL
+  }
+
+  // info
+  $('#motto').text(slogan);
+  $('#KvK').text(KvK);
+  $('#follow').text(follow);
+
+});
+</script>
