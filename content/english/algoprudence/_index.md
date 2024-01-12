@@ -1,17 +1,116 @@
 ---
+layout: algoprudence_overview
 title: Algoprudence
-subtitle: We are working on a variety of cases. Once an normative advice commission has gathered and examined the ethical issue, the original problem statement and corresponding advice will be published on this website. Others learn from our algoprudence, help to improve it and utilize it as a best practice in similar cases.
+subtitle: >
+  We are working on a variety of cases. Once an normative advice commission has
+  gathered and examined the ethical issue, the original problem statement and
+  corresponding advice will be published on this website. Others learn from our
+  algoprudence, help to improve it and utilize it as a best practice in similar
+  cases.
 
 
-  We are open to new cases. Please [<span style="color:#005aa7"> reach out</span>](/#contactform) to us when you know a case for review.
-image: "images/case_repository.svg"
-
+  We are open to new cases. Please [<span style="color:#005aa7"> reach
+  out</span>](/#contactform) to us when you know a case for review.
+image: /images/AIA.jpg
+facet_groups:
+  - value: year
+    title: Year
+    facets:
+      - value: '2023'
+        label: '2023'
+      - value: '2022'
+        label: '2022'
+  - value: owner
+    title: Algorithm owned by
+    facets:
+      - value: public
+        label: Public organisation
+      - value: private
+        label: Private organisation
+      - value: self
+        label: Algorithm Audit
+  - value: type_of_algorithm
+    title: Type of Algorithm
+    facets:
+      - value: profiling
+        label: Profiling
+      - value: ml
+        label: Machine Learning (ML)
+      - value: bias_detection_tool
+        label: Bias Detection Tool
+  - value: ethical_issue
+    title: Ethical issue
+    facets:
+      - value: proxy
+        label: Proxy discrimination
+      - value: fp_fn_balancing
+        label: FP-FN balancing
+algoprudences:
+  - title: Risk Profiling for Social Welfare Reexamination
+    intro: >-
+      The commission judges that algorithmic risk profiling can be used under
+      strict conditions for sampling residents receiving social welfare for
+      re-examination. The aim of re-examination is a leading factor in judging
+      profiling criteria.
+    image: >-
+      /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
+    link: /algoprudence/risk-profiling-for-social-welfare-reexamination-aa202302/
+    facets:
+      - value: aa202302
+        label: 'AA:2023:02'
+      - value: year_2023
+        label: '2023'
+      - value: owner_public
+        label: Public organisation
+      - value: type_of_algorithm_profiling
+        label: Profiling
+      - value: type_of_algorithm_ml
+        label: ML
+      - value: ethical_issue_proxy
+        label: Proxy discrimination
+  - title: BERT-based disinformation classifier
+    intro: >-
+      The audit commission believes there is a low risk of (higher-dimensional)
+      proxy discrimination by the BERT-based disinformation classifier and that
+      the particular difference in treatment identified by the quantitative bias
+      scan can be justified, if certain conditions apply.
+    image: /images/algoprudence/en_bert-based-disinformation-classifier-aa202301.png
+    link: /algoprudence/bert-based-disinformation-classifier-aa202301
+    facets:
+      - value: aa_2023_01
+        label: 'AA:2023:01'
+      - value: year_2023
+        label: '2023'
+      - value: owner_self
+        label: Algorithm Audit
+      - value: type_of_algorithm_bias_detection_tool
+        label: Bias Detection Tool
+      - value: type_of_algorithm_ml
+        label: ML
+      - value: ethical_issue_fp_fn_balancing
+        label: FP-FN balancing
+  - title: Type of SIM card as a predictor variable to detect payment fraud
+    intro: >-
+      The audit commission advises against using type of SIM card as an input
+      variable in algorithmic models that predict payment defaults and block
+      afterpay services for specific customers. As it is likely that type of SIM
+      card acts as a proxy-variable for sensitive demographic categories, the
+      model would run an intolerable risk of disproportionally excluding
+      vulnerable demographic groups from the payment service.
+    image: >-
+      /images/algoprudence/en_type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201.png
+    link: >-
+      /algoprudence/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
+    facets:
+      - value: AA-2022-01
+        label: 'AA:2022:01'
+      - value: year_2022
+        label: '2022'
+      - value: owner_private
+        label: Private organisation
+      - value: type_of_algorithm_profiling
+        label: Profiling
+      - value: ethical_issue_proxy
+        label: Proxy discrimination
 ---
-<!-- Case Rotterdam -->
-{{< case_Rotterdam_EN "Risk Profiling for Social Welfare Reexamination (AA:2023:02)" >}} {{</ case_Rotterdam_EN >}}
 
-<!-- Case disinfo -->
-{{< case_disinfo "BERT-based disinformation classifier (AA:2023:01)" "Anne Meuwese, Professor in Public Law & AI at Leiden University" "Hinda Haned, Professor in Responsible Data Science at University of Amsterdam" "Raphaële Xenidis, Associate Professor in EU law at Sciences Po Paris" "Aileen Nielsen, Fellow Law&Tech at ETH Zürich" "Carlos Hernández-Echevarría, Assistant Director and Head of Public Policy at the anti-disinformation nonprofit fact-checker" "Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank">}}{{</ case_disinfo >}}
-
-<!-- Case SIM -->
-{{< case_SIM "Type of SIM card as a predictor variable to detect payment fraud (AA:2022:01)" "Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University" "Jan Overgoor, PhD Management Science and Engineering, Stanford University" "Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg University" "Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft">}}{{</ case_SIM >}}
