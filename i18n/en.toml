@@ -39,3 +39,9 @@ other = "Normative advice commission"
 
 [funded-by]
 other = "Funded by"
+
+[featured]
+other = "Featured"
+
+[recent-activity]
+other = "Recent activity"
