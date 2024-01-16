@@ -53,27 +53,22 @@ $(document).ready(function () {
     // build scene
     var scene1 = new ScrollMagic.Scene({ triggerElement: ".pinDiv1", duration: 300 })
         .setTween(tween1)
-        .addIndicators() // add indicators (requires plugin)
+        // .addIndicators()
         .addTo(controller);
     var scene2 = new ScrollMagic.Scene({ triggerElement: ".pinDiv1", duration: 300 })
         .setTween(tween2)
-        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
     var scene3 = new ScrollMagic.Scene({ triggerElement: ".pinDiv1", duration: 300 })
         .setTween(tween3)
-        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
     var scene4 = new ScrollMagic.Scene({ triggerElement: ".pinDiv1", duration: 300 })
         .setTween(tween4)
-        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
     var scene5 = new ScrollMagic.Scene({ triggerElement: ".pinDiv1", duration: 300 })
         .setTween(tween5)
-        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
     var scene6 = new ScrollMagic.Scene({ triggerElement: ".pinDiv1", duration: 300 })
         .setTween(tween6)
-        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 });
 
@@ -141,7 +136,7 @@ $(document).ready(function () {
     // build scene
     var scene = new ScrollMagic.Scene({ triggerElement: ".pinDiv2", duration: 400 })
         .setTween(tween)
-        .addIndicators() // add indicators (requires plugin)
+        // .addIndicators()
         .addTo(controller);
     console.log(obj)
 });
