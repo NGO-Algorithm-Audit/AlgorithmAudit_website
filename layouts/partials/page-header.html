@@ -1,19 +1,58 @@
-<section class="section-top pb-0">
-  <div class="gradient-background">
-    <div class="page-title row" style="display: flex; align-items: center;">
+<section class="banner banner-background">
+  <div class="container">
+    <div class="row" style="display: flex; align-items: center;">
 
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top: 100px;">
-        <h1 class="mb-3" style="font-size: 36px; color: #005aa7; ">{{ .Title | markdownify }}</h1>
-        {{ with .Params.subtitle }}
-        <div style="width:80%;">
-          <p>{{ . | markdownify }}</p>
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-lg-1">
+        <!-- title -->
+        <h2 style="color:#005aa7;">{{ .Params.Title | markdownify }}</h2>
+        <div>
+          <p style="color:#005aa7; font-size: 18px;"> {{.Params.subtitle | markdownify}} </p>
         </div>
-        {{ end }}
       </div>
+      <!-- /al-go-pru-dence -->
 
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 illustration">
-        {{with .Params.image}}<img src="{{ . | relURL }}" style="margin-left: auto; margin-right: auto;" id="page-header-illustration" class="img-fluid mt-5">{{end}}
+      <!-- image -->
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-3 order-lg-2">
+        <img src='{{ .Params.image | relURL }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
       </div>
+      <!-- image -->
     </div>
+
+    <div class="pinDiv1"></div>
   </div>
 </section>
+
+<!-- Divider block elements -->
+<div class="row" id="gradient-line-blocks">
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box1"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #FFFEE4, #F7F8E3) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box2"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #F7F8E3, #E9EFE0) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box3"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #E9EFE0, #D2DEDC) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box4"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #D2DEDC, #B4C8D5) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box5"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #B4C8D5, #8FAFD0) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box6"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #8FAFD0, #618EC7) 1 0 0 0;"></div>
+  </div>
+</div>
+<!-- /Divider block elements -->
