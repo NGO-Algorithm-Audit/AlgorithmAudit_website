@@ -274,13 +274,45 @@ Get_in_touch:
     know!
 Activity_Feed:
   enable: true
-  title: Acitivity feed
-  view_all_text: Hello
-  view_all_link: test
-  Featured_Articles:
-    - title: Featured test
-      link: featured_test
-      type: regular
+  featured_title: Featured
+  view_all_text: View more...
+  view_all_link: /events
+  featured_activities:
+    - title: >-
+        Algoprudence (AA:2023:02) Risk Profiling for Social Welfare
+        Reexamination 
+      intro: >
+        The commission judges that algorithmic risk profiling can be used under
+        strict conditions for sampling residents receiving social welfare for
+        re-examination. The aim of re-examination is a leading factor in judging
+        profiling criteria.
+      link: /algoprudence
+      image: >-
+        /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
+      date: 29-11-2023
+      type: algoprudence
+  activities:
+    - title: >-
+        Presentation for municipal stakeholder at Dutch Data Protection
+        Authority about Algoprudence (AA:2023:02) Risk Profiling for Social
+        Welfare Reexamination 
+      link: /events
+      image: /images/events/dutch-data-protection.jpg
+      date: 17-01-2024
+      type: presentation
+    - title: >-
+        Lunch lecture Bias Detection Tool study association Dutch Data
+        Protection Authority about algoprudence (AA:2023:02) Risk Profiling for
+        Social Welfare Reexamination 
+      link: /events
+      image: /images/events/mathematics and computer science tu delft.png
+      date: 08-01-2024
+      type: presentation
+    - title: Presentation on stakeholder panel WG1 Inclusiveness JTC21
+      link: /events
+      image: /images/events/jtc21.jpg
+      date: 07-01-2024
+      type: presentation
 ---
 
 
