@@ -1,7 +1,8 @@
 ---
+layout: overview
 title: Events
 subtitle: Knowledge sharing is an integral part of Algorithm Audit's mission. Members of our team speak at events. [<span style="color:#005aa7"> Reach out</span>](/#contactform) to discuss contributions.
-image: "images/events.svg"
+image: "/images/events.svg"
 ---
 {{< event-right-DSA "Jun 2023" "DSA Stakeholder Event" "Event to engage with stakeholders on the impact of the Digital Services Act (DSA) in Brussels">}}
 {{< event-left-GL "Jun 2023" "GroenLinks Digital Summit" "Hosting a session on algorithm validation based on our case-based work">}}

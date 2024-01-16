@@ -40,6 +40,12 @@ other = "Normative advice commission"
 [funded-by]
 other = "Funded by"
 
+[description]
+other = "Description"
+
+[attachment]
+other = "Attachment"
+
 [featured]
 other = "Featured"
 

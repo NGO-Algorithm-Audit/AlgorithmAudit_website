@@ -3,7 +3,6 @@
  */
 import facet_groups from "../facets/facet_groups";
 import facets from "../facets/facets";
-
 export default [
     {
         type: "string",
@@ -26,8 +25,8 @@ export default [
     facet_groups,
     {
         type: "object",
-        name: "algoprudences",
-        label: "Algoprudence",
+        name: "events",
+        label: "Events",
         list: true,
         fields:
             [
@@ -38,9 +37,9 @@ export default [
                     required: true,
                 },
                 {
-                    type: "string",
-                    name: "intro",
-                    label: "teaser"
+                    type: "rich-text",
+                    name: "description",
+                    label: "description"
                 },
                 {
                     type: "image",
@@ -50,9 +49,15 @@ export default [
                 },
                 {
                     type: "string",
-                    name: "link",
-                    label: "Link",
-                    required: true
+                    name: "date",
+                    label: "Date",
+                    required: true,
+                    description: "dd-MM-yyyy (i.e. 13-06-2024)"
+                },
+                {
+                    type: "image",
+                    name: "pdf",
+                    label: "PDF",
                 },
                 facets
             ]
