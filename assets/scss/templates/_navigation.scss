@@ -28,8 +28,8 @@
   font-weight: 700;
 }
 
-.gradient-background{
-  background: linear-gradient(to left, #618EC7, #fffde4);
+.banner-background{
+  background: #deecf7;
 }
 
 .navigation{
@@ -110,4 +110,19 @@
   display:none;
 }
 
+.vertical-rotate {
+  display: inline-block;
+  white-space: nowrap;
+}
 
+.rotate-word1 {
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  display: inline-block;
+}
+
+.rotate-word2 {
+  transform: rotate(90deg);
+  transform-origin: 100% 0;
+  display: inline-block;
+}

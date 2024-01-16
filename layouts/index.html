@@ -1,87 +1,190 @@
 {{ define "main" }}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/index_script.js"></script>
-<script type="text/javascript" src="/js/lightbox.js"></script>
-<link rel="stylesheet" href="/css/lightbox.css">
+<script src="/js/home_script.js"></script>
+
+<!-- scroll magic -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!-- /scroll magic -->
 
 <!-- Banner -->
 {{ with .Params.banner }}
-<section class="banner gradient-background">
+<section class="banner banner-background">
   <div class="container">
     <div class="row" style="display: flex; align-items: center;">
 
-      <!-- text illustrations -->
-      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-lg-1 text-center">
-        
-        <div class="row" id="img1" style="display:inline-block; margin:50px 0px;">
-          <div class="row" id="img2" style="display:inline-block;">
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-lg-1">
+
+        <!-- definition -->
+        <div class="row" style="padding:0 30px; margin-bottom:30px;">
+          <h5 class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff; font-weight:100;">definition</h5>
+        </div>
+        <!-- /definition -->
+
+        <!-- al-go-pru-dence -->
+        <div class="container">
+          <h2 style="color:#005aa7;">al-go-pru-dence</h2>
+          <p style="color:#005aa7; font-size: 24px;">/æl.ɡə-ˈpruː.dəns/ <i>noun</i></p>
+        </div>
+        <div>
+          <div style="margin-top:30px; padding-left:15px;">
+            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">1.</b> Case-based normative advice for ethical algorithms</p>
+          </div>
+          <div style="margin-top:15px; padding-left:15px;">
+            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">2.</b> Guidance for decentralised self-assessment of fair AI</p>
+          </div>
+          <div style="margin-top:15px; padding-left:15px;">
+            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">3.</b> Jurisprudence for algorithms</p>
           </div>
         </div>
-
       </div>
-      <!-- text illustrations -->
-
-      <!-- button -->
-      <div class="col-lg-6 col-md-12 col-sm-12 order-md-2 order-lg-3">
-        {{ if .button.enable }}
-        {{ with .button }}
-        <div style="margin-top:0px;">
-          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary" style="text-transform:none;">{{ .label }}</a>
-        </div>
-        {{ end }}
-        {{ end }}
-      </div>
-      <!-- /button -->
+      <!-- /al-go-pru-dence -->
 
       <!-- image -->
       <div class="col-lg-6 col-md-12 col-sm-12 order-md-3 order-lg-2">
         <img src='{{ .image2 | relURL }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
       </div>
       <!-- image -->
-
     </div>
+
+    <!-- European knowledge platform -->
+    <div class="row pinDiv1" style="margin-top:30px; padding-bottom:75px;">
+      <div class="col-12 text-center">
+        <div class="slider-wrapper justify-content-center">
+          <h3 style="color:#005aa7; font-weight:100;">A European knowledge platform for</h3>
+          <div class="ms-slider">
+            <ul class="ms-slider__words">
+              <li class="ms-slider__word">
+                <div class="slider-wrapper mb-1 py-1">
+                  <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff">AI bias testing</i></h3>
+                </div>
+              </li>
+              <li class="ms-slider__word">
+                <div class="slider-wrapper mb-1 py-1">
+                  <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff">normative AI standards</i></h3>
+                </div>
+              </li>
+              <li class="ms-slider__word">
+                <div class="slider-wrapper mb-1 py-1">
+                  <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff">AI bias testing</i></h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /European knowledge platform -->
+
   </div>
 </section>
 {{ end }}
 <!-- /Banner -->
 
-<!-- What we do -->
-{{ with .Params.What_we_do }}
+<!-- Divider block elements -->
+<div class="row" id="gradient-line-blocks">
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box1"></div>
+    <div class="row lower-blocks justify-content-center border-gradient" style="border-image:linear-gradient(to right, #FFFEE4, #F7F8E3) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box2"></div>
+    <div class="row lower-blocks justify-content-center border-gradient" style="border-image:linear-gradient(to right, #F7F8E3, #E9EFE0) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box3"></div>
+    <div class="row lower-blocks justify-content-center border-gradient" style="border-image:linear-gradient(to right, #E9EFE0, #D2DEDC) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box4"></div>
+    <div class="row lower-blocks justify-content-center border-gradient" style="border-image:linear-gradient(to right, #D2DEDC, #B4C8D5) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box5"></div>
+    <div class="row lower-blocks justify-content-center border-gradient" style="border-image:linear-gradient(to right, #B4C8D5, #8FAFD0) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box6"></div>
+    <div class="row lower-blocks justify-content-center border-gradient" style="border-image:linear-gradient(to right, #8FAFD0, #618EC7) 1 0 0 0;"></div>
+  </div>
+</div>
+
+</div>
+<!-- /Divider block elements -->
+
+<!-- Activity feed -->
+{{ with .Params.Activity_Feed}}
 {{ if .enable }}
-<section class="section bg-light" style="background: linear-gradient(to left, #618EC7, #fffde4);">
+<section class="section">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
+    <div class="row d-flex flex-wrap align-items-center">
+      <div class="col-md-12">
+        <h2 class="section-title col-md-12" style="color: #005aa7;">{{ .title | markdownify }}</h2>
       </div>
-      {{$width_m := 4}}
-      {{$width_s := 2}}
-      {{if .width_m}}
-        {{$width_m = .width_m}}
-      {{end}}
-      {{if .width_s}}
-        {{$width_s = .width_s}}
-      {{end}}
-      {{ range .feature_item }}
-      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
-        <div class="feature-card text-center">
-          <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
-          <h4 class="" style="color: #005aa7;">
-              {{ .name | markdownify }}
-          </h4>
-          <p>{{ .content | markdownify }}</p>
+
+      <!-- featured items -->
+      <div class="container">
+        <div class="row">
+          {{ range $i,$featured_article := .Featured_Articles }}
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+              <a href="{{$featured_article.link}}">
+                <div class="container">
+                  <div class="row">
+                    {{if $featured_article.image }}
+                      <div class="col-md-4">
+                        <img src="{{ $featured_article.image }}" class="img-fluid">
+                      </div>
+                      <div class="col-md-8">
+                        <p>{{ $featured_article.type  }}</p>
+                        <h3>{{ $featured_article.title  }}</h3>
+                      </div>
+                    {{ else }}
+                      <div class="col-md-12">
+                        <p>{{ $featured_article.type  }}</p>
+                        <h3>{{ $featured_article.title  }}</h3>
+                      </div>
+                    {{ end }}
+                  </div>
+                </div>
+              </a>
+            </div>
+          {{ end }}
         </div>
       </div>
-      {{ end }}
+      <!-- /featured items -->
+      
+      <!-- items -->
+      <div class="col-md-12" style="background-color:#777777;"></div>
+        <div class="container">
+          <div class="row d-flex">  
+            <a class="float-right" href="{{.view_all_link}}">{{.view_all_text}}</a>
+          </div>
+        </div>
+        <!-- /items -->
+      </div>
     </div>
   </div>
 </section>
 {{ end }}
 {{ end }}
-<!-- /What we do -->
+<!-- /Activity feed -->
+
+<!-- algoprudence animation -->
+<section>
+  <div class="container">
+    <div class="row pinDiv2" style="display: flex; justify-content: center; align-items: center;">
+      <div id="imagesequence">
+        <img id="myimg" width="800px" src="/images/algoprudence-frames/frame-001.png"><br>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /algoprudence animation -->
 
 <!-- Video -->
-<section class="section-bottom bg-white" style="background-color: #ffffff !important; padding:50px 0px 0px 0px;">
+<section class="section-bottom bg-white" style="background-color: #ffffff !important; padding:50px 0px 0px 0px; margin-bottom:75px;">
   <div class="container" style="  display: flex; justify-content: center; align-items: center;">
         <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
           <img src="/images/cover.png" width="600px"/>
@@ -161,6 +264,41 @@
 {{ end }}
 <!-- /Supported by -->
 
+<!-- Distinctive in -->
+{{ with .Params.What_we_do }}
+{{ if .enable }}
+<section class="section bg-light" style="background: linear-gradient(to left, #618EC7, #fffde4);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
+      </div>
+      {{$width_m := 4}}
+      {{$width_s := 2}}
+      {{if .width_m}}
+        {{$width_m = .width_m}}
+      {{end}}
+      {{if .width_s}}
+        {{$width_s = .width_s}}
+      {{end}}
+      {{ range .feature_item }}
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
+        <div class="feature-card text-center">
+          <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
+          <h4 class="" style="color: #005aa7;">
+              {{ .name | markdownify }}
+          </h4>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /Distinctive in -->
+
 <!-- How we work -->
 {{ with .Params.How_we_work }}
 {{ if .enable }}
@@ -191,118 +329,6 @@
 {{ end }}
 {{ end }}
 <!-- /How we work -->
-
-{{ with .Params.Activity_Feed}}
-{{ if .enable }}
-<section class="section">
-  <div class="container">
-    <div class="row d-flex flex-wrap align-items-center">
-      <div class="col-md-12 order-1">
-        <div class="container">
-          <div class="row d-flex">
-            <h2 class="section-title col-md-4" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-            <a class="float-right" href="{{.view_all_link}}">{{.view_all_text}}</a>
-          </div>
-        </div>
-        
-        <div class="container">
-          <div class="row">
-            {{ range $i,$featured_article := .Featured_Articles }}
-              <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
-                <a href="{{$featured_article.link}}">
-                  <div class="container">
-                    <div class="row">
-                      {{if $featured_article.image }}
-                        <div class="col-md-4">
-                          <img src="{{ $featured_article.image }}" class="img-fluid">
-                        </div>
-                        <div class="col-md-8">
-                          <p>{{ $featured_article.type  }}</p>
-                          <h3>{{ $featured_article.title  }}</h3>
-                        </div>
-                      {{ else }}
-                        <div class="col-md-12">
-                          <p>{{ $featured_article.type  }}</p>
-                          <h3>{{ $featured_article.title  }}</h3>
-                        </div>
-                      {{ end }}
-                    </div>
-                  </div>
-                </a>
-              </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-<!-- AA Expert hub -->
-{{ with .Params.AA_expert_hub }}
-{{ if .enable }}
-{{ range $i,$p := .service_item }}
-<section class="section padding-adjust" style="background-color: #b1c4d5 !important;">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <!-- Who we work with -->
-      <div class="col-lg-10 col-md-10 sm-12 order-1">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-        <div style="padding-right:75px;">
-          <p class="mb-4" style="">{{ .content | markdownify }}</p>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-2 sm-0 order-1">
-      </div>
-      <!-- /Who we work with -->
-
-      <!-- Slack -->
-      <!-- <div class="col-lg-6 col-md-6 sm-12 order-2 module-border-wrap">
-        <div class="module">
-
-          <div class="row">
-
-            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 my-auto">
-              <p class="section-title" style="color:#005aa7; font-size:20px; font-weight:bold; margin-bottom:0px;">{{ .expert_hub_title | markdownify }}</p>
-            </div>    
-            
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-slack">
-              <p>{{ .expert_hub_content | markdownify }}</p>
-            </div>
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my-auto">
-              <div class="split" style="align-items: center; display: flex;">
-                <div style="height:100%;">
-                  {{ range .images }}
-                  <img src="{{ . | relURL }}" style="max-height: 50px; margin-bottom:10px;" alt="" class="img-fluid">
-                  {{ end }}
-                </div>
-                <div>
-                  {{ if .button.enable }}
-                  {{ with .button }}
-                  <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #005aa7;"> {{ .label }} <i class="fas fa-arrow-right"></i></a>
-                  {{ end }}
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div> -->
-      <!-- /Slack -->
-
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-{{ end }}
-<!-- /AA Expert hub -->
 
 <!-- Why we exist -->
 {{ with .Params.Why_we_exist }}
