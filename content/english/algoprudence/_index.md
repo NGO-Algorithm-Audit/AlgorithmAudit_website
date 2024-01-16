@@ -1,5 +1,5 @@
 ---
-layout: algoprudence_overview
+layout: overview
 title: Algoprudence
 subtitle: >
   We are working on a variety of cases. Once an normative advice commission has

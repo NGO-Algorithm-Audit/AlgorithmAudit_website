@@ -18,3 +18,9 @@ other = "Normatieve adviescommissie"
 
 [funded-by]
 other = "Gefinancieerd door"
+
+[description]
+other = "Beschrijving"
+
+[attachment]
+other = "Bijlage"

@@ -5,6 +5,8 @@ import algoprudence_overview_en from "./collections/algoprudence/overview_en";
 import algoprudence_overview_nl from "./collections/algoprudence/overview_nl";
 import algoprudence_en from "./collections/algoprudence/page_en";
 import algoprudence_nl from "./collections/algoprudence/page_nl";
+import events_overview_nl from "./collections/events/overview_nl";
+import events_overview_en from "./collections/events/overview_en";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
@@ -31,7 +33,9 @@ export default defineConfig({
       algoprudence_overview_nl,
       algoprudence_overview_en,
       algoprudence_nl,
-      algoprudence_en
+      algoprudence_en,
+      events_overview_nl,
+      events_overview_en
     ],
   },
 });
