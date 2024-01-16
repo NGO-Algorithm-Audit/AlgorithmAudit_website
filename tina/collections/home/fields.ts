@@ -118,9 +118,9 @@ export default [
                     name: "enable",
                 },
                 {
-                    label: "Title",
+                    label: "Featured title",
                     type: "string",
-                    name: "title",
+                    name: "featured_title",
                     required: true,
                 },
                 {
@@ -134,9 +134,63 @@ export default [
                     name: "view_all_link",
                 },
                 {
-                    label: "Featured Articles",
+                    label: "Featured Activities",
                     type: "object",
-                    name: "Featured_Articles",
+                    name: "featured_activities",
+                    list: true,
+                    fields:
+                        [
+                            {
+                                label: "Title",
+                                type: "string",
+                                name: "title",
+                                isTitle: true,
+                                required: true,
+                            },
+                            {
+                                label: "Intro",
+                                type: "rich-text",
+                                name: "intro",
+                                required: true,
+                            },
+                            {
+                                label: "Link",
+                                type: "string",
+                                name: "link",
+                            },
+                            {
+                                label: "Image",
+                                type: "image",
+                                name: "image",
+                            },
+                            {
+                                label: "Date",
+                                type: "string",
+                                name: "date",
+                                description: "dd-MM-yyyy (i.e. 13-06-2024)"
+                            },
+                            {
+                                label: "Type",
+                                type: "string",
+                                name: "type",
+                                options:
+                                    [
+                                        {
+                                            value: "algoprudence",
+                                            label: "algoprudence"
+                                        },
+                                        {
+                                            value: "presentation",
+                                            label: "presentation"
+                                        }
+                                    ]
+                            }
+                        ]
+                },
+                {
+                    label: "Activities",
+                    type: "object",
+                    name: "activities",
                     list: true,
                     fields:
                         [
@@ -158,14 +212,24 @@ export default [
                                 name: "image",
                             },
                             {
+                                label: "Date",
+                                type: "string",
+                                name: "date",
+                                description: "dd-MM-yyyy (i.e. 13-06-2024)"
+                            },
+                            {
                                 label: "Type",
                                 type: "string",
                                 name: "type",
                                 options:
                                     [
                                         {
-                                            value: "regular",
-                                            label: "regular"
+                                            value: "algoprudence",
+                                            label: "algoprudence"
+                                        },
+                                        {
+                                            value: "presentation",
+                                            label: "presentation"
                                         }
                                     ]
                             }

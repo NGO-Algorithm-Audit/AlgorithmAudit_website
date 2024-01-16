@@ -1,0 +1,197 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+{{ $split_char := " " }}
+
+<script>
+    $(document).ready(function () {
+        $('.facet-checkbox').change(function () {
+            filterItems();
+            updateFacetCount();
+        });
+
+        updateFacetCount();
+    });
+
+    function filterItems() {
+        // Create helper with {groupname:facets[]}
+        let selectedGroups = getSelectedGroups();
+
+        // Show all items
+        getAllArticles().each(function () {
+            $(this).show();
+        });
+
+        // Hide those without the right facets
+        // The logic is as follow
+        // We loop through all selected groups, as we dont want to filter on non-selected groups
+        // Then we get all articles and loop through their facets
+        // If none of them match any filters within the group, hide it.
+
+        // Loop through all groups
+        $.each(selectedGroups, function (groupName, selectedFacets) {
+            // Get all articles
+            getAllArticles().each(function () {
+                // Loop through their facets
+                var facets_on_article = getFacetsOnArticle(this);
+                if (!anyFacetMatches(facets_on_article, selectedFacets)) {
+                    $(this).hide();
+                }
+            })
+        })
+    }
+
+    function updateFacetCount() {
+        // Create helper with {groupname:facets[]} for all groups
+        let groups = {};
+        $('.facet-group').each(function () {
+            let group_name = $(this).attr('data-facet-group');
+            groups[group_name] = [];
+            $(this).find('input:checkbox').each(function () {
+                groups[group_name].push(this.id);
+            })
+        });
+
+        // Loop through all groups so we can handle their facets
+        $.each(groups, function (groupName, facets) {
+            let articles = getAllArticles();
+
+            // Remove articles which are selected/filtered through other selected groups
+            $.each(getSelectedGroups(), function (selectedGroupName, selectedFacets) {
+
+                // skip our own group, because other facets within this group don't filter. (OR logic within groups) 
+                if (groupName == selectedGroupName) {
+                    return true;
+                }
+
+                // filter all articles matching the selected facets
+                articles = articles.filter(function () {
+                    return anyFacetMatches(getFacetsOnArticle(this), selectedFacets);
+                });
+            })
+
+            // Loop through all facets within this group so we can update their count
+            $(facets).each(function (facet_index) {
+                // Calculate the matching articles for this facet
+                let facet = facets[facet_index];
+                let facetCount = articles.filter(function () {
+                    return anyFacetMatches(getFacetsOnArticle(this), [facet]);
+                }).length;
+
+                // Update the label according to the count
+                let facetCheckbox = $('#' + facet);
+                let facetLabel = facetCheckbox.attr('name');
+                let facetLabelWithCount = facetLabel + ' (' + facetCount + ')';
+                facetCheckbox.text(facetLabelWithCount);
+                $('label[for="' + facet + '"]').text(facetLabelWithCount);
+            });
+        });
+    }
+
+    function getAllArticles() {
+        return $('.algoprudence-article');
+    }
+
+    function getFacetsOnArticle(article) {
+        return $(article).attr('data-facets').split('{{$split_char}}');
+    }
+
+    function anyFacetMatches(facetsA, facetsB) {
+        return $(facetsA).is(function (index_facet_a) {
+            let facet_a = facetsA[index_facet_a];
+            return $(facetsB).is(function (index_facet_b) {
+                let facet_b = facetsB[index_facet_b];
+
+                // Check if they match
+                return facet_b == facet_a;
+            });
+
+        })
+    }
+
+    function getSelectedGroups() {
+        let selectedGroups = {};
+        $('.facet-group').each(function () {
+            // Atleast one element is checked
+            if ($(this).find('input:checkbox:checked').length > 0) {
+                let group_name = $(this).attr('data-facet-group');
+                selectedGroups[group_name] = [];
+                $(this).find('input:checkbox:checked').each(function () {
+                    selectedGroups[group_name].push(this.id);
+                })
+            }
+        });
+        return selectedGroups;
+    }
+</script>
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col mx-auto">
+                <div class="content container">
+                    <div class="row" style="margin-bottom:25px;">
+                        <!-- Facets -->
+                        <div class="mt-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                            {{ range $facet_group := .Params.facet_groups}}
+                            <div class="facet-group mb-2" data-facet-group="{{$facet_group.value}}">
+                                <fieldset>
+                                    <legend style="color: #005aa7;">{{$facet_group.title}}</legend>
+                                    {{ range $facet := $facet_group.facets}}
+                                    <div>
+                                        <input type="checkbox" id="{{$facet_group.value}}_{{$facet.value}}"
+                                            name="{{$facet.label}}" class="facet-checkbox" />
+                                        <label for="{{$facet_group.value}}_{{$facet.value}}">{{$facet.label}}</label>
+                                    </div>
+                                    {{ end }}
+                                </fieldset>
+                            </div>
+                            {{end}}
+                        </div>
+
+                        <!-- Articles -->
+                        {{ if .Params.algoprudences }}
+                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                            {{ range $algoprudence := .Params.algoprudences }}
+
+                            {{ $facets_for_data_attribute := "" }}
+                            {{ range $facet := $algoprudence.facets }}
+                            {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
+                            $split_char | printf "%s" }}
+                            {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
+                            $facet.value | printf "%s" }}
+                            {{ end }}
+                            
+                            <div class="clickable-wrapper" data-href="{{$algoprudence.link | relURL }}">
+                                <div class="row p-5 shadow rounded-lg" data-facets="{{$facets_for_data_attribute}}">
+                                    <div class="col-3 pr-4">
+                                        <img class="img-fluid" src="{{$algoprudence.image}}" />
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row align-items-center">
+                                            <h4 class="mb-4" style="color: #005aa7;">
+                                                {{$algoprudence.title}}
+                                            </h4>
+                                            <p>{{$algoprudence.intro | markdownify}} <a
+                                                    href="{{$algoprudence.link | relURL}}">{{ i18n "read_more" }}</a>
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            {{ range $facet := $algoprudence.facets }}
+                                            <span style="background-color: #005aa7; color: #ffffff;"
+                                                class="mr-1 mb-2 px-2 py-1 mx-1">{{$facet.label}}</span>
+                                            {{end}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{end}}
+                        </div>
+                        {{end}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+{{ end }}
