@@ -10,7 +10,7 @@ export default {
     label: "Pages",
     path: "content/",
     match: {
-        include: '**/*',
+        include: '**/**',
     },
     fields: [
         title,
@@ -19,9 +19,9 @@ export default {
         background_color,
         {
             type: "rich-text",
-            name: "content",
+            name: "body",
             label: "Content",
-            isBody: true,
+            isBody: true
         }
     ],
     format: "md"
