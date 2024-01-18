@@ -1,16 +1,10 @@
 import { defineConfig } from "tinacms";
-import home_nl from "./collections/home/nl";
-import home_en from "./collections/home/en";
-import knowledge_base_nl from "./collections/knowledge_base/nl";
-import knowledge_base_en from "./collections/knowledge_base/en";
-import algoprudence_overview_nl from "./collections/algoprudence/overview_nl";
-import algoprudence_overview_en from "./collections/algoprudence/overview_en";
-import algoprudence_nl from "./collections/algoprudence/page_nl";
-import algoprudence_en from "./collections/algoprudence/page_en";
-import events_overview_nl from "./collections/events/overview_nl";
-import events_overview_en from "./collections/events/overview_en";
-import page_nl from "./collections/page/nl";
-import page_en from "./collections/page/en";
+import home from "./collections/pages/home";
+import knowledge_base from "./collections/pages/knowledge_base";
+import algoprudence_overview from "./collections/pages/algoprudence_overview";
+import algoprudence_case from "./collections/pages/algoprudence_case";
+import events_overview from "./collections/pages/events_overview";
+import page from "./collections/pages/page";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
@@ -32,18 +26,12 @@ export default defineConfig({
   },
   schema: {
     collections: [
-      home_nl,
-      home_en,
-      knowledge_base_nl,
-      knowledge_base_en,
-      algoprudence_overview_nl,
-      algoprudence_overview_en,
-      algoprudence_nl,
-      algoprudence_en,
-      events_overview_nl,
-      events_overview_en,
-      page_nl,
-      page_en
+      home,
+      knowledge_base,
+      algoprudence_overview,
+      algoprudence_case,
+      events_overview,
+      page
     ],
   },
 });
