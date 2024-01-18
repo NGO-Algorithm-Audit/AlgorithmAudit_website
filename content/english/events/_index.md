@@ -6,6 +6,7 @@ subtitle: >
   our team speak at events. [<span style="color:#005aa7"> Reach
   out</span>](/#contactform) to discuss contributions.
 image: /images/events.svg
+background_color: '#f9f9f9'
 facet_groups:
   - value: year
     title: Year

@@ -645,6 +645,11 @@ padding: 20px 0px 0px 0px;
   padding:0px;
 }
 
+.divider-blocks__grey{
+  background-color:#f9f9f9; 
+  padding:0px;
+}
+
 .upper-blocks{
   background-color:#deecf7;
   height:1px;
@@ -653,6 +658,11 @@ padding: 20px 0px 0px 0px;
 
 .lower-blocks{
   background-color:white;
+  height:25px;
+}
+
+.lower-blocks__grey{
+  background-color: #f9f9f9;
   height:25px;
 }
 

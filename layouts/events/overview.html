@@ -4,7 +4,7 @@
 
 {{ partial "facets/facets-script.html" .}}
 
-<section class="section" style="background-color: #f9f9f9;">
+<section class="section" {{ if .Params.background_color }} style="background-color: {{ .Params.background_color }};" {{end}}>
     <div class="container">
         <div class="row">
             <div class="col mx-auto">

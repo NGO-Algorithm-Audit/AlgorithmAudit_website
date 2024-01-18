@@ -22,6 +22,21 @@ export default [
         label: "image",
         required: true,
     },
+    {
+        type: "string",
+        name: "background_color",
+        label: "Background color",
+        options: [
+            {
+              value:"#ffffff",
+              label:"White"
+            },
+            {
+              value:"#f9f9f9",
+              label:"Grey"
+            }
+          ]
+    },
     facet_groups,
     {
         type: "object",
