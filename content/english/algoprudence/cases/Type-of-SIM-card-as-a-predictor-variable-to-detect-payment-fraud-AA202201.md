@@ -1,4 +1,5 @@
 ---
+layout: case
 title: 'Type of SIM card as a predictor variable to detect payment fraud (AA:2022:01)'
 icon: fa-sim-card
 summary: >

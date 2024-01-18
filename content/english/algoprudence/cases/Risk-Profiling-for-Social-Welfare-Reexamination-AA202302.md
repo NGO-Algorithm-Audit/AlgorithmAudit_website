@@ -1,4 +1,5 @@
 ---
+layout: case
 title: 'Risk Profiling for Social Welfare Reexamination (AA:2023:02)'
 icon: fa-poll-h
 key_takeaways:

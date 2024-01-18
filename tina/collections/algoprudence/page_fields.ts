@@ -4,6 +4,18 @@
 export default [
     {
         type: "string",
+        name: "layout",
+        label: "Layout",
+        required: true,
+        options: [
+            {
+                value: "case",
+                label: "Case"
+            }
+        ]
+    },
+    {
+        type: "string",
         name: "title",
         label: "Title",
         isTitle: true,
@@ -98,7 +110,6 @@ export default [
                     type: "string",
                     name: "title",
                     label: "Title",
-                    default: "Algoprudence",
                     required: true,
                 },
                 {

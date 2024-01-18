@@ -1,4 +1,5 @@
 ---
+layout: case
 title: 'BERT-based disinformation classifier (AA:2023:01)'
 icon: fa-newspaper
 summary: >

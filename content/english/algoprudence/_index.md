@@ -54,7 +54,7 @@ algoprudences:
       profiling criteria.
     image: >-
       /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
-    link: /algoprudence/risk-profiling-for-social-welfare-reexamination-aa202302/
+    link: /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
     facets:
       - value: aa202302
         label: 'AA:2023:02'
@@ -75,7 +75,7 @@ algoprudences:
       the particular difference in treatment identified by the quantitative bias
       scan can be justified, if certain conditions apply.
     image: /images/algoprudence/en_bert-based-disinformation-classifier-aa202301.png
-    link: /algoprudence/bert-based-disinformation-classifier-aa202301
+    link: /algoprudence/cases/bert-based-disinformation-classifier-aa202301
     facets:
       - value: aa_2023_01
         label: 'AA:2023:01'
@@ -100,7 +100,7 @@ algoprudences:
     image: >-
       /images/algoprudence/en_type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201.png
     link: >-
-      /algoprudence/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
+      /algoprudence/cases/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
     facets:
       - value: AA-2022-01
         label: 'AA:2022:01'
