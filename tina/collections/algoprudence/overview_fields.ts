@@ -1,8 +1,8 @@
 /**
  * @type {import('tinacms').TinaField[]}
  */
-import facet_groups from "../facets/facet_groups";
-import facets from "../facets/facets";
+import facet_groups from "../shared/facets/facet_groups";
+import facets from "../shared/facets/facets";
 
 export default [
     {
