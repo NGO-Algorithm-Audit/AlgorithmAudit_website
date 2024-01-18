@@ -6,8 +6,7 @@ export default {
     label: 'PDF Frame',
     match: {
       start: '{{<',
-      end: '>}}',
-      name: 'pdf-frame'
+      end: '>}}'
     },
     fields: [
       {

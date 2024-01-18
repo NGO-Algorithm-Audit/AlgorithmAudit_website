@@ -30,8 +30,7 @@ export default {
                     label: 'Bias Scan info',
                     match: {
                         start: '{{<',
-                        end: '>}}',
-                        name: 'bias_scan_info'
+                        end: '>}}'
                     },
                     fields: [
                         {
@@ -48,8 +47,7 @@ export default {
                     label: 'Bias Scan case study',
                     match: {
                         start: '{{<',
-                        end: '>}}',
-                        name: 'bias_scan_alert_case_study'
+                        end: '>}}'
                     },
                     fields: [
                         {
@@ -66,8 +64,7 @@ export default {
                     label: 'Bias Scan upload',
                     match: {
                         start: '{{<',
-                        end: '>}}',
-                        name: 'bias_scan_upload'
+                        end: '>}}'
                     },
                     fields: [
                         {
@@ -96,8 +93,7 @@ export default {
                     label: 'Bias Scan input data',
                     match: {
                         start: '{{<',
-                        end: '>}}',
-                        name: 'bias_scan_input_data'
+                        end: '>}}'
                     },
                     fields: [
                         {
@@ -114,8 +110,7 @@ export default {
                     label: 'Bias Scan example reports',
                     match: {
                         start: '{{<',
-                        end: '>}}',
-                        name: 'bias_scan_example_reports'
+                        end: '>}}'
                     },
                     fields: [
                         {
@@ -132,8 +127,7 @@ export default {
                     label: 'Bias Scan FAQ',
                     match: {
                         start: '{{<',
-                        end: '>}}',
-                        name: 'bias_scan_faq'
+                        end: '>}}'
                     },
                     fields: [
                         {
@@ -151,8 +145,7 @@ export default {
                     label: 'About algorithm audit NL',
                     match: {
                         start: '{{<',
-                        end: '>}}',
-                        name: 'about_algorithm_audit_NL'
+                        end: '>}}'
                     },
                     fields: [
                         {
@@ -176,8 +169,7 @@ export default {
                     label: 'About algorithm audit',
                     match: {
                         start: '{{<',
-                        end: '>}}',
-                        name: 'about_algorithm_audit'
+                        end: '>}}'
                     },
                     fields: [
                         {
