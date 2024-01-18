@@ -4,7 +4,7 @@ subtitle: We onderzoeken verschillende algoritmes. Het advies van een auditcommi
 
 
   We zoeken nieuwe case studies. Zoek  [<span style="color:#005aa7"> contact</span>](/#contactform) om een algoritme aan te dragen. 
-image: "images/case_repository.svg"
+image: "/images/case_repository.svg"
 
 ---
 <!-- Case Rotterdam -->
