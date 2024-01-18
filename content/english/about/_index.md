@@ -7,7 +7,7 @@ image: /images/about.svg
 
 ---
 
-{{< about_algorithm_audit "About Algorithm Audit" "In 2021, Algorithm Audit was founded on the idea that ethics in algorithmic methods urgently needs case-based experience and a bottom-up approach. Algorithm Audit's main activities are:">}}
+{{< about_algorithm_audit title="About Algorithm Audit" content="In 2021, Algorithm Audit was founded on the idea that ethics in algorithmic methods urgently needs case-based experience and a bottom-up approach. Algorithm Audit's main activities are:">}}
 
 {{< about_board "Board" "Jurriaan Parie" "Jurriaan has a background in statistics and data science. He has been working in academia and industry on Trustworthy AI." "Ariën Voogt" "Ariën has a background in physics and philosophy. He currently pursues a PhD in philosophy and theology at the Protestant Theological University Amsterdam." "Samaa Mohammad-Ulenberg" "Samaa has a background in AI. In 2023, she received the Women in AI Diversity Leader Award, and is listed in the '100 Brilliant Women in AI Ethics'.">}}
 {{< about_core_team "Core team" 

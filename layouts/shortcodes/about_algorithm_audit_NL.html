@@ -5,13 +5,13 @@
     <div class="col-md-12">
       <div class="p-5 shadow rounded-lg">
 
-        <h3 class="mb-4 balance" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get 0 | markdownify }}</h3>
+        <h3 class="mb-4 balance" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get "title" | markdownify }}</h3>
 
         <div class="container">
           <div class="row">
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p>{{ .Get 1 | markdownify }}</p>
+                <p>{{ .Get "content" | markdownify }}</p>
             </div>
 
           </div>

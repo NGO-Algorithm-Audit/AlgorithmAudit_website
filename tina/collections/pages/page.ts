@@ -145,7 +145,57 @@ export default {
                         }
                     ]
                 },
-                pdfFrame
+                pdfFrame,
+                {
+                    name: 'about_algorithm_audit_NL',
+                    label: 'About algorithm audit NL',
+                    match: {
+                        start: '{{<',
+                        end: '>}}',
+                        name: 'about_algorithm_audit_NL'
+                    },
+                    fields: [
+                        {
+                            name: 'title',
+                            label: 'Title',
+                            type: 'string',
+                            description: '',
+                            required: true,
+                        },
+                        {
+                            name: 'content',
+                            label: 'Content',
+                            type: 'string',
+                            description: '',
+                            required: true,
+                        }
+                    ]
+                },
+                {
+                    name: 'about_algorithm_audit',
+                    label: 'About algorithm audit',
+                    match: {
+                        start: '{{<',
+                        end: '>}}',
+                        name: 'about_algorithm_audit'
+                    },
+                    fields: [
+                        {
+                            name: 'title',
+                            label: 'Title',
+                            type: 'string',
+                            description: '',
+                            required: true,
+                        },
+                        {
+                            name: 'content',
+                            label: 'Content',
+                            type: 'string',
+                            description: '',
+                            required: true,
+                        }
+                    ]
+                }
             ]
         }
     ],
