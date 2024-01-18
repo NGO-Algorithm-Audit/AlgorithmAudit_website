@@ -5,6 +5,8 @@ import title from "../shared/page/title";
 import subtitle from "../shared/page/subtitle";
 import image from "../shared/page/image";
 import background_color from "../shared/page/background_color";
+import pdfFrame from "../shared/templates/pdfFrame";
+
 export default {
     name: "page",
     label: "Pages",
@@ -142,7 +144,8 @@ export default {
                             required: true,
                         }
                     ]
-                }
+                },
+                pdfFrame
             ]
         }
     ],
