@@ -99,7 +99,7 @@ Why_we_exist:
     ai_act_tag_standards: Normative standards<span>:</span>
     ai_act_content_standards: To realize AI harmonization across the EU, publicly available technical and normative best-practices for fair AI are urgently needed.
     ai_act_white_paper: Read our algoprudence on proxy discrimination
-    ai_act_image: images/AIA.png
+    ai_act_image: /images/AIA.png
 
     #DSA
     dsa_title: Verordening digitale diensten
@@ -112,7 +112,7 @@ Why_we_exist:
     dsa_content_feedback: <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13626-Digital-Services-Act-conducting-independent-audits/feedback_en?p_id=32081201" target="_blank">Feedback</a> submitted to the European Commission (EC) on DSA Art. 37 DR showcasts that<span>:</span>
     dsa_content_feedback_tab1: Private auditors (like PwC and Deloitte) warn that the lack of guidance on criteria against which to audit poses a risk of subjective audits;
     dsa_content_feedback_tab2: Tech companies (like Snap and Wikipedia) raise concerns about the industry's lack of expertise to audit specific AI products, like company-tailored timeline recommender systems.
-    dsa_image: images/DSA.jpg
+    dsa_image: /images/DSA.jpg
 
     #GDPR
     gdpr_title: Algemene verordening gegevensbescherming (Avg)
@@ -124,7 +124,7 @@ Why_we_exist:
     gdpr_content_profiling: is broadly defined as<span>:</span> “to analyse or predict aspects concerning the data subject’s performance at work, economic situation, health, personal preferences or interests, reliability or behaviour, location or movements”. However, the approval of profiling, particularly when “authorised by Union or Member State law to which the controller is subject, including fraud monitoring”, grants public and private entities significant flexibility to integrate algorithmic decision-making derived from diverse types of profiling. This wide latitude raises concerns about the potential for excessive consolidation of personal data and the consequences of algorithmic determinations;
     gdpr_tag_ADM: Automated decision-making (art. 22 sub 2)<span>:</span>
     gdpr_content_ADM: Allowing wide-ranging automated decision-making (ADM) and profiling under the sole condition of contract agreement opens the door for large scale unethical algorithmic practices without accountability and public awareness.
-    gdpr_image: images/gdpr.svg
+    gdpr_image: /images/gdpr.svg
 
     #Administrative law
     administrative_law_title: Algemene wet bestuursrecht
@@ -132,7 +132,7 @@ Why_we_exist:
     administrative_law_tag_motivation: Motivation principle<span>:</span>
     administrative_law_content_motivation: Governmental institutions must always provide clear explanations for their decisions. However, when machine learning is employed, such as in variable selection for risk profiling, this transparency may be obscured. This leads to the question of how far arguments based on probability distributions are acceptable as explanations for why certain citizens are chosen for a particular profile.
     algoprudence_rotterdam: Read Algoprudence AA:2023:02 for a review of xgboost model used for risk profiling variable selection
-    administrative_law_image: images/Awb.jpg
+    administrative_law_image: /images/Awb.jpg
 
     #Regulatory landscape
     regulator_title: Toezichthouderslandschap
@@ -142,7 +142,7 @@ Why_we_exist:
       bias in the context of algorithms and what would be appropriate methods to ascertain
       and mitigate algorithmic discrimination. In the absence of a clear ethical framework, it
       is up to organizations to formulate context-sensitive approaches to combat discrimination.
-    regulator_image: images/FRIA.png
+    regulator_image: /images/FRIA.png
 
     #Human rights and fundamental rights impact assessments
     hria_title: Impact Assessments Mensenrechten en Algoritmes
@@ -150,12 +150,12 @@ Why_we_exist:
       Non-Discrimination</a>, both developed by the Dutch government, assess discriminatory
       practice mainly by asking questions that are meant to stimulate self-reflection.
       It does not provide answers or concrete guidelines how to realise ethical algorithms.
-    hria_image: images/FRIA.png
+    hria_image: /images/FRIA.png
 
     #AI registers
     AI_register_title: Algoritmeregisters
     AI_register_content: ..
-    AI_register_image: images/knowledge_base.svg
+    AI_register_image: /images/knowledge_base.svg
 
 Get_in_touch:
   enable: true

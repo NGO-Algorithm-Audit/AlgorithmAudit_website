@@ -6,7 +6,7 @@ subtitle: Algorithm Audit commits to high standards regarding integrity, indepen
   
   
   You want to share something? [<span style="color:#005aa7">Contact us.</span>](/#contactform)
-image: images/faq.svg
+image: /images/faq.svg
 
 ---
 {{< faq-review "What exactly do you review?" >}} 

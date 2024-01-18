@@ -7,6 +7,6 @@ subtitle: Our knowledge base is a collection of readworthy articles, books and o
   
   Do you want to contribute? [<span style="color:#005aa7">Let us know!</span>](/#contactform)
 description: ''
-image: images/knowledge_base.svg
+image: /images/knowledge_base.svg
 
 ---

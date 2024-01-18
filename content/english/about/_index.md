@@ -3,7 +3,7 @@ title: About
 subtitle: Algorithm Audit consists of an executive board, a Core Team, an advisory board and works
   with audit commissions composed of independent experts. Learn more about Algorithm
   Audit and how you can contribute.
-image: images/about.svg
+image: /images/about.svg
 
 ---
 

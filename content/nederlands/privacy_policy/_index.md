@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 subtitle: Algorithm Audit is dedicated to upholding digital practices that respect individual rights. This commitment extends to our webiste.
-image: images/about.svg
+image: /images/about.svg
 ---
 
 {{< privacy_policy 

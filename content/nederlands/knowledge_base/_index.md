@@ -5,6 +5,6 @@ subtitle: Onze kennisbank is een verzameling van noemenswaardige artikelen, boek
 
  Mis je een item? [<span style="color:#005aa7">Laat het weten!</span>](/#contactform)
 description: ''
-image: images/knowledge_base.svg
+image: /images/knowledge_base.svg
 
 ---

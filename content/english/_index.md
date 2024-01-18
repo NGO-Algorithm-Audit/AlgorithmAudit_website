@@ -120,7 +120,7 @@ Why_we_exist:
         To realize AI harmonization across the EU, publicly available technical
         and normative best-practices for fair AI are urgently needed.
       ai_act_white_paper: Read our algoprudence on proxy discrimination
-      ai_act_image: images/AIA.png
+      ai_act_image: /images/AIA.png
       dsa_title: Digital Service Act (DSA)
       dsa_content: >-
         The <a
@@ -165,7 +165,7 @@ Why_we_exist:
         Tech companies (like Snap and Wikipedia) raise concerns about the
         industry's lack of expertise to audit specific AI products, like
         company-tailored timeline recommender systems.
-      dsa_image: images/DSA.jpg
+      dsa_image: /images/DSA.jpg
       gdpr_title: General Data Protection Regulation (GDPR)
       gdpr_content1: >-
         Organizations that develop algorithms do often not comply with GDPR
@@ -200,7 +200,7 @@ Why_we_exist:
         under the sole condition of contract agreement opens the door for large
         scale unethical algorithmic practices without accountability and public
         awareness.
-      gdpr_image: images/gdpr.svg
+      gdpr_image: /images/gdpr.svg
       administrative_law_title: Administrative law
       administrative_law_content: >-
         Unifying principles of sound administration with (semi-) automated
@@ -216,7 +216,7 @@ Why_we_exist:
       algoprudence_rotterdam: >-
         Read Algoprudence AA:2023:02 for a review of xgboost machine learning
         used for risk profiling variable selection
-      administrative_law_image: images/Awb.jpg
+      administrative_law_image: /images/Awb.jpg
       regulator_title: Regulatory landscape
       regulator_content: >-
         <a
@@ -229,7 +229,7 @@ Why_we_exist:
         ascertain and mitigate algorithmic discrimination. In the absence of a
         clear ethical framework, it is up to organizations to formulate
         context-sensitive approaches to combat discrimination.
-      regulator_image: images/FRIA.png
+      regulator_image: /images/FRIA.png
       hria_title: Fundamental Rights and Human Rights Impact Assessments
       hria_content: >-
         The <a
@@ -242,10 +242,10 @@ Why_we_exist:
         questions that are meant to stimulate self-reflection. It does not
         provide answers or concrete guidelines how to realise ethical
         algorithms.
-      hria_image: images/FRIA.png
+      hria_image: /images/FRIA.png
       AI_register_title: AI registers
       AI_register_content: ..
-      AI_register_image: images/knowledge_base.svg
+      AI_register_image: /images/knowledge_base.svg
       content1: >-
         We believe a case-based and context sensitive approach is indispensable
         to develop ethical algorithms. One should not expect top-down regulation
