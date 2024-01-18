@@ -6,18 +6,83 @@ weight = 1
 
 [[main]]
 name = "Algoprudence"
-url = "algoprudence"
 weight = 2
+hasChildren = true
+  [[main]]
+  parent = "Algoprudence"
+  name = "Submit a case for review"
+  url = "/submit-case"
+  weight = 1
+  [[main.params]]
+    featured = true
+  [[main]]
+  parent = "Algoprudence"
+  name = "Cases"
+  url = "/algoprudence"
+  weight = 2
+  [[main.params]]
+    icon = "fa-database"
+  [[main]]
+  parent = "Algoprudence"
+  name = "How we work"
+  url = "/how-we-work"
+  weight = 3
+  [[main.params]]
+    icon = "fa-question"
 
 [[main]]
-name = "Bias scan"
-url = "bias_scan"
+name = "Technical Tools"
 weight = 3
+hasChildren = true
+  [[main]]
+  parent = "Technical Tools"
+  name = "Bias detection tool"
+  url = "/bias_scan"
+  weight = 1
+  [[main.params]]
+    icon = "fa-toolbox"
+    subtitle = "Open source AI auditing tools"
+  [[main]]
+  parent = "Technical Tools"
+  name = "Synthetic data generation"
+  url = "/bias_scan"
+  weight = 2
+  [[main.params]]
+    icon = "fa-table"
+  [[main]]
+  parent = "Technical Tools"
+  name = "Github code"
+  url = "https://github.com/jfparie/AlgorithmAudit_website"
+  weight = 3
+  [[main.params]]
+    subtitle = "Code repository"
+    icon = "fa-code"
 
 [[main]]
-name = "Knowledge base"
-url = "knowledge_base"
+name = "Knowledge platform"
 weight = 4
+hasChildren = true
+  [[main]]
+  parent = "Knowledge platform"
+  name = "AI Act standards"
+  url = "/ai-act-standards"
+  weight = 1
+  [[main.params]]
+    icon = "fa-check"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "AI policy observatory"
+  url = "/ai-policy-observatory"
+  weight = 2
+  [[main.params]]
+    icon = "fa-search"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "Knowledge base"
+  url = "/knowledge_base"
+  weight = 3
+  [[main.params]]
+    icon = "fa-brain"
 
 [[main]]
 name = "Events"
@@ -25,12 +90,48 @@ url = "events"
 weight = 5
 
 [[main]]
-name = "FAQ"
-url = "faq"
-weight = 6
-
-[[main]]
 name = "About"
-url = "about"
-weight = 7
-
+weight = 6
+hasChildren = true
+  [[main]]
+  parent = "About"
+  name = "FAQ"
+  url = "/faq"
+  weight = 1
+  [[main.params]]
+    icon = "fa-question"
+  [[main]]
+  parent = "About"
+  name = "Teams"
+  url = "/teams"
+  weight = 2
+  [[main.params]]
+    icon = "fa-users"
+  [[main]]
+  parent = "About"
+  name = "Boards"
+  url = "/boards"
+  weight = 3
+  [[main.params]]
+    icon = "fa-user-friends"
+  [[main]]
+  parent = "About"
+  name = "Funding"
+  url = "/funding"
+  weight = 4
+  [[main.params]]
+    icon = "fa-money-check"
+  [[main]]
+  parent = "About"
+  name = "Annual reports"
+  url = "/annual-reports"
+  weight = 5
+  [[main.params]]
+    icon = "fa-calendar-alt"
+  [[main]]
+  parent = "About"
+  name = "Job openings"
+  url = "/job-openings"
+  weight = 6
+  [[main.params]]
+    icon = "fa-user-check"
