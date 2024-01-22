@@ -98,11 +98,11 @@ $(document).ready(function () {
     var controller = new ScrollMagic.Controller();
 
     // build scene
-    var scene = new ScrollMagic.Scene({ triggerElement: ".pinDiv2", duration: 400 })
+    var scene = new ScrollMagic.Scene({ triggerElement: ".pinDiv2", duration: 500 })
         .setTween(tween)
-        // .addIndicators()
+        .addIndicators()
         .addTo(controller);
-    console.log(obj)
+    // console.log(obj)
 });
 
 // Why we exist AI Act/DSA/GDPR etc.
@@ -141,4 +141,29 @@ $(document).on("click", ".menu3 div", function () {
         // scroll to top of overflow:auto div
         $('.gc2').scrollTop(0);
     }
+});
+
+// parallex
+$(document).ready(function () {
+    // init
+    var controller = new ScrollMagic.Controller();
+
+    // define movement of panels
+    var wipeAnimation = new TimelineMax()
+        .to(".panel.one .layer", 1, { y: "-100%", ease: Linear.easeNone })
+        .to(".panel.one", 1, { x: "-100%", ease: Linear.easeNone }) // in from left
+        .to(".panel.two .layer", 1, { y: "-100%", ease: Linear.easeNone });
+        // .to(".panel.two", 1, { y: "-100%", ease: Linear.easeNone });
+        // .to(".panel.three", 1, { y: "-100%", ease: Linear.easeNone });
+
+    // create scene to pin and link animation
+    new ScrollMagic.Scene({
+        triggerElement: ".pinContainer",
+        triggerHook: "onLeave",
+        duration: "300%"
+    })
+        .setPin(".pinContainer")
+        .setTween(wipeAnimation)
+        .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
 });

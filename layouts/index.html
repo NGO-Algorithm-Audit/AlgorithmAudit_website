@@ -9,12 +9,12 @@
 
       <div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-lg-1">
 
-        <!-- definition -->
+        <!-- definition tag -->
         <div class="row" style="padding:0 30px; margin-bottom:30px;">
           <h5 class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff; font-weight:100;">definition
           </h5>
         </div>
-        <!-- /definition -->
+        <!-- /definition tag -->
 
         <!-- al-go-pru-dence -->
         <div class="container">
@@ -215,34 +215,10 @@
 {{ end }}
 <!-- /Activity Feed -->
 
-<!-- algoprudence animation -->
-<section>
-  <div class="container">
-    <div class="row pinDiv2" style="display: flex; justify-content: center; align-items: center;">
-      <div id="imagesequence">
-        <img id="myimg" width="800px" src="/images/algoprudence-frames/frame-036.png"><br>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /algoprudence animation -->
-
-<!-- Video -->
-<section class="section-bottom bg-white"
-  style="background-color: #ffffff !important; padding:50px 0px 0px 0px; margin-bottom:75px;">
-  <div class="container" style="  display: flex; justify-content: center; align-items: center;">
-    <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
-      <img src="/images/cover.png" width="600px" />
-      <span class="playbutton"></span>
-    </a>
-  </div>
-</section>
-<!-- /Video -->
-
 <!-- Supported by -->
 {{ with .Params.Supported_by }}
 {{ range $i,$p := .Suported_by }}
-<section class="section-bottom bg-white" style="background-color: #ffffff !important; padding:50px 0px 0px 0px;">
+<section class="section-bottom bg-white" style="background-color: #ffffff !important; padding:50px 0px 100px 0px;">
   <div class="container">
     <div class="row d-flex flex-wrap align-items-center">
 
@@ -310,554 +286,165 @@
 {{ end }}
 <!-- /Supported by -->
 
-<!-- Distinctive in -->
-{{ with .Params.What_we_do }}
-{{ if .enable }}
-<section class="section bg-light" style="background: linear-gradient(to left, #618EC7, #fffde4);">
-  <div class="container">
-    <div class="row justify-content-center">
+<!-- parallex -->
+
+<div class="pinContainer" id="pinContainer">
+  <section class="panel one" style="background-color: #deecf7;">
+
+    <!-- panel-1 layer-1 --> 
+    <div class="layer one row">
       <div class="col-12 text-center">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
+        <h2 style="color:#005aa7; font-weight:100;">
+          <div>
+            Building
+            <i class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff">AI auditing</i>
+            capacity
+          </div>
+          <br>
+          <div>
+            from a
+            <i class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff">not-for-profit</i>
+            perspective
+          </div>
+        </h2>
       </div>
-      {{$width_m := 4}}
-      {{$width_s := 2}}
-      {{if .width_m}}
-      {{$width_m = .width_m}}
-      {{end}}
-      {{if .width_s}}
-      {{$width_s = .width_s}}
-      {{end}}
-      {{ range .feature_item }}
-      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
-        <div class="feature-card text-center">
-          <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
-          <h4 class="" style="color: #005aa7;">
-            {{ .name | markdownify }}
-          </h4>
-          <p>{{ .content | markdownify }}</p>
+    </div>
+    <!-- /panel-1 layer-1 --> 
+
+    <!-- panel-1 layer-2 -->
+    <div class="layer two align-items-start" >
+      <div class="col-12" style="display: inline-block; padding: 0px 5%">
+        <h4 style="color: #005aa7; padding-left:5%;">AI expertise</h4>
+        <div class="row" style="margin-top:100px;">
+          <div class="col-sm mb-4">
+            <div class="feature-card text-center">
+              <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
+              <h4 class="" style="color: #005aa7;">
+                Profiling
+              </h4>
+              <p>cc</p>
+            </div>
+          </div>
+          <div class="col-sm mb-4">
+            <div class="feature-card text-center">
+              <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
+              <h4 class="" style="color: #005aa7;">
+                FP-FN balancing
+              </h4>
+              <p>bb</p>
+            </div>
+          </div>
+          <div class="col-sm mb-4">
+            <div class="feature-card text-center">
+              <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
+              <h4 class="" style="color: #005aa7;">
+                Ranking
+              </h4>
+              <p>aa</p>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-12" style="margin-top:150px;">
+            <a class="btn-link" href=""><h3 style="color:#005aa7; font-weight:100;">Submit a case for review <i class="fas fa-arrow-right" style="font-size:20px;"></i></a></h3>
+          </div>
         </div>
       </div>
+    </div>
+    <!-- /panel-1 layer-2 -->
+
+  </section>
+
+  <section class="panel two">
+
+    <!-- panel-2 layer-3 -->
+    <div class="layer" style="background-color: #a7bdda;">
+
+      <!-- Distinctive in -->
+      {{ with .Params.What_we_do }}
+      {{ if .enable }}
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
+            </div>
+            {{$width_m := 4}}
+            {{$width_s := 2}}
+            {{if .width_m}}
+            {{$width_m = .width_m}}
+            {{end}}
+            {{if .width_s}}
+            {{$width_s = .width_s}}
+            {{end}}
+            {{ range .feature_item }}
+            <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
+              <div class="feature-card text-center">
+                <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
+                <h4 class="" style="color: #005aa7;">
+                  {{ .name | markdownify }}
+                </h4>
+                <p>{{ .content | markdownify }}</p>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
       {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /Distinctive in -->
+      {{ end }}
+      <!-- /Distinctive in -->
 
-<!-- How we work -->
-{{ with .Params.How_we_work }}
-{{ if .enable }}
-{{ range $i,$p := .service_item }}
-<section class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-4 order-1">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #005aa7;">{{ .label }} <i
-            class="fas fa-arrow-right"></i></a>
-        {{ end }}
-        {{ end }}
-      </div>
-      <div class="col-md-8 order-2 mb-4 mb-md-0">
-        <div {{if gt (len .images) 1}} class="slider" {{end}}>
-          {{ range .images }}
-          <img src="{{ . | relURL }}" alt="" class="img-fluid">
-          {{ end }}
+    </div>
+    <!-- /panel-2 layer-3 -->
+
+    <!-- panel-2 layer-4 -->
+    <div class="layer pinDiv2" style="background-color:white;">
+      <div class="container">
+        <div class="row" style="justify-content:center;">
+          <h3 style="color: #005aa7;">Building jurisprudence for algorithms</h3>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-{{ end }}
-<!-- /How we work -->
 
-<!-- AA Expert hub -->
-{{ with .Params.AA_expert_hub }}
-{{ if .enable }}
-{{ range $i,$p := .service_item }}
-<section class="section padding-adjust" style="background-color: #b1c4d5 !important;">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <!-- Who we work with -->
-      <div class="col-lg-10 col-md-10 sm-12 order-1">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-        <div style="padding-right:75px;">
-          <p class="mb-4" style="">{{ .content | markdownify }}</p>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-2 sm-0 order-1">
-      </div>
-      <!-- /Who we work with -->
-
-      <!-- Slack -->
-      <!-- <div class="col-lg-6 col-md-6 sm-12 order-2 module-border-wrap">
-        <div class="module">
-
-          <div class="row">
-
-            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 my-auto">
-              <p class="section-title" style="color:#005aa7; font-size:20px; font-weight:bold; margin-bottom:0px;">{{ .expert_hub_title | markdownify }}</p>
-            </div>    
-            
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-slack">
-              <p>{{ .expert_hub_content | markdownify }}</p>
-            </div>
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my-auto">
-              <div class="split" style="align-items: center; display: flex;">
-                <div style="height:100%;">
-                  {{ range .images }}
-                  <img src="{{ . | relURL }}" style="max-height: 50px; margin-bottom:10px;" alt="" class="img-fluid">
-                  {{ end }}
-                </div>
-                <div>
-                  {{ if .button.enable }}
-                  {{ with .button }}
-                  <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #005aa7;"> {{ .label }} <i class="fas fa-arrow-right"></i></a>
-                  {{ end }}
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div> -->
-      <!-- /Slack -->
-
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-{{ end }}
-<!-- /AA Expert hub -->
-
-<!-- Why we exist -->
-{{ with .Params.Why_we_exist }}
-{{ if .enable }}
-{{ range $i,$p := .new_items }}
-<section class="section">
-  <div class="container">
-
-    <!-- title -->
-    <div class="row align-items-center">
-      <div class="col-12">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-      </div>
-    </div>
-    <!-- /title -->
-
-    <!-- intro text -->
-    <div class="row">
-      <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-        <p>{{ .intro_content | markdownify }}</p>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
-    </div>
-    <!-- /intro text -->
-
-    <!-- subtitle -->
-    <div class="row align-items-center">
-      <div class="col-12">
-        <h4 class="section-subtitle" style="color: #005aa7;">{{ .subtitle | markdownify }}</h2>
-      </div>
-    </div>
-    <!-- /subtitle -->
-
-    <!-- gradient bar -->
-    <div class="row hide-mobile" style="margin-top:15px; padding:0px;">
-      <div class="col-lg-0 col-md-0"></div>
-      <div class="col-lg-10 col-md-8">
-        <div class="bordertest" style="margin:0px;"></div>
-      </div>
-      <div class="col-lg-2 col-md-3"></div>
-    </div>
-
-    <div class="row show-mobile">
-      <div class="col-sm-12 col-xs-12">
-        <div class="bordertest-mobile"></div>
-      </div>
-    </div>
-    <!-- /gradient bar -->
-
-    <div class="row hide-mobile" style="width:100%; margin: 0px 0px 0px 0px;">
-
-      <!-- menu -->
-      <div class="gc col-lg-2 col-md-2" style="padding: 0px 0px 0px 10px; background-color: #F2F2F2; height: 340px;">
-        <div class="menu2" style="margin-top: 20px;">
-          <div class="active">
-            <span style="font-size:13px;"> {{ .tab1 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab2 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab3 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab4 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab5 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab6 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab7 | markdownify }} </span>
+        <!-- algoprudence animation -->
+        <div class="row" style="display: flex; justify-content:center; align-items:center; margin-top:50px;">
+          <div id="imagesequence">
+            <img id="myimg" width="800px" src="/images/algoprudence-frames/frame-036.png"><br>
           </div>
         </div>
       </div>
-
-      <!-- text -->
-      <div class="gc col-lg-8 col-md-8 col-sm-8 col-xs-8" style="background-color:#f9f9f9;">
-        <ul class="nacc" id="scroll-top" style="padding:10px 0px 0px 20px;">
-
-          <!-- AI Act -->
-          <li class="active" style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y:scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight:bold;"> {{ .ai_act_title | markdownify }} </span>
-              <p style="line-height:1.5;"><span> {{ .ai_act_content | markdownify }} </span></p>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .ai_act_tag_conformity | markdownify }} <span
-                  style="color:#777777; line-height:1.5;">{{ .ai_act_content_conformity | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .ai_act_tag_risk | markdownify }} <span
-                  style="color:#777777;line-height:1.5;"> {{ .ai_act_content_risk | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .ai_act_tag_standards | markdownify }} <span
-                  style="color:#777777; line-height:1.5;"> {{ .ai_act_content_standards | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a href="cases/#rotterdam-case" class="btn-link" style="color: #005aa7;"> {{ .ai_act_white_paper |
-                  markdownify }} <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <!-- /AI Act -->
-
-          <!-- DSA -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .dsa_title | markdownify }} </span>
-              <p style="line-height:1.5;"><span> {{ .dsa_content | markdownify }} </span></p>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .dsa_tag_risk | markdownify }} <span
-                  style="color:#777777; line-height:1.5;"> {{ .dsa_content_risk | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .dsa_tag_template | markdownify }} <span
-                  style="color:#777777; line-height:1.5;"> {{ .dsa_content_template | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a href="knowledge_base/white_paper_dsa_delegated_regulation_feedback/" class="btn-link"
-                  style="color: #005aa7;"> {{ .dsa_white_paper | markdownify }} <i class="fas fa-arrow-right"></i></a>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a><span style="color:#777777; line-height:1.5;"> {{
-                  .dsa_content_feedback | markdownify }} </span>
-                <div style="padding-left:25px;">
-                  <a style="font-weight:700;">– </a><span style="color:#777777; line-height:1.5;"> {{
-                    .dsa_content_feedback_tab1 | markdownify }} </span>
-                </div>
-                <div style="padding-left:25px;">
-                  <a style="font-weight:700;">– </a><span style="color:#777777; line-height:1.5;"> {{
-                    .dsa_content_feedback_tab2 | markdownify }} </span>
-                </div>
-              </div>
-            </div>
-          </li>
-          <!-- /DSA -->
-
-          <!-- GDPR -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .gdpr_title | markdownify }} </span>
-              <p style="line-height:1.5;"><span> {{ .gdpr_content1 | markdownify }} </span></p>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-35-gdpr/" class="btn-link"
-                  target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_dpia | markdownify }} </a> <span
-                  style="color:#777777; line-height:1.5;"> {{ .gdpr_content_dpia | markdownify }} </span>
-              </div>
-              <p style="line-height:1.5; padding:0px;"><span> {{ .gdpr_content2 | markdownify }} </span></p>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/recitals/no-71/" class="btn-link"
-                  target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_profiling | markdownify }} </a> <span
-                  style="color:#777777; line-height:1.5;"> {{ .gdpr_content_profiling | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-22-gdpr/" class="btn-link"
-                  target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_ADM | markdownify }} </a> <span
-                  style="color:#777777; line-height:1.5;"> {{ .gdpr_content_ADM| markdownify }} </span>
-              </div>
-            </div>
-          </li>
-          <!-- /GDPR -->
-
-          <!-- Administrative law -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .administrative_law_title | markdownify }} </span>
-              <p style=""> {{ .administrative_law_content | markdownify }} </p>
-              <div style="margin-bottom:15px;">
-                <span style="font-weight:700;">> </span> <span style="color: #005aa7;"> {{
-                  .administrative_law_tag_motivation | markdownify }} </span> <span
-                  style="color:#777777; line-height:1.5;"> {{ .administrative_law_content_motivation | markdownify }}
-                </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a href="algoprudence/#rotterdam-case/" class="btn-link" style="color: #005aa7;"> {{
-                  .algoprudence_rotterdam | markdownify }} <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <!-- /Administrative law -->
-
-          <!-- HRIA -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .hria_title | markdownify }} </span>
-              <p style=""> {{ .hria_content | markdownify }} </p>
-            </div>
-          </li>
-          <!-- /HRIA -->
-
-          <!-- AI registers -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .AI_register_title | markdownify }} </span>
-              <p style=""> {{ .AI_register_content | markdownify }} </p>
-            </div>
-          </li>
-          <!-- /AI registers -->
-
-          <!-- Regulatory landscape -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .regulator_title | markdownify }} </span>
-              <p style="">{{ .regulator_content | markdownify }}</p>
-              <div style="margin-bottom:15px;">
-                <a href="knowledge_base/white_paper_algorithmic_regulatory_body/" class="btn-link"
-                  style="color: #005aa7;">Read our white paper on the Dutch regulatory landscape<i
-                    class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <!-- /Regulatory landscape -->
-
-        </ul>
-      </div>
-      <!-- /text -->
-
-      <!-- images -->
-      <div class="gc col-lg-2 col-md-2" id="image-col">
-        <ul class="nacc" style="">
-          <li class="active">
-            <div style="">
-              <img src="{{ .ai_act_image | relURL }}" height="100px;">
-            </div>
-          </li>
-          <li>
-            <img src="{{ .dsa_image | relURL }}" height="100px;">
-          </li>
-          <li>
-            <img src="{{ .gdpr_image | relURL }}" height="100px;">
-          </li>
-          <li>
-            <img src="{{ .administrative_law_image | relURL }}" height="200px;">
-          </li>
-          <li>
-            <img src="{{ .regulator_image | relURL }}" height="150px;">
-          </li>
-          <li>
-            <img src="{{ .AI_register_image | relURL }}" height="125px;">
-          </li>
-          <li>
-            <img src="{{ .regulator_image | relURL }}" height="125px;">
-          </li>
-        </ul>
-      </div>
-      <!-- /images -->
+      <!-- /algoprudence animation -->
 
     </div>
+    <!-- /panel-2 layer-4 -->
 
-    <!-- mobile menu -->
-    <div class="gc2 row show-mobile" style="margin: 0px 0px 0px 0px; background-color: #F2F2F2;">
-      <div class="menu3 container-fluid d-flex">
-        <div class="col-sm-2 col-xs-2 active2">
-          <span style="font-size:12px;"> {{ .tab1 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab2 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab3 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab5 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab8 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab9 | markdownify }} </span>
+    <!-- panel-2 layer-5 -->
+    <div class="layer" style="background-color: #deecf7;">
+
+      <!-- advantages of algoprudence -->
+      <div class="container">
+        <div class="row" style="justify-content:center;">
+          <h3 style="color: #005aa7;">Building jurisprudence for algorithms</h3>
         </div>
       </div>
+      <!-- /advantages of algoprudence -->
+
     </div>
+    <!-- /panel-2 layer-5 -->
 
-    <!-- mobile text -->
-    <div class="gc2 row show-mobile show-mobile-height" style="margin: 0px 0px 0px 0px; background-color: #f9f9f9;">
-      <div class="container-fluid" style="padding:20px 0px 0px 0px">
-        <div class="col-sm-12 col-xs-12 active2" style="padding:0px">
-          <ul class="nacc2" style="padding:0px 20px 0px 20px;">
+  </section>
 
-            <!-- AI Act -->
-            <li class="active2">
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .ai_act_title | markdownify }} </span>
-                <p style="line-height:1.5;"><span>{{ .ai_act_content | markdownify }}</span></p>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .ai_act_tag_conformity | markdownify }} <span
-                    style="color:#777777; line-height:1.5;">{{ .ai_act_content_conformity | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .ai_act_tag_risk | markdownify }} <span
-                    style="color:#777777;line-height:1.5;"> {{ .ai_act_content_risk | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .ai_act_tag_standards | markdownify }} <span
-                    style="color:#777777; line-height:1.5;"> {{ .ai_act_content_standards | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a href="cases/#rotterdam-case" class="btn-link" style="color: #005aa7;"> {{ .ai_act_white_paper |
-                    markdownify }} <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </li>
+</div>
 
-            <!-- DSA -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .dsa_title | markdownify }} </span>
-                <p style="line-height:1.5;"><span> {{ .dsa_content | markdownify }} </span></p>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .dsa_tag_risk | markdownify }} <span
-                    style="color:#777777; line-height:1.5;"> {{ .dsa_content_risk | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .dsa_tag_template | markdownify }} <span
-                    style="color:#777777; line-height:1.5;"> {{ .dsa_content_template | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a href="knowledge_base/white_paper_dsa_delegated_regulation_feedback/" class="btn-link"
-                    style="color: #005aa7;"> {{ .dsa_white_paper | markdownify }} <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a><span style="color:#777777; line-height:1.5;"> {{
-                    .dsa_content_feedback | markdownify }} </span>
-                  <div style="padding-left:25px;">
-                    <a style="font-weight:700;">– </a><span style="color:#777777; line-height:1.5;"> {{
-                      .dsa_content_feedback_tab1 | markdownify }} </span>
-                  </div>
-                  <div style="padding-left:25px;">
-                    <a style="font-weight:700;">– </a><span style="color:#777777; line-height:1.5;"> {{
-                      .dsa_content_feedback_tab2 | markdownify }} </span>
-                  </div>
-                </div>
-              </div>
-            </li>
+<!-- /parallex -->
 
-            <!-- GDPR -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .gdpr_title | markdownify }} </span>
-                <p style="line-height:1.5;"><span> {{ .gdpr_content | markdownify }} </span></p>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-35-gdpr/" class="btn-link"
-                    target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_dpia | markdownify }} </a> <span
-                    style="color:#777777; line-height:1.5;"> {{ .gdpr_content_dpia | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/recitals/no-71/" class="btn-link"
-                    target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_profiling | markdownify }} </a> <span
-                    style="color:#777777; line-height:1.5;"> {{ .gdpr_content_profiling | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-22-gdpr/" class="btn-link"
-                    target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_ADM | markdownify }} </a> <span
-                    style="color:#777777; line-height:1.5;"> {{ .gdpr_content_ADM| markdownify }} </span>
-                </div>
-              </div>
-            </li>
+<!-- Video -->
+<div class="container" style="padding:200px 0px 0px 0px; margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
+  <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
+    <img src="/images/cover.png" width="600px" />
+    <span class="playbutton"></span>
+  </a>
+</div>
+<!-- /Video -->
 
-            <!-- HRIA -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .hria_title | markdownify }} </span>
-                <p style=""> {{ .hria_content | markdownify }} </p>
-              </div>
-            </li>
-            <!-- /HRIA -->
-
-            <!-- Administrative law -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .administrative_law_title | markdownify }} </span>
-                <p style=""> {{ .administrative_law_content | markdownify }} </p>
-                <div style="margin-bottom:15px;">
-                  <span style="font-weight:700;">> </span> <span style="color: #005aa7;"> {{
-                    .administrative_law_tag_motivation | markdownify }} </span> <span
-                    style="color:#777777; line-height:1.5;"> {{ .administrative_law_content_motivation | markdownify }}
-                  </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a href="algoprudence/#rotterdam-case/" class="btn-link" style="color: #005aa7;"> {{
-                    .algoprudence_rotterdam | markdownify }} <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </li>
-            <!-- /Administrative law -->
-
-            <!-- AI registers -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .AI_register_title | markdownify }} </span>
-                <p style=""> {{ .AI_register_content | markdownify }} </p>
-                <!-- <div style="margin-bottom:15px;">
-                  <span style="font-weight:700;">> </span> <span style="color: #005aa7;"> {{ .administrative_law_tag_motivation | markdownify }} </span> <span style="color:#777777; line-height:1.5;"> {{ .administrative_law_content_motivation | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a href="algoprudence/#rotterdam-case/" class="btn-link" style="color: #005aa7;"> {{ .algoprudence_rotterdam | markdownify }} <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-              </div>
-            </li>
-            <!-- /AI registers -->
-
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-{{ end }}
-{{ end }}
-{{ end }}
-<!-- /Why we exist -->
-
-<!-- Contact form -->
+<!-- Newsletter -->
 {{ with .Params.Get_in_touch }}
 <section class="section bg-white">
   <div class="container">
@@ -888,6 +475,6 @@
   </div>
 </section>
 {{ end }}
-<!-- /Contact form -->
+<!-- /Newsletter -->
 
 {{ end }}
