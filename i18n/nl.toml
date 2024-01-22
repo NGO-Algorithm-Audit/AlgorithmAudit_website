@@ -30,3 +30,9 @@ other = "Uitgelicht"
 
 [recent-activity]
 other = "Recente activiteit"
+
+[algoprudence_description_tab]
+other = "Beschrijving van algoprudentie"
+
+[algoprudence_actions_tab]
+other = "Acties volgend na dit werk"

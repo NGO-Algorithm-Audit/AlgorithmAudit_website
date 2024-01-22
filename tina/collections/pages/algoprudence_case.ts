@@ -1,7 +1,7 @@
 /**
  * @type {import('tinacms').Collection}
  */
-
+import facets from "../shared/facets/facets";
 export default {
     name: "algoprudence_case",
     label: "Algoprudence case",
@@ -49,7 +49,7 @@ export default {
                         required: true,
                     },
                     {
-                        type: "string",
+                        type: "rich-text",
                         name: "content",
                         label: "Content",
                         required: true,
@@ -177,6 +177,35 @@ export default {
                         label: "image",
                         required: true,
                     }
+                ]
+        },
+        {
+            type: "object",
+            name: "actions",
+            label: "Follow-up actions",
+            list: true,
+            fields:
+                [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Title",
+                        required: true,
+                    },
+                    {
+                        type: "image",
+                        name: "image",
+                        label: "image",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "date",
+                        label: "Date",
+                        required: true,
+                        description: "dd-MM-yyyy (i.e. 13-06-2024)"
+                    },
+                    facets
                 ]
         }
     ],

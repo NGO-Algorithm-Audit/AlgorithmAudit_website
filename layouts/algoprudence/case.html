@@ -1,9 +1,27 @@
 {{ define "main" }}
+{{ $split_char := " " }}
 
 <section class="section">
     <div class="container">
-        <div class="row">
+        <!-- Tab header -->
+        <div class="row mt-4">
             <div class="col-lg-10 mx-auto">
+                <div class="row tab">
+                    <button class="col tablinks" onclick="openTab(event, 'description_tab')" id="defaultOpen">
+                        <h3>{{ i18n "algoprudence_description_tab" }}</h3>
+                    </button>
+                    {{ if .Params.actions }}
+                    <button class="col tablinks" onclick="openTab(event, 'actions_tab')">
+                        <h3>{{ i18n "algoprudence_actions_tab" }}</h3>
+                    </button>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <!-- /Tab header -->
+        <!-- Description of algoprudence -->
+        <div class="row tabcontent" id="description_tab">
+            <div class="col-lg-10 mx-auto" style="background-color: #deecf7;">
                 <div class="content">
                     {{ $algoprudence := .Params }}
                     <div class="p-5 shadow rounded-lg" style="display:table;">
@@ -19,7 +37,6 @@
 
                                 <!-- Key takeaways -->
                                 {{ if $algoprudence.key_takeaways }}
-                                <!-- TODO English text -->
                                 <span style="color:#005aa7; font-size: 18px; font-weight:bold;">
                                     {{ i18n "key_takeaways_normative_advice_commission" }}
                                 </span>
@@ -33,7 +50,7 @@
                                         </div>
                                         <div class="row ml-0 mr-0">
                                             <p class="center-vert mb-0" style="font-size: 16px;">
-                                                {{$takeaway.content}}
+                                                {{$takeaway.content | markdownify}}
                                             </p>
                                         </div>
                                     </div>
@@ -162,6 +179,92 @@
                 </div>
             </div>
         </div>
+        <!-- /Description of algoprudence -->
+        <!-- actions of algoprudence -->
+        <div class="row tabcontent" id="actions_tab">
+            <div class="col-lg-10 mx-auto" style="background-color: #deecf7;">
+                <div class="content">
+                    {{ if .Params.actions }}
+                    {{ range $actions := .Params.actions }}
+
+                    {{ $facets_for_data_attribute := "" }}
+                    {{ range $facet := $actions.facets }}
+                    {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
+                    $split_char | printf "%s" }}
+                    {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
+                    $facet.value | printf "%s" }}
+                    {{ end }}
+                    <div class="py-4"></div>
+                    <div class="border-0 mx-5 mb-4 algoprudence-article" style="background-color: #deecf7;"
+                        data-facets="{{$facets_for_data_attribute}}">
+                        <div class="grid" data-facets="{{$facets_for_data_attribute}}">
+                            <div class="p-0">
+                                <div class="row justify-content-between m-0">
+                                    <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
+                                        <img class="img-fluid about-img p-5" src="{{$actions.image}}" />
+                                    </div>
+                                    <div class="col pt-3 pb-5" style="background-color: #ffffff;">
+                                        <div class="row align-items-center">
+                                            <h4 class="mb-4 mx-3" style="color: #005aa7;">
+                                                {{$actions.title}}
+                                            </h4>
+                                        </div>
+                                        <div class="row pl-3"
+                                            style="position: absolute; bottom: 0; font-weight: 300; font-size: 15px;">
+                                            {{ if $actions.date }}
+                                            <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                                                {{ $actions.date }}
+                                            </span>
+                                            {{ end }}
+                                            {{ range $facet := $actions.facets }}
+                                            {{ if $facet.hide }}
+                                            {{ else }}
+                                            <span style="background-color: #005aa7; color: #ffffff;"
+                                                class="mr-1 mb-2 px-2 py-1 mx-1">{{$facet.label}}</span>
+                                            {{ end }}
+                                            {{end}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-4"></div>
+                    {{end}}
+                    {{end}}
+                </div>
+            </div>
+        </div>
+        <!-- /actions of algoprudence -->
     </div>
 </section>
+
+<script>
+    function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    $(document).ready(function () {
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    })
+
+</script>
 {{ end }}

@@ -51,3 +51,9 @@ other = "Featured"
 
 [recent-activity]
 other = "Recent activity"
+
+[algoprudence_description_tab]
+other = "Description of algoprudence"
+
+[algoprudence_actions_tab]
+other = "Actions followed by this work"
