@@ -6,7 +6,7 @@
     <h3 class="mb-4 info" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get "title" | markdownify }}</h3>
 
     <!-- Why we exist -->
-    {{ with .Params.Why_we_exist }}
+    {{ with .Page.Params.Why_we_exist }}
     {{ if .enable }}
     {{ range $i,$p := .new_items }}
     <section class="section">
