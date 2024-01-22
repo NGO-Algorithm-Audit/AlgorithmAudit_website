@@ -1,49 +1,4 @@
 ---
-Banner:
-  image2: images/main_illustration.svg
-  button:
-    enable: true
-    label: Read our new white paper
-    link: knowledge_base/white_paper_dsa_delegated_regulation_feedback/
-What_we_do:
-  enable: true
-  title: Distinctive in
-  feature_item:
-    - name: Normative advice
-      icon: fas fa-search
-      content: >
-        Mindful of societal impact our audit commissions provide normative
-        advice on ethical issues that arise in algorithmic use cases
-    - name: Independence
-      icon: fas fa-star-of-life
-      content: >
-        By working nonprofit and under explicit terms and conditions, we ensure
-        the independence, quality and diversity of our audit commissions
-    - name: Ethics beyond compliance
-      icon: fas fa-leaf
-      content: >
-        We help organizations committed to ethical algorithms to make judgments
-        about fairness and open legal norms
-    - name: Public knowledge
-      icon: fab fa-slideshare
-      content: >
-        All our cases and corresponding advice (*algoprudence*) are made [<span
-        style="color:#005aa7">publicly available</span>](/algoprudence),
-        increasing collective knowledge how to deploy and use algorithms in an
-        ethical way
-    - name: Algoprudence
-      icon: fas fa-book-reader
-      content: >
-        Stakeholders learn from our [<span style="color:#005aa7">techno-ethical
-        jurisprudence</span>](/algoprudence), can help to improve it and can
-        utilize it as a best practice in similar cases
-    - name: Joint effort
-      icon: fas fa-hands-helping
-      content: >
-        Let’s remove boundaries between public and private organizations that
-        face similar AI quandaries. We offer a collaborative platform for
-        academics, activists, developers and policy makers to define normative
-        standards for AI
 Supported_by:
   enable: true
   Suported_by:
@@ -85,6 +40,109 @@ Get_in_touch:
   content: >-
     Do you have an ethical issue for review? Or want to share ideas? Let us
     know!
+Banner:
+  image2: images/main_illustration.svg
+  button:
+    enable: true
+    label: Read our new white paper
+    link: knowledge_base/white_paper_dsa_delegated_regulation_feedback/
+What_we_do:
+  enable: true
+  title: Distinctive in
+  feature_item:
+    - name: Independence
+      icon: fas fa-star-of-life
+      content: >
+        By working nonprofit and under explicit terms and conditions, we ensure
+        the independence, quality and diversity of our audit commissions
+    - name: Normative advice
+      icon: fas fa-search
+      content: >
+        Mindful of societal impact our audit commissions provide normative
+        advice on ethical issues that arise in algorithmic use cases
+    - name: Public knowledge
+      icon: fab fa-slideshare
+      content: >
+        All our cases and corresponding advice (*algoprudence*) are made [<span
+        style="color:#005aa7">publicly available</span>](/algoprudence),
+        increasing collective knowledge how to deploy and use algorithms in an
+        ethical way
+areas_of_ai_expertise:
+  enable: true
+  title: Areas of AI expertise
+  width_m: 4
+  width_s: 12
+  submit_case_text: Request an audit
+  feature_item:
+    - name: Independence
+      icon: fas fa-star-of-life
+      content: >
+        By working nonprofit and under explicit terms and conditions, we ensure
+        the independence, quality and diversity of our audit commissions
+    - name: Normative advice
+      icon: fas fa-search
+      content: >
+        Mindful of societal impact our audit commissions provide normative
+        advice on ethical issues that arise in algorithmic use cases
+    - name: Public knowledge
+      icon: fab fa-slideshare
+      content: >
+        All our cases and corresponding advice (*algoprudence*) are made [<span
+        style="color:#005aa7">publicly available</span>](/algoprudence),
+        increasing collective knowledge how to deploy and use algorithms in an
+        ethical way
+  recent_audits:
+    title: Recent Audits
+    feature_item:
+      - name: Risk Profiling Social Welfare Reexamination
+        image: /images/sidn.png
+        content: >
+          All our cases and corresponding advice (*algoprudence*) are made
+          [<span style="color:#005aa7">publicly
+          available</span>](/algoprudence), increasing collective knowledge how
+          to deploy and use algorithms in an ethical way
+      - name: Risk Profiling Social Welfare Reexamination
+        image: /images/sidn.png
+        content: >
+          All our cases and corresponding advice (*algoprudence*) are made
+          [<span style="color:#005aa7">publicly
+          available</span>](/algoprudence), increasing collective knowledge how
+          to deploy and use algorithms in an ethical way
+how_we_build_algoprudence:
+  title: How we build algoprudence
+  button_text: Our working method
+  steps:
+    - title: Indentifying issue
+      content: >
+        Identifying a concrete ethical issue in a real algorithm or data-analysis tool
+    - title: Problem statement
+      content: >
+        Identifying a concrete ethical issue in a real algorithm or data-analysis tool
+    - title: Advice commission
+      content: >
+        Identifying a concrete ethical issue in a real algorithm or data-analysis tool
+    - title: Public advice
+      content: >
+        Identifying a concrete ethical issue in a real algorithm or data-analysis tool
+advantages_of_algoprudence:
+  title: Advantages of algoprudence
+  button_text: "Learn more"
+  feature_item:
+    - name: Learn & harmonize
+      icon: fas fa-star-of-life
+      content: >
+        By working nonprofit and under explicit terms and conditions, we ensure
+        the independence, quality and diversity of our audit commissions
+    - name: Question & critisize
+      icon: fas fa-star-of-life
+      content: >
+        By working nonprofit and under explicit terms and conditions, we ensure
+        the independence, quality and diversity of our audit commissions
+    - name: Inclusion & participation
+      icon: fas fa-star-of-life
+      content: >
+        By working nonprofit and under explicit terms and conditions, we ensure
+        the independence, quality and diversity of our audit commissions
 Activity_Feed:
   enable: true
   featured_title: Featured
@@ -127,7 +185,4 @@ Activity_Feed:
       date: 07-01-2024
       type: presentation
 ---
-
-
-
 

@@ -36,3 +36,6 @@ other = "Beschrijving van algoprudentie"
 
 [algoprudence_actions_tab]
 other = "Acties volgend na dit werk"
+
+[step]
+other = "Stap"

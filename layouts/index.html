@@ -291,7 +291,7 @@
 <div class="pinContainer" id="pinContainer">
   <section class="panel one" style="background-color: #deecf7;">
 
-    <!-- panel-1 layer-1 --> 
+    <!-- panel-1 layer-1 -->
     <div class="layer one row">
       <div class="col-12 text-center">
         <h2 style="color:#005aa7; font-weight:100;">
@@ -308,49 +308,113 @@
           </div>
         </h2>
       </div>
-    </div>
-    <!-- /panel-1 layer-1 --> 
 
-    <!-- panel-1 layer-2 -->
-    <div class="layer two align-items-start" >
-      <div class="col-12" style="display: inline-block; padding: 0px 5%">
-        <h4 style="color: #005aa7; padding-left:5%;">AI expertise</h4>
-        <div class="row" style="margin-top:100px;">
-          <div class="col-sm mb-4">
-            <div class="feature-card text-center">
-              <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
-              <h4 class="" style="color: #005aa7;">
-                Profiling
-              </h4>
-              <p>cc</p>
-            </div>
-          </div>
-          <div class="col-sm mb-4">
-            <div class="feature-card text-center">
-              <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
-              <h4 class="" style="color: #005aa7;">
-                FP-FN balancing
-              </h4>
-              <p>bb</p>
-            </div>
-          </div>
-          <div class="col-sm mb-4">
-            <div class="feature-card text-center">
-              <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
-              <h4 class="" style="color: #005aa7;">
-                Ranking
-              </h4>
-              <p>aa</p>
-            </div>
+      <!-- Distinctive in -->
+      {{ with .Params.What_we_do }}
+      {{ if .enable }}
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
           </div>
         </div>
-        <div class="row text-center">
-          <div class="col-12" style="margin-top:150px;">
-            <a class="btn-link" href=""><h3 style="color:#005aa7; font-weight:100;">Submit a case for review <i class="fas fa-arrow-right" style="font-size:20px;"></i></a></h3>
+
+        <div class="row justify-content-center">
+          {{$width_m := 4}}
+          {{$width_s := 2}}
+          {{if .width_m}}
+          {{$width_m = .width_m}}
+          {{end}}
+          {{if .width_s}}
+          {{$width_s = .width_s}}
+          {{end}}
+          {{ range .feature_item }}
+          <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
+            <div class="feature-card text-center">
+              <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
+              <h4 class="" style="color: #005aa7;">
+                {{ .name | markdownify }}
+              </h4>
+              <p>{{ .content | markdownify }}</p>
+            </div>
           </div>
+          {{ end }}
         </div>
       </div>
+      {{ end }}
+      {{ end }}
+      <!-- /Distinctive in -->
     </div>
+    <!-- /panel-1 layer-1 -->
+
+    <!-- panel-1 layer-2 -->
+    <!-- areas of ai expertise -->
+    {{ with .Params.areas_of_ai_expertise }}
+    {{ if .enable }}
+    <div class="layer two align-items-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" style="display: inline-block; padding: 0px 5%">
+            <h4 style="color: #005aa7;">{{.title | markdownify}}</h4>
+            <div class="row" style="margin-top:100px;">
+              {{$width_m := 4}}
+              {{$width_s := 2}}
+              {{if .width_m}}
+              {{$width_m = .width_m}}
+              {{end}}
+              {{if .width_s}}
+              {{$width_s = .width_s}}
+              {{end}}
+              {{ range .feature_item }}
+              <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
+                <div class="feature-card text-center">
+                  <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
+                  <h4 class="" style="color: #005aa7;">
+                    {{ .name | markdownify }}
+                  </h4>
+                  <p>{{.content | markdownify}}</p>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+            <div class="row text-center">
+              <div class="col-12" style="margin-top:150px;">
+                <a class="btn-link" href="">
+                  <h3 class="btn" style="color:#ffffff; font-weight:100;">{{.submit_case_text}} <i
+                      class="fas fa-arrow-right" style="font-size:20px;"></i>
+                  </h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{with .recent_audits}}
+        <div class="row">
+          <div class="col-12" style="display: inline-block; padding: 0px 5%">
+            <h4 style="color: #005aa7;">{{.title | markdownify}}</h4>
+            <div class="row" style="margin-top:100px;">
+
+              {{ range .feature_item }}
+              <div class="col-sm mb-4">
+                <div class="feature-card text-center">
+                  <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
+                  <h4 class="" style="color: #005aa7;">
+                    {{ .name | markdownify }}
+                  </h4>
+                  <p>{{.content | markdownify}}</p>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+
+        </div>
+        {{end}}
+      </div>
+    </div>
+    {{end}}
+    {{end}}
+    <!-- /areas of ai expertise -->
     <!-- /panel-1 layer-2 -->
 
   </section>
@@ -358,42 +422,52 @@
   <section class="panel two">
 
     <!-- panel-2 layer-3 -->
-    <div class="layer" style="background-color: #a7bdda;">
-
-      <!-- Distinctive in -->
-      {{ with .Params.What_we_do }}
-      {{ if .enable }}
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 text-center">
-              <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-            </div>
-            {{$width_m := 4}}
-            {{$width_s := 2}}
-            {{if .width_m}}
-            {{$width_m = .width_m}}
-            {{end}}
-            {{if .width_s}}
-            {{$width_s = .width_s}}
-            {{end}}
-            {{ range .feature_item }}
-            <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
-              <div class="feature-card text-center">
-                <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
-                <h4 class="" style="color: #005aa7;">
-                  {{ .name | markdownify }}
-                </h4>
-                <p>{{ .content | markdownify }}</p>
+    <!-- how we build algoprudence -->
+    {{ with .Params.how_we_build_algoprudence }}
+    <div class="layer" style="background-color: #ffffff;">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12" style="display: inline-block; padding: 0px 5%">
+            <h4 style="color: #005aa7; margin-left: -15px;">{{.title | markdownify}}</h4>
+            {{ range $i, $step := .steps }}
+            <div class="row" >
+              <div class="col-4 mb-4">
+                <div class="row">
+                  <p>
+                    {{ i18n "step" }} {{add $i 1}}
+                  </p>
+                </div>
+                <div class="row">
+                  <p>
+                    {{ .title }}
+                  </p>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="feature-card text-center">
+                  <h4 class="" style="color: #005aa7;">
+                    {{ .name | markdownify }}
+                  </h4>
+                  <p>{{.content | markdownify}}</p>
+                </div>
               </div>
             </div>
             {{ end }}
+            <div class="row text-center">
+              <div class="col-12" style="margin-top:150px;">
+                <a class="btn-link" href="">
+                  <h3 class="btn" style="color:#ffffff; font-weight:100;">{{.button_text}} <i class="fas fa-arrow-right"
+                      style="font-size:20px;"></i>
+                  </h3>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      {{ end }}
-      {{ end }}
-      <!-- /Distinctive in -->
-
+      </div>
     </div>
+    {{end}}
+    <!-- /how we build algoprudence -->
     <!-- /panel-2 layer-3 -->
 
     <!-- panel-2 layer-4 -->
@@ -419,11 +493,35 @@
     <div class="layer" style="background-color: #deecf7;">
 
       <!-- advantages of algoprudence -->
+      {{ with .Params.advantages_of_algoprudence}}
       <div class="container">
         <div class="row" style="justify-content:center;">
-          <h3 style="color: #005aa7;">Building jurisprudence for algorithms</h3>
+          <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
+        </div>
+        <div class="row">
+          {{ range .feature_item }}
+          <div class="col-md-4 col-sm-12 mb-4">
+            <div class="text-center">
+              <i class="fas {{.icon}} mb-3" style="color: #005aa7;"></i>
+              <h4 class="" style="color: #005aa7;">
+                {{ .name | markdownify }}
+              </h4>
+              <p>{{.content | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+          <div class="col-md-4 col-sm-12 mb-4">
+            <div class="text-center">
+              <a class="btn-link" href="">
+                <h3 class="btn" style="color:#ffffff; font-weight:100;">{{.button_text}} <i class="fas fa-arrow-right"
+                    style="font-size:20px;"></i>
+                </h3>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+      {{end}}
       <!-- /advantages of algoprudence -->
 
     </div>
@@ -436,7 +534,8 @@
 <!-- /parallex -->
 
 <!-- Video -->
-<div class="container" style="padding:200px 0px 0px 0px; margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
+<div class="container"
+  style="padding:200px 0px 0px 0px; margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
   <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
     <img src="/images/cover.png" width="600px" />
     <span class="playbutton"></span>

@@ -48,74 +48,6 @@ export default {
         },
         {
             type: "object",
-            name: "What_we_do",
-            label: "What we do",
-            fields:
-                [
-                    {
-                        type: "boolean",
-                        name: "enable",
-                        label: "Enable",
-                        required: true,
-                    },
-                    {
-                        type: "string",
-                        name: "title",
-                        label: "Enable",
-                        required: true,
-                    },
-                    {
-                        type: "number",
-                        name: "width_m",
-                        label: "Width medium screens (12 is the maximum)",
-                        description: "Divide the number of articles per row by 12",
-                        required: true,
-                    },
-                    {
-                        type: "number",
-                        name: "width_s",
-                        label: "Width small screens (12 is the maximum)",
-                        description: "Divide the number of articles per row by 12",
-                        required: true,
-                    },
-                    {
-                        type: "object",
-                        name: "feature_item",
-                        label: "Featured Items",
-                        list: true,
-                        fields:
-                            [
-                                {
-                                    type: "string",
-                                    name: "name",
-                                    label: "Name",
-                                    required: true,
-                                },
-                                {
-                                    type: "string",
-                                    name: "icon",
-                                    label: "Icon",
-                                    required: true,
-                                },
-                                {
-                                    type: "rich-text",
-                                    name: "content",
-                                    label: "Content",
-                                    isBody: true,
-                                }
-                            ]
-                    }
-                ],
-            defaultItem: () => {
-                return {
-                    width_m: 4,
-                    width_s: 2,
-                    width_xs: 1
-                }
-            }
-        },
-        {
-            type: "object",
             name: "Activity_Feed",
             label: "Activity Feed",
             fields:
@@ -240,6 +172,270 @@ export default {
                                                 label: "presentation"
                                             }
                                         ]
+                                }
+                            ]
+                    }
+                ]
+        },
+        {
+            type: "object",
+            name: "What_we_do",
+            label: "Distintive in",
+            fields:
+                [
+                    {
+                        type: "boolean",
+                        name: "enable",
+                        label: "Enable",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Enable",
+                        required: true,
+                    },
+                    {
+                        type: "number",
+                        name: "width_m",
+                        label: "Width medium screens (12 is the maximum)",
+                        description: "Divide the number of articles per row by 12",
+                        required: true,
+                    },
+                    {
+                        type: "number",
+                        name: "width_s",
+                        label: "Width small screens (12 is the maximum)",
+                        description: "Divide the number of articles per row by 12",
+                        required: true,
+                    },
+                    {
+                        type: "object",
+                        name: "feature_item",
+                        label: "Featured Items",
+                        list: true,
+                        fields:
+                            [
+                                {
+                                    type: "string",
+                                    name: "name",
+                                    label: "Name",
+                                    required: true,
+                                },
+                                {
+                                    type: "string",
+                                    name: "icon",
+                                    label: "Icon",
+                                    required: true,
+                                },
+                                {
+                                    type: "rich-text",
+                                    name: "content",
+                                    label: "Content",
+                                    isBody: true,
+                                }
+                            ]
+                    }
+                ],
+            defaultItem: () => {
+                return {
+                    width_m: 4,
+                    width_s: 2,
+                    width_xs: 1
+                }
+            }
+        },
+        {
+            type: "object",
+            name: "areas_of_ai_expertise",
+            label: "Areas of AI Expertise",
+            fields:
+                [
+                    {
+                        type: "boolean",
+                        name: "enable",
+                        label: "Enable",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Enable",
+                        required: true,
+                    },
+                    {
+                        type: "number",
+                        name: "width_m",
+                        label: "Width medium screens (12 is the maximum)",
+                        description: "Divide the number of articles per row by 12",
+                        required: true,
+                    },
+                    {
+                        type: "number",
+                        name: "width_s",
+                        label: "Width small screens (12 is the maximum)",
+                        description: "Divide the number of articles per row by 12",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "submit_case_text",
+                        label: "Submit a case text"
+                    },
+                    {
+                        type: "object",
+                        name: "feature_item",
+                        label: "Featured Items",
+                        list: true,
+                        fields:
+                            [
+                                {
+                                    type: "string",
+                                    name: "name",
+                                    label: "Name",
+                                    required: true,
+                                },
+                                {
+                                    type: "string",
+                                    name: "icon",
+                                    label: "Icon",
+                                    required: true,
+                                },
+                                {
+                                    type: "rich-text",
+                                    name: "content",
+                                    label: "Content",
+                                    isBody: true,
+                                }
+                            ]
+                    },
+                    {
+                        type: "object",
+                        name: "recent_audits",
+                        label: "Recent audits",
+                        fields:
+                            [
+                                {
+                                    type: "string",
+                                    name: "title",
+                                    label: "Enable",
+                                    required: true,
+                                },
+                                {
+                                    type: "object",
+                                    name: "feature_item",
+                                    label: "Featured Items",
+                                    list: true,
+                                    fields:
+                                        [
+                                            {
+                                                type: "string",
+                                                name: "name",
+                                                label: "Name",
+                                                required: true,
+                                            },
+                                            {
+                                                type: "image",
+                                                name: "image",
+                                                label: "Image",
+                                                required: true,
+                                            },
+                                            {
+                                                type: "rich-text",
+                                                name: "content",
+                                                label: "Content",
+                                                isBody: true,
+                                            }
+                                        ]
+                                }
+                            ]
+                    }
+                ],
+            defaultItem: () => {
+                return {
+                    width_m: 4,
+                    width_s: 2,
+                    width_xs: 1
+                }
+            }
+        },
+        {
+            type: "object",
+            name: "how_we_build_algoprudence",
+            label: "How we build algoprudence",
+            fields:
+                [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Title"
+                    },
+                    {
+                        type: "string",
+                        name: "button_text",
+                        label: "Our working method button text"
+                    },
+                    {
+                        type: "object",
+                        name: "steps",
+                        label: "Steps",
+                        list: true,
+                        fields:
+                            [
+                                {
+                                    type: "string",
+                                    name: "title",
+                                    label: "Title"
+                                },
+                                {
+                                    type: "rich-text",
+                                    name: "content",
+                                    label: "Content"
+                                }
+                            ]
+                    }
+                ]
+        },
+        {
+            type: "object",
+            name: "advantages_of_algoprudence",
+            label: "Advantages of algoprudence",
+            fields:
+                [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Title"
+                    },
+                    {
+                        type: "string",
+                        name: "button_text",
+                        label: "Our working method button text"
+                    },
+                    {
+                        type: "object",
+                        name: "feature_item",
+                        label: "Featured Items",
+                        list: true,
+                        fields:
+                            [
+                                {
+                                    type: "string",
+                                    name: "name",
+                                    label: "Name",
+                                    required: true,
+                                },
+                                {
+                                    type: "string",
+                                    name: "icon",
+                                    label: "Icon",
+                                    required: true,
+                                },
+                                {
+                                    type: "rich-text",
+                                    name: "content",
+                                    label: "Content",
+                                    isBody: true,
                                 }
                             ]
                     }

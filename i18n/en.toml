@@ -57,3 +57,6 @@ other = "Description of algoprudence"
 
 [algoprudence_actions_tab]
 other = "Actions followed by this work"
+
+[step]
+other = "Step"
