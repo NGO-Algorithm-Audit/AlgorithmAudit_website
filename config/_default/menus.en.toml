@@ -25,7 +25,7 @@ hasChildren = true
   [[main]]
   parent = "Algoprudence"
   name = "How we work"
-  url = "/how-we-work"
+  url = "/algoprudence/how-we-work"
   weight = 3
   [[main.params]]
     icon = "fa-question"

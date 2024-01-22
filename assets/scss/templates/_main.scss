@@ -679,6 +679,66 @@ padding: 20px 0px 0px 0px;
   bottom:-5px;
 }
 
+.pinContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.panel {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  
+  &.one {
+    z-index: 4;
+  }
+  
+  &.two {
+    z-index: 3;
+  }
+  
+  &.three {
+    z-index: 2;
+  }
+  
+  &.four {
+    z-index: 1;
+  }
+}
+
+.layer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  & ~ .layer {
+    position: relative;
+    z-index: 2;
+  }
+}
+
 .slider-wrapper{
   display: flex;
   flex-direction: row;
@@ -728,4 +788,4 @@ padding: 20px 0px 0px 0px;
   100% {
     transform: translateY(nth($steps, length($steps)));
   }
-}
+};
