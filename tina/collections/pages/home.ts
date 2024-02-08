@@ -341,6 +341,11 @@ export default {
                                                 required: true,
                                             },
                                             {
+                                                label: "Link",
+                                                type: "string",
+                                                name: "link",
+                                            },
+                                            {
                                                 type: "rich-text",
                                                 name: "content",
                                                 label: "Content",

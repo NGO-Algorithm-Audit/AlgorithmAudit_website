@@ -1,5 +1,6 @@
 {{ define "main" }}
 <script src="/js/home_script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <!-- Banner -->
 {{ with .Params.banner }}
@@ -293,7 +294,9 @@
 
     <!-- panel-1 layer-1 -->
     <div class="layer one row">
-      <div class="col-12 text-center">
+
+      <!-- Building AI auditing capacity from a not-for-profit perspective -->
+      <div class="col-12 text-center" style="margin-top:75px;">
         <h2 style="color:#005aa7; font-weight:100;">
           <div>
             Building
@@ -308,18 +311,21 @@
           </div>
         </h2>
       </div>
+      <!-- /Building AI auditing capacity from a not-for-profit perspective -->
 
-      <!-- Distinctive in -->
       {{ with .Params.What_we_do }}
       {{ if .enable }}
       <div class="container">
+
+        <!-- Distinctive in -->
         <div class="row">
           <div class="col-12">
-            <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
+            <h4 class="section-title" style="color: #005aa7; font-size:18px;">{{ .title | markdownify }}</h4>
           </div>
         </div>
+        <!-- Distinctive in -->
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center border-between">
           {{$width_m := 4}}
           {{$width_s := 2}}
           {{if .width_m}}
@@ -330,11 +336,12 @@
           {{end}}
           {{ range .feature_item }}
           <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
-            <div class="feature-card text-center">
-              <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
-              <h4 class="" style="color: #005aa7;">
-                {{ .name | markdownify }}
-              </h4>
+            <div class="feature-card-transparant">
+              <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
+                <h4 class="" style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
+                  {{ .name | markdownify }}
+                </h4>
+              </i>
               <p>{{ .content | markdownify }}</p>
             </div>
           </div>
@@ -343,73 +350,87 @@
       </div>
       {{ end }}
       {{ end }}
-      <!-- /Distinctive in -->
     </div>
     <!-- /panel-1 layer-1 -->
 
     <!-- panel-1 layer-2 -->
-    <!-- areas of ai expertise -->
+
     {{ with .Params.areas_of_ai_expertise }}
     {{ if .enable }}
     <div class="layer two align-items-start">
-      <div class="container">
+      <div class="container" style="padding:0px;">
+
+        <!-- Title -->
         <div class="row">
-          <div class="col-12" style="display: inline-block; padding: 0px 5%">
-            <h4 style="color: #005aa7;">{{.title | markdownify}}</h4>
-            <div class="row" style="margin-top:100px;">
-              {{$width_m := 4}}
-              {{$width_s := 2}}
-              {{if .width_m}}
-              {{$width_m = .width_m}}
-              {{end}}
-              {{if .width_s}}
-              {{$width_s = .width_s}}
-              {{end}}
-              {{ range .feature_item }}
-              <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
-                <div class="feature-card text-center">
-                  <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
-                  <h4 class="" style="color: #005aa7;">
-                    {{ .name | markdownify }}
-                  </h4>
-                  <p>{{.content | markdownify}}</p>
-                </div>
-              </div>
-              {{ end }}
-            </div>
-            <div class="row text-center">
-              <div class="col-12" style="margin-top:150px;">
-                <a class="btn-link" href="">
-                  <h3 class="btn" style="color:#ffffff; font-weight:100;">{{.submit_case_text}} <i
-                      class="fas fa-arrow-right" style="font-size:20px;"></i>
-                  </h3>
-                </a>
-              </div>
-            </div>
+          <div class="col-12">
+            <h4 class="section-title" style="color: #005aa7; font-size:18px;">{{ .title | markdownify }}</h4>
           </div>
         </div>
+        <!-- /Title -->
+
+        <!-- Areas of AI expertise -->
+        <div class="row">
+          {{$width_m := 4}}
+          {{$width_s := 2}}
+          {{if .width_m}}
+          {{$width_m = .width_m}}
+          {{end}}
+          {{if .width_s}}
+          {{$width_s = .width_s}}
+          {{end}}
+          {{ range .feature_item }}
+          <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4" style="padding-left:0px; padding-right:25px;">
+            <div class="feature-card">
+              <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
+              <h4 class="" style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
+                {{ .name | markdownify }}
+              </h4>
+              <p>{{.content | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Button -->
+        <div class="row text-center">
+          <div class="col-12" style="margin-top:50px; margin-bottom:75px;">
+            <a class="btn-link" href="">
+              <h3 class="btn" style="color:#ffffff;">{{.submit_case_text}}</h3>
+            </a>
+          </div>
+        </div>
+        <!-- /Button -->
+
         {{with .recent_audits}}
+
+        <!-- Title -->
         <div class="row">
-          <div class="col-12" style="display: inline-block; padding: 0px 5%">
-            <h4 style="color: #005aa7;">{{.title | markdownify}}</h4>
-            <div class="row" style="margin-top:100px;">
-
-              {{ range .feature_item }}
-              <div class="col-sm mb-4">
-                <div class="feature-card text-center">
-                  <i class="fas fa-star-of-life mb-3" style="color: #005aa7;"></i>
-                  <h4 class="" style="color: #005aa7;">
-                    {{ .name | markdownify }}
-                  </h4>
-                  <p>{{.content | markdownify}}</p>
-                </div>
-              </div>
-              {{ end }}
-            </div>
+          <div class="col-12">
+            <h4 class="section-title" style="color: #005aa7; font-size:18px;">{{ .title | markdownify }}</h4>
           </div>
-
         </div>
+        <!-- /Title -->
+
+        <!-- Recent audits -->
+        <div class="row">
+          {{ range .feature_item }}
+            <div class="col-md-1">
+              <img class="img-fluid" src="{{.image}}" style="height:100px;" />
+            </div>
+            <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
+              <h4 class="" style="color: #005aa7; font-size:16px;">
+                {{ .name | markdownify }}
+              </h4>
+              <p style="font-size:14px;">
+                {{.content | markdownify}}
+              </p>
+            </div>
+          {{ end }}
+        </div>
+        <!-- /Recent audits -->
+
         {{end}}
+
       </div>
     </div>
     {{end}}

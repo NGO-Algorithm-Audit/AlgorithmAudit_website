@@ -26,6 +26,36 @@ body {
   }
 }
 
+.feature-card-transparent {
+  border-radius: 10px;
+  padding: 20px;
+  transition: .2s ease;
+
+  &:hover {
+    @extend .shadow;
+  }
+
+  svg,i {
+    font-size: 30px;
+    color: $primary-color;
+    display: inline-block;
+  }
+}
+
+.border-between > [class*='col-']:before {
+  background: #F7F8E3;
+  bottom: 0;
+  content: " ";
+  left: 0;
+  position: absolute;
+  width: 2px;
+  top: 0;
+}
+
+.border-between > [class*='col-']:first-child:before {
+  display: none;
+}
+
 .footer-list a {
   display: inline;
   padding: 5px 0;

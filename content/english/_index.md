@@ -49,24 +49,26 @@ Banner:
 What_we_do:
   enable: true
   title: Distinctive in
+  width_m: 4
+  width_s: 2
   feature_item:
     - name: Independence
       icon: fas fa-star-of-life
       content: >
         By working nonprofit and under explicit terms and conditions, we ensure
-        the independence, quality and diversity of our audit commissions
+        the independence and quality of our audits and normative advice
     - name: Normative advice
       icon: fas fa-search
       content: >
-        Mindful of societal impact our audit commissions provide normative
-        advice on ethical issues that arise in algorithmic use cases
+        Mindful of societal impact our commissions provide normative advice on
+        ethical issues that arise in algorithmic use cases
     - name: Public knowledge
       icon: fab fa-slideshare
       content: >
-        All our cases and corresponding advice (*algoprudence*) are made [<span
+        All our audits and corresponding advice (*algoprudence*) are made [<span
         style="color:#005aa7">publicly available</span>](/algoprudence),
         increasing collective knowledge how to deploy and use algorithms in an
-        ethical way
+        responsible way
 areas_of_ai_expertise:
   enable: true
   title: Areas of AI expertise
@@ -74,59 +76,63 @@ areas_of_ai_expertise:
   width_s: 12
   submit_case_text: Request an audit
   feature_item:
-    - name: Independence
-      icon: fas fa-star-of-life
+    - name: Profiling
+      icon: fas fa-chart-pie
       content: >
-        By working nonprofit and under explicit terms and conditions, we ensure
-        the independence, quality and diversity of our audit commissions
-    - name: Normative advice
-      icon: fas fa-search
+        Auditing rule-based and ML-driven profiling, e.g., differentiation
+        policies, selection criteria, Z-testing, model validation and
+        organisational aspects
+    - name: FP-FN balancing
+      icon: fa-solid fa-scale-balanced
       content: >
-        Mindful of societal impact our audit commissions provide normative
-        advice on ethical issues that arise in algorithmic use cases
+        Context-dependent review of ML and DL confusion matrix-based evaluation
+        metrics, such as False Positives (FPs) and False Negatives (FNs)
     - name: Public knowledge
-      icon: fab fa-slideshare
+      icon: fas fa-ranking-star
       content: >
         All our cases and corresponding advice (*algoprudence*) are made [<span
         style="color:#005aa7">publicly available</span>](/algoprudence),
         increasing collective knowledge how to deploy and use algorithms in an
         ethical way
   recent_audits:
-    title: Recent Audits
+    title: Recent audits
     feature_item:
-      - name: Risk Profiling Social Welfare Reexamination
-        image: /images/sidn.png
+      - name: Risk Profiling Social Welfare Re-examination
+        image: /images/front_AA202302A.png
+        link: /algoprudence
         content: >
-          All our cases and corresponding advice (*algoprudence*) are made
-          [<span style="color:#005aa7">publicly
-          available</span>](/algoprudence), increasing collective knowledge how
-          to deploy and use algorithms in an ethical way
-      - name: Risk Profiling Social Welfare Reexamination
-        image: /images/sidn.png
+          Normative advice commission provides rationales why these variables
+          are eligible or not as a profiling selection criterion for a xgboost
+          algorithm
+      - name: Preventing prejudice
+        image: /images/front_AA202401TR.png
+        link: /events
         content: >
-          All our cases and corresponding advice (*algoprudence*) are made
-          [<span style="color:#005aa7">publicly
-          available</span>](/algoprudence), increasing collective knowledge how
-          to deploy and use algorithms in an ethical way
+          Assessment of risk distributions through Z-tests and bias test for
+          various steps in algorithmic-driven decision-making process
 how_we_build_algoprudence:
   title: How we build algoprudence
   button_text: Our working method
   steps:
     - title: Indentifying issue
       content: >
-        Identifying a concrete ethical issue in a real algorithm or data-analysis tool
+        Identifying a concrete ethical issue in a real algorithm or
+        data-analysis tool
     - title: Problem statement
       content: >
-        Identifying a concrete ethical issue in a real algorithm or data-analysis tool
+        Identifying a concrete ethical issue in a real algorithm or
+        data-analysis tool
     - title: Advice commission
       content: >
-        Identifying a concrete ethical issue in a real algorithm or data-analysis tool
+        Identifying a concrete ethical issue in a real algorithm or
+        data-analysis tool
     - title: Public advice
       content: >
-        Identifying a concrete ethical issue in a real algorithm or data-analysis tool
+        Identifying a concrete ethical issue in a real algorithm or
+        data-analysis tool
 advantages_of_algoprudence:
   title: Advantages of algoprudence
-  button_text: "Learn more"
+  button_text: Learn more
   feature_item:
     - name: Learn & harmonize
       icon: fas fa-star-of-life
@@ -185,4 +191,34 @@ Activity_Feed:
       date: 07-01-2024
       type: presentation
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
