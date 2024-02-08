@@ -47,8 +47,10 @@
     </div>
 
     <!-- European knowledge platform -->
-    <div class="row pinDiv1" style="margin-top:30px; padding-bottom:75px;">
-      <div class="col-12 text-center">
+    <div class="row pinDiv1">
+
+      <!-- desktop version -->
+      <div class="col-12 text-center" id="desktop-slogan" style="margin-top:50px; margin-bottom:100px;">
         <div class="slider-wrapper justify-content-center">
           <h3 style="color:#005aa7; font-weight:100;">A European knowledge platform for</h3>
           <div class="ms-slider">
@@ -75,6 +77,38 @@
           </div>
         </div>
       </div>
+      <!-- /desktop version -->
+      <!-- mobile version -->
+      <div class="col-12" id="mobile-slogan" style="margin-top:50px;">
+        <div class="slider-wrapper" style="padding-left:10px;">
+          <h3 style="color:#005aa7; font-weight:100;">A European knowledge platform for</h3>
+        </div>
+      </div>
+      <div class="col-12" id="mobile-slogan" style="margin-bottom:50px;">
+        <div class="ms-slider">
+          <ul class="ms-slider__words">
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
+                    style="background-color:#005aa7;color:#fff">AI bias testing</i></h3>
+              </div>
+            </li>
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
+                    style="background-color:#005aa7;color:#fff">normative AI standards</i></h3>
+              </div>
+            </li>
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
+                    style="background-color:#005aa7;color:#fff">AI bias testing</i></h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /mobile version -->
     </div>
     <!-- /European knowledge platform -->
 
@@ -338,7 +372,8 @@
           <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
             <div class="feature-card-transparant">
               <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
-                <h4 class="" style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
+                <h4 class=""
+                  style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
                   {{ .name | markdownify }}
                 </h4>
               </i>
@@ -382,7 +417,8 @@
           <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4" style="padding-left:0px; padding-right:25px;">
             <div class="feature-card">
               <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
-              <h4 class="" style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
+              <h4 class=""
+                style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
                 {{ .name | markdownify }}
               </h4>
               <p>{{.content | markdownify}}</p>
@@ -414,17 +450,17 @@
         <!-- Recent audits -->
         <div class="row">
           {{ range .feature_item }}
-            <div class="col-md-1">
-              <img class="img-fluid" src="{{.image}}" style="height:100px;" />
-            </div>
-            <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
-              <h4 class="" style="color: #005aa7; font-size:16px;">
-                {{ .name | markdownify }}
-              </h4>
-              <p style="font-size:14px;">
-                {{.content | markdownify}}
-              </p>
-            </div>
+          <div class="col-md-1">
+            <img class="img-fluid" src="{{.image}}" style="height:100px;" />
+          </div>
+          <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
+            <h4 class="" style="color: #005aa7; font-size:16px;">
+              {{ .name | markdownify }}
+            </h4>
+            <p style="font-size:14px;">
+              {{.content | markdownify}}
+            </p>
+          </div>
           {{ end }}
         </div>
         <!-- /Recent audits -->
@@ -442,30 +478,30 @@
 
   <section class="panel two">
 
-    <!-- panel-2 layer-3 -->
+    <!-- panel-2 layer-1 -->
     <!-- how we build algoprudence -->
     {{ with .Params.how_we_build_algoprudence }}
     <div class="layer" style="background-color: #ffffff;">
       <div class="container mt-5">
         <div class="row">
-          <div class="col-12" style="display: inline-block; padding: 0px 5%">
-            <h4 style="color: #005aa7; margin-left: -15px;">{{.title | markdownify}}</h4>
+          <div class="col-12" style="display: inline-block; margin-top:0px; padding: 0px 5%">
+            <h2 style="color: #005aa7; margin-left: -15px; margin-bottom:100px;">{{.title | markdownify}}</h2>
             {{ range $i, $step := .steps }}
-            <div class="row" >
-              <div class="col-4 mb-4">
+            <div class="row">
+              <div class="col-3 mb-4">
                 <div class="row">
-                  <p>
+                  <h3 style="color: #005aa7;">
                     {{ i18n "step" }} {{add $i 1}}
-                  </p>
+                  </h3>
                 </div>
                 <div class="row">
-                  <p>
+                  <p style="font-size:20px; color: #005aa7;">
                     {{ .title }}
                   </p>
                 </div>
               </div>
-              <div class="col-8">
-                <div class="feature-card text-center">
+              <div class="col-9">
+                <div>
                   <h4 class="" style="color: #005aa7;">
                     {{ .name | markdownify }}
                   </h4>
@@ -474,28 +510,76 @@
               </div>
             </div>
             {{ end }}
+
+            <!-- button -->
             <div class="row text-center">
-              <div class="col-12" style="margin-top:150px;">
+              <div class="col-12" style="margin-top:0px;">
                 <a class="btn-link" href="">
-                  <h3 class="btn" style="color:#ffffff; font-weight:100;">{{.button_text}} <i class="fas fa-arrow-right"
-                      style="font-size:20px;"></i>
+                  <h3 class="btn" style="color:#ffffff; font-weight:600;">
+                    {{.button_text}}
                   </h3>
                 </a>
               </div>
             </div>
+            <!-- /button -->
+
           </div>
         </div>
       </div>
     </div>
     {{end}}
     <!-- /how we build algoprudence -->
-    <!-- /panel-2 layer-3 -->
+    <!-- /panel-2 layer-1 -->
 
-    <!-- panel-2 layer-4 -->
-    <div class="layer pinDiv2" style="background-color:white;">
+    <!-- panel-2 layer-2 -->
+    <!-- advantages of algoprudence -->
+    {{ with .Params.advantages_of_algoprudence}}
+    <div class="layer" style="background-color: #deecf7;">
       <div class="container">
+        <div class="row" style="margin-bottom:25px;">
+          <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
+        </div>
+        <div class="row">
+          {{ range .feature_item }}
+          <div class="col-md-6 col-sm-12 mb-4">
+            <div style="padding:30px;">
+              <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:30px;"></i>
+              <h3 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:500; font-size:24px;">
+                {{ .name | markdownify }}
+              </h3>
+              <p>{{.content | markdownify}}</p>
+            </div>
+          </div>
+          {{ end }}
+
+          <div class="col-md-6 col-sm-12 mb-4">
+            <div class="text-center">
+              <a class="btn-link" href="">
+                <h3 class="btn" style="color:#ffffff; font-weight:600;">
+                  {{.button_text}}
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{end}}
+    </div>
+    <!-- /advantages of algoprudence -->
+    <!-- /panel-2 layer-2 -->
+
+  </section>
+</div>
+<!-- /parallex -->
+
+<!-- gif animation -->
+<section class="section bg-white" style="margin-top:0px;">
+  <div class="container">
+    <div class="row">
+
+      <div class="container pinDiv2">
         <div class="row" style="justify-content:center;">
-          <h3 style="color: #005aa7;">Building jurisprudence for algorithms</h3>
+          <h2 style="color: #005aa7;">Building jurisprudence for algorithms</h2>
         </div>
 
         <!-- algoprudence animation -->
@@ -504,64 +588,29 @@
             <img id="myimg" width="800px" src="/images/algoprudence-frames/frame-036.png"><br>
           </div>
         </div>
+        <!-- /algoprudence animation -->
       </div>
-      <!-- /algoprudence animation -->
+      <!-- /panel-2 layer-3 -->
 
     </div>
-    <!-- /panel-2 layer-4 -->
-
-    <!-- panel-2 layer-5 -->
-    <div class="layer" style="background-color: #deecf7;">
-
-      <!-- advantages of algoprudence -->
-      {{ with .Params.advantages_of_algoprudence}}
-      <div class="container">
-        <div class="row" style="justify-content:center;">
-          <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
-        </div>
-        <div class="row">
-          {{ range .feature_item }}
-          <div class="col-md-4 col-sm-12 mb-4">
-            <div class="text-center">
-              <i class="fas {{.icon}} mb-3" style="color: #005aa7;"></i>
-              <h4 class="" style="color: #005aa7;">
-                {{ .name | markdownify }}
-              </h4>
-              <p>{{.content | markdownify}}</p>
-            </div>
-          </div>
-          {{ end }}
-          <div class="col-md-4 col-sm-12 mb-4">
-            <div class="text-center">
-              <a class="btn-link" href="">
-                <h3 class="btn" style="color:#ffffff; font-weight:100;">{{.button_text}} <i class="fas fa-arrow-right"
-                    style="font-size:20px;"></i>
-                </h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {{end}}
-      <!-- /advantages of algoprudence -->
-
-    </div>
-    <!-- /panel-2 layer-5 -->
-
-  </section>
-
-</div>
-
-<!-- /parallex -->
+  </div>
+</section>
+<!-- /gif animation -->
 
 <!-- Video -->
-<div class="container"
-  style="padding:200px 0px 0px 0px; margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
-  <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
-    <img src="/images/cover.png" width="600px" />
-    <span class="playbutton"></span>
-  </a>
-</div>
+<section class="section bg-white" style="margin-top:500px;">
+  <div class="container">
+    <div class="row">
+      <h3 style="color: #005aa7;">The Movie</h3>
+    </div>
+    <div class="row" style="margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
+      <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
+        <img src="/images/cover.png" width="600px" />
+        <span class="playbutton"></span>
+      </a>
+    </div>
+  </div>
+</section>
 <!-- /Video -->
 
 <!-- Newsletter -->

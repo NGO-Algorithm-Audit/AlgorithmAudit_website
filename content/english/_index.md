@@ -36,7 +36,7 @@ AA_expert_hub:
         with academic institutions.
 Get_in_touch:
   enable: true
-  title: Subsribe for our newsletter
+  title: Get in touch
   content: >-
     Do you have an ethical issue for review? Or want to share ideas? Let us
     know!
@@ -111,7 +111,7 @@ areas_of_ai_expertise:
           Assessment of risk distributions through Z-tests and bias test for
           various steps in algorithmic-driven decision-making process
 how_we_build_algoprudence:
-  title: How we build algoprudence
+  title: How we audit
   button_text: Our working method
   steps:
     - title: Indentifying issue
@@ -120,35 +120,51 @@ how_we_build_algoprudence:
         data-analysis tool
     - title: Problem statement
       content: >
-        Identifying a concrete ethical issue in a real algorithm or
-        data-analysis tool
+        Describe ethical issue, legal aspects and hear stakeholders and affected
+        groups
     - title: Advice commission
       content: >
-        Identifying a concrete ethical issue in a real algorithm or
-        data-analysis tool
+        Deliberative conversation on ethical issue by diverse and inclusive
+        advice commission
     - title: Public advice
       content: >
-        Identifying a concrete ethical issue in a real algorithm or
-        data-analysis tool
+        Advice of commission is published together with problem statement on our
+        website. Publicly sharing the problem statement and normative advice is
+        called *algoprudence*
 advantages_of_algoprudence:
   title: Advantages of algoprudence
-  button_text: Learn more
+  button_text: White paper on algoprudence
   feature_item:
     - name: Learn & harmonize
-      icon: fas fa-star-of-life
+      icon: fas fa-book-reader
       content: >
-        By working nonprofit and under explicit terms and conditions, we ensure
-        the independence, quality and diversity of our audit commissions
+        [<span style="color:#005aa7">></span>](/algoprudence) Ignite collective
+        learning process to deploy and audit responsible AI
+
+
+        [<span style="color:#005aa7">></span> ](/algoprudence)Harmonizes the
+        resolution of ethical questions and the interpretation of open legal
+        norms
     - name: Question & critisize
-      icon: fas fa-star-of-life
+      icon: fas fa-comment
       content: >
-        By working nonprofit and under explicit terms and conditions, we ensure
-        the independence, quality and diversity of our audit commissions
+        [<span style="color:#005aa7">></span>](/algoprudence) Fostering
+        criticism on normative decision-making through transparency
+
+
+        [<span style="color:#005aa7">></span> ](/algoprudence)Informing public
+        debate with important ethical issues to be discussed within  democratic
+        sight
     - name: Inclusion & participation
-      icon: fas fa-star-of-life
+      icon: fas fa-hands-helping
       content: >
-        By working nonprofit and under explicit terms and conditions, we ensure
-        the independence, quality and diversity of our audit commissions
+        [<span style="color:#005aa7">></span> ](/algoprudence)Connecting various
+        stakeholders to design ethical algorithms together with technical
+        experts
+
+
+        [<span style="color:#005aa7">></span> ](/algoprudence)European answer to
+        deploy responsible AI systems 
 Activity_Feed:
   enable: true
   featured_title: Featured
@@ -191,6 +207,30 @@ Activity_Feed:
       date: 07-01-2024
       type: presentation
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

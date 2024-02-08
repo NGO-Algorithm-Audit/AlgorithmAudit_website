@@ -9,6 +9,127 @@ body {
   top: -75px;
 }
 
+// view >992px
+@media (min-width: 992px) {
+  .margin-banner-image {
+    width:85%;
+    margin-top:50px;
+  }
+  #page-header-illustration {
+    width: 65%; margin-left:auto; margin-right:auto;
+  }
+}
+
+// view ≤992px
+@media (max-width: 992px) {
+    .margin-banner-image {
+    width:70%;
+    margin-top:50px;
+  }
+  .sponsor {
+    margin-top: 50px;
+  }
+  #img-full {
+    margin: 50px 0;
+  }
+  .mobile-footer-distance{
+    margin-top: 10px;
+  }
+}
+
+// view ≥768px (md and lg)
+@media (min-width: 768px) {
+  .show-mobile {
+    visibility: hidden;
+    height:0px;
+  }
+  #page-header-illustration {
+    // width: 95%; 
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  .motto{
+    padding: 0px 10%;
+    margin-top:10px;
+  }
+  .img-wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+  #mobile-slogan{
+    display: none;
+  }
+}
+
+// view <768px
+@media (max-width: 768px) {
+  .inner{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .margin-banner-image {
+    width:90%;
+    margin-top:50px;
+  }
+  .img-prop{
+    height:50px;
+  }
+  .hide-mobile {
+    visibility: hidden;
+    height:0px;
+  }
+  .show-mobile-height{
+    height:290px;
+  }
+  .motto{
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+  }
+  .logo{
+    margin: 20px 0px 60px 0px;
+  }
+  #desktop-slogan{
+    display: none;
+  }
+}
+
+// view ≥576px
+@media (min-width: 576px) {
+.img-prop{
+  height:75px;
+}
+}
+
+// view xs <576px
+@media (max-width: 576px) {
+  .img-prop{
+    height:50px;
+  }
+  .margin-slack{
+    margin-top: 20px;
+  }
+  .padding-adjust{
+    padding-bottom:0px;
+  }
+  .mobile-footer{
+    padding: 0px 10px;
+  }
+  .motto{
+    margin-top:20px;
+  }
+  .col-xs-6 {
+    width: 50% !important;
+  }
+}
+
+// view <480px
+@media (max-width: 480px) {
+  .section-title{
+    font-size:25px;
+  }
+}
+
 .feature-card {
   border-radius: 10px;
   padding: 20px;
@@ -73,13 +194,6 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width : 768px) {
-  .img-wrapper{
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
 .custom_div_parent {
   position: relative;
 }
@@ -94,14 +208,6 @@ body {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .inner{
-    width: 75%;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
 .section-title{
   font-size:30px;
 }
@@ -110,18 +216,6 @@ body {
   font-size:16px;
   padding:0px;
   margin: 10px 0px 0px 0px;
-}
-
-@media (max-width: 480px) {
-  .section-title{
-    font-size:25px;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-xs-6 {
-    width: 50% !important;
-  }
 }
 
 .social-icons a {
@@ -463,106 +557,6 @@ a.post-title {
 .split div {
   flex-grow:1;
 }
-
-// view >992px
-@media (min-width: 992px) {
-  .margin-banner-image {
-    width:85%;
-    margin-top:50px;
-  }
-  #page-header-illustration {
-    width: 65%; margin-left:auto; margin-right:auto;
-  }
-}
-
-// view ≤992px
-@media (max-width: 992px) {
-    .margin-banner-image {
-    width:70%;
-    margin-top:50px;
-  }
-  .sponsor {
-    margin-top: 50px;
-  }
-  #img-full {
-    margin: 50px 0;
-  }
-  .mobile-footer-distance{
-    margin-top: 10px;
-  }
-}
-
-// view md and lg [768px,)
-@media (min-width: 768px) {
-  .show-mobile {
-    visibility: hidden;
-    height:0px;
-  }
-  #page-header-illustration {
-    // width: 95%; 
-    margin-left:auto; 
-    margin-right:auto;
-  }
-  .motto{
-    padding: 0px 10%;
-    margin-top:10px;
-  }
-}
-
-// view sm [768px,992px]
-@media (max-width: 768px) {
-  .margin-banner-image {
-    width:90%;
-    margin-top:50px;
-  }
-}
-
-// view sm [576px,768px]
-@media (max-width: 768px) {
-  .img-prop{
-    height:50px;
-  }
-  .hide-mobile {
-    visibility: hidden;
-    height:0px;
-  }
-  .show-mobile-height{
-    height:290px;
-  }
-  .motto{
-    padding: 0px;
-    margin: 20px 0px 0px 0px;
-  }
-  .logo{
-    margin: 20px 0px 60px 0px;
-  }
-}
-
-// view xs [576px,)
-@media (min-width: 576px) {
-.img-prop{
-  height:75px;
-}
-}
-
-// view xs [0,576px]
-@media (max-width: 576px) {
-  .img-prop{
-    height:50px;
-  }
-  .margin-slack{
-    margin-top: 20px;
-  }
-  .padding-adjust{
-    padding-bottom:0px;
-  }
-  .mobile-footer{
-    padding: 0px 10px;
-  }
-  .motto{
-    margin-top:20px;
-  }
-}
  
 .gc {
 display: inline-block;
@@ -713,6 +707,12 @@ padding: 20px 0px 0px 0px;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.pinDiv2{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
 }
 
 .panel {
