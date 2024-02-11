@@ -11,21 +11,21 @@ hasChildren = true
   [[main]]
   parent = "Algoprudentie"
   name = "Dien een case in"
-  url = "/dien-een-case-in"
+  url = "nl/algoprudence/submit-a-case"
   weight = 1
   [[main.params]]
     featured = true
   [[main]]
   parent = "Algoprudentie"
   name = "Casuïstiek"
-  url = "/algoprudentie"
+  url = "nl/algoprudence"
   weight = 2
   [[main.params]]
     icon = "fa-database"
   [[main]]
   parent = "Algoprudentie"
   name = "Onze werkwijze"
-  url = "/onze-werkwijze"
+  url = "nl/algoprudence/how-we-work"
   weight = 3
   [[main.params]]
     icon = "fa-question"

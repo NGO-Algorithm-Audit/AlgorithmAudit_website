@@ -11,7 +11,7 @@ hasChildren = true
   [[main]]
   parent = "Algoprudence"
   name = "Submit a case for review"
-  url = "/submit-case"
+  url = "algoprudence/submit-a-case"
   weight = 1
   [[main.params]]
     featured = true

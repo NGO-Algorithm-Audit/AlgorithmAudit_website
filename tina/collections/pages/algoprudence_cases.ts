@@ -3,8 +3,8 @@
  */
 import facets from "../shared/facets/facets";
 export default {
-    name: "algoprudence_case",
-    label: "Algoprudence case",
+    name: "algoprudence_cases",
+    label: "Algoprudence cases",
     path: "content/",
     match: {
         include: '**/algoprudence/cases/**',

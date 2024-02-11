@@ -1,8 +1,10 @@
 import { defineConfig } from "tinacms";
 import home from "./collections/pages/home";
-import knowledge_base from "./collections/pages/knowledge_base";
 import algoprudence_overview from "./collections/pages/algoprudence_overview";
-import algoprudence_case from "./collections/pages/algoprudence_case";
+import algoprudence_cases from "./collections/pages/algoprudence_cases";
+import algoprudence_submit_a_case from "./collections/pages/algoprudence_submit_a_case";
+import algoprudence_how_we_work from "./collections/pages/algoprudence_how_we_work";
+import knowledge_base from "./collections/pages/knowledge_base";
 import events_overview from "./collections/pages/events_overview";
 import page from "./collections/pages/page";
 // Your hosting provider likely exposes this as an environment variable
@@ -27,9 +29,11 @@ export default defineConfig({
   schema: {
     collections: [
       home,
-      knowledge_base,
       algoprudence_overview,
-      algoprudence_case,
+      algoprudence_cases,
+      algoprudence_submit_a_case,
+      algoprudence_how_we_work,
+      knowledge_base,
       events_overview,
       page
     ],
