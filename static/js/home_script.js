@@ -162,6 +162,6 @@ $(document).ready(function () {
     var scene = new ScrollMagic.Scene({ triggerElement: ".pinDiv2", duration: 500 })
         .setTween(tween)
         .addIndicators()
-        // .addTo(controller);
-        // console.log(obj)
+        .addTo(controller);
+        console.log(obj)
 });

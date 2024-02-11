@@ -10,6 +10,7 @@ export default {
         include: '*/_index',
     },
     fields: [
+        // Banner
         {
             type: "object",
             name: "Banner",
@@ -22,30 +23,50 @@ export default {
                     name: "image2",
                 },
                 {
-                    label: "Button",
-                    type: "object",
-                    name: "button",
-                    fields:
-                        [
-                            {
-                                label: "Enabled",
-                                type: "boolean",
-                                name: "enable",
-                            },
-                            {
-                                label: "Label",
-                                type: "string",
-                                name: "label",
-                            },
-                            {
-                                label: "Link",
-                                type: "string",
-                                name: "link",
-                            }
-                        ]
+                    label: "tag",
+                    type: "string",
+                    name: "tag",
+                    required: true,
+                },
+                {
+                    label: "title",
+                    type: "string",
+                    name: "title",
+                    required: true,
+                },
+                {
+                    label: "phonetica",
+                    type: "string",
+                    name: "phonetica",
+                    required: true,
+                },
+                {
+                    label: "type",
+                    type: "string",
+                    name: "type",
+                    required: true,
+                },
+                {
+                    label: "description1",
+                    type: "string",
+                    name: "description1",
+                    required: true,
+                },
+                {
+                    label: "description2",
+                    type: "string",
+                    name: "description2",
+                    required: true,
+                },
+                {
+                    label: "description3",
+                    type: "string",
+                    name: "description3",
+                    required: true,
                 }
             ]
         },
+        // Activity feed
         {
             type: "object",
             name: "Activity_Feed",
@@ -177,9 +198,10 @@ export default {
                     }
                 ]
         },
+        // Distinctive in
         {
             type: "object",
-            name: "What_we_do",
+            name: "Distincive_in",
             label: "Distintive in",
             fields:
                 [

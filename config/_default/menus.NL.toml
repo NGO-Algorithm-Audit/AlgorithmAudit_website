@@ -6,31 +6,120 @@ weight = 1
 
 [[main]]
 name = "Algoprudentie"
-url = "nl/algoprudence"
 weight = 2
+hasChildren = true
+  [[main]]
+  parent = "Algoprudentie"
+  name = "Dien een case in"
+  url = "/dien-een-case-in"
+  weight = 1
+  [[main.params]]
+    featured = true
+  [[main]]
+  parent = "Algoprudentie"
+  name = "Casuïstiek"
+  url = "/algoprudentie"
+  weight = 2
+  [[main.params]]
+    icon = "fa-database"
+  [[main]]
+  parent = "Algoprudentie"
+  name = "Onze werkwijze"
+  url = "/onze-werkwijze"
+  weight = 3
+  [[main.params]]
+    icon = "fa-question"
 
 [[main]]
-name = "Bias scan"
-url = "nl/bias_scan"
+name = "Technische tools"
 weight = 3
+hasChildren = true
+  [[main]]
+  parent = "Technische tools"
+  name = "Bias detectie tool"
+  url = "/bias-detectie-tool"
+  weight = 1
+  [[main.params]]
+    icon = "fa-toolbox"
+    subtitle = "Open source AI audit tools"
+  [[main]]
+  parent = "Technische tools"
+  name = "Synthetische data generatie"
+  url = "/synthetische-data-generatie"
+  weight = 2
+  [[main.params]]
+    icon = "fa-table"
+  [[main]]
+  parent = "Technische tools"
+  name = "Github code"
+  url = "https://github.com/jfparie/AlgorithmAudit_website"
+  weight = 3
+  [[main.params]]
+    subtitle = "Onze code"
+    icon = "fa-code"
 
 [[main]]
-name = "Kennisbank"
-url = "nl/knowledge_base"
+name = "Kennisplatform"
 weight = 4
+hasChildren = true
+  [[main]]
+  parent = "Kennisplatform"
+  name = "AI Act standaarden"
+  url = "/ai-act-standaarden"
+  weight = 1
+  [[main.params]]
+    icon = "fa-check"
+  [[main]]
+  parent = "Kennisplatform"
+  name = "AI beleid observatorium"
+  url = "/ai-beleid-observatorium"
+  weight = 2
+  [[main.params]]
+    icon = "fa-search"
+  [[main]]
+  parent = "Kennisplatform"
+  name = "Kennisbank"
+  url = "/kennisbank"
+  weight = 3
+  [[main.params]]
+    icon = "fa-brain"
 
 [[main]]
-name = "Events"
-url = "nl/events"
+name = "Evenementen"
+url = "evenementen"
 weight = 5
 
 [[main]]
-name = "FAQ"
-url = "nl/faq"
+name = "Over ons"
 weight = 6
-
-[[main]]
-name = "Over AA"
-url = "nl/about"
-weight = 7
-
+hasChildren = true
+  [[main]]
+  parent = "Over ons"
+  name = "FAQ"
+  url = "/faq"
+  weight = 1
+  [[main.params]]
+    icon = "fa-question"
+  [[main]]
+  parent = "Over ons"
+  name = "Teams"
+  url = "/teams"
+  weight = 2
+  [[main.params]]
+    icon = "fa-users"
+  [[main]]
+  parent = "Over ons"
+  name = "Boards"
+  url = "/boards"
+  weight = 3
+  [[main.params]]
+    icon = "fa-user-friends"
+  [[main.params]]
+    icon = "fa-calendar-alt"
+  [[main]]
+  parent = "Over ons"
+  name = "Job openings"
+  url = "/job-openings"
+  weight = 4
+  [[main.params]]
+    icon = "fa-user-check"

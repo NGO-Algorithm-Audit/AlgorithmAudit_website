@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <!-- Banner -->
-{{ with .Params.banner }}
+{{ with .Params.Banner }}
 <section class="banner banner-background">
   <div class="container">
     <div class="row" style="display: flex; align-items: center;">
@@ -12,28 +12,26 @@
 
         <!-- definition tag -->
         <div class="row" style="padding:0 30px; margin-bottom:30px;">
-          <h5 class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff; font-weight:100;">definition
+          <h5 class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff; font-weight:100;">{{ .tag }}
           </h5>
         </div>
         <!-- /definition tag -->
 
         <!-- al-go-pru-dence -->
         <div class="container">
-          <h2 style="color:#005aa7;">al-go-pru-dence</h2>
-          <p style="color:#005aa7; font-size: 24px;">/æl.ɡə-ˈpruː.dəns/ <i>noun</i></p>
+          <h2 style="color:#005aa7;">{{.title}}</h2>
+          <p style="color:#005aa7; font-size: 24px;">{{.phonetica}}</p>
+          <i>{{.type}}</i>
         </div>
         <div>
           <div style="margin-top:30px; padding-left:15px;">
-            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">1.</b> Case-based normative advice for
-              ethical algorithms</p>
+            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">1.</b> {{.description1}}</p>
           </div>
           <div style="margin-top:15px; padding-left:15px;">
-            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">2.</b> Guidance for decentralised
-              self-assessment of fair AI</p>
+            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">2.</b> {{.description2}}</p>
           </div>
           <div style="margin-top:15px; padding-left:15px;">
-            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">3.</b> Jurisprudence for algorithms
-            </p>
+            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">3.</b> {{.description3}}</p>
           </div>
         </div>
       </div>
@@ -41,81 +39,87 @@
 
       <!-- image -->
       <div class="col-lg-6 col-md-12 col-sm-12 order-md-3 order-lg-2">
-        <img src='{{ .image2 | relURL }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
+        <img src='{{ .image2  }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
       </div>
       <!-- image -->
     </div>
-
-    <!-- European knowledge platform -->
-    <div class="row pinDiv1">
-
-      <!-- desktop version -->
-      <div class="col-12 text-center" id="desktop-slogan" style="margin-top:50px; margin-bottom:100px;">
-        <div class="slider-wrapper justify-content-center">
-          <h3 style="color:#005aa7; font-weight:100;">A European knowledge platform for</h3>
-          <div class="ms-slider">
-            <ul class="ms-slider__words">
-              <li class="ms-slider__word">
-                <div class="slider-wrapper mb-1 py-1">
-                  <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                      style="background-color:#005aa7;color:#fff">AI bias testing</i></h3>
-                </div>
-              </li>
-              <li class="ms-slider__word">
-                <div class="slider-wrapper mb-1 py-1">
-                  <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                      style="background-color:#005aa7;color:#fff">normative AI standards</i></h3>
-                </div>
-              </li>
-              <li class="ms-slider__word">
-                <div class="slider-wrapper mb-1 py-1">
-                  <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                      style="background-color:#005aa7;color:#fff">AI bias testing</i></h3>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- /desktop version -->
-      <!-- mobile version -->
-      <div class="col-12" id="mobile-slogan" style="margin-top:50px;">
-        <div class="slider-wrapper" style="padding-left:10px;">
-          <h3 style="color:#005aa7; font-weight:100;">A European knowledge platform for</h3>
-        </div>
-      </div>
-      <div class="col-12" id="mobile-slogan" style="margin-bottom:50px;">
-        <div class="ms-slider">
-          <ul class="ms-slider__words">
-            <li class="ms-slider__word">
-              <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                    style="background-color:#005aa7;color:#fff">AI bias testing</i></h3>
-              </div>
-            </li>
-            <li class="ms-slider__word">
-              <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                    style="background-color:#005aa7;color:#fff">normative AI standards</i></h3>
-              </div>
-            </li>
-            <li class="ms-slider__word">
-              <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                    style="background-color:#005aa7;color:#fff">AI bias testing</i></h3>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- /mobile version -->
-    </div>
-    <!-- /European knowledge platform -->
 
   </div>
 </section>
 {{ end }}
 <!-- /Banner -->
+
+{{ with .Params.Slogan }}
+<section class="banner banner-background" style="padding:0px;">
+  <!-- European knowledge platform -->
+  {{ range .text }}
+  <div class="row pinDiv1">
+
+    <!-- desktop version -->
+    <div class="col-12 text-center" id="desktop-slogan" style="margin-top:50px; margin-bottom:100px;">
+      <div class="slider-wrapper justify-content-center">
+        <h3 style="color:#005aa7; font-weight:100;">{{.title}}</h3>
+        <div class="ms-slider">
+          <ul class="ms-slider__words">
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
+                    style="background-color:#005aa7;color:#fff">{{.text1}}</i></h3>
+              </div>
+            </li>
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
+                    style="background-color:#005aa7;color:#fff">{{.text2}}</i></h3>
+              </div>
+            </li>
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
+                    style="background-color:#005aa7;color:#fff">{{.text1}}</i></h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /desktop version -->
+    <!-- mobile version -->
+    <div class="col-12" id="mobile-slogan" style="margin-top:50px; padding: 0px 7.5%;">
+      <div class="slider-wrapper" style="padding-left:10px;">
+        <h3 style="color:#005aa7; font-weight:100;">{{.title}}</h3>
+      </div>
+    </div>
+    <div class="col-12" id="mobile-slogan" style="margin-bottom:50px; padding: 0px 7.5%;">
+      <div class="ms-slider">
+        <ul class="ms-slider__words">
+          <li class="ms-slider__word">
+            <div class="slider-wrapper mb-1 py-1">
+              <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
+                  style="background-color:#005aa7;color:#fff">{{.text1}}</i></h3>
+            </div>
+          </li>
+          <li class="ms-slider__word">
+            <div class="slider-wrapper mb-1 py-1">
+              <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
+                  style="background-color:#005aa7;color:#fff">{{.text2}}</i></h3>
+            </div>
+          </li>
+          <li class="ms-slider__word">
+            <div class="slider-wrapper mb-1 py-1">
+              <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
+                  style="background-color:#005aa7;color:#fff">{{.text1}}</i></h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /mobile version -->
+  </div>
+  {{ end }}
+  <!-- /European knowledge platform -->
+</section>
+{{ end }}
 
 <!-- Divider block elements -->
 <div class="row" id="gradient-line-blocks">
@@ -169,20 +173,20 @@
         <div class="clickable-wrapper" data-href="{{.link | relURL }}">
           <div class="row p-5" style="background-color: #ffffff;">
             <div class="col-3 pr-4">
-              <img class="img-fluid" src="{{.image}}" />
+              <img class="img-fluid" style="height:200px; position:absolute;" src="{{.image}}" />
             </div>
             <div class="col-9">
               <div class="row align-items-center">
-                <h4 class="mb-4" style="color: #005aa7;">
+                <h4 class="mb-2" style="color: #005aa7;">
                   {{.title}}
                 </h4>
                 <p style="color: #777">{{.intro | markdownify}} <a href="{{.link | relURL}}">{{ i18n
                     "read_more" }}</a>
                 </p>
               </div>
-              <div class="row" style="position: absolute; bottom: 0;">
+              <div class="row" style="position:relative;">
                 {{ if .date }}
-                <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                <span style="color:#005aa7;" class="mr-1 mb-2 px-0 py-1 mx-0">
                   {{.date }}
                 </span>
                 {{ end }}
@@ -208,7 +212,7 @@
         <a href="{{ .link | relURL }}">
           <div class="row justify-content-between my-4">
             <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
-              <img class="img-fluid about-img p-5" src="{{.image}}" />
+              <img class="img-fluid about-img p-5"  src="{{.image}}" />
             </div>
             <div class="col" style="background-color: #ffffff;">
               <div class="row align-items-center">
@@ -216,7 +220,7 @@
                   {{.title}}
                 </h4>
               </div>
-              <div class="row" style="position: absolute; bottom: 0;">
+              <div class="row" style="position: relative; bottom: 0;">
                 {{ if .date }}
                 <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
                   {{.date }}
@@ -451,7 +455,7 @@
         <div class="row">
           {{ range .feature_item }}
           <div class="col-md-1">
-            <img class="img-fluid" src="{{.image}}" style="height:100px;" />
+            <img class="img-fluid" src="{{.image}}" style="height:100px; position: absolute;" />
           </div>
           <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
             <h4 class="" style="color: #005aa7; font-size:16px;">
@@ -598,10 +602,11 @@
 <!-- /gif animation -->
 
 <!-- Video -->
+{{ with .Params.TheMovie }}
 <section class="section bg-white" style="margin-top:500px;">
   <div class="container">
     <div class="row">
-      <h3 style="color: #005aa7;">The Movie</h3>
+      <h3 style="color: #005aa7;">{{.title}}</h3>
     </div>
     <div class="row" style="margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
       <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
@@ -611,6 +616,7 @@
     </div>
   </div>
 </section>
+{{ end }}
 <!-- /Video -->
 
 <!-- Newsletter -->

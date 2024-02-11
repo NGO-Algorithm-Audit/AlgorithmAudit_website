@@ -41,12 +41,20 @@ Get_in_touch:
     Do you have an ethical issue for review? Or want to share ideas? Let us
     know!
 Banner:
-  image2: images/main_illustration.svg
-  button:
-    enable: true
-    label: Read our new white paper
-    link: knowledge_base/white_paper_dsa_delegated_regulation_feedback/
-What_we_do:
+  image2: /images/main_illustration.svg
+  tag: definition
+  title: al-go-pru-dence
+  phonetica: /æl.ɡə-ˈpruː.dəns/
+  type: noun
+  description1: Case-based normative advice for ethical algorithms
+  description2: Guidance for decentralised self-assessment of fair AI
+  description3: Jurisprudence for algorithms
+Slogan:
+  text:
+    - title: A European knowledge platform for
+      text1: AI bias testing
+      text2: normative AI standards
+Distincive_in:
   enable: true
   title: Distinctive in
   width_m: 4
@@ -164,7 +172,7 @@ advantages_of_algoprudence:
 
 
         [<span style="color:#005aa7">></span> ](/algoprudence)European answer to
-        deploy responsible AI systems 
+        deploy responsible AI systems
 Activity_Feed:
   enable: true
   featured_title: Featured
@@ -185,18 +193,12 @@ Activity_Feed:
       date: 29-11-2023
       type: algoprudence
   activities:
-    - title: >-
-        Presentation for municipal stakeholder at Dutch Data Protection
-        Authority about Algoprudence (AA:2023:02) Risk Profiling for Social
-        Welfare Reexamination 
+    - title: Presentation at Dutch Data Protection Authority about algoprudence
       link: /events
       image: /images/events/dutch-data-protection.jpg
       date: 17-01-2024
       type: presentation
-    - title: >-
-        Lunch lecture Bias Detection Tool study association Dutch Data
-        Protection Authority about algoprudence (AA:2023:02) Risk Profiling for
-        Social Welfare Reexamination 
+    - title: Lunch lecture Bias Detection Tool study association TU Delft
       link: /events
       image: /images/events/mathematics and computer science tu delft.png
       date: 08-01-2024
@@ -206,7 +208,12 @@ Activity_Feed:
       image: /images/events/jtc21.jpg
       date: 07-01-2024
       type: presentation
+TheMovie:
+  title: The Movie
 ---
+
+
+
 
 
 

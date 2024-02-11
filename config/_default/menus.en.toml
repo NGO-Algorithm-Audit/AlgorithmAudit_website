@@ -116,22 +116,8 @@ hasChildren = true
     icon = "fa-user-friends"
   [[main]]
   parent = "About"
-  name = "Funding"
-  url = "/funding"
-  weight = 4
-  [[main.params]]
-    icon = "fa-money-check"
-  [[main]]
-  parent = "About"
-  name = "Annual reports"
-  url = "/annual-reports"
-  weight = 5
-  [[main.params]]
-    icon = "fa-calendar-alt"
-  [[main]]
-  parent = "About"
   name = "Job openings"
   url = "/job-openings"
-  weight = 6
+  weight = 4
   [[main.params]]
     icon = "fa-user-check"
