@@ -37,7 +37,7 @@ hasChildren = true
   [[main]]
   parent = "Technical Tools"
   name = "Bias detection tool"
-  url = "/bias_scan"
+  url = "/bias_detection_tool"
   weight = 1
   [[main.params]]
     icon = "fa-toolbox"
@@ -45,14 +45,14 @@ hasChildren = true
   [[main]]
   parent = "Technical Tools"
   name = "Synthetic data generation"
-  url = "/bias_scan"
+  url = "/synthetic_data_generation"
   weight = 2
   [[main.params]]
     icon = "fa-table"
   [[main]]
   parent = "Technical Tools"
   name = "Github code"
-  url = "https://github.com/jfparie/AlgorithmAudit_website"
+  url = "https://github.com/NGO-Algorithm-Audit/Bias_scan"
   weight = 3
   [[main.params]]
     subtitle = "Code repository"

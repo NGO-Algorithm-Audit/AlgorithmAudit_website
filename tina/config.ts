@@ -1,7 +1,7 @@
 import { defineConfig } from "tinacms";
 import home from "./collections/pages/home";
-import algoprudence_overview from "./collections/pages/algoprudence_overview";
 import algoprudence_cases from "./collections/pages/algoprudence_cases";
+import algoprudence_repository from "./collections/pages/algoprudence_repository";
 import algoprudence_submit_a_case from "./collections/pages/algoprudence_submit_a_case";
 import algoprudence_how_we_work from "./collections/pages/algoprudence_how_we_work";
 import knowledge_base from "./collections/pages/knowledge_base";
@@ -29,9 +29,9 @@ export default defineConfig({
   schema: {
     collections: [
       home,
-      algoprudence_overview,
-      algoprudence_cases,
       algoprudence_submit_a_case,
+      algoprudence_cases,
+      algoprudence_repository,
       algoprudence_how_we_work,
       knowledge_base,
       events_overview,

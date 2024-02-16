@@ -41,14 +41,9 @@ funded_by:
 actions:
   - title: Test
     description: |
-      dd
+      Hoi
     image: /case_repository.svg
     date: 14-02-2024
-subtitle: |
-  Test
-image: /case_repository.svg
 ---
-
-
 
 

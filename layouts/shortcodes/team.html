@@ -1,0 +1,21 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ with .Page.Params.team}}
+
+<div class="container-fluid">
+  <div class="p-5 shadow rounded-lg">
+    
+    <h3 class="mb-4 info" style="color: #005aa7; padding: 0 0 0 25px">{{ .title | markdownify }}</h3>
+
+    <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 25px;">
+      <div>
+        <p>{{ .content | markdownify }}</p>
+        {{ range .team_members }}
+        <img src="{{ .image | relURL }}" style="display:inline-block; height:75px; width:75px; margin-bottom: 20px;">
+        <a>{{ .name | markdownify }}</a>
+        {{ end }}
+      </div>
+    </div>
+    
+  </div>
+</div>
+{{ end }}

@@ -187,6 +187,71 @@ export default {
                             required: true,
                         }
                     ]
+                },
+                {
+                    name: 'team',
+                    label: 'Team',
+                    match: {
+                        start: '{{<',
+                        end: '>}}'
+                    },
+                    fields: [
+                        {
+                            name: 'title',
+                            label: 'DONT USE',
+                            type: 'string',
+                            description: 'DONT USE',
+                            required: true,
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            type: 'object',
+            name: 'team',
+            label: 'Team',
+            fields: [
+                {
+                    name: 'title',
+                    label: 'Title',
+                    type: 'string',
+                    description: '',
+                    required: true,
+                },
+                {
+                    name: 'content',
+                    label: 'Content',
+                    type: 'string',
+                    description: '',
+                    required: true,
+                },
+                {
+                    type: "object",
+                    name: "team_members",
+                    label: "Team members",
+                    list: true,
+                    fields:
+                        [
+                            {
+                                type: "string",
+                                name: "name",
+                                label: "Name",
+                                required: true,
+                            },
+                            {
+                                type: "image",
+                                name: "image",
+                                label: "image",
+                                required: true,
+                            },
+                            {
+                                type: "rich-text",
+                                name: "content",
+                                label: "Content",
+                                isBody: true,
+                            }
+                        ]
                 }
             ]
         }
