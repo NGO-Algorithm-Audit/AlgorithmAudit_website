@@ -8,7 +8,6 @@ export default {
     label: "Knowledge Base",
     path: "content/",
     match: {
-      exclude: '**/_index',
       include: '**/knowledge_base/**'
     },
     fields: [

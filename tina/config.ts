@@ -6,7 +6,6 @@ import algoprudence_submit_a_case from "./collections/pages/algoprudence_submit_
 import algoprudence_how_we_work from "./collections/pages/algoprudence_how_we_work";
 import knowledge_base from "./collections/pages/knowledge_base";
 import events_overview from "./collections/pages/events_overview";
-import page from "./collections/pages/page";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
@@ -34,8 +33,7 @@ export default defineConfig({
       algoprudence_repository,
       algoprudence_how_we_work,
       knowledge_base,
-      events_overview,
-      page
+      events_overview
     ],
   },
 });
