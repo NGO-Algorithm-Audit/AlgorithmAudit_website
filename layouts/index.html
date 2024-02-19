@@ -1,6 +1,7 @@
 {{ define "main" }}
 <script src="/js/home_script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"> -->
 
 <!-- Banner -->
 {{ with .Params.Banner }}
@@ -185,8 +186,11 @@
         <!-- Featured activities -->
         {{ if .featured_activities }}
         <div class="row mt-5">
-          <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "featured" }}</h2>
+          <!-- title featured section -->
+          <h3 class="section-title col-md-4" style="color: #005aa7;">{{ i18n "featured" }}</h3>
+          <!-- /title featured section -->
         </div>
+
         {{ range .featured_activities }}
         <div class="clickable-wrapper" data-href="{{.link | relURL }}">
           <div class="row p-5" style="background-color: #ffffff;">
@@ -195,11 +199,14 @@
             </div>
             <div class="col-9">
               <div class="row align-items-center">
-                <h4 class="mb-2" style="color: #005aa7;">
-                  {{.title}}
-                </h4>
-                <p style="color: #777">{{.intro | markdownify}} <a href="{{.link | relURL}}">{{ i18n
-                    "read_more" }}</a>
+
+                <!-- title featured article -->
+                <h3 class="mb-2" style="color: #005aa7;">{{.title}}</h3>
+                <!-- /title featured article -->
+
+                <p style="color: #777">
+                  {{.intro | markdownify}}
+                  <a href="{{.link | relURL}}">{{ i18n "read_more" }}</a>
                 </p>
               </div>
               <div class="row" style="position:relative;">
@@ -224,7 +231,9 @@
         <!-- Activities -->
         {{ if .activities }}
         <div class="row mt-5">
-          <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "recent-activity" }}</h2>
+          <!-- title recent activities section -->
+          <h3 class="section-title col-md-4" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+          <!-- /title recent activities section -->
         </div>
         {{ range .activities }}
         <a href="{{ .link | relURL }}">
@@ -273,7 +282,7 @@
       <!-- Featured activities -->
       {{ if .featured_activities }}
       <div class="row mt-5">
-        <h2 class="section-title col-md-4" style="color:#005aa7; font-size:20px;">{{ i18n "featured" }}</h2>
+        <h3 class="section-title col-md-4" style="color:#005aa7;">{{ i18n "featured" }}</h3>
       </div>
       {{ range .featured_activities }}
       <div class="clickable-wrapper" data-href="{{.link | relURL }}">
@@ -283,11 +292,13 @@
           </div>
           <div class="col-12">
             <div class="row align-items-center">
-              <h4 class="mb-2" style="color: #005aa7;">
-                {{.title}}
-              </h4>
-              <p style="color: #777">{{.intro | markdownify}} <a href="{{.link | relURL}}">{{ i18n
-                  "read_more" }}</a>
+
+              <!-- title -->
+              <h3 class="mb-2" style="color:#005aa7;">{{.title}}</h3>
+              <!-- /title -->
+
+              <p style="color: #777">{{.intro | markdownify}} 
+                <a href="{{.link | relURL}}">{{ i18n "read_more" }}</a>
               </p>
             </div>
             <div class="row" style="position:relative;">
@@ -312,7 +323,11 @@
       <!-- Activities -->
       {{ if .activities }}
       <div class="row mt-5">
-        <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "recent-activity" }}</h2>
+
+        <!-- title -->
+        <h3 class="section-title col-12" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+        <!-- /title -->
+
       </div>
       {{ range .activities }}
       <a href="{{ .link | relURL }}">
@@ -370,11 +385,11 @@
 
     <div class="row d-flex flex-wrap align-items-center">
 
-      <!-- title -->
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
-        <h2 class="section-title" style="font-size:16px; color: #005aa7;">{{ .title | markdownify }}</h2>
+        <!-- title -->
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+        <!-- /title -->
       </div>
-      <!-- /title -->
 
       <!-- SIDN -->
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
@@ -527,8 +542,7 @@
       <div class="col-12 py-4 border-top">
         <div class="feature-card-transparant">
           <i class="{{.icon}} mb-3" style="color:white; display:inline-block; font-size:22px;">
-            <h4 class=""
-              style="color:white; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
+            <h4 style="color:white; display:inline-block; padding-left:10px; font-weight:100;">
               {{ .name | markdownify }}
             </h4>
           </i>
@@ -597,8 +611,7 @@
     <div class="col-12 m-4 border-top-blue">
       <div class="feature-card-transparant">
         <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
-          <h4 class=""
-            style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
             {{ .name | markdownify }}
           </h4>
         </i>
@@ -663,10 +676,10 @@
         <img class="img-fluid about-img-mobile" src="{{.image}}"/>
       </div>
       <div class="col-12 clickable-wrapper mt-5 mb-5" data-href="{{.link | relURL }}">
-        <h4 class="" style="color: #005aa7; font-size:16px;">
+        <h4 class="" style="color: #005aa7;">
           {{ .name | markdownify }}
         </h4>
-        <p style="font-size:14px;">
+        <p>
           {{.content | markdownify}}
         </p>
       </div>
@@ -768,51 +781,83 @@
 {{end}}
 <!-- /Building algoprudence -->
 
-<!-- advantages of algoprudence -->
+<!-- Advantages of algoprudence -->
 {{ with .Params.advantages_of_algoprudence}}
 <section class="section bg-lightblue" >
-    <div class="container">
+  <div class="container">
 
+    <div class="row" style="padding:50px 0px;">
       <!-- title -->
-      <div class="row" style="padding:50px 0px;">
-        <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
-      </div>
+      <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
       <!-- /title -->
+    </div>
 
-      <!-- advantages of algoprudence elements -->
-      <div class="row">
-        {{ range .feature_item }}
-        <div class="col-md-6 col-sm-12 mb-4">
-          <div style="padding:30px;">
-            <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
-            <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
-              {{ .name | markdownify }}
-            </h4>
-            <p>{{.content | markdownify}}</p>
-          </div>
+    <!-- advantages -->
+
+    <!-- desktop version -->
+    <div class="row desktop">
+      {{ range .feature_item }}
+      <div class="col-md-6 col-sm-12 mb-4">
+        <div class="feature-card-transparant" style="padding:30px;">
+          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
+          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+            {{ .name | markdownify }}
+          </h4>
+          <p>{{.content | markdownify}}</p>
         </div>
-        {{ end }}
-
-        <!-- button -->
-        <div class="col-md-6 col-sm-12 mb-4">
-          <div class="text-center">
-            <a class="btn-link" href="">
-              <h3 class="btn" style="color:#ffffff; font-weight:600;">
-                {{.button_text}}
-              </h3>
-            </a>
-          </div>
-        </div>
-        <!-- /button -->
-
       </div>
-      <!-- /advantages of algoprudence elements -->
+      {{ end }}
+
+      <!-- button -->
+      <div class="col-md-6 col-sm-12 mb-4">
+        <div class="text-center">
+          <a class="btn-link" href="">
+            <h3 class="btn" style="color:#ffffff; font-weight:600;">
+              {{.button_text}}
+            </h3>
+          </a>
+        </div>
+      </div>
+      <!-- /button -->
 
     </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="row justify-content-center mobile">
+      {{ range .feature_item }}
+      <div class="col-12 m-4 border-top-blue">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
+          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+            {{ .name | markdownify }}
+          </h4>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- button -->
+      <div class="col-12 mb-4">
+        <div class="text-center">
+          <a class="btn-link" href="">
+            <h3 class="btn" style="color:#ffffff; font-weight:600;">
+              {{.button_text}}
+            </h3>
+          </a>
+        </div>
+      </div>
+      <!-- /button -->
+
+    </div>
+    <!-- /mobile version -->
+
+    <!-- /advantages -->
+
   </div>
 </section>
 {{end}}
-<!-- /advantages of algoprudence -->
+<!-- /Advantages of algoprudence -->
 
 <!-- gif animation -->
 {{ with .Params.title_gif}}
@@ -821,11 +866,12 @@
     <div class="row">
 
       <div class="container pinDiv2">
-        <!-- title -->
+        
         <div class="row">
+          <!-- title -->
           <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
+          <!-- /title -->
         </div>
-        <!-- /title -->
 
         <!-- algoprudence animation -->
         <div class="row" style="display: flex; justify-content:center; align-items:center; margin-top:50px;">
@@ -847,7 +893,9 @@
 <section class="section-none bg-white" style="margin-top:700px;">
   <div class="container">
     <div class="row">
+      <!-- title -->
       <h3 style="color: #005aa7;">{{.title}}</h3>
+      <!-- /title -->
     </div>
     <div class="row" style="margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
       <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
@@ -862,43 +910,56 @@
 
 <!-- Newsletter -->
 {{ with .Params.Get_in_touch }}
-<section class="section bg-white">
+<section class="section bg-lightblue">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-5 content">
 
-        <!-- title -->
-        <h3 class="section-title" style="color: #005aa7;">
-          {{ .title | markdownify }}
-        </h3>
-        <!-- /title -->
+    <div id="row mc_embed_shell">
+      <div id="mc_embed_signup">
+        <form action="https://algorithmaudit.us14.list-manage.com/subscribe/post?u=0c1760b246d5b08459fab1089&amp;id=38c5b7c211&amp;f_id=00cda8e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <div id="mc_embed_signup_scroll">
+            <h3 style="color:#005aa7; font-family:avenir; font-size:24px;">Subscribe for our newsletter</h3>
 
-        <!-- content -->
-        <div class="wrapper" style="width:90%">
-          <p>{{ .content | markdownify }}</p>
-        </div>
-        <!-- /content -->
-      </div>
+            <!-- mail address -->
+            <div class="col-12 mc-field-group" style="color:#005aa7; font-family:avenir; font-size:18px;">
+              <label for="mce-EMAIL">Mail address</label>
+              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+            </div>
+            <!-- /mail address -->
 
-      <!-- Form -->
-      <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
-          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="{{ i18n `yourname` }}">
-          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="{{ i18n `youremail` }}">
-          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="{{ i18n `subject` }}">
-          <textarea name="message" id="message" class="form-control mb-3"
-            placeholder="{{ i18n `yourmessage` }}"></textarea>
-          <div class="wrapper" style="text-align:center;">
-            <button type="submit" value="send" class="btn btn-primary">{{ i18n `sendnow` }}</button>
+            <!-- responses -->
+            <div id="col-12 mce-responses" class="clear">
+              
+              <!-- error response -->
+              <div class="response" id="mce-error-response" style="display: none;"></div>
+              <!-- /error response -->
+
+              <!-- succes response -->
+              <div class="response" id="mce-success-response" style="display: none;"></div>
+              <!-- /succes response -->
+
+            </div>
+            <!-- /responses -->
+
+            <!-- ?? -->
+            <div class="col-12" aria-hidden="true" style="position: absolute; left: -5000px;">
+              <input type="text" name="b_0c1760b246d5b08459fab1089_38c5b7c211" tabindex="-1" value="">
+            </div>
+            <!-- /?? -->
+
+            <!-- button -->
+            <div class="clear btn" style="margin-top:15px;">
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" style="background-color:#005aa7; font-family:avenir; font-size:16px; font-weight: 600;">
+            </div>
+            <!-- /button -->
           </div>
         </form>
       </div>
-      <!-- /Form -->
+      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
 
     </div>
   </div>
-</section>
 
+</section>
 {{ end }}
 <!-- /Newsletter -->
 

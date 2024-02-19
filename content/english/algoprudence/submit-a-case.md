@@ -14,7 +14,6 @@ team:
 content: |
   Helloi Test
   {{< team >}}
-body: |
-  Hello
 ---
 
+{{< team >}}
