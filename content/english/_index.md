@@ -73,8 +73,9 @@ Distincive_in:
     - name: Public knowledge
       icon: fab fa-slideshare
       content: >
-        All our audits and corresponding advice (*algoprudence*) are made [<span
-        style="color:#005aa7">publicly available</span>](/algoprudence),
+        All our audits and corresponding advice (*algoprudence*) are made <a
+        href="https://algorithmaudit.eu/algoprudence/"
+        style="color:white;text-decoration: underline;">publicly available</a>,
         increasing collective knowledge how to deploy and use algorithms in an
         responsible way
 areas_of_ai_expertise:
@@ -95,13 +96,12 @@ areas_of_ai_expertise:
       content: >
         Context-dependent review of ML and DL confusion matrix-based evaluation
         metrics, such as False Positives (FPs) and False Negatives (FNs)
-    - name: Public knowledge
+    - name: Ranking
       icon: fas fa-ranking-star
       content: >
-        All our cases and corresponding advice (*algoprudence*) are made [<span
-        style="color:#005aa7">publicly available</span>](/algoprudence),
-        increasing collective knowledge how to deploy and use algorithms in an
-        ethical way
+        Recommender systems are everywhere. With the new Digital Services Act
+        (DSA) came into forces last summer, auditing ranking systems is highly
+        relevant
   recent_audits:
     title: Recent audits
     feature_item:
@@ -119,7 +119,7 @@ areas_of_ai_expertise:
           Assessment of risk distributions through Z-tests and bias test for
           various steps in algorithmic-driven decision-making process
 how_we_build_algoprudence:
-  title: How we audit
+  title: Building _algoprudence_
   button_text: Our working method
   steps:
     - title: Indentifying issue
@@ -210,7 +210,21 @@ Activity_Feed:
       type: presentation
 TheMovie:
   title: The Movie
+title_gif:
+  title: Jurisprudence for algorithms
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -467,6 +467,19 @@ export default {
                             ]
                     }
                 ]
+        },
+        {
+            type: "object",
+            name: "title_gif",
+            label: "Title of gif",
+            fields:
+                [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Title"
+                    }
+                ]
         }
     ],
 };

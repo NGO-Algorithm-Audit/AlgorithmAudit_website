@@ -1,0 +1,34 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ with .Page.Params.form}}
+
+<div class="container-fluid">
+  <div class="p-5 shadow rounded-lg">
+    
+      <!-- Form -->
+      <div class="col-lg-12 mb-4 mb-lg-0">
+        <h4>{{ .title | markdownify }}</h4>
+        <p>{{ .content | markdownify }}</p>
+        
+        {{ range .questions }}
+        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
+          <span>{{ .question1 | markdownify }}</span>
+          <input type="text" class="form-control mb-3" id="name" name="name">
+          <span>{{ .question2 | markdownify }}</span>
+          <input type="text" class="form-control mb-3" id="name" name="name">
+          <span>{{ .question3 | markdownify }}</span>
+          <input type="text" class="form-control mb-3" id="name" name="name">
+          <span>{{ .question4 | markdownify }}</span>
+          <input type="text" class="form-control mb-3" id="name" name="name">
+          <span>{{ .question5 | markdownify }}</span>
+          <input type="text" class="form-control mb-3" id="name" name="name">
+          <div class="wrapper" style="text-align:center;">
+            <button type="submit" value="send" class="btn btn-primary">{{ i18n `sendnow` }}</button>
+          </div>
+        </form>
+        {{ end }}
+      </div>
+      <!-- /Form -->
+    
+  </div>
+</div>
+{{ end }}

@@ -1,12 +1,20 @@
 ---
-title: Hello
+title: Hii
 subtitle: |
   Test
 image: /images/Awb.jpg
-background_color: '#ffffff'
+team:
+  title: Test
+  content: Hi
+  team_members:
+    - name: Hi
+      image: /images/AV.svg
+      content: |
+        Hi
+content: |
+  Helloi Test
+  {{< team >}}
+body: |
+  Hello
 ---
 
-
-
-
-Test

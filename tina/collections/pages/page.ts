@@ -201,7 +201,7 @@ export default {
                             label: 'DONT USE',
                             type: 'string',
                             description: 'DONT USE',
-                            required: true,
+                            required: false,
                         }
                     ]
                 }

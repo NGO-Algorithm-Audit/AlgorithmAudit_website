@@ -56,9 +56,14 @@
   <div class="row pinDiv1">
 
     <!-- desktop version -->
-    <div class="col-12 text-center" id="desktop-slogan" style="margin-top:50px; margin-bottom:100px;">
+    <div class="col-12 text-center desktop" style="margin-top:50px; margin-bottom:100px;">
       <div class="slider-wrapper justify-content-center">
+
+        <!-- main -->
         <h3 style="color:#005aa7; font-weight:100;">{{.title}}</h3>
+        <!-- /main -->
+
+        <!-- slider -->
         <div class="ms-slider">
           <ul class="ms-slider__words">
             <li class="ms-slider__word">
@@ -81,16 +86,25 @@
             </li>
           </ul>
         </div>
+        <!-- /slider -->
+
       </div>
     </div>
     <!-- /desktop version -->
+
     <!-- mobile version -->
-    <div class="col-12" id="mobile-slogan" style="margin-top:50px; padding: 0px 7.5%;">
+    <div class="col-12 mobile" style="margin-top:50px; padding: 0px 7.5%;">
       <div class="slider-wrapper" style="padding-left:10px;">
+
+        <!-- main -->
         <h3 style="color:#005aa7; font-weight:100;">{{.title}}</h3>
+        <!-- /main -->
+
       </div>
     </div>
-    <div class="col-12" id="mobile-slogan" style="margin-bottom:50px; padding: 0px 7.5%;">
+
+    <!-- slider -->
+    <div class="col-12 mobile" style="margin-bottom:50px; padding: 0px 7.5%;">
       <div class="ms-slider">
         <ul class="ms-slider__words">
           <li class="ms-slider__word">
@@ -114,7 +128,9 @@
         </ul>
       </div>
     </div>
+    <!-- slider -->
     <!-- /mobile version -->
+
   </div>
   {{ end }}
   <!-- /European knowledge platform -->
@@ -159,12 +175,14 @@
 <!-- Activity Feed -->
 {{ with .Params.Activity_Feed}}
 {{ if .enable }}
-<section class="section">
+<section class="section-top">
   <div class="container" style="background-color: #eef2f6;">
     <div class="row align-items-center">
-      <div class="mx-4 col order-1">
 
-        <!-- Featured Activities -->
+      <!-- desktop version -->
+      <div class="mx-4 col order-1 desktop">
+
+        <!-- Featured activities -->
         {{ if .featured_activities }}
         <div class="row mt-5">
           <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "featured" }}</h2>
@@ -247,6 +265,96 @@
 
 
       </div>
+      <!-- /desktop version -->
+
+     <!-- mobile version -->
+     <div class="mx-4 col order-1 mobile">
+
+      <!-- Featured activities -->
+      {{ if .featured_activities }}
+      <div class="row mt-5">
+        <h2 class="section-title col-md-4" style="color:#005aa7; font-size:20px;">{{ i18n "featured" }}</h2>
+      </div>
+      {{ range .featured_activities }}
+      <div class="clickable-wrapper" data-href="{{.link | relURL }}">
+        <div class="row p-5" style="background-color: #ffffff;">
+          <div class="col-12 pr-4" style="margin-bottom:50px;">
+            <img class="img-fluid about-img-mobile" src="{{.image}}" />
+          </div>
+          <div class="col-12">
+            <div class="row align-items-center">
+              <h4 class="mb-2" style="color: #005aa7;">
+                {{.title}}
+              </h4>
+              <p style="color: #777">{{.intro | markdownify}} <a href="{{.link | relURL}}">{{ i18n
+                  "read_more" }}</a>
+              </p>
+            </div>
+            <div class="row" style="position:relative;">
+              {{ if .date }}
+              <span style="color:#005aa7;" class="mr-1 mb-2 px-0 py-1 mx-0">
+                {{.date }}
+              </span>
+              {{ end }}
+              {{ if .type }}
+              <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                {{ .type }}
+              </span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{end}}
+      {{end}}
+      <!-- /Featured Activities -->
+
+      <!-- Activities -->
+      {{ if .activities }}
+      <div class="row mt-5">
+        <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "recent-activity" }}</h2>
+      </div>
+      {{ range .activities }}
+      <a href="{{ .link | relURL }}">
+        <div class="row my-4">
+          <div class="col-12" style="background-color: #ffffff;">
+            <img class="img-fluid about-img-mobile p-5"  src="{{.image}}" />
+          </div>
+          <div class="col-12" style="background-color: #ffffff;">
+            <div class="row align-items-center p-3">
+              <h4 class="my-4 mx-3" style="color: #005aa7;">
+                {{.title}}
+              </h4>
+            </div>
+            <div class="row pl-4 mb-3" style="position:relative; bottom:0;">
+              {{ if .date }}
+              <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                {{.date }}
+              </span>
+              {{ end }}
+              {{ if .type }}
+              <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                {{ .type }}
+              </span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </a>
+      {{end}}
+      {{end}}
+      <!-- /Activities -->
+
+      <!-- More -->
+      <div class="row mt-4 pb-3 justify-content-center d-flex">
+        <a href="{{.view_all_link}}"><label class="btn">{{.view_all_text}}</label></a>
+      </div>
+      <!-- /More -->
+
+
+    </div>
+    <!-- /mobile version -->
+
     </div>
   </div>
 </section>
@@ -257,8 +365,9 @@
 <!-- Supported by -->
 {{ with .Params.Supported_by }}
 {{ range $i,$p := .Suported_by }}
-<section class="section-bottom bg-white" style="background-color: #ffffff !important; padding:50px 0px 100px 0px;">
+<section class="section bg-white">
   <div class="container">
+
     <div class="row d-flex flex-wrap align-items-center">
 
       <!-- title -->
@@ -268,7 +377,7 @@
       <!-- /title -->
 
       <!-- SIDN -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
         {{ range .img_SIDN }}
         <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
           <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
@@ -278,7 +387,7 @@
       <!-- /SIDN -->
 
       <!-- EU AI&S -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
         {{ range .img_EUAIS }}
         <a href="https://europeanaifund.org/announcing-our-2022-open-call-grantees/" target="_blank">
           <img src="{{ . | relURL }}" style="max-height: 60px;" alt="" class="img-fluid">
@@ -288,7 +397,7 @@
       <!-- /EU AI&S -->
 
       <!-- BZK -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
         {{ range .img_BZK }}
         <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties"
           target="_blank">
@@ -299,7 +408,7 @@
       <!-- /BZK -->
 
       <!-- NLAIC -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
         {{ range .img_NLAIC }}
         <a href="https://nlaic.com/en/" target="_blank">
           <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
@@ -309,7 +418,7 @@
       <!-- /NLAIC -->
 
       <!-- HAI -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
         {{ range .img_HAI }}
         <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">
           <img src="{{ . | relURL }}" style="max-height: 50px;" alt="" class="img-fluid">
@@ -319,245 +428,299 @@
       <!-- /HAI -->
 
     </div>
+
   </div>
 </section>
 {{ end }}
 {{ end }}
 <!-- /Supported by -->
 
-<!-- parallex -->
+<!-- Building AI auditing capacity from a not-for-profit perspective -->
+<section class="section bg-white" style="margin:100px 0px;">
+  <div class="container">
 
-<div class="pinContainer" id="pinContainer">
-  <section class="panel one" style="background-color: #deecf7;">
-
-    <!-- panel-1 layer-1 -->
-    <div class="layer one row">
-
-      <!-- Building AI auditing capacity from a not-for-profit perspective -->
-      <div class="col-12 text-center" style="margin-top:75px;">
-        <h2 style="color:#005aa7; font-weight:100;">
-          <div>
-            Building
-            <i class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff">AI auditing</i>
-            capacity
-          </div>
-          <br>
-          <div>
-            from a
-            <i class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff">not-for-profit</i>
-            perspective
-          </div>
-        </h2>
-      </div>
-      <!-- /Building AI auditing capacity from a not-for-profit perspective -->
-
-      {{ with .Params.What_we_do }}
-      {{ if .enable }}
-      <div class="container">
-
-        <!-- Distinctive in -->
-        <div class="row">
-          <div class="col-12">
-            <h4 class="section-title" style="color: #005aa7; font-size:18px;">{{ .title | markdownify }}</h4>
-          </div>
+    <!-- desktop version -->
+    <div class="col-12 text-center desktop">
+      <h1 style="color:#005aa7; font-weight:100;">
+        <div>
+          Building
+          <i class="mr-1 mb-2 px-3 py-1 mx-1" style="background-color:#005aa7;color:#fff">AI auditing</i>
+          capacity from a
         </div>
-        <!-- Distinctive in -->
-
-        <div class="row justify-content-center border-between">
-          {{$width_m := 4}}
-          {{$width_s := 2}}
-          {{if .width_m}}
-          {{$width_m = .width_m}}
-          {{end}}
-          {{if .width_s}}
-          {{$width_s = .width_s}}
-          {{end}}
-          {{ range .feature_item }}
-          <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4">
-            <div class="feature-card-transparant">
-              <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
-                <h4 class=""
-                  style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
-                  {{ .name | markdownify }}
-                </h4>
-              </i>
-              <p>{{ .content | markdownify }}</p>
-            </div>
-          </div>
-          {{ end }}
+        <br>
+        <div>
+          from a
+          <i class="mr-1 mb-2 px-3 py-1 mx-1" style="background-color:#005aa7;color:#fff">not-for-profit</i>
+          perspective
         </div>
-      </div>
-      {{ end }}
-      {{ end }}
+      </h1>
     </div>
-    <!-- /panel-1 layer-1 -->
+    <!-- /desktop version -->
 
-    <!-- panel-1 layer-2 -->
-
-    {{ with .Params.areas_of_ai_expertise }}
-    {{ if .enable }}
-    <div class="layer two align-items-start">
-      <div class="container" style="padding:0px;">
-
-        <!-- Title -->
-        <div class="row">
-          <div class="col-12">
-            <h4 class="section-title" style="color: #005aa7; font-size:18px;">{{ .title | markdownify }}</h4>
-          </div>
+    <!-- mobile version -->
+    <div class="col-12 text-center mobile">
+      <h1 style="color:#005aa7; font-weight:100;">
+        <div>
+          Building
+          <i class="mr-1 mb-2 px-3 py-1 mx-1" style="background-color:#005aa7;color:#fff">AI auditing</i>
         </div>
-        <!-- /Title -->
-
-        <!-- Areas of AI expertise -->
-        <div class="row">
-          {{$width_m := 4}}
-          {{$width_s := 2}}
-          {{if .width_m}}
-          {{$width_m = .width_m}}
-          {{end}}
-          {{if .width_s}}
-          {{$width_s = .width_s}}
-          {{end}}
-          {{ range .feature_item }}
-          <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4" style="padding-left:0px; padding-right:25px;">
-            <div class="feature-card">
-              <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
-              <h4 class=""
-                style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
-                {{ .name | markdownify }}
-              </h4>
-              <p>{{.content | markdownify}}</p>
-            </div>
-          </div>
-          {{ end }}
+        <div class="p-5">
+          capacity from a
         </div>
-
-        <!-- Button -->
-        <div class="row text-center">
-          <div class="col-12" style="margin-top:50px; margin-bottom:75px;">
-            <a class="btn-link" href="">
-              <h3 class="btn" style="color:#ffffff;">{{.submit_case_text}}</h3>
-            </a>
-          </div>
+        <div>
+          <i class="mr-1 mb-2 px-3 py-1 mx-1" style="background-color:#005aa7;color:#fff">not-for-profit</i>
+          perspective
         </div>
-        <!-- /Button -->
+      </h1>
+    </div>
+    <!-- /mobile version -->
 
-        {{with .recent_audits}}
+  </div>
+</section>
+<!-- /Building AI auditing capacity from a not-for-profit perspective -->
 
-        <!-- Title -->
-        <div class="row">
-          <div class="col-12">
-            <h4 class="section-title" style="color: #005aa7; font-size:18px;">{{ .title | markdownify }}</h4>
-          </div>
-        </div>
-        <!-- /Title -->
+<!-- Distinctive in -->
+{{ with .Params.Distincive_in }}
+{{ if .enable }}
+<section class="section bg-blue">
+  <div class="container">
 
-        <!-- Recent audits -->
-        <div class="row">
-          {{ range .feature_item }}
-          <div class="col-md-1">
-            <img class="img-fluid" src="{{.image}}" style="height:100px; position: absolute;" />
-          </div>
-          <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
-            <h4 class="" style="color: #005aa7; font-size:16px;">
+    <!-- title -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title" style="color:white;">{{ .title | markdownify }}</h3>
+      </div>
+    </div>
+    <!-- /title -->
+
+    <!-- distinctive in elements -->
+
+    <!-- desktop version -->
+    <div class="row justify-content-center desktop" style="margin-bottom: 50px;">
+      {{$width_m := 4}}
+      {{$width_s := 2}}
+      {{if .width_m}}
+      {{$width_m = .width_m}}
+      {{end}}
+      {{if .width_s}}
+      {{$width_s = .width_s}}
+      {{end}}
+      {{ range .feature_item }}
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-white">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color:white; display:inline-block; font-size:22px;">
+            <h4 class=""
+              style="color:white; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
               {{ .name | markdownify }}
             </h4>
-            <p style="font-size:14px;">
-              {{.content | markdownify}}
-            </p>
-          </div>
-          {{ end }}
-        </div>
-        <!-- /Recent audits -->
-
-        {{end}}
-
-      </div>
-    </div>
-    {{end}}
-    {{end}}
-    <!-- /areas of ai expertise -->
-    <!-- /panel-1 layer-2 -->
-
-  </section>
-
-  <section class="panel two">
-
-    <!-- panel-2 layer-1 -->
-    <!-- how we build algoprudence -->
-    {{ with .Params.how_we_build_algoprudence }}
-    <div class="layer" style="background-color: #ffffff;">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-12" style="display: inline-block; margin-top:0px; padding: 0px 5%">
-            <h2 style="color: #005aa7; margin-left: -15px; margin-bottom:100px;">{{.title | markdownify}}</h2>
-            {{ range $i, $step := .steps }}
-            <div class="row">
-              <div class="col-3 mb-4">
-                <div class="row">
-                  <h3 style="color: #005aa7;">
-                    {{ i18n "step" }} {{add $i 1}}
-                  </h3>
-                </div>
-                <div class="row">
-                  <p style="font-size:20px; color: #005aa7;">
-                    {{ .title }}
-                  </p>
-                </div>
-              </div>
-              <div class="col-9">
-                <div>
-                  <h4 class="" style="color: #005aa7;">
-                    {{ .name | markdownify }}
-                  </h4>
-                  <p>{{.content | markdownify}}</p>
-                </div>
-              </div>
-            </div>
-            {{ end }}
-
-            <!-- button -->
-            <div class="row text-center">
-              <div class="col-12" style="margin-top:0px;">
-                <a class="btn-link" href="">
-                  <h3 class="btn" style="color:#ffffff; font-weight:600;">
-                    {{.button_text}}
-                  </h3>
-                </a>
-              </div>
-            </div>
-            <!-- /button -->
-
-          </div>
+          </i>
+          <p style="color:white;">{{ .content | markdownify }}</p>
         </div>
       </div>
+      {{ end }}
     </div>
-    {{end}}
-    <!-- /how we build algoprudence -->
-    <!-- /panel-2 layer-1 -->
+    <!-- /desktop version -->
 
-    <!-- panel-2 layer-2 -->
-    <!-- advantages of algoprudence -->
-    {{ with .Params.advantages_of_algoprudence}}
-    <div class="layer" style="background-color: #deecf7;">
-      <div class="container">
-        <div class="row" style="margin-bottom:25px;">
-          <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
+    <!-- mobile version -->
+    <div class="row justify-content-center mobile">
+      {{ range .feature_item }}
+      <div class="col-12 py-4 border-top">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color:white; display:inline-block; font-size:22px;">
+            <h4 class=""
+              style="color:white; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
+              {{ .name | markdownify }}
+            </h4>
+          </i>
+          <p style="color:white;">{{ .content | markdownify }}</p>
         </div>
-        <div class="row">
-          {{ range .feature_item }}
-          <div class="col-md-6 col-sm-12 mb-4">
-            <div style="padding:30px;">
-              <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:30px;"></i>
-              <h3 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:500; font-size:24px;">
-                {{ .name | markdownify }}
-              </h3>
-              <p>{{.content | markdownify}}</p>
+      </div>
+      {{ end }}
+    </div>
+    <!-- /mobile version -->
+
+
+    <!-- /distinctive in elements -->
+
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /Distinctive in -->
+
+
+<!-- Areas of AI expertise -->
+{{ with .Params.areas_of_ai_expertise }}
+{{ if .enable }}
+<section class="section bg-white">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+      </div>
+    </div>
+    <!-- /Title -->
+
+    <!-- areas of AI expertise -->
+
+    <!-- desktop version -->
+    <div class="row justify-content-center desktop">
+      {{$width_m := 4}}
+      {{$width_s := 2}}
+      {{if .width_m}}
+      {{$width_m = .width_m}}
+      {{end}}
+      {{if .width_s}}
+      {{$width_s = .width_s}}
+      {{end}}
+      {{ range .feature_item }}
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-blue">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
+            <h4 class=""
+              style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+              {{ .name | markdownify }}
+            </h4>
+          </i>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="row justify-content-center mobile">
+    {{ range .feature_item }}
+    <div class="col-12 m-4 border-top-blue">
+      <div class="feature-card-transparant">
+        <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
+          <h4 class=""
+            style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+            {{ .name | markdownify }}
+          </h4>
+        </i>
+        <p>{{ .content | markdownify }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <!-- /mobile version -->
+
+    <!-- /areas of AI expertise -->
+
+    <!-- Button -->
+    <div class="row text-center">
+      <div class="col-12" style="margin-top:25px;">
+        <a class="btn-link" href="">
+          <h3 class="btn" style="color:#ffffff;">{{.submit_case_text}}</h3>
+        </a>
+      </div>
+    </div>
+    <!-- /Button -->
+  </div>
+</section>
+{{end}}
+<!-- /Areas of AI expertise -->
+
+<!-- Recent audits -->
+{{with .recent_audits}}
+<section class="section-none bg-white">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+      </div>
+    </div>
+    <!-- /Title -->
+
+    <!-- desktop version -->
+    <div class="row desktop">
+      {{ range .feature_item }}
+      <div class="col-md-1">
+        <img class="img-fluid" src="{{.image}}" style="height:100px; position: absolute;" />
+      </div>
+      <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
+        <h4 class="" style="color: #005aa7; font-size:16px;">
+          {{ .name | markdownify }}
+        </h4>
+        <p style="font-size:14px;">
+          {{.content | markdownify}}
+        </p>
+      </div>
+      {{ end }}
+    </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="row mobile">
+      {{ range .feature_item }}
+      <div class="col-12">
+        <img class="img-fluid about-img-mobile" src="{{.image}}"/>
+      </div>
+      <div class="col-12 clickable-wrapper mt-5 mb-5" data-href="{{.link | relURL }}">
+        <h4 class="" style="color: #005aa7; font-size:16px;">
+          {{ .name | markdownify }}
+        </h4>
+        <p style="font-size:14px;">
+          {{.content | markdownify}}
+        </p>
+      </div>
+      {{ end }}
+    </div>
+    <!-- /mobile version -->
+
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Recent audits -->
+
+<!-- Building algoprudence -->
+{{ with .Params.how_we_build_algoprudence }}
+<section class="section-none bg-white">
+  <div class="layer" style="background-color: #ffffff;">
+    <div class="container mt-5">
+      <div class="row">
+
+        <!-- title -->
+        <h3 class="section-title" style="color:#005aa7;">{{.title | markdownify}}</h3>
+        <!-- /title -->
+
+        <!-- desktop version -->
+        <div class="col-12 desktop">
+          {{ range $i, $step := .steps }}
+          <div class="row">
+            <div class="col-3 mb-4">
+              <div class="row">
+                <h3 style="color: #005aa7;">
+                  {{ i18n "step" }} {{add $i 1}}
+                </h3>
+              </div>
+              <div class="row">
+                <p style="font-size:20px; color: #005aa7;">
+                  {{ .title }}
+                </p>
+              </div>
+            </div>
+            <div class="col-9">
+              <div>
+                <h4 class="" style="color: #005aa7;">
+                  {{ .name | markdownify }}
+                </h4>
+                <p>{{.content | markdownify}}</p>
+              </div>
             </div>
           </div>
           {{ end }}
 
-          <div class="col-md-6 col-sm-12 mb-4">
-            <div class="text-center">
+          <!-- button -->
+          <div class="row text-center">
+            <div class="col-12" style="margin-top:0px;">
               <a class="btn-link" href="">
                 <h3 class="btn" style="color:#ffffff; font-weight:600;">
                   {{.button_text}}
@@ -565,26 +728,104 @@
               </a>
             </div>
           </div>
+          <!-- /button -->
         </div>
-      </div>
-      {{end}}
-    </div>
-    <!-- /advantages of algoprudence -->
-    <!-- /panel-2 layer-2 -->
+        <!-- /desktop version -->
 
-  </section>
-</div>
-<!-- /parallex -->
+        <!-- mobile version -->
+        <div class="col-12 mobile">
+          {{ range $i, $step := .steps }}
+          <div class="row">
+            <div class="col-12 mb-4">
+              <div class="row mb-2">
+                <h3 style="color: #005aa7;">
+                  {{ i18n "step" }} {{add $i 1}} – {{ .title }}
+                </h3>
+                <p class="mt-2">{{.content | markdownify}}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+
+          <!-- button -->
+          <div class="row text-center">
+            <div class="col-12" style="margin-top:0px;">
+              <a class="btn-link" href="">
+                <h3 class="btn" style="color:#ffffff; font-weight:600;">
+                  {{.button_text}}
+                </h3>
+              </a>
+            </div>
+          </div>
+          <!-- /button -->
+        </div>
+        <!-- /mobile version -->
+
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+<!-- /Building algoprudence -->
+
+<!-- advantages of algoprudence -->
+{{ with .Params.advantages_of_algoprudence}}
+<section class="section bg-lightblue" >
+    <div class="container">
+
+      <!-- title -->
+      <div class="row" style="padding:50px 0px;">
+        <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
+      </div>
+      <!-- /title -->
+
+      <!-- advantages of algoprudence elements -->
+      <div class="row">
+        {{ range .feature_item }}
+        <div class="col-md-6 col-sm-12 mb-4">
+          <div style="padding:30px;">
+            <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
+            <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+              {{ .name | markdownify }}
+            </h4>
+            <p>{{.content | markdownify}}</p>
+          </div>
+        </div>
+        {{ end }}
+
+        <!-- button -->
+        <div class="col-md-6 col-sm-12 mb-4">
+          <div class="text-center">
+            <a class="btn-link" href="">
+              <h3 class="btn" style="color:#ffffff; font-weight:600;">
+                {{.button_text}}
+              </h3>
+            </a>
+          </div>
+        </div>
+        <!-- /button -->
+
+      </div>
+      <!-- /advantages of algoprudence elements -->
+
+    </div>
+  </div>
+</section>
+{{end}}
+<!-- /advantages of algoprudence -->
 
 <!-- gif animation -->
-<section class="section bg-white" style="margin-top:0px;">
+{{ with .Params.title_gif}}
+<section class="section-none bg-white">
   <div class="container">
     <div class="row">
 
       <div class="container pinDiv2">
-        <div class="row" style="justify-content:center;">
-          <h2 style="color: #005aa7;">Building jurisprudence for algorithms</h2>
+        <!-- title -->
+        <div class="row">
+          <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
         </div>
+        <!-- /title -->
 
         <!-- algoprudence animation -->
         <div class="row" style="display: flex; justify-content:center; align-items:center; margin-top:50px;">
@@ -592,18 +833,18 @@
             <img id="myimg" width="800px" src="/images/algoprudence-frames/frame-036.png"><br>
           </div>
         </div>
-        <!-- /algoprudence animation -->
       </div>
-      <!-- /panel-2 layer-3 -->
+      <!-- /algoprudence animation -->
 
     </div>
   </div>
 </section>
+{{ end }}
 <!-- /gif animation -->
 
 <!-- Video -->
 {{ with .Params.TheMovie }}
-<section class="section bg-white" style="margin-top:500px;">
+<section class="section-none bg-white" style="margin-top:700px;">
   <div class="container">
     <div class="row">
       <h3 style="color: #005aa7;">{{.title}}</h3>
@@ -625,10 +866,18 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-5 content">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-        <div class="wrapper" style="width:75%">
+
+        <!-- title -->
+        <h3 class="section-title" style="color: #005aa7;">
+          {{ .title | markdownify }}
+        </h3>
+        <!-- /title -->
+
+        <!-- content -->
+        <div class="wrapper" style="width:90%">
           <p>{{ .content | markdownify }}</p>
         </div>
+        <!-- /content -->
       </div>
 
       <!-- Form -->
@@ -649,6 +898,7 @@
     </div>
   </div>
 </section>
+
 {{ end }}
 <!-- /Newsletter -->
 

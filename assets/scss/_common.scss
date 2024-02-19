@@ -70,6 +70,19 @@ a:hover {
   text-decoration: underline;
 }
 
+h1, .h1 {
+  font-size:36px;
+}
+h2, .h2 {
+ font-size:30px;
+}
+h3, .h3 {
+ font-size:24px;
+}
+h4, .h4 {
+  font-size:18px;
+ }
+
 .slick-slide {
   outline: 0;
 }
@@ -91,21 +104,29 @@ a:hover {
 }
 
 .section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  margin: 75px 0px;
+  padding: 40px 0px;
 
   &-title {
     margin-bottom: 30px;
   }
 }
 
+.section-none {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
 .section-top {
-  padding-top: 0px;
+  padding-top: 125px;
 }
 
 .section-bottom {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+}
+
+.section-title{
+  margin-bottom: 50px;
 }
 
 .footer {
@@ -115,6 +136,14 @@ a:hover {
 
 .padding_text {
   padding-top: 5%;
+}
+
+.bg-blue{
+  background-color: #005aa7;
+}
+
+.bg-lightblue{
+  background-color: #deecf7;
 }
 
 .bg-cover {
@@ -646,6 +675,12 @@ textarea.form-control {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.about-img-mobile{
+  height: 200px;
+  margin: auto;
+  display: block;
 }
 
 .commission{
