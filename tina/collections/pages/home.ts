@@ -435,9 +435,14 @@ export default {
                         label: "Title"
                     },
                     {
+                        type: "image",
+                        name: "image",
+                        label: "Image above button"
+                    },
+                    {
                         type: "string",
                         name: "button_text",
-                        label: "Our working method button text"
+                        label: "Button text"
                     },
                     {
                         type: "object",

@@ -141,6 +141,7 @@ how_we_build_algoprudence:
         called *algoprudence*
 advantages_of_algoprudence:
   title: Advantages of algoprudence
+  image: /images/Awb.jpg
   button_text: White paper on algoprudence
   feature_item:
     - name: Learn & harmonize
@@ -213,6 +214,9 @@ TheMovie:
 title_gif:
   title: Jurisprudence for algorithms
 ---
+
+
+
 
 
 

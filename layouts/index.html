@@ -1,7 +1,7 @@
 {{ define "main" }}
 <script src="/js/home_script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"> -->
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
 <!-- Banner -->
 {{ with .Params.Banner }}
@@ -797,7 +797,7 @@
     <!-- desktop version -->
     <div class="row desktop">
       {{ range .feature_item }}
-      <div class="col-md-6 col-sm-12 mb-4">
+      <div class="col-md-6 col-sm-12 mb-4 border-left-blue">
         <div class="feature-card-transparant" style="padding:30px;">
           <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
           <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
@@ -809,13 +809,19 @@
       {{ end }}
 
       <!-- button -->
-      <div class="col-md-6 col-sm-12 mb-4">
-        <div class="text-center">
-          <a class="btn-link" href="">
-            <h3 class="btn" style="color:#ffffff; font-weight:600;">
-              {{.button_text}}
-            </h3>
-          </a>
+      <div class="col-md-6 col-sm-12 mb-4 d-flex align-items-center">
+        <div class="row">
+          <div class="col-12">
+            <img class="img-fluid" src="{{.image}}" style="height:100px; display:block; margin:auto;"/>
+          </div>
+          <div class="col-12">
+            <p class="crossfade2"></p>
+            <a class="btn-link" href="">
+              <h3 class="btn" style="color:#ffffff; font-weight:600;">
+                {{.button_text}}
+              </h3>
+            </a>
+          </div>
         </div>
       </div>
       <!-- /button -->
@@ -838,13 +844,19 @@
       {{ end }}
 
       <!-- button -->
-      <div class="col-12 mb-4">
-        <div class="text-center">
-          <a class="btn-link" href="">
-            <h3 class="btn" style="color:#ffffff; font-weight:600;">
-              {{.button_text}}
-            </h3>
-          </a>
+      <div class="col-12 mb-4 d-flex align-items-center">
+        <div class="row">
+          <div class="col-12">
+            <img class="img-fluid" src="{{.image}}" style="height:100px; display:block; margin:auto;"/>
+          </div>
+          <div class="col-12">
+            <p class="crossfade2"></p>
+            <a class="btn-link" href="">
+              <h3 class="btn" style="color:#ffffff; font-weight:600;">
+                {{.button_text}}
+              </h3>
+            </a>
+          </div>
         </div>
       </div>
       <!-- /button -->
@@ -913,21 +925,32 @@
 <section class="section bg-lightblue">
   <div class="container">
 
-    <div id="row mc_embed_shell">
-      <div id="mc_embed_signup">
-        <form action="https://algorithmaudit.us14.list-manage.com/subscribe/post?u=0c1760b246d5b08459fab1089&amp;id=38c5b7c211&amp;f_id=00cda8e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-          <div id="mc_embed_signup_scroll">
-            <h3 style="color:#005aa7; font-family:avenir; font-size:24px;">Subscribe for our newsletter</h3>
+    <div class="row">
+      <div class="col-4">
+        <h3 style="color:#005aa7;">Newsletter</h3>
+        <p>Stay up to date about our work by subscribing to our newsletter</p>
+      </div>
 
+      <div class="col-8 d-flex align-items-center">
+        <form action="https://algorithmaudit.us14.list-manage.com/subscribe/post?u=0c1760b246d5b08459fab1089&amp;id=38c5b7c211&amp;f_id=00cda8e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+
+          <div class="row">
             <!-- mail address -->
-            <div class="col-12 mc-field-group" style="color:#005aa7; font-family:avenir; font-size:18px;">
-              <label for="mce-EMAIL">Mail address</label>
-              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+            <div class="col-8 d-flex align-items-center" style="color:#005aa7; font-family:avenir; font-size:18px; padding: 0px;">
+              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="Mail address" style="color:#777777; font-family:avenir; font-size:18px; padding:10px; width:100%;">
             </div>
             <!-- /mail address -->
 
+            <!-- button -->
+            <div class="col-4 d-flex align-items-center">
+              <div class="btn">
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" style="background-color:#005aa7; font-family:avenir; font-size:16px; font-weight: 600;">
+              </div>
+            </div>
+            <!-- /button -->
+
             <!-- responses -->
-            <div id="col-12 mce-responses" class="clear">
+            <div class="clear">
               
               <!-- error response -->
               <div class="response" id="mce-error-response" style="display: none;"></div>
@@ -941,24 +964,17 @@
             <!-- /responses -->
 
             <!-- ?? -->
-            <div class="col-12" aria-hidden="true" style="position: absolute; left: -5000px;">
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
               <input type="text" name="b_0c1760b246d5b08459fab1089_38c5b7c211" tabindex="-1" value="">
             </div>
             <!-- /?? -->
-
-            <!-- button -->
-            <div class="clear btn" style="margin-top:15px;">
-              <input type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" style="background-color:#005aa7; font-family:avenir; font-size:16px; font-weight: 600;">
-            </div>
-            <!-- /button -->
           </div>
+
         </form>
       </div>
-      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
 
     </div>
   </div>
-
 </section>
 {{ end }}
 <!-- /Newsletter -->
