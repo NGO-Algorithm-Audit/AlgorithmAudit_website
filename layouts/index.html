@@ -1,7 +1,8 @@
 {{ define "main" }}
 <script src="/js/home_script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
 
 <!-- Banner -->
 {{ with .Params.Banner }}
@@ -809,15 +810,12 @@
       {{ end }}
 
       <!-- button -->
-      <div class="col-md-6 col-sm-12 mb-4 d-flex align-items-center">
+      <div class="col-md-6 col-sm-12 mb-4 d-flex align-items-center justify-content-center">
         <div class="row">
           <div class="col-12">
-            <img class="img-fluid" src="{{.image}}" style="height:100px; display:block; margin:auto;"/>
-          </div>
-          <div class="col-12">
-            <p class="crossfade2"></p>
+            <img class="img-fluid" src="{{.image}}" style="height:150px; display:block; margin:auto;"/>
             <a class="btn-link" href="">
-              <h3 class="btn" style="color:#ffffff; font-weight:600;">
+              <h3 class="btn" style="color:#ffffff; font-weight:600; margin-top:30px;">
                 {{.button_text}}
               </h3>
             </a>
@@ -844,15 +842,12 @@
       {{ end }}
 
       <!-- button -->
-      <div class="col-12 mb-4 d-flex align-items-center">
+      <div class="col-12 mb-4 d-flex align-items-center justify-content-center" style="margin-top:60px;">
         <div class="row">
           <div class="col-12">
-            <img class="img-fluid" src="{{.image}}" style="height:100px; display:block; margin:auto;"/>
-          </div>
-          <div class="col-12">
-            <p class="crossfade2"></p>
-            <a class="btn-link" href="">
-              <h3 class="btn" style="color:#ffffff; font-weight:600;">
+            <img class="img-fluid" src="{{.image}}" style="height:200px; display:block; margin:auto;"/>
+            <a class="btn-link" href="" style="">
+              <h3 class="btn" style="color:#ffffff; font-weight:600; margin-top:50px;">
                 {{.button_text}}
               </h3>
             </a>
@@ -921,53 +916,67 @@
 <!-- /Video -->
 
 <!-- Newsletter -->
-{{ with .Params.Get_in_touch }}
-<section class="section bg-lightblue">
-  <div class="container">
+{{ with .Params.Newsletter }}
+<section class="section bg-lightblue" style="margin-bottom:0px;">
 
+  <!-- desktop version -->
+  <div class="container desktop">
     <div class="row">
-      <div class="col-4">
-        <h3 style="color:#005aa7;">Newsletter</h3>
-        <p>Stay up to date about our work by subscribing to our newsletter</p>
-      </div>
 
-      <div class="col-8 d-flex align-items-center">
+      <!-- Newsletter content -->
+      <div class="col-4">
+        <div class="p-3">
+          <h3 style="color:#005aa7;">{{.title}}</h3>
+          <p>{{.content}}</p>
+        </div>
+      </div>
+      <!-- /Newsletter content -->
+
+      <div class="col-8">
         <form action="https://algorithmaudit.us14.list-manage.com/subscribe/post?u=0c1760b246d5b08459fab1089&amp;id=38c5b7c211&amp;f_id=00cda8e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 
-          <div class="row">
-            <!-- mail address -->
-            <div class="col-8 d-flex align-items-center" style="color:#005aa7; font-family:avenir; font-size:18px; padding: 0px;">
-              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="Mail address" style="color:#777777; font-family:avenir; font-size:18px; padding:10px; width:100%;">
-            </div>
-            <!-- /mail address -->
+          <div class="form-container">
+            <div class="row">
 
-            <!-- button -->
-            <div class="col-4 d-flex align-items-center">
-              <div class="btn">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" style="background-color:#005aa7; font-family:avenir; font-size:16px; font-weight: 600;">
+              <!-- mail address -->
+              <div class="col-8" style="color:#005aa7; font-family:avenir; font-size:18px; padding: 0px;">
+                <div class="text-white" id="mail-form">
+                  <p class="crossfade2"></p>
+                  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="color:#777777; font-family:avenir; font-size:18px; padding:10px; width:100%; :focus:color:red;">
+                </div>
               </div>
+              <!-- /mail address -->
+
+              <!-- button -->
+              <div class="col-4">
+                <p class="crossfade2"></p>
+                <div class="btn">
+                  <input type="submit" class="mce-EMAIL" name="subscribe" id="mc-embedded-subscribe" value="{{.button_text}}" style="background-color:#005aa7; color:white; font-family:avenir; font-size:16px; font-weight: 600; border-width:0px; border:none;">
+                </div>
+              </div>
+              <!-- /button -->
+
+              <!-- responses -->
+              <div class="clear">
+                
+                <!-- error response -->
+                <div class="response" id="mce-error-response" style="display:none;"></div>
+                <!-- /error response -->
+
+                <!-- succes response -->
+                <div class="response" id="mce-success-response" style="display:none;"></div>
+                <!-- /succes response -->
+
+              </div>
+              <!-- /responses -->
+
+              <!-- ?? -->
+              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_0c1760b246d5b08459fab1089_38c5b7c211" tabindex="-1" value="">
+              </div>
+              <!-- /?? -->
+
             </div>
-            <!-- /button -->
-
-            <!-- responses -->
-            <div class="clear">
-              
-              <!-- error response -->
-              <div class="response" id="mce-error-response" style="display: none;"></div>
-              <!-- /error response -->
-
-              <!-- succes response -->
-              <div class="response" id="mce-success-response" style="display: none;"></div>
-              <!-- /succes response -->
-
-            </div>
-            <!-- /responses -->
-
-            <!-- ?? -->
-            <div aria-hidden="true" style="position: absolute; left: -5000px;">
-              <input type="text" name="b_0c1760b246d5b08459fab1089_38c5b7c211" tabindex="-1" value="">
-            </div>
-            <!-- /?? -->
           </div>
 
         </form>
@@ -975,6 +984,75 @@
 
     </div>
   </div>
+  <!-- /desktop version -->
+
+  <!-- mobile version -->
+  <div class="container mobile">
+    <div class="row">
+
+      <!-- Newsletter content -->
+      <div class="col-12">
+        <div class="p-0">
+          <h3 style="color:#005aa7;">{{.title}}</h3>
+          <p>{{.content}}</p>
+        </div>
+      </div>
+      <!-- /Newsletter content -->
+
+      <div class="col-12">
+        <form action="https://algorithmaudit.us14.list-manage.com/subscribe/post?u=0c1760b246d5b08459fab1089&amp;id=38c5b7c211&amp;f_id=00cda8e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+
+          <div class="form-container">
+            <div class="row">
+
+              <!-- mail address -->
+              <div class="col-8" style="color:#005aa7; font-family:avenir; font-size:18px; padding: 0px;">
+                <div class="text-white" id="mail-form">
+                  <p class="crossfade2"></p>
+                  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="color:#777777; font-family:avenir; font-size:18px; padding:10px; width:100%; :focus:color:red;">
+                </div>
+              </div>
+              <!-- /mail address -->
+
+              <!-- button -->
+              <div class="col-4">
+                <p class="crossfade2"></p>
+                <div class="btn">
+                  <input type="submit" class="mce-EMAIL" name="subscribe" id="mc-embedded-subscribe" value="{{.button_text}}" style="background-color:#005aa7; color:white; font-family:avenir; font-size:16px; font-weight: 600; border-width:0px; border:none;">
+                </div>
+              </div>
+              <!-- /button -->
+
+              <!-- responses -->
+              <div class="clear">
+                
+                <!-- error response -->
+                <div class="response" id="mce-error-response" style="display:none;"></div>
+                <!-- /error response -->
+
+                <!-- succes response -->
+                <div class="response" id="mce-success-response" style="display:none;"></div>
+                <!-- /succes response -->
+
+              </div>
+              <!-- /responses -->
+
+              <!-- ?? -->
+              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_0c1760b246d5b08459fab1089_38c5b7c211" tabindex="-1" value="">
+              </div>
+              <!-- /?? -->
+
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <!-- /mobile version -->
+  
 </section>
 {{ end }}
 <!-- /Newsletter -->

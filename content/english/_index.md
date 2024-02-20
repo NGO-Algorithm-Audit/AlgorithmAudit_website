@@ -213,7 +213,14 @@ TheMovie:
   title: The Movie
 title_gif:
   title: Jurisprudence for algorithms
+newsletter:
+  title: Newsletter
+  content: Stay up to date about our work by subscribing to our newsletter
+  button_text: Subscribe
 ---
+
+
+
 
 
 

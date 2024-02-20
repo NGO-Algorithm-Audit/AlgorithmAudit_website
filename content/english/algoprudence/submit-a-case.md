@@ -1,8 +1,8 @@
 ---
-title: Hii
+title: Submit a case
 subtitle: |
   Test
-image: /images/Awb.jpg
+image: /images/case_repository.svg
 team:
   title: Test
   content: Hi

@@ -485,6 +485,29 @@ export default {
                         label: "Title"
                     }
                 ]
+        },
+        {
+            type: "object",
+            name: "newsletter",
+            label: "Newsletter",
+            fields:
+                [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Title"
+                    },
+                    {
+                        type: "string",
+                        name: "content",
+                        label: "Content"
+                    },
+                    {
+                        type: "string",
+                        name: "button_text",
+                        label: "Button text"
+                    }
+                ]
         }
     ],
 };
