@@ -15,7 +15,7 @@ Slogan:
       text2: normatieve AI standaarden
 Activity_Feed:
   enable: true
-  button_text: Lees meer...
+  button_text: Meer evenementen...
   button_link: /events
   featured_activities:
     - title: >-
@@ -43,10 +43,10 @@ Activity_Feed:
       image: /images/events/dutch-data-protection.jpg
       date: 08-02-2024
       type: presentation
-    - title: Presentation on stakeholder panel WG1 Inclusiveness JTC21
+    - title: RUG AI Wet event paneldiscussie
       link: /events
-      image: /images/events/jtc21.jpg
-      date: 07-01-2024
+      image: /images/events/RUG.png
+      date: 06-02-2024
       type: presentation
 Supported_by:
   enable: true
@@ -191,6 +191,9 @@ Newsletter:
   content: Stay up to date about our work by subscribing to our newsletter
   button_text: Subscribe
 ---
+
+
+
 
 
 

@@ -9,22 +9,22 @@ background_color: '#ffffff'
 team:
   title: Team Algoprudentie
   team_members:
-    - image: /images/people/SM.jpeg
-      name: Samaa Mohammad-Ulenberg
-      bio: |
-        Bestuurder
-    - image: /images/people/AV.jpeg
-      name: Ariën Voogt
-      bio: |
-        Bestuurder
-    - image: /images/people/JFP2.jpg
-      name: Jurriaan Parie
-      bio: |
-        Directeur en bestuurder
     - image: /images/people/VD.png
       name: Vardâyani Djwalapersad
       bio: |
         Projectmanager algoprudentie
+    - image: /images/people/JFP2.jpg
+      name: Jurriaan Parie
+      bio: |
+        Directeur en bestuurder
+    - image: /images/people/AV.jpeg
+      name: Ariën Voogt
+      bio: |
+        Bestuurder
+    - image: /images/people/SM.jpeg
+      name: Samaa Mohammad-Ulenberg
+      bio: |
+        Bestuurder
 form:
   title: Dien een case in
   button_text: Verstuur
