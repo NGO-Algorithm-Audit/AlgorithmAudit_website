@@ -1,27 +1,60 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ with .Page.Params.form}}
 
-<div class="container-fluid">
-  <div class="p-5">
-    
-      <!-- Form -->
+
+<div class="container-fluid mb-5">
+
+  <!-- desktop version -->
+  <div class="p-5 desktop">
       <div class="col-lg-12 mb-4">
 
+        <!-- title -->
         <h4>{{ .title | markdownify }}</h4>
-        <p>{{ .content | markdownify }}</p>
+        <!-- /title -->
         
-        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
+        <!-- form -->
+        <form action="{{ .backend_link | safeURL }}" method="POST">
           {{ range .questions }}
-          <span>{{ .question | markdownify }}</span>
-          <input type="text" class="form-control mb-3" id="name" name="name">
+          <div class="my-5">
+            <span style="font-weight:500;">{{ .question | markdownify }}</span>
+            <input type="text" class="form-control my-2" id="name" name="name">
+          </div>
           {{ end }}
           <div class="wrapper" style="text-align:center;">
-            <button type="submit" value="send" class="btn btn-primary">{{ i18n `sendnow` }}</button>
+            <button type="submit" value="send" class="btn btn-primary">{{ .button_text | markdownify }}</button>
           </div>
         </form>
+        <!-- /form -->
+
       </div>
-      <!-- /Form -->
-    
   </div>
+  <!-- /desktop version -->
+
+  <!-- mobile version -->
+  <div class="p-0 mobile">
+    <div class="col-lg-12 mb-4">
+
+      <!-- title -->
+      <h4>{{ .title | markdownify }}</h4>
+      <!-- /title -->
+      
+      <!-- form -->
+      <form action="{{ .backend_link | safeURL }}" method="POST">
+        {{ range .questions }}
+        <div class="my-5">
+          <span style="font-weight:500;">{{ .question | markdownify }}</span>
+          <input type="text" class="form-control my-2" id="name" name="name">
+        </div>
+        {{ end }}
+        <div class="wrapper" style="text-align:center;">
+          <button type="submit" value="send" class="btn btn-primary">{{ .button_text | markdownify }}</button>
+        </div>
+      </form>
+      <!-- /form -->
+
+    </div>
+  </div>
+  <!-- /mobile version -->
+
 </div>
 {{ end }}

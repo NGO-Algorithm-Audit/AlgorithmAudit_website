@@ -229,6 +229,20 @@ export default [
                 required: true,
             },
             {
+                name: 'button_text',
+                label: 'Button text',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                name: 'backend_link',
+                label: 'Back end link',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
                 type: "object",
                 name: "questions",
                 label: "Questions",

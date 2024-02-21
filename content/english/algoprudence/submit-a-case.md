@@ -28,12 +28,21 @@ content: |
   {{< team >}}
 form:
   title: Submit a case
+  button_text: Send
+  backend_link: 'https://formspree.io/f/xzbnrlan'
   questions:
     - question: Name of the algorithm
     - question: Short description of the algorithm (max. 100 words)
     - question: >-
         Technical dimension – Description of data collection, used statistical
-        methodologies and used evaluation criteria
+        methodologies and used evaluation criteria 
+    - question: >-
+        Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU
+        non-discrimination law 
+    - question: >-
+        Ethical issues – Description of the identified ethical issue given it's
+        technical and legal framework
+    - question: Contact details
 ---
 
 {{< form >}}

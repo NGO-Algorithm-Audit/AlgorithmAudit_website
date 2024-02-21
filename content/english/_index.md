@@ -16,8 +16,8 @@ Slogan:
 Activity_Feed:
   enable: true
   featured_title: Featured
-  view_all_text: View more...
-  view_all_link: /events
+  button_text: View more...
+  button_link: /events
   featured_activities:
     - title: >-
         Algoprudence (AA:2023:02) Risk Profiling for Social Welfare

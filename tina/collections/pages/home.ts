@@ -72,27 +72,21 @@ export default {
             name: "Activity_Feed",
             label: "Activity Feed",
             fields:
-                [
-                    {
-                        label: "Enabled",
+                [                    {
                         type: "boolean",
                         name: "enable",
-                    },
-                    {
-                        label: "Featured title",
-                        type: "string",
-                        name: "featured_title",
+                        label: "Enable",
                         required: true,
                     },
                     {
-                        label: "View all text",
+                        label: "Button text",
                         type: "string",
-                        name: "view_all_text",
+                        name: "button_text",
                     },
                     {
                         label: "View all link",
                         type: "string",
-                        name: "view_all_link",
+                        name: "button_link",
                     },
                     {
                         label: "Featured Activities",

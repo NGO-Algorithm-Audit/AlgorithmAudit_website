@@ -205,23 +205,29 @@
                 <h3 class="mb-2" style="color: #005aa7;">{{.title}}</h3>
                 <!-- /title featured article -->
 
+                <!-- intro text -->
                 <p style="color: #777">
                   {{.intro | markdownify}}
                   <a href="{{.link | relURL}}">{{ i18n "read_more" }}</a>
                 </p>
+                <!-- intro text -->
               </div>
+
+              <!-- metadata -->
               <div class="row" style="position:relative;">
                 {{ if .date }}
-                <span style="color:#005aa7;" class="mr-1 mb-2 px-0 py-1 mx-0">
+                <span style="color:#005aa7;" class="mr-1 mb-2 px-1 py-1 mx-0">
                   {{.date }}
                 </span>
                 {{ end }}
                 {{ if .type }}
-                <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-2">
                   {{ .type }}
                 </span>
                 {{ end }}
               </div>
+              <!-- /metadata -->
+
             </div>
           </div>
         </div>
@@ -238,16 +244,24 @@
         </div>
         {{ range .activities }}
         <a href="{{ .link | relURL }}">
-          <div class="row justify-content-between my-4">
+
+          <div class="row justify-content-between mb-4">
+            
+            <!-- image -->
             <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
               <img class="img-fluid about-img p-5"  src="{{.image}}" />
             </div>
+            <!-- /image -->
+
+            <!-- title -->
             <div class="col" style="background-color: #ffffff;">
               <div class="row align-items-center">
-                <h4 class="my-4 mx-3" style="color: #005aa7;">
+                <h4 class="my-4 ml-3 mr-5" style="color: #005aa7;">
                   {{.title}}
                 </h4>
               </div>
+              <!-- /title -->
+
               <div class="row" style="position: relative; bottom: 0;">
                 {{ if .date }}
                 <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
@@ -269,7 +283,7 @@
 
         <!-- More -->
         <div class="row mt-4 pb-3 justify-content-center d-flex">
-          <a href="{{.view_all_link}}"><label class="btn">{{.view_all_text}}</label></a>
+          <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
         </div>
         <!-- /More -->
 
@@ -363,7 +377,7 @@
 
       <!-- More -->
       <div class="row mt-4 pb-3 justify-content-center d-flex">
-        <a href="{{.view_all_link}}"><label class="btn">{{.view_all_text}}</label></a>
+        <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
       </div>
       <!-- /More -->
 
@@ -562,7 +576,6 @@
 {{ end }}
 {{ end }}
 <!-- /Distinctive in -->
-
 
 <!-- Areas of AI expertise -->
 {{ with .Params.Areas_of_AI_expertise }}
@@ -916,147 +929,5 @@
 </section>
 {{ end }}
 <!-- /Video -->
-
-<!-- Newsletter -->
-{{ with .Params.Newsletter }}
-<section class="section bg-lightblue" style="margin-bottom:0px;">
-
-  <!-- desktop version -->
-  <div class="container desktop">
-    <div class="row">
-
-      <!-- Newsletter content -->
-      <div class="col-4">
-        <div class="p-3">
-          <h3 style="color:#005aa7;">{{.title}}</h3>
-          <p>{{.content}}</p>
-        </div>
-      </div>
-      <!-- /Newsletter content -->
-
-      <div class="col-8">
-        <form action="https://algorithmaudit.us14.list-manage.com/subscribe/post?u=0c1760b246d5b08459fab1089&amp;id=38c5b7c211&amp;f_id=00cda8e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-
-          <div class="form-container">
-            <div class="row">
-
-              <!-- mail address -->
-              <div class="col-8" style="color:#005aa7; font-family:avenir; font-size:18px; padding: 0px;">
-                <div class="text-white" id="mail-form">
-                  <p class="crossfade2"></p>
-                  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="color:#777777; font-family:avenir; font-size:18px; padding:10px; width:100%; :focus:color:red;">
-                </div>
-              </div>
-              <!-- /mail address -->
-
-              <!-- button -->
-              <div class="col-4">
-                <p class="crossfade2"></p>
-                <div class="btn">
-                  <input type="submit" class="mce-EMAIL" name="subscribe" id="mc-embedded-subscribe" value="{{.button_text}}" style="background-color:#005aa7; color:white; font-family:avenir; font-size:16px; font-weight: 600; border-width:0px; border:none;">
-                </div>
-              </div>
-              <!-- /button -->
-
-              <!-- responses -->
-              <div class="clear">
-                
-                <!-- error response -->
-                <div class="response" id="mce-error-response" style="display:none;"></div>
-                <!-- /error response -->
-
-                <!-- succes response -->
-                <div class="response" id="mce-success-response" style="display:none;"></div>
-                <!-- /succes response -->
-
-              </div>
-              <!-- /responses -->
-
-              <!-- ?? -->
-              <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                <input type="text" name="b_0c1760b246d5b08459fab1089_38c5b7c211" tabindex="-1" value="">
-              </div>
-              <!-- /?? -->
-
-            </div>
-          </div>
-
-        </form>
-      </div>
-
-    </div>
-  </div>
-  <!-- /desktop version -->
-
-  <!-- mobile version -->
-  <div class="container mobile">
-    <div class="row">
-
-      <!-- Newsletter content -->
-      <div class="col-12">
-        <div class="p-0">
-          <h3 style="color:#005aa7;">{{.title}}</h3>
-          <p>{{.content}}</p>
-        </div>
-      </div>
-      <!-- /Newsletter content -->
-
-      <div class="col-12">
-        <form action="https://algorithmaudit.us14.list-manage.com/subscribe/post?u=0c1760b246d5b08459fab1089&amp;id=38c5b7c211&amp;f_id=00cda8e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-
-          <div class="form-container">
-            <div class="row">
-
-              <!-- mail address -->
-              <div class="col-8" style="color:#005aa7; font-family:avenir; font-size:18px; padding: 0px;">
-                <div class="text-white" id="mail-form">
-                  <p class="crossfade2"></p>
-                  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="color:#777777; font-family:avenir; font-size:18px; padding:10px; width:100%; :focus:color:red;">
-                </div>
-              </div>
-              <!-- /mail address -->
-
-              <!-- button -->
-              <div class="col-4">
-                <p class="crossfade2"></p>
-                <div class="btn">
-                  <input type="submit" class="mce-EMAIL" name="subscribe" id="mc-embedded-subscribe" value="{{.button_text}}" style="background-color:#005aa7; color:white; font-family:avenir; font-size:16px; font-weight: 600; border-width:0px; border:none;">
-                </div>
-              </div>
-              <!-- /button -->
-
-              <!-- responses -->
-              <div class="clear">
-                
-                <!-- error response -->
-                <div class="response" id="mce-error-response" style="display:none;"></div>
-                <!-- /error response -->
-
-                <!-- succes response -->
-                <div class="response" id="mce-success-response" style="display:none;"></div>
-                <!-- /succes response -->
-
-              </div>
-              <!-- /responses -->
-
-              <!-- ?? -->
-              <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                <input type="text" name="b_0c1760b246d5b08459fab1089_38c5b7c211" tabindex="-1" value="">
-              </div>
-              <!-- /?? -->
-
-            </div>
-          </div>
-
-        </form>
-      </div>
-
-    </div>
-  </div>
-  <!-- /mobile version -->
-  
-</section>
-{{ end }}
-<!-- /Newsletter -->
 
 {{ end }}

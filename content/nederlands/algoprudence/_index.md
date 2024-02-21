@@ -11,7 +11,7 @@ subtitle: >
 
   We are open to new cases. Please [<span style="color:#005aa7"> reach
   out</span>](/#contactform) to us when you know a case for review.
-image: /images/case_repository.svg
+image: /images/svg-illustrations/case_repository.svg
 facet_groups:
   - value: year
     title: Year
@@ -54,7 +54,8 @@ algoprudences:
       profiling criteria.
     image: >-
       /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
-    link: /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+    link: >-
+      /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
     facets:
       - value: aa202302
         label: 'AA:2023:02'
