@@ -27,9 +27,13 @@ content: |
   Helloi Test
   {{< team >}}
 form:
-  title: Hi
+  title: Submit a case
   questions:
-    - Question: Test
+    - question: Name of the algorithm
+    - question: Short description of the algorithm (max. 100 words)
+    - question: >-
+        Technical dimension – Description of data collection, used statistical
+        methodologies and used evaluation criteria
 ---
 
 {{< form >}}

@@ -2,13 +2,13 @@
 {{ with .Page.Params.form}}
 
 <div class="container-fluid">
-  <div class="p-5 shadow rounded-lg">
+  <div class="p-5">
     
       <!-- Form -->
-      <div class="col-lg-12 mb-4 mb-lg-0">
+      <div class="col-lg-12 mb-4">
+
         <h4>{{ .title | markdownify }}</h4>
         <p>{{ .content | markdownify }}</p>
-        
         
         <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
           {{ range .questions }}
