@@ -41,7 +41,7 @@
 
       <!-- image -->
       <div class="col-lg-6 col-md-12 col-sm-12 order-md-3 order-lg-2">
-        <img src='{{ .image2  }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
+        <img src='{{ .image  }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
       </div>
       <!-- image -->
     </div>
@@ -565,7 +565,7 @@
 
 
 <!-- Areas of AI expertise -->
-{{ with .Params.areas_of_ai_expertise }}
+{{ with .Params.Areas_of_AI_expertise }}
 {{ if .enable }}
 <section class="section bg-white">
   <div class="container">
@@ -640,7 +640,8 @@
 <!-- /Areas of AI expertise -->
 
 <!-- Recent audits -->
-{{with .recent_audits}}
+{{with .Params.Recent_audits}}
+{{ if .enable }}
 <section class="section-none bg-white">
   <div class="container">
 
@@ -692,10 +693,11 @@
 </section>
 {{end}}
 {{end}}
+{{end}}
 <!-- /Recent audits -->
 
 <!-- Building algoprudence -->
-{{ with .Params.how_we_build_algoprudence }}
+{{ with .Params.Building_algoprudence }}
 <section class="section-none bg-white">
   <div class="layer" style="background-color: #ffffff;">
     <div class="container mt-5">
@@ -783,7 +785,7 @@
 <!-- /Building algoprudence -->
 
 <!-- Advantages of algoprudence -->
-{{ with .Params.advantages_of_algoprudence}}
+{{ with .Params.Advantages_of_algoprudence}}
 <section class="section bg-lightblue" >
   <div class="container">
 
@@ -867,7 +869,7 @@
 <!-- /Advantages of algoprudence -->
 
 <!-- gif animation -->
-{{ with .Params.title_gif}}
+{{ with .Params.Title_gif}}
 <section class="section-none bg-white">
   <div class="container">
     <div class="row">
@@ -906,7 +908,7 @@
     </div>
     <div class="row" style="margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
       <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
-        <img src="/images/cover.png" width="600px" />
+        <img src="/images/video/cover.png" width="600px" />
         <span class="playbutton"></span>
       </a>
     </div>

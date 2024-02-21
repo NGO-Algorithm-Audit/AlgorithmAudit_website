@@ -1,48 +1,29 @@
 /**
  * @type {import('tinacms').Collection}
  */
+
+import facet_groups from "../shared/facets/facet_groups";
 import facets from "../shared/facets/facets";
+import title from "../shared/page/title";
 import subtitle from "../shared/page/subtitle";
 import image from "../shared/page/image";
+
 export default {
     name: "algoprudence_repository",
     label: "Algoprudence (repository)",
     path: "content/",
     match: {
-        include: '**/algoprudence/cases/**',
+        include: '**/algoprudence/_index',
     },
     fields: [
-        {
-            type: "string",
-            name: "layout",
-            label: "Layout",
-            required: true,
-            options: [
-                {
-                    value: "case",
-                    label: "Case"
-                }
-            ]
-        },
-        {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-        },
+        title,
         subtitle,
         image,
-        {
-            type: "string",
-            name: "icon",
-            label: "Icon",
-            description: "font awesome (i.e. fa-poll-h)"
-        },
+        facet_groups,
         {
             type: "object",
-            name: "key_takeaways",
-            label: "Key takeaways normative advice commission.",
+            name: "algoprudences",
+            label: "Algoprudence",
             list: true,
             fields:
                 [
@@ -53,153 +34,9 @@ export default {
                         required: true,
                     },
                     {
-                        type: "rich-text",
-                        name: "content",
-                        label: "Content",
-                        required: true,
-                    }
-                ]
-        },
-        {
-            type: "rich-text",
-            name: "summary",
-            label: "Summary",
-        },
-        {
-            type: "rich-text",
-            name: "sources",
-            label: "Sources",
-        },
-        {
-            type: "object",
-            name: "additional_content",
-            label: "Additinonal Content",
-            list: true,
-            fields:
-                [
-                    {
                         type: "string",
-                        name: "title",
-                        label: "Title",
-                        required: true,
-                    },
-                    {
-                        type: "rich-text",
-                        name: "content",
-                        label: "Content",
-                        required: true,
-                    },
-                    {
-                        type: "image",
-                        name: "image",
-                        label: "Image",
-                    },
-                    {
-                        type: "string",
-                        name: "image_link",
-                        label: "Image link",
-                    },
-                    {
-                        type: "number",
-                        name: "width",
-                        label: "Width of text (12 is the maximum)",
-                        description: "It's probably best to use 12 if you're not using an image and 8 if you are."
-                    }
-                ],
-            defaultItem: () => {
-                return {
-                    width: 12
-                }
-            }
-        },
-        {
-            type: "object",
-            name: "algoprudence",
-            label: "Algoprudence / Report",
-            fields:
-                [
-                    {
-                        type: "string",
-                        name: "title",
-                        label: "Title",
-                        required: true,
-                    },
-                    {
-                        type: "rich-text",
                         name: "intro",
-                        label: "Intro",
-                        required: true,
-                    },
-                    {
-                        type: "object",
-                        name: "reports",
-                        label: "Reports",
-                        list: true,
-                        fields:
-                            [
-                                {
-                                    type: "string",
-                                    name: "url",
-                                    label: "Url",
-                                    required: true,
-                                }
-                            ]
-                    }
-                ]
-        },
-        {
-            type: "object",
-            name: "normative_advice_members",
-            label: "Normative Advice Commission Members",
-            list: true,
-            fields:
-                [
-                    {
-                        type: "rich-text",
-                        name: "name",
-                        label: "Name, function (and department), university, link",
-                        required: true,
-                    }
-                ]
-        },
-        {
-            type: "object",
-            name: "funded_by",
-            label: "Funded By",
-            list: true,
-            fields:
-                [
-                    {
-                        type: "string",
-                        name: "url",
-                        label: "Url",
-                        required: true,
-                    },
-                    {
-                        type: "image",
-                        name: "image",
-                        label: "image",
-                        required: true,
-                    }
-                ]
-        },
-        {
-            type: "object",
-            name: "actions",
-            label: "Follow-up actions",
-            list: true,
-            fields:
-                [
-                    {
-                        type: "string",
-                        name: "title",
-                        label: "Title",
-                        required: true,
-                    },
-                    {
-                        type: "rich-text",
-                        name: "description",
-                        label: "description"
+                        label: "teaser"
                     },
                     {
                         type: "image",
@@ -209,23 +46,78 @@ export default {
                     },
                     {
                         type: "string",
-                        name: "date",
-                        label: "Date",
-                        required: true,
-                        description: "dd-MM-yyyy (i.e. 13-06-2024)"
-                    },
-                    {
-                        type: "image",
-                        name: "pdf",
-                        label: "PDF",
+                        name: "link",
+                        label: "Link",
+                        required: true
                     },
                     facets
                 ]
-        }
+        },
+        {
+            type: "rich-text",
+            name: "body",
+            label: "Content",
+            isBody: true,
+            templates: [
+                {
+                    name: 'team',
+                    label: 'Team',
+                    match: {
+                        start: '{{<',
+                        end: '>}}'
+                    },
+                    fields: [
+                        {
+                            name: 'title',
+                            label: 'DONT USE',
+                            type: 'string',
+                            description: 'Use top level template',
+                            required: false,
+                        }
+                    ]
+                },
+            ],
+        },
+        {
+            type: 'object',
+            name: 'team',
+            label: 'Team',
+            fields: [
+                {
+                    name: 'title',
+                    label: 'Title',
+                    type: 'string',
+                    description: '',
+                    required: true,
+                },
+                {
+                    type: "object",
+                    name: "team_members",
+                    label: "Team members",
+                    list: true,
+                    fields:
+                        [
+                            {
+                                type: "image",
+                                name: "image",
+                                label: "image",
+                                required: true,
+                            },
+                            {
+                                type: "string",
+                                name: "name",
+                                label: "Name",
+                                required: true,
+                            },
+                            {
+                                type: "rich-text",
+                                name: "bio",
+                                label: "Bio",
+                                isBody: false,
+                            }
+                        ]
+                }
+            ]
+        },
     ],
-    defaultItem: () => {
-        return {
-            layout: "case"
-        }
-    }
 };
