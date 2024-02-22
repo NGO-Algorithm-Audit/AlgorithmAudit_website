@@ -114,9 +114,16 @@
 
 .tablinks{
   border-width: 0px;
-  background-color:#fffff6;
+  background-color:#deecf7;
+  h4 {
+    color:#005aa7;
+  }
 }
 .tablinks.active{
+  color:white;
   text-decoration: underline;
-  background-color:#deecf7;
+  background-color:#005aa7;
+  h4 {
+    color:white;
+  }
 }

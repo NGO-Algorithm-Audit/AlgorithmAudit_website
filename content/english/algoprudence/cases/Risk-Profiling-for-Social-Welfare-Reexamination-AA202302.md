@@ -90,9 +90,14 @@ subtitle: >
   The aim of re-examination is a leading factor in judging profiling criteria.
 image: /images/svg-illustrations/illustration_cases.svg
 actions:
+  - title: Amsterdam
+    description: |
+      Amsterdam
+    image: /images/events/JPAO.jpg
+    date: 22-02-2024
   - title: News item Binnenlands Bestuur
     description: >
-      News website for Ducth public sector administration reported on
+      News website for Dutch public sector administration reported on
       AA:2023:02:A. See
       [link](https://www.binnenlandsbestuur.nl/digitaal/algoritmische-profilering-onder-strikte-voorwaarden-mogelijk).
     image: /images/algoprudence/AA202302/logo-bb.svg
@@ -101,6 +106,8 @@ actions:
       - value: news
         label: news
 ---
+
+
 
 
 
