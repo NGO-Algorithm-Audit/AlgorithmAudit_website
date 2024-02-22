@@ -39,35 +39,38 @@
 
                                 <!-- Key takeaways -->
                                 {{ if $algoprudence.key_takeaways }}
-                                <span style="color:#005aa7; font-size: 18px; font-weight:bold;">
-                                    {{ i18n "key_takeaways_normative_advice_commission" }}
-                                </span>
-                                <div class="row" style="margin: 0px 0px 10px 0px;">
-                                    {{ range $takeaway_index, $takeaway := $algoprudence.key_takeaways }}
-                                    <div class="grid">
-                                        <div class="row ml-0 mr-0">
-                                            <span
-                                                style="color:#005aa7; font-size:16px; font-weight: bold; margin: 25px 0px 0px 0px;">>
-                                                {{$takeaway.title}}</span>
+                                <div style="margin-top:25px;">
+                                    <span style="color:#005aa7; font-size: 18px; font-weight:bold;">
+                                        {{ i18n "key_takeaways_normative_advice_commission" }}
+                                    </span>
+                                    <div class="row" style="margin: 0px 0px 10px 0px;">
+                                        {{ range $takeaway_index, $takeaway := $algoprudence.key_takeaways }}
+                                        <div class="grid">
+                                            <div class="row ml-0 mr-0">
+                                                <span
+                                                    style="color:#005aa7; font-size:16px; font-weight: bold; margin: 25px 0px 0px 0px;">>
+                                                    {{$takeaway.title}}</span>
+                                            </div>
+                                            <div class="row ml-0 mr-0">
+                                                <p class="center-vert mb-0" style="font-size: 16px;">
+                                                    {{$takeaway.content | markdownify}}
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="row ml-0 mr-0">
-                                            <p class="center-vert mb-0" style="font-size: 16px;">
-                                                {{$takeaway.content | markdownify}}
-                                            </p>
-                                        </div>
+                                        {{ end }}
                                     </div>
-                                    {{ end }}
                                 </div>
                                 {{ end }}
 
                                 <!-- Summary advice -->
                                 {{if $algoprudence.summary}}
-                                <span style="color:#005aa7; font-size: 18px; font-weight:bold;">
-                                    {{ i18n "summary-advice" }}
-                                </span>
-                                <div class="row" style="margin: 0px 0px 25px 0px;">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
-                                        style="display:table; padding:0px 25px 0px 0px;">
+                                <div style="margin-top:40px;">
+                                    <!-- title -->
+                                    <span style="color:#005aa7; font-size: 18px; font-weight:bold;">
+                                        {{ i18n "summary-advice" }}
+                                    </span>
+                                    <!-- content -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding-left:0px;">
                                         <p class="center-vert" style="font-size: 16px;">
                                             {{$algoprudence.summary | markdownify }}
                                         </p>
@@ -77,12 +80,13 @@
 
                                 <!-- Source of case -->
                                 {{ if $algoprudence.sources }}
-                                <span style="color:#005aa7; font-size: 18px; font-weight: bold;">
-                                    {{ i18n "source_of_case"}}
-                                </span>
-                                <div class="row" style="margin: 0px 0px 25px 0px;">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
-                                        style="display:table; padding:0px 25px 0px 0px;">
+                                <div style="margin-top:40px;">
+                                    <!-- title -->
+                                    <span style="color:#005aa7; font-size:18px; font-weight:bold;">
+                                        {{ i18n "source_of_case"}}
+                                    </span>
+                                    <!-- content -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding-left:0px;">
                                         <p class="center-vert" style="font-size: 16px;">
                                             {{$algoprudence.sources | markdownify}}
                                         </p>
@@ -94,64 +98,63 @@
                                 {{ if $algoprudence.additional_content }}
                                 {{ range $additional_content_index, $additional_content :=
                                 $algoprudence.additional_content }}
-                                <div class="row" style="margin: 0px 0px 25px 0px;">
-                                    <div class="col-lg-{{$additional_content.width}} col-md-{{$additional_content.width}} col-sm-12 col-xs-12"
-                                        style="display:table; padding:0px 25px 0px 0px;">
+                                <div style="margin-top:40px;">
+                                    <!-- title -->
+                                    <span style="color:#005aa7; font-size: 18px; font-weight: bold;">{{$additional_content.title}}</span>
+                                    <!-- content -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding-left:0px;">
                                         <p class="center-vert" style="font-size: 16px;">
-                                            <span
-                                                style="color:#005aa7; font-size: 18px; font-weight: bold; margin-bottom:0px;">{{$additional_content.title}}</span>
-                                            <br>
                                             {{$additional_content.content | markdownify}}
                                         </p>
                                     </div>
+                                    <!-- image -->
                                     {{if $additional_content.image}}
-                                    <div
-                                        class="col-lg-{{sub 12 $additional_content.width}} col-md-{{sub 12 $additional_content.width}} col-sm-12 col-xs-12">
-                                        <p class="crossfade"></p>
-                                        <a href="{{$additional_content.image_link}}" target="_blank">
-                                            <img class="about-img" style="height:50px;"
-                                                src="{{ $additional_content.image }}">
-                                        </a>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex my-3 justify-content-center" style="display:table;">
+                                        <img class="" style="height:200px;" src="{{ $additional_content.image }}">
                                     </div>
                                     {{end}}
                                 </div>
                                 {{end}}
                                 {{end}}
 
-                                <!-- Report -->
+                                <!-- Algoprudence -->
                                 {{ if $algoprudence.algoprudence }}
-                                <span
-                                    style="color:#005aa7; font-size: 18px;font-weight: bold;">{{$algoprudence.algoprudence.title}}</span>
-                                <div class="row" style="margin: 0px 0px 25px 0px;">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" v
-                                        style="display:table; padding:0px 25px 0px 0px;">
+                                <div style="margin-top:40px;">
+                                    <!-- title -->
+                                    <span style="color:#005aa7; font-size: 18px;font-weight: bold;">{{$algoprudence.algoprudence.title}}</span>
+                                    <!-- content -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left:0px;">
                                         <p class="center-vert" style="font-size: 16px;">
                                             {{$algoprudence.algoprudence.intro | markdownify }}
                                         </p>
                                     </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
-                                    style="margin: 0px 0px 45px 0px; display:table;">
-                                    {{ range $report_index, $report := $algoprudence.algoprudence.reports}}
-                                    <iframe src="{{$report.url}}" width="50%" height="594px" allow="autoplay"></iframe>
-                                    {{end}}
+                                    <!-- reports -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3" style="display:table;">
+                                        {{ range $report_index, $report := $algoprudence.algoprudence.reports}}
+                                        <iframe src="{{$report.url}}" width="50%" height="594px" allow="autoplay"></iframe>
+                                        {{end}}
+                                    </div>
                                 </div>
                                 {{ end }}
 
                                 <!-- Advice commission -->
                                 {{if $algoprudence.normative_advice_members}}
-                                <span style="color:#005aa7; font-size: 18px; font-weight: bold;">
-                                    {{ i18n "normative-advice-commission"}}
-                                </span>
-                                <div class="row" style="margin: 15px 0px 25px 0px;">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pl-0" style="display:table;">
-                                        <p class="center-vert" style="font-size: 16px;">
-                                        <ul>
-                                            {{range $member_index, $member := $algoprudence.normative_advice_members}}
-                                            <li style="color:#777777">{{$member.name | markdownify}}</li>
-                                            {{end}}
-                                        </ul>
-                                        </p>
+                                <div style="margin-top:40px;">
+                                    <!-- title -->
+                                    <span style="color:#005aa7; font-size: 18px; font-weight: bold;">
+                                        {{ i18n "normative-advice-commission"}}
+                                    </span>
+                                    <!-- content -->
+                                    <div class="row" style="margin: 15px 0px 25px 0px;">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pl-0" style="display:table;">
+                                            <p class="center-vert" style="font-size: 16px;">
+                                            <ul class="dashed">
+                                                {{range $member_index, $member := $algoprudence.normative_advice_members}}
+                                                <li style="color:#777777">{{$member.name | markdownify}}</li>
+                                                {{end}}
+                                            </ul>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 {{end}}

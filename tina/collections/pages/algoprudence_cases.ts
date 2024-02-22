@@ -68,7 +68,7 @@ export default {
         {
             type: "rich-text",
             name: "sources",
-            label: "Sources",
+            label: "Source",
         },
         {
             type: "object",

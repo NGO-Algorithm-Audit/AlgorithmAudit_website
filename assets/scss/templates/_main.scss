@@ -452,6 +452,10 @@ a.post-title {
   }
 }
 
+ul.dashed > li::before {
+  content: "– ";
+}
+
 
 // pagination
 .pagination {

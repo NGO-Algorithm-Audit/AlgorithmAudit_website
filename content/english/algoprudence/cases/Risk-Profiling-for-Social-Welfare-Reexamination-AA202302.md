@@ -45,10 +45,14 @@ summary: >
   not meet this explainability criterion. This advice is directed towards all
   Dutch and European municipalities that use or consider using profiling methods
   in the context of social services.
-sources: ''
+sources: >
+  Unsolicited research, build upon [freedom of information
+  requests](https://www.vpro.nl/argos/media/luister/argos-radio/onderwerpen/2021/In-het-vizier-van-het-algoritme-.html)
+  submitted by investigative journalists.
 additional_content:
   - title: Presentation
     content: "The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found\_[here](https://algorithmaudit.eu/pressroom).\n"
+    image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
     width: 12
 algoprudence:
   title: Algoprudence
@@ -97,6 +101,17 @@ actions:
       - value: news
         label: news
 ---
+
+
+
+
+
+
+
+
+
+
+
 
 
 
