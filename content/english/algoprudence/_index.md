@@ -1,16 +1,13 @@
 ---
 layout: overview
-title: Algoprudence repository
+title: Algoprudence overview
 subtitle: >
-  We are working on a variety of cases. Once an normative advice commission has
-  gathered and examined the ethical issue, the original problem statement and
-  corresponding advice will be published on this website. Others learn from our
-  algoprudence, help to improve it and utilize it as a best practice in similar
-  cases.
+  Algoprudence is available for different types of algorithms, among others
+  machine learning, profiling, public and private algorithms.
 
 
-  We are open to new cases. Please [<span style="color:#005aa7"> reach
-  out</span>](/#contactform) to us when you know a case for review.
+  We are open to new cases. Please <span style="color:#005aa7">
+  [submit](/algoprudence/submit-a-case/)</span> a case for review.
 image: /images/svg-illustrations/case_repository.svg
 facet_groups:
   - value: year

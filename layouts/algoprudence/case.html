@@ -5,24 +5,25 @@
 <section class="section">
     <div class="container">
         <!-- Tab header -->
-        <div class="row mt-4">
+        <div class="row">
             <div class="col-lg-10 mx-auto">
                 <div class="row tab">
                     <button class="col tablinks" onclick="openTab(event, 'description_tab')" id="defaultOpen">
-                        <h3>{{ i18n "algoprudence_description_tab" }}</h3>
+                        <h4 style="color:#005aa7; background-color: none; padding: 20px;">{{ i18n "algoprudence_description_tab" }}</h4>
                     </button>
                     {{ if .Params.actions }}
                     <button class="col tablinks" onclick="openTab(event, 'actions_tab')">
-                        <h3>{{ i18n "algoprudence_actions_tab" }}</h3>
+                        <h4 style="color:#005aa7">{{ i18n "algoprudence_actions_tab" }}</h4>
                     </button>
                     {{ end }}
                 </div>
             </div>
         </div>
         <!-- /Tab header -->
+
         <!-- Description of algoprudence -->
         <div class="row tabcontent" id="description_tab">
-            <div class="col-lg-10 mx-auto" style="background-color: #deecf7;">
+            <div class="col-lg-10 mx-auto p-0">
                 <div class="content">
                     {{ $algoprudence := .Params }}
                     <div class="p-5 shadow rounded-lg" style="display:table;">
@@ -181,9 +182,10 @@
             </div>
         </div>
         <!-- /Description of algoprudence -->
-        <!-- actions of algoprudence -->
+
+        <!-- Actions followed by this work -->
         <div class="row tabcontent" id="actions_tab">
-            <div class="col-lg-10 mx-auto" style="background-color: #deecf7;">
+            <div class="col-lg-10 mx-auto shadow rounded-lg">
                 <div class="content accordion-container">
                     {{ if .Params.actions }}
                     {{ range $actions := .Params.actions }}
@@ -196,13 +198,12 @@
                     $facet.value | printf "%s" }}
                     {{ end }}
                     <div class="py-4"></div>
-                    <div class="ac border-0 mx-5 mb-4 algoprudence-article" style="background-color: #deecf7;"
-                        data-facets="{{$facets_for_data_attribute}}">
+                    <div class="ac border-0 mx-5 mb-4 algoprudence-article" data-facets="{{$facets_for_data_attribute}}">
                         <div class="ac-header grid">
                             <div class="ac-trigger p-0">
                                 <div class="row justify-content-between m-0">
-                                    <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
-                                        <img class="img-fluid about-img p-5" src="{{$actions.image}}" />
+                                    <div class="col-2 mr-4 box p-0 mt-0">
+                                        <img class="img-fluid about-img p-2" src="{{$actions.image}}" />
                                     </div>
                                     <div class="col pt-3 pb-5" style="background-color: #ffffff;">
                                         <div class="row align-items-center">
@@ -252,7 +253,8 @@
                 </div>
             </div>
         </div>
-        <!-- /actions of algoprudence -->
+        <!-- /Actions followed by this work -->
+
     </div>
 </section>
 

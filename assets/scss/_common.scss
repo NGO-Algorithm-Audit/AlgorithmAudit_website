@@ -3,11 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-::selection {
-  background-color:darken($color: #005aa7, $amount: 10);
-  color: $white;
-}
-
 body::-webkit-scrollbar {
   width: .5rem;
 }

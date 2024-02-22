@@ -26,6 +26,12 @@ export default {
         },
         {
             type: "string",
+            name: "icon",
+            label: "Icon",
+            description: "From https://fontawesome.com/search (e.g. fa-square-poll-vertical from https://fontawesome.com/icons/square-poll-vertical?f=classic&s=solid)"
+        },
+        {
+            type: "string",
             name: "title",
             label: "Title",
             isTitle: true,
@@ -33,12 +39,6 @@ export default {
         },
         subtitle,
         image,
-        {
-            type: "string",
-            name: "icon",
-            label: "Icon",
-            description: "font awesome (i.e. fa-poll-h)"
-        },
         {
             type: "object",
             name: "key_takeaways",

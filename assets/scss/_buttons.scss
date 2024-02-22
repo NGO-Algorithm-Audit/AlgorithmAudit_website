@@ -111,3 +111,12 @@
     }
   }
 }
+
+.tablinks{
+  border-width: 0px;
+  background-color:#fffff6;
+}
+.tablinks.active{
+  text-decoration: underline;
+  background-color:#deecf7;
+}

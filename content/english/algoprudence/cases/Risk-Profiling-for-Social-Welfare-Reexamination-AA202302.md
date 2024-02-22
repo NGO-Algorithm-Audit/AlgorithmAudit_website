@@ -4,22 +4,23 @@ title: 'Risk Profiling for Social Welfare Reexamination (AA:2023:02)'
 icon: fa-poll-h
 key_takeaways:
   - title: Algorithmic profiling is possible under strict conditions
-    content: >-
+    content: >
       The use of algorithmic profiling to re-examine whether social welfare
       benefits have been duly granted, is acceptable if applied responsibly.
   - title: Profiling must not equate suspicion
-    content: Re-examination needs to be based more on service and less on distrust.
+    content: |
+      Re-examination needs to be based more on service and less on distrust.
   - title: Diversity in selection methods
-    content: >-
+    content: >
       To avoid tunnel vision and negative feedback loops, algorithmic profiling
       ought to be combined with expert-driven profiling and random sampling.
   - title: Well-considered use of profiling criteria
-    content: >-
+    content: >
       Caring to avoid (proxy) discrimination and other undesirable forms of
       differentiation, the normative advice commission assessed variables
       individually on their eligibility for profiling (see Infographic).
   - title: Explainability requirements for machine learning
-    content: >-
+    content: >
       It is necessary that the sampling of residents can be explained throughout
       the entire decision-making process. Complex training methods for variable
       selection, such as the xgboost algorithm discussed in this case study, are
@@ -79,5 +80,35 @@ funded_by:
   - url: >-
       https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
     image: /images/BZK.jpg
+subtitle: >
+  The commission judges that algorithmic risk profiling can be used under strict
+  conditions for sampling residents receiving social welfare for re-examination.
+  The aim of re-examination is a leading factor in judging profiling criteria.
+image: /images/svg-illustrations/illustration_cases.svg
+actions:
+  - title: News item Binnenlands Bestuur
+    description: >
+      News website for Ducth public sector administration reported on
+      AA:2023:02:A. See
+      [link](https://www.binnenlandsbestuur.nl/digitaal/algoritmische-profilering-onder-strikte-voorwaarden-mogelijk).
+    image: /images/algoprudence/AA202302/logo-bb.svg
+    date: 30-11-2023
+    facets:
+      - value: news
+        label: news
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
