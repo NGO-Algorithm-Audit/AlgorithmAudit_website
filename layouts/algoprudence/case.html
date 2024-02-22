@@ -27,29 +27,30 @@
                 <div class="content">
                     {{ $algoprudence := .Params }}
                     <div class="p-5 shadow rounded-lg" style="display:table;">
-                        <h3 class="mb-4 pl-0" style="color: #005aa7; padding: 0 0 0 25px">
+
+                        <!-- title -->
+                        <h3 class="mb-4 pl-0">
                             {{if $algoprudence.icon}}
                             <i class="fas {{$algoprudence.icon}} mr-3"></i>
                             {{end}}
                             {{$algoprudence.title | markdownify }}
                         </h3>
 
-                        <div class="row" style="margin-bottom:25px;">
+                        <!-- content -->
+                        <div class="row mb-3">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
                                 <!-- Key takeaways -->
                                 {{ if $algoprudence.key_takeaways }}
                                 <div style="margin-top:25px;">
-                                    <span style="color:#005aa7; font-size: 18px; font-weight:bold;">
-                                        {{ i18n "key_takeaways_normative_advice_commission" }}
-                                    </span>
+                                    <h4>{{ i18n "key_takeaways_normative_advice_commission" }}</h4>
                                     <div class="row" style="margin: 0px 0px 10px 0px;">
                                         {{ range $takeaway_index, $takeaway := $algoprudence.key_takeaways }}
                                         <div class="grid">
                                             <div class="row ml-0 mr-0">
-                                                <span
-                                                    style="color:#005aa7; font-size:16px; font-weight: bold; margin: 25px 0px 0px 0px;">>
-                                                    {{$takeaway.title}}</span>
+                                                <span style="color:#005aa7; font-size:16px; font-weight: bold; margin: 25px 0px 0px 0px;">>
+                                                    {{$takeaway.title}}
+                                                </span>
                                             </div>
                                             <div class="row ml-0 mr-0">
                                                 <p class="center-vert mb-0" style="font-size: 16px;">
@@ -66,9 +67,7 @@
                                 {{if $algoprudence.summary}}
                                 <div style="margin-top:40px;">
                                     <!-- title -->
-                                    <span style="color:#005aa7; font-size: 18px; font-weight:bold;">
-                                        {{ i18n "summary-advice" }}
-                                    </span>
+                                    <h4>{{ i18n "summary-advice" }}</h4>
                                     <!-- content -->
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding-left:0px;">
                                         <p class="center-vert" style="font-size: 16px;">
@@ -82,9 +81,7 @@
                                 {{ if $algoprudence.sources }}
                                 <div style="margin-top:40px;">
                                     <!-- title -->
-                                    <span style="color:#005aa7; font-size:18px; font-weight:bold;">
-                                        {{ i18n "source_of_case"}}
-                                    </span>
+                                    <h4>{{ i18n "source_of_case"}}</h4>
                                     <!-- content -->
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding-left:0px;">
                                         <p class="center-vert" style="font-size: 16px;">
@@ -100,7 +97,7 @@
                                 $algoprudence.additional_content }}
                                 <div style="margin-top:40px;">
                                     <!-- title -->
-                                    <span style="color:#005aa7; font-size: 18px; font-weight: bold;">{{$additional_content.title}}</span>
+                                    <h4>{{$additional_content.title}}</h4>
                                     <!-- content -->
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display:table; padding-left:0px;">
                                         <p class="center-vert" style="font-size: 16px;">
@@ -121,7 +118,7 @@
                                 {{ if $algoprudence.algoprudence }}
                                 <div style="margin-top:40px;">
                                     <!-- title -->
-                                    <span style="color:#005aa7; font-size: 18px;font-weight: bold;">{{$algoprudence.algoprudence.title}}</span>
+                                    <h4>{{$algoprudence.algoprudence.title}}</h4>
                                     <!-- content -->
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left:0px;">
                                         <p class="center-vert" style="font-size: 16px;">
@@ -141,41 +138,33 @@
                                 {{if $algoprudence.normative_advice_members}}
                                 <div style="margin-top:40px;">
                                     <!-- title -->
-                                    <span style="color:#005aa7; font-size: 18px; font-weight: bold;">
-                                        {{ i18n "normative-advice-commission"}}
-                                    </span>
+                                    <h4>{{ i18n "normative-advice-commission"}}</h4>
                                     <!-- content -->
-                                    <div class="row" style="margin: 15px 0px 25px 0px;">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pl-0" style="display:table;">
-                                            <p class="center-vert" style="font-size: 16px;">
-                                            <ul class="dashed">
-                                                {{range $member_index, $member := $algoprudence.normative_advice_members}}
-                                                <li style="color:#777777">{{$member.name | markdownify}}</li>
-                                                {{end}}
-                                            </ul>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    {{range $member_index, $member := $algoprudence.normative_advice_members}}
+                                    <p style="color:#005aa7; font-size:16px; font-weight:bold; margin-left:5px; margin-bottom:10px;">> 
+                                        <span style="font-size: 16px; color:#777777; font-weight:100; padding-left:5px;">
+                                            {{$member.name | markdownify}}
+                                        </span>
+                                    </p>
+                                    {{end}}
                                 </div>
                                 {{end}}
 
                                 <!-- Funded by -->
                                 {{if $algoprudence.funded_by}}
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <h3 class="mb-4" style="font-size: 18px; color: #005aa7;">
-                                            {{ i18n "funded-by" }}
-                                        </h3>
-                                    </div>
+                                <div style="margin-top:40px;">
+                                    <!-- title -->
+                                    <h4>{{ i18n "funded-by" }}</h4>
+                                    <!-- content -->
+                                    <div class="row">
                                     {{range $funder_index, $funder := $algoprudence.funded_by}}
-                                    <div class="center-vert col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                                        style="display:table;">
-                                        <p class="center-vert"></p>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                         <a href="{{$funder.url}}" target="_blank">
                                             <img src="{{ $funder.image | relURL }}" style="width:70%">
                                         </a>
                                     </div>
                                     {{end}}
+                                    </div>
                                 </div>
                                 {{end}}
                             </div>

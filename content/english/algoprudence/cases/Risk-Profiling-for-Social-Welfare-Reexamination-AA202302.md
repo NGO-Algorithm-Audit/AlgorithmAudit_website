@@ -78,12 +78,12 @@ normative_advice_members:
       of Groningen
 funded_by:
   - url: 'https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool'
-    image: /images/sidn.png
+    image: /images/supported_by/sidn.png
   - url: 'https://europeanaifund.org/'
-    image: /images/EUAISFund.png
+    image: /images/supported_by/EUAISFund.png
   - url: >-
       https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
-    image: /images/BZK.jpg
+    image: /images/supported_by/BZK.jpg
 subtitle: >
   The commission judges that algorithmic risk profiling can be used under strict
   conditions for sampling residents receiving social welfare for re-examination.
@@ -101,6 +101,9 @@ actions:
       - value: news
         label: news
 ---
+
+
+
 
 
 
