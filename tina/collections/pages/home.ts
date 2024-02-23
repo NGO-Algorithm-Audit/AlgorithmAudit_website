@@ -72,27 +72,21 @@ export default {
             name: "Activity_Feed",
             label: "Activity Feed",
             fields:
-                [
-                    {
-                        label: "Enabled",
+                [                    {
                         type: "boolean",
                         name: "enable",
-                    },
-                    {
-                        label: "Featured title",
-                        type: "string",
-                        name: "featured_title",
+                        label: "Enable",
                         required: true,
                     },
                     {
-                        label: "View all text",
+                        label: "Button text",
                         type: "string",
-                        name: "view_all_text",
+                        name: "button_text",
                     },
                     {
                         label: "View all link",
                         type: "string",
-                        name: "view_all_link",
+                        name: "button_link",
                     },
                     {
                         label: "Featured Activities",
@@ -267,6 +261,7 @@ export default {
                 }
             }
         },
+        // Areas of expertise
         {
             type: "object",
             name: "areas_of_ai_expertise",
@@ -330,52 +325,6 @@ export default {
                                     isBody: true,
                                 }
                             ]
-                    },
-                    {
-                        type: "object",
-                        name: "recent_audits",
-                        label: "Recent audits",
-                        fields:
-                            [
-                                {
-                                    type: "string",
-                                    name: "title",
-                                    label: "Enable",
-                                    required: true,
-                                },
-                                {
-                                    type: "object",
-                                    name: "feature_item",
-                                    label: "Featured Items",
-                                    list: true,
-                                    fields:
-                                        [
-                                            {
-                                                type: "string",
-                                                name: "name",
-                                                label: "Name",
-                                                required: true,
-                                            },
-                                            {
-                                                type: "image",
-                                                name: "image",
-                                                label: "Image",
-                                                required: true,
-                                            },
-                                            {
-                                                label: "Link",
-                                                type: "string",
-                                                name: "link",
-                                            },
-                                            {
-                                                type: "rich-text",
-                                                name: "content",
-                                                label: "Content",
-                                                isBody: true,
-                                            }
-                                        ]
-                                }
-                            ]
                     }
                 ],
             defaultItem: () => {
@@ -386,6 +335,54 @@ export default {
                 }
             }
         },
+        // recent audits
+        {
+            type: "object",
+            name: "Recent_audits",
+            label: "Recent audits",
+            fields:
+                [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Enable",
+                        required: true,
+                    },
+                    {
+                        type: "object",
+                        name: "feature_item",
+                        label: "Featured Items",
+                        list: true,
+                        fields:
+                            [
+                                {
+                                    type: "string",
+                                    name: "name",
+                                    label: "Name",
+                                    required: true,
+                                },
+                                {
+                                    type: "image",
+                                    name: "image",
+                                    label: "Image",
+                                    required: true,
+                                },
+                                {
+                                    label: "Link",
+                                    type: "string",
+                                    name: "link",
+                                },
+                                {
+                                    type: "rich-text",
+                                    name: "content",
+                                    label: "Content",
+                                    isBody: true,
+                                }
+                            ]
+                    }
+                ]
+        },
+        // how we build algoprudence
         {
             type: "object",
             name: "how_we_build_algoprudence",
@@ -435,9 +432,14 @@ export default {
                         label: "Title"
                     },
                     {
+                        type: "image",
+                        name: "image",
+                        label: "Image above button"
+                    },
+                    {
                         type: "string",
                         name: "button_text",
-                        label: "Our working method button text"
+                        label: "Button text"
                     },
                     {
                         type: "object",
@@ -478,6 +480,29 @@ export default {
                         type: "string",
                         name: "title",
                         label: "Title"
+                    }
+                ]
+        },
+        {
+            type: "object",
+            name: "newsletter",
+            label: "Newsletter",
+            fields:
+                [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Title"
+                    },
+                    {
+                        type: "string",
+                        name: "content",
+                        label: "Content"
+                    },
+                    {
+                        type: "string",
+                        name: "button_text",
+                        label: "Button text"
                     }
                 ]
         }

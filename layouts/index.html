@@ -1,6 +1,8 @@
 {{ define "main" }}
 <script src="/js/home_script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
 
 <!-- Banner -->
 {{ with .Params.Banner }}
@@ -39,7 +41,7 @@
 
       <!-- image -->
       <div class="col-lg-6 col-md-12 col-sm-12 order-md-3 order-lg-2">
-        <img src='{{ .image2  }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
+        <img src='{{ .image  }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
       </div>
       <!-- image -->
     </div>
@@ -176,7 +178,7 @@
 {{ with .Params.Activity_Feed}}
 {{ if .enable }}
 <section class="section-top">
-  <div class="container" style="background-color: #eef2f6;">
+  <div class="container" style="background-color:#deecf7;">
     <div class="row align-items-center">
 
       <!-- desktop version -->
@@ -185,8 +187,11 @@
         <!-- Featured activities -->
         {{ if .featured_activities }}
         <div class="row mt-5">
-          <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "featured" }}</h2>
+          <!-- title featured section -->
+          <h3 class="section-title col-md-4" style="color: #005aa7;">{{ i18n "featured" }}</h3>
+          <!-- /title featured section -->
         </div>
+
         {{ range .featured_activities }}
         <div class="clickable-wrapper" data-href="{{.link | relURL }}">
           <div class="row p-5" style="background-color: #ffffff;">
@@ -195,25 +200,34 @@
             </div>
             <div class="col-9">
               <div class="row align-items-center">
-                <h4 class="mb-2" style="color: #005aa7;">
-                  {{.title}}
-                </h4>
-                <p style="color: #777">{{.intro | markdownify}} <a href="{{.link | relURL}}">{{ i18n
-                    "read_more" }}</a>
+
+                <!-- title featured article -->
+                <h3 class="mb-2" style="color: #005aa7;">{{.title}}</h3>
+                <!-- /title featured article -->
+
+                <!-- intro text -->
+                <p style="color: #777">
+                  {{.intro | markdownify}}
+                  <a href="{{.link | relURL}}">{{ i18n "read_more" }}</a>
                 </p>
+                <!-- intro text -->
               </div>
+
+              <!-- metadata -->
               <div class="row" style="position:relative;">
                 {{ if .date }}
-                <span style="color:#005aa7;" class="mr-1 mb-2 px-0 py-1 mx-0">
+                <span style="color:#005aa7;" class="mr-1 mb-2 px-1 py-1 mx-0">
                   {{.date }}
                 </span>
                 {{ end }}
                 {{ if .type }}
-                <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-2">
                   {{ .type }}
                 </span>
                 {{ end }}
               </div>
+              <!-- /metadata -->
+
             </div>
           </div>
         </div>
@@ -224,28 +238,38 @@
         <!-- Activities -->
         {{ if .activities }}
         <div class="row mt-5">
-          <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "recent-activity" }}</h2>
+          <!-- title recent activities section -->
+          <h3 class="section-title col-md-4" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+          <!-- /title recent activities section -->
         </div>
         {{ range .activities }}
         <a href="{{ .link | relURL }}">
-          <div class="row justify-content-between my-4">
+
+          <div class="row justify-content-between mb-4">
+            
+            <!-- image -->
             <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
               <img class="img-fluid about-img p-5"  src="{{.image}}" />
             </div>
+            <!-- /image -->
+
+            <!-- title -->
             <div class="col" style="background-color: #ffffff;">
               <div class="row align-items-center">
-                <h4 class="my-4 mx-3" style="color: #005aa7;">
+                <h4 class="my-4 ml-3 mr-5" style="color: #005aa7;">
                   {{.title}}
                 </h4>
               </div>
+              <!-- /title -->
+
               <div class="row" style="position: relative; bottom: 0;">
                 {{ if .date }}
-                <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 ml-2">
                   {{.date }}
                 </span>
                 {{ end }}
                 {{ if .type }}
-                <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                <span style="background-color: #005aa7; color: #ffffff;" class="mb-2 px-2 py-1">
                   {{ .type }}
                 </span>
                 {{ end }}
@@ -259,7 +283,7 @@
 
         <!-- More -->
         <div class="row mt-4 pb-3 justify-content-center d-flex">
-          <a href="{{.view_all_link}}"><label class="btn">{{.view_all_text}}</label></a>
+          <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
         </div>
         <!-- /More -->
 
@@ -273,7 +297,7 @@
       <!-- Featured activities -->
       {{ if .featured_activities }}
       <div class="row mt-5">
-        <h2 class="section-title col-md-4" style="color:#005aa7; font-size:20px;">{{ i18n "featured" }}</h2>
+        <h3 class="section-title col-md-4" style="color:#005aa7;">{{ i18n "featured" }}</h3>
       </div>
       {{ range .featured_activities }}
       <div class="clickable-wrapper" data-href="{{.link | relURL }}">
@@ -283,11 +307,13 @@
           </div>
           <div class="col-12">
             <div class="row align-items-center">
-              <h4 class="mb-2" style="color: #005aa7;">
-                {{.title}}
-              </h4>
-              <p style="color: #777">{{.intro | markdownify}} <a href="{{.link | relURL}}">{{ i18n
-                  "read_more" }}</a>
+
+              <!-- title -->
+              <h3 class="mb-2" style="color:#005aa7;">{{.title}}</h3>
+              <!-- /title -->
+
+              <p style="color: #777">{{.intro | markdownify}} 
+                <a href="{{.link | relURL}}">{{ i18n "read_more" }}</a>
               </p>
             </div>
             <div class="row" style="position:relative;">
@@ -312,7 +338,11 @@
       <!-- Activities -->
       {{ if .activities }}
       <div class="row mt-5">
-        <h2 class="section-title col-md-4" style="color: #005aa7; font-size: 20px;">{{ i18n "recent-activity" }}</h2>
+
+        <!-- title -->
+        <h3 class="section-title col-12" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+        <!-- /title -->
+
       </div>
       {{ range .activities }}
       <a href="{{ .link | relURL }}">
@@ -347,7 +377,7 @@
 
       <!-- More -->
       <div class="row mt-4 pb-3 justify-content-center d-flex">
-        <a href="{{.view_all_link}}"><label class="btn">{{.view_all_text}}</label></a>
+        <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
       </div>
       <!-- /More -->
 
@@ -370,11 +400,11 @@
 
     <div class="row d-flex flex-wrap align-items-center">
 
-      <!-- title -->
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
-        <h2 class="section-title" style="font-size:16px; color: #005aa7;">{{ .title | markdownify }}</h2>
+        <!-- title -->
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+        <!-- /title -->
       </div>
-      <!-- /title -->
 
       <!-- SIDN -->
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
@@ -527,8 +557,7 @@
       <div class="col-12 py-4 border-top">
         <div class="feature-card-transparant">
           <i class="{{.icon}} mb-3" style="color:white; display:inline-block; font-size:22px;">
-            <h4 class=""
-              style="color:white; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
+            <h4 style="color:white; display:inline-block; padding-left:10px; font-weight:100;">
               {{ .name | markdownify }}
             </h4>
           </i>
@@ -548,9 +577,8 @@
 {{ end }}
 <!-- /Distinctive in -->
 
-
 <!-- Areas of AI expertise -->
-{{ with .Params.areas_of_ai_expertise }}
+{{ with .Params.Areas_of_AI_expertise }}
 {{ if .enable }}
 <section class="section bg-white">
   <div class="container">
@@ -597,8 +625,7 @@
     <div class="col-12 m-4 border-top-blue">
       <div class="feature-card-transparant">
         <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
-          <h4 class=""
-            style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
             {{ .name | markdownify }}
           </h4>
         </i>
@@ -626,7 +653,8 @@
 <!-- /Areas of AI expertise -->
 
 <!-- Recent audits -->
-{{with .recent_audits}}
+{{with .Params.Recent_audits}}
+{{ if .enable }}
 <section class="section-none bg-white">
   <div class="container">
 
@@ -663,10 +691,10 @@
         <img class="img-fluid about-img-mobile" src="{{.image}}"/>
       </div>
       <div class="col-12 clickable-wrapper mt-5 mb-5" data-href="{{.link | relURL }}">
-        <h4 class="" style="color: #005aa7; font-size:16px;">
+        <h4 class="" style="color: #005aa7;">
           {{ .name | markdownify }}
         </h4>
-        <p style="font-size:14px;">
+        <p>
           {{.content | markdownify}}
         </p>
       </div>
@@ -678,10 +706,11 @@
 </section>
 {{end}}
 {{end}}
+{{end}}
 <!-- /Recent audits -->
 
 <!-- Building algoprudence -->
-{{ with .Params.how_we_build_algoprudence }}
+{{ with .Params.Building_algoprudence }}
 <section class="section-none bg-white">
   <div class="layer" style="background-color: #ffffff;">
     <div class="container mt-5">
@@ -768,64 +797,103 @@
 {{end}}
 <!-- /Building algoprudence -->
 
-<!-- advantages of algoprudence -->
-{{ with .Params.advantages_of_algoprudence}}
+<!-- Advantages of algoprudence -->
+{{ with .Params.Advantages_of_algoprudence}}
 <section class="section bg-lightblue" >
-    <div class="container">
+  <div class="container">
 
+    <div class="row" style="padding:50px 0px;">
       <!-- title -->
-      <div class="row" style="padding:50px 0px;">
-        <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
-      </div>
+      <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
       <!-- /title -->
+    </div>
 
-      <!-- advantages of algoprudence elements -->
-      <div class="row">
-        {{ range .feature_item }}
-        <div class="col-md-6 col-sm-12 mb-4">
-          <div style="padding:30px;">
-            <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
-            <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
-              {{ .name | markdownify }}
-            </h4>
-            <p>{{.content | markdownify}}</p>
-          </div>
+    <!-- advantages -->
+
+    <!-- desktop version -->
+    <div class="row desktop">
+      {{ range .feature_item }}
+      <div class="col-md-6 col-sm-12 mb-4 border-left-blue">
+        <div class="feature-card-transparant" style="padding:30px;">
+          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
+          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+            {{ .name | markdownify }}
+          </h4>
+          <p>{{.content | markdownify}}</p>
         </div>
-        {{ end }}
+      </div>
+      {{ end }}
 
-        <!-- button -->
-        <div class="col-md-6 col-sm-12 mb-4">
-          <div class="text-center">
+      <!-- button -->
+      <div class="col-md-6 col-sm-12 mb-4 d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-12">
+            <img class="img-fluid" src="{{.image}}" style="height:150px; display:block; margin:auto;"/>
             <a class="btn-link" href="">
-              <h3 class="btn" style="color:#ffffff; font-weight:600;">
+              <h3 class="btn" style="color:#ffffff; font-weight:600; margin-top:30px;">
                 {{.button_text}}
               </h3>
             </a>
           </div>
         </div>
-        <!-- /button -->
-
       </div>
-      <!-- /advantages of algoprudence elements -->
+      <!-- /button -->
 
     </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="row justify-content-center mobile">
+      {{ range .feature_item }}
+      <div class="col-12 m-4 border-top-blue">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
+          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+            {{ .name | markdownify }}
+          </h4>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- button -->
+      <div class="col-12 mb-4 d-flex align-items-center justify-content-center" style="margin-top:60px;">
+        <div class="row">
+          <div class="col-12">
+            <img class="img-fluid" src="{{.image}}" style="height:200px; display:block; margin:auto;"/>
+            <a class="btn-link" href="" style="">
+              <h3 class="btn" style="color:#ffffff; font-weight:600; margin-top:50px;">
+                {{.button_text}}
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /button -->
+
+    </div>
+    <!-- /mobile version -->
+
+    <!-- /advantages -->
+
   </div>
 </section>
 {{end}}
-<!-- /advantages of algoprudence -->
+<!-- /Advantages of algoprudence -->
 
 <!-- gif animation -->
-{{ with .Params.title_gif}}
+{{ with .Params.Title_gif}}
 <section class="section-none bg-white">
   <div class="container">
     <div class="row">
 
       <div class="container pinDiv2">
-        <!-- title -->
+        
         <div class="row">
+          <!-- title -->
           <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
+          <!-- /title -->
         </div>
-        <!-- /title -->
 
         <!-- algoprudence animation -->
         <div class="row" style="display: flex; justify-content:center; align-items:center; margin-top:50px;">
@@ -847,11 +915,13 @@
 <section class="section-none bg-white" style="margin-top:700px;">
   <div class="container">
     <div class="row">
+      <!-- title -->
       <h3 style="color: #005aa7;">{{.title}}</h3>
+      <!-- /title -->
     </div>
     <div class="row" style="margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
       <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
-        <img src="/images/cover.png" width="600px" />
+        <img src="/images/video/cover.png" width="600px" />
         <span class="playbutton"></span>
       </a>
     </div>
@@ -859,47 +929,5 @@
 </section>
 {{ end }}
 <!-- /Video -->
-
-<!-- Newsletter -->
-{{ with .Params.Get_in_touch }}
-<section class="section bg-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 content">
-
-        <!-- title -->
-        <h3 class="section-title" style="color: #005aa7;">
-          {{ .title | markdownify }}
-        </h3>
-        <!-- /title -->
-
-        <!-- content -->
-        <div class="wrapper" style="width:90%">
-          <p>{{ .content | markdownify }}</p>
-        </div>
-        <!-- /content -->
-      </div>
-
-      <!-- Form -->
-      <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
-          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="{{ i18n `yourname` }}">
-          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="{{ i18n `youremail` }}">
-          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="{{ i18n `subject` }}">
-          <textarea name="message" id="message" class="form-control mb-3"
-            placeholder="{{ i18n `yourmessage` }}"></textarea>
-          <div class="wrapper" style="text-align:center;">
-            <button type="submit" value="send" class="btn btn-primary">{{ i18n `sendnow` }}</button>
-          </div>
-        </form>
-      </div>
-      <!-- /Form -->
-
-    </div>
-  </div>
-</section>
-
-{{ end }}
-<!-- /Newsletter -->
 
 {{ end }}

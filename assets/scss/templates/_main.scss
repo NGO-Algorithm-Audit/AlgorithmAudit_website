@@ -384,7 +384,6 @@ a.post-title {
     left: 2rem;
   }
 
-
   .notices.tip p {
     border-top: 30px solid #78C578;
     background: $white;
@@ -451,6 +450,10 @@ a.post-title {
     margin-bottom: 0 !important;
     font-size: 100%;
   }
+}
+
+ul.dashed > li::before {
+  content: "– ";
 }
 
 

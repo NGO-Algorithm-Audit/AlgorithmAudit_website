@@ -4,22 +4,23 @@ title: 'Risk Profiling for Social Welfare Reexamination (AA:2023:02)'
 icon: fa-poll-h
 key_takeaways:
   - title: Algorithmic profiling is possible under strict conditions
-    content: >-
+    content: >
       The use of algorithmic profiling to re-examine whether social welfare
       benefits have been duly granted, is acceptable if applied responsibly.
   - title: Profiling must not equate suspicion
-    content: Re-examination needs to be based more on service and less on distrust.
+    content: |
+      Re-examination needs to be based more on service and less on distrust.
   - title: Diversity in selection methods
-    content: >-
+    content: >
       To avoid tunnel vision and negative feedback loops, algorithmic profiling
       ought to be combined with expert-driven profiling and random sampling.
   - title: Well-considered use of profiling criteria
-    content: >-
+    content: >
       Caring to avoid (proxy) discrimination and other undesirable forms of
       differentiation, the normative advice commission assessed variables
       individually on their eligibility for profiling (see Infographic).
   - title: Explainability requirements for machine learning
-    content: >-
+    content: >
       It is necessary that the sampling of residents can be explained throughout
       the entire decision-making process. Complex training methods for variable
       selection, such as the xgboost algorithm discussed in this case study, are
@@ -44,10 +45,14 @@ summary: >
   not meet this explainability criterion. This advice is directed towards all
   Dutch and European municipalities that use or consider using profiling methods
   in the context of social services.
-sources: ''
+sources: >
+  Unsolicited research, build upon [freedom of information
+  requests](https://www.vpro.nl/argos/media/luister/argos-radio/onderwerpen/2021/In-het-vizier-van-het-algoritme-.html)
+  submitted by investigative journalists.
 additional_content:
   - title: Presentation
     content: "The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found\_[here](https://algorithmaudit.eu/pressroom).\n"
+    image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
     width: 12
 algoprudence:
   title: Algoprudence
@@ -73,11 +78,62 @@ normative_advice_members:
       of Groningen
 funded_by:
   - url: 'https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool'
-    image: /images/sidn.png
+    image: /images/supported_by/sidn.png
   - url: 'https://europeanaifund.org/'
-    image: /images/EUAISFund.png
+    image: /images/supported_by/EUAISFund.png
   - url: >-
       https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
-    image: /images/BZK.jpg
+    image: /images/supported_by/BZK.jpg
+subtitle: >
+  The commission judges that algorithmic risk profiling can be used under strict
+  conditions for sampling residents receiving social welfare for re-examination.
+  The aim of re-examination is a leading factor in judging profiling criteria.
+image: /images/svg-illustrations/illustration_cases.svg
+actions:
+  - title: Amsterdam
+    description: |
+      Amsterdam
+    image: /images/events/JPAO.jpg
+    date: 22-02-2024
+  - title: News item Binnenlands Bestuur
+    description: >
+      News website for Dutch public sector administration reported on
+      AA:2023:02:A. See
+      [link](https://www.binnenlandsbestuur.nl/digitaal/algoritmische-profilering-onder-strikte-voorwaarden-mogelijk).
+    image: /images/algoprudence/AA202302/logo-bb.svg
+    date: 30-11-2023
+    facets:
+      - value: news
+        label: news
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

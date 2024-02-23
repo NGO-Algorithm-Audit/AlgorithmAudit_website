@@ -1,59 +1,67 @@
 ---
-Supported_by:
-  enable: true
-  Suported_by:
-    - title: Supported by
-      img_SIDN:
-        - images/sidn.png
-      img_EUAIS:
-        - images/EUAISFund.png
-      img_NLAIC:
-        - images/NLAIC.png
-      img_BZK:
-        - images/BZK.jpg
-      img_HAI:
-        - images/HAI.png
-Video: null
-How_we_work:
-  enable: true
-  service_item:
-    - title: How we work
-      images:
-        - images/howwework.svg
-      content: ''
-      button:
-        enable: true
-        label: Algorithms we have reviewed
-        link: algoprudence
-AA_expert_hub:
-  enable: true
-  service_item:
-    - title: Who we work with
-      content: >-
-        We work together with international experts from various backgrounds,
-        e.g. ethicists, legal professionals, data scientists. The composition of
-        audit commissions varies per case. Most of the experts are affiliated
-        with academic institutions.
-Get_in_touch:
-  enable: true
-  title: Get in touch
-  content: >-
-    Do you have an ethical issue for review? Or want to share ideas? Let us
-    know!
 Banner:
-  image2: /images/main_illustration.svg
+  image2: /images/svg-illustrations/main_illustration.svg
   tag: definitie
   title: al-go-pru-dentie
   phonetica: /al.ɡo-ˈpru.dεn(t)si/
   type: zelfstandig naamwoord
   description1: Normatieve oordeelsvorming over verantwoorde AI
-  description2: Gids voor het gedecentraliseerd beslechten van mensenrechtenspanningen
+  description2: Richtlijn voor gedecentraliseerde beslechting van mensenrechtenspanningen
   description3: Jurisprudentie voor algoritmes
 Slogan:
   text:
     - title: Een Europees kennisplatform voor
       text1: AI bias testing
       text2: normatieve AI standaarden
+Activity_Feed:
+  enable: true
+  button_text: Meer evenementen...
+  button_link: /events
+  featured_activities:
+    - title: >-
+        Algoprudentie (AA:2023:02) Risicoprofilering heronderzoek
+        bijstandsuitkering
+      intro: >
+        De commissie oordeelt dat algoritmische risicoprofilering onder strikte
+        voorwaarden kan worden ingezet voor het selecteren van burgers met een
+        bijstandsuitkering voor heronderzoek.
+      link: /algoprudence
+      image: >-
+        /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
+      date: 29-11-2023
+      type: algoprudence
+  activities:
+    - title: >-
+        Presentatie Fundamentele Rechten Impact Assessments (FRIAs) en
+        stakeholder panels JTC21 CEN-CENELEC
+      link: /events
+      image: /images/events/jtc21.jpg
+      date: 13-02-2024
+      type: presentation
+    - title: AP Algoritmeseminar paneldiscussie – Het auditeren van algoritmes
+      link: /events
+      image: /images/events/dutch-data-protection.jpg
+      date: 08-02-2024
+      type: presentation
+    - title: RUG AI Wet event paneldiscussie
+      link: /events
+      image: /images/events/RUG.png
+      date: 06-02-2024
+      type: presentation
+Supported_by:
+  enable: true
+  Suported_by:
+    - title: Supported by
+      img_SIDN:
+        - images/supported_by/sidn.png
+      img_EUAIS:
+        - images/supported_by/EUAISFund.png
+      img_NLAIC:
+        - images/supported_by/NLAIC.png
+      img_BZK:
+        - images/supported_by/BZK.jpg
+      img_HAI:
+        - images/supported_by/HAI.png
 Distincive_in:
   enable: true
   title: Distinctive in
@@ -73,11 +81,12 @@ Distincive_in:
     - name: Public knowledge
       icon: fab fa-slideshare
       content: >
-        All our audits and corresponding advice (*algoprudence*) are made [<span
-        style="color:#005aa7">publicly available</span>](/algoprudence),
+        All our audits and corresponding advice (*algoprudence*) are made <a
+        href="https://algorithmaudit.eu/algoprudence/"
+        style="color:white;text-decoration: underline;">publicly available</a>,
         increasing collective knowledge how to deploy and use algorithms in an
         responsible way
-areas_of_ai_expertise:
+Areas_of_AI_expertise:
   enable: true
   title: Areas of AI expertise
   width_m: 4
@@ -95,31 +104,30 @@ areas_of_ai_expertise:
       content: >
         Context-dependent review of ML and DL confusion matrix-based evaluation
         metrics, such as False Positives (FPs) and False Negatives (FNs)
-    - name: Public knowledge
+    - name: Ranking
       icon: fas fa-ranking-star
       content: >
-        All our cases and corresponding advice (*algoprudence*) are made [<span
-        style="color:#005aa7">publicly available</span>](/algoprudence),
-        increasing collective knowledge how to deploy and use algorithms in an
-        ethical way
-  recent_audits:
-    title: Recent audits
-    feature_item:
-      - name: Risk Profiling Social Welfare Re-examination
-        image: /images/front_AA202302A.png
-        link: /algoprudence
-        content: >
-          Normative advice commission provides rationales why these variables
-          are eligible or not as a profiling selection criterion for a xgboost
-          algorithm
-      - name: Preventing prejudice
-        image: /images/front_AA202401TR.png
-        link: /events
-        content: >
-          Assessment of risk distributions through Z-tests and bias test for
-          various steps in algorithmic-driven decision-making process
-how_we_build_algoprudence:
-  title: How we audit
+        Recommender systems are everywhere. With the new Digital Services Act
+        (DSA) came into forces last summer, auditing ranking systems is highly
+        relevant
+Recent_audits:
+  title: Recent audits
+  feature_item:
+    - name: Risk Profiling Social Welfare Re-examination
+      image: /images/reports/front_AA202302A.png
+      link: /algoprudence
+      content: >
+        Normative advice commission provides rationales why these variables are
+        eligible or not as a profiling selection criterion for a xgboost
+        algorithm
+    - name: Preventing prejudice
+      image: /images/reports/front_AA202401TR.png
+      link: /events
+      content: >
+        Assessment of risk distributions through Z-tests and bias test for
+        various steps in algorithmic-driven decision-making process
+Building_algoprudence:
+  title: Building _algoprudence_
   button_text: Our working method
   steps:
     - title: Indentifying issue
@@ -139,30 +147,31 @@ how_we_build_algoprudence:
         Advice of commission is published together with problem statement on our
         website. Publicly sharing the problem statement and normative advice is
         called *algoprudence*
-advantages_of_algoprudence:
-  title: Voordelen van algoprudentie
-  button_text: Artikel over algoprudentie
+Advantages_of_algoprudence:
+  title: Advantages of algoprudence
+  image: /images/other/Awb.jpg
+  button_text: White paper on algoprudence
   feature_item:
-    - name: Leren & harmonizeren
+    - name: Learn & harmonize
       icon: fas fa-book-reader
       content: >
-        [<span style="color:#005aa7">></span>](/algoprudence) Aanjagen van
-        collectieve leerproces over de verantwoorde inzet van algoritmes
+        [<span style="color:#005aa7">></span>](/algoprudence) Ignite collective
+        learning process to deploy and audit responsible AI
 
 
-        [<span style="color:#005aa7">></span> ](/algoprudence)Harmonizeren van
-        interpretatie van open juridische normen
-    - name: Bevragen & bekritiseren
+        [<span style="color:#005aa7">></span> ](/algoprudence)Harmonizes the
+        resolution of ethical questions and the interpretation of open legal
+        norms
+    - name: Question & critisize
       icon: fas fa-comment
       content: >
-        [<span style="color:#005aa7">></span>](/algoprudence) Informeert het
-        publieke debat over normatieve keuzes die worden gemaakt door
-        algoritme-ontwikkelaars
+        [<span style="color:#005aa7">></span>](/algoprudence) Fostering
+        criticism on normative decision-making through transparency
 
 
-        [<span style="color:#005aa7">></span> ](/algoprudence) In democratisch
-        zicht kan discussie en debat plaatsvinden hoe normatieve keuzes
-        onderbouwd worden
+        [<span style="color:#005aa7">></span> ](/algoprudence)Informing public
+        debate with important ethical issues to be discussed within  democratic
+        sight
     - name: Inclusion & participation
       icon: fas fa-hands-helping
       content: >
@@ -173,44 +182,105 @@ advantages_of_algoprudence:
 
         [<span style="color:#005aa7">></span> ](/algoprudence)European answer to
         deploy responsible AI systems
-Activity_Feed:
-  enable: true
-  featured_title: Featured
-  view_all_text: View more...
-  view_all_link: /events
-  featured_activities:
-    - title: >-
-        Algoprudence (AA:2023:02) Risk Profiling for Social Welfare
-        Reexamination 
-      intro: >
-        The commission judges that algorithmic risk profiling can be used under
-        strict conditions for sampling residents receiving social welfare for
-        re-examination. The aim of re-examination is a leading factor in judging
-        profiling criteria.
-      link: /algoprudence
-      image: >-
-        /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
-      date: 29-11-2023
-      type: algoprudence
-  activities:
-    - title: Presentation at Dutch Data Protection Authority about algoprudence
-      link: /events
-      image: /images/events/dutch-data-protection.jpg
-      date: 17-01-2024
-      type: presentation
-    - title: Lunch lecture Bias Detection Tool study association TU Delft
-      link: /events
-      image: /images/events/mathematics and computer science tu delft.png
-      date: 08-01-2024
-      type: presentation
-    - title: Presentation on stakeholder panel WG1 Inclusiveness JTC21
-      link: /events
-      image: /images/events/jtc21.jpg
-      date: 07-01-2024
-      type: presentation
+Title_gif:
+  title: Jurisprudence for algorithms
 TheMovie:
-  title: Film
+  title: The Movie
+Newsletter:
+  title: Newsletter
+  content: Stay up to date about our work by subscribing to our newsletter
+  button_text: Subscribe
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

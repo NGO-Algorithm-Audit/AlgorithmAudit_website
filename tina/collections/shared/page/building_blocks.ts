@@ -5,14 +5,12 @@
 import title from "./title";
 import subtitle from "./subtitle";
 import image from "./image";
-import background_color from "./background_color";
 import { TinaField } from "tinacms";
 
 let building_blocks: TinaField[] = [
     title,
     subtitle,
     image,
-    background_color,
     {
         type: "rich-text",
         name: "body",
@@ -228,6 +226,66 @@ let building_blocks: TinaField[] = [
                         required: false,
                     }
                 ]
+            },
+            {
+                name: 'form',
+                label: 'Form',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        type: 'object',
+        name: 'form',
+        label: 'Form',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                name: 'button_text',
+                label: 'Button text',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                name: 'backend_link',
+                label: 'Back end link',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "object",
+                name: "questions",
+                label: "Questions",
+                list: true,
+                fields:
+                    [
+                        {
+                            type: "string",
+                            name: "question",
+                            label: "Question",
+                            required: true,
+                        }
+                    ]
             }
         ]
     },
@@ -244,13 +302,6 @@ let building_blocks: TinaField[] = [
                 required: true,
             },
             {
-                name: 'content',
-                label: 'Content',
-                type: 'string',
-                description: '',
-                required: true,
-            },
-            {
                 type: "object",
                 name: "team_members",
                 label: "Team members",
@@ -258,22 +309,22 @@ let building_blocks: TinaField[] = [
                 fields:
                     [
                         {
-                            type: "string",
-                            name: "name",
-                            label: "Name",
-                            required: true,
-                        },
-                        {
                             type: "image",
                             name: "image",
                             label: "image",
                             required: true,
                         },
                         {
+                            type: "string",
+                            name: "name",
+                            label: "Name",
+                            required: true,
+                        },
+                        {
                             type: "rich-text",
-                            name: "content",
-                            label: "Content",
-                            isBody: true,
+                            name: "bio",
+                            label: "Bio",
+                            isBody: false,
                         }
                     ]
             }

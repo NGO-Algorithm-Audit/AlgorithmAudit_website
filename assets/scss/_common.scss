@@ -3,11 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-::selection {
-  background-color:darken($color: #005aa7, $amount: 10);
-  color: $white;
-}
-
 body::-webkit-scrollbar {
   width: .5rem;
 }
@@ -655,6 +650,11 @@ textarea.form-control {
   width:75px;
   height:75px;
   margin-top:0px;
+}
+
+.crossfade2 {
+  position:relative;
+  display:inline-block;
 }
 
 .crossfade2 {

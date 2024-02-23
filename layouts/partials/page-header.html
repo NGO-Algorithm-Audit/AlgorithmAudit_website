@@ -2,18 +2,18 @@
   <div class="container">
     <div class="row" style="display: flex; align-items: center;">
 
-      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-lg-1">
+      <div class="col-lg-6 col-md-12 col-sm-12 mb-5 order-lg-1 order-md-2 order-sm-2">
         <!-- title -->
-        <h2 style="color:#005aa7;">{{ .Params.Title | markdownify }}</h2>
-        <div>
-          <p style="color:#005aa7; font-size: 18px;"> {{.Params.subtitle | markdownify}} </p>
+        <h2 class="pr-5" style="color:#005aa7;">{{ .Params.Title | markdownify }}</h2>
+        <div class="pr-5">
+          <p style="color:#777777; font-size: 16px;"> {{.Params.subtitle | markdownify}} </p>
         </div>
       </div>
       <!-- /al-go-pru-dence -->
 
       <!-- image -->
-      <div class="col-lg-6 col-md-12 col-sm-12 order-md-3 order-lg-2">
-        <img src='{{ .Params.image | relURL }}' class='img-fluid mt-5' style='margin-left: auto; margin-bottom: 100px; margin-right: auto; height: 400px;'>
+      <div class="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 text-center">
+        <img src='{{ .Params.image | relURL }}' class='img-fluid center-block mt-5' style='margin-bottom: 100px; height: 400px;'>
       </div>
       <!-- image -->
     </div>

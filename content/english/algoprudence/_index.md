@@ -1,17 +1,14 @@
 ---
 layout: overview
-title: Algoprudence
+title: Algoprudence overview
 subtitle: >
-  We are working on a variety of cases. Once an normative advice commission has
-  gathered and examined the ethical issue, the original problem statement and
-  corresponding advice will be published on this website. Others learn from our
-  algoprudence, help to improve it and utilize it as a best practice in similar
-  cases.
+  Algoprudence is available for different types of algorithms, among others
+  machine learning, profiling, public and private algorithms.
 
 
-  We are open to new cases. Please [<span style="color:#005aa7"> reach
-  out</span>](/#contactform) to us when you know a case for review.
-image: /images/case_repository.svg
+  We are open to new cases. Please <span style="color:#005aa7">
+  [submit](/algoprudence/submit-a-case/)</span> a case for review.
+image: /images/svg-illustrations/case_repository.svg
 facet_groups:
   - value: year
     title: Year
@@ -54,7 +51,8 @@ algoprudences:
       profiling criteria.
     image: >-
       /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
-    link: /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+    link: >-
+      /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
     facets:
       - value: aa202302
         label: 'AA:2023:02'
@@ -112,5 +110,13 @@ algoprudences:
         label: Profiling
       - value: ethical_issue_proxy
         label: Proxy discrimination
+team:
+  title: Algoprudence team
+  team_members:
+    - image: /images/people/JFP.svg
+      name: Jurriaan
+      bio: |
+        test
 ---
 
+{{< team >}}

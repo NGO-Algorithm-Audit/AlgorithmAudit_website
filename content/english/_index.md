@@ -1,47 +1,6 @@
 ---
-Supported_by:
-  enable: true
-  Suported_by:
-    - title: Supported by
-      img_SIDN:
-        - images/sidn.png
-      img_EUAIS:
-        - images/EUAISFund.png
-      img_NLAIC:
-        - images/NLAIC.png
-      img_BZK:
-        - images/BZK.jpg
-      img_HAI:
-        - images/HAI.png
-Video: null
-How_we_work:
-  enable: true
-  service_item:
-    - title: How we work
-      images:
-        - images/howwework.svg
-      content: ''
-      button:
-        enable: true
-        label: Algorithms we have reviewed
-        link: algoprudence
-AA_expert_hub:
-  enable: true
-  service_item:
-    - title: Who we work with
-      content: >-
-        We work together with international experts from various backgrounds,
-        e.g. ethicists, legal professionals, data scientists. The composition of
-        audit commissions varies per case. Most of the experts are affiliated
-        with academic institutions.
-Get_in_touch:
-  enable: true
-  title: Get in touch
-  content: >-
-    Do you have an ethical issue for review? Or want to share ideas? Let us
-    know!
 Banner:
-  image2: /images/main_illustration.svg
+  image: /images/svg-illustrations/main_illustration.svg
   tag: definition
   title: al-go-pru-dence
   phonetica: /æl.ɡə-ˈpruː.dəns/
@@ -54,6 +13,55 @@ Slogan:
     - title: A European knowledge platform for
       text1: AI bias testing
       text2: normative AI standards
+Activity_Feed:
+  enable: true
+  featured_title: Featured
+  button_text: View more...
+  button_link: /events
+  featured_activities:
+    - title: >-
+        Algoprudence (AA:2023:02) Risk Profiling for Social Welfare
+        Reexamination 
+      intro: >
+        The commission judges that algorithmic risk profiling can be used under
+        strict conditions for sampling residents receiving social welfare for
+        re-examination. The aim of re-examination is a leading factor in judging
+        profiling criteria.
+      link: /algoprudence
+      image: >-
+        /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
+      date: 29-11-2023
+      type: algoprudence
+  activities:
+    - title: Presentation at Dutch Data Protection Authority about algoprudence
+      link: /events
+      image: /images/events/dutch-data-protection.jpg
+      date: 17-01-2024
+      type: presentation
+    - title: Lunch lecture Bias Detection Tool study association TU Delft
+      link: /events
+      image: /images/events/mathematics and computer science tu delft.png
+      date: 08-01-2024
+      type: presentation
+    - title: Presentation on stakeholder panel WG1 Inclusiveness JTC21
+      link: /events
+      image: /images/events/jtc21.jpg
+      date: 07-01-2024
+      type: presentation
+Supported_by:
+  enable: true
+  Suported_by:
+    - title: Supported by
+      img_SIDN:
+        - images/supported_by/sidn.png
+      img_EUAIS:
+        - images/supported_by/EUAISFund.png
+      img_NLAIC:
+        - images/supported_by/NLAIC.png
+      img_BZK:
+        - images/supported_by/BZK.jpg
+      img_HAI:
+        - images/supported_by/HAI.png
 Distincive_in:
   enable: true
   title: Distinctive in
@@ -78,7 +86,7 @@ Distincive_in:
         style="color:white;text-decoration: underline;">publicly available</a>,
         increasing collective knowledge how to deploy and use algorithms in an
         responsible way
-areas_of_ai_expertise:
+Areas_of_AI_expertise:
   enable: true
   title: Areas of AI expertise
   width_m: 4
@@ -102,23 +110,24 @@ areas_of_ai_expertise:
         Recommender systems are everywhere. With the new Digital Services Act
         (DSA) came into forces last summer, auditing ranking systems is highly
         relevant
-  recent_audits:
-    title: Recent audits
-    feature_item:
-      - name: Risk Profiling Social Welfare Re-examination
-        image: /images/front_AA202302A.png
-        link: /algoprudence
-        content: >
-          Normative advice commission provides rationales why these variables
-          are eligible or not as a profiling selection criterion for a xgboost
-          algorithm
-      - name: Preventing prejudice
-        image: /images/front_AA202401TR.png
-        link: /events
-        content: >
-          Assessment of risk distributions through Z-tests and bias test for
-          various steps in algorithmic-driven decision-making process
-how_we_build_algoprudence:
+Recent_audits:
+  enable: true
+  title: Recent audits
+  feature_item:
+    - name: Risk Profiling Social Welfare Re-examination
+      image: /images/reports/front_AA202302A.png
+      link: /algoprudence
+      content: >
+        Normative advice commission provides rationales why these variables
+        are eligible or not as a profiling selection criterion for a xgboost
+        algorithm
+    - name: Preventing prejudice
+      image: /images/reports/front_AA202401TR.png
+      link: /events
+      content: >
+        Assessment of risk distributions through Z-tests and bias test for
+        various steps in algorithmic-driven decision-making process
+Building_algoprudence:
   title: Building _algoprudence_
   button_text: Our working method
   steps:
@@ -139,8 +148,9 @@ how_we_build_algoprudence:
         Advice of commission is published together with problem statement on our
         website. Publicly sharing the problem statement and normative advice is
         called *algoprudence*
-advantages_of_algoprudence:
+Advantages_of_algoprudence:
   title: Advantages of algoprudence
+  image: /images/other/Awb.jpg
   button_text: White paper on algoprudence
   feature_item:
     - name: Learn & harmonize
@@ -173,46 +183,21 @@ advantages_of_algoprudence:
 
         [<span style="color:#005aa7">></span> ](/algoprudence)European answer to
         deploy responsible AI systems
-Activity_Feed:
-  enable: true
-  featured_title: Featured
-  view_all_text: View more...
-  view_all_link: /events
-  featured_activities:
-    - title: >-
-        Algoprudence (AA:2023:02) Risk Profiling for Social Welfare
-        Reexamination 
-      intro: >
-        The commission judges that algorithmic risk profiling can be used under
-        strict conditions for sampling residents receiving social welfare for
-        re-examination. The aim of re-examination is a leading factor in judging
-        profiling criteria.
-      link: /algoprudence
-      image: >-
-        /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
-      date: 29-11-2023
-      type: algoprudence
-  activities:
-    - title: Presentation at Dutch Data Protection Authority about algoprudence
-      link: /events
-      image: /images/events/dutch-data-protection.jpg
-      date: 17-01-2024
-      type: presentation
-    - title: Lunch lecture Bias Detection Tool study association TU Delft
-      link: /events
-      image: /images/events/mathematics and computer science tu delft.png
-      date: 08-01-2024
-      type: presentation
-    - title: Presentation on stakeholder panel WG1 Inclusiveness JTC21
-      link: /events
-      image: /images/events/jtc21.jpg
-      date: 07-01-2024
-      type: presentation
+Title_gif:
+  title: Jurisprudence for algorithms
 TheMovie:
   title: The Movie
-title_gif:
-  title: Jurisprudence for algorithms
+Newsletter:
+  title: Newsletter
+  content: Stay up to date about our work by subscribing to our newsletter
+  button_text: Subscribe
 ---
+
+
+
+
+
+
 
 
 
