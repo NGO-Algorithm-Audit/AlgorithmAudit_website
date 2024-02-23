@@ -8,11 +8,11 @@ Banner:
   description1: Normatieve oordeelsvorming over verantwoorde AI
   description2: Richtlijn voor gedecentraliseerde beslechting van mensenrechtenspanningen
   description3: Jurisprudentie voor algoritmes
-Slogan:
-  text:
-    - title: Een Europees kennisplatform voor
-      text1: AI bias testing
-      text2: normatieve AI standaarden
+  slogan:
+    title: Een Europees kennisplatform voor
+    labels:
+      - text: AI bias testing
+      - text: normatieve AI standaarden
 Activity_Feed:
   enable: true
   button_text: Meer evenementen...

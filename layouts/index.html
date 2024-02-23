@@ -48,13 +48,9 @@
 
   </div>
 </section>
-{{ end }}
-<!-- /Banner -->
-
-{{ with .Params.Slogan }}
+{{ with .slogan }}
 <section class="banner banner-background" style="padding:0px;">
   <!-- European knowledge platform -->
-  {{ range .text }}
   <div class="row pinDiv1">
 
     <!-- desktop version -->
@@ -68,21 +64,21 @@
         <!-- slider -->
         <div class="ms-slider">
           <ul class="ms-slider__words">
+            {{ range .labels }}
             <li class="ms-slider__word">
               <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text1}}</i></h3>
+                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
               </div>
             </li>
+            {{ end }}
+            <!-- repeat the last item for the slider logic -->
+            {{ with index .labels 0 }}
             <li class="ms-slider__word">
               <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text2}}</i></h3>
+                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
               </div>
             </li>
-            <li class="ms-slider__word">
-              <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text1}}</i></h3>
-              </div>
-            </li>
+            {{ end }}
           </ul>
         </div>
         <!-- /slider -->
@@ -128,10 +124,11 @@
     <!-- /mobile version -->
 
   </div>
-  {{ end }}
   <!-- /European knowledge platform -->
 </section>
 {{ end }}
+{{ end }}
+<!-- /Banner -->
 
 <!-- Divider block elements -->
 <div class="row" id="gradient-line-blocks">

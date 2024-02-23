@@ -1,95 +1,4 @@
 ---
-Banner:
-  image: /images/svg-illustrations/main_illustration.svg
-  tag: definition
-  title: al-go-pru-dence
-  phonetica: /æl.ɡə-ˈpruː.dəns/
-  type: noun
-  description1: Case-based normative advice for ethical algorithms
-  description2: Guidance for decentralised self-assessment of fair AI
-  description3: Jurisprudence for algorithms
-Slogan:
-  text:
-    - title: A European knowledge platform for
-      text1: AI bias testing
-      text2: normative AI standards
-Activity_Feed:
-  enable: true
-  featured_title: Featured
-  button_text: View more...
-  button_link: /events
-  featured_activities:
-    - title: >-
-        Algoprudence (AA:2023:02) Risk Profiling for Social Welfare
-        Reexamination 
-      intro: >
-        The commission judges that algorithmic risk profiling can be used under
-        strict conditions for sampling residents receiving social welfare for
-        re-examination. The aim of re-examination is a leading factor in judging
-        profiling criteria.
-      link: /algoprudence
-      image: >-
-        /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
-      date: 29-11-2023
-      type: algoprudence
-  activities:
-    - title: Presentation at Dutch Data Protection Authority about algoprudence
-      link: /events
-      image: /images/events/dutch-data-protection.jpg
-      date: 17-01-2024
-      type: presentation
-    - title: Lunch lecture Bias Detection Tool study association TU Delft
-      link: /events
-      image: /images/events/mathematics and computer science tu delft.png
-      date: 08-01-2024
-      type: presentation
-    - title: Presentation on stakeholder panel WG1 Inclusiveness JTC21
-      link: /events
-      image: /images/events/jtc21.jpg
-      date: 07-01-2024
-      type: presentation
-Supported_by:
-  title: Supported by
-  funders:
-    - image: /images/supported_by/sidn.png
-      alt_text: sidn
-      link: https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool
-    - image: /images/supported_by/EUAISFund.png
-      alt_text:
-      link: https://europeanaifund.org/announcing-our-2022-open-call-grantees/
-    - image: /images/supported_by/NLAIC.png
-      alt_text: Nederlandse AI Coalition
-      link: https://nlaic.com/en/
-    - image: /images/supported_by/BZK.jpg
-      alt_text: Ministerie van Binnelandse Zaken en Konkinkrijksrelaties
-      link: https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
-    - image: /images/supported_by/HAI.png
-      alt_text:
-      link: https://hai.stanford.edu/ai-audit-challenge-2023-finalists
-Distincive_in:
-  enable: true
-  title: Distinctive in
-  width_m: 4
-  width_s: 2
-  feature_item:
-    - name: Independence
-      icon: fas fa-star-of-life
-      content: >
-        By working nonprofit and under explicit terms and conditions, we ensure
-        the independence and quality of our audits and normative advice
-    - name: Normative advice
-      icon: fas fa-search
-      content: >
-        Mindful of societal impact our commissions provide normative advice on
-        ethical issues that arise in algorithmic use cases
-    - name: Public knowledge
-      icon: fab fa-slideshare
-      content: >
-        All our audits and corresponding advice (*algoprudence*) are made <a
-        href="https://algorithmaudit.eu/algoprudence/"
-        style="color:white;text-decoration: underline;">publicly available</a>,
-        increasing collective knowledge how to deploy and use algorithms in an
-        responsible way
 Areas_of_AI_expertise:
   enable: true
   title: Areas of AI expertise
@@ -114,23 +23,6 @@ Areas_of_AI_expertise:
         Recommender systems are everywhere. With the new Digital Services Act
         (DSA) came into forces last summer, auditing ranking systems is highly
         relevant
-Recent_audits:
-  enable: true
-  title: Recent audits
-  feature_item:
-    - name: Risk Profiling Social Welfare Re-examination
-      image: /images/reports/front_AA202302A.png
-      link: /algoprudence
-      content: >
-        Normative advice commission provides rationales why these variables
-        are eligible or not as a profiling selection criterion for a xgboost
-        algorithm
-    - name: Preventing prejudice
-      image: /images/reports/front_AA202401TR.png
-      link: /events
-      content: >
-        Assessment of risk distributions through Z-tests and bias test for
-        various steps in algorithmic-driven decision-making process
 Building_algoprudence:
   title: Building _algoprudence_
   button_text: Our working method
@@ -195,80 +87,112 @@ Newsletter:
   title: Newsletter
   content: Stay up to date about our work by subscribing to our newsletter
   button_text: Subscribe
+Banner:
+  image: /images/svg-illustrations/main_illustration.svg
+  tag: definition
+  title: al-go-pru-dence
+  phonetica: /æl.ɡə-ˈpruː.dəns/
+  type: noun
+  description1: Case-based normative advice for ethical algorithms
+  description2: Guidance for decentralised self-assessment of fair AI
+  description3: Jurisprudence for algorithms
+  slogan:
+    title: A European knowledge platform for
+    labels:
+      - text: AI bias testing
+      - text: normative AI standards
+Activity_Feed:
+  enable: true
+  button_text: View more...
+  button_link: /events
+  featured_activities:
+    - title: >-
+        Algoprudence (AA:2023:02) Risk Profiling for Social Welfare
+        Reexamination 
+      intro: >
+        The commission judges that algorithmic risk profiling can be used under
+        strict conditions for sampling residents receiving social welfare for
+        re-examination. The aim of re-examination is a leading factor in judging
+        profiling criteria.
+      link: /algoprudence
+      image: >-
+        /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
+      date: 29-11-2023
+      type: algoprudence
+  activities:
+    - title: Presentation at Dutch Data Protection Authority about algoprudence
+      link: /events
+      image: /images/events/dutch-data-protection.jpg
+      date: 17-01-2024
+      type: presentation
+    - title: Lunch lecture Bias Detection Tool study association TU Delft
+      link: /events
+      image: /images/events/mathematics and computer science tu delft.png
+      date: 08-01-2024
+      type: presentation
+    - title: Presentation on stakeholder panel WG1 Inclusiveness JTC21
+      link: /events
+      image: /images/events/jtc21.jpg
+      date: 07-01-2024
+      type: presentation
+Supported_by:
+  title: Supported by
+  funders:
+    - image: /images/supported_by/sidn.png
+      link: 'https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool'
+      alt_text: sidn
+    - image: /images/supported_by/EUAISFund.png
+      link: 'https://europeanaifund.org/announcing-our-2022-open-call-grantees/'
+      alt_text: null
+    - image: /images/supported_by/NLAIC.png
+      link: 'https://nlaic.com/en/'
+      alt_text: Nederlandse AI Coalition
+    - image: /images/supported_by/BZK.jpg
+      link: >-
+        https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
+      alt_text: Ministerie van Binnelandse Zaken en Konkinkrijksrelaties
+    - image: /images/supported_by/HAI.png
+      link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
+      alt_text: null
+Distincive_in:
+  enable: true
+  title: Distinctive in
+  width_m: 4
+  width_s: 2
+  feature_item:
+    - name: Independence
+      icon: fas fa-star-of-life
+      content: >
+        By working nonprofit and under explicit terms and conditions, we ensure
+        the independence and quality of our audits and normative advice
+    - name: Normative advice
+      icon: fas fa-search
+      content: >
+        Mindful of societal impact our commissions provide normative advice on
+        ethical issues that arise in algorithmic use cases
+    - name: Public knowledge
+      icon: fab fa-slideshare
+      content: >
+        All our audits and corresponding advice (*algoprudence*) are made <a
+        href="https://algorithmaudit.eu/algoprudence/"
+        style="color:white;text-decoration: underline;">publicly available</a>,
+        increasing collective knowledge how to deploy and use algorithms in an
+        responsible way
+Recent_audits:
+  title: Recent audits
+  feature_item:
+    - name: Risk Profiling Social Welfare Re-examination
+      image: /images/reports/front_AA202302A.png
+      link: /algoprudence
+      content: >
+        Normative advice commission provides rationales why these variables are
+        eligible or not as a profiling selection criterion for a xgboost
+        algorithm
+    - name: Preventing prejudice
+      image: /images/reports/front_AA202401TR.png
+      link: /events
+      content: >
+        Assessment of risk distributions through Z-tests and bias test for
+        various steps in algorithmic-driven decision-making process
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

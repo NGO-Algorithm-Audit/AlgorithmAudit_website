@@ -20,7 +20,7 @@ export default {
                 {
                     label: "Image",
                     type: "image",
-                    name: "image2",
+                    name: "image",
                 },
                 {
                     label: "tag",
@@ -63,6 +63,35 @@ export default {
                     type: "string",
                     name: "description3",
                     required: true,
+                },
+                {
+                    label: "Slogan",
+                    type: "object",
+                    name: "slogan",
+                    fields: [
+                        {
+                            label: "Title",
+                            type: "string",
+                            name: "title",
+                            required: true
+                        },
+                        {
+                            label: "Labels",
+                            type: "object",
+                            name: "labels",
+                            required: true,
+                            list: true,
+                            description: "The slider only works for two elements",
+                            fields: [
+                                {
+                                    label: "Label",
+                                    type: "string",
+                                    name: "text",
+                                    required: true
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
