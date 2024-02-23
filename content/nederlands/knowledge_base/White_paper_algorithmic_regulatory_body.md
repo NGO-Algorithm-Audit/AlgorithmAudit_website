@@ -16,4 +16,4 @@ The new regulatory body seems to rely on the principle of ‘market supervises m
 
 <span style="font-size: 14px; font-style:italic">This white paper is published as an [op-ed](https://fd.nl/opinie/1462782/maak-nieuwe-algoritmewaakhond-een-bulldog-in-plaats-van-een-schoothond) in the Dutch newspaper *Het Financieele Dagblad* on December 30th 2022.</span>
 
-{{< pdf-frame title="White-paper" name="white-paper" articleUrl="https://drive.google.com/file/d/18GyjLGhKqzBmYIqWP8Y20BcxVbxyfuLR/preview" >}}
+{{< pdf_frame title="White-paper" name="white-paper" articleUrl="https://drive.google.com/file/d/18GyjLGhKqzBmYIqWP8Y20BcxVbxyfuLR/preview" >}}

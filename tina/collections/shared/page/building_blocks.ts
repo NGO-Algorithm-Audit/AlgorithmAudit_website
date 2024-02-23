@@ -132,7 +132,7 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
-                name: 'pdfframe',
+                name: 'pdf_frame',
                 label: 'PDF Frame',
                 match: {
                     start: '{{<',
@@ -140,26 +140,17 @@ let building_blocks: TinaField[] = [
                 },
                 fields: [
                     {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    },
-                    {
-                        name: 'name',
-                        label: 'Name',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    },
-                    {
                         name: 'articleUrl',
                         label: 'Article Url',
-                        type: 'string',
-                        description: '',
+                        type: 'image',
                         required: true,
                     },
+                    {
+                        name: 'width',
+                        label: 'Width',
+                        type: 'string',
+                        description: '50% is the default'
+                    }
                 ]
             },
             {

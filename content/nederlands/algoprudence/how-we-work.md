@@ -1,4 +1,5 @@
 ---
+background_color: '#ffffff'
 title: Onze werkwijze
 subtitle: >
   Door de jaren heen hebben we onze eigen auditmethodologie ontwikkeld. We
@@ -6,7 +7,6 @@ subtitle: >
   normatieve adviescommissies bijeenbrengen en hoe we uiteindelijke
   algoprudentie publiceren
 image: /images/svg-illustrations/main_illustration.svg
-background_color: '#ffffff'
 team:
   title: Team Algoprudentie
   team_members:
@@ -33,5 +33,7 @@ team:
 ![](/images/other/howwework.svg)
 
 Lees onze interne richtlijn Hoe een normatieve adviescommissie bijeen te brengen
+
+{{< pdf_frame title="Hoe we werken" name="Hoe we werken" articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" >}}
 
 {{< team >}}

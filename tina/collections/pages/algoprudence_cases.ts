@@ -179,7 +179,31 @@ let specific_fields : TinaField[] = [
                 {
                     type: "rich-text",
                     name: "description",
-                    label: "description"
+                    label: "description",
+                    templates: [
+                        {
+                            name: 'pdf_frame',
+                            label: 'PDF Frame',
+                            match: {
+                                start: '{{<',
+                                end: '>}}'
+                            },
+                            fields: [
+                                {
+                                    name: 'articleUrl',
+                                    label: 'Article Url',
+                                    type: 'image',
+                                    required: true,
+                                },
+                                {
+                                    name: 'width',
+                                    label: 'Width',
+                                    type: 'string',
+                                    description: '50% is the default'
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     type: "image",
@@ -193,11 +217,6 @@ let specific_fields : TinaField[] = [
                     label: "Date",
                     required: true,
                     description: "dd-MM-yyyy (i.e. 13-06-2024)"
-                },
-                {
-                    type: "image",
-                    name: "pdf",
-                    label: "PDF",
                 },
                 facets
             ]
@@ -218,7 +237,31 @@ let specific_fields : TinaField[] = [
                 {
                     type: "rich-text",
                     name: "description",
-                    label: "description"
+                    label: "description",
+                    templates: [
+                        {
+                            name: 'pdf_frame',
+                            label: 'PDF Frame',
+                            match: {
+                                start: '{{<',
+                                end: '>}}'
+                            },
+                            fields: [
+                                {
+                                    name: 'articleUrl',
+                                    label: 'Article Url',
+                                    type: 'image',
+                                    required: true,
+                                },
+                                {
+                                    name: 'width',
+                                    label: 'Width',
+                                    type: 'string',
+                                    description: '50% is the default'
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     type: "image",
@@ -232,11 +275,6 @@ let specific_fields : TinaField[] = [
                     label: "Date",
                     required: true,
                     description: "dd-MM-yyyy (i.e. 13-06-2024)"
-                },
-                {
-                    type: "image",
-                    name: "pdf",
-                    label: "PDF",
                 },
                 facets
             ]
