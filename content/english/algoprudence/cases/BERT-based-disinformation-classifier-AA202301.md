@@ -8,7 +8,9 @@ form:
   button_text: dsfsdf
   backend_link: sfds
   questions:
-    - question: Question1
+    - label: Question1
+      id: question1
+      type: text
 layout: case
 icon: fa-newspaper
 summary: >

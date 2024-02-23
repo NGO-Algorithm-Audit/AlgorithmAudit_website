@@ -1,9 +1,42 @@
 ---
+content: |
+  Helloi Test
+  {{< team >}}
 title: Submit a case
 subtitle: >
   We do solicited and unsolicited audits. If you want to share a case, feel free
   to fill in the below form to provide us with preliminary information.
 image: /images/svg-illustrations/case_repository.svg
+form:
+  title: Submit a case
+  button_text: Send
+  backend_link: 'https://formspree.io/f/xzbnrlan'
+  questions:
+    - label: Name of the algorithm
+      id: name
+      type: text
+    - label: Short description of the algorithm (max. 100 words)
+      id: description
+      type: textarea
+    - label: >-
+        Technical dimension – Description of data collection, used statistical
+        methodologies and used evaluation criteria 
+      id: dimensions
+      type: textarea
+    - label: >-
+        Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU
+        non-discrimination law 
+      id: legal-framework
+      type: textarea
+    - label: >-
+        Ethical issues – Description of the identified ethical issue given it's
+        technical and legal framework
+      id: ethical-issues
+      type: textarea
+    - label: Contact details
+      id: contact-details
+      type: email
+      placeholder: Email address
 team:
   title: Algoprudence team
   team_members:
@@ -23,32 +56,12 @@ team:
       name: Samaa Mohammad-Ulenberg
       bio: |
         Board member
-content: |
-  Helloi Test
-  {{< team >}}
-form:
-  title: Submit a case
-  button_text: Send
-  backend_link: 'https://formspree.io/f/xzbnrlan'
-  questions:
-    - question: Name of the algorithm
-    - question: Short description of the algorithm (max. 100 words)
-    - question: >-
-        Technical dimension – Description of data collection, used statistical
-        methodologies and used evaluation criteria 
-    - question: >-
-        Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU
-        non-discrimination law 
-    - question: >-
-        Ethical issues – Description of the identified ethical issue given it's
-        technical and legal framework
-    - question: Contact details
 ---
 
 {{< form >}}
 
+### Test
+
+dsf
+
 {{< team >}}
-
-#### Test 
-
-Hallo

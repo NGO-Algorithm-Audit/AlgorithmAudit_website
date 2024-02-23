@@ -30,19 +30,31 @@ form:
   button_text: Verstuur
   backend_link: 'https://formspree.io/f/xzbnrlan'
   questions:
-    - question: Naam van het algoritme
-    - question: Korte beschrijving van het algoritme (max. 100 woorden)
-    - question: >-
-        Technische dimensie – Beschrijving van dataverzameling, gebruikte
-        statistische methodologie en gebruikte evaluatiecriteria
-    - question: >-
-        Juridisch kader – Relevante wet- en regelgeving en open juridische
-        normen, in het bijzonder Algemene Verordening Gegevensbescherming, de
-        Algemene Wet Gelijke Behandeling (AWGB)
-    - question: >-
-        Ethische kwestie – Beschrijving van de geïdentificeerde ethische
-        kwesties gegeven de technische en juridische achtergrondinformatie
-    - question: Contactgegevens
+    - label: Name of the algorithm
+      id: name
+      type: text
+    - label: Short description of the algorithm (max. 100 words)
+      id: description
+      type: textarea
+    - label: >-
+        Technical dimension – Description of data collection, used statistical
+        methodologies and used evaluation criteria 
+      id: dimensions
+      type: textarea
+    - label: >-
+        Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU
+        non-discrimination law 
+      id: legal-framework
+      type: textarea
+    - label: >-
+        Ethical issues – Description of the identified ethical issue given it's
+        technical and legal framework
+      id: ethical-issues
+      type: textarea
+    - label: Contact details
+      id: contact-details
+      type: email
+      placeholder: Email address
 ---
 
 {{< form >}}

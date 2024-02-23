@@ -15,8 +15,12 @@
         <form action="{{ .backend_link | safeURL }}" method="POST">
           {{ range .questions }}
           <div class="my-5">
-            <span style="font-weight:500;">{{ .question | markdownify }}</span>
-            <input type="text" class="form-control my-2" id="name" name="name">
+            <label style="font-weight:500;" for="{{.id}}">{{ .label | markdownify }}</label>
+            {{ if eq .type "textarea" }}
+            <textarea type="text" class="form-control my-2" id="{{.id}}" name="{{.label}}" rows="4" cols="50"></textarea>
+            {{ else }}
+            <input type="{{.type}}" class="form-control my-2" id="{{.id}}" name="{{.label}}" placeholder="{{.placeholder}}" />
+            {{ end }}
           </div>
           {{ end }}
           <div class="wrapper" style="text-align:center;">

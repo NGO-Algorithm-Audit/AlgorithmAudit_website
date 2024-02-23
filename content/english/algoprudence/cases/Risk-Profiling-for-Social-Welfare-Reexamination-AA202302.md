@@ -105,6 +105,12 @@ actions:
     facets:
       - value: news
         label: news
+  - title: Title
+    description: |
+      Description
+    image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
+    date: 01-01-1969
+    pdf: /presentations/20231012_Introduction_AA_EN.pdf
 discussions:
   - title: Discussie punt 1
     description: |

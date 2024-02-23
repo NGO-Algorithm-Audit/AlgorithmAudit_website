@@ -298,9 +298,42 @@ let building_blocks: TinaField[] = [
                     [
                         {
                             type: "string",
-                            name: "question",
-                            label: "Question",
+                            name: "label",
+                            label: "Label",
                             required: true,
+                        },
+                        {
+                            type: "string",
+                            name: "id",
+                            label: "Id",
+                            required: true,
+                            description: "Unique identifier (as can be seen when recieving the submitted form)"
+                        },
+                        {
+                            type: "string",
+                            name: "type",
+                            label: "Type",
+                            required: true,
+                            options: 
+                            [
+                                {
+                                    value: "text",
+                                    label: "Text box"
+                                },
+                                {
+                                    value: "textarea",
+                                    label: "Text area"
+                                },
+                                {
+                                    value: "email",
+                                    label: "Email"
+                                }
+                            ]
+                        },
+                        {
+                            type: "string",
+                            name: "placeholder",
+                            label: "Placeholder"
                         }
                     ]
             }
