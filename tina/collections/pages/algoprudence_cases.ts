@@ -7,21 +7,6 @@ import building_blocks from "../shared/page/building_blocks";
 
 let specific_fields : TinaField[] = [
     {
-        type: "object",
-        name: "questions",
-        label: "Questions",
-        list: true,
-        fields:
-            [
-                {
-                    type: "string",
-                    name: "question",
-                    label: "Question",
-                    required: true,
-                }
-            ]
-    },
-    {
         type: "string",
         name: "layout",
         label: "Layout",
