@@ -14,7 +14,7 @@
 
         <!-- definition tag -->
         <div class="row" style="padding:0 30px; margin-bottom:30px;">
-          <h5 class="mr-1 mb-2 px-2 py-1 mx-1" style="background-color:#005aa7;color:#fff; font-weight:100;">{{ .tag }}
+          <h5 class="highlight-blue" style="font-weight:100;">{{ .tag }}
           </h5>
         </div>
         <!-- /definition tag -->
@@ -70,20 +70,17 @@
           <ul class="ms-slider__words">
             <li class="ms-slider__word">
               <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                    style="background-color:#005aa7;color:#fff">{{.text1}}</i></h3>
+                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text1}}</i></h3>
               </div>
             </li>
             <li class="ms-slider__word">
               <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                    style="background-color:#005aa7;color:#fff">{{.text2}}</i></h3>
+                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text2}}</i></h3>
               </div>
             </li>
             <li class="ms-slider__word">
               <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                    style="background-color:#005aa7;color:#fff">{{.text1}}</i></h3>
+                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text1}}</i></h3>
               </div>
             </li>
           </ul>
@@ -111,20 +108,17 @@
         <ul class="ms-slider__words">
           <li class="ms-slider__word">
             <div class="slider-wrapper mb-1 py-1">
-              <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                  style="background-color:#005aa7;color:#fff">{{.text1}}</i></h3>
+              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text1}}</i></h3>
             </div>
           </li>
           <li class="ms-slider__word">
             <div class="slider-wrapper mb-1 py-1">
-              <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                  style="background-color:#005aa7;color:#fff">{{.text2}}</i></h3>
+              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text2}}</i></h3>
             </div>
           </li>
           <li class="ms-slider__word">
             <div class="slider-wrapper mb-1 py-1">
-              <h3 style="color:#005aa7; font-weight:100;"><i class="mr-1 mb-2 px-2 py-1 mx-1"
-                  style="background-color:#005aa7;color:#fff">{{.text1}}</i></h3>
+              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text1}}</i></h3>
             </div>
           </li>
         </ul>
@@ -323,7 +317,7 @@
               </span>
               {{ end }}
               {{ if .type }}
-              <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">
+              <span class="highlight-blue">
                 {{ .type }}
               </span>
               {{ end }}
@@ -363,7 +357,7 @@
               </span>
               {{ end }}
               {{ if .type }}
-              <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">
+              <span class="highlight-blue">
                 {{ .type }}
               </span>
               {{ end }}
@@ -471,36 +465,33 @@
 
     <!-- desktop version -->
     <div class="col-12 text-center desktop">
-      <h1 style="color:#005aa7; font-weight:100;">
-        <div>
+        <h1 class="mb-4" style="color:#005aa7; font-weight:100;">
           Building
-          <i class="mr-1 mb-2 px-3 py-1 mx-1" style="background-color:#005aa7;color:#fff">AI auditing</i>
+          <i class="highlight-blue">AI auditing</i>
           capacity from a
-        </div>
+        </h1>
         <br>
-        <div>
+        <h1 style="color:#005aa7; font-weight:100;">
           from a
-          <i class="mr-1 mb-2 px-3 py-1 mx-1" style="background-color:#005aa7;color:#fff">not-for-profit</i>
+          <i class="highlight-blue">not-for-profit</i>
           perspective
-        </div>
-      </h1>
+        </h1>
     </div>
     <!-- /desktop version -->
 
     <!-- mobile version -->
     <div class="col-12 text-center mobile">
+      <h1 class="mb-2" style="color:#005aa7; font-weight:100;">
+        Building
+        <i class="highlight-blue">AI auditing</i>
+        <br />
+        capacity from a
+      </h1>
+      <br>
       <h1 style="color:#005aa7; font-weight:100;">
-        <div>
-          Building
-          <i class="mr-1 mb-2 px-3 py-1 mx-1" style="background-color:#005aa7;color:#fff">AI auditing</i>
-        </div>
-        <div class="p-5">
-          capacity from a
-        </div>
-        <div>
-          <i class="mr-1 mb-2 px-3 py-1 mx-1" style="background-color:#005aa7;color:#fff">not-for-profit</i>
-          perspective
-        </div>
+        from a
+        <i class="highlight-blue">not-for-profit</i>
+        perspective
       </h1>
     </div>
     <!-- /mobile version -->
@@ -712,7 +703,7 @@
 <!-- Building algoprudence -->
 {{ with .Params.Building_algoprudence }}
 <section class="section-none bg-white">
-  <div class="layer" style="background-color: #ffffff;">
+  <div class="" style="background-color: #ffffff;">
     <div class="container mt-5">
       <div class="row">
 
