@@ -11,7 +11,7 @@ other = "We are really sorry but there seems to be nothing here."
 other = "Name"
 
 [youremail]
-other = "Email"
+other = "Email address"
 
 [subject]
 other = "Subject"

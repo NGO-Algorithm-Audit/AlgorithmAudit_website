@@ -169,9 +169,12 @@ $(function () { // wait for document ready
 });
 
 // Remove preview value from input field
-$("#mce-EMAIL").click(function(event) { 
-    $('#mce-EMAIL').val(""); 
-}); 
+$(document).ready(function () {
+    $("#mce-EMAIL").click(function(event) {
+        $(this).attr("placeholder", "");
+    }); 
+});
+
 
 // Send subscibtion for newsletter
 (function($) 

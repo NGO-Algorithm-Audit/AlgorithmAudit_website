@@ -1,6 +1,6 @@
 ---
 Banner:
-  image2: /images/svg-illustrations/main_illustration.svg
+  image: /images/svg-illustrations/main_illustration.svg
   tag: definitie
   title: al-go-pru-dentie
   phonetica: /al.ɡo-ˈpru.dεn(t)si/
