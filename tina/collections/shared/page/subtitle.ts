@@ -1,9 +1,11 @@
 /**
  * @type {import('tinacms').TinaField}
  */
-export default {
+import { TinaField } from "tinacms";
+let subtitle : TinaField = {
     type: "rich-text",
     name: "subtitle",
     label: "Subtitle",
     required: true,
 };
+export default subtitle;

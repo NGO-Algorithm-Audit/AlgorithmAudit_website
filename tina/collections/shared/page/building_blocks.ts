@@ -6,9 +6,9 @@ import title from "./title";
 import subtitle from "./subtitle";
 import image from "./image";
 import background_color from "./background_color";
-import pdfFrame from "../templates/pdfFrame";
+import { TinaField } from "tinacms";
 
-export default [
+let building_blocks: TinaField[] = [
     title,
     subtitle,
     image,
@@ -133,7 +133,37 @@ export default [
                     }
                 ]
             },
-            pdfFrame,
+            {
+                name: 'pdfframe',
+                label: 'PDF Frame',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'Title',
+                        type: 'string',
+                        description: '',
+                        required: true,
+                    },
+                    {
+                        name: 'name',
+                        label: 'Name',
+                        type: 'string',
+                        description: '',
+                        required: true,
+                    },
+                    {
+                        name: 'articleUrl',
+                        label: 'Article Url',
+                        type: 'string',
+                        description: '',
+                        required: true,
+                    },
+                ]
+            },
             {
                 name: 'about_algorithm_audit_NL',
                 label: 'About algorithm audit NL',
@@ -250,3 +280,5 @@ export default [
         ]
     }
 ];
+
+export default building_blocks;

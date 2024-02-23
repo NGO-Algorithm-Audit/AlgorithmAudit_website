@@ -1,9 +1,12 @@
 /**
  * @type {import('tinacms').TinaField}
  */
-export default {
+
+import { TinaField } from "tinacms";
+let image : TinaField = {
     type: "image",
     name: "image",
     label: "image",
     required: true,
 };
+export default image;

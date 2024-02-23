@@ -1,9 +1,12 @@
 /**
  * @type {import('tinacms').TinaField}
  */
-export default {
+import { TinaField } from "tinacms";
+
+let title: TinaField = {
     type: "string",
     name: "title",
     label: "Title",
     required: true,
 };
+export default title;

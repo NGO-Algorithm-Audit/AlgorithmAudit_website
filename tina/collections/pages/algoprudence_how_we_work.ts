@@ -1,7 +1,7 @@
 /**
  * @type {import('tinacms').Collection}
  */
-import fields from "../shared/page/fields";
+import building_blocks from "../shared/page/building_blocks";
 
 export default {
     name: "algoprudence_how_we_work",
@@ -10,5 +10,5 @@ export default {
     match: {
         include: '**/algoprudence/how-we-work',
     },
-    fields: fields,
+    fields: building_blocks,
 };

@@ -2,7 +2,7 @@
  * @type {import('tinacms').Collection}
  */
 
-import fields from "../shared/page/fields";
+import building_blocks from "../shared/page/building_blocks";
 
 export default {
     name: "algoprudence_submit_a_case",
@@ -11,5 +11,5 @@ export default {
     match: {
         include: '**/algoprudence/submit-a-case',
     },
-    fields: fields,
+    fields: building_blocks,
 };

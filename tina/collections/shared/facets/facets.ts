@@ -1,7 +1,8 @@
 /**
  * @type {import('tinacms').TinaField}
  */
-export default {
+import { TinaField } from "tinacms";
+let facets : TinaField = {
     type: "object",
     name: "facets",
     label: "Categories",
@@ -26,4 +27,5 @@ export default {
             label: "Hide",
         }
     ]
-}
+};
+export default facets;
