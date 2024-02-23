@@ -154,6 +154,14 @@ Supported_by:
     - image: /images/supported_by/HAI.png
       link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
       alt_text: null
+Building_ai_audit_capacity:
+  lines:
+    - text_before: Building
+      text_highlighted: AI auditing
+      text_after: capacity from a
+    - text_before: from a
+      text_highlighted: not-for-profit
+      text_after: perspective
 Distincive_in:
   enable: true
   title: Distinctive in

@@ -257,6 +257,37 @@ export default {
                 }
             ]
         },
+        {
+            type: "object",
+            name: "Building_ai_audit_capacity",
+            label: "Building AI audit capacity",
+            fields: [
+                {
+                    type: "object",
+                    name: "lines",
+                    label: "Lines",
+                    list: true,
+                    fields: [
+                        {
+                            type: "string",
+                            name: "text_before",
+                            label: "Text before",
+                            required: true
+                        },
+                        {
+                            type: "string",
+                            label: "Highlighted text",
+                            name: "text_highlighted",
+                        },
+                        {
+                            type: "string",
+                            label: "Text after",
+                            name: "text_after",
+                        }
+                    ]
+                }
+            ]
+        },
         // Distinctive in
         {
             type: "object",

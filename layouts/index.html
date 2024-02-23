@@ -413,44 +413,42 @@
 <!-- /Supported by -->
 
 <!-- Building AI auditing capacity from a not-for-profit perspective -->
+{{ if .Params.Building_ai_audit_capacity }}
+{{ with .Params.Building_ai_audit_capacity}}
 <section class="section bg-white" style="margin:100px 0px;">
   <div class="container">
 
     <!-- desktop version -->
     <div class="col-12 text-center desktop">
+      {{ range .lines }}
         <h1 class="mb-4" style="color:#005aa7; font-weight:100;">
-          Building
-          <i class="highlight-blue">AI auditing</i>
-          capacity from a
+          {{ .text_before }}
+          <i class="highlight-blue">{{.text_highlighted}}</i>
+          {{.text_after}}
         </h1>
         <br>
-        <h1 style="color:#005aa7; font-weight:100;">
-          from a
-          <i class="highlight-blue">not-for-profit</i>
-          perspective
-        </h1>
+      {{ end }}
     </div>
     <!-- /desktop version -->
 
     <!-- mobile version -->
     <div class="col-12 text-center mobile">
-      <h1 class="mb-2" style="color:#005aa7; font-weight:100;">
-        Building
-        <i class="highlight-blue">AI auditing</i>
-        <br />
-        capacity from a
-      </h1>
-      <br>
-      <h1 style="color:#005aa7; font-weight:100;">
-        from a
-        <i class="highlight-blue">not-for-profit</i>
-        perspective
-      </h1>
+      {{ range .lines }}
+        <h1 class="mb-4" style="color:#005aa7; font-weight:100;">
+          {{ .text_before }}
+          <i class="highlight-blue">{{.text_highlighted}}</i>
+          <br />
+          {{.text_after}}
+        </h1>
+        <br>
+      {{ end }}
     </div>
     <!-- /mobile version -->
 
   </div>
 </section>
+{{ end }}
+{{ end }}
 <!-- /Building AI auditing capacity from a not-for-profit perspective -->
 
 <!-- Distinctive in -->
