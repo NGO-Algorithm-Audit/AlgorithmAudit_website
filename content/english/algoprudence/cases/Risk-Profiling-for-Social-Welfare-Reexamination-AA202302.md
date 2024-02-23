@@ -1,6 +1,11 @@
 ---
-layout: case
 title: 'Risk Profiling for Social Welfare Reexamination (AA:2023:02)'
+subtitle: >
+  The commission judges that algorithmic risk profiling can be used under strict
+  conditions for sampling residents receiving social welfare for re-examination.
+  The aim of re-examination is a leading factor in judging profiling criteria.
+image: /images/svg-illustrations/illustration_cases.svg
+layout: case
 icon: fa-poll-h
 key_takeaways:
   - title: Algorithmic profiling is possible under strict conditions
@@ -84,11 +89,6 @@ funded_by:
   - url: >-
       https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
     image: /images/supported_by/BZK.jpg
-subtitle: >
-  The commission judges that algorithmic risk profiling can be used under strict
-  conditions for sampling residents receiving social welfare for re-examination.
-  The aim of re-examination is a leading factor in judging profiling criteria.
-image: /images/svg-illustrations/illustration_cases.svg
 actions:
   - title: Amsterdam
     description: |
@@ -107,33 +107,4 @@ actions:
         label: news
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{< algoprudence_case >}}

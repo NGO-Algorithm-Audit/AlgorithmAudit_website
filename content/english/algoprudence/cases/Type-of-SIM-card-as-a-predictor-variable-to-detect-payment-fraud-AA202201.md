@@ -1,6 +1,8 @@
 ---
-layout: case
 title: 'Type of SIM card as a predictor variable to detect payment fraud (AA:2022:01)'
+subtitle: ''
+image: /images/svg-illustrations/illustration_cases.svg
+layout: case
 icon: fa-sim-card
 summary: >
   The audit commission advises against using type of SIM card as an input
@@ -35,3 +37,4 @@ funded_by:
     image: /images/sidn.png
 ---
 
+{{< algoprudence_case >}}

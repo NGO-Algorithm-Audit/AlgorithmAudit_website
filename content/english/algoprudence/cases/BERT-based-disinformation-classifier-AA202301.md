@@ -1,6 +1,15 @@
 ---
-layout: case
 title: 'BERT-based disinformation classifier (AA:2023:01)'
+subtitle: |
+  Test
+image: /case_repository.svg
+form:
+  title: Test
+  button_text: dsfsdf
+  backend_link: sfds
+  questions:
+    - question: Question1
+layout: case
 icon: fa-newspaper
 summary: >
   The audit commission believes there is a low risk of (higher-dimensional)
@@ -44,11 +53,8 @@ actions:
       dd
     image: /case_repository.svg
     date: 14-02-2024
-subtitle: |
-  Test
-image: /case_repository.svg
 ---
 
+{{< form >}}
 
-
-
+{{< algoprudence_case >}}
