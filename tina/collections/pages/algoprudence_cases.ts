@@ -201,6 +201,45 @@ let specific_fields : TinaField[] = [
                 },
                 facets
             ]
+    },
+    {
+        type: "object",
+        name: "discussions",
+        label: "Discussions",
+        list: true,
+        fields:
+            [
+                {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    required: true,
+                },
+                {
+                    type: "rich-text",
+                    name: "description",
+                    label: "description"
+                },
+                {
+                    type: "image",
+                    name: "image",
+                    label: "image",
+                    required: true,
+                },
+                {
+                    type: "string",
+                    name: "date",
+                    label: "Date",
+                    required: true,
+                    description: "dd-MM-yyyy (i.e. 13-06-2024)"
+                },
+                {
+                    type: "image",
+                    name: "pdf",
+                    label: "PDF",
+                },
+                facets
+            ]
     }
 ];
 

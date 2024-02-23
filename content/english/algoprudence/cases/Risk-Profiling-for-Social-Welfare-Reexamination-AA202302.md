@@ -105,6 +105,12 @@ actions:
     facets:
       - value: news
         label: news
+discussions:
+  - title: Discussie punt 1
+    description: |
+      Discussie punt 1 beschrijving
+    image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
+    date: 26-09-2024
 ---
 
 {{< algoprudence_case >}}

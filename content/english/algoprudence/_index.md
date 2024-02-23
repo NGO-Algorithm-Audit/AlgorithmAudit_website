@@ -1,5 +1,6 @@
 ---
-layout: overview
+layout: repository
+main_title: Test
 title: Algoprudence overview
 subtitle: >
   Algoprudence is available for different types of algorithms, among others
@@ -9,6 +10,13 @@ subtitle: >
   We are open to new cases. Please <span style="color:#005aa7">
   [submit](/algoprudence/submit-a-case/)</span> a case for review.
 image: /images/svg-illustrations/case_repository.svg
+team:
+  title: Algoprudence team
+  team_members:
+    - image: /images/people/JFP.svg
+      name: Jurriaan
+      bio: |
+        test
 facet_groups:
   - value: year
     title: Year
@@ -49,8 +57,7 @@ algoprudences:
       strict conditions for sampling residents receiving social welfare for
       re-examination. The aim of re-examination is a leading factor in judging
       profiling criteria.
-    image: >-
-      /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
+    image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
     link: >-
       /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
     facets:
@@ -110,13 +117,6 @@ algoprudences:
         label: Profiling
       - value: ethical_issue_proxy
         label: Proxy discrimination
-team:
-  title: Algoprudence team
-  team_members:
-    - image: /images/people/JFP.svg
-      name: Jurriaan
-      bio: |
-        test
 ---
 
 {{< team >}}
