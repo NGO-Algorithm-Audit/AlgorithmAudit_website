@@ -387,8 +387,8 @@
 <!-- /Activity Feed -->
 
 <!-- Supported by -->
+{{ if .Params.Supported_by }}
 {{ with .Params.Supported_by }}
-{{ range $i,$p := .Suported_by }}
 <section class="section bg-white">
   <div class="container">
 
@@ -400,57 +400,13 @@
         <!-- /title -->
       </div>
 
-      <!-- SIDN -->
+      {{ range .funders }}
       <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
-        {{ range .img_SIDN }}
-        <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
-          <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
+        <a href="{{.link}}" target="_blank">
+          <img src="{{ .image | relURL }}" style="max-height: 100px;" alt="{{.alt_text}}" class="img-fluid">
         </a>
-        {{ end }}
       </div>
-      <!-- /SIDN -->
-
-      <!-- EU AI&S -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
-        {{ range .img_EUAIS }}
-        <a href="https://europeanaifund.org/announcing-our-2022-open-call-grantees/" target="_blank">
-          <img src="{{ . | relURL }}" style="max-height: 60px;" alt="" class="img-fluid">
-        </a>
-        {{ end }}
-      </div>
-      <!-- /EU AI&S -->
-
-      <!-- BZK -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
-        {{ range .img_BZK }}
-        <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties"
-          target="_blank">
-          <img src="{{ . | relURL }}" style="max-height: 50px;" alt="" class="img-fluid">
-        </a>
-        {{ end }}
-      </div>
-      <!-- /BZK -->
-
-      <!-- NLAIC -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
-        {{ range .img_NLAIC }}
-        <a href="https://nlaic.com/en/" target="_blank">
-          <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
-        </a>
-        {{ end }}
-      </div>
-      <!-- /NLAIC -->
-
-      <!-- HAI -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
-        {{ range .img_HAI }}
-        <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">
-          <img src="{{ . | relURL }}" style="max-height: 50px;" alt="" class="img-fluid">
-        </a>
-        {{ end }}
-      </div>
-      <!-- /HAI -->
-
+      {{ end }}
     </div>
 
   </div>

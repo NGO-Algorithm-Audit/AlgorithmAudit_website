@@ -192,6 +192,42 @@ export default {
                     }
                 ]
         },
+        {
+            type: "object",
+            name: "Supported_by",
+            label: "Supported by",
+            fields: [
+                {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    required: true
+                },
+                {
+                    type: "object",
+                    name: "funders",
+                    label: "Funders",
+                    list: true,
+                    fields: [
+                        {
+                            label: "Image",
+                            type: "image",
+                            name: "image",
+                        },
+                        {
+                            label: "Link",
+                            type: "string",
+                            name: "link",
+                        },
+                        {
+                            label: "Alt-text",
+                            type: "string",
+                            name: "alt_text",
+                        }
+                    ]
+                }
+            ]
+        },
         // Distinctive in
         {
             type: "object",

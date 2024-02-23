@@ -49,19 +49,23 @@ Activity_Feed:
       date: 07-01-2024
       type: presentation
 Supported_by:
-  enable: true
-  Suported_by:
-    - title: Supported by
-      img_SIDN:
-        - images/supported_by/sidn.png
-      img_EUAIS:
-        - images/supported_by/EUAISFund.png
-      img_NLAIC:
-        - images/supported_by/NLAIC.png
-      img_BZK:
-        - images/supported_by/BZK.jpg
-      img_HAI:
-        - images/supported_by/HAI.png
+  title: Supported by
+  funders:
+    - image: /images/supported_by/sidn.png
+      alt_text: sidn
+      link: https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool
+    - image: /images/supported_by/EUAISFund.png
+      alt_text:
+      link: https://europeanaifund.org/announcing-our-2022-open-call-grantees/
+    - image: /images/supported_by/NLAIC.png
+      alt_text: Nederlandse AI Coalition
+      link: https://nlaic.com/en/
+    - image: /images/supported_by/BZK.jpg
+      alt_text: Ministerie van Binnelandse Zaken en Konkinkrijksrelaties
+      link: https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
+    - image: /images/supported_by/HAI.png
+      alt_text:
+      link: https://hai.stanford.edu/ai-audit-challenge-2023-finalists
 Distincive_in:
   enable: true
   title: Distinctive in
