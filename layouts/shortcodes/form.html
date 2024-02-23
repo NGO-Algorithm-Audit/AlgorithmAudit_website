@@ -10,7 +10,6 @@
 
         <!-- title -->
         <h4>{{ .title | markdownify }}</h4>
-        <!-- /title -->
         
         <!-- form -->
         <form action="{{ .backend_link | safeURL }}" method="POST">
@@ -24,7 +23,6 @@
             <button type="submit" value="send" class="btn btn-primary">{{ .button_text | markdownify }}</button>
           </div>
         </form>
-        <!-- /form -->
 
       </div>
   </div>

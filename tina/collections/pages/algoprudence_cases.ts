@@ -13,6 +13,21 @@ export default {
     },
     fields: [
         {
+            type: "object",
+            name: "questions",
+            label: "Questions",
+            list: true,
+            fields:
+                [
+                    {
+                        type: "string",
+                        name: "question",
+                        label: "Question",
+                        required: true,
+                    }
+                ]
+        },
+        {
             type: "string",
             name: "layout",
             label: "Layout",
