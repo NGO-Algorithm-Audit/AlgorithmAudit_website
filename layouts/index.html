@@ -49,6 +49,7 @@
   </div>
 </section>
 {{ with .slogan }}
+<!-- Slogan -->
 <section class="banner banner-background" style="padding:0px;">
   <!-- European knowledge platform -->
   <div class="row pinDiv1">
@@ -452,7 +453,7 @@
 <!-- /Building AI auditing capacity from a not-for-profit perspective -->
 
 <!-- Distinctive in -->
-{{ with .Params.Distincive_in }}
+{{ with .Params.Distinctive_in }}
 {{ if .enable }}
 <section class="section bg-blue">
   <div class="container">
@@ -767,7 +768,7 @@
       {{ end }}
 
       <!-- button -->
-      <div class="col-md-6 col-sm-12 mb-4 d-flex align-items-center justify-content-center">
+      <!-- <div class="col-md-6 col-sm-12 mb-4 d-flex align-items-center justify-content-center">
         <div class="row">
           <div class="col-12">
             <img class="img-fluid" src="{{.image}}" style="height:150px; display:block; margin:auto;"/>
@@ -778,7 +779,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- /button -->
 
     </div>
@@ -799,7 +800,7 @@
       {{ end }}
 
       <!-- button -->
-      <div class="col-12 mb-4 d-flex align-items-center justify-content-center" style="margin-top:60px;">
+      <!-- <div class="col-12 mb-4 d-flex align-items-center justify-content-center" style="margin-top:60px;">
         <div class="row">
           <div class="col-12">
             <img class="img-fluid" src="{{.image}}" style="height:200px; display:block; margin:auto;"/>
@@ -810,7 +811,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- /button -->
 
     </div>
@@ -853,12 +854,12 @@
 <!-- /gif animation -->
 
 <!-- Video -->
-{{ with .Params.TheMovie }}
+{{ with .Params.Title_video }}
 <section class="section-none bg-white" style="margin-top:700px;">
   <div class="container">
     <div class="row">
       <!-- title -->
-      <h3 style="color: #005aa7;">{{.title}}</h3>
+      <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
       <!-- /title -->
     </div>
     <div class="row" style="margin-bottom:75px; display: flex; justify-content: center; align-items: center;">

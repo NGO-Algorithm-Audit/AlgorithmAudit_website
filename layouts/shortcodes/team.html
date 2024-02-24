@@ -4,7 +4,7 @@
 {{ with .Page.Params.team}}
 
 <!-- desktop version -->
-<div class="container p-5 desktop" style="border-style:solid; border-width:1px; color:#005aa7; border-radius: 25px; margin-top:50px;">
+<div class="container p-5 desktop rounded-blue-border">
     
   <h3 class="mb-5" style="color: #005aa7; font-weight:600;">{{ .title | markdownify }}</h3>
 
@@ -30,7 +30,7 @@
 <!-- /desktop version -->
 
 <!-- mobile version -->
-<div class="container p-5 mobile" style="border-style:solid; border-width:1px; color:#005aa7; border-radius: 25px; margin-top:50px;">
+<div class="container p-5 mobile rounded-blue-border">
     
   <h3 class="mb-5" style="color: #005aa7; font-weight:600;">{{ .title | markdownify }}</h3>
 

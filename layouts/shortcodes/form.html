@@ -1,15 +1,13 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ with .Page.Params.form}}
 
-
-<div class="container-fluid mb-5">
-
-  <!-- desktop version -->
-  <div class="p-5 desktop">
+<!-- desktop version -->
+<div class="container-fluid mb-5 p-0 desktop">
+  <div class="p-5 rounded-blue-border bg-lightblue">
       <div class="col-lg-12 mb-4">
 
         <!-- title -->
-        <h4>{{ .title | markdownify }}</h4>
+        <h3>{{ .title | markdownify }}</h3>
         
         <!-- form -->
         <form action="{{ .backend_link | safeURL }}" method="POST">
@@ -30,33 +28,37 @@
 
       </div>
   </div>
-  <!-- /desktop version -->
+</div>
+<!-- /desktop version -->
 
-  <!-- mobile version -->
-  <div class="p-0 mobile">
+<!-- mobile version -->
+<div class="container-fluid mb-5 mobile">
+  <div class="p-0  rounded-blue-border bg-lightblue">
     <div class="col-lg-12 mb-4">
 
       <!-- title -->
-      <h4>{{ .title | markdownify }}</h4>
-      <!-- /title -->
+      <h3 class="mt-5">{{ .title | markdownify }}</h3>
       
       <!-- form -->
       <form action="{{ .backend_link | safeURL }}" method="POST">
         {{ range .questions }}
         <div class="my-5">
-          <span style="font-weight:500;">{{ .question | markdownify }}</span>
-          <input type="text" class="form-control my-2" id="name" name="name">
+          <label style="font-weight:500;" for="{{.id}}">{{ .label | markdownify }}</label>
+          {{ if eq .type "textarea" }}
+          <textarea type="text" class="form-control my-2" id="{{.id}}" name="{{.label}}" rows="4" cols="50"></textarea>
+          {{ else }}
+          <input type="{{.type}}" class="form-control my-2" id="{{.id}}" name="{{.label}}" placeholder="{{.placeholder}}" />
+          {{ end }}
         </div>
         {{ end }}
         <div class="wrapper" style="text-align:center;">
           <button type="submit" value="send" class="btn btn-primary">{{ .button_text | markdownify }}</button>
         </div>
       </form>
-      <!-- /form -->
 
     </div>
   </div>
-  <!-- /mobile version -->
-
 </div>
+<!-- /mobile version -->
+
 {{ end }}

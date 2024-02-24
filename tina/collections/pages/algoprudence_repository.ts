@@ -10,8 +10,8 @@ let specific_fields : TinaField[] = [
     facet_groups,
     {
         type: "object",
-        name: "algoprudences",
-        label: "Algoprudence",
+        name: "algoprudence_repository",
+        label: "Algoprudence repository",
         list: true,
         fields:
             [
@@ -37,6 +37,12 @@ let specific_fields : TinaField[] = [
                     name: "link",
                     label: "Link",
                     required: true
+                },
+                {
+                    type: "rich-text",
+                    name: "content",
+                    label: "Content",
+                    isBody: true,
                 },
                 facets
             ]

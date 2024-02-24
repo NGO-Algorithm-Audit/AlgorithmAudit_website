@@ -221,6 +221,7 @@ export default {
                     }
                 ]
         },
+        // Supported by
         {
             type: "object",
             name: "Supported_by",
@@ -257,6 +258,7 @@ export default {
                 }
             ]
         },
+        // Slogan
         {
             type: "object",
             name: "Building_ai_audit_capacity",
@@ -371,12 +373,6 @@ export default {
                         required: true,
                     },
                     {
-                        type: "string",
-                        name: "title",
-                        label: "Enable",
-                        required: true,
-                    },
-                    {
                         type: "number",
                         name: "width_m",
                         label: "Width medium screens (12 is the maximum)",
@@ -426,12 +422,11 @@ export default {
             defaultItem: () => {
                 return {
                     width_m: 4,
-                    width_s: 2,
-                    width_xs: 1
+                    width_s: 2
                 }
             }
         },
-        // recent audits
+        // Recent audits
         {
             type: "object",
             name: "Recent_audits",
@@ -478,7 +473,7 @@ export default {
                     }
                 ]
         },
-        // how we build algoprudence
+        // How we build algoprudence
         {
             type: "object",
             name: "how_we_build_algoprudence",
@@ -516,6 +511,7 @@ export default {
                     }
                 ]
         },
+        // Advantages of algoprudence
         {
             type: "object",
             name: "advantages_of_algoprudence",
@@ -566,6 +562,7 @@ export default {
                     }
                 ]
         },
+        // GIF algoprudence
         {
             type: "object",
             name: "title_gif",
@@ -579,26 +576,17 @@ export default {
                     }
                 ]
         },
+        // Video
         {
             type: "object",
-            name: "newsletter",
-            label: "Newsletter",
+            name: "title_video",
+            label: "Title of video",
             fields:
                 [
                     {
                         type: "string",
                         name: "title",
                         label: "Title"
-                    },
-                    {
-                        type: "string",
-                        name: "content",
-                        label: "Content"
-                    },
-                    {
-                        type: "string",
-                        name: "button_text",
-                        label: "Button text"
                     }
                 ]
         }

@@ -26,8 +26,7 @@ Activity_Feed:
         voorwaarden kan worden ingezet voor het selecteren van burgers met een
         bijstandsuitkering voor heronderzoek.
       link: /algoprudence
-      image: >-
-        /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
+      image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
       date: 29-11-2023
       type: algoprudence
   activities:
@@ -43,26 +42,13 @@ Activity_Feed:
       image: /images/events/dutch-data-protection.jpg
       date: 08-02-2024
       type: presentation
-    - title: RUG AI Wet event paneldiscussie
+    - title: RUG AI Verordening event paneldiscussie
       link: /events
       image: /images/events/RUG.png
       date: 06-02-2024
       type: presentation
-Supported_by:
-  enable: true
-  Suported_by:
-    - title: Supported by
-      img_SIDN:
-        - images/supported_by/sidn.png
-      img_EUAIS:
-        - images/supported_by/EUAISFund.png
-      img_NLAIC:
-        - images/supported_by/NLAIC.png
-      img_BZK:
-        - images/supported_by/BZK.jpg
-      img_HAI:
-        - images/supported_by/HAI.png
-Distincive_in:
+Supported_by: {}
+Distinctive_in:
   enable: true
   title: Distinctive in
   width_m: 4
@@ -184,13 +170,11 @@ Advantages_of_algoprudence:
         deploy responsible AI systems
 Title_gif:
   title: Jurisprudence for algorithms
-TheMovie:
+Title_video:
   title: The Movie
-Newsletter:
-  title: Newsletter
-  content: Stay up to date about our work by subscribing to our newsletter
-  button_text: Subscribe
 ---
+
+
 
 
 

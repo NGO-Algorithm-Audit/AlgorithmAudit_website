@@ -1,9 +1,9 @@
 ---
 title: Dien een case in
 subtitle: >
-  We verrichten zelfstandig audits en werken op verzoek. Deel middels
+  Algorithm Audit verricht zelfstandig audits en werkt op verzoek. Deel middels
   onderstaand formulier de eerste relevante informatie die nodig is voor een
-  review.
+  review van uw algoritme.
 image: /images/svg-illustrations/case_repository.svg
 background_color: '#ffffff'
 team:
@@ -30,33 +30,38 @@ form:
   button_text: Verstuur
   backend_link: 'https://formspree.io/f/xzbnrlan'
   questions:
-    - label: Name of the algorithm
-      id: name
+    - label: Naam van het algoritme
+      id: naam
       type: text
-    - label: Short description of the algorithm (max. 100 words)
-      id: description
+    - label: Korte beschrijving van het algoritme (max. 100 woorden)
+      id: beschrijving
       type: textarea
     - label: >-
-        Technical dimension – Description of data collection, used statistical
-        methodologies and used evaluation criteria 
-      id: dimensions
+        Technische aspecten – Beschrijving van o.a. verzamelde data, gebruikte
+        statistische methodologie en gebruikte evaluatie criteria
+      id: technische-dimensie
       type: textarea
     - label: >-
-        Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU
-        non-discrimination law 
-      id: legal-framework
+        Juridisch kader – Relevante wet- en regelgeving en beschrijving van open
+        juridische normen, in bijvoorbeeld de Algemene Verordening
+        Gegevensbescherming (AVG) of de Algemene Wet Gelijke Behandeling (AWGB)
+      id: juridische-dimensie
       type: textarea
     - label: >-
-        Ethical issues – Description of the identified ethical issue given it's
-        technical and legal framework
-      id: ethical-issues
+        Ethische aspecten – Beschrijving van geïdentificeerd ethische kwesties
+        gegeven de technische en juridische achtergrond
+      id: ethische-dimensie
       type: textarea
-    - label: Contact details
-      id: contact-details
+    - label: Contactgegevens
+      id: contactgegevens
       type: email
-      placeholder: Email address
+      placeholder: Emailadres
 ---
 
 {{< form >}}
+
+### Wat gebeurt er nadat een casus is ingestuurd?
+
+Uw inzending wordt behandeld door het team Algoprudentie. Het team beoordeelt of de casus past bij het werk van Algorithm Audit en of er voldoende capaciteit is om de casus te behandelen. U ontvangt binnen twee weken een reactie.
 
 {{< team >}}

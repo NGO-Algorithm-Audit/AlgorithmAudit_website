@@ -1,14 +1,15 @@
 ---
 layout: repository
 main_title: Test
-title: Algoprudence overview
+title: Algoprudence repository
 subtitle: >
   Algoprudence is available for different types of algorithms, among others
-  machine learning, profiling, public and private algorithms.
+  machine learning, rule-based profiling, public and private algorithms.
 
 
-  We are open to new cases. Please <span style="color:#005aa7">
-  [submit](/algoprudence/submit-a-case/)</span> a case for review.
+  We are always open to new cases. Please <span
+  style="color:#005aa7">[submit</span>](/algoprudence/submit-a-case/) a case for
+  review.
 image: /images/svg-illustrations/case_repository.svg
 team:
   title: Algoprudence team
@@ -79,7 +80,7 @@ algoprudences:
       proxy discrimination by the BERT-based disinformation classifier and that
       the particular difference in treatment identified by the quantitative bias
       scan can be justified, if certain conditions apply.
-    image: /images/algoprudence/en_bert-based-disinformation-classifier-aa202301.png
+    image: /images/algoprudence/AA202301/Cover.png
     link: /algoprudence/cases/bert-based-disinformation-classifier-aa202301
     facets:
       - value: aa_2023_01
@@ -102,8 +103,7 @@ algoprudences:
       card acts as a proxy-variable for sensitive demographic categories, the
       model would run an intolerable risk of disproportionally excluding
       vulnerable demographic groups from the payment service.
-    image: >-
-      /images/algoprudence/en_type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201.png
+    image: /images/algoprudence/AA202201/Cover.png
     link: >-
       /algoprudence/cases/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
     facets:
@@ -119,4 +119,4 @@ algoprudences:
         label: Proxy discrimination
 ---
 
-{{< team >}}
+hello

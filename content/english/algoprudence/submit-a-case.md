@@ -4,8 +4,9 @@ content: |
   {{< team >}}
 title: Submit a case
 subtitle: >
-  We do solicited and unsolicited audits. If you want to share a case, feel free
-  to fill in the below form to provide us with preliminary information.
+  Algorithm Audit conducts solicited and unsolicited audits. Fill in the below
+  form to provide us with preliminary information required to review your
+  algorithm.
 image: /images/svg-illustrations/case_repository.svg
 form:
   title: Submit a case
@@ -60,8 +61,8 @@ team:
 
 {{< form >}}
 
-### Test
+### What happens after a case has been submitted?
 
-dsf
+Your submission will be reviewed by the Algoprudence team. The team assesses whether the case aligns with the mission of Algorithm Audit and the availability of resources to work on the case. You can expect notification regarding any follow-up steps within two weeks.
 
 {{< team >}}

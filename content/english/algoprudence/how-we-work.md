@@ -1,9 +1,8 @@
 ---
 title: How we work
 subtitle: >
-  Over the years, we have developed our own audit methodology. We elaborate
-  below how we identify issues, draft problem statements, convene normative
-  advice commissions and ultimately publish *algoprudence*
+  Over the years, we have developed our own deliberative audit methodology. We
+  elaborate below on our 4-step working method.
 image: /images/svg-illustrations/main_illustration.svg
 background_color: '#ffffff'
 team:
@@ -31,22 +30,24 @@ team:
 
 ![](/images/other/howwework.svg)
 
-#### Step 1 Indentifying issue
+#### Step 1 – Identifying an issue
 
 Identifying a concrete ethical issue in a real algorithm or data-analysis tool
 
-#### Step 2 Problem statement
+#### Step 2 – Problem statement
 
-Describe ethical issue, legal aspects and hear stakeholders and affected groups
+Description of ethical issue, legal aspects, statistical methodology and hearing stakeholders and affected groups
 
-#### Step 3 Advice commission
+#### Step 3 – Advice commission
 
 Deliberative conversation on ethical issue by diverse and inclusive advice commission
 
-#### Step 4 Public advice
+#### Step 4 – Public advice
 
 Advice of commission is published together with problem statement on our website. Publicly sharing the problem statement and normative advice is called algoprudence
 
-Read our internal policy document how to convene a normative advice commission:
+##### Read Algorithm Audit's internal policy document how to convene a normative advice commission:
+
+{{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" width="80%" >}}
 
 {{< team >}}
