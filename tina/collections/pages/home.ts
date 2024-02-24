@@ -436,7 +436,7 @@ export default {
                     {
                         type: "string",
                         name: "title",
-                        label: "Enable",
+                        label: "Title",
                         required: true,
                     },
                     {

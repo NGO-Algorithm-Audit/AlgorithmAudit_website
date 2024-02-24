@@ -119,4 +119,3 @@ algoprudences:
         label: Proxy discrimination
 ---
 
-hello

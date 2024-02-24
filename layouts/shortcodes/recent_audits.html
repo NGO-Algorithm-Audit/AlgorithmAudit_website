@@ -1,0 +1,61 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+{{ with .Page.Params.Recent_audits}}
+<!-- Recent audits -->
+<div class="container-fluid mt-5">
+  <div class="p-5 shadow rounded-lg">
+
+  <!-- Title -->
+  <div class="row">
+    <div class="col-12">
+      <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+    </div>
+  </div>
+  <!-- /Title -->
+
+  <!-- desktop version -->
+  <div class="row desktop">
+    {{ range .feature_item }}
+    <div class="col-md-1">
+      <img class="img-fluid" src="{{.image}}" style="height:100px; position: absolute;" />
+    </div>
+    <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
+      <h4 class="px-2" style="color: #005aa7; font-size:16px;">
+        {{ .name | markdownify }}
+      </h4>
+      <p class="px-2" style="font-size:14px;">
+        {{.content | markdownify}}
+      </p>
+    </div>
+    {{ end }}
+  </div>
+  <!-- /desktop version -->
+
+  <!-- mobile version -->
+  <div class="row mobile">
+    {{ range .feature_item }}
+    <div class="col-12">
+      <img class="img-fluid about-img-mobile" src="{{.image}}"/>
+    </div>
+    <div class="col-12 clickable-wrapper mt-5 mb-5" data-href="{{.link | relURL }}">
+      <h4 class="" style="color: #005aa7;">
+        {{ .name | markdownify }}
+      </h4>
+      <p>
+        {{.content | markdownify}}
+      </p>
+    </div>
+    {{ end }}
+  </div>
+  <!-- /mobile version -->
+
+  <!-- button -->
+  <div class="row mt-4 pb-3 justify-content-center d-flex">
+    <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
+  </div>
+  <!-- /button -->
+
+</div>
+</div>
+<!-- Recent audits -->
+{{ end }}

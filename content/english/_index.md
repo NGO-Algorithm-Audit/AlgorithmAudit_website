@@ -100,14 +100,14 @@ Distinctive_in:
 Recent_audits:
   title: Recent audits
   feature_item:
-    - name: Risk Profiling Social Welfare Re-examination
+    - name: 'Risk Profiling Social Welfare Re-examination '
       image: /images/reports/front_AA202302A.png
       link: /algoprudence
       content: >
         Normative advice commission provides rationales why these variables are
         eligible or not as a profiling selection criterion for a xgboost
         algorithm
-    - name: Preventing prejudice
+    - name: Bias prevented
       image: /images/reports/front_AA202401TR.png
       link: /events
       content: >
@@ -198,6 +198,7 @@ Title_gif:
 Title_video:
   title: The Movie
 ---
+
 
 
 

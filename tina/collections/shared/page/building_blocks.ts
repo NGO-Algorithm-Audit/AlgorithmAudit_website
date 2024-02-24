@@ -202,6 +202,23 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
+                name: 'recent_audits',
+                label: 'Recent audits',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            },
+            {
                 name: 'team',
                 label: 'Team',
                 match: {
@@ -251,6 +268,43 @@ let building_blocks: TinaField[] = [
                         required: false,
                     }
                 ]
+            },
+            {
+                name: 'text_field',
+                label: 'Text field',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        type: 'object',
+        name: 'text_field',
+        label: 'Text field',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "rich-text",
+                name: "content",
+                label: "Content",
+                isBody: false,
             }
         ]
     },
@@ -264,6 +318,13 @@ let building_blocks: TinaField[] = [
                 label: 'Title',
                 type: 'string',
                 description: '',
+                required: true,
+            },
+            {
+                type: "string",
+                name: "icon",
+                label: "Icon",
+                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: true,
             },
             {
@@ -370,6 +431,64 @@ let building_blocks: TinaField[] = [
                     ]
             }
         ]
+    },
+    {
+        type: "object",
+        name: "Recent_audits",
+        label: "Recent audits",
+        fields:
+            [
+                {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    required: true,
+                },
+                {
+                    type: "string",
+                    name: "button_text",
+                    label: "Button text",
+                    required: true,
+                },
+                {
+                    type: "string",
+                    name: "button_link",
+                    label: "Button link",
+                    required: true,
+                },
+                {
+                    type: "object",
+                    name: "feature_item",
+                    label: "Featured Items",
+                    list: true,
+                    fields:
+                        [
+                            {
+                                type: "string",
+                                name: "name",
+                                label: "Name",
+                                required: true,
+                            },
+                            {
+                                type: "image",
+                                name: "image",
+                                label: "Image",
+                                required: true,
+                            },
+                            {
+                                label: "Link",
+                                type: "string",
+                                name: "link",
+                            },
+                            {
+                                type: "rich-text",
+                                name: "content",
+                                label: "Content",
+                                isBody: true,
+                            }
+                        ]
+                }
+            ]
     }
 ];
 

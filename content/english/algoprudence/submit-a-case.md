@@ -10,6 +10,7 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 form:
   title: Submit a case
+  icon: fa fa-list
   button_text: Send
   backend_link: 'https://formspree.io/f/xzbnrlan'
   questions:
@@ -40,6 +41,8 @@ form:
       placeholder: Email address
 team:
   title: Algoprudence team
+  button_text: Learn more about our different teams
+  button_link: /about
   team_members:
     - image: /images/people/VD.png
       name: Vardâyani Djwalapersad
@@ -48,7 +51,7 @@ team:
     - image: /images/people/JFP2.jpg
       name: Jurriaan Parie
       bio: |
-        Executive director and board member
+        Director and board member
     - image: /images/people/AV.jpeg
       name: Ariën Voogt
       bio: |
@@ -57,12 +60,38 @@ team:
       name: Samaa Mohammad-Ulenberg
       bio: |
         Board member
+Recent_audits:
+  title: Recent audits
+  button_text: Check our repository
+  button_link: /algoprudence
+  feature_item:
+    - name: 'Risk Profiling Social Welfare Re-examination '
+      image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
+      link: >-
+        /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+      content: >
+        Normative advice commission provides rationales why these variables are
+        eligible or not as a profiling selection criterion for a xgboost
+        algorithm
+    - name: Bias Prevented
+      image: /images/reports/front_AA202401TR.png
+      link: /algoprudence
+      content: >
+        Assessment of risk distributions through Z-tests and bias test
+        for        various steps in algorithmic-driven decision-making process
+text_field:
+  title: What are the next steps after case submission?
+  content: >
+    Your submission is reviewed by the Algoprudence Team. The team assesses
+    whether de case aligns with the mission of Algorithm Audit and the
+    availability of resources for further investigation. Notification regarding
+    any follow-up steps can be expected within two weeks.
 ---
 
 {{< form >}}
 
-### What happens after a case has been submitted?
-
-Your submission will be reviewed by the Algoprudence team. The team assesses whether the case aligns with the mission of Algorithm Audit and the availability of resources to work on the case. You can expect notification regarding any follow-up steps within two weeks.
+{{< text_field >}}
 
 {{< team >}}
+
+{{< recent_audits >}}

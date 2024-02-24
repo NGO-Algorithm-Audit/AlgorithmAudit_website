@@ -37,7 +37,7 @@ hasChildren = true
   [[main]]
   parent = "Technische tools"
   name = "Bias detectie tool"
-  url = "nl/bias_detection_tool"
+  url = "nl/technical-tools/BDT"
   weight = 1
   [[main.params]]
     icon = "fa-toolbox"
@@ -45,7 +45,7 @@ hasChildren = true
   [[main]]
   parent = "Technische tools"
   name = "Synthetische data generatie"
-  url = "nl/synthetic_data_generation"
+  url = "nl/technical-tools/SDG"
   weight = 2
   [[main.params]]
     icon = "fa-table"

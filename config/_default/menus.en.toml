@@ -37,7 +37,7 @@ hasChildren = true
   [[main]]
   parent = "Technical Tools"
   name = "Bias detection tool"
-  url = "/bias_detection_tool"
+  url = "/technical-tools/BDT"
   weight = 1
   [[main.params]]
     icon = "fa-toolbox"
@@ -45,7 +45,7 @@ hasChildren = true
   [[main]]
   parent = "Technical Tools"
   name = "Synthetic data generation"
-  url = "/synthetic_data_generation"
+  url = "/technical-tools/SDG"
   weight = 2
   [[main.params]]
     icon = "fa-table"
@@ -79,7 +79,7 @@ hasChildren = true
   [[main]]
   parent = "Knowledge platform"
   name = "Knowledge base"
-  url = "/knowledge_base"
+  url = "/knowledge-base"
   weight = 3
   [[main.params]]
     icon = "fa-brain"
