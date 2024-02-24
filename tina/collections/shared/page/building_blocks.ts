@@ -202,8 +202,8 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
-                name: 'recent_audits',
-                label: 'Recent audits',
+                name: 'reports_preview',
+                label: 'Reports preview',
                 match: {
                     start: '{{<',
                     end: '>}}'
@@ -270,8 +270,76 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
-                name: 'text_field',
-                label: 'Text field',
+                name: 'text_field1',
+                label: 'Text field #1',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            },
+            {
+                name: 'text_field2',
+                label: 'Text field #2',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            },
+            {
+                name: 'text_field3',
+                label: 'Text field #3',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            },
+            {
+                name: 'text_field4',
+                label: 'Text field #4',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            },
+            {
+                name: 'web_app',
+                label: 'Web app',
                 match: {
                     start: '{{<',
                     end: '>}}'
@@ -290,8 +358,8 @@ let building_blocks: TinaField[] = [
     },
     {
         type: 'object',
-        name: 'text_field',
-        label: 'Text field',
+        name: 'text_field1',
+        label: 'Text field #1',
         fields: [
             {
                 name: 'title',
@@ -299,6 +367,94 @@ let building_blocks: TinaField[] = [
                 type: 'string',
                 description: '',
                 required: true,
+            },
+            {
+                type: "string",
+                name: "icon",
+                label: "Icon",
+                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
+            },
+            {
+                type: "rich-text",
+                name: "content",
+                label: "Content",
+                isBody: false,
+            }
+        ]
+    },
+    {
+        type: 'object',
+        name: 'text_field2',
+        label: 'Text field #2',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "string",
+                name: "icon",
+                label: "Icon",
+                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
+            },
+            {
+                type: "rich-text",
+                name: "content",
+                label: "Content",
+                isBody: false,
+            }
+        ]
+    },
+    {
+        type: 'object',
+        name: 'text_field3',
+        label: 'Text field #3',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "string",
+                name: "icon",
+                label: "Icon",
+                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
+            },
+            {
+                type: "rich-text",
+                name: "content",
+                label: "Content",
+                isBody: false,
+            }
+        ]
+    },
+    {
+        type: 'object',
+        name: 'text_field4',
+        label: 'Text field #4',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "string",
+                name: "icon",
+                label: "Icon",
+                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
             },
             {
                 type: "rich-text",
@@ -404,6 +560,25 @@ let building_blocks: TinaField[] = [
                 required: true,
             },
             {
+                type: "string",
+                name: "icon",
+                label: "Icon",
+                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
+            },
+            {
+                type: "string",
+                name: "button_text",
+                label: "Button text",
+                required: true,
+            },
+            {
+                type: "string",
+                name: "button_link",
+                label: "Button link",
+                required: true,
+            },
+            {
                 type: "object",
                 name: "team_members",
                 label: "Team members",
@@ -434,8 +609,8 @@ let building_blocks: TinaField[] = [
     },
     {
         type: "object",
-        name: "Recent_audits",
-        label: "Recent audits",
+        name: "reports_preview",
+        label: "Reports preview",
         fields:
             [
                 {
@@ -446,15 +621,22 @@ let building_blocks: TinaField[] = [
                 },
                 {
                     type: "string",
+                    name: "icon",
+                    label: "Icon",
+                    description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                    required: false,
+                },
+                {
+                    type: "string",
                     name: "button_text",
                     label: "Button text",
-                    required: true,
+                    required: false,
                 },
                 {
                     type: "string",
                     name: "button_link",
                     label: "Button link",
-                    required: true,
+                    required: false,
                 },
                 {
                     type: "object",
@@ -489,6 +671,33 @@ let building_blocks: TinaField[] = [
                         ]
                 }
             ]
+    },
+    {
+        type: 'object',
+        name: 'web_app',
+        label: 'Web app',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "string",
+                name: "icon",
+                label: "Icon",
+                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
+            },
+            {
+                type: "rich-text",
+                name: "content",
+                label: "Content",
+                isBody: false,
+            }
+        ]
     }
 ];
 

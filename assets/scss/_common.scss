@@ -351,6 +351,18 @@ textarea.form-control {
   }
 }
 
+.icon{
+  position: relative;
+  &::before{
+    position: absolute;
+    color: #005aa7;
+    font-family: "Font Awesome 5 Free";
+    font-size: 25px;
+    left: -20px;
+    top: 3px;
+  }
+}
+
 .leaf{
   position: relative;
   &::before{

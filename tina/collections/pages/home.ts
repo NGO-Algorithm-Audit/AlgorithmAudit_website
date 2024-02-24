@@ -293,8 +293,8 @@ export default {
         // Distinctive in
         {
             type: "object",
-            name: "Distincive_in",
-            label: "Distintive in",
+            name: "Distinctive_in",
+            label: "Distinctive in",
             fields:
                 [
                     {

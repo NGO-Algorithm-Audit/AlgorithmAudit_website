@@ -41,7 +41,8 @@ form:
       placeholder: Email address
 team:
   title: Algoprudence team
-  button_text: Learn more about our different teams
+  icon: fas fa-user-friends
+  button_text: Other teams
   button_link: /about
   team_members:
     - image: /images/people/VD.png
@@ -60,9 +61,10 @@ team:
       name: Samaa Mohammad-Ulenberg
       bio: |
         Board member
-Recent_audits:
+reports_preview:
   title: Recent audits
-  button_text: Check our repository
+  icon: fas fa-file
+  button_text: Case repository
   button_link: /algoprudence
   feature_item:
     - name: 'Risk Profiling Social Welfare Re-examination '
@@ -77,10 +79,11 @@ Recent_audits:
       image: /images/reports/front_AA202401TR.png
       link: /algoprudence
       content: >
-        Assessment of risk distributions through Z-tests and bias test
-        for        various steps in algorithmic-driven decision-making process
-text_field:
+        Assessment of risk distributions through Z-tests and bias test for
+        various steps in algorithmic-driven decision-making process
+text_field1:
   title: What are the next steps after case submission?
+  icon: fas fa-forward
   content: >
     Your submission is reviewed by the Algoprudence Team. The team assesses
     whether de case aligns with the mission of Algorithm Audit and the
@@ -90,8 +93,8 @@ text_field:
 
 {{< form >}}
 
-{{< text_field >}}
+{{< text_field1 >}}
 
 {{< team >}}
 
-{{< recent_audits >}}
+{{< reports_preview >}}

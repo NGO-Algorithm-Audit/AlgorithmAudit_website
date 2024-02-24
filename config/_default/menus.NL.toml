@@ -40,7 +40,7 @@ hasChildren = true
   url = "nl/technical-tools/BDT"
   weight = 1
   [[main.params]]
-    icon = "fa-toolbox"
+    icon = "fa-search"
     subtitle = "Open source AI audit tools"
   [[main]]
   parent = "Technische tools"
