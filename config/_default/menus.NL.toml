@@ -65,29 +65,51 @@ hasChildren = true
   [[main]]
   parent = "Kennisplatform"
   name = "AI Act standaarden"
-  url = "/ai-act-standaarden"
+  url = "nl/ai-act-standards"
   weight = 1
   [[main.params]]
     icon = "fa-check"
   [[main]]
   parent = "Kennisplatform"
   name = "AI beleid observatorium"
-  url = "/ai-beleid-observatorium"
+  url = "nl/ai-policy-observatory"
   weight = 2
   [[main.params]]
-    icon = "fa-search"
+    icon = "fa-binoculars"
   [[main]]
   parent = "Kennisplatform"
   name = "Kennisbank"
-  url = "/kennisbank"
+  url = "nl/knowledge-base"
   weight = 3
   [[main.params]]
     icon = "fa-brain"
+  [[main]]
+  parent = "Kennisplatform"
+  name = "Diensten"
+  url = "nl/services"
+  weight = 4
+  [[main.params]]
+    icon = "fa-hands-helping"
 
 [[main]]
 name = "Evenementen"
-url = "evenementen"
+url = "nl/events"
 weight = 5
+hasChildren = true
+  [[main]]
+  parent = "Evenementen"
+  name = "Activiteiten"
+  url = "nl/activities"
+  weight = 1
+  [[main.params]]
+    icon = "fa-calendar"
+  [[main]]
+  parent = "Evenementen"
+  name = "Persberichten"
+  url = "nl/pressroom"
+  weight = 2
+  [[main.params]]
+    icon = "fa-newspaper"
 
 [[main]]
 name = "Over ons"
@@ -96,30 +118,28 @@ hasChildren = true
   [[main]]
   parent = "Over ons"
   name = "FAQ"
-  url = "/faq"
+  url = "nl/faq"
   weight = 1
   [[main.params]]
     icon = "fa-question"
   [[main]]
   parent = "Over ons"
   name = "Teams"
-  url = "/teams"
+  url = "nl/teams"
   weight = 2
   [[main.params]]
     icon = "fa-users"
   [[main]]
   parent = "Over ons"
-  name = "Boards"
-  url = "/boards"
+  name = "Bestuur"
+  url = "nl/boards"
   weight = 3
   [[main.params]]
     icon = "fa-user-friends"
-  [[main.params]]
-    icon = "fa-calendar-alt"
   [[main]]
   parent = "Over ons"
-  name = "Job openings"
-  url = "/job-openings"
+  name = "Vacatures"
+  url = "/vacancies"
   weight = 4
   [[main.params]]
     icon = "fa-user-check"

@@ -252,23 +252,7 @@ let building_blocks: TinaField[] = [
                     }
                 ]
             },
-            {
-                name: 'algoprudence_case',
-                label: 'Algoprudence case details',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template (only available in algoprudence cases)',
-                        required: false,
-                    }
-                ]
-            },
+
             {
                 name: 'text_field1',
                 label: 'Text field #1',
@@ -338,6 +322,23 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
+                name: 'text_field5',
+                label: 'Text field #5',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            },
+            {
                 name: 'web_app',
                 label: 'Web app',
                 match: {
@@ -372,7 +373,7 @@ let building_blocks: TinaField[] = [
                 type: "string",
                 name: "icon",
                 label: "Icon",
-                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: false,
             },
             {
@@ -399,7 +400,7 @@ let building_blocks: TinaField[] = [
                 type: "string",
                 name: "icon",
                 label: "Icon",
-                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: false,
             },
             {
@@ -426,7 +427,7 @@ let building_blocks: TinaField[] = [
                 type: "string",
                 name: "icon",
                 label: "Icon",
-                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: false,
             },
             {
@@ -453,7 +454,34 @@ let building_blocks: TinaField[] = [
                 type: "string",
                 name: "icon",
                 label: "Icon",
-                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
+            },
+            {
+                type: "rich-text",
+                name: "content",
+                label: "Content",
+                isBody: false,
+            }
+        ]
+    },
+    {
+        type: 'object',
+        name: 'text_field5',
+        label: 'Text field #5',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "string",
+                name: "icon",
+                label: "Icon",
+                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: false,
             },
             {
@@ -480,7 +508,7 @@ let building_blocks: TinaField[] = [
                 type: "string",
                 name: "icon",
                 label: "Icon",
-                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: true,
             },
             {
@@ -563,7 +591,7 @@ let building_blocks: TinaField[] = [
                 type: "string",
                 name: "icon",
                 label: "Icon",
-                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: false,
             },
             {
@@ -623,7 +651,7 @@ let building_blocks: TinaField[] = [
                     type: "string",
                     name: "icon",
                     label: "Icon",
-                    description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                    description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                     required: false,
                 },
                 {
@@ -688,7 +716,7 @@ let building_blocks: TinaField[] = [
                 type: "string",
                 name: "icon",
                 label: "Icon",
-                description: "From https://fontawesome.com/search (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: false,
             },
             {

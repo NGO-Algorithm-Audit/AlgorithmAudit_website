@@ -561,6 +561,23 @@ display: inline-block;
 vertical-align: top;
 }
 
+.content ul li{
+  color:#777777;
+  padding-top: 5px;
+}
+
+.content ul li:before{
+  height: 0px;
+  width: 0px;
+}
+
+.content li:before {
+  position: absolute;
+  content: ">" !important;
+  color:#005AA7;
+  font-weight: 600;
+}
+
 .rounded-blue-border {
   border-style:solid; 
   border-width:1px; 

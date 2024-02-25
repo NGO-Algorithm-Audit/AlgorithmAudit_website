@@ -75,7 +75,7 @@ hasChildren = true
   url = "/ai-policy-observatory"
   weight = 2
   [[main.params]]
-    icon = "fa-search"
+    icon = "fa-binoculars"
   [[main]]
   parent = "Knowledge platform"
   name = "Knowledge base"
@@ -83,11 +83,33 @@ hasChildren = true
   weight = 3
   [[main.params]]
     icon = "fa-brain"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "Services"
+  url = "/services"
+  weight = 4
+  [[main.params]]
+    icon = "fa-hands-helping"
 
 [[main]]
 name = "Events"
 url = "events"
 weight = 5
+hasChildren = true
+  [[main]]
+  parent = "Events"
+  name = "Activities"
+  url = "/activities"
+  weight = 1
+  [[main.params]]
+    icon = "fa-calendar"
+  [[main]]
+  parent = "Events"
+  name = "Pressroom"
+  url = "/pressroom"
+  weight = 2
+  [[main.params]]
+    icon = "fa-newspaper"
 
 [[main]]
 name = "About"
@@ -116,8 +138,8 @@ hasChildren = true
     icon = "fa-user-friends"
   [[main]]
   parent = "About"
-  name = "Job openings"
-  url = "/job-openings"
+  name = "Vacancies"
+  url = "/vacancies"
   weight = 4
   [[main.params]]
     icon = "fa-user-check"

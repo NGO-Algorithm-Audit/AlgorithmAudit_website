@@ -59,6 +59,10 @@ reports_preview:
       link: >-
         https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf
       content: "An example report for the\_[BERT-based disinformation detection (FNR) case study](https://static-files-pdf.s3.amazonaws.com/bias_scan_FNR_test_pred_BERT.pdf)\n"
+text_field5:
+  title: FAQ
+  icon: fas fa-question-circle
+  content: "##### Why this bias detection tool?\n\n* No data needed on protected attributes of users (unsupervised bias detection);\n* Model-agnostic (AI binary classifiers only);\n* Connecting quantitative tools with qualitative methods to assess fair AI;\n* Developed open-source and not-for-profit.\n\n##### By whom can the bias detection tool be used?\_\n\nThe bias detection tool allows the entire ecosystem involved in auditing AI, e.g., data scientists, journalists, policy makers, public- and private auditors, to use quantitative methods to detect bias in AI systems.\n\n\n##### What does the tool compute?\_\n\nA statistical method is used to compute which clusters are relatively often misclassified by an AI system. A cluster is a group of data points sharing similar features. The tool returns a report in which identified differences (between feature means) are visualized and statistical significant feature differences are tested (Welch’s two-samples t-test for unequal variances).\n\n\n##### The tool detects prohibited discrimination in AI?\_\n\nNo. The bias detection tool serves as a starting point to assess potentially unfair AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured disparities are legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are\_appropriate\_and\_necessary.\n\n\n##### For what type of AI does the tool work?\_\n\nCurrently, only\_binary classification\_algorithms can be reviewed. For instance, prediction of loan approval (yes/no), disinformation detection (true/false) or disease detection (positive/negative).\n\n\n##### What happens with my data? \n\nYour .csv file is uploaded to a AWS bucket, where it is processed. Once the clustering algorithm is finised the data is immediately deleted.\n\n##### &#xA;In sum\_\n\nQuantitative methods, such as unsupervised bias detection, are helpful to discover potentially unfair treated groups of similar users in AI systems in a scalable manner. Automated identification of cluster disparities in AI models allows human experts to assess observed disparities in a qualitative manner, subject to political, social and environmental traits. This two-pronged approach bridges the gap between the qualitative requirements of law and ethics, and the quantitative nature of AI (see figure). In making normative advice, on identified ethical issues publicly available, over time a repository of 'techno-ethical jurisprudence' emerges; from which data scientists and public authorities can distill best practices to build fairer AI (see our\_case reviews).\_\n"
 ---
 
 {{< text_field1 >}}
@@ -73,4 +77,4 @@ reports_preview:
 
 {{< reports_preview >}}
 
-{{< bias_scan_faq title="FAQ" >}}
+{{< text_field5 >}}

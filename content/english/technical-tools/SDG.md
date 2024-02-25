@@ -1,21 +1,23 @@
 ---
 title: Synethetic data generation
-subtitle: ''
-image: /images/case_repository.svg
+subtitle: |
+  Hello
+image: /images/svg-illustrations/case_repository.svg
 author: Parie
 type: regular
 team:
   title: Test
-  content: hoer
   team_members:
-    - name: Erik
-      image: /images/AV.svg
-      content: |
-        Test
+    - image: /images/AV.svg
+      name: Erik
+      bio: ''
+text_field1:
+  title: Test
+  icon: fas fa-database
+  content: |
+    Hi
 ---
 
-{{< bias_scan_info title="Test" >}}
+{{< text_field1 >}}
 
-{{< bias_scan_alert_case_study >}}
-
-{{< team content="Test" title="Hoer" >}}
+{{< team title="Hoer" >}}
