@@ -132,28 +132,6 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
-                name: 'pdf_frame',
-                label: 'PDF Frame',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'articleUrl',
-                        label: 'Article Url',
-                        type: 'image',
-                        required: true,
-                    },
-                    {
-                        name: 'width',
-                        label: 'Width',
-                        type: 'string',
-                        description: '50% is the default'
-                    }
-                ]
-            },
-            {
                 name: 'about_algorithm_audit_NL',
                 label: 'About algorithm audit NL',
                 match: {
@@ -202,6 +180,45 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
+                name: 'form',
+                label: 'Form',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            },
+            {
+                name: 'pdf_frame',
+                label: 'PDF Frame',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'articleUrl',
+                        label: 'Article Url',
+                        type: 'image',
+                        required: true,
+                    },
+                    {
+                        name: 'width',
+                        label: 'Width',
+                        type: 'string',
+                        description: '50% is the default'
+                    }
+                ]
+            },
+            {
                 name: 'reports_preview',
                 label: 'Reports preview',
                 match: {
@@ -235,24 +252,6 @@ let building_blocks: TinaField[] = [
                     }
                 ]
             },
-            {
-                name: 'form',
-                label: 'Form',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-
             {
                 name: 'text_field1',
                 label: 'Text field #1',
@@ -377,6 +376,13 @@ let building_blocks: TinaField[] = [
                 required: false,
             },
             {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                required: false,
+            },
+            {
                 type: "rich-text",
                 name: "content",
                 label: "Content",
@@ -401,6 +407,13 @@ let building_blocks: TinaField[] = [
                 name: "icon",
                 label: "Icon",
                 description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
+            },
+            {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
                 required: false,
             },
             {
@@ -431,6 +444,13 @@ let building_blocks: TinaField[] = [
                 required: false,
             },
             {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                required: false,
+            },
+            {
                 type: "rich-text",
                 name: "content",
                 label: "Content",
@@ -458,6 +478,13 @@ let building_blocks: TinaField[] = [
                 required: false,
             },
             {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                required: false,
+            },
+            {
                 type: "rich-text",
                 name: "content",
                 label: "Content",
@@ -475,7 +502,7 @@ let building_blocks: TinaField[] = [
                 label: 'Title',
                 type: 'string',
                 description: '',
-                required: true,
+                required: false,
             },
             {
                 type: "string",
@@ -483,6 +510,13 @@ let building_blocks: TinaField[] = [
                 label: "Icon",
                 description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: false,
+            },
+            {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                required: true,
             },
             {
                 type: "rich-text",
@@ -524,6 +558,13 @@ let building_blocks: TinaField[] = [
                 type: 'string',
                 description: '',
                 required: true,
+            },
+            {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                required: false,
             },
             {
                 type: "object",
@@ -576,66 +617,6 @@ let building_blocks: TinaField[] = [
         ]
     },
     {
-        type: 'object',
-        name: 'team',
-        label: 'Team',
-        fields: [
-            {
-                name: 'title',
-                label: 'Title',
-                type: 'string',
-                description: '',
-                required: true,
-            },
-            {
-                type: "string",
-                name: "icon",
-                label: "Icon",
-                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-                required: false,
-            },
-            {
-                type: "string",
-                name: "button_text",
-                label: "Button text",
-                required: true,
-            },
-            {
-                type: "string",
-                name: "button_link",
-                label: "Button link",
-                required: true,
-            },
-            {
-                type: "object",
-                name: "team_members",
-                label: "Team members",
-                list: true,
-                fields:
-                    [
-                        {
-                            type: "image",
-                            name: "image",
-                            label: "image",
-                            required: true,
-                        },
-                        {
-                            type: "string",
-                            name: "name",
-                            label: "Name",
-                            required: true,
-                        },
-                        {
-                            type: "rich-text",
-                            name: "bio",
-                            label: "Bio",
-                            isBody: false,
-                        }
-                    ]
-            }
-        ]
-    },
-    {
         type: "object",
         name: "reports_preview",
         label: "Reports preview",
@@ -664,6 +645,13 @@ let building_blocks: TinaField[] = [
                     type: "string",
                     name: "button_link",
                     label: "Button link",
+                    required: false,
+                },
+                {
+                    type: "string",
+                    name: "id",
+                    label: "ID",
+                    description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
                     required: false,
                 },
                 {
@@ -702,6 +690,73 @@ let building_blocks: TinaField[] = [
     },
     {
         type: 'object',
+        name: 'team',
+        label: 'Team',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "string",
+                name: "icon",
+                label: "Icon",
+                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
+            },
+            {
+                type: "string",
+                name: "button_text",
+                label: "Button text",
+                required: true,
+            },
+            {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                required: false,
+            },
+            {
+                type: "string",
+                name: "button_link",
+                label: "Button link",
+                required: true,
+            },
+            {
+                type: "object",
+                name: "team_members",
+                label: "Team members",
+                list: true,
+                fields:
+                    [
+                        {
+                            type: "image",
+                            name: "image",
+                            label: "image",
+                            required: true,
+                        },
+                        {
+                            type: "string",
+                            name: "name",
+                            label: "Name",
+                            required: true,
+                        },
+                        {
+                            type: "rich-text",
+                            name: "bio",
+                            label: "Bio",
+                            isBody: false,
+                        }
+                    ]
+            }
+        ]
+    },
+    {
+        type: 'object',
         name: 'web_app',
         label: 'Web app',
         fields: [
@@ -717,6 +772,13 @@ let building_blocks: TinaField[] = [
                 name: "icon",
                 label: "Icon",
                 description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                required: false,
+            },
+            {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
                 required: false,
             },
             {
