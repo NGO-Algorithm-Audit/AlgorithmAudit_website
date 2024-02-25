@@ -65,14 +65,14 @@ hasChildren = true
   [[main]]
   parent = "Knowledge platform"
   name = "AI Act standards"
-  url = "/ai-act-standards"
+  url = "/knowledge-platform/standards"
   weight = 1
   [[main.params]]
     icon = "fa-check"
   [[main]]
   parent = "Knowledge platform"
   name = "AI policy observatory"
-  url = "/ai-policy-observatory"
+  url = "/knowledge-platform/policy-observatory"
   weight = 2
   [[main.params]]
     icon = "fa-binoculars"

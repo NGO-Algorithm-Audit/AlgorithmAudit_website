@@ -65,7 +65,7 @@ hasChildren = true
   [[main]]
   parent = "Kennisplatform"
   name = "AI Act standaarden"
-  url = "nl/ai-act-standards"
+  url = "nl/knowledge-platform/standards"
   weight = 1
   [[main.params]]
     icon = "fa-check"

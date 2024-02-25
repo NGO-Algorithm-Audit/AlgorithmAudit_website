@@ -6,6 +6,7 @@ import algoprudence_submit_a_case from "./collections/pages/algoprudence_submit_
 import algoprudence_how_we_work from "./collections/pages/algoprudence_how_we_work";
 import technical_tools_BDT from "./collections/pages/technical_tools_BDT";
 import technical_tools_SDG from "./collections/pages/technical_tools_SDG";
+import knowledge_platform_standards from "./collections/pages/knowledge_platform_standards";
 import knowledge_base from "./collections/pages/knowledge_base";
 import events_overview from "./collections/pages/events_overview";
 // Your hosting provider likely exposes this as an environment variable
@@ -36,6 +37,7 @@ export default defineConfig({
       algoprudence_how_we_work,
       technical_tools_BDT,
       technical_tools_SDG,
+      knowledge_platform_standards,
       knowledge_base,
       events_overview
     ],
