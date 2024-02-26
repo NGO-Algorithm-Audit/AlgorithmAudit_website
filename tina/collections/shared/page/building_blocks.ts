@@ -52,35 +52,6 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
-                name: 'bias_scan_upload',
-                label: 'Bias Scan upload',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    },
-                    {
-                        type: "image",
-                        name: "css",
-                        label: "Bias Detection Tool css",
-                        required: true,
-                    },
-                    {
-                        type: "image",
-                        name: "js",
-                        label: "Bias Detection Tool js",
-                        required: true,
-                    }
-                ]
-            },
-            {
                 name: 'bias_scan_input_data',
                 label: 'Bias Scan input data',
                 match: {
@@ -803,6 +774,8 @@ let building_blocks: TinaField[] = [
                 name: "content",
                 label: "Content",
                 isBody: false,
+                templates: [
+                ]
             }
         ]
     }

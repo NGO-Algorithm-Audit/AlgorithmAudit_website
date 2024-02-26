@@ -44,6 +44,11 @@
 <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
 <!-- /accordion -->
 
+<!-- Page specific links -->
+{{ if eq .Type "bias-detection-tool" }}
+<link rel="stylesheet" href="https://static-files-pdf.s3.amazonaws.com/assets/index.css">
+{{ end }}
+<!-- /Page specific links -->
 
 <script>
 $(document).ready(function()
