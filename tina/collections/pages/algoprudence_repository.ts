@@ -9,8 +9,14 @@ import building_blocks from "../shared/page/building_blocks";
 let specific_fields : TinaField[] = [
     facet_groups,
     {
+        type: "string",
+        name: "title_content",
+        label: "Title content",
+        required: true,
+    },
+    {
         type: "object",
-        name: "algoprudence_repository",
+        name: "algoprudences",
         label: "Algoprudence repository",
         list: true,
         fields:
@@ -37,12 +43,6 @@ let specific_fields : TinaField[] = [
                     name: "link",
                     label: "Link",
                     required: true
-                },
-                {
-                    type: "rich-text",
-                    name: "content",
-                    label: "Content",
-                    isBody: true,
                 },
                 facets
             ]

@@ -1,6 +1,5 @@
 ---
 layout: repository
-main_title: Test
 title: Algoprudence repository
 subtitle: >
   Algoprudence is available for different types of algorithms, among others
@@ -51,6 +50,7 @@ facet_groups:
         label: Proxy discrimination
       - value: fp_fn_balancing
         label: FP-FN balancing
+title_content: Case repository
 algoprudences:
   - title: Risk Profiling for Social Welfare Reexamination
     intro: >-
