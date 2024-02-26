@@ -101,10 +101,13 @@
   transform-origin: 100% 0;
   display: inline-block;
 }
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0; /* remove the gap so it doesn't close */
-  min-width: 200px;
+
+@media screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+    min-width: 200px;
+  }
 }
 
 .dropdown-menu {
