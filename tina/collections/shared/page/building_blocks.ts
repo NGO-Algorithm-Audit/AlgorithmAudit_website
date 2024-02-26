@@ -353,6 +353,23 @@ let building_blocks: TinaField[] = [
                         required: false,
                     }
                 ]
+            },
+            {
+                name: 'algoprudence_case',
+                label: 'Algoprudence case details',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template (only available in algoprudence cases)',
+                        required: false,
+                    }
+                ]
             }
         ]
     },
