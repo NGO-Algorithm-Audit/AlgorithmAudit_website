@@ -36,7 +36,7 @@ export default {
   label: "Knowledge Base",
   path: "content/",
   match: {
-    include: '**/knowledge_base/**'
+    include: '**/knowledge-base/**'
   },
   fields: building_blocks.concat(specific_fields),
 };
