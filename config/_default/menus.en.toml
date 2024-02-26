@@ -52,7 +52,7 @@ hasChildren = true
   [[main]]
   parent = "Technical Tools"
   name = "Github code"
-  url = "https://github.com/NGO-Algorithm-Audit/Bias_scan"
+  url = "https://github.com/NGO-Algorithm-Audit/"
   weight = 3
   [[main.params]]
     subtitle = "Code repository"

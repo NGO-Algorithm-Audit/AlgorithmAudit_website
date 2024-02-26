@@ -52,7 +52,7 @@ hasChildren = true
   [[main]]
   parent = "Technische tools"
   name = "Github code"
-  url = "https://github.com/jfparie/AlgorithmAudit_website"
+  url = "https://github.com/NGO-Algorithm-Audit/"
   weight = 3
   [[main.params]]
     subtitle = "Onze code"

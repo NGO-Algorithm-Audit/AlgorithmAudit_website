@@ -171,8 +171,10 @@ Advantages_of_algoprudence:
 Title_gif:
   title: Jurisprudence for algorithms
 Title_video:
-  title: The Movie
+  title: De Film
+  video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 
 
 
