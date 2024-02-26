@@ -190,6 +190,43 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
+                name: 'container_open',
+                label: 'Container open',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        type: "string",
+                        name: "id",
+                        label: "ID",
+                        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                        required: false,
+                    },
+                    {
+                        name: 'do_not_use',
+                        label: 'Do not fill, this tag should have a following "Container close" in the content',
+                        type: 'string'
+                    }
+                ]
+            },
+            {
+                name: 'container_close',
+                label: 'Container close',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'do_not_use',
+                        label: 'Do not fill, this tag should have a pre-existing "Container open" in the content',
+                        type: 'string'
+                    }
+                ]
+            },
+            {
                 name: 'reports_preview',
                 label: 'Reports preview',
                 match: {

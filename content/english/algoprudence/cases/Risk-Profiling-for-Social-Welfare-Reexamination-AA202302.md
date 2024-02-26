@@ -110,8 +110,9 @@ actions:
       Description
 
 
-      {{< pdf_frame articleUrl="/pdf-files/20231012_Introduction_AA_EN.pdf"
-      width="80%" >}}
+      {{< container_open >}}
+      {{< pdf_frame articleUrl="/pdf-files/20231012_Introduction_AA_EN.pdf" width="80%" >}}
+      {{< container_close >}}
     image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
     date: 01-01-1969
 discussions:

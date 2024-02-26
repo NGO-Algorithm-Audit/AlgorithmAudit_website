@@ -48,6 +48,8 @@ Het uitgebrachte advies van de commissie wordt samen met het probleemstelling-do
 
 ##### Lees de interne richtlijn van Algorithm Audit hoe een normatieve adviescommissie bijeen te brengen:
 
+{{< container_open >}}
 {{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" width="80%" >}}
+{{< container_close >}}
 
 {{< team >}}
