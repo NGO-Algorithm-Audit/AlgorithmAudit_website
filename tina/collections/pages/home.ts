@@ -579,7 +579,7 @@ export default {
         // Video
         {
             type: "object",
-            name: "title_video",
+            name: "Title_video",
             label: "Title of video",
             fields:
                 [
@@ -587,6 +587,16 @@ export default {
                         type: "string",
                         name: "title",
                         label: "Title"
+                    },
+                    {
+                        type: "image",
+                        name: "video_mp4",
+                        label: "Video mp4"
+                    },
+                    {
+                        type: "image",
+                        name: "video_ogg",
+                        label: "Video ogg"
                     }
                 ]
         }

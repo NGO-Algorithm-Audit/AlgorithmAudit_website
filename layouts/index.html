@@ -863,10 +863,15 @@
       <!-- /title -->
     </div>
     <div class="row" style="margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
-      <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
-        <img src="/images/video/cover.png" width="600px" />
-        <span class="playbutton"></span>
-      </a>
+      <video width="100%" height="auto" autoplay muted controls>
+        {{ if .video_mp4 }}
+        <source src="{{.video_mp4}}" type="video/mp4">
+        {{ end }}
+        {{ if .video_ogg }}
+        <source src="{{.video_ogg}}" type="video/ogg">
+        {{ end }}
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 </section>
