@@ -91,13 +91,14 @@ funded_by:
     image: /images/supported_by/BZK.jpg
 actions:
   - title: >-
-      Questions raised in the city council of Amsterdam as a result of
-      AA:2023:02:A
+      Questions raised in the city council of Amsterdam as a result of advice
+      report
     description: >
-      Council members submitted questions whether the machine learning
-      (ML)-driven risk profiling algorithm currently tested by the City of
-      Amsterdam satisfies the requirements as set out in AA-2023:02:A,
-      including:
+      Council members submitted
+      [questions](https://amsterdam.raadsinformatie.nl/document/13573898/1/236+sv+Aslami%2C+IJmker+en+Garmy+inzake+toegepaste+profileringscriteria+gemeentelijke+algoritmes)
+      whether the machine learning (ML)-driven risk profiling algorithm
+      currently tested by the City of Amsterdam satisfies the requirements as
+      set out in AA-2023:02:A, including:
 
 
       * (in)eligible selection criteria fed to the ML model
@@ -121,8 +122,8 @@ actions:
       - value: news
         label: news
   - title: Presentation advice report to Dutch Minister of Digitalization
-    description: "The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found\_[here](https://algorithmaudit.eu/pressroom).\n"
-    image: /images/algoprudence/AA202302/presentatie_BZK.jpg
+    description: "Advice report AA:2023:02:A has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found\_[here](/events/press_room).\n"
+    image: /images/algoprudence/AA202302/Actions/presentatie_BZK.jpg
     date: 29-11-2023
     facets:
       - value: presentation

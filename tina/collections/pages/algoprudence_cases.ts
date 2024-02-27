@@ -224,7 +224,7 @@ let specific_fields : TinaField[] = [
     {
         type: "object",
         name: "discussions",
-        label: "Discussions",
+        label: "Discussion & debate",
         list: true,
         fields:
             [

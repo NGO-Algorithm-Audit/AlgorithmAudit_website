@@ -117,5 +117,7 @@ algoprudences:
         label: Profiling
       - value: ethical_issue_proxy
         label: Proxy discrimination
+      - value: e-commerce
+        label: e-commerce
 ---
 

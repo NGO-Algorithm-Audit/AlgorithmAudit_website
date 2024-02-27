@@ -31,7 +31,7 @@ team:
       bio: |
         PhD-candidate, Technical University Eindhoven – Philips MedTech
     - image: /images/people/JPersson.jpeg
-      name: Joel Persson
+      name: Joel Persson PhD
       bio: |
         Research Scientist, Spotify
 text_field1:
