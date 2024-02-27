@@ -10,9 +10,9 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 form:
   title: Submit a case
-  icon: fa fa-list
   button_text: Send
   backend_link: 'https://formspree.io/f/xzbnrlan'
+  id: submit-a-case
   questions:
     - label: Name of the algorithm
       id: name
@@ -45,19 +45,19 @@ team:
   button_text: Other teams
   button_link: /about
   team_members:
-    - image: /images/people/VD.png
+    - image: /images/people/VDjwalapersad.png
       name: Vardâyani Djwalapersad
       bio: |
         Project manager Algoprudence
-    - image: /images/people/JFP2.jpg
+    - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
         Director and board member
-    - image: /images/people/AV.jpeg
+    - image: /images/people/AVoogt.jpeg
       name: Ariën Voogt
       bio: |
         Board member
-    - image: /images/people/SM.jpeg
+    - image: /images/people/SMohammad.jpeg
       name: Samaa Mohammad-Ulenberg
       bio: |
         Board member
@@ -84,16 +84,16 @@ reports_preview:
 text_field1:
   title: What are the next steps after case submission?
   icon: fas fa-forward
-  content: >
-    Your submission is reviewed by the Algoprudence Team. The team assesses
-    whether de case aligns with the mission of Algorithm Audit and the
-    availability of resources for further investigation. Notification regarding
-    any follow-up steps can be expected within two weeks.
+  content: ''
 ---
 
 {{< form >}}
 
-{{< text_field1 >}}
+{{< container_open icon="fas fa-forward" title="What are the next steps after case submission?" id="next-steps" >}}
+
+Your submission is reviewed by the Algoprudence Team. The team assesses whether de case aligns with the mission of Algorithm Audit and the availability of resources for further investigation. Notification regarding any follow-up steps can be expected within two weeks.
+
+{{< container_close >}}
 
 {{< team >}}
 

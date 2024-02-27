@@ -90,11 +90,26 @@ funded_by:
       https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
     image: /images/supported_by/BZK.jpg
 actions:
-  - title: Amsterdam
-    description: |
-      Amsterdam
-    image: /images/events/JPAO.jpg
+  - title: >-
+      Questions raised in the city council of Amsterdam as a result of
+      AA:2023:02:A
+    description: >
+      Council members submitted questions whether the machine learning
+      (ML)-driven risk profiling algorithm currently tested by the City of
+      Amsterdam satisfies the requirements as set out in AA-2023:02:A,
+      including:
+
+
+      * (in)eligible selection criteria fed to the ML model
+
+      * explainability requirements for the used explainable boosting algorithm
+
+      * implications of the AIAct for this particular form of risk profiling.
+    image: /images/algoprudence/AA202302/Actions/images.png
     date: 22-02-2024
+    facets:
+      - value: political action
+        label: political action
   - title: News item Binnenlands Bestuur
     description: >
       News website for Dutch public sector administration reported on
@@ -105,22 +120,42 @@ actions:
     facets:
       - value: news
         label: news
-  - title: Title
-    description: >
-      Description
-
-
-      {{< container_open >}}
-      {{< pdf_frame articleUrl="/pdf-files/20231012_Introduction_AA_EN.pdf" width="80%" >}}
-      {{< container_close >}}
-    image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
-    date: 01-01-1969
+  - title: Presentation advice report to Dutch Minister of Digitalization
+    description: "The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found\_[here](https://algorithmaudit.eu/pressroom).\n"
+    image: /images/algoprudence/AA202302/presentatie_BZK.jpg
+    date: 29-11-2023
+    facets:
+      - value: presentation
+        label: presentation
+      - value: publication
+        label: publication
 discussions:
   - title: Discussie punt 1
     description: |
       Discussie punt 1 beschrijving
     image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
     date: 26-09-2024
+form:
+  title: Submit a case
+  button_text: Submit
+  backend_link: 'https://formspree.io/f/xyyrjyzr'
+  id: case-reaction
+  questions:
+    - label: Name
+      id: name
+      type: text
+    - label: Affiliated organization
+      id: affiliated-organization
+      type: text
+    - label: Reaction
+      id: reaction
+      type: textarea
+    - label: Contact details
+      id: contact-details
+      type: text
+      placeholder: Mail address
 ---
+
+{{< form >}}
 
 {{< algoprudence_case >}}

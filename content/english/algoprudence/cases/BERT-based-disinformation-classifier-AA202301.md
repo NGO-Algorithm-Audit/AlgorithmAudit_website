@@ -1,20 +1,32 @@
 ---
-title: 'BERT-based disinformation classifier (AA:2023:01)'
-subtitle: |
-  Test
-image: /case_repository.svg
+title: >-
+  Higher-dimensional proxy bias in a BERT-based disinformation classifier
+  (AA:2023:01)
+subtitle: ''
+image: /images/svg-illustrations/case_repository.svg
 form:
-  title: Test
-  button_text: dsfsdf
-  backend_link: sfds
+  title: React to the normative judgement of the advice commission
+  button_text: Submit
+  backend_link: 'https://formspree.io/f/xyyrjyzr'
+  id: case-reaction
   questions:
-    - label: Question1
-      id: question1
+    - label: Name
+      id: name
       type: text
+    - label: Affiliated organization
+      id: affiliated-organization
+      type: text
+    - label: Reaction
+      id: reaction
+      type: textarea
+    - label: Contact detail
+      id: contact-details
+      type: email
+      placeholder: Mail address
 layout: case
 icon: fa-newspaper
 summary: >
-  The audit commission believes there is a low risk of (higher-dimensional)
+  The advice commission believes there is a low risk of (higher-dimensional)
   proxy discrimination by the BERT-based disinformation classifier and that the
   particular difference in treatment identified by the quantitative bias scan
   can be justified, if certain conditions apply.
@@ -22,7 +34,7 @@ sources: "Applying our self-build unsupervised\_[bias detection tool](https://al
 additional_content:
   - title: Stanford's AI Audit Challenge 2023
     content: "This case study, in combination with our\_[bias scan tool](https://algorithmaudit.eu/bias_scan), has been selected as a finalist for\_[Stanford's AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).\n"
-    image: /images/HAI.png
+    image: /images/supported_by/HAI.png
     image_link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
     width: 8
   - title: Presentation
@@ -48,13 +60,18 @@ normative_advice_members:
   - name: "Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank\_[Demos](https://demos.co.uk/)\n"
 funded_by:
   - url: 'https://europeanaifund.org/'
-    image: /images/EUAISFund.png
+    image: /images/supported_by/EUAISFund.png
 actions:
-  - title: Test
-    description: |
-      dd
-    image: /case_repository.svg
+  - title: Finalist selection Stanford's AI Audit Challenge 2023
+    description: >
+      Our [bias detection tool](/technical-tools/BDT) and this case study have
+      been selected as a finalist for [Stanford's AI Audit Challenge
+      2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+    image: /images/supported_by/HAI.png
     date: 14-02-2024
+    facets:
+      - value: award
+        label: award
 ---
 
 {{< form >}}

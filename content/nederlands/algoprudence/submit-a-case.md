@@ -1,27 +1,31 @@
 ---
 title: Dien een case in
 subtitle: >
-  Algorithm Audit verricht zelfstandig audits en werkt op verzoek. Deel middels
-  onderstaand formulier de eerste relevante informatie die nodig is voor een
-  review van uw algoritme.
+  Algorithm Audit verricht zelfstandig audits en werkt op verzoek. Middels
+  onderstaand formulier kunt u informatie delen die nodig is voor een audit van
+  de algoritme van uw organisatie.
 image: /images/svg-illustrations/case_repository.svg
 background_color: '#ffffff'
 team:
   title: Team Algoprudentie
+  icon: fas fa-user-friends
+  button_text: Other teams
+  id: team
+  button_link: /about
   team_members:
-    - image: /images/people/VD.png
+    - image: /images/people/VDjwalapersad.png
       name: Vardâyani Djwalapersad
       bio: |
         Projectmanager algoprudentie
-    - image: /images/people/JFP2.jpg
+    - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
         Directeur en bestuurder
-    - image: /images/people/AV.jpeg
+    - image: /images/people/AVoogt.jpeg
       name: Ariën Voogt
       bio: |
         Bestuurder
-    - image: /images/people/SM.jpeg
+    - image: /images/people/SMohammad.jpeg
       name: Samaa Mohammad-Ulenberg
       bio: |
         Bestuurder
@@ -60,8 +64,10 @@ form:
 
 {{< form >}}
 
-### Wat gebeurt er nadat een casus is ingestuurd?
+{{< container_open icon="fas fa-forward" title="Wat gebeurt er nu ik een case heb ingestuurd?" id="next-steps" >}}
 
-Uw inzending wordt behandeld door het team Algoprudentie. Het team beoordeelt of de casus past bij het werk van Algorithm Audit en of er voldoende capaciteit is om de casus te behandelen. U ontvangt binnen twee weken een reactie.
+Uw inzending wordt behandeld door ons Team Algoprudentie. Het team beoordeelt of de casus past bij het werk van Algorithm Audit en of er voldoende capaciteit is om de casus te behandelen. U ontvangt binnen twee weken reactie.
+
+{{< container_close >}}
 
 {{< team >}}

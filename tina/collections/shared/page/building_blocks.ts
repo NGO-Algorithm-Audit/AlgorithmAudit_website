@@ -378,7 +378,7 @@ let building_blocks: TinaField[] = [
             },
             {
                 name: 'algoprudence_case',
-                label: 'Algoprudence case details',
+                label: 'Algoprudence case',
                 match: {
                     start: '{{<',
                     end: '>}}'
@@ -575,13 +575,6 @@ let building_blocks: TinaField[] = [
                 label: 'Title',
                 type: 'string',
                 description: '',
-                required: true,
-            },
-            {
-                type: "string",
-                name: "icon",
-                label: "Icon",
-                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
                 required: true,
             },
             {
