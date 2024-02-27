@@ -199,6 +199,20 @@ let building_blocks: TinaField[] = [
                 fields: [
                     {
                         type: "string",
+                        name: "icon",
+                        label: "Icon",
+                        description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                        required: true,
+                    },
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Title",
+                        description: "h3 title at top of text box",
+                        required: true,
+                    },
+                    {
+                        type: "string",
                         name: "id",
                         label: "ID",
                         description: "ID to refer to this block as algorithmaudit.eu/.../#ID",

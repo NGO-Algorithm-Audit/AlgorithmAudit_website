@@ -9,36 +9,54 @@ text_field1:
   title: Our 4-step audit methodology
   icon: fas fa-eye
   id: methodology
-  content: "![](/images/other/howwework.svg)\n\n#### Step 1 – Identifying an issue\n\nIdentifying a concrete ethical issue in a real algorithm or data-analysis tool\n\n#### Step 2 – Problem statement\n\nDescription of ethical issue, legal aspects, statistical methodology and hearing stakeholders and affected groups\n\n#### Step 3 – Advice commission\n\nDeliberative conversation on ethical issue by diverse and inclusive advice commission\n\n#### Step 4 – Public advice\n\nAdvice of commission is published together with problem statement on our website. Publicly sharing the problem statement and normative advice is called\_algoprudence\n"
+  content: ''
 team:
   title: Algoprudence team
   icon: fas fa-user-friends
   button_text: Other teams
   button_link: /about
   team_members:
-    - image: /images/people/VD.png
+    - image: /images/people/VDjwalapersad.png
       name: Vardâyani Djwalapersad
       bio: |
         Project manager Algoprudence
-    - image: /images/people/JFP2.jpg
+    - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
         Director and board member
-    - image: /images/people/AV.jpeg
+    - image: /images/people/AVoogt.jpeg
       name: Ariën Voogt
       bio: |
         Board member
-    - image: /images/people/SM.jpeg
+    - image: /images/people/SMohammad.jpeg
       name: Samaa Mohammad-Ulenberg
       bio: |
         Board member
 ---
 
-{{< text_field1 >}}
+{{< container_open title="Our 4-step audit methodology" icon="fas fa-eye" id="methodology" >}}
 
-{{< container_open id="internal-policy" >}}
+![](/images/other/howwework.svg)
 
-#### Read Algorithm Audit’s internal policy document how to convene a normative advice commission:
+#### Step 1 – Identifying an issue
+
+Identifying a concrete ethical issue in a real algorithm or data-analysis tool
+
+#### Step 2 – Problem statement
+
+Description of ethical issue, legal aspects, statistical methodology and hearing stakeholders and affected groups
+
+#### Step 3 – Advice commission
+
+Deliberative conversation on ethical issue by diverse and inclusive advice commission
+
+#### Step 4 – Public advice
+
+Advice of commission is published together with problem statement on our website. Publicly sharing the problem statement and normative advice is called algoprudence
+
+{{< container_close >}}
+
+{{< container_open id="internal-policy" title="Internal policy document – Convening a normative advice commission" icon="fas fa-file" >}}
 
 {{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" width="80%" >}}
 
