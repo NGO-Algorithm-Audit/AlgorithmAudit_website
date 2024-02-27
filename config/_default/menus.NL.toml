@@ -118,28 +118,28 @@ hasChildren = true
   [[main]]
   parent = "Over ons"
   name = "FAQ"
-  url = "nl/faq"
+  url = "nl/about/faq"
   weight = 1
   [[main.params]]
     icon = "fa-question"
   [[main]]
   parent = "Over ons"
   name = "Teams"
-  url = "nl/teams"
+  url = "nl/about/teams"
   weight = 2
   [[main.params]]
     icon = "fa-users"
   [[main]]
   parent = "Over ons"
   name = "Bestuur"
-  url = "nl/boards"
+  url = "nl/about/teams"
   weight = 3
   [[main.params]]
     icon = "fa-user-friends"
   [[main]]
   parent = "Over ons"
   name = "Vacatures"
-  url = "/vacancies"
+  url = "nl/about/vacancies"
   weight = 4
   [[main.params]]
     icon = "fa-user-check"

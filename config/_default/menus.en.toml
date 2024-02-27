@@ -118,28 +118,28 @@ hasChildren = true
   [[main]]
   parent = "About"
   name = "FAQ"
-  url = "/faq"
+  url = "/about/faq"
   weight = 1
   [[main.params]]
     icon = "fa-question"
   [[main]]
   parent = "About"
   name = "Teams"
-  url = "/teams"
+  url = "/about/teams"
   weight = 2
   [[main.params]]
     icon = "fa-users"
   [[main]]
   parent = "About"
   name = "Boards"
-  url = "/boards"
+  url = "/about/boards"
   weight = 3
   [[main.params]]
     icon = "fa-user-friends"
   [[main]]
   parent = "About"
   name = "Vacancies"
-  url = "/vacancies"
+  url = "/about/vacancies"
   weight = 4
   [[main.params]]
     icon = "fa-user-check"

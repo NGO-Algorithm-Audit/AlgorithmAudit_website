@@ -12,6 +12,10 @@ import knowledge_platform_knowledge_base from "./collections/pages/knowledge_pla
 import knowledge_platform_services from "./collections/pages/knowledge_platform_services";
 import events_activities from "./collections/pages/events_activities";
 import events_press_room from "./collections/pages/events_press_room";
+import about_faq from "./collections/pages/about_faq";
+import about_teams from "./collections/pages/about_teams";
+import about_boards from "./collections/pages/about_boards";
+import about_vacancies from "./collections/pages/about_vacancies";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
@@ -45,7 +49,11 @@ export default defineConfig({
       knowledge_platform_knowledge_base,
       knowledge_platform_services,
       events_activities,
-      events_press_room
+      events_press_room,
+      about_faq,
+      about_teams,
+      about_boards,
+      about_vacancies
     ],
   },
 });
