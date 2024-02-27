@@ -79,14 +79,14 @@ hasChildren = true
   [[main]]
   parent = "Kennisplatform"
   name = "Kennisbank"
-  url = "nl/knowledge-base"
+  url = "nl/knowledge-platform/knowledge-base"
   weight = 3
   [[main.params]]
     icon = "fa-brain"
   [[main]]
   parent = "Kennisplatform"
   name = "Diensten"
-  url = "nl/services"
+  url = "nl/knowledge-platform/services"
   weight = 4
   [[main.params]]
     icon = "fa-hands-helping"

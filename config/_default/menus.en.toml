@@ -79,14 +79,14 @@ hasChildren = true
   [[main]]
   parent = "Knowledge platform"
   name = "Knowledge base"
-  url = "/knowledge-base"
+  url = "/knowledge-platform/knowledge-base"
   weight = 3
   [[main.params]]
     icon = "fa-brain"
   [[main]]
   parent = "Knowledge platform"
   name = "Services"
-  url = "/services"
+  url = "/knowledge-platform/services"
   weight = 4
   [[main.params]]
     icon = "fa-hands-helping"

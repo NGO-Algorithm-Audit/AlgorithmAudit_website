@@ -32,11 +32,11 @@ let specific_fields : TinaField[] = [
 ];
 
 export default {
-  name: "knowledgebase",
-  label: "Knowledge Base",
+  name: "knowledge_platform_knowledge_base",
+  label: "Knowledge platform (knowledge base)",
   path: "content/",
   match: {
-    include: '**/knowledge-base/**'
+    include: '**/knowledge-platform/knowledge-base/**'
   },
   fields: building_blocks.concat(specific_fields),
 };
