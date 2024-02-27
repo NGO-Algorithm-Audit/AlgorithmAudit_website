@@ -7,6 +7,7 @@ import algoprudence_how_we_work from "./collections/pages/algoprudence_how_we_wo
 import technical_tools_BDT from "./collections/pages/technical_tools_BDT";
 import technical_tools_SDG from "./collections/pages/technical_tools_SDG";
 import knowledge_platform_standards from "./collections/pages/knowledge_platform_standards";
+import knowledge_platform_policy_observatory from "./collections/pages/knowledge_platform_policy_observatory";
 import knowledge_base from "./collections/pages/knowledge_base";
 import events_activities from "./collections/pages/events_activities";
 import events_press_room from "./collections/pages/events_press_room";
@@ -39,6 +40,7 @@ export default defineConfig({
       technical_tools_BDT,
       technical_tools_SDG,
       knowledge_platform_standards,
+      knowledge_platform_policy_observatory,
       knowledge_base,
       events_activities,
       events_press_room
