@@ -665,17 +665,17 @@ list-style-type: none;
 padding: 20px 0px 0px 0px;
 }
 
-.bordertest {
+.border-gradient2 {
   border-bottom:5px solid #c4268c;
   position:relative;
   margin-left:40px;
 }
-.bordertest:first-child:before {
+.border-gradient2:first-child:before {
   content:'';
   position:absolute;
   width:100%;
   height:5px;
-  background:linear-gradient(to left, #fffde4, #618EC7);
+  background:linear-gradient(to left, #618EC7, #fffde4);
   bottom:-5px;
 }
 
