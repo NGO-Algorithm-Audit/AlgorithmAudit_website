@@ -104,10 +104,10 @@ Activity_Feed:
         Algoprudence (AA:2023:02) Risk Profiling for Social Welfare
         Reexamination 
       intro: >
-        The commission judges that algorithmic risk profiling can be used under
-        strict conditions for sampling residents receiving social welfare for
-        re-examination. The aim of re-examination is a leading factor in judging
-        profiling criteria.
+        The advice commission judges that algorithmic risk profiling can be used
+        under strict conditions for sampling residents receiving social welfare
+        for re-examination. The aim of re-examination is a leading factor in
+        judging profiling criteria.
       link: /algoprudence
       image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
       date: 29-11-2023
@@ -199,4 +199,5 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 

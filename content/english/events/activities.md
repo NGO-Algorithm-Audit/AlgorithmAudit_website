@@ -36,20 +36,15 @@ facet_groups:
       - value: event
         label: Event
 events:
-  - title: DSA Stakeholder Event
+  - title: DSA Stakeholder Event European Commission
     description: >
-      The commission judges that algorithmic risk profiling can be used under
-      strict conditions for sampling residents receiving social welfare for
-      re-examination. The aim of re-examination is a leading factor in judging
-      profiling criteria. If re-examination were based less on distrust and
-      adopts a more service-oriented approach, then the advice commission judges
-      a broader use of profiling variables permissible to enable more precise
-      targeting of individuals in need of assistance. For various variables used
-      by the Municipality of Rotterdam during the period 2017-2021, the
-      commission gives an argued judgement why these variables are or are not
-      eligible as a profiling
-    image: /images/DSA.jpeg
-    date: 01-06-2023
+      Attending Digital Services Act (DSA) Stakeholder Event. See also Algorithm
+      Audit's
+      [feedback](/knowledge_base/white_paper_dsa_delegated_regulation_feedback/)
+      on the DSA's Delegated regulation (independent third-party auditing) as
+      sent to the European Commission.  
+    image: /images/events/DSA.jpeg
+    date: 27-06-2023
     pdf: /pdf/AA202302A_EN.pdf
     facets:
       - value: type_of_event_presentation
@@ -61,4 +56,5 @@ events:
         label: '2024'
         hide: true
 ---
+
 

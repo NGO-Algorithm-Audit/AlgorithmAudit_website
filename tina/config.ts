@@ -8,7 +8,8 @@ import technical_tools_BDT from "./collections/pages/technical_tools_BDT";
 import technical_tools_SDG from "./collections/pages/technical_tools_SDG";
 import knowledge_platform_standards from "./collections/pages/knowledge_platform_standards";
 import knowledge_base from "./collections/pages/knowledge_base";
-import events_overview from "./collections/pages/events_overview";
+import events_activities from "./collections/pages/events_activities";
+import events_press_room from "./collections/pages/events_press_room";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
@@ -39,7 +40,8 @@ export default defineConfig({
       technical_tools_SDG,
       knowledge_platform_standards,
       knowledge_base,
-      events_overview
+      events_activities,
+      events_press_room
     ],
   },
 });

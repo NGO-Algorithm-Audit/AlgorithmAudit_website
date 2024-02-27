@@ -99,14 +99,14 @@ hasChildren = true
   [[main]]
   parent = "Evenementen"
   name = "Activiteiten"
-  url = "nl/activities"
+  url = "nl/events/activities"
   weight = 1
   [[main.params]]
     icon = "fa-calendar"
   [[main]]
   parent = "Evenementen"
   name = "Persberichten"
-  url = "nl/pressroom"
+  url = "nl/press_room"
   weight = 2
   [[main.params]]
     icon = "fa-newspaper"

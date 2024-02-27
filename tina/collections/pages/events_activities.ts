@@ -6,20 +6,18 @@ import facets from "../shared/facets/facets";
 import title from "../shared/page/title";
 import subtitle from "../shared/page/subtitle";
 import image from "../shared/page/image";
-import background_color from "../shared/page/background_color";
 
 export default {
-    name: "events_overview",
-    label: "Events overview",
+    name: "events_activities",
+    label: "Events (activities)",
     path: "content/",
     match: {
-        include: '**/events/_index',
+        include: '**/events/activities',
     },
     fields: [
         title,
         subtitle,
         image,
-        background_color,
         facet_groups,
         {
             type: "object",

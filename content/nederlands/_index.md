@@ -22,9 +22,11 @@ Activity_Feed:
         Algoprudentie (AA:2023:02) Risicoprofilering heronderzoek
         bijstandsuitkering
       intro: >
-        De commissie oordeelt dat algoritmische risicoprofilering onder strikte
-        voorwaarden kan worden ingezet voor het selecteren van burgers met een
-        bijstandsuitkering voor heronderzoek.
+        De adviescommissie oordeelt dat algoritmische risicoprofilering onder
+        strikte voorwaarden kan worden ingezet voor het selecteren van burgers
+        met een bijstandsuitkering voor heronderzoek. Het oogmerk van
+        heronderzoek is een leidende factor bij de beoordeling van
+        profileringscriteria.
       link: /algoprudence
       image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
       date: 29-11-2023
@@ -174,6 +176,9 @@ Title_video:
   title: De Film
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
+
+
 
 
 

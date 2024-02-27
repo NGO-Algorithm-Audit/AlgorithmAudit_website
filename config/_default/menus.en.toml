@@ -99,14 +99,14 @@ hasChildren = true
   [[main]]
   parent = "Events"
   name = "Activities"
-  url = "/activities"
+  url = "/events/activities"
   weight = 1
   [[main.params]]
     icon = "fa-calendar"
   [[main]]
   parent = "Events"
-  name = "Pressroom"
-  url = "/pressroom"
+  name = "Press room"
+  url = "/events/press_room"
   weight = 2
   [[main.params]]
     icon = "fa-newspaper"
