@@ -4,7 +4,7 @@ subtitle: >
   The commission judges that algorithmic risk profiling can be used under strict
   conditions for sampling residents receiving social welfare for re-examination.
   The aim of re-examination is a leading factor in judging profiling criteria.
-image: /images/svg-illustrations/illustration_cases.svg
+image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
 layout: case
 icon: fa-poll-h
 key_takeaways:
@@ -127,20 +127,6 @@ actions:
         label: presentation
       - value: publication
         label: publication
-discussions:
-  - title: Discussie punt 1
-    description: |
-      Discussie punt 1 beschrijving
-    image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
-    date: 26-09-2024
-  - title: Erik
-    description: |
-      Klopt niet
-    image: /images/reports/front_AA202401TR.png
-    date: 01-02-2024
-    facets:
-      - value: type
-        label: test
 form:
   title: React to the normative judgement of the advice commission
   button_text: Submit

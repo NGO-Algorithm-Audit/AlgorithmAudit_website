@@ -66,7 +66,7 @@ form:
 
 {{< container_open icon="fas fa-forward" title="Wat gebeurt er nu ik een case heb ingestuurd?" id="next-steps" >}}
 
-Uw inzending wordt behandeld door ons Team Algoprudentie. Het team beoordeelt of de casus past bij het werk van Algorithm Audit en of er voldoende capaciteit is om de casus te behandelen. U ontvangt binnen twee weken reactie.
+Inzending worden behandeld door het Team Algoprudentie. Het team beoordeelt of de casus past bij het werk van Algorithm Audit en of er voldoende capaciteit is om de casus te behandelen. U ontvangt binnen twee weken reactie.
 
 {{< container_close >}}
 

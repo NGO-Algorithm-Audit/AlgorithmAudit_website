@@ -1,62 +1,74 @@
 ---
 layout: case
-title: 'Risk Profiling for Social Welfare Reexamination (AA:2023:02)'
+title: 'Risicoprofilering heronderzoek bijstandsuitkering (AA:2023:02)'
 icon: fa-poll-h
 key_takeaways:
-  - title: Algorithmic profiling is possible under strict conditions
-    content: >-
-      The use of algorithmic profiling to re-examine whether social welfare
-      benefits have been duly granted, is acceptable if applied responsibly.
-  - title: Profiling must not equate suspicion
-    content: Re-examination needs to be based more on service and less on distrust.
-  - title: Diversity in selection methods
-    content: >-
-      To avoid tunnel vision and negative feedback loops, algorithmic profiling
-      ought to be combined with expert-driven profiling and random sampling.
-  - title: Well-considered use of profiling criteria
-    content: >-
-      Caring to avoid (proxy) discrimination and other undesirable forms of
-      differentiation, the normative advice commission assessed variables
-      individually on their eligibility for profiling (see Infographic).
-  - title: Explainability requirements for machine learning
-    content: >-
-      It is necessary that the sampling of residents can be explained throughout
-      the entire decision-making process. Complex training methods for variable
-      selection, such as the xgboost algorithm discussed in this case study, are
-      considered too complex to meet explainability requirements.
+  - title: Algoritmische profilering is onder strikte voorwaarden mogelijk
+    content: >
+      Mits zorgvuldig toegepast kan algoritmische profilering verantwoord worden
+      ingezet voor heronderzoek naar de rechtmatigheid van bijstandsuitkeringen.
+  - title: Profilering moet geen verdenking zijn
+    content: >
+      Heronderzoek moet meer op dienstverlening en minder op wantrouwen zijn
+      gebaseerd.
+  - title: Diversiteit aan selectiemethoden
+    content: >
+      Om tunnelvisie en feedbackloops te vermijden is het wenselijk om
+      algoritmische profilering te combineren met expert-gedreven profilering en
+      aselecte steekproeven.
+  - title: Verantwoord gebruik van profileringscriteria
+    content: >
+      Met oog op het voorkomen van (proxy)discriminatie en andere onwenselijke
+      vormen van onderscheid maakt de commissie per variabele een afweging over
+      de geschiktheid voor profileringsdoeleinden (zie Infographic).
+  - title: Uitlegbaarheidsvereisten machine learning
+    content: >
+      Het is noodzakelijk dat de selectie van inwoners door de gehele
+      besluitvormingsketen uitlegbaar is. Complexe trainingsmethoden om
+      profileringscriteria te selecteren, zoals het onderhavige
+      xgboost-algoritme, worden te complex geacht om te voldoen aan
+      uitlegbaarheidsvereisten.
 summary: >
-  The commission judges that algorithmic risk profiling can be used under strict
-  conditions for sampling residents receiving social welfare for re-examination.
-  The aim of re-examination is a leading factor in judging profiling criteria.
-  If re-examination were based less on distrust and adopts a more
-  service-oriented approach, then the advice commission judges a broader use of
-  profiling variables permissible to enable more precise targeting of
-  individuals in need of assistance. For various variables used by the
-  Municipality of Rotterdam during the period 2017-2021, the commission gives an
-  argued judgement why these variables are or are not eligible as a profiling
-  selection criterion (see Infographic). A combined use of several sampling
-  methods (including expert-driven profiling and random sampling) is recommended
-  to avoid tunnel vision and negative feedback loops. The commission advises
-  stricter conditions for the selection of variables for use by algorithms than
-  for selection by domain experts. The commission states that algorithms used to
-  sample citizens for re-examination must be explainable. Complex training
-  methods, such as the xgboost model used by the Municipality of Rotterdam, do
-  not meet this explainability criterion. This advice is directed towards all
-  Dutch and European municipalities that use or consider using profiling methods
-  in the context of social services.
+  De commissie oordeelt dat algoritmische risicoprofilering onder strikte
+  voorwaarden kan worden ingezet voor het selecteren van burgers met een
+  bijstandsuitkering voor heronderzoek. Het oogmerk van heronderzoek is een
+  leidende factor bij de beoordeling van profileringscriteria. Indien het
+  bijstandsheronderzoek minder op basis van verdenking en meer op basis van
+  dienstverlening zou worden ingevuld, dan laat de commissie meer ruimte voor
+  het gebruik van profileringsvariabelen om hulpbehoevende groepen gericht van
+  dienst te kunnen zijn. Voor de verschillende variabelen die door de Gemeente
+  Rotterdam zijn gebruikt in de periode 2017-2021 geeft de commissie een
+  onderbouwd oordeel waarom deze variabelen wel of niet wenselijk zijn om als
+  selectiecriterium voor profilering te worden gebruikt (zie Infographic).
+  Gecombineerde inzet van verschillende selectiemethoden (waaronder
+  expert-gedreven profilering en aselecte steekproeven) wordt wenselijk geacht
+  om tunnelvisie en verkeerde feedbackloops te doorbreken. De commissie
+  adviseert om zwaardere eisen te stellen aan algoritmische variabelenselectie
+  dan voor profileringscriteria geselecteerd door domeinexperts. De commissie
+  stelt dat algoritmes die ter ondersteun- ing worden ingezet om burgers te
+  selecteren voor heronderzoek uitlegbaar moeten zijn. Complexe
+  trainingsmethoden, zoals het xgboost-algoritme gebruikt door de Gemeente
+  Rotterdam, kunnen niet voldoen aan deze uitlegbaarheidsvereisten. Dit advies
+  is gericht aan alle Nederlandse en Europese gemeenten die profileringsmethoden
+  in de context van sociale voorzieningen overwegen of toepassen.
 sources: ''
 additional_content:
-  - title: Presentation
-    content: "The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found\_[here](https://algorithmaudit.eu/pressroom).\n"
+  - title: Presentatie
+    content: >
+      Het adviesrapport (AA:2023:02:A) is op 29 november 2023 aangeboden aan de
+      Staatssecretaris van Digitalisering. Een persbericht kan
+      [hier](https://algorithmaudit.eu/nl/pressroom) worden gevonden.
+
+
+      ![](</images/algoprudence/AA202302/Algorithm audit presentatie BZK
+      FB-18.jpg> "Presentatie algoprudentie aan staatssecretaris ")
     width: 12
 algoprudence:
-  title: Algoprudence
-  intro: "Download the full advice report (AA:2023:02:A)\_[here](https://drive.google.com/file/d/1zRRUYRfaIzdKFA2hQtW9yeM4jrD-Abef/view?usp=sharing)\_and problem statement (AA:2023:02:P)\_[here](https://drive.google.com/file/d/11sQMVJQd3ZJlW0R6HjU01b4N4CmuFw2q/view?usp=sharing).\n"
+  title: Algoprudentie
+  intro: "Het adviesrapport (AA:2023:02:A) kan\_[hier](https://drive.google.com/file/d/19ZkqTXC5M9qx3wPZFNe3Vqn6Ha0B3Yii/view?usp=sharing)\_worden gedownload en de probleemstelling (AA:2023:02:P)\_[hier](https://drive.google.com/file/d/1GSGW0-jCTsJmxYJmu6tjq6UgZJkCN5_r/view?usp=sharing).\n"
   reports:
-    - url: >-
-        https://drive.google.com/file/d/1zRRUYRfaIzdKFA2hQtW9yeM4jrD-Abef/preview
-    - url: >-
-        https://drive.google.com/file/d/11sQMVJQd3ZJlW0R6HjU01b4N4CmuFw2q/preview
+    - url: 'https://drive.google.com/file/d/19ZkqTXC5M9qx3wPZFNe3Vqn6Ha0B3Yii/view'
+    - url: 'https://drive.google.com/file/d/1GSGW0-jCTsJmxYJmu6tjq6UgZJkCN5_r/view'
 normative_advice_members:
   - name: |
       Abderrahman El Aazani, Researcher at the Ombudsman Rotterdam-Rijnmond
@@ -79,5 +91,14 @@ funded_by:
   - url: >-
       https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
     image: /images/BZK.jpg
+subtitle: >
+  De commissie oordeelt dat algoritmische risicoprofilering onder strikte
+  voorwaarden kan worden ingezet voor het selecteren van burgers met een
+  bijstandsuitkering voor heronderzoek. Het oogmerk van heronderzoek is een
+  leidende factor bij de beoordeling van profileringscriteria.
+image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
 ---
 
+{{< algoprudence_case >}}
+
+{{< form >}}

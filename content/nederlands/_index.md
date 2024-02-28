@@ -8,7 +8,9 @@ Banner:
   description1: >-
     Transparante collectieve oordeelsvorming over de verantwoorde inzet van
     algoritmes
-  description2: Richtlijn voor gedecentraliseerde beslechting van mensenrechtenspanningen
+  description2: >-
+    Richtlijnen voor het gedecentraliseerd beslechten van
+    mensenrechtenspanningen
   description3: Jurisprudentie voor algoritmes
   slogan:
     title: Een Europees kennisplatform voor
@@ -201,6 +203,7 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
 
 
 
