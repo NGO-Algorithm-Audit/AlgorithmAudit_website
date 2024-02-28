@@ -1,6 +1,6 @@
 ---
 layout: case
-title: 'Type of SIM card as a predictor variable to detect payment fraud (AA:2022:01)'
+title: 'Type sim-kaart als voorspeller voor betalingsfraude (AA:2022:01)'
 icon: fa-sim-card
 summary: >
   The audit commission advises against using type of SIM card as an input
@@ -32,8 +32,11 @@ normative_advice_members:
       Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft
 funded_by:
   - url: 'https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool'
-    image: /images/sidn.png
+    image: /images/supported_by/sidn.png
 subtitle: ''
 image: /images/algoprudence/AA202201/Cover.png
 ---
 
+{{< algoprudence_case >}}
+
+{{< form >}}

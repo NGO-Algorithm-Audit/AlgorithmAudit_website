@@ -1,6 +1,8 @@
 ---
 layout: case
-title: 'BERT-based disinformation classifier (AA:2023:01)'
+title: >-
+  Hoger-dimensionale proxy bias in een BERT-gebaseerde disinformatie algoritme
+  (AA:2023:01)
 icon: fa-newspaper
 summary: >
   The audit commission believes there is a low risk of (higher-dimensional)
@@ -11,7 +13,7 @@ sources: "Applying our self-build unsupervised\_[bias detection tool](https://al
 additional_content:
   - title: Stanford's AI Audit Challenge 2023
     content: "This case study, in combination with our\_[bias scan tool](https://algorithmaudit.eu/bias_scan), has been selected as a finalist for\_[Stanford's AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).\n"
-    image: /images/HAI.png
+    image: /images/supported_by/HAI.png
     image_link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
     width: 8
   - title: Presentation
@@ -37,14 +39,19 @@ normative_advice_members:
   - name: "Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank\_[Demos](https://demos.co.uk/)\n"
 funded_by:
   - url: 'https://europeanaifund.org/'
-    image: /images/EUAISFund.png
+    image: /images/supported_by/EUAISFund.png
 actions:
-  - title: Test
-    description: |
-      Hoi
-    image: /case_repository.svg
-    date: 14-02-2024
+  - title: Geselecteerd als finalist voor Stanford's AI Audit Challenge 2023
+    description: "Onze\_[bias detectie tool](http://localhost:5173/technical-tools/BDT)\_en bijbehorende algoprudentie van het BERT-gebaseerde disinformatie detectie algoritme is geselecteerd als finalist voor\_[Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).\n\n{{< pdf_frame articleUrl=\"/pdf-files/BDT_main_presentation_JFAM.pdf\" width=\"100%\" >}}\n"
+    image: /images/supported_by/HAI.png
+    date: 06-04-2023
+    facets:
+      - value: Finalist
+        label: Finalist
 subtitle: ''
 image: /images/algoprudence/AA202301/Cover.png
 ---
 
+{{< algoprudence_case >}}
+
+{{< form >}}

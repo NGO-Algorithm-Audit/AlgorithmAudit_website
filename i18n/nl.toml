@@ -43,3 +43,18 @@ other = "Discussie volgend op algoprudentie"
 
 [step]
 other = "Stap"
+
+[newsletter]
+other = "Nieuwsbrief"
+
+[newsletter_info]
+other = "Blijf op de hoogte van ons werk door je in te schrijven voor onze nieuwsbrief"
+
+[privacy_cookie_policy]
+other = "Privacy- en cookieverklaring"
+
+[stiching_info]
+other = "Stichting Algorithm Audit is bij de Kamer van Koophandel geregistreerd onder nummer 83979212"
+
+[license]
+other = "Deze website is gebouwd onder de CC-BY 4.0 licentie. Dit betekent dat je de content kunt hergebruiken en kunt aanpassen mits je Algorithm Audit en co-ontwikkelaars vermeldt "

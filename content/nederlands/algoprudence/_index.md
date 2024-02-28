@@ -74,7 +74,7 @@ algoprudences:
       gerechtvaardigd kan worden, indien bepaalde voorwaarden van toepassing
       zijn.
     image: /images/algoprudence/AA202301/Cover.png
-    link: /algoprudence/cases/bert-based-disinformation-classifier-aa202301
+    link: /nl/algoprudence/cases/bert-based-disinformation-classifier-aa202301
     facets:
       - value: aa_2023_01
         label: 'AA:2023:01'
@@ -99,7 +99,7 @@ algoprudences:
       om specifieke demografische groepen van de dienst uit te sluiten.
     image: /images/algoprudence/AA202201/Cover.png
     link: >-
-      /algoprudence/cases/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
+      /nl/algoprudence/cases/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
     facets:
       - value: AA-2022-01
         label: 'AA:2022:01'

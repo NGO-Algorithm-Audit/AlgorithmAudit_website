@@ -2,14 +2,16 @@
   <div class="container">
 
     <!-- desktop version -->
+    {{ $newsletter := i18n "newsletter"}}
+    {{ $newsletter_info := i18n "newsletter_info"}}
     <div class="container desktop my-5">
       <div class="row">
 
         <!-- Newsletter content -->
         <div class="col-4">
           <div class="p-4">
-            <h3 style="color:#005aa7;">Newsletter</h3>
-            <p>Stay up to date about our work by signing up for our newsletter</p>
+            <h3 style="color:#005aa7;">{{$newsletter}}</h3>
+            <p>{{$newsletter_info}}</p>
           </div>
         </div>
         <!-- /Newsletter content -->
@@ -76,8 +78,8 @@
         <!-- Newsletter content -->
         <div class="col-12 px-5 mt-5">
           <div class="p-0">
-            <h3 style="color:#005aa7;">Newsletter</h3>
-            <p>Stay up to date about our work by signing up for our newsletter</p>
+            <h3 style="color:#005aa7;">{{$newsletter}}</h3>
+            <p>{{$newsletter_info}}</p>
           </div>
         </div>
         <!-- /Newsletter content -->
@@ -191,6 +193,9 @@
 </section>
 
 <!-- lowest footer -->
+{{ $privacy_cookie_policy := i18n "privacy_cookie_policy"}}
+{{ $stiching_info := i18n "stiching_info"}}
+{{ $license := i18n "license"}}
 <section class="section" style="padding:0px 0px 0px 0px; margin-top:40px; margin-bottom:10px;">
   <div class="container">
 
@@ -198,21 +203,21 @@
 
       <!-- Privacy policy -->
       <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 mobile-footer-distance" style="padding:0px; ">
-        <p style="font-size:12px; margin:0px;"><a href="{{ `privacy_policy` | relURL }}">Privacy policy and cookies</a></p>
+        <p style="font-size:12px; margin:0px;"><a href="{{ `privacy_policy` | relURL }}">{{$privacy_cookie_policy}}</a></p>
       </div>
       <!--/Privacy policy -->
     
       <!-- KVK -->
-      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 mobile-footer-distance" style="padding:0px 0px;">
+      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 mobile-footer-distance pr-2" style="padding:0px 0px;">
         <div style="padding: 0px 0px;">
-          <a id="KvK" style="font-size:12px; padding: 0px 0px; cursor: default;"></a>
+          <a id="KvK" style="font-size:12px; padding: 0px 0px; cursor: default;">{{$stiching_info}}</a>
         </div>
       </div>
       <!--/KVK -->
     
       <!-- License -->
       <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 mobile-footer-distance" style="padding:0px 0px;">
-        <p style="font-size:12px;">This website is built under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY 4.0 license</a>. This means you can share and adapt content freely, as long as you credit Algorithm Audit and named co-creators.</p>
+        <p style="font-size:12px;">{{$license}}</p>
       </div>
       <!--/License -->
     
