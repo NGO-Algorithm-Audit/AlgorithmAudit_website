@@ -1,9 +1,94 @@
 ---
 layout: overview
 title: Events
-subtitle: Knowledge sharing is an integral part of Algorithm Audit's mission. Members of our team speak at events. [<span style="color:#005aa7"> Reach out</span>](/#contactform) to discuss contributions.
-image: "/images/events.svg"
+subtitle: >
+  Knowledge sharing is an integral part of Algorithm Audit's mission. Members of
+  our team speak at events. [<span style="color:#005aa7"> Reach
+  out</span>](/#contactform) to discuss contributions.
+image: /images/svg-illustrations/events.svg
+events:
+  - title: >-
+      Presentatie Fundamentele Rechten Impact Assessment (FRIAs) en inclusieve,
+      deliberatieve adviescommissies voor verantwoorde AI – plenaire bijeenkomst
+      JTC21 CEN-CENELEC Dublin
+    description: >
+      Presentatie Fundamentele Rechten Impact Assessment (FRIAs) en inclusieve,
+      deliberatieve adviescommissies voor verantwoorde AI – plenaire bijeenkomst
+      JTC21 CEN-CENELEC Dublin
+    image: /images/events/jtc21.jpg
+    date: 13-02-2024
+    pdf: /pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf
+    facets:
+      - value: presentation
+        label: presentation
+  - title: 'Rijksuniversiteit Groningen (RUG) AI Verordening '
+    description: |
+      Bijdrage aan paneldiscussie
+    image: /images/events/RUG.png
+    date: 06-02-2024
+    facets:
+      - value: paneldiscussie
+        label: paneldiscussie
+  - title: >-
+      Algoritmeseminar Autoriteit Persoonsgegevens – Het auditeren van
+      algoritmes
+    description: >
+      Paneldiscussie over het auditeren van algoritmes. Delen van
+      praktijkervaring.
+    image: /images/events/dutch-data-protection.jpg
+    date: 08-02-2024
+    facets:
+      - value: paneldiscussie
+        label: paneldiscussie
+  - title: >-
+      Lunchlezing Bias Detection Tool studievereniging Christiaan Huygens TU
+      Delft
+    description: >
+      Lunchlezing Bias Detection Tool studievereniging Christiaan Huygens voor
+      wiskunde en informative TU Delft
+    image: /images/events/mathematics and computer science tu delft.png
+    date: 08-01-2024
+    pdf: /pdf-files/20240108_BDT_TU_Delft.pdf
+    facets:
+      - value: Presentatie
+        label: Presentatie
+  - title: >-
+      Presentatie over inclusieve, deliberatieve adviescommissies – Werkgroep 1
+      Inclusiviteit JTC21 CEN-CENELEC 
+    description: >
+      Kennisdeling over het bijeenbrengen van inclusieve, deliberatieve
+      adviescommissies door Stichting Algorithm Audit voor de Inclusiviteit
+      werkgroep van JTC21 CEN-CENELEC
+    image: /images/events/jtc21.jpg
+    date: 07-01-2024
+    pdf: /pdf-files/20240107_AA_stakeholder_panels.pdf
+    facets:
+      - value: presentatie
+        label: presentatie
+  - title: Digitale Diensten Wet stakeholder evenement Europese Commissie
+    description: >
+      Digital Services Act (DSA) stakeholder evenement. Zie ook Algorithm
+      Audit's feedback op de DSA's delegated regulation (onafhankelijke audit
+      verplichtingen) zoals ingediend bij de Europese Commissie.
+    image: /images/events/DSA.jpeg
+    date: 27-06-2023
+    facets:
+      - value: event
+        label: evenement
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
 {{< event-right-DSA "Jun 2023" "DSA Stakeholder Event" "Event to engage with stakeholders on the impact of the Digital Services Act (DSA) in Brussels">}}
 {{< event-left-GL "Jun 2023" "GroenLinks Digital Summit" "Hosting a session on algorithm validation based on our case-based work">}}
 {{< event-right-RightsCon "Jun 2023" "RightsCon panel discussion" "Participating in panel discussion on limits to private AI auditing remote in Costa Rica">}}

@@ -5,7 +5,9 @@ Banner:
   title: al-go-pru-dentie
   phonetica: /al.ɡo-ˈpru.dεn(t)si/
   type: zelfstandig naamwoord
-  description1: Normatieve oordeelsvorming over verantwoorde AI
+  description1: >-
+    Transparante collectieve oordeelsvorming over de verantwoorde inzet van
+    algoritmes
   description2: Richtlijn voor gedecentraliseerde beslechting van mensenrechtenspanningen
   description3: Jurisprudentie voor algoritmes
   slogan:
@@ -16,7 +18,7 @@ Banner:
 Activity_Feed:
   enable: true
   button_text: Meer evenementen...
-  button_link: /events
+  button_link: /nl/events/activities
   featured_activities:
     - title: >-
         Algoprudentie (AA:2023:02) Risicoprofilering heronderzoek
@@ -27,7 +29,8 @@ Activity_Feed:
         met een bijstandsuitkering voor heronderzoek. Het oogmerk van
         heronderzoek is een leidende factor bij de beoordeling van
         profileringscriteria.
-      link: /algoprudence
+      link: >-
+        /nl/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
       image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
       date: 29-11-2023
       type: algoprudence
@@ -35,45 +38,60 @@ Activity_Feed:
     - title: >-
         Presentatie Fundamentele Rechten Impact Assessments (FRIAs) en
         stakeholder panels JTC21 CEN-CENELEC
-      link: /events
+      link: /nl/events/activities
       image: /images/events/jtc21.jpg
       date: 13-02-2024
       type: presentation
     - title: AP Algoritmeseminar paneldiscussie – Het auditeren van algoritmes
-      link: /events
+      link: /nl/events/activities
       image: /images/events/dutch-data-protection.jpg
       date: 08-02-2024
       type: presentation
     - title: RUG AI Verordening event paneldiscussie
-      link: /events
+      link: /nl/events/activities
       image: /images/events/RUG.png
       date: 06-02-2024
       type: presentation
-Supported_by: {}
+Supported_by:
+  title: Ondersteund door
+  funders:
+    - image: /images/supported_by/sidn.png
+      link: 'https://www.sidnfonds.nl/projecten/open-source-ai-auditing'
+      alt_text: SIDN Fonds
+    - image: /images/supported_by/EUAISFund.png
+      link: 'https://europeanaifund.org/'
+      alt_text: European AI & Society Fund
+    - image: /images/supported_by/NLAIC.png
+      link: 'https://nlaic.com/en/'
+      alt_text: Nederlandse AI Coalitie
+    - image: /images/supported_by/BZK.jpg
+      link: >-
+        https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
+      alt_text: Ministerie van Binnenlandse Zaken en Koninkrijksrelaties
+    - image: /images/supported_by/HAI.png
+      link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
+      alt_text: Stanford's AI Audit Challenge 2023 finalisten
 Distinctive_in:
   enable: true
-  title: Distinctive in
+  title: Onderscheidend in
   width_m: 4
   width_s: 2
   feature_item:
-    - name: Independence
+    - name: Onafhankelijkheid
       icon: fas fa-star-of-life
       content: >
-        By working nonprofit and under explicit terms and conditions, we ensure
-        the independence and quality of our audits and normative advice
-    - name: Normative advice
+        Algorithm Audit werkt zonder winstoogmerk. Onze werkafspraken garanderen
+        onafhankelijkheid en diversiteit van onze adviescommissies en
+        voortkomend normatief advies
+    - name: Normatief advies
       icon: fas fa-search
       content: >
-        Mindful of societal impact our commissions provide normative advice on
-        ethical issues that arise in algorithmic use cases
-    - name: Public knowledge
+        Algorithm Audit's adviescommissies geven normatief advies over concrete
+        ethische vraagtukken die zich voordoen bij gebruik van algoritmes en
+        data-analyse
+    - name: Publieke kennis
       icon: fab fa-slideshare
-      content: >
-        All our audits and corresponding advice (*algoprudence*) are made <a
-        href="https://algorithmaudit.eu/algoprudence/"
-        style="color:white;text-decoration: underline;">publicly available</a>,
-        increasing collective knowledge how to deploy and use algorithms in an
-        responsible way
+      content: "Al onze casuïstiek en bijbehorend advies (algoprudentie) is\_<a href=\"https://algorithmaudit.eu/algoprudence/\" style=\"color:white;text-decoration: underline;\">openbaar</a>. Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes\n"
 Areas_of_AI_expertise:
   enable: true
   title: Areas of AI expertise
@@ -99,83 +117,134 @@ Areas_of_AI_expertise:
         (DSA) came into forces last summer, auditing ranking systems is highly
         relevant
 Recent_audits:
-  title: Recent audits
+  title: Recente audits
   feature_item:
-    - name: Risk Profiling Social Welfare Re-examination
+    - name: Risicoprofilering heronderzoek bijstandsuitkering
       image: /images/reports/front_AA202302A.png
-      link: /algoprudence
+      link: >-
+        /nl/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
       content: >
-        Normative advice commission provides rationales why these variables are
-        eligible or not as a profiling selection criterion for a xgboost
-        algorithm
-    - name: Preventing prejudice
+        De commissie oordeelt dat algoritmische risicoprofilering onder strikte
+        voorwaarden kan worden ingezet voor het selecteren van burgers met een
+        bijstandsuitkering voor heronderzoek
+    - name: Vooringenomenheid voorkomen
       image: /images/reports/front_AA202401TR.png
-      link: /events
+      link: /nl/events
       content: >
-        Assessment of risk distributions through Z-tests and bias test for
-        various steps in algorithmic-driven decision-making process
+        Audit op rechtmatigheid van gemaakt onderscheid aan de hand van
+        Z-toetsen en biasmeting op verschillende plekken in het
+        algoritme-gedreven besluitvormingsproces
 Building_algoprudence:
-  title: Building _algoprudence_
-  button_text: Our working method
+  title: Opbouwen van _algoprudentie_
+  button_text: Onze werkwijze
   steps:
-    - title: Indentifying issue
+    - title: Identificeren van een casus
       content: >
-        Identifying a concrete ethical issue in a real algorithm or
-        data-analysis tool
-    - title: Problem statement
+        Identificeren van een concreet ethisch vraagstuk bij gebruik van een
+        algoritme of data-analyse
+    - title: Probleemstelling
       content: >
-        Describe ethical issue, legal aspects and hear stakeholders and affected
-        groups
-    - title: Advice commission
+        Beschrijving van ethische kwestie, juridisch kaders, statistische
+        methodologie en het horen van verschillende belanghebbenden en
+        benadeelde groepen
+    - title: Normatieve adviescommissie
       content: >
-        Deliberative conversation on ethical issue by diverse and inclusive
-        advice commission
-    - title: Public advice
+        Deliberatief gesprek van een diverse and inclusieve adviescommissie over
+        het probleemstelling-document
+    - title: Publiek advies
       content: >
-        Advice of commission is published together with problem statement on our
-        website. Publicly sharing the problem statement and normative advice is
-        called *algoprudence*
+        Het uitgebrachte advies van de commissie wordt samen met het
+        probleemstelling-document gepubliceerd op onze website. Het publiek
+        delen van het probleemstelling-document en normatieve advies wordt
+        *algoprudentie* genoemd
 Advantages_of_algoprudence:
-  title: Advantages of algoprudence
+  title: Voordelen van algoprudentie
   image: /images/other/Awb.jpg
-  button_text: White paper on algoprudence
+  button_text: Wetenschappelijke paper over algoprudentie
   feature_item:
-    - name: Learn & harmonize
+    - name: Leren & harmoniseren
       icon: fas fa-book-reader
       content: >
-        [<span style="color:#005aa7">></span>](/algoprudence) Ignite collective
-        learning process to deploy and audit responsible AI
+        [<span style="color:#005aa7">></span>](/algoprudence) Aanjagen van
+        collectieve leerproces voor de verantwoorde inzet van algoritmes en
+        data-analyse
 
 
-        [<span style="color:#005aa7">></span> ](/algoprudence)Harmonizes the
-        resolution of ethical questions and the interpretation of open legal
-        norms
-    - name: Question & critisize
+        [<span style="color:#005aa7">></span> ](/algoprudence)Harmoniseren van
+        de omgang met ethische vraagstukken en de interpretatie van open
+        juridische normen
+    - name: Discussie & debat
       icon: fas fa-comment
       content: >
-        [<span style="color:#005aa7">></span>](/algoprudence) Fostering
-        criticism on normative decision-making through transparency
+        [<span style="color:#005aa7">></span>](/algoprudence) Transparantie
+        maakt kritiek mogelijk op normatieve besluitvorming bij de publieke
+        inzet van algoritmen
 
 
-        [<span style="color:#005aa7">></span> ](/algoprudence)Informing public
-        debate with important ethical issues to be discussed within  democratic
-        sight
-    - name: Inclusion & participation
+        [<span style="color:#005aa7">></span> ](/algoprudence)Opent ruimte voor
+        maatschappelijk debat over normatieve keuzes in democratisch zicht
+    - name: Inclusie & participatie
       icon: fas fa-hands-helping
-      content: >
-        [<span style="color:#005aa7">></span> ](/algoprudence)Connecting various
-        stakeholders to design ethical algorithms together with technical
-        experts
-
-
-        [<span style="color:#005aa7">></span> ](/algoprudence)European answer to
-        deploy responsible AI systems
+      content: "[<span style=\"color:#005aa7\">></span> ](/algoprudence)Betrekt verschillende belanghebbenden bij vormgeven van algoritmes\n\n[<span style=\"color:#005aa7\">></span> ](/algoprudence)Nederlands antwoord hoe AI\_democratisch\_kan worden ontwikkeld en\_verantwoord\_kan worden ingezet\n"
 Title_gif:
   title: Jurisprudence for algorithms
 Title_video:
   title: De Film
   video_mp4: /videos/AA_video_(1080p).mp4
+Building_ai_audit_capacity:
+  lines:
+    - text_before: Opbouwen van
+      text_highlighted: publieke kennis
+      text_after: over AI auditing
+    - text_before: zonder
+      text_highlighted: winstoogmerk
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

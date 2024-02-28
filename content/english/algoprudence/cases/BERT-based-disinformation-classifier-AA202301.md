@@ -67,13 +67,17 @@ actions:
       Our [bias detection tool](/technical-tools/BDT) and this case study have
       been selected as a finalist for [Stanford's AI Audit Challenge
       2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+
+
+      {{< pdf_frame articleUrl="/pdf-files/BDT_main_presentation_JFAM.pdf"
+      width="100%" >}}
     image: /images/supported_by/HAI.png
     date: 14-02-2024
     facets:
-      - value: award
-        label: award
+      - value: finalist
+        label: finalist
 ---
 
-{{< form >}}
-
 {{< algoprudence_case >}}
+
+{{< form >}}

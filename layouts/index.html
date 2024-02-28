@@ -95,7 +95,7 @@
         <!-- main -->
         <h3 style="color:#005aa7; font-weight:100;">{{.title}}</h3>
         <!-- /main -->
-
+        
       </div>
     </div>
 
@@ -103,21 +103,21 @@
     <div class="col-12 mobile" style="margin-bottom:50px; padding: 0px 7.5%;">
       <div class="ms-slider">
         <ul class="ms-slider__words">
+          {{ range .labels }}
           <li class="ms-slider__word">
             <div class="slider-wrapper mb-1 py-1">
-              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text1}}</i></h3>
+              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
             </div>
           </li>
+          {{ end }}
+          <!-- repeat the last item for the slider logic -->
+          {{ with index .labels 0 }}
           <li class="ms-slider__word">
             <div class="slider-wrapper mb-1 py-1">
-              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text2}}</i></h3>
+              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
             </div>
           </li>
-          <li class="ms-slider__word">
-            <div class="slider-wrapper mb-1 py-1">
-              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text1}}</i></h3>
-            </div>
-          </li>
+          {{ end }}
         </ul>
       </div>
     </div>
@@ -838,14 +838,17 @@
           <!-- /title -->
         </div>
 
-        <!-- algoprudence animation -->
+        <!-- XX version -->
         <div class="row" style="display: flex; justify-content:center; align-items:center; margin-top:50px;">
+          <!-- algoprudence animation -->
           <div id="imagesequence">
             <img id="myimg" width="800px" src="/images/gif-algoprudence-frames/frame-036.png"><br>
           </div>
+          <!-- /algoprudence animation -->
         </div>
+        <!-- /XX version -->
+        
       </div>
-      <!-- /algoprudence animation -->
 
     </div>
   </div>

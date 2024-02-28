@@ -35,12 +35,12 @@ export default {
                     {
                         type: "rich-text",
                         name: "description",
-                        label: "description"
+                        label: "Description"
                     },
                     {
                         type: "image",
                         name: "image",
-                        label: "image",
+                        label: "Image",
                         required: true,
                     },
                     {
@@ -48,7 +48,7 @@ export default {
                         name: "date",
                         label: "Date",
                         required: true,
-                        description: "dd-MM-yyyy (i.e. 13-06-2024)"
+                        description: "dd-MM-yyyy (e.g. 13-06-2024)"
                     },
                     {
                         type: "image",

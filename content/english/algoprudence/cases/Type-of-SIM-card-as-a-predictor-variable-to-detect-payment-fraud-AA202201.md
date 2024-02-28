@@ -57,6 +57,6 @@ form:
       type: email
 ---
 
-{{< form >}}
-
 {{< algoprudence_case >}}
+
+{{< form >}}

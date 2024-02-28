@@ -137,7 +137,7 @@ discussions:
     image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
     date: 26-09-2024
 form:
-  title: Submit a case
+  title: React to the normative judgement of the advice commission
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
@@ -157,6 +157,6 @@ form:
       placeholder: Mail address
 ---
 
-{{< form >}}
-
 {{< algoprudence_case >}}
+
+{{< form >}}

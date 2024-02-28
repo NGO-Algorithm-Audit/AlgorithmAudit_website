@@ -362,7 +362,7 @@ export default {
         // Areas of expertise
         {
             type: "object",
-            name: "areas_of_ai_expertise",
+            name: "Areas_of_ai_expertise",
             label: "Areas of AI Expertise",
             fields:
                 [
@@ -476,7 +476,7 @@ export default {
         // How we build algoprudence
         {
             type: "object",
-            name: "how_we_build_algoprudence",
+            name: "Building_algoprudence",
             label: "How we build algoprudence",
             fields:
                 [
@@ -488,7 +488,7 @@ export default {
                     {
                         type: "string",
                         name: "button_text",
-                        label: "Our working method button text"
+                        label: "Button text"
                     },
                     {
                         type: "object",
@@ -514,7 +514,7 @@ export default {
         // Advantages of algoprudence
         {
             type: "object",
-            name: "advantages_of_algoprudence",
+            name: "Advantages_of_algoprudence",
             label: "Advantages of algoprudence",
             fields:
                 [

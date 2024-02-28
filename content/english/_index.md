@@ -98,7 +98,7 @@ Banner:
 Activity_Feed:
   enable: true
   button_text: View more...
-  button_link: /events
+  button_link: /events/activities
   featured_activities:
     - title: >-
         Algoprudence (AA:2023:02) Risk Profiling for Social Welfare
@@ -108,31 +108,35 @@ Activity_Feed:
         under strict conditions for sampling residents receiving social welfare
         for re-examination. The aim of re-examination is a leading factor in
         judging profiling criteria.
-      link: /algoprudence
+      link: >-
+        /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
       image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
       date: 29-11-2023
       type: algoprudence
   activities:
-    - title: Presentation at Dutch Data Protection Authority about algoprudence
-      link: /events
-      image: /images/events/dutch-data-protection.jpg
-      date: 17-01-2024
-      type: presentation
-    - title: Lunch lecture Bias Detection Tool study association TU Delft
-      link: /events
-      image: /images/events/mathematics and computer science tu delft.png
-      date: 08-01-2024
-      type: presentation
-    - title: Presentation on stakeholder panel WG1 Inclusiveness JTC21
-      link: /events
+    - title: >-
+        Presentation Fundamental Rights Impact Assessment (FRIAs) and
+        deliberative, inclusive stakeholder panels plenary JTC21 CEN-CENELEC
+        Dublin
+      link: /events/activities
       image: /images/events/jtc21.jpg
-      date: 07-01-2024
+      date: 13-02-2024
+      type: presentation
+    - title: Panel discussion Dutch Data Protection Authority – Auditing algorithms
+      link: /events/activities
+      image: /images/events/dutch-data-protection.jpg
+      date: 08-02-2024
+      type: presentation
+    - title: University of Groningen (RUG) AI Act event
+      link: /events/activities
+      image: /images/events/RUG.png
+      date: 06-02-2024
       type: presentation
 Supported_by:
   title: Supported by
   funders:
     - image: /images/supported_by/sidn.png
-      link: 'https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool'
+      link: 'https://www.sidnfonds.nl/projecten/open-source-ai-auditing'
       alt_text: sidn
     - image: /images/supported_by/EUAISFund.png
       link: 'https://europeanaifund.org/announcing-our-2022-open-call-grantees/'
@@ -184,14 +188,15 @@ Recent_audits:
   feature_item:
     - name: 'Risk Profiling Social Welfare Re-examination '
       image: /images/reports/front_AA202302A.png
-      link: /algoprudence
+      link: >-
+        /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
       content: >
         Normative advice commission provides rationales why these variables are
         eligible or not as a profiling selection criterion for a xgboost
         algorithm
     - name: Bias prevented
       image: /images/reports/front_AA202401TR.png
-      link: /events
+      link: /algoprudence
       content: >
         Assessment of risk distributions through Z-tests and bias test for
         various steps in algorithmic-driven decision-making process
@@ -199,5 +204,26 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
