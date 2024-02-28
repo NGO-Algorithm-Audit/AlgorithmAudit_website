@@ -155,7 +155,7 @@ Building_ai_audit_capacity:
   lines:
     - text_before: Building
       text_highlighted: AI auditing
-      text_after: capacity from a
+      text_after: capacity
     - text_before: from a
       text_highlighted: not-for-profit
       text_after: perspective
@@ -204,6 +204,7 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 
 
 

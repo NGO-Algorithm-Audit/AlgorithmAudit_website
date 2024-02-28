@@ -187,7 +187,7 @@ Advantages_of_algoprudence:
       icon: fas fa-hands-helping
       content: "[<span style=\"color:#005aa7\">></span> ](/algoprudence)Betrekt verschillende belanghebbenden bij vormgeven van algoritmes\n\n[<span style=\"color:#005aa7\">></span> ](/algoprudence)Nederlands antwoord hoe AI\_democratisch\_kan worden ontwikkeld en\_verantwoord\_kan worden ingezet\n"
 Title_gif:
-  title: Jurisprudence for algorithms
+  title: Jurisprudentie voor algoritmes
 Title_video:
   title: De Film
   video_mp4: /videos/AA_video_(1080p).mp4
@@ -195,10 +195,20 @@ Building_ai_audit_capacity:
   lines:
     - text_before: Opbouwen van
       text_highlighted: publieke kennis
-      text_after: over AI auditing
-    - text_before: zonder
-      text_highlighted: winstoogmerk
+      text_after: ''
+    - text_before: ' over verantwoorde AI'
+      text_highlighted: zonder winstoogmerk
+      text_after: ''
+title_gif:
+  title: Jurisprudentie voor algoritmes
 ---
+
+
+
+
+
+
+
 
 
 

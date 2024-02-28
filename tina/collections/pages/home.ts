@@ -285,6 +285,11 @@ export default {
                             type: "string",
                             label: "Text after",
                             name: "text_after",
+                        },
+                        {
+                            type: "string",
+                            label: "Highlighted text #2",
+                            name: "text_highlighted2",
                         }
                     ]
                 }
@@ -565,7 +570,7 @@ export default {
         // GIF algoprudence
         {
             type: "object",
-            name: "title_gif",
+            name: "Title_gif",
             label: "Title of gif",
             fields:
                 [
