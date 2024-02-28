@@ -31,11 +31,11 @@ hasChildren = true
     icon = "fa-question"
 
 [[main]]
-name = "Technical Tools"
+name = "Technical tools"
 weight = 3
 hasChildren = true
   [[main]]
-  parent = "Technical Tools"
+  parent = "Technical tools"
   name = "Bias detection tool"
   url = "/technical-tools/BDT"
   weight = 1
@@ -43,14 +43,14 @@ hasChildren = true
     icon = "fa-search"
     subtitle = "Open source AI auditing tools"
   [[main]]
-  parent = "Technical Tools"
+  parent = "Technical tools"
   name = "Synthetic data generation"
   url = "/technical-tools/SDG"
   weight = 2
   [[main.params]]
     icon = "fa-table"
   [[main]]
-  parent = "Technical Tools"
+  parent = "Technical tools"
   name = "Github code"
   url = "https://github.com/NGO-Algorithm-Audit/"
   weight = 3

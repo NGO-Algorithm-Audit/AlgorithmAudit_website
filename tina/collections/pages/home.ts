@@ -157,17 +157,7 @@ export default {
                                     label: "Type",
                                     type: "string",
                                     name: "type",
-                                    options:
-                                        [
-                                            {
-                                                value: "algoprudence",
-                                                label: "algoprudence"
-                                            },
-                                            {
-                                                value: "presentation",
-                                                label: "presentation"
-                                            }
-                                        ]
+                                    description: "tag"
                                 }
                             ]
                     },
@@ -205,17 +195,7 @@ export default {
                                     label: "Type",
                                     type: "string",
                                     name: "type",
-                                    options:
-                                        [
-                                            {
-                                                value: "algoprudence",
-                                                label: "algoprudence"
-                                            },
-                                            {
-                                                value: "presentation",
-                                                label: "presentation"
-                                            }
-                                        ]
+                                    description: "tag"
                                 }
                             ]
                     }
@@ -367,7 +347,7 @@ export default {
         // Areas of expertise
         {
             type: "object",
-            name: "Areas_of_ai_expertise",
+            name: "Areas_of_AI_expertise",
             label: "Areas of AI Expertise",
             fields:
                 [

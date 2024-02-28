@@ -72,7 +72,7 @@ hasChildren = true
   [[main]]
   parent = "Kennisplatform"
   name = "AI beleid observatorium"
-  url = "nl/ai-policy-observatory"
+  url = "nl/knowledge-platform/ai-policy-observatory"
   weight = 2
   [[main.params]]
     icon = "fa-binoculars"

@@ -1,5 +1,5 @@
 ---
-layout: overview
+layout: repository
 title: Algoprudentie overzicht
 subtitle: >
   Algoprudentie is beschikbaar voor verschillende soorten algoritmes, onder

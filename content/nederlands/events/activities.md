@@ -73,9 +73,20 @@ events:
     image: /images/events/DSA.jpeg
     date: 27-06-2023
     facets:
+      - value: type_event
+        label: Evenement
+facet_groups:
+  - value: type
+    title: Type evenement
+    facets:
       - value: event
-        label: evenement
+        label: Evenement
 ---
+
+
+
+
+
 
 
 

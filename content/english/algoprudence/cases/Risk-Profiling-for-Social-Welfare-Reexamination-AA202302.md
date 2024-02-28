@@ -111,15 +111,12 @@ actions:
     facets:
       - value: political action
         label: political action
-  - title: News item Binnenlands Bestuur
-    description: >
-      News website for Dutch public sector administration reported on
-      AA:2023:02:A. See
-      [link](https://www.binnenlandsbestuur.nl/digitaal/algoritmische-profilering-onder-strikte-voorwaarden-mogelijk).
+  - title: Binnenlands Bestuur
+    description: "News website for Dutch public sector administration reported on AA:2023:02:A. See\_[link](https://www.binnenlandsbestuur.nl/digitaal/algoritmische-profilering-onder-strikte-voorwaarden-mogelijk).\n"
     image: /images/algoprudence/AA202302/logo-bb.svg
-    date: 30-11-2023
+    date: 01-12-2023
     facets:
-      - value: news
+      - value: type
         label: news
   - title: Presentation advice report to Dutch Minister of Digitalization
     description: "Advice report AA:2023:02:A has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found\_[here](/events/press_room).\n"
@@ -136,6 +133,14 @@ discussions:
       Discussie punt 1 beschrijving
     image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
     date: 26-09-2024
+  - title: Erik
+    description: |
+      Klopt niet
+    image: /images/reports/front_AA202401TR.png
+    date: 01-02-2024
+    facets:
+      - value: type
+        label: test
 form:
   title: React to the normative judgement of the advice commission
   button_text: Submit

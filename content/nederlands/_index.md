@@ -33,7 +33,7 @@ Activity_Feed:
         /nl/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
       image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
       date: 29-11-2023
-      type: algoprudence
+      type: Algoprudentie
   activities:
     - title: >-
         Presentatie Fundamentele Rechten Impact Assessments (FRIAs) en
@@ -41,17 +41,17 @@ Activity_Feed:
       link: /nl/events/activities
       image: /images/events/jtc21.jpg
       date: 13-02-2024
-      type: presentation
+      type: Presentatie
     - title: AP Algoritmeseminar paneldiscussie – Het auditeren van algoritmes
       link: /nl/events/activities
       image: /images/events/dutch-data-protection.jpg
       date: 08-02-2024
-      type: presentation
+      type: Presentatie
     - title: RUG AI Verordening event paneldiscussie
       link: /nl/events/activities
       image: /images/events/RUG.png
       date: 06-02-2024
-      type: presentation
+      type: Presentatie
 Supported_by:
   title: Ondersteund door
   funders:
@@ -94,12 +94,11 @@ Distinctive_in:
       content: "Al onze casuïstiek en bijbehorend advies (algoprudentie) is\_<a href=\"https://algorithmaudit.eu/algoprudence/\" style=\"color:white;text-decoration: underline;\">openbaar</a>. Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes\n"
 Areas_of_AI_expertise:
   enable: true
-  title: Areas of AI expertise
   width_m: 4
   width_s: 12
   submit_case_text: Request an audit
   feature_item:
-    - name: Profiling
+    - name: Test
       icon: fas fa-chart-pie
       content: >
         Auditing rule-based and ML-driven profiling, e.g., differentiation
@@ -202,6 +201,11 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
+
+
+
+
 
 
 

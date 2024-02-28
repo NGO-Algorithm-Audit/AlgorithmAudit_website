@@ -23,7 +23,7 @@ facet_groups:
         label: Q1-2023
       - value: '2022'
         label: '2022'
-  - value: type_of_event
+  - value: type
     title: Type of event
     facets:
       - value: presentation
@@ -127,7 +127,7 @@ events:
     date: 27-06-2023
     pdf: ''
     facets:
-      - value: Event
+      - value: type_event
         label: Event
       - value: year_q3_2023
         label: Q3-2023
@@ -136,6 +136,8 @@ events:
         label: '2023'
         hide: true
 ---
+
+
 
 
 
