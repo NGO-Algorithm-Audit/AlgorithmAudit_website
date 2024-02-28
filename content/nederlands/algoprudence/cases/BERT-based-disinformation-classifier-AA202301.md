@@ -44,6 +44,7 @@ actions:
       Hoi
     image: /case_repository.svg
     date: 14-02-2024
+subtitle: ''
+image: /images/algoprudence/AA202301/Cover.png
 ---
-
 

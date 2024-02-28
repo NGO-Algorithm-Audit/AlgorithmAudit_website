@@ -58,7 +58,7 @@ additional_content:
   - title: Presentation
     content: "The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found\_[here](https://algorithmaudit.eu/pressroom).\n"
     image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
-    width: 12
+    width: 8
 algoprudence:
   title: Algoprudence
   intro: "Download the full advice report (AA:2023:02:A)\_[here](https://drive.google.com/file/d/1zRRUYRfaIzdKFA2hQtW9yeM4jrD-Abef/view?usp=sharing)\_and problem statement (AA:2023:02:P)\_[here](https://drive.google.com/file/d/11sQMVJQd3ZJlW0R6HjU01b4N4CmuFw2q/view?usp=sharing).\n"
@@ -107,7 +107,7 @@ actions:
 
       * implications of the AIAct for this particular form of risk profiling.
     image: /images/algoprudence/AA202302/Actions/images.png
-    date: 22-02-2024
+    date: 04-12-2023
     facets:
       - value: political action
         label: political action
@@ -117,16 +117,16 @@ actions:
     date: 01-12-2023
     facets:
       - value: type
-        label: news
+        label: News
   - title: Presentation advice report to Dutch Minister of Digitalization
     description: "Advice report AA:2023:02:A has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found\_[here](/events/press_room).\n"
     image: /images/algoprudence/AA202302/Actions/presentatie_BZK.jpg
     date: 29-11-2023
     facets:
       - value: presentation
-        label: presentation
+        label: Presentation
       - value: publication
-        label: publication
+        label: Publication
 form:
   title: React to the normative judgement of the advice commission
   button_text: Submit

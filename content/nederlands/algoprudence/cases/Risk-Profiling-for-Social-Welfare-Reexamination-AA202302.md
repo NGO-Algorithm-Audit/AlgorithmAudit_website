@@ -58,45 +58,73 @@ additional_content:
       Het adviesrapport (AA:2023:02:A) is op 29 november 2023 aangeboden aan de
       Staatssecretaris van Digitalisering. Een persbericht kan
       [hier](https://algorithmaudit.eu/nl/pressroom) worden gevonden.
-
-
-      ![](</images/algoprudence/AA202302/Algorithm audit presentatie BZK
-      FB-18.jpg> "Presentatie algoprudentie aan staatssecretaris ")
+    image: /images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg
     width: 12
 algoprudence:
   title: Algoprudentie
   intro: "Het adviesrapport (AA:2023:02:A) kan\_[hier](https://drive.google.com/file/d/19ZkqTXC5M9qx3wPZFNe3Vqn6Ha0B3Yii/view?usp=sharing)\_worden gedownload en de probleemstelling (AA:2023:02:P)\_[hier](https://drive.google.com/file/d/1GSGW0-jCTsJmxYJmu6tjq6UgZJkCN5_r/view?usp=sharing).\n"
   reports:
-    - url: 'https://drive.google.com/file/d/19ZkqTXC5M9qx3wPZFNe3Vqn6Ha0B3Yii/view'
-    - url: 'https://drive.google.com/file/d/1GSGW0-jCTsJmxYJmu6tjq6UgZJkCN5_r/view'
+    - url: >-
+        https://drive.google.com/file/d/19ZkqTXC5M9qx3wPZFNe3Vqn6Ha0B3Yii/preview
+    - url: >-
+        https://drive.google.com/file/d/1GSGW0-jCTsJmxYJmu6tjq6UgZJkCN5_r/preview
 normative_advice_members:
   - name: |
-      Abderrahman El Aazani, Researcher at the Ombudsman Rotterdam-Rijnmond
+      Abderrahman El Aazani, onderzoeker bij Ombudsman Rotterdam-Rijnmond
   - name: >
       Francien Dechesne, Associate Professor Law and Digital Technologies,
-      Leiden University
+      Universiteit Leiden
   - name: >
-      Maarten van Asten, Alderman Finance, Digitalization, Sports and Events
-      Municipality of Tilburg
+      Maarten van Asten, wethouder Financiën, Digitalisering, Sport en
+      Evenementen Gemeente Tilburg
   - name: |
-      Munish Ramlal, Ombudsman Metropole region Amsterdam
+      Munish Ramlal, ombudsman Metropool Amsterdam
   - name: >
-      Oskar Gstrein, Assistant Professor Governance and Innovation, University
-      of Groningen
+      Oskar Gstrein, Assistant Professor Governance and Innovation,
+      Rijksuniversiteit Groningen
 funded_by:
-  - url: 'https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool'
-    image: /images/sidn.png
+  - url: 'https://www.sidnfonds.nl/projecten/open-source-ai-auditing'
+    image: /images/supported_by/sidn.png
   - url: 'https://europeanaifund.org/'
-    image: /images/EUAISFund.png
+    image: /images/supported_by/EUAISFund.png
   - url: >-
       https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
-    image: /images/BZK.jpg
+    image: /images/supported_by/BZK.jpg
 subtitle: >
   De commissie oordeelt dat algoritmische risicoprofilering onder strikte
   voorwaarden kan worden ingezet voor het selecteren van burgers met een
   bijstandsuitkering voor heronderzoek. Het oogmerk van heronderzoek is een
   leidende factor bij de beoordeling van profileringscriteria.
 image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
+actions:
+  - title: 'Vragen Amsterdamse gemeenteraad '
+    description: "Raadsleden hebben naar aanleiding van adviesrapport AA-2023:02:A\_[vragen](https://amsterdam.raadsinformatie.nl/document/13573898/1/236+sv+Aslami%2C+IJmker+en+Garmy+inzake+toegepaste+profileringscriteria+gemeentelijke+algoritmes)\_gesteld aan het college van Burgemeester en Wethouders over een vergelijkbaar machine learning-gedreven algoritme 'Slimme check levensonderhoud' dat de gemeente Amsterdam momenteel als pilot test. De vragen hebben betrekking tot:\n\n* (on)geschikte selectiecriteria die aan het ML gevoed kunnen worden voor variabeleselectie\n* uitlegbaarheidsvereisten voor het gebruikte explainable boosting algoritme\n* implicaties van de aanstaande AI Verordening voor deze vorm van risicoprofileren.\n"
+    image: /images/algoprudence/AA202302/Actions/images.png
+    date: 04-12-2023
+    facets:
+      - value: politiek
+        label: Politieke actie
+  - title: Binnenlands Bestuur
+    description: >
+      [Nieuwsitem](https://www.binnenlandsbestuur.nl/digitaal/algoritmische-profilering-onder-strikte-voorwaarden-mogelijk)
+      op website van Binnenlands Bestuur over nieuwe algoprudentie
+    image: /images/algoprudence/AA202302/logo-bb.svg
+    date: 01-12-2023
+    facets:
+      - value: news
+        label: Nieuws
+  - title: Presentatie adviesrapport aan staatssecretaris van Digitalisering
+    description: >
+      Adviesdocument AA:2023:02:A is op 29 november 2023 gepresenteerd aan de
+      staatssecretaris van Digitalisering Alexandra van Huffelen. Een
+      persbericht kan [hier](/nl/events/press_room/) worden gevonden.
+    image: /images/algoprudence/AA202302/Actions/presentatie_BZK.jpg
+    date: 29-11-2023
+    facets:
+      - value: presentatie
+        label: Presentatie
+      - value: publicatie
+        label: Publicatie
 ---
 
 {{< algoprudence_case >}}

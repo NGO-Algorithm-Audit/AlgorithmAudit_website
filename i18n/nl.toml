@@ -33,13 +33,13 @@ other = "Uitgelicht"
 other = "Recente activiteit"
 
 [algoprudence_description_tab]
-other = "Beschrijving van algoprudentie"
+other = "Algoprudentie beschrijving"
 
 [algoprudence_actions_tab]
-other = "Acties volgend na dit werk"
+other = "Acties volgend op algoprudentie"
 
 [algoprudence_discussion_tab]
-other = "Discussie volgend na dit werk"
+other = "Discussie volgend op algoprudentie"
 
 [step]
 other = "Stap"

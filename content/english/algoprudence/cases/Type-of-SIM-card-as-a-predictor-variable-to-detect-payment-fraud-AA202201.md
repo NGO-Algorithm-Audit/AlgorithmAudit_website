@@ -1,7 +1,7 @@
 ---
 title: 'Type of SIM card as a predictor variable to detect payment fraud (AA:2022:01)'
 subtitle: ''
-image: /images/svg-illustrations/illustration_cases.svg
+image: /images/algoprudence/AA202201/Cover.png
 layout: case
 icon: fa-sim-card
 summary: >

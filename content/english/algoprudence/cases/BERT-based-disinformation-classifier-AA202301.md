@@ -3,7 +3,7 @@ title: >-
   Higher-dimensional proxy bias in a BERT-based disinformation classifier
   (AA:2023:01)
 subtitle: ''
-image: /images/svg-illustrations/case_repository.svg
+image: /images/algoprudence/AA202301/Cover.png
 form:
   title: React to the normative judgement of the advice commission
   button_text: Submit

@@ -33,5 +33,7 @@ normative_advice_members:
 funded_by:
   - url: 'https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool'
     image: /images/sidn.png
+subtitle: ''
+image: /images/algoprudence/AA202201/Cover.png
 ---
 
