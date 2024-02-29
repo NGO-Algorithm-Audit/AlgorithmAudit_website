@@ -581,6 +581,10 @@ vertical-align: top;
   font-weight: 600;
 }
 
+.itemize-special li:before {
+  content: "" !important;
+}
+
 li {
   font-family: avenir, sans-serif;
   font-size: 15px;

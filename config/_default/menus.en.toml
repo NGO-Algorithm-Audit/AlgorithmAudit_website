@@ -85,7 +85,7 @@ hasChildren = true
     icon = "fa-brain"
   [[main]]
   parent = "Knowledge platform"
-  name = "Services"
+  name = "Collaboration"
   url = "/knowledge-platform/services"
   weight = 4
   [[main.params]]

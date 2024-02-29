@@ -1,8 +1,10 @@
 ---
 title: AI Policy Observatory
-subtitle: |
-  Test
-image: /images/AIA.jpg
+subtitle: >
+  AI ethics urgently needs case-based experience and a bottom-up approach. We
+  believe existing and proposed legislation is and will not suffice to realize
+  ethical algorithms. Why not?
+image: /images/svg-illustrations/knowledge_base.svg
 background_color: '#ffffff'
 Why_we_exist:
   enable: true

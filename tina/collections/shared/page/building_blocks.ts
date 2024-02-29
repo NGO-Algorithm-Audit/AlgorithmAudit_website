@@ -18,6 +18,23 @@ let building_blocks: TinaField[] = [
         isBody: true,
         templates: [
             {
+                name: 'ai_policy_observatory',
+                label: 'AI Policy Observatory',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'Title',
+                        type: 'string',
+                        description: '',
+                        required: true,
+                    }
+                ]
+            },
+            {
                 name: 'bias_scan_info',
                 label: 'Bias Scan info',
                 match: {

@@ -8,8 +8,8 @@ import technical_tools_BDT from "./collections/pages/technical_tools_BDT";
 import technical_tools_SDG from "./collections/pages/technical_tools_SDG";
 import knowledge_platform_standards from "./collections/pages/knowledge_platform_standards";
 import knowledge_platform_policy_observatory from "./collections/pages/knowledge_platform_policy_observatory";
-import knowledge_platform_knowledge_base from "./collections/pages/knowledge_platform_knowledge_base";
-import knowledge_platform_services from "./collections/pages/knowledge_platform_services";
+import knowledge_platform_items from "./collections/pages/knowledge_platform_items";
+import knowledge_platform_collaboration from "./collections/pages/knowledge_platform_collaboration";
 import events_activities from "./collections/pages/events_activities";
 import events_press_room from "./collections/pages/events_press_room";
 import about_faq from "./collections/pages/about_faq";
@@ -46,8 +46,8 @@ export default defineConfig({
       technical_tools_SDG,
       knowledge_platform_standards,
       knowledge_platform_policy_observatory,
-      knowledge_platform_knowledge_base,
-      knowledge_platform_services,
+      knowledge_platform_items,
+      knowledge_platform_collaboration,
       events_activities,
       events_press_room,
       about_faq,

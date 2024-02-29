@@ -3,47 +3,28 @@
 <div class="container-fluid">
   <div class="p-5 shadow rounded-lg">
 
-    <h3 class="mb-4 info" style="color: #005aa7; padding: 0 0 0 25px">{{ .Get "title" | markdownify }}</h3>
+    <h3 class="mb-4 info" style="color: #005aa7; padding: 0 0 0 25px; margin-bottom:0px !important;">{{ .Get "title" | markdownify }}</h3>
 
     <!-- Why we exist -->
     {{ with .Page.Params.Why_we_exist }}
     {{ if .enable }}
     {{ range $i,$p := .new_items }}
-    <section class="section">
+    <section class="section" style="margin-top:0px;">
       <div class="container">
-
-        <!-- title -->
-        <div class="row align-items-center">
-          <div class="col-12">
-            <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-          </div>
-        </div>
-        <!-- /title -->
 
         <!-- intro text -->
         <div class="row">
-          <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+          <div class="col-12" style="padding:0px;">
             <p>{{ .intro_content | markdownify }}</p>
           </div>
-          <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
         </div>
         <!-- /intro text -->
 
-        <!-- subtitle -->
-        <div class="row align-items-center">
-          <div class="col-12">
-            <h4 class="section-subtitle" style="color: #005aa7;">{{ .subtitle | markdownify }}</h2>
-          </div>
-        </div>
-        <!-- /subtitle -->
-
         <!-- gradient bar -->
-        <div class="row hide-mobile" style="margin-top:15px; padding:0px;">
-          <div class="col-lg-0 col-md-0"></div>
-          <div class="col-lg-10 col-md-8">
-            <div class="bordertest" style="margin:0px;"></div>
+        <div class="row hide-mobile" style="margin-top:15px;">
+          <div class="col-lg-12">
+            <div class="bordertest"></div>
           </div>
-          <div class="col-lg-2 col-md-3"></div>
         </div>
 
         <div class="row show-mobile">
@@ -53,10 +34,10 @@
         </div>
         <!-- /gradient bar -->
 
-        <div class="row hide-mobile" style="width:100%; margin: 0px 0px 0px 0px;">
+        <div class="row hide-mobile" style="width:100%;">
 
           <!-- menu -->
-          <div class="gc col-lg-2 col-md-2"
+          <div class="gc col-2"
             style="padding: 0px 0px 0px 10px; background-color: #F2F2F2; height: 340px;">
             <div class="menu2" style="margin-top: 20px;">
               <div class="active">
@@ -84,8 +65,8 @@
           </div>
 
           <!-- text -->
-          <div class="gc col-lg-8 col-md-8 col-sm-8 col-xs-8" style="background-color:#f9f9f9;">
-            <ul class="nacc" id="scroll-top" style="padding:10px 0px 0px 20px;">
+          <div class="gc col-10" style="background-color:#f9f9f9;">
+            <ul class="nacc itemize-special" id="scroll-top" style="padding:10px 0px 0px 20px;">
 
               <!-- AI Act -->
               <li class="active" style="padding:0px 25px 0px 0px;">
@@ -105,7 +86,7 @@
                       style="color:#777777; line-height:1.5;"> {{ .ai_act_content_standards | markdownify }} </span>
                   </div>
                   <div style="margin-bottom:15px;">
-                    <a href="cases/#rotterdam-case" class="btn-link" style="color: #005aa7;"> {{ .ai_act_white_paper |
+                    <a href="/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/" class="btn-link" style="color: #005aa7;"> {{ .ai_act_white_paper |
                       markdownify }} <i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
@@ -126,7 +107,7 @@
                       style="color:#777777; line-height:1.5;"> {{ .dsa_content_template | markdownify }} </span>
                   </div>
                   <div style="margin-bottom:15px;">
-                    <a href="knowledge-base/white_paper_dsa_delegated_regulation_feedback/" class="btn-link"
+                    <a href="/knowledge-platform/knowledge-base/" class="btn-link"
                       style="color: #005aa7;"> {{ .dsa_white_paper | markdownify }} <i
                         class="fas fa-arrow-right"></i></a>
                   </div>
@@ -184,7 +165,7 @@
                     </span>
                   </div>
                   <div style="margin-bottom:15px;">
-                    <a href="algoprudence/#rotterdam-case/" class="btn-link" style="color: #005aa7;"> {{
+                    <a href="/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/" class="btn-link" style="color: #005aa7;"> {{
                       .algoprudence_rotterdam | markdownify }} <i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
@@ -215,7 +196,7 @@
                   <span style="color:#005aa7; font-weight: bold;"> {{ .regulator_title | markdownify }} </span>
                   <p style="">{{ .regulator_content | markdownify }}</p>
                   <div style="margin-bottom:15px;">
-                    <a href="knowledge-base/white_paper_algorithmic_regulatory_body/" class="btn-link"
+                    <a href="/knowledge-platform/knowledge-base/" class="btn-link"
                       style="color: #005aa7;">Read our white paper on the Dutch regulatory landscape<i
                         class="fas fa-arrow-right"></i></a>
                   </div>
@@ -226,36 +207,6 @@
             </ul>
           </div>
           <!-- /text -->
-
-          <!-- images -->
-          <div class="gc col-lg-2 col-md-2" id="image-col">
-            <ul class="nacc" style="">
-              <li class="active">
-                <div style="">
-                  <img src="{{ .ai_act_image | relURL }}" height="100px;">
-                </div>
-              </li>
-              <li>
-                <img src="{{ .dsa_image | relURL }}" height="100px;">
-              </li>
-              <li>
-                <img src="{{ .gdpr_image | relURL }}" height="100px;">
-              </li>
-              <li>
-                <img src="{{ .administrative_law_image | relURL }}" height="200px;">
-              </li>
-              <li>
-                <img src="{{ .regulator_image | relURL }}" height="150px;">
-              </li>
-              <li>
-                <img src="{{ .AI_register_image | relURL }}" height="125px;">
-              </li>
-              <li>
-                <img src="{{ .regulator_image | relURL }}" height="125px;">
-              </li>
-            </ul>
-          </div>
-          <!-- /images -->
 
         </div>
 
@@ -307,7 +258,7 @@
                         style="color:#777777; line-height:1.5;"> {{ .ai_act_content_standards | markdownify }} </span>
                     </div>
                     <div style="margin-bottom:15px;">
-                      <a href="cases/#rotterdam-case" class="btn-link" style="color: #005aa7;"> {{ .ai_act_white_paper |
+                      <a href="/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/" class="btn-link" style="color: #005aa7;"> {{ .ai_act_white_paper |
                         markdownify }} <i class="fas fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -327,7 +278,7 @@
                         style="color:#777777; line-height:1.5;"> {{ .dsa_content_template | markdownify }} </span>
                     </div>
                     <div style="margin-bottom:15px;">
-                      <a href="/knowledge-base/white_paper_dsa_delegated_regulation_feedback/" class="btn-link"
+                      <a href="/knowledge-platform/knowledge-base/" class="btn-link"
                         style="color: #005aa7;"> {{ .dsa_white_paper | markdownify }} <i
                           class="fas fa-arrow-right"></i></a>
                     </div>
@@ -392,7 +343,7 @@
                       </span>
                     </div>
                     <div style="margin-bottom:15px;">
-                      <a href="algoprudence/#rotterdam-case/" class="btn-link" style="color: #005aa7;"> {{
+                      <a href="/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/" class="btn-link" style="color: #005aa7;"> {{
                         .algoprudence_rotterdam | markdownify }} <i class="fas fa-arrow-right"></i></a>
                     </div>
                   </div>
