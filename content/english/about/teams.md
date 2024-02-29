@@ -1,10 +1,6 @@
 ---
 title: Teams
-subtitle: >
-  Algorithm Audit consists of an executive board, advisory board, supervisory
-  board, various part-time teams and works with case-based advice commissions
-  that consist of independent experts and stakeholder. Learn more about our [how
-  we work](/algoprudence/how-we-work/).
+subtitle: "Algorithm Audit consists of an executive board, advisory board, supervisory board, various teams and works with case-based advice commissions that consist of independent experts and stakeholder. Learn more about\_our the [governance](/about/boards/).\n"
 image: /images/svg-illustrations/about.svg
 about_AA:
   title: Activities

@@ -43,7 +43,7 @@ team:
   title: Algoprudence team
   icon: fas fa-user-friends
   button_text: Other teams
-  button_link: /about
+  button_link: /about/teams/
   team_members:
     - image: /images/people/VDjwalapersad.png
       name: Vardâyani Djwalapersad

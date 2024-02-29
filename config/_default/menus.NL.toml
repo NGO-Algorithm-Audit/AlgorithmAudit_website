@@ -132,7 +132,7 @@ hasChildren = true
   [[main]]
   parent = "Over ons"
   name = "Bestuur"
-  url = "nl/about/teams"
+  url = "nl/about/boards"
   weight = 3
   [[main.params]]
     icon = "fa-user-friends"

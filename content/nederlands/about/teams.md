@@ -2,10 +2,9 @@
 title: Teams
 subtitle: >
   Stichting Algorithm Audit bestaat uit een bestuur, raad van advies, raad van
-  toezicht (in oprichting), verschillende part-time teams en werkt met
-  adviescommissies op projectbasis, bestaande uit onafhankelijke experts en
-  belanghebbenden. [Lees meer](/nl/algoprudence/how-we-work/) over onze
-  werkwijze.
+  toezicht (in oprichting), verschillende teams en werkt met adviescommissies op
+  projectbasis, bestaande uit onafhankelijke experts en belanghebbenden. [Lees
+  meer](/nl/about/boards/) over de governance van de stichting.
 image: /images/svg-illustrations/about.svg
 about_AA:
   title: Activiteiten

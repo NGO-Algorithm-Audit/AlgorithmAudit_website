@@ -11,7 +11,7 @@ team:
   icon: fas fa-user-friends
   button_text: Other teams
   id: team
-  button_link: /about
+  button_link: /nl/about/teams/
   team_members:
     - image: /images/people/VDjwalapersad.png
       name: Vardâyani Djwalapersad
@@ -60,6 +60,28 @@ form:
       id: contactgegevens
       type: email
       placeholder: Emailadres
+reports_preview:
+  title: Recente audits
+  icon: fas fa-file
+  button_text: Casuïstiek
+  button_link: /nl/algoprudence/
+  id: recent-audits
+  feature_item:
+    - name: Risicoprofilering heronderzoek bijstandsuitkering
+      image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
+      link: >-
+        /nl/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+      content: >
+        De commissie oordeelt dat algoritmische risicoprofilering onder strikte
+        voorwaarden kan worden ingezet voor het selecteren van burgers met een
+        bijstandsuitkering voor heronderzoek.
+    - name: Vooringenomenheid voorkomen
+      image: /images/reports/front_AA202401TR.png
+      link: /nl/algoprudence/
+      content: >
+        Kwantitatief en kwalitatieve audit naar bias in algoritme-gedreven
+        besluitvormingsproces, o.a., testen van risicodistributie middels
+        Z-toetsen en analyse van organisatorische waarborgen
 ---
 
 {{< form >}}
@@ -71,3 +93,5 @@ Inzending worden behandeld door het Team Algoprudentie. Het team beoordeelt of d
 {{< container_close >}}
 
 {{< team >}}
+
+{{< reports_preview >}}
