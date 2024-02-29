@@ -1,7 +1,7 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
 <!-- team -->
-{{ with .Page.Params.team}}
+{{ with .Page.Params.team1}}
 
 <!-- desktop version -->
 <div class="container-fluid mt-5 desktop p-0">
@@ -24,8 +24,8 @@
 
       <!-- team members -->
       <div class="container-team mt-4">
+        <p>{{ .content | markdownify }}</p>
         <div class="row">
-          <p>{{ .content | markdownify }}</p>
           {{ range .team_members }}    
           <div class="col-md-6 team-member p-3">
             <div class="row">
