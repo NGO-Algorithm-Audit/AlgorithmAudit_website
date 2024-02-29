@@ -33,7 +33,7 @@
                         </div>
 
                         <!-- Events -->
-                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-9 col-sm-12">
                             <div class="accordion-container">
                                 {{ if .Params.events }}
                                 {{ range $event := .Params.events }}
@@ -46,12 +46,12 @@
                                 $facet.value | printf "%s" }}
                                 {{ end }}
 
-                                <div class="ac border-0 my-4 algoprudence-article" data-facets="{{$facets_for_data_attribute}}">
+                                <div class="ac py-3 my-5" data-facets="{{$facets_for_data_attribute}}">
                                     <div class="ac-header grid">
                                         <div class="ac-trigger p-0">
                                             <div class="row justify-content-between m-0" >
-                                                <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
-                                                    <img class="img-fluid about-img p-4" src="{{$event.image}}" />
+                                                <div class="text-center col-lg-2 col-sm-12 col-12 mr-4 p-0 mt-0" style="background-color: #ffffff;">
+                                                    <img class="img-fluid img-event p-4" src="{{$event.image}}" />
                                                 </div>
                                                 <div class="col pt-3 pb-5" style="background-color: #ffffff;">
                                                     <div class="row align-items-center">

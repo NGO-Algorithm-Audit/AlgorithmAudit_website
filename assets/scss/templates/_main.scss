@@ -41,6 +41,9 @@ body {
   .desktop{
     display: none;
   }
+  .img-event{
+    height:200px;
+  }
 }
 
 // view ≥768px (md and lg)
@@ -753,6 +756,12 @@ padding: 20px 0px 0px 0px;
 
 .hide {
   opacity: 0;
+}
+
+.event-border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #777777;
 }
 
 .bg {
