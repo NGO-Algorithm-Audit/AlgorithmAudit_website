@@ -1,9 +1,11 @@
 ---
-title: AI Policy Observatory
+title: AI beleid observatorium
 subtitle: >
-  AI ethics urgently needs case-based experience and a bottom-up approach. We
-  believe existing and proposed legislation is and will not suffice to realize
-  ethical algorithms. Why not?
+  Om concreet aan de slag te gaan met de verantwoorde inzet van algoritmes is
+  het urgent dat praktijkervaring op code-niveau publiek wordt gedeeld.
+  Algorithm Audit is van mening dat abstracte en top-down wet- en regelgeving
+  hier onvoldoende soelaas voor biedt. Per beleidsinstrument lichten we
+  hieronder toe waarom.
 image: /images/svg-illustrations/knowledge_base.svg
 background_color: '#ffffff'
 Why_we_exist:

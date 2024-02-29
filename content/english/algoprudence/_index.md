@@ -1,14 +1,7 @@
 ---
 layout: repository
 title: Algoprudence repository
-subtitle: >
-  Algoprudence is available for different types of algorithms, among others
-  machine learning, rule-based profiling, public and private algorithms.
-
-
-  We are always open to new cases. Please <span
-  style="color:#005aa7">[submit</span>](/algoprudence/submit-a-case/) a case for
-  review.
+subtitle: "Stakeholders learn from our\_techno-ethical jurisprudence, can help to improve it and can use it as to resolve ethical issues in a harmonized manner. \n\nWe are open to new cases. Please <span style=\"color:#005aa7\">[submit</span>](/algoprudence/submit-a-case/) a case for review.\n"
 image: /images/svg-illustrations/case_repository.svg
 team:
   title: Algoprudence team

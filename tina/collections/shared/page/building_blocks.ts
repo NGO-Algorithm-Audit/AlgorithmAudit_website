@@ -35,178 +35,6 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
-                name: 'bias_scan_info',
-                label: 'Bias Scan info',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    }
-                ]
-            },
-            {
-                name: 'bias_scan_alert_case_study',
-                label: 'Bias Scan case study',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    }
-                ]
-            },
-            {
-                name: 'bias_scan_input_data',
-                label: 'Bias Scan input data',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    }
-                ]
-            },
-            {
-                name: 'bias_scan_example_reports',
-                label: 'Bias Scan example reports',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    }
-                ]
-            },
-            {
-                name: 'bias_scan_faq',
-                label: 'Bias Scan FAQ',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    }
-                ]
-            },
-            {
-                name: 'about_algorithm_audit_NL',
-                label: 'About algorithm audit NL',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    },
-                    {
-                        name: 'content',
-                        label: 'Content',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    }
-                ]
-            },
-            {
-                name: 'about_algorithm_audit',
-                label: 'About algorithm audit',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    },
-                    {
-                        name: 'content',
-                        label: 'Content',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    }
-                ]
-            },
-            {
-                name: 'form',
-                label: 'Form',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'pdf_frame',
-                label: 'PDF Frame',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'articleUrl',
-                        label: 'Article Url',
-                        type: 'image',
-                        required: true,
-                    },
-                    {
-                        name: 'width',
-                        label: 'Width',
-                        type: 'string',
-                        description: '50% is the default'
-                    }
-                ]
-            },
-            {
                 name: 'container_open',
                 label: 'Container open',
                 match: {
@@ -275,93 +103,79 @@ let building_blocks: TinaField[] = [
                 ]
             },
             {
+                name: 'form',
+                label: 'Form',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template',
+                        required: false,
+                    }
+                ]
+            },
+            {
+                name: 'image',
+                label: 'Image',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'image',
+                        label: 'Image',
+                        type: 'image',
+                        required: true,
+                    },
+                    {
+                        name: 'alt',
+                        label: 'Alt text',
+                        type: 'string',
+                    },
+                    {
+                        name: 'caption',
+                        label: 'Caption',
+                        type: 'string',
+                    },
+                    {
+                        name: 'width',
+                        label: 'Width',
+                        type: 'string',
+                        description: '1 to 12, 12 is max width'
+                    }
+                ]
+            },
+            {
+                name: 'pdf_frame',
+                label: 'PDF Frame',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'articleUrl',
+                        label: 'Article Url',
+                        type: 'image',
+                        required: true,
+                    },
+                    {
+                        name: 'width',
+                        label: 'Width',
+                        type: 'string',
+                        description: '50% is the default'
+                    }
+                ]
+            },
+            {
                 name: 'team',
                 label: 'Team',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'text_field1',
-                label: 'Text field #1',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'text_field2',
-                label: 'Text field #2',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'text_field3',
-                label: 'Text field #3',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'text_field4',
-                label: 'Text field #4',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'text_field5',
-                label: 'Text field #5',
                 match: {
                     start: '{{<',
                     end: '>}}'
@@ -409,176 +223,6 @@ let building_blocks: TinaField[] = [
                         required: false,
                     }
                 ]
-            }
-        ]
-    },
-    {
-        type: 'object',
-        name: 'text_field1',
-        label: 'Text field #1',
-        fields: [
-            {
-                name: 'title',
-                label: 'Title',
-                type: 'string',
-                description: '',
-                required: true,
-            },
-            {
-                type: "string",
-                name: "icon",
-                label: "Icon",
-                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-                required: false,
-            },
-            {
-                type: "string",
-                name: "id",
-                label: "ID",
-                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-                required: false,
-            },
-            {
-                type: "rich-text",
-                name: "content",
-                label: "Content",
-                isBody: false,
-            }
-        ]
-    },
-    {
-        type: 'object',
-        name: 'text_field2',
-        label: 'Text field #2',
-        fields: [
-            {
-                name: 'title',
-                label: 'Title',
-                type: 'string',
-                description: '',
-                required: true,
-            },
-            {
-                type: "string",
-                name: "icon",
-                label: "Icon",
-                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-                required: false,
-            },
-            {
-                type: "string",
-                name: "id",
-                label: "ID",
-                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-                required: false,
-            },
-            {
-                type: "rich-text",
-                name: "content",
-                label: "Content",
-                isBody: false,
-            }
-        ]
-    },
-    {
-        type: 'object',
-        name: 'text_field3',
-        label: 'Text field #3',
-        fields: [
-            {
-                name: 'title',
-                label: 'Title',
-                type: 'string',
-                description: '',
-                required: true,
-            },
-            {
-                type: "string",
-                name: "icon",
-                label: "Icon",
-                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-                required: false,
-            },
-            {
-                type: "string",
-                name: "id",
-                label: "ID",
-                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-                required: false,
-            },
-            {
-                type: "rich-text",
-                name: "content",
-                label: "Content",
-                isBody: false,
-            }
-        ]
-    },
-    {
-        type: 'object',
-        name: 'text_field4',
-        label: 'Text field #4',
-        fields: [
-            {
-                name: 'title',
-                label: 'Title',
-                type: 'string',
-                description: '',
-                required: true,
-            },
-            {
-                type: "string",
-                name: "icon",
-                label: "Icon",
-                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-                required: false,
-            },
-            {
-                type: "string",
-                name: "id",
-                label: "ID",
-                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-                required: false,
-            },
-            {
-                type: "rich-text",
-                name: "content",
-                label: "Content",
-                isBody: false,
-            }
-        ]
-    },
-    {
-        type: 'object',
-        name: 'text_field5',
-        label: 'Text field #5',
-        fields: [
-            {
-                name: 'title',
-                label: 'Title',
-                type: 'string',
-                description: '',
-                required: false,
-            },
-            {
-                type: "string",
-                name: "icon",
-                label: "Icon",
-                description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-                required: false,
-            },
-            {
-                type: "string",
-                name: "id",
-                label: "ID",
-                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-                required: true,
-            },
-            {
-                type: "rich-text",
-                name: "content",
-                label: "Content",
-                isBody: false,
             }
         ]
     },

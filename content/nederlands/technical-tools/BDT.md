@@ -8,14 +8,8 @@ image: /images/svg-illustrations/illustration_cases.svg
 type: bias-detection-tool
 ---
 
-{{< bias_scan_info title="Bias scan tool – What is it?" >}}
-
-{{< bias_scan_alert_case_study title="New case study" >}}
-
 {{< web_app >}}
 
-{{< bias_scan_input_data title="Input data" >}}
+{{< reports_preview >}}
 
-{{< bias_scan_example_reports title="Example reports" >}}
-
-{{< bias_scan_faq title="FAQ" >}}
+{{< team >}}

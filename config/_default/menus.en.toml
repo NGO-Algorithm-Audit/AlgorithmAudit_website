@@ -86,7 +86,7 @@ hasChildren = true
   [[main]]
   parent = "Knowledge platform"
   name = "Collaboration"
-  url = "/knowledge-platform/services"
+  url = "/knowledge-platform/collaboration"
   weight = 4
   [[main.params]]
     icon = "fa-hands-helping"

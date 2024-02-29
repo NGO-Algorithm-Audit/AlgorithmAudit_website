@@ -37,7 +37,7 @@ hasChildren = true
   [[main]]
   parent = "Technische tools"
   name = "Bias detectie tool"
-  url = "nl/technical-tools/BDT"
+  url = "/nl/technical-tools/bdt/"
   weight = 1
   [[main.params]]
     icon = "fa-search"
@@ -45,7 +45,7 @@ hasChildren = true
   [[main]]
   parent = "Technische tools"
   name = "Synthetische data generatie"
-  url = "nl/technical-tools/SDG"
+  url = "nl/technical-tools/sdg"
   weight = 2
   [[main.params]]
     icon = "fa-table"
@@ -106,7 +106,7 @@ hasChildren = true
   [[main]]
   parent = "Evenementen"
   name = "Persberichten"
-  url = "nl/press_room"
+  url = "/nl/events/press_room"
   weight = 2
   [[main.params]]
     icon = "fa-newspaper"
