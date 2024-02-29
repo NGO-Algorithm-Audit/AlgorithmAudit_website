@@ -11,7 +11,7 @@ other = "We are really sorry but there seems to be nothing here."
 other = "Name"
 
 [youremail]
-other = "Email"
+other = "Email address"
 
 [subject]
 other = "Subject"
@@ -39,3 +39,42 @@ other = "Normative advice commission"
 
 [funded-by]
 other = "Funded by"
+
+[description]
+other = "Description"
+
+[attachment]
+other = "Attachment"
+
+[featured]
+other = "Featured"
+
+[recent-activity]
+other = "Recent activities"
+
+[algoprudence_description_tab]
+other = "Description of algoprudence"
+
+[algoprudence_actions_tab]
+other = "Actions followed by this work"
+
+[algoprudence_discussion_tab]
+other = "Discussion & debate"
+
+[step]
+other = "Step"
+
+[newsletter]
+other = "Newsletter"
+
+[newsletter_info]
+other = "Stay up to date about our work by signing up for our newsletter"
+
+[privacy_cookie_policy]
+other = "Privacy and cookies policy"
+
+[stiching_info]
+other = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212"
+
+[license]
+other = "This website is built under CC-BY 4.0 license. This means you can share and adapt content freely, as long as you credit Algorithm Audit and named co-creators"

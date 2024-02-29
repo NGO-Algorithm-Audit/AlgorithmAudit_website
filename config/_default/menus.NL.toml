@@ -6,31 +6,140 @@ weight = 1
 
 [[main]]
 name = "Algoprudentie"
-url = "nl/algoprudence"
 weight = 2
+hasChildren = true
+  [[main]]
+  parent = "Algoprudentie"
+  name = "Dien een case in"
+  url = "nl/algoprudence/submit-a-case"
+  weight = 1
+  [[main.params]]
+    featured = true
+  [[main]]
+  parent = "Algoprudentie"
+  name = "Casuïstiek"
+  url = "nl/algoprudence"
+  weight = 2
+  [[main.params]]
+    icon = "fa-database"
+  [[main]]
+  parent = "Algoprudentie"
+  name = "Onze werkwijze"
+  url = "nl/algoprudence/how-we-work"
+  weight = 3
+  [[main.params]]
+    icon = "fa-question"
 
 [[main]]
-name = "Bias scan"
-url = "nl/bias_scan"
+name = "Technische tools"
 weight = 3
+hasChildren = true
+  [[main]]
+  parent = "Technische tools"
+  name = "Bias detectie tool"
+  url = "/nl/technical-tools/bdt/"
+  weight = 1
+  [[main.params]]
+    icon = "fa-search"
+    subtitle = "Open source AI audit tools"
+  [[main]]
+  parent = "Technische tools"
+  name = "Synthetische data generatie"
+  url = "nl/technical-tools/sdg"
+  weight = 2
+  [[main.params]]
+    icon = "fa-table"
+  [[main]]
+  parent = "Technische tools"
+  name = "Github code"
+  url = "https://github.com/NGO-Algorithm-Audit/"
+  weight = 3
+  [[main.params]]
+    subtitle = "Onze code"
+    icon = "fa-code"
 
 [[main]]
-name = "Kennisbank"
-url = "nl/knowledge_base"
+name = "Kennisplatform"
 weight = 4
+hasChildren = true
+  [[main]]
+  parent = "Kennisplatform"
+  name = "AI Act standaarden"
+  url = "nl/knowledge-platform/standards"
+  weight = 1
+  [[main.params]]
+    icon = "fa-check"
+  [[main]]
+  parent = "Kennisplatform"
+  name = "AI beleid observatorium"
+  url = "nl/knowledge-platform/policy-observatory"
+  weight = 2
+  [[main.params]]
+    icon = "fa-binoculars"
+  [[main]]
+  parent = "Kennisplatform"
+  name = "Kennisbank"
+  url = "nl/knowledge-platform/knowledge-base"
+  weight = 3
+  [[main.params]]
+    icon = "fa-brain"
+  [[main]]
+  parent = "Kennisplatform"
+  name = "Samenwerken"
+  url = "nl/knowledge-platform/collaboration"
+  weight = 4
+  [[main.params]]
+    icon = "fa-hands-helping"
 
 [[main]]
-name = "Events"
+name = "Evenementen"
 url = "nl/events"
 weight = 5
+hasChildren = true
+  [[main]]
+  parent = "Evenementen"
+  name = "Activiteiten"
+  url = "nl/events/activities"
+  weight = 1
+  [[main.params]]
+    icon = "fa-calendar"
+  [[main]]
+  parent = "Evenementen"
+  name = "Persberichten"
+  url = "/nl/events/press_room"
+  weight = 2
+  [[main.params]]
+    icon = "fa-newspaper"
 
 [[main]]
-name = "FAQ"
-url = "nl/faq"
+name = "Over ons"
 weight = 6
-
-[[main]]
-name = "Over AA"
-url = "nl/about"
-weight = 7
-
+hasChildren = true
+  [[main]]
+  parent = "Over ons"
+  name = "FAQ"
+  url = "nl/about/faq"
+  weight = 1
+  [[main.params]]
+    icon = "fa-question"
+  [[main]]
+  parent = "Over ons"
+  name = "Teams"
+  url = "nl/about/teams"
+  weight = 2
+  [[main.params]]
+    icon = "fa-users"
+  [[main]]
+  parent = "Over ons"
+  name = "Bestuur"
+  url = "nl/about/teams"
+  weight = 3
+  [[main.params]]
+    icon = "fa-user-friends"
+  [[main]]
+  parent = "Over ons"
+  name = "Vacatures"
+  url = "nl/about/vacancies"
+  weight = 4
+  [[main.params]]
+    icon = "fa-user-check"

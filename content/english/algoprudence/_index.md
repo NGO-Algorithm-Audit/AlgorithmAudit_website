@@ -1,17 +1,15 @@
 ---
-layout: algoprudence_overview
-title: Algoprudence
-subtitle: >
-  We are working on a variety of cases. Once an normative advice commission has
-  gathered and examined the ethical issue, the original problem statement and
-  corresponding advice will be published on this website. Others learn from our
-  algoprudence, help to improve it and utilize it as a best practice in similar
-  cases.
-
-
-  We are open to new cases. Please [<span style="color:#005aa7"> reach
-  out</span>](/#contactform) to us when you know a case for review.
-image: /images/case_repository.svg
+layout: repository
+title: Algoprudence repository
+subtitle: "Stakeholders learn from our\_techno-ethical jurisprudence, can help to improve it and can use it as to resolve ethical issues in a harmonized manner. \n\nWe are open to new cases. Please <span style=\"color:#005aa7\">[submit</span>](/algoprudence/submit-a-case/) a case for review.\n"
+image: /images/svg-illustrations/case_repository.svg
+team:
+  title: Algoprudence team
+  team_members:
+    - image: /images/people/JFP.svg
+      name: Jurriaan
+      bio: |
+        test
 facet_groups:
   - value: year
     title: Year
@@ -45,6 +43,7 @@ facet_groups:
         label: Proxy discrimination
       - value: fp_fn_balancing
         label: FP-FN balancing
+title_content: Case repository
 algoprudences:
   - title: Risk Profiling for Social Welfare Reexamination
     intro: >-
@@ -52,9 +51,9 @@ algoprudences:
       strict conditions for sampling residents receiving social welfare for
       re-examination. The aim of re-examination is a leading factor in judging
       profiling criteria.
-    image: >-
-      /images/algoprudence/en_risk-profiling-for-social-welfare-reexamination-aa202302.png
-    link: /algoprudence/risk-profiling-for-social-welfare-reexamination-aa202302/
+    image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
+    link: >-
+      /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
     facets:
       - value: aa202302
         label: 'AA:2023:02'
@@ -74,8 +73,8 @@ algoprudences:
       proxy discrimination by the BERT-based disinformation classifier and that
       the particular difference in treatment identified by the quantitative bias
       scan can be justified, if certain conditions apply.
-    image: /images/algoprudence/en_bert-based-disinformation-classifier-aa202301.png
-    link: /algoprudence/bert-based-disinformation-classifier-aa202301
+    image: /images/algoprudence/AA202301/Cover.png
+    link: /algoprudence/cases/bert-based-disinformation-classifier-aa202301
     facets:
       - value: aa_2023_01
         label: 'AA:2023:01'
@@ -97,10 +96,9 @@ algoprudences:
       card acts as a proxy-variable for sensitive demographic categories, the
       model would run an intolerable risk of disproportionally excluding
       vulnerable demographic groups from the payment service.
-    image: >-
-      /images/algoprudence/en_type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201.png
+    image: /images/algoprudence/AA202201/Cover.png
     link: >-
-      /algoprudence/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
+      /algoprudence/cases/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
     facets:
       - value: AA-2022-01
         label: 'AA:2022:01'
@@ -112,5 +110,7 @@ algoprudences:
         label: Profiling
       - value: ethical_issue_proxy
         label: Proxy discrimination
+      - value: e-commerce
+        label: e-commerce
 ---
 

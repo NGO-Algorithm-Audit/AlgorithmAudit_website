@@ -13,9 +13,10 @@
         </a>
       </div>
       <div class="button-div">
-        <button class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-label="menu">
-            <i class="fas fa-bars navbar-toggler-menu" id="bars" style="color:#005aa7"></i>
-            <i class="fas fa-times cross" style="color:#005aa7"></i>
+        <button class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-label="menu">
+          <i class="fas fa-bars navbar-toggler-menu" id="bars" style="color:#005aa7"></i>
+          <i class="fas fa-times cross" style="color:#005aa7"></i>
         </button>
       </div>
 
@@ -28,9 +29,24 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
               {{ .Name }}
             </a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu shadow-lg" style="padding: 1rem 0.25rem;">
               {{ range .Children }}
-              <a class="dropdown-item" href="{{ .URL | relURL }}" title="{{ .Name }}">{{ .Name }}</a>
+              {{if .Params.subtitle}}
+              <p class="mb-0 mt-1 ml-3" style="color:#005aa7; font-weight:550; font-size:13px;">{{.Params.subtitle}}</p>
+              {{end}}
+              <a class="dropdown-item" href="{{ .URL | relURL }}" title="{{ .Name }}" style="padding: 0.75rem 1.5rem;color: #005aa7;">
+                {{if .Params.icon}}
+                <i class="fas {{.Params.icon}} col-2 pl-0"></i>
+                {{end}}
+                {{ if .Params.Featured }}
+                <div class="mb-1 rounded" style="padding: 0.5rem 0.5rem; background-color: #dfeaf4;">
+                {{ end }}
+                  {{.Pre}}{{ .Name }}{{.Post}}
+                {{ if .Params.Featured }}
+                <i class='fas fa-arrow-right ml-2'></i>
+                </div>
+                {{ end }}
+              </a>
               {{ end }}
             </div>
           </li>
@@ -44,27 +60,32 @@
           <!-- Language toggle -->
           {{ if .IsTranslated }}
           {{ range .Translations }}
+          <li class="nav-item d-inline-block">
             {{ if eq .Site.Language.Lang "en" }}
-            <li class="nav-item">
-              <a class="nav-link" style="font-weight:350;" title="English" href="{{ .RelPermalink }}">🇬🇧EN</a>
-            </li>
+            <a class="nav-link d-inline-block" title="English" href="{{ .RelPermalink }}">EN</a>
             {{ else }}
-            <li class="nav-item">
-              <a class="nav-link" style="font-weight:350;" title="Dutch" href="{{ .RelPermalink }}">🇳🇱NL</a>
-            </li>
+            <a class="nav-link d-inline-block" style="font-weight: 350;" title="English" href="{{ .RelPermalink }}">EN</a>
             {{ end }}
+            |
+            {{ if eq .Site.Language.Lang "nl" }}
+            <a class="nav-link d-inline-block" title="Dutch" href="{{ .RelPermalink }}">NL</a>
+            {{ else }}
+            <a class="nav-link d-inline-block" style="font-weight: 350;" title="Dutch" href="{{ .RelPermalink }}">NL</a>
+            {{ end }}
+          </li>
           {{ end }}
           {{ end }}
           <!-- /Language toggle -->
 
         </ul>
       </div>
-      <!-- nav items -->
+      <!-- /nav items -->
 
     </nav>
-    <!-- navbar -->
+    <!-- /navbar -->
 
   </div>
+
 </header>
 
 {{ "<!-- /navigation -->" | safeHTML }}

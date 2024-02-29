@@ -1,0 +1,65 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ with .Page.Params.form}}
+
+<!-- desktop version -->
+<div class="container-fluid desktop">
+  <div class="p-5 shadow rounded-lg bg-lightblue rounded-blue-border">
+      <div class="col-lg-12 mb-4">
+
+        <!-- title -->
+        <h3>{{ .title | markdownify }}</h3>
+        
+        <!-- form -->
+        <form id="contact-form" method="POST">
+          {{ range .questions }}
+          <div class="my-5">
+            <label style="font-weight:500;" for="{{.id}}">{{ .label | markdownify }}</label>
+            {{ if eq .type "textarea" }}
+            <textarea type="text" class="form-control my-2" id="{{.id}}" name="{{.label}}" rows="4" cols="50"></textarea>
+            {{ else }}
+            <input type="{{.type}}" class="form-control my-2" id="{{.id}}" name="{{.label}}" placeholder="{{.placeholder}}" />
+            {{ end }}
+          </div>
+          {{ end }}
+          <div class="wrapper" style="text-align:center;">
+            <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
+            <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
+          </div>
+        </form>
+
+      </div>
+  </div>
+</div>
+<!-- /desktop version -->
+
+<!-- mobile version -->
+<div class="container-fluid mb-5 mobile">
+  <div class="p-0  rounded-blue-border bg-lightblue">
+    <div class="col-lg-12 mb-4">
+
+      <!-- title -->
+      <h3 class="mt-5">{{ .title | markdownify }}</h3>
+      
+      <!-- form -->
+      <form action="{{ .backend_link | safeURL }}" method="POST">
+        {{ range .questions }}
+        <div class="my-5">
+          <label style="font-weight:500;" for="{{.id}}">{{ .label | markdownify }}</label>
+          {{ if eq .type "textarea" }}
+          <textarea type="text" class="form-control my-2" id="{{.id}}" name="{{.label}}" rows="4" cols="50"></textarea>
+          {{ else }}
+          <input type="{{.type}}" class="form-control my-2" id="{{.id}}" name="{{.label}}" placeholder="{{.placeholder}}" />
+          {{ end }}
+        </div>
+        {{ end }}
+        <div class="wrapper" style="text-align:center;">
+          <button type="submit" value="send" class="btn btn-primary">{{ .button_text | markdownify }}</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+<!-- /mobile version -->
+
+{{ end }}

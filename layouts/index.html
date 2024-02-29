@@ -1,657 +1,885 @@
 {{ define "main" }}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/index_script.js"></script>
-<script type="text/javascript" src="/js/lightbox.js"></script>
-<link rel="stylesheet" href="/css/lightbox.css">
+<script src="/js/home_script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
 
 <!-- Banner -->
-{{ with .Params.banner }}
-<section class="banner gradient-background">
+{{ with .Params.Banner }}
+<section class="banner banner-background">
   <div class="container">
     <div class="row" style="display: flex; align-items: center;">
 
-      <!-- text illustrations -->
-      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-lg-1 text-center">
-        
-        <div class="row" id="img1" style="display:inline-block; margin:50px 0px;">
-          <div class="row" id="img2" style="display:inline-block;">
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-lg-1">
+
+        <!-- definition tag -->
+        <div class="row" style="padding:0 30px; margin-bottom:30px;">
+          <h5 class="highlight-blue" style="font-weight:100;">{{ .tag }}
+          </h5>
+        </div>
+        <!-- /definition tag -->
+
+        <!-- al-go-pru-dence -->
+        <div class="container">
+          <h2 style="color:#005aa7;">{{.title}}</h2>
+          <p style="color:#005aa7; font-size: 24px;">{{.phonetica}}</p>
+          <i>{{.type}}</i>
+        </div>
+        <div>
+          <div style="margin-top:30px; padding-left:15px;">
+            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">1.</b> {{.description1}}</p>
+          </div>
+          <div style="margin-top:15px; padding-left:15px;">
+            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">2.</b> {{.description2}}</p>
+          </div>
+          <div style="margin-top:15px; padding-left:15px;">
+            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">3.</b> {{.description3}}</p>
           </div>
         </div>
-
       </div>
-      <!-- text illustrations -->
-
-      <!-- button -->
-      <div class="col-lg-6 col-md-12 col-sm-12 order-md-2 order-lg-3">
-        {{ if .button.enable }}
-        {{ with .button }}
-        <div style="margin-top:0px;">
-          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary" style="text-transform:none;">{{ .label }}</a>
-        </div>
-        {{ end }}
-        {{ end }}
-      </div>
-      <!-- /button -->
+      <!-- /al-go-pru-dence -->
 
       <!-- image -->
       <div class="col-lg-6 col-md-12 col-sm-12 order-md-3 order-lg-2">
-        <img src='{{ .image2 | relURL }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
+        <img src='{{ .image  }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
       </div>
       <!-- image -->
-
     </div>
+
   </div>
 </section>
+{{ with .slogan }}
+<!-- Slogan -->
+<section class="banner banner-background" style="padding:0px;">
+  <!-- European knowledge platform -->
+  <div class="row pinDiv1">
+
+    <!-- desktop version -->
+    <div class="col-12 text-center desktop" style="margin-top:50px; margin-bottom:100px;">
+      <div class="slider-wrapper justify-content-center">
+
+        <!-- main -->
+        <h3 style="color:#005aa7; font-weight:100;">{{.title}}</h3>
+        <!-- /main -->
+
+        <!-- slider -->
+        <div class="ms-slider">
+          <ul class="ms-slider__words">
+            {{ range .labels }}
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+              </div>
+            </li>
+            {{ end }}
+            <!-- repeat the last item for the slider logic -->
+            {{ with index .labels 0 }}
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <!-- /slider -->
+
+      </div>
+    </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="col-12 mobile" style="margin-top:50px; padding: 0px 7.5%;">
+      <div class="slider-wrapper" style="padding-left:10px;">
+
+        <!-- main -->
+        <h3 style="color:#005aa7; font-weight:100;">{{.title}}</h3>
+        <!-- /main -->
+        
+      </div>
+    </div>
+
+    <!-- slider -->
+    <div class="col-12 mobile" style="margin-bottom:50px; padding: 0px 7.5%;">
+      <div class="ms-slider">
+        <ul class="ms-slider__words">
+          {{ range .labels }}
+          <li class="ms-slider__word">
+            <div class="slider-wrapper mb-1 py-1">
+              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+            </div>
+          </li>
+          {{ end }}
+          <!-- repeat the last item for the slider logic -->
+          {{ with index .labels 0 }}
+          <li class="ms-slider__word">
+            <div class="slider-wrapper mb-1 py-1">
+              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    <!-- slider -->
+    <!-- /mobile version -->
+
+  </div>
+  <!-- /European knowledge platform -->
+</section>
+{{ end }}
 {{ end }}
 <!-- /Banner -->
 
-<!-- What we do -->
-{{ with .Params.What_we_do }}
+<!-- Divider block elements -->
+<div class="row" id="gradient-line-blocks">
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box1"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #FFFEE4, #F7F8E3) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box2"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #F7F8E3, #E9EFE0) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box3"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #E9EFE0, #D2DEDC) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box4"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #D2DEDC, #B4C8D5) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box5"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #B4C8D5, #8FAFD0) 1 0 0 0;"></div>
+  </div>
+  <div class="col-2 divider-blocks">
+    <div class="row upper-blocks" id="box6"></div>
+    <div class="row lower-blocks justify-content-center border-gradient"
+      style="border-image:linear-gradient(to right, #8FAFD0, #618EC7) 1 0 0 0;"></div>
+  </div>
+</div>
+<!-- /Divider block elements -->
+
+<!-- Activity Feed -->
+{{ with .Params.Activity_Feed}}
 {{ if .enable }}
-<section class="section bg-light" style="background: linear-gradient(to left, #618EC7, #fffde4);">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-      </div>
-      {{ range .feature_item }}
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="feature-card text-center">
-          <i class="{{.icon}} mb-3" style="color: #005aa7;"></i>
-          <h4 class="" style="color: #005aa7;">
-              {{ .name | markdownify }}
-          </h4>
-          <p>{{ .content | markdownify }}</p>
+<section class="section-top">
+  <div class="container" style="background-color:#deecf7;">
+    <div class="row align-items-center border-gradient2">
+
+      <!-- desktop version -->
+      <div class="mx-4 col order-1 desktop">
+
+        <!-- Featured activities -->
+        {{ if .featured_activities }}
+        <div class="row mt-5">
+          <!-- title featured section -->
+          <h3 class="section-title col-md-4" style="color: #005aa7;">{{ i18n "featured" }}</h3>
+          <!-- /title featured section -->
         </div>
+
+        {{ range .featured_activities }}
+        <div class="clickable-wrapper" data-href="{{.link | relURL }}">
+          <div class="row p-5" style="background-color: #ffffff;">
+            <div class="col-3 pr-4">
+              <img class="img-fluid" style="height:200px; position:absolute;" src="{{.image}}" />
+            </div>
+            <div class="col-9">
+              <div class="row align-items-center">
+
+                <!-- title featured article -->
+                <h3 class="mb-2" style="color: #005aa7;">{{.title}}</h3>
+                <!-- /title featured article -->
+
+                <!-- intro text -->
+                <p style="color: #777">
+                  {{.intro | markdownify}}
+                  <a href="{{.link | relURL}}">{{ i18n "read_more" }}</a>
+                </p>
+                <!-- intro text -->
+              </div>
+
+              <!-- metadata -->
+              <div class="row" style="position:relative;">
+                {{ if .date }}
+                <span style="color:#005aa7;" class="mr-1 mb-2 px-1 py-1 mx-0">
+                  {{.date }}
+                </span>
+                {{ end }}
+                {{ if .type }}
+                <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-2">
+                  {{ .type }}
+                </span>
+                {{ end }}
+              </div>
+              <!-- /metadata -->
+
+            </div>
+          </div>
+        </div>
+        {{end}}
+        {{end}}
+        <!-- /Featured Activities -->
+
+        <!-- Activities -->
+        {{ if .activities }}
+        <div class="row mt-5">
+          <!-- title recent activities section -->
+          <h3 class="section-title col-md-4" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+          <!-- /title recent activities section -->
+        </div>
+        {{ range .activities }}
+        <a href="{{ .link | relURL }}">
+
+          <div class="row justify-content-between mb-4">
+            
+            <!-- image -->
+            <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
+              <img class="img-fluid about-img p-5"  src="{{.image}}" />
+            </div>
+            <!-- /image -->
+
+            <!-- title -->
+            <div class="col" style="background-color: #ffffff;">
+              <div class="row align-items-center">
+                <h4 class="my-4 ml-3 mr-5" style="color: #005aa7;">
+                  {{.title}}
+                </h4>
+              </div>
+              <!-- /title -->
+
+              <div class="row" style="position: relative; bottom: 0;">
+                {{ if .date }}
+                <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 ml-2">
+                  {{.date }}
+                </span>
+                {{ end }}
+                {{ if .type }}
+                <span style="background-color: #005aa7; color: #ffffff;" class="mb-2 px-2 py-1">
+                  {{ .type }}
+                </span>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </a>
+        {{end}}
+        {{end}}
+        <!-- /Activities -->
+
+        <!-- More -->
+        <div class="row mt-4 pb-3 justify-content-center d-flex">
+          <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
+        </div>
+        <!-- /More -->
+
+
+      </div>
+      <!-- /desktop version -->
+
+     <!-- mobile version -->
+     <div class="mx-4 col order-1 mobile">
+
+      <!-- Featured activities -->
+      {{ if .featured_activities }}
+      <div class="row mt-5">
+        <h3 class="section-title col-md-4" style="color:#005aa7;">{{ i18n "featured" }}</h3>
+      </div>
+      {{ range .featured_activities }}
+      <div class="clickable-wrapper" data-href="{{.link | relURL }}">
+        <div class="row p-5" style="background-color: #ffffff;">
+          <div class="col-12 pr-4" style="margin-bottom:50px;">
+            <img class="img-fluid about-img-mobile" src="{{.image}}" />
+          </div>
+          <div class="col-12">
+            <div class="row align-items-center">
+
+              <!-- title -->
+              <h3 class="mb-2" style="color:#005aa7;">{{.title}}</h3>
+              <!-- /title -->
+
+              <p style="color: #777">{{.intro | markdownify}} 
+                <a href="{{.link | relURL}}">{{ i18n "read_more" }}</a>
+              </p>
+            </div>
+            <div class="row" style="position:relative;">
+              {{ if .date }}
+              <span style="color:#005aa7;" class="mr-1 mb-2 px-0 py-1 mx-0">
+                {{.date }}
+              </span>
+              {{ end }}
+              {{ if .type }}
+              <span class="highlight-blue">
+                {{ .type }}
+              </span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{end}}
+      {{end}}
+      <!-- /Featured Activities -->
+
+      <!-- Activities -->
+      {{ if .activities }}
+      <div class="row mt-5">
+
+        <!-- title -->
+        <h3 class="section-title col-12" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+        <!-- /title -->
+
+      </div>
+      {{ range .activities }}
+      <a href="{{ .link | relURL }}">
+        <div class="row my-4">
+          <div class="col-12" style="background-color: #ffffff;">
+            <img class="img-fluid about-img-mobile p-5"  src="{{.image}}" />
+          </div>
+          <div class="col-12" style="background-color: #ffffff;">
+            <div class="row align-items-center p-3">
+              <h4 class="my-4 mx-3" style="color: #005aa7;">
+                {{.title}}
+              </h4>
+            </div>
+            <div class="row pl-4 mb-3" style="position:relative; bottom:0;">
+              {{ if .date }}
+              <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
+                {{.date }}
+              </span>
+              {{ end }}
+              {{ if .type }}
+              <span class="highlight-blue">
+                {{ .type }}
+              </span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </a>
+      {{end}}
+      {{end}}
+      <!-- /Activities -->
+
+      <!-- More -->
+      <div class="row mt-4 pb-3 justify-content-center d-flex">
+        <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
+      </div>
+      <!-- /More -->
+
+
+    </div>
+    <!-- /mobile version -->
+
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /Activity Feed -->
+
+<!-- Supported by -->
+{{ if .Params.Supported_by }}
+{{ with .Params.Supported_by }}
+<section class="section bg-white">
+  <div class="container">
+
+    <div class="row d-flex flex-wrap align-items-center">
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
+        <!-- title -->
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+        <!-- /title -->
+      </div>
+
+      {{ range .funders }}
+      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
+        <a href="{{.link}}" target="_blank">
+          <img src="{{ .image | relURL }}" style="max-height: 100px;" alt="{{.alt_text}}" class="img-fluid">
+        </a>
       </div>
       {{ end }}
     </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /What we do -->
 
-<!-- Video -->
-<section class="section-bottom bg-white" style="background-color: #ffffff !important; padding:50px 0px 0px 0px;">
-  <div class="container" style="  display: flex; justify-content: center; align-items: center;">
-        <a class="shortcode-vimeo" href="https://vimeo.com/890443546?autoplay=1">
-          <img src="/images/cover.png" width="600px"/>
-          <span class="playbutton"></span>
-        </a>
-  </div>
-</section>
-<!-- /Video -->
-
-<!-- Supported by -->
-{{ with .Params.Supported_by }}
-{{ range $i,$p := .Suported_by }}
-<section class="section-bottom bg-white" style="background-color: #ffffff !important; padding:50px 0px 0px 0px;">
-  <div class="container">
-    <div class="row d-flex flex-wrap align-items-center">
-
-      <!-- title -->
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
-        <h2 class="section-title" style="font-size:16px; color: #005aa7;">{{ .title | markdownify }}</h2>
-      </div>
-      <!-- /title -->
-
-      <!-- SIDN -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
-        {{ range .img_SIDN }}
-        <a href="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" target="_blank">
-          <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
-        </a>
-        {{ end }}
-      </div>
-      <!-- /SIDN -->
-
-      <!-- EU AI&S -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
-        {{ range .img_EUAIS }}
-          <a href="https://europeanaifund.org/announcing-our-2022-open-call-grantees/" target="_blank">
-            <img src="{{ . | relURL }}" style="max-height: 60px;" alt="" class="img-fluid">
-          </a>
-        {{ end }}
-      </div>
-      <!-- /EU AI&S -->
-
-      <!-- BZK -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
-        {{ range .img_BZK }}
-          <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties" target="_blank">
-            <img src="{{ . | relURL }}" style="max-height: 50px;" alt="" class="img-fluid">
-          </a>
-        {{ end }}
-      </div>
-      <!-- /BZK -->
-
-      <!-- NLAIC -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
-        {{ range .img_NLAIC }}
-        <a href="https://nlaic.com/en/" target="_blank">
-          <img src="{{ . | relURL }}" style="max-height: 100px;" alt="" class="img-fluid">
-        </a>
-        {{ end }}
-      </div>
-      <!-- /NLAIC -->
-
-      <!-- HAI -->
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 inner d-flex justify-content-center sponsor">
-        {{ range .img_HAI }}
-          <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">
-            <img src="{{ . | relURL }}" style="max-height: 50px;" alt="" class="img-fluid">
-          </a>
-        {{ end }}
-      </div>
-      <!-- /HAI -->
-
-    </div>
   </div>
 </section>
 {{ end }}
 {{ end }}
 <!-- /Supported by -->
 
-<!-- How we work -->
-{{ with .Params.How_we_work }}
-{{ if .enable }}
-{{ range $i,$p := .service_item }}
-<section class="section">
+<!-- Building AI auditing capacity from a not-for-profit perspective -->
+{{ if .Params.Building_ai_audit_capacity }}
+{{ with .Params.Building_ai_audit_capacity}}
+<section class="section bg-white" style="margin:100px 0px;">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-4 order-1">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #005aa7;">{{ .label }} <i class="fas fa-arrow-right"></i></a>
-        {{ end }}
-        {{ end }}
-      </div>
-      <div class="col-md-8 order-2 mb-4 mb-md-0">
-        <div {{if gt (len .images) 1}} class="slider" {{end}}>
-          {{ range .images }}
-          <img src="{{ . | relURL }}" alt="" class="img-fluid">
-          {{ end }}
-        </div>
-      </div>
+
+    <!-- desktop version -->
+    <div class="col-12 text-center desktop">
+      {{ range .lines }}
+        <h1 class="mb-4" style="color:#005aa7; font-weight:100;">
+          {{ .text_before }}
+          <i class="highlight-blue">{{.text_highlighted}}</i>
+          {{.text_after}}
+          <br />
+        </h1>
+        <br>
+      {{ end }}
     </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="col-12 text-center mobile">
+      {{ range .lines }}
+        <h1 class="mb-0" style="color:#005aa7; font-weight:100; line-height:2;">
+          {{ .text_before }}
+          <br />
+          <i class="highlight-blue">{{.text_highlighted}}</i>
+          {{.text_after}}
+        </h1>
+        <br>
+      {{ end }}
+    </div>
+    <!-- /mobile version -->
+
   </div>
 </section>
 {{ end }}
 {{ end }}
-{{ end }}
-<!-- /How we work -->
+<!-- /Building AI auditing capacity from a not-for-profit perspective -->
 
-<!-- AA Expert hub -->
-{{ with .Params.AA_expert_hub }}
+<!-- Distinctive in -->
+{{ with .Params.Distinctive_in }}
 {{ if .enable }}
-{{ range $i,$p := .service_item }}
-<section class="section padding-adjust" style="background-color: #b1c4d5 !important;">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <!-- Who we work with -->
-      <div class="col-lg-10 col-md-10 sm-12 order-1">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-        <div style="padding-right:75px;">
-          <p class="mb-4" style="">{{ .content | markdownify }}</p>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-2 sm-0 order-1">
-      </div>
-      <!-- /Who we work with -->
-
-      <!-- Slack -->
-      <!-- <div class="col-lg-6 col-md-6 sm-12 order-2 module-border-wrap">
-        <div class="module">
-
-          <div class="row">
-
-            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 my-auto">
-              <p class="section-title" style="color:#005aa7; font-size:20px; font-weight:bold; margin-bottom:0px;">{{ .expert_hub_title | markdownify }}</p>
-            </div>    
-            
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-slack">
-              <p>{{ .expert_hub_content | markdownify }}</p>
-            </div>
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my-auto">
-              <div class="split" style="align-items: center; display: flex;">
-                <div style="height:100%;">
-                  {{ range .images }}
-                  <img src="{{ . | relURL }}" style="max-height: 50px; margin-bottom:10px;" alt="" class="img-fluid">
-                  {{ end }}
-                </div>
-                <div>
-                  {{ if .button.enable }}
-                  {{ with .button }}
-                  <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link" style="color: #005aa7;"> {{ .label }} <i class="fas fa-arrow-right"></i></a>
-                  {{ end }}
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div> -->
-      <!-- /Slack -->
-
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-{{ end }}
-<!-- /AA Expert hub -->
-
-<!-- Why we exist -->
-{{ with .Params.Why_we_exist }}
-{{ if .enable }}
-{{ range $i,$p := .new_items }}
-<section class="section">
+<section class="section bg-blue">
   <div class="container">
 
     <!-- title -->
-    <div class="row align-items-center">
+    <div class="row">
       <div class="col-12">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
+        <h3 class="section-title" style="color:white;">{{ .title | markdownify }}</h3>
       </div>
     </div>
     <!-- /title -->
 
-    <!-- intro text -->
-    <div class="row">
-      <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-        <p>{{ .intro_content | markdownify }}</p>
+    <!-- distinctive in elements -->
+
+    <!-- desktop version -->
+    <div class="row justify-content-center desktop" style="margin-bottom: 50px;">
+      {{$width_m := 4}}
+      {{$width_s := 2}}
+      {{if .width_m}}
+      {{$width_m = .width_m}}
+      {{end}}
+      {{if .width_s}}
+      {{$width_s = .width_s}}
+      {{end}}
+      {{ range .feature_item }}
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-white">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color:white; display:inline-block; font-size:22px;">
+            <h4 class=""
+              style="color:white; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
+              {{ .name | markdownify }}
+            </h4>
+          </i>
+          <p style="color:white;">{{ .content | markdownify }}</p>
+        </div>
       </div>
-      <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
+      {{ end }}
     </div>
-    <!-- /intro text -->
+    <!-- /desktop version -->
 
-    <!-- subtitle -->
-    <div class="row align-items-center">
-      <div class="col-12">
-        <h4 class="section-subtitle" style="color: #005aa7;">{{ .subtitle | markdownify }}</h2>
+    <!-- mobile version -->
+    <div class="row justify-content-center mobile">
+      {{ range .feature_item }}
+      <div class="col-12 py-4 border-top">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color:white; display:inline-block; font-size:22px;">
+            <h4 style="color:white; display:inline-block; padding-left:10px; font-weight:100;">
+              {{ .name | markdownify }}
+            </h4>
+          </i>
+          <p style="color:white;">{{ .content | markdownify }}</p>
+        </div>
       </div>
+      {{ end }}
     </div>
-    <!-- /subtitle -->
+    <!-- /mobile version -->
 
-    <!-- gradient bar -->
-    <div class="row hide-mobile" style="margin-top:15px; padding:0px;">
-      <div class="col-lg-0 col-md-0"></div>
-      <div class="col-lg-10 col-md-8">
-        <div class="bordertest" style="margin:0px;"></div>
-      </div>
-      <div class="col-lg-2 col-md-3"></div>
-    </div>
 
-    <div class="row show-mobile">
-      <div class="col-sm-12 col-xs-12">
-        <div class="bordertest-mobile"></div>
-      </div>
-    </div>
-    <!-- /gradient bar -->
-
-    <div class="row hide-mobile" style="width:100%; margin: 0px 0px 0px 0px;">
-      
-      <!-- menu -->
-      <div class="gc col-lg-2 col-md-2" style="padding: 0px 0px 0px 10px; background-color: #F2F2F2; height: 340px;">
-        <div class="menu2" style="margin-top: 20px;">
-          <div class="active">
-            <span style="font-size:13px;"> {{ .tab1 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab2 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab3 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab4 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab5 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab6 | markdownify }} </span>
-          </div>
-          <div>
-            <span style="font-size:13px;"> {{ .tab7 | markdownify }} </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- text -->
-      <div class="gc col-lg-8 col-md-8 col-sm-8 col-xs-8" style="background-color:#f9f9f9;">
-        <ul class="nacc" id="scroll-top" style="padding:10px 0px 0px 20px;">
-
-          <!-- AI Act -->
-          <li class="active" style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y:scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight:bold;"> {{ .ai_act_title | markdownify }} </span>
-              <p style="line-height:1.5;"><span> {{ .ai_act_content | markdownify }} </span></p>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .ai_act_tag_conformity | markdownify }} <span style="color:#777777; line-height:1.5;">{{ .ai_act_content_conformity | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .ai_act_tag_risk | markdownify }} <span style="color:#777777;line-height:1.5;"> {{ .ai_act_content_risk | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .ai_act_tag_standards | markdownify }} <span style="color:#777777; line-height:1.5;"> {{ .ai_act_content_standards | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a href="cases/#rotterdam-case" class="btn-link" style="color: #005aa7;"> {{ .ai_act_white_paper | markdownify }} <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <!-- /AI Act -->
-          
-          <!-- DSA -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .dsa_title | markdownify }} </span>
-              <p style="line-height:1.5;"><span> {{ .dsa_content | markdownify }} </span></p>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .dsa_tag_risk | markdownify }} <span style="color:#777777; line-height:1.5;"> {{ .dsa_content_risk | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> {{ .dsa_tag_template | markdownify }} <span style="color:#777777; line-height:1.5;"> {{ .dsa_content_template | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a href="knowledge_base/white_paper_dsa_delegated_regulation_feedback/" class="btn-link" style="color: #005aa7;"> {{ .dsa_white_paper | markdownify }} <i class="fas fa-arrow-right"></i></a>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a><span style="color:#777777; line-height:1.5;"> {{ .dsa_content_feedback | markdownify }} </span>
-                <div style="padding-left:25px;">
-                  <a style="font-weight:700;">– </a><span style="color:#777777; line-height:1.5;"> {{ .dsa_content_feedback_tab1 | markdownify }} </span>
-                </div>
-                <div style="padding-left:25px;">
-                  <a style="font-weight:700;">– </a><span style="color:#777777; line-height:1.5;"> {{ .dsa_content_feedback_tab2 | markdownify }} </span>
-                </div>
-              </div>
-            </div>
-          </li>
-          <!-- /DSA -->
-
-          <!-- GDPR -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .gdpr_title | markdownify }} </span>
-              <p style="line-height:1.5;"><span> {{ .gdpr_content1 | markdownify }} </span></p>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-35-gdpr/" class="btn-link" target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_dpia | markdownify }} </a> <span style="color:#777777; line-height:1.5;"> {{ .gdpr_content_dpia | markdownify }} </span>
-              </div>
-              <p style="line-height:1.5; padding:0px;"><span> {{ .gdpr_content2 | markdownify }} </span></p>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/recitals/no-71/" class="btn-link" target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_profiling | markdownify }} </a> <span style="color:#777777; line-height:1.5;"> {{ .gdpr_content_profiling | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-22-gdpr/" class="btn-link" target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_ADM | markdownify }} </a> <span style="color:#777777; line-height:1.5;"> {{ .gdpr_content_ADM| markdownify }} </span>
-              </div>
-            </div>
-          </li>
-          <!-- /GDPR -->
-
-          <!-- Administrative law -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .administrative_law_title | markdownify }} </span>
-              <p style=""> {{ .administrative_law_content | markdownify }} </p>
-              <div style="margin-bottom:15px;">
-                <span style="font-weight:700;">> </span> <span style="color: #005aa7;"> {{ .administrative_law_tag_motivation | markdownify }} </span> <span style="color:#777777; line-height:1.5;"> {{ .administrative_law_content_motivation | markdownify }} </span>
-              </div>
-              <div style="margin-bottom:15px;">
-                <a href="algoprudence/#rotterdam-case/" class="btn-link" style="color: #005aa7;"> {{ .algoprudence_rotterdam | markdownify }} <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <!-- /Administrative law -->
-
-          <!-- HRIA -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .hria_title | markdownify }} </span>
-              <p style=""> {{ .hria_content | markdownify }} </p>
-            </div>
-          </li>
-          <!-- /HRIA -->
-
-          <!-- AI registers -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .AI_register_title | markdownify }} </span>
-              <p style=""> {{ .AI_register_content | markdownify }} </p>
-            </div>
-          </li>
-          <!-- /AI registers -->
-
-          <!-- Regulatory landscape -->
-          <li style="padding:0px 25px 0px 0px;">
-            <div style="overflow-y: scroll; height:320px; padding-top:15px;">
-              <span style="color:#005aa7; font-weight: bold;"> {{ .regulator_title | markdownify }} </span>
-              <p style="">{{ .regulator_content | markdownify }}</p>
-              <div style="margin-bottom:15px;">
-                <a href="knowledge_base/white_paper_algorithmic_regulatory_body/" class="btn-link" style="color: #005aa7;">Read our white paper on the Dutch regulatory landscape<i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <!-- /Regulatory landscape -->
-
-        </ul>
-      </div>
-      <!-- /text -->
-
-      <!-- images -->
-      <div class="gc col-lg-2 col-md-2" id="image-col">
-        <ul class="nacc" style="">
-          <li class="active">
-            <div style="">
-              <img src="{{ .ai_act_image | relURL }}" height="100px;">  
-            </div>
-          </li>
-          <li>
-            <img src="{{ .dsa_image | relURL }}" height="100px;">
-          </li>
-          <li>
-            <img src="{{ .gdpr_image | relURL }}" height="100px;">
-          </li>
-          <li>
-            <img src="{{ .administrative_law_image | relURL }}" height="200px;">
-          </li>
-          <li>
-            <img src="{{ .regulator_image | relURL }}" height="150px;">
-          </li>
-          <li>
-            <img src="{{ .AI_register_image | relURL }}" height="125px;">
-          </li>
-          <li>
-            <img src="{{ .regulator_image | relURL }}" height="125px;">
-          </li>
-        </ul>
-      </div>
-      <!-- /images -->
-
-    </div>
-
-    <!-- mobile menu -->
-    <div class="gc2 row show-mobile" style="margin: 0px 0px 0px 0px; background-color: #F2F2F2;">
-      <div class="menu3 container-fluid d-flex">
-        <div class="col-sm-2 col-xs-2 active2">
-          <span style="font-size:12px;"> {{ .tab1 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab2 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab3 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab5 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab8 | markdownify }} </span>
-        </div>
-        <div class="col-sm-2 col-xs-2">
-          <span style="font-size:12px;"> {{ .tab9 | markdownify }} </span>
-        </div>
-      </div>
-    </div>
-
-    <!-- mobile text -->
-    <div class="gc2 row show-mobile show-mobile-height" style="margin: 0px 0px 0px 0px; background-color: #f9f9f9;">
-      <div class="container-fluid" style="padding:20px 0px 0px 0px">
-        <div class="col-sm-12 col-xs-12 active2" style="padding:0px">
-          <ul class="nacc2" style="padding:0px 20px 0px 20px;">
-
-            <!-- AI Act -->
-            <li class="active2">
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .ai_act_title | markdownify }} </span>
-                <p style="line-height:1.5;"><span>{{ .ai_act_content | markdownify }}</span></p>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .ai_act_tag_conformity | markdownify }} <span style="color:#777777; line-height:1.5;">{{ .ai_act_content_conformity | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .ai_act_tag_risk | markdownify }} <span style="color:#777777;line-height:1.5;"> {{ .ai_act_content_risk | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .ai_act_tag_standards | markdownify }} <span style="color:#777777; line-height:1.5;"> {{ .ai_act_content_standards | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a href="cases/#rotterdam-case" class="btn-link" style="color: #005aa7;"> {{ .ai_act_white_paper | markdownify }} <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </li>
-
-            <!-- DSA -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .dsa_title | markdownify }} </span>
-                <p style="line-height:1.5;"><span> {{ .dsa_content | markdownify }} </span></p>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .dsa_tag_risk | markdownify }} <span style="color:#777777; line-height:1.5;"> {{ .dsa_content_risk | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> {{ .dsa_tag_template | markdownify }} <span style="color:#777777; line-height:1.5;"> {{ .dsa_content_template | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a href="knowledge_base/white_paper_dsa_delegated_regulation_feedback/" class="btn-link" style="color: #005aa7;"> {{ .dsa_white_paper | markdownify }} <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a><span style="color:#777777; line-height:1.5;"> {{ .dsa_content_feedback | markdownify }} </span>
-                  <div style="padding-left:25px;">
-                    <a style="font-weight:700;">– </a><span style="color:#777777; line-height:1.5;"> {{ .dsa_content_feedback_tab1 | markdownify }} </span>
-                  </div>
-                  <div style="padding-left:25px;">
-                    <a style="font-weight:700;">– </a><span style="color:#777777; line-height:1.5;"> {{ .dsa_content_feedback_tab2 | markdownify }} </span>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <!-- GDPR -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .gdpr_title | markdownify }} </span>
-                <p style="line-height:1.5;"><span> {{ .gdpr_content | markdownify }} </span></p>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-35-gdpr/" class="btn-link" target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_dpia | markdownify }} </a> <span style="color:#777777; line-height:1.5;"> {{ .gdpr_content_dpia | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/recitals/no-71/" class="btn-link" target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_profiling | markdownify }} </a> <span style="color:#777777; line-height:1.5;"> {{ .gdpr_content_profiling | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a style="font-weight:700;">> </a> <a href="https://gdpr-info.eu/art-22-gdpr/" class="btn-link" target="_blank" style="color: #005aa7;"> {{ .gdpr_tag_ADM | markdownify }} </a> <span style="color:#777777; line-height:1.5;"> {{ .gdpr_content_ADM| markdownify }} </span>
-                </div>
-              </div>
-            </li>
-
-            <!-- HRIA -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .hria_title | markdownify }} </span>
-                <p style=""> {{ .hria_content | markdownify }} </p>
-              </div>
-            </li>
-            <!-- /HRIA -->
-
-            <!-- Administrative law -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .administrative_law_title | markdownify }} </span>
-                <p style=""> {{ .administrative_law_content | markdownify }} </p>
-                <div style="margin-bottom:15px;">
-                  <span style="font-weight:700;">> </span> <span style="color: #005aa7;"> {{ .administrative_law_tag_motivation | markdownify }} </span> <span style="color:#777777; line-height:1.5;"> {{ .administrative_law_content_motivation | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a href="algoprudence/#rotterdam-case/" class="btn-link" style="color: #005aa7;"> {{ .algoprudence_rotterdam | markdownify }} <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </li>
-            <!-- /Administrative law -->     
-            
-            <!-- AI registers -->
-            <li>
-              <div style="overflow-y: scroll; height:250px; padding-right: 20px;">
-                <span style="color:#005aa7; font-weight: bold;"> {{ .AI_register_title | markdownify }} </span>
-                <p style=""> {{ .AI_register_content | markdownify }} </p>
-                <!-- <div style="margin-bottom:15px;">
-                  <span style="font-weight:700;">> </span> <span style="color: #005aa7;"> {{ .administrative_law_tag_motivation | markdownify }} </span> <span style="color:#777777; line-height:1.5;"> {{ .administrative_law_content_motivation | markdownify }} </span>
-                </div>
-                <div style="margin-bottom:15px;">
-                  <a href="algoprudence/#rotterdam-case/" class="btn-link" style="color: #005aa7;"> {{ .algoprudence_rotterdam | markdownify }} <i class="fas fa-arrow-right"></i></a>
-                </div> -->
-              </div>
-            </li>
-            <!-- /AI registers -->    
-
-          </ul>
-
-        </div>
-      </div>
-    </div>
+    <!-- /distinctive in elements -->
 
   </div>
 </section>
 {{ end }}
 {{ end }}
-{{ end }}
-<!-- /Why we exist -->
+<!-- /Distinctive in -->
 
-<!-- Contact form -->
-{{ with .Params.Get_in_touch }}
+<!-- Areas of AI expertise -->
+{{ with .Params.Areas_of_AI_expertise }}
+{{ if .enable }}
 <section class="section bg-white">
   <div class="container">
+
+    <!-- Title -->
     <div class="row">
-      <div class="col-lg-5 content">
-        <h2 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h2>
-        <div class="wrapper" style="width:75%">
+      <div class="col-12">
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+      </div>
+    </div>
+    <!-- /Title -->
+
+    <!-- areas of AI expertise -->
+
+    <!-- desktop version -->
+    <div class="row justify-content-center desktop">
+      {{$width_m := 4}}
+      {{$width_s := 2}}
+      {{if .width_m}}
+      {{$width_m = .width_m}}
+      {{end}}
+      {{if .width_s}}
+      {{$width_s = .width_s}}
+      {{end}}
+      {{ range .feature_item }}
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-blue">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
+            <h4 class=""
+              style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+              {{ .name | markdownify }}
+            </h4>
+          </i>
           <p>{{ .content | markdownify }}</p>
         </div>
       </div>
+      {{ end }}
+    </div>
+    <!-- /desktop version -->
 
-      <!-- Form -->
-      <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
-          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="{{ i18n `yourname` }}">
-          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="{{ i18n `youremail` }}">
-          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="{{ i18n `subject` }}">
-          <textarea name="message" id="message" class="form-control mb-3" placeholder="{{ i18n `yourmessage` }}"></textarea>
-          <div class="wrapper" style="text-align:center;">
-            <button type="submit" value="send" class="btn btn-primary">{{ i18n `sendnow` }}</button>
-          </div>
-        </form>
+    <!-- mobile version -->
+    <div class="row justify-content-center mobile">
+    {{ range .feature_item }}
+    <div class="col-12 m-4 border-top-blue">
+      <div class="feature-card-transparant">
+        <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
+          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+            {{ .name | markdownify }}
+          </h4>
+        </i>
+        <p>{{ .content | markdownify }}</p>
       </div>
-      <!-- /Form -->
+    </div>
+    {{ end }}
+  </div>
+  <!-- /mobile version -->
+
+    <!-- /areas of AI expertise -->
+
+    <!-- Button -->
+    <div class="row text-center">
+      <div class="col-12" style="margin-top:25px;">
+        <a class="btn-link" href="">
+          <h3 class="btn" style="color:#ffffff;">{{.submit_case_text}}</h3>
+        </a>
+      </div>
+    </div>
+    <!-- /Button -->
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Areas of AI expertise -->
+
+<!-- Recent audits -->
+{{ if .Params.Recent_audits}}
+{{with .Params.Recent_audits}}
+<section class="section-none bg-white">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+      </div>
+    </div>
+    <!-- /Title -->
+
+    <!-- desktop version -->
+    <div class="row desktop">
+      {{ range .feature_item }}
+      <div class="col-md-1">
+        <img class="img-fluid" src="{{.image}}" style="height:100px; position: absolute;" />
+      </div>
+      <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
+        <h4 class="" style="color: #005aa7; font-size:16px;">
+          {{ .name | markdownify }}
+        </h4>
+        <p style="font-size:14px;">
+          {{.content | markdownify}}
+        </p>
+      </div>
+      {{ end }}
+    </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="row mobile">
+      {{ range .feature_item }}
+      <div class="col-12">
+        <img class="img-fluid about-img-mobile" src="{{.image}}"/>
+      </div>
+      <div class="col-12 clickable-wrapper mt-5 mb-5" data-href="{{.link | relURL }}">
+        <h4 class="" style="color: #005aa7;">
+          {{ .name | markdownify }}
+        </h4>
+        <p>
+          {{.content | markdownify}}
+        </p>
+      </div>
+      {{ end }}
+    </div>
+    <!-- /mobile version -->
+
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Recent audits -->
+
+<!-- Building algoprudence -->
+{{ with .Params.Building_algoprudence }}
+<section class="section-none bg-white">
+  <div class="" style="background-color: #ffffff;">
+    <div class="container mt-5">
+      <div class="row">
+
+        <!-- title -->
+        <h3 class="section-title" style="color:#005aa7;">{{.title | markdownify}}</h3>
+        <!-- /title -->
+
+        <!-- desktop version -->
+        <div class="col-12 desktop">
+          {{ range $i, $step := .steps }}
+          <div class="row">
+            <div class="col-3 mb-4">
+              <div class="row">
+                <h3 style="color: #005aa7;">
+                  {{ i18n "step" }} {{add $i 1}}
+                </h3>
+              </div>
+              <div class="row">
+                <p style="font-size:20px; color: #005aa7;">
+                  {{ .title }}
+                </p>
+              </div>
+            </div>
+            <div class="col-9">
+              <div>
+                <h4 class="" style="color: #005aa7;">
+                  {{ .name | markdownify }}
+                </h4>
+                <p>{{.content | markdownify}}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+
+          <!-- button -->
+          <div class="row text-center">
+            <div class="col-12" style="margin-top:0px;">
+              <a class="btn-link" href="">
+                <h3 class="btn" style="color:#ffffff; font-weight:600;">
+                  {{.button_text}}
+                </h3>
+              </a>
+            </div>
+          </div>
+          <!-- /button -->
+        </div>
+        <!-- /desktop version -->
+
+        <!-- mobile version -->
+        <div class="col-12 mobile">
+          {{ range $i, $step := .steps }}
+          <div class="row">
+            <div class="col-12 mb-4">
+              <div class="row mb-2">
+                <h3 style="color: #005aa7;">
+                  {{ i18n "step" }} {{add $i 1}} – {{ .title }}
+                </h3>
+                <p class="mt-2">{{.content | markdownify}}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+
+          <!-- button -->
+          <div class="row text-center">
+            <div class="col-12" style="margin-top:0px;">
+              <a class="btn-link" href="">
+                <h3 class="btn" style="color:#ffffff; font-weight:600;">
+                  {{.button_text}}
+                </h3>
+              </a>
+            </div>
+          </div>
+          <!-- /button -->
+        </div>
+        <!-- /mobile version -->
+
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+<!-- /Building algoprudence -->
+
+<!-- Advantages of algoprudence -->
+{{ with .Params.Advantages_of_algoprudence}}
+<section class="section bg-lightblue" >
+  <div class="container">
+
+    <div class="row" style="padding:50px 0px;">
+      <!-- title -->
+      <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
+      <!-- /title -->
+    </div>
+
+    <!-- advantages -->
+
+    <!-- desktop version -->
+    <div class="row desktop">
+      {{ range .feature_item }}
+      <div class="col-md-6 col-sm-12 mb-4 border-left-blue">
+        <div class="feature-card-transparant" style="padding:30px;">
+          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
+          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+            {{ .name | markdownify }}
+          </h4>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- button -->
+      <!-- <div class="col-md-6 col-sm-12 mb-4 d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-12">
+            <img class="img-fluid" src="{{.image}}" style="height:150px; display:block; margin:auto;"/>
+            <a class="btn-link" href="">
+              <h3 class="btn" style="color:#ffffff; font-weight:600; margin-top:30px;">
+                {{.button_text}}
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div> -->
+      <!-- /button -->
+
+    </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="row justify-content-center mobile">
+      {{ range .feature_item }}
+      <div class="col-12 m-4 border-top-blue">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;"></i>
+          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+            {{ .name | markdownify }}
+          </h4>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- button -->
+      <!-- <div class="col-12 mb-4 d-flex align-items-center justify-content-center" style="margin-top:60px;">
+        <div class="row">
+          <div class="col-12">
+            <img class="img-fluid" src="{{.image}}" style="height:200px; display:block; margin:auto;"/>
+            <a class="btn-link" href="" style="">
+              <h3 class="btn" style="color:#ffffff; font-weight:600; margin-top:50px;">
+                {{.button_text}}
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div> -->
+      <!-- /button -->
+
+    </div>
+    <!-- /mobile version -->
+
+    <!-- /advantages -->
+
+  </div>
+</section>
+{{end}}
+<!-- /Advantages of algoprudence -->
+
+<!-- gif animation -->
+{{ with .Params.Title_gif}}
+<section class="section-none bg-white">
+  <div class="container">
+    <div class="row">
+
+      <div class="container pinDiv2">
+        
+        <div class="row">
+          <!-- title -->
+          <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
+          <!-- /title -->
+        </div>
+
+        <!-- XX version -->
+        <div class="row" style="display: flex; justify-content:center; align-items:center; margin-top:50px;">
+          <!-- algoprudence animation -->
+          <div id="imagesequence">
+            <img id="myimg" width="800px" src="/images/gif-algoprudence-frames/frame-036.png"><br>
+          </div>
+          <!-- /algoprudence animation -->
+        </div>
+        <!-- /XX version -->
+        
+      </div>
 
     </div>
   </div>
 </section>
 {{ end }}
-<!-- /Contact form -->
+<!-- /gif animation -->
+
+<!-- Video -->
+{{ with .Params.Title_video }}
+<section class="section-none bg-white" style="margin-top:700px;">
+  <div class="container">
+    <div class="row">
+      <!-- title -->
+      <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
+      <!-- /title -->
+    </div>
+    <div class="row" style="margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
+      <video width="100%" height="auto" autoplay muted controls>
+        {{ if .video_mp4 }}
+        <source src="{{.video_mp4}}" type="video/mp4">
+        {{ end }}
+        {{ if .video_ogg }}
+        <source src="{{.video_ogg}}" type="video/ogg">
+        {{ end }}
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /Video -->
 
 {{ end }}

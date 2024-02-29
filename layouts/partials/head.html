@@ -24,13 +24,37 @@
 <meta name="msapplication-TileColor" content="{{site.Params.variables.primary_color | default `#da532c`}}">
 <meta name="theme-color" content="{{site.Params.variables.body_color | default `#ffffff` }}">
 
+<!-- jquery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!-- /query -->
+
+<!-- scroll magic -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<!-- /scroll magic -->
+
+<!-- page header script -->
+<script src="/js/page_header_script.js"></script>
+<!-- /page header script -->
+
+<!-- accordion -->
+<link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+<!-- /accordion -->
+
+<!-- Page specific links -->
+{{ if eq .Type "bias-detection-tool" }}
+<link rel="stylesheet" href="https://static-files-pdf.s3.amazonaws.com/assets/index.css">
+{{ end }}
+<!-- /Page specific links -->
 
 <script>
 $(document).ready(function()
 {
   // info
-  var slogan = "We build public knowledge for ethical algorithms";
+  var slogan = "Building public knowledge for ethical algorithms";
   var slogan_NL = "Publieke kennisopbouw voor ethische algoritmes";
 
   var KvK = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212."
@@ -52,5 +76,12 @@ $(document).ready(function()
   $('#KvK').text(KvK);
   $('#follow').text(follow);
 
+
+  $('.clickable-wrapper').each(function() {
+    let clickable_item = $(this);
+    clickable_item.click(function() {
+      window.location = clickable_item.attr('data-href');
+    })
+  });
 });
 </script>

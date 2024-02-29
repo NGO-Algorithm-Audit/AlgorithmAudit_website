@@ -1,0 +1,11 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+{{ $width := 12 }}
+{{ if .Get "width" }}
+{{ $width = .Get "width" }}
+{{ end }}
+<div class="row justify-content-center">
+    <div class="col-{{ $width }} center-block" id={{.Get "id" }}>
+        <img src={{.Get "image" }} alt={{.Get "alt" }} title={{.Get "caption" }}> </img>
+    </div>
+</div>
