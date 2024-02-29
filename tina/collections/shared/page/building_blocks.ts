@@ -18,6 +18,40 @@ let building_blocks: TinaField[] = [
         isBody: true,
         templates: [
             {
+                name: 'about_AA',
+                label: 'About Algorithm Audit',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template (only available in about AA)',
+                        required: false,
+                    }
+                ]
+            },
+            {
+                name: 'algoprudence_case',
+                label: 'Algoprudence case',
+                match: {
+                    start: '{{<',
+                    end: '>}}'
+                },
+                fields: [
+                    {
+                        name: 'title',
+                        label: 'DONT USE',
+                        type: 'string',
+                        description: 'Use top level template (only available in algoprudence cases)',
+                        required: false,
+                    }
+                ]
+            },
+            {
                 name: 'ai_policy_observatory',
                 label: 'AI Policy Observatory',
                 match: {
@@ -206,25 +240,69 @@ let building_blocks: TinaField[] = [
                         required: false,
                     }
                 ]
-            },
-            {
-                name: 'algoprudence_case',
-                label: 'Algoprudence case',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template (only available in algoprudence cases)',
-                        required: false,
-                    }
-                ]
             }
         ]
+    },
+    {
+        type: "object",
+        name: "about_AA",
+        label: "About Algorithm Audit",
+        fields:
+            [
+                {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    required: true,
+                },
+                {
+                    type: "string",
+                    name: "content",
+                    label: "Content",
+                    required: true,
+                },
+                {
+                    type: "string",
+                    name: "icon",
+                    label: "Icon",
+                    description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+                    required: false,
+                },
+                {
+                    type: "string",
+                    name: "id",
+                    label: "ID",
+                    description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                    required: false,
+                },
+                {
+                    type: "object",
+                    name: "items",
+                    label: "Items",
+                    list: true,
+                    fields:
+                        [
+                            {
+                                type: "string",
+                                name: "subtitle",
+                                label: "Name",
+                                required: true,
+                            },
+                            {
+                                type: "image",
+                                name: "image",
+                                label: "Image",
+                                required: true,
+                            },
+                            {
+                                type: "rich-text",
+                                name: "content",
+                                label: "Content",
+                                isBody: true,
+                            }
+                        ]
+                }
+            ]
     },
     {
         type: 'object',
