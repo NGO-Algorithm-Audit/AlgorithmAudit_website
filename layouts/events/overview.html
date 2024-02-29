@@ -31,9 +31,10 @@
                                 {{end}}
                             </div>
                         </div>
+                        <!-- /Facets -->
 
                         <!-- Events -->
-                        <div class="col-lg-9 col-sm-12">
+                        <div class="col-lg-9 col-12">
                             <div class="accordion-container">
                                 {{ if .Params.events }}
                                 {{ range $event := .Params.events }}
@@ -76,11 +77,12 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- foldable panel -->
                                         <div class="ac-panel" >
                                             <div class="row justify-content-between ac-text p-0">
-                                                <div class="col-2 mr-4">
+                                                <div class="col-0 col-lg-2 mr-4">
                                                 </div>
-                                                <div class="col pt-4" style="background-color: #eef2f6;">
+                                                <div class="col-12 col-lg-10 pt-4" style="background-color: #eef2f6;">
                                                     <h5>{{ i18n "description" }}</h5>
                                                     <p>
                                                         {{$event.description | markdownify}}
@@ -92,6 +94,8 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- foldable panel -->
+
                                     </div>
                                 </div>
                                 {{end}}
@@ -102,6 +106,7 @@
                             new Accordion('.accordion-container');
                         </script>
                         <!-- /Events -->
+
                     </div>
                 </div>
             </div>
