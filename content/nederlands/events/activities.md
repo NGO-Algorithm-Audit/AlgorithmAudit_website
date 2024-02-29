@@ -1,10 +1,10 @@
 ---
 layout: overview
-title: Events
+title: Evenementen
 subtitle: >
-  Knowledge sharing is an integral part of Algorithm Audit's mission. Members of
-  our team speak at events. [<span style="color:#005aa7"> Reach
-  out</span>](/#contactform) to discuss contributions.
+  Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. We
+  spreken regelmatig op events. Stuur een bericht om een mogelijke bijdrage te
+  bespreken.
 image: /images/svg-illustrations/events.svg
 events:
   - title: >-
@@ -19,16 +19,15 @@ events:
     date: 13-02-2024
     pdf: /pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf
     facets:
-      - value: presentation
-        label: presentation
-  - title: 'Rijksuniversiteit Groningen (RUG) AI Verordening '
-    description: |
-      Bijdrage aan paneldiscussie
-    image: /images/events/RUG.png
-    date: 06-02-2024
-    facets:
-      - value: paneldiscussie
-        label: paneldiscussie
+      - value: type_presentation
+        label: Presentatie
+        hide: false
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: '2024'
+        label: '2024'
+        hide: true
   - title: >-
       Algoritmeseminar Autoriteit Persoonsgegevens – Het auditeren van
       algoritmes
@@ -38,8 +37,28 @@ events:
     image: /images/events/dutch-data-protection.jpg
     date: 08-02-2024
     facets:
-      - value: paneldiscussie
-        label: paneldiscussie
+      - value: '2024'
+        label: '2024'
+        hide: true
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: type_panel
+        label: Paneldiscussie
+  - title: 'Rijksuniversiteit Groningen (RUG) AI Verordening '
+    description: |
+      Bijdrage aan paneldiscussie
+    image: /images/events/RUG.png
+    date: 06-02-2024
+    facets:
+      - value: '2024'
+        label: '2024'
+        hide: true
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: type_panel
+        label: Paneldiscussie
   - title: >-
       Lunchlezing Bias Detection Tool studievereniging Christiaan Huygens TU
       Delft
@@ -50,7 +69,12 @@ events:
     date: 08-01-2024
     pdf: /pdf-files/20240108_BDT_TU_Delft.pdf
     facets:
-      - value: Presentatie
+      - value: '2024'
+        label: '2024'
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: type_presentation
         label: Presentatie
   - title: >-
       Presentatie over inclusieve, deliberatieve adviescommissies – Werkgroep 1
@@ -63,8 +87,12 @@ events:
     date: 07-01-2024
     pdf: /pdf-files/20240107_AA_stakeholder_panels.pdf
     facets:
-      - value: presentatie
-        label: presentatie
+      - value: '2024'
+        label: '2024'
+      - value: year_q1_2024
+        label: Q1-2024
+      - value: type_presentation
+        label: Presentatie
   - title: Digitale Diensten Wet stakeholder evenement Europese Commissie
     description: >
       Digital Services Act (DSA) stakeholder evenement. Zie ook Algorithm
@@ -73,15 +101,82 @@ events:
     image: /images/events/DSA.jpeg
     date: 27-06-2023
     facets:
+      - value: '2023'
+        label: '2023'
+      - value: year_q3_2023
+        label: Q3-2023
+        hide: true
       - value: type_event
         label: Evenement
 facet_groups:
+  - value: year
+    title: Year
+    facets:
+      - value: q1_2024
+        label: Q1-2024
+      - value: q4_2023
+        label: Q4-2023
+      - value: q3_2023
+        label: Q3-2023
+      - value: q2_2023
+        label: Q2-2023
+      - value: q1_2023
+        label: Q1-2023
+      - value: '2022'
+        label: '2022'
   - value: type
     title: Type evenement
     facets:
+      - value: blog
+        label: Blog
       - value: event
         label: Evenement
+      - value: interview
+        label: Interview
+      - value: panel
+        label: Paneldiscussie
+      - value: presentation
+        label: Presentatie
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

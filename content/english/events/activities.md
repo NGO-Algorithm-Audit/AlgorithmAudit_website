@@ -26,16 +26,16 @@ facet_groups:
   - value: type
     title: Type of event
     facets:
-      - value: presentation
-        label: Presentation
       - value: blog
         label: Blog
+      - value: event
+        label: Event
       - value: interview
         label: Interview
       - value: panel
         label: Panel
-      - value: event
-        label: Event
+      - value: presentation
+        label: Presentation
 events:
   - title: >-
       Presentation Fundamental Rights Impact Assessments (FRIAs) and inclusive,
@@ -49,7 +49,7 @@ events:
     date: 13-02-2024
     pdf: /pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf
     facets:
-      - value: Presentation
+      - value: type_presentation
         label: Presentation
       - value: year_q1_2024
         label: Q1-2024
@@ -57,20 +57,6 @@ events:
       - value: '2024'
         label: '2024'
         hide: true
-  - title: University of Groningen (RUG) AI Act event
-    description: |
-      Sharing buttom-up experience on auditing AI during panel discussion.
-    image: /images/events/RUG.png
-    date: 06-02-2024
-    facets:
-      - value: '2024'
-        label: '2024'
-        hide: true
-      - value: year_q1_2024
-        label: Q1-2024
-        hide: true
-      - value: Panel discussion
-        label: Panel discussion
   - title: Algorithm seminar Dutch Data Protection Authority – Auditing algorithms
     description: |
       Sharing bottom-up auditing experience during panel discussion
@@ -83,7 +69,21 @@ events:
       - value: year_q1_2024
         label: Q1-2024
         hide: true
-      - value: Panel discussion
+      - value: type_panel
+        label: Panel discussion
+  - title: University of Groningen (RUG) AI Act event
+    description: |
+      Sharing buttom-up experience on auditing AI during panel discussion.
+    image: /images/events/RUG.png
+    date: 06-02-2024
+    facets:
+      - value: '2024'
+        label: '2024'
+        hide: true
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: type_panel
         label: Panel discussion
   - title: >-
       Presentation Bias Detection Tool study association Christiaan Huygens TU
@@ -95,7 +95,12 @@ events:
     date: 08-01-2024
     pdf: /pdf-files/20240108_BDT_TU_Delft.pdf
     facets:
-      - value: Presentation
+      - value: '2024'
+        label: '2024'
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: type_presentation
         label: Presentation
   - title: >-
       Presentation on inclusive, deliberative stakeholder panels – Working Group
@@ -108,7 +113,7 @@ events:
     date: 07-01-2024
     pdf: /pdf-files/20240107_AA_stakeholder_panels.pdf
     facets:
-      - value: Presentation
+      - value: type_presentation
         label: Presentation
       - value: year_q1_2024
         label: Q1-2024
@@ -136,6 +141,17 @@ events:
         label: '2023'
         hide: true
 ---
+
+
+
+
+
+
+
+
+
+
+
 
 
 
