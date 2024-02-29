@@ -98,25 +98,27 @@ Areas_of_AI_expertise:
   enable: true
   width_m: 4
   width_s: 12
-  submit_case_text: Request an audit
+  submit_case_text: Samenwerking bespreken
   feature_item:
-    - name: Test
+    - name: Profilering
       icon: fas fa-chart-pie
       content: >
-        Auditing rule-based and ML-driven profiling, e.g., differentiation
-        policies, selection criteria, Z-testing, model validation and
-        organisational aspects
-    - name: FP-FN balancing
+        Auditeren van regel-gebaseerde en ML-gedreven profileringsalgoritmes,
+        o.a. op normatieve onderbouwing van selectiecriteria, statistische
+        Z-toets op risicodistirbuties en organisatorische waarborgen
+    - name: Balanceren FP-FNs
       icon: fa-solid fa-scale-balanced
       content: >
-        Context-dependent review of ML and DL confusion matrix-based evaluation
-        metrics, such as False Positives (FPs) and False Negatives (FNs)
-    - name: Ranking
+        Normatief advies over context-afhankelijke interpretatie van confusion
+        matrix-gebaseerde evaluatiemetrieken, zoals False Positives (FPs) and
+        False Negatives (FNs)
+    - name: Aanbevelingssystemen
       icon: fas fa-ranking-star
       content: >
-        Recommender systems are everywhere. With the new Digital Services Act
-        (DSA) came into forces last summer, auditing ranking systems is highly
-        relevant
+        Validatie van hyperparameterselectie voor aanbevelingssystemen, zoals
+        [learning-to-rank](https://en.wikipedia.org/wiki/Learning_to_rank). Zie
+        ook onze feedback naar de Europese Commissie over onafhankelijke
+        third-party audits van recommender systems.
 Recent_audits:
   title: Recente audits
   feature_item:
@@ -203,6 +205,21 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
