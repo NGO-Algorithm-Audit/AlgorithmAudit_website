@@ -33,7 +33,7 @@ facet_groups:
       - value: interview
         label: Interview
       - value: panel
-        label: Panel
+        label: Panel discussion
       - value: presentation
         label: Presentation
 events:
@@ -97,6 +97,7 @@ events:
     facets:
       - value: '2024'
         label: '2024'
+        hide: true
       - value: year_q1_2024
         label: Q1-2024
         hide: true
@@ -141,6 +142,8 @@ events:
         label: '2023'
         hide: true
 ---
+
+
 
 
 

@@ -15,7 +15,7 @@
                             {{ range $facet_group := .Params.facet_groups}}
                             <div class="facet-group mb-2" data-facet-group="{{$facet_group.value}}">
                                 <fieldset>
-                                    <legend style="color: #005aa7;">{{$facet_group.title}}</legend>
+                                    <legend style="color: #005aa7; font-size:18px;">{{$facet_group.title}}</legend>
                                     {{ range $facet := $facet_group.facets}}
                                     <div>
                                         <input type="checkbox" id="{{$facet_group.value}}_{{$facet.value}}"
@@ -47,7 +47,7 @@
                                         <div class="ac-trigger p-0">
                                             <div class="row justify-content-between m-0" >
                                                 <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
-                                                    <img class="img-fluid about-img p-5" src="{{$event.image}}" />
+                                                    <img class="img-fluid about-img p-4" src="{{$event.image}}" />
                                                 </div>
                                                 <div class="col pt-3 pb-5" style="background-color: #ffffff;">
                                                     <div class="row align-items-center">
