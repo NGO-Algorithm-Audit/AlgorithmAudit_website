@@ -35,6 +35,86 @@ about_AA:
         our [AI policy observatory](/knowledge-platform/policy-observatory/),
         [white papers](/knowledge-platform/knowledge-base/) and
         [op-eds](/knowledge-platform/knowledge-base/)
+team:
+  title: Synthetic Data Generation cohort
+  content: >-
+    Part-time team that works 2-4 hours per week for 6 months on synthetic data
+    generation
+  icon: fas fa-table
+  button_text: Synthetic data generation
+  id: SDG-team
+  button_link: /technical-tools/sdg/
+  team_members:
+    - image: /images/people/EMenvouta.jpeg
+      name: Emmanuel Menvouta PhD
+      bio: |
+        Machine Learning Engineer, Dataroots
+    - image: /images/people/EBogaards.jpeg
+      name: Ellen Bogaards
+      bio: |
+        MSc Artifical Intelligence, Utrecht University
+    - image: /images/people/GAcheampong.jpeg
+      name: Godwin Acheampong
+      bio: |
+        Data Scientist, Budget Thuis
+    - image: /images/people/SBabac.jpeg
+      name: Sonja Babac
+      bio: |
+        PhD-candidate, Technical University Eindhoven – Philips MedTech
+    - image: /images/people/JPersson.jpeg
+      name: Joel Persson PhD
+      bio: |
+        Research Scientist, Spotify
+team1:
+  title: Bias detection tool cohort
+  content: >-
+    Part-time team that works 2-4 hours per week for 6 months on bias detection
+    tool
+  icon: fas fa-search
+  button_text: Our bias detection tool
+  id: bdt
+  button_link: /technical-tools/bdt/
+  team_members:
+    - image: /images/people/KPadh.jpeg
+      name: Kirtan Padh
+      bio: |
+        PhD-candidate Causal Inference and Machine Learning, TU München
+    - image: /images/people/MJorgensen.jpeg
+      name: Mackenzie Jorgensen
+      bio: |
+        PhD-candidate Computer Science, King’s College London
+    - image: /images/people/KProrokovic.jpeg
+      name: Krsto Proroković
+      bio: |
+        PhD-candidate, Swiss AI Lab IDSIA
+    - image: /images/people/FHolstege.jpeg
+      name: Floris Holstege
+      bio: |
+        PhD-candidate Machine Learning, University of Amsterdam
+    - image: /images/people/JPersson.jpeg
+      name: Joel Persson PhD
+      bio: |
+        Research Scientist, Spotify
+team2:
+  title: Executive team
+  content: Team coordinating the different activities of Algorithm Audit
+  icon: fas fa-users
+  id: executive-team
+  team_members:
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
+      bio: |
+        Director-board member
+    - image: /images/people/VDjwalapersad.png
+      name: Vardâyani Djwalapersad
+      bio: |
+        Project manager Algoprudence
 ---
 
 {{< about_AA >}}
+
+{{< team2 >}}
+
+{{< team1 >}}
+
+{{< team >}}

@@ -8,7 +8,7 @@ image: /images/svg-illustrations/knowledge_base.svg
 author: Parie
 type: regular
 team:
-  title: Synthetic Data Generation Team
+  title: Synthetic Data Generation cohort
   icon: fas fa-user-friends
   button_text: Other teams
   id: team
