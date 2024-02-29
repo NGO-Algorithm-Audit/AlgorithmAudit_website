@@ -64,7 +64,7 @@ events:
       Delft
     description: >
       Lunchlezing Bias Detection Tool studievereniging Christiaan Huygens voor
-      wiskunde en informatica TU Delft
+      wiskunde en informatica TU Delft.
     image: /images/events/mathematics and computer science tu delft.png
     date: 08-01-2024
     pdf: /pdf-files/20240108_BDT_TU_Delft.pdf
@@ -142,6 +142,7 @@ facet_groups:
       - value: presentation
         label: Presentatie
 ---
+
 
 
 
