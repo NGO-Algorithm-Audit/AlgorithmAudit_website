@@ -34,11 +34,21 @@ hasChildren = true
 name = "Technische tools"
 weight = 3
 hasChildren = true
+  [[main.params]]
+    icon = "fa-table"
+  [[main]]
+  parent = "Technische tools"
+  name = "Github code"
+  url = "https://github.com/NGO-Algorithm-Audit/"
+  weight = 1
+  [[main.params]]
+    featured = true
+    target = "_blank"
   [[main]]
   parent = "Technische tools"
   name = "Bias detectie tool"
   url = "/nl/technical-tools/bdt/"
-  weight = 1
+  weight = 2
   [[main.params]]
     icon = "fa-search"
     subtitle = "Open source AI audit tools"
@@ -46,17 +56,7 @@ hasChildren = true
   parent = "Technische tools"
   name = "Synthetische data generatie"
   url = "nl/technical-tools/sdg"
-  weight = 2
-  [[main.params]]
-    icon = "fa-table"
-  [[main]]
-  parent = "Technische tools"
-  name = "Github code"
-  url = "https://github.com/NGO-Algorithm-Audit/"
   weight = 3
-  [[main.params]]
-    subtitle = "Onze code"
-    icon = "fa-code"
 
 [[main]]
 name = "Kennisplatform"
@@ -117,29 +117,36 @@ weight = 6
 hasChildren = true
   [[main]]
   parent = "Over ons"
+  name = "Kom in contact"
+  url = "nl/about/contact"
+  weight = 1
+  [[main.params]]
+    featured = true
+  [[main]]
+  parent = "Over ons"
   name = "FAQ"
   url = "nl/about/faq"
-  weight = 1
+  weight = 2
   [[main.params]]
     icon = "fa-question"
   [[main]]
   parent = "Over ons"
   name = "Teams"
   url = "nl/about/teams"
-  weight = 2
+  weight = 3
   [[main.params]]
     icon = "fa-users"
   [[main]]
   parent = "Over ons"
   name = "Bestuur"
   url = "nl/about/boards"
-  weight = 3
+  weight = 4
   [[main.params]]
     icon = "fa-user-friends"
   [[main]]
   parent = "Over ons"
   name = "Vacatures"
   url = "nl/about/vacancies"
-  weight = 4
+  weight = 5
   [[main.params]]
     icon = "fa-user-check"

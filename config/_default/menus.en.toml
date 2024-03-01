@@ -36,9 +36,17 @@ weight = 3
 hasChildren = true
   [[main]]
   parent = "Technical tools"
+  name = "Github code"
+  url = "https://github.com/NGO-Algorithm-Audit/"
+  weight = 1
+  [[main.params]]
+    featured = true
+    target = "_blank"
+  [[main]]
+  parent = "Technical tools"
   name = "Bias detection tool"
   url = "/technical-tools/BDT"
-  weight = 1
+  weight = 2
   [[main.params]]
     icon = "fa-search"
     subtitle = "Open source AI auditing tools"
@@ -46,17 +54,9 @@ hasChildren = true
   parent = "Technical tools"
   name = "Synthetic data generation"
   url = "/technical-tools/SDG"
-  weight = 2
-  [[main.params]]
-    icon = "fa-table"
-  [[main]]
-  parent = "Technical tools"
-  name = "Github code"
-  url = "https://github.com/NGO-Algorithm-Audit/"
   weight = 3
   [[main.params]]
-    subtitle = "Code repository"
-    icon = "fa-code"
+    icon = "fa-table"
 
 [[main]]
 name = "Knowledge platform"
@@ -117,29 +117,36 @@ weight = 6
 hasChildren = true
   [[main]]
   parent = "About"
+  name = "Get in touch"
+  url = "/about/contact"
+  weight = 1
+  [[main.params]]
+    featured = true
+  [[main]]
+  parent = "About"
   name = "FAQ"
   url = "/about/faq"
-  weight = 1
+  weight = 2
   [[main.params]]
     icon = "fa-question"
   [[main]]
   parent = "About"
   name = "Teams"
   url = "/about/teams"
-  weight = 2
+  weight = 3
   [[main.params]]
     icon = "fa-users"
   [[main]]
   parent = "About"
   name = "Boards"
   url = "/about/boards"
-  weight = 3
+  weight = 4
   [[main.params]]
     icon = "fa-user-friends"
   [[main]]
   parent = "About"
   name = "Vacancies"
   url = "/about/vacancies"
-  weight = 4
+  weight = 5
   [[main.params]]
     icon = "fa-user-check"
