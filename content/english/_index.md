@@ -101,17 +101,17 @@ Activity_Feed:
   featured_activities:
     - title: >-
         Bias prevented – Qualitative and quantitative audit of college
-        allowances check-process DUO
+        allowances control process DUO
       intro: >
-        Irregularities are identified in the college allowances check-process as
-        conducted by Dutch public sector organisation DUO. Students living close
-        to their parent(s) are significantly more often manually selected for a
-        check than other students. The algorithm used to support the selection
-        process performed as expected.
-      link: /events/press_room/
+        Irregularities are identified in the college allowances control process
+        as conducted by Dutch public sector organisation DUO in the period
+        2012-2022. Students living close to their parent(s) are significantly
+        more often manually selected for a check than other students. The
+        algorithm used to support the selection process performed as expected.
+      link: /nl/events/press_room/
       image: /images/algoprudence/AA202401TR/Cover.png
       date: 01-03-2024
-      type: Qualitative and quantitative analysis
+      type: Qualitative and quantitative audit
   activities:
     - title: >-
         Presentation Fundamental Rights Impact Assessment (FRIAs) and
@@ -203,6 +203,9 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
+
+
 
 
 

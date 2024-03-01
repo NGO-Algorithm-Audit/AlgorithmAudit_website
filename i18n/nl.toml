@@ -9,7 +9,7 @@ other = "Lees meer..."
 other = "Hoofdpunten normatieve adviescommissie"
 
 [summary-advice]
-other = "Samenvatting advies"
+other = "Samenvatting"
 
 [source_of_case]
 other = "Bron van de casus"
@@ -33,7 +33,7 @@ other = "Uitgelicht"
 other = "Recente activiteiten"
 
 [algoprudence_description_tab]
-other = "Algoprudentie beschrijving"
+other = "Beschrijving algoprudentie"
 
 [algoprudence_actions_tab]
 other = "Acties volgend op algoprudentie"

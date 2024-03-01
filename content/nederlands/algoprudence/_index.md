@@ -1,6 +1,6 @@
 ---
 layout: repository
-title: Algoprudentie overzicht
+title: Algoprudentie
 subtitle: >
   Algoprudentie is beschikbaar voor verschillende soorten algoritmes, onder
   andere machine learning-, profilering-, publieke- en private algoritmes.
@@ -13,6 +13,8 @@ facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: '2024'
+        label: '2024'
       - value: '2023'
         label: '2023'
       - value: '2022'
@@ -31,6 +33,8 @@ facet_groups:
     facets:
       - value: profiling
         label: Profilering
+      - value: rule_based
+        label: Regel gebaseerd
       - value: ml
         label: Machine learning (ML)
       - value: bias_detection_tool
@@ -43,6 +47,28 @@ facet_groups:
       - value: fp_fn_balancing
         label: Balanceren FP-FNs
 algoprudences:
+  - title: Vooringenomenheid voorkomen
+    intro: >-
+      Afwijkingen zijn geconstateerd in het controleproces van DUO naar misbruik
+      met de uitwonendenbeurs. DUO selecteerde in onderzoek naar misbruik met de
+      uitwonendenbeurs in de periode 2012-2022 aanzienlijk vaker studenten die
+      dicht bij hun ouder(s) woonden. Het algoritme dat ter ondersteuning van de
+      selectie werd gebruikt functioneerde naar verwachting.
+    image: /images/algoprudence/AA202401TR/Cover.png
+    link: /nl/algoprudence/cases/vooringenomenheid-voorkomen/
+    facets:
+      - value: AA202401
+        label: 'AA:2024:01'
+      - value: year_2024
+        label: '2024'
+      - value: owner_public
+        label: Publieke organisatie
+      - value: type_of_algorithm_rule_based
+        label: Regel gebaseerd
+      - value: type_of_algorithm_profiling
+        label: Profilering
+      - value: ethical_issue_proxy
+        label: Proxydiscriminatie
   - title: Risicoprofilering heronderzoek bijstandsuitkering
     intro: >-
       De commissie oordeelt dat algoritmische risicoprofilering onder strikte
@@ -111,6 +137,6 @@ algoprudences:
         label: Profilering
       - value: ethical_issue_proxy
         label: Proxy discriminatie
-title_content: Case overzicht
+title_content: Algoprudentie overzicht
 ---
 

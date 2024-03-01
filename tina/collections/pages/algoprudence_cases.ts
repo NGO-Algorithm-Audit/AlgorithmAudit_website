@@ -27,7 +27,7 @@ let specific_fields : TinaField[] = [
     {
         type: "object",
         name: "key_takeaways",
-        label: "Key takeaways normative advice commission.",
+        label: "Key takeaways",
         list: true,
         fields:
             [
