@@ -49,6 +49,24 @@ actions:
     facets:
       - value: news
         label: Nieuws
+form:
+  title: Reageer op dit rapport
+  button_text: Verstuur
+  backend_link: 'https://formspree.io/f/xyyrjyzr'
+  id: case-reaction
+  questions:
+    - label: Naam
+      id: name
+      type: text
+    - label: Reactie
+      id: reaction
+      type: textarea
+    - label: Contactgegevens
+      id: contact-details
+      type: email
+      placeholder: Emailadres
 ---
 
 {{< algoprudence_case >}}
+
+{{< form >}}
