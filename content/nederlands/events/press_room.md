@@ -75,7 +75,7 @@ resultaten van de onderzoeken samen met verschillende maatschappelijke belangheb
 te interpreteren. Momenteel selecteert DUO studenten alleen willekeurig voor
 controle.
 
-Het volledige rapport *Vooringenomenheid voorkomen* (AA:2024:01:TR) kan [hier](/nl/algoprudence/cases/vooringenomenheid-voorkomen/) worden gevonden.
+Het volledige rapport *Vooringenomenheid voorkomen* (AA:2024:01) kan [hier](/nl/algoprudence/cases/vooringenomenheid-voorkomen/) worden gevonden.
 
 01-03-2024
 
