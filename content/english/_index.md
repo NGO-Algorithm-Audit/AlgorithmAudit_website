@@ -1,7 +1,6 @@
 ---
 Areas_of_AI_expertise:
   enable: true
-  title: Areas of AI expertise
   width_m: 4
   width_s: 12
   submit_case_text: Request an audit
@@ -101,18 +100,18 @@ Activity_Feed:
   button_link: /events/activities
   featured_activities:
     - title: >-
-        Algoprudence (AA:2023:02) Risk Profiling for Social Welfare
-        Reexamination 
+        Bias prevented – Qualitative and quantitative audit of college
+        allowances check-process DUO
       intro: >
-        The advice commission judges that algorithmic risk profiling can be used
-        under strict conditions for sampling residents receiving social welfare
-        for re-examination. The aim of re-examination is a leading factor in
-        judging profiling criteria.
-      link: >-
-        /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
-      image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
-      date: 29-11-2023
-      type: algoprudence
+        Irregularities are identified in the college allowances check-process as
+        conducted by Dutch public sector organisation DUO. Students living close
+        to their parent(s) are significantly more often manually selected for a
+        check than other students. The algorithm used to support the selection
+        process performed as expected.
+      link: /events/press_room/
+      image: /images/algoprudence/AA202401TR/Cover.png
+      date: 01-03-2024
+      type: Qualitative and quantitative analysis
   activities:
     - title: >-
         Presentation Fundamental Rights Impact Assessment (FRIAs) and
@@ -204,6 +203,7 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 
 
 

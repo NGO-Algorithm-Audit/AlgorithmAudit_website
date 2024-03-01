@@ -23,19 +23,20 @@ Activity_Feed:
   button_link: /nl/events/activities
   featured_activities:
     - title: >-
-        Algoprudentie (AA:2023:02) Risicoprofilering heronderzoek
-        bijstandsuitkering
+        Vooringenomenheid voorkomen – Audit van het controleproces
+        uitwonendenbeurs DUO
       intro: >
-        De adviescommissie oordeelt dat algoritmische risicoprofilering onder
-        strikte voorwaarden kan worden ingezet voor het selecteren van burgers
-        met een bijstandsuitkering voor heronderzoek. Het oogmerk van
-        heronderzoek is een leidende factor bij de beoordeling van
-        profileringscriteria.
-      link: >-
-        /nl/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
-      image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
-      date: 29-11-2023
-      type: Algoprudentie
+        Afwijkingen geconstateerd in controleproces DUO naar misbruik met
+        uitwonendenbeurs. DUO selecteerde in
+
+        onderzoek naar misbruik met de uitwonendenbeurs aanzienlijk vaker
+        studenten die dicht bij hun ouder(s) woonden. Het algoritme dat ter
+        ondersteuning van de selectie werd gebruikt functioneerde naar
+        verwachting. 
+      link: /nl/events/press_room/
+      image: /images/algoprudence/AA202401TR/Cover.png
+      date: 01-03-2024
+      type: Kwalitatieve en kwantitatieve analyse
   activities:
     - title: >-
         Presentatie Fundamentele Rechten Impact Assessments (FRIAs) en
@@ -205,6 +206,12 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
+
+
+
+
+
 
 
 
