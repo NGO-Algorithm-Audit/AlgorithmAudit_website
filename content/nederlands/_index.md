@@ -23,20 +23,19 @@ Activity_Feed:
   button_link: /nl/events/activities
   featured_activities:
     - title: >-
-        Vooringenomenheid voorkomen – Audit van het controleproces
-        uitwonendenbeurs DUO
+        Vooringenomenheid voorkomen – Kwalitatieve en kwantitatieve audit van
+        het controleproces uitwonendenbeurs DUO
       intro: >
-        Afwijkingen geconstateerd in controleproces DUO naar misbruik met
-        uitwonendenbeurs. DUO selecteerde in
-
-        onderzoek naar misbruik met de uitwonendenbeurs aanzienlijk vaker
-        studenten die dicht bij hun ouder(s) woonden. Het algoritme dat ter
-        ondersteuning van de selectie werd gebruikt functioneerde naar
-        verwachting. 
+        Afwijkingen zijn geconstateerd in het controleproces van DUO naar
+        misbruik met de uitwonendenbeurs. DUO selecteerde in onderzoek naar
+        misbruik met de uitwonendenbeurs in de periode 2012-2022 aanzienlijk
+        vaker studenten die dicht bij hun ouder(s) woonden. Het algoritme dat
+        ter ondersteuning van de selectie werd gebruikt functioneerde naar
+        verwachting.
       link: /nl/events/press_room/
       image: /images/algoprudence/AA202401TR/Cover.png
       date: 01-03-2024
-      type: Kwalitatieve en kwantitatieve analyse
+      type: Kwalitatieve en kwantitatieve audit
   activities:
     - title: >-
         Presentatie Fundamentele Rechten Impact Assessments (FRIAs) en
@@ -206,6 +205,11 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
+
+
+
+
 
 
 

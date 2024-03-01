@@ -7,6 +7,6 @@ let title: TinaField = {
     type: "string",
     name: "title",
     label: "Title",
-    required: true,
+    required: true
 };
 export default title;
