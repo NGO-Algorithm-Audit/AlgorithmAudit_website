@@ -35,7 +35,7 @@ funded_by:
 subtitle: >
   Aanbevelingen voor risicoprofilering in het Controle Uitwonendenbeurs-proces:
   een kwantitatieve en kwalitatieve analyse
-image: /images/algoprudence/AA202401TR/Cover.png
+image: /images/algoprudence/AA202401/Cover.png
 actions:
   - title: Kabinetsreactie onderzoek naar controleproces uitwonendenbeurs
     description: >
@@ -43,7 +43,7 @@ actions:
       controle uitwonendenbeurs zoals
       [verstuurd](https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2024D07562\&did=2024D07562)
       naar de Tweede Kamer
-    image: /images/actions-events/TK.svg
+    image: /images/algoprudence/AA202401/Actions/TK.svg
     date: 01-03-2024
     facets:
       - value: Politieke actie
