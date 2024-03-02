@@ -56,7 +56,7 @@ algoprudences:
       uitwonendenbeurs in de periode 2012-2022. Het algoritme dat ter
       ondersteuning van de selectie werd gebruikt functioneerde naar
       verwachting, maar was niet goed onderbouwd.
-    image: /images/algoprudence/AA202401TR/Cover.png
+    image: /images/algoprudence/AA202401/Cover.png
     link: /nl/algoprudence/cases/vooringenomenheid-voorkomen/
     facets:
       - value: AA202401
