@@ -132,7 +132,7 @@ Recent_audits:
         voorwaarden kan worden ingezet voor het selecteren van burgers met een
         bijstandsuitkering voor heronderzoek
     - name: Vooringenomenheid voorkomen
-      image: /images/reports/front_AA202401TR.png
+      image: /images/algoprudence/AA202401/Cover.png
       link: /nl/events
       content: >
         Audit op rechtmatigheid van gemaakt onderscheid aan de hand van
@@ -206,6 +206,7 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
 
 
 
