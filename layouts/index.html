@@ -656,86 +656,86 @@
 <!-- Building algoprudence -->
 {{ with .Params.Building_algoprudence }}
 <section class="section-none bg-white">
-  <div class="" style="background-color: #ffffff;">
-    <div class="container mt-5">
-      <div class="row">
+  <div class="container mt-5">
 
-        <!-- title -->
-        <h3 class="section-title" style="color:#005aa7;">{{.title | markdownify}}</h3>
-        <!-- /title -->
-
-        <!-- desktop version -->
-        <div class="col-12 desktop">
-          {{ range $i, $step := .steps }}
-          <div class="row">
-            <div class="col-3 mb-4">
-              <div class="row">
-                <h3 style="color: #005aa7;">
-                  {{ i18n "step" }} {{add $i 1}}
-                </h3>
-              </div>
-              <div class="row">
-                <p style="font-size:20px; color: #005aa7;">
-                  {{ .title }}
-                </p>
-              </div>
-            </div>
-            <div class="col-9">
-              <div>
-                <h4 class="" style="color: #005aa7;">
-                  {{ .name | markdownify }}
-                </h4>
-                <p>{{.content | markdownify}}</p>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-
-          <!-- button -->
-          <div class="row text-center">
-            <div class="col-12" style="margin-top:0px;">
-              <a class="btn-link" href="">
-                <h3 class="btn" style="color:#ffffff; font-weight:600;">
-                  {{.button_text}}
-                </h3>
-              </a>
-            </div>
-          </div>
-          <!-- /button -->
-        </div>
-        <!-- /desktop version -->
-
-        <!-- mobile version -->
-        <div class="col-12 mobile">
-          {{ range $i, $step := .steps }}
-          <div class="row">
-            <div class="col-12 mb-4">
-              <div class="row mb-2">
-                <h3 style="color: #005aa7;">
-                  {{ i18n "step" }} {{add $i 1}} – {{ .title }}
-                </h3>
-                <p class="mt-2">{{.content | markdownify}}</p>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-
-          <!-- button -->
-          <div class="row text-center">
-            <div class="col-12" style="margin-top:0px;">
-              <a class="btn-link" href="">
-                <h3 class="btn" style="color:#ffffff; font-weight:600;">
-                  {{.button_text}}
-                </h3>
-              </a>
-            </div>
-          </div>
-          <!-- /button -->
-        </div>
-        <!-- /mobile version -->
-
+    <!-- Title -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
       </div>
     </div>
+    <!-- /Title -->
+
+    <!-- desktop version -->
+    <div class="col-12 desktop">
+      {{ range $i, $step := .steps }}
+      <div class="row">
+        <div class="col-3 mb-4">
+          <div class="row">
+            <h3 style="color: #005aa7;">
+              {{ i18n "step" }} {{add $i 1}}
+            </h3>
+          </div>
+          <div class="row">
+            <p style="font-size:20px; color: #005aa7;">
+              {{ .title }}
+            </p>
+          </div>
+        </div>
+        <div class="col-9">
+          <div>
+            <h4 class="" style="color: #005aa7;">
+              {{ .name | markdownify }}
+            </h4>
+            <p>{{.content | markdownify}}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- button -->
+      <div class="row text-center">
+        <div class="col-12" style="margin-top:0px;">
+          <a class="btn-link" href="">
+            <h3 class="btn" style="color:#ffffff; font-weight:600;">
+              {{.button_text}}
+            </h3>
+          </a>
+        </div>
+      </div>
+      <!-- /button -->
+    </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="col-12 mobile">
+      {{ range $i, $step := .steps }}
+      <div class="row">
+        <div class="col-12 mb-4">
+          <div class="row mb-2">
+            <h3 style="color: #005aa7;">
+              {{ i18n "step" }} {{add $i 1}} – {{ .title }}
+            </h3>
+            <p class="mt-2">{{.content | markdownify}}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- button -->
+      <div class="row text-center">
+        <div class="col-12" style="margin-top:0px;">
+          <a class="btn-link" href="">
+            <h3 class="btn" style="color:#ffffff; font-weight:600;">
+              {{.button_text}}
+            </h3>
+          </a>
+        </div>
+      </div>
+      <!-- /button -->
+    </div>
+    <!-- /mobile version -->
+
   </div>
 </section>
 {{end}}
@@ -746,11 +746,13 @@
 <section class="section bg-lightblue" >
   <div class="container">
 
-    <div class="row" style="padding:50px 0px;">
-      <!-- title -->
-      <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
-      <!-- /title -->
+    <!-- Title -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+      </div>
     </div>
+    <!-- /Title -->
 
     <!-- advantages -->
 
@@ -828,30 +830,26 @@
 <!-- gif animation -->
 {{ with .Params.Title_gif}}
 <section class="section-none bg-white">
-  <div class="container">
-    <div class="row">
-
-      <div class="container pinDiv2">
-        
-        <div class="row">
-          <!-- title -->
-          <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
-          <!-- /title -->
+  <div class="container pinDiv2">
+      
+      <!-- Title -->
+      <div class="row">
+        <div class="col-12">
+          <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
         </div>
-
-        <!-- XX version -->
-        <div class="row" style="display: flex; justify-content:center; align-items:center; margin-top:50px;">
-          <!-- algoprudence animation -->
-          <div id="imagesequence">
-            <img id="myimg" width="800px" src="/images/gif-algoprudence-frames/frame-036.png"><br>
-          </div>
-          <!-- /algoprudence animation -->
-        </div>
-        <!-- /XX version -->
-        
       </div>
+      <!-- /Title -->
 
-    </div>
+      <!-- XX version -->
+      <div class="row" style="display: flex; justify-content:center; align-items:center; margin-top:50px;">
+        <!-- algoprudence animation -->
+        <div id="imagesequence">
+          <img id="img-gif" width="100%" src="/images/gif-algoprudence-frames/frame-036.png"><br>
+        </div>
+        <!-- /algoprudence animation -->
+      </div>
+      <!-- /XX version -->
+      
   </div>
 </section>
 {{ end }}
@@ -859,13 +857,17 @@
 
 <!-- Video -->
 {{ with .Params.Title_video }}
-<section class="section-none bg-white" style="margin-top:700px;">
+<section class="section-none bg-white" style="margin-top:300px;">
   <div class="container">
+
+    <!-- Title -->
     <div class="row">
-      <!-- title -->
-      <h3 style="color: #005aa7;">{{.title | markdownify }}</h3>
-      <!-- /title -->
+      <div class="col-12">
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+      </div>
     </div>
+    <!-- /Title -->
+
     <div class="row" style="margin-bottom:75px; display: flex; justify-content: center; align-items: center;">
       <video width="100%" height="auto" autoplay muted controls>
         {{ if .video_mp4 }}
@@ -877,6 +879,7 @@
         Your browser does not support the video tag.
       </video>
     </div>
+
   </div>
 </section>
 {{ end }}

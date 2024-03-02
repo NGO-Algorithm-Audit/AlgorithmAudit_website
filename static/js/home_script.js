@@ -127,7 +127,7 @@ $(document).ready(function () {
             immediateRender: false,	// load first image automatically
             ease: Linear.easeNone,			// show every image the same ammount of time
             onUpdate: function () {
-                $("#myimg").attr("src", images[obj.curImg]); // set the image source
+                $("#img-gif").attr("src", images[obj.curImg]); // set the image source
             }
         }
     );

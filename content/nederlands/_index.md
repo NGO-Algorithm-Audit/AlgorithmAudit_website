@@ -95,6 +95,7 @@ Distinctive_in:
       icon: fab fa-slideshare
       content: "Al onze casuïstiek en bijbehorend advies (algoprudentie) is\_<a href=\"https://algorithmaudit.eu/algoprudence/\" style=\"color:white;text-decoration: underline;\">openbaar</a>. Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes\n"
 Areas_of_AI_expertise:
+  title: AI expertise
   enable: true
   width_m: 4
   width_s: 12
@@ -205,6 +206,7 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
 
 
 
