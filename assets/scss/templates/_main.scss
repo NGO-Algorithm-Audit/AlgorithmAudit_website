@@ -21,6 +21,12 @@ body {
   .mobile{
     display: none;
   }
+  #img-gif{
+    width: 75%;
+  }
+  #movie-div{
+    margin-top:200px;
+  }
 }
 
 // view ≤992px
@@ -43,6 +49,12 @@ body {
   }
   .img-event{
     height:200px;
+  }
+  #img-gif{
+    width: 100%;
+  }
+  #movie-div{
+    margin-top:100px;
   }
 }
 
@@ -735,18 +747,6 @@ padding: 20px 0px 0px 0px;
   height:5px;
   background:linear-gradient(to left, #fffde4, #618EC7);
   bottom:-5px;
-}
-
-.pinContainer {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.pinDiv2{
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
 }
 
 .layer {

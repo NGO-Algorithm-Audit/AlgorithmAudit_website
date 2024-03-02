@@ -350,7 +350,13 @@ export default {
             name: "Areas_of_AI_expertise",
             label: "Areas of AI Expertise",
             fields:
-                [
+                    [
+                    {
+                        type: "string",
+                        name: "title",
+                        label: "Title",
+                        required: true,
+                    },
                     {
                         type: "boolean",
                         name: "enable",

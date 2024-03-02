@@ -1,5 +1,6 @@
 ---
 Areas_of_AI_expertise:
+  title: AI expertise
   enable: true
   width_m: 4
   width_s: 12
@@ -203,6 +204,7 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 
 
 
