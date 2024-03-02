@@ -195,7 +195,7 @@ Recent_audits:
         eligible or not as a profiling selection criterion for a xgboost
         algorithm
     - name: Bias prevented
-      image: /images/reports/front_AA202401TR.png
+      image: /images/algoprudence/AA202401/Cover.png
       link: /algoprudence
       content: >
         Assessment of risk distributions through Z-tests and bias test for
@@ -204,6 +204,7 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 
 
 
