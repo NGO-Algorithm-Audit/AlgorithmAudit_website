@@ -6,8 +6,9 @@ subtitle: >
   andere machine learning-, profilering-, publieke- en private algoritmes.
 
 
-  We staan open voor nieuwe cases. Dien <span style="color:#005aa7">
-  [hier](/algoprudence/submit-a-case/)</span> een case in voor review.
+  We staan open voor nieuwe cases. Dien <span
+  style="color:#005aa7">[hier</span>](/nl/algoprudence/submit-a-case/) een case
+  in voor review.
 image: /images/svg-illustrations/case_repository.svg
 facet_groups:
   - value: year
@@ -50,10 +51,11 @@ algoprudences:
   - title: Vooringenomenheid voorkomen
     intro: >-
       Afwijkingen zijn geconstateerd in het controleproces van DUO naar misbruik
-      met de uitwonendenbeurs. DUO selecteerde in onderzoek naar misbruik met de
-      uitwonendenbeurs in de periode 2012-2022 aanzienlijk vaker studenten die
-      dicht bij hun ouder(s) woonden. Het algoritme dat ter ondersteuning van de
-      selectie werd gebruikt functioneerde naar verwachting.
+      met de uitwonendenbeurs. Studenten die dicht bij hun ouder(s) woonden zijn
+      aanzienlijk vaker geselecteerde voor controle naar misbruik met de
+      uitwonendenbeurs in de periode 2012-2022. Het algoritme dat ter
+      ondersteuning van de selectie werd gebruikt functioneerde naar
+      verwachting, maar was niet goed onderbouwd.
     image: /images/algoprudence/AA202401TR/Cover.png
     link: /nl/algoprudence/cases/vooringenomenheid-voorkomen/
     facets:

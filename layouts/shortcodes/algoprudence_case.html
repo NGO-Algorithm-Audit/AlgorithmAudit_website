@@ -195,7 +195,7 @@
     <!-- Actions followed by this work -->
     <div class="row tabcontent" id="actions_tab">
         <div class="col-lg-12 mx-auto shadow rounded-lg">
-            <div class="content accordion-container-actions">
+            <div class="content accordion-container-actions pt-5">
                 {{ if .Params.actions }}
                 {{ range $action := .Params.actions }}
 
@@ -206,13 +206,12 @@
                 {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
                 $facet.value | printf "%s" }}
                 {{ end }}
-                <div class="py-4"></div>
-                <div class="ac border-0 mx-5 mb-4 algoprudence-article" data-facets="{{$facets_for_data_attribute}}">
+                <div class="ac mx-5 mb-4 py-4 algoprudence-article" data-facets="{{$facets_for_data_attribute}}">
                     <div class="ac-header grid">
                         <div class="ac-trigger p-0">
                             <div class="row justify-content-between m-0">
-                                <div class="col-2 mr-4 box p-0 mt-0">
-                                    <img class="img-fluid about-img p-2" src="{{$action.image}}" />
+                                <div class="col-12 col-lg-2 mr-4 p-0 mt-0">
+                                    <img class="img-fluid img-event p-4" src="{{$action.image}}" />
                                 </div>
                                 <div class="col pt-3 pb-5" style="background-color: #ffffff;">
                                     <div class="row align-items-center">
@@ -238,11 +237,12 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- foldable panel -->
                         <div class="ac-panel">
                             <div class="row justify-content-between ac-text p-0">
-                                <div class="col-2 mr-4">
+                                <div class="col-0 col-lg-2">
                                 </div>
-                                <div class="col pt-4" style="background-color: #eef2f6;">
+                                <div class="col-12 col-lg-10 pt-4" style="background-color: #eef2f6;">
                                     <h5>{{ i18n "description" }}</h5>
                                     <p>
                                         {{$action.description | markdownify}}
@@ -255,6 +255,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- foldable panel -->
+
                     </div>
                 </div>
                 <div class="py-4"></div>

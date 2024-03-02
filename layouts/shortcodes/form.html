@@ -8,7 +8,7 @@
 
         <!-- Title and icon -->
         <div>
-          <h3 style="color:#005AA7 !important;">
+          <h3 style="color:#005AA7;">
               <span class="fas fa-align-justify icon mb-4 pl-4" style="color:005AA7 !important;"></span>
               {{ .title | markdownify }}
           </h3>
@@ -37,12 +37,17 @@
 <!-- /desktop version -->
 
 <!-- mobile version -->
-<div class="container-fluid mb-5 mobile">
+<div class="container-fluid mb-5 mobile p-0">
   <div class="p-0  rounded-blue-border bg-lightblue">
     <div class="col-lg-12 mb-4">
 
-      <!-- title -->
-      <h3 class="mt-5">{{ .title | markdownify }}</h3>
+        <!-- Title and icon -->
+        <div>
+          <h3 class="mt-4" style="color:#005AA7;">
+              <span class="fas fa-align-justify pl-2 pr-3" style="color:005AA7 !important;"></span>
+              {{ .title | markdownify }}
+          </h3>
+        </div>
       
       <!-- form -->
       <form action="{{ .backend_link | safeURL }}" method="POST">
