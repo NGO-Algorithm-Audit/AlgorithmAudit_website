@@ -33,7 +33,7 @@ Activity_Feed:
         ter ondersteuning van de selectie werd gebruikt functioneerde naar
         verwachting.
       link: /nl/events/press_room/
-      image: /images/algoprudence/AA202401TR/Cover.png
+      image: /images/algoprudence/AA202401/Cover.png
       date: 01-03-2024
       type: Kwalitatieve en kwantitatieve audit
   activities:
@@ -206,6 +206,7 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
 
 
 

@@ -110,7 +110,7 @@ Activity_Feed:
         more often manually selected for a check than other students. The
         algorithm used to support the selection process performed as expected.
       link: /nl/events/press_room/
-      image: /images/algoprudence/AA202401TR/Cover.png
+      image: /images/algoprudence/AA202401/Cover.png
       date: 01-03-2024
       type: Qualitative and quantitative audit
   activities:
@@ -204,6 +204,7 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 
 
 
