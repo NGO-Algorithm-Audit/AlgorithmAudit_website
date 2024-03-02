@@ -1,15 +1,15 @@
 ---
 title: Dien een case in
 subtitle: >
-  Algorithm Audit verricht zelfstandig audits en werkt op verzoek. Middels
-  onderstaand formulier kunt u informatie delen die nodig is voor een audit van
-  de algoritme van uw organisatie.
+  Algorithm Audit verricht zelfstandig audits en werkt op verzoek. Vul
+  onderstaand formulier in om informatie te delen over een algoritme dat u
+  geaudit wilt hebben.
 image: /images/svg-illustrations/case_repository.svg
 background_color: '#ffffff'
 team:
   title: Team Algoprudentie
   icon: fas fa-user-friends
-  button_text: Other teams
+  button_text: Andere teams
   id: team
   button_link: /nl/about/teams/
   team_members:
@@ -34,20 +34,20 @@ form:
   button_text: Verstuur
   backend_link: 'https://formspree.io/f/xzbnrlan'
   questions:
-    - label: Naam van het algoritme
+    - label: Naam algoritme
       id: naam
       type: text
-    - label: Korte beschrijving van het algoritme (max. 100 woorden)
+    - label: Korte beschrijving van algoritme (max. 100 woorden)
       id: beschrijving
       type: textarea
     - label: >-
-        Technische aspecten – Beschrijving van o.a. verzamelde data, gebruikte
-        statistische methodologie en gebruikte evaluatie criteria
+        Technische aspecten – Beschrijving van o.a. verzamelde data, gehanteerde
+        statistische methode en gebruikte evaluatie criteria
       id: technische-dimensie
       type: textarea
     - label: >-
-        Juridisch kader – Relevante wet- en regelgeving en beschrijving van open
-        juridische normen, in bijvoorbeeld de Algemene Verordening
+        Juridisch kader – Relevante wet- en regelgeving, beschrijving van open
+        juridische normen, bijvoorbeeld in de Algemene Verordening
         Gegevensbescherming (AVG) of de Algemene Wet Gelijke Behandeling (AWGB)
       id: juridische-dimensie
       type: textarea
@@ -63,7 +63,7 @@ form:
 reports_preview:
   title: Recente audits
   icon: fas fa-file
-  button_text: Casuïstiek
+  button_text: Meer cases
   button_link: /nl/algoprudence/
   id: recent-audits
   feature_item:
@@ -76,7 +76,7 @@ reports_preview:
         voorwaarden kan worden ingezet voor het selecteren van burgers met een
         bijstandsuitkering voor heronderzoek.
     - name: Vooringenomenheid voorkomen
-      image: /images/reports/front_AA202401TR.png
+      image: /images/algoprudence/AA202401/Cover.png
       link: /nl/algoprudence/
       content: >
         Kwantitatief en kwalitatieve audit naar bias in algoritme-gedreven
@@ -88,7 +88,7 @@ reports_preview:
 
 {{< container_open icon="fas fa-forward" title="Wat gebeurt er nu ik een case heb ingestuurd?" id="next-steps" >}}
 
-Inzending worden behandeld door het Team Algoprudentie. Het team beoordeelt of de casus past bij het werk van Algorithm Audit en of er voldoende capaciteit is om de casus te behandelen. U ontvangt binnen twee weken reactie.
+Inzending worden behandeld door Team Algoprudentie. Het team beoordeelt of de casus past bij het werk van Algorithm Audit en of er voldoende capaciteit is om de casus te behandelen. U ontvangt binnen twee weken reactie.
 
 {{< container_close >}}
 

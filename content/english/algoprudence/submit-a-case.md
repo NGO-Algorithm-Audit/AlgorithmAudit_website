@@ -40,7 +40,7 @@ form:
       type: email
       placeholder: Email address
 team:
-  title: Algoprudence team
+  title: Team Algoprudence
   icon: fas fa-user-friends
   button_text: Other teams
   button_link: /about/teams/
@@ -76,11 +76,12 @@ reports_preview:
         eligible or not as a profiling selection criterion for a xgboost
         algorithm
     - name: Bias Prevented
-      image: /images/reports/front_AA202401TR.png
-      link: /algoprudence
+      image: /images/algoprudence/AA202401TR/Cover.png
+      link: /nl/algoprudence/cases/vooringenomenheid-voorkomen/
       content: >
-        Assessment of risk distributions through Z-tests and bias test for
-        various steps in algorithmic-driven decision-making process
+        Qualitative and quantitative audit of algorithmic-driven college
+        allowances control process. Assessment of risk distributions through
+        Z-tests and bias test in the control process
 text_field1:
   title: What are the next steps after case submission?
   icon: fas fa-forward
@@ -91,7 +92,7 @@ text_field1:
 
 {{< container_open icon="fas fa-forward" title="What are the next steps after case submission?" id="next-steps" >}}
 
-Your submission is reviewed by the Algoprudence Team. The team assesses whether de case aligns with the mission of Algorithm Audit and the availability of resources for further investigation. Notification regarding any follow-up steps can be expected within two weeks.
+Your submission is reviewed by Team Algoprudence. The team assesses whether de case aligns with the mission of Algorithm Audit and the availability of resources for further investigation. Notification regarding any follow-up steps can be expected within two weeks.
 
 {{< container_close >}}
 
