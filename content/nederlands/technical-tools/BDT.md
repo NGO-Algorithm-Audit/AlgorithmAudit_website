@@ -75,7 +75,7 @@ De bias detectie tool werkt momenteel alleen voor numeriek data. Volgens een hie
 
 {{< container_open title="Input data" icon="fas fa-database" id="input-data" >}}
 
-Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maximaal 1GB met kolommen kenmerken (`features`), de voorspelde waarde (`pred_label`) en de echte waarde (`true_label`). Alleen de volgorde van de kolommen is van belang (eerst `features`, dan `pred_label`, dan `true_label`). Alle kolommen moeten numeriek en ongeschaald (niet gestandaardiseerd of genormaliseerd) zijn. Samengevat:
+Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maximaal 5GB met kolommen kenmerken (`features`), de voorspelde waarde (`pred_label`) en de echte waarde (`true_label`). Alleen de volgorde van de kolommen is van belang (eerst `features`, dan `pred_label`, dan `true_label`). Alle kolommen moeten numeriek en ongeschaald (niet gestandaardiseerd of genormaliseerd) zijn. Samengevat:
 
 * `features`: ongeschaalde numerieke waarden, bijvoorbeeld `kenmerk_1`, `kenmerk_2`, ..., `kenmerk_n`;
 * `pred_label`: 0 of 1;
