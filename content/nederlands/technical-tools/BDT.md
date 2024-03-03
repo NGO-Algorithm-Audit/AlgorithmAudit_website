@@ -1,9 +1,9 @@
 ---
 title: Bias detectie tool
 subtitle: >
-  Algorithm Audit's bias detectie tool identificeert mogelijk ongelijk
-  behandelde groepen door een AI-systeem middels statistiek. De tool informeert
-  de kwalitatieve doctrine van het recht en de ethiek welke afwijkingen in
+  Algorithm Audit's bias detectie tool gebruikt statistiek om mogelijk ongelijk
+  behandelde groepen door een AI-systeem te identificeren. De tool informeert de
+  kwalitatieve doctrine van het recht en de ethiek welke afwijkingen in
   algoritmische systemen handmatig onderzocht moeten worden. Algorithm Audit
   combineert kwantitatieve en kwalitatieve methoden om keuzes te maken oven
   eerlijke AI, ook wel onze <a
@@ -16,6 +16,33 @@ web_app:
   icon: fas fa-cloud
   id: web-app
   content: ''
+team:
+  title: Bias Detectie Tool Team
+  icon: fas fa-user-friends
+  button_text: Andere teams
+  id: team
+  button_link: /nl/about/teams/
+  team_members:
+    - image: /images/people/FHolstege.jpeg
+      name: Floris Holstege
+      bio: |
+        PhD-kandidaat Machine Learning, Universiteit van Amsterdam
+    - image: /images/people/JPersson.jpeg
+      name: Joel Persson PhD
+      bio: |
+        R\&D, Spotify
+    - image: /images/people/KPadh.jpeg
+      name: Kirtan Padh
+      bio: |
+        PhD-kandidaat Causal Inference and Machine Learning, TU München
+    - image: /images/people/KProrokovic.jpeg
+      name: Krsto Proroković
+      bio: |
+        PhD-kandidaat, Swiss AI Lab IDSIA
+    - image: /images/people/MJorgensen.jpeg
+      name: Mackenzie Jorgensen
+      bio: |
+        PhD-kandidaat Computer Science, King’s College London
 ---
 
 {{< container_open title="Bias detectie tool – Wat is het?" icon="fas fa-search" id="info" >}}
@@ -40,7 +67,7 @@ Met de inzending Joint Fairness Assessment Method (JFAM) is Algorithm Audit's bi
 
 {{< container_open title="Hierarchisch Bias-Bewust Clustering (HBAC) algoritme" icon="fas fa-code-branch" id="HBAC" >}}
 
-De bias detectie tool werkt momenteel alleen voor categorische data. Volgens een hierarchisch schema clustert het *Hierarchical Bias-Aware Clustering* (HBAC) algoritme input data met behulp van k-means clustering algoritme. Op termijn kan de tool ook numerieke data verwerken volgens k-modes clustering. Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkya in een [wetenschappelijk artikel](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) in *Information Processing and Management* (2021). Onze implementatie van het HBAC-algoritme is open source en kan worden gevonden in [Github.](https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge)
+De bias detectie tool werkt momenteel alleen voor numeriek data. Volgens een hierarchisch schema clustert het *Hierarchical Bias-Aware Clustering* (HBAC) algoritme input data met behulp van k-means clustering algoritme. Op termijn kan de tool ook categorische data verwerken volgens k-modes clustering. Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkya in een [wetenschappelijk artikel](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) in *Information Processing and Management* (2021). Onze implementatie van het HBAC-algoritme is open source en kan worden gevonden in [Github.](https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge)
 
 [Download](https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/classifiers/BERT_disinformation_classifier/test_pred_BERT.csv) een voorbeeld dataset om de bias detectie tool te gebruiken.
 
@@ -48,14 +75,14 @@ De bias detectie tool werkt momenteel alleen voor categorische data. Volgens een
 
 {{< container_open title="Input data" icon="fas fa-database" id="input-data" >}}
 
-Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maximaal 1GB met kolommen kenmerken (`features`), de voorspelde waarde (`pred_label`) en de echte waarde (`true_label`). Alleen de volgorde van de kolommen is van belang (eerst `features`, dan `pred_label`, dan `true_label`). Alle kolommen moeten numeriek en ongeschaald (gestandaardiseerd of genormaliseerd) zijn. Samengevat:
+Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maximaal 1GB met kolommen kenmerken (`features`), de voorspelde waarde (`pred_label`) en de echte waarde (`true_label`). Alleen de volgorde van de kolommen is van belang (eerst `features`, dan `pred_label`, dan `true_label`). Alle kolommen moeten numeriek en ongeschaald (niet gestandaardiseerd of genormaliseerd) zijn. Samengevat:
 
-* `features`: ongeschaalde numerieke waarden, bijvoorbeeld `leeftijd`, `aantal` en `snelheid`;
+* `features`: ongeschaalde numerieke waarden, bijvoorbeeld `kenmerk_1`, `kenmerk_2`, ..., `kenmerk_n`;
 * `pred_label`: 0 of 1;
 * `true_label`: 0 of 1;
-* Eerlijkheidsmetriek: proportie valspositieven (FPR), proportie valsnegatieven (FNR) of nauwkeurigheid (Acc).
+* Biasmetriek: proportie valspositieven (FPR), proportie valsnegatieven (FNR) of nauwkeurigheid (Acc).
 
-<div><p><u>Voorbeeld</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overzicht van ondersteunde eerlijkheidsmetrieken</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Eerlijkheidsmetriek</th><th class="tg-1wig">Beschrijving</th></tr></thead><tbody><tr><td class="tg-0lax">Proportie valspositieven (FPR)</td><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">De bias detectie tool vindt het cluster met de hoogste proportie valspositieven (False Positive Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie wel risicovol is, terwijl deze transactie dat na handmatige inspectie niet blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Proportie valsnegatieven (FNR)</td><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">De bias detectie tool vindt het cluster met de hoogste proportie valsnegatieven (False Negative Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie niet risicovol is, terwijl deze transactie dat na handmatige inspectie wel blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Nauwkeurigheid (Acc)</td><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">Deel echt positieven (True Positives) en echt negatieven (True Negatives) van alle voorspellingen.</span></td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Meer informatie</a> over eerlijkheidsmetrieken.</div></div>
+<div><p><u>Voorbeeld</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">kenmerk_1</th><th class="tg-uox0">kenmerk_2</th><th class="tg-uox0">...</th><th class="tg-uox0">kenmerk_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overzicht van ondersteunde biasmetrieken</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Biasmetriek</th><th class="tg-1wig">Beschrijving</th></tr></thead><tbody><tr><td class="tg-0lax">Proportie valspositieven (FPR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valspositieven (False Positive Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie wel risicovol is, terwijl deze transactie dat na handmatige inspectie niet blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Proportie valsnegatieven (FNR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valsnegatieven (False Negative Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie niet risicovol is, terwijl deze transactie dat na handmatige inspectie wel blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Nauwkeurigheid (Acc)</td><td class="tg-0lax">Deel echt positieven (True Positives) en echt negatieven (True Negatives) van alle voorspellingen.</td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Meer informatie</a> over biasmetrieken.</div></div>
 
 {{< container_close >}}
 
@@ -73,7 +100,7 @@ Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maxima
 
 ##### Door wie kan deze bias detectie tool worden gebruikt? 
 
-The bias detection tool allows the entire ecosystem involved in auditing AI, e.g., data scientists, journalists, policy makers, public- and private auditors, to use quantitative methods to detect bias in AI systems.
+De bias detectie tool kan gebruikt worden door de het gehele gemeenschap die aan AI auditing werkt, in het bijzonder data scientists, journalisten, beleidsmakers, publieke- en private auditors.
 
 ##### Wat berekent de tool? 
 
@@ -89,15 +116,17 @@ De tool werkt momenteel alleen voor AI-systemen die individuen in twee groepen o
 
 ##### Wat gebeurt er met mijn data als ik de web app gebruik?
 
-Het csv-bestand wordt geupload naar een bucket van Amazon Web Services (AWS), waar Python-code de data verwerkt. Als het HBAC-algoritme clusters heeft geïdentificeerd worden alleen de resultaten terug gestuurd naar de browser en wordt de data in AWS verwijderd. Doorgaans wordt de data dus slechts 5-10 seconden in de cloud opgeslagen.
+Het csv-bestand wordt geupload naar een bucket van Amazon Web Services (AWS), waar Python-code de data verwerkt. Als het HBAC-algoritme clusters heeft geïdentificeerd worden alleen de resultaten terug gestuurd naar de browser en wordt de data in AWS verwijderd. Doorgaans wordt de data dus slechts 5-10 seconden in de cloud opgeslagen. De web applicatie is gebouwd volgens onderstaand architecture diagram.
+
+{{< image alt="Architecture diagram" caption="Architecture diagram" width="12" image="/images/BDT/architecture.png" >}}
 
 ##### Samenvattend
 
-Kwantitatieve methoden, zoals unsupervised bias detectie, zijn behulpzame methoden om mogelijk door AI-systemen ongelijk behandelde groepen te detecteren op een schaalbare manier. Het geautomatiseerd detecteren van afwijkende clusters stelt menselijke experts in staat de groepen afwijkende individuen handmatig te inspecteren, waarbij de politieke en sociale context van het gebruikte AI-systeem in ogenschouw kan worden genomen. Deze duale aanpak om bias in AI-systemen te detecteren overbrugt de kloof tussen de kwalitatieve eisen van het recht en de ethiek, en de kwantitatieve modus operandi van AI. Door normatieve afwegingen over de verantwoorde inzet van AI publiek toegankelijk te maken vormt zich in de loop van tijd een kennisbank op met collectieve oordeelsvorming. Van deze keuzes kunnen data scientists, publieke autoriteiten en anderen leren, maar ook bekritiseren. Want uiteindelijk moet in democratisch zicht normatieve knopen worden doorgehakt over wat wel en niet verantwoorde AI is.
+Kwantitatieve methoden, zoals unsupervised bias detectie, zijn behulpzame methoden om mogelijk door AI-systemen ongelijk behandelde groepen te detecteren op een schaalbare manier. Het geautomatiseerd detecteren van afwijkende clusters stelt menselijke experts in staat de groepen afwijkende individuen handmatig te inspecteren, waarbij de politieke en sociale context van het gebruikte AI-systeem in ogenschouw kan worden genomen. Deze duale aanpak om bias in AI-systemen te detecteren overbrugt de kloof tussen de kwalitatieve eisen van het recht en de ethiek, en de kwantitatieve modus operandi van AI. Door normatieve afwegingen over de verantwoorde inzet van AI publiek toegankelijk te maken vormt zich in de loop van tijd een [kennisbank](/nl/algoprudence/) op met collectieve oordeelsvorming. Van deze keuzes kunnen data scientists, publieke autoriteiten en anderen leren, maar ook bekritiseren. Want uiteindelijk moet in democratisch zicht normatieve knopen worden doorgehakt over wat wel en niet verantwoorde AI is.
 
-[Lees meer](/nl/algoprudence/how-we-work/) over algoprudentie en onze werkwijze. 
+[Lees meer](/nl/algoprudence/how-we-work/) over algoprudentie en onze werkwijze.
 
-{{< image image="/images/BDT/Quantitative_qualitative_NL.png" alt="Overzicht kwantitatieve en kwalitatieve deel bias detectie methode" caption="Overzicht kwantitatieve en kwalitatieve deel bias detectie methode" width="12" >}}
+{{< image image="/images/BDT/Qualitative_quantitative_NL.png" alt="Overzicht kwantitatieve en kwalitatieve deel bias detectie methode" caption="Overzicht kwantitatieve en kwalitatieve deel bias detectie methode" width="12" >}}
 
 {{< container_close >}}
 
