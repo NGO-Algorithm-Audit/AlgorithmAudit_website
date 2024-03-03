@@ -131,7 +131,7 @@ The bias detection tool currently only works for numeric data. According to a hi
 
 {{< container_open title="Input data" icon="fas fa-database" id="input-data" >}}
 
-What input does the bias scan tool need? A csv file of max. 1GB with feature columns (`features`), predicted labels by the classifier (`pred_label`) and ground truth labels (`true_label`). Only the order of the columns is important (first `features`, than `pred_label`, than `true_label`). All column values should be numeric and unscaled, i.e., not normalized or standardized. In sum:
+What input does the bias scan tool need? A csv file of max. 5GB with feature columns (`features`), predicted labels by the classifier (`pred_label`) and ground truth labels (`true_label`). Only the order of the columns is important (first `features`, than `pred_label`, than `true_label`). All column values should be numeric and unscaled, i.e., not normalized or standardized. In sum:
 
 * `features`: unscaled numeric values, e.g., `feature_1`, `feature_2`, …, `feature_n`;
 * `pred_label`: 0 or 1;

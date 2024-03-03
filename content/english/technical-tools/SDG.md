@@ -8,7 +8,7 @@ image: /images/svg-illustrations/knowledge_base.svg
 author: Parie
 type: regular
 team:
-  title: Synthetic Data Generation cohort
+  title: Synthetische data generatie cohort
   icon: fas fa-user-friends
   button_text: Other teams
   id: team
@@ -68,7 +68,9 @@ text_field2:
 
 {{< container_open title="Synthetic Data Generation – What is it?" icon="fas fa-database" id="info" >}}
 
-Garbage in, garbage out: When auditing semi-automated decision-making processes, one of the most immediate questions is the representativeness of the source data. However, privacy poses a hurdle to sharing data with external parties for bias testing. Absent access to source data, external auditors cannot assess bias, limiting trust in the data sets used. Synthetic data generation (SDG) – artificial datasets mimicking the statistical characteristics of the original dataset – is a potential solution for this issue. It is considered a safe approach for the wider release of privately held data, as it contains no identifiable trace of the personal data it was generated from.
+Garbage in, garbage out: When auditing semi-automated decision-making processes, one of the most immediate questions is the representativeness of the source data. However, privacy poses a hurdle to sharing data with external parties to assess the representativeness of the data. Absent access to source data, stakeholders – such as people of which the data is stored and independent experts – cannot scrutinize it for potential biases. Consequently, the evaluation of data used for semi-automated decision-making processes, and training of AI-systems, relies on a small group. If this evaluation process is not performed carefully, this can have severe downstream consequences for the decision-making processes that are using these data. This harms public trust in technology and in the organisations that deploy these digital methods.
+
+Synthetic data generation (SDG) – the creation of artificial datasets mimicking the original dataset's statistical characteristics – emerges as a potential solution. SDG has the potential to extend the audience involved in assessing the representativeness of data. It is considered a safe approach for the wider release of privately held data, as it contains no identifiable trace of the personal data it was generated from.
 
 {{< container_close >}}
 
@@ -86,7 +88,7 @@ Although numerous commercial APIs for generating synthetic data exist, widesprea
 
 #### Use cases
 
-Notably, Lighthouse Reports shared inadvertently acquired data to the public through SDG, shedding light on biases in a massive data set that the Municipality of Rotterdam used to for ML-driven risk profiling in the context of social welfare re-examination.
+Notably, [Lighthouse Reports](https://www.lighthousereports.com/suspicion-machines-methodology/) shared inadvertently acquired data to the public through SDG, shedding light on biases in a massive data set that the Municipality of Rotterdam used to for ML-driven risk profiling in the context of social welfare re-examination.
 
 #### AI Act
 

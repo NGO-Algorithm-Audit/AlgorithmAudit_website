@@ -17,50 +17,53 @@ team:
     - image: /images/people/EBogaards.jpeg
       name: Ellen Bogaards
       bio: |
-        MSc Artifical Intelligence, Utrecht University
+        MSc Artifical Intelligence, Universiteit Utrecht
     - image: /images/people/EMenvouta.jpeg
       name: ' Emmanuel Menvouta PhD'
       bio: |
-        Machine Learning Engineer, Dataroots
+        Machine learning engineer, Dataroots
     - image: /images/people/GAcheampong.jpeg
       name: Godwin Acheampong
       bio: |
-        Data Scientist, Budget Thuis
+        Data scientist, Budget Thuis
     - image: /images/people/JPersson.jpeg
       name: Joel Persson PhD
       bio: |
-        Research Scientist, Spotify
+        R\&D, Spotify
     - image: /images/people/SBabac.jpeg
       name: Sonja Babac
-      bio: |
-        PhD-candidate, Technical University Eindhoven – Philips MedTech
+      bio: >
+        PhD-kandidaat, Technische Universiteit Eindhoven – Philips Medische
+        Technologie
 ---
 
-{{< container_open title="Synthetic Data Generation – What is it?" icon="fas fa-database" id="info" >}}
+{{< container_open title="Synthetic data generation – Wat is het?" icon="fas fa-database" id="info" >}}
 
-Garbage in, garbage out: When auditing semi-automated decision-making processes, one of the most immediate questions is the representativeness of the source data. However, privacy poses a hurdle to sharing data with external parties for bias testing. Absent access to source data, external auditors cannot assess bias, limiting trust in the data sets used. Synthetic data generation (SDG) – artificial datasets mimicking the statistical characteristics of the original dataset – is a potential solution for this issue. It is considered a safe approach for the wider release of privately held data, as it contains no identifiable trace of the personal data it was generated from.
+Rommel erin, rommel eruit: bij het auditeren van algoritme-gedreven besluitvormingsprocessen is een van de meest urgente vragen de representativiteit van de data. Privacy is echter vaak een horde om datasets te delen met derden om de representativiteit van de data te toetsen. Zonder toegang tot de brondata kunnen belanghebbenden, zoals de personen waarvan de data is opgeslagen en onafhankelijke experts, echter de data niet toetsen op mogelijke misstanden. Data waar algoritme-gedreven besluitvormingsprocessen mee werken en AI-systemen op worden getraind worden daardoor slechts door een select club mensen gekeurd op hun representativiteit. Als dit controleproces niet zorgvuldig wordt uitgeoefend heeft dit grote consequenties voor de besluitvormingsprocessen die gebruik maken van deze data. Dit schaadt publiek vertrouwen in technologie en in de organisatie die deze digitale methoden inzetten.
 
-{{< container_close >}}
-
-{{< container_open title="Synthetic Data Generation – How can SDG be used for AI bias testing?" icon="fas fa-project-diagram" id="bias-testing" >}}
-
-SDG holds potential for third parties to audit datasets in a privacy-preserving way. There is currently not yet sufficient knowledge how and when SDG serves as a suitable method for external bias testing. First, the complex process of SDG may not always be necessary for bias testing when simple approaches such as univariate or bivariate aggregate statistics of the source data suffice. Second, SDG can be performed using a plethora of methods, e.g., parametric, non-parametric and copula-based estimation and inference methods. The best SDG method for a given use case depends on the underlying structure of the data and is therefore context-specific. At Algorithm Audit, we are investigating these open-ended questions, and build public knowledge on what form of data-sharing practice (SDG or alternatives) is best suited for privacy-preserving AI bias testing in specific use cases. Through our technical and qualitative work in this project, we contribute to this collective learning process.
-
-Learn more about our quantitative and qualitative [Joint Fairness Assessment Method](https://github.com/NGO-Algorithm-Audit/Bias_scan).
+Synthetische data generatie (SDG) – artificiële dataset die de statistische kenmerken van de originele dataset weerspiegelen – is een mogelijke oplossing om data wel met derden te kunnen. SDG heeft de potentie om oordeelsvorming over de representativiteit van de data . Het wordt beschouwd als een veilige methode om privacy-gevoelige data te kunnen delen met derden, omdat de artificiële evenknie geen sporen bevat van de persoonlijke data op basis waarvan het gegenereerd is.
 
 {{< container_close >}}
 
-{{< container_open title="Has SDG been used in the past?" icon="fas fa-history" id="past-usage" >}}
+{{< container_open title="Synthetic data generatie – Hoe kan SDG gebruikt worden voor het testen van bias in AI systemen?" icon="fas fa-project-diagram" id="bias-testing" >}}
 
-Although numerous commercial APIs for generating synthetic data exist, widespread adoption has historically been limited due to the risk data-sharing poses for privacy. Particularly in the public sector, where stringent privacy preservation is imperative, adoption has faced  SDG hurdles. Yet, the couple of last years has seen landmark use cases of data sharing enabled through SDG.
+SDG stelt derde partijen in staat om datasets op een privacy-vriendelijke manier te auditeren. Er is momenteel echter nog onvoldoende kennis hoe en wanneer SDG een geschikte methode is voor bias testing. Allereerst is het niet altijd nodig om geavanceerde SDG-methoden in te zetten. Vaak is het publiceren van eenvoudige univariate of bivariate aggregatie statistiek over de data in kwestie afdoende. Ten tweede, SDG kan op vele manieren worden toegepast. Denk aan parametrische, non-parametrische, copula-gebaseerde schatting- en inferentiemethoden. De meest geschikte SDG-methode hangt af van de structuur van de dataset. De keuze voor de meest geschikte SDG-methode is daarom context-specifiek. Bij Algorithm Audit werken we aan de open vragen, en bouwen we publieke kennis op hoe vormen van privacy-behoudenden methoden voor datadeling (SDG of alternatieven) concreet kunnen worden ingezet voor AI bias testing. Door onze technische en kwalitatieve expertise rond SDG samen te brengen draagt Algorithm Audit bij aan dit collectieve leerproces.
 
-#### Use cases
+Kom meer te weten over Algorithm Audit's kwantitatieve en kwalitatieve werkmethoden, ook wel naar gerefereerd als de [joint fairness assessment method](https://github.com/NGO-Algorithm-Audit/Bias_scan).
 
-Notably, Lighthouse Reports shared inadvertently acquired data to the public through SDG, shedding light on biases in a massive data set that the Municipality of Rotterdam used to for ML-driven risk profiling in the context of social welfare re-examination.
+{{< container_close >}}
 
-#### AI Act
+{{< container_open title="Is SDG al eerder gebruikt?" icon="fas fa-history" id="past-usage" >}}
 
-Furthermore, the AI Act (Article 10) contains a specific provision regarding the utilization of synthetic data for bias detection and mitigation, mandating AI system providers to rectify biases using synthetic or anonymized data rather than relying solely on "appropriate safeguards."
+Ondanks dat er vele commerciële APIs zijn die automatisch synthetische data genereren, is SDG nog niet op grote schaal in gebruik genomen door het (kleine) risico op mogelijke privacyschendingen. Met name bij publieke organisaties, waar strenge richtlijnen zijn voor persoonsgegevens, wordt SDG nog maar mondjesmaats toegepast. De afgelopen jaren zijn er echter nieuwe ontwikkelingen geweest die daar verandering in kunnen brengen.
+
+#### Eerste test case
+
+Onderzoeksjournalisten van [Lighthouse Reports](https://www.lighthousereports.com/suspicion-machines-methodology/) hebben een per abuis gedeelde dataset publiekelijk kunnen delen met behulp van SDG. Het delen van deze data heeft het mogelijk gemaakt dat bias in een omvangrijke dataset van de gemeente Rotterdam  aan het licht is gekomen. De niet-representatieve dataset is in het verleden gebruikt om een (inmiddels non-actief) machine learning-gedreven risicotaxatie-algoritme op te trainen.
+
+#### AI Verordening
+
+Artikel 10 van de AI Verordening bevat specifieke bepalingen over het gebruik van synthetische data voor bias detectie en -mitigatie doeleinden. Er geldt bijvoorbeeld een inspanningsverplichting voor aanbieders van AI-systemen om biases in data te rectificeren met behulp van synthetische of geanonimiseerde data.
 
 {{< container_close >}}
 

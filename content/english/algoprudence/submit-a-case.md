@@ -76,7 +76,7 @@ reports_preview:
         eligible or not as a profiling selection criterion for a xgboost
         algorithm
     - name: Bias Prevented
-      image: /images/algoprudence/AA202401TR/Cover.png
+      image: /images/algoprudence/AA202401/Cover.png
       link: /nl/algoprudence/cases/vooringenomenheid-voorkomen/
       content: >
         Qualitative and quantitative audit of algorithmic-driven college
