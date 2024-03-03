@@ -15,13 +15,14 @@ web_app:
   title: Web app
   icon: fas fa-cloud
   id: web-app
+  content: ''
 ---
 
 {{< container_open title="Bias detectie tool – Wat is het?" icon="fas fa-search" id="info" >}}
 
 De bias detectie tool identificeert mogelijk ongelijk behandelde groepen door een AI-systeem. De tool werkt momenteel alleen voor AI-systemen die individuen in twee groepen opdelen, bijvoorbeeld de voorspelling of een financiële transactie wel/niet risicovol is. De tool vindt groepen gebruikers die door het algoritme systematisch een afwijkende voorspelling krijgen. Deze afwijking wordt berekend aan de hand van een bepaalde maat, bijvoorbeeld de hoeveelheid valspositieven (het algoritme voorspelt dat de financiële transactie verdacht is, maar is dat niet), valsnegatieven (het algoritme voorspelt dat de financiële transactie niet-verdacht is, maar is dat wel) of een combinatie van deze twee. De tool maakt gebruik van [clustering](https://nl.wikipedia.org/wiki/Clusteranalyse) (unsupervised machine learning), wat betekent dat geen toegang nodig is tot de bijzondere persoonsgegevens van individuen – zoals geslacht, nationaliteit of etniciteit – om afwijkingen met betrekking tot deze gronden te detecteren. Omdat de tool gebruik maakt van statistiek is het in staat om hoger-dimensionale vormen van ogenschijnlijk neutraal onderscheid – ook wel meervoudige proxy of intersectionele discriminatie genoemd – te detecteren.
 
-Via onderstaande web app kan de tool direct worden gebruikt. Mits de geüploade data voldoet aan de hieronder gespecificeerde structuur, voert de tool direct een clusteranalyse uit en retourneert het cluster met de grootste afwijking (volgens de gekozen metriek) naar de browser. De resultaten kunnen worden gedownload als pdf-bestand. 
+Via onderstaande web app kan de tool direct worden gebruikt. Mits de geüploade data voldoet aan de hieronder gespecificeerde structuur, voert de tool direct een clusteranalyse uit en retourneert het cluster met de grootste afwijking (volgens de gekozen metriek) naar de browser. De resultaten kunnen worden gedownload als pdf-bestand.
 
 Gebruik de tool hieronder ⬇️
 
@@ -39,59 +40,64 @@ Met de inzending Joint Fairness Assessment Method (JFAM) is Algorithm Audit's bi
 
 {{< container_open title="Hierarchisch Bias-Bewust Clustering (HBAC) algoritme" icon="fas fa-code-branch" id="HBAC" >}}
 
-De bias detectie tool werkt momenteel alleen voor categorische data en clustert volgens een hierarchisch schema input data met behulp van k-means clustering algoritme. Op termijn kan de tool ook numerieke data verwerken volgens k-modes clustering. De originele *Hierarchical Bias-Aware Clustering* (HBAC) methode is geintroduceerd bij Misztal-Radecka and Indurkya in een wetenschappelijk artikel in *Information Processing and Management* (2021) [\[link\]](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285). Onze implementatie van het HBAC-algoritme is open source en kan worden gevonden in [Github.](https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge)
+De bias detectie tool werkt momenteel alleen voor categorische data. Volgens een hierarchisch schema clustert het *Hierarchical Bias-Aware Clustering* (HBAC) algoritme input data met behulp van k-means clustering algoritme. Op termijn kan de tool ook numerieke data verwerken volgens k-modes clustering. Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkya in een [wetenschappelijk artikel](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) in *Information Processing and Management* (2021). Onze implementatie van het HBAC-algoritme is open source en kan worden gevonden in [Github.](https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge)
 
-[Download](https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/classifiers/BERT_disinformation_classifier/test_pred_BERT.csv) een voorbeeld dataset om de bias scan tool te gebruiken.
+[Download](https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/classifiers/BERT_disinformation_classifier/test_pred_BERT.csv) een voorbeeld dataset om de bias detectie tool te gebruiken.
 
 {{< container_close >}}
 
 {{< container_open title="Input data" icon="fas fa-database" id="input-data" >}}
 
-What input does the bias scan tool need? A .csv file of max. 1GB with feature columns, predicted labels by the classifier and ground truth labels. Only the name of ‘pred\_label’ and ’truth\_label’ are of importance, not the naming or order of the feature columns. All column values should be numeric and unscaled.
+Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maximaal 1GB met kolommen kenmerken (`features`), de voorspelde waarde (`pred_label`) en de echte waarde (`true_label`). Alleen de volgorde van de kolommen is van belang (eerst `features`, dan `pred_label`, dan `true_label`). Alle kolommen moeten numeriek en ongeschaald (gestandaardiseerd of genormaliseerd) zijn. Samengevat:
 
-* Features: unscaled numeric values, e.g., feat\_1, feat\_2, …, feat\_n;
-* Predicted label: 0 or 1;
-* Truth label: 0 or 1;
-* Bias metric: False Positive Rate (FPR), False Negative Rate (FNR) or Accuracy.
+* `features`: ongeschaalde numerieke waarden, bijvoorbeeld `leeftijd`, `aantal` en `snelheid`;
+* `pred_label`: 0 of 1;
+* `true_label`: 0 of 1;
+* Eerlijkheidsmetriek: proportie valspositieven (FPR), proportie valsnegatieven (FNR) of nauwkeurigheid (Acc).
 
-<div><p><u>Data snippet</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">truth_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overview of supported bias metrics</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Metric</th><th class="tg-1wig">Description</th></tr></thead><tbody><tr><td class="tg-0lax">False Positive<br>Rate (FPR)</td><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">The bias scan tool finds the cluster for which most true labels are predicted to</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">be false, proportional to all true labels (False Positive Rate).</span></td></tr><tr><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">False Negative</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">Rate (FN</span>R)</td><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">The bias scan tool finds the cluster for which most false labels are predicted to</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">be true, proportional to all false labels (False Negative Rate).</span></td></tr><tr><td class="tg-0lax">Accuracy</td><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">Sum of True Positives (TPs) and True Negatives (TNs),</span><br><span style="font-weight:400;font-style:normal;text-decoration:none">proportional to all predictions.</span></td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a> about bias metrics.</div></div>
+<div><p><u>Voorbeeld</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overzicht van ondersteunde eerlijkheidsmetrieken</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Eerlijkheidsmetriek</th><th class="tg-1wig">Beschrijving</th></tr></thead><tbody><tr><td class="tg-0lax">Proportie valspositieven (FPR)</td><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">De bias detectie tool vindt het cluster met de hoogste proportie valspositieven (False Positive Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie wel risicovol is, terwijl deze transactie dat na handmatige inspectie niet blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Proportie valsnegatieven (FNR)</td><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">De bias detectie tool vindt het cluster met de hoogste proportie valsnegatieven (False Negative Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie niet risicovol is, terwijl deze transactie dat na handmatige inspectie wel blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Nauwkeurigheid (Acc)</td><td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none">Deel echt positieven (True Positives) en echt negatieven (True Negatives) van alle voorspellingen.</span></td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Meer informatie</a> over eerlijkheidsmetrieken.</div></div>
 
 {{< container_close >}}
 
 {{< reports_preview >}}
 
-{{< container_open title="FAQ" icon="fas fa-question-circle" >}}
+{{< container_open title="Veelgestelde vragen" icon="fas fa-question-circle" >}}
 
-##### Why this bias detection tool?
+##### Waarom deze bias detectie tool?
 
-* No data needed on protected attributes of users (unsupervised bias detection);
-* Model-agnostic (AI binary classifiers only);
-* Connecting quantitative tools with qualitative methods to assess fair AI;
-* Developed open-source and not-for-profit.
+* Geen toegang nodig tot bijzondere persoonsgegevens (unsupervised bias detectie);
+* Model-agnostisch (werkt voor alle binaire classificatie algoritmen);
+* Informeert de mens welke gedrag van een AI-systeem gericht handmatig te onderzoeken.
+* Verbindt kwantitatieve, statissche methoden met de kwalitatieve doctrine van recht en ethiek om eerlijke AI vorm te geven;
+* Open-source ontwikkeld, zonder winstoogmerk.
 
-##### By whom can the bias detection tool be used? 
+##### Door wie kan deze bias detectie tool worden gebruikt? 
 
 The bias detection tool allows the entire ecosystem involved in auditing AI, e.g., data scientists, journalists, policy makers, public- and private auditors, to use quantitative methods to detect bias in AI systems.
 
-##### What does the tool compute? 
+##### Wat berekent de tool? 
 
-A statistical method is used to compute which clusters are relatively often misclassified by an AI system. A cluster is a group of data points sharing similar features. The tool returns a report in which identified differences (between feature means) are visualized and statistical significant feature differences are tested (Welch’s two-samples t-test for unequal variances).
+Een statistische methode berekent welke clusters relatief vaak verkeerd geclassificeerd worden door een AI-systeem. Een cluster is een groep individuen die bepaalde kenmerken. Op deze kenmerken is het classificerende AI-systeem initieel getraind. De tool identificeert en visualiseert de gevonden clusters automatisch. De tool bepaalt ook hoe de individuen in clusters per kenmerk verschillen ten opzichte van anderen buiten het cluster. Of de verschillen tussen de groepen statistisch significant zijn wordt direct getoetst aan de hand van [Welch's t-toets](https://en.wikipedia.org/wiki/Welch%27s_t-test) voor twee deelgroepen met ongelijke variantie. Alle resultaten kunnen worden gedownload in een pdf-bestand.
 
-##### The tool detects prohibited discrimination in AI? 
+##### Detecteert de tool discriminatie in AI-systemen? 
 
-No. The bias detection tool serves as a starting point to assess potentially unfair AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured disparities are legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are appropriate and necessary.
+Nee, de bias detectie tool kan fungeren als startpunt om discriminerende AI aannemelijk te maken. Om discriminatie aan te tonen zijn echter altijd domeinexperts nodig. Experts kunnen bijvoorbeeld toetsen of een verband bestaat tussen de kenmerken van een geïdentificeerd cluster en beschermde gronden. Daarnaast kan de kwantitatieve afwijking van het meest afwijkende cluster kwalitatief worden geïnterpreteerd. In een [case studie](/nl/algoprudence/cases/bert-based-disinformation-classifier-aa202301/) van Algorithm Audit – waarbij de bias detectie tool is getest op een BERT-gebaseerde desinformatie classifier – achtte een commissie van het experts de gemeten afwijkingen bijvoorbeeld te legitimeren. Legitimeren van gemaakt onderscheid is een context-afhankelijke taak waarvoor het recht kaders biedt, zoals het duiden van noodzakelijkheid, proportionaliteit en geschiktheid. Dit kwalitatieve oordeel vellen zal altijd een menselijke taak zijn.
 
-##### For what type of AI does the tool work? 
+##### Voor welk type AI-systeem werkt de tool? 
 
-Currently, only binary classification algorithms can be reviewed. For instance, prediction of loan approval (yes/no), disinformation detection (true/false) or disease detection (positive/negative).
+De tool werkt momenteel alleen voor AI-systemen die individuen in twee groepen opdelen, bijvoorbeeld de voorspelling of een financiële transactie wel/niet risicovol is of het wel/niet diagnostiseren van een ziekte.
 
-##### What happens with my data?
+##### Wat gebeurt er met mijn data als ik de web app gebruik?
 
-Your .csv file is uploaded to a AWS bucket, where it is processed. Once the clustering algorithm is finised the data is immediately deleted.
+Het csv-bestand wordt geupload naar een bucket van Amazon Web Services (AWS), waar Python-code de data verwerkt. Als het HBAC-algoritme clusters heeft geïdentificeerd worden alleen de resultaten terug gestuurd naar de browser en wordt de data in AWS verwijderd. Doorgaans wordt de data dus slechts 5-10 seconden in de cloud opgeslagen.
 
-##### In sum 
+##### Samenvattend
 
-Quantitative methods, such as unsupervised bias detection, are helpful to discover potentially unfair treated groups of similar users in AI systems in a scalable manner. Automated identification of cluster disparities in AI models allows human experts to assess observed disparities in a qualitative manner, subject to political, social and environmental traits. This two-pronged approach bridges the gap between the qualitative requirements of law and ethics, and the quantitative nature of AI (see figure). In making normative advice, on identified ethical issues publicly available, over time a repository of ’techno-ethical jurisprudence’ emerges; from which data scientists and public authorities can distill best practices to build fairer AI (see our case reviews). 
+Kwantitatieve methoden, zoals unsupervised bias detectie, zijn behulpzame methoden om mogelijk door AI-systemen ongelijk behandelde groepen te detecteren op een schaalbare manier. Het geautomatiseerd detecteren van afwijkende clusters stelt menselijke experts in staat de groepen afwijkende individuen handmatig te inspecteren, waarbij de politieke en sociale context van het gebruikte AI-systeem in ogenschouw kan worden genomen. Deze duale aanpak om bias in AI-systemen te detecteren overbrugt de kloof tussen de kwalitatieve eisen van het recht en de ethiek, en de kwantitatieve modus operandi van AI. Door normatieve afwegingen over de verantwoorde inzet van AI publiek toegankelijk te maken vormt zich in de loop van tijd een kennisbank op met collectieve oordeelsvorming. Van deze keuzes kunnen data scientists, publieke autoriteiten en anderen leren, maar ook bekritiseren. Want uiteindelijk moet in democratisch zicht normatieve knopen worden doorgehakt over wat wel en niet verantwoorde AI is.
+
+[Lees meer](/nl/algoprudence/how-we-work/) over algoprudentie en onze werkwijze. 
+
+{{< image image="/images/BDT/Quantitative_qualitative_NL.png" alt="Overzicht kwantitatieve en kwalitatieve deel bias detectie methode" caption="Overzicht kwantitatieve en kwalitatieve deel bias detectie methode" width="12" >}}
 
 {{< container_close >}}
 
