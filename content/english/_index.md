@@ -112,7 +112,7 @@ Activity_Feed:
       link: /nl/events/press_room/
       image: /images/algoprudence/AA202401/Cover.png
       date: 01-03-2024
-      type: Qualitative and quantitative audit
+      type: audit
   activities:
     - title: >-
         Presentation Fundamental Rights Impact Assessment (FRIAs) and
@@ -204,6 +204,7 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 
 
 

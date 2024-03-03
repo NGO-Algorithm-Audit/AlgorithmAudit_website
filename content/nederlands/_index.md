@@ -35,7 +35,7 @@ Activity_Feed:
       link: /nl/events/press_room/
       image: /images/algoprudence/AA202401/Cover.png
       date: 01-03-2024
-      type: Kwalitatieve en kwantitatieve audit
+      type: audit
   activities:
     - title: >-
         Presentatie Fundamentele Rechten Impact Assessments (FRIAs) en
@@ -206,6 +206,7 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
 
 
 
