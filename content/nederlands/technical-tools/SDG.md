@@ -14,26 +14,26 @@ team:
   id: team
   button_link: /nl/about/teams/
   team_members:
-    - image: /images/people/EMenvouta.jpeg
-      name: ' Emmanuel Menvouta PhD'
-      bio: |
-        Machine Learning Engineer, Dataroots
     - image: /images/people/EBogaards.jpeg
       name: Ellen Bogaards
       bio: |
         MSc Artifical Intelligence, Utrecht University
+    - image: /images/people/EMenvouta.jpeg
+      name: ' Emmanuel Menvouta PhD'
+      bio: |
+        Machine Learning Engineer, Dataroots
     - image: /images/people/GAcheampong.jpeg
       name: Godwin Acheampong
       bio: |
         Data Scientist, Budget Thuis
-    - image: /images/people/SBabac.jpeg
-      name: Sonja Babac
-      bio: |
-        PhD-candidate, Technical University Eindhoven – Philips MedTech
     - image: /images/people/JPersson.jpeg
       name: Joel Persson PhD
       bio: |
         Research Scientist, Spotify
+    - image: /images/people/SBabac.jpeg
+      name: Sonja Babac
+      bio: |
+        PhD-candidate, Technical University Eindhoven – Philips MedTech
 ---
 
 {{< container_open title="Synthetic Data Generation – What is it?" icon="fas fa-database" id="info" >}}

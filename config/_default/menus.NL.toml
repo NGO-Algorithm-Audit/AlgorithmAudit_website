@@ -57,6 +57,8 @@ hasChildren = true
   name = "Synthetische data generatie"
   url = "nl/technical-tools/sdg"
   weight = 3
+  [[main.params]]
+    icon = "fa-table"
 
 [[main]]
 name = "Kennisplatform"
