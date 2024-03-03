@@ -1,9 +1,11 @@
 ---
-title: Synethetic data generation
+title: Synethetische data generatie
 subtitle: >
-  Synthetic Data Generation (SDG) is a privacy-preserving alternative to train
-  and debias algorithmic systems. At Algorithm Audit, we build public knowledge
-  how SDG can be used best for AI bias testing.
+  Synethetische data generatie (SDG) is een privacy-behoudend methode om
+  gevoelige datasets te delen met derden. SDG kan worden gebruikt voor het
+  representatief maken van datasets en het trainen van AI-systemen. Bij
+  Algorithm Audit bouwen we publieke kennis op hoe SDG ingezet kan worden voor
+  AI bias testing.
 image: /images/svg-illustrations/knowledge_base.svg
 author: Parie
 type: regular
