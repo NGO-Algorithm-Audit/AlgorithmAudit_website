@@ -99,7 +99,8 @@ Areas_of_AI_expertise:
   enable: true
   width_m: 4
   width_s: 12
-  submit_case_text: Samenwerking bespreken
+  button_text: Samenwerking bespreken
+  button_link: /nl/knowledge-platform/collaboration/
   feature_item:
     - name: Profilering
       icon: fas fa-chart-pie
@@ -141,6 +142,7 @@ Recent_audits:
 Building_algoprudence:
   title: Opbouwen van _algoprudentie_
   button_text: Onze werkwijze
+  button_link: /nl/algoprudence/how-we-work/
   steps:
     - title: Identificeren van een casus
       content: >
@@ -206,6 +208,8 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
+
 
 
 
