@@ -551,8 +551,7 @@
       <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-blue">
         <div class="feature-card-transparant">
           <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
-            <h4 class=""
-              style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+            <h4 class="" style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
               {{ .name | markdownify }}
             </h4>
           </i>
@@ -585,8 +584,8 @@
     <!-- Button -->
     <div class="row text-center">
       <div class="col-12" style="margin-top:25px;">
-        <a class="btn-link" href="">
-          <h3 class="btn" style="color:#ffffff;">{{.submit_case_text}}</h3>
+        <a class="btn-link" href="{{.button_link | relURL}}">
+          <h3 class="btn" style="color:#ffffff;">{{.button_text}}</h3>
         </a>
       </div>
     </div>

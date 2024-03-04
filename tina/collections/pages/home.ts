@@ -379,8 +379,13 @@ export default {
                     },
                     {
                         type: "string",
-                        name: "submit_case_text",
-                        label: "Submit a case text"
+                        name: "button_text",
+                        label: "Button text"
+                    },
+                    {
+                        label: "Link",
+                        type: "string",
+                        name: "button_link",
                     },
                     {
                         type: "object",
@@ -480,6 +485,11 @@ export default {
                         type: "string",
                         name: "button_text",
                         label: "Button text"
+                    },
+                    {
+                        label: "Link",
+                        type: "string",
+                        name: "button_link",
                     },
                     {
                         type: "object",

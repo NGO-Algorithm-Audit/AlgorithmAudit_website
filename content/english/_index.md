@@ -4,7 +4,8 @@ Areas_of_AI_expertise:
   enable: true
   width_m: 4
   width_s: 12
-  submit_case_text: Explore collaboration
+  button_text: Discuss collaboration
+  button_link: /knowledge-platform/collaboration/
   feature_item:
     - name: Profiling
       icon: fas fa-chart-pie
@@ -26,6 +27,7 @@ Areas_of_AI_expertise:
 Building_algoprudence:
   title: Building _algoprudence_
   button_text: Our working method
+  button_link: /algoprudence/how-we-work/
   steps:
     - title: Indentifying issue
       content: >
@@ -204,6 +206,10 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
+
+
+
 
 
 
