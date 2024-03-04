@@ -3,8 +3,8 @@ layout: overview
 title: Evenementen
 subtitle: >
   Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. We
-  spreken regelmatig op events. Stuur een bericht om een mogelijke bijdrage te
-  bespreken.
+  spreken regelmatig op events. Stuur een [bericht](/nl/about/contact/) om een
+  mogelijke bijdrage te bespreken.
 image: /images/svg-illustrations/events.svg
 events:
   - title: >-
@@ -142,6 +142,7 @@ facet_groups:
       - value: presentation
         label: Presentatie
 ---
+
 
 
 

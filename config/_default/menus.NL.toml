@@ -126,7 +126,7 @@ hasChildren = true
     featured = true
   [[main]]
   parent = "Over ons"
-  name = "FAQ"
+  name = "Veelgestelde vragen"
   url = "nl/about/faq"
   weight = 2
   [[main.params]]

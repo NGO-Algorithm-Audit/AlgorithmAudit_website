@@ -1,7 +1,7 @@
 ---
 title: Get in touch
 subtitle: |
-  Reach out by filling in the below contact form
+  Reach out to Algorithm Audit by filling in the below contact form.
 image: /images/svg-illustrations/faq.svg
 form:
   title: Contact form
