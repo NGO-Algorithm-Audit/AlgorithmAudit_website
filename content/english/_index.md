@@ -4,7 +4,7 @@ Areas_of_AI_expertise:
   enable: true
   width_m: 4
   width_s: 12
-  submit_case_text: Request an audit
+  submit_case_text: Explore collaboration
   feature_item:
     - name: Profiling
       icon: fas fa-chart-pie
@@ -204,6 +204,7 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 
 
 
