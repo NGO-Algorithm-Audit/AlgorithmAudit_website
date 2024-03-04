@@ -23,7 +23,7 @@ team:
     - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
-        Director and board member
+        Director-board member
     - image: /images/people/AVoogt.jpeg
       name: Ariën Voogt
       bio: |

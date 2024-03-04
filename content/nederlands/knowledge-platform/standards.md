@@ -1,11 +1,12 @@
 ---
 title: 'Standaarden voor AI '
 subtitle: >
-  Responsible AI involves ethical considerations and trade-offs, these cannot be
-  solved by technical standards only, but must involve collective deliberation
-  by all stakeholders. Through national and European standardization bodies, we
-  participate in discussions on the bandwidth of technical and normative AI
-  standards
+  Verantwoorde inzet van AI zal niet worden opgelost door technische standaarden
+  alleen. Om te bepalen wat de 'verantwoorde inzet' inhoudt is collectieve
+  deliberatie vereist met diverse belanghebbenden. Door actief bij te dragen aan
+  discussies bij nationale en Europese standaardiseringsorganisaties (NEN en
+  CEN), draagt Algorithm Audit bij aan het vormgeven van procedurele standaarden
+  waarbij verschillende belanghebbende worden betrokken om AI vorm te geven.
 image: /images/svg-illustrations/case_repository.svg
 text_field1:
   title: AI Act standards
@@ -14,11 +15,11 @@ text_field1:
   content: |
     AI Act standards
 team:
-  title: AI Standards Team
+  title: AI standaarden team
   icon: fas fa-user-friends
-  button_text: Other teams
+  button_text: Andere teams
   id: team
-  button_link: /about
+  button_link: /nl/about/teams/
   team_members:
     - image: /images/people/EPetersen.jpeg
       name: Eike Petersen
@@ -27,12 +28,12 @@ team:
     - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
-        Director and board member
+        Directeur-bestuurder
 ---
 
 {{< container_open icon="fas fa-check" title="AI Act standaarden" id="ai-act" >}}
 
-In 2023 hebben de Europese standaardiseringsorganisaties CEN en CENELEC het verzoek van de Europese Commissie geaccepteerd om standaarden te ontwikkelen voor Artificiële Intelligentie (AI). Joint Technical Committee 21 (JTC21) van CEN-CENELEC is momenteel bezig Europese standaarden voor AI te ontwikkelen, zoals standaarden voor risicomanagement, datakwaliteit en procedurele standaarden voor het testen van vooringenomenheid. Als  AI-ontwikkelaars en -gebruikers zich aan deze standaarden houden wordt naleving van de aanstaande AI Verordening verondersteld. Maar zo ver is het nog niet. Het ontwikkelen van standaarden is momenteel volop aan de gang. Als lid van het Nederlands Normaliseringsinstituut (NEN) draagt Algorithm Audit bij aan het Europese debat over de vorm deze AI standaarden aannemen, en in hoeverre technische standaarden ontwikkeld kunnen worden voor aan fundamentele rechten rakende standaarden, zoals non-discriminatie, menselijke tussenkomst en uitlegbaarheid van algoritme-gedreven besluitvorming. Dit doen wij door deel te nemen aan de volgende werkgroepen: 
+In 2023 hebben de Europese standaardiseringsorganisaties CEN en CENELEC het verzoek van de Europese Commissie geaccepteerd om standaarden te ontwikkelen voor Artificiële Intelligentie (AI). Joint Technical Committee 21 (JTC21) van CEN-CENELEC is momenteel bezig Europese standaarden voor AI te ontwikkelen, zoals standaarden voor risicomanagement, datakwaliteit en procedurele standaarden voor het testen van vooringenomenheid. Als  AI-ontwikkelaars en -gebruikers zich aan deze standaarden houden wordt naleving van de aanstaande AI Verordening verondersteld. Maar zo ver is het nog niet. Het ontwikkelen van standaarden is momenteel volop aan de gang. Als lid van het Nederlands Normaliseringsinstituut (NEN) draagt Algorithm Audit bij aan het Europese debat over de vorm deze AI standaarden aannemen, en in hoeverre technische standaarden ontwikkeld kunnen worden voor aan fundamentele rechten rakende standaarden, zoals non-discriminatie, menselijke tussenkomst en uitlegbaarheid van algoritme-gedreven besluitvorming. Dit doen wij door deel te nemen aan de volgende werkgroepen:
 
 * WG2 – Risicomanagement (risk management systems)
 * WG3 – Technische aspects (engineering aspects)
@@ -40,7 +41,32 @@ In 2023 hebben de Europese standaardiseringsorganisaties CEN en CENELEC het verz
 
 Tijdens de laatste plenaire bijeenkomst van JTC21 in Dublin 12-14 februari presenteerde Algorithm Audit onderaan bijgevoegde slides over Fundamentele Rechten Impact Assessments (FRIAs) voor AI en de noodzaak voor inclusieve, deliberatieve adviescommissies om verantwoorde AI in te zetten.
 
+{{< image image="/images/partners/NEN.svg" alt="Nederlands Normalisatie Instituut" caption="Nederlands Normalisatie Instituut" width="12" >}}
+
 {{< pdf_frame articleUrl="/pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" width="100%" >}}
+
+{{< container_close >}}
+
+{{< container_open icon="fas fa-ruler" title="Standaarden" id="AI-standaarden" >}}
+
+Het standaardiseringsverzoek van de Europese Commissie, dat een uitgangsbasis biedt voor naleving van de AI Verordening, relateert aan de volgende tien aspecten:
+
+1. Risicomanagementsysteem voor AI-systemen
+2. Organisatorische omgang met data en datakwaliteitvereisten om AI-systemen te bouwen
+3. Data-administratieve middels het loggen van AI-systemen
+4. Transparantie- en informatieverplichtingen voor gebruikers van AI-systemen
+5. Menselijk toezicht op AI-systemen
+6. Nauwkeurigheidspecificaties voor AI-systemen
+7. Robuustheidspecificaties voor AI-systemen
+8. Cybersecurity-specificaties voor AI-systemen
+9. Kwaliteitsmanagementsystemen voor aanbieders van AI-systemen, inclusief monitoringsprocesses na te zijn geïntroduceerd op de markt
+10. Conformiteitsbeoordeling van AI-systemen.
+
+Het volledige standaardiseringsverzoek kan [hier](https://single-market-economy.ec.europa.eu/single-market/european-standards/standardisation-requests_en) worden gevonde.
+
+In de audits van Algorithm Audit worden alle bovenstaande aspecten meegenomen, met uitzondering van 8. Cybersecurity-specificaties voor AI-systemen. Wil je samenwerking met ons auditteam bespreken?
+
+{{< button button_text="Bespreek samenwerking" button_link="/nl/knowledge-platform/collaboration/" >}}
 
 {{< container_close >}}
 

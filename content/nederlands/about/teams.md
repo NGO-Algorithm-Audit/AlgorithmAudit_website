@@ -22,7 +22,7 @@ about_AA:
         Samenbrengen van adviescommissies die op een deliberatieve en inclusieve
         wijze normatief advies uitbrengen over concrete ethische kwesties die
         zich voordoen bij de inzet van algoritmes, met
-        [algoprudentie](/nl/algoprudence/) als resultaat
+        [algoprudentie](/nl/algoprudence/) als resultaat.
     - subtitle: Technische tools
       image: /images/about/technical-tools.svg
       content: >
@@ -30,7 +30,7 @@ about_AA:
         detecteren en te mitigeren, zie bijvoorbeeld onze methoden voor
         [synthetische data generatie](/nl/technical-tools/sdg/) en [bias
         detectie tool](/nl/technical-tools/bdt/) om hoger-dimensionale proxy
-        discriminatie mee te detecteren
+        discriminatie mee te detecteren.
     - subtitle: Kennisplatform
       image: /images/about/knowledge-platform.svg
       content: >
@@ -38,10 +38,10 @@ about_AA:
         over de verantwoorde inzet van algoritmes aan te jagen, zie ons [AI
         beleidsobservatorium](/nl/knowledge-platform/policy-observatory/),
         [white papers](/nl/knowledge-platform/knowledge-base/) en
-        [opinie-artikelen](/nl/knowledge-platform/knowledge-base/)
+        [opinie-artikelen](/nl/knowledge-platform/knowledge-base/).
 team2:
-  title: Coordinerend team
-  content: Team dat de verschillende werkzaamheden van Algorithm Audit coördineert
+  title: Coördinerend team
+  content: Team dat de verschillende werkzaamheden van Algorithm Audit coördineert.
   icon: fas fa-users
   id: coordinerend-team
   team_members:

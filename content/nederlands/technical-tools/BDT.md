@@ -12,7 +12,7 @@ subtitle: >
 image: /images/svg-illustrations/illustration_cases.svg
 type: bias-detection-tool
 web_app:
-  title: Web app
+  title: Bias detectie tool
   icon: fas fa-cloud
   id: web-app
   content: ''

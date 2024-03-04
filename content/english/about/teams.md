@@ -16,13 +16,13 @@ about_AA:
       content: >
         Advising on ethical issues that arise in concrete algorithmic practice
         through deliberative and diverse normative advice commissions, resulting
-        in [algoprudence](/algoprudence/)
+        in [algoprudence](/algoprudence/).
     - subtitle: Technical tooling
       image: /images/about/technical-tools.svg
       content: >
         Implementing and testing technical tools to detect and mitigate bias,
         e.g., [synthetic data generation](/technical-tools/sdg/) and [bias
-        detection tool](/technical-tools/bdt/)
+        detection tool](/technical-tools/bdt/).
     - subtitle: Knowledge platform
       image: /images/about/knowledge-platform.svg
       content: >
@@ -30,9 +30,9 @@ about_AA:
         learning process on the responsible use of algorithms, see for instance
         our [AI policy observatory](/knowledge-platform/policy-observatory/),
         [white papers](/knowledge-platform/knowledge-base/) and
-        [op-eds](/knowledge-platform/knowledge-base/)
+        [op-eds](/knowledge-platform/knowledge-base/).
 team:
-  title: Synthetic Data Generation cohort
+  title: Synthetic data generation cohort
   content: >-
     Part-time team that works 2-4 hours per week for 6 months on synthetic data
     generation

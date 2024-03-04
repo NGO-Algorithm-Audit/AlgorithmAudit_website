@@ -576,6 +576,17 @@ display: inline-block;
 vertical-align: top;
 }
 
+.content ol li{
+  color:#777777;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.content ol li::marker {
+  color:#005AA7;
+  font-weight: 500;
+}
+
 .content ul li{
   color:#777777;
   padding-top: 5px;
@@ -586,7 +597,7 @@ vertical-align: top;
   width: 0px;
 }
 
-.content li:before {
+.content ul li:before {
   position: absolute;
   content: ">" !important;
   color:#005AA7;

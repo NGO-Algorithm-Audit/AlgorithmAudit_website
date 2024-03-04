@@ -2,10 +2,10 @@
 title: Synethetische data generatie
 subtitle: >
   Synethetische data generatie (SDG) is een privacy-behoudend methode om
-  gevoelige datasets te delen met derden. SDG kan worden gebruikt voor het
-  representatief maken van datasets en het trainen van AI-systemen. Bij
-  Algorithm Audit bouwen we publieke kennis op hoe SDG ingezet kan worden voor
-  AI bias testing.
+  gevoelige datasets te delen met derden. SDG kan worden gebruikt om de
+  representativiteit van datasets te testen en om AI-systemen te trainen. Bij
+  Algorithm Audit bouwen we praktische publieke kennis op hoe SDG ingezet kan
+  worden voor AI bias testing.
 image: /images/svg-illustrations/knowledge_base.svg
 author: Parie
 type: regular
@@ -39,7 +39,7 @@ team:
         Technologie
 ---
 
-{{< container_open title="Synthetic data generation – Wat is het?" icon="fas fa-database" id="info" >}}
+{{< container_open title="Synthetische data generatie – Wat is het?" icon="fas fa-database" id="info" >}}
 
 Rommel erin, rommel eruit: bij het auditeren van algoritme-gedreven besluitvormingsprocessen is een van de meest urgente vragen de representativiteit van de data. Privacy is echter vaak een horde om datasets te delen met derden om de representativiteit van de data te toetsen. Zonder toegang tot de brondata kunnen belanghebbenden, zoals de personen waarvan de data is opgeslagen en onafhankelijke experts, echter de data niet toetsen op mogelijke misstanden. Data waar algoritme-gedreven besluitvormingsprocessen mee werken en AI-systemen op worden getraind worden daardoor slechts door een select club mensen gekeurd op hun representativiteit. Als dit controleproces niet zorgvuldig wordt uitgeoefend heeft dit grote consequenties voor de besluitvormingsprocessen die gebruik maken van deze data. Dit schaadt publiek vertrouwen in technologie en in de organisatie die deze digitale methoden inzetten.
 
@@ -47,7 +47,7 @@ Synthetische data generatie (SDG) – artificiële dataset die de statistische k
 
 {{< container_close >}}
 
-{{< container_open title="Synthetic data generatie – Hoe kan SDG gebruikt worden voor het testen van bias in AI systemen?" icon="fas fa-project-diagram" id="bias-testing" >}}
+{{< container_open title="Hoe kan SDG gebruikt worden voor het testen van bias in AI systemen?" icon="fas fa-project-diagram" id="bias-testing" >}}
 
 SDG stelt derde partijen in staat om datasets op een privacy-vriendelijke manier te auditeren. Er is momenteel echter nog onvoldoende kennis hoe en wanneer SDG een geschikte methode is voor bias testing. Allereerst is het niet altijd nodig om geavanceerde SDG-methoden in te zetten. Vaak is het publiceren van eenvoudige univariate of bivariate aggregatie statistiek over de data in kwestie afdoende. Ten tweede, SDG kan op vele manieren worden toegepast. Denk aan parametrische, non-parametrische, copula-gebaseerde schatting- en inferentiemethoden. De meest geschikte SDG-methode hangt af van de structuur van de dataset. De keuze voor de meest geschikte SDG-methode is daarom context-specifiek. Bij Algorithm Audit werken we aan de open vragen, en bouwen we publieke kennis op hoe vormen van privacy-behoudenden methoden voor datadeling (SDG of alternatieven) concreet kunnen worden ingezet voor AI bias testing. Door onze technische en kwalitatieve expertise rond SDG samen te brengen draagt Algorithm Audit bij aan dit collectieve leerproces.
 
