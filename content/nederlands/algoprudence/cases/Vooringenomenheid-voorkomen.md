@@ -47,7 +47,7 @@ actions:
     date: 01-03-2024
     facets:
       - value: Politieke actie
-        label: Politieke actie
+        label: politieke actie
   - title: >-
       DUO biedt excuses aan voor indirecte discriminatie bij controles op de
       uitwonendenbeurs
@@ -58,7 +58,7 @@ actions:
     date: 01-03-2024
     facets:
       - value: news
-        label: Nieuws
+        label: nieuws
 form:
   title: Reageer op dit rapport
   button_text: Verstuur
