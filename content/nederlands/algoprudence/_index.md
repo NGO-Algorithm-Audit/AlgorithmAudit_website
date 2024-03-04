@@ -20,6 +20,31 @@ facet_groups:
         label: '2023'
       - value: '2022'
         label: '2022'
+  - value: audit
+    title: Type audit
+    facets:
+      - value: technical
+        label: Technische audit
+      - value: normative
+        label: Normatieve audit
+  - value: type_of_algorithm
+    title: Type algoritme
+    facets:
+      - value: profiling
+        label: Profilering
+      - value: rule_based
+        label: Regel gebaseerd
+      - value: ml
+        label: Machine learning
+      - value: bias_detection_tool
+        label: Bias detectie tool
+  - value: ethical_issue
+    title: Ethische kwestie
+    facets:
+      - value: proxy
+        label: Proxydiscriminatie
+      - value: fp_fn_balancing
+        label: Balanceren FP-FNs
   - value: owner
     title: Algoritme-eigenaar
     facets:
@@ -29,24 +54,6 @@ facet_groups:
         label: Private organisatie
       - value: self
         label: Algorithm Audit
-  - value: type_of_algorithm
-    title: Type algoritme
-    facets:
-      - value: profiling
-        label: Profilering
-      - value: rule_based
-        label: Regel gebaseerd
-      - value: ml
-        label: Machine learning (ML)
-      - value: bias_detection_tool
-        label: Bias Detection Tool
-  - value: ethical_issue
-    title: Ethische kwestie
-    facets:
-      - value: proxy
-        label: Proxydiscriminatie
-      - value: fp_fn_balancing
-        label: Balanceren FP-FNs
 algoprudences:
   - title: Vooringenomenheid voorkomen
     intro: >-
@@ -64,13 +71,15 @@ algoprudences:
       - value: year_2024
         label: '2024'
       - value: owner_public
-        label: Publieke organisatie
+        label: publieke organisatie
       - value: type_of_algorithm_rule_based
-        label: Regel gebaseerd
+        label: regel gebaseerd
+      - value: audit_technical
+        label: technische audit
       - value: type_of_algorithm_profiling
-        label: Profilering
+        label: profilering
       - value: ethical_issue_proxy
-        label: Proxydiscriminatie
+        label: proxydiscriminatie
   - title: Risicoprofilering heronderzoek bijstandsuitkering
     intro: >-
       De commissie oordeelt dat algoritmische risicoprofilering onder strikte
@@ -86,13 +95,15 @@ algoprudences:
       - value: year_2023
         label: '2023'
       - value: owner_public
-        label: Publieke organisatie
+        label: publieke organisatie
       - value: type_of_algorithm_profiling
-        label: Profilering
+        label: profilering
+      - value: audit_normative
+        label: normatieve audit
       - value: type_of_algorithm_ml
-        label: Machine learning
+        label: machine learning
       - value: ethical_issue_proxy
-        label: Proxy discriminatie
+        label: proxydiscriminatie
   - title: BERT-gebaseerd disinformatie detectie
     intro: >-
       De adviescommissie oordeelt dat er een laag risico is van
@@ -111,11 +122,13 @@ algoprudences:
       - value: owner_self
         label: Algorithm Audit
       - value: type_of_algorithm_bias_detection_tool
-        label: Bias DetectionTool
+        label: bias detectie tool
+      - value: audit_normative
+        label: normatieve audit
       - value: type_of_algorithm_ml
-        label: Machine learning
+        label: machine learning
       - value: ethical_issue_fp_fn_balancing
-        label: Balanceren FP-FNs
+        label: balanceren FP-FNs
   - title: Type sim-kaart als voorspeller voor betalingsfraude
     intro: >-
       De adviescommissie adviseert tegen gebruik van type sim-kaart als input
@@ -134,11 +147,15 @@ algoprudences:
       - value: year_2022
         label: '2022'
       - value: owner_private
-        label: Private organisatie
+        label: private organisatie
+      - value: audit_normative
+        label: normatieve audit
+      - value: e_commerce
+        label: e-commerce
       - value: type_of_algorithm_profiling
-        label: Profilering
+        label: profilering
       - value: ethical_issue_proxy
-        label: Proxy discriminatie
+        label: proxydiscriminatie
 title_content: Algoprudentie overzicht
 ---
 

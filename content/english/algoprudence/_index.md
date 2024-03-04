@@ -1,7 +1,7 @@
 ---
 layout: repository
 title: Algoprudence repository
-subtitle: "Stakeholders learn from our\_techno-ethical jurisprudence, can help to improve it and can use it as to resolve ethical issues in a harmonized manner. \n\nWe are open to new cases. Please <span style=\"color:#005aa7\">[submit</span>](/algoprudence/submit-a-case/) a case for review.\n"
+subtitle: "Stakeholders learn from our\_techno-ethical jurisprudence, can help to improve it and can use it as to resolve ethical issues in a harmonized manner.\n\nWe are open to new cases. Please <span style=\"color:#005aa7\">[submit</span>](/algoprudence/submit-a-case/) a case for review.\n"
 image: /images/svg-illustrations/case_repository.svg
 team:
   title: Algoprudence team
@@ -18,17 +18,15 @@ facet_groups:
         label: '2023'
       - value: '2022'
         label: '2022'
-  - value: owner
-    title: Algorithm owned by
+  - value: audit
+    title: Type of audit
     facets:
-      - value: public
-        label: Public organisation
-      - value: private
-        label: Private organisation
-      - value: self
-        label: Algorithm Audit
+      - value: technical
+        label: Technical audit
+      - value: normative
+        label: Normative audit
   - value: type_of_algorithm
-    title: Type of Algorithm
+    title: Type of algorithm
     facets:
       - value: profiling
         label: Profiling
@@ -43,6 +41,15 @@ facet_groups:
         label: Proxy discrimination
       - value: fp_fn_balancing
         label: FP-FN balancing
+  - value: owner
+    title: Algorithm owned by
+    facets:
+      - value: public
+        label: Public organisation
+      - value: private
+        label: Private organisation
+      - value: self
+        label: Algorithm Audit
 title_content: Case repository
 algoprudences:
   - title: Risk Profiling for Social Welfare Reexamination
@@ -60,13 +67,15 @@ algoprudences:
       - value: year_2023
         label: '2023'
       - value: owner_public
-        label: Public organisation
+        label: public organisation
+      - value: audit_normative
+        label: normative audit
       - value: type_of_algorithm_profiling
-        label: Profiling
+        label: profiling
       - value: type_of_algorithm_ml
         label: ML
       - value: ethical_issue_proxy
-        label: Proxy discrimination
+        label: proxy discrimination
   - title: BERT-based disinformation classifier
     intro: >-
       The audit commission believes there is a low risk of (higher-dimensional)
@@ -83,7 +92,9 @@ algoprudences:
       - value: owner_self
         label: Algorithm Audit
       - value: type_of_algorithm_bias_detection_tool
-        label: Bias Detection Tool
+        label: bias detection tool
+      - value: audit_normative
+        label: normative audit
       - value: type_of_algorithm_ml
         label: ML
       - value: ethical_issue_fp_fn_balancing
@@ -105,11 +116,13 @@ algoprudences:
       - value: year_2022
         label: '2022'
       - value: owner_private
-        label: Private organisation
+        label: private organisation
       - value: type_of_algorithm_profiling
-        label: Profiling
+        label: profiling
+      - value: audit_normative
+        label: normative audit
       - value: ethical_issue_proxy
-        label: Proxy discrimination
+        label: proxy discrimination
       - value: e-commerce
         label: e-commerce
 ---
