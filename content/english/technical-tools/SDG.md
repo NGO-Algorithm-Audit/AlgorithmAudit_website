@@ -1,14 +1,14 @@
 ---
-title: Synethetic Data Generation
+title: Synethetic data generation
 subtitle: >
-  Synthetic Data Generation (SDG) provides a privacy-preserving alternative for
+  Synthetic data generation (SDG) provides a privacy-preserving alternative for
   training and debiasing algorithmic systems. At Algorithm Audit, we build
   public knowledge how SDG can be used best for AI bias testing.
 image: /images/svg-illustrations/knowledge_base.svg
 author: Parie
 type: regular
 team:
-  title: Synthetic Data Generation Cohort
+  title: Synthetic data generation cohort
   icon: fas fa-user-friends
   button_text: Andere teams
   id: team
@@ -66,7 +66,7 @@ text_field2:
     best suited for privacy-preserving AI bias testing.
 ---
 
-{{< container_open title="Synthetic Data Generation – What is it?" icon="fas fa-database" id="info" >}}
+{{< container_open title="Synthetic data generation – What is it?" icon="fas fa-database" id="info" >}}
 
 Garbage in, garbage out: When auditing semi-automated decision-making processes, one of the most immediate questions is the representativeness of the source data. However, privacy poses a hurdle to sharing data with external parties to assess the representativeness of the data. Absent access to source data, stakeholders – such as people of which the data is stored and independent experts – cannot scrutinize it for potential biases. Consequently, the evaluation of data used for semi-automated decision-making processes, and training of AI-systems, relies on a small group. If this evaluation process is not performed carefully, this can have severe downstream consequences for the decision-making processes that are using these data. This harms public trust in technology and in the organisations that deploy these digital methods.
 
@@ -74,7 +74,7 @@ Synthetic data generation (SDG) – the creation of artificial datasets mimickin
 
 {{< container_close >}}
 
-{{< container_open title="Synthetic Data Generation – How can SDG be used for AI bias testing?" icon="fas fa-project-diagram" id="bias-testing" >}}
+{{< container_open title="How can SDG be used for AI bias testing?" icon="fas fa-project-diagram" id="bias-testing" >}}
 
 SDG holds potential for third parties to audit datasets in a privacy-preserving way. There is currently not yet sufficient knowledge how and when SDG serves as a suitable method for external bias testing. First, the complex process of SDG may not always be necessary for bias testing when simple approaches such as univariate or bivariate aggregate statistics of the source data suffice. Second, SDG can be performed using a plethora of methods, e.g., parametric, non-parametric and copula-based estimation and inference methods. The best SDG method for a given use case depends on the underlying structure of the data and is therefore context-specific. At Algorithm Audit, we are investigating these open-ended questions, and build public knowledge on what form of data-sharing practice (SDG or alternatives) is best suited for privacy-preserving AI bias testing in specific use cases. Through our technical and qualitative work in this project, we contribute to this collective learning process.
 

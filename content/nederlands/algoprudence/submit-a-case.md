@@ -20,7 +20,7 @@ team:
     - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
-        Directeur en bestuurder
+        Directeur-bestuurder
     - image: /images/people/AVoogt.jpeg
       name: Ariën Voogt
       bio: |

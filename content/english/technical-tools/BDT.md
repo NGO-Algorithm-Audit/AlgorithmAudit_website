@@ -96,7 +96,7 @@ team:
       bio: |
         PhD-candidate Computer Science, King’s College London
 web_app:
-  title: Bias Detection Tool
+  title: Bias detection tool
   icon: fas fa-cloud
   id: web-app
   content: ''

@@ -6,21 +6,24 @@ subtitle: >
   ontwikkeld. We lichten hieronder onze 4-staps werkwijze toe.
 image: /images/svg-illustrations/main_illustration.svg
 team:
-  title: Team Algoprudentie
+  title: Team algoprudentie
+  button_text: Andere teams
+  id: team
+  button_link: /nl/about/teams/
   team_members:
-    - image: /images/people/VD.png
+    - image: /images/people/VDjwalapersad.png
       name: Vardâyani Djwalapersad
       bio: |
         Projectmanager algoprudentie
-    - image: /images/people/JFP2.jpg
+    - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
         Directeur-bestuurder
-    - image: /images/people/AV.jpeg
+    - image: /images/people/AVoogt.jpeg
       name: Ariën Voogt
       bio: |
         Bestuurder
-    - image: /images/people/SM.jpeg
+    - image: /images/people/SMohammad.jpeg
       name: Samaa Mohammad-Ulenberg
       bio: |
         Bestuurder
@@ -49,7 +52,9 @@ Het uitgebrachte advies van de commissie wordt samen met het probleemstelling-do
 ##### Lees de interne richtlijn van Algorithm Audit hoe een normatieve adviescommissie bijeen te brengen:
 
 {{< container_open >}}
+
 {{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" width="80%" >}}
+
 {{< container_close >}}
 
 {{< team >}}
