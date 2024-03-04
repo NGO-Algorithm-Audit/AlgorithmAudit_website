@@ -10,9 +10,9 @@ image: /images/svg-illustrations/knowledge_base.svg
 author: Parie
 type: regular
 team:
-  title: Synthetic Data Generation cohort
+  title: Synthetische data generatie cohort
   icon: fas fa-user-friends
-  button_text: Other teams
+  button_text: Andere teams
   id: team
   button_link: /nl/about/teams/
   team_members:
@@ -59,7 +59,7 @@ Kom meer te weten over Algorithm Audit's kwantitatieve en kwalitatieve werkmetho
 
 Ondanks dat er vele commerciële APIs zijn die automatisch synthetische data genereren, is SDG nog niet op grote schaal in gebruik genomen door het (kleine) risico op mogelijke privacyschendingen. Met name bij publieke organisaties, waar strenge richtlijnen zijn voor persoonsgegevens, wordt SDG nog maar mondjesmaats toegepast. De afgelopen jaren zijn er echter nieuwe ontwikkelingen geweest die daar verandering in kunnen brengen.
 
-#### Eerste test case
+#### Eerdere toepassing
 
 Onderzoeksjournalisten van [Lighthouse Reports](https://www.lighthousereports.com/suspicion-machines-methodology/) hebben een per abuis gedeelde dataset publiekelijk kunnen delen met behulp van SDG. Het delen van deze data heeft het mogelijk gemaakt dat bias in een omvangrijke dataset van de gemeente Rotterdam  aan het licht is gekomen. De niet-representatieve dataset is in het verleden gebruikt om een (inmiddels non-actief) machine learning-gedreven risicotaxatie-algoritme op te trainen.
 
