@@ -1,23 +1,20 @@
 ---
 title: Nieuws
-subtitle: |
-  Persberichten van Stichting Algorithm Audit
+subtitle: >
+  Persberichten van Stichting Algorithm Audit. Kom in contact met de organisatie
+  door [dit](/nl/about/contact/) contactformulier in te vullen.
 image: /images/svg-illustrations/about.svg
 ---
 
 {{< container_open icon="fas fa-greater-than-equal" id="DUO" title="Afwijkingen geconstateerd in controleproces DUO naar misbruik met uitwonendenbeurs" >}}
 
-**DEN HAAG – DUO
-selecteerde in onderzoek naar misbruik met de uitwonendenbeurs aanzienlijk
+<b>DEN HAAG – DUO selecteerde in onderzoek naar misbruik met de uitwonendenbeurs aanzienlijk
 vaker studenten die dicht bij hun ouder(s) woonden. Het algoritme dat ter ondersteuning van
 de selectie werd gebruikt functioneerde naar verwachting. De combinatie van het
 algoritme en handmatige selectie zorgde echter voor een grote oververtegenwoordiging
 van bepaalde groepen. Geselecteerde studenten werden thuis
 bezocht om te controleren of zij geen misbruik maakten. Dit is de belangrijkste conclusie van het
-onderzoek dat Stichting Algorithm Audit uitvoert in opdracht van
-DUO. Het controleproces van DUO kwam in 2023 in opspraak na [berichtgeving](https://nos.nl/op3/video/2479701-zo-checkt-duo-of-jij-fraudeert-en-dat-systeem-rammelt)
-van Investico en NOS, waarin werd vermeld dat studenten met een
-migratieachtergrond vaker dan andere studenten werden beschuldigd van misbruik.**
+onderzoek dat Stichting Algorithm Audit uitvoert in opdracht van DUO. Het controleproces van DUO kwam in 2023 in opspraak na <a href="https://nos.nl/op3/video/2479701-zo-checkt-duo-of-jij-fraudeert-en-dat-systeem-rammelt" target="_blank">berichtgeving</a> van Investico en NOS, waarin werd vermeld dat studenten met een migratieachtergrond vaker dan andere studenten werden beschuldigd van misbruik.</b>
 
 Studenten die dicht bij hun ouder(s) stonden ingeschreven zijn aanzienlijk
 vaker geselecteerd voor een huisbezoek. DUO beslist naar aanleiding van dergelijke
@@ -49,7 +46,7 @@ opstellen, noch bij het gebruik ervan.
 In opdracht van DUO doet de Stichting
 Algorithm Audit onafhankelijk onderzoek naar het controleproces
 uitwonendenbeurs. Aanleiding is dat studenten met een migratieachtergrond vaker
-worden [beschuldigd](https://nos.nl/op3/video/2479701-zo-checkt-duo-of-jij-fraudeert-en-dat-systeem-rammelt)
+worden <a href="https://nos.nl/op3/video/2479701-zo-checkt-duo-of-jij-fraudeert-en-dat-systeem-rammelt" target="_blank">beschuldigd</a>
 van misbruik met studiefinanciering. Of de groep die bovenmatig vaak is
 geselecteerd voor een huisbezoek inderdaad ook bovenmatig vaak een
 migratieachtergrond heeft zal blijken uit vervolgonderzoek dat op dit moment
@@ -83,7 +80,7 @@ Het volledige rapport *Vooringenomenheid voorkomen* (AA:2024:01) kan [hier](/nl/
 
 {{< container_open icon="fas fa-street-view" id="rotterdam-algoritme" title="Onafhankelijke commissie publiceert advies aan gemeenten voor risicoprofilering in de bijstand" >}}
 
-DEN HAAG – Staatssecretaris Alexandra van Huffelen heeft op 29 november het [adviesrapport](/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/) aangenomen met daarin concrete normen voor de verantwoorde inzet van algoritmes. Stichting Algorithm Audit stelde een onafhankelijke commissie samen van experts die advies uitbrengt om oneerlijke behandeling te voorkomen bij bijstandsheronderzoek. De aanleiding voor het opstellen van het advies is het controversiële risicomodel dat gebruikt is door de Gemeente Rotterdam tot 2021.
+**DEN HAAG – Staatssecretaris Alexandra van Huffelen heeft op 29 november het [adviesrapport](/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/) aangenomen met daarin concrete normen voor de verantwoorde inzet van algoritmes. Stichting Algorithm Audit stelde een onafhankelijke commissie samen van experts die advies uitbrengt om oneerlijke behandeling te voorkomen bij bijstandsheronderzoek. De aanleiding voor het opstellen van het advies is het controversiële risicomodel dat gebruikt is door de Gemeente Rotterdam tot 2021.**
 
 Wanneer de gemeente onderzoekt of bijstandsgerechtigden nog wel recht hebben op bijstand wordt soms gebruik gemaakt van algoritmische profilering. Het adviesrapport, opgesteld door vertegenwoordigers van de Ombudsman van Amsterdam en Rotterdam, verschillende academici, en een wethouder uit Tilburg, adviseert dat onder andere postcode, het aantal kinderen en laaggeletterdheid niet meer als kenmerk gebruikt mag worden voor profilering. Eerder is gebleken dat profilering in de context van de bijstand kan leiden tot discriminatie. De onafhankelijke commissie stelt dat er ook andere ethische bezwaren kleven aan algoritmische profilering. Sommige zelflerende algoritmes zijn namelijk te ingewikkeld om de beslissingen nog goed aan de burger te kunnen uitleggen. De commissie adviseert daarom om bepaalde algoritmes niet meer te gebruiken.
 

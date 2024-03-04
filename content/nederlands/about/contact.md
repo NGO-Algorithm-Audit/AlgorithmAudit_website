@@ -1,7 +1,7 @@
 ---
 title: Contactformulier
 subtitle: |
-  Stuur een bericht om met ons in contact te komen
+  Kom in contact met Algorithm Audit door onderstaand formulier in te vullen.
 image: /images/svg-illustrations/about.svg
 form:
   title: Contactformulier

@@ -1,13 +1,15 @@
 ---
 title: Veelgestelde vragen
 subtitle: >
-  Algorithm Audit commits to high standards regarding integrity, independence
-  and accountability. We want to be 100% transparant in the way we work. We are
-  open to your questions and remarks.
+  Algorithm Audit hanteert hoge standaarden wat betreft integriteit,
+  onafhankelijkheid en verantwoording. We willen 100% transparant zijn over onze
+  werkwijze. We staan open voor
+  [feedback](/nl/algoprudence/cases/vooringenomenheid-voorkomen/#reaction) op
+  onze cases en voor de manier waarop we als organisatie functioneren.
 
 
-  You want to share something? [<span style="color:#005aa7">Contact
-  us.</span>](/#contactform)
+  Heb je een vraag of wil je feedback delen? [Stuur een
+  bericht.](/nl/about/contact/)
 image: /images/svg-illustrations/faq.svg
 ---
 
@@ -31,7 +33,7 @@ We are committed to balanced, careful and independent review of ethical issues. 
 
 {{< container_open title="Is your work open source?" icon="fas fa-box-open" id="open-source" >}}
 
-All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open source. However, we only publish the initial problem statement and the final normative advice document in our [case repository](/algoprudence/). Other materials and documentation internal to the case are not shared. All the code developed for this website and for the technical tools we develop, maintain and test are open-source and can be found in [Github](https://github.com/NGO-Algorithm-Audit). 
+All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open source. However, we only publish the initial problem statement and the final normative advice document in our [case repository](/algoprudence/). Other materials and documentation internal to the case are not shared. All the code developed for this website and for the technical tools we develop, maintain and test are open-source and can be found in [Github](https://github.com/NGO-Algorithm-Audit).
 
 {{< container_close >}}
 

@@ -3,9 +3,8 @@ layout: overview
 title: Activities
 subtitle: >
   Knowledge sharing is an integral part of Algorithm Audit's mission. Members of
-  our team speak at events. An overview can be found below. [<span
-  style="color:#005aa7"> Get in touch</span>](/#contactform) to discuss
-  contributions.
+  our team speak at events. An overview can be found below. [Get in
+  touch](/about/contact/) to discuss contributions.
 image: /images/svg-illustrations/events.svg
 facet_groups:
   - value: year
@@ -142,6 +141,7 @@ events:
         label: '2023'
         hide: true
 ---
+
 
 
 
