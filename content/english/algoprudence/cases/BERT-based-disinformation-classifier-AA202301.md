@@ -70,8 +70,7 @@ actions:
       2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
 
-      {{< pdf_frame articleUrl="/pdf-files/BDT_main_presentation_JFAM.pdf"
-      width="100%" >}}
+      {{< pdf_frame articleUrl="/pdf-files/BDT_main_presentation_JFAM.pdf" >}}
     image: /images/supported_by/HAI.png
     date: 14-02-2024
     facets:
@@ -122,7 +121,21 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 {{< tab_content_close >}}
 
-{{< tab_content_open icon="fa-newspaper" title="Actions" id="actions" >}}
+{{< tab_content_open icon="" title="" id="actions" >}}
+
+{{< accordions_area_open id="actions" >}}
+
+{{< accordion_item_open title="Finalist selection Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="14-02-2024" tag1="finalist" >}}
+
+##### Description
+
+Our [bias detection tool](https://algorithmaudit.eu/technical-tools/BDT) and this case study have been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+
+{{< pdf_frame articleUrl="/pdf-files/BDT_main_presentation_JFAM.pdf" width="12" >}}
+
+{{< accordion_item_close >}}
+
+{{< accordions_area_close >}}
 
 {{< tab_content_close >}}
 

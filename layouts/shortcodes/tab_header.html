@@ -59,11 +59,17 @@
             else {
                 document.getElementById({{.Get "default_tab"}} + "_tab_btn").click();
             }
-    
-            if(params.has('item')) {
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            let params = new URLSearchParams(window.location.search);
+            if (params.has('item')) {
                 let itemId = params.get('item');
-                document.getElementById(itemId).click();
-                $('#' + itemId).get(0).scrollIntoView({behavior: 'smooth'});
+                setTimeout(function () {
+                    $('#' + itemId).click();
+                    $('#' + itemId).get(0).scrollIntoView({behavior: 'smooth'});
+                }, 250);
             }
         });
     </script>

@@ -5,13 +5,16 @@
             <div class="p-5 shadow rounded-lg" style="display:table;">
 
                 <!-- title -->
+                {{ $title := .Get "title" }}
+                {{ if $title }}
                 <h3 class="mb-4 pl-0">
-                    {{if .Get "icon" }}
                     {{ $icon := .Get "icon" }}
+                    {{if $icon }}
                     <i class="fas {{$icon}} mr-3"></i>
                     {{end}}
-                    {{.Get "title" | markdownify }}
+                    {{ $title | markdownify }}
                 </h3>
+                {{ end }}
 
                 <!-- content -->
                 <div class="row mb-3">

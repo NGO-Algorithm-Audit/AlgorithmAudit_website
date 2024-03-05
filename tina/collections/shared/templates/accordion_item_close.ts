@@ -1,7 +1,7 @@
 import { RichTextTemplate } from "@tinacms/schema-tools/dist/types/index"
 let template : RichTextTemplate = {
-    name: 'tab_content_close',
-    label: 'Tab content close',
+    name: 'accordion_item_close',
+    label: 'Accordion item close',
     match: {
         start: '{{<',
         end: '>}}'
@@ -9,7 +9,7 @@ let template : RichTextTemplate = {
     fields: [
         {
             name: 'do_not_use',
-            label: 'Do not fill, this tag should have a pre-existing "Tab content open" in the content',
+            label: 'Do not fill, this tag should have a pre-existing "Accordion item open" in the content',
             type: 'string'
         }
     ]

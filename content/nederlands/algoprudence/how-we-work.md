@@ -53,7 +53,7 @@ Het uitgebrachte advies van de commissie wordt samen met het probleemstelling-do
 
 {{< container_open >}}
 
-{{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" width="80%" >}}
+{{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" >}}
 
 {{< container_close >}}
 

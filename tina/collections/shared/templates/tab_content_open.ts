@@ -12,14 +12,14 @@ let template : RichTextTemplate = {
             name: "icon",
             label: "Icon",
             description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-            required: true,
+            required: false,
         },
         {
             type: "string",
             name: "title",
             label: "Title",
-            description: "h3 title at top of text box",
-            required: true,
+            description: "h3 title within the tab at the top",
+            required: false,
         },
         {
             type: "string",

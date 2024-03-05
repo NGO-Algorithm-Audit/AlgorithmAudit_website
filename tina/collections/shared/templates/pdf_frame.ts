@@ -17,7 +17,7 @@ let pdf_frame : RichTextTemplate = {
             name: 'width',
             label: 'Width',
             type: 'string',
-            description: '50% is the default'
+            description: '6 is default, 12 is max. Mobile is always 12'
         }
     ]
 };

@@ -8,6 +8,10 @@ import image from "./image";
 import { TinaField } from "tinacms";
 import pdf_frame from "../templates/pdf_frame";
 import about_aa from "../templates/about_aa";
+import accordions_area_open from "../templates/accordions_area_open";
+import accordions_area_close from "../templates/accordions_area_close";
+import accordion_item_open from "../templates/accordion_item_open";
+import accordion_item_close from "../templates/accordion_item_close";
 import algoprudence_case from "../templates/algoprudence_case";
 import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
@@ -35,6 +39,10 @@ let building_blocks: TinaField[] = [
         isBody: true,
         templates: [
             about_aa,
+            accordions_area_open,
+            accordions_area_close,
+            accordion_item_open,
+            accordion_item_close,
             algoprudence_case,
             ai_policy_observatory,
             button,
