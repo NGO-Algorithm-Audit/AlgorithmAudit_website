@@ -6,6 +6,20 @@ import title from "./title";
 import subtitle from "./subtitle";
 import image from "./image";
 import { TinaField } from "tinacms";
+import pdf_frame from "../templates/pdf_frame";
+import about_aa from "../templates/about_aa";
+import algoprudence_case from "../templates/algoprudence_case";
+import ai_policy_observatory from "../templates/ai_policy_observatory";
+import button from "../templates/button";
+import container_open from "../templates/container_open";
+import container_close from "../templates/container_close";
+import reports_preview from "../templates/reports_preview";
+import form from "../templates/form";
+import template_image from "../templates/image";
+import team from "../templates/team";
+import team1 from "../templates/team1";
+import team2 from "../templates/team2";
+import web_app from "../templates/web_app";
 
 let building_blocks: TinaField[] = [
     title,
@@ -17,288 +31,20 @@ let building_blocks: TinaField[] = [
         label: "Content",
         isBody: true,
         templates: [
-            {
-                name: 'about_AA',
-                label: 'About Algorithm Audit',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template (only available in about AA)',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'algoprudence_case',
-                label: 'Algoprudence case',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template (only available in algoprudence cases)',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'ai_policy_observatory',
-                label: 'AI Policy Observatory',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'Title',
-                        type: 'string',
-                        description: '',
-                        required: true,
-                    }
-                ]
-            },
-            {
-                name: 'button',
-                label: 'Button',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'button_text',
-                        label: 'Button text',
-                        type: 'string',
-                        description: 'Text shown in the button',
-                        required: true,
-                    },
-                    {
-                        name: 'button_link',
-                        label: 'Button link',
-                        type: 'string',
-                        description: 'Links the button redirects to',
-                        required: true,
-                    }
-                ]
-            },
-            {
-                name: 'container_open',
-                label: 'Container open',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        type: "string",
-                        name: "icon",
-                        label: "Icon",
-                        description: "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-                        required: true,
-                    },
-                    {
-                        type: "string",
-                        name: "title",
-                        label: "Title",
-                        description: "h3 title at top of text box",
-                        required: true,
-                    },
-                    {
-                        type: "string",
-                        name: "id",
-                        label: "ID",
-                        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-                        required: false,
-                    },
-                    {
-                        name: 'do_not_use',
-                        label: 'Do not fill, this tag should have a following "Container close" in the content',
-                        type: 'string'
-                    }
-                ]
-            },
-            {
-                name: 'container_close',
-                label: 'Container close',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'do_not_use',
-                        label: 'Do not fill, this tag should have a pre-existing "Container open" in the content',
-                        type: 'string'
-                    }
-                ]
-            },
-            {
-                name: 'reports_preview',
-                label: 'Reports preview',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'form',
-                label: 'Form',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'image',
-                label: 'Image',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'image',
-                        label: 'Image',
-                        type: 'image',
-                        required: true,
-                    },
-                    {
-                        name: 'alt',
-                        label: 'Alt text',
-                        type: 'string',
-                    },
-                    {
-                        name: 'caption',
-                        label: 'Caption',
-                        type: 'string',
-                    },
-                    {
-                        name: 'width',
-                        label: 'Width',
-                        type: 'string',
-                        description: '1 to 12, 12 is max width'
-                    }
-                ]
-            },
-            {
-                name: 'pdf_frame',
-                label: 'PDF Frame',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'articleUrl',
-                        label: 'Article Url',
-                        type: 'image',
-                        required: true,
-                    },
-                    {
-                        name: 'width',
-                        label: 'Width',
-                        type: 'string',
-                        description: '50% is the default'
-                    }
-                ]
-            },
-            {
-                name: 'team',
-                label: 'Team',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'team1',
-                label: 'Team #1',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'team2',
-                label: 'Team #2',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            },
-            {
-                name: 'web_app',
-                label: 'Web app',
-                match: {
-                    start: '{{<',
-                    end: '>}}'
-                },
-                fields: [
-                    {
-                        name: 'title',
-                        label: 'DONT USE',
-                        type: 'string',
-                        description: 'Use top level template',
-                        required: false,
-                    }
-                ]
-            }
+            about_aa,
+            algoprudence_case,
+            ai_policy_observatory,
+            button,
+            container_open,
+            container_close,
+            reports_preview,
+            form,
+            template_image,
+            pdf_frame,
+            team,
+            team1,
+            team2,
+            web_app
         ]
     },
     {

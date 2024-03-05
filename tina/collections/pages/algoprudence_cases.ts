@@ -4,6 +4,7 @@
 import facets from "../shared/facets/facets";
 import { TinaField } from "tinacms";
 import building_blocks from "../shared/page/building_blocks";
+import pdf_frame from "../shared/templates/pdf_frame";
 
 let specific_fields : TinaField[] = [
     {
@@ -181,28 +182,7 @@ let specific_fields : TinaField[] = [
                     name: "description",
                     label: "description",
                     templates: [
-                        {
-                            name: 'pdf_frame',
-                            label: 'PDF Frame',
-                            match: {
-                                start: '{{<',
-                                end: '>}}'
-                            },
-                            fields: [
-                                {
-                                    name: 'articleUrl',
-                                    label: 'Article Url',
-                                    type: 'image',
-                                    required: true,
-                                },
-                                {
-                                    name: 'width',
-                                    label: 'Width',
-                                    type: 'string',
-                                    description: '50% is the default'
-                                }
-                            ]
-                        }
+                        pdf_frame
                     ]
                 },
                 {
@@ -239,28 +219,7 @@ let specific_fields : TinaField[] = [
                     name: "description",
                     label: "description",
                     templates: [
-                        {
-                            name: 'pdf_frame',
-                            label: 'PDF Frame',
-                            match: {
-                                start: '{{<',
-                                end: '>}}'
-                            },
-                            fields: [
-                                {
-                                    name: 'articleUrl',
-                                    label: 'Article Url',
-                                    type: 'image',
-                                    required: true,
-                                },
-                                {
-                                    name: 'width',
-                                    label: 'Width',
-                                    type: 'string',
-                                    description: '50% is the default'
-                                }
-                            ]
-                        }
+                        pdf_frame
                     ]
                 },
                 {
