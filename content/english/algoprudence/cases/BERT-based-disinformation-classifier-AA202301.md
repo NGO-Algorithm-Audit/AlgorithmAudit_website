@@ -79,6 +79,51 @@ actions:
         label: finalist
 ---
 
-{{< algoprudence_case >}}
+{{< tab_header width="6" tab1_id="description" tab1_title="Description" tab2_id="actions" tab2_title="Actions" tab3_id="" tab3_title="" default_tab="description" >}}
+
+{{< tab_content_open icon="fa-newspaper" title="Description" id="description" >}}
+
+#### Summary advice
+
+The advice commission believes there is a low risk of (higher-dimensional) proxy discrimination by the BERT-based disinformation classifier and that the particular difference in treatment identified by the quantitative bias scan can be justified, if certain conditions apply.
+
+#### Source of case
+
+Applying our self-build unsupervised [bias detection tool](https://algorithmaudit.eu/bias_scan) on a self-trained BERT-based disinformation classifier on the Twitter1516 dataset. Learn more on [Github](https://github.com/NGO-Algorithm-Audit/Bias_scan).
+
+#### Stanford's AI Audit Challenge 2023
+
+This case study, in combination with our [bias scan tool](https://algorithmaudit.eu/bias_scan), has been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+
+{{< image image="/images/supported_by/HAI.png" alt="Stanford University AI" caption="Stanford University AI" width="8" >}}
+
+#### Presentation
+
+A visual presentation of this case study can be found in this [slide deck](https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/Main_presentation_joint_fairness_assessment_method.pdf).
+
+#### Report
+
+Dowload the full report and problem statement [here](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing).
+
+{{< pdf_frame articleUrl="/pdf-files/Case_study_disinfo.pdf" >}}
+
+#### Normative advice commission
+
+* Anne Meuwese, Professor in Public Law & AI at Leiden University
+* Hinda Haned, Professor in Responsible Data Science at University of Amsterdam
+* Raphaële Xenidis, Associate Professor in EU law at Sciences Po Paris
+* Aileen Nielsen, Fellow Law\&Tech at ETH Zürich
+* Carlos Hernández-Echevarría, Assistant Director and Head of Public Policy at the anti-disinformation nonprofit fact-checker [Maldita.es](https://maldita.es/maldita-es-journalism-to-not-be-fooled/)
+* Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank [Demos](https://demos.co.uk/)
+
+#### Funded by
+
+{{< image image="/images/supported_by/EUAISFund.png" alt="European Artificial Intelligence & Society Fund" caption="European Artificial Intelligence & Society Fund" width="2" >}}
+
+{{< tab_content_close >}}
+
+{{< tab_content_open icon="fa-newspaper" title="Actions" id="actions" >}}
+
+{{< tab_content_close >}}
 
 {{< form >}}

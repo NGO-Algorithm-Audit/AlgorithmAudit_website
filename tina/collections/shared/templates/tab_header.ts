@@ -16,6 +16,13 @@ let template : RichTextTemplate = {
         },
         {
             type: "string",
+            name: "default_tab",
+            label: "Tab to open by default",
+            description: "Should match one of the ids below.",
+            required: true
+        },
+        {
+            type: "string",
             name: "tab1_id",
             label: "Tab 1 id",
             description: "id, which should correspond with the tabs",
