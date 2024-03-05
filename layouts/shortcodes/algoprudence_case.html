@@ -2,6 +2,35 @@
 
 {{ $split_char := " " }}
 <div class="container-fluid">
+    <!-- Tab header -->
+    <div class="row">
+        <div class="col-lg-12 mx-auto">
+            {{ $width := 12 }}
+            {{ if or .Params.actions .Params.discussions }}
+            {{ $width = 6 }}
+            {{ end }}
+            {{ if and .Params.actions .Params.discussions }}
+            {{ $width = 4 }}
+            {{ end }}
+            <div class="row tab">
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="description_tab_btn" onclick="openTab(event, 'description_tab')">
+                    <h4 class="py-3 hover-white">{{ i18n "algoprudence_description_tab" }}</h4>
+                </button>
+                {{ if .Params.actions }}
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="actions_tab_btn" onclick="openTab(event, 'actions_tab')">
+                    <h4 class="py-3 hover-white">{{ i18n "algoprudence_actions_tab" }}</h4>
+                </button>
+                {{ end }}
+                {{ if .Params.discussions }}
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="discussions_tab_btn" onclick="openTab(event, 'discussions_tab')">
+                    <h4 class="py-3 hover-white">{{ i18n "algoprudence_discussion_tab" }}</h4>
+                </button>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <!-- /Tab header -->
+
     <!-- Description of algoprudence -->
     <div class="row tabcontent" id="description_tab">
         <div class="col-lg-12 mx-auto p-0">
