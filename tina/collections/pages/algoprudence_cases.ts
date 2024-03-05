@@ -173,6 +173,12 @@ let specific_fields : TinaField[] = [
             [
                 {
                     type: "string",
+                    name: "id",
+                    label: "Id",
+                    description: "Id can be used to deeplink, for example with ?tab=actions&item={id}"
+                },
+                {
+                    type: "string",
                     name: "title",
                     label: "Title",
                     required: true,
@@ -208,6 +214,12 @@ let specific_fields : TinaField[] = [
         list: true,
         fields:
             [
+                {
+                    type: "string",
+                    name: "id",
+                    label: "Id",
+                    description: "Id can be used to deeplink, for example with ?tab=discussions&item={id}"
+                },
                 {
                     type: "string",
                     name: "title",

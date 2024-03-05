@@ -13,16 +13,16 @@
             {{ $width = 4 }}
             {{ end }}
             <div class="row tab">
-                <button class="col-sm-12 col-md-{{$width}} tablinks" onclick="openTab(event, 'description_tab')" id="defaultOpen">
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="description_tab_btn" onclick="openTab(event, 'description_tab')">
                     <h4 class="py-3 hover-white">{{ i18n "algoprudence_description_tab" }}</h4>
                 </button>
                 {{ if .Params.actions }}
-                <button class="col-sm-12 col-md-{{$width}} tablinks" onclick="openTab(event, 'actions_tab')">
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="actions_tab_btn" onclick="openTab(event, 'actions_tab')">
                     <h4 class="py-3 hover-white">{{ i18n "algoprudence_actions_tab" }}</h4>
                 </button>
                 {{ end }}
                 {{ if .Params.discussions }}
-                <button class="col-sm-12 col-md-{{$width}} tablinks" onclick="openTab(event, 'discussions_tab')">
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="discussions_tab_btn" onclick="openTab(event, 'discussions_tab')">
                     <h4 class="py-3 hover-white">{{ i18n "algoprudence_discussion_tab" }}</h4>
                 </button>
                 {{ end }}
@@ -208,7 +208,7 @@
                 {{ end }}
                 <div class="ac mx-5 mb-4 py-4 algoprudence-article" data-facets="{{$facets_for_data_attribute}}">
                     <div class="ac-header grid">
-                        <div class="ac-trigger p-0">
+                        <div id="{{$action.id}}" class="ac-trigger p-0">
                             <div class="row justify-content-between m-0">
                                 <div class="col-12 col-lg-2 mr-4 p-0 mt-0">
                                     <img class="img-fluid img-event p-4" src="{{$action.image}}" />
@@ -284,7 +284,7 @@
                 <div class="py-4"></div>
                 <div class="ac border-0 mx-5 mb-4 algoprudence-article" data-facets="{{$facets_for_data_attribute}}">
                     <div class="ac-header grid">
-                        <div class="ac-trigger p-0">
+                        <div id="{{$discussion.id}}" class="ac-trigger p-0">
                             <div class="row justify-content-between m-0">
                                 <div class="col-2 mr-4 box p-0 mt-0">
                                     <img class="img-fluid about-img p-2" src="{{$discussion.image}}" />
@@ -363,12 +363,7 @@
         // Show the current tab, and add an "active" class to the button that opened the tab
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
-    }
-
-    $(document).ready(function () {
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    });
+    };
 
     {{ if .Params.actions }}
     new Accordion('.accordion-container-actions');
@@ -378,5 +373,23 @@
     new Accordion('.accordion-container-discussions');
     {{ end }}
 
+    
+    $(document).ready(function () {
+        let params = new URLSearchParams(window.location.search);
+        if(params.has('tab')) {
+            document.getElementById(params.get('tab') + '_tab_btn').click();
+        }
+        else {
+            document.getElementById("description_tab_btn").click();
+        }
+
+        if(params.has('item')) {
+            let itemId = params.get('item');
+            document.getElementById(itemId).click();
+            $('#' + itemId).get(0).scrollIntoView({behavior: 'smooth'});
+        }
+    });
+</script>
+<script>
 </script>
 {{end}}

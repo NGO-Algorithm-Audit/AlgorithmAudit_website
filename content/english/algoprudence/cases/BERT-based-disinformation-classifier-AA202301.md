@@ -62,7 +62,8 @@ funded_by:
   - url: 'https://europeanaifund.org/'
     image: /images/supported_by/EUAISFund.png
 actions:
-  - title: Finalist selection Stanford's AI Audit Challenge 2023
+  - id: ai_audit_2023
+    title: Finalist selection Stanford's AI Audit Challenge 2023
     description: >
       Our [bias detection tool](/technical-tools/BDT) and this case study have
       been selected as a finalist for [Stanford's AI Audit Challenge
