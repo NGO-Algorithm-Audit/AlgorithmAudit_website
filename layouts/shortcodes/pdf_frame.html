@@ -10,6 +10,12 @@
     {{ if .Get "width" }}
     {{ $width = .Get "width" }}
     {{ end }}
-    <embed src={{ .Get "articleUrl" | relURL }} width="{{$width}}" height="594px" type="application/pdf" />
+    <object data={{ .Get "articleUrl" | relURL }} type="application/pdf" width="{{$width}}" height="594px">
+      <a href={{ .Get "articleUrl" | relURL }} target="_blank">
+        <p>
+          {{ i18n "pdf-preview-unsupported" }}
+        </p>
+      </a>
+    </object>
   </div>
 </div>

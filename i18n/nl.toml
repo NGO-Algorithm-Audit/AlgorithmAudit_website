@@ -58,3 +58,6 @@ other = "Stichting Algorithm Audit is bij de Kamer van Koophandel geregistreerd 
 
 [license]
 other = "Deze website is gebouwd onder de CC-BY 4.0 licentie. Dit betekent dat je de content kunt hergebruiken en kunt aanpassen mits je Algorithm Audit en co-ontwikkelaars vermeldt "
+
+[pdf-preview-unsupported]
+other = "De browser ondersteunt de PDF preview niet, klik hier om de pdf te openen."
