@@ -10,7 +10,8 @@ let pdf_frame : RichTextTemplate = {
         {
             name: 'articleUrl',
             label: 'Article Url',
-            type: 'image',
+            type: 'string',
+            description: 'google-docs url',
             required: true,
         },
         {
