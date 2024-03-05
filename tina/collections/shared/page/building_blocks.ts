@@ -15,6 +15,7 @@ import container_open from "../templates/container_open";
 import container_close from "../templates/container_close";
 import reports_preview from "../templates/reports_preview";
 import form from "../templates/form";
+import tab_header from "../templates/tab_header"
 import template_image from "../templates/image";
 import team from "../templates/team";
 import team1 from "../templates/team1";
@@ -39,6 +40,7 @@ let building_blocks: TinaField[] = [
             container_close,
             reports_preview,
             form,
+            tab_header,
             template_image,
             pdf_frame,
             team,
