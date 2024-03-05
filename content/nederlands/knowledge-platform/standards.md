@@ -62,9 +62,7 @@ Het standaardiseringsverzoek van de Europese Commissie, dat een uitgangsbasis bi
 9. Kwaliteitsmanagementsystemen voor aanbieders van AI-systemen, inclusief monitoringsprocesses na te zijn geïntroduceerd op de markt
 10. Conformiteitsbeoordeling van AI-systemen.
 
-Het volledige standaardiseringsverzoek kan [hier](https://single-market-economy.ec.europa.eu/single-market/european-standards/standardisation-requests_en) worden gevonde.
-
-In de audits van Algorithm Audit worden alle bovenstaande aspecten meegenomen, met uitzondering van 8. Cybersecurity-specificaties voor AI-systemen. Wil je samenwerking met ons auditteam bespreken?
+In de audits van Algorithm Audit worden alle bovenstaande aspecten meegenomen, met uitzondering van 8. Cybersecurity-specificaties voor AI-systemen. Organisaties kunnen leren van onze technische en normatieve algoritme audits die [publiek toegankelijk](/nl/algoprudence/) zijn. Het volledige standaardiseringsverzoek van de Europese Commissie kan [hier](https://single-market-economy.ec.europa.eu/single-market/european-standards/standardisation-requests_en) worden gevonden.
 
 {{< button button_text="Bespreek samenwerking" button_link="/nl/knowledge-platform/collaboration/" >}}
 

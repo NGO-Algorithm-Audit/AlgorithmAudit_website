@@ -74,11 +74,9 @@ The standardization request of the European Commission, that will provide a pres
 9. Quality management systems for providers of AI systems, including post-market monitoring processes
 10. Conformity assessment for AI systems.
 
-The full standardisation request can be found [here](https://single-market-economy.ec.europa.eu/single-market/european-standards/standardisation-requests_en).
+In our audits, Algorithm Audit incorporates all of the above aspects, except 8. Cybersecurity specifications for AI systems. Organisations can learn from our technical and normative audits reports that are made [publicly available](/algoprudence/). The full standardisation request of the European Commission can be found [here](https://single-market-economy.ec.europa.eu/single-market/european-standards/standardisation-requests_en).
 
-In our audits, Algorithm Audit pays incorporates all of the above aspects except 8. Cybersecurity specifications for AI systems. Do you want to learn more about our collaborative efforts?
-
-{{< button button_text="Discuss collaboration" button_link="/knowledge-platform/collaboration/" >}}
+{{< button button_text="Learn more about collaboration" button_link="/knowledge-platform/collaboration/" >}}
 
 {{< container_close >}}
 
