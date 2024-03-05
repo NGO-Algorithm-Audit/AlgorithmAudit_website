@@ -1,0 +1,8 @@
+{{ $id := .Get "id" }}
+<script>
+    $(document).ready(function () {
+        new Accordion('#accordion_area_{{$id}}');
+    });
+</script>
+
+<div id="accordion_area_{{$id}}" class="content pt-5">

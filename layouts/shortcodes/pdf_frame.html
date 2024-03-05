@@ -2,14 +2,14 @@
 <meta http-equiv="X-Frame-Options" content="allow">
 
 <!-- text field -->
-
-<div class="p-5 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display: table;">
+{{ $width := "6" }}
+{{ if .Get "width" }}
+{{$width = .Get "width"}}
+{{ end }}
+<div class="p-5 col-lg-{{$width}} col-md-12 col-sm-12 col-xs-12" style="display: table;">
   <div style="text-align:center">
-    <!-- width="420" height="594"  -->
-    {{ $width := "50%"}}
-    {{ if .Get "width" }}
-    {{ $width = .Get "width" }}
-    {{ end }}
-    <embed src={{ .Get "articleUrl" | relURL }} width="{{$width}}" height="594px" type="application/pdf" />
+    {{ $articleUrl := .Get "articleUrl" | relURL }}
+    <iframe src="https://docs.google.com/gview?embedded=true&url=https://algorithmaudit.eu{{$articleUrl}}&amp;embedded=true" width="100%" height="594px">
+    </iframe>
   </div>
 </div>

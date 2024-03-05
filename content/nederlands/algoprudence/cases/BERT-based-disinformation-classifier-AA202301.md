@@ -42,7 +42,7 @@ funded_by:
     image: /images/supported_by/EUAISFund.png
 actions:
   - title: Geselecteerd als finalist voor Stanford's AI Audit Challenge 2023
-    description: "Onze\_[bias detectie tool](http://localhost:5173/technical-tools/BDT)\_en bijbehorende algoprudentie van het BERT-gebaseerde disinformatie detectie algoritme is geselecteerd als finalist voor\_[Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).\n\n{{< pdf_frame articleUrl=\"/pdf-files/BDT_main_presentation_JFAM.pdf\" width=\"100%\" >}}\n"
+    description: "Onze\_[bias detectie tool](http://localhost:5173/technical-tools/BDT)\_en bijbehorende algoprudentie van het BERT-gebaseerde disinformatie detectie algoritme is geselecteerd als finalist voor\_[Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).\n\n{{< pdf_frame articleUrl=\"/pdf-files/BDT_main_presentation_JFAM.pdf\" >}}\n"
     image: /images/supported_by/HAI.png
     date: 06-04-2023
     facets:
