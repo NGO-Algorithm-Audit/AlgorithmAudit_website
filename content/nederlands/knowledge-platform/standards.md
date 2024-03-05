@@ -43,7 +43,7 @@ Tijdens de laatste plenaire bijeenkomst van JTC21 in Dublin 12-14 februari prese
 
 {{< image image="/images/partners/NEN.svg" alt="Nederlands Normalisatie Instituut" caption="Nederlands Normalisatie Instituut" width="12" >}}
 
-{{< pdf_frame articleUrl="/pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" width="100%" >}}
+{{< pdf_frame articleUrl="/pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" >}}
 
 {{< container_close >}}
 

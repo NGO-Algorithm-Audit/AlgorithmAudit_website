@@ -1,0 +1,21 @@
+{{ $id := .Get "id" }}
+<div class="row tabcontent" id="{{$id}}_tab">
+    <div class="col-lg-12 mx-auto p-0">
+        <div class="content">
+            <div class="p-5 shadow rounded-lg" style="display:table;">
+
+                <!-- title -->
+                {{ $title := .Get "title" }}
+                {{ if $title }}
+                <h3 class="mb-4 pl-0">
+                    {{ $icon := .Get "icon" }}
+                    {{if $icon }}
+                    <i class="fas {{$icon}} mr-3"></i>
+                    {{end}}
+                    {{ $title | markdownify }}
+                </h3>
+                {{ end }}
+
+                <!-- content -->
+                <div class="row mb-3">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

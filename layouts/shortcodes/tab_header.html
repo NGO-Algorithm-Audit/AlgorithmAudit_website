@@ -1,0 +1,76 @@
+
+    <!-- Tab header -->
+    <div class="row">
+        <div class="col-lg-12 mx-auto">
+            {{ $width := .Get "width" }}
+            <div class="row tab">
+                {{ $tab_id := .Get "tab1_id" }}
+                {{ $tab_title := .Get "tab1_title" }}
+                {{ if and $tab_id $tab_title }}
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="{{$tab_id}}_tab_btn" onclick="openTab(event, '{{$tab_id}}_tab')">
+                    <h4 class="py-3 hover-white">{{$tab_title}}</h4>
+                </button>
+                {{ end }}
+                {{ $tab_id := .Get "tab2_id" }}
+                {{ $tab_title := .Get "tab2_title" }}
+                {{ if and $tab_id $tab_title }}
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="{{$tab_id}}_tab_btn" onclick="openTab(event, '{{$tab_id}}_tab')">
+                    <h4 class="py-3 hover-white">{{$tab_title}}</h4>
+                </button>
+                {{ end }}
+                {{ $tab_id := .Get "tab3_id" }}
+                {{ $tab_title := .Get "tab3_title" }}
+                {{ if and $tab_id $tab_title }}
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="{{$tab_id}}_tab_btn" onclick="openTab(event, '{{$tab_id}}_tab')">
+                    <h4 class="py-3 hover-white">{{$tab_title}}</h4>
+                </button>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+    
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+    
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+    
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        };
+    
+        $(document).ready(function () {
+            let params = new URLSearchParams(window.location.search);
+            if(params.has('tab')) {
+                document.getElementById(params.get('tab') + '_tab_btn').click();
+            }
+            else {
+                document.getElementById({{.Get "default_tab"}} + "_tab_btn").click();
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            let params = new URLSearchParams(window.location.search);
+            if (params.has('item')) {
+                let itemId = params.get('item');
+                setTimeout(function () {
+                    $('#' + itemId).click();
+                    $('#' + itemId).get(0).scrollIntoView({behavior: 'smooth'});
+                }, 250);
+            }
+        });
+    </script>
+    <!-- /Tab header -->

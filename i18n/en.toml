@@ -78,3 +78,6 @@ other = "Stichting Algorithm Audit is registered as a non-profit organisation at
 
 [license]
 other = "This website is built under CC-BY 4.0 license. This means you can share and adapt content freely, as long as you credit Algorithm Audit and named co-creators"
+
+[pdf-preview-unsupported]
+other = "The PDF preview is not supported by this browser, click here to open the PDF file."
