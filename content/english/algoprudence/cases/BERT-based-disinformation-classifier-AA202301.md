@@ -2,7 +2,8 @@
 title: >-
   Higher-dimensional proxy bias in a BERT-based disinformation classifier
   (AA:2023:01)
-subtitle: ''
+subtitle: |
+  Problem statement (AA:2023:01:P) and advice document (AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
 form:
   title: React to the normative judgement of the advice commission
@@ -70,7 +71,7 @@ actions:
       2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
 
-      {{< pdf_frame articleUrl="/pdf-files/BDT_main_presentation_JFAM.pdf" >}}
+      {{< pdf_frame >}}
     image: /images/supported_by/HAI.png
     date: 14-02-2024
     facets:
@@ -104,7 +105,7 @@ A visual presentation of this case study can be found in this [slide deck](http
 
 Dowload the full report and problem statement [here](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing).
 
-{{< pdf_frame articleUrl="/pdf-files/Case_study_disinfo.pdf" >}}
+{{< pdf_frame width="6" articleUrl1="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/preview" articleUrl2="" >}}
 
 #### Normative advice commission
 
@@ -131,7 +132,7 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 Our [bias detection tool](https://algorithmaudit.eu/technical-tools/BDT) and this case study have been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< pdf_frame articleUrl="/pdf-files/BDT_main_presentation_JFAM.pdf" width="12" >}}
+{{< pdf_frame width="12" >}}
 
 {{< accordion_item_close >}}
 

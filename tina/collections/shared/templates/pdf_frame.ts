@@ -8,17 +8,18 @@ let pdf_frame : RichTextTemplate = {
     },
     fields: [
         {
-            name: 'articleUrl',
-            label: 'Article Url',
+            name: 'articleUrl1',
+            label: 'pdf1',
             type: 'string',
             description: 'google-docs url',
             required: true,
         },
         {
-            name: 'width',
-            label: 'Width',
+            name: 'articleUrl2',
+            label: 'pdf2',
             type: 'string',
-            description: '6 is default, 12 is max. Mobile is always 12'
+            description: 'google-docs url',
+            required: false,
         }
     ]
 };

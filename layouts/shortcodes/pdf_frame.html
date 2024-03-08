@@ -1,14 +1,20 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
-<!-- text field -->
-{{ $width := "6" }}
-{{ if .Get "width" }}
-{{$width = .Get "width"}}
-{{ end }}
-<div class="p-5 col-lg-{{$width}} col-md-12 col-sm-12 col-xs-12" style="display: table;">
-  <div style="text-align:center">
-    {{ $articleUrl := .Get "articleUrl" | relURL }}
-    <iframe src="{{$articleUrl}}" width="100%" height="594px" allow="autoplay">
-    </iframe>
-  </div>
+<!-- in case 2 pdfs -->
+{{ if .Get "articleUrl2" }}
+<div class="col-12 my-5" style="display:table;">
+  {{ $articleUrl1 := .Get "articleUrl1" | relURL }}
+  <iframe src="{{$articleUrl1}}" width="50%;" height="594px" allow="autoplay"></iframe>
+  {{ $articleUrl2 := .Get "articleUrl2" | relURL }}
+  <iframe src="{{$articleUrl2}}" width="50%;" height="594px" allow="autoplay"></iframe>
 </div>
+<!-- /in case 2 pdfs -->
+
+<!-- in case 1 pdf -->
+{{ else }}
+<div class="col-lg-6 col-12 my-5" style="display:table;">
+  {{ $articleUrl1 := .Get "articleUrl1" | relURL }}
+  <iframe src="{{$articleUrl1}}" width="100%;" height="594px" allow="autoplay"></iframe>
+</div>
+{{ end }}
+<!-- /in case 1 pdf -->
