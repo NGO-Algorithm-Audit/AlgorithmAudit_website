@@ -5,7 +5,7 @@
 {{ $width = .Get "width" }}
 {{ end }}
 <div class="row mb-5">
-    <div class="col-{{ $width }} center-block" id={{ .Get "id" }}>
+    <div class="col-lg-{{ $width }} col-8 center-block" id={{ .Get "id" }}>
         <img src={{ .Get "image" }} alt={{ .Get "alt" }} title={{ .Get "caption" }}> </img>
     </div>
 </div>
