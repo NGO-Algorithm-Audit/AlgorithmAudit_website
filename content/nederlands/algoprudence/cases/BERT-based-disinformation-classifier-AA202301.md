@@ -42,16 +42,76 @@ funded_by:
     image: /images/supported_by/EUAISFund.png
 actions:
   - title: Geselecteerd als finalist voor Stanford's AI Audit Challenge 2023
-    description: "Onze\_[bias detectie tool](http://localhost:5173/technical-tools/BDT)\_en bijbehorende algoprudentie van het BERT-gebaseerde disinformatie detectie algoritme is geselecteerd als finalist voor\_[Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).\n\n{{< pdf_frame articleUrl=\"/pdf-files/BDT_main_presentation_JFAM.pdf\" >}}\n"
+    description: "Onze\_[bias detectie tool](http://localhost:5173/technical-tools/BDT)\_en bijbehorende algoprudentie van het BERT-gebaseerde disinformatie detectie algoritme is geselecteerd als finalist voor\_[Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).\n\n{{< pdf_frame >}}\n"
     image: /images/supported_by/HAI.png
     date: 06-04-2023
     facets:
       - value: Finalist
         label: Finalist
-subtitle: ''
+subtitle: |
+  Problemstelling (AA:2023:01:P) en adviesdocument (AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
 ---
 
-{{< algoprudence_case >}}
+{{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving van algoprudentie" tab2_id="actions" tab2_title="Acties volgend op algoprudentie" tab3_id="" tab3_title="" default_tab="description" >}}
+
+{{< tab_content_open icon="fa-newspaper" title="Hoger-dimensionale proxy bias in een BERT-gebaseerde disinformatie algoritme (AA:2023:01)" id="description" >}}
+
+#### Samenvatting advies
+
+De adviescommissie is van mening dat er een laag risico is op (hoger-dimensionale) proxydiscriminatie door de BERT-gebaseerde desinformatiedetectie-algoritme. Het concrete waargenomen verschil in ongelijke behandeling van verschillende Twitter-gebruikers kan gelegitimeerd worden, indien bepaalde maatregelen zijn getroffen.  
+
+#### Bron van de casus
+
+Toepassing van de door Algorithm Audit zelf-geimplementeerde unsupervised [bias detectie tool](/technical-tools/bdt/) op een zelf-getraind BERT-gebaseerd desinformatiedetectie-algoritme op de veelgebruikte Twitter1516 dataset. Zie ook onze [Github](https://github.com/NGO-Algorithm-Audit/Bias-detection-tool).
+
+#### Stanford's AI Audit Challenge 2023
+
+Deze algoprudentie, in combinatie met de [bias detectie tool,](/technical-tools/bdt/) is onder de naam Joint Fairness Assessment Method (JFAM) geselecteerd als finalist voor [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+
+{{< image image="/images/supported_by/HAI.png" alt="Stanford University AI" caption="Stanford University AI" width="4" >}}
+
+#### Presentatie
+
+Een visuele presentatie van deze case study kan worden gevonden in [dit](https://github.com/NGO-Algorithm-Audit/Bias-detection-tool/blob/master/Main_presentation_joint_fairness_assessment_method.pdf) slide deck.
+
+#### Rapport
+
+De probleemstelling en adviesrapport kan [hier](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing) worden gedownload.
+
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/preview" articleUrl2="" >}}
+
+#### Normatieve adviescommissie
+
+* Anne Meuwese, Hoogleraar staats- en bestuursrecht, Leiden University
+* Hinda Haned, Hoogleraar in Responsible Data Science, Universiteit van Amsterdam
+* Raphaële Xenidis, Associate Professor in Europees recht, Sciences Po Paris
+* Aileen Nielsen, Visiting Assistant Professor, Harvard Law School
+* Carlos Hernández-Echevarría, Assistant Director en Head of Public Policy bij anti-disinformatie nonprofit fact-checker [Maldita.es](https://maldita.es/maldita-es-journalism-to-not-be-fooled/)
+* Ellen Judson, Head of CASM en Sophia Knight, Onderzoekers bij de partijoverstijgende Britse denktank [Demos](https://demos.co.uk/)
+
+#### Funded by
+
+<br>
+
+{{< image image="/images/supported_by/EUAISFund.png" alt="European Artificial Intelligence & Society Fund" caption="European Artificial Intelligence & Society Fund" width="3" >}}
+
+{{< tab_content_close >}}
+
+{{< tab_content_open icon="" title="" id="actions" >}}
+
+{{< accordions_area_open id="actions" >}}
+
+{{< accordion_item_open title="Finalist Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="14-02-2023" tag1="finalist" >}}
+
+##### Beschrijving
+
+Deze algoprudentie, in combinatie met de [bias detectie tool,](/technical-tools/bdt/) is onder de naam Joint Fairness Assessment Method (JFAM) geselecteerd als finalist voor [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+
+{{< accordion_item_close >}}
+
+{{< accordions_area_close >}}
+
+{{< tab_content_close >}}
 
 {{< form >}}

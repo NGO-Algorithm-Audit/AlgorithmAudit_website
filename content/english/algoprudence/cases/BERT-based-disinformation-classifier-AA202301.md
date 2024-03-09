@@ -79,9 +79,9 @@ actions:
         label: finalist
 ---
 
-{{< tab_header width="6" tab1_id="description" tab1_title="Description" tab2_id="actions" tab2_title="Actions" tab3_id="" tab3_title="" default_tab="description" >}}
+{{< tab_header width="6" tab1_id="description" tab1_title="Description of algoprudence" tab2_id="actions" tab2_title="Actions following algoprudence" tab3_id="" tab3_title="" default_tab="description" >}}
 
-{{< tab_content_open icon="fa-newspaper" title="Description" id="description" >}}
+{{< tab_content_open icon="fa-newspaper" title="Higher-dimensional proxy bias in a BERT-based disinformation classifier" id="description" >}}
 
 #### Summary advice
 
@@ -89,13 +89,13 @@ The advice commission believes there is a low risk of (higher-dimensional) proxy
 
 #### Source of case
 
-Applying our self-build unsupervised [bias detection tool](https://algorithmaudit.eu/bias_scan) on a self-trained BERT-based disinformation classifier on the Twitter1516 dataset. Learn more on [Github](https://github.com/NGO-Algorithm-Audit/Bias_scan).
+Applying our self-build unsupervised [bias detection tool](/technical-tools/bdt/) on a self-trained BERT-based disinformation classifier on the Twitter1516 dataset. Learn more on [Github](https://github.com/NGO-Algorithm-Audit/Bias-detection-tool).
 
 #### Stanford's AI Audit Challenge 2023
 
-This case study, in combination with our [bias scan tool](https://algorithmaudit.eu/bias_scan), has been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+This case study, in combination with our [bias detection tool](/technical-tools/bdt/), has been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< image image="/images/supported_by/HAI.png" alt="Stanford University AI" caption="Stanford University AI" width="8" >}}
+{{< image image="/images/supported_by/HAI.png" alt="Stanford University AI" caption="Stanford University AI" width="4" >}}
 
 #### Presentation
 
@@ -105,7 +105,7 @@ A visual presentation of this case study can be found in this [slide deck](http
 
 Dowload the full report and problem statement [here](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing).
 
-{{< pdf_frame width="6" articleUrl1="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/preview" articleUrl2="" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/preview" articleUrl2="" >}}
 
 #### Normative advice commission
 
@@ -118,7 +118,9 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 #### Funded by
 
-{{< image image="/images/supported_by/EUAISFund.png" alt="European Artificial Intelligence & Society Fund" caption="European Artificial Intelligence & Society Fund" width="2" >}}
+<br>
+
+{{< image image="/images/supported_by/EUAISFund.png" alt="European Artificial Intelligence & Society Fund" caption="European Artificial Intelligence & Society Fund" width="3" >}}
 
 {{< tab_content_close >}}
 
@@ -132,7 +134,7 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 Our [bias detection tool](https://algorithmaudit.eu/technical-tools/BDT) and this case study have been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< pdf_frame width="12" >}}
+{{< pdf_frame >}}
 
 {{< accordion_item_close >}}
 
