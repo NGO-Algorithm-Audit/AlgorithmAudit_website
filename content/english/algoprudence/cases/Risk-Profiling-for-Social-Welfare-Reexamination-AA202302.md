@@ -148,6 +148,75 @@ form:
       placeholder: Mail address
 ---
 
-{{< algoprudence_case >}}
+{{< tab_header width="6" tab1_id="description" tab1_title="Description of algoprudence" tab2_id="actions" tab2_title="Actions following algoprudence" tab3_id="" tab3_title="" default_tab="description" >}}
+
+{{< tab_content_open icon="fa-poll-h" title="Risk Profiling for Social Welfare Reexamination" id="description" >}}
+
+#### Key takeaways normative advice commission
+
+* <span style="color:#005aa7; font-weight:600;">Algorithmic profiling is possible under strict conditions</span>\
+  The use of algorithmic profiling to re-examine whether social welfare benefits have been duly granted, is acceptable if applied responsibly.
+* <span style="color:#005aa7; font-weight:600;">Profiling must not equate suspicion</span>\
+  Re-examination needs to be based more on service and less on distrust.
+* <span style="color:#005aa7; font-weight:600;">Diversity in selection methods</span>\
+  To avoid tunnel vision and negative feedback loops, algorithmic profiling ought to be combined with expert-driven profiling and random sampling.
+* <span style="color:#005aa7; font-weight:600;">Well-considered use of profiling criteria</span>\
+  Caring to avoid (proxy) discrimination and other undesirable forms of differentiation, the normative advice commission assessed variables individually on their eligibility for profiling (see Infographic).
+* <span style="color:#005aa7; font-weight:600;">Explainability requirements for machine learning</span>\
+  It is necessary that the sampling of residents can be explained throughout the entire decision-making process. Complex training methods for variable selection, such as the xgboost algorithm discussed in this case study, are considered too complex to meet explainability requirements.
+
+{{< image id="infographic" width_desktop="12" width_mobile="12" image1="/images/algoprudence/AA202302/Infographic_EN.png" alt1="Infographic" caption1="Infographic" >}}
+
+#### Summary advice
+
+The commission judges that algorithmic risk profiling can be used under strict conditions for sampling residents receiving social welfare for re-examination. The aim of re-examination is a leading factor in judging profiling criteria. If re-examination were based less on distrust and adopts a more service-oriented approach, then the advice commission judges a broader use of profiling variables permissible to enable more precise targeting of individuals in need of assistance. For various variables used by the Municipality of Rotterdam during the period 2017-2021, the commission gives an argued judgement why these variables are or are not eligible as a profiling selection criterion (see Infographic). A combined use of several sampling methods (including expert-driven profiling and random sampling) is recommended to avoid tunnel vision and negative feedback loops. The commission advises stricter conditions for the selection of variables for use by algorithms than for selection by domain experts. The commission states that algorithms used to sample citizens for re-examination must be explainable. Complex training methods, such as the xgboost model used by the Municipality of Rotterdam, do not meet this explainability criterion. This advice is directed towards all Dutch and European municipalities that use or consider using profiling methods in the context of social services.
+
+#### Source of case
+
+Unsolicited research, build upon [freedom of information requests](https://www.vpro.nl/argos/media/luister/argos-radio/onderwerpen/2021/In-het-vizier-van-het-algoritme-.html) submitted by investigative journalists.
+
+#### Presentation
+
+The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found [here](https://algorithmaudit.eu/pressroom).
+
+{{< image id="presentation-minister" image1="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt1="Presentation advice report to Dutch Minister of Digitalization" caption1="Presentation advice report to Dutch Minister of Digitalization" width_desktop="6" width_mobile="12" >}}
+
+#### Report
+
+Dowload the full report and problem statement [here](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing).
+
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1zRRUYRfaIzdKFA2hQtW9yeM4jrD-Abef/preview" articleUrl2="https://drive.google.com/file/d/11sQMVJQd3ZJlW0R6HjU01b4N4CmuFw2q/preview" >}}
+
+#### Normative advice commission
+
+* Abderrahman El Aazani, Researcher at the Ombudsman Rotterdam-Rijnmond
+* Francien Dechesne, Associate Professor Law and Digital Technologies, Leiden University
+* Maarten van Asten, Alderman Finance, Digitalization, Sports and Events Municipality of Tilburg
+* Munish Ramlal, Ombudsman Metropole region Amsterdam
+* Oskar Gstrein, Assistant Professor Governance and Innovation, University of Groningen
+
+#### Funded by
+
+<br>
+
+{{< image image1="/images/supported_by/sidn.png" alt1="SIDN" caption1="SIDN" image2="/images/supported_by/EUAISFund.png" alt2="European AI & Society Fund" caption2="European AI & Society Fund" id="funded-by" image3="/images/supported_by/BZK.jpg" alt3="Dutch Ministry of the Interior" caption3="Dutch Ministry of the Interior" link1="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" width_desktop="4" width_mobile="6" link2="https://europeanaifund.org/" link3="https://www.government.nl/ministries/ministry-of-the-interior-and-kingdom-relations" >}}
+
+{{< tab_content_close >}}
+
+{{< tab_content_open icon="" title="" id="actions" >}}
+
+{{< accordions_area_open id="actions" >}}
+
+{{< accordion_item_open title="Finalist selection Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="14-02-2024" tag1="finalist" >}}
+
+##### Description
+
+Our [bias detection tool](https://algorithmaudit.eu/technical-tools/BDT) and this case study have been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+
+{{< accordion_item_close >}}
+
+{{< accordions_area_close >}}
+
+{{< tab_content_close >}}
 
 {{< form >}}

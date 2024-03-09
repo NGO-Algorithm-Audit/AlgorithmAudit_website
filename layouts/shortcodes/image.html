@@ -1,11 +1,135 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
-{{ $width := 12 }}
-{{ if .Get "width" }}
-{{ $width = .Get "width" }}
+{{ $width_desktop := 6 }}
+{{ if .Get "width_desktop" }}
+{{ $width_desktop = .Get "width_desktop" }}
 {{ end }}
-<div class="row mb-5">
-    <div class="col-lg-{{ $width }} col-8 center-block" id={{ .Get "id" }}>
-        <img src={{ .Get "image" }} alt={{ .Get "alt" }} title={{ .Get "caption" }}> </img>
+
+{{ $width_mobile := 12 }}
+{{ if .Get "width_mobile" }}
+{{ $width_mobile = .Get "width_mobile" }}
+{{ end }}
+
+<!-- in case 3 images -->
+{{ if .Get "image3" }}
+<div class="row mb-5 align-items-center" id={{ .Get "id" }}>
+    {{ $image1 := .Get "image1" | relURL }}
+    {{ $alt1 := .Get "alt1" | relURL }}
+    {{ $caption1 := .Get "caption1" | relURL }}
+    {{ $image2 := .Get "image2" | relURL }}
+    {{ $alt2 := .Get "alt2" | relURL }}
+    {{ $caption2 := .Get "caption2" | relURL }}
+    {{ $image3 := .Get "image3" | relURL }}
+    {{ $alt3 := .Get "alt3" | relURL }}
+    {{ $caption3 := .Get "caption3" | relURL }}
+
+    <!-- image1 -->
+    {{ if .Get "link1" }}
+    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+        <a href={{ .Get "link1" }} target="_blank">
+            <img src={{ .Get "image1" }} alt={{ .Get "alt1" }} title={{ .Get "caption1" }}> </img>
+        </a>
     </div>
+    {{ else }}
+    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+        <img src={{ .Get "image1" }} alt={{ .Get "alt1" }} title={{ .Get "caption1" }}> </img>
+    </div>
+    {{ end }}
+    <!-- /image1 -->
+
+    <!-- image2 -->
+    {{ if .Get "link2" }}
+    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+        <a href={{ .Get "link2" }} target="_blank">
+            <img src={{ .Get "image2" }} alt={{ .Get "alt2" }} title={{ .Get "caption2" }}> </img>
+        </a>
+    </div>
+    {{ else }}
+    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+        <img src={{ .Get "image2" }} alt={{ .Get "alt2" }} title={{ .Get "caption2" }}> </img>
+    </div>
+    {{ end }}
+    <!-- /image2 -->
+
+    <!-- image3 -->
+    {{ if .Get "link3" }}
+    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+        <a href={{ .Get "link3" }} target="_blank">
+            <img src={{ .Get "image3" }} alt={{ .Get "alt3" }} title={{ .Get "caption3" }}> </img>
+        </a>
+    </div>
+    {{ else }}
+    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+        <img src={{ .Get "image3" }} alt={{ .Get "alt3" }} title={{ .Get "caption3" }}> </img>
+    </div>
+    {{ end }}
+    <!-- /image3 -->
 </div>
+<!-- /in case 3 images -->
+
+<!-- in case 2 images -->
+{{ else if .Get "image2" }}
+<div class="row mb-5 align-items-center" id={{ .Get "id" }}>
+    {{ $image1 := .Get "image1" | relURL }}
+    {{ $alt1 := .Get "alt1" | relURL }}
+    {{ $caption1 := .Get "caption1" | relURL }}
+    {{ $image2 := .Get "image2" | relURL }}
+    {{ $alt2 := .Get "alt2" | relURL }}
+    {{ $caption2 := .Get "caption2" | relURL }}
+
+        <!-- image1 -->
+        {{ if .Get "link1" }}
+        <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+            <a href={{ .Get "link1" }} target="_blank">
+                <img src={{ .Get "image1" }} alt={{ .Get "alt1" }} title={{ .Get "caption1" }}> </img>
+            </a>
+        </div>
+        {{ else }}
+        <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+            <img src={{ .Get "image1" }} alt={{ .Get "alt1" }} title={{ .Get "caption1" }}> </img>
+        </div>
+        {{ end }}
+        <!-- /image1 -->
+    
+        <!-- image2 -->
+        {{ if .Get "link2" }}
+        <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+            <a href={{ .Get "link2" }} target="_blank">
+                <img src={{ .Get "image2" }} alt={{ .Get "alt2" }} title={{ .Get "caption2" }}> </img>
+            </a>
+        </div>
+        {{ else }}
+        <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+            <img src={{ .Get "image2" }} alt={{ .Get "alt2" }} title={{ .Get "caption2" }}> </img>
+        </div>
+        {{ end }}
+        <!-- /image2 -->
+
+</div>
+<!-- /in case 2 images -->
+
+<!-- in case 1 image -->
+{{ else }}
+<div class="row mb-5 align-items-center" id={{ .Get "id" }}>
+    {{ $image1 := .Get "image1" | relURL }}
+    {{ $alt1 := .Get "alt1" | relURL }}
+    {{ $caption1 := .Get "caption1" | relURL }}
+
+            <!-- image1 -->
+            {{ if .Get "link1" }}
+            <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+                <a href={{ .Get "link1" }} target="_blank">
+                    <img src={{ .Get "image1" }} alt={{ .Get "alt1" }} title={{ .Get "caption1" }}> </img>
+                </a>
+            </div>
+            {{ else }}
+            <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block px-5">
+                <img src={{ .Get "image1" }} alt={{ .Get "alt1" }} title={{ .Get "caption1" }}> </img>
+            </div>
+            {{ end }}
+            <!-- /image1 -->
+            
+</div>
+<!-- /in case 1 image -->
+
+{{ end }}

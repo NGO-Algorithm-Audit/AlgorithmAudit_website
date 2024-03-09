@@ -134,8 +134,6 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 Our [bias detection tool](https://algorithmaudit.eu/technical-tools/BDT) and this case study have been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< pdf_frame >}}
-
 {{< accordion_item_close >}}
 
 {{< accordions_area_close >}}
