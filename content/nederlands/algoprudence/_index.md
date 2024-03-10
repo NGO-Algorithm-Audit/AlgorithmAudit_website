@@ -64,7 +64,7 @@ algoprudences:
       ondersteuning van de selectie werd gebruikt functioneerde naar
       verwachting, maar was niet goed onderbouwd.
     image: /images/algoprudence/AA202401/Cover.png
-    link: /nl/algoprudence/cases/vooringenomenheid-voorkomen/
+    link: /nl/algoprudence/cases/aa202401_bias-prevented/
     facets:
       - value: AA202401
         label: 'AA:2024:01'
@@ -88,7 +88,7 @@ algoprudences:
       leidende factor bij de beoordeling van profile- ringscriteria.
     image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
     link: >-
-      /nl/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+      /nl/algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination
     facets:
       - value: aa202302
         label: 'AA:2023:02'
@@ -113,7 +113,7 @@ algoprudences:
       gerechtvaardigd kan worden, indien bepaalde voorwaarden van toepassing
       zijn.
     image: /images/algoprudence/AA202301/Cover.png
-    link: /nl/algoprudence/cases/bert-based-disinformation-classifier-aa202301
+    link: /nl/algoprudence/cases/aa202301_bert-based-disinformation-classifier
     facets:
       - value: aa_2023_01
         label: 'AA:2023:01'
@@ -138,8 +138,7 @@ algoprudences:
       persoonsgegevens dat het predictie-algoritme een onaanvaardbaar risico
       loopt om specifieke demografische groepen van de dienst uit te sluiten.
     image: /images/algoprudence/AA202201/Cover.png
-    link: >-
-      /nl/algoprudence/cases/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
+    link: /nl/algoprudence/cases/aa202201_type-of-sim
     facets:
       - value: AA-2022-01
         label: 'AA:2022:01'
