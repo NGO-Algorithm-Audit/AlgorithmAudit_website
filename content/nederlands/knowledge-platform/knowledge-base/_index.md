@@ -7,8 +7,7 @@ subtitle: >
   en gereviewd.
 
 
-  Mis je een item? [<span style="color:#005aa7">Laat het
-  weten!</span>](/#contactform)
+  Mis je een item? [Laat het weten](/nl/about/contact/).
 description: ''
 image: /images/svg-illustrations/knowledge_base.svg
 author: a

@@ -7,6 +7,7 @@ subtitle: >
 image: /images/svg-illustrations/main_illustration.svg
 team:
   title: Team algoprudentie
+  icon: fas fa-user-friends
   button_text: Andere teams
   id: team
   button_link: /nl/about/teams/
@@ -29,9 +30,9 @@ team:
         Bestuurder
 ---
 
-### Onze 4-staps audit methodologie
+{{< container_open title="Onze 4-staps audit methodologie" icon="fas fa-eye" id="audit-methodologie" >}}
 
-![](/images/other/howwework.svg)
+{{< image id="audit-methodologie" width_desktop="12" width_mobile="12" image1="/images/other/howwework.svg" alt1="Audit methodologie" caption1="Audit methodologie" >}}
 
 #### Stap 1 – Identificeren van een casus
 
@@ -49,11 +50,13 @@ Deliberatief gesprek van een diverse and inclusieve adviescommissie over het pro
 
 Het uitgebrachte advies van de commissie wordt samen met het probleemstelling-document gepubliceerd op onze website. Het publiek delen van het  probleemstelling-document en normatieve advies wordt *algoprudentie* genoemd.
 
-##### Lees de interne richtlijn van Algorithm Audit hoe een normatieve adviescommissie bijeen te brengen:
+{{< container_close >}}
 
-{{< container_open >}}
+{{< container_open icon="fa-file" title="Richtlijnen voor normatieve adviescommissies" id="richtlijnen" >}}
 
-{{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" >}}
+Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie ontwikkeld. Algorithm Audit's richtlijnen voor het bijeenbrengen van normatieve adviescommissie kunnen worden gevonden in onderstaand document.  
+
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1eHKVFu7YApSdbGmOX1aKLOuH7UIkm41a/preview" >}}
 
 {{< container_close >}}
 

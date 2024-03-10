@@ -75,9 +75,9 @@ reports_preview:
         De commissie oordeelt dat algoritmische risicoprofilering onder strikte
         voorwaarden kan worden ingezet voor het selecteren van burgers met een
         bijstandsuitkering voor heronderzoek.
-    - name: Vooringenomenheid voorkomen
+    - name: Technische audit indirecte discriminatie
       image: /images/algoprudence/AA202401/Cover.png
-      link: /nl/algoprudence/
+      link: /nl/algoprudence/cases/aa202401_bias-prevented/
       content: >
         Kwantitatief en kwalitatieve audit naar bias in algoritme-gedreven
         besluitvormingsproces, o.a., testen van risicodistributie middels

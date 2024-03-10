@@ -104,7 +104,7 @@ algoprudences:
         label: machine learning
       - value: ethical_issue_proxy
         label: proxydiscriminatie
-  - title: BERT-gebaseerd disinformatie detectie
+  - title: BERT-gebaseerd disinformatie detectie-algoritme
     intro: >-
       De adviescommissie oordeelt dat er een laag risico is van
       (hoger-dimensionale) proxy discriminatie bij de BERT-gebaseerde

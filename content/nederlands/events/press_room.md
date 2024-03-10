@@ -86,7 +86,7 @@ Wanneer de gemeente onderzoekt of bijstandsgerechtigden nog wel recht hebben op 
 
 Het advies is gericht aan alle 340 Nederlandse gemeenten. Het advies vormt een onderdeel van de ‘algoprudentie’ die Stichting Algorithm Audit ontwikkelt om samen met experts en diverse belangengroepen tot concrete normen te komen voor de verantwoorde inzet van algoritmes. Stichting Algorithm Audit is een onafhankelijk kennisplatform voor ethische algoritmes en AI en wordt ondersteund door het European AI\&Society Fund, het SIDN fonds en het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.
 
-{{< image image="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt="Presentatie staatssecretaris" width="6" >}}
+{{< image id="presentatie" width_desktop="6" width_mobile="12" image1="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt1="Presentatie Staatssecretaris voor Digitalisering" caption1="Presentatie Staatssecretaris voor Digitalisering" >}}
 
 29-11-2023
 

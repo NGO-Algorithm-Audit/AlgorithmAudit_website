@@ -60,7 +60,7 @@ form:
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Description of algoprudentie" tab2_id="" tab2_title="" tab3_id="" tab3_title="" default_tab="description" >}}
 
-{{< tab_content_open icon="fa-newspaper" title="Hoger-dimensionale proxy bias in een BERT-gebaseerde disinformatie algoritme" id="description" >}}
+{{< tab_content_open icon="fa-sim-card" title="Type of SIM card as a predictor for detecting payment fraud" id="description" >}}
 
 #### Algoprudence number
 
@@ -80,7 +80,7 @@ The problem statement and advice report can be downloaded <a href="https://drive
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1fSETUhxOz0nF2nznsWq-4TyngP6lU7yH/preview" articleUrl2="" >}}
 
-#### Normatieve adviescommissie
+#### Normative advice commission
 
 * Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University
 * Jan Overgoor, PhD Management Science and Engineering, Stanford University

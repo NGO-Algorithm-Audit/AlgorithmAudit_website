@@ -1,6 +1,6 @@
 ---
 title: Bestuur en raden
-subtitle: "Stichting Algorithm Audit bestaat uit een bestuur, raad van advies, raad van toezicht (in oprichting), verschillende teams en werkt met adviescommissies op projectbasis, bestaande uit onafhankelijke experts en belanghebbenden.\_[Lees meer](/nl/about/boards/)\_over de uitvoerende teams.\n"
+subtitle: "Stichting Algorithm Audit bestaat uit een bestuur, raad van advies, raad van toezicht (in oprichting), verschillende teams en werkt met adviescommissies op projectbasis, bestaande uit onafhankelijke experts en belanghebbenden.\_[Lees meer](/nl/about/teams/)\_over de uitvoerende teams.\n"
 image: /images/svg-illustrations/events.svg
 team2:
   title: 'Bestuur '

@@ -191,14 +191,14 @@ Recent_audits:
     - name: 'Risk Profiling Social Welfare Re-examination '
       image: /images/reports/front_AA202302A.png
       link: >-
-        /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+        /algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
       content: >
         Normative advice commission provides rationales why these variables are
         eligible or not as a profiling selection criterion for a xgboost
         algorithm
-    - name: Bias prevented
+    - name: Technical audit indirect discrimination
       image: /images/algoprudence/AA202401/Cover.png
-      link: /algoprudence
+      link: /algoprudence/cases/aa202401_bias-prevented/
       content: >
         Assessment of risk distributions through Z-tests and bias test for
         various steps in algorithmic-driven decision-making process
@@ -206,6 +206,10 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
+
+
+
 
 
 

@@ -1,6 +1,8 @@
 ---
 layout: case
-title: Hoger-dimensionale bias in een BERT-gebaseerde disinformatie algoritme
+title: >-
+  Hoger-dimensionale bias in een BERT-gebaseerde disinformatie
+  detectie-algoritme
 icon: fa-newspaper
 summary: >
   The audit commission believes there is a low risk of (higher-dimensional)
@@ -76,7 +78,7 @@ form:
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving van algoprudentie" tab2_id="actions" tab2_title="Acties volgend op algoprudentie" tab3_id="" tab3_title="" default_tab="description" >}}
 
-{{< tab_content_open icon="fa-newspaper" title="Hoger-dimensionale proxy bias in een BERT-gebaseerde disinformatie algoritme" id="description" >}}
+{{< tab_content_open icon="fa-newspaper" title="Hoger-dimensionale bias in een BERT-gebaseerde disinformatie detectie-algoritme" id="description" >}}
 
 #### Algoprudentienummer
 

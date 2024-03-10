@@ -18,7 +18,7 @@ team:
   icon: fas fa-user-friends
   button_text: Other teams
   id: team
-  button_link: /about
+  button_link: /about/teams/
   team_members:
     - image: /images/people/EPetersen.jpeg
       name: Eike Petersen
@@ -53,9 +53,9 @@ In 2023, European standardization bodies CEN and CENELEC have accepted a standar
 
 During last JTC21's plenary meeting in Dublin 12-14 Feb in Dublin, Algorithm Audit presented below slides on Fundamental Rights Impact Assessments (FRIAs) and the need for inclusive, deliberative stakeholder panels to deploy responsible AI.
 
-{{< image image="/images/partners/NEN.svg" alt="Nederlands Normalisatie Instituut " caption="Nederlands Normalisatie Instituut " width="12" >}}
+{{< image id="CEN-logo" width_desktop="3" width_mobile="6" image1="/images/partners/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partners/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
 
-{{< pdf_frame articleUrl="/pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" >}}
+{{< pdf_frame articleUrl1="/pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" >}}
 
 {{< container_close >}}
 
@@ -76,7 +76,7 @@ The standardization request of the European Commission, that will provide a pres
 
 In our audits, Algorithm Audit incorporates all of the above aspects, except 8. Cybersecurity specifications for AI systems. Organisations can learn from our technical and normative audits reports that are made [publicly available](/algoprudence/). The full standardisation request of the European Commission can be found [here](https://single-market-economy.ec.europa.eu/single-market/european-standards/standardisation-requests_en).
 
-{{< button button_text="Learn more about collaboration" button_link="/knowledge-platform/collaboration/" >}}
+{{< button button_text="Collaborate with us" button_link="/knowledge-platform/collaboration/" >}}
 
 {{< container_close >}}
 

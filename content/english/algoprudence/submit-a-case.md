@@ -72,14 +72,14 @@ reports_preview:
     - name: 'Risk Profiling Social Welfare Re-examination '
       image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
       link: >-
-        /algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+        /algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
       content: >
         Normative advice commission provides rationales why these variables are
         eligible or not as a profiling selection criterion for a xgboost
         algorithm
-    - name: Bias Prevented
+    - name: Technical audit indirect discrimination
       image: /images/algoprudence/AA202401/Cover.png
-      link: /nl/algoprudence/cases/vooringenomenheid-voorkomen/
+      link: /algoprudence/cases/aa202401_bias-prevented/
       content: >
         Qualitative and quantitative audit of algorithmic-driven college
         allowances control process. Assessment of risk distributions through

@@ -41,9 +41,9 @@ In 2023 hebben de Europese standaardiseringsorganisaties CEN en CENELEC het verz
 
 Tijdens de laatste plenaire bijeenkomst van JTC21 in Dublin 12-14 februari presenteerde Algorithm Audit onderaan bijgevoegde slides over Fundamentele Rechten Impact Assessments (FRIAs) voor AI en de noodzaak voor inclusieve, deliberatieve adviescommissies om verantwoorde AI in te zetten.
 
-{{< image image="/images/partners/NEN.svg" alt="Nederlands Normalisatie Instituut" caption="Nederlands Normalisatie Instituut" width="12" >}}
+{{< image id="standaarden" width_desktop="3" width_mobile="6" image1="/images/partners/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partners/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
 
-{{< pdf_frame articleUrl="/pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" >}}
+{{< pdf_frame articleUrl1="/pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" >}}
 
 {{< container_close >}}
 

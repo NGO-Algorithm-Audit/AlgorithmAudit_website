@@ -84,7 +84,7 @@ actions:
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Description of algoprudence" tab2_id="actions" tab2_title="Actions following algoprudence" tab3_id="" tab3_title="" default_tab="description" >}}
 
-{{< tab_content_open icon="fa-newspaper" title="Higher-dimensional proxy bias in a BERT-based disinformation classifier" id="description" >}}
+{{< tab_content_open icon="fa-newspaper" title="Higher-dimensional bias in a BERT-based disinformation classifier" id="description" >}}
 
 #### Algoprudence number
 
