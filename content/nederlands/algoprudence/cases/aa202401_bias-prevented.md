@@ -33,7 +33,7 @@ funded_by:
   - url: 'https://duo.nl/particulier/'
     image: /images/partners/DUO.png
 subtitle: >
-  Technische audit (AA:2024:01) – Bevindingen en aanbevelingen over
+  Technische audit (AA:2024:01:TA) – Bevindingen en aanbevelingen over
   risicoprofilering in het Controle Uitwonendenbeurs-proces van DUO
 image: /images/algoprudence/AA202401/Cover.png
 actions:
@@ -77,13 +77,13 @@ form:
       placeholder: Emailadres
 ---
 
-{{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving algoprundentie" tab2_id="actions" tab2_title="Acties volgend op algoprundentie" tab3_id="" tab3_title="" default_tab="description" >}}
+{{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving van technische audit" tab2_id="actions" tab2_title="Acties volgend op technische audit" tab3_id="" tab3_title="" default_tab="description" >}}
 
 {{< tab_content_open icon="fa-greater-than-equal" title="Vooringenomenheid voorkomen" id="description" >}}
 
-#### Algoprudentienummer
+#### Nummer van technische audit
 
-AA:2024:01
+AA:2024:01:TA
 
 #### Samenvatting
 
@@ -97,7 +97,7 @@ Dienst Uitvoering Onderwijs (DUO)
 
 #### Algoprudentie
 
-Het volledige rapport (AA:2024:01) kan [hier](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview) worden gedownload.
+Het volledige rapport (AA:2024:01:TA) kan [hier](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview) worden gedownload.
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview" articleUrl2="" >}}
 
@@ -121,7 +121,7 @@ Rapport *Vooringenomenheid voorkomen* is als onderdeel van het Interne onderzoek
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="DUO biedt excuses aan voor indirecte discriminatie bij controles op de uitwonendenbeurs" image="/images/partners/DUO.png" id="DUO-excuses" date="01-03-2024" tag1="nieuws" >}}
+{{< accordion_item_open title="DUO biedt excuses aan voor indirecte discriminatie bij controles op de uitwonendenbeurs" image="/images/partners/DUO.png" id="DUO-excuses" date="01-03-2024" tag1="persbericht" >}}
 
 ##### Beschrijving
 

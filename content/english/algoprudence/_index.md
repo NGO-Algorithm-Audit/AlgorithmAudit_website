@@ -14,11 +14,13 @@ facet_groups:
   - value: year
     title: Year
     facets:
+      - value: '2024'
+        label: '2024'
       - value: '2023'
         label: '2023'
       - value: '2022'
         label: '2022'
-  - value: audit
+  - value: type_of_audit
     title: Type of audit
     facets:
       - value: technical
@@ -30,10 +32,12 @@ facet_groups:
     facets:
       - value: profiling
         label: Profiling
+      - value: rule_based
+        label: Rule-based
       - value: ml
-        label: Machine Learning (ML)
+        label: Machine learning (ML)
       - value: bias_detection_tool
-        label: Bias Detection Tool
+        label: Bias detection tool
   - value: ethical_issue
     title: Ethical issue
     facets:
@@ -52,6 +56,30 @@ facet_groups:
         label: Algorithm Audit
 title_content: Case repository
 algoprudences:
+  - title: Bias prevented
+    intro: >-
+      Disparities have been identified in the control process of a Dutch public
+      sector organisation regarding misuse of college allowances. In the period
+      2012-2022, students who lived close to their parent(s) were significantly
+      more often selected for a control procedure than others. The algorithm
+      used to support the selection performed as expected.
+    image: /images/algoprudence/AA202401/Cover.png
+    link: /algoprudence/cases/aa202401_bias-prevented/
+    facets:
+      - value: algoprudence
+        label: 'AA:2024:01'
+      - value: year_2024
+        label: '2024'
+      - value: type_of_audit_technical
+        label: technical audit
+      - value: type_of_algorithm_rule_based
+        label: rule-based
+      - value: type_of_algorithm_profiling
+        label: profiling
+      - value: ethical_issue_proxy
+        label: proxy discrimination
+      - value: owner_public
+        label: public organisation
   - title: Risk Profiling for Social Welfare Reexamination
     intro: >-
       The commission judges that algorithmic risk profiling can be used under
@@ -66,9 +94,7 @@ algoprudences:
         label: 'AA:2023:02'
       - value: year_2023
         label: '2023'
-      - value: owner_public
-        label: public organisation
-      - value: audit_normative
+      - value: type_of_audit_normative
         label: normative audit
       - value: type_of_algorithm_profiling
         label: profiling
@@ -76,6 +102,8 @@ algoprudences:
         label: ML
       - value: ethical_issue_proxy
         label: proxy discrimination
+      - value: owner_public
+        label: public organisation
   - title: BERT-based disinformation classifier
     intro: >-
       The audit commission believes there is a low risk of (higher-dimensional)
@@ -89,16 +117,18 @@ algoprudences:
         label: 'AA:2023:01'
       - value: year_2023
         label: '2023'
-      - value: owner_self
-        label: Algorithm Audit
+      - value: type_of_audit_normative
+        label: normative audit
       - value: type_of_algorithm_bias_detection_tool
         label: bias detection tool
-      - value: audit_normative
-        label: normative audit
       - value: type_of_algorithm_ml
         label: ML
       - value: ethical_issue_fp_fn_balancing
         label: FP-FN balancing
+      - value: owner_self
+        label: Algorithm Audit
+      - value: desinformation
+        label: desinformation
   - title: Type of SIM card as a predictor variable to detect payment fraud
     intro: >-
       The audit commission advises against using type of SIM card as an input
@@ -114,14 +144,14 @@ algoprudences:
         label: 'AA:2022:01'
       - value: year_2022
         label: '2022'
-      - value: owner_private
-        label: private organisation
+      - value: type_of_audit_normative
+        label: normative audit
       - value: type_of_algorithm_profiling
         label: profiling
-      - value: audit_normative
-        label: normative audit
       - value: ethical_issue_proxy
         label: proxy discrimination
+      - value: owner_private
+        label: private organisation
       - value: e-commerce
         label: e-commerce
 ---

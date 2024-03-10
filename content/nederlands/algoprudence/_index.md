@@ -70,16 +70,16 @@ algoprudences:
         label: 'AA:2024:01'
       - value: year_2024
         label: '2024'
-      - value: owner_public
-        label: publieke organisatie
-      - value: type_of_algorithm_rule_based
-        label: regel gebaseerd
       - value: audit_technical
         label: technische audit
+      - value: type_of_algorithm_rule_based
+        label: regel gebaseerd
       - value: type_of_algorithm_profiling
         label: profilering
       - value: ethical_issue_proxy
         label: proxydiscriminatie
+      - value: owner_public
+        label: publieke organisatie
   - title: Risicoprofilering heronderzoek bijstandsuitkering
     intro: >-
       De commissie oordeelt dat algoritmische risicoprofilering onder strikte
