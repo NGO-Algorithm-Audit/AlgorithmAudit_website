@@ -1,7 +1,5 @@
 ---
-title: >-
-  Higher-dimensional proxy bias in a BERT-based disinformation classifier
-  (AA:2023:01)
+title: Higher-dimensional bias in a BERT-based disinformation classifier
 subtitle: |
   Problem statement (AA:2023:01:P) and advice document (AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
@@ -83,6 +81,10 @@ actions:
 
 {{< tab_content_open icon="fa-newspaper" title="Higher-dimensional proxy bias in a BERT-based disinformation classifier" id="description" >}}
 
+#### Algoprudence number
+
+AA:2023:01
+
 #### Summary advice
 
 The advice commission believes there is a low risk of (higher-dimensional) proxy discrimination by the BERT-based disinformation classifier and that the particular difference in treatment identified by the quantitative bias scan can be justified, if certain conditions apply.
@@ -95,7 +97,7 @@ Applying our self-build unsupervised [bias detection tool](/technical-tools/bdt
 
 This case study, in combination with our [bias detection tool](/technical-tools/bdt/), has been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< image image="/images/supported_by/HAI.png" alt="Stanford University AI" caption="Stanford University AI" width="4" >}}
+{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/supported_by/HAI.png" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" alt1="Stanford University" caption1="Stanford University" >}}
 
 #### Presentation
 
@@ -120,7 +122,7 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 <br>
 
-{{< image image="/images/supported_by/EUAISFund.png" alt="European Artificial Intelligence & Society Fund" caption="European Artificial Intelligence & Society Fund" width="3" >}}
+{{< image id="funded-by" width_desktop="4" width_mobile="6" image1="/images/supported_by/EUAISFund.png" alt1="European Artificial Intelligence & Society Fund" caption1="European Artificial Intelligence & Society Fund" link1="https://europeanaifund.org/" >}}
 
 {{< tab_content_close >}}
 
@@ -128,7 +130,15 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 {{< accordions_area_open id="actions" >}}
 
-{{< accordion_item_open title="Finalist selection Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="14-02-2024" tag1="finalist" >}}
+{{< accordion_item_open image="/images/supported_by/sidn.png" title="Funding for further development" id="sidn" date="01-12-2023" tag1="funding" tag2="further development" >}}
+
+##### Description
+
+[SIDN Fund](https://www.sidnfonds.nl/projecten/open-source-ai-auditing) is supporting Algorithm Audit for further development of the bias detection tool. On 01-01-2024, a [team](/nl/about/teams/#bdt) has started that is further developing a testing the tool.
+
+{{< accordion_item_close >}}
+
+{{< accordion_item_open title="Finalist selection Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="28-04-2023" tag1="finalist" >}}
 
 ##### Description
 

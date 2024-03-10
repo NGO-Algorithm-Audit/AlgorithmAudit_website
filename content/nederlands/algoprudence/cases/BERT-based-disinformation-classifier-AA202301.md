@@ -1,8 +1,6 @@
 ---
 layout: case
-title: >-
-  Hoger-dimensionale proxy bias in een BERT-gebaseerde disinformatie algoritme
-  (AA:2023:01)
+title: Hoger-dimensionale bias in een BERT-gebaseerde disinformatie algoritme
 icon: fa-newspaper
 summary: >
   The audit commission believes there is a low risk of (higher-dimensional)
@@ -55,11 +53,15 @@ image: /images/algoprudence/AA202301/Cover.png
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving van algoprudentie" tab2_id="actions" tab2_title="Acties volgend op algoprudentie" tab3_id="" tab3_title="" default_tab="description" >}}
 
-{{< tab_content_open icon="fa-newspaper" title="Hoger-dimensionale proxy bias in een BERT-gebaseerde disinformatie algoritme (AA:2023:01)" id="description" >}}
+{{< tab_content_open icon="fa-newspaper" title="Hoger-dimensionale proxy bias in een BERT-gebaseerde disinformatie algoritme" id="description" >}}
+
+#### Algoprudentienummer
+
+AA:2023:01
 
 #### Samenvatting advies
 
-De adviescommissie is van mening dat er een laag risico is op (hoger-dimensionale) proxydiscriminatie door de BERT-gebaseerde desinformatiedetectie-algoritme. Het concrete waargenomen verschil in ongelijke behandeling van verschillende Twitter-gebruikers kan gelegitimeerd worden, indien bepaalde maatregelen zijn getroffen.  
+De adviescommissie is van mening dat er een laag risico is op (hoger-dimensionale) proxydiscriminatie door de BERT-gebaseerde desinformatiedetectie-algoritme. Het concrete waargenomen verschil in ongelijke behandeling van verschillende Twitter-gebruikers kan gelegitimeerd worden, indien bepaalde maatregelen zijn getroffen.
 
 #### Bron van de casus
 
@@ -69,7 +71,7 @@ Toepassing van de door Algorithm Audit zelf-geimplementeerde unsupervised [bias
 
 Deze algoprudentie, in combinatie met de [bias detectie tool,](/technical-tools/bdt/) is onder de naam Joint Fairness Assessment Method (JFAM) geselecteerd als finalist voor [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< image image="/images/supported_by/HAI.png" alt="Stanford University AI" caption="Stanford University AI" width="4" >}}
+{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/supported_by/HAI.png" alt1="Universiteit Stanford" caption1="Universiteit Stanford" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" >}}
 
 #### Presentatie
 
@@ -94,7 +96,7 @@ De probleemstelling en adviesrapport kan [hier](https://drive.google.com/file/d/
 
 <br>
 
-{{< image image="/images/supported_by/EUAISFund.png" alt="European Artificial Intelligence & Society Fund" caption="European Artificial Intelligence & Society Fund" width="3" >}}
+{{< image id="funded-by" width_desktop="4" width_mobile="6" image1="/images/supported_by/EUAISFund.png" alt1="European Artificial Intelligence & Society Fund" caption1="European Artificial Intelligence & Society Fund" link1="https://europeanaifund.org/" >}}
 
 {{< tab_content_close >}}
 
@@ -102,7 +104,15 @@ De probleemstelling en adviesrapport kan [hier](https://drive.google.com/file/d/
 
 {{< accordions_area_open id="actions" >}}
 
-{{< accordion_item_open title="Finalist Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="14-02-2023" tag1="finalist" >}}
+{{< accordion_item_open image="/images/supported_by/sidn.png" title="Ondersteuning voor verdere ontwikkeling" id="sidn" date="01-12-2023" tag1="financiering" tag2="doorontwikkeling" >}}
+
+##### Beschrijving
+
+Het [SIDN Fonds](https://www.sidnfonds.nl/projecten/open-source-ai-auditing) ondersteunt Algorithm Audit om de bias detectie tool verder te ontwikkelen. Op 01-01-2024 is een [team](/nl/about/teams/#bdt) gestart dat de tool verder gaat ontwikkelen.
+
+{{< accordion_item_close >}}
+
+{{< accordion_item_open title="Finalist Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="28-04-2023" tag1="finalist" >}}
 
 ##### Beschrijving
 
@@ -110,7 +120,7 @@ Deze algoprudentie, in combinatie met de [bias detectie tool,](/technical-tools
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}
+{{< accordion_item_open >}}
 
 {{< tab_content_close >}}
 
