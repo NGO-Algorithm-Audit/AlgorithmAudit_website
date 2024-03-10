@@ -111,7 +111,7 @@ Activity_Feed:
         2012-2022. Students living close to their parent(s) are significantly
         more often manually selected for a check than other students. The
         algorithm used to support the selection process performed as expected.
-      link: /nl/events/press_room/
+      link: /algoprudence/cases/aa202401_bias-prevented/
       image: /images/algoprudence/AA202401/Cover.png
       date: 01-03-2024
       type: technical audit
@@ -206,6 +206,9 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
+
+
 
 
 

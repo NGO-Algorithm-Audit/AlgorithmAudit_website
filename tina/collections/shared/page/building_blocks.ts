@@ -12,7 +12,6 @@ import accordions_area_open from "../templates/accordions_area_open";
 import accordions_area_close from "../templates/accordions_area_close";
 import accordion_item_open from "../templates/accordion_item_open";
 import accordion_item_close from "../templates/accordion_item_close";
-import algoprudence_case from "../templates/algoprudence_case";
 import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
 import container_open from "../templates/container_open";
@@ -44,7 +43,6 @@ let building_blocks: TinaField[] = [
             accordion_item_open,
             accordion_item_close,
             ai_policy_observatory,
-            algoprudence_case,
             button,
             container_open,
             container_close,
