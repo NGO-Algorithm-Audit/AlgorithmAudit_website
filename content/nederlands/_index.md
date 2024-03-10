@@ -43,17 +43,17 @@ Activity_Feed:
       link: /nl/events/activities
       image: /images/events/jtc21.jpg
       date: 13-02-2024
-      type: Presentatie
+      type: presentatie
     - title: AP Algoritmeseminar paneldiscussie – Het auditeren van algoritmes
       link: /nl/events/activities
       image: /images/events/dutch-data-protection.jpg
       date: 08-02-2024
-      type: Presentatie
+      type: presentatie
     - title: RUG AI Verordening event paneldiscussie
       link: /nl/events/activities
       image: /images/events/RUG.png
       date: 06-02-2024
-      type: Presentatie
+      type: presentatie
 Supported_by:
   title: Ondersteund door
   funders:
@@ -127,14 +127,14 @@ Recent_audits:
     - name: Risicoprofilering heronderzoek bijstandsuitkering
       image: /images/reports/front_AA202302A.png
       link: >-
-        /nl/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+        /nl/algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
       content: >
         De commissie oordeelt dat algoritmische risicoprofilering onder strikte
         voorwaarden kan worden ingezet voor het selecteren van burgers met een
         bijstandsuitkering voor heronderzoek
-    - name: Vooringenomenheid voorkomen
+    - name: Technische audit indirecte discriminatie
       image: /images/algoprudence/AA202401/Cover.png
-      link: /nl/events
+      link: /nl/algoprudence/cases/aa202401_bias-prevented/
       content: >
         Audit op rechtmatigheid van gemaakt onderscheid aan de hand van
         Z-toetsen en biasmeting op verschillende plekken in het
@@ -208,6 +208,12 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
+
+
+
+
+
 
 
 

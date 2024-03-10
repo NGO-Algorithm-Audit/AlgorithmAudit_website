@@ -73,7 +73,7 @@ team:
   icon: fas fa-user-friends
   button_text: Other teams
   id: team
-  button_link: /about
+  button_link: /about/teams/
   team_members:
     - image: /images/people/FHolstege.jpeg
       name: Floris Holstege
@@ -119,6 +119,16 @@ Try the tool below ⬇️
 
 Under the name Joint Fairness Assessment Method (JFAM) our bias scan tool has been selected as a finalist in [Stanford’s AI Audit Competition 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
+{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/supported_by/HAI.png" alt1="Stanford University" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" caption1="Stanford University" >}}
+
+{{< container_close >}}
+
+{{< container_open title="OECD Catalogue of Tools & Metrics for Trustworthy AI" icon="fas fa-toolbox" id="OECD" >}}
+
+Algorithm Audit's bias detection tool is part of OECD's [Catalogue of Tools & Metrics for Trustworthy AI.](https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool)
+
+{{< image id="oecd-image" width_desktop="6" width_mobile="12" image1="/images/BDT/oecd_logo.svg" alt1="OECD AI Policy Observatory" caption1="OECD AI Policy Observatory" link1="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" >}}
+
 {{< container_close >}}
 
 {{< container_open title="Hierarchical Bias-Aware Clustering (HBAC) algorithm" icon="fas fa-code-branch" id="HBAC" >}}
@@ -138,7 +148,7 @@ What input does the bias scan tool need? A csv file of max. 5GB with feature col
 * `true_label`: 0 or 1;
 * Bias metric: False Positive Rate (FPR), False Negative Rate (FNR) or Accuracy.
 
-<div><p><u>Data snippet</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">feature_1</th><th class="tg-uox0">feature_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feature_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overview of supported bias metrics</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Metric</th><th class="tg-1wig">Description</th></tr></thead><tbody><tr><td class="tg-0lax">False Positive Rate (FPR)</td><td class="tg-0lax">The bias detection tool finds the cluster for which most true labels are predicted to be false, proportional to all true labels (False Positive Rate). For instance, the algorithm predicts a financial transaction to be riskful, while after manual inspection it turns out to be not riskful.</td></tr><tr><td class="tg-0lax">False Negative Rate (FNR)</td><td class="tg-0lax">The bias detection tool finds the cluster for which most false labels are predicted to be true, proportional to all false labels (False Negative Rate). For instance, the algorithm predicts a financial transaction not to be riskful, while after manual inspection it turns out it is riskful.</td></tr><tr><td class="tg-0lax">Accuracy</td><td class="tg-0lax">Sum of True Positives (TPs) and True Negatives (TNs), proportional to all predictions.</td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a> about bias metrics.</div></div>
+<div><p><u>Data snippet</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overview of supported bias metrics</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Metric</th><th class="tg-1wig">Description</th></tr></thead><tbody><tr><td class="tg-0lax">False Positive Rate (FPR)</td><td class="tg-0lax">The bias detection tool finds the cluster for which most true labels are predicted to be false, proportional to all true labels (False Positive Rate). For instance, the algorithm predicts a financial transaction to be riskful, while after manual inspection it turns out to be not riskful.</td></tr><tr><td class="tg-0lax">False Negative Rate (FNR)</td><td class="tg-0lax">The bias detection tool finds the cluster for which most false labels are predicted to be true, proportional to all false labels (False Negative Rate). For instance, the algorithm predicts a financial transaction not to be riskful, while after manual inspection it turns out it is riskful.</td></tr><tr><td class="tg-0lax">Accuracy</td><td class="tg-0lax">Sum of True Positives (TPs) and True Negatives (TNs), proportional to all predictions.</td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a> about bias metrics.</div></div>
 
 {{< container_close >}}
 
@@ -174,7 +184,7 @@ Currently, only binary classification algorithms can be reviewed. For instance
 
 Your csv file is uploaded to a Amazon Web Services (AWS) bucket, where it is processed by Python code. Once the HBAC-algorithm has identified clusters, the results are sent back to the browser and the data is immediately deleted. Usually, your data is stored only for 5-10 seconds in the cloud environment. The web application is built according to the below architecture diagram.
 
-{{< image alt="Architecture diagram of AWS bias detection tool" caption="Architecture diagram of AWS bias detection tool" width="12" image="/images/BDT/architecture.png" >}}
+{{< image id="architecture-diagram" width_desktop="12" width_mobile="12" image1="/images/BDT/architecture.png" alt1="Architecture diagram bias detection tool web app" caption1="Architecture diagram bias detection tool web app" >}}
 
 ##### In sum 
 
@@ -182,7 +192,7 @@ Quantitative methods, such as unsupervised bias detection, are helpful to discov
 
 [Read more](/algoprudence/how-we-work/) about algoprudence and how Algorithm Audit's builds it.
 
-{{< image image="/images/BDT/Qualitative_quantitative_EN.png" alt="Overview working method joint fairness assessment method" caption="Overview working method joint fairness assessment method" width="12" >}}
+{{< image id="overview-JFAM" width_desktop="12" width_mobile="12" image1="/images/BDT/Qualitative_quantitative_EN.png" alt1="Overview Joint Fairness Assessment Method" caption1="Overview Joint Fairness Assessment Method" >}}
 
 {{< container_close >}}
 

@@ -36,6 +36,6 @@ team2:
 
 {{< container_open icon="fas fa-eye" title="Supervisory board" id="supervisory-board" >}}
 
-Under construction
+Currently being established
 
 {{< container_close >}}

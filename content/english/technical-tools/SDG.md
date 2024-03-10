@@ -10,7 +10,7 @@ type: regular
 team:
   title: Synthetic data generation cohort
   icon: fas fa-user-friends
-  button_text: Andere teams
+  button_text: Other teams
   id: team
   button_link: /about/teams/
   team_members:

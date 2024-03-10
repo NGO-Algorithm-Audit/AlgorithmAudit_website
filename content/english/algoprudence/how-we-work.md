@@ -14,7 +14,7 @@ team:
   title: Algoprudence team
   icon: fas fa-user-friends
   button_text: Other teams
-  button_link: /about
+  button_link: /about/teams/
   team_members:
     - image: /images/people/VDjwalapersad.png
       name: Vardâyani Djwalapersad
@@ -36,7 +36,7 @@ team:
 
 {{< container_open title="Our 4-step audit methodology" icon="fas fa-eye" id="methodology" >}}
 
-![](/images/other/howwework.svg)
+{{< image id="audit-methodology" width_desktop="12" width_mobile="12" image1="/images/other/howwework.svg" alt1="Audit methodology" caption1="Audit methodology" >}}
 
 #### Step 1 – Identifying an issue
 
@@ -58,7 +58,9 @@ Advice of commission is published together with problem statement on our website
 
 {{< container_open id="internal-policy" title="Internal policy document – Convening a normative advice commission" icon="fas fa-file" >}}
 
-{{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" width="12" >}}
+Over the years, we have developed our own deliberative audit methodology. Algorithm Audit's guidelines for convening a normative advice commission can be consulted in the below document. [Get in touch](/about/contact/) to share feedback about these guidelines. 
+
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1eHKVFu7YApSdbGmOX1aKLOuH7UIkm41a/preview" >}}
 
 {{< container_close >}}
 
