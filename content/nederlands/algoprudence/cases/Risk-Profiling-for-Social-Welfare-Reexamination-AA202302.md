@@ -122,6 +122,29 @@ actions:
         label: Presentatie
       - value: publicatie
         label: Publicatie
+form:
+  title: Reageer op het normatieve oordeel van de adviescommissie
+  content: >-
+    Uw inzending wordt verstuurd naar het team dat algoprudentie onderhoudt. Een
+    team reviewt uw reactie en plaatst deze, indien conform de richtlijnen
+    (nader te publiceren), in bovenstaande Discussie & debat sectie.
+  button_text: Verstuur
+  backend_link: 'https://formspree.io/f/xyyrjyzr'
+  id: form
+  questions:
+    - label: Naam
+      id: naam
+      type: text
+    - label: Organisatie
+      id: organisatie
+      type: text
+    - label: Reactie
+      id: reactie
+      type: textarea
+    - label: Contactgegevens
+      id: contactgegevens
+      type: email
+      placeholder: Emailadres
 ---
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving algoprundentie" tab2_id="actions" tab2_title="Acties volgend op algoprundentie" tab3_id="" tab3_title="" default_tab="description" >}}

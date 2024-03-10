@@ -129,15 +129,14 @@ algoprudences:
         label: machine learning
       - value: ethical_issue_fp_fn_balancing
         label: balanceren FP-FNs
-  - title: Type sim-kaart als voorspeller voor betalingsfraude
+  - title: Type simkaart als voorspeller voor betalingsfraude
     intro: >-
-      De adviescommissie adviseert tegen gebruik van type sim-kaart als input
-      variabele voor een risicopredictie-algoritme dat wordt gebruikt om fraude
-      met achterafmetalen te voorspellen en gebruikers aan de hand van
-      voorspelde risicoscores van de dienst uit te sluiten. Type sim-kaart wordt
+      De adviescommissie adviseert tegen gebruik van type simkaart als input
+      variabele voor een risicopredictie-algoritme om misbruik met het achteraf
+      betalen van online bestelde producten te voorspellen. Type sim-kaart wordt
       geacht dusdanig een proxy-attribuut te zijn voor bijzondere
-      persoonsgegevens dat het predictie-algoritme onaanvaardbaar risico loopt
-      om specifieke demografische groepen van de dienst uit te sluiten.
+      persoonsgegevens dat het predictie-algoritme een onaanvaardbaar risico
+      loopt om specifieke demografische groepen van de dienst uit te sluiten.
     image: /images/algoprudence/AA202201/Cover.png
     link: >-
       /nl/algoprudence/cases/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
