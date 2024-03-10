@@ -21,6 +21,9 @@ body {
   .mobile{
     display: none;
   }
+  .img-action{
+    padding: 0px;
+  }
   #img-gif{
     width: 75%;
   }
@@ -46,6 +49,11 @@ body {
   }
   .desktop{
     display: none;
+  }
+  .img-action{
+    height:100px;
+    padding: 15px;
+    margin: 20px 0px;
   }
   .img-event{
     height:200px;

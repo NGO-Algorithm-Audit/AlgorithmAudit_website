@@ -1,17 +1,17 @@
-<div class="ac mx-5 mb-4 py-4 algoprudence-article">
-    <div class="ac-header grid">
+<div class="ac mb-4 py-4 algoprudence-article">
+    <div class="ac-header grid pr-3">
         <div id={{.Get "id"}} class="ac-trigger p-0">
-            <div class="row justify-content-between m-0">
-                <div class="col-12 col-lg-2 mr-4 p-0 mt-0">
-                    <img class="img-fluid img-event p-4" src={{.Get "image"}} />
+            <div class="row justify-content-center align-items-center m-0">
+                <div class="col-12 col-lg-2 text-center">
+                    <img class="img-fluid img-action" src={{.Get "image"}} />
                 </div>
-                <div class="col pt-3 pb-5" style="background-color: #ffffff;">
+                <div class="col pt-3 pb-5 px-5">
                     <div class="row align-items-center">
                         <h4 class="mb-4 mx-3" style="color: #005aa7;">
                             {{.Get "title"}}
                         </h4>
                     </div>
-                    <div class="row pl-3"
+                    <div class="row"
                         style="position: absolute; bottom: 0; font-weight: 300; font-size: 15px;">
                         {{ $date := .Get "date" }}
                         {{ if $date }}
@@ -47,5 +47,5 @@
             <div class="row justify-content-between ac-text p-0">
                 <div class="col-0 col-lg-2">
                 </div>
-                <div class="col-12 col-lg-10 pt-4" style="background-color: #eef2f6;">
+                <div class="col-12 col-lg-10 pt-4 px-5" style="background-color: #eef2f6;">
                     

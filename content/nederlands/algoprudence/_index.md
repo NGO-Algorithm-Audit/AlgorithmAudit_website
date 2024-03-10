@@ -64,22 +64,22 @@ algoprudences:
       ondersteuning van de selectie werd gebruikt functioneerde naar
       verwachting, maar was niet goed onderbouwd.
     image: /images/algoprudence/AA202401/Cover.png
-    link: /nl/algoprudence/cases/vooringenomenheid-voorkomen/
+    link: /nl/algoprudence/cases/aa202401_bias-prevented/
     facets:
       - value: AA202401
         label: 'AA:2024:01'
       - value: year_2024
         label: '2024'
-      - value: owner_public
-        label: publieke organisatie
-      - value: type_of_algorithm_rule_based
-        label: regel gebaseerd
       - value: audit_technical
         label: technische audit
+      - value: type_of_algorithm_rule_based
+        label: regel gebaseerd
       - value: type_of_algorithm_profiling
         label: profilering
       - value: ethical_issue_proxy
         label: proxydiscriminatie
+      - value: owner_public
+        label: publieke organisatie
   - title: Risicoprofilering heronderzoek bijstandsuitkering
     intro: >-
       De commissie oordeelt dat algoritmische risicoprofilering onder strikte
@@ -88,7 +88,7 @@ algoprudences:
       leidende factor bij de beoordeling van profile- ringscriteria.
     image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
     link: >-
-      /nl/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+      /nl/algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination
     facets:
       - value: aa202302
         label: 'AA:2023:02'
@@ -113,7 +113,7 @@ algoprudences:
       gerechtvaardigd kan worden, indien bepaalde voorwaarden van toepassing
       zijn.
     image: /images/algoprudence/AA202301/Cover.png
-    link: /nl/algoprudence/cases/bert-based-disinformation-classifier-aa202301
+    link: /nl/algoprudence/cases/aa202301_bert-based-disinformation-classifier
     facets:
       - value: aa_2023_01
         label: 'AA:2023:01'
@@ -129,18 +129,16 @@ algoprudences:
         label: machine learning
       - value: ethical_issue_fp_fn_balancing
         label: balanceren FP-FNs
-  - title: Type sim-kaart als voorspeller voor betalingsfraude
+  - title: Type simkaart als voorspeller voor betalingsfraude
     intro: >-
-      De adviescommissie adviseert tegen gebruik van type sim-kaart als input
-      variabele voor een risicopredictie-algoritme dat wordt gebruikt om fraude
-      met achterafmetalen te voorspellen en gebruikers aan de hand van
-      voorspelde risicoscores van de dienst uit te sluiten. Type sim-kaart wordt
+      De adviescommissie adviseert tegen gebruik van type simkaart als input
+      variabele voor een risicopredictie-algoritme om misbruik met het achteraf
+      betalen van online bestelde producten te voorspellen. Type sim-kaart wordt
       geacht dusdanig een proxy-attribuut te zijn voor bijzondere
-      persoonsgegevens dat het predictie-algoritme onaanvaardbaar risico loopt
-      om specifieke demografische groepen van de dienst uit te sluiten.
+      persoonsgegevens dat het predictie-algoritme een onaanvaardbaar risico
+      loopt om specifieke demografische groepen van de dienst uit te sluiten.
     image: /images/algoprudence/AA202201/Cover.png
-    link: >-
-      /nl/algoprudence/cases/type-of-sim-card-as-a-predictor-variable-to-detect-payment-fraud-aa202201
+    link: /nl/algoprudence/cases/aa202201_type-of-sim
     facets:
       - value: AA-2022-01
         label: 'AA:2022:01'

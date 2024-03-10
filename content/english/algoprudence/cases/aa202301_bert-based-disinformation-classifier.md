@@ -1,11 +1,15 @@
 ---
-title: >-
-  Higher-dimensional proxy bias in a BERT-based disinformation classifier
-  (AA:2023:01)
-subtitle: ''
+title: Higher-dimensional bias in a BERT-based disinformation classifier
+subtitle: |
+  Problem statement (AA:2023:01:P) and advice document (AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
 form:
   title: React to the normative judgement of the advice commission
+  content: >-
+    Your reaction will be sent to the team maintaining algoprudence. A team will
+    review your response and, if it complies with the guidelines (to be
+    published later), it will be placed in the Discussion & debate section
+    above.
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
@@ -70,7 +74,7 @@ actions:
       2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
 
-      {{< pdf_frame articleUrl="/pdf-files/BDT_main_presentation_JFAM.pdf" >}}
+      {{< pdf_frame >}}
     image: /images/supported_by/HAI.png
     date: 14-02-2024
     facets:
@@ -78,9 +82,13 @@ actions:
         label: finalist
 ---
 
-{{< tab_header width="6" tab1_id="description" tab1_title="Description" tab2_id="actions" tab2_title="Actions" tab3_id="" tab3_title="" default_tab="description" >}}
+{{< tab_header width="6" tab1_id="description" tab1_title="Description of algoprudence" tab2_id="actions" tab2_title="Actions following algoprudence" tab3_id="" tab3_title="" default_tab="description" >}}
 
-{{< tab_content_open icon="fa-newspaper" title="Description" id="description" >}}
+{{< tab_content_open icon="fa-newspaper" title="Higher-dimensional proxy bias in a BERT-based disinformation classifier" id="description" >}}
+
+#### Algoprudence number
+
+AA:2023:01
 
 #### Summary advice
 
@@ -88,13 +96,13 @@ The advice commission believes there is a low risk of (higher-dimensional) proxy
 
 #### Source of case
 
-Applying our self-build unsupervised [bias detection tool](https://algorithmaudit.eu/bias_scan) on a self-trained BERT-based disinformation classifier on the Twitter1516 dataset. Learn more on [Github](https://github.com/NGO-Algorithm-Audit/Bias_scan).
+Applying our self-build unsupervised [bias detection tool](/technical-tools/bdt/) on a self-trained BERT-based disinformation classifier on the Twitter1516 dataset. Learn more on [Github](https://github.com/NGO-Algorithm-Audit/Bias-detection-tool).
 
 #### Stanford's AI Audit Challenge 2023
 
-This case study, in combination with our [bias scan tool](https://algorithmaudit.eu/bias_scan), has been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+This case study, in combination with our [bias detection tool](/technical-tools/bdt/), has been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< image image="/images/supported_by/HAI.png" alt="Stanford University AI" caption="Stanford University AI" width="8" >}}
+{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/supported_by/HAI.png" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" alt1="Stanford University" caption1="Stanford University" >}}
 
 #### Presentation
 
@@ -104,7 +112,7 @@ A visual presentation of this case study can be found in this [slide deck](http
 
 Dowload the full report and problem statement [here](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing).
 
-{{< pdf_frame articleUrl="/pdf-files/Case_study_disinfo.pdf" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/preview" articleUrl2="" >}}
 
 #### Normative advice commission
 
@@ -117,7 +125,9 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 #### Funded by
 
-{{< image image="/images/supported_by/EUAISFund.png" alt="European Artificial Intelligence & Society Fund" caption="European Artificial Intelligence & Society Fund" width="2" >}}
+<br>
+
+{{< image id="funded-by" width_desktop="4" width_mobile="6" image1="/images/supported_by/EUAISFund.png" alt1="European Artificial Intelligence & Society Fund" caption1="European Artificial Intelligence & Society Fund" link1="https://europeanaifund.org/" >}}
 
 {{< tab_content_close >}}
 
@@ -125,13 +135,19 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 {{< accordions_area_open id="actions" >}}
 
-{{< accordion_item_open title="Finalist selection Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="14-02-2024" tag1="finalist" >}}
+{{< accordion_item_open image="/images/supported_by/sidn.png" title="Funding for further development" id="sidn" date="01-12-2023" tag1="funding" tag2="open source" tag3="AI auditing tool" >}}
+
+##### Description
+
+[SIDN Fund](https://www.sidnfonds.nl/projecten/open-source-ai-auditing) is supporting Algorithm Audit for further development of the bias detection tool. On 01-01-2024, a [team](/nl/about/teams/#bdt) has started that is further developing a testing the tool.
+
+{{< accordion_item_close >}}
+
+{{< accordion_item_open title="Finalist selection Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="28-04-2023" tag1="finalist" >}}
 
 ##### Description
 
 Our [bias detection tool](https://algorithmaudit.eu/technical-tools/BDT) and this case study have been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
-
-{{< pdf_frame articleUrl="/pdf-files/BDT_main_presentation_JFAM.pdf" width="12" >}}
 
 {{< accordion_item_close >}}
 

@@ -58,7 +58,7 @@ Advice of commission is published together with problem statement on our website
 
 {{< container_open id="internal-policy" title="Internal policy document – Convening a normative advice commission" icon="fas fa-file" >}}
 
-{{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" >}}
+{{< pdf_frame articleUrl="/pdf-files/AA policy normative advice commissions TEST.pdf" width="12" >}}
 
 {{< container_close >}}
 

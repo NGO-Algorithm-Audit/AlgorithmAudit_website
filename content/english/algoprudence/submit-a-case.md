@@ -17,7 +17,9 @@ form:
     - label: Name of the algorithm
       id: name
       type: text
-    - label: Short description of the algorithm (max. 100 words)
+    - label: >-
+        Short description – Define the specific task of the algorithm and its
+        the context in which it operates (max. 200 words)
       id: description
       type: textarea
     - label: >-

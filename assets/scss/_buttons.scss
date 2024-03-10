@@ -112,18 +112,54 @@
   }
 }
 
-.tablinks{
-  border-width: 0px;
-  background-color:#deecf7;
-  h4 {
-    color:#005aa7;
+// view >768px
+@media (min-width: 768px) {
+  .tablinks{
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 30px 30px 0px 0px; 
+    border-color: #ffffff;
+    background-color:#deecf7;
+    h4 {
+      color:#005aa7;
+    }
+  }
+  .tablinks.active{
+    color:white;
+    text-decoration: underline;
+    background-color:#005aa7;
+    h4 {
+      color:white !important;
+    }
   }
 }
-.tablinks.active{
-  color:white;
-  text-decoration: underline;
-  background-color:#005aa7;
-  h4 {
-    color:white !important;
+
+// view ≤768px
+@media (max-width: 768px) {
+  .tablinks{
+    border-width: 0px;
+    border-color: #ffffff;
+    background-color:#deecf7;
+    h4 {
+      color:#005aa7;
+    }
   }
+  .tablinks.active{
+    color:white;
+    text-decoration: underline;
+    background-color:#005aa7;
+    h4 {
+      color:white !important;
+    }
+  }
+}
+
+.tablinks:hover {
+	text-decoration: underline;
+  text-decoration-color: white !important;
+	background-color: #005aa7;
+
+	h4.hover-white {
+		color: white !important;
+	}
 }
