@@ -1,9 +1,7 @@
 ---
-title: 'Risk Profiling for Social Welfare Reexamination (AA:2023:02)'
-subtitle: >
-  The commission judges that algorithmic risk profiling can be used under strict
-  conditions for sampling residents receiving social welfare for re-examination.
-  The aim of re-examination is a leading factor in judging profiling criteria.
+title: Risk Profiling for Social Welfare Reexamination
+subtitle: |
+  Problem statement (AA:2023:02:P) en advice document (AA:2023:02:A)
 image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
 layout: case
 icon: fa-poll-h
@@ -129,6 +127,11 @@ actions:
         label: Publication
 form:
   title: React to the normative judgement of the advice commission
+  content: >-
+    Your reaction will be sent to the team maintaining algoprudence. A team will
+    review your response and, if it complies with the guidelines (to be
+    published later), it will be placed in the Discussion & debate section
+    above.
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
@@ -152,6 +155,10 @@ form:
 
 {{< tab_content_open icon="fa-poll-h" title="Risk Profiling for Social Welfare Reexamination" id="description" >}}
 
+#### Algoprudence number
+
+AA:2023:02
+
 #### Key takeaways normative advice commission
 
 * <span style="color:#005aa7; font-weight:600;">Algorithmic profiling is possible under strict conditions</span>\
@@ -165,7 +172,9 @@ form:
 * <span style="color:#005aa7; font-weight:600;">Explainability requirements for machine learning</span>\
   It is necessary that the sampling of residents can be explained throughout the entire decision-making process. Complex training methods for variable selection, such as the xgboost algorithm discussed in this case study, are considered too complex to meet explainability requirements.
 
-{{< image id="infographic" width_desktop="12" width_mobile="12" image1="/images/algoprudence/AA202302/Infographic_EN.png" alt1="Infographic" caption1="Infographic" >}}
+#### Infographic
+
+{{< image id="infographic" width_desktop="10" width_mobile="12" image1="/images/algoprudence/AA202302/Infographic_EN.png" alt1="Infographic" caption1="Infographic" >}}
 
 #### Summary advice
 
@@ -177,9 +186,9 @@ Unsolicited research, build upon [freedom of information requests](https://www.
 
 #### Presentation
 
-The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found [here](https://algorithmaudit.eu/pressroom).
+The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found [here](/events/press_room/#rotterdam-algoritme).
 
-{{< image id="presentation-minister" image1="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt1="Presentation advice report to Dutch Minister of Digitalization" caption1="Presentation advice report to Dutch Minister of Digitalization" width_desktop="6" width_mobile="12" >}}
+{{< image id="presentation-minister" image1="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt1="Presentation advice report to Dutch Minister of Digitalization" caption1="Presentation advice report to Dutch Minister of Digitalization" width_desktop="5" width_mobile="12" >}}
 
 #### Report
 
@@ -207,11 +216,23 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 {{< accordions_area_open id="actions" >}}
 
-{{< accordion_item_open title="Finalist selection Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="14-02-2024" tag1="finalist" >}}
+{{< accordion_item_open title="Questions raised in the city council of Amsterdam as a result of advice report" image="/images/algoprudence/AA202302/Actions/images.png" id="amsterdam" date="04-12-2023" tag1="political action" >}}
 
 ##### Description
 
-Our [bias detection tool](https://algorithmaudit.eu/technical-tools/BDT) and this case study have been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+ Council members submitted <a href="https://amsterdam.raadsinformatie.nl/document/13573898/1/236+sv+Aslami%2C+IJmker+en+Garmy+inzake+toegepaste+profileringscriteria+gemeentelijke+algoritmes" target="_blank">questions</a> whether the machine learning (ML)-driven risk profiling algorithm currently tested by the City of Amsterdam satisfies the requirements as set out in AA-2023:02:A, including:
+
+* (in)eligible selection criteria fed to the ML model
+* explainability requirements for the used explainable boosting algorithm
+* implications of the AIAct for this particular form of risk profiling.
+
+{{< accordion_item_close >}}
+
+{{< accordion_item_open title="Binnenlands Bestuur" image="/images/algoprudence/AA202302/Actions/logo-bb.svg" id="binnenlands-bestuur" date="01-12-2023" tag1="news" >}}
+
+##### Description
+
+News website for Dutch public sector administration reported on AA:2023:02:A. See [link](https://www.binnenlandsbestuur.nl/digitaal/algoritmische-profilering-onder-strikte-voorwaarden-mogelijk).
 
 {{< accordion_item_close >}}
 

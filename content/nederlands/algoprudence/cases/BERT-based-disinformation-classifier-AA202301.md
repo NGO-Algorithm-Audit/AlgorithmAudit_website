@@ -49,6 +49,29 @@ actions:
 subtitle: |
   Problemstelling (AA:2023:01:P) en adviesdocument (AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
+form:
+  title: Reageer op het normatieve oordeel van de adviescommissie
+  content: >-
+    Uw inzending wordt verstuurd naar het team dat algoprudentie onderhoudt. Een
+    team reviewt uw reactie en plaatst deze, indien conform de richtlijnen
+    (nader te publiceren), in bovenstaande 'Discussie & debat' sectie.
+  button_text: Verstuur
+  backend_link: 'https://formspree.io/f/xyyrjyzr'
+  id: form
+  questions:
+    - label: Naam
+      id: naam
+      type: text
+    - label: Organisatie
+      id: organisatie
+      type: text
+    - label: Reactie
+      id: reactie
+      type: textarea
+    - label: Contactgegevens
+      id: contactgegevens
+      type: email
+      placeholder: Emaildres
 ---
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving van algoprudentie" tab2_id="actions" tab2_title="Acties volgend op algoprudentie" tab3_id="" tab3_title="" default_tab="description" >}}
@@ -104,7 +127,7 @@ De probleemstelling en adviesrapport kan [hier](https://drive.google.com/file/d/
 
 {{< accordions_area_open id="actions" >}}
 
-{{< accordion_item_open image="/images/supported_by/sidn.png" title="Ondersteuning voor verdere ontwikkeling" id="sidn" date="01-12-2023" tag1="financiering" tag2="doorontwikkeling" >}}
+{{< accordion_item_open image="/images/supported_by/sidn.png" title="Ondersteuning voor verdere ontwikkeling" id="sidn" date="01-12-2023" tag1="financiering" tag2="open source" tag3="AI auditing tool" >}}
 
 ##### Beschrijving
 
@@ -120,7 +143,7 @@ Deze algoprudentie, in combinatie met de [bias detectie tool,](/technical-tools
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open >}}
+{{< accordions_area_close >}}
 
 {{< tab_content_close >}}
 

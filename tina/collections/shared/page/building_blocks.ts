@@ -135,6 +135,13 @@ let building_blocks: TinaField[] = [
                 required: true,
             },
             {
+                name: 'content',
+                label: 'Content',
+                type: 'string',
+                description: 'grey text under title',
+                required: false,
+            },
+            {
                 name: 'button_text',
                 label: 'Button text',
                 type: 'string',

@@ -5,6 +5,11 @@ subtitle: |
 image: /images/algoprudence/AA202301/Cover.png
 form:
   title: React to the normative judgement of the advice commission
+  content: >-
+    Your reaction will be sent to the team maintaining algoprudence. A team will
+    review your response and, if it complies with the guidelines (to be
+    published later), it will be placed in the Discussion & debate section
+    above.
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
@@ -130,7 +135,7 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 {{< accordions_area_open id="actions" >}}
 
-{{< accordion_item_open image="/images/supported_by/sidn.png" title="Funding for further development" id="sidn" date="01-12-2023" tag1="funding" tag2="further development" >}}
+{{< accordion_item_open image="/images/supported_by/sidn.png" title="Funding for further development" id="sidn" date="01-12-2023" tag1="funding" tag2="open source" tag3="AI auditing tool" >}}
 
 ##### Description
 
