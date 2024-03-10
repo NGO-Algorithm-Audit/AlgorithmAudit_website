@@ -117,7 +117,7 @@ Het volledige rapport (AA:2024:01:TA) kan [hier](https://drive.google.com/file/
 
 ##### Beschrijving
 
-Rapport *Vooringenomenheid voorkomen* is als onderdeel van het Interne onderzoek van DUO <a href="https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2024D07562\&did=2024D07562" target="_blank">verstuurd</a> naar de Tweede Kamer.
+Rapport *Vooringenomenheid voorkomen* is als onderdeel van het Interne onderzoek van DUO <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2024/03/01/kabinetsreactie-onderzoek-naar-controleproces-uitwonendenbeurs" target="_blank">verstuurd</a> naar de Tweede Kamer.
 
 {{< accordion_item_close >}}
 

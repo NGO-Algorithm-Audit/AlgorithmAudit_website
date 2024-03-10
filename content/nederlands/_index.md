@@ -32,7 +32,7 @@ Activity_Feed:
         vaker studenten die dicht bij hun ouder(s) woonden. Het algoritme dat
         ter ondersteuning van de selectie werd gebruikt functioneerde naar
         verwachting.
-      link: /nl/events/press_room/
+      link: /nl/algoprudence/cases/aa202401_bias-prevented/
       image: /images/algoprudence/AA202401/Cover.png
       date: 01-03-2024
       type: technische audit
@@ -208,6 +208,7 @@ Building_ai_audit_capacity:
 title_gif:
   title: Jurisprudentie voor algoritmes
 ---
+
 
 
 

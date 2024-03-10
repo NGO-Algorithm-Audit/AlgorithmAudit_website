@@ -124,7 +124,7 @@ The technical audit report (AA:2024:01:TA) can be downloaded [here](https://dri
 
 ##### Description
 
-Report *Bias prevented* has been <a href="https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2024D07562\&did=2024D07562" target="_blank">sent</a> as part of the Internal research documents to  Dutch Parliament
+Report *Bias prevented* has been <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2024/03/01/kabinetsreactie-onderzoek-naar-controleproces-uitwonendenbeurs" target="_blank">sent</a> as part of the Internal research documents to  Dutch Parliament
 
 {{< accordion_item_close >}}
 
