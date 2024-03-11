@@ -70,7 +70,7 @@ reports_preview:
     - name: Risicoprofilering heronderzoek bijstandsuitkering
       image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
       link: >-
-        /nl/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/
+        /nl/algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
       content: >
         De commissie oordeelt dat algoritmische risicoprofilering onder strikte
         voorwaarden kan worden ingezet voor het selecteren van burgers met een
