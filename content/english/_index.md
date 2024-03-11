@@ -61,7 +61,7 @@ Advantages_of_algoprudence:
         [<span style="color:#005aa7">></span> ](/algoprudence)Harmonizes the
         resolution of ethical questions and the interpretation of open legal
         norms
-    - name: Question & critisize
+    - name: Question & criticize
       icon: fas fa-comment
       content: >
         [<span style="color:#005aa7">></span>](/algoprudence) Fostering
@@ -206,6 +206,7 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
 
 
 

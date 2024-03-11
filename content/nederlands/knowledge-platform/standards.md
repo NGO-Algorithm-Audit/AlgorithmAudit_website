@@ -43,7 +43,7 @@ Tijdens de laatste plenaire bijeenkomst van JTC21 in Dublin 12-14 februari prese
 
 {{< image id="standaarden" width_desktop="3" width_mobile="6" image1="/images/partners/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partners/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
 
-{{< pdf_frame articleUrl1="/pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" >}}
 
 {{< container_close >}}
 
