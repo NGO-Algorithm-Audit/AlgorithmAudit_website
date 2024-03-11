@@ -6,7 +6,8 @@ title: Submit a case
 subtitle: >
   Algorithm Audit conducts solicited and unsolicited audits. Fill in the below
   form to provide us with preliminary information required to review your
-  algorithm.
+  algorithm. Or submit a carefully documented normative judgement for inlcusion
+  in our case repository. 
 image: /images/svg-illustrations/case_repository.svg
 form:
   title: Submit a case

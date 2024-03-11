@@ -176,8 +176,8 @@ algoprudences:
         label: FP-FN balancing
       - value: owner_self
         label: Algorithm Audit
-      - value: desinformation
-        label: desinformation
+      - value: disinformation
+        label: disinformation
       - value: standard_risk_management
         label: risk management
       - value: standard_accuracy_specifications

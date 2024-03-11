@@ -3,7 +3,8 @@ title: Dien een case in
 subtitle: >
   Algorithm Audit verricht zelfstandig audits en werkt op verzoek. Vul
   onderstaand formulier in om informatie te delen over een algoritme dat u
-  geaudit wilt hebben.
+  geaudit wilt hebben. Of dien een zorgvuldig gedocumenteerd normatief oordeel
+  in dat u in onze case repository gepubliceerd wilt hebben. 
 image: /images/svg-illustrations/case_repository.svg
 background_color: '#ffffff'
 team:

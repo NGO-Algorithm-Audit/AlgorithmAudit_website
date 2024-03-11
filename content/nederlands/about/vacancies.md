@@ -1,7 +1,7 @@
 ---
-title: Vacancices
+title: Vacatures
 subtitle: |
-  Vacancices
+  Overzicht van openstaande vacatures bij Algorithm Audit
 image: /images/svg-illustrations/about.svg
 ---
 
