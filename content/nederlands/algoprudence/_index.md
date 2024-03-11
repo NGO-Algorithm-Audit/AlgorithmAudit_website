@@ -38,6 +38,8 @@ facet_groups:
         label: Machine learning
       - value: bias_detection_tool
         label: Bias detectie tool
+      - value: high_risk_AI
+        label: Hoog-risico AI-systeem
   - value: ethical_issue
     title: Ethische kwestie
     facets:
@@ -45,6 +47,25 @@ facet_groups:
         label: Proxydiscriminatie
       - value: fp_fn_balancing
         label: Balanceren FP-FNs
+  - value: standard
+    title: Geharmonizeerde normen
+    facets:
+      - value: risk_management
+        label: Risicomanagement
+      - value: governance_data_quality
+        label: Governance & datakwaliteit
+      - value: record_keeping
+        label: Administratievereisten
+      - value: transparency_provisions
+        label: Transparantiebepalingen
+      - value: human_oversight
+        label: Menselijke tussenkomst
+      - value: accuracy_specifications
+        label: Nauwkeurigheid specificaties
+      - value: robustness_specifications
+        label: Robuustheid specificaties
+      - value: quality_management_system
+        label: Kwaliteitmanagement
   - value: owner
     title: Algoritme-eigenaar
     facets:
@@ -80,6 +101,16 @@ algoprudences:
         label: proxydiscriminatie
       - value: owner_public
         label: publieke organisatie
+      - value: standard_risk_management
+        label: risicomanagement
+      - value: standard_governance_data_quality
+        label: governance & datakwaliteit
+      - value: standard_transparency_provisions
+        label: transparantiebepalingen
+      - value: standard_human_oversight
+        label: menselijke tussenkomst
+      - value: standard_quality_management_system
+        label: kwaliteitmanagement
   - title: Risicoprofilering heronderzoek bijstandsuitkering
     intro: >-
       De commissie oordeelt dat algoritmische risicoprofilering onder strikte
@@ -102,8 +133,24 @@ algoprudences:
         label: normatieve audit
       - value: type_of_algorithm_ml
         label: machine learning
+      - value: type_of_algorithm_high_risk_AI
+        label: hoog-risico AI-systeem
       - value: ethical_issue_proxy
         label: proxydiscriminatie
+      - value: standard_risk_management
+        label: risicomanagement
+      - value: standard_record_keeping
+        label: administratievereisten
+      - value: standard_transparency_provisions
+        label: transparantiebepalingen
+      - value: standard_human_oversight
+        label: menselijke tussenkomst
+      - value: standard_accuracy_specification
+        label: nauwkeurigheid specificaties
+      - value: standard_robustness_specifications
+        label: robuustheid specificaties
+      - value: standard_quality_management_system
+        label: kwaliteitmanagement
   - title: BERT-gebaseerd disinformatie detectie-algoritme
     intro: >-
       De adviescommissie oordeelt dat er een laag risico is van
@@ -119,16 +166,26 @@ algoprudences:
         label: 'AA:2023:01'
       - value: year_2023
         label: '2023'
-      - value: owner_self
-        label: Algorithm Audit
+      - value: type_of_audit_normative
+        label: normatieve audit
       - value: type_of_algorithm_bias_detection_tool
         label: bias detectie tool
-      - value: audit_normative
-        label: normatieve audit
       - value: type_of_algorithm_ml
         label: machine learning
+      - value: type_of_algorithm_high_risk_AI
+        label: hoog-risico AI-systeem
       - value: ethical_issue_fp_fn_balancing
         label: balanceren FP-FNs
+      - value: owner_self
+        label: Algorithm Audit
+      - value: disinformation
+        label: desinformatie
+      - value: standard_risk_management
+        label: risicomanagement
+      - value: standard_accuracy_specifications
+        label: nauwkeurigheid specificaties
+      - value: standard_quality_management_system
+        label: kwaliteitmanagement
   - title: Type simkaart als voorspeller voor betalingsfraude
     intro: >-
       De adviescommissie adviseert tegen gebruik van type simkaart als input
@@ -144,16 +201,22 @@ algoprudences:
         label: 'AA:2022:01'
       - value: year_2022
         label: '2022'
-      - value: owner_private
-        label: private organisatie
-      - value: audit_normative
-        label: normatieve audit
-      - value: e_commerce
-        label: e-commerce
+      - value: type_of_audit_normative
+        label: normative audit
       - value: type_of_algorithm_profiling
         label: profilering
       - value: ethical_issue_proxy
         label: proxydiscriminatie
+      - value: owner_private
+        label: private organisatie
+      - value: e_commerce
+        label: e-commerce
+      - value: standard_risk_management
+        label: risicomanagement
+      - value: standard_governance_data_quality
+        label: governance & datakwaliteit
+      - value: standard_transparency_provisions
+        label: transparantiebepalingen
 title_content: Algoprudentie overzicht
 ---
 
