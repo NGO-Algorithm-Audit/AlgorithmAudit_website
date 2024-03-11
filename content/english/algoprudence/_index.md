@@ -38,6 +38,8 @@ facet_groups:
         label: Machine learning (ML)
       - value: bias_detection_tool
         label: Bias detection tool
+      - value: high_risk_AI
+        label: High-risk AI system
   - value: ethical_issue
     title: Ethical issue
     facets:
@@ -45,6 +47,25 @@ facet_groups:
         label: Proxy discrimination
       - value: fp_fn_balancing
         label: FP-FN balancing
+  - value: standard
+    title: Harmonized standard
+    facets:
+      - value: risk_management
+        label: Risk management
+      - value: governance_data_quality
+        label: Governance & data quality
+      - value: record_keeping
+        label: Record keeping
+      - value: transparency_provisions
+        label: Transparency provisions
+      - value: human_oversight
+        label: Human oversight
+      - value: accuracy_specifications
+        label: Accuracy specifications
+      - value: robustness_specifications
+        label: Robustness specifications
+      - value: quality_management_system
+        label: Quality management system
   - value: owner
     title: Algorithm owned by
     facets:
@@ -80,6 +101,16 @@ algoprudences:
         label: proxy discrimination
       - value: owner_public
         label: public organisation
+      - value: standard_risk_management
+        label: risk management
+      - value: standard_governance_data_quality
+        label: governance & data quality
+      - value: standard_transparency_provisions
+        label: transparency provisions
+      - value: standard_human_oversight
+        label: human oversight
+      - value: standard_quality_management_system
+        label: quality management system
   - title: Risk Profiling for Social Welfare Reexamination
     intro: >-
       The commission judges that algorithmic risk profiling can be used under
@@ -100,10 +131,26 @@ algoprudences:
         label: profiling
       - value: type_of_algorithm_ml
         label: ML
+      - value: type_of_algorithm_high_risk_AI
+        label: high-risk AI
       - value: ethical_issue_proxy
         label: proxy discrimination
       - value: owner_public
         label: public organisation
+      - value: standard_risk_management
+        label: risk management
+      - value: standard_record_keeping
+        label: record keeping
+      - value: standard_transparency_provisions
+        label: transparency provisions
+      - value: standard_human_oversight
+        label: human oversight
+      - value: standard_accuracy_specification
+        label: accuracy specification
+      - value: standard_robustness_specifications
+        label: robustness specifications
+      - value: standard_quality_management_system
+        label: quality management system
   - title: BERT-based disinformation classifier
     intro: >-
       The audit commission believes there is a low risk of (higher-dimensional)
@@ -123,12 +170,20 @@ algoprudences:
         label: bias detection tool
       - value: type_of_algorithm_ml
         label: ML
+      - value: type_of_algorithm_high_risk_AI
+        label: high-risk AI
       - value: ethical_issue_fp_fn_balancing
         label: FP-FN balancing
       - value: owner_self
         label: Algorithm Audit
       - value: desinformation
         label: desinformation
+      - value: standard_risk_management
+        label: risk management
+      - value: standard_accuracy_specifications
+        label: accuracy specifications
+      - value: standard_quality_management_system
+        label: quality management system
   - title: Type of SIM card as a predictor variable to detect payment fraud
     intro: >-
       The audit commission advises against using type of SIM card as an input
@@ -154,5 +209,11 @@ algoprudences:
         label: private organisation
       - value: e-commerce
         label: e-commerce
+      - value: standard_risk_management
+        label: risk management
+      - value: standard_governance_data_quality
+        label: governance & data quality
+      - value: standard_transparency_provisions
+        label: transparency provisions
 ---
 
