@@ -56,9 +56,9 @@ Advice of commission is published together with problem statement on our website
 
 {{< container_close >}}
 
-{{< container_open id="internal-policy" title="Internal policy document – Convening a normative advice commission" icon="fas fa-file" >}}
+{{< container_open id="guidelines" title="Guidelines for convening a normative advice commission" icon="fas fa-file" >}}
 
-Over the years, we have developed our own deliberative audit methodology. Algorithm Audit's guidelines for convening a normative advice commission can be consulted in the below document. [Get in touch](/about/contact/) to share feedback about these guidelines. 
+Over the years, we have developed our own deliberative audit methodology. Algorithm Audit's guidelines for convening a normative advice commission can be consulted in the below document. [Get in touch](/about/contact/) to share feedback about these guidelines.
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1eHKVFu7YApSdbGmOX1aKLOuH7UIkm41a/preview" >}}
 
