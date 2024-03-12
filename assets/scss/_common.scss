@@ -103,6 +103,7 @@ h4, .h4 {
 .section {
   margin: 75px 0px;
   padding: 40px 0px;
+  background-color: #fff;
 
   &-title {
     margin-bottom: 30px;
@@ -184,15 +185,6 @@ h4, .h4 {
 
 .rounded-lg{
   border-radius: 10px !important;
-}
-
-.mobile-desktop-container-layout{
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.shadow{
-  box-shadow: 0 12px 24px -6px rgba(45,67,121,.10) !important;
 }
 
 // form control

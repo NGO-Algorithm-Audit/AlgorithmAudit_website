@@ -53,33 +53,31 @@
                             {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
                             $facet.value | printf "%s" }}
                             {{ end }}
-                            <div class="clickable-wrapper" data-href="{{$algoprudence.link | relURL}}">
-                                <div class="border-gradient2">
-                                    <div class="grid shadow mobile-desktop-container-layout rounded-lg algoprudence-article" data-facets="{{$facets_for_data_attribute}}">
-                                        <div class="row">
-                                            <div class="col-md-3 col-sm-12 pr-4">
-                                                <div class="row justify-content-center">
-                                                    <div class="col-8 col-md-12 mb-5">
-                                                        <img class="img-fluid" src="{{$algoprudence.image}}" />
-                                                    </div>
+                            <div class="clickable-wrapper my-5" data-href="{{$algoprudence.link | relURL}}">
+                                <div class="grid shadow mobile-desktop-container-layout rounded-lg algoprudence-article" data-facets="{{$facets_for_data_attribute}}">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12 pr-4">
+                                            <div class="row justify-content-center">
+                                                <div class="col-8 col-md-12 mb-5">
+                                                    <img class="img-fluid" src="{{$algoprudence.image}}" />
                                                 </div>
                                             </div>
-                                            <div class="col-md-9 col-sm-12">
-                                                <div class="row align-items-center">
-                                                    <h4 class="mb-4" style="color: #005aa7;">
-                                                        {{$algoprudence.title}}
-                                                    </h4>
-                                                    <p>{{$algoprudence.intro | markdownify}} <a
-                                                            href="{{$algoprudence.link | relURL}}">{{ i18n "read_more" }}</a> </p>
-                                                </div>
-                                                <div class="row">
-                                                    {{ range $facet := $algoprudence.facets }}
-                                                    {{ if $facet.hide }}
-                                                    {{ else }}
-                                                    <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">{{$facet.label}}</span>
-                                                    {{ end }}
-                                                    {{end}}
-                                                </div>
+                                        </div>
+                                        <div class="col-md-9 col-sm-12">
+                                            <div class="row align-items-center">
+                                                <h4 class="mb-4" style="color: #005aa7;">
+                                                    {{$algoprudence.title}}
+                                                </h4>
+                                                <p>{{$algoprudence.intro | markdownify}} <a
+                                                        href="{{$algoprudence.link | relURL}}">{{ i18n "read_more" }}</a> </p>
+                                            </div>
+                                            <div class="row">
+                                                {{ range $facet := $algoprudence.facets }}
+                                                {{ if $facet.hide }}
+                                                {{ else }}
+                                                <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">{{$facet.label}}</span>
+                                                {{ end }}
+                                                {{end}}
                                             </div>
                                         </div>
                                     </div>

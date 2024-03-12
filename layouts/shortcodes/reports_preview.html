@@ -3,71 +3,69 @@
 {{ with .Page.Params.Reports_preview}}
 <!-- Recent audits -->
 <div class="container-fluid mt-5 p-0">
-  <div class="border-gradient2">
-    <div class="shadow mobile-desktop-container-layout rounded-lg" id="{{ .ID }}">
-      <div class="row">
-        <div class="col-12">
+  <div class="shadow mobile-desktop-container-layout rounded-lg" id="{{ .ID }}">
+    <div class="row">
+      <div class="col-12">
 
-          {{ if .icon }}
-          <!-- Title and icon -->
-          <h3 class="">
-          <span class="{{ .icon }} icon mb-4 pl-5"></span>
-          {{ .title | markdownify }}
-          </h3>
+        {{ if .icon }}
+        <!-- Title and icon -->
+        <h3 class="">
+        <span class="{{ .icon }} icon mb-4 pl-5"></span>
+        {{ .title | markdownify }}
+        </h3>
 
-          {{ else }}
-          <!-- Title -->
-          <h3 class="pl-3">{{ .title | markdownify }}
-          </h3>
+        {{ else }}
+        <!-- Title -->
+        <h3 class="pl-3">{{ .title | markdownify }}
+        </h3>
+        {{ end }}
+
+        <!-- desktop version -->
+        <div class="row desktop mt-5">
+          {{ range .feature_item }}
+          <div class="col-md-1">
+            <img class="img-fluid" src="{{.image}}" style="height:100px; position: absolute;" />
+          </div>
+          <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
+            <h4 class="px-4" style="color: #005aa7; font-size:16px;">
+              {{ .name | markdownify }}
+            </h4>
+            <p class="px-4" style="font-size:14px;">
+              {{.content | markdownify}}
+            </p>
+          </div>
           {{ end }}
-
-          <!-- desktop version -->
-          <div class="row desktop mt-5">
-            {{ range .feature_item }}
-            <div class="col-md-1">
-              <img class="img-fluid" src="{{.image}}" style="height:100px; position: absolute;" />
-            </div>
-            <div class="col-md-5 clickable-wrapper" data-href="{{.link | relURL }}">
-              <h4 class="px-4" style="color: #005aa7; font-size:16px;">
-                {{ .name | markdownify }}
-              </h4>
-              <p class="px-4" style="font-size:14px;">
-                {{.content | markdownify}}
-              </p>
-            </div>
-            {{ end }}
-          </div>
-          <!-- /desktop version -->
-
-          <!-- mobile version -->
-          <div class="row mobile">
-            {{ range .feature_item }}
-            <div class="col-12">
-              <img class="img-fluid about-img-mobile" src="{{.image}}"/>
-            </div>
-            <div class="col-12 clickable-wrapper mt-5 mb-5" data-href="{{.link | relURL }}">
-              <h4 class="" style="color: #005aa7;">
-                {{ .name | markdownify }}
-              </h4>
-              <p>
-                {{.content | markdownify}}
-              </p>
-            </div>
-            {{ end }}
-          </div>
-          <!-- /mobile version -->
-
-          <!-- button -->
-          {{ if .button_text }}
-          <div class="row mt-4 pb-3 justify-content-center d-flex">
-            <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
-          </div>
-
-          {{ else }}
-          {{ end }}
-          <!-- /button -->
-
         </div>
+        <!-- /desktop version -->
+
+        <!-- mobile version -->
+        <div class="row mobile">
+          {{ range .feature_item }}
+          <div class="col-12">
+            <img class="img-fluid about-img-mobile" src="{{.image}}"/>
+          </div>
+          <div class="col-12 clickable-wrapper mt-5 mb-5" data-href="{{.link | relURL }}">
+            <h4 class="" style="color: #005aa7;">
+              {{ .name | markdownify }}
+            </h4>
+            <p>
+              {{.content | markdownify}}
+            </p>
+          </div>
+          {{ end }}
+        </div>
+        <!-- /mobile version -->
+
+        <!-- button -->
+        {{ if .button_text }}
+        <div class="row mt-4 pb-3 justify-content-center d-flex">
+          <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
+        </div>
+
+        {{ else }}
+        {{ end }}
+        <!-- /button -->
+
       </div>
     </div>
   </div>

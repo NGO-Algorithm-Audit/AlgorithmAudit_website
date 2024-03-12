@@ -5,49 +5,47 @@
 
 <!-- desktop version -->
 <div class="container-fluid mt-5 desktop p-0">
-  <div class="border-gradient2">
-    <div class="shadow mobile-desktop-container-layout rounded-lg" id="{{ .ID }}">
-      
-      {{ if .icon }}
-      <!-- Title and icon -->
-      <h3 class="">
-      <span class="{{ .icon }} icon mb-4 pl-5"></span>
-      {{ .title | markdownify }}
-      </h3>
+  <div class="shadow mobile-desktop-container-layout rounded-lg" id="{{ .ID }}">
+    
+    {{ if .icon }}
+    <!-- Title and icon -->
+    <h3 class="">
+    <span class="{{ .icon }} icon mb-4 pl-5"></span>
+    {{ .title | markdownify }}
+    </h3>
 
-      {{ else }}
-      <!-- Title -->
-      <h3 class="pl-3">{{ .title | markdownify }}
-      </h3>
+    {{ else }}
+    <!-- Title -->
+    <h3 class="pl-3">{{ .title | markdownify }}
+    </h3>
 
-      {{ end }}
+    {{ end }}
 
-      <!-- team members -->
-      <div class="container-team mt-4">
-        <p>{{ .content | markdownify }}</p>
-        <div class="row">
-          {{ range .team_members }}    
-          <div class="col-md-6 team-member p-3">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="{{ .image | relURL }}" width="100%;" style="border-radius: 20px;">
-              </div>
-              <div class="col-md-9 member-details">
-                <h4 style="font-weight:100;">{{ .name | markdownify }}</h4>
-                <p>{{ .bio | markdownify }}</p>
-              </div>
+    <!-- team members -->
+    <div class="container-team mt-4">
+      <p>{{ .content | markdownify }}</p>
+      <div class="row">
+        {{ range .team_members }}    
+        <div class="col-md-6 team-member p-3">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="{{ .image | relURL }}" width="100%;" style="border-radius: 20px;">
+            </div>
+            <div class="col-md-9 member-details">
+              <h4 style="font-weight:100;">{{ .name | markdownify }}</h4>
+              <p>{{ .bio | markdownify }}</p>
             </div>
           </div>
-          {{ end }}
         </div>
+        {{ end }}
       </div>
-
-      <!-- button -->
-      <div class="row mt-4 pb-3 justify-content-center d-flex">
-      <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
-      </div>
-
     </div>
+
+    <!-- button -->
+    <div class="row mt-4 pb-3 justify-content-center d-flex">
+    <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
+    </div>
+
   </div>
 </div>
 <!-- /desktop version -->
