@@ -19,33 +19,34 @@
         <form action="{{ .backend_link | safeURL }}" method="POST" enctype="multipart/form-data">
           {{ range .questions }}
           <div class="my-5">
-
-            <!-- label in case not file type -->
-            <label style="font-weight:500;" class="custom-{{.id}}" for="{{.id}}"><p class="mb-0" style="color: #005AA7;">
-              {{if not (eq .type "file") }}
-                {{ .label | markdownify }}
-              {{else}}
-              <div class="col-12 text-center">
-                <i class="fas fa-upload mt-4 mb-2" style="font-size:20px;"></i>
-                <p style="color:#005AA7;">Choose file</p>
-              </div>
-              {{end}}
-              <!-- add * if required -->
-              {{if .required}}*{{end}}</p>
-            </label>
-
+            
             <!-- text area -->
             {{ if eq .type "textarea" }}
+            <label style="font-weight:500;" for="{{.id}}"><p class="mb-0" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p></label>
             <textarea type="text" class="form-control" id="{{.id}}" name="{{.label}}" {{if .required}} required {{end}} rows="4" cols="50"></textarea>
-
-            <!-- checkbox -->
+            
+            <!-- check boxes -->
             {{ else if eq .type "checkbox"}}
             <input type="{{.type}}" class="form-control" id="{{.id}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
-            
-            <!-- other type of input area -->
+
+            <!-- file upload -->
+            {{ else if eq .type "file"}}
+            <!-- title -->
+            <p class="mb-2" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p>
+            <!-- upload zone -->
+            <label style="font-weight:500;" class="file-upload" for="{{.id}}">
+              <div style="display:grid; place-items:center;">
+                  <i class="fas fa-upload my-2" style="font-size:24px;"></i>
+                  <p style="color:#005AA7;">Choose file</p>
+              </div>
+            </label>
+
+            <!-- text boxes -->
             {{ else }}
+            <label style="font-weight:500;" for="{{.id}}"><p class="mb-0" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p></label>
             <input type="{{.type}}" class="form-control" id="{{.id}}" accept="{{.file_type}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
             {{ end }}
+
           </div>
           {{ end }}
           <p style="color:#005AA7; font-size:14px;">* {{ i18n "required"}}</p>

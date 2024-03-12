@@ -54,13 +54,15 @@ body {
 input[type="file"] {
   display: none;
 }
-.custom-file-upload {
+.file-upload {
   border: 1px dashed #005AA7;
   border-radius: 10px; 
-  height: 100px;
-  cursor: pointer;
-  width: 100%;
   background-color: rgb(222, 236, 247);
+  cursor: pointer;
+  display: flex;
+  height: 125px;
+  justify-content: center;
+  align-items: center;
 }
 
 // view ≤992px

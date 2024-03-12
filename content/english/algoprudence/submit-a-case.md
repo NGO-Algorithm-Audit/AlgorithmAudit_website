@@ -96,10 +96,6 @@ form1:
   backend_link: 'https://formspree.io/f/xzbnrlan'
   id: submit-a-case
   questions:
-    - label: File
-      id: file-upload
-      file_type: .pdf
-      type: file
     - label: Name algorithm
       id: name
       required: true
@@ -132,22 +128,27 @@ form1:
       required: false
       type: email
       placeholder: Mail address
+    - label: Resume
+      id: file-upload
+      required: true
+      file_type: .pdf
+      type: file
 form2:
   title: Case information
   button_text: 'Submit '
   backend_link: 'https://formspree.io/f/xleqlakw'
   id: case-for-repository
   questions:
-    - label: File
-      id: file
-      file_type: '.docx, .pdf'
-      type: file
-      placeholder: docx and pdf only
     - label: Contact details
       id: contact-details
       required: true
       type: email
       placeholder: Mail address
+    - label: File
+      id: file-upload
+      file_type: .pdf
+      type: file
+      placeholder: ''
 ---
 
 {{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for review" tab2_id="case-repository" tab2_title="Submit a case to repository" >}}
