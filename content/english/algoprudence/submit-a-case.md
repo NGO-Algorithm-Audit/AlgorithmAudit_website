@@ -7,7 +7,7 @@ subtitle: >
   Algorithm Audit conducts solicited and unsolicited audits. Fill in the below
   form to provide us with preliminary information required to review your
   algorithm. Or submit a carefully documented normative judgement for inlcusion
-  in our case repository. 
+  in our case repository.
 image: /images/svg-illustrations/case_repository.svg
 form:
   title: Submit a case
@@ -91,7 +91,19 @@ text_field1:
   content: ''
 ---
 
+{{< tab_header width="6" tab1_id="review" default_tab="review" tab1_title="Submit a case for review" tab2_id="repository" tab2_title="Submit a case to repository" >}}
+
+{{< tab_content_open icon="fas fa-greater-than-equal" title="Test" id="review" >}}
+
 {{< form >}}
+
+{{< tab_content_close >}}
+
+{{< tab_content_open icon="fas fa-greater-than-equal" title="Test2" id="repository" >}}
+
+{{< form >}}
+
+{{< tab_content_close >}}
 
 {{< container_open icon="fas fa-forward" title="What are the next steps after case submission?" id="next-steps" >}}
 

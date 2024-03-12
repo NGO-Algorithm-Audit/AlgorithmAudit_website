@@ -180,7 +180,7 @@
         {{ if .featured_activities }}
         <div class="row mt-5">
           <!-- title featured section -->
-          <h3 class="section-title col-md-4" style="color: #005aa7;">{{ i18n "featured" }}</h3>
+          <h3 class="section-title" style="color: #005aa7;">{{ i18n "featured" }}</h3>
           <!-- /title featured section -->
         </div>
 
@@ -231,7 +231,7 @@
         {{ if .activities }}
         <div class="row mt-5">
           <!-- title recent activities section -->
-          <h3 class="section-title col-md-4" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+          <h3 class="section-title" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
           <!-- /title recent activities section -->
         </div>
         {{ range .activities }}
@@ -289,7 +289,7 @@
       <!-- Featured activities -->
       {{ if .featured_activities }}
       <div class="row mt-5">
-        <h3 class="section-title col-md-4" style="color:#005aa7;">{{ i18n "featured" }}</h3>
+        <h3 class="section-title" style="color:#005aa7;">{{ i18n "featured" }}</h3>
       </div>
       {{ range .featured_activities }}
       <div class="clickable-wrapper" data-href="{{.link | relURL }}">
@@ -332,7 +332,7 @@
       <div class="row mt-5">
 
         <!-- title -->
-        <h3 class="section-title col-12" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+        <h3 class="section-title" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
         <!-- /title -->
 
       </div>

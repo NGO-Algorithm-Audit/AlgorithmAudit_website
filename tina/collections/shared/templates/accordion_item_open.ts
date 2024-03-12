@@ -29,6 +29,13 @@ let template : RichTextTemplate = {
         },
         {
             type: "string",
+            name: "background_color",
+            label: "Background color",
+            description: "Background color of foldable pane, incl. #, default #eef2f6",
+            required: true,
+        },
+        {
+            type: "string",
             name: "date",
             label: "Date",
             description: "dd-MM-yyyy (i.e. 13-06-2024)"
