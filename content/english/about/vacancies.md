@@ -30,7 +30,7 @@ form:
     - label: File
       id: file
       required: true
-      File_types: '.docx, .pdf'
+      file_type: '.docx, .pdf'
       type: file
 ---
 

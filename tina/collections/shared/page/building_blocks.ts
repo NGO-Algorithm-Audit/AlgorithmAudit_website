@@ -193,7 +193,7 @@ let building_blocks: TinaField[] = [
                         },
                         {
                             type: "string",
-                            name: "File_types",
+                            name: "file_type",
                             label: "File type (e.g, .docx, .pdf)",
                         },
                         {

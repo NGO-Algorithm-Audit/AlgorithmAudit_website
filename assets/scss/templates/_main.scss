@@ -9,6 +9,10 @@ body {
   top: -75px;
 }
 
+.a {
+  text-decoration: none;
+}
+
 // view >992px
 @media (min-width: 992px) {
   .margin-banner-image {
@@ -341,7 +345,6 @@ a.post-title {
 
   a {
     color: #005aa7;
-    border-bottom: 1px dotted $border-color;
 
     &:hover {
       color: #005aa7;
