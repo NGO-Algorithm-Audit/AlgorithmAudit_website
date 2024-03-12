@@ -115,7 +115,7 @@ Try the tool below ⬇️
 
 {{< web_app >}}
 
-{{< promo_bar content="Do you like Algorithm Audit? ⭐️ us on" id="promo" >}}
+{{< promo_bar content="Do you appreciate the work of Algorithm Audit? ⭐️ us on" id="promo" >}}
 
 {{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
 
