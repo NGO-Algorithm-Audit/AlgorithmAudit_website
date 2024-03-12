@@ -128,30 +128,37 @@ form1:
       required: false
       type: email
       placeholder: Mail address
-    - label: Resume
-      id: file-upload
-      required: true
-      file_type: .pdf
-      type: file
 form2:
   title: Case information
   button_text: 'Submit '
   backend_link: 'https://formspree.io/f/xleqlakw'
   id: case-for-repository
   questions:
+    - label: Name algorithm
+      id: name
+      required: true
+      type: text
+    - label: >-
+        Description of normative decision taken – Define the specific task of
+        the algorithm, its socio-technical context, statistical methodology, the
+        relevant legal framework and what decision is taken to deal with the
+        identified ethical issue
+      id: description
+      required: true
+      type: textarea
     - label: Contact details
       id: contact-details
       required: true
       type: email
       placeholder: Mail address
-    - label: File
+    - label: Case files
       id: file-upload
       file_type: .pdf
       type: file
       placeholder: ''
 ---
 
-{{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for review" tab2_id="case-repository" tab2_title="Submit a case to repository" >}}
+{{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for normative review" tab2_id="case-repository" tab2_title="Submit a case to algoprudence repository" >}}
 
 {{< tab_content_open icon="fas fa-upload" title="Submit a case for review by a normative advice commission" id="case-for-review" >}}
 

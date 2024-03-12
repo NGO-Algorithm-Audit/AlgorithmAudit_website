@@ -1,9 +1,8 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ with .Page.Params.form2}}
 
-<!-- desktop version -->
-<div class="container-fluid desktop p-0" id={{ .id }}>
-  <div class="row shadow rounded-lg bg-white rounded-blue-border p-5">
+<div class="container-fluid p-0" id={{ .id }}>
+  <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">
       <div class="col-lg-12 mb-4">
 
         <!-- Title and icon -->
@@ -18,15 +17,35 @@
         <!-- form -->
         <form action="{{ .backend_link | safeURL }}" method="POST" enctype="multipart/form-data">
           {{ range .questions }}
-          <div class="my-5">
-            <label style="font-weight:500;" for="{{.id}}"><p class="mb-0" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p></label>
+          <div class="my-4">
+            
+            <!-- text area -->
             {{ if eq .type "textarea" }}
+            <label style="font-weight:500;" for="{{.id}}"><p class="mb-0" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p></label>
             <textarea type="text" class="form-control" id="{{.id}}" name="{{.label}}" {{if .required}} required {{end}} rows="4" cols="50"></textarea>
+            
+            <!-- check boxes -->
             {{ else if eq .type "checkbox"}}
             <input type="{{.type}}" class="form-control" id="{{.id}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
+
+            <!-- file upload -->
+            {{ else if eq .type "file"}}
+            <!-- title -->
+            <p class="mb-2" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p>
+            <!-- upload zone -->
+            <label style="font-weight:500;" class="file-upload" for="{{.id}}">
+              <div style="display:grid; place-items:center;">
+                  <i class="fas fa-upload my-2" style="font-size:24px;"></i>
+                  <p style="color:#005AA7;">Choose file</p>
+              </div>
+            </label>
+
+            <!-- text boxes -->
             {{ else }}
+            <label style="font-weight:500;" for="{{.id}}"><p class="mb-0" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p></label>
             <input type="{{.type}}" class="form-control" id="{{.id}}" accept="{{.file_type}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
             {{ end }}
+
           </div>
           {{ end }}
           <p style="color:#005AA7; font-size:14px;">* {{ i18n "required"}}</p>
@@ -38,41 +57,5 @@
       </div>
   </div>
 </div>
-<!-- /desktop version -->
-
-<!-- mobile version -->
-<div class="container-fluid mb-5 mobile p-0">
-  <div class="p-0  rounded-blue-border bg-lightblue">
-    <div class="col-lg-12 mb-4">
-
-        <!-- Title and icon -->
-        <div>
-          <h3 class="mt-4" style="color:#005AA7;">
-              <span class="fas fa-align-justify pl-2 pr-3" style="color:005AA7 !important;"></span>
-              {{ .title | markdownify }}
-          </h3>
-        </div>
-      
-      <!-- form -->
-      <form action="{{ .backend_link | safeURL }}" method="POST">
-        {{ range .questions }}
-        <div class="my-5">
-          <label style="font-weight:500;" for="{{.id}}">{{ .label | markdownify }}</label>
-          {{ if eq .type "textarea" }}
-          <textarea type="text" class="form-control my-2" id="{{.id}}" name="{{.label}}" rows="4" cols="50"></textarea>
-          {{ else }}
-          <input type="{{.type}}" class="form-control my-2" id="{{.id}}" name="{{.label}}" placeholder="{{.placeholder}}" />
-          {{ end }}
-        </div>
-        {{ end }}
-        <div class="wrapper" style="text-align:center;">
-          <button type="submit" value="send" class="btn btn-primary">{{ .button_text | markdownify }}</button>
-        </div>
-      </form>
-
-    </div>
-  </div>
-</div>
-<!-- /mobile version -->
 
 {{ end }}
