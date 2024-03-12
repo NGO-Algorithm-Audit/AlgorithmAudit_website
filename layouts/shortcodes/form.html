@@ -16,7 +16,7 @@
         </div>
         
         <!-- form -->
-        <form action="{{ .backend_link | safeURL }}" method="POST">
+        <form action="{{ .backend_link | safeURL }}" method="POST" enctype="multipart/form-data">
           {{ range .questions }}
           <div class="my-5">
             <label style="font-weight:500;" for="{{.id}}"><p class="mb-0" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p></label>
@@ -25,7 +25,7 @@
             {{ else if eq .type "checkbox"}}
             <input type="{{.type}}" class="form-control" id="{{.id}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
             {{ else }}
-            <input type="{{.type}}" class="form-control" id="{{.id}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
+            <input type="{{.type}}" class="form-control" id="{{.id}}" accept="{{.file_type}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
             {{ end }}
           </div>
           {{ end }}

@@ -193,6 +193,11 @@ let building_blocks: TinaField[] = [
                         },
                         {
                             type: "string",
+                            name: "File_types",
+                            label: "File type (e.g, .docx, .pdf)",
+                        },
+                        {
+                            type: "string",
                             name: "type",
                             label: "Type",
                             required: true,
@@ -209,6 +214,10 @@ let building_blocks: TinaField[] = [
                                 {
                                     value: "textarea",
                                     label: "Text area"
+                                },
+                                {
+                                    value: "file",
+                                    label: "File"
                                 },
                                 {
                                     value: "email",

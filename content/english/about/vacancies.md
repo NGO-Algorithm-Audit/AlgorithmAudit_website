@@ -27,6 +27,11 @@ form:
       id: wg4
       value: WG4
       type: checkbox
+    - label: File
+      id: file
+      required: true
+      File_types: '.docx, .pdf'
+      type: file
 ---
 
 {{< accordions_area_open >}}
