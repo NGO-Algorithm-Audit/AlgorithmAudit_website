@@ -15,7 +15,8 @@ import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
 import container_open from "../templates/container_open";
 import container_close from "../templates/container_close";
-import form from "../templates/form";
+import form1 from "../templates/form1";
+import form2 from "../templates/form2";
 import pdf_frame from "../templates/pdf_frame";
 import promo_bar from "../templates/promo_bar";
 import reports_preview from "../templates/reports_preview";
@@ -47,7 +48,8 @@ let building_blocks: TinaField[] = [
             button,
             container_open,
             container_close,
-            form,
+            form1,
+            form2,
             template_image,
             pdf_frame,
             promo_bar,
@@ -124,8 +126,122 @@ let building_blocks: TinaField[] = [
     },
     {
         type: 'object',
-        name: 'form',
-        label: 'Form',
+        name: 'form1',
+        label: 'Form #1',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                name: 'content',
+                label: 'Content',
+                type: 'string',
+                description: 'grey text under title',
+                required: false,
+            },
+            {
+                name: 'button_text',
+                label: 'Button text',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                name: 'backend_link',
+                label: 'Back end link',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                required: false,
+            },
+            {
+                type: "object",
+                name: "questions",
+                label: "Questions",
+                list: true,
+                fields:
+                    [
+                        {
+                            type: "string",
+                            name: "label",
+                            label: "Label",
+                            required: true,
+                        },
+                        {
+                            type: "string",
+                            name: "id",
+                            label: "Id",
+                            required: true,
+                            description: "Unique identifier (as can be seen when recieving the submitted form)"
+                        },
+                        {
+                            type: "string",
+                            name: "value",
+                            label: "Value (only for checkboxes)",
+                            required: false,
+                        },
+                        {
+                            type: "boolean",
+                            name: "required",
+                            label: "required",
+                        },
+                        {
+                            type: "string",
+                            name: "file_type",
+                            label: "File type (e.g, .docx, .pdf)",
+                        },
+                        {
+                            type: "string",
+                            name: "type",
+                            label: "Type",
+                            required: true,
+                            options: 
+                            [
+                                {
+                                    value: "text",
+                                    label: "Text box"
+                                },
+                                {
+                                    value: "checkbox",
+                                    label: "Check box"
+                                },
+                                {
+                                    value: "textarea",
+                                    label: "Text area"
+                                },
+                                {
+                                    value: "file",
+                                    label: "File"
+                                },
+                                {
+                                    value: "email",
+                                    label: "Email"
+                                }
+                            ]
+                        },
+                        {
+                            type: "string",
+                            name: "placeholder",
+                            label: "Placeholder"
+                        }
+                    ]
+            }
+        ]
+    },
+    {
+        type: 'object',
+        name: 'form2',
+        label: 'Form #2',
         fields: [
             {
                 name: 'title',

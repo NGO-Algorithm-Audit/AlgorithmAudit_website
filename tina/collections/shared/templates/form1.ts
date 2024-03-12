@@ -1,7 +1,7 @@
 import { RichTextTemplate } from "@tinacms/schema-tools/dist/types/index"
 let pdf_frame : RichTextTemplate = {
-    name: 'form',
-    label: 'Form',
+    name: 'form1',
+    label: 'Form #1',
     match: {
         start: '{{<',
         end: '>}}'

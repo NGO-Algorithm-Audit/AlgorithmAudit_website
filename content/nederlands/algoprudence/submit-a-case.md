@@ -85,7 +85,7 @@ reports_preview:
         Z-toetsen en analyse van organisatorische waarborgen
 ---
 
-{{< form >}}
+{{< form1 >}}
 
 {{< container_open icon="fas fa-forward" title="Wat gebeurt er nu ik een case heb ingestuurd?" id="next-steps" >}}
 

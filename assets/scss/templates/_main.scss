@@ -51,6 +51,18 @@ body {
   }
 }
 
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  border: 1px dashed #005AA7;
+  border-radius: 10px; 
+  height: 100px;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgb(222, 236, 247);
+}
+
 // view ≤992px
 @media (max-width: 992px) {
   .margin-banner-image {

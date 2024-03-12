@@ -59,7 +59,7 @@ actions:
     facets:
       - value: news
         label: nieuws
-form:
+form1:
   title: Reageer op dit rapport
   button_text: Verstuur
   backend_link: 'https://formspree.io/f/xyyrjyzr'
@@ -67,6 +67,7 @@ form:
   questions:
     - label: Naam
       id: name
+      required: true
       type: text
     - label: Reactie
       id: reaction
@@ -133,4 +134,4 @@ Rapport *Vooringenomenheid voorkomen* is als onderdeel van het Interne onderzoek
 
 {{< tab_content_close >}}
 
-{{< form >}}
+{{< form1 >}}

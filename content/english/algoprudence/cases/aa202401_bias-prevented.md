@@ -60,7 +60,7 @@ actions:
     facets:
       - value: news
         label: nieuws
-form:
+form1:
   title: React to this technical audit report
   content: >-
     Your reaction will be sent to the auditing team. The team will review your
@@ -71,16 +71,19 @@ form:
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
   questions:
-    - label: Naam
+    - label: Name
       id: name
+      required: true
       type: text
-    - label: Reactie
+    - label: Reaction
       id: reaction
+      required: true
       type: textarea
-    - label: Contactgegevens
+    - label: Contact details
       id: contact-details
+      required: true
       type: email
-      placeholder: Emailadres
+      placeholder: Mail address
 ---
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Description of technical audit" tab2_id="actions" tab2_title="Actions following technical audit" tab3_id="" tab3_title="" default_tab="description" >}}
@@ -140,4 +143,4 @@ Report *Bias prevented* has been <a href="https://www.rijksoverheid.nl/documente
 
 {{< tab_content_close >}}
 
-{{< form >}}
+{{< form1 >}}

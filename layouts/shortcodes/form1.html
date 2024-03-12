@@ -1,5 +1,5 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-{{ with .Page.Params.form}}
+{{ with .Page.Params.form1}}
 
 <!-- desktop version -->
 <div class="container-fluid desktop p-0" id={{ .id }}>
@@ -19,11 +19,30 @@
         <form action="{{ .backend_link | safeURL }}" method="POST" enctype="multipart/form-data">
           {{ range .questions }}
           <div class="my-5">
-            <label style="font-weight:500;" for="{{.id}}"><p class="mb-0" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p></label>
+
+            <!-- label in case not file type -->
+            <label style="font-weight:500;" class="custom-{{.id}}" for="{{.id}}"><p class="mb-0" style="color: #005AA7;">
+              {{if not (eq .type "file") }}
+                {{ .label | markdownify }}
+              {{else}}
+              <div class="col-12 text-center">
+                <i class="fas fa-upload mt-4 mb-2" style="font-size:20px;"></i>
+                <p style="color:#005AA7;">Choose file</p>
+              </div>
+              {{end}}
+              <!-- add * if required -->
+              {{if .required}}*{{end}}</p>
+            </label>
+
+            <!-- text area -->
             {{ if eq .type "textarea" }}
             <textarea type="text" class="form-control" id="{{.id}}" name="{{.label}}" {{if .required}} required {{end}} rows="4" cols="50"></textarea>
+
+            <!-- checkbox -->
             {{ else if eq .type "checkbox"}}
             <input type="{{.type}}" class="form-control" id="{{.id}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
+            
+            <!-- other type of input area -->
             {{ else }}
             <input type="{{.type}}" class="form-control" id="{{.id}}" accept="{{.file_type}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
             {{ end }}

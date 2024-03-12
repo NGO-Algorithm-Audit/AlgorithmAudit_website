@@ -125,7 +125,7 @@ discriminatory bias and fostering equitable algorithms and methods for
 data-analysis. In all our work special attention is paid to the inclusion of
 various ethnic and gender backgrounds.
 
-{{< form >}}
+{{< form1 >}}
 
 {{< accordion_item_close >}}
 

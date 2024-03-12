@@ -89,25 +89,88 @@ text_field1:
   title: What are the next steps after case submission?
   icon: fas fa-forward
   content: ''
+form1:
+  title: Case information
+  content: ''
+  button_text: Submit
+  backend_link: 'https://formspree.io/f/xzbnrlan'
+  id: submit-a-case
+  questions:
+    - label: File
+      id: file-upload
+      file_type: .pdf
+      type: file
+    - label: Name algorithm
+      id: name
+      required: true
+      type: text
+    - label: >-
+        Short description – Define the specific task of the algorithm and its
+        the context in which it operates (max. 200 words)
+      id: description
+      required: true
+      type: textarea
+    - label: >-
+        Technical dimension – Description of data collection, used statistical
+        methodologies and used evaluation criteria
+      id: technical-dimension
+      type: textarea
+    - label: >-
+        Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU
+        non-discrimination law
+      id: legal-framework
+      required: false
+      type: textarea
+    - label: >-
+        Ethical issues – Description of the identified ethical issue given it’s
+        technical and legal framework
+      id: ethical-issue
+      required: true
+      type: textarea
+    - label: Contact details
+      id: contact-details
+      required: false
+      type: email
+      placeholder: Mail address
+form2:
+  title: Case information
+  button_text: 'Submit '
+  backend_link: 'https://formspree.io/f/xleqlakw'
+  id: case-for-repository
+  questions:
+    - label: File
+      id: file
+      file_type: '.docx, .pdf'
+      type: file
+      placeholder: docx and pdf only
+    - label: Contact details
+      id: contact-details
+      required: true
+      type: email
+      placeholder: Mail address
 ---
 
-{{< tab_header width="6" tab1_id="review" default_tab="review" tab1_title="Submit a case for review" tab2_id="repository" tab2_title="Submit a case to repository" >}}
+{{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for review" tab2_id="case-repository" tab2_title="Submit a case to repository" >}}
 
 {{< tab_content_open icon="fas fa-upload" title="Submit a case for review by a normative advice commission" id="case-for-review" >}}
 
-{{< form >}}
+Cases can be submitted anonymously. You can read more about the next steps after case submission [below](#next-steps).
+
+{{< form1 >}}
 
 {{< tab_content_close >}}
 
-{{< tab_content_open icon="fas fa-greater-than-equal" title="Test2" id="repository" >}}
+{{< tab_content_open icon="fas fa-greater-than-equal" title="Submit a case to algoprudence repository" id="case-repository" >}}
 
-{{< form >}}
+{{< form2 >}}
 
 {{< tab_content_close >}}
 
 {{< container_open icon="fas fa-forward" title="What are the next steps after case submission?" id="next-steps" >}}
 
 Your submission is reviewed by Team Algoprudence. The team assesses whether de case aligns with the mission of Algorithm Audit and the availability of resources for further investigation. Notification regarding any follow-up steps can be expected within two weeks.
+
+{{< button button_text="Our audit methodology" button_link="/algoprudence/how-we-work/" >}}
 
 {{< container_close >}}
 
