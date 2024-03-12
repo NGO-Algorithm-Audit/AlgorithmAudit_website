@@ -1,0 +1,16 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div id={{.Get "id" }} class="container-fluid mt-5 p-0">
+    <div class="shadow promobar-mobile-desktop-layout bg-lightblue py-1">
+        <div class="row text-center align-items-center" style="height:50px;">
+            <div class="col-12 flex justify-center items-center px-5">
+                <!-- Content -->
+                <span class="mr-3" style="font-size:16px; color:#005aa7;">
+                    {{ .Get "content" }} <a href="https://github.com/NGO-Algorithm-Audit/Bias-detection-tool" style="text-decoration: underline;" target="_blank">GitHub</a>
+                </span>
+                <span>
+                    <iframe src="https://ghbtns.com/github-btn.html?user=NGO-Algorithm-Audit&repo=Bias-detection-tool&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

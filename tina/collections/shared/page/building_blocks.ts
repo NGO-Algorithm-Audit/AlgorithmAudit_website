@@ -6,7 +6,6 @@ import title from "./title";
 import subtitle from "./subtitle";
 import image from "./image";
 import { TinaField } from "tinacms";
-import pdf_frame from "../templates/pdf_frame";
 import about_aa from "../templates/about_aa";
 import accordions_area_open from "../templates/accordions_area_open";
 import accordions_area_close from "../templates/accordions_area_close";
@@ -16,8 +15,10 @@ import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
 import container_open from "../templates/container_open";
 import container_close from "../templates/container_close";
-import reports_preview from "../templates/reports_preview";
 import form from "../templates/form";
+import pdf_frame from "../templates/pdf_frame";
+import promo_bar from "../templates/promo_bar";
+import reports_preview from "../templates/reports_preview";
 import tab_content_open from "../templates/tab_content_open"
 import tab_content_close from "../templates/tab_content_close"
 import tab_header from "../templates/tab_header"
@@ -47,12 +48,13 @@ let building_blocks: TinaField[] = [
             container_open,
             container_close,
             form,
-            pdf_frame,
             template_image,
+            pdf_frame,
+            promo_bar,
+            reports_preview,
             tab_content_open,
             tab_content_close,
             tab_header,
-            reports_preview,
             team,
             team1,
             team2,

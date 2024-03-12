@@ -93,7 +93,7 @@ text_field1:
 
 {{< tab_header width="6" tab1_id="review" default_tab="review" tab1_title="Submit a case for review" tab2_id="repository" tab2_title="Submit a case to repository" >}}
 
-{{< tab_content_open icon="fas fa-greater-than-equal" title="Test" id="review" >}}
+{{< tab_content_open icon="fas fa-upload" title="Submit a case for review by a normative advice commission" id="case-for-review" >}}
 
 {{< form >}}
 
