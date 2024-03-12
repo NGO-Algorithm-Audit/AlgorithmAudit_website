@@ -76,6 +76,9 @@ other = "Privacy and cookies policy"
 [stiching_info]
 other = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212"
 
+[required]
+other = "required"
+
 [license]
 other = "This website is built under CC-BY 4.0 license. This means you can share and adapt content freely, as long as you credit Algorithm Audit and named co-creators"
 

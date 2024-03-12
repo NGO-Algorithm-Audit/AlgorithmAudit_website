@@ -41,6 +41,9 @@ other = "Acties volgend op algoprudentie"
 [algoprudence_discussion_tab]
 other = "Discussie volgend op algoprudentie"
 
+[required]
+other = "verplicht"
+
 [step]
 other = "Stap"
 

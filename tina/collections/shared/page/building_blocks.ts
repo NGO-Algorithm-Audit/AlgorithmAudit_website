@@ -182,6 +182,17 @@ let building_blocks: TinaField[] = [
                         },
                         {
                             type: "string",
+                            name: "value",
+                            label: "Value (only for checkboxes)",
+                            required: false,
+                        },
+                        {
+                            type: "boolean",
+                            name: "required",
+                            label: "required",
+                        },
+                        {
+                            type: "string",
                             name: "type",
                             label: "Type",
                             required: true,
@@ -190,6 +201,10 @@ let building_blocks: TinaField[] = [
                                 {
                                     value: "text",
                                     label: "Text box"
+                                },
+                                {
+                                    value: "checkbox",
+                                    label: "Check box"
                                 },
                                 {
                                     value: "textarea",
