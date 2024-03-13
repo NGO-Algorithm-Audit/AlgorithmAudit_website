@@ -60,7 +60,11 @@ actions:
       - value: news
         label: nieuws
 form1:
-  title: Reageer op dit rapport
+  title: Reageer op deze technische audit
+  content: >-
+    Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie en, indien het verenigbaar is met
+    Algorithm Audit's richtlijnen voor publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
+    sectie.
   button_text: Verstuur
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
@@ -69,11 +73,16 @@ form1:
       id: name
       required: true
       type: text
+    - label: Affiliated organization
+      id: affiliated-organization
+      type: text
     - label: Reactie
       id: reaction
+      required: true
       type: textarea
     - label: Contactgegevens
       id: contact-details
+      required: true
       type: email
       placeholder: Emailadres
 ---

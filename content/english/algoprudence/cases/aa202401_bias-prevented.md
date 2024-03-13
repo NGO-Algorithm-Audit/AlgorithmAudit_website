@@ -61,11 +61,10 @@ actions:
       - value: news
         label: nieuws
 form1:
-  title: React to this technical audit report
+  title: React to this technical audit
   content: >-
     Your reaction will be sent to the auditing team. The team will review your
-    response and, if it complies with Algorithm Audit's guidelines (to be
-    published later), the reaction will be placed in the Discussion & debate
+    response and, if it complies with Algorithm Audit's guidelines, the reaction will be placed in the Discussion & debate
     section above.
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
@@ -74,6 +73,9 @@ form1:
     - label: Name
       id: name
       required: true
+      type: text
+    - label: Affiliated organization
+      id: affiliated-organization
       type: text
     - label: Reaction
       id: reaction

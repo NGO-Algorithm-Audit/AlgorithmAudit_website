@@ -125,12 +125,11 @@ actions:
         label: Presentation
       - value: publication
         label: Publication
-form:
-  title: React to the normative judgement of the advice commission
+form1:
+  title: React to this normative judgement
   content: >-
     Your reaction will be sent to the team maintaining algoprudence. A team will
-    review your response and, if it complies with the guidelines (to be
-    published later), it will be placed in the Discussion & debate section
+    review your response and, if it complies with the guidelines, it will be placed in the Discussion & debate section
     above.
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
@@ -138,15 +137,18 @@ form:
   questions:
     - label: Name
       id: name
+      required: true
       type: text
     - label: Affiliated organization
       id: affiliated-organization
       type: text
     - label: Reaction
       id: reaction
+      required: true
       type: textarea
     - label: Contact details
       id: contact-details
+      required: true
       type: text
       placeholder: Mail address
 ---

@@ -51,29 +51,32 @@ actions:
 subtitle: |
   Problemstelling (AA:2023:01:P) en adviesdocument (AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
-form:
-  title: Reageer op het normatieve oordeel van de adviescommissie
+form1:
+  title: Reageer op deze technische audit
   content: >-
-    Uw inzending wordt verstuurd naar het team dat algoprudentie onderhoudt. Een
-    team reviewt uw reactie en plaatst deze, indien conform de richtlijnen
-    (nader te publiceren), in bovenstaande 'Discussie & debat' sectie.
+    Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie en, indien het verenigbaar is met
+    Algorithm Audit's richtlijnen voor publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
+    sectie.
   button_text: Verstuur
   backend_link: 'https://formspree.io/f/xyyrjyzr'
-  id: form
+  id: case-reaction
   questions:
     - label: Naam
-      id: naam
+      id: name
+      required: true
       type: text
-    - label: Organisatie
-      id: organisatie
+    - label: Affiliated organization
+      id: affiliated-organization
       type: text
     - label: Reactie
-      id: reactie
+      id: reaction
+      required: true
       type: textarea
     - label: Contactgegevens
-      id: contactgegevens
+      id: contact-details
+      required: true
       type: email
-      placeholder: Emaildres
+      placeholder: Emailadres
 ---
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving van algoprudentie" tab2_id="actions" tab2_title="Acties volgend op algoprudentie" tab3_id="" tab3_title="" default_tab="description" >}}
