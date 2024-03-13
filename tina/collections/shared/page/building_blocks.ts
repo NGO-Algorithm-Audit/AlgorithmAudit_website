@@ -191,6 +191,13 @@ let building_blocks: TinaField[] = [
                             required: false,
                         },
                         {
+                            name: 'file_upload_text',
+                            label: 'File upload text (only for file upload)',
+                            type: 'string',
+                            description: 'Text displayed in file upload field',
+                            required: false,
+                        },
+                        {
                             type: "boolean",
                             name: "required",
                             label: "required",
@@ -302,6 +309,13 @@ let building_blocks: TinaField[] = [
                             type: "string",
                             name: "value",
                             label: "Value (only for checkboxes)",
+                            required: false,
+                        },
+                        {
+                            name: 'file_upload_text',
+                            label: 'File upload text (only for file upload)',
+                            type: 'string',
+                            description: 'Text displayed in file upload field',
                             required: false,
                         },
                         {

@@ -130,19 +130,20 @@ form1:
       placeholder: Mail address
 form2:
   title: Case information
+  content: ''
   button_text: 'Submit '
   backend_link: 'https://formspree.io/f/xleqlakw'
   id: case-for-repository
   questions:
-    - label: Name algorithm
+    - label: Name organisation
       id: name
       required: true
       type: text
     - label: >-
-        Description of normative decision taken – Define the specific task of
-        the algorithm, its socio-technical context, statistical methodology, the
-        relevant legal framework and what decision is taken to deal with the
-        identified ethical issue
+        Normative decision taken – Define the specific task of the algorithm,
+        its socio-technical context, statistical methodology, the relevant legal
+        framework and what decision is taken to deal with the identified ethical
+        issue
       id: description
       required: true
       type: textarea
@@ -151,24 +152,27 @@ form2:
       required: true
       type: email
       placeholder: Mail address
-    - label: Case files
+    - label: Relevant documents
       id: file-upload
+      file_upload_text: Choose file
       file_type: .pdf
       type: file
       placeholder: ''
 ---
 
-{{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for normative review" tab2_id="case-repository" tab2_title="Submit a case to algoprudence repository" >}}
+{{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for normative review" tab2_id="case-repository" tab2_title="Add a case to algoprudence repository" >}}
 
-{{< tab_content_open icon="fas fa-upload" title="Submit a case for review by a normative advice commission" id="case-for-review" >}}
+{{< tab_content_open icon="fa-question" title="Submit a case for review by a normative advice commission" id="case-for-review" >}}
 
-Cases can be submitted anonymously. You can read more about the next steps after case submission [below](#next-steps).
+Cases can be submitted anonymously. Read more about [how we work](/algoprudence/how-we-work/). You can find more information [below](#next-steps) about next steps after case submission.
 
 {{< form1 >}}
 
 {{< tab_content_close >}}
 
-{{< tab_content_open icon="fas fa-greater-than-equal" title="Submit a case to algoprudence repository" id="case-repository" >}}
+{{< tab_content_open icon="fa-layer-group" title="Add a case to algoprudence repository" id="case-repository" >}}
+
+Would you like to contribute to our algoprudence repository? Please complete the below form. Please familiarize yourself with the cases already present in the repository. You can find more information [below](#next-steps) about next steps after case submission.
 
 {{< form2 >}}
 
