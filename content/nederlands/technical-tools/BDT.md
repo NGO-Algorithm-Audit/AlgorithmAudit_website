@@ -57,11 +57,13 @@ Gebruik de tool hieronder ⬇️
 
 {{< web_app >}}
 
+{{< promo_bar content="Waardeer je het werk van Algorithm Audit? ⭐️ ons op" id="promo" >}}
+
 {{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
 
 Met de inzending Joint Fairness Assessment Method (JFAM) is Algorithm Audit's bias detectie tool geselecteerd als finalist voor [Stanford’s AI Audit Competition 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/supported_by/HAI.png" alt1="Stanford University" caption1="Stanford University" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" >}}
+{{< image id="stanford" width_desktop="4" width_mobile="8" image1="/images/supported_by/HAI.png" alt1="Stanford University" caption1="Stanford University" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" >}}
 
 {{< container_close >}}
 
@@ -69,7 +71,7 @@ Met de inzending Joint Fairness Assessment Method (JFAM) is Algorithm Audit's bi
 
 Algorithm Audit's bias detectie tool is onderdeel van de OECD's [Catalogus voor Tools & Metrieken voor Verantwoorde AI.](https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool)
 
-{{< image id="OECD-logo" width_desktop="6" width_mobile="12" image1="/images/BDT/oecd_logo.svg" alt1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" caption1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" link1="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" >}}
+{{< image id="OECD-logo" width_desktop="4" width_mobile="8" image1="/images/BDT/oecd_logo.svg" alt1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" caption1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" link1="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" >}}
 
 {{< container_close >}}
 

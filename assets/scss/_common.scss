@@ -74,6 +74,7 @@ h2, .h2 {
 }
 h3, .h3 {
  font-size:24px;
+ padding: 0px;
 }
 h4, .h4 {
   font-size:18px;
@@ -102,6 +103,7 @@ h4, .h4 {
 .section {
   margin: 75px 0px;
   padding: 40px 0px;
+  background-color: #fff;
 
   &-title {
     margin-bottom: 30px;
@@ -183,10 +185,6 @@ h4, .h4 {
 
 .rounded-lg{
   border-radius: 10px !important;
-}
-
-.shadow{
-  box-shadow: 0 12px 24px -6px rgba(45,67,121,.10) !important;
 }
 
 // form control

@@ -1,16 +1,15 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 <div id={{.Get "id" }} class="container-fluid mt-5 p-0">
-    <div class="border-gradient2">
-    <div class="p-5 shadow rounded-lg">
+    <div class="shadow mobile-desktop-container-layout rounded-lg">
         <div class="row">
             <div class="col-12">
         
                 <!-- Title and icon -->
                 <div>
-                <h3>
-                    <span class="{{.Get "icon" }} icon mb-4 pl-5"></span>
-                    {{ .Get "title" }}
-                </h3>
+                    <h3>
+                        <span class="{{.Get "icon" }} icon mb-4 pl-5"></span>
+                        {{ .Get "title" }}
+                    </h3>
                 </div>
                 
             </div>

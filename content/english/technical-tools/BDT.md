@@ -115,11 +115,13 @@ Try the tool below ⬇️
 
 {{< web_app >}}
 
+{{< promo_bar content="Do you appreciate the work of Algorithm Audit? ⭐️ us on" id="promo" >}}
+
 {{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
 
 Under the name Joint Fairness Assessment Method (JFAM) our bias scan tool has been selected as a finalist in [Stanford’s AI Audit Competition 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/supported_by/HAI.png" alt1="Stanford University" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" caption1="Stanford University" >}}
+{{< image id="stanford" width_desktop="4" width_mobile="12" image1="/images/supported_by/HAI.png" alt1="Stanford University" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" caption1="Stanford University" >}}
 
 {{< container_close >}}
 
@@ -127,7 +129,7 @@ Under the name Joint Fairness Assessment Method (JFAM) our bias scan tool has be
 
 Algorithm Audit's bias detection tool is part of OECD's [Catalogue of Tools & Metrics for Trustworthy AI.](https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool)
 
-{{< image id="oecd-image" width_desktop="6" width_mobile="12" image1="/images/BDT/oecd_logo.svg" alt1="OECD AI Policy Observatory" caption1="OECD AI Policy Observatory" link1="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" >}}
+{{< image id="oecd-image" width_desktop="4" width_mobile="12" image1="/images/BDT/oecd_logo.svg" alt1="OECD AI Policy Observatory" caption1="OECD AI Policy Observatory" link1="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" >}}
 
 {{< container_close >}}
 

@@ -6,7 +6,6 @@ import title from "./title";
 import subtitle from "./subtitle";
 import image from "./image";
 import { TinaField } from "tinacms";
-import pdf_frame from "../templates/pdf_frame";
 import about_aa from "../templates/about_aa";
 import accordions_area_open from "../templates/accordions_area_open";
 import accordions_area_close from "../templates/accordions_area_close";
@@ -16,8 +15,11 @@ import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
 import container_open from "../templates/container_open";
 import container_close from "../templates/container_close";
+import form1 from "../templates/form1";
+import form2 from "../templates/form2";
+import pdf_frame from "../templates/pdf_frame";
+import promo_bar from "../templates/promo_bar";
 import reports_preview from "../templates/reports_preview";
-import form from "../templates/form";
 import tab_content_open from "../templates/tab_content_open"
 import tab_content_close from "../templates/tab_content_close"
 import tab_header from "../templates/tab_header"
@@ -46,13 +48,15 @@ let building_blocks: TinaField[] = [
             button,
             container_open,
             container_close,
-            form,
-            pdf_frame,
+            form1,
+            form2,
             template_image,
+            pdf_frame,
+            promo_bar,
+            reports_preview,
             tab_content_open,
             tab_content_close,
             tab_header,
-            reports_preview,
             team,
             team1,
             team2,
@@ -122,8 +126,8 @@ let building_blocks: TinaField[] = [
     },
     {
         type: 'object',
-        name: 'form',
-        label: 'Form',
+        name: 'form1',
+        label: 'Form #1',
         fields: [
             {
                 name: 'title',
@@ -182,6 +186,29 @@ let building_blocks: TinaField[] = [
                         },
                         {
                             type: "string",
+                            name: "value",
+                            label: "Value (only for checkboxes)",
+                            required: false,
+                        },
+                        {
+                            name: 'file_upload_text',
+                            label: 'File upload text (only for file upload)',
+                            type: 'string',
+                            description: 'Text displayed in file upload field',
+                            required: false,
+                        },
+                        {
+                            type: "boolean",
+                            name: "required",
+                            label: "required",
+                        },
+                        {
+                            type: "string",
+                            name: "file_type",
+                            label: "File type (e.g, .docx, .pdf)",
+                        },
+                        {
+                            type: "string",
                             name: "type",
                             label: "Type",
                             required: true,
@@ -192,8 +219,137 @@ let building_blocks: TinaField[] = [
                                     label: "Text box"
                                 },
                                 {
+                                    value: "checkbox",
+                                    label: "Check box"
+                                },
+                                {
                                     value: "textarea",
                                     label: "Text area"
+                                },
+                                {
+                                    value: "file",
+                                    label: "File"
+                                },
+                                {
+                                    value: "email",
+                                    label: "Email"
+                                }
+                            ]
+                        },
+                        {
+                            type: "string",
+                            name: "placeholder",
+                            label: "Placeholder"
+                        }
+                    ]
+            }
+        ]
+    },
+    {
+        type: 'object',
+        name: 'form2',
+        label: 'Form #2',
+        fields: [
+            {
+                name: 'title',
+                label: 'Title',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                name: 'content',
+                label: 'Content',
+                type: 'string',
+                description: 'grey text under title',
+                required: false,
+            },
+            {
+                name: 'button_text',
+                label: 'Button text',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                name: 'backend_link',
+                label: 'Back end link',
+                type: 'string',
+                description: '',
+                required: true,
+            },
+            {
+                type: "string",
+                name: "id",
+                label: "ID",
+                description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+                required: false,
+            },
+            {
+                type: "object",
+                name: "questions",
+                label: "Questions",
+                list: true,
+                fields:
+                    [
+                        {
+                            type: "string",
+                            name: "label",
+                            label: "Label",
+                            required: true,
+                        },
+                        {
+                            type: "string",
+                            name: "id",
+                            label: "Id",
+                            required: true,
+                            description: "Unique identifier (as can be seen when recieving the submitted form)"
+                        },
+                        {
+                            type: "string",
+                            name: "value",
+                            label: "Value (only for checkboxes)",
+                            required: false,
+                        },
+                        {
+                            name: 'file_upload_text',
+                            label: 'File upload text (only for file upload)',
+                            type: 'string',
+                            description: 'Text displayed in file upload field',
+                            required: false,
+                        },
+                        {
+                            type: "boolean",
+                            name: "required",
+                            label: "required",
+                        },
+                        {
+                            type: "string",
+                            name: "file_type",
+                            label: "File type (e.g, .docx, .pdf)",
+                        },
+                        {
+                            type: "string",
+                            name: "type",
+                            label: "Type",
+                            required: true,
+                            options: 
+                            [
+                                {
+                                    value: "text",
+                                    label: "Text box"
+                                },
+                                {
+                                    value: "checkbox",
+                                    label: "Check box"
+                                },
+                                {
+                                    value: "textarea",
+                                    label: "Text area"
+                                },
+                                {
+                                    value: "file",
+                                    label: "File"
                                 },
                                 {
                                     value: "email",

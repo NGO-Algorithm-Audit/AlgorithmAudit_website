@@ -21,4 +21,4 @@ form:
       type: textarea
 ---
 
-{{< form >}}
+{{< form1 >}}
