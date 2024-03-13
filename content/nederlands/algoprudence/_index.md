@@ -91,6 +91,7 @@ algoprudences:
         label: 'AA:2024:01'
       - value: year_2024
         label: '2024'
+        hide: true
       - value: audit_technical
         label: technische audit
       - value: type_of_algorithm_rule_based
@@ -103,14 +104,19 @@ algoprudences:
         label: publieke organisatie
       - value: standard_risk_management
         label: risicomanagement
+        hide: true
       - value: standard_governance_data_quality
         label: governance & datakwaliteit
+        hide: true
       - value: standard_transparency_provisions
         label: transparantiebepalingen
+        hide: true
       - value: standard_human_oversight
         label: menselijke tussenkomst
+        hide: true
       - value: standard_quality_management_system
         label: kwaliteitmanagement
+        hide: true
   - title: Risicoprofilering heronderzoek bijstandsuitkering
     intro: >-
       De commissie oordeelt dat algoritmische risicoprofilering onder strikte
@@ -125,6 +131,7 @@ algoprudences:
         label: 'AA:2023:02'
       - value: year_2023
         label: '2023'
+        hide: true
       - value: owner_public
         label: publieke organisatie
       - value: type_of_algorithm_profiling
@@ -139,18 +146,25 @@ algoprudences:
         label: proxydiscriminatie
       - value: standard_risk_management
         label: risicomanagement
+        hide: true
       - value: standard_record_keeping
         label: administratievereisten
+        hide: true
       - value: standard_transparency_provisions
         label: transparantiebepalingen
+        hide: true
       - value: standard_human_oversight
         label: menselijke tussenkomst
+        hide: true
       - value: standard_accuracy_specification
         label: nauwkeurigheid specificaties
+        hide: true
       - value: standard_robustness_specifications
         label: robuustheid specificaties
+        hide: true
       - value: standard_quality_management_system
         label: kwaliteitmanagement
+        hide: true
   - title: BERT-gebaseerd disinformatie detectie-algoritme
     intro: >-
       De adviescommissie oordeelt dat er een laag risico is van
@@ -166,6 +180,7 @@ algoprudences:
         label: 'AA:2023:01'
       - value: year_2023
         label: '2023'
+        hide: true
       - value: type_of_audit_normative
         label: normatieve audit
       - value: type_of_algorithm_bias_detection_tool
@@ -182,10 +197,13 @@ algoprudences:
         label: desinformatie
       - value: standard_risk_management
         label: risicomanagement
+        hide: true
       - value: standard_accuracy_specifications
         label: nauwkeurigheid specificaties
+        hide: true
       - value: standard_quality_management_system
         label: kwaliteitmanagement
+        hide: true
   - title: Type simkaart als voorspeller voor betalingsfraude
     intro: >-
       De adviescommissie adviseert tegen gebruik van type simkaart als input
@@ -201,6 +219,7 @@ algoprudences:
         label: 'AA:2022:01'
       - value: year_2022
         label: '2022'
+        hide: true
       - value: type_of_audit_normative
         label: normative audit
       - value: type_of_algorithm_profiling
@@ -213,10 +232,13 @@ algoprudences:
         label: e-commerce
       - value: standard_risk_management
         label: risicomanagement
+        hide: true
       - value: standard_governance_data_quality
         label: governance & datakwaliteit
+        hide: true
       - value: standard_transparency_provisions
         label: transparantiebepalingen
+        hide: true
 title_content: Algoprudentie overzicht
 ---
 
