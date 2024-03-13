@@ -3,12 +3,11 @@ title: Higher-dimensional bias in a BERT-based disinformation classifier
 subtitle: |
   Problem statement (AA:2023:01:P) and advice document (AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
-form:
-  title: React to the normative judgement of the advice commission
+form1:
+  title: React to this normative judgement
   content: >-
     Your reaction will be sent to the team maintaining algoprudence. A team will
-    review your response and, if it complies with the guidelines (to be
-    published later), it will be placed in the Discussion & debate section
+    review your response and, if it complies with the guidelines, it will be placed in the Discussion & debate section
     above.
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
@@ -16,15 +15,18 @@ form:
   questions:
     - label: Name
       id: name
+      required: true
       type: text
     - label: Affiliated organization
       id: affiliated-organization
       type: text
     - label: Reaction
       id: reaction
+      required: true
       type: textarea
     - label: Contact detail
       id: contact-details
+      required: true
       type: email
       placeholder: Mail address
 layout: case

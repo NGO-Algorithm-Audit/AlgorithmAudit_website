@@ -38,24 +38,32 @@ funded_by:
     image: /images/supported_by/sidn.png
   - url: 'https://europeanaifund.org/'
     image: /images/supported_by/EUAISFund.png
-form:
-  title: React to the normative judgement of the advice commission
+form1:
+  title: React to this normative judgement
+  content: >-
+    Your reaction will be sent to the team maintaining algoprudence. A team will
+    review your response and, if it complies with the guidelines, it will be placed in the Discussion & debate section
+    above.
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
   questions:
     - label: Name
       id: name
+      required: true
       type: text
     - label: Affiliated organization
       id: affiliated-organization
-      type: textarea
+      type: text
     - label: Reaction
       id: reaction
+      required: true
       type: textarea
-    - label: Contact details
+    - label: Contact detail
       id: contact-details
+      required: true
       type: email
+      placeholder: Mail address
 ---
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Description of algoprudentie" tab2_id="" tab2_title="" tab3_id="" tab3_title="" default_tab="description" >}}
