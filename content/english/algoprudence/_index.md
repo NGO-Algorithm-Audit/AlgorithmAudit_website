@@ -91,6 +91,7 @@ algoprudences:
         label: 'AA:2024:01'
       - value: year_2024
         label: '2024'
+        hide: true
       - value: type_of_audit_technical
         label: technical audit
       - value: type_of_algorithm_rule_based
@@ -103,14 +104,19 @@ algoprudences:
         label: public organisation
       - value: standard_risk_management
         label: risk management
+        hide: true
       - value: standard_governance_data_quality
         label: governance & data quality
+        hide: true
       - value: standard_transparency_provisions
         label: transparency provisions
+        hide: true
       - value: standard_human_oversight
         label: human oversight
+        hide: true
       - value: standard_quality_management_system
         label: quality management system
+        hide: true
   - title: Risk Profiling for Social Welfare Reexamination
     intro: >-
       The commission judges that algorithmic risk profiling can be used under
@@ -125,6 +131,7 @@ algoprudences:
         label: 'AA:2023:02'
       - value: year_2023
         label: '2023'
+        hide: true
       - value: type_of_audit_normative
         label: normative audit
       - value: type_of_algorithm_profiling
@@ -139,18 +146,25 @@ algoprudences:
         label: public organisation
       - value: standard_risk_management
         label: risk management
+        hide: true
       - value: standard_record_keeping
         label: record keeping
+        hide: true
       - value: standard_transparency_provisions
         label: transparency provisions
+        hide: true
       - value: standard_human_oversight
         label: human oversight
+        hide: true
       - value: standard_accuracy_specification
         label: accuracy specification
+        hide: true
       - value: standard_robustness_specifications
         label: robustness specifications
+        hide: true
       - value: standard_quality_management_system
         label: quality management system
+        hide: true
   - title: BERT-based disinformation classifier
     intro: >-
       The audit commission believes there is a low risk of (higher-dimensional)
@@ -164,6 +178,7 @@ algoprudences:
         label: 'AA:2023:01'
       - value: year_2023
         label: '2023'
+        hide: true
       - value: type_of_audit_normative
         label: normative audit
       - value: type_of_algorithm_bias_detection_tool
@@ -180,10 +195,13 @@ algoprudences:
         label: disinformation
       - value: standard_risk_management
         label: risk management
+        hide: true
       - value: standard_accuracy_specifications
         label: accuracy specifications
+        hide: true
       - value: standard_quality_management_system
         label: quality management system
+        hide: true
   - title: Type of SIM card as a predictor variable to detect payment fraud
     intro: >-
       The audit commission advises against using type of SIM card as an input
@@ -199,6 +217,7 @@ algoprudences:
         label: 'AA:2022:01'
       - value: year_2022
         label: '2022'
+        hide: true
       - value: type_of_audit_normative
         label: normative audit
       - value: type_of_algorithm_profiling
@@ -211,9 +230,12 @@ algoprudences:
         label: e-commerce
       - value: standard_risk_management
         label: risk management
+        hide: true
       - value: standard_governance_data_quality
         label: governance & data quality
+        hide: true
       - value: standard_transparency_provisions
         label: transparency provisions
+        hide: true
 ---
 
