@@ -125,8 +125,9 @@ actions:
 form1:
   title: Reageer op dit normatieve oordeel
   content: >-
-    Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie en, indien het verenigbaar is met
-    Algorithm Audit's richtlijnen voor publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
+    Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie
+    en, indien het verenigbaar is met Algorithm Audit's richtlijnen voor
+    publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
     sectie.
   button_text: Verstuur
   backend_link: 'https://formspree.io/f/xyyrjyzr'
@@ -150,7 +151,7 @@ form1:
       placeholder: Emailadres
 ---
 
-{{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving algoprundentie" tab2_id="actions" tab2_title="Acties volgend op algoprundentie" tab3_id="" tab3_title="" default_tab="description" >}}
+{{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving algoprudentie" tab2_id="actions" tab2_title="Acties volgend op algoprudentie" tab3_id="" tab3_title="" default_tab="description" >}}
 
 {{< tab_content_open icon="fa-poll-h" title="Risicoprofilering heronderzoek bijstandsuitkering" id="description" >}}
 

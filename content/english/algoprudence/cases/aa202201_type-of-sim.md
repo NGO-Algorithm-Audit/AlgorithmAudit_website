@@ -42,8 +42,8 @@ form1:
   title: React to this normative judgement
   content: >-
     Your reaction will be sent to the team maintaining algoprudence. A team will
-    review your response and, if it complies with the guidelines, it will be placed in the Discussion & debate section
-    above.
+    review your response and, if it complies with the guidelines, it will be
+    placed in the Discussion & debate section above.
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
@@ -66,7 +66,7 @@ form1:
       placeholder: Mail address
 ---
 
-{{< tab_header width="6" tab1_id="description" tab1_title="Description of algoprudentie" tab2_id="" tab2_title="" tab3_id="" tab3_title="" default_tab="description" >}}
+{{< tab_header width="6" tab1_id="description" tab1_title="Description of algoprudence" tab2_id="" tab2_title="" tab3_id="" tab3_title="" default_tab="description" >}}
 
 {{< tab_content_open icon="fa-sim-card" title="Type of SIM card as a predictor for detecting payment fraud" id="description" >}}
 
