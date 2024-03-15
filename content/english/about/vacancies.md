@@ -67,8 +67,6 @@ form1:
 
 {{< accordions_area_open >}}
 
-{{< form1 >}}
-
 {{< accordion_item_open image="/images/logo/logo.svg" title="Responsible AI expert – AI Act standardization cohort" id="standardization" tag1="rolling applications" tag2="2-4 hours per week" tag3="voluntary" background_color="#ffffff" >}}
 
 {{< button button_text="Apply for this function" button_link="#form" >}}
