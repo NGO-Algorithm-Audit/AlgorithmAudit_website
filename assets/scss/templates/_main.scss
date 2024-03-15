@@ -27,6 +27,31 @@ input[type="file"] {
   align-items: center;
 }
 
+.checkbox {
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+input[type="checkbox"] {
+  accent-color: #005AA7;
+}
+
+.form-group{
+  display:flex; 
+  align-items: center;
+  input{
+    margin-left: 10px;
+  }
+  label{
+    margin-left: 10px;
+    color: #005AA7; 
+    font-size: 15px;
+  }
+}
+
 // view >992px
 @media (min-width: 992px) {
   .margin-banner-image {

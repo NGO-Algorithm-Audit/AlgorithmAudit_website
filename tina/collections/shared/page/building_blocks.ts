@@ -172,7 +172,7 @@ let building_blocks: TinaField[] = [
                 fields:
                     [
                         {
-                            type: "string",
+                            type: "rich-text",
                             name: "label",
                             label: "Label",
                             required: true,
@@ -185,10 +185,30 @@ let building_blocks: TinaField[] = [
                             description: "Unique identifier (as can be seen when recieving the submitted form)"
                         },
                         {
-                            type: "string",
-                            name: "value",
-                            label: "Value (only for checkboxes)",
-                            required: false,
+                            type: "object",
+                            name: "values",
+                            label: "Values (only for checkboxes)",
+                            list: true,
+                            fields: [
+                                {
+                                    type: "string",
+                                    name: "label",
+                                    label: "Label",
+                                    required: true,
+                                },
+                                {
+                                    type: "string",
+                                    name: "value",
+                                    label: "Value",
+                                    required: true,
+                                },
+                                {
+                                    type: "string",
+                                    name: "id",
+                                    label: "ID",
+                                    required: true,
+                                }
+                            ]
                         },
                         {
                             name: 'file_upload_text',
