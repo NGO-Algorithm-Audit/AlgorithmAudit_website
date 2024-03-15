@@ -3,7 +3,7 @@ title: Contactformulier
 subtitle: |
   Kom in contact met Algorithm Audit door onderstaand formulier in te vullen.
 image: /images/svg-illustrations/about.svg
-form:
+form1:
   title: Contactformulier
   button_text: Verstuur
   backend_link: 'https://formspree.io/f/mrgrwnyo'

@@ -3,7 +3,7 @@ title: Get in touch
 subtitle: |
   Reach out to Algorithm Audit by filling in the below contact form.
 image: /images/svg-illustrations/faq.svg
-form:
+form1:
   title: Contact form
   button_text: Send
   backend_link: 'https://formspree.io/f/mrgrwnyo'
