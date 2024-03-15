@@ -34,6 +34,7 @@
             <p class="mb-2" style="color: #005AA7;">{{ .label | markdownify }}{{if .required}}*{{end}}</p>
             <!-- upload zone -->
             <label style="font-weight:500;" class="file-upload" for="{{.id}}">
+              <input type="{{.type}}" class="form-control" id="{{.id}}" value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
               <div style="display:grid; place-items:center;">
                   <i class="fas fa-upload my-2" style="font-size:24px;"></i>
                   <p style="color:#005AA7;">{{.file_upload_text}}</p>
