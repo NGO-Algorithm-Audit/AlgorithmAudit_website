@@ -52,22 +52,24 @@ text_field5:
   id: faq
   content: "##### Why this bias detection tool?\n\n* No data needed on protected attributes of users (unsupervised bias detection);\n* Model-agnostic (AI binary classifiers only);\n* Connecting quantitative tools with qualitative methods to assess fair AI;\n* Developed open-source and not-for-profit.\n\n##### By whom can the bias detection tool be used?\_\n\nThe bias detection tool allows the entire ecosystem involved in auditing AI, e.g., data scientists, journalists, policy makers, public- and private auditors, to use quantitative methods to detect bias in AI systems.\n\n##### What does the tool compute?\_\n\nA statistical method is used to compute which clusters are relatively often misclassified by an AI system. A cluster is a group of data points sharing similar features. The tool returns a report in which identified differences (between feature means) are visualized and statistical significant feature differences are tested (Welch’s two-samples t-test for unequal variances).\n\n##### The tool detects prohibited discrimination in AI?\_\n\nNo. The bias detection tool serves as a starting point to assess potentially unfair AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured disparities are legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are\_appropriate\_and\_necessary.\n\n##### For what type of AI does the tool work?\_\n\nCurrently, only\_binary classification\_algorithms can be reviewed. For instance, prediction of loan approval (yes/no), disinformation detection (true/false) or disease detection (positive/negative).\n\n##### What happens with my data?\n\nYour .csv file is uploaded to a AWS bucket, where it is processed. Once the clustering algorithm is finised the data is immediately deleted.\n\n##### &#xA;In sum\_\n\nQuantitative methods, such as unsupervised bias detection, are helpful to discover potentially unfair treated groups of similar users in AI systems in a scalable manner. Automated identification of cluster disparities in AI models allows human experts to assess observed disparities in a qualitative manner, subject to political, social and environmental traits. This two-pronged approach bridges the gap between the qualitative requirements of law and ethics, and the quantitative nature of AI (see figure). In making normative advice, on identified ethical issues publicly available, over time a repository of 'techno-ethical jurisprudence' emerges; from which data scientists and public authorities can distill best practices to build fairer AI (see our\_case reviews).\_\n"
 reports_preview:
-  title: Example reports
+  title: Example output bias detection tool
   icon: fas fa-file
-  button_text: ''
-  button_link: ''
+  button_text: Case repository
+  button_link: /algoprudence
   id: example-reports
   feature_item:
+    - name: Normative judgement commission
+      image: /images/algoprudence/AA202301/Cover.png
+      link: /algoprudence/cases/aa202301_bert-based-disinformation-classifier/
+      content: >
+        An advice commission believes there is a low risk of
+        (higher-dimensional) proxy discrimination by the BERT-based
+        disinformation classifier
     - name: FPR clustering results
       image: /images/BDT/Example_report.png
       link: >-
         https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf
       content: "An example report for the\_[BERT-based disinformation detection (FPR) case study](https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf)\n"
-    - name: FNR clustering results
-      image: /images/BDT/Example_report.png
-      link: >-
-        https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf
-      content: "An example report for the\_[BERT-based disinformation detection (FNR) case study](https://static-files-pdf.s3.amazonaws.com/bias_scan_FNR_test_pred_BERT.pdf)\n"
 team:
   title: Bias Detection Tool Team
   icon: fas fa-user-friends
@@ -117,6 +119,8 @@ Try the tool below ⬇️
 
 {{< promo_bar content="Do you appreciate the work of Algorithm Audit? ⭐️ us on" id="promo" >}}
 
+{{< reports_preview >}}
+
 {{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
 
 Under the name Joint Fairness Assessment Method (JFAM) our bias scan tool has been selected as a finalist in [Stanford’s AI Audit Competition 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
@@ -153,8 +157,6 @@ What input does the bias scan tool need? A csv file of max. 5GB with feature col
 <div><p><u>Data snippet</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overview of supported bias metrics</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Metric</th><th class="tg-1wig">Description</th></tr></thead><tbody><tr><td class="tg-0lax">False Positive Rate (FPR)</td><td class="tg-0lax">The bias detection tool finds the cluster for which most true labels are predicted to be false, proportional to all true labels (False Positive Rate). For instance, the algorithm predicts a financial transaction to be riskful, while after manual inspection it turns out to be not riskful.</td></tr><tr><td class="tg-0lax">False Negative Rate (FNR)</td><td class="tg-0lax">The bias detection tool finds the cluster for which most false labels are predicted to be true, proportional to all false labels (False Negative Rate). For instance, the algorithm predicts a financial transaction not to be riskful, while after manual inspection it turns out it is riskful.</td></tr><tr><td class="tg-0lax">Accuracy</td><td class="tg-0lax">Sum of True Positives (TPs) and True Negatives (TNs), proportional to all predictions.</td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Learn more</a> about bias metrics.</div></div>
 
 {{< container_close >}}
-
-{{< reports_preview >}}
 
 {{< container_open title="FAQ" icon="fas fa-question-circle" >}}
 

@@ -1,7 +1,4 @@
 ---
-content: |
-  Helloi Test
-  {{< team >}}
 title: Submit a case
 subtitle: >
   Algorithm Audit conducts solicited and unsolicited audits. Fill in the below
@@ -9,39 +6,6 @@ subtitle: >
   algorithm. Or submit a carefully documented normative judgement for inlcusion
   in our case repository.
 image: /images/svg-illustrations/case_repository.svg
-form:
-  title: Submit a case
-  button_text: Send
-  backend_link: 'https://formspree.io/f/xzbnrlan'
-  id: submit-a-case
-  questions:
-    - label: Name of the algorithm
-      id: name
-      type: text
-    - label: >-
-        Short description – Define the specific task of the algorithm and its
-        the context in which it operates (max. 200 words)
-      id: description
-      type: textarea
-    - label: >-
-        Technical dimension – Description of data collection, used statistical
-        methodologies and used evaluation criteria 
-      id: dimensions
-      type: textarea
-    - label: >-
-        Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU
-        non-discrimination law 
-      id: legal-framework
-      type: textarea
-    - label: >-
-        Ethical issues – Description of the identified ethical issue given it's
-        technical and legal framework
-      id: ethical-issues
-      type: textarea
-    - label: Contact details
-      id: contact-details
-      type: email
-      placeholder: Email address
 team:
   title: Team Algoprudence
   icon: fas fa-user-friends
@@ -96,38 +60,52 @@ form1:
   backend_link: 'https://formspree.io/f/xzbnrlan'
   id: submit-a-case
   questions:
-    - label: Name algorithm
+    - label: |
+        Name algorithm
       id: name
       required: true
       type: text
-    - label: >-
+    - label: >
         Short description – Define the specific task of the algorithm and its
         the context in which it operates (max. 200 words)
       id: description
       required: true
       type: textarea
-    - label: >-
+    - label: >
         Technical dimension – Description of data collection, used statistical
         methodologies and used evaluation criteria
       id: technical-dimension
       type: textarea
-    - label: >-
+    - label: >
         Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU
         non-discrimination law
       id: legal-framework
       required: false
       type: textarea
-    - label: >-
+    - label: >
         Ethical issues – Description of the identified ethical issue given it’s
         technical and legal framework
       id: ethical-issue
       required: true
       type: textarea
-    - label: Contact details
+    - label: |
+        Contact details
       id: contact-details
       required: false
       type: email
       placeholder: Mail address
+    - label: >
+        Terms and conditions <br> <span style="font-size:12px;
+        color=#777;">Submitted data will only be processed for the purpose
+        described above, kept for the minimum necessary duration, and is
+        securely stored in a protected environment</span>
+      id: terms-conditions
+      values:
+        - label: Agree
+          value: agree
+          id: agree
+      required: true
+      type: checkbox
 form2:
   title: Case information
   content: ''
@@ -158,6 +136,18 @@ form2:
       file_type: .pdf
       type: file
       placeholder: ''
+    - label: >
+        Terms and conditions <br> <span style="font-size:12px;
+        color=#777;">Submitted data will only be processed for the purpose
+        described above, kept for the minimum necessary duration, and is
+        securely stored in a protected environment</span>
+      id: terms-conditions
+      values:
+        - label: Agree
+          value: agree
+          id: agree
+      required: true
+      type: checkbox
 ---
 
 {{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for normative review" tab2_id="case-repository" tab2_title="Add a case to algoprudence repository" >}}
