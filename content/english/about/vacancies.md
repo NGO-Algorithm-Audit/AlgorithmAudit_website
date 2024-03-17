@@ -35,12 +35,6 @@ form1:
       required: true
       type: checkbox
     - label: |
-        Contact details
-      id: contact-details
-      required: true
-      type: email
-      placeholder: Mail address
-    - label: |
         Motivation letter (max. 500 words)
       id: motivation-letter
       file_upload_text: Choose file
@@ -54,8 +48,9 @@ form1:
       required: true
       file_type: '.docx, .pdf'
       type: file
-    - label: |
-        <a href="/privacy_policy/" target="_blank">Terms and conditions</a>
+    - label: >
+        <a href="/privacy_policy/" target="_blank">Terms and conditions
+        (link)</a>
       id: terms
       values:
         - label: Agree
