@@ -32,7 +32,7 @@ form1:
         - label: WG4
           value: WG4
           id: wg4
-      required: true
+      required: false
       type: checkbox
     - label: |
         Motivation letter (max. 500 words)
