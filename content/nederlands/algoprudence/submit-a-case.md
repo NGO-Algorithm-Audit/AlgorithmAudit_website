@@ -30,37 +30,6 @@ team:
       name: Samaa Mohammad-Ulenberg
       bio: |
         Bestuurder
-form:
-  title: Dien een case in
-  button_text: Verstuur
-  backend_link: 'https://formspree.io/f/xzbnrlan'
-  questions:
-    - label: Naam algoritme
-      id: naam
-      type: text
-    - label: Korte beschrijving van algoritme (max. 100 woorden)
-      id: beschrijving
-      type: textarea
-    - label: >-
-        Technische aspecten – Beschrijving van o.a. verzamelde data, gehanteerde
-        statistische methode en gebruikte evaluatie criteria
-      id: technische-dimensie
-      type: textarea
-    - label: >-
-        Juridisch kader – Relevante wet- en regelgeving, beschrijving van open
-        juridische normen, bijvoorbeeld in de Algemene Verordening
-        Gegevensbescherming (AVG) of de Algemene Wet Gelijke Behandeling (AWGB)
-      id: juridische-dimensie
-      type: textarea
-    - label: >-
-        Ethische aspecten – Beschrijving van geïdentificeerd ethische kwesties
-        gegeven de technische en juridische achtergrond
-      id: ethische-dimensie
-      type: textarea
-    - label: Contactgegevens
-      id: contactgegevens
-      type: email
-      placeholder: Emailadres
 reports_preview:
   title: Recente audits
   icon: fas fa-file
@@ -118,6 +87,18 @@ form1:
       id: reaction
       type: email
       placeholder: Emailadres
+    - label: >
+        Voorwaarden <br> <span style="font-size:12px;
+        color=#777;">Verstrekte gegevens worden alleen verwerkt voor het hierboven beschreven doel,
+        de gegevens worden niet langer opgeslagen dan strikt noodzakelijk en worden opgeslagen in
+        een beschermde omgeving</span>
+      id: terms-conditions
+      values:
+        - label: Agree
+          value: agree
+          id: agree
+      required: true
+      type: checkbox
 form2:
   title: Informatie over het oordeel
   content: ''
@@ -143,6 +124,18 @@ form2:
       id: documents
       file_upload_text: Kies bestand
       type: file
+    - label: >
+        Voorwaarden <br> <span style="font-size:12px;
+        color=#777;">Verstrekte gegevens worden alleen verwerkt voor het hierboven beschreven doel,
+        de gegevens worden niet langer opgeslagen dan strikt noodzakelijk en worden opgeslagen in
+        een beschermde omgeving</span>
+      id: terms-conditions
+      values:
+        - label: Agree
+          value: agree
+          id: agree
+      required: true
+      type: checkbox
 ---
 
 {{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Dien een case in voor beoordeling" tab2_id="case-repository" tab2_title="Voeg oordeel toe aan algoprudentie uitspraken" >}}

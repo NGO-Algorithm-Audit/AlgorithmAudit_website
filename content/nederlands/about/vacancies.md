@@ -12,6 +12,7 @@ form1:
     - label: |
         Name
       id: name
+      required: true
       type: text
     - label: |
         Contact details
@@ -49,9 +50,11 @@ form1:
       file_type: '.docx, .pdf'
       type: file
     - label: >
-        <a href="/privacy_policy/" target="_blank">Terms and conditions
-        (link)</a>
-      id: terms
+        Terms and conditions <br> <span style="font-size:12px;
+        color=#777;">Submitted data will only be processed for the purpose
+        described above, kept for the minimum necessary duration, and is
+        securely stored in a protected environment</span>
+      id: terms-conditions
       values:
         - label: Agree
           value: agree

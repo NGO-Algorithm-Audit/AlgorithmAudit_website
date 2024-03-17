@@ -16,6 +16,25 @@ web_app:
   icon: fas fa-cloud
   id: web-app
   content: ''
+reports_preview:
+  title: Voorbeeld output bias detectie tool
+  icon: fas fa-file
+  button_text: Overzicht casuïstiek
+  button_link: /nl/algoprudence
+  id: example-reports
+  feature_item:
+    - name: Normatief oordeel commissie
+      image: /images/algoprudence/AA202301/Cover.png
+      link: /algoprudence/cases/aa202301_bert-based-disinformation-classifier/
+      content: >
+        Adviescommissie oordeelt dat er een laag risico is op
+        (hoger-dimensionale) proxydiscriminatie bij gebruik van de
+        BERT-gebaseerde desinformatie detectie-algoritme
+    - name: FPR clustering resultaten
+      image: /images/BDT/Example_report.png
+      link: >-
+        https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf
+      content: "Voorbeeld van automatisch gegenereerde biasgegevens over \_[BERT-gebaseerde desinformatie detectie-algoritme (FPR) case study](https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf)\n"
 team:
   title: Bias Detectie Tool Team
   icon: fas fa-user-friends
@@ -59,6 +78,8 @@ Gebruik de tool hieronder ⬇️
 
 {{< promo_bar content="Waardeer je het werk van Algorithm Audit? ⭐️ ons op" id="promo" >}}
 
+{{< reports_preview >}}
+
 {{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
 
 Met de inzending Joint Fairness Assessment Method (JFAM) is Algorithm Audit's bias detectie tool geselecteerd als finalist voor [Stanford’s AI Audit Competition 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
@@ -95,8 +116,6 @@ Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maxima
 <div><p><u>Voorbeeld</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">eig_1</th><th class="tg-uox0">eig_2</th><th class="tg-uox0">...</th><th class="tg-uox0">eig_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overzicht van ondersteunde biasmetrieken</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Biasmetriek</th><th class="tg-1wig">Beschrijving</th></tr></thead><tbody><tr><td class="tg-0lax">Proportie valspositieven (FPR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valspositieven (False Positive Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie wel risicovol is, terwijl deze transactie dat na handmatige inspectie niet blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Proportie valsnegatieven (FNR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valsnegatieven (False Negative Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie niet risicovol is, terwijl deze transactie dat na handmatige inspectie wel blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Nauwkeurigheid (Acc)</td><td class="tg-0lax">Deel echt positieven (True Positives) en echt negatieven (True Negatives) van alle voorspellingen.</td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Meer informatie</a> over biasmetrieken.</div></div>
 
 {{< container_close >}}
-
-{{< reports_preview >}}
 
 {{< container_open title="Veelgestelde vragen" icon="fas fa-question-circle" >}}
 
