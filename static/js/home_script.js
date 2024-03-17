@@ -34,7 +34,7 @@ function hasScrolled() {
     }
 
     lastScrollTop = st;
-}
+};
 
 // Why we exist AI Act/DSA/GDPR etc.
 $(document).on("click", ".menu2 div", function () {
@@ -166,13 +166,6 @@ $(function () { // wait for document ready
             .addIndicators() // add indicators (requires plugin)
             .addTo(controller);
     }
-});
-
-// Remove preview value from input field
-$(document).ready(function () {
-    $("#mce-EMAIL").click(function(event) {
-        $(this).attr("placeholder", "");
-    }); 
 });
 
 
