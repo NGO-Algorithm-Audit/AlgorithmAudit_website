@@ -129,24 +129,28 @@ form1:
   title: React to this normative judgement
   content: >-
     Your reaction will be sent to the team maintaining algoprudence. A team will
-    review your response and, if it complies with the guidelines, it will be placed in the Discussion & debate section
-    above.
+    review your response and, if it complies with the guidelines, it will be
+    placed in the Discussion & debate section above.
   button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
   questions:
-    - label: Name
+    - label: |
+        Name
       id: name
       required: true
       type: text
-    - label: Affiliated organization
+    - label: |
+        Affiliated organization
       id: affiliated-organization
       type: text
-    - label: Reaction
+    - label: |
+        Reaction
       id: reaction
       required: true
       type: textarea
-    - label: Contact details
+    - label: |
+        Contact details
       id: contact-details
       required: true
       type: text
@@ -227,6 +231,8 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 * (in)eligible selection criteria fed to the ML model
 * explainability requirements for the used explainable boosting algorithm
 * implications of the AIAct for this particular form of risk profiling.
+
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1oPiO_s9KuV7446BqC9a4P2qjW7MGUyxu/preview" >}}
 
 {{< accordion_item_close >}}
 

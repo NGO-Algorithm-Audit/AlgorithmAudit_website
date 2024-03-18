@@ -5,7 +5,7 @@ subtitle: >
   onafhankelijkheid en verantwoording. We willen 100% transparant zijn over onze
   werkwijze. We staan open voor
   [feedback](/nl/algoprudence/cases/vooringenomenheid-voorkomen/#reaction) op
-  onze cases en voor de manier waarop we als organisatie functioneren.
+  onze casuïstiek en voor de manier waarop we als organisatie functioneren.
 
 
   Heb je een vraag of wil je feedback delen? [Stuur een
@@ -13,21 +13,21 @@ subtitle: >
 image: /images/svg-illustrations/faq.svg
 ---
 
-{{< container_open icon="fas fa-bullseye" title="What exactly do you audit?" id="reviews" >}}
+{{< container_open icon="fas fa-bullseye" title="Wat auditeert Algorithm Audit precies?" id="reviews" >}}
 
-Auditing is a multi-faceted concept. In the financial industry, an audit refers to an independent examination of book keeping. According to a pre-defined criteria a financial audit attempts to ensure that books of accounts are properly maintained. For AI systems, auditing is a relatively new concept and auditing criteria have not taken full shape. Due to it's context dependency, gaining case-based experience in dealing with concrete normative dilemmas in semi-automated decision-making processes is key. Since these dilemmas involve ethical considerations and trade-offs, they cannot be solved by technical audit standards only, but must involve collective deliberation by all stakeholders. Algorithm Audit's audits are therefore inclusive and deliberative in nature, which resonates with the meaning of the Latin word *audire*, from which "audit" is derived, meaning "to hear".
-
-{{< container_close >}}
-
-{{< container_open title="What organizations may present a case?" icon="fas fa-check-circle" id="eligible" >}}
-
-Basically every organization, public or private, big or small, is welcome to present a case. Depending on the nature of the case, the Algoprudence Team decides whether the case is suitable for review by a normative advice commission. You can [submit](/algoprudence/submit-a-case/) here a case for review.
+Auditeren is een veelzijdig begrip. In de financiële sector verwijst een audit bijvoorbeeld naar een onafhankelijk keuring van boekhouding. Volgens vooraf gedefinieerde criteria toetst een financiële audit of administratie correct wordt bijgehouden. Audits voor AI-systemen zijn relatief nieuw en auditcriteria zijn nog volop in ontwikkeling. Algorithm Audit gelooft dat alleen technische auditcriteria onvoldoende zijn om te toetsen of algoritmes deugen. Wat eerlijke en verantwoorde algoritmes zijn hangt namelijk altijd af van de context. Het opdoen van case-based ervaring met normatieve keuzes die komen kijken bij het ontwikkelen en inzetten van algoritmes is hierbij van cruciaal belang. Deze normatieve dimensie kan alleen getoetst worden in overleg met belanghebbenden. De audits van Algorithm Audit zijn daarom inclusief en deliberatief van aard. Dit houdt verband met de etymologie van het Latijnse woord *audire* (horen) waarvan het woord ‘audit’ is afgeleid.
 
 {{< container_close >}}
 
-{{< container_open title="Why do you work not-for-profit?" icon="fas fa-seedling" id="not-for-profit" >}}
+{{< container_open title="Welke organisaties kunnen een casus indienen?" icon="fas fa-check-circle" id="eligible" >}}
 
-We are committed to balanced, careful and independent review of ethical issues. We depend on the experts in our normative advice commissions to carry out these evaluations. And we serve the community by making all our advice and knowledge public. Working nonprofit suits our activities and goals best.
+Iedere organisatie, publiek of privaat, groot of klein, welkom om een casus in te dienen. Per geval beoordeelt het Algoprudentie Team of de casus geschikt is om aan een normatieve adviescommissie te worden voorgelegd. Een casus kan [hier](/algoprudence/submit-a-case/) worden ingediend.
+
+{{< container_close >}}
+
+{{< container_open title="Waarom werken jullie zonder winstoogmerk?" icon="fas fa-seedling" id="not-for-profit" >}}
+
+Het normatieve karakter van onze werkzaamheden staat op gespannen voet met het hebben van een winstoogmerk. In de context van technologische ontwikkeling wordt winst vaak geprioriteerd boven veiligheid. Deskundigen ontvangen een vergoeding om normatieve vraagstukken evenwichtig, zorgvuldig en onafhankelijk te beoordelen. Een winstbeloning past niet bij deze werkwijze. Daarnaast werkt Algorithm Audit vanuit het publieke belang om onze kennis openbaar te maken. Werken zonder winstoogmerk past daarom het beste bij onze activiteiten en doelstellingen.
 
 {{< container_close >}}
 

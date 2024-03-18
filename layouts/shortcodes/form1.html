@@ -1,16 +1,6 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ with .Page.Params.form1}}
 
-<!-- js changing 'Choose file' text to name of uploaded file -->
-<script>
-  function displayFile(ID) {
-    const fileInput = document.getElementById(ID);
-    const textArea = fileInput.nextElementSibling;
-    const file = fileInput.files[0];
-    textArea.innerText = file.name;
-  };
-</script>
-
 <div class="container-fluid p-0" id={{ .id }}>
   <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">
       <div class="col-lg-12 mb-4">

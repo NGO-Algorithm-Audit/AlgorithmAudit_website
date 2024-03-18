@@ -1,9 +1,10 @@
-
     <!-- Tab header -->
     <div class="row">
         <div class="col-lg-12 mx-auto">
             {{ $width := .Get "width" }}
             <div class="row tab">
+
+                <!-- tab 1 -->
                 {{ $tab_id := .Get "tab1_id" }}
                 {{ $tab_title := .Get "tab1_title" }}
                 {{ if and $tab_id $tab_title }}
@@ -11,6 +12,8 @@
                     <h4 class="py-3 hover-white">{{$tab_title}}</h4>
                 </button>
                 {{ end }}
+
+                <!-- tab 2 -->
                 {{ $tab_id := .Get "tab2_id" }}
                 {{ $tab_title := .Get "tab2_title" }}
                 {{ if and $tab_id $tab_title }}
@@ -18,8 +21,37 @@
                     <h4 class="py-3 hover-white">{{$tab_title}}</h4>
                 </button>
                 {{ end }}
+
+                <!-- tab 3 -->
                 {{ $tab_id := .Get "tab3_id" }}
                 {{ $tab_title := .Get "tab3_title" }}
+                {{ if and $tab_id $tab_title }}
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="{{$tab_id}}_tab_btn" onclick="openTab(event, '{{$tab_id}}_tab')">
+                    <h4 class="py-3 hover-white">{{$tab_title}}</h4>
+                </button>
+                {{ end }}
+
+                <!-- tab 4 -->
+                {{ $tab_id := .Get "tab4_id" }}
+                {{ $tab_title := .Get "tab4_title" }}
+                {{ if and $tab_id $tab_title }}
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="{{$tab_id}}_tab_btn" onclick="openTab(event, '{{$tab_id}}_tab')">
+                    <h4 class="py-3 hover-white">{{$tab_title}}</h4>
+                </button>
+                {{ end }}
+
+                <!-- tab 5 -->
+                {{ $tab_id := .Get "tab5_id" }}
+                {{ $tab_title := .Get "tab5_title" }}
+                {{ if and $tab_id $tab_title }}
+                <button class="col-sm-12 col-md-{{$width}} tablinks" id="{{$tab_id}}_tab_btn" onclick="openTab(event, '{{$tab_id}}_tab')">
+                    <h4 class="py-3 hover-white">{{$tab_title}}</h4>
+                </button>
+                {{ end }}
+
+                <!-- tab 6 -->
+                {{ $tab_id := .Get "tab6_id" }}
+                {{ $tab_title := .Get "tab6_title" }}
                 {{ if and $tab_id $tab_title }}
                 <button class="col-sm-12 col-md-{{$width}} tablinks" id="{{$tab_id}}_tab_btn" onclick="openTab(event, '{{$tab_id}}_tab')">
                     <h4 class="py-3 hover-white">{{$tab_title}}</h4>
@@ -51,7 +83,7 @@
             evt.currentTarget.className += " active";
         };
     
-        $(document).ready(function () {
+        docReady(function () {
             let params = new URLSearchParams(window.location.search);
             if(params.has('tab')) {
                 document.getElementById(params.get('tab') + '_tab_btn').click();
@@ -62,7 +94,7 @@
         });
     </script>
     <script>
-        $(document).ready(function () {
+        docReady(function () {
             let params = new URLSearchParams(window.location.search);
             if (params.has('item')) {
                 let itemId = params.get('item');
