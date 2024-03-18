@@ -1,6 +1,6 @@
 {{ $id := .Get "id" }}
 <script>
-    $(document).ready(function () {
+    docReady(function () {
         new Accordion('#accordion_area_{{$id}}');
     });
 </script>

@@ -46,10 +46,9 @@ events:
       CEN-CENELEC Dublin
     image: /images/events/jtc21.jpg
     date: 13-02-2024
-    pdf: /pdf-files/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf
     facets:
       - value: type_presentation
-        label: Presentation
+        label: presentation
       - value: year_q1_2024
         label: Q1-2024
         hide: true
@@ -69,7 +68,7 @@ events:
         label: Q1-2024
         hide: true
       - value: type_panel
-        label: Panel discussion
+        label: panel discussion
   - title: University of Groningen (RUG) AI Act event
     description: |
       Sharing buttom-up experience on auditing AI during panel discussion.
@@ -83,7 +82,7 @@ events:
         label: Q1-2024
         hide: true
       - value: type_panel
-        label: Panel discussion
+        label: panel discussion
   - title: >-
       Presentation Bias Detection Tool study association Christiaan Huygens TU
       Delft
@@ -92,7 +91,6 @@ events:
       Delft
     image: /images/events/mathematics and computer science tu delft.png
     date: 08-01-2024
-    pdf: /pdf-files/20240108_BDT_TU_Delft.pdf
     facets:
       - value: '2024'
         label: '2024'
@@ -101,7 +99,7 @@ events:
         label: Q1-2024
         hide: true
       - value: type_presentation
-        label: Presentation
+        label: presentation
   - title: >-
       Presentation on inclusive, deliberative stakeholder panels – Working Group
       1 Inclusiveness JTC21 CEN-CENELEC
@@ -114,7 +112,7 @@ events:
     pdf: /pdf-files/20240107_AA_stakeholder_panels.pdf
     facets:
       - value: type_presentation
-        label: Presentation
+        label: presentation
       - value: year_q1_2024
         label: Q1-2024
         hide: true
@@ -133,7 +131,8 @@ events:
     pdf: ''
     facets:
       - value: type_event
-        label: Event
+        label: event
+        hide: false
       - value: year_q3_2023
         label: Q3-2023
         hide: true
@@ -141,6 +140,9 @@ events:
         label: '2023'
         hide: true
 ---
+
+
+
 
 
 

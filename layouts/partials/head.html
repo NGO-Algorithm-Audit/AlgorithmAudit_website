@@ -33,10 +33,20 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<script>
+  function docReady(fn) {
+    // see if DOM is already available 
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available ticksetTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    };
+  };
+</script>
 <!-- /scroll magic -->
 
 <!-- page header script -->
-<script src="/js/page_header_script.js"></script>
+<script src="/js/main.js"></script>
 <!-- /page header script -->
 
 <!-- accordion -->
@@ -49,39 +59,3 @@
 <link rel="stylesheet" href="https://static-files-pdf.s3.amazonaws.com/assets/index.css">
 {{ end }}
 <!-- /Page specific links -->
-
-<script>
-$(document).ready(function()
-{
-  // info
-  var slogan = "Building public knowledge for ethical algorithms";
-  var slogan_NL = "Publieke kennisopbouw voor ethische algoritmes";
-
-  var KvK = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212"
-  var KvK_NL = "Stichting Algorithm Audit is bij de Kamer van Koophandel geregistreerd onder nummer 83979212"
-
-  var follow = "Follow us:"
-  var follow_NL = "Volg ons:"
-
-  var location = window.location.href
-  if(location.includes("nl")){
-    // info
-    var slogan = slogan_NL
-    var KvK = KvK_NL
-    var follow = follow_NL
-  }
-
-  // info
-  $('#motto').text(slogan);
-  $('#KvK').text(KvK);
-  $('#follow').text(follow);
-
-
-  $('.clickable-wrapper').each(function() {
-    let clickable_item = $(this);
-    clickable_item.click(function() {
-      window.location = clickable_item.attr('data-href');
-    })
-  });
-});
-</script>

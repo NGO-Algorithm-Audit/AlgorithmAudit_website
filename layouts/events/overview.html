@@ -2,8 +2,6 @@
 {{ partial "page-header.html" . }}
 {{ $split_char := " " }}
 
-{{ partial "facets/facets-script.html" .}}
-
 <section class="section">
     <div class="container">
         <div class="row">
@@ -47,7 +45,7 @@
                                 $facet.value | printf "%s" }}
                                 {{ end }}
 
-                                <div class="ac py-3 my-5" data-facets="{{$facets_for_data_attribute}}">
+                                <div class="ac facet-item py-3 my-5" data-facets="{{$facets_for_data_attribute}}">
                                     <div class="ac-header grid pr-3">
                                         <div class="ac-trigger">
                                             <div class="row justify-content-between m-0" >

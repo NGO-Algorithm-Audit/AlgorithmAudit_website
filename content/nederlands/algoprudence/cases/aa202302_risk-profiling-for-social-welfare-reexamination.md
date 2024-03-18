@@ -133,18 +133,22 @@ form1:
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
   questions:
-    - label: Naam
+    - label: |
+        Naam
       id: name
       required: true
       type: text
-    - label: Affiliated organization
+    - label: |
+        Affiliated organization
       id: affiliated-organization
       type: text
-    - label: Reactie
+    - label: |
+        Reactie
       id: reaction
       required: true
       type: textarea
-    - label: Contactgegevens
+    - label: |
+        Contactgegevens
       id: contact-details
       required: true
       type: email
@@ -225,6 +229,8 @@ Raadsleden hebben naar aanleiding van adviesrapport AA-2023:02:A <a href="https
 * (on)geschikte selectiecriteria die aan het ML gevoed kunnen worden voor variabeleselectie
 * uitlegbaarheidsvereisten voor het gebruikte explainable boosting algoritme
 * implicaties van de aanstaande AI Verordening voor deze vorm van risicoprofileren.
+
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1oPiO_s9KuV7446BqC9a4P2qjW7MGUyxu/preview" >}}
 
 {{< accordion_item_close >}}
 

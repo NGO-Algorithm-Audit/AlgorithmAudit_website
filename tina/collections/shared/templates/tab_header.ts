@@ -53,6 +53,39 @@ let template : RichTextTemplate = {
             type: "string",
             name: "tab3_title",
             label: "Tab 3 title",
+        },
+        {
+            type: "string",
+            name: "tab4_id",
+            label: "Tab 4 id",
+            description: "id, which should correspond with the tabs",
+        },
+        {
+            type: "string",
+            name: "tab4_title",
+            label: "Tab 4 title",
+        },
+        {
+            type: "string",
+            name: "tab5_id",
+            label: "Tab 5 id",
+            description: "id, which should correspond with the tabs",
+        },
+        {
+            type: "string",
+            name: "tab5_title",
+            label: "Tab 5 title",
+        },
+        {
+            type: "string",
+            name: "tab6_id",
+            label: "Tab 6 id",
+            description: "id, which should correspond with the tabs",
+        },
+        {
+            type: "string",
+            name: "tab6_title",
+            label: "Tab 6 title",
         }
     ]
 };
