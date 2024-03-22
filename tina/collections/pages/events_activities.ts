@@ -3,9 +3,50 @@
  */
 import facet_groups from "../shared/facets/facet_groups";
 import facets from "../shared/facets/facets";
-import title from "../shared/page/title";
-import subtitle from "../shared/page/subtitle";
-import image from "../shared/page/image";
+import { TinaField } from "tinacms";
+import building_blocks from "../shared/page/building_blocks";
+import pdf_frame from "../shared/templates/pdf_frame";
+
+let specific_fields : TinaField[] = [
+    facet_groups,
+    {
+        type: "object",
+        name: "events",
+        label: "Events",
+        list: true,
+        fields:
+            [
+                {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    required: true,
+                },
+                {
+                    type: "rich-text",
+                    name: "description",
+                    label: "Description",
+                    templates: [
+                        pdf_frame
+                    ]
+                },
+                {
+                    type: "image",
+                    name: "image",
+                    label: "Image",
+                    required: true,
+                },
+                {
+                    type: "string",
+                    name: "date",
+                    label: "Date",
+                    required: true,
+                    description: "dd-MM-yyyy (e.g. 13-06-2024)"
+                },
+                facets
+            ]
+    }
+];
 
 export default {
     name: "events_activities",
@@ -14,49 +55,5 @@ export default {
     match: {
         include: '**/events/activities',
     },
-    fields: [
-        title,
-        subtitle,
-        image,
-        facet_groups,
-        {
-            type: "object",
-            name: "events",
-            label: "Events",
-            list: true,
-            fields:
-                [
-                    {
-                        type: "string",
-                        name: "title",
-                        label: "Title",
-                        required: true,
-                    },
-                    {
-                        type: "rich-text",
-                        name: "description",
-                        label: "Description"
-                    },
-                    {
-                        type: "image",
-                        name: "image",
-                        label: "Image",
-                        required: true,
-                    },
-                    {
-                        type: "string",
-                        name: "date",
-                        label: "Date",
-                        required: true,
-                        description: "dd-MM-yyyy (e.g. 13-06-2024)"
-                    },
-                    {
-                        type: "image",
-                        name: "pdf",
-                        label: "PDF",
-                    },
-                    facets
-                ]
-        }
-    ]
+    fields: specific_fields.concat(building_blocks)
 };

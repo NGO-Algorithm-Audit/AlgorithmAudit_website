@@ -44,6 +44,12 @@ events:
       Presentation Fundamental Rights Impact Assessments (FRIAs) and inclusive,
       deliberative stakeholder panels for responsible AI – plenary JTC21
       CEN-CENELEC Dublin
+
+
+      {{< pdf_frame
+      articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview"
+      articleUrl2="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview"
+      width_desktop_pdf="6" width_mobile_pdf="12" >}}
     image: /images/events/jtc21.jpg
     date: 13-02-2024
     facets:
@@ -109,7 +115,6 @@ events:
       CEN-CENELEC
     image: /images/events/jtc21.jpg
     date: 07-01-2024
-    pdf: /pdf-files/20240107_AA_stakeholder_panels.pdf
     facets:
       - value: type_presentation
         label: presentation
@@ -128,7 +133,6 @@ events:
       sent to the European Commission.
     image: /images/events/DSA.jpeg
     date: 27-06-2023
-    pdf: ''
     facets:
       - value: type_event
         label: event
@@ -140,53 +144,4 @@ events:
         label: '2023'
         hide: true
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
