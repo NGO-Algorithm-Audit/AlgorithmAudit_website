@@ -7,6 +7,7 @@ weight = 1
 [[main]]
 name = "Algoprudence"
 weight = 2
+url = "/algoprudence"
 hasChildren = true
   [[main]]
   parent = "Algoprudence"
@@ -34,6 +35,7 @@ hasChildren = true
 name = "Technical tools"
 weight = 3
 hasChildren = true
+url = "/technical-tools/BDT"
   [[main]]
   parent = "Technical tools"
   name = "Github code"
@@ -62,6 +64,7 @@ hasChildren = true
 name = "Knowledge platform"
 weight = 4
 hasChildren = true
+url = "/knowledge-platform/knowledge-base"
   [[main]]
   parent = "Knowledge platform"
   name = "AI Act standards"
@@ -115,6 +118,7 @@ hasChildren = true
 name = "About"
 weight = 6
 hasChildren = true
+url = "/about/contact"
   [[main]]
   parent = "About"
   name = "Get in touch"

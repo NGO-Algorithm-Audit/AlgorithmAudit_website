@@ -70,17 +70,23 @@ other = "Newsletter"
 [newsletter_info]
 other = "Stay up to date about our work by signing up for our newsletter"
 
-[privacy_cookie_policy]
-other = "Privacy and cookies policy"
-
-[stiching_info]
-other = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212"
-
 [required]
 other = "required"
 
-[license]
-other = "This website is built under CC-BY 4.0 license. This means you can share and adapt content freely, as long as you credit Algorithm Audit and named co-creators"
-
 [pdf-preview-unsupported]
 other = "The PDF preview is not supported by this browser, click here to open the PDF file."
+
+[footer.privacy_cookie_policy]
+other = "Privacy and cookies policy"
+
+[footer.license]
+other = "This website is built under CC-BY 4.0 license. This means you can share and adapt content freely, as long as you credit Algorithm Audit and named co-creators"
+
+[footer.slogan]
+other = "Building public knowledge for ethical algorithms"
+
+[footer.kvk]
+other = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212"
+
+[footer.follow]
+other = "Follow us:"
