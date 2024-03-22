@@ -2,7 +2,7 @@
 title: Test
 subtitle: |
   Test
-image: /images/Erasmus.png
+image: /images/Image.jpeg
 author: de
 type: regular
 summary: de
