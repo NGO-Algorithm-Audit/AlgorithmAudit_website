@@ -6,7 +6,7 @@ Install npm packages
 `npm install`
 
 Initialise TinaCMS
-'npx @tinacms/cli init'
+`npx @tinacms/cli init`
 Enter any client id and token
 We recommend using NPM for the package manager
 Use typescript
