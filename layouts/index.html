@@ -185,11 +185,15 @@
         </div>
 
         {{ range .featured_activities }}
-        <div class="clickable-wrapper" data-href="{{.link | relURL }}">
-          <div class="row p-5" style="background-color: #ffffff;">
+        <a class="" href="{{.link | relURL }}">
+          <div class="row justify-content-between clickable-wrapper p-5" style="background-color: #ffffff;">
+
+            <!-- image -->
             <div class="col-3 pr-4">
-              <img class="img-fluid" style="height:200px; position:absolute;" src="{{.image}}" />
+              <img class="featured-img" src="{{.image}}" />
             </div>
+            <!-- /image -->
+
             <div class="col-9">
               <div class="row align-items-center">
 
@@ -198,9 +202,9 @@
                 <!-- /title featured article -->
 
                 <!-- intro text -->
-                <p style="color: #777">
+                <p style="color: #777;">
                   {{.intro | markdownify}}
-                  <a href="{{.link | relURL}}">{{ i18n "read_more" }}</a>
+                  <span style="color: #005aa7;">{{ i18n "read_more" }}</span>
                 </p>
                 <!-- intro text -->
               </div>
@@ -222,7 +226,7 @@
 
             </div>
           </div>
-        </div>
+        </a>
         {{end}}
         {{end}}
         <!-- /Featured Activities -->
@@ -254,6 +258,7 @@
               </div>
               <!-- /title -->
 
+              <!-- metadata -->
               <div class="row" style="position: relative; bottom: 0;">
                 {{ if .date }}
                 <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 ml-2">
@@ -266,6 +271,7 @@
                 </span>
                 {{ end }}
               </div>
+              <!-- /metadata -->
             </div>
           </div>
         </a>
@@ -292,8 +298,8 @@
         <h3 class="section-title" style="color:#005aa7;">{{ i18n "featured" }}</h3>
       </div>
       {{ range .featured_activities }}
-      <div class="clickable-wrapper" data-href="{{.link | relURL }}">
-        <div class="row p-5" style="background-color: #ffffff;">
+      <a class="" href="{{.link | relURL }}">
+        <div class="row justify-content-between clickable-wrapper row p-5" style="background-color: #ffffff;">
           <div class="col-12 pr-4" style="margin-bottom:50px;">
             <img class="img-fluid about-img-mobile" src="{{.image}}" />
           </div>
@@ -304,13 +310,18 @@
               <h4 class="mb-2" style="color:#005aa7;">{{.title}}</h4>
               <!-- /title -->
 
-              <p style="color: #777">{{.intro | markdownify}} 
-                <a href="{{.link | relURL}}">{{ i18n "read_more" }}</a>
+              <!-- intro text -->
+              <p style="color: #777;">
+                {{.intro | markdownify}}
+                <span style="color: #005aa7;">{{ i18n "read_more" }}</span>
               </p>
+              <!-- intro text -->
             </div>
+
+            <!-- metadata -->
             <div class="row" style="position:relative;">
               {{ if .date }}
-              <span style="color:#005aa7;" class="mr-1 mb-2 px-0 py-1 mx-0">
+              <span style="color:#005aa7;" class="mr-1 mt-1 px-0 py-1 mx-0">
                 {{.date }}
               </span>
               {{ end }}
@@ -320,9 +331,11 @@
               </span>
               {{ end }}
             </div>
+            <!-- /metadata -->
+
           </div>
         </div>
-      </div>
+      </a>
       {{end}}
       {{end}}
       <!-- /Featured Activities -->
@@ -350,7 +363,7 @@
             </div>
             <div class="row pl-4 mb-3" style="position:relative; bottom:0;">
               {{ if .date }}
-              <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 mx-1">
+              <span style="color:#005aa7;" class="mr-1 mt-1 px-2 py-1 mx-1">
                 {{.date }}
               </span>
               {{ end }}
