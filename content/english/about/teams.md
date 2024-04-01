@@ -33,9 +33,7 @@ about_AA:
         [op-eds](/knowledge-platform/knowledge-base/).
 team:
   title: Synthetic data generation cohort
-  content: >-
-    Part-time team that works 2-4 hours per week for 6 months on synthetic data
-    generation
+  content: Part-time team working on synthetic data generation
   icon: fas fa-table
   button_text: Synthetic data generation
   id: SDG-team
@@ -63,9 +61,7 @@ team:
         Research Scientist, Spotify
 team1:
   title: Bias detection tool cohort
-  content: >-
-    Part-time team that works 2-4 hours per week for 6 months on bias detection
-    tool
+  content: Part-time team working on the bias detection tool
   icon: fas fa-search
   button_text: Our bias detection tool
   id: bdt
