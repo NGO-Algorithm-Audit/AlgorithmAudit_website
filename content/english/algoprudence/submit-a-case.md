@@ -6,53 +6,6 @@ subtitle: >
   algorithm. Or submit a carefully documented normative judgement for inlcusion
   in our case repository.
 image: /images/svg-illustrations/case_repository.svg
-team:
-  title: Team Algoprudence
-  icon: fas fa-user-friends
-  button_text: Other teams
-  button_link: /about/teams/
-  team_members:
-    - image: /images/people/VDjwalapersad.png
-      name: Vardâyani Djwalapersad
-      bio: |
-        Project manager Algoprudence
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Director-board member
-    - image: /images/people/AVoogt.jpeg
-      name: Ariën Voogt
-      bio: |
-        Board member
-    - image: /images/people/SMohammad.jpeg
-      name: Samaa Mohammad-Ulenberg
-      bio: |
-        Board member
-reports_preview:
-  title: Recent audits
-  icon: fas fa-file
-  button_text: Case repository
-  button_link: /algoprudence
-  feature_item:
-    - name: 'Risk Profiling Social Welfare Re-examination '
-      image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
-      link: >-
-        /algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
-      content: >
-        Normative advice commission provides rationales why these variables are
-        eligible or not as a profiling selection criterion for a xgboost
-        algorithm
-    - name: Technical audit indirect discrimination
-      image: /images/algoprudence/AA202401/Cover.png
-      link: /algoprudence/cases/aa202401_bias-prevented/
-      content: >
-        Qualitative and quantitative audit of algorithmic-driven college
-        allowances control process. Assessment of risk distributions through
-        Z-tests and bias test in the control process
-text_field1:
-  title: What are the next steps after case submission?
-  icon: fas fa-forward
-  content: ''
 form1:
   title: Case information
   content: ''
@@ -142,12 +95,51 @@ form2:
         described above, kept for the minimum necessary duration, and is
         securely stored in a protected environment</span>
       id: terms-conditions
-      values:
-        - label: Agree
-          value: agree
-          id: agree
       required: true
       type: checkbox
+reports_preview:
+  title: Recent audits
+  icon: fas fa-file
+  button_text: Case repository
+  button_link: /algoprudence
+  feature_item:
+    - name: 'Risk Profiling Social Welfare Re-examination '
+      image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
+      link: >-
+        /algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
+      content: >
+        Normative advice commission provides rationales why these variables are
+        eligible or not as a profiling selection criterion for a xgboost
+        algorithm
+    - name: Technical audit indirect discrimination
+      image: /images/algoprudence/AA202401/Cover.png
+      link: /algoprudence/cases/aa202401_bias-prevented/
+      content: >
+        Qualitative and quantitative audit of algorithmic-driven college
+        allowances control process. Assessment of risk distributions through
+        Z-tests and bias test in the control process
+team:
+  title: Team Algoprudence
+  icon: fas fa-user-friends
+  button_text: Other teams
+  button_link: /about/teams/
+  team_members:
+    - image: /images/people/VDjwalapersad.jpeg
+      name: Vardâyani Djwalapersad
+      bio: |
+        Project manager Algoprudence
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
+      bio: |
+        Director-board member
+    - image: /images/people/AVoogt.jpeg
+      name: Ariën Voogt
+      bio: |
+        Board member
+    - image: /images/people/SMohammad.jpeg
+      name: Samaa Mohammad-Ulenberg
+      bio: |
+        Board member
 ---
 
 {{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for normative review" tab2_id="case-repository" tab2_title="Add a case to algoprudence repository" >}}

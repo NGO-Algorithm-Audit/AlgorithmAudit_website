@@ -1,88 +1,4 @@
 ---
-Areas_of_AI_expertise:
-  title: AI expertise
-  enable: true
-  width_m: 4
-  width_s: 12
-  button_text: Discuss collaboration
-  button_link: /knowledge-platform/collaboration/
-  feature_item:
-    - name: Profiling
-      icon: fas fa-chart-pie
-      content: >
-        Auditing rule-based and ML-driven profiling, e.g., differentiation
-        policies, selection criteria, Z-testing, model validation and
-        organisational aspects
-    - name: FP-FN balancing
-      icon: fa-solid fa-scale-balanced
-      content: >
-        Context-dependent review of ML and DL confusion matrix-based evaluation
-        metrics, such as False Positives (FPs) and False Negatives (FNs)
-    - name: Ranking
-      icon: fas fa-ranking-star
-      content: >
-        Recommender systems are everywhere. With the new Digital Services Act
-        (DSA) came into forces last summer, auditing ranking systems is highly
-        relevant
-Building_algoprudence:
-  title: Building _algoprudence_
-  button_text: Our working method
-  button_link: /algoprudence/how-we-work/
-  steps:
-    - title: Indentifying issue
-      content: >
-        Identifying a concrete ethical issue in a real algorithm or
-        data-analysis tool
-    - title: Problem statement
-      content: >
-        Describe ethical issue, legal aspects and hear stakeholders and affected
-        groups
-    - title: Advice commission
-      content: >
-        Deliberative conversation on ethical issue by diverse and inclusive
-        advice commission
-    - title: Public advice
-      content: >
-        Advice of commission is published together with problem statement on our
-        website. Publicly sharing the problem statement and normative advice is
-        called *algoprudence*
-Advantages_of_algoprudence:
-  title: Advantages of algoprudence
-  image: /images/other/Awb.jpg
-  button_text: White paper on algoprudence
-  feature_item:
-    - name: Learn & harmonize
-      icon: fas fa-book-reader
-      content: >
-        [<span style="color:#005aa7">></span>](/algoprudence) Ignite collective
-        learning process to deploy and audit responsible AI
-
-
-        [<span style="color:#005aa7">></span> ](/algoprudence)Harmonizes the
-        resolution of ethical questions and the interpretation of open legal
-        norms
-    - name: Question & criticize
-      icon: fas fa-comment
-      content: >
-        [<span style="color:#005aa7">></span>](/algoprudence) Fostering
-        criticism on normative decision-making through transparency
-
-
-        [<span style="color:#005aa7">></span> ](/algoprudence)Informing public
-        debate with important ethical issues to be discussed within  democratic
-        sight
-    - name: Inclusion & participation
-      icon: fas fa-hands-helping
-      content: >
-        [<span style="color:#005aa7">></span> ](/algoprudence)Connecting various
-        stakeholders to design ethical algorithms together with technical
-        experts
-
-
-        [<span style="color:#005aa7">></span> ](/algoprudence)European answer to
-        deploy responsible AI systems
-Title_gif:
-  title: Jurisprudence for algorithms
 Banner:
   image: /images/svg-illustrations/main_illustration.svg
   tag: definition
@@ -185,6 +101,52 @@ Distinctive_in:
         style="color:white;text-decoration: underline;">publicly available</a>,
         increasing collective knowledge how to deploy and use algorithms in an
         responsible way
+Areas_of_AI_expertise:
+  title: AI expertise
+  enable: true
+  width_m: 4
+  width_s: 12
+  button_text: Discuss collaboration
+  button_link: /knowledge-platform/collaboration/
+  feature_item:
+    - name: Algorithms for decision support
+      icon: fas fa-divide
+      content: >
+        Audting data-analysis methods and algorithms used for decision support.
+        Among others by checking organizational checks and balances, and
+        assessing the quantitative dimension
+    - name: AI Act standards
+      icon: fas fa-certificate
+      content: >
+        As Algorithm Audit is part of Dutch and Europen standardization
+        organisation  NEN and CEN-CENELEC, AI systems are audited according to
+        the latest standards. See also our public <a
+        href="https://algorithmaudit.eu/knowledge-platform/standards/"
+        style="text-decoration: underline;">knowledge base</a> on
+        standardization
+    - name: Profiling
+      icon: fas fa-chart-pie
+      content: >
+        Auditing rule-based and ML-driven profiling, e.g., differentiation
+        policies, selection criteria, Z-testing, model validation and
+        organisational aspects
+    - name: FP-FN balancing
+      icon: fa-solid fa-scale-balanced
+      content: >
+        Context-dependent review of ML and DL confusion matrix-based evaluation
+        metrics, such as False Positives (FPs) and False Negatives (FNs)
+    - name: Ranking
+      icon: fas fa-ranking-star
+      content: >
+        Recommender systems are everywhere. With the new Digital Services Act
+        (DSA) came into forces last summer, auditing ranking systems is highly
+        relevant
+    - name: Generative AI
+      icon: fas fa-robot
+      content: >
+        Auditing training process of foundation model, among others selection of
+        training data, human feedback for reinformcement learning and risk
+        management, according AI Act standards standaarden
 Recent_audits:
   title: Recent audits
   feature_item:
@@ -202,55 +164,68 @@ Recent_audits:
       content: >
         Assessment of risk distributions through Z-tests and bias test for
         various steps in algorithmic-driven decision-making process
+Building_algoprudence:
+  title: Building _algoprudence_
+  button_text: Our working method
+  button_link: /algoprudence/how-we-work/
+  steps:
+    - title: Indentifying issue
+      content: >
+        Identifying a concrete ethical issue in a real algorithm or
+        data-analysis tool
+    - title: Problem statement
+      content: >
+        Describe ethical issue, legal aspects and hear stakeholders and affected
+        groups
+    - title: Advice commission
+      content: >
+        Deliberative conversation on ethical issue by diverse and inclusive
+        advice commission
+    - title: Public advice
+      content: >
+        Advice of commission is published together with problem statement on our
+        website. Publicly sharing the problem statement and normative advice is
+        called *algoprudence*
+Advantages_of_algoprudence:
+  title: Advantages of algoprudence
+  image: /images/knowledge_base/NJB-cover.jpg
+  button_text: White paper on algoprudence
+  button_link: /knowledge-platform/knowledge-base/njb-artikel/
+  feature_item:
+    - name: Learn & harmonize
+      icon: fas fa-book-reader
+      content: >
+        [<span style="color:#005aa7">></span>](/algoprudence) Ignite collective
+        learning process to deploy and audit responsible AI
+
+
+        [<span style="color:#005aa7">></span> ](/algoprudence)Harmonizes the
+        resolution of ethical questions and the interpretation of open legal
+        norms
+    - name: Question & criticize
+      icon: fas fa-comment
+      content: >
+        [<span style="color:#005aa7">></span>](/algoprudence) Fostering
+        criticism on normative decision-making through transparency
+
+
+        [<span style="color:#005aa7">></span> ](/algoprudence)Informing public
+        debate with important ethical issues to be discussed within  democratic
+        sight
+    - name: Inclusion & participation
+      icon: fas fa-hands-helping
+      content: >
+        [<span style="color:#005aa7">></span> ](/algoprudence)Connecting various
+        stakeholders to design ethical algorithms together with technical
+        experts
+
+
+        [<span style="color:#005aa7">></span> ](/algoprudence)European answer to
+        deploy responsible AI systems
+Title_gif:
+  title: Jurisprudence for algorithms
 Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

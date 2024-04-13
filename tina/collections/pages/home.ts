@@ -535,6 +535,11 @@ export default {
                         label: "Button text"
                     },
                     {
+                        label: "Link",
+                        type: "string",
+                        name: "button_link",
+                    },
+                    {
                         type: "object",
                         name: "feature_item",
                         label: "Featured Items",
