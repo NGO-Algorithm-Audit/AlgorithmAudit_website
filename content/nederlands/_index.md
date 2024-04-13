@@ -73,6 +73,14 @@ Supported_by:
     - image: /images/supported_by/HAI.png
       link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
       alt_text: Stanford's AI Audit Challenge 2023 finalisten
+Building_ai_audit_capacity:
+  lines:
+    - text_before: Opbouwen van
+      text_highlighted: publieke kennis
+      text_after: ''
+    - text_before: ' over verantwoorde AI'
+      text_highlighted: zonder winstoogmerk
+      text_after: ''
 Distinctive_in:
   enable: true
   title: Onderscheidend in
@@ -93,7 +101,12 @@ Distinctive_in:
         data-analyse
     - name: Publieke kennis
       icon: fab fa-slideshare
-      content: "Al onze casuïstiek en bijbehorend advies (algoprudentie) is\_<a href=\"https://algorithmaudit.eu/algoprudence/\" style=\"color:white;text-decoration: underline;\">openbaar</a>. Zo dragen we bij aan publieke kennisopbouw over de verantwoorde inzet van algoritmes\n"
+      content: >
+        Al onze casuïstiek en bijbehorend advies (algoprudentie) is <a
+        href="https://algorithmaudit.eu/nl/algoprudence/"
+        style="color:white;text-decoration: underline;">openbaar</a>. Zo dragen
+        we bij aan publieke kennisopbouw over de verantwoorde inzet van
+        algoritmes
 Areas_of_AI_expertise:
   title: AI expertise
   enable: true
@@ -102,6 +115,20 @@ Areas_of_AI_expertise:
   button_text: Samenwerking bespreken
   button_link: /nl/knowledge-platform/collaboration/
   feature_item:
+    - name: Ondersteuning van besluitvorming
+      icon: fas fa-divide
+      content: >
+        Auditeren van data-analysemethode en algoritmes die
+        besluitvormingsprocessen ondersteunen. Onder andere aan de hand van
+        check op organisatorische waarborgen en check op kwantitatieve dimensie
+    - name: AI Verordening standaarden
+      icon: fas fa-certificate
+      content: >
+        Als onderdeel van Nederlands en Europees standaardiseringsorganisaties
+        NEN en CEN-CENELEC worden AI systemen volgens de laatste normen
+        geauditeerd. Zie ook onze publieke <a
+        href="https://algorithmaudit.eu/nl/knowledge-platform/standards/"
+        style="text-decoration: underline;">kennisbank</a> over standaardisering
     - name: Profilering
       icon: fas fa-chart-pie
       content: >
@@ -117,10 +144,19 @@ Areas_of_AI_expertise:
     - name: Aanbevelingssystemen
       icon: fas fa-ranking-star
       content: >
-        Validatie van hyperparameterselectie voor aanbevelingssystemen, zoals
-        [learning-to-rank](https://en.wikipedia.org/wiki/Learning_to_rank). Zie
-        ook onze feedback naar de Europese Commissie over onafhankelijke
-        third-party audits van recommender systems.
+        Validatie van hyperparameterselectie voor aanbevelingssystemen, zoals <a
+        href="https://en.wikipedia.org/wiki/Learning_to_rank"
+        style="text-decoration: underline;">learning-to-rank</a>. Zie ook onze
+        <a
+        href="/knowledge-platform/knowledge-base/white_paper_dsa_delegated_regulation_feedback/"
+        style="text-decoration: underline;">feedback</a> naar de Europese
+        Commissie over onafhankelijke third-party audits van recommender systems
+    - name: Generatieve AI
+      icon: fas fa-robot
+      content: >
+        Auditeren van trainingsproces van foundation model, o.a. selectie
+        trainingsdata, menselijke feedback voor reinformcement learning en
+        risicobeheersmaatregelen, volgens AI Verordening standaarden
 Recent_audits:
   title: Recente audits
   feature_item:
@@ -165,8 +201,9 @@ Building_algoprudence:
         *algoprudentie* genoemd
 Advantages_of_algoprudence:
   title: Voordelen van algoprudentie
-  image: /images/other/Awb.jpg
-  button_text: Wetenschappelijke paper over algoprudentie
+  image: /images/knowledge_base/NJB-cover.jpg
+  button_text: Lees het hele artikel
+  button_link: /nl/knowledge-platform/knowledge-base/njb-artikel/
   feature_item:
     - name: Leren & harmoniseren
       icon: fas fa-book-reader
@@ -195,215 +232,7 @@ Advantages_of_algoprudence:
 Title_gif:
   title: Jurisprudentie voor algoritmes
 Title_video:
-  title: De Film
+  title: Video
   video_mp4: /videos/AA_video_(1080p).mp4
-Building_ai_audit_capacity:
-  lines:
-    - text_before: Opbouwen van
-      text_highlighted: publieke kennis
-      text_after: ''
-    - text_before: ' over verantwoorde AI'
-      text_highlighted: zonder winstoogmerk
-      text_after: ''
-title_gif:
-  title: Jurisprudentie voor algoritmes
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

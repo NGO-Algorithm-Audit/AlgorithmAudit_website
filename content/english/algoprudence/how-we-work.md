@@ -1,22 +1,16 @@
 ---
-background_color: '#ffffff'
 title: How we work
 subtitle: >
   Over the years, we have developed our own deliberative audit methodology. We
   elaborate below on our 4-step working method.
 image: /images/svg-illustrations/main_illustration.svg
-text_field1:
-  title: Our 4-step audit methodology
-  icon: fas fa-eye
-  id: methodology
-  content: ''
 team:
   title: Algoprudence team
   icon: fas fa-user-friends
   button_text: Other teams
   button_link: /about/teams/
   team_members:
-    - image: /images/people/VDjwalapersad.png
+    - image: /images/people/VDjwalapersad.jpeg
       name: Vardâyani Djwalapersad
       bio: |
         Project manager Algoprudence

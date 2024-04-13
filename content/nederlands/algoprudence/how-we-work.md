@@ -1,5 +1,4 @@
 ---
-background_color: '#ffffff'
 title: Onze werkwijze
 subtitle: >
   Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie
@@ -12,7 +11,7 @@ team:
   id: team
   button_link: /nl/about/teams/
   team_members:
-    - image: /images/people/VDjwalapersad.png
+    - image: /images/people/VDjwalapersad.jpeg
       name: Vardâyani Djwalapersad
       bio: |
         Projectmanager algoprudentie
@@ -54,7 +53,7 @@ Het uitgebrachte advies van de commissie wordt samen met het probleemstelling-do
 
 {{< container_open icon="fa-file" title="Richtlijnen voor normatieve adviescommissies" id="richtlijnen" >}}
 
-Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie ontwikkeld. Algorithm Audit's richtlijnen voor het bijeenbrengen van normatieve adviescommissie kunnen worden gevonden in onderstaand document.  
+Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie ontwikkeld. Algorithm Audit's richtlijnen voor het bijeenbrengen van normatieve adviescommissie kunnen worden gevonden in onderstaand document.
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1eHKVFu7YApSdbGmOX1aKLOuH7UIkm41a/preview" >}}
 
