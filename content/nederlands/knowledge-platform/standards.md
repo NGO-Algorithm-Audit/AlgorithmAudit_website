@@ -8,12 +8,6 @@ subtitle: >
   CEN), draagt Algorithm Audit bij aan het vormgeven van procedurele standaarden
   waarbij verschillende belanghebbende worden betrokken om AI vorm te geven.
 image: /images/svg-illustrations/case_repository.svg
-text_field1:
-  title: AI Act standards
-  icon: fas fa-check
-  id: info
-  content: |
-    AI Act standards
 team:
   title: AI standaarden team
   icon: fas fa-user-friends
@@ -43,7 +37,7 @@ Tijdens de laatste plenaire bijeenkomst van JTC21 in Dublin 12-14 februari prese
 
 {{< image id="standaarden" width_desktop="3" width_mobile="6" image1="/images/partners/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partners/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" width_desktop_pdf="12" width_mobile_pdf="12" >}}
 
 {{< container_close >}}
 

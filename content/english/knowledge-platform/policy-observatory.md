@@ -36,7 +36,7 @@ As a member of Dutch standardization body NEN, Algorithm Audit contributes to th
 
 #### Presentation to European standardization body CEN-CENELEC on stakeholder panels
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" width_desktop_pdf="12" width_mobile_pdf="12" >}}
 
 {{< button button_text="Learn more about our standardization activities" button_link="/knowledge-platform/standards/" >}}
 
