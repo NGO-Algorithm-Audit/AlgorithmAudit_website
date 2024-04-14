@@ -7,12 +7,6 @@ subtitle: >
   participate in discussions on the bandwidth of technical and normative AI
   standards
 image: /images/svg-illustrations/case_repository.svg
-text_field1:
-  title: AI Act standards
-  icon: fas fa-check
-  id: info
-  content: |
-    AI Act standards
 team:
   title: AI standards team
   icon: fas fa-user-friends
@@ -28,19 +22,6 @@ team:
       name: Jurriaan Parie
       bio: |
         Director and board member
-form:
-  title: AI Standards cohort application form
-  button_text: Apply
-  backend_link: ...
-  id: form
-  questions:
-    - label: Name
-      id: name
-      type: text
-    - label: Mail address
-      id: mail
-      type: email
-      placeholder: Mail address
 ---
 
 {{< container_open icon="fas fa-check" title="AI Act standardization request" id="standardization-request" >}}
@@ -55,7 +36,7 @@ During last JTC21's plenary meeting in Dublin 12-14 Feb in Dublin, Algorithm Aud
 
 {{< image id="CEN-logo" width_desktop="3" width_mobile="6" image1="/images/partners/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partners/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" width_desktop_pdf="12" width_mobile_pdf="12" >}}
 
 {{< container_close >}}
 
