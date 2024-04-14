@@ -1,51 +1,32 @@
-[youremail]
-other = "E-mailadres"
+[attachment]
+other = "Bijlage"
 
-[read_more]
-other = "Lees meer..."
-
-
-[key_takeaways_normative_advice_commission]
-other = "Hoofdpunten normatieve adviescommissie"
-
-[summary-advice]
-other = "Samenvatting"
-
-[source_of_case]
-other = "Bron van de casus"
-
-[normative-advice-commission]
-other = "Normatieve adviescommissie"
-
-[funded-by]
-other = "Gefinancieerd door"
+[authors]
+other = "Auteur(s): "
 
 [description]
 other = "Beschrijving"
 
-[attachment]
-other = "Bijlage"
+[error404]
+other = "Sorry, maar hier is niks"
 
 [featured]
 other = "Uitgelicht"
 
-[recent-activity]
-other = "Recente activiteiten"
+[footer.follow]
+other = "Volg ons:"
 
-[algoprudence_description_tab]
-other = "Beschrijving algoprudentie"
+[footer.kvk]
+other = "Stichting Algorithm Audit is bij de Kamer van Koophandel geregistreerd onder nummer 83979212"
 
-[algoprudence_actions_tab]
-other = "Acties volgend op algoprudentie"
+[footer.license]
+other = "Deze website is gebouwd onder de CC-BY 4.0 licentie. Dit betekent dat je de content kunt hergebruiken en kunt aanpassen mits je Algorithm Audit en co-ontwikkelaars vermeldt "
 
-[algoprudence_discussion_tab]
-other = "Discussie volgend op algoprudentie"
+[footer.motto]
+other = "Publieke kennisopbouw voor ethische algoritmes"
 
-[required]
-other = "verplicht"
-
-[step]
-other = "Stap"
+[footer.privacy_cookie_policy]
+other = "Privacy- en cookieverklaring"
 
 [newsletter]
 other = "Nieuwsbrief"
@@ -53,20 +34,20 @@ other = "Nieuwsbrief"
 [newsletter_info]
 other = "Blijf op de hoogte van ons werk door je in te schrijven voor onze nieuwsbrief"
 
-[pdf-preview-unsupported]
-other = "De browser ondersteunt de PDF preview niet, klik hier om de pdf te openen."
+[readmore]
+other = "Lees meer"
 
-[footer.privacy_cookie_policy]
-other = "Privacy- en cookieverklaring"
+[read_more]
+other = "Lees meer..."
 
-[footer.license]
-other = "Deze website is gebouwd onder de CC-BY 4.0 licentie. Dit betekent dat je de content kunt hergebruiken en kunt aanpassen mits je Algorithm Audit en co-ontwikkelaars vermeldt "
+[recent-activity]
+other = "Recente activiteiten"
 
-[footer.slogan]
-other = "Publieke kennisopbouw voor ethische algoritmes"
+[required]
+other = "verplicht"
 
-[footer.kvk]
-other = "Stichting Algorithm Audit is bij de Kamer van Koophandel geregistreerd onder nummer 83979212"
+[step]
+other = "Stap"
 
-[footer.follow]
-other = "Volg ons:"
+[youremail]
+other = "E-mailadres"

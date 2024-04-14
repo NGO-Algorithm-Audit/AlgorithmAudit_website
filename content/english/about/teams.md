@@ -33,7 +33,7 @@ about_AA:
         [op-eds](/knowledge-platform/knowledge-base/).
 team:
   title: Synthetic data generation cohort
-  content: Part-time team working on synthetic data generation
+  content: Part-time team working on synthetic data generation for AI bias testing
   icon: fas fa-table
   button_text: Synthetic data generation
   id: SDG-team
@@ -61,9 +61,9 @@ team:
         Research Scientist, Spotify
 team1:
   title: Bias detection tool cohort
-  content: Part-time team working on the bias detection tool
+  content: Part-time team working on unsupervised the bias detection tool
   icon: fas fa-search
-  button_text: Our bias detection tool
+  button_text: Bias detection tool
   id: bdt
   button_link: /technical-tools/bdt/
   team_members:
@@ -97,7 +97,7 @@ team2:
       name: Jurriaan Parie
       bio: |
         Director-board member
-    - image: /images/people/VDjwalapersad.png
+    - image: /images/people/VDjwalapersad.jpeg
       name: Vardâyani Djwalapersad
       bio: |
         Project manager Algoprudence

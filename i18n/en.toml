@@ -1,68 +1,32 @@
-[readmore]
-other = "Read more"
+[attachment]
+other = "Attachment"
 
-[translations]
-other="Translations"
-
-[error404]
-other = "We are really sorry but there seems to be nothing here."
-
-[yourname]
-other = "Name"
-
-[youremail]
-other = "Email address"
-
-[subject]
-other = "Subject"
-
-[yourmessage]
-other = "Message"
-
-[sendnow]
-other = "Send"
-
-[read_more]
-other = "Read more..."
-
-[key_takeaways_normative_advice_commission]
-other = "Key takeaways normative advice commission"
-
-[summary-advice]
-other = "Summary advice"
-
-[source_of_case]
-other = "Source of case"
-
-[normative-advice-commission]
-other = "Normative advice commission"
-
-[funded-by]
-other = "Funded by"
+[authors]
+other = "Author(s): "
 
 [description]
 other = "Description"
 
-[attachment]
-other = "Attachment"
+[error404]
+other = "We are really sorry but there seems to be nothing here"
 
 [featured]
 other = "Featured"
 
-[recent-activity]
-other = "Recent activities"
+[footer.follow]
+other = "Follow us:"
 
-[algoprudence_description_tab]
-other = "Description of algoprudence"
+[footer.kvk]
+other = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212"
 
-[algoprudence_actions_tab]
-other = "Actions followed by this work"
+[footer.license]
+other = "This website is built under CC-BY 4.0 license. This means you can share and adapt content freely, as long as you credit Algorithm Audit and named co-creators"
 
-[algoprudence_discussion_tab]
-other = "Discussion & debate"
+[footer.motto]
+other = "Building public knowledge for ethical algorithms"
 
-[step]
-other = "Step"
+[footer.privacy_cookie_policy]
+other = "Privacy and cookies policy"
 
 [newsletter]
 other = "Newsletter"
@@ -70,23 +34,20 @@ other = "Newsletter"
 [newsletter_info]
 other = "Stay up to date about our work by signing up for our newsletter"
 
+[readmore]
+other = "Read more"
+
+[read_more]
+other = "Read more..."
+
+[recent-activity]
+other = "Recent activities"
+
 [required]
 other = "required"
 
-[pdf-preview-unsupported]
-other = "The PDF preview is not supported by this browser, click here to open the PDF file."
+[step]
+other = "Step"
 
-[footer.privacy_cookie_policy]
-other = "Privacy and cookies policy"
-
-[footer.license]
-other = "This website is built under CC-BY 4.0 license. This means you can share and adapt content freely, as long as you credit Algorithm Audit and named co-creators"
-
-[footer.slogan]
-other = "Building public knowledge for ethical algorithms"
-
-[footer.kvk]
-other = "Stichting Algorithm Audit is registered as a non-profit organisation at the Dutch Chambre of Commerce under license number 83979212"
-
-[footer.follow]
-other = "Follow us:"
+[youremail]
+other = "Email address"

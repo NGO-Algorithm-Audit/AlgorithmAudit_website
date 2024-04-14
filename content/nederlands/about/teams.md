@@ -41,7 +41,9 @@ about_AA:
         [opinie-artikelen](/nl/knowledge-platform/knowledge-base/).
 team:
   title: Synthetic data generatie cohort
-  content: Team dat part-time werkt aan synthetische data generatie
+  content: >-
+    Team dat part-time werkt aan synthetische data generatie voor AI bias
+    testing
   icon: fas fa-table
   button_text: Synthetische data generatie
   id: sdg
@@ -70,7 +72,7 @@ team:
         R\&D, Spotify
 team1:
   title: Bias detectie tool cohort
-  content: Team dat part-time werkt aan de bias detectie tool
+  content: Team dat part-time werkt aan de unsupervised bias detectie tool
   icon: fas fa-search
   button_text: Bias detectie tool
   id: bdt
@@ -106,7 +108,7 @@ team2:
       name: Jurriaan Parie
       bio: |
         Directeur-bestuurder
-    - image: /images/people/VDjwalapersad.png
+    - image: /images/people/VDjwalapersad.jpeg
       name: Vardâyani Djwalapersad
       bio: |
         Projectmanager Algoprudentie
