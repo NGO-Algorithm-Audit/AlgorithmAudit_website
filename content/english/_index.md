@@ -107,7 +107,7 @@ Areas_of_AI_expertise:
   width_m: 4
   width_s: 12
   button_text: Discuss collaboration
-  button_link: /knowledge-platform/collaboration/
+  button_link: /knowledge-platform/project-work/
   feature_item:
     - name: Algorithms for decision support
       icon: fas fa-divide

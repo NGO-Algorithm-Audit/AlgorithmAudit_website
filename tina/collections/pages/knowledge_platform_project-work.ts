@@ -4,11 +4,11 @@
 import building_blocks from "../shared/page/building_blocks";
 
 export default {
-    name: "knowledge_platform_collaboration",
-    label: "Knowledge platform (collaboration)",
+    name: "knowledge_platform_project_work",
+    label: "Knowledge platform (project work)",
     path: "content/",
     match: {
-        include: '**/knowledge-platform/collaboration',
+        include: '**/knowledge-platform/project-work',
     },
     fields: building_blocks,
 };
