@@ -3,7 +3,7 @@ title: >-
   Algorithm Audit (white paper) – Feedback on DSA Delegated Regulation
   (conducting independent audits)
 subtitle: ''
-image: /images/knowledge_base/white-paper-3.png
+image: /images/knowledge_base/White-paper1.png
 author: Algorithm Audit
 type: regular
 summary: >-
