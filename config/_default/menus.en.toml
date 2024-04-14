@@ -88,8 +88,8 @@ url = "/knowledge-platform/knowledge-base"
     icon = "fa-brain"
   [[main]]
   parent = "Knowledge platform"
-  name = "Collaboration"
-  url = "/knowledge-platform/collaboration"
+  name = "Project work"
+  url = "/knowledge-platform/project-work"
   weight = 4
   [[main.params]]
     icon = "fa-hands-helping"

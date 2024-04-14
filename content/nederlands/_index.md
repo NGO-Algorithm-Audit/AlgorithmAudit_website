@@ -113,7 +113,7 @@ Areas_of_AI_expertise:
   width_m: 4
   width_s: 12
   button_text: Samenwerking bespreken
-  button_link: /nl/knowledge-platform/collaboration/
+  button_link: /nl/knowledge-platform/project-work/
   feature_item:
     - name: Ondersteuning van besluitvorming
       icon: fas fa-divide

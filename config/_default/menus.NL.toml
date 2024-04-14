@@ -90,8 +90,8 @@ url = "/nl/knowledge-platform/knowledge-base"
     icon = "fa-brain"
   [[main]]
   parent = "Kennisplatform"
-  name = "Samenwerken"
-  url = "nl/knowledge-platform/collaboration"
+  name = "Projectwerk"
+  url = "nl/knowledge-platform/project-work"
   weight = 4
   [[main.params]]
     icon = "fa-hands-helping"
