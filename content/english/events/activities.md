@@ -31,13 +31,14 @@ events:
       ML-algorithms](/knowledge-platform/knowledge-base/njb-artikel/) at UvA AI,
       Media & Democracy lab
 
+
       {{< pdf_frame
       articleUrl1="https://drive.google.com/file/d/1J4HojWGUE4IBhVsxIsht0SXorIex8ngH/preview"
       width_desktop_pdf="12" width_mobile_pdf="12" >}}
     image: /images/events/images.jpeg
     date: 16-04-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q2_2024
@@ -57,7 +58,7 @@ events:
     image: /images/events/DH_rekenkamer.png
     date: 27-03-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -71,6 +72,7 @@ events:
       risk profiling method. Illustrating risks of both algorithmic- and
       human-driven decision-making processes. See also:
 
+
       * French-German broadcaster Arte recorded our contributions <a
       href="https://www.arte.tv/de/videos/119741-000-A/jurriaan-ki-pruefer-aus-den-niederlanden/"
       target="_blank">(link)</a>;
@@ -80,7 +82,7 @@ events:
     image: /images/events/Amsterdam.png
     date: 20-03-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -88,6 +90,16 @@ events:
         hide: true
       - value: type_interview
         label: interview
+  - title: Justice in AI workshop at TU Delft Design for Values Institute
+    description: >
+      Workshop on normative dimensions of balanced random forest model as used
+      in practice, e.g., balancing (hyper)parameter selection, recall/precision
+    image: /images/events/mathematics and computer science tu delft.png
+    date: 07-03-2024
+    facets:
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
   - title: >-
       Presentation Fundamental Rights Impact Assessments (FRIAs) and inclusive,
       deliberative stakeholder panels for responsible AI – plenary JTC21
@@ -109,7 +121,7 @@ events:
       - value: year_q1_2024
         label: Q1-2024
         hide: true
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
   - title: Algorithm seminar Dutch Data Protection Authority – Auditing algorithms
@@ -118,7 +130,7 @@ events:
     image: /images/events/dutch-data-protection.jpg
     date: 08-02-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -132,7 +144,7 @@ events:
     image: /images/events/RUG.png
     date: 06-02-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -149,7 +161,7 @@ events:
     image: /images/events/mathematics and computer science tu delft.png
     date: 08-01-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -172,7 +184,7 @@ events:
       - value: year_q1_2024
         label: Q1-2024
         hide: true
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
   - title: Digital Services Act Stakeholder Event European Commission
@@ -191,7 +203,7 @@ events:
       - value: year_q3_2023
         label: Q3-2023
         hide: true
-      - value: 'year_2023'
+      - value: year_2023
         label: '2023'
         hide: true
 title: Activities
