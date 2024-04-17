@@ -20,7 +20,7 @@ Banner:
 Activity_Feed:
   enable: true
   button_text: Meer evenementen...
-  button_link: /nl/events/activities
+  button_link: /nl/events/activities/#events
   featured_activities:
     - title: >-
         Vooringenomenheid voorkomen – Kwalitatieve en kwantitatieve audit van
@@ -37,23 +37,21 @@ Activity_Feed:
       date: 01-03-2024
       type: technische audit
   activities:
-    - title: >-
-        Presentatie Fundamentele Rechten Impact Assessments (FRIAs) en
-        stakeholder panels JTC21 CEN-CENELEC
-      link: /nl/events/activities
-      image: /images/events/jtc21.jpg
-      date: 13-02-2024
+    - title: 'Presentatie UvA AI, Media & Democratie Lab'
+      link: /nl/events/activities/#events
+      image: /images/events/images.jpeg
+      date: 16-04-2024
       type: presentatie
-    - title: AP Algoritmeseminar paneldiscussie – Het auditeren van algoritmes
-      link: /nl/events/activities
-      image: /images/events/dutch-data-protection.jpg
-      date: 08-02-2024
+    - title: Kennisdeling event Rekenkamer Den Haag
+      link: /nl/events/activities/#events
+      image: /images/events/DH_rekenkamer.png
+      date: 27-03-2024
       type: presentatie
-    - title: RUG AI Verordening event paneldiscussie
-      link: /nl/events/activities
-      image: /images/events/RUG.png
-      date: 06-02-2024
-      type: presentatie
+    - title: Inspreker gemeenteraad debat over ML-gedreven risicoprofilering
+      link: /nl/events/activities/#events
+      image: /images/events/Amsterdam.png
+      date: 20-03-2024
+      type: spreker
 Supported_by:
   title: Ondersteund door
   funders:
