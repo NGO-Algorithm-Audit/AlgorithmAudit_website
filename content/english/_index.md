@@ -16,7 +16,7 @@ Banner:
 Activity_Feed:
   enable: true
   button_text: View more...
-  button_link: /events/activities
+  button_link: /events/activities/#events
   featured_activities:
     - title: >-
         Bias prevented – Qualitative and quantitative audit of college
@@ -32,24 +32,21 @@ Activity_Feed:
       date: 01-03-2024
       type: technical audit
   activities:
-    - title: >-
-        Presentation Fundamental Rights Impact Assessment (FRIAs) and
-        deliberative, inclusive stakeholder panels plenary JTC21 CEN-CENELEC
-        Dublin
-      link: /events/activities
-      image: /images/events/jtc21.jpg
-      date: 13-02-2024
+    - title: 'Presentation at UvA AI, Media & Democracy lab'
+      link: /events/activities/#events
+      image: /images/events/images.jpeg
+      date: 16-04-2024
       type: presentation
-    - title: Panel discussion Dutch Data Protection Authority – Auditing algorithms
-      link: /events/activities
-      image: /images/events/dutch-data-protection.jpg
-      date: 08-02-2024
+    - title: Knowledge sharing Court of Auditors Municipality of The Hague
+      link: /events/activities/#events
+      image: /images/events/DH_rekenkamer.png
+      date: 27-03-2024
       type: presentation
-    - title: University of Groningen (RUG) AI Act event
-      link: /events/activities
-      image: /images/events/RUG.png
-      date: 06-02-2024
-      type: presentation
+    - title: Speaker during debate of city council on ML-driven risk profiling
+      link: /events/activities/#events
+      image: /images/events/Amsterdam.png
+      date: 20-03-2024
+      type: speaker
 Supported_by:
   title: Supported by
   funders:

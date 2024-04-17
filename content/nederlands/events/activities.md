@@ -7,6 +7,66 @@ subtitle: >
   mogelijke bijdrage te bespreken.
 image: /images/svg-illustrations/events.svg
 events:
+  - title: 'Presentatie UvA AI, Media & Democratie lab'
+    description: >
+      Presentatie over artikel [Hoe ‘algoprudentie’ kan bijdragen aan een verantwoorde inzet van machine learning-algoritmes](/nl/knowledge-platform/knowledge-base/njb-artikel/)
+      tijdens een seminar van UvA AI, Media & Democratie lab
+
+      {{< pdf_frame
+      articleUrl1="https://drive.google.com/file/d/1J4HojWGUE4IBhVsxIsht0SXorIex8ngH/preview"
+      width_desktop_pdf="12" width_mobile_pdf="12" >}}
+    image: /images/events/images.jpeg
+    date: 16-04-2024
+    facets:
+      - value: '2024'
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Kennisdeling Rekenkamer Den Haag
+    description: >
+      Kennisdeling over het auditeren van algoritmes vanuit zowel kwalitatief als kwantitatief perspectief
+
+      {{< pdf_frame
+      articleUrl1="https://drive.google.com/file/d/1CwCrQLdFP29ssxu-mnjAZxEGlfF66OW6/preview"
+      width_desktop_pdf="12" width_mobile_pdf="12" >}}
+    image: /images/events/DH_rekenkamer.png
+    date: 27-03-2024
+    facets:
+      - value: '2024'
+        label: '2024'
+        hide: true
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: type_event
+        label: event
+  - title: Spreker tijdens debat gemeenteraad Amsterdam
+    description: >
+      Bijdrage aan debat gemeenteraad over eindevaluatie 'Slimme check levensonderhoud' –
+      een risico-taxatiemethode voor aanvragen van bijstandsuitkeringen. Focus op risico van vooringenomenheid 
+      van zowel algoritme- als mens-gedreven controleproces. Zie ook:
+
+      * Frans-Duitse televisiezender Arte maakte opnames tijdens het debat <a
+      href="https://www.arte.tv/de/videos/119741-000-A/jurriaan-ki-pruefer-aus-den-niederlanden/"
+      target="_blank">(link)</a>;
+
+      * [Opinie-artikel](/nl/knowledge-platform/knowledge-base/op-ed_human_vs_machine_bias/)
+      over deze thematiek zoals gepubliceerd in Het Parool op 14-02-2024.
+    image: /images/events/Amsterdam.png
+    date: 20-03-2024
+    facets:
+      - value: 'year_2024'
+        label: '2024'
+        hide: true
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: type_interview
+        label: interview
   - title: >-
       Presentatie Fundamentele Rechten Impact Assessment (FRIAs) en inclusieve,
       deliberatieve adviescommissies voor verantwoorde AI – plenaire bijeenkomst
@@ -36,7 +96,7 @@ events:
     image: /images/events/dutch-data-protection.jpg
     date: 08-02-2024
     facets:
-      - value: '2024'
+      - value: 'year_2024'
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -50,7 +110,7 @@ events:
     image: /images/events/RUG.png
     date: 06-02-2024
     facets:
-      - value: '2024'
+      - value: 'year_2024'
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -67,7 +127,7 @@ events:
     image: /images/events/mathematics and computer science tu delft.png
     date: 08-01-2024
     facets:
-      - value: '2024'
+      - value: 'year_2024'
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -85,7 +145,7 @@ events:
     image: /images/events/jtc21.jpg
     date: 07-01-2024
     facets:
-      - value: '2024'
+      - value: 'year_2024'
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -101,11 +161,8 @@ events:
     image: /images/events/DSA.jpeg
     date: 27-06-2023
     facets:
-      - value: '2023'
+      - value: 'year_2023'
         label: '2023'
-        hide: true
-      - value: year_q3_2023
-        label: Q3-2023
         hide: true
       - value: type_event
         label: evenement
@@ -113,23 +170,17 @@ facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: q2_2024
+        label: Q2-2024
       - value: q1_2024
         label: Q1-2024
-      - value: q4_2023
-        label: Q4-2023
-      - value: q3_2023
-        label: Q3-2023
-      - value: q2_2023
-        label: Q2-2023
-      - value: q1_2023
-        label: Q1-2023
-      - value: '2022'
-        label: '2022'
+      - value: '2023'
+        label: '2023'
   - value: type
     title: Type evenement
     facets:
-      - value: blog
-        label: Blog
+      - value: article
+        label: Artikel
       - value: event
         label: Evenement
       - value: interview
