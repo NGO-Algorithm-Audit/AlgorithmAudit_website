@@ -97,6 +97,9 @@ events:
     image: /images/events/mathematics and computer science tu delft.png
     date: 07-03-2024
     facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
       - value: year_q1_2024
         label: Q1-2024
         hide: true
