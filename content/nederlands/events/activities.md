@@ -67,6 +67,21 @@ events:
         hide: true
       - value: type_interview
         label: interview
+  - title: Justice in AI workshop bij TU Delft Design for Values Institute
+    description: >
+      Workshop over normatieve dimensies van toepassing van een balanced random forest model
+      in practice, o.a. het selecteren van (hyper)parameter en balanceren van recall/precision
+    image: /images/events/mathematics and computer science tu delft.png
+    date: 07-03-2024
+    facets:
+      - value: type_event
+        label: event
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
   - title: >-
       Presentatie Fundamentele Rechten Impact Assessment (FRIAs) en inclusieve,
       deliberatieve adviescommissies voor verantwoorde AI – plenaire bijeenkomst
