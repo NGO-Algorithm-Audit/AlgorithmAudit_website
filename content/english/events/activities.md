@@ -1,11 +1,5 @@
 ---
 layout: overview
-title: Activities
-subtitle: >
-  Knowledge sharing is an integral part of Algorithm Audit's mission. Members of
-  our team speak at events. An overview can be found below. [Get in
-  touch](/about/contact/) to discuss contributions.
-image: /images/svg-illustrations/events.svg
 facet_groups:
   - value: year
     title: Year
@@ -36,6 +30,15 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: 'Presentation at UvA''s AI, Media & Democracy lab'
+    description: >
+      Presentation on our article How ‘algoprudence’ can contribute to
+      responsible use of ML-algorithms at UvA's AI, Media & Democracy lab
+    image: /images/events/images.jpeg
+    date: 16-04-2024
+    facets:
+      - value: type_presentation
+        label: Presentation
   - title: >-
       Presentation Fundamental Rights Impact Assessments (FRIAs) and inclusive,
       deliberative stakeholder panels for responsible AI – plenary JTC21
@@ -143,5 +146,11 @@ events:
       - value: '2023'
         label: '2023'
         hide: true
+title: Activities
+subtitle: >
+  Knowledge sharing is an integral part of Algorithm Audit's mission. Members of
+  our team speak at events. An overview can be found below. [Get in
+  touch](/about/contact/) to discuss contributions.
+image: /images/svg-illustrations/events.svg
 ---
 
