@@ -26,7 +26,7 @@ facet_groups:
       - value: technical
         label: Technical audit
       - value: normative
-        label: Normative audit
+        label: Normative review
   - value: type_of_algorithm
     title: Type of algorithm
     facets:
@@ -133,7 +133,7 @@ algoprudences:
         label: '2023'
         hide: true
       - value: type_of_audit_normative
-        label: normative audit
+        label: normative review
       - value: type_of_algorithm_profiling
         label: profiling
       - value: type_of_algorithm_ml
@@ -180,7 +180,7 @@ algoprudences:
         label: '2023'
         hide: true
       - value: type_of_audit_normative
-        label: normative audit
+        label: normative review
       - value: type_of_algorithm_bias_detection_tool
         label: bias detection tool
       - value: type_of_algorithm_ml
@@ -219,7 +219,7 @@ algoprudences:
         label: '2022'
         hide: true
       - value: type_of_audit_normative
-        label: normative audit
+        label: normative review
       - value: type_of_algorithm_profiling
         label: profiling
       - value: ethical_issue_proxy
