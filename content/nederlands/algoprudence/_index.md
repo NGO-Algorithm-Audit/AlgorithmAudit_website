@@ -20,13 +20,13 @@ facet_groups:
         label: '2023'
       - value: '2022'
         label: '2022'
-  - value: audit
+  - value: type_of_audit
     title: Type audit
     facets:
       - value: technical
         label: Technische audit
       - value: normative
-        label: Normatieve audit
+        label: Normatief oordeel
   - value: type_of_algorithm
     title: Type algoritme
     facets:
@@ -92,7 +92,7 @@ algoprudences:
       - value: year_2024
         label: '2024'
         hide: true
-      - value: audit_technical
+      - value: type_of_audit_technical
         label: technische audit
       - value: type_of_algorithm_rule_based
         label: regel gebaseerd
@@ -136,8 +136,8 @@ algoprudences:
         label: publieke organisatie
       - value: type_of_algorithm_profiling
         label: profilering
-      - value: audit_normative
-        label: normatieve audit
+      - value: type_of_audit_normative
+        label: normatief oordeel
       - value: type_of_algorithm_ml
         label: machine learning
       - value: type_of_algorithm_high_risk_AI
@@ -182,7 +182,7 @@ algoprudences:
         label: '2023'
         hide: true
       - value: type_of_audit_normative
-        label: normatieve audit
+        label: normatief oordeel
       - value: type_of_algorithm_bias_detection_tool
         label: bias detectie tool
       - value: type_of_algorithm_ml
@@ -221,7 +221,7 @@ algoprudences:
         label: '2022'
         hide: true
       - value: type_of_audit_normative
-        label: normative audit
+        label: normatief oordeel
       - value: type_of_algorithm_profiling
         label: profilering
       - value: ethical_issue_proxy
