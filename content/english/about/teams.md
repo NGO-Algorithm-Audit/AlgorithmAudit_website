@@ -7,7 +7,7 @@ about_AA:
   content: >-
     In 2021, NGO Algorithm Audit was founded on the idea that ethics in
     algorithmic methods urgently needs a case-based and bottom-up approach.
-    Algorithm Audit’s main activities are three-folded:
+    Algorithm Audit’s main activities are four-folded:
   icon: fas fa-balance-scale
   id: about
   items:
@@ -31,6 +31,10 @@ about_AA:
         our [AI policy observatory](/knowledge-platform/policy-observatory/),
         [white papers](/knowledge-platform/knowledge-base/) and
         [op-eds](/knowledge-platform/knowledge-base/).
+    - subtitle: Project work
+      image: /images/about/project.svg
+      content: >
+        Support for specific questions from public and private sector organisations regarding responsible use of AI
 team:
   title: Synthetic data generation cohort
   content: Part-time team working on synthetic data generation for AI bias testing
