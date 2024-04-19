@@ -12,7 +12,7 @@ about_AA:
     Stichting Algorithm Audit is in 2021 opgericht vanuit het idee dat de
     verantwoorde inzet van algoritmes alleen slaagt als normatieve aspecten van
     datamodelleren openlijk worden gedeeld, bediscussieerd en beslecht. De
-    kernactiviteiten van de stichting zijn drieledig:
+    kernactiviteiten van de stichting zijn vierledig:
   icon: fas fa-balance-scale
   id: about
   items:
@@ -39,6 +39,11 @@ about_AA:
         beleidsobservatorium](/nl/knowledge-platform/policy-observatory/),
         [white papers](/nl/knowledge-platform/knowledge-base/) en
         [opinie-artikelen](/nl/knowledge-platform/knowledge-base/).
+    - subtitle: Projectwerk
+      image: /images/about/project.svg
+      content: >
+        Ondersteuning bij specifieke vragen vanuit de publieke en private sector
+        over de verantwoorde inzet van algoritmes
 team:
   title: Synthetic data generatie cohort
   content: >-
