@@ -8,20 +8,28 @@ subtitle: >
   standards
 image: /images/svg-illustrations/case_repository.svg
 team:
-  title: AI standards team
+  title: AI Act standardization team
   icon: fas fa-user-friends
   button_text: Other teams
   id: team
   button_link: /about/teams/
   team_members:
+    - image: /images/people/ALeoneDeCastris.jpg
+      name: Arcangelo Leone de Castris
+      bio: |
+        AI Policy Researcher at The Alan Turing Institute, London
     - image: /images/people/EPetersen.jpeg
       name: Eike Petersen
       bio: |
-        Post-doc Fair AI in Medicine, Technical University of Denmark
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
+        Senior Scientist Medical AI, Fraunhofer MEVIS, Hannover
+    - image: /images/people/IMastenbroek.jpg
+      name: Irma Mastenbroek
       bio: |
-        Director and board member
+        Independent AI ethicist and freelance mathematician, Berlin
+    - image: /images/people/SDas.jpg
+      name: Sneha Das
+      bio: |
+        Assistant Professor Technical University of Denmark, Copenhagen
 ---
 
 {{< container_open icon="fas fa-check" title="AI Act standardization request" id="standardization-request" >}}
