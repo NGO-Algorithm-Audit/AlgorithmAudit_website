@@ -9,20 +9,28 @@ subtitle: >
   waarbij verschillende belanghebbende worden betrokken om AI vorm te geven.
 image: /images/svg-illustrations/case_repository.svg
 team:
-  title: AI standaarden team
+  title: AI Act standardisering team
   icon: fas fa-user-friends
   button_text: Andere teams
   id: team
   button_link: /nl/about/teams/
   team_members:
+    - image: /images/people/ALeoneDeCastris.jpg
+      name: Arcangelo Leone de Castris
+      bio: |
+        AI beleidsonderzoeker bij The Alan Turing Institute, Londen
     - image: /images/people/EPetersen.jpeg
       name: Eike Petersen
       bio: |
-        Post-doc Fair AI in Medicine, Technical University of Denmark
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
+        Senior onderzoeker medische AI, Fraunhofer MEVIS, Hannover
+    - image: /images/people/IMastenbroek.jpg
+      name: Irma Mastenbroek
       bio: |
-        Directeur-bestuurder
+        Onafhankelijke AI ethica en freelance wiskundige, Berlijn
+    - image: /images/people/SDas.jpg
+      name: Sneha Das
+      bio: |
+        Assistant Professor Technische Universiteit Denemarken, Kopenhagen
 ---
 
 {{< container_open icon="fas fa-check" title="AI Act standaarden" id="ai-act" >}}

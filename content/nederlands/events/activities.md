@@ -1,16 +1,52 @@
 ---
 layout: overview
-title: Evenementen
-subtitle: >
-  Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. We
-  spreken regelmatig op events. Stuur een [bericht](/nl/about/contact/) om een
-  mogelijke bijdrage te bespreken.
-image: /images/svg-illustrations/events.svg
+facet_groups:
+  - value: year
+    title: Jaar
+    facets:
+      - value: q2_2024
+        label: Q2-2024
+      - value: q1_2024
+        label: Q1-2024
+      - value: '2023'
+        label: '2023'
+  - value: type
+    title: Type evenement
+    facets:
+      - value: article
+        label: Artikel
+      - value: event
+        label: Evenement
+      - value: interview
+        label: Interview
+      - value: panel
+        label: Paneldiscussie
+      - value: presentation
+        label: Presentatie
 events:
+  - title: Seminar algoritmevalidatie
+    description: >
+      Criteria voor het auditeren van algoritmes krijgen langzaam vorm, zoals de
+      Z-toets voor profileringsalgoritmes. Maar voor verantwoord gebruik van
+      algoritmes is meer nodig dan alleen technische standaarden. Hoe kom je tot
+      normatieve oordeelsvorming over eerlijke algoritmes?
+
+
+      {{< pdf_frame
+      articleUrl1="https://drive.google.com/file/d/1edrNqP4cBgJ1zKv1970DsUJ3Tark6waF/preview"
+      width_desktop_pdf="12" width_mobile_pdf="12" >}}
+    image: /images/logo/logo.svg
+    date: 24-04-2024
+    facets:
+      - value: type_event
+        label: event
   - title: 'Presentatie UvA AI, Media & Democratie lab'
     description: >
-      Presentatie over artikel [Hoe ‘algoprudentie’ kan bijdragen aan een verantwoorde inzet van machine learning-algoritmes](/nl/knowledge-platform/knowledge-base/njb-artikel/)
+      Presentatie over artikel [Hoe ‘algoprudentie’ kan bijdragen aan een
+      verantwoorde inzet van machine
+      learning-algoritmes](/nl/knowledge-platform/knowledge-base/njb-artikel/)
       tijdens een seminar van UvA AI, Media & Democratie lab
+
 
       {{< pdf_frame
       articleUrl1="https://drive.google.com/file/d/1J4HojWGUE4IBhVsxIsht0SXorIex8ngH/preview"
@@ -28,7 +64,9 @@ events:
         label: presentatie
   - title: Kennisdeling Rekenkamer Den Haag
     description: >
-      Kennisdeling over het auditeren van algoritmes vanuit zowel kwalitatief als kwantitatief perspectief
+      Kennisdeling over het auditeren van algoritmes vanuit zowel kwalitatief
+      als kwantitatief perspectief
+
 
       {{< pdf_frame
       articleUrl1="https://drive.google.com/file/d/1CwCrQLdFP29ssxu-mnjAZxEGlfF66OW6/preview"
@@ -46,20 +84,23 @@ events:
         label: event
   - title: Spreker tijdens debat gemeenteraad Amsterdam
     description: >
-      Bijdrage aan debat gemeenteraad over eindevaluatie 'Slimme check levensonderhoud' –
-      een risico-taxatiemethode voor aanvragen van bijstandsuitkeringen. Focus op risico van vooringenomenheid 
-      van zowel algoritme- als mens-gedreven controleproces. Zie ook:
+      Bijdrage aan debat gemeenteraad over eindevaluatie 'Slimme check
+      levensonderhoud' – een risico-taxatiemethode voor aanvragen van
+      bijstandsuitkeringen. Focus op risico van vooringenomenheid  van zowel
+      algoritme- als mens-gedreven controleproces. Zie ook:
+
 
       * Frans-Duitse televisiezender Arte maakte opnames tijdens het debat <a
       href="https://www.arte.tv/de/videos/119741-000-A/jurriaan-ki-pruefer-aus-den-niederlanden/"
       target="_blank">(link)</a>;
 
-      * [Opinie-artikel](/nl/knowledge-platform/knowledge-base/op-ed_human_vs_machine_bias/)
+      *
+      [Opinie-artikel](/nl/knowledge-platform/knowledge-base/op-ed_human_vs_machine_bias/)
       over deze thematiek zoals gepubliceerd in Het Parool op 14-02-2024.
     image: /images/events/Amsterdam.png
     date: 20-03-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -69,8 +110,9 @@ events:
         label: interview
   - title: Justice in AI workshop bij TU Delft Design for Values Institute
     description: >
-      Workshop over normatieve dimensies van toepassing van een balanced random forest model
-      in practice, o.a. het selecteren van (hyper)parameter en balanceren van recall/precision
+      Workshop over normatieve dimensies van toepassing van een balanced random
+      forest model in practice, o.a. het selecteren van (hyper)parameter en
+      balanceren van recall/precision
     image: /images/events/mathematics and computer science tu delft.png
     date: 07-03-2024
     facets:
@@ -111,7 +153,7 @@ events:
     image: /images/events/dutch-data-protection.jpg
     date: 08-02-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -125,7 +167,7 @@ events:
     image: /images/events/RUG.png
     date: 06-02-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -142,7 +184,7 @@ events:
     image: /images/events/mathematics and computer science tu delft.png
     date: 08-01-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -160,7 +202,7 @@ events:
     image: /images/events/jtc21.jpg
     date: 07-01-2024
     facets:
-      - value: 'year_2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -176,32 +218,16 @@ events:
     image: /images/events/DSA.jpeg
     date: 27-06-2023
     facets:
-      - value: 'year_2023'
+      - value: year_2023
         label: '2023'
         hide: true
       - value: type_event
         label: evenement
-facet_groups:
-  - value: year
-    title: Jaar
-    facets:
-      - value: q2_2024
-        label: Q2-2024
-      - value: q1_2024
-        label: Q1-2024
-      - value: '2023'
-        label: '2023'
-  - value: type
-    title: Type evenement
-    facets:
-      - value: article
-        label: Artikel
-      - value: event
-        label: Evenement
-      - value: interview
-        label: Interview
-      - value: panel
-        label: Paneldiscussie
-      - value: presentation
-        label: Presentatie
+title: Evenementen
+subtitle: >
+  Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. We
+  spreken regelmatig op events. Stuur een [bericht](/nl/about/contact/) om een
+  mogelijke bijdrage te bespreken.
+image: /images/svg-illustrations/events.svg
 ---
+
