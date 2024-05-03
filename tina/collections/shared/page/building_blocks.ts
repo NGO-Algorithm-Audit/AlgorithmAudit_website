@@ -15,6 +15,7 @@ import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
 import container_open from "../templates/container_open";
 import container_close from "../templates/container_close";
+import donation from "../templates/donation";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
 import pdf_frame from "../templates/pdf_frame";
@@ -48,6 +49,7 @@ let building_blocks: TinaField[] = [
             button,
             container_open,
             container_close,
+            donation,
             form1,
             form2,
             template_image,
