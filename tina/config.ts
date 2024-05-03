@@ -18,6 +18,7 @@ import about_teams from "./collections/pages/about_teams";
 import about_boards from "./collections/pages/about_boards";
 import about_vacancies from "./collections/pages/about_vacancies";
 import privacy_policy from "./collections/pages/privacy_policy";
+import donation from "./collections/pages/donation";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
@@ -57,7 +58,8 @@ export default defineConfig({
       about_teams,
       about_boards,
       about_vacancies,
-      privacy_policy
+      privacy_policy,
+      donation
     ],
   },
 });
