@@ -2,7 +2,7 @@
 title: "Algorithms and Fundamental Rights"
 author: Janneke Gerards, Remco Nehmelman, Max Vetzo
 image: "/images/knowledge_base/Algoritmes_en_grondrechten.png"
-type: "regular"
+layout: article
 draft: false
 summary: Overview how automated decision-making has a profound impact on fundamental rights in the context of the Dutch legal system
 ---

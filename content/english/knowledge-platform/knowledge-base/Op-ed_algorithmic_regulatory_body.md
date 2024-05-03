@@ -3,7 +3,7 @@ title: Algorithm Audit (op-ed) – A new algorithmic regulatory body in The Neth
 subtitle: ''
 image: /images/knowledge_base/Op-ed-1.png
 author: Algorithm Audit
-type: regular
+layout: article
 summary: "A new algorithmic regulatory body is institutionalized in The Netherlands. We say: Make it a bulldog \U0001F43A, not a lap dog \U0001F436"
 ---
 

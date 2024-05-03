@@ -1,0 +1,97 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+{{ $split_char := " " }}
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col mx-auto">
+                <div class="content container">
+
+                    {{ if .Params.title_content}}
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12"></div>
+                        <div class="col-lg-9 col-sm-12 mb-5">
+                            <h3>{{.Params.title_content | markdownify}}</h3>
+                        </div>
+                    </div>
+                    {{ end }}
+
+                    <div class="row" style="margin-bottom:25px;">
+
+                        <!-- Facets -->
+                        <div class="mt-3 col-lg-3 col-sm-12">
+                            <div class="row">
+                            {{ range $facet_group := .Params.facet_groups}}
+                            <div class="facet-group mb-2 col-sm-6 col-lg-12" data-facet-group="{{$facet_group.value}}">
+                                <fieldset>
+                                    <legend style="color: #005aa7; font-size:18px;">{{$facet_group.title}}</legend>
+                                    {{ range $facet := $facet_group.facets}}
+                                    <div>
+                                        <input type="checkbox" id="{{$facet_group.value}}_{{$facet.value}}"
+                                            name="{{$facet.label}}" class="facet-checkbox" />
+                                        <label for="{{$facet_group.value}}_{{$facet.value}}">{{$facet.label}}</label>
+                                    </div>
+                                    {{ end }}
+                                </fieldset>
+                            </div>
+                            {{end}}
+                            </div>
+                        </div>
+
+                        <!-- Articles -->
+                        <div class="col-lg-9 col-sm-12">
+                            {{ if .Params.items }}
+                            {{ range $item := .Params.items }}
+
+                            {{ $facets_for_data_attribute := "" }}
+                            {{ range $facet := $item.facets }}
+                            {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
+                            $split_char | printf "%s" }}
+                            {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
+                            $facet.value | printf "%s" }}
+                            {{ end }}
+                            <a class="" href="{{$item.link | relURL}}">
+                                <div class="clickable-wrapper my-5">
+                                    <div class="grid shadow mobile-desktop-container-layout rounded-lg facet-item" data-facets="{{$facets_for_data_attribute}}">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-12 pr-4">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-8 col-md-12 mb-5">
+                                                        <img class="img-fluid" src="{{$item.image}}" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 col-sm-12">
+                                                <div class="row align-items-center">
+                                                    <h4 class="mb-4" style="color: #005aa7;">
+                                                        {{$item.title}}
+                                                    </h4>
+                                                    <p>{{$item.intro | markdownify}} 
+                                                    <span style="color: #005aa7;">{{ i18n "read_more" }}</span>
+                                                </div>
+                                                <div class="row">
+                                                    {{ range $facet := $item.facets }}
+                                                    {{ if $facet.hide }}
+                                                    {{ else }}
+                                                    <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">{{$facet.label}}</span>
+                                                    {{ end }}
+                                                    {{end}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            {{end}}
+                        </div>
+                        {{end}}
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+{{ end }}

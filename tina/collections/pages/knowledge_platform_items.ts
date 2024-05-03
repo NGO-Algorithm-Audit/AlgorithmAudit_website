@@ -4,31 +4,32 @@
 import { TinaField } from "tinacms";
 import building_blocks from "../shared/page/building_blocks";
 
-let specific_fields : TinaField[] = [
+let specific_fields: TinaField[] = [
+  {
+    type: "string",
+    name: "icon",
+    label: "Icon",
+    description:
+      "From https://fontawesome.com/search (e.g. fa-square-poll-vertical from https://fontawesome.com/icons/square-poll-vertical?f=classic&s=solid)",
+  },
+  {
+    type: "string",
+    name: "layout",
+    label: "Layout",
+    required: true,
+    options: [
+      {
+        value: "article",
+        label: "Article",
+      },
+    ],
+  },
   {
     type: "string",
     name: "author",
     label: "author",
     required: true,
   },
-  {
-    type: "string",
-    name: "type",
-    label: "type",
-    required: true,
-    options: [
-      {
-        value: "regular",
-        label: "regular"
-      }
-    ]
-  },
-  {
-    type: "string",
-    name: "summary",
-    label: "summary",
-    required: true,
-  }
 ];
 
 export default {
@@ -36,7 +37,13 @@ export default {
   label: "Knowledge platform (knowledge base)",
   path: "content/",
   match: {
-    include: '**/knowledge-platform/knowledge-base/**'
+    include: "**/knowledge-platform/knowledge-base/**",
+    exclude: "**/knowledge-base/_index",
   },
-  fields: building_blocks.concat(specific_fields),
+  fields: specific_fields.concat(building_blocks),
+  defaultItem: () => {
+    return {
+      layout: "article",
+    };
+  },
 };

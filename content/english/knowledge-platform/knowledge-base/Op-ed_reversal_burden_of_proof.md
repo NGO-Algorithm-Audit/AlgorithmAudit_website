@@ -3,7 +3,7 @@ title: Algorithm Audit (op-ed) – Reversing the burden of proof
 subtitle: ''
 image: /images/knowledge_base/Op-ed-2.png
 author: Algorithm Audit
-type: regular
+layout: article
 summary: >-
   Algorithm Audit's first white paper on the reversal on the burden of proof in
   the context of (semi-)automated decision-making

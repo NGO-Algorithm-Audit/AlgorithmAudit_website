@@ -2,7 +2,7 @@
 title: "Protected grounds and the system of non-discrimination law in the context of algorithmic decision-making and AI"
 author: Janneke Gerards and Frederik Zudierveen Borgesius
 image: "/images/knowledge_base/Protected_ground_and_system_of_non-discrimination_law.png"
-type: "regular"
+layout: article
 draft: false
 summary: Plea that a hybrid system of non-discrimination law, with a semi-closed list of grounds and an open possibility for exemptions and justification, is best-suited to deal with the particularities of AI-driven discrimination. 
 ---

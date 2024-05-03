@@ -3,7 +3,7 @@ title: Algorithm Audit (op-ed) – Human vs machine bias
 subtitle: ''
 image: /images/knowledge_base/Op-ed-3.png
 author: 'Jurriaan Parie, Vardâyani Djwalapersad'
-type: regular
+layout: article
 summary: >-
   Based on bias testing results from the Municipality of Amsterdam, it is argued
   that that algorithms can play an important role in mitigating biases

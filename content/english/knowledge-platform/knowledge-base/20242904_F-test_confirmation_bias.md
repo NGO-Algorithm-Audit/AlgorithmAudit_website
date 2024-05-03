@@ -6,7 +6,7 @@ subtitle: >
   visa applications 
 image: /images/knowledge_base/BuZa_Ftest.png
 author: Onbekend
-type: regular
+layout: article
 summary: >-
   Applied to test confirmation bias of civil servant in an algorithmic-driven
   visa application process

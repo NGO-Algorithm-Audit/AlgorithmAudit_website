@@ -2,7 +2,7 @@
 title: "Discrimination through Risk Profiling"
 author: Dutch College for Human Rights
 image: "/images/knowledge_base/mensenrechtelijk_toetsingskader.png"
-type: "regular"
+layout: article
 draft: false
 summary: Framework for discrimination through risk-profiling
 ---
