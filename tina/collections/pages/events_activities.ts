@@ -45,6 +45,18 @@ let specific_fields : TinaField[] = [
                 },
                 facets
             ]
+    },
+    {
+        type: "string",
+        name: "layout",
+        label: "Layout",
+        required: true,
+        options: [
+            {
+                value: "overview",
+                label: "overview"
+            }
+        ]
     }
 ];
 
