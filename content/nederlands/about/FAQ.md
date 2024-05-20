@@ -27,7 +27,7 @@ Iedere organisatie, publiek of privaat, groot of klein, welkom om een casus in t
 
 {{< container_open title="Waarom werken jullie zonder winstoogmerk?" icon="fas fa-seedling" id="not-for-profit" >}}
 
-Het normatieve karakter van onze werkzaamheden staat op gespannen voet met het hebben van een winstoogmerk. In de context van technologische ontwikkeling wordt winst vaak geprioriteerd boven veiligheid. Deskundigen ontvangen een vergoeding om normatieve vraagstukken evenwichtig, zorgvuldig en onafhankelijk te beoordelen. Een winstbeloning past niet bij deze werkwijze. Daarnaast werkt Algorithm Audit vanuit het publieke belang om onze kennis openbaar te maken. Werken zonder winstoogmerk past daarom het beste bij onze activiteiten en doelstellingen.
+Het normatieve karakter van onze werkzaamheden staat op gespannen voet met het hebben van een winstoogmerk. In de context van technologische ontwikkeling wordt winst vaak geprioriteerd boven veiligheid. Deskundigen ontvangen een vergoeding om normatieve vraagstukken evenwichtig, zorgvuldig en onafhankelijk te beoordelen. Een winstbeloning past niet bij deze werkwijze. Daarnaast werkt Algorithm Audit vanuit het publieke belang om onze kennis openbaar te maken. Werken zonder winstoogmerk past daarom het beste bij onze activiteiten en doelstellingen. Er hangen geen bv's onder te stichting.
 
 {{< container_close >}}
 
