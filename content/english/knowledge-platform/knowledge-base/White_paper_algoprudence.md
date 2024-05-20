@@ -9,7 +9,7 @@ summary: >-
   AI
 ---
 
-At a high-level this article follows the structure of the original [article](https://algorithmaudit.eu/knowledge-platform/knowledge-base/njb-artikel/) in Dutch *How ‘algoprudence’ can contribute to responsible use of ML-algorithms*
+At a high-level this article follows the structure of the original [article](/nl/knowledge-platform/knowledge-base/white_paper_algoprudence/) in Dutch *How ‘algoprudence’ can contribute to responsible use of ML-algorithms*
 
 ###### Abstract
 
