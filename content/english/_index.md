@@ -185,9 +185,9 @@ Building_algoprudence:
         called *algoprudence*
 Advantages_of_algoprudence:
   title: Advantages of algoprudence
-  image: /images/knowledge_base/NJB-cover.jpg
+  image: /images/knowledge_base/White-paper_Algoprudence.png
   button_text: White paper on algoprudence
-  button_link: /knowledge-platform/knowledge-base/njb-artikel/
+  button_link: /knowledge-platform/knowledge-base/white_paper_algoprudence/
   feature_item:
     - name: Learn & harmonize
       icon: fas fa-book-reader

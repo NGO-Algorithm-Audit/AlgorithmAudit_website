@@ -20,6 +20,10 @@ let specific_fields : TinaField[] = [
       {
         value: "regular",
         label: "regular"
+      },
+      {
+        value: "featured",
+        label: "featured"
       }
     ]
   },

@@ -1,9 +1,9 @@
 ---
-title: 'Algorithm Audit (white paper) – Algoprudence: Jurisprudence for algorithms'
+title: 'Algoprudence: Jurisprudence for algorithms'
 subtitle: ''
 image: /images/knowledge_base/White-paper_Algoprudence.png
 author: Algorithm Audit
-type: regular
+type: featured
 summary: >-
   Introducing Algoprudence: Case-based and decentralized judgements for ethical
   AI

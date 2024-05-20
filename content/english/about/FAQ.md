@@ -27,7 +27,7 @@ Basically every organization, public or private, big or small, is welcome to pre
 
 {{< container_open title="Why do you work not-for-profit?" icon="fas fa-seedling" id="not-for-profit" >}}
 
-We are committed to balanced, careful and independent review of ethical issues. We depend on the experts in our normative advice commissions to carry out these evaluations. And we serve the community by making all our advice and knowledge public. Working nonprofit suits our activities and goals best.
+We are committed to balanced, careful and independent review of ethical issues. We depend on the experts in our normative advice commissions to carry out these evaluations. And we serve the community by making all our advice and knowledge public. Working nonprofit suits our activities and goals best. There are not for-profit legal entities related to Algorithm Audit.
 
 {{< container_close >}}
 

@@ -201,7 +201,7 @@ Advantages_of_algoprudence:
   title: Voordelen van algoprudentie
   image: /images/knowledge_base/NJB-cover.jpg
   button_text: Lees het hele artikel
-  button_link: /nl/knowledge-platform/knowledge-base/njb-artikel/
+  button_link: /nl/knowledge-platform/knowledge-base/white_paper_algoprudence/
   feature_item:
     - name: Leren & harmoniseren
       icon: fas fa-book-reader
