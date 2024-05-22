@@ -1,12 +1,12 @@
 ---
 icon: fas fa-balance-scale-left
 layout: case
-title: Addendum Vooringenomenheid voorkomen
+title: Addendum Bias prevented
 subtitle: >
-  Addendum op eerder
-  [onderzoek](/nl/algoprudence/cases/aa202401_bias-prevented/) (AA:2024:02:TA) –
-  Biasmeting aan de hand van CBS-data over het Controle Uitwonendenbeurs (CUB)
-  proces van DUO
+  Addendum for ealier [research](/algoprudence/cases/aa202401_bias-prevented/) –
+  Supervised bias analysis of aggregtation statistics on the country of birth
+  and country of origin of 300.000+ students as provided by the Dutch office of
+  statistics
 image: /images/algoprudence/AA202402/AA202402_cover.png
 form1:
   title: Reageer op deze technische audit
@@ -45,15 +45,15 @@ form1:
 
 {{< tab_content_open icon="fas fa-balance-scale-left" title="Addendum Vooringenomenheid voorkomen" id="description" >}}
 
-#### Nummer van technische audit
+#### Number of technical audit
 
 AA:2024:02:TA
 
-#### Samenvatting
+#### Summary
 
-In de controle op rechtmatig gebruik van studiefinanciering voor uitwonende studenten controleerde DUO aanzienlijk vaker studenten met een niet-Europese migratieachtergrond. Hieruit blijkt een onbewuste vooringenomenheid van het controleproces van DUO. Studenten met een niet-Europese migratieachtergrond kregen een hogere risicoscore toegekend door een risicoprofiel en werden vaker handmatig geselecteerd voor een huisbezoek. Dit blijkt uit vervolgonderzoek dat stichting Algorithm Audit heeft uitgevoerd in opdracht van DUO en op 22 mei door de minister aan de Tweede Kamer is verstuurd. De onderzoeksresultaten versterken het beeld van eerder onderzoek, op basis waarvan de minister op 1 maart 2024 namens het kabinet zijn excuses heeft aangeboden voor indirecte discriminatie in het controleproces.
+...
 
-Een persbericht kan [hier](/nl/events/press_room/) worden gevonden.
+Press release can be found here.
 
 #### Bron van de casus
 
@@ -61,7 +61,7 @@ Dienst Uitvoering Onderwijs (DUO)
 
 #### Algoprudentie
 
-Het volledige rapport (AA:2024:02:TA) kan [hier](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview) worden gedownload.
+Het full report (AA:2024:02:TA) can be found [here](/nl/algoprudence/cases/aa202402_bias-prevented_addendum/).
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1OXs1PGFqi7BjxFz4Yj3ikMJxM8gVs1IE/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
