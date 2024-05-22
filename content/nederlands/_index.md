@@ -22,19 +22,11 @@ Activity_Feed:
   button_text: Meer evenementen...
   button_link: /nl/events/activities/#events
   featured_activities:
-    - title: >-
-        Vooringenomenheid voorkomen – Kwalitatieve en kwantitatieve audit van
-        het controleproces uitwonendenbeurs DUO
-      intro: >
-        Afwijkingen zijn geconstateerd in het controleproces van DUO naar
-        misbruik met de uitwonendenbeurs. DUO selecteerde in onderzoek naar
-        misbruik met de uitwonendenbeurs in de periode 2012-2022 aanzienlijk
-        vaker studenten die dicht bij hun ouder(s) woonden. Het algoritme dat
-        ter ondersteuning van de selectie werd gebruikt functioneerde naar
-        verwachting.
-      link: /nl/algoprudence/cases/aa202401_bias-prevented/
-      image: /images/algoprudence/AA202401/Cover.png
-      date: 01-03-2024
+    - title: Addendum Vooringenomenheid voorkomen – Biasmeting CUB-proces DUO
+      intro: "Addendum op eerder\_onderzoek\_(AA:2024:02:TA) – Biasmeting aan de hand van CBS-data over het Controle Uitwonendenbeurs (CUB) proces van DUO\n"
+      link: /nl/algoprudence/cases/aa202402_bias-prevented_addendum/
+      image: /images/algoprudence/AA202402/AA202402_cover.png
+      date: 22-05-2024
       type: technische audit
   activities:
     - title: 'Presentatie UvA AI, Media & Democratie Lab'
