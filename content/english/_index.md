@@ -18,18 +18,12 @@ Activity_Feed:
   button_text: View more...
   button_link: /events/activities/#events
   featured_activities:
-    - title: >-
-        Bias prevented – Qualitative and quantitative audit of college
-        allowances control process DUO
-      intro: >
-        Irregularities are identified in the college allowances control process
-        as conducted by Dutch public sector organisation DUO in the period
-        2012-2022. Students living close to their parent(s) are significantly
-        more often manually selected for a check than other students. The
-        algorithm used to support the selection process performed as expected.
-      link: /algoprudence/cases/aa202401_bias-prevented/
-      image: /images/algoprudence/AA202401/Cover.png
-      date: 01-03-2024
+    - title: Addendum Bias prevented – Supervised bias analysis
+      intro: |
+        ...
+      link: /algoprudence/cases/aa202402_bias-prevented_addendum/
+      image: /images/algoprudence/AA202402/AA202402_cover.png
+      date: 22-05-2024
       type: technical audit
   activities:
     - title: 'Presentation at UvA AI, Media & Democracy lab'

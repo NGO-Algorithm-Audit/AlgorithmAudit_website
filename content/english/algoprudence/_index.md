@@ -1,5 +1,5 @@
 ---
-layout: repository
+layout: repository 
 title: Algoprudence repository
 subtitle: "Stakeholders learn from our\_techno-ethical jurisprudence, can help to improve it and can use it as to resolve ethical issues in a harmonized manner.\n\nWe are open to new cases. Please <span style=\"color:#005aa7\">[submit</span>](/algoprudence/submit-a-case/) a case for review.\n"
 image: /images/svg-illustrations/case_repository.svg
@@ -77,6 +77,44 @@ facet_groups:
         label: Algorithm Audit
 title_content: Case repository
 algoprudences:
+  - title: Addendum Bias prevented
+    intro: >-
+      Further research into CUB process of Education Executive Agency of The Netherlands (DUO) 
+      by analysing aggregation statistics on the country of birth and country of origin of 300.000+ 
+      students in the period 2014-2022 provided by the Dutch national office of statistics
+    image: /images/algoprudence/AA202402/AA202402_cover.png
+    link: /algoprudence/cases/aa202402_bias-prevented_addendum/
+    facets:
+      - value: AA202402
+        label: 'AA:2024:02'
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: type_of_audit_technical
+        label: technical audit
+      - value: type_of_algorithm_rule_based
+        label: rule-based
+      - value: type_of_algorithm_profiling
+        label: profiling
+      - value: ethical_issue_proxy
+        label: proxy discrimination
+      - value: owner_public
+        label: public organisation
+      - value: standard_risk_management
+        label: risk mmanagement
+        hide: true
+      - value: standard_governance_data_quality
+        label: governance & data quality
+        hide: true
+      - value: standard_transparency_provisions
+        label: transparancy provisions
+        hide: true
+      - value: standard_human_oversight
+        label: human oversight
+        hide: true
+      - value: standard_quality_management_system
+        label: quality management
+        hide: true
   - title: Bias prevented
     intro: >-
       Disparities have been identified in the control process of a Dutch public
