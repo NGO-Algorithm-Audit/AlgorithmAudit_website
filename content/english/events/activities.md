@@ -55,6 +55,7 @@ events:
         hide: true
       - value: year_q2_2024
         label: Q2-2024
+        hide: true
       - value: type_panel
         label: panel discussion
   - title: Seminar algorithm validation
