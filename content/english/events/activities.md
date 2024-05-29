@@ -52,7 +52,7 @@ events:
     facets:
       - {}
       - {}
-      - value: type_event
+      - value: type_panel
         label: panel discussion
   - title: Seminar algorithm validation
     description: "Algorithm Audit hosted a public seminar on algorithm validation and algoprudence in The Hague. Anne Meuwese\_shared insights on the value of algoprudence in contextualizing legal norms. Floris Holstege shed light into statistical hypothesis testing which plays an important role in our recent techincal audits.\_\n\nWe appreciated the interactive Q\\&A with the participants, especially the curious and critical questions which enables us to clarify our work, but also contributes to the further development and refinement of our activities as an NGO.\n\n{{< pdf_frame articleUrl1=\"https://drive.google.com/file/d/1edrNqP4cBgJ1zKv1970DsUJ3Tark6waF/preview\" width_desktop_pdf=\"12\" width_mobile_pdf=\"12\" >}}\n"
