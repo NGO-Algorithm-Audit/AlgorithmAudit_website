@@ -13,7 +13,7 @@ facet_groups:
     title: Type of event
     facets:
       - value: article
-        label: Artikel
+        label: Article
       - value: event
         label: Event
       - value: interview
