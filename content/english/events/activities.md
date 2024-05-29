@@ -51,7 +51,8 @@ events:
     date: 24-05-2024
     facets:
       - {}
-      - {}
+      - value: year_q2_2024
+        label: Q2-2024
       - value: type_panel
         label: panel discussion
   - title: Seminar algorithm validation
