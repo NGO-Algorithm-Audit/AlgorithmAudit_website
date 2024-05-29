@@ -13,7 +13,7 @@ facet_groups:
     title: Type of event
     facets:
       - value: article
-        label: Artikel
+        label: Article
       - value: event
         label: Event
       - value: interview
@@ -23,6 +23,41 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: 'CPDP 2024 Brussels: Decentralizing AI fairness decisions'
+    description: >
+      Panel discussion on decentralizing AI fairness decisions with Laurens
+      Naudts (UvA AI, Media & Democracy Lab), Karolina Iwanska (European Centre
+      for Not-for-profit Law) and Francien Dechesne (Center for Law and Digital
+      Technologies, University Leiden).
+
+
+      * From the perspective of both individual and institutional legal
+      protection, what are the implications of decentralizing decisions
+      regarding fundamental rights, and what issues might it resolve or
+      introduce?
+
+      * How can normative disputes be settled when performing Fundamental Rights
+      Impact Assessments (FRIAs) in AI development?
+
+      * What is the role of regulatory bodies in providing guidance for
+      resolving normative challenges regarding AI fairness?
+
+      * What is “algoprudence” and how can it contribute to more fair AI
+      decisions?
+
+
+      ![](</CPDP Brussels 2024.jpeg>)
+    image: /CPDP Brussels 2024 logo.png
+    date: 24-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_panel
+        label: panel discussion
   - title: Seminar algorithm validation
     description: "Algorithm Audit hosted a public seminar on algorithm validation and algoprudence in The Hague. Anne Meuwese\_shared insights on the value of algoprudence in contextualizing legal norms. Floris Holstege shed light into statistical hypothesis testing which plays an important role in our recent techincal audits.\_\n\nWe appreciated the interactive Q\\&A with the participants, especially the curious and critical questions which enables us to clarify our work, but also contributes to the further development and refinement of our activities as an NGO.\n\n{{< pdf_frame articleUrl1=\"https://drive.google.com/file/d/1edrNqP4cBgJ1zKv1970DsUJ3Tark6waF/preview\" width_desktop_pdf=\"12\" width_mobile_pdf=\"12\" >}}\n"
     image: /images/logo/logo.svg
