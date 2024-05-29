@@ -52,6 +52,7 @@ events:
     facets:
       - value: year_2024
         label: '2024'
+        hide: true
       - value: year_q2_2024
         label: Q2-2024
       - value: type_panel
