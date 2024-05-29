@@ -59,6 +59,7 @@ events:
         hide: true
       - value: year_2024
         label: '2024'
+        hide: true
   - title: Seminar algoritmevalidatie
     description: >
       Criteria voor het auditeren van algoritmes krijgen langzaam vorm, zoals de
