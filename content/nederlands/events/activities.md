@@ -1,5 +1,4 @@
 ---
-layout: overview
 facet_groups:
   - value: year
     title: Jaar
@@ -24,6 +23,37 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: 'CPDP 2024 Brussels: Decentraliseren van AI-fairness beslissingen '
+    description: >
+      Paneldiscussie over het decentraliseren van AI-fairness-beslissingen met
+      Laurens Naudts (UvA AI, Media & Democracy Lab), Karolina Iwanska (European
+      Centre for Not-for-profit Law) en Francien Dechesne (Centrum voor Recht en
+      Digitale Technologieën, Universiteit Leiden).
+
+
+      * Vanuit het perspectief van zowel individuele als institutionele
+      rechtsbescherming, wat zijn de implicaties van het decentraliseren van
+      beslissingen met betrekking tot fundamentele rechten en welke problemen
+      kunnen hierdoor worden opgelost of geïntroduceerd? 
+
+      * Hoe kunnen normatieve vraagstukken worden beslecht bij het uitvoeren van
+      Fundamental Rights Impact Assessments (FRIA’s) bij de ontwikkeling van
+      AI? 
+
+      * Wat is de rol van regelgevende instanties bij het bieden van richtlijnen
+      voor het oplossen van normatieve vraagstukken met betrekking tot de
+      fairness van AI? 
+
+      * Wat is ‘algoprudentie’ en op welke manier kan dit bijdragen aan
+      eerlijkere AI-beslissingen?
+
+
+      ![](</CPDP Brussels 2024.jpeg>)
+    image: /CPDP Brussels 2024 logo.png
+    date: 24-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
   - title: Seminar algoritmevalidatie
     description: >
       Criteria voor het auditeren van algoritmes krijgen langzaam vorm, zoals de
@@ -223,6 +253,7 @@ events:
         hide: true
       - value: type_event
         label: evenement
+layout: overview
 title: Evenementen
 subtitle: >
   Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. We
