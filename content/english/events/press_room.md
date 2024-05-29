@@ -20,9 +20,7 @@ Commissioned by DUO, NGO Algorithm Audit is auditing the control process of coll
 
 The results of the studies will be used to determine whether risk profiling can be used responsibly in the future to detect misuse of college allowances. This is relevant as these allowances have been reintroduced since this academic year for students following a higher vocational study (hbo) or a scientific/academic study (wo). DUO and NGO Algorithm Audit will continue to work together in 2024 to interpret the results of the studies together with various societal stakeholders. Currently, DUO solely randomly selects students for checking cases of fraud.
 
-The full report Bias prevented can be found [here](https://algorithmaudit.eu/algoprudence/cases/aa202401_bias-prevented/).
-
-01-03-2024
+The full report Bias prevented can be found [here](https://algorithmaudit.eu/algoprudence/cases/aa202402_bias-prevented_addendum/).
 
 {{< accordion_item_close >}}
 
