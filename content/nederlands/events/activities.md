@@ -34,15 +34,14 @@ events:
       * Vanuit het perspectief van zowel individuele als institutionele
       rechtsbescherming, wat zijn de implicaties van het decentraliseren van
       beslissingen met betrekking tot fundamentele rechten en welke problemen
-      kunnen hierdoor worden opgelost of geïntroduceerd? 
+      kunnen hierdoor worden opgelost of geïntroduceerd?
 
       * Hoe kunnen normatieve vraagstukken worden beslecht bij het uitvoeren van
-      Fundamental Rights Impact Assessments (FRIA’s) bij de ontwikkeling van
-      AI? 
+      Fundamental Rights Impact Assessments (FRIA’s) bij de ontwikkeling van AI?
 
       * Wat is de rol van regelgevende instanties bij het bieden van richtlijnen
       voor het oplossen van normatieve vraagstukken met betrekking tot de
-      fairness van AI? 
+      fairness van AI?
 
       * Wat is ‘algoprudentie’ en op welke manier kan dit bijdragen aan
       eerlijkere AI-beslissingen?
@@ -54,6 +53,7 @@ events:
     facets:
       - value: type_panel
         label: paneldiscussie
+        hide: false
       - value: year_q2_2024
         label: Q2-2024
         hide: true
