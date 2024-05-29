@@ -23,7 +23,7 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
-  - title: 'CPDP 2024 Brussels: Decentraliseren van AI-fairness beslissingen '
+  - title: 'CPDP 2024 Brussel: Decentraliseren van AI-fairness beslissingen '
     description: >
       Paneldiscussie over het decentraliseren van AI-fairness-beslissingen met
       Laurens Naudts (UvA AI, Media & Democracy Lab), Karolina Iwanska (European
