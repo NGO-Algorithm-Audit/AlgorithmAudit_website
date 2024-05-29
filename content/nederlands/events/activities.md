@@ -52,6 +52,8 @@ events:
     image: /CPDP Brussels 2024 logo.png
     date: 24-05-2024
     facets:
+      - value: type_panel
+        label: paneldiscussie
       - value: year_q2_2024
         label: Q2-2024
       - value: year_2024
