@@ -32,7 +32,7 @@ When municipalities investigate whether recipients of social assistance is duly 
 
 The advice is directed at all 340 Dutch municipalities. The guidance is part of the ‘algoprudence’ developed by Algorithm Audit in collaboration with experts and various interest groups to establish concrete norms for the responsible deployment of algorithms. NGO Algorithm Audit is an independent knowledge platform for ethical algorithms and AI, supported by the European AI\&Society Fund, the SIDN Fund, and the Ministry of the Interior and Kingdom Relations.
 
-The full report Risk profiling for Social Welfare Re-examination can be found [here](http://localhost:1313/algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/).
+The full report Risk profiling for Social Welfare Re-examination can be found [here](https://algorithmaudit.eu/algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/).
 
 {{< image id="presentatie" width_desktop="6" width_mobile="12" image1="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt1="Presentatie Staatssecretaris voor Digitalisering" caption1="Presentatie Staatssecretaris voor Digitalisering" >}}
 
