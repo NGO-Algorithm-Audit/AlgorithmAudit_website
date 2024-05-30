@@ -23,6 +23,30 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: 'SPUI25: Paneldiscussie over de zaak tegen Meta'
+    description: >
+      Paneldiscussie over zaak tegen Meta met Jurriaan Parie (Algorithm Audit),
+      Rosie Sharpe (Global Witness), Naomi Appelman (PhD Instituut voor
+      Informatierecht aan de Universiteit van Amsterdam en medeoprichter van
+      Racism and Technology Center) en Berty Bannor (Bureau Clara Wichmann).
+
+
+      De panelleden bespraken of Facebook mogelijk de Nederlandse wetgeving voor
+      gelijke behandeling schendt. De oorsprong van deze Meta Case werd
+      behandeld, met betrekking tot de wijze waarop maatschappelijke problemen
+      zoals seksisme, racisme en andere vormen van discriminatie kunnen worden
+      weerspiegeld, belicht en aangepakt door technologische ontwikkelingen.
+
+
+      [https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/](https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/)
+
+
+      ![](</meta case panel.png>)
+    image: /spui 25.jpg
+    date: 29-05-2024
+    facets:
+      - value: type_panel
+        label: paneldiscussie
   - title: 'CPDP 2024 Brussel: Decentraliseren van AI-fairness beslissingen '
     description: >
       Paneldiscussie over het decentraliseren van AI-fairness-beslissingen met
