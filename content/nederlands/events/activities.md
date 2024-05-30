@@ -45,7 +45,8 @@ events:
     image: /spui 25.jpg
     date: 29-05-2024
     facets:
-      - {}
+      - value: type_panel
+        label: paneldiscussie
       - value: year_2024
         label: '2024'
         hide: true
