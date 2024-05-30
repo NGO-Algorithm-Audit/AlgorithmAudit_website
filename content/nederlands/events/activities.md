@@ -25,8 +25,8 @@ facet_groups:
 events:
   - title: 'SPUI25: Paneldiscussie over de zaak tegen Meta'
     description: >
-      Paneldiscussie over zaak tegen Meta met Jurriaan Parie (Algorithm Audit),
-      Rosie Sharpe (Global Witness), Naomi Appelman (PhD Instituut voor
+      Paneldiscussie over de zaak tegen Meta met Jurriaan Parie (Algorithm
+      Audit), Rosie Sharpe (Global Witness), Naomi Appelman (PhD Instituut voor
       Informatierecht aan de Universiteit van Amsterdam en medeoprichter van
       Racism and Technology Center) en Berty Bannor (Bureau Clara Wichmann).
 
