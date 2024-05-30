@@ -46,9 +46,11 @@ events:
     date: 29-05-2024
     facets:
       - {}
+      - value: year_2024
+        label: '2024'
       - value: year_q2_2024
         label: Q2-2024
-        hide: false
+        hide: true
   - title: 'CPDP 2024 Brussel: Decentraliseren van AI-fairness beslissingen '
     description: >
       Paneldiscussie over het decentraliseren van AI-fairness-beslissingen met
