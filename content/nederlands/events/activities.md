@@ -33,9 +33,9 @@ events:
 
       De panelleden bespraken of Facebook mogelijk de Nederlandse wetgeving voor
       gelijke behandeling schendt. De oorsprong van deze Meta Case werd
-      behandeld, met betrekking tot de wijze waarop maatschappelijke problemen
-      zoals seksisme, racisme en andere vormen van discriminatie kunnen worden
-      weerspiegeld, belicht en aangepakt door technologische ontwikkelingen.
+      behandeld en de wijze waarop maatschappelijke problemen zoals seksisme,
+      racisme en andere vormen van discriminatie kunnen worden weerspiegeld,
+      belicht en aangepakt door technologische ontwikkelingen.
 
 
       [https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/](https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/)
