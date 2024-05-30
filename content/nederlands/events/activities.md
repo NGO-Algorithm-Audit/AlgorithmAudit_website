@@ -45,8 +45,10 @@ events:
     image: /spui 25.jpg
     date: 29-05-2024
     facets:
-      - value: type_panel
-        label: paneldiscussie
+      - {}
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: false
   - title: 'CPDP 2024 Brussel: Decentraliseren van AI-fairness beslissingen '
     description: >
       Paneldiscussie over het decentraliseren van AI-fairness-beslissingen met
