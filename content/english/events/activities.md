@@ -23,6 +23,32 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: 'Outvie: The National AI Congress Compliance & Update '
+    description: >
+      During the National AI Congress Compliance & Update, the following theme
+      was examined in the breakout session: *Bias, Ethics & Compliance - the DUO
+      case: indirect discrimination through risk profiling.*
+
+
+      The following points were discussed:
+
+
+      * Unique analysis based on CBS data 
+
+      * Analysis of migration background of 300,000+ students 
+
+      * Seemingly neutral algorithms can have discriminatory consequences 
+
+      * Preventing indirect discrimination in organizations
+
+
+      [https://outvie.nl/conferenties/artificial-intelligence-impact-update/](https://outvie.nl/conferenties/artificial-intelligence-impact-update/)
+    image: /Outvie_RGB_op_witte_achtergrond.png
+    date: 30-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: false
   - title: >-
       SPUI25: The Meta Case - challenging discriminatory algorithms through
       legal means
@@ -30,7 +56,7 @@ events:
       Panel discussion on The Meta Case with Jurriaan Parie (Algorithm Audit),
       Rosie Sharpe (Global Witness), Naomi Appelman (PhD Institute for
       Information Law at the University of Amsterdam and co-founder Racism and
-      Technology Center) and Berty Bannor (Bureau Clara Wichmann). 
+      Technology Center) and Berty Bannor (Bureau Clara Wichmann).
 
 
       The panelists discussed whether Facebook is potentially violating Dutch
