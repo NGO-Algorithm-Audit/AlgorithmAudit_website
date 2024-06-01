@@ -46,9 +46,11 @@ events:
     image: /Outvie_RGB_op_witte_achtergrond.png
     date: 30-05-2024
     facets:
+      - value: year_q2_2024
+        label: Q2-2024
       - value: year_2024
         label: '2024'
-        hide: false
+        hide: true
   - title: >-
       SPUI25: The Meta Case - challenging discriminatory algorithms through
       legal means
