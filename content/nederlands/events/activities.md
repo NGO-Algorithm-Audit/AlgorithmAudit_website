@@ -215,7 +215,7 @@ events:
     date: 07-03-2024
     facets:
       - value: type_event
-        label: event
+        label: evenement
       - value: year_2024
         label: '2024'
         hide: true
