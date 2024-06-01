@@ -49,6 +49,7 @@ events:
     facets:
       - value: year_2024
         label: '2024'
+        hide: true
   - title: 'SPUI25: Paneldiscussie over de zaak tegen Meta'
     description: >
       Paneldiscussie over de zaak tegen Meta met Jurriaan Parie (Algorithm
