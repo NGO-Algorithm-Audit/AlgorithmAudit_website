@@ -179,7 +179,7 @@ events:
         label: Q1-2024
         hide: true
       - value: type_event
-        label: event
+        label: evenement
   - title: Spreker tijdens debat gemeenteraad Amsterdam
     description: >
       Bijdrage aan debat gemeenteraad over eindevaluatie 'Slimme check
