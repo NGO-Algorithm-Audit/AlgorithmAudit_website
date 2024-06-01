@@ -30,7 +30,7 @@ events:
       case: indirect discrimination through risk profiling.*
 
 
-      The following points were discussed:
+      Points of discussion were:
 
 
       * Unique analysis based on CBS data 
