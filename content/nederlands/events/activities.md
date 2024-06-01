@@ -137,7 +137,7 @@ events:
     date: 24-04-2024
     facets:
       - value: type_event
-        label: event
+        label: evenement
   - title: 'Presentatie UvA AI, Media & Democratie lab'
     description: >
       Presentatie over artikel [Hoe ‘algoprudentie’ kan bijdragen aan een
