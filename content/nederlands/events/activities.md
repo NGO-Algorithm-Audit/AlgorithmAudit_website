@@ -23,6 +23,32 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: 'Outvie: Het Nationaal AI-Congres Compliance & Update'
+    description: >
+      Tijdens het Nationaal AI-Congres Compliance & Update is in de breakout
+      sessie het volgende thema onder loep de genomen: *Bias, Ethiek &
+      Compliance - Casus DUO: indirecte discriminatie middels
+      risicoprofilering.* 
+
+
+      Hierin kwamen de volgende punten aan bod:
+
+
+      * Unieke analyse aan de hand van CBS-data
+
+      * Analyse van migratieachtergrond van 300.000+ studenten
+
+      * Ogenschijnlijk neutraal onderscheid met discriminerende gevolgen
+
+      * Het voorkomen van indirecte discriminatie in organisaties 
+
+
+      [https://outvie.nl/conferenties/artificial-intelligence-impact-update/](https://outvie.nl/conferenties/artificial-intelligence-impact-update/)
+    image: /Outvie_RGB_op_witte_achtergrond.png
+    date: 30-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
   - title: 'SPUI25: Paneldiscussie over de zaak tegen Meta'
     description: >
       Paneldiscussie over de zaak tegen Meta met Jurriaan Parie (Algorithm
