@@ -23,6 +23,69 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: 'Outvie: The National AI Congress Compliance & Update '
+    description: >
+      During the National AI Congress Compliance & Update, the following theme
+      was examined in the breakout session: *Bias, Ethics & Compliance - the DUO
+      case: indirect discrimination through risk profiling.*
+
+
+      Points of discussion were:
+
+
+      * Unique analysis based on CBS data 
+
+      * Analysis of migration background of 300,000+ students 
+
+      * Seemingly neutral algorithms can have discriminatory consequences 
+
+      * Preventing indirect discrimination in organizations
+
+
+      [https://outvie.nl/conferenties/artificial-intelligence-impact-update/](https://outvie.nl/conferenties/artificial-intelligence-impact-update/)
+    image: /Outvie_RGB_op_witte_achtergrond.png
+    date: 30-05-2024
+    facets:
+      - value: type_event
+        label: event
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: year_2024
+        label: '2024'
+        hide: true
+  - title: >-
+      SPUI25: The Meta Case - challenging discriminatory algorithms through
+      legal means
+    description: >
+      Panel discussion on The Meta Case with Jurriaan Parie (Algorithm Audit),
+      Rosie Sharpe (Global Witness), Naomi Appelman (PhD Institute for
+      Information Law at the University of Amsterdam and co-founder Racism and
+      Technology Center) and Berty Bannor (Bureau Clara Wichmann).
+
+
+      The panelists discussed whether Facebook is potentially violating Dutch
+      equality laws. The origins of this Meta Case was elaborated upon,
+      especially regarding how technological developments can reflect, identify,
+      and address societal issues such as sexism, racism, and other types of
+      discrimination.
+
+
+      [https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/](https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/)
+
+
+      ![](</meta case panel.png>)
+    image: /spui 25.jpg
+    date: 29-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_panel
+        label: panel discussion
   - title: 'CPDP 2024 Brussels: Decentralizing AI fairness decisions'
     description: >
       Panel discussion on decentralizing AI fairness decisions with Laurens
