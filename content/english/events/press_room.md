@@ -24,7 +24,7 @@ DUO has currently ceased the standard control process for the college grant and 
 
 The Bias Prevented report (addendum) can be found [here](https://algorithmaudit.eu/algoprudence/cases/aa202402_bias-prevented_addendum/).
 
-{{< accordions_area_open id="DUO" >}}
+{{< accordion_item_close >}}
 
 {{< accordion_item_open title="Irregularities identified in college allowances control process by Dutch public sector organization DUO" id="DUO_CBS" background_color="#ffffff" date="01-03-2024" tag1="DUO" tag2="audit report" tag3="" image="/images/partners/DUO.png" >}}
 
