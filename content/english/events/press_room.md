@@ -22,7 +22,7 @@ The research demonstrates a consistent image for the period 2014-2022 that the g
 
 DUO has currently ceased the standard control process for the college grant and solely selects students at random. DUO and Algorithm Audit continue to work together to interpret the results of the studies together by engaging various social stakeholders, as well as considering improvements in a possible future audit process. 
 
-The Bias Prevented report (addendum) can be found here.
+The Bias Prevented report (addendum) can be found [here](https://algorithmaudit.eu/algoprudence/cases/aa202402_bias-prevented_addendum/).
 
 {{< accordions_area_open id="DUO" >}}
 
