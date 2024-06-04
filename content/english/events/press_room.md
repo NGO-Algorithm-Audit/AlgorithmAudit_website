@@ -8,7 +8,7 @@ image: /images/svg-illustrations/about.svg
 
 {{< accordions_area_open id="DUO" >}}
 
-{{< accordion_item_open title="Irregularities identified in college allowances control process by Dutch public sector organization DUO" id="DUO_CBS" background_color="#ffffff" date="22-05-2024" tag1="DUO" tag2="CBS" tag3="bias analysis" image="/images/partners/DUO.png" >}}
+{{< accordion_item_open title="Irregularities identified in college allowances control process by Dutch public sector organization DUO" id="DUO_CBS" background_color="#ffffff" date="01-03-2024" tag1="DUO" tag2="audit report" tag3="" image="/images/partners/DUO.png" >}}
 
 THE HAGUE – In its control process into misuse of the allowances for students living away from home, Dutch public sector organization DUO selected individuals who lived close to their parent(s) significantly more often. The risk-taxation algorithm, that was used as an assisting tool for selecting students, worked as expected. However, the combination of the algorithm and manual selection resulted in a large overrepresentation of certain groups. Selected students were visited at home to inspect whether allowances were unduly granted. This is the main conclusion of research carried out by NGO Algorithm Audit on behalf of DUO. DUO’s control process was discredited in 2023 after media attention, in which was mentioned that students with a migration background were accused of misuse more often than other students.
 
