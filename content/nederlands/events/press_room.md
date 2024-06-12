@@ -67,7 +67,7 @@ postcodestatistieken aan het licht dat studenten die staan ingeschreven in
 migrantenwijken vaker door DUO werden gecontroleerd. De resultaten van het
 vervolgonderzoek van Algorithm Audit laten een versterkte vooringenomenheid
 zien ten opzichte van eerdere onderzoeken. Zowel de CBS-data en de door
-Algorithm Audit gebruikte onderzoeksmethoden zijn publiek toegankelijk ([hier](https://www.cbs.nl/nl-nl/maatwerk/2024/21/ontvangers-uitwonendenbeurs-herkomst-2014-2017-2019-2021-en-2022)en hier te vinden).
+Algorithm Audit gebruikte onderzoeksmethoden zijn publiek toegankelijk ([hier](https://www.cbs.nl/nl-nl/maatwerk/2024/21/ontvangers-uitwonendenbeurs-herkomst-2014-2017-2019-2021-en-2022) en hier te vinden).
 
 DUO heeft het normale controleproces
 voor de uitwonendenbeurs momenteel stopgezet en selecteert studenten alleen
@@ -146,7 +146,7 @@ resultaten van de onderzoeken samen met verschillende maatschappelijke belangheb
 te interpreteren. Momenteel selecteert DUO studenten alleen willekeurig voor
 controle.
 
-Het volledige rapport *Vooringenomenheid voorkomen* (AA:2024:01) kan [hier](/nl/algoprudence/cases/vooringenomenheid-voorkomen/) worden gevonden.
+Het volledige rapport *Vooringenomenheid voorkomen* (AA:2024:01) kan [hier](https://algorithmaudit.eu/nl/algoprudence/cases/aa202401_bias-prevented/) worden gevonden.
 
 01-03-2024
 
