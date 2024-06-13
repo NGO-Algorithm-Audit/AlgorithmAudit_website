@@ -77,7 +77,7 @@ facet_groups:
         label: Algorithm Audit
 title_content: Case repository
 algoprudences:
-  - title: Addendum Bias prevented
+  - title: Addendum Preventing prejudice
     intro: >-
       Further research into CUB process of Education Executive Agency of The
       Netherlands (DUO)  by analysing aggregation statistics on the country of

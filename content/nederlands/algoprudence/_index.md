@@ -83,7 +83,7 @@ algoprudences:
       aggregatiestatistieken over de herkomst van 300.000+ studenten in de
       periode 2014-2022beschikbaar gesteld door het CBS
     image: /images/algoprudence/AA202402/AA202402_cover.png
-    link: /nl/algoprudence/cases/aa202402_bias-prevented_addendum/
+    link: /nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/
     facets:
       - value: AA202402
         label: 'AA:2024:02'
@@ -124,7 +124,7 @@ algoprudences:
       ondersteuning van de selectie werd gebruikt functioneerde naar
       verwachting, maar was niet goed onderbouwd.
     image: /images/algoprudence/AA202401/Cover.png
-    link: /nl/algoprudence/cases/aa202401_bias-prevented/
+    link: /nl/algoprudence/cases/aa202401_preventing-prejudice/
     facets:
       - value: AA202401
         label: 'AA:2024:01'
