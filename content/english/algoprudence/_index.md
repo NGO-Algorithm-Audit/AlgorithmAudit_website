@@ -79,11 +79,12 @@ title_content: Case repository
 algoprudences:
   - title: Addendum Bias prevented
     intro: >-
-      Further research into CUB process of Education Executive Agency of The Netherlands (DUO) 
-      by analysing aggregation statistics on the country of birth and country of origin of 300.000+ 
-      students in the period 2014-2022 provided by the Dutch national office of statistics
+      Further research into CUB process of Education Executive Agency of The
+      Netherlands (DUO)  by analysing aggregation statistics on the country of
+      birth and country of origin of 300.000+  students in the period 2014-2022
+      provided by the Dutch national office of statistics
     image: /images/algoprudence/AA202402/AA202402_cover.png
-    link: /algoprudence/cases/aa202402_bias-prevented_addendum/
+    link: /algoprudence/cases/aa202402_preventing-prejudice_addendum/
     facets:
       - value: AA202402
         label: 'AA:2024:02'
@@ -115,15 +116,15 @@ algoprudences:
       - value: standard_quality_management_system
         label: quality management
         hide: true
-  - title: Bias prevented
+  - title: Preventing prejudice
     intro: >-
       Disparities have been identified in the control process of a Dutch public
       sector organisation regarding misuse of college allowances. In the period
       2012-2022, students who lived close to their parent(s) were significantly
       more often selected for a control procedure than others. The algorithm
       used to support the selection performed as expected.
-    image: /images/algoprudence/AA202401/Cover.png
-    link: /algoprudence/cases/aa202401_bias-prevented/
+    image: /images/algoprudence/AA202401/Cover_EN.png
+    link: /algoprudence/cases/aa202401_preventing-prejudice/
     facets:
       - value: algoprudence
         label: 'AA:2024:01'
