@@ -56,7 +56,7 @@ A press release can be found [here](/events/press_room/#DUO).
 
 #### Source of the case
 
-Dutch public sector organisation DUO
+Education Executive Agency of The Netherlands (DUO)
 
 #### Algoprudence
 

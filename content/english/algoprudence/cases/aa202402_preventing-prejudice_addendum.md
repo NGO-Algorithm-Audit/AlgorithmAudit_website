@@ -1,7 +1,7 @@
 ---
 icon: fas fa-balance-scale-left
 layout: case
-title: Addendum Bias prevented
+title: Addendum Preventing prejudice
 subtitle: >
   Addendum for ealier [research](/algoprudence/cases/aa202401_bias-prevented/) –
   Supervised bias analysis of aggregtation statistics on the country of birth
@@ -43,7 +43,7 @@ form1:
 
 {{< tab_header width="4" tab1_id="description" tab1_title="Beschrijving van technische audit" tab2_id="actions" tab2_title="Acties volgend op technische audit" tab3_id="discussion" tab3_title="Discussie & debat" default_tab="description" >}}
 
-{{< tab_content_open icon="fas fa-balance-scale-left" title="Addendum Vooringenomenheid voorkomen" id="description" >}}
+{{< tab_content_open icon="fas fa-balance-scale-left" title="Addendum Preventing prejudice" id="description" >}}
 
 #### Number of technical audit
 
@@ -55,17 +55,17 @@ AA:2024:02:TA
 
 Press release can be found here.
 
-#### Bron van de casus
+#### Source of case
 
-Dienst Uitvoering Onderwijs (DUO)
+Education Executive Agency of The Netherlands (DUO)
 
-#### Algoprudentie
+#### Algoprudence
 
-Het full report (AA:2024:02:TA) can be found [here](/nl/algoprudence/cases/aa202402_bias-prevented_addendum/).
+The full report (AA:2024:02:TA) can be found [here](/nl/algoprudence/cases/aa202402_bias-prevented_addendum/).
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1OXs1PGFqi7BjxFz4Yj3ikMJxM8gVs1IE/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
-#### Gefinancieerd door
+#### Financed by
 
 <br>
 
