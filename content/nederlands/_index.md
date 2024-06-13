@@ -24,7 +24,7 @@ Activity_Feed:
   featured_activities:
     - title: Addendum Vooringenomenheid voorkomen – Biasmeting CUB-proces DUO
       intro: "Addendum op eerder\_onderzoek\_(AA:2024:02:TA) – Biasmeting aan de hand van CBS-data over het Controle Uitwonendenbeurs (CUB) proces van DUO\n"
-      link: /nl/algoprudence/cases/aa202402_bias-prevented_addendum/
+      link: /nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/
       image: /images/algoprudence/AA202402/AA202402_cover.png
       date: 22-05-2024
       type: technische audit

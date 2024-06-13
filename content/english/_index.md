@@ -18,13 +18,13 @@ Activity_Feed:
   button_text: View more...
   button_link: /events/activities/#events
   featured_activities:
-    - title: Addendum Bias prevented – Supervised bias analysis
+    - title: Addendum Preventing prejudice – Supervised bias analysis
       intro: >
         Further research into CUB process of Education Executive Agency of The
         Netherlands (DUO) by analysing aggregation statistics on the country of
         birth and country of origin of 300.000+ students in the period 2014-2022
         provided by the Dutch national office of statistics.
-      link: /nl/algoprudence/cases/aa202402_bias-prevented_addendum/
+      link: /algoprudence/cases/aa202402_preventing-prejudice_addendum/
       image: /images/algoprudence/AA202402/AA202402_cover.png
       date: 22-05-2024
       type: technical audit
