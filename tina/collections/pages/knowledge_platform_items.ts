@@ -19,12 +19,8 @@ let specific_fields: TinaField[] = [
     required: true,
     options: [
       {
-        value: "regular",
-        label: "regular"
-      },
-      {
-        value: "featured",
-        label: "featured"
+        value: "article",
+        label: "Article"
       }
     ]
   },
