@@ -8,6 +8,13 @@ import building_blocks from "../shared/page/building_blocks";
 let specific_fields : TinaField[] = [
     facet_groups,
     {
+        type: "number",
+        name: "pagesize",
+        label: "Page size",
+        required: true,
+        description: "Number of items per page, leave 0 to show all items",
+    },
+    {
         type: "string",
         name: "title_content",
         label: "Title content",

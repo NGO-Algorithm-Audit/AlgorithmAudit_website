@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col mx-auto">
-                <div class="content container">
+                <div class="container">
 
                     {{ if .Params.title_content}}
                     <div class="row">
@@ -40,8 +40,8 @@
                         </div>
 
                         <!-- Articles -->
+                        {{ if .Data.Pages }}
                         <div class="col-lg-9 col-sm-12">
-                            {{ if .Data.Pages }}
                             {{ range $item := .Data.Pages }}
 
                             {{ $facets_for_data_attribute := "" }}
@@ -83,6 +83,10 @@
                                     </div>
                                 </div>
                             </a>
+                            {{end}}
+                            {{if .Params.pagesize }}
+                            <div class="faceted-pagination col-12" data-items-per-page="{{.Params.pagesize}}" data-current-page="1" >
+                            </div>
                             {{end}}
                         </div>
                         {{end}}

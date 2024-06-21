@@ -78,6 +78,7 @@ docReady(function () {
         updateFacetCount();
     });
 
+    filterItems();
     updateFacetCount();
 });
 
@@ -87,6 +88,7 @@ function filterItems() {
 
     // Show all items
     getAllArticles().each(function () {
+        $(this).attr('data-match-facets', 'true');
         $(this).show();
     });
 
@@ -103,10 +105,13 @@ function filterItems() {
             // Loop through their facets
             var facets_on_article = getFacetsOnArticle(this);
             if (!anyFacetMatches(facets_on_article, selectedFacets)) {
+                $(this).attr('data-match-facets', 'false');
                 $(this).hide();
             }
         })
     })
+
+    setCurrentPage(1);
 }
 
 function updateFacetCount() {
@@ -190,6 +195,68 @@ function getSelectedGroups() {
         }
     });
     return selectedGroups;
+}
+
+function getAllArticlesWhichMatchWithFacets() {
+    const articles = getAllArticles();
+    return articles.filter((index) => {
+        const article = $(articles[index]);
+        return article.attr('data-match-facets') == 'true';
+    });
+}
+
+
+function getPagination() {
+    return $('.faceted-pagination');
+}
+
+function paginate() {
+    let items = getAllArticlesWhichMatchWithFacets();
+    let pagination = getPagination();
+    if(pagination.length == 0) {
+        return;
+    } 
+
+    let itemsPerPage = pagination.attr('data-items-per-page');
+    let currentPage = pagination.attr('data-current-page');
+
+    // Hide all items
+    items.each(function () {
+        $(this).hide();
+    });
+
+    // Show items for current page
+    let startIndex = (currentPage - 1) * itemsPerPage;
+    let endIndex = currentPage * itemsPerPage;
+    items.slice(startIndex, endIndex).each(function () {
+        $(this).show();
+    });
+
+    // Build pager html
+    const pageCount = Math.ceil(items.length / itemsPerPage);
+    let pagerHtml = '';
+
+    if(pageCount <= 1) {
+        pagination.html('');
+        return;
+    }
+    pagerHtml += '<ul class="pagination pagination-default list-unstyled">';
+    for (let i = 1; i <= pageCount; i++) {
+        let active = currentPage == i ? 'active' : '';
+        pagerHtml += '<li class="page-item '+ active +'"><a href="#' + i +'" onclick="setCurrentPage(' + i + ')" class="page-link" role="button">' + i + '</a></li>';
+    }
+    pagerHtml += '</ul>';
+    pagination.html(pagerHtml);
+}
+
+function setCurrentPage(page) {
+    let pagination = getPagination();
+    if(pagination.length == 0) {
+        return;
+    } 
+
+    pagination.attr('data-current-page', page);
+    paginate();
 }
 
 // Send subscibtion for newsletter
