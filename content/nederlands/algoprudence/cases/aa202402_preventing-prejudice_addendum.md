@@ -61,7 +61,7 @@ Dienst Uitvoering Onderwijs (DUO)
 
 #### Algoprudentie
 
-Het volledige rapport (AA:2024:02:TA) kan [hier](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview) worden gedownload.
+Het volledige rapport (AA:2024:02:TA) kan <a href="https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview" target="_blank">hier</a> worden gedownload.
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1OXs1PGFqi7BjxFz4Yj3ikMJxM8gVs1IE/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 

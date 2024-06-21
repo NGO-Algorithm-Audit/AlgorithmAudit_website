@@ -25,7 +25,7 @@ Activity_Feed:
         birth and country of origin of 300.000+ students in the period 2014-2022
         provided by the Dutch national office of statistics.
       link: /algoprudence/cases/aa202402_preventing-prejudice_addendum/
-      image: /images/algoprudence/AA202402/AA202402_cover.png
+      image: /images/algoprudence/AA202402/AA202402_cover_EN.png
       date: 22-05-2024
       type: technical audit
   activities:
