@@ -7,13 +7,12 @@ facet_groups:
         label: '2024'
 title_content: Articles
 items:
-  - title: How 'algoprudence' can contribute to responsible use of ML-algorithms
+  - title: 'Algoprudence: Jurisprudence for algorithms'
     intro: >-
-      By means of two case positions regarding the use of machine
-      learning-driven risk profiling by the municipalities of Rotterdam and
-      Amsterdam, concept of 'algoprudence' is introduced and explained.
-    image: /images/knowledge_base/NJB-cover.jpg
-    link: /knowledge-platform/knowledge-base/njb-artikel/
+      Introducing Algoprudence: Case-based and decentralized judgements for
+      ethical AI
+    image: /images/knowledge_base/White-paper_Algoprudence.png
+    link: /knowledge-platform/knowledge-base/white_paper_algoprudence/
     facets:
       - value: year_2024
         label: '2024'
