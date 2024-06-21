@@ -5,6 +5,12 @@ summary: >-
   AI
 layout: article
 author: Algorithm Audit
+intro: >-
+  Introducing Algoprudence: Case-based and decentralized judgements for ethical
+  AI
+facets:
+  - value: year_2024
+    label: '2024'
 title: 'Algoprudence: Jurisprudence for algorithms'
 subtitle: ''
 image: /images/knowledge_base/White-paper_Algoprudence.png

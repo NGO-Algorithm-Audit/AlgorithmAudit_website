@@ -1,13 +1,13 @@
 ---
-title: Algorithm Audit (op-ed) – Human vs machine bias
-subtitle: ''
-image: /images/knowledge_base/Op-ed-3.png
-author: 'Jurriaan Parie, Vardâyani Djwalapersad'
-layout: article
 summary: >-
   Based on bias testing results from the Municipality of Amsterdam, it is argued
   that that algorithms can play an important role in mitigating biases
   originating from humans
+layout: article
+author: 'Jurriaan Parie, Vardâyani Djwalapersad'
+title: Algorithm Audit (op-ed) – Human vs machine bias
+subtitle: ''
+image: /images/knowledge_base/Op-ed-3.png
 ---
 
 Op-ed, as <a href="https://www.parool.nl/columns-opinie/opinie-onderzoek-vooringenomenheid-van-zowel-algoritme-als-ambtenaar~bd69aa5e/" target="_blank">published</a> in Parool on 14-02-2024, arguing that:

@@ -3,7 +3,8 @@
  */
 import { TinaField } from "tinacms";
 import building_blocks from "../shared/page/building_blocks";
-
+import facets from "../shared/facets/facets";
+import weight from "../shared/page/weight";
 let specific_fields: TinaField[] = [
   {
     type: "string",
@@ -30,6 +31,13 @@ let specific_fields: TinaField[] = [
     label: "author",
     required: true,
   },
+  {
+    type: "string",
+    name: "intro",
+    label: "teaser"
+  },
+  facets,
+  weight,
 ];
 
 export default {

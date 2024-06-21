@@ -41,37 +41,37 @@
 
                         <!-- Articles -->
                         <div class="col-lg-9 col-sm-12">
-                            {{ if .Params.items }}
-                            {{ range $item := .Params.items }}
+                            {{ if .Data.Pages }}
+                            {{ range $item := .Data.Pages }}
 
                             {{ $facets_for_data_attribute := "" }}
-                            {{ range $facet := $item.facets }}
+                            {{ range $facet := $item.Params.facets }}
                             {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
                             $split_char | printf "%s" }}
                             {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf "%s%s"
                             $facet.value | printf "%s" }}
                             {{ end }}
-                            <a class="" href="{{$item.link | relURL}}">
+                            <a class="" href="{{.Permalink | relURL}}">
                                 <div class="clickable-wrapper my-5">
                                     <div class="grid shadow mobile-desktop-container-layout rounded-lg facet-item" data-facets="{{$facets_for_data_attribute}}">
                                         <div class="row">
                                             <div class="col-md-3 col-sm-12 pr-4">
                                                 <div class="row justify-content-center">
                                                     <div class="col-8 col-md-12 mb-5">
-                                                        <img class="img-fluid" src="{{$item.image}}" />
+                                                        <img class="img-fluid" src="{{$item.Params.image}}" />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-9 col-sm-12">
                                                 <div class="row align-items-center">
                                                     <h4 class="mb-4" style="color: #005aa7;">
-                                                        {{$item.title}}
+                                                        {{$item.Params.title}}
                                                     </h4>
-                                                    <p>{{$item.intro | markdownify}} 
+                                                    <p>{{$item.Params.intro | markdownify}} 
                                                     <span style="color: #005aa7;">{{ i18n "read_more" }}</span>
                                                 </div>
                                                 <div class="row">
-                                                    {{ range $facet := $item.facets }}
+                                                    {{ range $facet := $item.Params.facets }}
                                                     {{ if $facet.hide }}
                                                     {{ else }}
                                                     <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-1">{{$facet.label}}</span>
