@@ -1,12 +1,12 @@
 ---
 icon: fas fa-greater-than-equal
 layout: case
-title: Bias prevented
+title: Preventing prejudice
 subtitle: >
   Technical audit (AA:2024:01:TA) – Findings and recommendations regarding
   rule-based risk profiling as used in a Dutch public sector organisation
   control process
-image: /images/algoprudence/AA202401/Cover.png
+image: /images/algoprudence/AA202401/Cover_EN.png
 form1:
   title: React to this technical audit
   content: >-
@@ -41,7 +41,7 @@ form1:
 
 {{< tab_header width="4" tab1_id="description" tab1_title="Description of technical audit" tab2_id="actions" tab2_title="Actions following technical audit" tab3_id="discussion" tab3_title="Discussion & debate" default_tab="description" >}}
 
-{{< tab_content_open icon="fa-greater-than-equal" title="Bias prevented" id="description" >}}
+{{< tab_content_open icon="fa-greater-than-equal" title="Preventing prejudice" id="description" >}}
 
 #### Algoprudence number
 
@@ -56,13 +56,25 @@ A press release can be found [here](/events/press_room/#DUO).
 
 #### Source of the case
 
-Dutch public sector organisation DUO
+Education Executive Agency of The Netherlands (DUO)
 
 #### Algoprudence
 
 The technical audit report (AA:2024:01:TA) can be downloaded [here](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview).
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview" articleUrl2="" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1waGi9gduj10AOGSrSDqKWOMfqcRWwyGy/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="6" >}}
+
+<!-- #### AI Act standards
+
+* **Risk management:** aa
+* **Governance & data quality:** aa
+  * **420001: 
+* **Record keeping:** aa
+* **Transparency provisions:** aa
+* **Human oversight:** aa
+* **Accuracy specifications:** aa
+* **Robustness specifications:** aa
+* **Quality management system:** aa -->
 
 #### Funded by
 
@@ -80,7 +92,7 @@ The technical audit report (AA:2024:01:TA) can be downloaded [here](https://dri
 
 ##### Description
 
-Report *Bias prevented* has been <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2024/03/01/kabinetsreactie-onderzoek-naar-controleproces-uitwonendenbeurs" target="_blank">sent</a> as part of the Internal research documents to  Dutch Parliament
+Report *Preventing prejudice* has been <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2024/03/01/kabinetsreactie-onderzoek-naar-controleproces-uitwonendenbeurs" target="_blank">sent</a> as part of the Internal research documents to  Dutch Parliament
 
 {{< accordion_item_close >}}
 

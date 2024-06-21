@@ -1,5 +1,5 @@
 ---
-layout: repository
+layout: repository 
 title: Algoprudentie
 subtitle: >
   Algoprudentie is beschikbaar voor verschillende soorten algoritmes, onder
@@ -75,7 +75,46 @@ facet_groups:
         label: Private organisatie
       - value: self
         label: Algorithm Audit
+title_content: Algoprudentie overzicht
 algoprudences:
+  - title: Addendum Vooringenomen voorkomen
+    intro: >-
+      Vervolgonderzoek naar CUB-proces DUO aan de hand van
+      aggregatiestatistieken over de herkomst van 300.000+ studenten in de
+      periode 2014-2022beschikbaar gesteld door het CBS
+    image: /images/algoprudence/AA202402/AA202402_cover.png
+    link: /nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/
+    facets:
+      - value: AA202402
+        label: 'AA:2024:02'
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: type_of_audit_technical
+        label: technische audit
+      - value: type_of_algorithm_rule_based
+        label: regel gebaseerd
+      - value: type_of_algorithm_profiling
+        label: profilering
+      - value: ethical_issue_proxy
+        label: proxydiscriminatie
+      - value: owner_public
+        label: publieke organisatie
+      - value: standard_risk_management
+        label: risicomanagement
+        hide: true
+      - value: standard_governance_data_quality
+        label: governance & datakwaliteit
+        hide: true
+      - value: standard_transparency_provisions
+        label: transparantiebepalingen
+        hide: true
+      - value: standard_human_oversight
+        label: menselijke tussenkomst
+        hide: true
+      - value: standard_quality_management_system
+        label: kwaliteitmanagement
+        hide: true
   - title: Vooringenomenheid voorkomen
     intro: >-
       Afwijkingen zijn geconstateerd in het controleproces van DUO naar misbruik
@@ -85,7 +124,7 @@ algoprudences:
       ondersteuning van de selectie werd gebruikt functioneerde naar
       verwachting, maar was niet goed onderbouwd.
     image: /images/algoprudence/AA202401/Cover.png
-    link: /nl/algoprudence/cases/aa202401_bias-prevented/
+    link: /nl/algoprudence/cases/aa202401_preventing-prejudice/
     facets:
       - value: AA202401
         label: 'AA:2024:01'
@@ -239,6 +278,5 @@ algoprudences:
       - value: standard_transparency_provisions
         label: transparantiebepalingen
         hide: true
-title_content: Algoprudentie overzicht
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: overview
 facet_groups:
   - value: year
     title: Jaar
@@ -24,6 +23,105 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: 'Outvie: Het Nationaal AI-Congres Compliance & Update'
+    description: >
+      Tijdens het Nationaal AI-Congres Compliance & Update is in de breakout
+      sessie het volgende thema onder loep de genomen: *Bias, Ethiek &
+      Compliance - Casus DUO: indirecte discriminatie middels
+      risicoprofilering.* 
+
+
+      Hierin kwamen de volgende punten aan bod:
+
+
+      * Unieke analyse aan de hand van CBS-data
+
+      * Analyse van migratieachtergrond van 300.000+ studenten
+
+      * Ogenschijnlijk neutraal onderscheid met discriminerende gevolgen
+
+      * Het voorkomen van indirecte discriminatie in organisaties 
+
+
+      [https://outvie.nl/conferenties/artificial-intelligence-impact-update/](https://outvie.nl/conferenties/artificial-intelligence-impact-update/)
+    image: /Outvie_RGB_op_witte_achtergrond.png
+    date: 30-05-2024
+    facets:
+      - value: type_event
+        label: evenement
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: year_2024
+        label: '2024'
+        hide: true
+  - title: 'SPUI25: Paneldiscussie over de zaak tegen Meta'
+    description: >
+      Paneldiscussie over de zaak tegen Meta met Jurriaan Parie (Algorithm
+      Audit), Rosie Sharpe (Global Witness), Naomi Appelman (PhD Instituut voor
+      Informatierecht aan de Universiteit van Amsterdam en medeoprichter van
+      Racism and Technology Center) en Berty Bannor (Bureau Clara Wichmann).
+
+
+      De panelleden bespraken of Facebook mogelijk de Nederlandse wetgeving voor
+      gelijke behandeling schendt. De oorsprong van deze Meta Case werd
+      behandeld en de wijze waarop maatschappelijke problemen zoals seksisme,
+      racisme en andere vormen van discriminatie kunnen worden weerspiegeld,
+      belicht en aangepakt door technologische ontwikkelingen.
+
+
+      [https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/](https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/)
+
+
+      ![](</meta case panel.png>)
+    image: /spui 25.jpg
+    date: 29-05-2024
+    facets:
+      - value: type_panel
+        label: paneldiscussie
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+  - title: 'CPDP 2024 Brussel: Decentraliseren van AI-fairness beslissingen '
+    description: >
+      Paneldiscussie over het decentraliseren van AI-fairness-beslissingen met
+      Laurens Naudts (UvA AI, Media & Democracy Lab), Karolina Iwanska (European
+      Centre for Not-for-profit Law) en Francien Dechesne (Centrum voor Recht en
+      Digitale Technologieën, Universiteit Leiden).
+
+
+      * Vanuit het perspectief van zowel individuele als institutionele
+      rechtsbescherming, wat zijn de implicaties van het decentraliseren van
+      beslissingen met betrekking tot fundamentele rechten en welke problemen
+      kunnen hierdoor worden opgelost of geïntroduceerd?
+
+      * Hoe kunnen normatieve vraagstukken worden beslecht bij het uitvoeren van
+      Fundamental Rights Impact Assessments (FRIA’s) bij de ontwikkeling van AI?
+
+      * Wat is de rol van regelgevende instanties bij het bieden van richtlijnen
+      voor het oplossen van normatieve vraagstukken met betrekking tot de
+      fairness van AI?
+
+      * Wat is ‘algoprudentie’ en op welke manier kan dit bijdragen aan
+      eerlijkere AI-beslissingen?
+
+
+      ![](</CPDP Brussels 2024.jpeg>)
+    image: /CPDP Brussels 2024 logo.png
+    date: 24-05-2024
+    facets:
+      - value: type_panel
+        label: paneldiscussie
+        hide: false
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: year_2024
+        label: '2024'
+        hide: true
   - title: Seminar algoritmevalidatie
     description: >
       Criteria voor het auditeren van algoritmes krijgen langzaam vorm, zoals de
@@ -39,7 +137,7 @@ events:
     date: 24-04-2024
     facets:
       - value: type_event
-        label: event
+        label: evenement
   - title: 'Presentatie UvA AI, Media & Democratie lab'
     description: >
       Presentatie over artikel [Hoe ‘algoprudentie’ kan bijdragen aan een
@@ -81,7 +179,7 @@ events:
         label: Q1-2024
         hide: true
       - value: type_event
-        label: event
+        label: evenement
   - title: Spreker tijdens debat gemeenteraad Amsterdam
     description: >
       Bijdrage aan debat gemeenteraad over eindevaluatie 'Slimme check
@@ -117,7 +215,7 @@ events:
     date: 07-03-2024
     facets:
       - value: type_event
-        label: event
+        label: evenement
       - value: year_2024
         label: '2024'
         hide: true
@@ -223,6 +321,7 @@ events:
         hide: true
       - value: type_event
         label: evenement
+layout: overview
 title: Evenementen
 subtitle: >
   Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. We

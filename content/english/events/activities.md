@@ -1,5 +1,4 @@
 ---
-layout: overview
 facet_groups:
   - value: year
     title: Year
@@ -14,7 +13,7 @@ facet_groups:
     title: Type of event
     facets:
       - value: article
-        label: Artikel
+        label: Article
       - value: event
         label: Event
       - value: interview
@@ -24,6 +23,104 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: 'Outvie: The National AI Congress Compliance & Update '
+    description: >
+      During the National AI Congress Compliance & Update, the following theme
+      was examined in the breakout session: *Bias, Ethics & Compliance - the DUO
+      case: indirect discrimination through risk profiling.*
+
+
+      Points of discussion were:
+
+
+      * Unique analysis based on CBS data 
+
+      * Analysis of migration background of 300,000+ students 
+
+      * Seemingly neutral algorithms can have discriminatory consequences 
+
+      * Preventing indirect discrimination in organizations
+
+
+      [https://outvie.nl/conferenties/artificial-intelligence-impact-update/](https://outvie.nl/conferenties/artificial-intelligence-impact-update/)
+    image: /Outvie_RGB_op_witte_achtergrond.png
+    date: 30-05-2024
+    facets:
+      - value: type_event
+        label: event
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: year_2024
+        label: '2024'
+        hide: true
+  - title: >-
+      SPUI25: The Meta Case - challenging discriminatory algorithms through
+      legal means
+    description: >
+      Panel discussion on The Meta Case with Jurriaan Parie (Algorithm Audit),
+      Rosie Sharpe (Global Witness), Naomi Appelman (PhD Institute for
+      Information Law at the University of Amsterdam and co-founder Racism and
+      Technology Center) and Berty Bannor (Bureau Clara Wichmann).
+
+
+      The panelists discussed whether Facebook is potentially violating Dutch
+      equality laws. The origins of this Meta Case was elaborated upon,
+      especially regarding how technological developments can reflect, identify,
+      and address societal issues such as sexism, racism, and other types of
+      discrimination.
+
+
+      [https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/](https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/)
+
+
+      ![](</meta case panel.png>)
+    image: /spui 25.jpg
+    date: 29-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_panel
+        label: panel discussion
+  - title: 'CPDP 2024 Brussels: Decentralizing AI fairness decisions'
+    description: >
+      Panel discussion on decentralizing AI fairness decisions with Laurens
+      Naudts (UvA AI, Media & Democracy Lab), Karolina Iwanska (European Centre
+      for Not-for-profit Law) and Francien Dechesne (Center for Law and Digital
+      Technologies, University Leiden).
+
+
+      * From the perspective of both individual and institutional legal
+      protection, what are the implications of decentralizing decisions
+      regarding fundamental rights, and what issues might it resolve or
+      introduce?
+
+      * How can normative disputes be settled when performing Fundamental Rights
+      Impact Assessments (FRIAs) in AI development?
+
+      * What is the role of regulatory bodies in providing guidance for
+      resolving normative challenges regarding AI fairness?
+
+      * What is “algoprudence” and how can it contribute to more fair AI
+      decisions?
+
+
+      ![](</CPDP Brussels 2024.jpeg>)
+    image: /CPDP Brussels 2024 logo.png
+    date: 24-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_panel
+        label: panel discussion
   - title: Seminar algorithm validation
     description: "Algorithm Audit hosted a public seminar on algorithm validation and algoprudence in The Hague. Anne Meuwese\_shared insights on the value of algoprudence in contextualizing legal norms. Floris Holstege shed light into statistical hypothesis testing which plays an important role in our recent techincal audits.\_\n\nWe appreciated the interactive Q\\&A with the participants, especially the curious and critical questions which enables us to clarify our work, but also contributes to the further development and refinement of our activities as an NGO.\n\n{{< pdf_frame articleUrl1=\"https://drive.google.com/file/d/1edrNqP4cBgJ1zKv1970DsUJ3Tark6waF/preview\" width_desktop_pdf=\"12\" width_mobile_pdf=\"12\" >}}\n"
     image: /images/logo/logo.svg
@@ -218,6 +315,7 @@ events:
       - value: year_2023
         label: '2023'
         hide: true
+layout: overview
 title: Activities
 subtitle: >
   Knowledge sharing is an integral part of Algorithm Audit's mission. Members of
