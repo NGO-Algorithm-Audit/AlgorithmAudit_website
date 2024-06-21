@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tinacms/cli": "^1.5.30",
+    "@tinacms/cli": "^1.5.46",
     "hugo": "^0.0.3",
     "hugo-extended": "^0.119.0",
-    "tinacms": "^1.6.0"
+    "tinacms": "^1.6.4"
   }
 }
