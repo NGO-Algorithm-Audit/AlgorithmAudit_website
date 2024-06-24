@@ -77,6 +77,14 @@ Het volledige rapport (AA:2024:02:TA) kan <a href="https://drive.google.com/file
 
 {{< accordions_area_open id="actions" >}}
 
+{{< accordion_item_open title="Vervolgonderzoek CBS en Algorithm Audit naar controle uitwonendenbeurs" background_color="#eef2f6" date="22-05-2024" tag1="migratieachtergrond" tag2="bias meting" tag3="CBS" image="/images/algoprudence/AA202401/Actions/TK.svg" >}}
+
+#### Reactie Minister Onderwijs, Cultuur en Wetenschap
+
+Officiële <a href='https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2024Z08699&did=2024D20430' target="_blank">reactie</a>
+
+{{< accordion_item_close >}}
+
 {{< accordions_area_close >}}
 
 {{< tab_content_close >}}

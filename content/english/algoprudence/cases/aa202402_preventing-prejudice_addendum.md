@@ -76,6 +76,14 @@ The full report (AA:2024:02:TA) can be found <a href="https://drive.google.com/f
 
 {{< accordions_area_open id="actions" >}}
 
+{{< accordion_item_open title="Additional research Statistics Netherlands and Algorithm Audit to College Grant Control process" background_color="#eef2f6" date="22-05-2024" tag1="migration backgroud" tag2="supervised bias test" tag3="Statistics Netherlands" image="/images/algoprudence/AA202401/Actions/TK.svg" >}}
+
+#### Reaction Dutch Minister Education, Culture and Science
+
+Official <a href='https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2024Z08699&did=2024D20430' target="_blank">reactie</a>
+
+{{< accordion_item_close >}}
+
 {{< accordions_area_close >}}
 
 {{< tab_content_close >}}
