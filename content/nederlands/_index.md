@@ -29,21 +29,21 @@ Activity_Feed:
       date: 22-05-2024
       type: technische audit
   activities:
-    - title: 'Presentatie UvA AI, Media & Democratie Lab'
-      link: /nl/events/activities/#events
-      image: /images/events/images.jpeg
-      date: 16-04-2024
+    - title: 'Lunchlezing over DUO onderzoek bij Centraal Bureau voor de Statistiek (CBS)'
+      link: /events/activities/#events
+      image: /images/events/CBS_logo.png
+      date: 25-06-2024
       type: presentatie
-    - title: Kennisdeling event Rekenkamer Den Haag
-      link: /nl/events/activities/#events
-      image: /images/events/DH_rekenkamer.png
-      date: 27-03-2024
-      type: presentatie
-    - title: Inspreker gemeenteraad debat over ML-gedreven risicoprofilering
-      link: /nl/events/activities/#events
-      image: /images/events/Amsterdam.png
-      date: 20-03-2024
-      type: spreker
+    - title: Europese Academie voor Standardisering jaarlijkse conferentie
+      link: /events/activities/#events
+      image: /images/events/StandICT.jpg
+      date: 19-06-2024
+      type: paneldiscussie
+    - title: MozFest Amsterdam 2024 Funders' Summit
+      link: /events/activities/#events
+      image: /images/events/MozillaFestival.png
+      date: 11-06-2024
+      type: paneldiscussie
 Supported_by:
   title: Ondersteund door
   funders:
@@ -92,7 +92,7 @@ Distinctive_in:
     - name: Publieke kennis
       icon: fab fa-slideshare
       content: >
-        Al onze casuïstiek en bijbehorend advies (algoprudentie) is <a
+        Casuïstiek en bijbehorend advies (algoprudentie) is <a
         href="https://algorithmaudit.eu/nl/algoprudence/"
         style="color:white;text-decoration: underline;">openbaar</a>. Zo dragen
         we bij aan publieke kennisopbouw over de verantwoorde inzet van
