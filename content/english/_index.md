@@ -4,7 +4,7 @@ Banner:
   tag: definition
   title: al-go-pru-dence
   phonetica: /æl.ɡə-ˈpruː.dəns/
-  type: noun
+  type: noun 
   description1: Case-based normative advice for ethical algorithms
   description2: Guidance for decentralised self-assessment of fair AI
   description3: Jurisprudence for algorithms
@@ -29,21 +29,21 @@ Activity_Feed:
       date: 22-05-2024
       type: technical audit
   activities:
-    - title: 'Presentation at UvA AI, Media & Democracy lab'
+    - title: 'Lunch lecture on DUO case Dutch National Office of Statistics (CBS)'
       link: /events/activities/#events
-      image: /images/events/images.jpeg
-      date: 16-04-2024
+      image: /images/events/CBS_logo.png
+      date: 25-06-2024
       type: presentation
-    - title: Knowledge sharing Court of Auditors Municipality of The Hague
+    - title: European Academy for Standardisation Annual Conference
       link: /events/activities/#events
-      image: /images/events/DH_rekenkamer.png
-      date: 27-03-2024
-      type: presentation
-    - title: Speaker during debate of city council on ML-driven risk profiling
+      image: /images/events/StandICT.jpg
+      date: 19-06-2024
+      type: panel discussion
+    - title: MozFest Amsterdam 2024 Funders' Summit
       link: /events/activities/#events
-      image: /images/events/Amsterdam.png
-      date: 20-03-2024
-      type: speaker
+      image: /images/events/MozillaFestival.png
+      date: 11-06-2024
+      type: panel discussion
 Supported_by:
   title: Supported by
   funders:
@@ -90,7 +90,7 @@ Distinctive_in:
     - name: Public knowledge
       icon: fab fa-slideshare
       content: >
-        All our audits and corresponding advice (*algoprudence*) are made <a
+        Audits and corresponding advice (*algoprudence*) are made <a
         href="https://algorithmaudit.eu/algoprudence/"
         style="color:white;text-decoration: underline;">publicly available</a>,
         increasing collective knowledge how to deploy and use algorithms in an
