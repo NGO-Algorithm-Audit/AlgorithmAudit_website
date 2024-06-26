@@ -12,8 +12,6 @@ facet_groups:
   - value: type
     title: Type evenement
     facets:
-      - value: article
-        label: Artikel
       - value: event
         label: Evenement
       - value: interview
@@ -23,12 +21,107 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: >-
+      Lunchlezing over DUO onderzoek bij Centraal Bureau voor de Statistiek
+      (CBS)
+    description: >
+      Presentatie over data analyse van DUO CUB-onderzoek.
+
+
+      Rapport:
+      [https://algorithmaudit.eu/algoprudence/cases/aa202402\_preventing-prejudice\_addendum/](https://algorithmaudit.eu/algoprudence/cases/aa202402_preventing-prejudice_addendum/)\
+
+      Github:
+      [https://github.com/NGO-Algorithm-Audit/DUO-CUB](https://github.com/NGO-Algorithm-Audit/DUO-CUB)
+
+
+      ![](/images/events/CBS.jpeg)
+    image: /images/events/CBS_logo.png
+    date: 25-06-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Europese Academie voor Standardisering jaarlijkse conferentie
+    description: "Evenement om Europese aanwezigheid in het internationale standardiserings landschap te verstevigen – Impact en hoogtepunten van het StandICT.eu\_2026 project\n\nGeorganiseerd door:\n\n* Europese Academie voor Standardisering (EURAS)\n* Nederlands Normalisatie Instituut (NEN)\n* TU Delft, TU Eindhoven, Rotterdam School of Management, Universiteit Tilburg\n\n![](/images/events/StandICT.jpeg)\n"
+    image: /images/events/StandICT.jpg
+    date: 19-06-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_panel
+        label: paneldiscussie
+  - title: MozFest Amsterdam 2024 Funders' Summit
+    description: >
+      Bijeenkomst voor technische en niet-technische funders om meer te leren
+      over  de impact van AI op rechtvaardigheidsthema's, zoals
+      klimaatverandering, genderemancipatie, gemarginaliseerde groepen en
+      democratie, en meer. Gefaciliteerd door Mozilla Foundation, European
+      AI\&Society Fund en Global Philanthropy Project.
+
+
+      [https://globalphilanthropyproject.org/gpp-events/ai-philanthropy-summit-at-mozfest/](https://globalphilanthropyproject.org/gpp-events/ai-philanthropy-summit-at-mozfest/)
+    image: /images/events/MozillaFestival.png
+    date: 11-06-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_panel
+        label: paneldiscussie
+  - title: 'Sharing days: Toekomst van de democratie – Universiteit Utrecht'
+    description: >
+      Event over de toekomst van de democratie en digitalisering tijdens de
+      *dies natalis* van de Universiteit Utrecht
+
+
+      [https://www.uu.nl/organisatie/alumni/sharing-days](https://www.uu.nl/en/organisation/alumni/sharing-days)
+    image: /images/events/uu-logo.png
+    date: 06-06-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_panel
+        label: panel discussion
+  - title: Interview SIDN Fonds
+    description: >
+      Interview over project Open Source AI Auditing
+
+      Interview:
+      [https://www.sidnfonds.nl/nieuws/niet-elke-beslissing-is-te-kwantificeren](https://www.sidnfonds.nl/nieuws/niet-elke-beslissing-is-te-kwantificeren)
+    image: /images/supported_by/sidn.png
+    date: 31-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_interview
+        label: interview
   - title: 'Outvie: Het Nationaal AI-Congres Compliance & Update'
     description: >
       Tijdens het Nationaal AI-Congres Compliance & Update is in de breakout
       sessie het volgende thema onder loep de genomen: *Bias, Ethiek &
       Compliance - Casus DUO: indirecte discriminatie middels
-      risicoprofilering.* 
+      risicoprofilering.*
 
 
       Hierin kwamen de volgende punten aan bod:
@@ -40,15 +133,15 @@ events:
 
       * Ogenschijnlijk neutraal onderscheid met discriminerende gevolgen
 
-      * Het voorkomen van indirecte discriminatie in organisaties 
+      * Het voorkomen van indirecte discriminatie in organisaties
 
 
       [https://outvie.nl/conferenties/artificial-intelligence-impact-update/](https://outvie.nl/conferenties/artificial-intelligence-impact-update/)
-    image: /Outvie_RGB_op_witte_achtergrond.png
+    image: /images/events/Outvie_RGB_op_witte_achtergrond.png
     date: 30-05-2024
     facets:
-      - value: type_event
-        label: evenement
+      - value: type_presentation
+        label: presentatie
       - value: year_q2_2024
         label: Q2-2024
         hide: true
@@ -73,8 +166,8 @@ events:
       [https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/](https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/)
 
 
-      ![](</meta case panel.png>)
-    image: /spui 25.jpg
+      ![](</images/events/meta case panel.png>)
+    image: /images/events/spui 25.jpg
     date: 29-05-2024
     facets:
       - value: type_panel
@@ -109,8 +202,8 @@ events:
       eerlijkere AI-beslissingen?
 
 
-      ![](</CPDP Brussels 2024.jpeg>)
-    image: /CPDP Brussels 2024 logo.png
+      ![](</images/events/CPDP Brussels 2024.jpeg>)
+    image: /images/events/CPDP Brussels 2024 logo.png
     date: 24-05-2024
     facets:
       - value: type_panel
@@ -122,6 +215,24 @@ events:
       - value: year_2024
         label: '2024'
         hide: true
+  - title: Interview Volkskrant
+    description: >
+      Interview met de Volkskrant naar aanleiding van DUO-onderzoek.
+
+
+      Interview:
+      [https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/](https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/)
+    image: /images/events/Volkskrant.png
+    date: 23-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_interview
+        label: interview
   - title: Seminar algoritmevalidatie
     description: >
       Criteria voor het auditeren van algoritmes krijgen langzaam vorm, zoals de
@@ -136,6 +247,12 @@ events:
     image: /images/logo/logo.svg
     date: 24-04-2024
     facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
       - value: type_event
         label: evenement
   - title: 'Presentatie UvA AI, Media & Democratie lab'
@@ -160,6 +277,25 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
+  - title: Interview met College van de Rechten van de Mens
+    description: >
+      Interview met het College van de Rechten van de Mens over het werk van
+      Stichting Algorithm Audit
+
+
+      Interview:
+      [https://www.mensenrechten.nl/actueel/toegelicht/interviews/2024/opsporingsalgoritmes-kunnen-over-de-schreef-gaan-maar-alternatieven-zijn-niet-per-se-beter](https://www.mensenrechten.nl/actueel/toegelicht/interviews/2024/opsporingsalgoritmes-kunnen-over-de-schreef-gaan-maar-alternatieven-zijn-niet-per-se-beter)
+    image: /images/algoprudence/AA202302/Discussion&debate/CvRM.svg
+    date: 28-03-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: type_interview
+        label: interview
   - title: Kennisdeling Rekenkamer Den Haag
     description: >
       Kennisdeling over het auditeren van algoritmes vanuit zowel kwalitatief
@@ -178,8 +314,8 @@ events:
       - value: year_q1_2024
         label: Q1-2024
         hide: true
-      - value: type_event
-        label: evenement
+      - value: type_presentation
+        label: presentatie
   - title: Spreker tijdens debat gemeenteraad Amsterdam
     description: >
       Bijdrage aan debat gemeenteraad over eindevaluatie 'Slimme check
@@ -214,8 +350,8 @@ events:
     image: /images/events/mathematics and computer science tu delft.png
     date: 07-03-2024
     facets:
-      - value: type_event
-        label: evenement
+      - value: type_presentation
+        label: presentation
       - value: year_2024
         label: '2024'
         hide: true

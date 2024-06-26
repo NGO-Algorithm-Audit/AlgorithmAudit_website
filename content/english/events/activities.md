@@ -12,8 +12,6 @@ facet_groups:
   - value: type
     title: Type of event
     facets:
-      - value: article
-        label: Article
       - value: event
         label: Event
       - value: interview
@@ -23,6 +21,98 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: Lunch lecture on DUO case Dutch National Office of Statistics (CBS)
+    description: >
+      Presenting data analysis of the DUO Grant College Check case.
+
+
+      Report:
+      [https://algorithmaudit.eu/algoprudence/cases/aa202402\_preventing-prejudice\_addendum/](https://algorithmaudit.eu/algoprudence/cases/aa202402_preventing-prejudice_addendum/)\
+
+      Github:
+      [https://github.com/NGO-Algorithm-Audit/DUO-CUB](https://github.com/NGO-Algorithm-Audit/DUO-CUB)
+
+
+      ![](/images/events/CBS.jpeg)
+    image: /images/events/CBS_logo.png
+    date: 25-06-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: European Academy for Standardisation Annual Conference
+    description: "Event on Reinforcing European Presence in the International Standardisation Landscape – Impact and highlights from the\_StandICT.eu\_2026 project\n\nOrganised by\n\n* European Academy for Standardisation (EURAS)\n* The Royal Netherlands Standardization Institute (NEN)\n* TU Delft, TU Eindhoven, Rotterdam School of Management, Tilburg University\n\n![](/images/events/StandICT.jpeg)\n"
+    image: /images/events/StandICT.jpg
+    date: 19-06-2024
+    facets:
+      - value: type_panel
+        label: panel discussion
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+  - title: MozFest Amsterdam 2024 Funders' Summit
+    description: >
+      Meeting ground for both technical and non-technical funders to explore the
+      impacts of AI on key justice issues – climate, gender, race, democracy,
+      and beyond. Hosted by Mozilla Foundation, European AI\&Society Fund and
+      Global Philanthropy Project.
+
+
+      [https://globalphilanthropyproject.org/gpp-events/ai-philanthropy-summit-at-mozfest/](https://globalphilanthropyproject.org/gpp-events/ai-philanthropy-summit-at-mozfest/)
+    image: /images/events/MozillaFestival.png
+    date: 11-06-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_panel
+        label: panel discussion
+  - title: 'Sharing days: Future of democracy – Utrecht University'
+    description: >
+      Event on the future of democracy and digitalisation during *dies natalis*
+      of Utrecht Unviersity
+
+
+      [https://www.uu.nl/en/organisation/alumni/sharing-days](https://www.uu.nl/en/organisation/alumni/sharing-days)
+    image: /images/events/uu-logo.png
+    date: 06-06-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_panel
+        label: panel discussion
+  - title: Interview SIDN Fund
+    description: >
+      Interview about project Open Source AI Auditing
+
+      Interview:
+      [https://www.sidnfonds.nl/nieuws/niet-elke-beslissing-is-te-kwantificeren](https://www.sidnfonds.nl/nieuws/niet-elke-beslissing-is-te-kwantificeren)
+    image: /images/supported_by/sidn.png
+    date: 31-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_interview
+        label: interview
   - title: 'Outvie: The National AI Congress Compliance & Update '
     description: >
       During the National AI Congress Compliance & Update, the following theme
@@ -33,21 +123,21 @@ events:
       Points of discussion were:
 
 
-      * Unique analysis based on CBS data 
+      * Unique analysis based on CBS data
 
-      * Analysis of migration background of 300,000+ students 
+      * Analysis of migration background of 300,000+ students
 
-      * Seemingly neutral algorithms can have discriminatory consequences 
+      * Seemingly neutral algorithms can have discriminatory consequences
 
       * Preventing indirect discrimination in organizations
 
 
       [https://outvie.nl/conferenties/artificial-intelligence-impact-update/](https://outvie.nl/conferenties/artificial-intelligence-impact-update/)
-    image: /Outvie_RGB_op_witte_achtergrond.png
+    image: /images/events/Outvie_RGB_op_witte_achtergrond.png
     date: 30-05-2024
     facets:
-      - value: type_event
-        label: event
+      - value: type_presentation
+        label: presentation
       - value: year_q2_2024
         label: Q2-2024
         hide: true
@@ -74,8 +164,8 @@ events:
       [https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/](https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/)
 
 
-      ![](</meta case panel.png>)
-    image: /spui 25.jpg
+      ![](</images/events/meta case panel.png>)
+    image: /images/events/spui 25.jpg
     date: 29-05-2024
     facets:
       - value: year_2024
@@ -109,8 +199,8 @@ events:
       decisions?
 
 
-      ![](</CPDP Brussels 2024.jpeg>)
-    image: /CPDP Brussels 2024 logo.png
+      ![](</images/events/CPDP Brussels 2024.jpeg>)
+    image: /images/events/CPDP Brussels 2024 logo.png
     date: 24-05-2024
     facets:
       - value: year_2024
@@ -121,11 +211,35 @@ events:
         hide: true
       - value: type_panel
         label: panel discussion
+  - title: Interview Volkskrant
+    description: >
+      Interview with Dutch news paper de Volkskrant about research with Dutch Executive Education Agency (DUO).
+
+
+      Interview:
+      [https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/](https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/)
+    image: /images/events/Volkskrant.png
+    date: 23-05-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
+      - value: type_interview
+        label: interview
   - title: Seminar algorithm validation
     description: "Algorithm Audit hosted a public seminar on algorithm validation and algoprudence in The Hague. Anne Meuwese\_shared insights on the value of algoprudence in contextualizing legal norms. Floris Holstege shed light into statistical hypothesis testing which plays an important role in our recent techincal audits.\_\n\nWe appreciated the interactive Q\\&A with the participants, especially the curious and critical questions which enables us to clarify our work, but also contributes to the further development and refinement of our activities as an NGO.\n\n{{< pdf_frame articleUrl1=\"https://drive.google.com/file/d/1edrNqP4cBgJ1zKv1970DsUJ3Tark6waF/preview\" width_desktop_pdf=\"12\" width_mobile_pdf=\"12\" >}}\n"
     image: /images/logo/logo.svg
     date: 24-04-2024
     facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q2_2024
+        label: Q2-2024
+        hide: true
       - value: type_event
         label: event
   - title: 'Presentation at UvA AI, Media & Democracy lab'
@@ -148,8 +262,27 @@ events:
       - value: year_q2_2024
         label: Q2-2024
         hide: true
-      - value: type_event
-        label: event
+      - value: type_presentation
+        label: presentation
+  - title: Interview The Netherlands Human Rights Institute
+    description: >
+      Interview with The Netherlands Human Rights Institute about the work of
+      NGO Algorithm Audit
+
+
+      Interview:
+      [https://www.mensenrechten.nl/actueel/toegelicht/interviews/2024/opsporingsalgoritmes-kunnen-over-de-schreef-gaan-maar-alternatieven-zijn-niet-per-se-beter](https://www.mensenrechten.nl/actueel/toegelicht/interviews/2024/opsporingsalgoritmes-kunnen-over-de-schreef-gaan-maar-alternatieven-zijn-niet-per-se-beter)
+    image: /images/algoprudence/AA202302/Discussion&debate/CvRM.svg
+    date: 28-03-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q1_2024
+        label: Q1-2024
+        hide: true
+      - value: type_interview
+        label: interview
   - title: Knowledge sharing event Court of Auditors Municipality of The Hague
     description: >
       Knowledge sharing event on auditing algorithms from both a quantitative
@@ -201,8 +334,8 @@ events:
     image: /images/events/mathematics and computer science tu delft.png
     date: 07-03-2024
     facets:
-      - value: type_event
-        label: event
+      - value: type_presentation
+        label: presentation
       - value: year_2024
         label: '2024'
         hide: true
