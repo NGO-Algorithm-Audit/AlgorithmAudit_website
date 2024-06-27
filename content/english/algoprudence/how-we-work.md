@@ -10,7 +10,7 @@ team:
   button_text: Other teams
   button_link: /about/teams/
   team_members:
-    - image: /images/people/VDjwalapersad.jpeg
+    - image: /images/people/Unknown.jpeg
       name: Vardâyani Djwalapersad
       bio: |
         Project manager Algoprudence

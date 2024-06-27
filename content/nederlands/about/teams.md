@@ -113,7 +113,7 @@ team2:
       name: Jurriaan Parie
       bio: |
         Directeur-bestuurder
-    - image: /images/people/VDjwalapersad.jpeg
+    - image: /images/people/Unknown.jpeg
       name: Vardâyani Djwalapersad
       bio: |
         Projectmanager Algoprudentie
