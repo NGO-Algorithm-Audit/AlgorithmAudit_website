@@ -11,7 +11,7 @@ team:
   id: team
   button_link: /nl/about/teams/
   team_members:
-    - image: /images/people/VDjwalapersad.jpeg
+    - image: /images/people/Unknown.jpeg
       name: Vardâyani Djwalapersad
       bio: |
         Projectmanager algoprudentie
