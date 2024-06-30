@@ -45,7 +45,9 @@ De normatieve adviescommissies die de beoordelingen uitvoeren zijn onafhankelijk
 
 {{< container_open title="Hoe worden jullie gefinancierd?" icon="fas fa-funnel-dollar" id="funding" >}}
 
-Algorithm Audit is a nonprofit organization supported by independent public funding. Occasionally, case-specific expenses are covered by partners under conditions that guarantee independent evaluation by our normative advice commissions and transparant publication of results. Read more about ways to [collaborate](/knowledge-platform/collaboration/) together with us.
+Algorithm Audit is een non-profitorganisatie die wordt ondersteund door onafhankelijke publieke financiering. Af en toe worden specifieke kosten voor de behandeling van een casus gedekt door de partners onder voorwaarden dat er een onafhankelijke beoordeling plaatsvindt door onze normatieve adviescommissies en er sprake is van een transparante publicatie van de resultaten. Lees meer over de [mogelijkheden om met ons samen te werken](https://algorithmaudit.eu/nl/knowledge-platform/collaboration/).
+
+Algorithm Audit is a nonprofit organization supported by independent public funding. Occasionally, case-specific expenses are covered by partners under conditions that guarantee independent evaluation by our normative advice commissions and transparant publication of results. Read more about ways to [collaborate](https://algorithmaudit.eu/nl/knowledge-platform/collaboration/) together with us.
 
 {{< container_close >}}
 
