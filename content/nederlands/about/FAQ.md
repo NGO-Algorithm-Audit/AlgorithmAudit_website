@@ -42,11 +42,9 @@ overzicht](https://algorithmaudit.eu/nl/algoprudence/). Andere materialen en doc
 Alle code die voor deze website is ontwikkeld en voor de technische tools die
 wij maken, onderhouden en testen, is open source en te vinden op [Github](https://github.com/NGO-Algorithm-Audit).
 
-All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open source. However, we only publish the initial problem statement and the final normative advice document in our [case repository](/algoprudence/). Other materials and documentation internal to the case are not shared. All the code developed for this website and for the technical tools we develop, maintain and test are open-source and can be found in [Github](https://github.com/NGO-Algorithm-Audit).
-
 {{< container_close >}}
 
-{{< container_open title="What is the legitimacy of your organization?" icon="fas fa-balance-scale-left" id="legitimacy" >}}
+{{< container_open title="5.	Wat is de legitimiteit van de organisatie?" icon="fas fa-balance-scale-left" id="legitimacy" >}}
 
 The normative advice commissions that carry out the reviews are independent, academic, multi-disciplinary and diverse. The people we ask to join a commission have an outstanding academic and public track record in the field relevant to the case. Participating experts have no ties to the algorithmic methods or organizations under review. We work together with partners under explicit conditions to avoid ethics washing.
 
