@@ -37,7 +37,7 @@ Al onze casussen en bijbehorend advies worden openbaar gemaakt, waardoor de publ
 
 {{< container_close >}}
 
-{{< container_open title="5.	Wat is de legitimiteit van de organisatie?" icon="fas fa-balance-scale-left" id="legitimacy" >}}
+{{< container_open title="Wat is de legitimiteit van de organisatie?" icon="fas fa-balance-scale-left" id="legitimacy" >}}
 
 De normatieve adviescommissies die de beoordelingen uitvoeren zijn onafhankelijk, academisch, multidisciplinair en inclusief. De individuen die wij vragen om deel uit te maken van een commissie hebben uitstekende wetenschappelijke en publieke prestaties teweeggebracht over het relevante vakgebied in een bepaalde casus. De adviescommissie experts hebben geen verband met de algoritmische methoden of organisaties die worden beoordeeld. We werken samen met partners onder expliciete voorwaarden om ethics washing te voorkomen.
 
