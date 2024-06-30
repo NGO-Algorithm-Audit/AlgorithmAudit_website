@@ -31,7 +31,7 @@ Het normatieve karakter van onze werkzaamheden staat op gespannen voet met het h
 
 {{< container_close >}}
 
-{{< container_open title="Is your work open source?" icon="fas fa-box-open" id="open-source" >}}
+{{< container_open title="4.	Is het werk open source?" icon="fas fa-box-open" id="open-source" >}}
 
 All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open source. However, we only publish the initial problem statement and the final normative advice document in our [case repository](/algoprudence/). Other materials and documentation internal to the case are not shared. All the code developed for this website and for the technical tools we develop, maintain and test are open-source and can be found in [Github](https://github.com/NGO-Algorithm-Audit).
 
