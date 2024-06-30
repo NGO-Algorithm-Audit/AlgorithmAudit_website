@@ -33,20 +33,13 @@ Het normatieve karakter van onze werkzaamheden staat op gespannen voet met het h
 
 {{< container_open title="4.	Is het werk open source?" icon="fas fa-box-open" id="open-source" >}}
 
-Al onze casussen en bijbehorend advies worden openbaar gemaakt, waardoor de publieke
-kennisopbouw groter wordt met betrekking tot hoe algoritmen op een verantwoordelijke
-en ethische manier kunnen worden ontwikkeld en ingezet. In die zin kan ons werk
-als open source worden beschouwd. We publiceren echter alleen de
-probleemstelling en het definitieve normatieve adviesdocument in onze [Algoprudentie
-overzicht](https://algorithmaudit.eu/nl/algoprudence/). Andere materialen en documentatie van de casus worden niet gedeeld.
-Alle code die voor deze website is ontwikkeld en voor de technische tools die
-wij maken, onderhouden en testen, is open source en te vinden op [Github](https://github.com/NGO-Algorithm-Audit).
+Al onze casussen en bijbehorend advies worden openbaar gemaakt, waardoor de publieke kennisopbouw groter wordt met betrekking tot hoe algoritmen op een verantwoordelijke en ethische manier kunnen worden ontwikkeld en ingezet. In die zin kan ons werk als open source worden beschouwd. We publiceren echter alleen de probleemstelling en het definitieve normatieve adviesdocument in onze [Algoprudentie overzicht](https://algorithmaudit.eu/nl/algoprudence/). Andere materialen en documentatie van de casus worden niet gedeeld. Alle code die voor deze website is ontwikkeld en voor de technische tools die wij maken, onderhouden en testen, is open source en te vinden op [Github](https://github.com/NGO-Algorithm-Audit).
 
 {{< container_close >}}
 
 {{< container_open title="5.	Wat is de legitimiteit van de organisatie?" icon="fas fa-balance-scale-left" id="legitimacy" >}}
 
-The normative advice commissions that carry out the reviews are independent, academic, multi-disciplinary and diverse. The people we ask to join a commission have an outstanding academic and public track record in the field relevant to the case. Participating experts have no ties to the algorithmic methods or organizations under review. We work together with partners under explicit conditions to avoid ethics washing.
+De normatieve adviescommissies die de beoordelingen uitvoeren zijn onafhankelijk, academisch, multidisciplinair en inclusief. De individuen die wij vragen om deel uit te maken van een commissie hebben uitstekende wetenschappelijke en publieke prestaties teweeggebracht over het relevante vakgebied in een bepaalde casus. De adviescommissie experts hebben geen verband met de algoritmische methoden of organisaties die worden beoordeeld. We werken samen met partners onder expliciete voorwaarden om ethics washing te voorkomen.
 
 {{< container_close >}}
 
