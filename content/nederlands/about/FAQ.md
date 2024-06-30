@@ -51,11 +51,11 @@ Algorithm Audit is een non-profitorganisatie die wordt ondersteund door onafhank
 
 {{< container_open title="Hoe kan ik ethische kwesties of kennis daarover delen?" icon="fas fa-share-square" id="share" >}}
 
-Wij ontvangen graag nieuwe casussen ter beoordeling. En we staan zeker open om kwesties en kennis over relevante ethische vraagstukken te bespreken. Dien [hier ](https://algorithmaudit.eu/nl/algoprudence/submit-a-case/)een casus in ter beoordeling.
+Wij ontvangen graag nieuwe casussen ter beoordeling. En we staan zeker open om kwesties en kennis over relevante ethische vraagstukken te bespreken. Dien [hier](https://algorithmaudit.eu/nl/algoprudence/submit-a-case/) een casus in ter beoordeling.
 
 {{< container_close >}}
 
-{{< container_open title="How do you prevent ethics washing?" id="ethics-washing" icon="fas fa-hands-wash" >}}
+{{< container_open title="Hoe voorkomen jullie ethics washing?" id="ethics-washing" icon="fas fa-hands-wash" >}}
 
 Ethics washing refers to the practice where a company or organization pays lip service to ethics or ethical review, to make it seem outwardly as though it operates in a responsible way. However, the company or organization actually does not wish to implement responsible practices in a meaningful way. We do not participate in ethical reviews as branding. As an organization, we do not confer ethics certificates or labels to our partners. We clearly communicate that our advice commissions only give normative advice and may not be used as stand-in for internal control or external accountability. This is established in explicit conditions under which we work and that we discuss with our partners beforehand. A concrete measure we will regularly adopt is making the partner anonymous in our publication of the case and reports.
 
