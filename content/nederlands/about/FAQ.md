@@ -40,7 +40,7 @@ als open source worden beschouwd. We publiceren echter alleen de
 probleemstelling en het definitieve normatieve adviesdocument in onze [Algoprudentie
 overzicht](https://algorithmaudit.eu/nl/algoprudence/). Andere materialen en documentatie van de casus worden niet gedeeld.
 Alle code die voor deze website is ontwikkeld en voor de technische tools die
-wij maken, onderhouden en testen, is open source en te vinden op Github.
+wij maken, onderhouden en testen, is open source en te vinden op [Github](https://github.com/NGO-Algorithm-Audit).
 
 All our cases and corresponding advice are made publicly available, increasing collective knowledge how to devise and use algorithms in an ethical way. In that sense, our work can be considered as open source. However, we only publish the initial problem statement and the final normative advice document in our [case repository](/algoprudence/). Other materials and documentation internal to the case are not shared. All the code developed for this website and for the technical tools we develop, maintain and test are open-source and can be found in [Github](https://github.com/NGO-Algorithm-Audit).
 
