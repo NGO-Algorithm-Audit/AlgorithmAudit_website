@@ -49,7 +49,7 @@ Algorithm Audit is een non-profitorganisatie die wordt ondersteund door onafhank
 
 {{< container_close >}}
 
-{{< container_open title="How can I share ethical issues or knowledge?" icon="fas fa-share-square" id="share" >}}
+{{< container_open title="Hoe kan ik ethische kwesties of kennis daarover delen?" icon="fas fa-share-square" id="share" >}}
 
 We are always happy to receive new cases for review. And we are always open to discuss issues and knowledge about pressing ethical issues. Submit [here](/algoprudence/submit-a-case/) a case for review.
 
