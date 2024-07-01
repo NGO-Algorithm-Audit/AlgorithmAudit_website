@@ -4,7 +4,7 @@ Banner:
   tag: definition
   title: al-go-pru-dence
   phonetica: /æl.ɡə-ˈpruː.dəns/
-  type: noun 
+  type: noun
   description1: Case-based normative advice for ethical algorithms
   description2: Guidance for decentralised self-assessment of fair AI
   description3: Jurisprudence for algorithms
@@ -29,7 +29,7 @@ Activity_Feed:
       date: 22-05-2024
       type: technical audit
   activities:
-    - title: 'Lunch lecture on DUO case Dutch National Office of Statistics (CBS)'
+    - title: Lunch lecture on DUO case Dutch National Office of Statistics (CBS)
       link: /events/activities/#events
       image: /images/events/CBS_logo.png
       date: 25-06-2024
@@ -106,7 +106,7 @@ Areas_of_AI_expertise:
     - name: Algorithms for decision support
       icon: fas fa-divide
       content: >
-        Audting data-analysis methods and algorithms used for decision support.
+        Auditing data-analysis methods and algorithms used for decision support.
         Among others by checking organizational checks and balances, and
         assessing the quantitative dimension
     - name: AI Act standards
