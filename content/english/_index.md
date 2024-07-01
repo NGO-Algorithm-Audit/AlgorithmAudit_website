@@ -113,7 +113,7 @@ Areas_of_AI_expertise:
       icon: fas fa-certificate
       content: >
         As Algorithm Audit is part of Dutch and Europen standardization
-        organisation  NEN and CEN-CENELEC, AI systems are audited according to
+        organisations NEN and CEN-CENELEC, AI systems are audited according to
         the latest standards. See also our public <a
         href="https://algorithmaudit.eu/knowledge-platform/standards/"
         style="text-decoration: underline;">knowledge base</a> on
