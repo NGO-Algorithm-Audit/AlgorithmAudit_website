@@ -123,7 +123,7 @@ Areas_of_AI_expertise:
       content: >
         Auditing rule-based and ML-driven profiling, e.g., differentiation
         policies, selection criteria, Z-testing, model validation and
-        organisational aspects
+        organizational aspects
     - name: FP-FN balancing
       icon: fa-solid fa-scale-balanced
       content: >
