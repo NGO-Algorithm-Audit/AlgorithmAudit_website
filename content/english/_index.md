@@ -163,7 +163,7 @@ Building_algoprudence:
   button_text: Our working method
   button_link: /algoprudence/how-we-work/
   steps:
-    - title: Indentifying issue
+    - title: Identifying issue
       content: >
         Identifying a concrete ethical issue in a real algorithm or
         data-analysis tool
