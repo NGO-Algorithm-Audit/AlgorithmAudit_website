@@ -138,9 +138,9 @@ Areas_of_AI_expertise:
     - name: Generative AI
       icon: fas fa-robot
       content: >
-        Auditing training process of foundation model, among others selection of
-        training data, human feedback for reinformcement learning and risk
-        management, according AI Act standards standaarden
+        Auditing training process of foundation models, among others selection
+        of training data, human feedback for reinforcement learning and risk
+        management, according to AI Act standards 
 Recent_audits:
   title: Recent audits
   feature_item:
