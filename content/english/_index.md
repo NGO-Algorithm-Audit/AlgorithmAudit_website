@@ -133,8 +133,8 @@ Areas_of_AI_expertise:
       icon: fas fa-ranking-star
       content: >
         Recommender systems are everywhere. With the new Digital Services Act
-        (DSA) came into forces last summer, auditing ranking systems is highly
-        relevant
+        (DSA) that came into force last summer, auditing ranking systems is
+        highly relevant
     - name: Generative AI
       icon: fas fa-robot
       content: >
