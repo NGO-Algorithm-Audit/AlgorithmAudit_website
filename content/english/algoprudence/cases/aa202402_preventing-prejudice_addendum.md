@@ -7,20 +7,19 @@ subtitle: >
   Supervised bias analysis of aggregtation statistics on the country of birth
   and country of origin of 300.000+ students as provided by the Dutch office of
   statistics
-image: /images/algoprudence/AA202402/AA202402_cover.png
+image: /images/algoprudence/AA202402/AA202402_cover_EN.png
 form1:
-  title: Reageer op deze technische audit
+  title: React to this technical audit
   content: >-
-    Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie
-    en, indien het verenigbaar is met Algorithm Audit's richtlijnen voor
-    publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
-    sectie.
-  button_text: Verstuur
+    Your reaction will be sent to the auditing team. The team will review your
+    response and, if it complies with Algorithm Audit's guidelines, the reaction
+    will be placed in the Discussion & debate section above.
+  button_text: Submit
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
   questions:
     - label: |
-        Naam
+        Name
       id: name
       required: true
       type: text
@@ -29,19 +28,19 @@ form1:
       id: affiliated-organization
       type: text
     - label: |
-        Reactie
+        Reaction
       id: reaction
       required: true
       type: textarea
     - label: |
-        Contactgegevens
+        Contact details
       id: contact-details
       required: true
       type: email
-      placeholder: Emailadres
+      placeholder: Mail address
 ---
 
-{{< tab_header width="4" tab1_id="description" tab1_title="Beschrijving van technische audit" tab2_id="actions" tab2_title="Acties volgend op technische audit" tab3_id="discussion" tab3_title="Discussie & debat" default_tab="description" >}}
+{{< tab_header width="4" tab1_id="description" tab1_title="Description of technical audit" tab2_id="actions" tab2_title="Actions following technical audit" tab3_id="discussion" tab3_title="Discussion & debate" default_tab="description" >}}
 
 {{< tab_content_open icon="fas fa-balance-scale-left" title="Addendum Preventing prejudice" id="description" >}}
 
@@ -51,9 +50,9 @@ AA:2024:02:TA
 
 #### Summary
 
-...
+In its inspection of the legitimate use of student finance for students living away from home, DUO selected students for control with a non-European migration background significantly more often. This demonstrates an unconscious bias in DUO’s control process. Students with a non-European migration background were assigned a higher risk score by a risk profile and were more often manually selected for a home visit. This is evident from follow-up research that NGO Algorithm Audit carried out on behalf of DUO, which was sent by the minister to the House of Representatives on May 22. The results of the research strengthen the outcomes of previous research, on the basis of which the minister apologized on behalf of the cabinet on March 1, 2024 for indirect discrimination in the control process.
 
-Press release can be found here.
+Press release can be found [here](/events/press_room/).
 
 #### Source of case
 
@@ -61,9 +60,9 @@ Education Executive Agency of The Netherlands (DUO)
 
 #### Algoprudence
 
-The full report (AA:2024:02:TA) can be found [here](/nl/algoprudence/cases/aa202402_bias-prevented_addendum/).
+The full report (AA:2024:02:TA) can be found <a href="https://drive.google.com/file/d/1uOhR9qXHW6P0i4uP7RNhil2G2dXzFjrp/preview" target="_blank">here</a>.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1OXs1PGFqi7BjxFz4Yj3ikMJxM8gVs1IE/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1uOhR9qXHW6P0i4uP7RNhil2G2dXzFjrp/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
 #### Financed by
 
@@ -77,6 +76,14 @@ The full report (AA:2024:02:TA) can be found [here](/nl/algoprudence/cases/aa202
 
 {{< accordions_area_open id="actions" >}}
 
+{{< accordion_item_open title="Additional research Statistics Netherlands and Algorithm Audit to College Grant Control process" background_color="#eef2f6" date="22-05-2024" tag1="migration backgroud" tag2="supervised bias test" tag3="Statistics Netherlands" image="/images/algoprudence/AA202401/Actions/TK.svg" >}}
+
+#### Reaction Dutch Minister Education, Culture and Science
+
+Official <a href='https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2024Z08699&did=2024D20430' target="_blank">reactie</a>
+
+{{< accordion_item_close >}}
+
 {{< accordions_area_close >}}
 
 {{< tab_content_close >}}
@@ -85,15 +92,17 @@ The full report (AA:2024:02:TA) can be found [here](/nl/algoprudence/cases/aa202
 
 {{< accordions_area_open id="discussion" >}}
 
-{{< accordion_item_open title="Reactie College Rechten van de Mens leeftijdsdiscriminatie" id="cvrm" background_color="#eef2f6" date="12-04-2024" tag1="reactie" image="/images/algoprudence/AA202302/Discussion&debate/CvRM.svg" >}}
+{{< accordion_item_open title="Reaction Netherlands Human Rights Institute on age discrimination" id="cvrm" background_color="#eef2f6" date="12-04-2024" tag1="reactie" image="/images/algoprudence/AA202302/Discussion&debate/CvRM.svg" >}}
 
-#### Leeftijdsdiscriminatie
+#### Age discrimination
 
-Een beleid, zoals een overheidsinstantie die fraude onderzoekt of een werkgever die nieuwe werknemers zoekt, kan bedoeld of onbedoeld leiden tot onderscheid tussen bepaalde groepen mensen. Als een organisatie dit onderscheid maakt op gronden die wettelijk beschermd zijn, zoals geslacht, afkomst, seksuele oriëntatie, of een handicap of chronische ziekte, en hiervoor is geen goede, rechtvaardigende reden voor te geven is, dan maakt de organisatie verboden onderscheid. We spreken dan van discriminatie. 
+Policies, such as those implemented by public sector agencies investigating (un)duly granted social welfare or employers seeking new employees, can intentionally or unintentionally lead to differentiation between certain groups of people. If an organization makes this distinction based on grounds that are legally protected, such as gender, origin, sexual orientation, or a disability or chronic illness, and there is no valid justifying reason for doing so, then the organization is engaging in prohibited discrimination. We refer to this as discrimination.
 
-En leeftijd dan? Zowel het Rotterdamse als het DUO-algoritme waar Algorithm Audit onderzoek naar deed, maakte daar onderscheid op. Toch is er in die gevallen geen sprake van leeftijdsdiscriminatie. 
+But what about age? Both the Rotterdam-algorithm and DUO-algorithm, as studied by Algorithm Audit, differentiated based on age. However, in these cases, age discrimination does not occur.
 
-De gelijkebehandelingswetgeving kent ook een verbod op onderscheid naar leeftijd. Een sollicitant zomaar weigeren voor een baan omdat diegene te oud is, mag dus niet. Maar de wetgeving rond leeftijdonderscheid laat wel meer ruimte voor een rechtvaardigend argument dan de eerdergenoemde persoonskenmerken. Dit geldt zeker als het algoritme niet gaat over arbeidskwesties.  In het geval van opsporing van bijstandsfraude of misbruik van studiefinanciering is het daarom niet per se verboden dat een algoritme iemands leeftijd meeneemt. Toch zal er wel een duidelijk verband moet zijn tussen leeftijd en het doel van het algoritme. Zolang niet is aangetoond dat iemands leeftijd de kans vergroot op misbruik of fraude mag je leeftijd evengoed niet laten meewegen in de algoritmische selectie. Als het bijvoorbeeld gaat om een Wajong-uitkering die je alleen tot een bepaalde leeftijd mag aanvragen, dan is er wel een duidelijk verband, en dan zou een algoritme daar wel naar kunnen kijken.
+EU non-discrimination law also prohibits discrimination on the basis of age. For instance, arbitrarily rejecting a job applicant because someone is too old is not unlawful. However, legislation regarding age differentiation allows more room for a justifying argument than for the aforementioned personal characteristics. This is especially true when the algorithm is not applied in the context of labor.
+
+Therefore, in the case of detecting unduly granted social welfare or misuse of college loan, it is not necessarily prohibited for an algorithm to consider someone’s age. However, there must be a clear connection between age and the aim pursued. Until it is shown that someone’s age increases the likelihood of misuse or fraud, age is ineligible as a selection criteria in algorithmic-driven selection procedures. For example, pertaining to disability allowances for youngsters (Wajong) a clear connection exists and an algorithm can lawfully differentiate upon age.
 
 {{< accordion_item_close >}}
 

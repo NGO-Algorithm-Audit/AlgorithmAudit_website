@@ -34,7 +34,8 @@ about_AA:
     - subtitle: Project work
       image: /images/about/project.svg
       content: >
-        Support for specific questions from public and private sector organisations regarding responsible use of AI
+        Support for specific questions from public and private sector
+        organisations regarding responsible use of AI
 team:
   title: Synthetic data generation cohort
   content: Part-time team working on synthetic data generation for AI bias testing
@@ -101,7 +102,7 @@ team2:
       name: Jurriaan Parie
       bio: |
         Director-board member
-    - image: /images/people/VDjwalapersad.jpeg
+    - image: /images/people/Unknown.jpeg
       name: Vardâyani Djwalapersad
       bio: |
         Project manager Algoprudence

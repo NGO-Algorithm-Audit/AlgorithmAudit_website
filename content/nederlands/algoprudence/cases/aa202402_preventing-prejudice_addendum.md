@@ -61,7 +61,7 @@ Dienst Uitvoering Onderwijs (DUO)
 
 #### Algoprudentie
 
-Het volledige rapport (AA:2024:02:TA) kan [hier](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview) worden gedownload.
+Het volledige rapport (AA:2024:02:TA) kan <a href="https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview" target="_blank">hier</a> worden gedownload.
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1OXs1PGFqi7BjxFz4Yj3ikMJxM8gVs1IE/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
@@ -76,6 +76,14 @@ Het volledige rapport (AA:2024:02:TA) kan [hier](https://drive.google.com/file/
 {{< tab_content_open icon="" title="" id="actions" >}}
 
 {{< accordions_area_open id="actions" >}}
+
+{{< accordion_item_open title="Vervolgonderzoek CBS en Algorithm Audit naar controle uitwonendenbeurs" background_color="#eef2f6" date="22-05-2024" tag1="migratieachtergrond" tag2="bias meting" tag3="CBS" image="/images/algoprudence/AA202401/Actions/TK.svg" >}}
+
+#### Reactie Minister Onderwijs, Cultuur en Wetenschap
+
+Officiële <a href='https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2024Z08699&did=2024D20430' target="_blank">reactie</a>
+
+{{< accordion_item_close >}}
 
 {{< accordions_area_close >}}
 

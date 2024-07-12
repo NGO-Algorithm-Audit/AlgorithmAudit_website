@@ -25,25 +25,25 @@ Activity_Feed:
         birth and country of origin of 300.000+ students in the period 2014-2022
         provided by the Dutch national office of statistics.
       link: /algoprudence/cases/aa202402_preventing-prejudice_addendum/
-      image: /images/algoprudence/AA202402/AA202402_cover.png
+      image: /images/algoprudence/AA202402/AA202402_cover_EN.png
       date: 22-05-2024
       type: technical audit
   activities:
-    - title: 'Presentation at UvA AI, Media & Democracy lab'
+    - title: Lunch lecture on DUO case Dutch National Office of Statistics (CBS)
       link: /events/activities/#events
-      image: /images/events/images.jpeg
-      date: 16-04-2024
+      image: /images/events/CBS_logo.png
+      date: 25-06-2024
       type: presentation
-    - title: Knowledge sharing Court of Auditors Municipality of The Hague
+    - title: European Academy for Standardisation Annual Conference
       link: /events/activities/#events
-      image: /images/events/DH_rekenkamer.png
-      date: 27-03-2024
-      type: presentation
-    - title: Speaker during debate of city council on ML-driven risk profiling
+      image: /images/events/StandICT.jpg
+      date: 19-06-2024
+      type: panel discussion
+    - title: MozFest Amsterdam 2024 Funders' Summit
       link: /events/activities/#events
-      image: /images/events/Amsterdam.png
-      date: 20-03-2024
-      type: speaker
+      image: /images/events/MozillaFestival.png
+      date: 11-06-2024
+      type: panel discussion
 Supported_by:
   title: Supported by
   funders:
@@ -90,7 +90,7 @@ Distinctive_in:
     - name: Public knowledge
       icon: fab fa-slideshare
       content: >
-        All our audits and corresponding advice (*algoprudence*) are made <a
+        Audits and corresponding advice (*algoprudence*) are made <a
         href="https://algorithmaudit.eu/algoprudence/"
         style="color:white;text-decoration: underline;">publicly available</a>,
         increasing collective knowledge how to deploy and use algorithms in an
@@ -106,14 +106,14 @@ Areas_of_AI_expertise:
     - name: Algorithms for decision support
       icon: fas fa-divide
       content: >
-        Audting data-analysis methods and algorithms used for decision support.
+        Auditing data-analysis methods and algorithms used for decision support.
         Among others by checking organizational checks and balances, and
         assessing the quantitative dimension
     - name: AI Act standards
       icon: fas fa-certificate
       content: >
         As Algorithm Audit is part of Dutch and Europen standardization
-        organisation  NEN and CEN-CENELEC, AI systems are audited according to
+        organisations NEN and CEN-CENELEC, AI systems are audited according to
         the latest standards. See also our public <a
         href="https://algorithmaudit.eu/knowledge-platform/standards/"
         style="text-decoration: underline;">knowledge base</a> on
@@ -123,7 +123,7 @@ Areas_of_AI_expertise:
       content: >
         Auditing rule-based and ML-driven profiling, e.g., differentiation
         policies, selection criteria, Z-testing, model validation and
-        organisational aspects
+        organizational aspects
     - name: FP-FN balancing
       icon: fa-solid fa-scale-balanced
       content: >
@@ -133,14 +133,14 @@ Areas_of_AI_expertise:
       icon: fas fa-ranking-star
       content: >
         Recommender systems are everywhere. With the new Digital Services Act
-        (DSA) came into forces last summer, auditing ranking systems is highly
-        relevant
+        (DSA) that came into force last summer, auditing ranking systems is
+        highly relevant
     - name: Generative AI
       icon: fas fa-robot
       content: >
-        Auditing training process of foundation model, among others selection of
-        training data, human feedback for reinformcement learning and risk
-        management, according AI Act standards standaarden
+        Auditing training process of foundation models, among others selection
+        of training data, human feedback for reinforcement learning and risk
+        management, according to AI Act standards 
 Recent_audits:
   title: Recent audits
   feature_item:
@@ -163,7 +163,7 @@ Building_algoprudence:
   button_text: Our working method
   button_link: /algoprudence/how-we-work/
   steps:
-    - title: Indentifying issue
+    - title: Identifying issue
       content: >
         Identifying a concrete ethical issue in a real algorithm or
         data-analysis tool
