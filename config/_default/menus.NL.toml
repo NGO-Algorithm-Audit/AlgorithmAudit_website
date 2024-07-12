@@ -115,6 +115,13 @@ hasChildren = true
   weight = 2
   [[main.params]]
     icon = "fa-newspaper"
+  [[main]]
+  parent = "Evenementen"
+  name = "Aanmelden"
+  url = "/nl/events/registration"
+  weight = 3
+  [[main.params]]
+    icon = "fa-ticket-alt"
 
 [[main]]
 name = "Over ons"
