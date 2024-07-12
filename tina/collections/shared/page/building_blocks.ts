@@ -1,7 +1,6 @@
 /**
  * @type {import('tinacms').TinaField[]}
  */
-
 import title from "./title";
 import subtitle from "./subtitle";
 import image from "./image";

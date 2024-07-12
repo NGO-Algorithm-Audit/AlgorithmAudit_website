@@ -1,10 +1,9 @@
 /**
  * @type {import('tinacms').Collection}
  */
-import facets from "../shared/facets/facets";
+
 import { TinaField } from "tinacms";
 import building_blocks from "../shared/page/building_blocks";
-import pdf_frame from "../shared/templates/pdf_frame";
 
 let specific_fields : TinaField[] = [
     {

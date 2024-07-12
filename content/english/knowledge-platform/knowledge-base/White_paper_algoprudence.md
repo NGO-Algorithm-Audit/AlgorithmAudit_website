@@ -1,15 +1,20 @@
 ---
-title: 'Algoprudence: Jurisprudence for algorithms'
-subtitle: ''
-image: /images/knowledge_base/White-paper_Algoprudence.png
+intro: >-
+  Introducing Algoprudence: Case-based and decentralized judgements for ethical
+  AI
+featured: true
+layout: article
+type: knowledgebase_item
 author: Algorithm Audit
-type: featured
 summary: >-
   Introducing Algoprudence: Case-based and decentralized judgements for ethical
   AI
+title: "Algoprudence: Jurisprudence for algorithms"
+subtitle: ""
+image: /images/knowledge_base/White-paper_Algoprudence.png
 ---
 
-At a high-level this article follows the structure of the original [article](/nl/knowledge-platform/knowledge-base/white_paper_algoprudence/) in Dutch *How ‘algoprudence’ can contribute to responsible use of ML-algorithms*
+At a high-level this article follows the structure of the original [article](/nl/knowledge-platform/knowledge-base/white_paper_algoprudence/) in Dutch _How ‘algoprudence’ can contribute to responsible use of ML-algorithms_
 
 ###### Abstract
 

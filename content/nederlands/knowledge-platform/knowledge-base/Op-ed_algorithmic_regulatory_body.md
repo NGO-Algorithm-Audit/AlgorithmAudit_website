@@ -2,10 +2,11 @@
 title: >-
   Algorithm Audit (opinieartikel) – Een nieuwe nationale toezichthouder op
   algoritmes
-subtitle: ''
+subtitle: ""
 image: /images/knowledge_base/Op-ed-1.png
 author: Algorithm Audit
-type: regular
+layout: article
+type: knowledgebase_item
 summary: "Opinieartikel in Het Financieele Dagblad over de nieuwe nationale algoritmetoezichthouder. Maak er een bulldog van \U0001F43A, geen schoothond \U0001F436"
 ---
 

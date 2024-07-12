@@ -1,19 +1,20 @@
 ---
-title: 'Test op confirmation bias aan de hand van F-toets '
+title: "Test op confirmation bias aan de hand van F-toets "
 subtitle: >
   Een F-toetst wordt toepast om een verband te testen tussen de classificatie
   van een algoritme en de beoordeling van een ambtenaar in de context van
   snelle, reguliere en intensieve visumaanvragen
 image: /images/knowledge_base/BuZa_Ftest.png
 author: Onbekend
-type: regular
+layout: article
+type: knowledgebase_item
 summary: >-
   Toepast om een verband te testen tussen de classificatie van een algoritme en
   de beoordeling van een ambtenaar in de context van snelle, reguliere en
   intensieve visumaanvragen
 ---
 
-Volledige rapport: [https://www.tweedekamer.nl/kamerstukken/detail?id=2024D17779\&did=2024D17779](https://www.tweedekamer.nl/kamerstukken/detail?id=2024D17779\&did=2024D17779)
+Volledige rapport: [https://www.tweedekamer.nl/kamerstukken/detail?id=2024D17779\&did=2024D17779](https://www.tweedekamer.nl/kamerstukken/detail?id=2024D17779&did=2024D17779)
 
 #### Test op confirmation bias aan de hand van F-toets
 

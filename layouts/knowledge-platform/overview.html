@@ -1,0 +1,123 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+{{ $split_char := " " }}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col mx-auto">
+                <div class="container">
+                    <div class="paginationScrollTo content">
+                        {{ if .Params.title_content}}
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-12"></div>
+                            <div class="col-lg-9 col-sm-12 mb-5">
+                                <h3>{{.Params.title_content | markdownify}}</h3>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+
+                    <div class="row" style="margin-bottom:25px;">
+
+                        <!-- Facets -->
+                        <div class="content mt-3 col-lg-3 col-sm-12">
+                            <div class="row">
+                                {{ range $facet_group := .Params.facet_groups}}
+                                <div class="facet-group mb-2 col-sm-6 col-lg-12"
+                                    data-facet-group="{{$facet_group.value}}">
+                                    <fieldset>
+                                        <legend style="color: #005aa7; font-size:18px;">{{$facet_group.title}}</legend>
+                                        {{ range $facet := $facet_group.facets}}
+                                        <div>
+                                            <input type="checkbox" id="{{$facet_group.value}}_{{$facet.value}}"
+                                                name="{{$facet.label}}" class="facet-checkbox" />
+                                            <label
+                                                for="{{$facet_group.value}}_{{$facet.value}}">{{$facet.label}}</label>
+                                        </div>
+                                        {{ end }}
+                                    </fieldset>
+                                </div>
+                                {{end}}
+                            </div>
+                        </div>
+                        {{ $knowledgebase_items := (where .Site.Pages "Type" "==" "knowledgebase_item" ) }}
+
+
+                        <div class="col-lg-9 col-sm-12">
+                            <div class="row">
+                                <!-- Featured Article -->
+                                {{ range $item := first 1 (where $knowledgebase_items "Params.featured" "==" true) }}
+                                    <div class="col-12 mb-5 pb-5">
+                                        <div class="row align-items-center shadow mobile-desktop-container-layout rounded-lg">
+                                            <div class="col-md-6 mb-4 mb-md-0">
+                                                <div style=" margin-left: auto; margin-right: auto;">
+                                                    <img src="{{ .Params.image | relURL }}" alt="{{.Title}}"
+                                                        class="img-fluid rounded-lg w-100"
+                                                        style='height: 276px; width: 420px; object-fit: contain;'>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <h2><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{
+                                                        .Title }}</a></h2>
+                                                <p class="card-text">{{ i18n "authors"}} {{ .Params.author }}</p>
+                                                <p class="card-text">{{ .Params.summary }}</p>
+                                                <a href="{{.Permalink}}" title="{{ i18n " readmore" }} - {{ .Title }}"
+                                                    class="btn btn-primary">{{ i18n "readmore" }}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{ end }}
+                                <!-- End Featured Article -->
+
+                                <!-- Articles -->
+                                {{ range $item := $knowledgebase_items }}
+
+                                    {{ $facets_for_data_attribute := "" }}
+                                    {{ range $facet := $item.Params.facets }}
+                                        {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf
+                                        "%s%s"
+                                        $split_char | printf "%s" }}
+                                        {{ $facets_for_data_attribute = printf "%s" $facets_for_data_attribute | printf
+                                        "%s%s"
+                                        $facet.value | printf "%s" }}
+                                    {{ end }}
+                                    <div class="col-md-6 mb-4 facet-item" data-facets="{{$facets_for_data_attribute}}">
+                                        <div class="shadow mobile-desktop-container-layout rounded-lg">
+                                            <div style=" margin-left: auto; margin-right: auto; display: table;">
+                                                <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" style='height: 276px; margin-bottom: 25px;'>
+                                            </div>
+                                            <div class="card-body p-0 mb-3">
+                                                <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title" style="width:90%;">{{ .Title }}</a></h3>
+                                                <p class="card-text">{{ i18n "authors"}} {{ .Params.author }}</p>
+                                                <p class="card-text">{{ .Summary }}</p>
+                                                <a href="{{.Permalink}}" title="{{ i18n "readmore" }} - {{ .Title }}" class="btn btn-primary btn-sm">{{ i18n "readmore" }}</a>
+                                            </div>
+                                            <div class="row">
+                                                {{ range $facet := $item.Params.facets }}
+                                                    {{ if $facet.hide }}
+                                                    {{ else }}
+                                                    <span style="background-color: #005aa7; color: #ffffff;"
+                                                        class="mr-1 mb-2 px-2 py-1 mx-1">{{$facet.label}}</span>
+                                                    {{ end }}
+                                                {{end}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{end}}
+                                <!-- End Articles -->
+                                {{if .Params.pagesize }}
+                                <div class="faceted-pagination col-12" data-items-per-page="{{.Params.pagesize}}"
+                                    data-current-page="1">
+                                </div>
+                                {{end}}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+{{ end }}

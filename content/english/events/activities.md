@@ -1,4 +1,5 @@
 ---
+pagesize: 5
 facet_groups:
   - value: year
     title: Year
@@ -213,11 +214,12 @@ events:
         label: panel discussion
   - title: Interview Volkskrant
     description: >
-      Interview with Dutch news paper de Volkskrant about research with Dutch Executive Education Agency (DUO).
+      Interview with Dutch news paper de Volkskrant about research with Dutch
+      Executive Education Agency (DUO).
 
 
       Interview:
-      [https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/](https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/)
+      [https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken\~bca4caa8/](https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/)
     image: /images/events/Volkskrant.png
     date: 23-05-2024
     facets:
