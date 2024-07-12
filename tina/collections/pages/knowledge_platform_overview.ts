@@ -39,7 +39,7 @@ export default {
   label: "Knowledge platform (knowledge base overview)",
   path: "content/",
   match: {
-    include: "**/knowledge-platform//knowledge-base",
+    include: "**/knowledge-platform/knowledge-base",
   },
   fields: specific_fields.concat(building_blocks),
 };
