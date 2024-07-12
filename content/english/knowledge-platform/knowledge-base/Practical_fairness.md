@@ -3,16 +3,17 @@ title: Practical Fairness
 author: Aileen Nielsen
 image: /images/knowledge_base/practical_fairness.jpeg
 layout: article
+type: knowledgebase_item
 summary: A wide-ranging book that informs data and AI ethics practitioners about recent advances in open-source toolkits and legal frameworks.
-
 ---
+
 ###### **Author: Aileen Nielsen**
 
-How to make fairness tangible? Don’t take the philosophical route, use practical legal and technological frameworks to assess fairness – that’s the adage of this book. Hands-on experience with coding machine learning and statistics might be useful to digest the discussed topics. 
+How to make fairness tangible? Don’t take the philosophical route, use practical legal and technological frameworks to assess fairness – that’s the adage of this book. Hands-on experience with coding machine learning and statistics might be useful to digest the discussed topics.
 
 Fairness is examined in three main domains: 1) Anti-discrimination, 2) Security and 3) Privacy. Although most attention regarding fairness is (as expected) absorbed by anti-discrimination, the book advocates convincingly why security and privacy should be part of the fairness equation. “What do we think about stealing someone’s time and subverting their autonomy?” Indeed, social media platforms and apps written for smart homes can be considered as fairness problems too. By linking anti-discrimination to security and privacy, this work is a broad guidebook to define notions of fairness for the digital future.
 
-The book starts with raising three fundamental, pragmatic, and unavoidable questions about fairness: 
+The book starts with raising three fundamental, pragmatic, and unavoidable questions about fairness:
 
 <span style="color:#005aa7; font-weight: bold;">1\.</span> What is equity? _Equality of opportunity_ or _equality of outcome_?
 
@@ -33,7 +34,6 @@ From a quantitative, technical point of view, the book relies heavily on open-so
 The book concludes with the claim that “Law is the ultimate arbiter of what matters for fairness in machine learning, and that’s a good thing”. As you might expect, at Algorithm Audit we agree with this standpoint. We support the idea that qualitative reasoning is always needed to define (algorithmic) fairness. But, at the same time we want to stress that legislation in itself is and will not suffice to realize ethical algorithms. Algorithm Audit advocates that organizations will always carry their own responsibility for ethical algorithms within and beyond the obligation of legal compliance. Why this is the case? Read the rationale for this viewpoint in the section _Why we exist_ on the home page of [www.algorithmaudit.eu](/).
 
 To conclude, Practical Fairness is a cutting edge guidebook for data and AI ethics practicioners to assess fairness both in qualitative and quantitative terms.
-
 
 _Update 10-01-2022_
 

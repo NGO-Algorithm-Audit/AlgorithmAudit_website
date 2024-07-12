@@ -41,9 +41,9 @@
                         </div>
 
                         <!-- Articles -->
-                        {{ if .Data.Pages }}
+                        {{ if .Site.Pages }}
                         <div class="content col-lg-9 col-sm-12">
-                            {{ range $item := .Data.Pages }}
+                            {{ range $item := (where .Site.Pages "Type" "==" "knowledgebase_item" ) }}
 
                             {{ $facets_for_data_attribute := "" }}
                             {{ range $facet := $item.Params.facets }}

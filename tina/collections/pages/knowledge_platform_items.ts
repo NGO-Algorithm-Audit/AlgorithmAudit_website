@@ -2,8 +2,8 @@
  * @type {import('tinacms').Collection}
  */
 import { TinaField } from "tinacms";
-import building_blocks from "../shared/page/building_blocks";
 import facets from "../shared/facets/facets";
+import building_blocks from "../shared/page/building_blocks";
 import weight from "../shared/page/weight";
 let specific_fields: TinaField[] = [
   {
@@ -21,9 +21,21 @@ let specific_fields: TinaField[] = [
     options: [
       {
         value: "article",
-        label: "Article"
-      }
-    ]
+        label: "Article",
+      },
+    ],
+  },
+  {
+    type: "string",
+    name: "type",
+    label: "Type",
+    required: true,
+    options: [
+      {
+        value: "knowledgebase_item",
+        label: "knowledgebase_item",
+      },
+    ],
   },
   {
     type: "string",
@@ -34,7 +46,7 @@ let specific_fields: TinaField[] = [
   {
     type: "string",
     name: "intro",
-    label: "teaser"
+    label: "teaser",
   },
   facets,
   weight,
@@ -46,12 +58,12 @@ export default {
   path: "content/",
   match: {
     include: "**/knowledge-platform/knowledge-base/**",
-    exclude: "**/knowledge-base/_index",
   },
   fields: specific_fields.concat(building_blocks),
   defaultItem: () => {
     return {
       layout: "article",
+      type: "knowledgebase_item",
     };
   },
 };
