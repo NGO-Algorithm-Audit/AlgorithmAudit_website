@@ -13,6 +13,7 @@ import knowledge_platform_items from "./collections/pages/knowledge_platform_ite
 import knowledge_platform_project_work from "./collections/pages/knowledge_platform_project-work";
 import events_activities from "./collections/pages/events_activities";
 import events_press_room from "./collections/pages/events_press_room";
+import events_registration from "./collections/pages/events_registration";
 import about_contact from "./collections/pages/about_contact";
 import about_faq from "./collections/pages/about_faq";
 import about_teams from "./collections/pages/about_teams";
@@ -54,6 +55,7 @@ export default defineConfig({
       knowledge_platform_project_work,
       events_activities,
       events_press_room,
+      events_registration,
       about_contact,
       about_faq,
       about_teams,
