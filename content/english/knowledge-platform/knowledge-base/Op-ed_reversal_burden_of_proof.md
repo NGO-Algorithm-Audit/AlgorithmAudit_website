@@ -1,9 +1,10 @@
 ---
 title: Algorithm Audit (op-ed) – Reversing the burden of proof
-subtitle: ''
+subtitle: ""
 image: /images/knowledge_base/Op-ed-2.png
 author: Algorithm Audit
-type: regular
+layout: article
+type: knowledgebase_item
 summary: >-
   Algorithm Audit's first white paper on the reversal on the burden of proof in
   the context of (semi-)automated decision-making
@@ -19,7 +20,7 @@ This is what we advise policy makers across the EU to facilitate reversing the b
 
 <span style="font-size: 25px;">📚</span>Train staff of courts, parliament, ministries, and other authorities in interpreting (semi-)ADM qualitatively.
 
-<span style="font-size: 14px; font-style:italic">This white paper is published as an [op-ed](https://fd.nl/opinie/1436425/we-moeten-ons-bezinnen-op-het-bestaansrecht-van-algoritmen) in the Dutch newspaper *Het Financieele Dagblad* on April 13th 2022.</span>
+<span style="font-size: 14px; font-style:italic">This white paper is published as an [op-ed](https://fd.nl/opinie/1436425/we-moeten-ons-bezinnen-op-het-bestaansrecht-van-algoritmen) in the Dutch newspaper _Het Financieele Dagblad_ on April 13th 2022.</span>
 
 ###### **Summary**
 

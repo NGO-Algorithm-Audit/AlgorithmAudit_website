@@ -2,14 +2,16 @@
 title: >-
   Hoe ‘algoprudentie’ kan bijdragen aan een verantwoorde inzet van machine
   learning-algoritmes
-subtitle: ''
+subtitle: ""
 image: /images/knowledge_base/NJB-cover.jpg
-author: 'Anne Meuwese, Jurriaan Parie & Ariën Voogt'
-type: featured
+author: "Anne Meuwese, Jurriaan Parie & Ariën Voogt"
 summary: >-
   Aan de hand van twee casusposities rond de inzet van machine learning-gedreven
   risicoprofilering door de gemeente Rotterdam en de gemeente Amsterdam wordt
   het begrip ‘algoprudentie’ geïntroduceerd en uit- gewerkt.
+layout: article
+type: knowledgebase_item
+featured: true
 ---
 
 Artikel in Nederlands Juristenblad 10 https://www.njb.nl/magazines/njb-10-2024/

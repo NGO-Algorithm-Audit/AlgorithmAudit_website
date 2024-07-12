@@ -1,9 +1,10 @@
 ---
 title: Algorithm Audit (opinieartikel) – Omkering van de algoritmische bewijslast
-subtitle: ''
+subtitle: ""
 image: /images/knowledge_base/Op-ed-2.png
 author: Algorithm Audit
-type: regular
+layout: article
+type: knowledgebase_item
 summary: >-
   Opinieartikel in Het Financieele Dagblad over de omkering van de bewijslast in
   de context van algoritme-gedreven besluitvorming

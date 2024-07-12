@@ -1,4 +1,7 @@
 ---
+pagesize: 4
+title_content: Articles
+layout: overview
 title: Knowledge base
 subtitle: >
   Our knowledge base is a collection of readworthy articles, books and other
@@ -10,4 +13,3 @@ subtitle: >
   know!</span>](/#contactform)
 image: /images/svg-illustrations/knowledge_base.svg
 ---
-
