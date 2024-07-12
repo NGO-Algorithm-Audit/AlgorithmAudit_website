@@ -9,6 +9,9 @@ summary: >-
   Aan de hand van twee casusposities rond de inzet van machine learning-gedreven
   risicoprofilering door de gemeente Rotterdam en de gemeente Amsterdam wordt
   het begrip ‘algoprudentie’ geïntroduceerd en uit- gewerkt.
+layout: article
+type: knowledgebase_item
+featured: true
 ---
 
 Artikel in Nederlands Juristenblad 10 https://www.njb.nl/magazines/njb-10-2024/

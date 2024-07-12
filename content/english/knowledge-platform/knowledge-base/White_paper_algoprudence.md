@@ -1,16 +1,14 @@
 ---
-summary: >-
-  Introducing Algoprudence: Case-based and decentralized judgements for ethical
-  AI
-layout: article
-type: knowledgebase_item
-author: Algorithm Audit
 intro: >-
   Introducing Algoprudence: Case-based and decentralized judgements for ethical
   AI
-facets:
-  - value: year_2024
-    label: "2024"
+featured: true
+layout: article
+type: knowledgebase_item
+author: Algorithm Audit
+summary: >-
+  Introducing Algoprudence: Case-based and decentralized judgements for ethical
+  AI
 title: "Algoprudence: Jurisprudence for algorithms"
 subtitle: ""
 image: /images/knowledge_base/White-paper_Algoprudence.png

@@ -1,11 +1,11 @@
 ---
+layout: article
+type: knowledgebase_item
+author: Algorithm Audit
+summary: "A new algorithmic regulatory body is institutionalized in The Netherlands. We say: Make it a bulldog \U0001F43A, not a lap dog \U0001F436"
 title: Algorithm Audit (op-ed) – A new algorithmic regulatory body in The Netherlands
 subtitle: ""
 image: /images/knowledge_base/Op-ed-1.png
-author: Algorithm Audit
-layout: article
-type: knowledgebase_item
-summary: "A new algorithmic regulatory body is institutionalized in The Netherlands. We say: Make it a bulldog \U0001F43A, not a lap dog \U0001F436"
 ---
 
 New white paper on algorithmic supervision. We reflect on recently announced plans by the Dutch Minister of Digitalization to institutionalize a national algorithmic watchdog. We say: Make it a bulldog <span style="font-size: 25px;">🐺</span>. Not a lap dog <span style="font-size: 25px;">🐶</span>.

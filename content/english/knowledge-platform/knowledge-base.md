@@ -1,10 +1,4 @@
 ---
-facet_groups:
-  - value: year
-    title: Year
-    facets:
-      - value: '2024'
-        label: '2024'
 pagesize: 4
 title_content: Articles
 layout: overview
@@ -19,4 +13,3 @@ subtitle: >
   know!</span>](/#contactform)
 image: /images/svg-illustrations/knowledge_base.svg
 ---
-

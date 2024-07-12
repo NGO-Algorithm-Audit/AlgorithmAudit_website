@@ -14,6 +14,11 @@ let specific_fields: TinaField[] = [
       "From https://fontawesome.com/search (e.g. fa-square-poll-vertical from https://fontawesome.com/icons/square-poll-vertical?f=classic&s=solid)",
   },
   {
+    type: "boolean",
+    name: "featured",
+    label: "Featured",
+  },
+  {
     type: "string",
     name: "layout",
     label: "Layout",
@@ -45,8 +50,8 @@ let specific_fields: TinaField[] = [
   },
   {
     type: "string",
-    name: "intro",
-    label: "teaser",
+    name: "summary",
+    label: "Summary",
   },
   facets,
   weight,
