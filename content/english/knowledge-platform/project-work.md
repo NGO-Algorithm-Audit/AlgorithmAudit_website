@@ -33,11 +33,11 @@ form1:
       type: textarea
 ---
 
-{{< container_open title="Collaboration with Dutch public sector organisation DUO" id="DUO" icon="fas fa-user-graduate" >}}
+{{< container_open title="Collaboration with Dutch Executive Eduction Agency (DUO)" id="DUO" icon="fas fa-user-graduate" >}}
 
-Over the course of 2023-24, Algorithm Audit has paired up with Dutch public sector organisation DUO to build algorithm validation capacity from both a qualitative and quantitative dimensions. The organisations have been working on:
+Over the course of 2023-24, Algorithm Audit has paired up with Dutch public sector organisation DUO to build algorithm validation capacity from both a qualitative and quantitative dimensions. We have been working on:
 
-* a technical audit of the college loan control (CLC)-proces. The report [Bias prevented](/algoprudence/cases/aa202401_bias-prevented/) has been sent to the Dutch Parliament on 01-03-2024;
+* A technical audit of the college grant control (CGC)-proces. The first report, with findings and recommendation, [Prejudice prevented](/algoprudence/cases/aa202401_bias-prevented/) has been sent to the Dutch Parliament on 01-03-2024. The second report, 
 * submitted a request to the Dutch National Office of Statistics to conduct a large-scale study on proxy characteristics in the CLC-process;
 * finding solutions to deal with the normative dimension of auditing and evaluating algorithmic-driven decision-making processes, for instance involvement of diverse stakeholders panels to qualitatively interpret quantitative measurements.
 
