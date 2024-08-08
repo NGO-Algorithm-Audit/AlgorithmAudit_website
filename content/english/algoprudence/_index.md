@@ -1,7 +1,6 @@
 ---
-layout: repository 
 title: Algoprudence repository
-subtitle: "Stakeholders learn from our\_techno-ethical jurisprudence, can help to improve it and can use it as to resolve ethical issues in a harmonized manner.\n\nWe are open to new cases. Please <span style=\"color:#005aa7\">[submit</span>](/algoprudence/submit-a-case/) a case for review.\n"
+subtitle: "Stakeholders learn from our\_techno-ethical jurisprudence, can help to improve it and can use it as to resolve ethical issues in a harmonized manner.\n\nWe are open to new cases. Please <span style=\"color:#005aa7\">[submit</span>](/algoprudence/submit-a-case/) a case for review.\n\nOr read our <span style=\"color:#005aa7\">[white paper</span>](/knowledge-platform/knowledge-base/white_paper_algoprudence/) on algoprudence.\n"
 image: /images/svg-illustrations/case_repository.svg
 team:
   title: Algoprudence team
@@ -87,7 +86,7 @@ algoprudences:
     link: /algoprudence/cases/aa202402_preventing-prejudice_addendum/
     facets:
       - value: AA202402
-        label: 'AA:2024:02'
+        label: 'TA:AA:2024:02'
       - value: year_2024
         label: '2024'
         hide: true
@@ -127,7 +126,7 @@ algoprudences:
     link: /algoprudence/cases/aa202401_preventing-prejudice/
     facets:
       - value: algoprudence
-        label: 'AA:2024:01'
+        label: 'TA:AA:2024:01'
       - value: year_2024
         label: '2024'
         hide: true
@@ -167,7 +166,7 @@ algoprudences:
       /algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
     facets:
       - value: aa202302
-        label: 'AA:2023:02'
+        label: 'ALGO:AA:2023:02'
       - value: year_2023
         label: '2023'
         hide: true
@@ -214,7 +213,7 @@ algoprudences:
     link: /algoprudence/cases/aa202301_bert-based-disinformation-classifier
     facets:
       - value: aa_2023_01
-        label: 'AA:2023:01'
+        label: 'ALGO:AA:2023:01'
       - value: year_2023
         label: '2023'
         hide: true
@@ -253,7 +252,7 @@ algoprudences:
     link: /algoprudence/cases/aa202201_type-of-sim
     facets:
       - value: AA-2022-01
-        label: 'AA:2022:01'
+        label: 'ALGO:AA:2022:01'
       - value: year_2022
         label: '2022'
         hide: true
@@ -276,5 +275,6 @@ algoprudences:
       - value: standard_transparency_provisions
         label: transparency provisions
         hide: true
+layout: repository
 ---
 

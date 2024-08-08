@@ -1,6 +1,6 @@
 ---
 layout: repository 
-title: Algoprudentie
+title: Algoprudentie database
 subtitle: >
   Algoprudentie is beschikbaar voor verschillende soorten algoritmes, onder
   andere machine learning-, profilering-, publieke- en private algoritmes.
@@ -9,6 +9,10 @@ subtitle: >
   We staan open voor nieuwe cases. Dien <span
   style="color:#005aa7">[hier</span>](/nl/algoprudence/submit-a-case/) een case
   in voor review.
+
+
+  Of lees onze <span
+  style="color:#005aa7">[white paper</span>](/nl/knowledge-platform/knowledge-base/white_paper_algoprudence/) over algoprudentie.
 image: /images/svg-illustrations/case_repository.svg
 facet_groups:
   - value: year
@@ -75,7 +79,7 @@ facet_groups:
         label: Private organisatie
       - value: self
         label: Algorithm Audit
-title_content: Algoprudentie overzicht
+title_content: Algoprudentie database
 algoprudences:
   - title: Addendum Vooringenomen voorkomen
     intro: >-
@@ -86,7 +90,7 @@ algoprudences:
     link: /nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/
     facets:
       - value: AA202402
-        label: 'AA:2024:02'
+        label: 'TA:AA:2024:02'
       - value: year_2024
         label: '2024'
         hide: true
@@ -127,7 +131,7 @@ algoprudences:
     link: /nl/algoprudence/cases/aa202401_preventing-prejudice/
     facets:
       - value: AA202401
-        label: 'AA:2024:01'
+        label: 'TA:AA:2024:01'
       - value: year_2024
         label: '2024'
         hide: true
@@ -167,7 +171,7 @@ algoprudences:
       /nl/algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination
     facets:
       - value: aa202302
-        label: 'AA:2023:02'
+        label: 'ALGO:AA:2023:02'
       - value: year_2023
         label: '2023'
         hide: true
@@ -216,7 +220,7 @@ algoprudences:
     link: /nl/algoprudence/cases/aa202301_bert-based-disinformation-classifier
     facets:
       - value: aa_2023_01
-        label: 'AA:2023:01'
+        label: 'ALGO:AA:2023:01'
       - value: year_2023
         label: '2023'
         hide: true
@@ -255,7 +259,7 @@ algoprudences:
     link: /nl/algoprudence/cases/aa202201_type-of-sim
     facets:
       - value: AA-2022-01
-        label: 'AA:2022:01'
+        label: 'ALGO:AA:2022:01'
       - value: year_2022
         label: '2022'
         hide: true
