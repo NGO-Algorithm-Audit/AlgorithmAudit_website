@@ -4,8 +4,8 @@ subtitle: >
   Algorithm Audit hanteert hoge standaarden wat betreft integriteit,
   onafhankelijkheid en verantwoording. We willen 100% transparant zijn over onze
   werkwijze. We staan open voor
-  [feedback](/nl/algoprudence/cases/vooringenomenheid-voorkomen/#reaction) op
-  onze casuïstiek en voor de manier waarop we als organisatie functioneren.
+  [feedback](/nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/?tab=discussion)
+  op onze casuïstiek en voor de manier waarop we als organisatie functioneren.
 
 
   Heb je een vraag of wil je feedback delen? [Stuur een

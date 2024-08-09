@@ -1,7 +1,7 @@
 ---
 title: Type of SIM card as a predictor for detecting payment fraud
 subtitle: |
-  Probleem statement (AA:2022:01:P) and advice document (AA:2022:01:A)
+  Probleem statement (ALGO:AA:2022:01:P) and advice document (ALGO:AA:2022:01:A)
 image: /images/algoprudence/AA202201/Cover.png
 layout: case
 icon: fa-sim-card
@@ -70,9 +70,9 @@ form1:
 
 {{< tab_content_open icon="fa-sim-card" title="Type of SIM card as a predictor for detecting payment fraud" id="description" >}}
 
-#### Algoprudence number
+#### Algoprudence identification code
 
-AA:2022:01
+ALGO:AA:2022:01
 
 #### Summary advice
 

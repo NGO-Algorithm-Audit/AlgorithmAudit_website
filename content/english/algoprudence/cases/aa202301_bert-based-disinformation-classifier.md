@@ -1,7 +1,7 @@
 ---
 title: Higher-dimensional bias in a BERT-based disinformation classifier
 subtitle: |
-  Problem statement (AA:2023:01:P) and advice document (AA:2023:01:A)
+  Problem statement (ALGO:AA:2023:01:P) and advice document (ALGO:AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
 form1:
   title: React to this normative judgement
@@ -88,9 +88,9 @@ actions:
 
 {{< tab_content_open icon="fa-newspaper" title="Higher-dimensional bias in a BERT-based disinformation classifier" id="description" >}}
 
-#### Algoprudence number
+#### Algoprudence identification code
 
-AA:2023:01
+ALGO:AA:2023:01
 
 #### Summary advice
 

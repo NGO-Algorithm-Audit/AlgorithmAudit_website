@@ -49,7 +49,7 @@ actions:
       - value: Finalist
         label: Finalist
 subtitle: |
-  Problemstelling (AA:2023:01:P) en adviesdocument (AA:2023:01:A)
+  Problemstelling (ALGO:AA:2023:01:P) en adviesdocument (ALGO:AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
 form1:
   title: Reageer op deze technische audit

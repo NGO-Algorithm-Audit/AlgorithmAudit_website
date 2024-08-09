@@ -3,7 +3,7 @@ icon: fa-poll-h
 layout: case
 title: Risk Profiling for Social Welfare Reexamination
 subtitle: |
-  Problem statement (AA:2023:02:P) en advice document (AA:2023:02:A)
+  Problem statement (ALGO:AA:2023:02:P) en advice document (ALGO:AA:2023:02:A)
 image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
 form1:
   title: React to this normative judgement
@@ -41,9 +41,9 @@ form1:
 
 {{< tab_content_open icon="fa-poll-h" title="Risk Profiling for Social Welfare Reexamination" id="description" >}}
 
-#### Algoprudence number
+#### Algoprudence identification code
 
-AA:2023:02
+ALGO:AA:2023:02
 
 #### Key takeaways normative advice commission
 

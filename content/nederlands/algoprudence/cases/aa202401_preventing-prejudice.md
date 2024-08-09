@@ -3,7 +3,7 @@ icon: fas fa-greater-than-equal
 layout: case
 title: Vooringenomenheid voorkomen
 subtitle: >
-  Technische audit (AA:2024:01:TA) – Bevindingen en aanbevelingen over
+  Technische audit (ALGO:AA:2024:01:TA) – Bevindingen en aanbevelingen over
   risicoprofilering in het Controle Uitwonendenbeurs-proces van DUO
 image: /images/algoprudence/AA202401/Cover.png
 form1:

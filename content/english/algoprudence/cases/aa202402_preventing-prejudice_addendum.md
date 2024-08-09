@@ -44,9 +44,9 @@ form1:
 
 {{< tab_content_open icon="fas fa-balance-scale-left" title="Addendum Preventing prejudice" id="description" >}}
 
-#### Number of technical audit
+#### Technical audit identification code
 
-AA:2024:02:TA
+TA:AA:2024:02
 
 #### Summary
 
@@ -60,7 +60,7 @@ Education Executive Agency of The Netherlands (DUO)
 
 #### Algoprudence
 
-The full report (AA:2024:02:TA) can be found <a href="https://drive.google.com/file/d/1uOhR9qXHW6P0i4uP7RNhil2G2dXzFjrp/preview" target="_blank">here</a>.
+The full report (TA:AA:2024:02) can be found <a href="https://drive.google.com/file/d/1uOhR9qXHW6P0i4uP7RNhil2G2dXzFjrp/preview" target="_blank">here</a>.
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1uOhR9qXHW6P0i4uP7RNhil2G2dXzFjrp/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
