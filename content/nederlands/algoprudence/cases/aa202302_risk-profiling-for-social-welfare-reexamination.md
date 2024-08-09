@@ -3,7 +3,7 @@ icon: fa-poll-h
 layout: case
 title: Risicoprofilering heronderzoek bijstandsuitkering
 subtitle: |
-  Probleemstelling (AA:2023:02:P) en adviesdocument (AA:2023:02:A)
+  Probleemstelling (AA:2023:02:P) en adviesdocument (ALGO:AA:2023:02:A)
 image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
 form1:
   title: Reageer op dit normatieve oordeel

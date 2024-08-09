@@ -3,7 +3,7 @@ icon: fas fa-greater-than-equal
 layout: case
 title: Preventing prejudice
 subtitle: >
-  Technical audit (AA:2024:01:TA) – Findings and recommendations regarding
+  Technical audit (TA:AA:2024:01) – Findings and recommendations regarding
   rule-based risk profiling as used in a Dutch public sector organisation
   control process
 image: /images/algoprudence/AA202401/Cover_EN.png
@@ -43,9 +43,9 @@ form1:
 
 {{< tab_content_open icon="fa-greater-than-equal" title="Preventing prejudice" id="description" >}}
 
-#### Algoprudence number
+#### Algoprudence idetification code
 
-AA:2024:01:TA
+TA:AA:2024:01
 
 #### Summary
 
@@ -60,7 +60,7 @@ Education Executive Agency of The Netherlands (DUO)
 
 #### Algoprudence
 
-The technical audit report (AA:2024:01:TA) can be downloaded [here](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview).
+The technical audit report (TA:AA:2024:01) can be downloaded [here](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview).
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1waGi9gduj10AOGSrSDqKWOMfqcRWwyGy/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="6" >}}
 

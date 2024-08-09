@@ -4,7 +4,7 @@ layout: case
 title: Addendum Vooringenomenheid voorkomen
 subtitle: >
   Addendum op eerder
-  [onderzoek](/nl/algoprudence/cases/aa202401_bias-prevented/) (AA:2024:02:TA) –
+  [onderzoek](/nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/) (TA:AA:2024:02) –
   Biasmeting aan de hand van CBS-data over het Controle Uitwonendenbeurs (CUB)
   proces van DUO
 image: /images/algoprudence/AA202402/AA202402_cover.png
@@ -47,7 +47,7 @@ form1:
 
 #### Nummer van technische audit
 
-AA:2024:02:TA
+TA:AA:2024:02
 
 #### Samenvatting
 
@@ -61,7 +61,7 @@ Dienst Uitvoering Onderwijs (DUO)
 
 #### Algoprudentie
 
-Het volledige rapport (AA:2024:02:TA) kan <a href="https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview" target="_blank">hier</a> worden gedownload.
+Het volledige rapport (TA:AA:2024:02) kan <a href="https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview" target="_blank">hier</a> worden gedownload.
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1OXs1PGFqi7BjxFz4Yj3ikMJxM8gVs1IE/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 

@@ -1,11 +1,11 @@
 ---
 title: Frequently Asked Questions
 subtitle: >
-  Algorithm Audit commits to high standards regarding integrity, independence
-  and accountability. We want to be 100% transparent about the way we work. We
-  are open for
-  [feedback](/algoprudence/cases/vooringenomenheid-voorkomen/#reaction) on our
-  case work and about the way we operate as an organisation.
+  Algorithm Audit is committed to maintaining the highest standards of
+  integrity, independence, and accountability. We want to be 100% transparent
+  about the way we work. We are open for
+  [feedback](/algoprudence/cases/aa202402_preventing-prejudice_addendum/?tab=discussion)
+  on our case work and about the way we operate as an organisation.
 
 
   Do you have a question or do you want to share feedback? [Contact
