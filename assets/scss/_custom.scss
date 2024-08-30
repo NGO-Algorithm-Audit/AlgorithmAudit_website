@@ -56,3 +56,24 @@
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
   }
+
+  label {
+    width: 100%;
+}
+
+.card-input-element {
+    display: none;
+}
+
+.card-input {
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+.card-input:hover {
+    cursor: pointer;
+}
+
+.card-input-element:checked + .card-input {
+     box-shadow: 0 0 1px 1px #005aa7;
+}

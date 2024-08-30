@@ -313,3 +313,11 @@ function displayFile(ID) {
   const file = fileInput.files[0];
   textArea.innerText = file.name;
 }
+
+// Init tooltips
+document.addEventListener("DOMContentLoaded", function (event) {
+  // Your code to run since DOM is loaded and ready
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+});

@@ -1,0 +1,236 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<div class="container-fluid mt-5 p-0" id="score-card-container">
+  <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">
+
+    <!-- Title and icon -->
+    <h3 class="">
+      <span class="far fa-flag icon mb-4 pl-5"></span>
+      Modelrisicoclassificatie
+    </h3>
+
+    <div class="row mt-4">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+      </div>
+    </div>
+
+    <h4>Impact</h4>
+    <h5>1. Data</h5>
+    <p>Zijn er afspraken random data levering?</p>
+    <button data-toggle="tooltip" data-placement="right"
+      title="Wie voelt zich verantwoordelijk voor deze data? Als er bijv. kolommen veranderen">
+      Meer informatie
+    </button>
+
+    <div class="row">
+
+      <div class="col-md col-sm-12">
+        <label>
+          <input type="radio" name="data1" class="card-input-element" value="low" />
+          <div class="card card-input">
+            <div class="card-body">
+              <h6 class="card-title">Lage impact</h6>
+              <p class="card-text">
+                Er zijn duidelijke afspraken over datalevering. Deze afspraken zijn goed gedocumenteerd.
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <div class="col-md col-sm-12">
+        <label>
+          <input type="radio" name="data1" class="card-input-element" value="high" />
+          <div class="card card-input">
+            <div class="card-body">
+              <h6 class="card-title">Hoge impact</h6>
+              <p class="card-text">
+                Er zijn duidelijke afspraken over datalevering. Deze afspraken zijn goed gedocumenteerd.
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+
+    </div>
+
+    <div class="shadow bg-lightblue py-4">
+      <div class="row mx-3">
+        <div class="col">
+          <h4>Aanpassingen</h4>
+        </div>
+      </div>
+      <div class="row mx-3 mt-4 mb-2">
+        <div class="col-xl col-sm-12">
+          <p>
+            Puntentelling
+          </p>
+        </div>
+
+        <div class="col-xl col-sm-12">
+          <div class="row align-items-start">
+            <div class="col-xl-4 col-sm-6">
+              <p class="text-nowrap">
+                Laag
+              </p>
+            </div>
+            <div class="col-xl-7 col-sm-6">
+              <input id="score-card-points-low" type="number" class="form-control" value="0" disabled>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl col-sm-12">
+          <div class="row align-items-start">
+            <div class="col-xl-4 col-sm-6">
+              <p class="text-nowrap">
+                Medium
+              </p>
+            </div>
+            <div class="col-xl-7 col-sm-6">
+              <input id="score-card-points-medium" type="number" class="form-control" value="5">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl col-sm-12">
+          <div class="row align-items-start">
+            <div class="col-xl-4 col-sm-6">
+              <p class="text-nowrap">
+                Hoog
+              </p>
+            </div>
+            <div class="col-xl-7 col-sm-6">
+              <input id="score-card-points-high" type="number" class="form-control" value="10">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mx-3 mt-4 mb-2">
+        <div class="col-xl col-sm-12">
+          <p>
+            Randwaarden
+          </p>
+        </div>
+
+        <div class="col-xl col-sm-12">
+          <div class="row align-items-start">
+            <div class="col-xl-4 col-sm-6">
+              <p class="text-nowrap">
+                Laag
+              </p>
+            </div>
+            <div class="col-xl-7 col-sm-6">
+              <input id="score-card-threshold-low" type="number" class="form-control" value="0" disabled>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl col-sm-12">
+          <div class="row align-items-start">
+            <div class="col-xl-4 col-sm-6">
+              <p class="text-nowrap">
+                Medium
+              </p>
+            </div>
+            <div class="col-xl-7 col-sm-6">
+              <input id="score-card-threshold-medium" type="number" class="form-control" value="5">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl col-sm-12">
+          <div class="row align-items-start">
+            <div class="col-xl-4 col-sm-6">
+              <p class="text-nowrap">
+                Hoog
+              </p>
+            </div>
+            <div class="col-xl-7 col-sm-6">
+              <input id="score-card-threshold-high" type="number" class="form-control" value="10">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-xl col-sm-12">
+        <p>
+        <div class="d-inline-block color-blue font-weight-bold">Totaal score:</div>
+        <div id="score-card-result-score" class="d-inline-block color-gray">XX</div>
+        </p>
+        <p>
+        <div class="d-inline-block color-blue font-weight-bold">Classificatie:</div>
+        <div id="score-card-result-risk" class="d-inline-block color-gray">Medium risico</div>
+        </p>
+      </div>
+      <div class="col-xl col-sm-12">
+        <button id="score-card-print-button" class="btn btn-primary"><i class="fas fa-print"></i> Download
+          resultaat</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var calculateScores = function () {
+      var score = 0;
+      var points = {
+        low: parseInt($('#score-card-points-low').val()),
+        medium: parseInt($('#score-card-points-medium').val()),
+        high: parseInt($('#score-card-points-high').val())
+      };
+      var thresholds = {
+        low: parseInt($('#score-card-threshold-low').val()),
+        medium: parseInt($('#score-card-threshold-medium').val()),
+        high: parseInt($('#score-card-threshold-high').val())
+      };
+      $('#score-card-container input[type=radio]:checked').each(function () {
+        score += points[$(this).val()];
+      });
+      $('#score-card-result-score').text(score);
+      $('#score-card-result-risk').text(score >= thresholds.high ? 'Hoog risico' : score >= thresholds.medium ? 'Medium risico' : 'Laag risico');
+    };
+    $('#score-card-container input[type=radio]').change(calculateScores);
+    $('#score-card-container input[type=number]').change(calculateScores);
+    calculateScores();
+
+
+    $('#score-card-print-button').click(function () {
+      window.html2canvas = html2canvas;
+      var element = document.getElementById("score-card-container");
+
+      var pdf = new jspdf.jsPDF();
+
+      var specialElementHandlers = {
+            // element with id of "bypass" - jQuery style selector
+            '.icon': function (element, renderer) {
+                // true = "handled elsewhere, bypass text extraction"
+                return true
+            }
+        };
+      pdf.html(element, {
+        callback: function (doc) {
+          doc.save();
+        },
+        margin: [5, 5, 5, 5],
+        x: 32,
+        y: 32,
+        html2canvas: {
+          scale: 0.15, //this was my solution, you have to adjust to your size
+          width: 1000 //for some reason width does nothing
+        },
+        elementHandlers: specialElementHandlers
+      });
+    });
+  });
+</script>
