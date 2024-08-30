@@ -1,5 +1,6 @@
 # Developer installation
-Install node.js > v20.10.0 
+
+Install node.js > v20.17.0
 (check with `node -v`)
 
 Install npm packages
@@ -12,5 +13,5 @@ We recommend using NPM for the package manager
 Use typescript
 Dont override existing config files.
 
-Run the site with 
+Run the site with
 `npx tinacms dev -c "hugo server -D -p 5173"`
