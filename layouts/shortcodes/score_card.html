@@ -1,4 +1,5 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
+{{ with .Page.Params.score_card }}
 
 <div class="container-fluid mt-5 p-0" id="score-card-container">
   <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">
@@ -6,59 +7,49 @@
     <!-- Title and icon -->
     <h3 class="">
       <span class="far fa-flag icon mb-4 pl-5 remove-on-pdf"></span>
-      Modelrisicoclassificatie
+      {{.title}}
     </h3>
 
     <div class="row mt-4">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+        {{ .content | markdownify }}
       </div>
     </div>
 
-    <h4>Impact</h4>
-    <h5>1. Data</h5>
-    <p>Zijn er afspraken random data levering?</p>
-    <button class="remove-on-pdf" data-toggle="tooltip" data-placement="right"
-      title="Wie voelt zich verantwoordelijk voor deze data? Als er bijv. kolommen veranderen">
-      Meer informatie
-    </button>
+    {{ range .section }}
+      <h4>{{.title}}</h4>
 
-    <div class="row">
+      {{ range .questions }}
+        <h5>{{ .title }}</h5>
+        {{ .content | markdownify }}
+        {{ if .tooltip }}
+        <button class="remove-on-pdf" data-toggle="tooltip" data-placement="right"
+          title={{.tooltip}}>
+          Meer informatie TODO translate
+        </button>
+        {{ end }}
 
-      <div class="col-md col-sm-12">
-        <label>
-          <input type="radio" name="data1" class="card-input-element" value="low" />
-          <div class="card card-input">
-            <div class="card-body">
-              <h6 class="card-title">Lage impact</h6>
-              <p class="card-text">
-                Er zijn duidelijke afspraken over datalevering. Deze afspraken zijn goed gedocumenteerd.
-              </p>
+        <div class="row">
+          {{ $input_name := .identifier }}
+          {{ range .options }}
+            <div class="col-md col-sm-12">
+              <label>
+                <input type="radio" name={{$input_name}} class="card-input-element" value={{.value}} />
+                <div class="card card-input">
+                  <div class="card-body">
+                    <h6 class="card-title">{{.title}}</h6>
+                    <p class="card-text">
+                      {{.content | markdownify}}
+                    </p>
+                  </div>
+                </div>
+              </label>
             </div>
-          </div>
-        </label>
-      </div>
+          {{ end }}
 
-      <div class="col-md col-sm-12">
-        <label>
-          <input type="radio" name="data1" class="card-input-element" value="high" />
-          <div class="card card-input">
-            <div class="card-body">
-              <h6 class="card-title">Hoge impact</h6>
-              <p class="card-text">
-                Er zijn duidelijke afspraken over datalevering. Deze afspraken zijn goed gedocumenteerd.
-              </p>
-            </div>
-          </div>
-        </label>
-      </div>
-
-    </div>
-
+        </div>
+      {{ end}}
+    {{ end }}
     <div class="shadow bg-lightblue py-4">
       <div class="row mx-3">
         <div class="col">
@@ -179,6 +170,7 @@
   </div>
 </div>
 
+{{ end }}
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
