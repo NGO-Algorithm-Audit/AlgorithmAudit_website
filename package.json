@@ -13,6 +13,6 @@
     "@tinacms/cli": "^1.5.47",
     "hugo": "^0.0.3",
     "hugo-extended": "^0.128.0",
-    "tinacms": "^2.1.1"
+    "tinacms": "^1.6.5"
   }
 }
