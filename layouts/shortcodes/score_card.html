@@ -5,7 +5,7 @@
 
     <!-- Title and icon -->
     <h3 class="">
-      <span class="far fa-flag icon mb-4 pl-5"></span>
+      <span class="far fa-flag icon mb-4 pl-5 remove-on-pdf"></span>
       Modelrisicoclassificatie
     </h3>
 
@@ -22,7 +22,7 @@
     <h4>Impact</h4>
     <h5>1. Data</h5>
     <p>Zijn er afspraken random data levering?</p>
-    <button data-toggle="tooltip" data-placement="right"
+    <button class="remove-on-pdf" data-toggle="tooltip" data-placement="right"
       title="Wie voelt zich verantwoordelijk voor deze data? Als er bijv. kolommen veranderen">
       Meer informatie
     </button>
@@ -172,7 +172,7 @@
         </p>
       </div>
       <div class="col-xl col-sm-12">
-        <button id="score-card-print-button" class="btn btn-primary"><i class="fas fa-print"></i> Download
+        <button id="score-card-print-button" class="btn btn-primary remove-on-pdf"><i class="fas fa-print"></i> Download
           resultaat</button>
       </div>
     </div>
@@ -208,16 +208,7 @@
     $('#score-card-print-button').click(function () {
       window.html2canvas = html2canvas;
       var element = document.getElementById("score-card-container");
-
       var pdf = new jspdf.jsPDF();
-
-      var specialElementHandlers = {
-            // element with id of "bypass" - jQuery style selector
-            '.icon': function (element, renderer) {
-                // true = "handled elsewhere, bypass text extraction"
-                return true
-            }
-        };
       pdf.html(element, {
         callback: function (doc) {
           doc.save();
@@ -226,10 +217,15 @@
         x: 32,
         y: 32,
         html2canvas: {
-          scale: 0.15, //this was my solution, you have to adjust to your size
-          width: 1000 //for some reason width does nothing
+          scale: 0.15,
+          ignoreElements: (element) => {
+            if (element.className.indexOf('remove-on-pdf') > -1) {
+              return true;
+            }
+            return false;
+          }
         },
-        elementHandlers: specialElementHandlers
+
       });
     });
   });

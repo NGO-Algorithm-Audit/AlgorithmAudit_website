@@ -2,22 +2,23 @@
 	position: relative;
 	height: 125px;
 	width: 125px;
-    pointer-events: none;
+	pointer-events: none;
 }
+
 .box:before {
 	content: "";
 	float: left;
 }
 
 .clickable-wrapper:hover {
-    text-decoration: underline;
-    cursor: pointer;
+	text-decoration: underline;
+	cursor: pointer;
 	text-decoration-color: #005aa7;
 }
 
 .highlight-blue {
-	background-color:#005aa7;
-	color:#fff;
+	background-color: #005aa7;
+	color: #fff;
 	margin: 0.25rem 0.25rem 0.5rem 0.25rem !important;
 	padding: 0.25rem 0.5rem !important;
 }
@@ -26,8 +27,8 @@
 	font-family: avenir, sans-serif;
 }
 
-.ac .ac-trigger::after  {
-	color:#005aa7 !important;
+.ac .ac-trigger::after {
+	color: #005aa7 !important;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -41,39 +42,40 @@
 	border: none;
 	outline: none;
 	transition: 0.4s;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .accordion:hover {
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
 	background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
 	padding: 0 18px;
 	background-color: white;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-  }
+}
 
-  label {
-    width: 100%;
+label {
+	width: 100%;
 }
 
 .card-input-element {
-    display: none;
+	display: none;
 }
 
 .card-input {
-    margin: 10px 0px;
-    padding: 0px;
+	margin: 10px 0px;
+	padding: 0px;
 }
 
 .card-input:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
-.card-input-element:checked + .card-input {
-     box-shadow: 0 0 1px 1px #005aa7;
+.card-input-element:checked+.card-input {
+	box-shadow: 0 0 1px 1px #005aa7;
+	background-color: #deecf7;
 }

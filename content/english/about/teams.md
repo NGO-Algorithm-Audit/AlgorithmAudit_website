@@ -108,6 +108,8 @@ team2:
         Project manager Algoprudence
 ---
 
+{{< score_card >}}
+
 {{< about_AA >}}
 
 {{< team2 >}}
