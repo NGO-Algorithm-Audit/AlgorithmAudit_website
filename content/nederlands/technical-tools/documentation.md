@@ -2,7 +2,7 @@
 type: regular
 title: Documentatie voor AI-systemen
 subtitle: |
-  Open-source templates voor risicoclassificatie van AI-systemen helpen bij de publieke kennisopbouw over AI governance
+  Open-source templates voor risicoclassificatie van AI-systemen helpen bij de publieke kennisopbouw over AI governance. Je feedback is welkom op info@algorithmaudit.eu
 image: /images/svg-illustrations/case_repository.svg
 score_card:
   title: AI-systeem risicoclassificatie
