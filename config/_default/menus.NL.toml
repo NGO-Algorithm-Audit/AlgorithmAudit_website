@@ -61,6 +61,13 @@ url = "/nl/technical-tools/BDT"
   weight = 3
   [[main.params]]
     icon = "fa-table"
+  [[main]]
+  parent = "Technische tools"
+  name = "Documentatie"
+  url = "nl/technical-tools/documentation"
+  weight = 4
+  [[main.params]]
+    icon = "fa-file"
 
 [[main]]
 name = "Kennisplatform"

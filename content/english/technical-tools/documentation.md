@@ -4,12 +4,45 @@ subtitle: >
   Test
 image: /images/svg-illustrations/case_repository.svg
 type: regular
+score_card:
+  title: AI-system risk classification
+  content: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  section:
+    - title: Impact
+      questions:
+        - identifier: data1
+          title: 1. Data
+          content: |
+            Zijn er afspraken random datalevering?
+          tooltip: >-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          options:
+            - value: low
+              title: Lage impact
+              content: |
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, se
+            - value: high
+              title: Hoge impact
+              content: >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
 ---
 
-{{< container_open title="Synthetic data generation – What is it?" icon="fas fa-file" id="info" >}}
-
-Garbage in, garbage out: When auditing semi-automated decision-making processes, one of the most immediate questions is the representativeness of the source data. However, privacy poses a hurdle to sharing data with external parties to assess the representativeness of the data. Absent access to source data means that stakeholders – such as people whose data is stored and independent experts – cannot scrutinize it for potential biases. Consequently, the evaluation of data used for semi-automated decision-making processes, and training of AI-systems, relies on a small group. If this evaluation process is not performed carefully, this can have severe downstream consequences for the decision-making processes that are using these data. This harms public trust in technology and in the organisations that deploy these digital methods.
-
-Synthetic data generation (SDG) – the creation of artificial datasets mimicking the original dataset's statistical characteristics – emerges as a potential solution. SDG has the potential to extend the audience involved in assessing the representativeness of data. It is considered a safe approach for the wider release of privately held data, as it contains no identifiable trace of the personal data it was generated from.
-
-{{< container_close >}}
+{{< score_card >}}
