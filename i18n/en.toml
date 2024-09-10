@@ -51,3 +51,42 @@ other = "Step"
 
 [youremail]
 other = "Email address"
+
+[score-card--more-information]
+other = "More information"
+
+[score-card--adjust]
+other = "Adjust"
+
+[score-card--scoring]
+other = "Scoring"
+
+[score-card--low]
+other = "Low"
+
+[score-card--medium]
+other = "Medium"
+
+[score-card--high]
+other = "High"
+
+[score-card--boundary-conditions]
+other = "Boundary conditions"
+
+[score-card--total-score]
+other = "Total score"
+
+[score-card--classification]
+other = "Classification"
+
+[score-card--download-result]
+other = "Download results"
+
+[score-card--high-risk]
+other = "High risk"
+
+[score-card--medium-risk]
+other = "Medium risk"
+
+[score-card--low-risk]
+other = "Low risk"

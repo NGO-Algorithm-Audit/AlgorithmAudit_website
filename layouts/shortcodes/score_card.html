@@ -25,7 +25,7 @@
         {{ if .tooltip }}
         <button class="remove-on-pdf" data-toggle="tooltip" data-placement="right"
           title={{.tooltip}}>
-          Meer informatie TODO translate
+          {{ i18n "score-card--more-information" }}
         </button>
         {{ end }}
 
@@ -53,13 +53,14 @@
     <div class="shadow bg-lightblue py-4">
       <div class="row mx-3">
         <div class="col">
-          <h4>Aanpassingen</h4>
+          <h4>
+            {{ i18n "score-card--adjust" }}</h4>
         </div>
       </div>
       <div class="row mx-3 mt-4 mb-2">
         <div class="col-xl col-sm-12">
           <p>
-            Puntentelling
+            {{ i18n "score-card--scoring" }}
           </p>
         </div>
 
@@ -67,7 +68,7 @@
           <div class="row align-items-start">
             <div class="col-xl-4 col-sm-6">
               <p class="text-nowrap">
-                Laag
+                {{i18n "score-card--low"}}
               </p>
             </div>
             <div class="col-xl-7 col-sm-6">
@@ -80,7 +81,7 @@
           <div class="row align-items-start">
             <div class="col-xl-4 col-sm-6">
               <p class="text-nowrap">
-                Medium
+                {{i18n "score-card--medium"}}
               </p>
             </div>
             <div class="col-xl-7 col-sm-6">
@@ -93,7 +94,7 @@
           <div class="row align-items-start">
             <div class="col-xl-4 col-sm-6">
               <p class="text-nowrap">
-                Hoog
+                {{i18n "score-card--high"}}
               </p>
             </div>
             <div class="col-xl-7 col-sm-6">
@@ -106,7 +107,7 @@
       <div class="row mx-3 mt-4 mb-2">
         <div class="col-xl col-sm-12">
           <p>
-            Randwaarden
+            {{i18n "score-card--boundary-conditions"}}
           </p>
         </div>
 
@@ -114,7 +115,7 @@
           <div class="row align-items-start">
             <div class="col-xl-4 col-sm-6">
               <p class="text-nowrap">
-                Laag
+                {{i18n "score-card--low"}}
               </p>
             </div>
             <div class="col-xl-7 col-sm-6">
@@ -127,7 +128,7 @@
           <div class="row align-items-start">
             <div class="col-xl-4 col-sm-6">
               <p class="text-nowrap">
-                Medium
+                {{i18n "score-card--medium"}}
               </p>
             </div>
             <div class="col-xl-7 col-sm-6">
@@ -140,7 +141,7 @@
           <div class="row align-items-start">
             <div class="col-xl-4 col-sm-6">
               <p class="text-nowrap">
-                Hoog
+                {{i18n "score-card--high"}}
               </p>
             </div>
             <div class="col-xl-7 col-sm-6">
@@ -154,17 +155,16 @@
     <div class="row mt-5">
       <div class="col-xl col-sm-12">
         <p>
-        <div class="d-inline-block color-blue font-weight-bold">Totaal score:</div>
-        <div id="score-card-result-score" class="d-inline-block color-gray">XX</div>
+        <div class="d-inline-block color-blue font-weight-bold">{{i18n "score-card--total-score"}}:</div>
+        <div id="score-card-result-score" class="d-inline-block color-gray"></div>
         </p>
         <p>
-        <div class="d-inline-block color-blue font-weight-bold">Classificatie:</div>
-        <div id="score-card-result-risk" class="d-inline-block color-gray">Medium risico</div>
+        <div class="d-inline-block color-blue font-weight-bold">{{i18n "score-card--classification"}}:</div>
+        <div id="score-card-result-risk" class="d-inline-block color-gray"></div>
         </p>
       </div>
       <div class="col-xl col-sm-12">
-        <button id="score-card-print-button" class="btn btn-primary remove-on-pdf"><i class="fas fa-print"></i> Download
-          resultaat</button>
+        <button id="score-card-print-button" class="btn btn-primary remove-on-pdf"><i class="fas fa-print"></i> {{i18n "score-card--download-result"}}</button>
       </div>
     </div>
   </div>
@@ -190,7 +190,7 @@
         score += points[$(this).val()];
       });
       $('#score-card-result-score').text(score);
-      $('#score-card-result-risk').text(score >= thresholds.high ? 'Hoog risico' : score >= thresholds.medium ? 'Medium risico' : 'Laag risico');
+      $('#score-card-result-risk').text(score >= thresholds.high ? '{{i18n "score-card--high-risk"}}' : score >= thresholds.medium ? '{{i18n "score-card--medium-risk"}}' : '{{i18n "score-card--low-risk"}}');
     };
     $('#score-card-container input[type=radio]').change(calculateScores);
     $('#score-card-container input[type=number]').change(calculateScores);
