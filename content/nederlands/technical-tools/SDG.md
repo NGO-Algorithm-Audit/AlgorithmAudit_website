@@ -9,34 +9,6 @@ subtitle: >
 image: /images/svg-illustrations/knowledge_base.svg
 author: Parie
 type: regular
-team:
-  title: Synthetische data generatie cohort
-  icon: fas fa-user-friends
-  button_text: Andere teams
-  id: team
-  button_link: /nl/about/teams/
-  team_members:
-    - image: /images/people/EBogaards.jpeg
-      name: Ellen Bogaards
-      bio: |
-        MSc Artifical Intelligence, Universiteit Utrecht
-    - image: /images/people/EMenvouta.jpeg
-      name: ' Emmanuel Menvouta PhD'
-      bio: |
-        Machine learning engineer, Dataroots
-    - image: /images/people/GAcheampong.jpeg
-      name: Godwin Acheampong
-      bio: |
-        Data scientist, Budget Thuis
-    - image: /images/people/JPersson.jpeg
-      name: Joel Persson PhD
-      bio: |
-        R\&D, Spotify
-    - image: /images/people/SBabac.jpeg
-      name: Sonja Babac
-      bio: >
-        PhD-kandidaat, Technische Universiteit Eindhoven – Philips Medische
-        Technologie
 ---
 
 {{< container_open title="Synthetische data generatie – Wat is het?" icon="fas fa-database" id="info" >}}
@@ -68,5 +40,3 @@ Onderzoeksjournalisten van [Lighthouse Reports](https://www.lighthousereports.co
 Artikel 10 van de AI Verordening bevat specifieke bepalingen over het gebruik van synthetische data voor bias detectie en -mitigatie doeleinden. Er geldt bijvoorbeeld een inspanningsverplichting voor aanbieders van AI-systemen om biases in data te rectificeren met behulp van synthetische of geanonimiseerde data.
 
 {{< container_close >}}
-
-{{< team >}}

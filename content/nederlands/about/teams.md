@@ -44,76 +44,6 @@ about_AA:
       content: >
         Ondersteuning bij specifieke vragen vanuit de publieke en private sector
         over de verantwoorde inzet van algoritmes
-score_card:
-  title: Modelrisicoclassificatie
-  content: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  section:
-    - title: Impact
-      questions:
-        - identifier: data1
-          title: 1. Data
-          content: |
-            Zijn er afspraken random datalevering?
-          tooltip: >-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          options:
-            - value: low
-              title: Lage impact
-              content: |
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, se
-            - value: high
-              title: Hoge impact
-              content: >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-team:
-  title: Synthetic data generatie cohort
-  content: >-
-    Team dat part-time werkt aan synthetische data generatie voor AI bias
-    testing
-  icon: fas fa-table
-  button_text: Synthetische data generatie
-  id: sdg
-  button_link: /nl/technical-tools/sdg/
-  team_members:
-    - image: /images/people/EMenvouta.jpeg
-      name: Emmanuel Menvouta PhD
-      bio: |
-        Machine Learning Engineer, Dataroots
-    - image: /images/people/EBogaards.jpeg
-      name: " Ellen Bogaards"
-      bio: |
-        MSc Artifical Intelligence, Universiteit Utrecht
-    - image: /images/people/GAcheampong.jpeg
-      name: Godwin Acheampong
-      bio: |
-        Data scientist, Budget Thuis
-    - image: /images/people/SBabac.jpeg
-      name: Sonja Babac
-      bio: >
-        PhD-kandidaat, Technische Universiteit Eindhoven – Philips Medische
-        Technologie
-    - image: /images/people/JPersson.jpeg
-      name: Joel Persson PhD
-      bio: |
-        R\&D, Spotify
 team1:
   title: Bias detectie tool cohort
   content: Team dat part-time werkt aan de unsupervised bias detectie tool
@@ -158,12 +88,8 @@ team2:
         Projectmanager Algoprudentie
 ---
 
-{{< score_card >}}
-
 {{< about_AA >}}
 
 {{< team2 >}}
 
 {{< team1 >}}
-
-{{< team >}}

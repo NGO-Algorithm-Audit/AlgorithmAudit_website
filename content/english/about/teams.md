@@ -36,34 +36,6 @@ about_AA:
       content: >
         Support for specific questions from public and private sector
         organisations regarding responsible use of AI
-team:
-  title: Synthetic data generation cohort
-  content: Part-time team working on synthetic data generation for AI bias testing
-  icon: fas fa-table
-  button_text: Synthetic data generation
-  id: SDG-team
-  button_link: /technical-tools/sdg/
-  team_members:
-    - image: /images/people/EMenvouta.jpeg
-      name: Emmanuel Menvouta PhD
-      bio: |
-        Machine Learning Engineer, Dataroots
-    - image: /images/people/EBogaards.jpeg
-      name: Ellen Bogaards
-      bio: |
-        MSc Artifical Intelligence, Utrecht University
-    - image: /images/people/GAcheampong.jpeg
-      name: Godwin Acheampong
-      bio: |
-        Data Scientist, Budget Thuis
-    - image: /images/people/SBabac.jpeg
-      name: Sonja Babac
-      bio: |
-        PhD-candidate, Technical University Eindhoven – Philips MedTech
-    - image: /images/people/JPersson.jpeg
-      name: Joel Persson PhD
-      bio: |
-        Research Scientist, Spotify
 team1:
   title: Bias detection tool cohort
   content: Part-time team working on unsupervised the bias detection tool
@@ -113,5 +85,3 @@ team2:
 {{< team2 >}}
 
 {{< team1 >}}
-
-{{< team >}}

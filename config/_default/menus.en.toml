@@ -59,6 +59,13 @@ url = "/technical-tools/BDT"
   weight = 3
   [[main.params]]
     icon = "fa-table"
+  [[main]]
+  parent = "Technical tools"
+  name = "Documentation"
+  url = "/technical-tools/documentation"
+  weight = 4
+  [[main.params]]
+    icon = "fa-file"
 
 [[main]]
 name = "Knowledge platform"
