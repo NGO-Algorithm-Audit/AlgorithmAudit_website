@@ -71,7 +71,7 @@ other = "Medium"
 other = "Hoog"
 
 [score-card--boundary-conditions]
-other = "Randvoorwaarden"
+other = "Drempelwaarden"
 
 [score-card--total-score]
 other = "Totale score"
