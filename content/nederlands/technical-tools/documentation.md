@@ -1,8 +1,8 @@
 ---
 type: regular
-title: Documentatie templates voor AI-systemen
+title: Documentatie voor AI-systemen
 subtitle: |
-  Test
+  Open-source templates voor risicoclassificatie van AI-systemen helpen bij de publieke kennisopbouw over AI governance
 image: /images/svg-illustrations/case_repository.svg
 score_card:
   title: AI-systeem risicoclassificatie
@@ -62,10 +62,10 @@ score_card:
                 dan niet direct) de persoon in kwestie geïdentificeerd kan
                 worden
         - identifier: data3
-          title: 3. Gevolgen voor burger
+          title: 3. Gevolgen voor burger I
           content: >
             Is het algoritme onderdeel van een besluitvormingsproces dat
-            rechtsgevolgen heeft voor deburger?
+            rechtsgevolgen heeft voor de burger?
           tooltip: >-
             Met rechtsgevolgen wordt gerefereerd naar de mogelijke impact op
             bijvoorbeeld de hoogte en/of duur van een uitkering
@@ -78,10 +78,10 @@ score_card:
             - value: high
               title: High impact
               content: >
-                Ja, het algoritme is wel onderdeel van een besluitvormingsproces
-                dat rechtsgevolgen heeft voor de burger
+                Ja, het algoritme is onderdeel van een besluitvormingsproces dat
+                rechtsgevolgen heeft voor de burger
         - identifier: data4
-          title: 4. Gevolgen voor burger
+          title: 4. Gevolgen voor burger II
           content: >
             Raakt het algoritme (of dreigt het te raken) aan een grondrecht? Zo
             ja, hoe zwaar wordt dit grondrecht geraakt?
@@ -128,8 +128,7 @@ score_card:
         - identifier: data6
           title: 6. Derde partijen
           content: >
-            Wat is de grootte van de populatie waarop het algoritme wordt
-            toegepast?
+            Worden de uitkomsten van het algoritme gedeeld met derde partijen (bijvoorbeeld burgers, andere afdelingen of toezichthoudende partijen)?
           options:
             - value: low
               title: Lage impact
@@ -139,13 +138,13 @@ score_card:
             - value: high
               title: Hoge impact
               content: >
-                Ja, de uitkomsten van het algoritme worden wel gedeeld met derde
+                Ja, de uitkomsten van het algoritme worden gedeeld met derde
                 partijen
         - identifier: data7
           title: 7. Financiële/reputationele schade
           content: >
-            Wat is de (geschatte) financiële en/of reputatie impactschade als
-            het algoritme fouten bevat die tot incorrecte algoritmeuitkomsten
+            Wat is de (geschatte) financiële- of reputatieschade als
+            het algoritme fouten bevat die tot incorrecte uitkomsten
             leiden?
           options:
             - value: low
@@ -156,19 +155,18 @@ score_card:
             - value: medium
               title: Medium impact
               content: >
-                Incorrecte algoritmeuitkomsten leiden tot een gemiddelde
-                financiële en/of reputationale impactschade --> misschien
-                weghalen?
+                Incorrecte uitkomsten leiden tot een gemiddelde
+                financiële en/of reputationale impactschade
             - value: high
               title: Hoge impact
               content: >
-                Hoog, dit algoritme speelt een grote rol in een proces waarbij
-                fouten een hoge financiële en/of reputationele impact hebben op
-                de dienstverlening van Toeslagen
+                Incorrecte uitkomsten leiden tot een veel
+                financiële en/of reputationale impactschade. Fouten hebben
+                een grote impact op de dienstverlening van de organisatie
         - identifier: data8
           title: 8. Autonomie
           content: >
-            Worden er beslissingen gemaakt op basis van de algoritmeuitkomsten?
+            Worden er beslissingen gemaakt op basis van de uitkomsten van het AI-systeem?
             Zo ja, op welke manier?
           tooltip: >-
             Beschrijvend of diagnostisch: Het algoritme wordt enkel gebruikt om
@@ -193,28 +191,28 @@ score_card:
             - value: low
               title: Lage impact
               content: |
-                Beschrijvend of diagnostisch
+                Output van het AI-systeem is beschrijvende of diagnostische statistiek, wat als input fungeert voor de besluitvorming
             - value: medium
               title: Medium impact
               content: |
-                Voorspellend
+                Output van het AI-systeem is voorspellende statistiek, wat als input fungeert voor de besluitvorming
             - value: high
               title: Hoge impact
               content: |
-                Voorschrijvend of automatisch
+                Output van het AI-systeem is voorscrhijvende statistiek, of besluitvorming is volledig geautomatiseerd
         - identifier: data9
-          title: 9. Output validatie
+          title: 9. Validatie
           content: >
             Zijn de algoritmeuitkomsten gevalideerd?
           options:
             - value: low
               title: Lage impact
               content: >
-                Ja, algoritmeuitkomsten zijn gevalideerd
+                Ja, het AI-systeem is gevalideerd
             - value: high
               title: Hoge impact
               content: >
-                Nee, algoritmeuitkomsten zijn niet gevalideerd
+                Nee, het AI-systeem is niet gevalideerd
 ---
 
 {{< score_card >}}

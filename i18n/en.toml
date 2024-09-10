@@ -71,7 +71,7 @@ other = "Medium"
 other = "High"
 
 [score-card--boundary-conditions]
-other = "Boundary conditions"
+other = "Boundary values"
 
 [score-card--total-score]
 other = "Total score"
