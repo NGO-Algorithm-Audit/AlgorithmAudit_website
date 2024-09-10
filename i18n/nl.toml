@@ -51,3 +51,42 @@ other = "Stap"
 
 [youremail]
 other = "E-mailadres"
+
+[score-card--more-information]
+other = "Meer informatie"
+
+[score-card--adjust]
+other = "Aanpassen"
+
+[score-card--scoring]
+other = "Puntentelling"
+
+[score-card--low]
+other = "Laag"
+
+[score-card--medium]
+other = "Medium"
+
+[score-card--high]
+other = "Hoog"
+
+[score-card--boundary-conditions]
+other = "Randvoorwaarden"
+
+[score-card--total-score]
+other = "Totale score"
+
+[score-card--classification]
+other = "Classificatie"
+
+[score-card--download-result]
+other = "Download resultaat"
+
+[score-card--high-risk]
+other = "Hoog risico"
+
+[score-card--medium-risk]
+other = "Medium risico"
+
+[score-card--low-risk]
+other = "Laag risico"
