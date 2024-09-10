@@ -44,7 +44,7 @@ form1:
         - label: Online
           value: Online
           id: online
-      required: true
+      required: false
       type: checkbox
     - label: |
         Questions, comments or remarks for organisation
