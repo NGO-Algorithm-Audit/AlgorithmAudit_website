@@ -35,6 +35,18 @@ form1:
       required: true
       type: email
     - label: |
+        Attendance
+      id: attendance
+      values:
+        - label: In-person
+          value: in-person
+          id: in-person
+        - label: Online
+          value: Online
+          id: online
+      required: true
+      type: checkbox
+    - label: |
         Questions, comments or remarks for organisation
       id: questions
       type: textarea
@@ -46,7 +58,8 @@ form1:
 
 
         * Your registration is complete once the participation fee has been paid
-        as outlined in the confirmation email
+        as outlined in the confirmation email you'll receive within 3 business
+        days
 
         * Inform the organisation if you are unable to attend the event November
         6th
@@ -66,7 +79,9 @@ type: registration
 * <span style="color: #005aa7;">Where:</span> Auditorium Dutch Central Bank (DNB), Spaklerweg 4, 1096 BA Amsterdam
 * <span style="color: #005aa7;">Who:</span> European regulators and public sector professionals
 * <span style="color: #005aa7;">Program:</span> see flyer below
-* <span style="color: #005aa7;">Participation fee:</span> €150
+* <span style="color: #005aa7;">Participation fee</span>
+  * In-person: €200
+  * Online: €100
 
 {{< button button_link="#form" button_text="Register" >}}
 
