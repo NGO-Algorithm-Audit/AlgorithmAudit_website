@@ -44,7 +44,7 @@ form1:
         - label: Online
           value: Online
           id: online
-      required: true
+      required: false
       type: checkbox
     - label: |
         Vragen of opmerkingen voor de organisatie
