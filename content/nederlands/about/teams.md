@@ -83,37 +83,6 @@ score_card:
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
-team:
-  title: Synthetic data generatie cohort
-  content: >-
-    Team dat part-time werkt aan synthetische data generatie voor AI bias
-    testing
-  icon: fas fa-table
-  button_text: Synthetische data generatie
-  id: sdg
-  button_link: /nl/technical-tools/sdg/
-  team_members:
-    - image: /images/people/EMenvouta.jpeg
-      name: Emmanuel Menvouta PhD
-      bio: |
-        Machine Learning Engineer, Dataroots
-    - image: /images/people/EBogaards.jpeg
-      name: " Ellen Bogaards"
-      bio: |
-        MSc Artifical Intelligence, Universiteit Utrecht
-    - image: /images/people/GAcheampong.jpeg
-      name: Godwin Acheampong
-      bio: |
-        Data scientist, Budget Thuis
-    - image: /images/people/SBabac.jpeg
-      name: Sonja Babac
-      bio: >
-        PhD-kandidaat, Technische Universiteit Eindhoven – Philips Medische
-        Technologie
-    - image: /images/people/JPersson.jpeg
-      name: Joel Persson PhD
-      bio: |
-        R\&D, Spotify
 team1:
   title: Bias detectie tool cohort
   content: Team dat part-time werkt aan de unsupervised bias detectie tool
@@ -165,5 +134,3 @@ team2:
 {{< team2 >}}
 
 {{< team1 >}}
-
-{{< team >}}

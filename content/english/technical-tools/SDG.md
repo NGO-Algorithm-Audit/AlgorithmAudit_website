@@ -7,33 +7,6 @@ subtitle: >
 image: /images/svg-illustrations/knowledge_base.svg
 author: Parie
 type: regular
-team:
-  title: Synthetic data generation cohort
-  icon: fas fa-user-friends
-  button_text: Other teams
-  id: team
-  button_link: /about/teams/
-  team_members:
-    - image: /images/people/EBogaards.jpeg
-      name: Ellen Bogaards
-      bio: |
-        MSc Artifical Intelligence, Utrecht University
-    - image: /images/people/EMenvouta.jpeg
-      name: Emmanuel Menvouta PhD
-      bio: |
-        Machine Learning Engineer, Dataroots
-    - image: /images/people/GAcheampong.jpeg
-      name: Godwin Acheampong
-      bio: |
-        Data Scientist, Budget Thuis
-    - image: /images/people/JPersson.jpeg
-      name: Joel Persson PhD
-      bio: |
-        Research Scientist, Spotify
-    - image: /images/people/SBabac.jpeg
-      name: Sonja Babac
-      bio: |
-        PhD-candidate, Technical University Eindhoven – Philips MedTech
 text_field1:
   title: Synthetic Data Generation – What is it?
   icon: fas fa-database
@@ -95,5 +68,3 @@ Notably, [Lighthouse Reports](https://www.lighthousereports.com/suspicion-machin
 Furthermore, the AI Act (Article 10) contains a specific provision regarding the utilization of synthetic data for bias detection and mitigation, mandating AI system providers to rectify biases using synthetic or anonymized data rather than relying solely on "appropriate safeguards."
 
 {{< container_close >}}
-
-{{< team >}}
