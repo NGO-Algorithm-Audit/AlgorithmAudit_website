@@ -1,10 +1,10 @@
 ---
-icon: fas fa-greater-than-equal 
+icon: fas fa-greater-than-equal
 layout: case
 title: Vooringenomenheid voorkomen
 subtitle: >
-  Technische audit (ALGO:AA:2024:01:TA) – Bevindingen en aanbevelingen over
-  risicoprofilering in het Controle Uitwonendenbeurs-proces van DUO
+  Technische audit – Bevindingen en aanbevelingen over risicoprofilering in het
+  Controle Uitwonendenbeurs-proces van DUO
 image: /images/algoprudence/AA202401/Cover.png
 form1:
   title: Reageer op deze technische audit
@@ -103,12 +103,9 @@ Rapport *Vooringenomenheid voorkomen* is als onderdeel van het Interne onderzoek
 
 #### Leeftijdsdiscriminatie
 
-
 Een beleid, zoals een overheidsinstantie die fraude onderzoekt of een werkgever die nieuwe werknemers zoekt, kan bedoeld of onbedoeld leiden tot onderscheid tussen bepaalde groepen mensen. Als een organisatie dit onderscheid maakt op gronden die wettelijk beschermd zijn, zoals geslacht, afkomst, seksuele oriëntatie, of een handicap of chronische ziekte, en hiervoor is geen goede, rechtvaardigende reden voor te geven is, dan maakt de organisatie verboden onderscheid. We spreken dan van discriminatie. 
 
-
 En leeftijd dan? Zowel het Rotterdamse als het DUO-algoritme waar Algorithm Audit onderzoek naar deed, maakte daar onderscheid op. Toch is er in die gevallen geen sprake van leeftijdsdiscriminatie. 
-
 
 De gelijkebehandelingswetgeving kent ook een verbod op onderscheid naar leeftijd. Een sollicitant zomaar weigeren voor een baan omdat diegene te oud is, mag dus niet. Maar de wetgeving rond leeftijdonderscheid laat wel meer ruimte voor een rechtvaardigend argument dan de eerdergenoemde persoonskenmerken. Dit geldt zeker als het algoritme niet gaat over arbeidskwesties.  In het geval van opsporing van bijstandsfraude of misbruik van studiefinanciering is het daarom niet per se verboden dat een algoritme iemands leeftijd meeneemt. Toch zal er wel een duidelijk verband moet zijn tussen leeftijd en het doel van het algoritme. Zolang niet is aangetoond dat iemands leeftijd de kans vergroot op misbruik of fraude mag je leeftijd evengoed niet laten meewegen in de algoritmische selectie. Als het bijvoorbeeld gaat om een Wajong-uitkering die je alleen tot een bepaalde leeftijd mag aanvragen, dan is er wel een duidelijk verband, en dan zou een algoritme daar wel naar kunnen kijken.
 
