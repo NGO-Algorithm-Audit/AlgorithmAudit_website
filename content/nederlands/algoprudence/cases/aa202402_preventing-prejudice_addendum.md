@@ -4,9 +4,9 @@ layout: case
 title: Addendum Vooringenomenheid voorkomen
 subtitle: >
   Addendum op eerder
-  [onderzoek](/nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/) (TA:AA:2024:02) –
-  Biasmeting aan de hand van CBS-data over het Controle Uitwonendenbeurs (CUB)
-  proces van DUO
+  [onderzoek](/nl/algoprudence/cases/aa202401_preventing-prejudice/)
+  (TA:AA:2024:01) – Biasmeting aan de hand van CBS-data over het Controle
+  Uitwonendenbeurs (CUB) proces van DUO 
 image: /images/algoprudence/AA202402/AA202402_cover.png
 form1:
   title: Reageer op deze technische audit
@@ -51,9 +51,13 @@ TA:AA:2024:02
 
 #### Samenvatting
 
-In de controle op rechtmatig gebruik van studiefinanciering voor uitwonende studenten controleerde DUO aanzienlijk vaker studenten met een niet-Europese migratieachtergrond. Hieruit blijkt een onbewuste vooringenomenheid van het controleproces van DUO. Studenten met een niet-Europese migratieachtergrond kregen een hogere risicoscore toegekend door een risicoprofiel en werden vaker handmatig geselecteerd voor een huisbezoek. Dit blijkt uit vervolgonderzoek dat stichting Algorithm Audit heeft uitgevoerd in opdracht van DUO en op 22 mei door de minister aan de Tweede Kamer is verstuurd. De onderzoeksresultaten versterken het beeld van eerder onderzoek, op basis waarvan de minister op 1 maart 2024 namens het kabinet zijn excuses heeft aangeboden voor indirecte discriminatie in het controleproces.
+In de controle op rechtmatig gebruik van studiefinanciering voor uitwonende studenten controleerde de Dienst Uitvoering Onderwijs (DUO) aanzienlijk vaker studenten met een niet-Europese migratieachtergrond. Hieruit blijkt een onbewuste vooringenomenheid van het controleproces van DUO. Studenten met een niet-Europese migratieachtergrond kregen een hogere risicoscore toegekend door een risicoprofiel en werden vaker handmatig geselecteerd voor een huisbezoek. Dit blijkt uit vervolgonderzoek dat stichting Algorithm Audit heeft uitgevoerd in opdracht van DUO en op 22 mei door de minister aan de Tweede Kamer is verstuurd. De onderzoeksresultaten versterken het beeld van eerder onderzoek, op basis waarvan de minister op 1 maart 2024 namens het kabinet zijn excuses heeft aangeboden voor indirecte discriminatie in het controleproces.
 
 Een persbericht kan [hier](/nl/events/press_room/) worden gevonden.
+
+#### Github repository
+
+[https://github.com/NGO-Algorithm-Audit/DUO-CUB](https://github.com/NGO-Algorithm-Audit/DUO-CUB)
 
 #### Bron van de casus
 

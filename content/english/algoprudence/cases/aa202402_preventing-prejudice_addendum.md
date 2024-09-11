@@ -50,13 +50,17 @@ TA:AA:2024:02
 
 #### Summary
 
-In its inspection of the legitimate use of student finance for students living away from home, DUO selected students for control with a non-European migration background significantly more often. This demonstrates an unconscious bias in DUO’s control process. Students with a non-European migration background were assigned a higher risk score by a risk profile and were more often manually selected for a home visit. This is evident from follow-up research that NGO Algorithm Audit carried out on behalf of DUO, which was sent by the minister to the House of Representatives on May 22. The results of the research strengthen the outcomes of previous research, on the basis of which the minister apologized on behalf of the cabinet on March 1, 2024 for indirect discrimination in the control process.
+In its inspection of the legitimate use of student finance for students living away from home, the Education Executive Agency of The Netherlands (DUO) selected students for control with a non-European migration background significantly more often. This demonstrates an unconscious bias in DUO’s control process. Students with a non-European migration background were assigned a higher risk score by a risk profile and were more often manually selected for a home visit. This is evident from follow-up research that NGO Algorithm Audit carried out on behalf of DUO, which was sent by the minister to the House of Representatives on May 22. The results of the research strengthen the outcomes of previous research, on the basis of which the minister apologized on behalf of the cabinet on March 1, 2024 for indirect discrimination in the control process.
 
 Press release can be found [here](/events/press_room/).
 
 #### Source of case
 
 Education Executive Agency of The Netherlands (DUO)
+
+#### Github repository
+
+[https://github.com/NGO-Algorithm-Audit/DUO-CUB](https://github.com/NGO-Algorithm-Audit/DUO-CUB)
 
 #### Algoprudence
 
