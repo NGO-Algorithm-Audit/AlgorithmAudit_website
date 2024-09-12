@@ -106,8 +106,8 @@ score_card:
             - value: high
               title: High impact
               content: >
-                Zware inbreuk op een grondrecht, bijzondere zorgvuldigheid
-                vereist
+                Serious violation of a fundamental right, dilligence in
+                particular is required.
         - identifier: data5
           title: 5. Populatiegrootte
           content: >
