@@ -158,11 +158,11 @@ score_card:
                 Incorrect outcomes lead to average financial and/or reputational
                 impact damage.
             - value: high
-              title: Hoge impact
+              title: High impact
               content: >
-                Incorrecte uitkomsten leiden tot een veel financiële en/of
-                reputationale impactschade. Fouten hebben een grote impact op de
-                dienstverlening van de organisatie
+                Incorrect results lead to great financial and/or reputational
+                impact damage. Errors have a big impact on the service of the
+                organization.
         - identifier: data8
           title: 8. Autonomie
           content: >
