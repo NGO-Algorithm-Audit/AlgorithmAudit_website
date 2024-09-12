@@ -160,9 +160,9 @@ score_card:
             - value: high
               title: High impact
               content: >
-                Incorrect results lead to great financial and/or reputational
-                impact damage. Errors have a big impact on the service of the
-                organization.
+                Incorrect outcomes of the algorithm lead to great financial
+                and/or reputational impact damage. Errors have a big impact on
+                the service of the organization.
         - identifier: data8
           title: 8. Autonomy
           content: >
