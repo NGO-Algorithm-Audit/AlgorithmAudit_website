@@ -83,22 +83,21 @@ score_card:
                 Yes, the algorithm is part of a decision-making process that has
                 legal consequences for citizens.
         - identifier: data4
-          title: 4. Gevolgen voor burger II
+          title: 4. Consequences for citizens II
           content: >
-            Raakt het algoritme (of dreigt het te raken) aan een grondrecht? Zo
-            ja, hoe zwaar wordt dit grondrecht geraakt?
+            Does the algorithm affect (or threaten to affect) a fundamental
+            right? If so, how severely is this fundamental right affected?
           tooltip: >-
-            Voorbeelden van grondrechten die geschaad kunnen worden
-            (niet-uitputtende lijst): 1. Recht op gelijke behandeling 2.
-            Persoonsgegevensbescherming 3. Procedurele rechten Zie ook blz. 71
-            van het IAMA en toelichting van de zwaartebepaling op blz. 72 van
-            het IAMA
+            Examples of fundamental rights that may be violated (which is a
+            non-exhaustive list): 1. Right to equal treatment 2. Protection of
+            personal data 3. Procedural rights. See also p. 71 of the IAMA and
+            explanation of the severity determination on p. 72 of the IAMA.
           options:
             - value: low
-              title: Lage impact
+              title: Low impact
               content: >
-                Weinig tot geen inbreuk op een grondrecht, dus geen bijzonder
-                grote zorgvuldigheid vereist
+                Little to no infringement of a fundamental right, so no special
+                degree of dilligence required.
             - value: medium
               title: Medium impact
               content: >
