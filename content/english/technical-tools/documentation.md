@@ -123,9 +123,9 @@ score_card:
               content: |
                 2.000 - 100.000 individuals
             - value: high
-              title: Hoge impact
+              title: High impact
               content: |
-                ≥100.000 individuen
+                ≥100.000 individuals 
         - identifier: data6
           title: 6. Derde partijen
           content: >
