@@ -61,9 +61,8 @@ score_card:
             - value: high
               title: High impact
               content: >
-                Er worden verschillende persoonsgegevens gebruikt waarmee (al
-                dan niet direct) de persoon in kwestie geïdentificeerd kan
-                worden
+                Various personal data are used with which (directly or
+                indirectly) the person in question can be identified.
         - identifier: data3
           title: 3. Gevolgen voor burger I
           content: >
