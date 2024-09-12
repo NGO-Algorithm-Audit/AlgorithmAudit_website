@@ -1,21 +1,23 @@
 ---
 type: regular
 title: Documentation for AI systems
-subtitle: |
-  Open-source templates for risk classification of AI systems are beneficial for public knowledge building for AI governance. Please send your feedback to info@algorithmaudit.eu
+subtitle: >
+  Open-source templates for risk classification of AI systems are beneficial for
+  public knowledge building for AI governance. Please send your feedback to
+  [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu)
 image: /images/svg-illustrations/case_repository.svg
 score_card:
   title: AI-system risk classification
   content: >
-    Organisatiebreed algoritmemanagementbeleid vraagt om pragmatische kaders.
-    Hierbij is een risico-georienteerde aanpak vaak leidend. Dit is in lijn met
-    nationale en internationale wetgeving voor algoritmes, zoals de AI
-    Verordening. Hieronder vindt u een voorbeeld van een algoritmescorekaart
-    voor publieke sector organisaties. Aan de hand van deze scorekaart kunnen
-    algoritmes worden geclassificeerd als hoog, medium of laag risico.
+    Organization-wide algorithm management policy requires pragmatic frameworks.
+    A risk-oriented approach often plays a leading role in this. It is in line
+    with national and international legislation for algorithms, such as the AI
+    Act. Below you will find an example of an algorithm scorecard for public
+    sector organizations. Based on this scorecard, algorithms can be classified
+    as high, medium or low risk.
 
 
-    De uitkomst van de scorekaart kan worden gedownload als pdf.
+    The results of the scorecard are available to be downloaded as a pdf.
   section:
     - title: Impact
       questions:
@@ -128,7 +130,9 @@ score_card:
         - identifier: data6
           title: 6. Derde partijen
           content: >
-            Worden de uitkomsten van het algoritme gedeeld met derde partijen (bijvoorbeeld burgers, andere afdelingen of toezichthoudende partijen)?
+            Worden de uitkomsten van het algoritme gedeeld met derde partijen
+            (bijvoorbeeld burgers, andere afdelingen of toezichthoudende
+            partijen)?
           options:
             - value: low
               title: Lage impact
@@ -143,9 +147,8 @@ score_card:
         - identifier: data7
           title: 7. Financiële/reputationele schade
           content: >
-            Wat is de (geschatte) financiële- of reputatieschade als
-            het algoritme fouten bevat die tot incorrecte uitkomsten
-            leiden?
+            Wat is de (geschatte) financiële- of reputatieschade als het
+            algoritme fouten bevat die tot incorrecte uitkomsten leiden?
           options:
             - value: low
               title: Lage impact
@@ -155,19 +158,19 @@ score_card:
             - value: medium
               title: Medium impact
               content: >
-                Incorrecte uitkomsten leiden tot een gemiddelde
-                financiële en/of reputationale impactschade
+                Incorrecte uitkomsten leiden tot een gemiddelde financiële en/of
+                reputationale impactschade
             - value: high
               title: Hoge impact
               content: >
-                Incorrecte uitkomsten leiden tot een veel
-                financiële en/of reputationale impactschade. Fouten hebben
-                een grote impact op de dienstverlening van de organisatie
+                Incorrecte uitkomsten leiden tot een veel financiële en/of
+                reputationale impactschade. Fouten hebben een grote impact op de
+                dienstverlening van de organisatie
         - identifier: data8
           title: 8. Autonomie
           content: >
-            Worden er beslissingen gemaakt op basis van de uitkomsten van het AI-systeem?
-            Zo ja, op welke manier?
+            Worden er beslissingen gemaakt op basis van de uitkomsten van het
+            AI-systeem? Zo ja, op welke manier?
           tooltip: >-
             Beschrijvend of diagnostisch: Het algoritme wordt enkel gebruikt om
             te monitoren of om een gebeurtenis/beslissing uit het verleden te
@@ -190,28 +193,31 @@ score_card:
           options:
             - value: low
               title: Lage impact
-              content: |
-                Output van het AI-systeem is beschrijvende of diagnostische statistiek, wat als input fungeert voor de besluitvorming
+              content: >
+                Output van het AI-systeem is beschrijvende of diagnostische
+                statistiek, wat als input fungeert voor de besluitvorming
             - value: medium
               title: Medium impact
-              content: |
-                Output van het AI-systeem is voorspellende statistiek, wat als input fungeert voor de besluitvorming
+              content: >
+                Output van het AI-systeem is voorspellende statistiek, wat als
+                input fungeert voor de besluitvorming
             - value: high
               title: Hoge impact
-              content: |
-                Output van het AI-systeem is voorscrhijvende statistiek, of besluitvorming is volledig geautomatiseerd
+              content: >
+                Output van het AI-systeem is voorscrhijvende statistiek, of
+                besluitvorming is volledig geautomatiseerd
         - identifier: data9
           title: 9. Validatie
-          content: >
+          content: |
             Zijn de algoritmeuitkomsten gevalideerd?
           options:
             - value: low
               title: Lage impact
-              content: >
+              content: |
                 Ja, het AI-systeem is gevalideerd
             - value: high
               title: Hoge impact
-              content: >
+              content: |
                 Nee, het AI-systeem is niet gevalideerd
 ---
 
