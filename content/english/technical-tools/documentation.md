@@ -24,16 +24,16 @@ score_card:
         - identifier: data1
           title: 1. Data
           content: |
-            Zijn er afspraken random datalevering?
+            Are there any agreements regarding data delivery?
           tooltip: >-
-            Is het duidelijk wie verantwoordelijk is voor het onderhouden van de
-            data? Is het duidelijk wie in de leiding is
+            Is it clear who is responsible for maintaining the data? And is it
+            clear who is in charge?
           options:
             - value: low
-              title: Lage impact
+              title: Low impact
               content: >
-                Er zijn duidelijke afspraken over datalevering. Deze afspraken
-                zijn goed gedocumenteerd.
+                The greements on data delivery are sufficiently clear. These
+                agreements are well documented.
             - value: medium
               title: Medium impact
               content: >
