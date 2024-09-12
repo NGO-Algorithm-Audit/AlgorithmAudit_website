@@ -155,8 +155,8 @@ score_card:
             - value: medium
               title: Medium impact
               content: >
-                Incorrecte uitkomsten leiden tot een gemiddelde financiële en/of
-                reputationale impactschade
+                Incorrect outcomes has average financial and/or reputational
+                impact damage.
             - value: high
               title: Hoge impact
               content: >
