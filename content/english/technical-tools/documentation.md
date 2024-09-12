@@ -45,14 +45,14 @@ score_card:
                 There are no agreements or documentation regarding data
                 delivery.
         - identifier: data2
-          title: 2. Persoonsgegevens
+          title: 2. Personal data
           content: |
-            In hoeverre worden er persoonsgegevens gebruikt in het algoritme?
+            To what extent are personal data used in the algorithm?
           options:
             - value: low
-              title: Lage impact
+              title: Low impact
               content: |
-                Er worden geen persoonsgegevens gebruikt en/of verwerkt
+                No personal data are used and/or processed.
             - value: medium
               title: Medium impact
               content: >
