@@ -206,7 +206,7 @@ score_card:
             Are the results of the algorithm validated?
           options:
             - value: low
-              title: Lage impact
+              title: Low impact
               content: |
                 Yes, the AI ​​system has been validated.
             - value: high
