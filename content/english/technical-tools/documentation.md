@@ -139,9 +139,8 @@ score_card:
                 parties.
             - value: high
               title: Hoge impact
-              content: >
-                Ja, de uitkomsten van het algoritme worden gedeeld met derde
-                partijen
+              content: |
+                Yes, the results of the algorithm are shared with third parties.
         - identifier: data7
           title: 7. Financiële/reputationele schade
           content: >
