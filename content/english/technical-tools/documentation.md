@@ -96,7 +96,7 @@ score_card:
             - value: low
               title: Low impact
               content: >
-                Little to no infringement of a fundamental right, so no special
+                Small to no violation of a fundamental right, so no special
                 degree of dilligence required.
             - value: medium
               title: Medium impact
