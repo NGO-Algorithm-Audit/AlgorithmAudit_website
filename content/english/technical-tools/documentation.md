@@ -32,7 +32,7 @@ score_card:
             - value: low
               title: Low impact
               content: >
-                The greements on data delivery are sufficiently clear. These
+                The agreements on data delivery are sufficiently clear. These
                 agreements are well documented.
             - value: medium
               title: Medium impact
