@@ -176,14 +176,14 @@ score_card:
             algorithm provides a probability or analysis of why something
             occurs, caused by positive, negative or predictive values, or
             calculates a certain probability that is used in work processes
-            and/or decision making. -Predictive algorithm: The algorithm
-            provides an expectation. Prediction of what can happen or a
+            and/or decision making. Predictive algorithm: The algorithm provides
+            an expectation. Prediction of what can happen or a
             chance/probability of a future action or event. Decisions are made
-            with human intervention based on algorithm outputs. -Prescriptive
+            with human intervention based on algorithm outputs. Prescriptive
             algorithm: The algorithm determines and/or dictates the
-            decision/action or execution. Prescriptive: Decisions are made based
-            on an algorithm output, with minimal human intervention. -Automatic:
-            Decisions are made without human intervention.
+            decision/action or execution. -Prescriptive: Decisions are made
+            based on an algorithm output, with minimal human intervention.
+            -Automatic: Decisions are made without human intervention.
           options:
             - value: low
               title: Low impact
