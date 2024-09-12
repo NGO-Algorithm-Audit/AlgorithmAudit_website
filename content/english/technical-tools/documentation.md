@@ -127,17 +127,16 @@ score_card:
               content: |
                 ≥100.000 individuals 
         - identifier: data6
-          title: 6. Derde partijen
+          title: 6. Third parties
           content: >
-            Worden de uitkomsten van het algoritme gedeeld met derde partijen
-            (bijvoorbeeld burgers, andere afdelingen of toezichthoudende
-            partijen)?
+            Are the outcomes of the algorithm shared with third parties (e.g.
+            citizens, other departments or supervisory parties)?
           options:
             - value: low
               title: Lage impact
               content: >
-                Nee, de uitkomsten van het algoritme worden niet gedeeld met
-                derde partijen
+                No, the results of the algorithm are not shared with third
+                parties.
             - value: high
               title: Hoge impact
               content: >
