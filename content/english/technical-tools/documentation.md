@@ -196,10 +196,10 @@ score_card:
                 Output of the AI ​​system is predictive statistics, which serves
                 as input for decision making.
             - value: high
-              title: Hoge impact
+              title: High impact
               content: >
-                Output van het AI-systeem is voorscrhijvende statistiek, of
-                besluitvorming is volledig geautomatiseerd
+                Output of the AI ​​system is prescriptive statistics, or
+                decision-making is fully automated.
         - identifier: data9
           title: 9. Validatie
           content: |
