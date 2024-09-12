@@ -201,14 +201,14 @@ score_card:
                 Output of the AI ​​system is prescriptive statistics, or
                 decision-making is fully automated.
         - identifier: data9
-          title: 9. Validatie
+          title: 9. Validation
           content: |
-            Zijn de algoritmeuitkomsten gevalideerd?
+            Are the results of the algorithm validated?
           options:
             - value: low
               title: Lage impact
               content: |
-                Ja, het AI-systeem is gevalideerd
+                Yes, the AI ​​system has been validated.
             - value: high
               title: Hoge impact
               content: |
