@@ -64,19 +64,19 @@ score_card:
                 Various personal data are used with which (directly or
                 indirectly) the person in question can be identified.
         - identifier: data3
-          title: 3. Gevolgen voor burger I
+          title: 3. Consequences for citizens I
           content: >
-            Is het algoritme onderdeel van een besluitvormingsproces dat
-            rechtsgevolgen heeft voor de burger?
+            Is the algorithm part of a decision-making process that has legal
+            consequences for citizens?
           tooltip: >-
-            Met rechtsgevolgen wordt gerefereerd naar de mogelijke impact op
-            bijvoorbeeld de hoogte en/of duur van een uitkering
+            Legal consequences refer to the possible impact on, for example, the
+            amount and/or duration of a certain benefit
           options:
             - value: low
-              title: Lage impact
+              title: Low impact
               content: >
-                Nee, het algoritme is niet onderdeel van een
-                besluitvormingsproces dat rechtsgevolgen heeft voor de burger
+                No, the algorithm is not part of a decision-making process that
+                has legal consequences for citizens.
             - value: high
               title: High impact
               content: >
