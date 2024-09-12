@@ -80,8 +80,8 @@ score_card:
             - value: high
               title: High impact
               content: >
-                Ja, het algoritme is onderdeel van een besluitvormingsproces dat
-                rechtsgevolgen heeft voor de burger
+                Yes, the algorithm is part of a decision-making process that has
+                legal consequences for citizens.
         - identifier: data4
           title: 4. Gevolgen voor burger II
           content: >
