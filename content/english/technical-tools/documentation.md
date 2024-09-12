@@ -155,8 +155,8 @@ score_card:
             - value: medium
               title: Medium impact
               content: >
-                Incorrect outcomes lead to average financial and/or reputational
-                impact damage.
+                Incorrect outcomes of the algorithm lead to average financial
+                and/or reputational impact damage.
             - value: high
               title: High impact
               content: >
