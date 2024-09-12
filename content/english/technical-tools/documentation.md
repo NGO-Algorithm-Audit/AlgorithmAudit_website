@@ -155,7 +155,7 @@ score_card:
             - value: medium
               title: Medium impact
               content: >
-                Incorrect outcomes has average financial and/or reputational
+                Incorrect outcomes have average financial and/or reputational
                 impact damage.
             - value: high
               title: Hoge impact
