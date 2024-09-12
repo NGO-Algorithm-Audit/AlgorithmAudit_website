@@ -109,15 +109,15 @@ score_card:
                 Serious violation of a fundamental right, dilligence in
                 particular is required.
         - identifier: data5
-          title: 5. Populatiegrootte
+          title: 5. Population size
           content: >
-            Wat is de grootte van de populatie waarop het algoritme wordt
-            toegepast?
+            What is the size of the population to which the algorithm is
+            applied?
           options:
             - value: low
-              title: Lage impact
+              title: Low impact
               content: |
-                \<2.000 individuen
+                \<2.000 individuals
             - value: medium
               title: Medium impact
               content: |
