@@ -138,7 +138,7 @@ score_card:
                 No, the results of the algorithm are not shared with third
                 parties.
             - value: high
-              title: Hoge impact
+              title: High impact
               content: |
                 Yes, the results of the algorithm are shared with third parties.
         - identifier: data7
