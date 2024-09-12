@@ -40,9 +40,10 @@ score_card:
                 There are a few agreements on data delivery. These agreements
                 are somewhat documented.
             - value: high
-              title: Hoog risico
-              content: |
-                Er zijn geen afspraken of documentatie over datalevering.
+              title: High impact
+              content: >
+                There are no agreements or documentation regarding data
+                delivery.
         - identifier: data2
           title: 2. Persoonsgegevens
           content: |
