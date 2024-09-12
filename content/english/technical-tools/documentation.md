@@ -56,8 +56,8 @@ score_card:
             - value: medium
               title: Medium impact
               content: >
-                Er worden enkele persoonsgegevens gebruikt, maar de gegevens
-                zijn niet herleidbaar tot een individueel persoon
+                Some personal data are used, but the data cannot be traced back
+                to an individual person.
             - value: high
               title: High impact
               content: >
