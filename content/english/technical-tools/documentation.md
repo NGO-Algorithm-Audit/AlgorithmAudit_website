@@ -37,8 +37,8 @@ score_card:
             - value: medium
               title: Medium impact
               content: >
-                Er zijn enkele afspraken over datalevering. Deze afspraken zijn
-                enigszins gedocumenteerd.
+                There are a few agreements on data delivery. These agreements
+                are somewhat documented.
             - value: high
               title: Hoog risico
               content: |
