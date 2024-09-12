@@ -142,16 +142,16 @@ score_card:
               content: |
                 Yes, the results of the algorithm are shared with third parties.
         - identifier: data7
-          title: 7. Financiële/reputationele schade
+          title: 7. Financial/reputational damage
           content: >
-            Wat is de (geschatte) financiële- of reputatieschade als het
-            algoritme fouten bevat die tot incorrecte uitkomsten leiden?
+            What is the (estimated) financial or reputational damage if the
+            algorithm contains errors that lead to incorrect outcomes?
           options:
             - value: low
               title: Lage impact
               content: >
-                Inzet van het algoritme heeft minimale financiële of
-                reputationele impact
+                Using the algorithm has minimal financial or reputational
+                impact.
             - value: medium
               title: Medium impact
               content: >
