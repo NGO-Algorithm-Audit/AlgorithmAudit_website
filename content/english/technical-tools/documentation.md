@@ -133,7 +133,7 @@ score_card:
             citizens, other departments or supervisory parties)?
           options:
             - value: low
-              title: Lage impact
+              title: Low impact
               content: >
                 No, the results of the algorithm are not shared with third
                 parties.
