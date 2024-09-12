@@ -193,8 +193,8 @@ score_card:
             - value: medium
               title: Medium impact
               content: >
-                Output van het AI-systeem is voorspellende statistiek, wat als
-                input fungeert voor de besluitvorming
+                Output of the AI ​​system is predictive statistics, which serves
+                as input for decision making.
             - value: high
               title: Hoge impact
               content: >
