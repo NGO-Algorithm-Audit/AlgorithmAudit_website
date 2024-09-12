@@ -101,8 +101,8 @@ score_card:
             - value: medium
               title: Medium impact
               content: >
-                Middelzware inbreuk op een grondrecht, dus zorgvuldigheid
-                vereist
+                Moderate violation of a fundamental right, so dilligence is
+                required.
             - value: high
               title: High impact
               content: >
