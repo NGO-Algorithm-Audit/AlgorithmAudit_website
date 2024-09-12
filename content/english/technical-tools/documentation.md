@@ -164,35 +164,32 @@ score_card:
                 impact damage. Errors have a big impact on the service of the
                 organization.
         - identifier: data8
-          title: 8. Autonomie
+          title: 8. Autonomy
           content: >
-            Worden er beslissingen gemaakt op basis van de uitkomsten van het
-            AI-systeem? Zo ja, op welke manier?
+            Are the decisions made based on the outcomes of the AI ​​system? If
+            so, how?
           tooltip: >-
-            Beschrijvend of diagnostisch: Het algoritme wordt enkel gebruikt om
-            te monitoren of om een gebeurtenis/beslissing uit het verleden te
-            analyseren. Er is geen directe beslissing verbonden aan de
-            algoritmeuitkomst. -Beschrijvend algoritme: het algoritme geeft een
-            weergave van wat er wordt waargenomen. -Diagnostisch algoritme: het
-            algoritme geeft een waarschijnlijkheid of analyse van waarom iets
-            optreedt, veroorzaakt door positieve, negatieve of predictieve
-            waarden, of berekent een bepaalde waarschijnlijkheid die wordt
-            gebruikt in werkprocessen en/of besluitvorming.  Voorspellend
-            algoritme: Het algoritme geeft een verwachting af. Voorspelling van
-            wat kan gebeuren of een kans/waarschijnlijkheid van een toekomstige
-            handeling of gebeurtenis. Beslissingen worden gemaakt met menselijke
-            tussenkomst op basis van algoritmeuitkomsten.  Voorschrijvend
-            algoritme: Het algoritme bepaalt en/of dicteert de beslissing/actie
-            of uitvoering. -Voorschrijvend: beslissingen worden gemaakt op basis
-            van een algoritmeuitkomst, met minimale menselijke tussenkomst.
-            -Automatisch: beslissingen worden gemaakt zonder menselijke
-            tussenkomst.
+            Descriptive or diagnostic: The algorithm is only used to monitor or
+            analyze a past event/decision. There is no direct decision linked to
+            the algorithm output. -Descriptive algorithm: The algorithm provides
+            a representation of what is observed. -Diagnostic algorithm: The
+            algorithm provides a probability or analysis of why something
+            occurs, caused by positive, negative or predictive values, or
+            calculates a certain probability that is used in work processes
+            and/or decision making. -Predictive algorithm: The algorithm
+            provides an expectation. Prediction of what can happen or a
+            chance/probability of a future action or event. Decisions are made
+            with human intervention based on algorithm outputs. -Prescriptive
+            algorithm: The algorithm determines and/or dictates the
+            decision/action or execution. Prescriptive: Decisions are made based
+            on an algorithm output, with minimal human intervention. -Automatic:
+            Decisions are made without human intervention.
           options:
             - value: low
-              title: Lage impact
+              title: Low impact
               content: >
-                Output van het AI-systeem is beschrijvende of diagnostische
-                statistiek, wat als input fungeert voor de besluitvorming
+                Output of the AI ​​system is descriptive or diagnostic
+                statistics, which serves as input for decision making.
             - value: medium
               title: Medium impact
               content: >
