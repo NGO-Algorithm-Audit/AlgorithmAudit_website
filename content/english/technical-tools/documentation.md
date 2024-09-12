@@ -121,7 +121,7 @@ score_card:
             - value: medium
               title: Medium impact
               content: |
-                2.000 - 100.000 individuen
+                2.000 - 100.000 individuals.
             - value: high
               title: Hoge impact
               content: |
