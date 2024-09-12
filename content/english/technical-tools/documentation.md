@@ -148,7 +148,7 @@ score_card:
             algorithm contains errors that lead to incorrect outcomes?
           options:
             - value: low
-              title: Lage impact
+              title: Low impact
               content: >
                 Using the algorithm has minimal financial or reputational
                 impact.
