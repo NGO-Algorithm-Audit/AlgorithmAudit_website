@@ -210,9 +210,9 @@ score_card:
               content: |
                 Yes, the AI ​​system has been validated.
             - value: high
-              title: Hoge impact
+              title: High impact
               content: |
-                Nee, het AI-systeem is niet gevalideerd
+                No, the AI ​​system has not been validated.
 ---
 
 {{< score_card >}}
