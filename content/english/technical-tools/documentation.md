@@ -108,6 +108,15 @@ score_card:
               content: >
                 Serious violation of a fundamental right, dilligence in
                 particular is required.
+          visible_when_or:
+            - visible_when_and:
+                - identifier: data1
+                  value: low
+            - visible_when_and:
+                - identifier: data2
+                  value: medium
+                - identifier: data1
+                  value: medium
         - identifier: data5
           title: 5. Population size
           content: >

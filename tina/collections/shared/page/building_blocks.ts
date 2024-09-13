@@ -559,6 +559,34 @@ const building_blocks: TinaField[] = [
                   },
                 ],
               },
+              {
+                type: "object",
+                name: "visible_when_or",
+                label: "Visible when (OR)",
+                list: true,
+                fields: [
+                  {
+                    type: "object",
+                    name: "visible_when_and",
+                    label: "Visible when (AND)",
+                    list: true,
+                    fields: [
+                      {
+                        type: "string",
+                        name: "identifier",
+                        label: "Identifier",
+                        required: true,
+                      },
+                      {
+                        type: "string",
+                        name: "value",
+                        label: "Value",
+                        required: true,
+                      },
+                    ],
+                  },
+                ],
+              },
             ],
           },
         ],
