@@ -125,7 +125,7 @@ score_card:
             - value: high
               title: High impact
               content: |
-                ≥100.000 individuals 
+                ≥100.000 individuals
         - identifier: data6
           title: 6. Third parties
           content: >
@@ -213,6 +213,26 @@ score_card:
               title: High impact
               content: |
                 No, the AI ​​system has not been validated.
+overview_block:
+  title: Model documentation
+  content: >
+    Organization-wide algorithm management policy requires pragmatic frameworks.
+    A risk-oriented approach is often leading here. This is in line with
+    national and international legislation for algorithms, such as the AI
+    ​​Regulation. Below you will find an example of an algorithm scorecard for
+    public sector organizations. Based on this scorecard, algorithms can be
+    classified as high, medium or low risk.
+  icon: far fa-file
+  id: modeldocumentation
+  items:
+    - title: Score card
+      icon: fas fa-code-branch
+      link: '#score-card-container'
+    - title: Contribute to new documents
+      icon: fas fa-share-alt
+      link: '#contribute'
 ---
+
+{{< overview_block >}}
 
 {{< score_card >}}

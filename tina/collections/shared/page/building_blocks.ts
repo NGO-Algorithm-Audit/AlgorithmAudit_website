@@ -14,6 +14,7 @@ import container_open from "../templates/container_open";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
 import template_image from "../templates/image";
+import overview_block from "../templates/overview_block";
 import pdf_frame from "../templates/pdf_frame";
 import promo_bar from "../templates/promo_bar";
 import reports_preview from "../templates/reports_preview";
@@ -29,7 +30,7 @@ import image from "./image";
 import subtitle from "./subtitle";
 import title from "./title";
 
-let building_blocks: TinaField[] = [
+const building_blocks: TinaField[] = [
   title,
   subtitle,
   image,
@@ -51,6 +52,7 @@ let building_blocks: TinaField[] = [
       form1,
       form2,
       template_image,
+      overview_block,
       pdf_frame,
       promo_bar,
       reports_preview,
@@ -632,6 +634,67 @@ let building_blocks: TinaField[] = [
             name: "bio",
             label: "Bio",
             isBody: false,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "object",
+    name: "overview_block",
+    label: "Overview block",
+    fields: [
+      {
+        type: "string",
+        name: "title",
+        label: "Title",
+        required: true,
+      },
+      {
+        type: "rich-text",
+        name: "content",
+        label: "Content",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "icon",
+        label: "Icon",
+        description:
+          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+        required: false,
+      },
+      {
+        type: "string",
+        name: "id",
+        label: "ID",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: false,
+      },
+      {
+        type: "object",
+        name: "items",
+        label: "Items",
+        list: true,
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "icon",
+            label: "Icon",
+            required: true,
+            description:
+              "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+          },
+          {
+            type: "string",
+            name: "link",
+            label: "Link",
           },
         ],
       },
