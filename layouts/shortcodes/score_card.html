@@ -35,15 +35,19 @@
     {{ end }}
     {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" "||" | printf "%s" }}
     {{ end }}
-    <div class="score-card__question" {{if $visibilityCondition}}data-show-when="{{$visibilityCondition}}"{{end}}>
-      <h5>{{ .title }}</h5>
-      <p>
-        {{ .content | markdownify }}
+    <div class="score-card__question" {{if $visibilityCondition}}data-show-when="{{$visibilityCondition}}" {{end}}>
+      <h5>
+        {{ .title }}
         {{ if .tooltip }}
-        <button class="remove-on-pdf" data-toggle="tooltip" data-placement="right" title={{.tooltip}}>
-          {{ i18n "score-card--more-information" }}
+        <button class="remove-on-pdf rounded-blue-border mt-0" data-toggle="tooltip" data-placement="right"
+          title={{.tooltip}}>
+          <i class="fas fa-info"></i>
         </button>
         {{ end }}
+      </h5>
+
+      <p>
+        {{ .content | markdownify }}
       </p>
 
       <div class="row mb-4">
@@ -193,11 +197,11 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
-  
+
     var calculateVisibleFields = function () {
       // this is what the data attribute looks like: data-show-when="||&&data1=medium&&data2=medium||&&data1=low"
       // This field should be hidden when no input is selected, and shown if either data 1 and data 2 are medium or data 1 is low.
-       $('.score-card__question').each(function () {
+      $('.score-card__question').each(function () {
         const showWhen = $(this).attr('data-show-when');
         // check if the attribute is there, otherwise always keep it as is.
         if (showWhen) {
@@ -208,7 +212,7 @@
             const andConditions = orCondition.split('&&').slice(1);
             let andShow = andConditions.length > 0;
             andConditions.forEach((andCondition) => {
-              if(andCondition.indexOf('=') === -1) {
+              if (andCondition.indexOf('=') === -1) {
                 return;
               }
               const [data, value] = andCondition.split('=');
@@ -227,7 +231,7 @@
             $(this).addClass("d-none");
           }
         }
-       })
+      })
     };
     var calculateScores = function () {
       var score = 0;
