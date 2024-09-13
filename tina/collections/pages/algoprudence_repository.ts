@@ -19,6 +19,11 @@ let specific_fields: TinaField[] = [
     name: "algoprudences",
     label: "Algoprudence repository",
     list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.title };
+      },
+    },
     fields: [
       {
         type: "string",

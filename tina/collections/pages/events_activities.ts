@@ -21,6 +21,11 @@ let specific_fields: TinaField[] = [
     name: "events",
     label: "Events",
     list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.title };
+      },
+    },
     fields: [
       {
         type: "string",
