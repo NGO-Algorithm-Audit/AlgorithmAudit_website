@@ -103,6 +103,11 @@ const building_blocks: TinaField[] = [
         name: "items",
         label: "Items",
         list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.subtitle };
+          },
+        },
         fields: [
           {
             type: "string",
@@ -171,6 +176,11 @@ const building_blocks: TinaField[] = [
         name: "questions",
         label: "Questions",
         list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.label };
+          },
+        },
         fields: [
           {
             type: "rich-text",
@@ -191,6 +201,11 @@ const building_blocks: TinaField[] = [
             name: "values",
             label: "Values (only for checkboxes)",
             list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: item?.label };
+              },
+            },
             fields: [
               {
                 type: "string",
@@ -311,6 +326,11 @@ const building_blocks: TinaField[] = [
         name: "questions",
         label: "Questions",
         list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.label };
+          },
+        },
         fields: [
           {
             type: "string",
@@ -429,6 +449,11 @@ const building_blocks: TinaField[] = [
         name: "feature_item",
         label: "Featured Items",
         list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.name };
+          },
+        },
         fields: [
           {
             type: "string",
@@ -481,6 +506,11 @@ const building_blocks: TinaField[] = [
         name: "section",
         label: "Section",
         list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.title };
+          },
+        },
         fields: [
           {
             type: "string",
@@ -493,6 +523,11 @@ const building_blocks: TinaField[] = [
             name: "questions",
             label: "Questions",
             list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: item?.title };
+              },
+            },
             fields: [
               {
                 type: "string",
@@ -525,6 +560,11 @@ const building_blocks: TinaField[] = [
                 name: "options",
                 label: "Options",
                 list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.title };
+                  },
+                },
                 fields: [
                   {
                     type: "string",
@@ -570,6 +610,11 @@ const building_blocks: TinaField[] = [
                     name: "visible_when_and",
                     label: "Visible when (AND)",
                     list: true,
+                    ui: {
+                      itemProps: (item) => {
+                        return { label: `${item?.identifier}=${item?.value}` };
+                      },
+                    },
                     fields: [
                       {
                         type: "string",
@@ -644,6 +689,11 @@ const building_blocks: TinaField[] = [
         name: "team_members",
         label: "Team members",
         list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.name };
+          },
+        },
         fields: [
           {
             type: "image",
@@ -704,6 +754,11 @@ const building_blocks: TinaField[] = [
         name: "items",
         label: "Items",
         list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.title };
+          },
+        },
         fields: [
           {
             type: "string",
@@ -779,6 +834,11 @@ const building_blocks: TinaField[] = [
         name: "team_members",
         label: "Team members",
         list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.name };
+          },
+        },
         fields: [
           {
             type: "image",
@@ -841,6 +901,11 @@ const building_blocks: TinaField[] = [
         name: "team_members",
         label: "Team members",
         list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.name };
+          },
+        },
         fields: [
           {
             type: "image",
