@@ -18,7 +18,7 @@ import overview_block from "../templates/overview_block";
 import pdf_frame from "../templates/pdf_frame";
 import promo_bar from "../templates/promo_bar";
 import reports_preview from "../templates/reports_preview";
-import score_card from "../templates/score_card";
+import risk_classification_card from "../templates/risk_classification_card";
 import tab_content_close from "../templates/tab_content_close";
 import tab_content_open from "../templates/tab_content_open";
 import tab_header from "../templates/tab_header";
@@ -56,7 +56,7 @@ const building_blocks: TinaField[] = [
       pdf_frame,
       promo_bar,
       reports_preview,
-      score_card,
+      risk_classification_card,
       tab_content_open,
       tab_content_close,
       tab_header,
@@ -484,7 +484,7 @@ const building_blocks: TinaField[] = [
   },
   {
     type: "object",
-    name: "score_card",
+    name: "risk_classification_card",
     label: "Score Card",
     fields: [
       {

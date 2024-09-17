@@ -1,7 +1,7 @@
 import { RichTextTemplate } from "@tinacms/schema-tools/dist/types/index";
 let template: RichTextTemplate = {
-  name: "score_card",
-  label: "Score Card",
+  name: "risk_classification_card",
+  label: "Risk classification card",
   match: {
     start: "{{<",
     end: ">}}",
