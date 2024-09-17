@@ -6,7 +6,7 @@ subtitle: >
   public knowledge building for AI governance. Please send your feedback to
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu)
 image: /images/svg-illustrations/case_repository.svg
-score_card:
+risk_classification_card:
   title: AI-system risk classification
   content: >
     Organization-wide algorithm management policy requires pragmatic frameworks.
@@ -234,14 +234,14 @@ overview_block:
   icon: far fa-file
   id: modeldocumentation
   items:
-    - title: Score card
-      icon: fas fa-code-branch
-      link: '#score-card-container'
-    - title: Contribute to new documents
+    - title: AI-system classification tree
       icon: fas fa-share-alt
       link: '#contribute'
+    - title: Risk score card
+      icon: fas fa-code-branch
+      link: '#score-card-container'
 ---
 
 {{< overview_block >}}
 
-{{< score_card >}}
+{{< risk_classification_card >}}
