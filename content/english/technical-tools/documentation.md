@@ -6,7 +6,11 @@ subtitle: >
   public knowledge building for AI governance. Please send your feedback to
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu)
 image: /images/svg-illustrations/case_repository.svg
-risk_classification_card:
+card_AI_system_classification:
+  title: Application
+  content: |
+    Vaststellen van toepassing van het product.
+card_risk_classification:
   title: AI-system risk classification
   content: >
     Organization-wide algorithm management policy requires pragmatic frameworks.
@@ -15,7 +19,6 @@ risk_classification_card:
     Act. Below you will find an example of an algorithm scorecard for public
     sector organizations. Based on this scorecard, algorithms can be classified
     as high, medium or low risk.
-
 
     The results of the scorecard are available to be downloaded as a pdf.
   section:
@@ -244,4 +247,6 @@ overview_block:
 
 {{< overview_block >}}
 
-{{< risk_classification_card >}}
+{{< card_AI_system_classification >}}
+
+{{< card_risk_classification >}}

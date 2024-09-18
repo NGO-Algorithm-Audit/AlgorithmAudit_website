@@ -1,12 +1,12 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-{{ with .Page.Params.risk_classification_card }}
+{{ with .Page.Params.card_AI_system_classification }}
 
-<div class="container-fluid mt-5 p-0" id="score-card-container">
+<div class="container-fluid mt-5 p-0" id="application">
   <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">
 
     <!-- Title and icon -->
     <h3 class="">
-      <span class="far fa-flag icon mb-4 pl-5 remove-on-pdf"></span>
+      <span class="far fa-folder icon mb-4 pl-5 remove-on-pdf"></span>
       {{.title}}
     </h3>
 
@@ -72,124 +72,7 @@
     </div>
     {{ end}}
     {{ end }}
-    <div class="shadow bg-lightblue py-4">
-      <div class="row mx-3">
-        <div class="col">
-          <h4>
-            {{ i18n "score-card--adjust" }}</h4>
-        </div>
-      </div>
-      <div class="row mx-3 mt-4 mb-2">
-        <div class="col-xl col-sm-12">
-          <p>
-            {{ i18n "score-card--scoring" }}
-          </p>
-        </div>
 
-        <div class="col-xl col-sm-12">
-          <div class="row align-items-start">
-            <div class="col-xl-4 col-sm-6">
-              <p class="text-nowrap">
-                {{i18n "score-card--low"}}
-              </p>
-            </div>
-            <div class="col-xl-7 col-sm-6">
-              <input id="score-card-points-low" type="number" class="form-control" value="0" disabled>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl col-sm-12">
-          <div class="row align-items-start">
-            <div class="col-xl-4 col-sm-6">
-              <p class="text-nowrap">
-                {{i18n "score-card--medium"}}
-              </p>
-            </div>
-            <div class="col-xl-7 col-sm-6">
-              <input id="score-card-points-medium" type="number" class="form-control" value="5">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl col-sm-12">
-          <div class="row align-items-start">
-            <div class="col-xl-4 col-sm-6">
-              <p class="text-nowrap">
-                {{i18n "score-card--high"}}
-              </p>
-            </div>
-            <div class="col-xl-7 col-sm-6">
-              <input id="score-card-points-high" type="number" class="form-control" value="10">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mx-3 mt-4 mb-2">
-        <div class="col-xl col-sm-12">
-          <p>
-            {{i18n "score-card--boundary-conditions"}}
-          </p>
-        </div>
-
-        <div class="col-xl col-sm-12">
-          <div class="row align-items-start">
-            <div class="col-xl-4 col-sm-6">
-              <p class="text-nowrap">
-                {{i18n "score-card--low"}}
-              </p>
-            </div>
-            <div class="col-xl-7 col-sm-6">
-              <input id="score-card-threshold-low" type="number" class="form-control" value="0" disabled>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl col-sm-12">
-          <div class="row align-items-start">
-            <div class="col-xl-4 col-sm-6">
-              <p class="text-nowrap">
-                {{i18n "score-card--medium"}}
-              </p>
-            </div>
-            <div class="col-xl-7 col-sm-6">
-              <input id="score-card-threshold-medium" type="number" class="form-control" value="5">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl col-sm-12">
-          <div class="row align-items-start">
-            <div class="col-xl-4 col-sm-6">
-              <p class="text-nowrap">
-                {{i18n "score-card--high"}}
-              </p>
-            </div>
-            <div class="col-xl-7 col-sm-6">
-              <input id="score-card-threshold-high" type="number" class="form-control" value="10">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mt-5">
-      <div class="col-xl col-sm-12">
-        <p>
-        <div class="d-inline-block color-blue font-weight-bold">{{i18n "score-card--total-score"}}: </div>
-        <div id="score-card-result-score" class="d-inline-block color-gray"></div>
-        </p>
-        <p>
-        <div class="d-inline-block color-blue font-weight-bold">{{i18n "score-card--classification"}}: </div>
-        <div id="score-card-result-risk" class="d-inline-block color-gray"></div>
-        </p>
-      </div>
-      <div class="col-xl col-sm-12">
-        <button id="score-card-print-button" class="btn btn-primary remove-on-pdf"><i class="fas fa-print"></i> {{i18n
-          "score-card--download-result"}}</button>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -245,24 +128,24 @@
         medium: parseInt($('#score-card-threshold-medium').val()),
         high: parseInt($('#score-card-threshold-high').val())
       };
-      $('#score-card-container .score-card__question:not(.d-none) input[type=radio]:checked').each(function () {
+      $('#application .score-card__question:not(.d-none) input[type=radio]:checked').each(function () {
         score += points[$(this).val()];
       });
       $('#score-card-result-score').text(score);
       $('#score-card-result-risk').text(score >= thresholds.high ? '{{i18n "score-card--high-risk"}}' : score >= thresholds.medium ? '{{i18n "score-card--medium-risk"}}' : '{{i18n "score-card--low-risk"}}');
     };
-    $('#score-card-container input[type=radio]').change(() => {
+    $('#application input[type=radio]').change(() => {
       calculateVisibleFields();
       calculateScores();
     });
-    $('#score-card-container input[type=number]').change(calculateScores);
+    $('#application input[type=number]').change(calculateScores);
     calculateVisibleFields();
     calculateScores();
 
 
     $('#score-card-print-button').click(function () {
       window.html2canvas = html2canvas;
-      var element = document.getElementById("score-card-container");
+      var element = document.getElementById("application");
       var pdf = new jspdf.jsPDF();
       pdf.html(element, {
         callback: function (doc) {

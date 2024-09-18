@@ -9,6 +9,8 @@ import accordions_area_close from "../templates/accordions_area_close";
 import accordions_area_open from "../templates/accordions_area_open";
 import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
+import card_risk_classification from "../templates/card_risk_classification";
+import card_AI_system_classification from "../templates/card_AI_system_classification";
 import container_close from "../templates/container_close";
 import container_open from "../templates/container_open";
 import form1 from "../templates/form1";
@@ -18,7 +20,6 @@ import overview_block from "../templates/overview_block";
 import pdf_frame from "../templates/pdf_frame";
 import promo_bar from "../templates/promo_bar";
 import reports_preview from "../templates/reports_preview";
-import risk_classification_card from "../templates/risk_classification_card";
 import tab_content_close from "../templates/tab_content_close";
 import tab_content_open from "../templates/tab_content_open";
 import tab_header from "../templates/tab_header";
@@ -56,7 +57,8 @@ const building_blocks: TinaField[] = [
       pdf_frame,
       promo_bar,
       reports_preview,
-      risk_classification_card,
+      card_risk_classification,
+      card_AI_system_classification,
       tab_content_open,
       tab_content_close,
       tab_header,
@@ -484,8 +486,164 @@ const building_blocks: TinaField[] = [
   },
   {
     type: "object",
-    name: "risk_classification_card",
-    label: "Score Card",
+    name: "card_AI_system_classification",
+    label: "Card AI system classification",
+    fields: [
+      {
+        name: "title",
+        label: "Title",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "content",
+        label: "Content",
+        type: "rich-text",
+        description: "",
+        required: false,
+      },
+      {
+        type: "object",
+        name: "section",
+        label: "Section",
+        list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.title };
+          },
+        },
+        fields: [
+          // {
+          //   type: "string",
+          //   name: "title",
+          //   label: "Title",
+          //   required: true,
+          // },
+          {
+            type: "object",
+            name: "questions",
+            label: "Questions",
+            list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: item?.title };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "identifier",
+                label: "Identifier",
+                required: true,
+                description:
+                  "unique identifier needed to make the options unselect other options are selected",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+                required: true,
+              },
+              {
+                type: "rich-text",
+                name: "content",
+                label: "Content",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "tooltip",
+                label: "Tooltip",
+                required: false,
+              },
+              {
+                type: "object",
+                name: "options",
+                label: "Options",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.title };
+                  },
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "value",
+                    label: "Value",
+                    required: true,
+                    options: [
+                      {
+                        value: "low",
+                        label: "Low",
+                      },
+                      {
+                        value: "medium",
+                        label: "Medium",
+                      },
+                      {
+                        value: "high",
+                        label: "High",
+                      },
+                    ],
+                  },
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    required: true,
+                  },
+                  {
+                    type: "rich-text",
+                    name: "content",
+                    label: "Content",
+                  },
+                ],
+              },
+              {
+                type: "object",
+                name: "visible_when_or",
+                label: "Visible when (OR)",
+                list: true,
+                fields: [
+                  {
+                    type: "object",
+                    name: "visible_when_and",
+                    label: "Visible when (AND)",
+                    list: true,
+                    ui: {
+                      itemProps: (item) => {
+                        return { label: `${item?.identifier}=${item?.value}` };
+                      },
+                    },
+                    fields: [
+                      {
+                        type: "string",
+                        name: "identifier",
+                        label: "Identifier",
+                        required: true,
+                      },
+                      {
+                        type: "string",
+                        name: "value",
+                        label: "Value",
+                        required: true,
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "object",
+    name: "card_risk_classification",
+    label: "Card risk classification",
     fields: [
       {
         name: "title",
