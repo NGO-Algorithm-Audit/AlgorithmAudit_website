@@ -1,11 +1,200 @@
 ---
 type: regular
 title: Documentatie voor AI-systemen
-subtitle: |
-  Open-source templates voor risicoclassificatie van AI-systemen helpen bij de publieke kennisopbouw over AI governance. Je feedback is welkom op info@algorithmaudit.eu
+subtitle: >
+  Open-source templates voor risicoclassificatie van AI-systemen helpen bij de
+  publieke kennisopbouw over AI governance. Je feedback is welkom op
+  [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu)
 image: /images/svg-illustrations/case_repository.svg
-risk_classification_card:
-  title: AI-systeem risicoclassificatie
+card_AI_system_classification:
+  title: Toepassing
+  content: |
+    Vaststellen van toepassing van het product.
+  section:
+    - questions:
+        - identifier: application1
+          title: Verboden toepassing
+          content: >
+            Wordt het product voor een van de volgende toepassingen ingezet?
+
+
+            * Biometrische identificatie op afstand in real-time in openbare
+            ruimte in het kader van rechtshandhaving \[meer info]
+
+            * Sociale evaluatie of sociale classificatie \[meer info]
+
+            * Toepassing van kwetsbaarheden van burgers (zoals economische
+            status of handicap)
+
+            * Vaststellen of een burger potentieel een misdrijf gaat plegen
+
+            * Het product maakt gebruik van een databank met gezichtsherkenning
+            of draagt hier aan bij
+
+            * Het product maakt gebruik van emotieherkenning op de werkplek of
+            in het onderwijs
+
+            * Opzettelijke manipulatie of misleiding
+          options:
+            - value: low
+              title: Nee
+              content: ''
+            - value: high
+              title: Ja
+              content: ''
+        - identifier: forbidden
+          title: Verboden
+          content: >
+            Toepassing is in strijd met de wet en/of intern beleid. Neem contact
+            op met Al compliance Officer mocht je verder in gesprek willen.
+          visible_when_or:
+            - visible_when_and:
+                - identifier: application1
+                  value: high
+        - identifier: application2
+          title: Benodigde maatregelen
+          content: >
+            Wordt er in het product gebruik gemaakt van:
+
+
+            * Beoordeling of burgers in aanmerking komen voor
+            overheidsuitkeringen en- diensten
+
+            * Opstellen van een (risico)profiel van een persoon, groep personen
+            of een gebied
+
+            * Toepassingen van biometrie voor categorisering op basis van
+            gevoelige of beschermde eigenschappen of identificatie op afstand
+
+            * Emotieherkenning
+
+            * Werkgelegenheid, personeelsbeheer en toegang tot zelfstandige
+            arbeid
+
+            * Toelating tot onderwijs
+
+            * Veiligheidscomponenten van kritieke infrastructuur
+
+            * Rechtshandhaving
+          tooltip: >-
+            Toelichting: De maatregelen zijn gebaseerd op wetgeving. Zo worden
+            in de wet een aantal risicotoepassingen geclassificeerd als 'hoog
+            risico' wanneer je daaronder valt gelden strengere maatregelen. Ook
+            zijn er maatregelen voor General Purpose Al waar veel van de
+            Generative Al toepassingen onder vallen
+          options:
+            - value: low
+              title: Nee
+              content: ''
+            - value: high
+              title: Ja
+              content: ''
+          visible_when_or:
+            - visible_when_and:
+                - identifier: application1
+                  value: low
+        - identifier: aim
+          title: Vaststellen van doel
+          content: >
+            De volgende stap is om het doel vast te stellen. Is de toepassing
+            bedoeld om:
+
+
+            * een beperkt aantal procedurele taak uit te voeren;
+
+            * een resultaat van een eerder voltooide taak van een mens te
+            verbeteren
+
+            * besluitvormingspatronen of afwijkingen van eerdere
+            besluitvormingspatronen op te sporen en is niet bedoeld om de eerder
+            voltooide menselijke beoordeling te vervangen of te beïnvloeden
+
+            * een voorbereidende taak uit te voeren in dit specifieke proces?
+          options:
+            - value: low
+              title: Nee
+              content: ''
+            - value: high
+              title: Ja
+              content: ''
+          visible_when_or:
+            - visible_when_and:
+                - identifier: application2
+                  value: high
+        - identifier: data-algorithm
+          title: Type data en algoritme
+          content: >
+            Wordt een van de volgende methoden gebruikt?
+
+
+            * Al voor algemene doeleinden (Generative Al toepassingen die
+            gebaseerd zijn op een taalmodel zoals bijvoorbeeld ChatGPT)
+
+            * Directe interactie(gesprek) met burgers zoals chatbots
+
+            * Synthetische data, zoals audio, videobeeld of tekstinhoud kan
+            genereren
+
+            * Het nemen van besluiten voor burgers
+          options:
+            - value: low
+              title: Nee
+              content: ''
+            - value: high
+              title: Ja
+              content: ''
+          visible_when_or:
+            - visible_when_and:
+                - identifier: application2
+                  value: low
+        - identifier: no-measures
+          title: Geen maatregelen
+          content: |
+            Geen maatregelen van toepassing, want lage risicocategorie
+          visible_when_or:
+            - visible_when_and:
+                - identifier: data-algorithm
+                  value: low
+            - visible_when_and:
+                - identifier: aim-pursued
+                  value: low
+        - identifier: high-risk
+          title: Hoog-risico maatregelen
+          content: >
+            Dit zijn de maatregelen die van toepassing zijn:
+
+
+            * Hyperlink naar instrumenten en contactpersonen
+
+            * Automatische email naar relevante stakeholders
+
+
+            Toelichting: Deze maatregelen zijn van toepassing omdat het een hoog
+            risico toepassing betreft.
+          visible_when_or:
+            - visible_when_and:
+                - identifier: aim
+                  value: high
+        - identifier: transparency-measures
+          title: Transparantie verplichting
+          content: >
+            Dit zijn de maatregelen die van toepassing zijn:
+
+
+            * Hyperlink naar instrumenten en contactpersonen
+
+            * Automatische email naar relevante stakeholders
+
+
+            Toelichting: Deze maatregelen zijn van toepassing omdat er extra
+            transparantieverplichtingen zijn en/of er gewerkt wordt met
+            (bijzondere) persoonsgegevens
+          visible_when_or:
+            - visible_when_and:
+                - identifier: data-algorithm
+                  value: high
+card_risk_classification:
+  title: Risicoclassificatie
   content: >
     Organisatiebreed algoritmemanagementbeleid vraagt om pragmatische kaders.
     Hierbij is een risico-georienteerde aanpak vaak leidend. Dit is in lijn met
@@ -128,7 +317,9 @@ risk_classification_card:
         - identifier: data6
           title: 6. Derde partijen
           content: >
-            Worden de uitkomsten van het algoritme gedeeld met derde partijen (bijvoorbeeld burgers, andere afdelingen of toezichthoudende partijen)?
+            Worden de uitkomsten van het algoritme gedeeld met derde partijen
+            (bijvoorbeeld burgers, andere afdelingen of toezichthoudende
+            partijen)?
           options:
             - value: low
               title: Lage impact
@@ -143,9 +334,8 @@ risk_classification_card:
         - identifier: data7
           title: 7. Financiële/reputationele schade
           content: >
-            Wat is de (geschatte) financiële- of reputatieschade als
-            het algoritme fouten bevat die tot incorrecte uitkomsten
-            leiden?
+            Wat is de (geschatte) financiële- of reputatieschade als het
+            algoritme fouten bevat die tot incorrecte uitkomsten leiden?
           options:
             - value: low
               title: Lage impact
@@ -155,19 +345,19 @@ risk_classification_card:
             - value: medium
               title: Medium impact
               content: >
-                Incorrecte uitkomsten leiden tot een gemiddelde
-                financiële en/of reputationale impactschade
+                Incorrecte uitkomsten leiden tot een gemiddelde financiële en/of
+                reputationale impactschade
             - value: high
               title: Hoge impact
               content: >
-                Incorrecte uitkomsten leiden tot een veel
-                financiële en/of reputationale impactschade. Fouten hebben
-                een grote impact op de dienstverlening van de organisatie
+                Incorrecte uitkomsten leiden tot een veel financiële en/of
+                reputationale impactschade. Fouten hebben een grote impact op de
+                dienstverlening van de organisatie
         - identifier: data8
           title: 8. Autonomie
           content: >
-            Worden er beslissingen gemaakt op basis van de uitkomsten van het AI-systeem?
-            Zo ja, op welke manier?
+            Worden er beslissingen gemaakt op basis van de uitkomsten van het
+            AI-systeem? Zo ja, op welke manier?
           tooltip: >-
             Beschrijvend of diagnostisch: Het algoritme wordt enkel gebruikt om
             te monitoren of om een gebeurtenis/beslissing uit het verleden te
@@ -190,29 +380,52 @@ risk_classification_card:
           options:
             - value: low
               title: Lage impact
-              content: |
-                Output van het AI-systeem is beschrijvende of diagnostische statistiek, wat als input fungeert voor de besluitvorming
+              content: >
+                Output van het AI-systeem is beschrijvende of diagnostische
+                statistiek, wat als input fungeert voor de besluitvorming
             - value: medium
               title: Medium impact
-              content: |
-                Output van het AI-systeem is voorspellende statistiek, wat als input fungeert voor de besluitvorming
+              content: >
+                Output van het AI-systeem is voorspellende statistiek, wat als
+                input fungeert voor de besluitvorming
             - value: high
               title: Hoge impact
-              content: |
-                Output van het AI-systeem is voorscrhijvende statistiek, of besluitvorming is volledig geautomatiseerd
+              content: >
+                Output van het AI-systeem is voorscrhijvende statistiek, of
+                besluitvorming is volledig geautomatiseerd
         - identifier: data9
           title: 9. Validatie
-          content: >
+          content: |
             Zijn de algoritmeuitkomsten gevalideerd?
           options:
             - value: low
               title: Lage impact
-              content: >
+              content: |
                 Ja, het AI-systeem is gevalideerd
             - value: high
               title: Hoge impact
-              content: >
+              content: |
                 Nee, het AI-systeem is niet gevalideerd
+overview_block:
+  title: Modeldocumentatie
+  content: >
+    Organization-wide algorithm management policy requires pragmatic frameworks.
+    A risk-oriented approach is often leading here. This is in line with
+    national and international legislation for algorithms, such as the AI
+    ​​Regulation. Below you will find an example of an algorithm scorecard for
+    public sector organizations. Based on this scorecard, algorithms can be
+    classified as high, medium or low risk.
+  icon: far fa-file
+  id: modeldocumentation
+  items:
+    - title: Welk type algoritme?
+      icon: fas fa-share-alt
+      link: '#application'
+    - title: Welke risicocategorie?
+      icon: fas fa-code-branch
+      link: '#risk-classification'
 ---
 
-{{< risk_classification_card >}}
+{{< overview_block >}}
+
+{{< card_AI_system_classification >}}
