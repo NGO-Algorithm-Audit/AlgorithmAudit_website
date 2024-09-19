@@ -155,9 +155,8 @@ card_AI_system_classification:
             - visible_when_and:
                 - identifier: data-algorithm
                   value: low
-          visible_when_or:
             - visible_when_and:
-                - identifier: aim
+                - identifier: aim-pursued
                   value: low
         - identifier: high-risk
           title: Hoog-risico maatregelen
@@ -419,10 +418,10 @@ overview_block:
   icon: far fa-file
   id: modeldocumentation
   items:
-    - title: Toepassing
+    - title: Welk type algoritme?
       icon: fas fa-share-alt
       link: '#application'
-    - title: Risicoclassificatie
+    - title: Welke risicocategorie?
       icon: fas fa-code-branch
       link: '#risk-classification'
 ---
@@ -430,5 +429,3 @@ overview_block:
 {{< overview_block >}}
 
 {{< card_AI_system_classification >}}
-
-{{< card_risk_classification >}}

@@ -247,6 +247,4 @@ overview_block:
 
 {{< overview_block >}}
 
-{{< card_AI_system_classification >}}
-
 {{< card_risk_classification >}}
