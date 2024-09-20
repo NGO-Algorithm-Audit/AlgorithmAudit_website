@@ -58,7 +58,7 @@
 	transition: max-height 0.2s ease-out;
 }
 
-#score-card-container label {
+.score-card--container label {
 	width: 100%;
 }
 
@@ -78,4 +78,15 @@
 .card-input-element:checked+.card-input {
 	box-shadow: 0 0 1px 1px #005aa7;
 	background-color: #deecf7;
+}
+
+
+.information-button {
+	border-style:solid; 
+	border-width:1px;
+	border-color:#005aa7;
+	color:#005aa7;
+	border-radius: 25px;
+	width: 23px;
+	background-color: #fff;
 }

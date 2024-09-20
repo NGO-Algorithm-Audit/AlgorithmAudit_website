@@ -1,28 +1,30 @@
 import { defineConfig } from "tinacms";
-import home from "./collections/pages/home";
-import algoprudence_cases from "./collections/pages/algoprudence_cases";
-import algoprudence_repository from "./collections/pages/algoprudence_repository";
-import algoprudence_submit_a_case from "./collections/pages/algoprudence_submit_a_case";
-import algoprudence_how_we_work from "./collections/pages/algoprudence_how_we_work";
-import technical_tools_BDT from "./collections/pages/technical_tools_BDT";
-import technical_tools_SDG from "./collections/pages/technical_tools_SDG";
-import technical_tools_documentation from "./collections/pages/technical_tools_documentation";
-import knowledge_platform_standards from "./collections/pages/knowledge_platform_standards";
-import knowledge_platform_policy_observatory from "./collections/pages/knowledge_platform_policy_observatory";
-import knowledge_platform_overview from "./collections/pages/knowledge_platform_overview"
-import knowledge_platform_items from "./collections/pages/knowledge_platform_items";
-import knowledge_platform_project_work from "./collections/pages/knowledge_platform_project-work";
-import events_activities from "./collections/pages/events_activities";
-import events_press_room from "./collections/pages/events_press_room";
-import events_registration from "./collections/pages/events_registration";
+import about_boards from "./collections/pages/about_boards";
 import about_contact from "./collections/pages/about_contact";
 import about_faq from "./collections/pages/about_faq";
 import about_teams from "./collections/pages/about_teams";
-import about_boards from "./collections/pages/about_boards";
 import about_vacancies from "./collections/pages/about_vacancies";
+import algoprudence_cases from "./collections/pages/algoprudence_cases";
+import algoprudence_how_we_work from "./collections/pages/algoprudence_how_we_work";
+import algoprudence_repository from "./collections/pages/algoprudence_repository";
+import algoprudence_submit_a_case from "./collections/pages/algoprudence_submit_a_case";
+import events_activities from "./collections/pages/events_activities";
+import events_press_room from "./collections/pages/events_press_room";
+import events_registration from "./collections/pages/events_registration";
+import home from "./collections/pages/home";
+import knowledge_platform_items from "./collections/pages/knowledge_platform_items";
+import knowledge_platform_overview from "./collections/pages/knowledge_platform_overview";
+import knowledge_platform_policy_observatory from "./collections/pages/knowledge_platform_policy_observatory";
+import knowledge_platform_project_work from "./collections/pages/knowledge_platform_project-work";
+import knowledge_platform_standards from "./collections/pages/knowledge_platform_standards";
 import privacy_policy from "./collections/pages/privacy_policy";
+import technical_tools_BDT from "./collections/pages/technical_tools_BDT";
+import technical_tools_SDG from "./collections/pages/technical_tools_SDG";
+import technical_tools_documentation from "./collections/pages/technical_tools_documentation";
+import technical_tools_documentation_item from "./collections/pages/technical_tools_documentation_item";
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
+const branch =
+  process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 
 export default defineConfig({
   branch,
@@ -50,6 +52,7 @@ export default defineConfig({
       technical_tools_BDT,
       technical_tools_SDG,
       technical_tools_documentation,
+      technical_tools_documentation_item,
       knowledge_platform_standards,
       knowledge_platform_policy_observatory,
       knowledge_platform_overview,
@@ -63,7 +66,7 @@ export default defineConfig({
       about_teams,
       about_boards,
       about_vacancies,
-      privacy_policy
+      privacy_policy,
     ],
   },
 });
