@@ -1,7 +1,7 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ with .Page.Params.card_risk_classification }}
 
-<div class="container-fluid mt-5 p-0" id="risk-classification">
+<div class="container-fluid mt-5 p-0 score-card--container" id="risk-classification">
   <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">
 
     <!-- Title and icon -->
@@ -58,7 +58,7 @@
             <input type="radio" name={{$input_name}} class="card-input-element" value={{.value}} />
             <div class="card card-input">
               <div class="card-body">
-                <h6 class="card-title">{{.title}}</h6>
+                <h4 class="card-title">{{.title}}</h4>
                 <p class="card-text">
                   {{.content | markdownify}}
                 </p>
