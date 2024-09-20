@@ -8,12 +8,13 @@ const tooltip: RichTextTemplate = {
   },
   fields: [
     {
-      name: "content",
+      name: "tooltip_content",
       label: "Tooltip",
       type: "string",
       description: "The content of the tooltip",
       required: true,
     },
   ],
+  inline: true,
 };
 export default tooltip;

@@ -504,7 +504,6 @@ const building_blocks: TinaField[] = [
         type: "rich-text",
         description: "",
         required: false,
-        // templates: [tooltip],
       },
       {
         type: "object",
@@ -553,7 +552,7 @@ const building_blocks: TinaField[] = [
                 name: "content",
                 label: "Content",
                 required: true,
-                // templates: [tooltip],
+                templates: [tooltip],
               },
               {
                 type: "string",
@@ -602,7 +601,7 @@ const building_blocks: TinaField[] = [
                     type: "rich-text",
                     name: "content",
                     label: "Content",
-                    // templates: [tooltip],
+                    templates: [tooltip],
                   },
                 ],
               },
@@ -711,6 +710,7 @@ const building_blocks: TinaField[] = [
                 name: "content",
                 label: "Content",
                 required: true,
+                templates: [tooltip],
               },
               {
                 type: "string",
@@ -759,6 +759,7 @@ const building_blocks: TinaField[] = [
                     type: "rich-text",
                     name: "content",
                     label: "Content",
+                    templates: [tooltip],
                   },
                 ],
               },
