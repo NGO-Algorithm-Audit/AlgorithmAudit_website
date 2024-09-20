@@ -14,4 +14,4 @@ Use typescript
 Dont override existing config files.
 
 Run the site with
-`npx tinacms dev -c "hugo server -D -p 5173"`
+`npm run start`

@@ -19,13 +19,11 @@ card_AI_system_classification:
 
 
             * Biometrische identificatie op afstand in real-time in openbare
-            ruimte in het kader van rechtshandhaving
+            ruimte in het kader van rechtshandhaving {{< tooltip
+            tooltip_content="Test tooltip" >}}
 
-
-            {{< tooltip tooltip_content="Test tooltip" >}}
-
-
-            * Sociale evaluatie of sociale classificatie \[meer info]
+            * Sociale evaluatie of sociale classificatie {{< tooltip
+            tooltip_content="Test2" >}}
 
             * Toepassing van kwetsbaarheden van burgers (zoals economische
             status of handicap)
@@ -42,8 +40,7 @@ card_AI_system_classification:
           options:
             - value: low
               title: Nee
-              content: |
-                {{< tooltip tooltip_content="Wat betekent nee?" >}}
+              content: ''
             - value: high
               title: Ja
               content: ''

@@ -57,7 +57,7 @@
           <label>
             <input type="radio" name={{$input_name}} class="card-input-element" value={{.value}} />
             <div class="card card-input">
-              <div class="card-body">
+              <div class="card-body {{ if not .content }}d-flex justify-content-center{{end}}">
                 <h4 class="card-title">{{.title}}</h4>
                 <p class="card-text">
                   {{.content | markdownify}}
