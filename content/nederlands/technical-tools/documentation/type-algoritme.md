@@ -38,10 +38,10 @@ card_AI_system_classification:
           options:
             - value: low
               title: Nee
-              content: ""
+              content: ''
             - value: high
               title: Ja
-              content: ""
+              content: ''
         - identifier: forbidden
           title: Verboden
           content: >
@@ -85,10 +85,10 @@ card_AI_system_classification:
           options:
             - value: low
               title: Nee
-              content: ""
+              content: ''
             - value: high
               title: Ja
-              content: ""
+              content: ''
           visible_when_or:
             - visible_when_and:
                 - identifier: application1
@@ -113,10 +113,10 @@ card_AI_system_classification:
           options:
             - value: low
               title: Nee
-              content: ""
+              content: ''
             - value: high
               title: Ja
-              content: ""
+              content: ''
           visible_when_or:
             - visible_when_and:
                 - identifier: application2
@@ -139,10 +139,10 @@ card_AI_system_classification:
           options:
             - value: low
               title: Nee
-              content: ""
+              content: ''
             - value: high
               title: Ja
-              content: ""
+              content: ''
           visible_when_or:
             - visible_when_and:
                 - identifier: application2
@@ -195,7 +195,7 @@ card_AI_system_classification:
                   value: high
 overview_block:
   title: Overzicht
-  content: ""
+  content: ''
   icon: null
   id: overzicht
   items:

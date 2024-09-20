@@ -9,8 +9,8 @@ import accordions_area_close from "../templates/accordions_area_close";
 import accordions_area_open from "../templates/accordions_area_open";
 import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
-import card_risk_classification from "../templates/card_risk_classification";
 import card_AI_system_classification from "../templates/card_AI_system_classification";
+import card_risk_classification from "../templates/card_risk_classification";
 import container_close from "../templates/container_close";
 import container_open from "../templates/container_open";
 import form1 from "../templates/form1";
@@ -26,6 +26,7 @@ import tab_header from "../templates/tab_header";
 import team from "../templates/team";
 import team1 from "../templates/team1";
 import team2 from "../templates/team2";
+import tooltip from "../templates/tooltip";
 import web_app from "../templates/web_app";
 import image from "./image";
 import subtitle from "./subtitle";
@@ -65,6 +66,7 @@ const building_blocks: TinaField[] = [
       team,
       team1,
       team2,
+      tooltip,
       web_app,
     ],
   },
@@ -502,6 +504,7 @@ const building_blocks: TinaField[] = [
         type: "rich-text",
         description: "",
         required: false,
+        // templates: [tooltip],
       },
       {
         type: "object",
@@ -550,6 +553,7 @@ const building_blocks: TinaField[] = [
                 name: "content",
                 label: "Content",
                 required: true,
+                // templates: [tooltip],
               },
               {
                 type: "string",
@@ -598,6 +602,7 @@ const building_blocks: TinaField[] = [
                     type: "rich-text",
                     name: "content",
                     label: "Content",
+                    // templates: [tooltip],
                   },
                 ],
               },
@@ -1119,7 +1124,6 @@ const building_blocks: TinaField[] = [
         name: "content",
         label: "Content",
         isBody: false,
-        templates: [],
       },
     ],
   },
