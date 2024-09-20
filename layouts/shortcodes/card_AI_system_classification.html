@@ -99,7 +99,7 @@
                 return;
               }
               const [data, value] = andCondition.split('=');
-              const input = document.querySelector(`input[name=${data}]:checked`);
+              const input = document.querySelector(`.score-card__question:not(.d-none) input[name=${data}]:checked`);
               if (!input || input.value !== value) {
                 andShow = false;
               }

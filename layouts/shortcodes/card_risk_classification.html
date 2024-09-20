@@ -216,7 +216,7 @@
                 return;
               }
               const [data, value] = andCondition.split('=');
-              const input = document.querySelector(`input[name=${data}]:checked`);
+              const input = document.querySelector(`.score-card__question:not(.d-none) input[name=${data}]:checked`);
               if (!input || input.value !== value) {
                 andShow = false;
               }
@@ -245,7 +245,7 @@
         medium: parseInt($('#score-card-threshold-medium').val()),
         high: parseInt($('#score-card-threshold-high').val())
       };
-      $('#score-card-container .score-card__question:not(.d-none) input[type=radio]:checked').each(function () {
+      $('.score-card__question:not(.d-none) input[type=radio]:checked').each(function () {
         score += points[$(this).val()];
       });
       $('#score-card-result-score').text(score);
