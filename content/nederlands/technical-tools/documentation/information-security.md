@@ -45,7 +45,7 @@ card_AI_system_classification:
           title: Informatiebeveiliging
           content: |
             Logging
-overview_block:
+overview_block1:
   title: Overzicht
   content: ''
   icon: null
@@ -53,9 +53,9 @@ overview_block:
   items:
     - title: Terug naar overzicht
       icon: fa fa-file
-      link: /nl/technical-tools/documentation/#modeldocumentation
+      link: /nl/technical-tools/documentation/#organisation-wide
 ---
 
-{{< overview_block >}}
+{{< overview_block1 >}}
 
 {{< card_AI_system_classification >}}

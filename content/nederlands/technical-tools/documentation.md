@@ -13,7 +13,7 @@ subtitle: >
   [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
-overview_block:
+overview_block1:
   title: Documentatie en classificatie tool
   content: >
     Organisatiebreed algoritmemanagementbeleid vraagt om pragmatische kaders.
@@ -23,7 +23,7 @@ overview_block:
     vragenlijsten die organisaties helpen om algoritmes en AI-systemen te
     indexeren, documenteren en classificeren.
   icon: far fa-file
-  id: modeldocumentation
+  id: organisation-wide
   items:
     - title: 1. Intakeformulier
       icon: fa fa-plus
@@ -40,18 +40,31 @@ overview_block:
     - title: 5. Informatiebeveiliging
       icon: fa fa-lock
       link: information-security/#form
-    - title: X. AI Verordening risicoclassificatie
+overview_block2:
+  title: AI Verordening
+  content: >
+    Deze dynamische vragenlijsten helpen je grip te krijgen op de AI
+    Verordening.
+  icon: fas fa-gavel
+  id: ai-act
+  items:
+    - title: AI-systeem classificatie
       icon: fas fa-code-branch
-      link: type-algoritme/#form
+      link: AI-system-classification/#form
+    - title: Risicoclassificatie
+      icon: fas fa-mountain
+      link: risk-classification/#form
 ---
 
 {{< container_open icon="fas fa-wrench" title="Documentatie en classificatie tool" id="landing-container" >}}
 
 Maak gebruik van dynamische vragenlijsten om algoritmes en AI-systemen te documenten en classificeren. De tool bestaat uit twee componenten:
 
-* Dynamische vragenlijsten voor organisatiebreed algoritme managementbeleid
-* AI Verordening beslisbomen voor AI-systeem en risicoclassificatie
+* [Dynamische vragenlijsten voor organisatiebreed algoritme managementbeleid](#organisation-wide)
+* [AI Verordening beslisbomen voor AI-systeem en risicoclassificatie](#ai-act)
 
 {{< container_close >}}
 
-{{< overview_block >}}
+{{< overview_block1 >}}
+
+{{< overview_block2 >}}

@@ -6,7 +6,7 @@ subtitle: >
   public knowledge building for AI governance. Please send your feedback to
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu)
 image: /images/svg-illustrations/case_repository.svg
-overview_block:
+overview_block1:
   title: Model documentation
   content: >
     Organization-wide algorithm management policy requires pragmatic frameworks.
@@ -26,4 +26,4 @@ overview_block:
       link: "risk-classification"
 ---
 
-{{< overview_block >}}
+{{< overview_block1 >}}

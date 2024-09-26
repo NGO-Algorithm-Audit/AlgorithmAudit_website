@@ -13,15 +13,16 @@ subtitle: >
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
 card_AI_system_classification:
-  title: Toepassing
-  content: |
-    Vaststellen van toepassing van het product.
+  title: Risicoclassificatie van AI-systeem
+  content: >
+    Stel de risicocategorie van het AI-systeem vast door middel van onderstaande
+    dynamische vragenlijst.
   section:
     - questions:
         - identifier: application1
           title: Verboden toepassing
           content: >
-            Wordt het product voor een van de volgende toepassingen ingezet?
+            Wordt het AI-systeem voor een van de volgende toepassingen ingezet?
 
 
             * Biometrische identificatie op afstand in real-time in openbare
@@ -60,9 +61,9 @@ card_AI_system_classification:
                 - identifier: application1
                   value: high
         - identifier: application2
-          title: Benodigde maatregelen
+          title: Toepassing
           content: >
-            Wordt er in het product gebruik gemaakt van:
+            Wordt het AI-systeem ingezet voor een van de volgende toepassingen:
 
 
             * Beoordeling of burgers in aanmerking komen voor
@@ -132,13 +133,13 @@ card_AI_system_classification:
         - identifier: data-algorithm
           title: Type data en algoritme
           content: >
-            Wordt een van de volgende methoden gebruikt?
+            Wordt een van de volgende methoden gebruikt in het AI-systeem?
 
 
-            * Al voor algemene doeleinden (Generative Al toepassingen die
-            gebaseerd zijn op een taalmodel zoals bijvoorbeeld ChatGPT)
+            * Voor algemene doeleinden (Generative Al toepassingen die
+            gebaseerd zijn op een taalmodel zoals ChatGPT)
 
-            * Directe interactie(gesprek) met burgers zoals chatbots
+            * Directe interactie met burgers, zoals chatbots
 
             * Synthetische data, zoals audio, videobeeld of tekstinhoud kan
             genereren
@@ -201,7 +202,7 @@ card_AI_system_classification:
             - visible_when_and:
                 - identifier: data-algorithm
                   value: high
-overview_block:
+overview_block1:
   title: Overzicht
   content: ''
   icon: null
@@ -209,9 +210,9 @@ overview_block:
   items:
     - title: Terug naar overzicht
       icon: fa fa-file
-      link: /nl/technical-tools/documentation/#modeldocumentation
+      link: /nl/technical-tools/documentation/#ai-act
 ---
 
-{{< overview_block >}}
+{{< overview_block1 >}}
 
 {{< card_AI_system_classification >}}

@@ -1,7 +1,7 @@
 import { RichTextTemplate } from "@tinacms/schema-tools/dist/types/index";
-const overview_block: RichTextTemplate = {
-  name: "overview_block",
-  label: "Overview Block",
+const overview_block1: RichTextTemplate = {
+  name: "overview_block1",
+  label: "Overview Block #1",
   match: {
     start: "{{<",
     end: ">}}",
@@ -16,4 +16,4 @@ const overview_block: RichTextTemplate = {
     },
   ],
 };
-export default overview_block;
+export default overview_block1;

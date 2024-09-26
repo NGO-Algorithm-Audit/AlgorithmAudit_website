@@ -16,7 +16,8 @@ import container_open from "../templates/container_open";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
 import template_image from "../templates/image";
-import overview_block from "../templates/overview_block";
+import overview_block1 from "../templates/overview_block1";
+import overview_block2 from "../templates/overview_block2";
 import pdf_frame from "../templates/pdf_frame";
 import promo_bar from "../templates/promo_bar";
 import reports_preview from "../templates/reports_preview";
@@ -54,7 +55,8 @@ const building_blocks: TinaField[] = [
       form1,
       form2,
       template_image,
-      overview_block,
+      overview_block1,
+      overview_block2,
       pdf_frame,
       promo_bar,
       reports_preview,
@@ -883,8 +885,74 @@ const building_blocks: TinaField[] = [
   },
   {
     type: "object",
-    name: "overview_block",
-    label: "Overview block",
+    name: "overview_block1",
+    label: "Overview block #1",
+    fields: [
+      {
+        type: "string",
+        name: "title",
+        label: "Title",
+        required: true,
+      },
+      {
+        type: "rich-text",
+        name: "content",
+        label: "Content",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "icon",
+        label: "Icon",
+        description:
+          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+        required: false,
+      },
+      {
+        type: "string",
+        name: "id",
+        label: "ID",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: false,
+      },
+      {
+        type: "object",
+        name: "items",
+        label: "Items",
+        list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.title };
+          },
+        },
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "icon",
+            label: "Icon",
+            required: true,
+            description:
+              "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+          },
+          {
+            type: "string",
+            name: "link",
+            label: "Link",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "object",
+    name: "overview_block2",
+    label: "Overview block #2",
     fields: [
       {
         type: "string",

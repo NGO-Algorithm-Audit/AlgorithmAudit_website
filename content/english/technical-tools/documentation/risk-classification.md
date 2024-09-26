@@ -221,7 +221,7 @@ card_risk_classification:
               title: High impact
               content: |
                 No, the AI ​​system has not been validated.
-overview_block:
+overview_block1:
   title: Overview
   content: ""
   icon: null
@@ -232,6 +232,6 @@ overview_block:
       link: /technical-tools/documentation/
 ---
 
-{{< overview_block >}}
+{{< overview_block1 >}}
 
 {{< card_risk_classification >}}

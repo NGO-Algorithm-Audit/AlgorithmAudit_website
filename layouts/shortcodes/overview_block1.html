@@ -1,0 +1,44 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ with .Page.Params.overview_block1 }}
+
+<div class="container-fluid mt-5 p-0" id="{{.id}}">
+    <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">
+
+        <!-- Title and icon -->
+        <h3 class="">
+            <span class="{{.icon}} icon mb-4 pl-5 remove-on-pdf"></span>
+            {{.title}}
+        </h3>
+
+        <div class="row mt-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p>{{ .content | markdownify }}</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            {{ range .items }}
+            <div class="col-md-6 col-sm-12 my-3">
+                <div class="row h-100">
+                    <div class="col-2"></div>
+                    <a style="border-radius: 15%;" class="col-8 clickable-wrapper bg-lightblue pt-2" 
+                        href="{{.link }}">
+                        <div class="row my-5">
+                            <div class="col d-flex align-items-center justify-content-center display-4">
+                                <span class={{.icon}}></span>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col d-flex align-items-center justify-content-center display-4">
+                                <h4>{{.title}}</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{end}}

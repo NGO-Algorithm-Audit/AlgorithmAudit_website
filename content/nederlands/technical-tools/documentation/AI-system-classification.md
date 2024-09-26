@@ -12,38 +12,10 @@ subtitle: >
   [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
-form1:
-  title: Intake
-  button_text: Meld aan
-  backend_link: aa
-  id: '#form'
-  questions:
-    - label: |
-        Naam van product
-      id: name
-      required: true
-      type: text
-      placeholder: Naam
-form2:
-  title: Sturing en verantwoording
-  content: ''
-  button_text: Weg
-  backend_link: 'https://formspree.io/f/xeojyqry'
-  id: roles-and-responsibilities
-  questions:
-    - label: Beoogde doel
-      id: aim-pursued
-      type: textarea
 card_AI_system_classification:
-  title: Privacy
+  title: AI-systeem classificatie
   content: |
-    Informatie over gegevensverwerking
-  section:
-    - questions:
-        - identifier: application1
-          title: DPIA
-          content: |
-            Hello
+    Under construction
 overview_block1:
   title: Overzicht
   content: ''
@@ -52,7 +24,7 @@ overview_block1:
   items:
     - title: Terug naar overzicht
       icon: fa fa-file
-      link: /nl/technical-tools/documentation/#organisation-wide
+      link: /nl/technical-tools/documentation/#ai-act
 ---
 
 {{< overview_block1 >}}
