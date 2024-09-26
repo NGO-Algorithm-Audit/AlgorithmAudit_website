@@ -1,7 +1,7 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{ with .Page.Params.card_AI_system_classification }}
 
-<div class="container-fluid mt-5 p-0 score-card--container" id="application">
+<div class="container-fluid mt-5 p-0 score-card--container" id="form">
   <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">
 
     <!-- Title and icon -->
@@ -128,24 +128,24 @@
         medium: parseInt($('#score-card-threshold-medium').val()),
         high: parseInt($('#score-card-threshold-high').val())
       };
-      $('#application .score-card__question:not(.d-none) input[type=radio]:checked').each(function () {
+      $('#form .score-card__question:not(.d-none) input[type=radio]:checked').each(function () {
         score += points[$(this).val()];
       });
       $('#score-card-result-score').text(score);
       $('#score-card-result-risk').text(score >= thresholds.high ? '{{i18n "score-card--high-risk"}}' : score >= thresholds.medium ? '{{i18n "score-card--medium-risk"}}' : '{{i18n "score-card--low-risk"}}');
     };
-    $('#application input[type=radio]').change(() => {
+    $('#form input[type=radio]').change(() => {
       calculateVisibleFields();
       calculateScores();
     });
-    $('#application input[type=number]').change(calculateScores);
+    $('#form input[type=number]').change(calculateScores);
     calculateVisibleFields();
     calculateScores();
 
 
     $('#score-card-print-button').click(function () {
       window.html2canvas = html2canvas;
-      var element = document.getElementById("application");
+      var element = document.getElementById("form");
       var pdf = new jspdf.jsPDF();
       pdf.html(element, {
         callback: function (doc) {
