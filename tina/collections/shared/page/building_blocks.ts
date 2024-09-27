@@ -341,6 +341,8 @@ const building_blocks: TinaField[] = [
                         type: "string",
                         name: "identifier",
                         label: "Identifier",
+                        description:
+                          "Use the identifier of the Question for radio buttons, and use the ID of the option for checkboxes",
                         required: true,
                       },
                       {
@@ -358,18 +360,46 @@ const building_blocks: TinaField[] = [
         ],
       },
       {
-        name: "button_text",
-        label: "Button text",
-        type: "string",
-        description: "",
+        type: "object",
+        name: "complete_form_options",
+        label: "Complete form options",
         required: true,
-      },
-      {
-        name: "backend_link",
-        label: "Back end link",
-        type: "string",
-        description: "",
-        required: true,
+        fields: [
+          {
+            type: "string",
+            name: "type",
+            label: "Type",
+            required: true,
+            options: [
+              {
+                value: "print",
+                label: "Print",
+              },
+              {
+                value: "submit",
+                label: "Submit",
+              },
+              {
+                value: "redirect",
+                label: "Redirect",
+              },
+            ],
+          },
+          {
+            name: "button_text",
+            label: "Button text",
+            type: "string",
+            description: "",
+            required: true,
+          },
+          {
+            name: "backend_link",
+            label: "Back end link (Required if you want to submit the data)",
+            type: "string",
+            description: "",
+            required: false,
+          },
+        ],
       },
     ],
   },
