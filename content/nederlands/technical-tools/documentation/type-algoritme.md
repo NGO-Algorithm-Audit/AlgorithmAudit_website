@@ -8,8 +8,8 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 dynamic_form_engine:
   - title: Toepassing
-    id: "application"
-    icon: "far fa-folder"
+    id: application
+    icon: far fa-folder
     content: |
       Vaststellen van toepassing van het product.
     section:
@@ -42,16 +42,18 @@ dynamic_form_engine:
             options:
               - value: low
                 title: Nee
-                content: ""
+                content: ''
               - value: high
                 title: Ja
-                content: ""
+                content: ''
+            type: radio
           - identifier: forbidden
             title: Verboden
             content: >
               Toepassing is in strijd met de wet en/of intern beleid. Neem
               contact op met Al compliance Officer mocht je verder in gesprek
               willen.
+            type: radio
             visible_when_or:
               - visible_when_and:
                   - identifier: application1
@@ -90,10 +92,11 @@ dynamic_form_engine:
             options:
               - value: low
                 title: Nee
-                content: ""
+                content: ''
               - value: high
                 title: Ja
-                content: ""
+                content: ''
+            type: radio
             visible_when_or:
               - visible_when_and:
                   - identifier: application1
@@ -119,10 +122,11 @@ dynamic_form_engine:
             options:
               - value: low
                 title: Nee
-                content: ""
+                content: ''
               - value: high
                 title: Ja
-                content: ""
+                content: ''
+            type: radio
             visible_when_or:
               - visible_when_and:
                   - identifier: application2
@@ -145,10 +149,11 @@ dynamic_form_engine:
             options:
               - value: low
                 title: Nee
-                content: ""
+                content: ''
               - value: high
                 title: Ja
-                content: ""
+                content: ''
+            type: radio
             visible_when_or:
               - visible_when_and:
                   - identifier: application2
@@ -157,6 +162,7 @@ dynamic_form_engine:
             title: Geen maatregelen
             content: |
               Geen maatregelen van toepassing, want lage risicocategorie
+            type: radio
             visible_when_or:
               - visible_when_and:
                   - identifier: data-algorithm
@@ -177,6 +183,7 @@ dynamic_form_engine:
 
               Toelichting: Deze maatregelen zijn van toepassing omdat het een
               hoog risico toepassing betreft.
+            type: radio
             visible_when_or:
               - visible_when_and:
                   - identifier: aim
@@ -195,21 +202,22 @@ dynamic_form_engine:
               Toelichting: Deze maatregelen zijn van toepassing omdat er extra
               transparantieverplichtingen zijn en/of er gewerkt wordt met
               (bijzondere) persoonsgegevens
+            type: radio
             visible_when_or:
               - visible_when_and:
                   - identifier: data-algorithm
                     value: high
 overview_block:
-  title: Overzicht
-  content: ""
-  icon: null
-  id: overzicht
-  items:
-    - title: Terug naar overzicht
-      icon: fa fa-file
-      link: /nl/technical-tools/documentation/
+  - title: Overzicht
+    content: ''
+    icon: null
+    id: overzicht
+    items:
+      - title: Terug naar overzicht
+        icon: fa fa-file
+        link: /nl/technical-tools/documentation/
 ---
 
-{{< overview_block >}}
+{{< overview_block index="0" >}}
 
-{{< dynamic_form_engine form_entry="0" >}}
+{{< dynamic_form_engine index="0" >}}

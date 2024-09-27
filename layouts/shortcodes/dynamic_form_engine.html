@@ -1,5 +1,5 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-{{$param := int (.Get "form_entry")}}
+{{$param := int (.Get "index")}}
 {{ with index .Page.Params.dynamic_form_engine $param }}
 <div class="container-fluid mt-5 p-0 score-card--container" id="{{.id}}">
   <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">

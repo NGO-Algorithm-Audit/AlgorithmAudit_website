@@ -837,6 +837,12 @@ const building_blocks: TinaField[] = [
     type: "object",
     name: "overview_block",
     label: "Overview block",
+    list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.title };
+      },
+    },
     fields: [
       {
         type: "string",

@@ -1,5 +1,6 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-{{ with .Page.Params.overview_block }}
+{{$param := int (.Get "index")}}
+{{ with index .Page.Params.overview_block $param }}
 
 <div class="container-fluid mt-5 p-0" id="{{.id}}">
     <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">

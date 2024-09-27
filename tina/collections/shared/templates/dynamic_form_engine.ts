@@ -15,7 +15,7 @@ const template: RichTextTemplate = {
       required: false,
     },
     {
-      name: "form_entry",
+      name: "index",
       label: "Index of the form entry",
       type: "string",
       description:
