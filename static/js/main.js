@@ -318,6 +318,9 @@ function displayFile(ID) {
 document.addEventListener("DOMContentLoaded", function (event) {
   // Your code to run since DOM is loaded and ready
   $(function () {
+    $('[data-toggle="tooltip"').click(function (e) {
+      e.preventDefault();
+    });
     $('[data-toggle="tooltip"]').tooltip();
   });
 });
