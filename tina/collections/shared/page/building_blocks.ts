@@ -231,7 +231,7 @@ const building_blocks: TinaField[] = [
               {
                 type: "object",
                 name: "options",
-                label: "Options",
+                label: "Options (only for radio buttons and checkboxes)",
                 list: true,
                 ui: {
                   itemProps: (item) => {
@@ -241,23 +241,15 @@ const building_blocks: TinaField[] = [
                 fields: [
                   {
                     type: "string",
+                    name: "id",
+                    label: "ID (only for checkboxes)",
+                    required: true,
+                  },
+                  {
+                    type: "string",
                     name: "value",
                     label: "Value",
                     required: true,
-                    options: [
-                      {
-                        value: "low",
-                        label: "Low",
-                      },
-                      {
-                        value: "medium",
-                        label: "Medium",
-                      },
-                      {
-                        value: "high",
-                        label: "High",
-                      },
-                    ],
                   },
                   {
                     type: "string",
@@ -272,6 +264,61 @@ const building_blocks: TinaField[] = [
                     templates: [tooltip],
                   },
                 ],
+              },
+
+              {
+                name: "file_upload_text",
+                label: "File upload text (only for file upload)",
+                type: "string",
+                description: "Text displayed in file upload field",
+                required: false,
+              },
+              {
+                type: "boolean",
+                name: "required",
+                label: "required",
+              },
+              {
+                type: "string",
+                name: "file_type",
+                label: "File type (e.g, .docx, .pdf)",
+              },
+              {
+                type: "string",
+                name: "type",
+                label: "Type",
+                required: true,
+                options: [
+                  {
+                    value: "text",
+                    label: "Text box",
+                  },
+                  {
+                    value: "radio",
+                    label: "Radio box",
+                  },
+                  {
+                    value: "checkbox",
+                    label: "Check box",
+                  },
+                  {
+                    value: "textarea",
+                    label: "Text area",
+                  },
+                  {
+                    value: "file",
+                    label: "File",
+                  },
+                  {
+                    value: "email",
+                    label: "Email",
+                  },
+                ],
+              },
+              {
+                type: "string",
+                name: "placeholder",
+                label: "Placeholder",
               },
               {
                 type: "object",
@@ -309,6 +356,20 @@ const building_blocks: TinaField[] = [
             ],
           },
         ],
+      },
+      {
+        name: "button_text",
+        label: "Button text",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "backend_link",
+        label: "Back end link",
+        type: "string",
+        description: "",
+        required: true,
       },
     ],
   },

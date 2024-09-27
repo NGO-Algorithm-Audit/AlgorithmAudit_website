@@ -21,65 +21,121 @@
       <h4>{{.title}}</h4>
     </div>
 
-    {{ range .questions }}
+    <form action="{{ .backend_link | safeURL }}" method="POST" enctype="multipart/form-data">
+      {{ range .questions }}
+      {{ $input := . }}
+
+      {{ $visibilityCondition := "" }}
+      {{ range .visible_when_or }}
+      {{ range .visible_when_and }}
+      {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" .value | printf "%s" }}
+      {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" "=" | printf "%s" }}
+      {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" .identifier | printf "%s" }}
+      {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" "&&" | printf "%s" }}
+      {{ end }}
+      {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" "||" | printf "%s" }}
+      {{ end }}
 
 
+      <div class="score-card__question" {{if $visibilityCondition}}data-show-when="{{$visibilityCondition}}" {{end}}>
+        <h5>
+          {{ .title }}
+          {{if .required}}*{{end}}
+          {{ if .tooltip }}
+          <button class="remove-on-pdf information-button mt-0" data-toggle="tooltip" data-placement="right"
+            title={{.tooltip}}>
+            i
+          </button>
+          {{ end }}
+        </h5>
 
-    {{ $visibilityCondition := "" }}
-    {{ range .visible_when_or }}
-    {{ range .visible_when_and }}
-    {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" .value | printf "%s" }}
-    {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" "=" | printf "%s" }}
-    {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" .identifier | printf "%s" }}
-    {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" "&&" | printf "%s" }}
-    {{ end }}
-    {{ $visibilityCondition = printf "%s" $visibilityCondition | printf "%s%s" "||" | printf "%s" }}
-    {{ end }}
-    <div class="score-card__question" {{if $visibilityCondition}}data-show-when="{{$visibilityCondition}}" {{end}}>
-      <h5>
-        {{ .title }}
-        {{ if .tooltip }}
-        <button class="remove-on-pdf information-button mt-0" data-toggle="tooltip" data-placement="right"
-          title={{.tooltip}}>
-          i
-        </button>
-        {{ end }}
-      </h5>
+        <p>
+          {{ .content | markdownify }}
+        </p>
 
-      <p>
-        {{ .content | markdownify }}
-      </p>
+        <div class="row mb-4">
+          <!-- text area -->
+          {{ if eq .type "textarea" }}
+          <div class="col-md col-sm-12">
+            <textarea type="text" class="form-control" id="{{.id}}" name="{{.label}}" {{if .required}} required {{end}}
+              rows="4" cols="50"></textarea>
+          </div>
 
-      <div class="row mb-4">
-        {{ $input_name := .identifier }}
-        {{ range .options }}
-        <div class="col-md col-sm-12">
-          <label>
-            <input type="radio" name={{$input_name}} class="card-input-element" value={{.value}} />
-            <div class="card card-input">
-              <div class="card-body {{ if not .content }}d-flex justify-content-center{{end}}">
-                <h4 class="card-title">{{.title}}</h4>
-                <p class="card-text">
-                  {{.content | markdownify}}
-                </p>
+          <!-- check boxes -->
+          {{ else if eq .type "checkbox"}}
+          <!-- title -->
+          {{ range .options}}
+          <div class="col-md col-sm-12 form-group">
+            <input type="{{$input.type}}" class="form-control checkbox" id="{{.id}}" value="{{.value}}" {{if
+              $input.required}} required {{end}} name="{{.label}}" />
+            <label for="{{.id}}" class="mb-0">{{ .title | markdownify }}</label>
+          </div>
+          {{end}}
+
+          <!-- file upload -->
+          {{ else if eq .type "file"}}
+
+          <div class="col-md col-sm-12">
+            <!-- upload zone -->
+            <label style="font-weight:500;" class="file-upload" for="{{.id}}">
+              <input type="{{.type}}" onchange="displayFile({{.id}})" class="form-control" id="{{.id}}"
+                value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
+              <div style="display:grid; place-items:center;">
+                <i class="fas fa-upload my-2" style="font-size:24px;"></i>
+                <p id="upload-text" style="color:#005AA7;">{{.file_upload_text}}</p>
               </div>
-            </div>
-          </label>
+            </label>
+          </div>
+          <!-- radio buttons -->
+          {{ else if eq .type "radio" }}
+          {{ range .options }}
+          <div class="col-md col-sm-12">
+            <label>
+              <input type="radio" name={{$input.identifier}} class="card-input-element" value={{.value}} {{if
+                $input.required}} required {{end}} />
+              <div class="card card-input">
+                <div class="card-body {{ if not .content }}d-flex justify-content-center{{end}}">
+                  <h4 class="card-title">{{.title}}</h4>
+                  <p class="card-text">
+                    {{.content | markdownify}}
+                  </p>
+                </div>
+              </div>
+            </label>
+          </div>
+          {{ end }}
+
+
+          <!-- text boxes -->
+          {{ else }}
+          <div class="col-md col-sm-12">
+            <input type="{{.type}}" class="form-control" id="{{.id}}" accept="{{.file_type}}" value="{{.value}}" {{if
+              .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
+          </div>
+          {{ end }}
+
+
         </div>
-        {{ end }}
-
       </div>
-    </div>
-    {{ end}}
-    {{ end }}
-    
+      {{ end}}
 
-    <div class="row mt-5">
-      <div class="col-xl col-sm-12">
-        <button id="score-card-print-button" class="btn btn-primary remove-on-pdf"><i class="fas fa-print"></i> {{i18n
-          "score-card--download-result"}}</button>
+
+      {{ end }}
+
+      <div class="row mt-5">
+        <div class="col-xl col-sm-12">
+
+          <p style="color:#005AA7; font-size:14px;">* {{ i18n "required"}}</p>
+          <div class="wrapper" style="text-align:center;">
+            <button type="submit" value="send" class="btn btn-primary">{{ .button_text | markdownify }}</button>
+          </div>
+
+          <button id="score-card-print-button" class="btn btn-primary remove-on-pdf"><i class="fas fa-print"></i> {{i18n
+            "score-card--download-result"}}</button>
+        </div>
       </div>
-    </div>
+
+    </form>
   </div>
 </div>
 
