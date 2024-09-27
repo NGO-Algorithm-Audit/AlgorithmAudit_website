@@ -505,6 +505,21 @@ const building_blocks: TinaField[] = [
         required: true,
       },
       {
+        name: "id",
+        label: "ID",
+        type: "string",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: true,
+      },
+      {
+        name: "icon",
+        label: "Icon",
+        type: "string",
+        description:
+          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+        required: false,
+      },
+      {
         name: "content",
         label: "Content",
         type: "rich-text",

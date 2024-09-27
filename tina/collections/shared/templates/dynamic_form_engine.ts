@@ -18,7 +18,8 @@ const template: RichTextTemplate = {
       name: "form_entry",
       label: "Index of the form entry",
       type: "string",
-      description: "0-based index of the form entry",
+      description:
+        "0-based index of the form entry of the fields on the page (Dynamic form engine)",
       required: true,
     },
   ],

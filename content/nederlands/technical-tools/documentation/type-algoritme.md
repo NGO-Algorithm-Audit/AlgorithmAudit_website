@@ -8,6 +8,8 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 dynamic_form_engine:
   - title: Toepassing
+    id: "application"
+    icon: "far fa-folder"
     content: |
       Vaststellen van toepassing van het product.
     section:

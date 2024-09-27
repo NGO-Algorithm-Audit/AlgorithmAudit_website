@@ -1,12 +1,12 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{$param := int (.Get "form_entry")}}
 {{ with index .Page.Params.dynamic_form_engine $param }}
-<div class="container-fluid mt-5 p-0 score-card--container" id="application">
+<div class="container-fluid mt-5 p-0 score-card--container" id="{{.id}}">
   <div class="shadow form-mobile-desktop-layout bg-white rounded-blue-border">
 
     <!-- Title and icon -->
     <h3 class="">
-      <span class="far fa-folder icon mb-4 pl-5 remove-on-pdf"></span>
+      <span class="{{.icon}} icon mb-4 pl-5 remove-on-pdf"></span>
       {{.title}}
     </h3>
 
@@ -72,11 +72,16 @@
     </div>
     {{ end}}
     {{ end }}
+    
 
+    <div class="row mt-5">
+      <div class="col-xl col-sm-12">
+        <button id="score-card-print-button" class="btn btn-primary remove-on-pdf"><i class="fas fa-print"></i> {{i18n
+          "score-card--download-result"}}</button>
+      </div>
+    </div>
   </div>
 </div>
-
-{{ end }}
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
@@ -116,36 +121,13 @@
         }
       })
     };
-    var calculateScores = function () {
-      var score = 0;
-      var points = {
-        low: parseInt($('#score-card-points-low').val()),
-        medium: parseInt($('#score-card-points-medium').val()),
-        high: parseInt($('#score-card-points-high').val())
-      };
-      var thresholds = {
-        low: parseInt($('#score-card-threshold-low').val()),
-        medium: parseInt($('#score-card-threshold-medium').val()),
-        high: parseInt($('#score-card-threshold-high').val())
-      };
-      $('#application .score-card__question:not(.d-none) input[type=radio]:checked').each(function () {
-        score += points[$(this).val()];
-      });
-      $('#score-card-result-score').text(score);
-      $('#score-card-result-risk').text(score >= thresholds.high ? '{{i18n "score-card--high-risk"}}' : score >= thresholds.medium ? '{{i18n "score-card--medium-risk"}}' : '{{i18n "score-card--low-risk"}}');
-    };
-    $('#application input[type=radio]').change(() => {
-      calculateVisibleFields();
-      calculateScores();
-    });
-    $('#application input[type=number]').change(calculateScores);
+    $('#{{.id}} input').change(calculateVisibleFields);
     calculateVisibleFields();
-    calculateScores();
 
 
     $('#score-card-print-button').click(function () {
       window.html2canvas = html2canvas;
-      var element = document.getElementById("application");
+      var element = document.getElementById("{{.id}}");
       var pdf = new jspdf.jsPDF();
       pdf.html(element, {
         callback: function (doc) {
@@ -168,3 +150,5 @@
     });
   });
 </script>
+
+{{ end }}
