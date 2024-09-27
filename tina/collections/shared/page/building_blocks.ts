@@ -9,7 +9,6 @@ import accordions_area_close from "../templates/accordions_area_close";
 import accordions_area_open from "../templates/accordions_area_open";
 import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
-import card_risk_classification from "../templates/card_risk_classification";
 import container_close from "../templates/container_close";
 import container_open from "../templates/container_open";
 import dynamic_form_engine from "../templates/dynamic_form_engine";
@@ -51,6 +50,7 @@ const building_blocks: TinaField[] = [
       button,
       container_open,
       container_close,
+      dynamic_form_engine,
       form1,
       form2,
       template_image,
@@ -58,8 +58,6 @@ const building_blocks: TinaField[] = [
       pdf_frame,
       promo_bar,
       reports_preview,
-      card_risk_classification,
-      dynamic_form_engine,
       tab_content_open,
       tab_content_close,
       tab_header,
@@ -130,6 +128,185 @@ const building_blocks: TinaField[] = [
             name: "content",
             label: "Content",
             isBody: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "object",
+    name: "dynamic_form_engine",
+    label: "Dynamic form engine",
+    list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.title };
+      },
+    },
+    fields: [
+      {
+        name: "title",
+        label: "Title",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "id",
+        label: "ID",
+        type: "string",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: true,
+      },
+      {
+        name: "icon",
+        label: "Icon",
+        type: "string",
+        description:
+          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+        required: false,
+      },
+      {
+        name: "content",
+        label: "Content",
+        type: "rich-text",
+        description: "",
+        required: false,
+      },
+      {
+        type: "object",
+        name: "section",
+        label: "Section",
+        list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.title };
+          },
+        },
+        fields: [
+          // {
+          //   type: "string",
+          //   name: "title",
+          //   label: "Title",
+          //   required: true,
+          // },
+          {
+            type: "object",
+            name: "questions",
+            label: "Questions",
+            list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: item?.title };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "identifier",
+                label: "Identifier",
+                required: true,
+                description:
+                  "unique identifier needed to make the options unselect other options are selected",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+                required: true,
+              },
+              {
+                type: "rich-text",
+                name: "content",
+                label: "Content",
+                required: true,
+                templates: [tooltip],
+              },
+              {
+                type: "string",
+                name: "tooltip",
+                label: "Tooltip",
+                required: false,
+              },
+              {
+                type: "object",
+                name: "options",
+                label: "Options",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.title };
+                  },
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "value",
+                    label: "Value",
+                    required: true,
+                    options: [
+                      {
+                        value: "low",
+                        label: "Low",
+                      },
+                      {
+                        value: "medium",
+                        label: "Medium",
+                      },
+                      {
+                        value: "high",
+                        label: "High",
+                      },
+                    ],
+                  },
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    required: true,
+                  },
+                  {
+                    type: "rich-text",
+                    name: "content",
+                    label: "Content",
+                    templates: [tooltip],
+                  },
+                ],
+              },
+              {
+                type: "object",
+                name: "visible_when_or",
+                label: "Visible when (OR)",
+                list: true,
+                fields: [
+                  {
+                    type: "object",
+                    name: "visible_when_and",
+                    label: "Visible when (AND)",
+                    list: true,
+                    ui: {
+                      itemProps: (item) => {
+                        return { label: `${item?.identifier}=${item?.value}` };
+                      },
+                    },
+                    fields: [
+                      {
+                        type: "string",
+                        name: "identifier",
+                        label: "Identifier",
+                        required: true,
+                      },
+                      {
+                        type: "string",
+                        name: "value",
+                        label: "Value",
+                        required: true,
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
           },
         ],
       },
@@ -481,343 +658,6 @@ const building_blocks: TinaField[] = [
             name: "content",
             label: "Content",
             isBody: true,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "object",
-    name: "dynamic_form_engine",
-    label: "Dynamic form engine",
-    list: true,
-    ui: {
-      itemProps: (item) => {
-        return { label: item?.title };
-      },
-    },
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        name: "id",
-        label: "ID",
-        type: "string",
-        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-        required: true,
-      },
-      {
-        name: "icon",
-        label: "Icon",
-        type: "string",
-        description:
-          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-        required: false,
-      },
-      {
-        name: "content",
-        label: "Content",
-        type: "rich-text",
-        description: "",
-        required: false,
-      },
-      {
-        type: "object",
-        name: "section",
-        label: "Section",
-        list: true,
-        ui: {
-          itemProps: (item) => {
-            return { label: item?.title };
-          },
-        },
-        fields: [
-          // {
-          //   type: "string",
-          //   name: "title",
-          //   label: "Title",
-          //   required: true,
-          // },
-          {
-            type: "object",
-            name: "questions",
-            label: "Questions",
-            list: true,
-            ui: {
-              itemProps: (item) => {
-                return { label: item?.title };
-              },
-            },
-            fields: [
-              {
-                type: "string",
-                name: "identifier",
-                label: "Identifier",
-                required: true,
-                description:
-                  "unique identifier needed to make the options unselect other options are selected",
-              },
-              {
-                type: "string",
-                name: "title",
-                label: "Title",
-                required: true,
-              },
-              {
-                type: "rich-text",
-                name: "content",
-                label: "Content",
-                required: true,
-                templates: [tooltip],
-              },
-              {
-                type: "string",
-                name: "tooltip",
-                label: "Tooltip",
-                required: false,
-              },
-              {
-                type: "object",
-                name: "options",
-                label: "Options",
-                list: true,
-                ui: {
-                  itemProps: (item) => {
-                    return { label: item?.title };
-                  },
-                },
-                fields: [
-                  {
-                    type: "string",
-                    name: "value",
-                    label: "Value",
-                    required: true,
-                    options: [
-                      {
-                        value: "low",
-                        label: "Low",
-                      },
-                      {
-                        value: "medium",
-                        label: "Medium",
-                      },
-                      {
-                        value: "high",
-                        label: "High",
-                      },
-                    ],
-                  },
-                  {
-                    type: "string",
-                    name: "title",
-                    label: "Title",
-                    required: true,
-                  },
-                  {
-                    type: "rich-text",
-                    name: "content",
-                    label: "Content",
-                    templates: [tooltip],
-                  },
-                ],
-              },
-              {
-                type: "object",
-                name: "visible_when_or",
-                label: "Visible when (OR)",
-                list: true,
-                fields: [
-                  {
-                    type: "object",
-                    name: "visible_when_and",
-                    label: "Visible when (AND)",
-                    list: true,
-                    ui: {
-                      itemProps: (item) => {
-                        return { label: `${item?.identifier}=${item?.value}` };
-                      },
-                    },
-                    fields: [
-                      {
-                        type: "string",
-                        name: "identifier",
-                        label: "Identifier",
-                        required: true,
-                      },
-                      {
-                        type: "string",
-                        name: "value",
-                        label: "Value",
-                        required: true,
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "object",
-    name: "card_risk_classification",
-    label: "Card risk classification",
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        name: "content",
-        label: "Content",
-        type: "rich-text",
-        description: "",
-        required: false,
-      },
-      {
-        type: "object",
-        name: "section",
-        label: "Section",
-        list: true,
-        ui: {
-          itemProps: (item) => {
-            return { label: item?.title };
-          },
-        },
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            required: true,
-          },
-          {
-            type: "object",
-            name: "questions",
-            label: "Questions",
-            list: true,
-            ui: {
-              itemProps: (item) => {
-                return { label: item?.title };
-              },
-            },
-            fields: [
-              {
-                type: "string",
-                name: "identifier",
-                label: "Identifier",
-                required: true,
-                description:
-                  "unique identifier needed to make the options unselect other options are selected",
-              },
-              {
-                type: "string",
-                name: "title",
-                label: "Title",
-                required: true,
-              },
-              {
-                type: "rich-text",
-                name: "content",
-                label: "Content",
-                required: true,
-                templates: [tooltip],
-              },
-              {
-                type: "string",
-                name: "tooltip",
-                label: "Tooltip",
-                required: false,
-              },
-              {
-                type: "object",
-                name: "options",
-                label: "Options",
-                list: true,
-                ui: {
-                  itemProps: (item) => {
-                    return { label: item?.title };
-                  },
-                },
-                fields: [
-                  {
-                    type: "string",
-                    name: "value",
-                    label: "Value",
-                    required: true,
-                    options: [
-                      {
-                        value: "low",
-                        label: "Low",
-                      },
-                      {
-                        value: "medium",
-                        label: "Medium",
-                      },
-                      {
-                        value: "high",
-                        label: "High",
-                      },
-                    ],
-                  },
-                  {
-                    type: "string",
-                    name: "title",
-                    label: "Title",
-                    required: true,
-                  },
-                  {
-                    type: "rich-text",
-                    name: "content",
-                    label: "Content",
-                    templates: [tooltip],
-                  },
-                ],
-              },
-              {
-                type: "object",
-                name: "visible_when_or",
-                label: "Visible when (OR)",
-                list: true,
-                fields: [
-                  {
-                    type: "object",
-                    name: "visible_when_and",
-                    label: "Visible when (AND)",
-                    list: true,
-                    ui: {
-                      itemProps: (item) => {
-                        return { label: `${item?.identifier}=${item?.value}` };
-                      },
-                    },
-                    fields: [
-                      {
-                        type: "string",
-                        name: "identifier",
-                        label: "Identifier",
-                        required: true,
-                      },
-                      {
-                        type: "string",
-                        name: "value",
-                        label: "Value",
-                        required: true,
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
           },
         ],
       },
