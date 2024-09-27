@@ -48,7 +48,7 @@ dynamic_form_engine:
             type: radio
           - identifier: checkbox
             title: checkbox
-            content: ""
+            content: ''
             options:
               - id: checkbox1
                 value: Checkbox1
@@ -64,7 +64,7 @@ dynamic_form_engine:
             type: checkbox
           - identifier: text
             title: Text
-            content: ""
+            content: ''
             required: true
             type: text
             visible_when_or:
@@ -84,7 +84,7 @@ dynamic_form_engine:
                     value: low
           - identifier: fileupload
             title: File upload
-            content: ""
+            content: ''
             file_upload_text: Upload
             file_type: .docx
             type: file
@@ -284,12 +284,12 @@ dynamic_form_engine:
                   No, the AI ​​system has not been validated.
             type: radio
     complete_form_options:
-      type: submit
+      type: redirect
       button_text: Submit
-      backend_link: "https://localhost:5173/test"
+      backend_link: 'https://localhost:5173/test'
 overview_block:
   - title: Overview
-    content: ""
+    content: ''
     icon: null
     id: overview
     items:
