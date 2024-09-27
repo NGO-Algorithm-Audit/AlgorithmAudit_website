@@ -8,13 +8,6 @@ const template: RichTextTemplate = {
   },
   fields: [
     {
-      name: "title",
-      label: "DONT USE",
-      type: "string",
-      description: "Use top level template",
-      required: false,
-    },
-    {
       name: "index",
       label: "Index of the form entry",
       type: "string",
