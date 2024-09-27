@@ -450,7 +450,7 @@ const building_blocks: TinaField[] = [
         list: true,
         ui: {
           itemProps: (item) => {
-            return { label: item?.label };
+            return { label: item?.id };
           },
         },
         fields: [
