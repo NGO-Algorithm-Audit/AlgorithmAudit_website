@@ -1,7 +1,7 @@
 import { RichTextTemplate } from "@tinacms/schema-tools/dist/types/index";
-let template: RichTextTemplate = {
-  name: "card_AI_system_classification",
-  label: "Card AI system classification",
+const template: RichTextTemplate = {
+  name: "dynamic_form_engine",
+  label: "Dynamic form engine",
   match: {
     start: "{{<",
     end: ">}}",
@@ -13,6 +13,13 @@ let template: RichTextTemplate = {
       type: "string",
       description: "Use top level template",
       required: false,
+    },
+    {
+      name: "form_entry",
+      label: "Index of the form entry",
+      type: "string",
+      description: "0-based index of the form entry",
+      required: true,
     },
   ],
 };

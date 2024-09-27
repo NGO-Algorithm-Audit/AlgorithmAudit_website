@@ -9,10 +9,10 @@ import accordions_area_close from "../templates/accordions_area_close";
 import accordions_area_open from "../templates/accordions_area_open";
 import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
-import card_AI_system_classification from "../templates/card_AI_system_classification";
 import card_risk_classification from "../templates/card_risk_classification";
 import container_close from "../templates/container_close";
 import container_open from "../templates/container_open";
+import dynamic_form_engine from "../templates/dynamic_form_engine";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
 import template_image from "../templates/image";
@@ -59,7 +59,7 @@ const building_blocks: TinaField[] = [
       promo_bar,
       reports_preview,
       card_risk_classification,
-      card_AI_system_classification,
+      dynamic_form_engine,
       tab_content_open,
       tab_content_close,
       tab_header,
@@ -488,8 +488,14 @@ const building_blocks: TinaField[] = [
   },
   {
     type: "object",
-    name: "card_AI_system_classification",
-    label: "Card AI system classification",
+    name: "dynamic_form_engine",
+    label: "Dynamic form engine",
+    list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.title };
+      },
+    },
     fields: [
       {
         name: "title",
