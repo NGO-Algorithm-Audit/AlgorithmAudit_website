@@ -46,8 +46,9 @@ form1:
           id: online
       required: false
       type: checkbox
-    - label: |
-        Questions, comments or remarks for organisation
+    - label: >
+        Questions, comments or remarks for organisation (for instance allergens
+        and dietary requirements)
       id: questions
       type: textarea
     - label: >

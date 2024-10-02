@@ -26,4 +26,4 @@ overview_block:
         link: "risk-classification"
 ---
 
-{{< overview_block >}}
+{{< overview_block index="0" >}}

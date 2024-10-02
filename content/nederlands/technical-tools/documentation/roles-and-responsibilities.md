@@ -12,50 +12,30 @@ subtitle: >
   [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
-form1:
-  title: Intake
-  button_text: Meld aan
-  backend_link: aa
-  id: '#form'
-  questions:
-    - label: |
-        Naam van product
-      id: name
-      required: true
-      type: text
-      placeholder: Naam
-form2:
-  title: Sturing en verantwoording
-  content: ''
-  button_text: Weg
-  backend_link: 'https://formspree.io/f/xeojyqry'
-  id: roles-and-responsibilities
-  questions:
-    - label: Wat is het beoogde doel van het product?
-      id: aim-pursued
-      type: textarea
-card_AI_system_classification:
-  title: Intakeformulier
-  content: >
-    Aanmelden van een nieuw product dat mogelijk een algoritme of AI toepassing
-    is.
-  section:
-    - questions:
-        - identifier: application1
-          title: Verboden toepassing
-          content: |
-            Naam van product
-overview_block1:
-  title: Overzicht
-  content: ''
-  icon: null
-  id: overzicht
-  items:
-    - title: Terug naar overzicht
-      icon: fa fa-file
-      link: /nl/technical-tools/documentation/#organisation-wide
+dynamic_form_engine:
+  - title: Sturing en verantwoording
+    id: form
+    icon: fas fa-user-tag
+    content: >
+      Aanmelden van een nieuw product dat mogelijk een algoritme of AI
+      toepassing is.
+    section:
+      - questions:
+          - identifier: application1
+            title: Verboden toepassing
+            content: |
+              Naam van product
+overview_block:
+  - title: Overzicht
+    content: ''
+    icon: null
+    id: overzicht
+    items:
+      - title: Terug naar overzicht
+        icon: fa fa-file
+        link: /nl/technical-tools/documentation/#organisation-wide
 ---
 
-{{< overview_block1 >}}
+{{< overview_block index="0" >}}
 
-{{< form2 >}}
+{{< dynamic_form_engine index="0" >}}

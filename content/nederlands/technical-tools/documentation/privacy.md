@@ -12,6 +12,18 @@ subtitle: >
   [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
+dynamic_form_engine:
+  - title: Privacy
+    id: form
+    icon: fa fa-eye
+    content: |
+      Informatie over gegevensverwerking
+    section:
+      - questions:
+          - identifier: application1
+            title: DPIA
+            content: |
+              Hello
 form1:
   title: Intake
   button_text: Meld aan
@@ -34,27 +46,17 @@ form2:
     - label: Beoogde doel
       id: aim-pursued
       type: textarea
-card_AI_system_classification:
-  title: Privacy
-  content: |
-    Informatie over gegevensverwerking
-  section:
-    - questions:
-        - identifier: application1
-          title: DPIA
-          content: |
-            Hello
-overview_block1:
-  title: Overzicht
-  content: ''
-  icon: null
-  id: overzicht
-  items:
-    - title: Terug naar overzicht
-      icon: fa fa-file
-      link: /nl/technical-tools/documentation/#organisation-wide
+overview_block:
+  - title: Overzicht
+    content: ''
+    icon: null
+    id: overzicht
+    items:
+      - title: Terug naar overzicht
+        icon: fa fa-file
+        link: /nl/technical-tools/documentation/#organisation-wide
 ---
 
-{{< overview_block1 >}}
+{{< overview_block index="0" >}}
 
-{{< card_AI_system_classification >}}
+{{< dynamic_form_engine index="0" >}}

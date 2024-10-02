@@ -17,8 +17,8 @@ overview_block:
   - title: Documentatie en classificatie tool
     content: >
       Organisatiebreed algoritmemanagementbeleid vraagt om pragmatische kaders.
-      Hierbij is een risico-georienteerde aanpak vaak leidend. Dit is in lijn met
-      nationale en internationale wetgeving voor algoritmes, zoals de AI
+      Hierbij is een risico-georienteerde aanpak vaak leidend. Dit is in lijn
+      met nationale en internationale wetgeving voor algoritmes, zoals de AI
       Verordening. Hieronder vindt u een voorbeeld van verschillende dynamische
       vragenlijsten die organisaties helpen om algoritmes en AI-systemen te
       indexeren, documenteren en classificeren.
@@ -27,19 +27,16 @@ overview_block:
     items:
       - title: 1. Intakeformulier
         icon: fa fa-plus
-        link: intake/#intake
+        link: intake/#form
       - title: 2. Sturing en verantwoording
         icon: fas fa-user-tag
-        link: roles-and-responsibilities/#roles-and-responsibilities
+        link: roles-and-responsibilities/#form
       - title: 3. Privacy
         icon: fa fa-eye
         link: privacy/#form
       - title: 4. Data en model
         icon: fas fa-share-alt
         link: data-and-model/#form
-      - title: 5. Informatiebeveiliging
-        icon: fa fa-lock
-        link: information-security/#form
   - title: AI Verordening
     content: >
       Deze dynamische vragenlijsten helpen je grip te krijgen op de AI

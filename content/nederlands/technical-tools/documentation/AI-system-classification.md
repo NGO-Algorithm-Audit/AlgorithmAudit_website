@@ -12,21 +12,21 @@ subtitle: >
   [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
-card_AI_system_classification:
-  title: AI-systeem classificatie
-  content: |
-    Under construction
-overview_block1:
-  title: Overzicht
-  content: ''
-  icon: null
-  id: overzicht
-  items:
-    - title: Terug naar overzicht
-      icon: fa fa-file
-      link: /nl/technical-tools/documentation/#ai-act
+dynamic_form_engine:
+  - title: AI-systeem classificatie
+    content: |
+      Under construction
+overview_block:
+  - title: Overzicht
+    content: ''
+    icon: null
+    id: overzicht
+    items:
+      - title: Terug naar overzicht
+        icon: fa fa-file
+        link: /nl/technical-tools/documentation/#ai-act
 ---
 
-{{< overview_block1 >}}
+{{< overview_block index=0 >}}
 
-{{< card_AI_system_classification >}}
+{{ dynamic_form_engine index=0}}
