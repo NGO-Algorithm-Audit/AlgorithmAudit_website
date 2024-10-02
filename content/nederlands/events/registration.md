@@ -46,8 +46,9 @@ form1:
           id: online
       required: false
       type: checkbox
-    - label: |
-        Vragen of opmerkingen voor de organisatie
+    - label: >
+        Vragen of opmerkingen voor de organisatie (bijv. dieetwensen en/of
+        allergieën) 
       id: questions
       type: textarea
     - label: >

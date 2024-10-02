@@ -8,11 +8,12 @@ const overview_block: RichTextTemplate = {
   },
   fields: [
     {
-      name: "title",
-      label: "DONT USE",
+      name: "index",
+      label: "Index of the overview block",
       type: "string",
-      description: "Use top level template",
-      required: false,
+      description:
+        "0-based index of the overview block of the fields on the page (Overview block)",
+      required: true,
     },
   ],
 };

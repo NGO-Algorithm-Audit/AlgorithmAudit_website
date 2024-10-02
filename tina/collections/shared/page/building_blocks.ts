@@ -9,10 +9,9 @@ import accordions_area_close from "../templates/accordions_area_close";
 import accordions_area_open from "../templates/accordions_area_open";
 import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
-import card_AI_system_classification from "../templates/card_AI_system_classification";
-import card_risk_classification from "../templates/card_risk_classification";
 import container_close from "../templates/container_close";
 import container_open from "../templates/container_open";
+import dynamic_form_engine from "../templates/dynamic_form_engine";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
 import template_image from "../templates/image";
@@ -51,6 +50,7 @@ const building_blocks: TinaField[] = [
       button,
       container_open,
       container_close,
+      dynamic_form_engine,
       form1,
       form2,
       template_image,
@@ -58,8 +58,6 @@ const building_blocks: TinaField[] = [
       pdf_frame,
       promo_bar,
       reports_preview,
-      card_risk_classification,
-      card_AI_system_classification,
       tab_content_open,
       tab_content_close,
       tab_header,
@@ -137,6 +135,276 @@ const building_blocks: TinaField[] = [
   },
   {
     type: "object",
+    name: "dynamic_form_engine",
+    label: "Dynamic form engine",
+    list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.title };
+      },
+    },
+    fields: [
+      {
+        name: "title",
+        label: "Title",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "id",
+        label: "ID",
+        type: "string",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: true,
+      },
+      {
+        name: "icon",
+        label: "Icon",
+        type: "string",
+        description:
+          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+        required: false,
+      },
+      {
+        name: "content",
+        label: "Content",
+        type: "rich-text",
+        description: "",
+        required: false,
+      },
+      {
+        type: "object",
+        name: "section",
+        label: "Section",
+        list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.title };
+          },
+        },
+        fields: [
+          // {
+          //   type: "string",
+          //   name: "title",
+          //   label: "Title",
+          //   required: true,
+          // },
+          {
+            type: "object",
+            name: "questions",
+            label: "Questions",
+            list: true,
+            ui: {
+              itemProps: (item) => {
+                return { label: item?.title };
+              },
+            },
+            fields: [
+              {
+                type: "string",
+                name: "identifier",
+                label: "Identifier",
+                required: true,
+                description:
+                  "unique identifier needed to make the options unselect other options are selected",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+                required: true,
+              },
+              {
+                type: "rich-text",
+                name: "content",
+                label: "Content",
+                required: true,
+                templates: [tooltip],
+              },
+              {
+                type: "string",
+                name: "tooltip",
+                label: "Tooltip",
+                required: false,
+              },
+              {
+                type: "object",
+                name: "options",
+                label: "Options (only for radio buttons and checkboxes)",
+                list: true,
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.title };
+                  },
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "id",
+                    label: "ID (only for checkboxes)",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "value",
+                    label: "Value",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    required: true,
+                  },
+                  {
+                    type: "rich-text",
+                    name: "content",
+                    label: "Content",
+                    templates: [tooltip],
+                  },
+                ],
+              },
+
+              {
+                name: "file_upload_text",
+                label: "File upload text (only for file upload)",
+                type: "string",
+                description: "Text displayed in file upload field",
+                required: false,
+              },
+              {
+                type: "boolean",
+                name: "required",
+                label: "required",
+              },
+              {
+                type: "string",
+                name: "file_type",
+                label: "File type (e.g, .docx, .pdf)",
+              },
+              {
+                type: "string",
+                name: "type",
+                label: "Type",
+                required: true,
+                options: [
+                  {
+                    value: "text",
+                    label: "Text box",
+                  },
+                  {
+                    value: "radio",
+                    label: "Radio box",
+                  },
+                  {
+                    value: "checkbox",
+                    label: "Check box",
+                  },
+                  {
+                    value: "textarea",
+                    label: "Text area",
+                  },
+                  {
+                    value: "file",
+                    label: "File",
+                  },
+                  {
+                    value: "email",
+                    label: "Email",
+                  },
+                ],
+              },
+              {
+                type: "string",
+                name: "placeholder",
+                label: "Placeholder",
+              },
+              {
+                type: "object",
+                name: "visible_when_or",
+                label: "Visible when (OR)",
+                list: true,
+                fields: [
+                  {
+                    type: "object",
+                    name: "visible_when_and",
+                    label: "Visible when (AND)",
+                    list: true,
+                    ui: {
+                      itemProps: (item) => {
+                        return { label: `${item?.identifier}=${item?.value}` };
+                      },
+                    },
+                    fields: [
+                      {
+                        type: "string",
+                        name: "identifier",
+                        label: "Identifier",
+                        description:
+                          "Use the identifier of the Question for radio buttons, and use the ID of the option for checkboxes",
+                        required: true,
+                      },
+                      {
+                        type: "string",
+                        name: "value",
+                        label: "Value",
+                        required: true,
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        type: "object",
+        name: "complete_form_options",
+        label: "Complete form options",
+        required: true,
+        fields: [
+          {
+            type: "string",
+            name: "type",
+            label: "Type",
+            required: true,
+            options: [
+              {
+                value: "print",
+                label: "Print",
+              },
+              {
+                value: "submit",
+                label: "Submit",
+              },
+              {
+                value: "redirect",
+                label: "Redirect",
+              },
+            ],
+          },
+          {
+            name: "button_text",
+            label: "Button text",
+            type: "string",
+            description: "",
+            required: true,
+          },
+          {
+            name: "backend_link",
+            label: "Back end link (Required if you want to submit the data)",
+            type: "string",
+            description: "",
+            required: false,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "object",
     name: "form1",
     label: "Form #1",
     fields: [
@@ -182,7 +450,7 @@ const building_blocks: TinaField[] = [
         list: true,
         ui: {
           itemProps: (item) => {
-            return { label: item?.label };
+            return { label: item?.id };
           },
         },
         fields: [
@@ -488,322 +756,6 @@ const building_blocks: TinaField[] = [
   },
   {
     type: "object",
-    name: "card_AI_system_classification",
-    label: "Card AI system classification",
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        name: "content",
-        label: "Content",
-        type: "rich-text",
-        description: "",
-        required: false,
-      },
-      {
-        type: "object",
-        name: "section",
-        label: "Section",
-        list: true,
-        ui: {
-          itemProps: (item) => {
-            return { label: item?.title };
-          },
-        },
-        fields: [
-          // {
-          //   type: "string",
-          //   name: "title",
-          //   label: "Title",
-          //   required: true,
-          // },
-          {
-            type: "object",
-            name: "questions",
-            label: "Questions",
-            list: true,
-            ui: {
-              itemProps: (item) => {
-                return { label: item?.title };
-              },
-            },
-            fields: [
-              {
-                type: "string",
-                name: "identifier",
-                label: "Identifier",
-                required: true,
-                description:
-                  "unique identifier needed to make the options unselect other options are selected",
-              },
-              {
-                type: "string",
-                name: "title",
-                label: "Title",
-                required: true,
-              },
-              {
-                type: "rich-text",
-                name: "content",
-                label: "Content",
-                required: true,
-                templates: [tooltip],
-              },
-              {
-                type: "string",
-                name: "tooltip",
-                label: "Tooltip",
-                required: false,
-              },
-              {
-                type: "object",
-                name: "options",
-                label: "Options",
-                list: true,
-                ui: {
-                  itemProps: (item) => {
-                    return { label: item?.title };
-                  },
-                },
-                fields: [
-                  {
-                    type: "string",
-                    name: "value",
-                    label: "Value",
-                    required: true,
-                    options: [
-                      {
-                        value: "low",
-                        label: "Low",
-                      },
-                      {
-                        value: "medium",
-                        label: "Medium",
-                      },
-                      {
-                        value: "high",
-                        label: "High",
-                      },
-                    ],
-                  },
-                  {
-                    type: "string",
-                    name: "title",
-                    label: "Title",
-                    required: true,
-                  },
-                  {
-                    type: "rich-text",
-                    name: "content",
-                    label: "Content",
-                    templates: [tooltip],
-                  },
-                ],
-              },
-              {
-                type: "object",
-                name: "visible_when_or",
-                label: "Visible when (OR)",
-                list: true,
-                fields: [
-                  {
-                    type: "object",
-                    name: "visible_when_and",
-                    label: "Visible when (AND)",
-                    list: true,
-                    ui: {
-                      itemProps: (item) => {
-                        return { label: `${item?.identifier}=${item?.value}` };
-                      },
-                    },
-                    fields: [
-                      {
-                        type: "string",
-                        name: "identifier",
-                        label: "Identifier",
-                        required: true,
-                      },
-                      {
-                        type: "string",
-                        name: "value",
-                        label: "Value",
-                        required: true,
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "object",
-    name: "card_risk_classification",
-    label: "Card risk classification",
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        name: "content",
-        label: "Content",
-        type: "rich-text",
-        description: "",
-        required: false,
-      },
-      {
-        type: "object",
-        name: "section",
-        label: "Section",
-        list: true,
-        ui: {
-          itemProps: (item) => {
-            return { label: item?.title };
-          },
-        },
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            required: true,
-          },
-          {
-            type: "object",
-            name: "questions",
-            label: "Questions",
-            list: true,
-            ui: {
-              itemProps: (item) => {
-                return { label: item?.title };
-              },
-            },
-            fields: [
-              {
-                type: "string",
-                name: "identifier",
-                label: "Identifier",
-                required: true,
-                description:
-                  "unique identifier needed to make the options unselect other options are selected",
-              },
-              {
-                type: "string",
-                name: "title",
-                label: "Title",
-                required: true,
-              },
-              {
-                type: "rich-text",
-                name: "content",
-                label: "Content",
-                required: true,
-                templates: [tooltip],
-              },
-              {
-                type: "string",
-                name: "tooltip",
-                label: "Tooltip",
-                required: false,
-              },
-              {
-                type: "object",
-                name: "options",
-                label: "Options",
-                list: true,
-                ui: {
-                  itemProps: (item) => {
-                    return { label: item?.title };
-                  },
-                },
-                fields: [
-                  {
-                    type: "string",
-                    name: "value",
-                    label: "Value",
-                    required: true,
-                    options: [
-                      {
-                        value: "low",
-                        label: "Low",
-                      },
-                      {
-                        value: "medium",
-                        label: "Medium",
-                      },
-                      {
-                        value: "high",
-                        label: "High",
-                      },
-                    ],
-                  },
-                  {
-                    type: "string",
-                    name: "title",
-                    label: "Title",
-                    required: true,
-                  },
-                  {
-                    type: "rich-text",
-                    name: "content",
-                    label: "Content",
-                    templates: [tooltip],
-                  },
-                ],
-              },
-              {
-                type: "object",
-                name: "visible_when_or",
-                label: "Visible when (OR)",
-                list: true,
-                fields: [
-                  {
-                    type: "object",
-                    name: "visible_when_and",
-                    label: "Visible when (AND)",
-                    list: true,
-                    ui: {
-                      itemProps: (item) => {
-                        return { label: `${item?.identifier}=${item?.value}` };
-                      },
-                    },
-                    fields: [
-                      {
-                        type: "string",
-                        name: "identifier",
-                        label: "Identifier",
-                        required: true,
-                      },
-                      {
-                        type: "string",
-                        name: "value",
-                        label: "Value",
-                        required: true,
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "object",
     name: "team",
     label: "Team",
     fields: [
@@ -885,6 +837,12 @@ const building_blocks: TinaField[] = [
     type: "object",
     name: "overview_block",
     label: "Overview block",
+    list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.title };
+      },
+    },
     fields: [
       {
         type: "string",
