@@ -399,6 +399,12 @@ const building_blocks: TinaField[] = [
             description: "",
             required: false,
           },
+          {
+            name: "file_name",
+            label: "File name (Required if you want to print the data)",
+            type: "string",
+            required: false,
+          },
         ],
       },
     ],
