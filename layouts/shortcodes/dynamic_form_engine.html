@@ -218,13 +218,14 @@
     })
 
 
-    $('#score-card-print-button').click(function () {
+    $('#score-card-print-button').click(function (event) {
+      event.preventDefault();
       window.html2canvas = html2canvas;
       var element = document.getElementById("{{.id}}");
       var pdf = new jspdf.jsPDF();
       pdf.html(element, {
         callback: function (doc) {
-          doc.save();
+          doc.save("{{.complete_form_options.file_name}}");
         },
         margin: [5, 5, 5, 5],
         x: 32,

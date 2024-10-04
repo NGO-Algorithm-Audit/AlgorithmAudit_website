@@ -14,18 +14,19 @@ subtitle: >
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
 dynamic_form_engine:
-  - title: Intakeformulier
+  - title: Classificatie quick scan
     id: form
-    icon: fa fa-plus
+    icon: fa fa-star
     content: >
-      Aanmelden van een nieuw product dat mogelijk een algoritme of AI
-      toepassing is.
+      Bepaal binnen 8 vragen of uw algoritme of AI-systeem een hoog risico
+      toepassing betreft.
     section:
       - questions:
           - identifier: application1
             title: Verboden toepassing
             content: |
               Naam van product
+            type: text
     complete_form_options:
       type: print
       button_text: Save as pdf

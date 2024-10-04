@@ -14,6 +14,15 @@ subtitle: >
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
 overview_block:
+  - title: Quick scan
+    content: >
+      Met een paar vragen kun je al een gedegen inschatting maken of een algoritme of AI-systeem tot een hoog-risico categorie behoort. Doe nu de algoritme-classificatie quick scan.
+    icon: fas fa-search
+    id: quick-scan
+    items:
+      - title: Classificatie
+        icon: fas fa-star
+        link: classification-quick-scan/#form
   - title: Documentatie en classificatie tool
     content: >
       Organisatiebreed algoritmemanagementbeleid vraagt om pragmatische kaders.
@@ -56,7 +65,8 @@ overview_block:
 
 Maak gebruik van dynamische vragenlijsten om algoritmes en AI-systemen te documenten en classificeren. De tool bestaat uit twee componenten:
 
-* [Dynamische vragenlijsten voor organisatiebreed algoritme managementbeleid](#organisation-wide)
+* [Algoritme-classificatie tool (8-12 vragen)](#quick-scan)
+* [Risicoclassificatie (40-50 vragen)](#organisation-wide)
 * [AI Verordening beslisbomen voor AI-systeem en risicoclassificatie](#ai-act)
 
 {{< container_close >}}
@@ -64,3 +74,5 @@ Maak gebruik van dynamische vragenlijsten om algoritmes en AI-systemen te docume
 {{< overview_block index="0" >}}
 
 {{< overview_block index="1" >}}
+
+{{< overview_block index="2" >}}
