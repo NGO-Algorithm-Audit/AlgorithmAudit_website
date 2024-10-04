@@ -1,19 +1,20 @@
 ---
+pagesize: 10
 facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: q3_2024
+        label: Q3-2024
       - value: q2_2024
         label: Q2-2024
       - value: q1_2024
         label: Q1-2024
-      - value: '2023'
-        label: '2023'
   - value: type
     title: Type evenement
     facets:
       - value: event
-        label: Evenement
+        label: Event Algorithm Audit
       - value: interview
         label: Interview
       - value: panel
@@ -21,6 +22,73 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: Gastspreker lunchlezing 'Risico's van opsporingsalgoritmes'
+    description: >
+      Gastspreker tijdens symposium 'Risico's van opsporingsalgoritmes' van het
+      Ministerie van Justitie en Veiligheid
+    image: /images/events/MinJenV_logo.png
+    date: 02-10-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q3_2024
+        label: Q3-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Masterclass 'Algoritmevalidatie'
+    description: >
+      Masterclass 'Algoritmevalidatie' voor de Vereniging van Nederlandse
+      Gemeenten (VNG)
+    image: /images/events/VNG_logo.png
+    date: 19-09-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q3_2024
+        label: Q3-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: 'Gastspreker verdiepingssessie ''Bias, fairness en non-discriminatie'''
+    description: >
+      Gastspreker tijdens symposium 'Bias, fairness en non-discriminatie' van
+      het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties samen met
+      Thijs Teisman van DUO over onderzoek naar Controle Uitwonendenbeurs
+      (CUB)-proces.
+
+
+      ![](</images/events/BZK event 2024.jpg>)
+    image: /images/supported_by/BZK.jpg
+    date: 18-09-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q3_2024
+        label: Q3-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: 'Gastspreker symposium ''Profilering in de publieke sector'' '
+    description: >
+      Gastspreker tijdens symposium 'Profilering in de publieke sector' van de
+      Commissie Persoonsgegevens Amsterdam (CPA) samen met
+      Thijs Teisman van DUO over onderzoek naar Controle Uitwonendenbeurs
+      (CUB)-proces.
+    image: /images/events/Amsterdam.png
+    date: 12-09-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q3_2024
+        label: Q3-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
   - title: >-
       Lunchlezing over DUO onderzoek bij Centraal Bureau voor de Statistiek
       (CBS)
@@ -98,7 +166,7 @@ events:
         label: Q2-2024
         hide: true
       - value: type_panel
-        label: panel discussion
+        label: paneldiscussie
   - title: Interview SIDN Fonds
     description: >
       Interview over project Open Source AI Auditing
@@ -221,7 +289,7 @@ events:
 
 
       Interview:
-      [https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/](https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/)
+      [https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken\~bca4caa8/](https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/)
     image: /images/events/Volkskrant.png
     date: 23-05-2024
     facets:
@@ -254,7 +322,7 @@ events:
         label: Q2-2024
         hide: true
       - value: type_event
-        label: evenement
+        label: event
   - title: 'Presentatie UvA AI, Media & Democratie lab'
     description: >
       Presentatie over artikel [Hoe ‘algoprudentie’ kan bijdragen aan een
@@ -351,7 +419,7 @@ events:
     date: 07-03-2024
     facets:
       - value: type_presentation
-        label: presentation
+        label: presentatie
       - value: year_2024
         label: '2024'
         hide: true
@@ -444,19 +512,6 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: Digitale Diensten Wet stakeholder evenement Europese Commissie
-    description: >
-      Digital Services Act (DSA) stakeholder evenement. Zie ook Algorithm
-      Audit's feedback op de DSA's delegated regulation (onafhankelijke audit
-      verplichtingen) zoals ingediend bij de Europese Commissie.
-    image: /images/events/DSA.jpeg
-    date: 27-06-2023
-    facets:
-      - value: year_2023
-        label: '2023'
-        hide: true
-      - value: type_event
-        label: evenement
 layout: overview
 title: Evenementen
 subtitle: >
