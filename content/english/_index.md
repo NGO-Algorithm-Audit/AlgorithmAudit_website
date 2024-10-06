@@ -12,38 +12,38 @@ Banner:
     title: A European knowledge platform for
     labels:
       - text: AI bias testing
-      - text: normative AI standards
+      - text: AI standards
 Activity_Feed:
   enable: true
   button_text: View more...
   button_link: /events/activities/#events
   featured_activities:
-    - title: Addendum Preventing prejudice – Supervised bias analysis
+    - title: Comparative review of 10 Fundamental Rights Impact Assessments (FRIAs)
       intro: >
-        Further research into CUB process of Education Executive Agency of The
-        Netherlands (DUO) by analysing aggregation statistics on the country of
-        birth and country of origin of 300.000+ students in the period 2014-2022
-        provided by the Dutch national office of statistics.
-      link: /algoprudence/cases/aa202402_preventing-prejudice_addendum/
-      image: /images/algoprudence/AA202402/AA202402_cover_EN.png
-      date: 22-05-2024
-      type: technical audit
+        Comparative review of 10 existing FRIAs frameworks, evaluating them
+        against 12 requirements across legal, organizational, technical and
+        social dimensions. Our assessment shows a sharp divide regarding the
+        length and completeness of FRIAs.
+      link: /knowledge-platform/knowledge-base/comparative_review_10_frias/
+      image: /images/knowledge_base/Comparative_review_10_FRIAs.png
+      date: 21-09-2024
+      type: white paper
   activities:
-    - title: Lunch lecture on DUO case Dutch National Office of Statistics (CBS)
+    - title: Guest speaker lunch seminar 'Risks of detection algorithms'
       link: /events/activities/#events
-      image: /images/events/CBS_logo.png
-      date: 25-06-2024
+      image: /images/events/MinJenV_logo.png
+      date: 02-10-2024
       type: presentation
-    - title: European Academy for Standardisation Annual Conference
+    - title: Masterclass 'Algorithm validation'
       link: /events/activities/#events
-      image: /images/events/StandICT.jpg
-      date: 19-06-2024
-      type: panel discussion
-    - title: MozFest Amsterdam 2024 Funders' Summit
+      image: /images/events/VNG_logo.png
+      date: 19-09-2024
+      type: presentation
+    - title: 'Guest speaker in-depth session ''Bias, fairness and non-discrimination'''
       link: /events/activities/#events
-      image: /images/events/MozillaFestival.png
-      date: 11-06-2024
-      type: panel discussion
+      image: /images/supported_by/BZK.jpg
+      date: 18-09-2024
+      type: presentation
 Supported_by:
   title: Supported by
   funders:
@@ -140,7 +140,7 @@ Areas_of_AI_expertise:
       content: >
         Auditing training process of foundation models, among others selection
         of training data, human feedback for reinforcement learning and risk
-        management, according to AI Act standards 
+        management, according to AI Act standards
 Recent_audits:
   title: Recent audits
   feature_item:

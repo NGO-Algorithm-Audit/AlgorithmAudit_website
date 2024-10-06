@@ -494,25 +494,6 @@ events:
       - value: year_2024
         label: '2024'
         hide: true
-  - title: Digital Services Act Stakeholder Event European Commission
-    description: >
-      Attending Digital Services Act (DSA) Stakeholder Event. See also Algorithm
-      Audit's
-      [feedback](/knowledge_base/white_paper_dsa_delegated_regulation_feedback/)
-      on the DSA's Delegated regulation (independent third-party auditing) as
-      sent to the European Commission.
-    image: /images/events/DSA.jpeg
-    date: 27-06-2023
-    facets:
-      - value: type_event
-        label: event
-        hide: false
-      - value: year_q3_2023
-        label: Q3-2023
-        hide: true
-      - value: year_2023
-        label: '2023'
-        hide: true
 layout: overview
 title: Activities
 subtitle: >
