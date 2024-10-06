@@ -16,34 +16,35 @@ Banner:
     title: Een Europees kennisplatform voor
     labels:
       - text: AI bias testing
-      - text: normatieve AI standaarden
+      - text: AI standaarden
 Activity_Feed:
   enable: true
   button_text: Meer evenementen...
   button_link: /nl/events/activities/#events
   featured_activities:
-    - title: Addendum Vooringenomenheid voorkomen – Biasmeting CUB-proces DUO
-      intro: "Addendum op eerder\_onderzoek\_(AA:2024:02:TA) – Biasmeting aan de hand van CBS-data over het Controle Uitwonendenbeurs (CUB) proces van DUO\n"
-      link: /nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/
-      image: /images/algoprudence/AA202402/AA202402_cover.png
-      date: 22-05-2024
-      type: technische audit
+    - title: Vergelijkende analyse van 10 Fundamental Rights Impact Assessments (FRIAs)
+      intro: >
+        Evaluatie van 10 bestaande FRIA-kaders op basis van 12 vereisten op juridisch, organisatorisch, technisch en sociaal vlak. Uit onze analyse worden verschillen zichtbaar wat betreft de lengte en volledigheid van FRIAs.
+      link: /nl/knowledge-platform/knowledge-base/comparative_review_10_frias/
+      image: /images/knowledge_base/Comparative_review_10_FRIAs.png
+      date: 21-09-2024
+      type: white paper
   activities:
-    - title: 'Lunchlezing over DUO onderzoek bij Centraal Bureau voor de Statistiek (CBS)'
-      link: /events/activities/#events
-      image: /images/events/CBS_logo.png
-      date: 25-06-2024
+    - title: Gastspreker lunchlezing 'Risico's van opsporingsalgoritmes'
+      link: /nl/events/activities/#events
+      image: /images/events/MinJenV_logo.png
+      date: 02-10-2024
       type: presentatie
-    - title: Europese Academie voor Standardisering jaarlijkse conferentie
-      link: /events/activities/#events
-      image: /images/events/StandICT.jpg
-      date: 19-06-2024
-      type: paneldiscussie
-    - title: MozFest Amsterdam 2024 Funders' Summit
-      link: /events/activities/#events
-      image: /images/events/MozillaFestival.png
-      date: 11-06-2024
-      type: paneldiscussie
+    - title: Masterclass 'Algoritmevalidatie'
+      link: /nl/events/activities/#events
+      image: /images/events/VNG_logo.png
+      date: 19-09-2024
+      type: presentatie
+    - title: Gastspreker verdiepingssessie 'Bias, fairness en non-discriminatie'
+      link: /nl/events/activities/#events
+      image: /images/supported_by/BZK.jpg
+      date: 18-09-2024
+      type: presentatie
 Supported_by:
   title: Ondersteund door
   funders:

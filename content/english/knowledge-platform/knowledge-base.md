@@ -1,4 +1,33 @@
 ---
+facet_groups:
+  - value: subject
+    title: Subject
+    facets:
+      - value: algoprudence
+        label: Algoprudence
+      - value: DSA
+        label: DSA
+      - value: FR
+        label: Fundamental rights
+      - value: GDPR
+        label: GDPR
+      - value: scientific
+        label: Scientific
+  - value: type
+    title: Type
+    facets:
+      - value: article
+        label: Article
+      - value: book
+        label: Book
+      - value: op_ed
+        label: Op-ed
+      - value: report
+        label: Report
+      - value: review
+        label: Review
+      - value: white_paper
+        label: White paper
 pagesize: 4
 title_content: Articles
 layout: overview
@@ -13,3 +42,4 @@ subtitle: >
   know!</span>](/#contactform)
 image: /images/svg-illustrations/knowledge_base.svg
 ---
+

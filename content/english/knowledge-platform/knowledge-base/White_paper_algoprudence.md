@@ -5,11 +5,16 @@ intro: >-
 featured: false
 layout: article
 type: knowledgebase_item
+facets:
+  - value: type_white_paper
+    label: white paper
+  - value: subject_algoprudence
+    label: algoprudence
 author: Algorithm Audit
 summary: >-
   Introducing Algoprudence: Case-based and decentralized judgements for ethical
   AI
-weight: -3
+weight: -10
 title: 'Algoprudence: Jurisprudence for algorithms'
 subtitle: ''
 image: /images/knowledge_base/White-paper_Algoprudence.png

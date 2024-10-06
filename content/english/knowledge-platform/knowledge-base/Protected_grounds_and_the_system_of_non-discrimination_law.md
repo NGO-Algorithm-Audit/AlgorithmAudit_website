@@ -5,6 +5,12 @@ image: "/images/knowledge_base/Protected_ground_and_system_of_non-discrimination
 layout: article
 type: knowledgebase_item
 draft: false
+facets:
+  - value: type_article
+    label: article
+  - value: subject_scientific
+    label: scientific
+weight: 0
 summary: Plea that a hybrid system of non-discrimination law, with a semi-closed list of grounds and an open possibility for exemptions and justification, is best-suited to deal with the particularities of AI-driven discrimination.
 ---
 

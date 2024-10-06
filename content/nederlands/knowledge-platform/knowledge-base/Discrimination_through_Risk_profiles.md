@@ -4,7 +4,11 @@ author: Dutch College for Human Rights
 image: "/images/knowledge_base/mensenrechtelijk_toetsingskader.png"
 layout: article
 type: knowledgebase_item
+facets:
+  - value: type_report
+    label: rapport
 draft: false
+weight: 0
 summary: Framework for discrimination through risk-profiling
 ---
 

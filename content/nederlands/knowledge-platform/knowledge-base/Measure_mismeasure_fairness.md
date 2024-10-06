@@ -5,6 +5,12 @@ image: "/images/knowledge_base/measure_mismeasure.png"
 layout: article
 type: knowledgebase_item
 draft: false
+facets:
+  - value: type_article
+    label: artikel
+  - value: subject_scientific
+    label: wetenschappelijk
+weight: 0
 summary: Why are formulas for fairness troublesome? Why prevailing definitions of fairness typically do not map on to traditional social, economic or legal understandings of the concept? This paper provides answers.
 ---
 

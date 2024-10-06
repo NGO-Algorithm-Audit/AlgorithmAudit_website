@@ -4,7 +4,13 @@ author: Sam Corbett-Davies, Sharad Goel
 image: "/images/knowledge_base/measure_mismeasure.png"
 layout: article
 type: knowledgebase_item
+facets:
+  - value: type_article
+    label: article
+  - value: subject_scientific
+    label: scientific
 draft: false
+weight: 0
 summary: Why are formulas for fairness troublesome? Why prevailing definitions of fairness typically do not map on to traditional social, economic or legal understandings of the concept? This paper provides answers.
 ---
 

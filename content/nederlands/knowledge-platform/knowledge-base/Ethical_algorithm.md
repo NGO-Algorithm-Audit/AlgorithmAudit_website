@@ -3,7 +3,11 @@ title: The Ethical Algorithm
 author: Michael Kearns, Aaron Roth
 image: /images/knowledge_base/ethical_algorithm.png
 layout: article
+facets:
+  - value: type_book
+    label: boek
 type: knowledgebase_item
+weight: 0
 summary:
   Technically accesible and compelling book. Filled with fresh thoughts from
   a frontier in the fair ML community. Written by two top-tier computer scientists.

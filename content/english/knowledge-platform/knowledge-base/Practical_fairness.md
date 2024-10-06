@@ -4,6 +4,10 @@ author: Aileen Nielsen
 image: /images/knowledge_base/practical_fairness.jpeg
 layout: article
 type: knowledgebase_item
+facets:
+  - value: type_book
+    label: book
+weight: 0
 summary: A wide-ranging book that informs data and AI ethics practitioners about recent advances in open-source toolkits and legal frameworks.
 ---
 

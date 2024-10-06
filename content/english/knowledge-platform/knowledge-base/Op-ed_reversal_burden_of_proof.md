@@ -5,6 +5,12 @@ image: /images/knowledge_base/Op-ed-2.png
 author: Algorithm Audit
 layout: article
 type: knowledgebase_item
+facets:
+  - value: type_op_ed
+    label: op-ed
+  - value: none
+    label: FD
+weight: -2
 summary: >-
   Algorithm Audit's first white paper on the reversal on the burden of proof in
   the context of (semi-)automated decision-making

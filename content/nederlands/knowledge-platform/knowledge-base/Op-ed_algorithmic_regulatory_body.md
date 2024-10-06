@@ -1,13 +1,17 @@
 ---
-title: >-
-  Algorithm Audit (opinieartikel) – Een nieuwe nationale toezichthouder op
-  algoritmes
-subtitle: ""
-image: /images/knowledge_base/Op-ed-1.png
-author: Algorithm Audit
 layout: article
 type: knowledgebase_item
+author: Algorithm Audit
 summary: "Opinieartikel in Het Financieele Dagblad over de nieuwe nationale algoritmetoezichthouder. Maak er een bulldog van \U0001F43A, geen schoothond \U0001F436"
+facets:
+  - value: type_op_ed
+    label: opinie
+  - value: none
+    label: FD
+weight: -2
+title: Een nieuwe nationale toezichthouder op algoritmes
+subtitle: ''
+image: /images/knowledge_base/Op-ed-1.png
 ---
 
 Opiniebijdrage van Algorithm Audit bestuurder Ariën Voogt over toezicht op algoritmes. Het artikel pleit voor daadkrachtig optreden van de nationale algoritmewaakhond, zoals recent opgericht door de Minister van Digitalisering. Maak er een bulldog van <span style="font-size: 25px;">🐺</span>. Geen schoothond <span style="font-size: 25px;">🐶</span>.
