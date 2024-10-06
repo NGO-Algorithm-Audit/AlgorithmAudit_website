@@ -5,6 +5,12 @@ image: "/images/knowledge_base/fairness_automated.png"
 layout: article
 type: knowledgebase_item
 draft: false
+facets:
+  - value: type_article
+    label: article
+  - value: subject_scientific
+    label: scientific
+weight: 0
 summary: Must-read scientific paper proposing ideas to bridge the qualitative (legal) and quantitative (statistical) doctrine
 ---
 

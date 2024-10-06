@@ -4,7 +4,13 @@ type: knowledgebase_item
 author: Algorithm Audit
 summary: "A new algorithmic regulatory body is institutionalized in The Netherlands. We say: Make it a bulldog \U0001F43A, not a lap dog \U0001F436"
 title: Algorithm Audit (op-ed) – A new algorithmic regulatory body in The Netherlands
+facets:
+  - value: type_op_ed
+    label: op-ed
+  - value: none
+    label: FD
 subtitle: ""
+weight: -2
 image: /images/knowledge_base/Op-ed-1.png
 ---
 

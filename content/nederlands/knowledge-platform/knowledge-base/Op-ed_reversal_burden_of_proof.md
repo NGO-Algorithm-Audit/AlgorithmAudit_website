@@ -1,13 +1,19 @@
 ---
-title: Algorithm Audit (opinieartikel) – Omkering van de algoritmische bewijslast
-subtitle: ""
-image: /images/knowledge_base/Op-ed-2.png
-author: Algorithm Audit
 layout: article
 type: knowledgebase_item
+author: Algorithm Audit
 summary: >-
   Opinieartikel in Het Financieele Dagblad over de omkering van de bewijslast in
   de context van algoritme-gedreven besluitvorming
+facets:
+  - value: type_op_ed
+    label: opinie
+  - value: none
+    label: FD
+weight: -1
+title: Omkering van de algoritmische bewijslast
+subtitle: ''
+image: /images/knowledge_base/Op-ed-2.png
 ---
 
 Opinieartikel in Het Financieele Dagblad over de omkering van de bewijslast: zorg eerst dat de ontwikkelaar aantoont dat een algoritme niet discrimineert voordat het wordt ingezet, in plaats van achteraf herstelwerkzaamheden te verrichten wanneer er toch sporen van ongelijke behandeling zijn.

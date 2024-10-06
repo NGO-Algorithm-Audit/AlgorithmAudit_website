@@ -5,7 +5,12 @@ layout: article
 type: knowledgebase_item
 author: Algorithm Audit
 summary: Comparative review of 10 FRIAs
-weight: 2
+facets:
+  - value: type_white_paper
+    label: white paper
+  - value: subject_FR
+    label: grondrechten
+weight: -11
 title: Vergelijkende analyse van 10 FRIAs
 subtitle: ''
 image: /images/knowledge_base/Comparative_review_10_FRIAs.png
@@ -19,7 +24,7 @@ Uit onze beoordeling komt naar voren dat er een groot verschil bestaat wat betre
 
 🩺 Veel FRIAs beschikken niet over juridische hulpmiddelen om normatieve besluitvorming in de kern aan te pakken, zoals de objectieve rechtvaardigingstoets, die met name van belang is wanneer gebruikers door een AI-systeem worden gesegmenteerd.
 
-🔢 Geen van de FRIAs bevatten metrieken voor nauwkeurigheid om de conceptuele deugdelijkheid te kunnen beoordelen van de statistische methodologie die wordt toegepast bij een AI-systeem, zoals (hyper)parametergevoeligheidstesten voor ML- en DL-methoden, of statistische hypothesetesten voor risicobeoordeling. 
+🔢 Geen van de FRIAs bevatten metrieken voor nauwkeurigheid om de conceptuele deugdelijkheid te kunnen beoordelen van de statistische methodologie die wordt toegepast bij een AI-systeem, zoals (hyper)parametergevoeligheidstesten voor ML- en DL-methoden, of statistische hypothesetesten voor risicobeoordeling.
 
 🫴🏽 Bovendien geeft de technocratische aanpak die de meeste FRIAs hanteren burgers geen mogelijkheid om op zinvolle wijze deel te nemen aan het vormgeven van de technologieën die hen raken. Belanghebbenden zouden meer betrokken moeten worden bij de normatieve beslissing die ten grondslag ligt aan datamodellering.
 

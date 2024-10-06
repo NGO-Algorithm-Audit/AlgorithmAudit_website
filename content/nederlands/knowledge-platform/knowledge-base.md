@@ -1,4 +1,33 @@
 ---
+facet_groups:
+  - value: subject
+    title: Onderwerp
+    facets:
+      - value: algoprudence
+        label: Algoprudentie
+      - value: DSA
+        label: DSA
+      - value: FR
+        label: Grondrechten
+      - value: GDPR
+        label: Avg
+      - value: scientific
+        label: Wetenschappelijk
+  - value: type
+    title: Type
+    facets:
+      - value: review
+        label: Analyse
+      - value: article
+        label: Artikel
+      - value: book
+        label: Boek
+      - value: op_ed
+        label: Opinie
+      - value: report
+        label: Rapport
+      - value: white_paper
+        label: White paper
 pagesize: 4
 title_content: Articles
 layout: overview

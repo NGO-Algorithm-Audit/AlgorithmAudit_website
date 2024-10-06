@@ -4,8 +4,13 @@ featured: true
 layout: article
 type: knowledgebase_item
 author: Algorithm Audit
+facets:
+  - value: type_white_paper
+    label: white paper
+  - value: subject_FR
+    label: fundamental rights
 summary: Comparative review of 10 FRIAs
-weight: 2
+weight: -11
 title: Comparative review of 10 FRIAs
 subtitle: |
   Comparative review of 10 FRIAs

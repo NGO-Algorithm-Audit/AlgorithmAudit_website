@@ -5,7 +5,13 @@ subtitle: >
   had a direct effect on the decisions made by civil servants reviewing Dutch
   visa applications
 image: /images/knowledge_base/BuZa_Ftest.png
+facets:
+  - value: type_article
+    label: article
+  - value: subject_scientific
+    label: scientific
 author: Onbekend
+weight: 0
 layout: article
 type: knowledgebase_item
 summary: >-

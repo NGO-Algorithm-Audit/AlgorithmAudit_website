@@ -6,7 +6,13 @@ subtitle: ""
 image: /images/knowledge_base/White-paper1.png
 author: Algorithm Audit
 layout: article
+facets:
+  - value: type_white_paper
+    label: white paper
+  - value: subject_DSA
+    label: DSA
 type: knowledgebase_item
+weight: -9
 summary: >-
   Plea to include the normative dimension of AI auditing in delegated regulation
   of the Digital Services Act (DSA). Current limitations are illustrated by

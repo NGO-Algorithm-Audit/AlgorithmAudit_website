@@ -7,6 +7,12 @@ layout: article
 type: knowledgebase_item
 author: "Jurriaan Parie, Vardâyani Djwalapersad"
 title: Algorithm Audit (op-ed) – Human vs machine bias
+facets:
+  - value: type_op_ed
+    label: op-ed
+  - value: none
+    label: Parool
+weight: -3
 subtitle: ""
 image: /images/knowledge_base/Op-ed-3.png
 ---
