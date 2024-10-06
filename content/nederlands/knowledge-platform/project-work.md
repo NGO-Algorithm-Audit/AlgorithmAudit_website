@@ -33,6 +33,14 @@ form1:
       type: textarea
 ---
 
+{{< container_open title="Samenwerking met Gemeente Amsterdam" id="amsterdam" icon="fas fa-list-ol" >}}
+
+In de tweede helft van 2024 werkt Algorithm Audit samen met de Gemeente Amsterdam om publieke kennis op te bouwen over pragmatische beheerskader voor voor algoritmes die zowel binnen als buiten de AI-systeem van de AI Verordening vallen. 
+
+{{< image image1="/images/events/Amsterdam.png" alt1="Municipality of Amsterdam" caption1="Municipality of Amsterdam" link1="" width_desktop="3" id="amsterdam-logo" >}}
+
+{{< container_close >}}
+
 {{< container_open title="Samenwerking met DUO" id="DUO" icon="fas fa-user-graduate" >}}
 
 In 2023-24 werkt Stichting Algorithm Audit samen met de Dienst Uitvoering Onderwijs (DUO) om gezamenlijk ervaring op te doen met het valideren van algoritmes, uit zowel kwalitatief als kwantitatief oogpunt. Op de volgende vlakken vindt samenwerking plaats:

@@ -33,13 +33,21 @@ form1:
       type: textarea
 ---
 
+{{< container_open title="Collaboration with Municipality of Amsterdam" id="amsterdam" icon="fas fa-list-ol" >}}
+
+Over the course of fall 2024, Algorithm Audit pairs up with the municipality of Amsterdam to build public knowledge on pragmatic risk management measures for algorithms falling within and outside the AI-system defintion under the AI Act. 
+
+{{< image image1="/images/events/Amsterdam.png" alt1="Municipality of Amsterdam" caption1="Municipality of Amsterdam" link1="" width_desktop="3" id="amsterdam-logo" >}}
+
+{{< container_close >}}
+
 {{< container_open title="Collaboration with Dutch Executive Eduction Agency (DUO)" id="DUO" icon="fas fa-user-graduate" >}}
 
 Over the course of 2023-24, Algorithm Audit has paired up with Dutch public sector organisation DUO to build algorithm validation capacity from both a qualitative and quantitative dimensions. We have been working on:
 
-* A technical audit of the college grant control (CGC)-proces. The first report, with findings and recommendation, [Prejudice prevented](/algoprudence/cases/aa202401_bias-prevented/) has been sent to the Dutch Parliament on 01-03-2024. The second report, 
-* submitted a request to the Dutch National Office of Statistics to conduct a large-scale study on proxy characteristics in the CLC-process;
-* finding solutions to deal with the normative dimension of auditing and evaluating algorithmic-driven decision-making processes, for instance involvement of diverse stakeholders panels to qualitatively interpret quantitative measurements.
+* A technical audit of the college grant check proces. The first report, with findings and recommendation, [Preventing prejudice](/algoprudence/cases/aa202401_preventing-prejudice/) has been sent to the Dutch Parliament on 01-03-2024;
+* The second report, included a [data analysis](https://github.com/NGO-Algorithm-Audit/DUO-CUB) based on aggregation statistics shared by the Dutch National Office of Statistics to conduct a large-scale study on proxy characteristics in the college grant check process;
+* Finding solutions to deal with the normative dimension of auditing and evaluating algorithmic-driven decision-making processes, for instance involvement of diverse stakeholders panels to qualitatively interpret quantitative measurements.
 
 {{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/partners/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
 

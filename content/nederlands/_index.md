@@ -22,48 +22,71 @@ Activity_Feed:
   button_text: Meer evenementen...
   button_link: /nl/events/activities/#events
   featured_activities:
-    - title: Vergelijkende analyse van 10 Fundamental Rights Impact Assessments (FRIAs)
+    - title: >-
+        Vergelijkende analyse van 10 Fundamental Rights Impact Assessments
+        (FRIAs)
       intro: >
-        Evaluatie van 10 bestaande FRIA-kaders op basis van 12 vereisten op juridisch, organisatorisch, technisch en sociaal vlak. Uit onze analyse worden verschillen zichtbaar wat betreft de lengte en volledigheid van FRIAs.
+        Evaluatie van 10 bestaande FRIA-kaders op basis van 12 vereisten op
+        juridisch, organisatorisch, technisch en sociaal vlak. Uit onze analyse
+        worden verschillen zichtbaar wat betreft de lengte en volledigheid van
+        FRIAs.
       link: /nl/knowledge-platform/knowledge-base/comparative_review_10_frias/
       image: /images/knowledge_base/Comparative_review_10_FRIAs.png
       date: 21-09-2024
       type: white paper
   activities:
-    - title: Gastspreker lunchlezing 'Risico's van opsporingsalgoritmes'
+    - title: >-
+        Gastspreker lunchlezing 'Risico's van opsporingsalgoritmes', Ministerie
+        van Justitie en Veiligheid
       link: /nl/events/activities/#events
       image: /images/events/MinJenV_logo.png
       date: 02-10-2024
       type: presentatie
-    - title: Masterclass 'Algoritmevalidatie'
+    - title: >-
+        Masterclass 'Algoritmevalidatie', Vereniging van Nederlandse Gemeenten
+        (VNG)
       link: /nl/events/activities/#events
       image: /images/events/VNG_logo.png
       date: 19-09-2024
       type: presentatie
-    - title: Gastspreker verdiepingssessie 'Bias, fairness en non-discriminatie'
+    - title: >-
+        Gastspreker verdiepingssessie 'Bias, fairness en non-discriminatie',
+        Ministerie van Binnenlandse Zaken
       link: /nl/events/activities/#events
       image: /images/supported_by/BZK.jpg
       date: 18-09-2024
       type: presentatie
 Supported_by:
-  title: Ondersteund door
+  title: Samenwerking met
   funders:
     - image: /images/supported_by/sidn.png
       link: 'https://www.sidnfonds.nl/projecten/open-source-ai-auditing'
-      alt_text: SIDN Fonds
+      alt_text: Stichting Internet en Democratie Nederland
     - image: /images/supported_by/EUAISFund.png
-      link: 'https://europeanaifund.org/'
-      alt_text: European AI & Society Fund
-    - image: /images/supported_by/NLAIC.png
-      link: 'https://nlaic.com/en/'
-      alt_text: Nederlandse AI Coalitie
+      link: 'https://europeanaifund.org/announcing-our-2022-open-call-grantees/'
+      alt_text: European AI&Society Fund
     - image: /images/supported_by/BZK.jpg
       link: >-
         https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
-      alt_text: Ministerie van Binnenlandse Zaken en Koninkrijksrelaties
+      alt_text: Ministerie van Binnelandse Zaken en Konkinkrijksrelaties
     - image: /images/supported_by/HAI.png
       link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
-      alt_text: Stanford's AI Audit Challenge 2023 finalisten
+      alt_text: Stanford University Human-Centered Artificial Intelligence Lab
+    - image: /images/partners/DUO.png
+      link: 'https://duo.nl'
+      alt_text: Dienst Uitvoering Onderwijs
+    - image: /images/partners/NEN.svg
+      link: 'https://www.nen.nl'
+      alt_text: Nederlands normalisatie instituut
+    - image: /images/partners/CEN.jpg
+      link: 'https://www.cencenelec.eu'
+      alt_text: 'Europees standaardiseringcomité '
+    - image: /images/events/Amsterdam.png
+      link: 'https://www.amsterdam.nl'
+      alt_text: Gemeente Amsterdam
+    - image: /images/supported_by/CoE.png
+      link: 'https://www.coe.int/en/web/portal/home'
+      alt_text: Raad voor Europa
 Building_ai_audit_capacity:
   lines:
     - text_before: Opbouwen van
