@@ -14,13 +14,15 @@ subtitle: >
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
 overview_block:
-  - title: Quick scan
+  - title: Identificatie van AI-systemen en hoog-risico algoritmes
     content: >
-      Met een paar vragen kun je al een gedegen inschatting maken of een algoritme of AI-systeem tot een hoog-risico categorie behoort. Doe nu de algoritme-classificatie quick scan.
+      Aan de hand van 8-12 vragen kun je al een gedegen inschatting maken of een
+      datagedreven toepassing een AI-systeem of impactvol algoritme betreft. Vul
+      nu de vragenlijst in.
     icon: fas fa-search
     id: quick-scan
     items:
-      - title: Classificatie
+      - title: Identificeer
         icon: fas fa-star
         link: classification-quick-scan/#form
   - title: Documentatie en classificatie tool
@@ -65,7 +67,7 @@ overview_block:
 
 Maak gebruik van dynamische vragenlijsten om algoritmes en AI-systemen te documenten en classificeren. De tool bestaat uit twee componenten:
 
-* [Algoritme-classificatie tool (8-12 vragen)](#quick-scan)
+* [Identificatie van AI-systemen en hoog-risico algoritmes (8-12 vragen)](#quick-scan)
 * [Risicoclassificatie (40-50 vragen)](#organisation-wide)
 * [AI Verordening beslisbomen voor AI-systeem en risicoclassificatie](#ai-act)
 
