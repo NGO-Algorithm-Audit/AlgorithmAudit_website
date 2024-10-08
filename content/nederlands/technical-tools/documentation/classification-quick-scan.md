@@ -18,8 +18,8 @@ dynamic_form_engine:
     id: form
     icon: fa fa-star
     content: >
-      Bepaal binnen 8 vragen of uw toepassing een AI-systeem of impactvol
-      algoritme is.
+      Bepaal aan de hand van 8 vragen of uw toepassing een AI-systeem of
+      impactvol algoritme is.
     section:
       - questions:
           - identifier: intro1
@@ -190,25 +190,51 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q2
                     value: yes2
+          - identifier: output3
+            title: 'Toepassing is een AI-systeem '
+            content: |
+              Een AI Act risk assessment moet worden ingevuld.
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q3
+                    value: option5
+              - visible_when_and:
+                  - identifier: q3
+                    value: option4
+              - visible_when_and:
+                  - identifier: q3
+                    value: option3
+              - visible_when_and:
+                  - identifier: q3
+                    value: option2
+              - visible_when_and:
+                  - identifier: q3
+                    value: option1
           - identifier: q4
             title: >-
               Tot welke van de volgende categorieën behoort de uitkomst van de
               toepassing?
+            content: ''
             options:
               - id: option1
                 value: option1
                 title: 'Een ingeschatte score, rangschikking of kans'
+                content: ''
               - id: option2
                 value: option2
                 title: >-
                   Een ingeschat label of classificatie (ja/nee, hoog/laag of een
                   indeling in groepen)
+                content: ''
               - id: option3
                 value: option3
                 title: Een aanbeveling
+                content: ''
               - id: option4
                 value: option4
                 title: Een beslissing
+                content: ''
               - id: option5
                 value: option5
                 title: 'Content (geschreven tekst, video, audio of  afbeeldingen)'
@@ -217,6 +243,7 @@ dynamic_form_engine:
               - id: option6
                 value: option6
                 title: Een ander soort output
+                content: ''
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -233,11 +260,219 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q2
                     value: option6
+          - identifier: q5
+            title: Rol in besluitvorming
+            content: >
+              Worden in het proces beslissingen genomen voor individuele
+              inwoners?
+            tooltip: >-
+              Denk aan wel/geen opvolging vraag of verzoek van een burger,
+              wel/geen verzoek aan burger om aanvullende informatie aan te
+              leveren, wel/geen selectie voor controle of inspectie. Let op: een
+              beslissing is veel breder dan een formeel besluit.
+            options:
+              - id: 'yes'
+                value: 'yes'
+                title: Ja
+              - id: 'no'
+                value: 'no'
+                title: Nee
+            required: true
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q3
+                    value: option5
+              - visible_when_and:
+                  - identifier: q3
+                    value: option4
+              - visible_when_and:
+                  - identifier: q3
+                    value: option3
+              - visible_when_and:
+                  - identifier: q3
+                    value: option2
+              - visible_when_and:
+                  - identifier: q3
+                    value: option1
+              - visible_when_and:
+                  - identifier: q4
+                    value: option5
+              - visible_when_and:
+                  - identifier: q4
+                    value: option4
+              - visible_when_and:
+                  - identifier: q4
+                    value: option3
+              - visible_when_and:
+                  - identifier: q4
+                    value: option2
+              - visible_when_and:
+                  - identifier: q4
+                    value: option1
+          - identifier: q6
+            title: Soort beslissing
+            content: |
+              Wat voor soort beslissingen worden genomen in dit proces?
+            options:
+              - id: option1
+                value: option1
+                title: Beslissing met directe financiële gevolgen voor burger
+                content: >
+                  Bijvoorbeeld beslissingen over uitkering, toeslag, subsidie,
+                  boete, terugbetaling of mogelijkheid tot betalingsregeling
+              - id: option2
+                value: option2
+                title: >-
+                  Beslissing over aanvragen en verzoeken zonder directe
+                  financiële gevolgen
+              - id: option3
+                value: option3
+                title: Beslissing over formele klachten en bezwaren
+              - id: option4
+                value: option4
+                title: >-
+                  Beslissing over prioritering of routering van aanvragen,
+                  verzoeken, klachten en bezwaren
+              - id: option5
+                value: option5
+                title: >-
+                  Beslissing over controle, onderzoek of verzoek tot aanvullende
+                  informatie verschaffing door de burger
+              - id: option6
+                value: option6
+                title: Anders
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q5
+                    value: 'yes'
+          - identifier: q6-option6
+            title: Beschrijf het soort beslissing
+            type: textarea
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q6
+                    value: option6
+          - identifier: q7
+            title: Interactie met burger
+            content: >
+              Het proces draagt bij aan hoe de overheid (groepen) inwoners
+              categoriseert of benadert?
+            options:
+              - id: 'yes'
+                value: 'yes'
+                title: Ja
+              - id: 'no'
+                value: 'no'
+                title: Nee
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q5
+                    value: 'no'
+          - identifier: q8
+            title: Effect van toepassing
+            content: |
+              Wat is effect van de toepassing op de uitkomst van het proces? 
+            options:
+              - id: option1
+                value: option1
+                title: >-
+                  De uitkomst van het proces wordt direct bepaald door de
+                  toepassing
+                content: >
+                  Bijvoorbeeld straight through processing. Menselijk toezicht 
+                  kan achteraf door de uitkomsten te bekijken of analyseren.
+              - id: option2
+                value: option2
+                title: >-
+                  De uitkomst van het proces wordt in grote mate beïnvloed door
+                  de toepassing
+                content: >
+                  Bijvoorbeeld doordat werkinstructies een consequentie
+                  verbinden aan een specifieke output van de toepassing. Een
+                  medewerker kan afwijkende keuzes maken, maar in de praktijk is
+                  de output een doorslaggevende factor voor de procesuitkomst.
+              - id: option3
+                value: option3
+                title: >-
+                  De uitkomst van het proces wordt in zekere mate beïnvloed door
+                  de output van de toepassing
+                content: >
+                  De output  van de toepassing een belangrijke factor voor de
+                  procesuitkomst, maar een medewerker maakt zelf de keuze over
+                  de uitkomst. Deze medeweker heeft de juiste informatie,
+                  ervaring/kunde, mandaat en beschikbare tijd om deze keuze te
+                  maken.
+              - id: option4
+                value: option4
+                title: >-
+                  De uitkomst van het proces wordt volledig door een mens
+                  bepaald en wordt beïnvloed door meerdere factoren waarin de
+                  output slechts een van deze factoren is
+                content: >
+                  De output van de toepassing is niet doorslaggevend in de
+                  keuze.
+              - id: option5
+                value: option5
+                title: Een ander soort effect
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q6
+                    value: option6
+              - visible_when_and:
+                  - identifier: q6
+                    value: option5
+              - visible_when_and:
+                  - identifier: q6
+                    value: option4
+              - visible_when_and:
+                  - identifier: q6
+                    value: option3
+              - visible_when_and:
+                  - identifier: q6
+                    value: option2
+              - visible_when_and:
+                  - identifier: q6
+                    value: option1
+              - visible_when_and:
+                  - identifier: q7
+                    value: 'yes'
+          - identifier: q8-option5
+            title: Beschrijf het effect van de toepassing op het proces
+            required: true
+            type: textarea
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q8
+                    value: option5
+          - identifier: output4
+            title: Impactvol algoritme
+            content: ''
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q8
+                    value: option5
+              - visible_when_and:
+                  - identifier: q8
+                    value: option3
+              - visible_when_and:
+                  - identifier: q8
+                    value: option2
+              - visible_when_and:
+                  - identifier: q8
+                    value: option1
           - identifier: output1
             title: Uw toepassing is geen AI-systeem of impactvol algoritme
             content: ''
             type: radio
             visible_when_or:
+              - visible_when_and:
+                  - identifier: q8
+                    value: option4
               - visible_when_and:
                   - identifier: q1
                     value: yes1
@@ -250,6 +485,9 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q3
                     value: option6
+              - visible_when_and:
+                  - identifier: q7
+                    value: 'no'
     complete_form_options:
       type: print
       button_text: Save as pdf
