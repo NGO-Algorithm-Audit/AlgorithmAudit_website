@@ -18,13 +18,17 @@ dynamic_form_engine:
     id: form
     icon: fa fa-star
     content: >
-      Bepaal aan de hand van 8 vragen of uw toepassing een AI-systeem of
-      impactvol algoritme is.
+      Bepaal aan de hand van maximaal 8 vragen of uw toepassing een AI-systeem
+      of impactvol algoritme is.
     section:
       - questions:
           - identifier: intro1
             title: Naam van de toepassing
             content: ''
+            tooltip: >-
+              Als de toepassing geen formele naam heeft, geef dan een naam op
+              die collega's onderling gebruiken om naar deze toepassing te
+              verwijzen.
             required: true
             type: text
           - identifier: intro2
@@ -39,6 +43,10 @@ dynamic_form_engine:
               Naam primair aanspreekpunt binnen de organisatie voor de
               toepassing, bijv. producteigenaar 
             content: ''
+            tooltip: >-
+              Wanneer er geen afgestemd aanspreekpunt of eigenaar is, vul hier
+              dan voorlopig je eigen naam in. Het algoritme team kan dan contact
+              met je opnemen.
             required: true
             type: textyes1
           - identifier: intro4
@@ -90,6 +98,7 @@ dynamic_form_engine:
           - identifier: q1-yes1
             title: Welke wet of regelgeving?
             content: ''
+            required: true
             type: text
             visible_when_or:
               - visible_when_and:
@@ -133,7 +142,7 @@ dynamic_form_engine:
                 value: 'no'
                 title: Nee
                 content: ''
-            required: true
+            required: false
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -190,6 +199,13 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q2
                     value: yes2
+          - identifier: q3-option6
+            title: Geef een beschrijving van de output
+            type: textarea
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q3
+                    value: option6
           - identifier: output3
             title: 'Toepassing is een AI-systeem '
             content: |
@@ -252,13 +268,14 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q2
                     value: yes1
-          - identifier: q2-1
+          - identifier: q4-option6
             title: Geef een beschrijving van de output
             content: ''
+            required: true
             type: textarea
             visible_when_or:
               - visible_when_and:
-                  - identifier: q2
+                  - identifier: q4
                     value: option6
           - identifier: q5
             title: Rol in besluitvorming
@@ -274,10 +291,12 @@ dynamic_form_engine:
               - id: 'yes'
                 value: 'yes'
                 title: Ja
+                content: ''
               - id: 'no'
                 value: 'no'
                 title: Nee
-            required: true
+                content: ''
+            required: false
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -326,22 +345,27 @@ dynamic_form_engine:
                 title: >-
                   Beslissing over aanvragen en verzoeken zonder directe
                   financiële gevolgen
+                content: ''
               - id: option3
                 value: option3
                 title: Beslissing over formele klachten en bezwaren
+                content: ''
               - id: option4
                 value: option4
                 title: >-
                   Beslissing over prioritering of routering van aanvragen,
                   verzoeken, klachten en bezwaren
+                content: ''
               - id: option5
                 value: option5
                 title: >-
                   Beslissing over controle, onderzoek of verzoek tot aanvullende
                   informatie verschaffing door de burger
+                content: ''
               - id: option6
                 value: option6
                 title: Anders
+                content: ''
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -349,6 +373,8 @@ dynamic_form_engine:
                     value: 'yes'
           - identifier: q6-option6
             title: Beschrijf het soort beslissing
+            content: ''
+            required: true
             type: textarea
             visible_when_or:
               - visible_when_and:
@@ -363,9 +389,11 @@ dynamic_form_engine:
               - id: 'yes'
                 value: 'yes'
                 title: Ja
+                content: ''
               - id: 'no'
                 value: 'no'
                 title: Nee
+                content: ''
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -374,7 +402,7 @@ dynamic_form_engine:
           - identifier: q8
             title: Effect van toepassing
             content: |
-              Wat is effect van de toepassing op de uitkomst van het proces? 
+              Wat is effect van de toepassing op de uitkomst van het proces?
             options:
               - id: option1
                 value: option1
@@ -417,6 +445,7 @@ dynamic_form_engine:
               - id: option5
                 value: option5
                 title: Een ander soort effect
+                content: ''
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -442,6 +471,7 @@ dynamic_form_engine:
                     value: 'yes'
           - identifier: q8-option5
             title: Beschrijf het effect van de toepassing op het proces
+            content: ''
             required: true
             type: textarea
             visible_when_or:
@@ -489,7 +519,7 @@ dynamic_form_engine:
                   - identifier: q7
                     value: 'no'
     complete_form_options:
-      type: print
+      type: submit
       button_text: Save as pdf
 form1:
   title: Intake
