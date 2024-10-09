@@ -2,14 +2,14 @@
 type: regular
 title: Documentatie voor AI-systemen
 subtitle: >
-  Open-source templates voor modeldocumentatie van AI-systemen. Afgestemd op de
-  eisen uit de AI Verordening en Nederlandse soft law kaders (zoals
+  Open-source templates voor modeldocumentatie. Afgestemd op de
+  eisen uit de AI Verordening en Nederlandse soft law kaders, zoals het
   [Onderzoekskader
   Algoritmes](https://www.rijksoverheid.nl/documenten/rapporten/2023/07/11/onderzoekskader-algoritmes-adr-2023#:~:text=De%20Auditdienst%20Rijk%20heeft%20een,risico's%20beheerst%20\(kunnen\)%20worden.)
   van de Audit Dienst Rijk, het
   [Algoritmekader](https://minbzk.github.io/Algoritmekader/) van het Ministerie
   van Binnenlandse Zaken en de Impact Assessment Mensenrechten en Algoritmes
-  ([IAMA](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes))). 
+  ([IAMA](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes)). 
 
 
   Help mee ontwikkelen, deel feedback middels
@@ -21,7 +21,7 @@ overview_block:
     content: >
       Aan de hand van maximaal 8 vragen kun je al een gedegen inschatting maken
       of een datagedreven toepassing een AI-systeem of impactvol algoritme
-      betreft. Vul nu de vragenlijst in.
+      betreft. Vul de dynamische vragenlijst in.
     icon: fas fa-search
     id: quick-scan
     items:
