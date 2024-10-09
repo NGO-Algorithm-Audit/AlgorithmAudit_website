@@ -89,7 +89,7 @@
           <!-- radio buttons -->
           {{ else if eq .type "radio" }}
           {{ range .options }}
-          <div class="col-md col-sm-12">
+          <div class="col-md-4 col-sm-12">
             <label>
               <input type="radio" name={{$input.identifier}} class="card-input-element" value={{.value}} {{if
                 $input.required}} required {{end}} />
