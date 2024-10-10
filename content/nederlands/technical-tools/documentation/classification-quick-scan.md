@@ -70,13 +70,17 @@ dynamic_form_engine:
             type: text
       - questions:
           - identifier: q1
-            title: Automatisering van wet- of regelgeving
+            title: Automatisering van door mensen opgestelde regels
             content: >
               Is de toepassing een één-op-één automatisering van in wet- of
               regelgeving of van anderszins door mensen opgestelde regels?
-            tooltip: >-
-              Wanneer de regels binnen uw toepassing vooraf niet expliciet zijn
-              opgesteld en gedocumenteerd, kies hier dan "nee".
+
+
+              <ins>*Wanneer de regels binnen uw toepassing vooraf niet expliciet
+              zijn opgesteld en gedocumenteerd, kies hier dan "nee". Software
+              vereisten (requirements) waar nog vrijheidsgraden in zitten, zijn
+              geen expliciete door mensen opgestelde regels.*</ins>
+            tooltip: ''
             options:
               - id: yes1
                 value: yes1
@@ -104,16 +108,6 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q1
                     value: yes1
-          - identifier: output2
-            title: Vervolgvraag
-            content: >
-              Mogelijk sprake van een AI-systeem of algoritme. We stellen u nog
-              een vervolgvraag.
-            type: radio
-            visible_when_or:
-              - visible_when_and:
-                  - identifier: q1
-                    value: yes2
           - identifier: q2
             title: >-
               Bevat de toepassing een model of beslisregels die uit data zijn
@@ -148,16 +142,6 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q1
                     value: 'no'
-          - identifier: output3
-            title: Vervolgvraag
-            content: >
-              Mogelijk sprake van een AI-systeem of algoritme. We stellen u nog
-              een vervolgvraag.
-            type: radio
-            visible_when_or:
-              - visible_when_and:
-                  - identifier: q2
-                    value: yes1
           - identifier: q3
             title: >-
               Tot welke van de volgende categorieën behoort de uitkomst van de
@@ -201,32 +185,12 @@ dynamic_form_engine:
                     value: yes2
           - identifier: q3-option6
             title: Geef een beschrijving van de output
+            content: ''
             type: textarea
             visible_when_or:
               - visible_when_and:
                   - identifier: q3
                     value: option6
-          - identifier: output3
-            title: 'Toepassing is een AI-systeem '
-            content: |
-              Een AI Act risk assessment moet worden ingevuld.
-            type: radio
-            visible_when_or:
-              - visible_when_and:
-                  - identifier: q3
-                    value: option5
-              - visible_when_and:
-                  - identifier: q3
-                    value: option4
-              - visible_when_and:
-                  - identifier: q3
-                    value: option3
-              - visible_when_and:
-                  - identifier: q3
-                    value: option2
-              - visible_when_and:
-                  - identifier: q3
-                    value: option1
           - identifier: q4
             title: >-
               Tot welke van de volgende categorieën behoort de uitkomst van de
@@ -277,11 +241,55 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q4
                     value: option6
+          - identifier: text1
+            title: >-
+              De volgende vragen gaan over het proces waarin de toepassing
+              gebruikt wordt. Het maakt hier voor de antwoorden niet uit in
+              hoeverre dit proces geautomatiseerd is en welke rol de toepassing
+              heeft in het proces. We vragen hierna uit welke rol de toepassing
+              speelt.
+            content: ''
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q3
+                    value: option5
+              - visible_when_and:
+                  - identifier: q3
+                    value: option4
+              - visible_when_and:
+                  - identifier: q3
+                    value: option3
+              - visible_when_and:
+                  - identifier: q3
+                    value: option2
+              - visible_when_and:
+                  - identifier: q3
+                    value: option1
+              - visible_when_and:
+                  - identifier: q4
+                    value: option5
+              - visible_when_and:
+                  - identifier: q4
+                    value: option4
+              - visible_when_and:
+                  - identifier: q4
+                    value: option3
+              - visible_when_and:
+                  - identifier: q4
+                    value: option2
+              - visible_when_and:
+                  - identifier: q4
+                    value: option1
           - identifier: q5
-            title: Rol in besluitvorming
+            title: Rol in beslissingproces
             content: >
               Worden in het proces beslissingen genomen voor individuele
               inwoners?
+
+
+              <ins>*Let op: een beslissing is veel breder dan een formeel
+              besluit*<ins>
             tooltip: >-
               Denk aan wel/geen opvolging vraag of verzoek van een burger,
               wel/geen verzoek aan burger om aanvullende informatie aan te
@@ -331,8 +339,9 @@ dynamic_form_engine:
                     value: option1
           - identifier: q6
             title: Soort beslissing
-            content: |
-              Wat voor soort beslissingen worden genomen in dit proces?
+            content: >
+              Wat voor soort beslissingen worden genomen in dit proces? Kies de
+              optie die de grootste overeenkomst heeft met de soort beslissing.
             options:
               - id: option1
                 value: option1
@@ -384,7 +393,11 @@ dynamic_form_engine:
             title: Interactie met burger
             content: >
               Het proces draagt bij aan hoe de overheid (groepen) inwoners
-              categoriseert of benadert?
+              categoriseert of benadert? 
+
+
+              Kies "Ja" wanneer je onzeker bent, en beschrijf kort de manier
+              waarop.
             options:
               - id: 'yes'
                 value: 'yes'
@@ -403,6 +416,8 @@ dynamic_form_engine:
             title: Effect van toepassing
             content: |
               Wat is effect van de toepassing op de uitkomst van het proces?
+
+              Kies de mogelijkheid die het beste past.
             options:
               - id: option1
                 value: option1
@@ -448,9 +463,7 @@ dynamic_form_engine:
                 content: ''
             type: radio
             visible_when_or:
-              - visible_when_and:
-                  - identifier: q6
-                    value: option6
+              - {}
               - visible_when_and:
                   - identifier: q6
                     value: option5
@@ -478,8 +491,10 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q8
                     value: option5
-          - identifier: output4
-            title: Impactvol algoritme
+          - identifier: output3
+            title: >-
+              Uw toepassing is op basis van uw antwoorden waarschijnlijk
+              impactvol algoritme.
             content: ''
             type: radio
             visible_when_or:
@@ -501,6 +516,9 @@ dynamic_form_engine:
             type: radio
             visible_when_or:
               - visible_when_and:
+                  - identifier: q6
+                    value: option6
+              - visible_when_and:
                   - identifier: q8
                     value: option4
               - visible_when_and:
@@ -518,6 +536,29 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q7
                     value: 'no'
+          - identifier: output2
+            title: >-
+              Uw toepassing is op basis van uw antwoorden waarschijnlijk een
+              AI-systeem.
+            content: |
+              Een AI Act risk assessment moet worden ingevuld.
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q3
+                    value: option5
+              - visible_when_and:
+                  - identifier: q3
+                    value: option4
+              - visible_when_and:
+                  - identifier: q3
+                    value: option3
+              - visible_when_and:
+                  - identifier: q3
+                    value: option2
+              - visible_when_and:
+                  - identifier: q3
+                    value: option1
     complete_form_options:
       type: submit
       button_text: Save as pdf
