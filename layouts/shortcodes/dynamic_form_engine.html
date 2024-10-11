@@ -20,7 +20,7 @@
     <form action="{{ .complete_form_options.backend_link | safeURL }}" method="POST" enctype="multipart/form-data">
       <p class="color-blue text-right mb-0" style="font-size:14px;">* {{ i18n "required"}}</p>
       {{ range .section }}
-      <h4>{{.title}}</h4>
+      <h3>{{.title}}</h3>
 
       {{ range .questions }}
       {{ $input := . }}
@@ -38,7 +38,7 @@
 
 
       <div class="score-card__question" {{if $visibilityCondition}}data-show-when="{{$visibilityCondition}}" {{end}}>
-        <h5>
+        <h4>
           {{ .title }}
           {{if .required}}*{{end}}
           {{ if .tooltip }}
@@ -47,7 +47,7 @@
             i
           </button>
           {{ end }}
-        </h5>
+        </h4>
 
         <p>
           {{ .content | markdownify }}

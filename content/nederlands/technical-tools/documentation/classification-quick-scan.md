@@ -24,7 +24,7 @@ dynamic_form_engine:
       - questions:
           - identifier: intro1
             title: Naam van de toepassing
-            content: ""
+            content: ''
             tooltip: >-
               Als de toepassing geen formele naam heeft, geef dan een naam op
               die collega's onderling gebruiken om naar deze toepassing te
@@ -35,14 +35,14 @@ dynamic_form_engine:
             title: >-
               Geef een korte beschrijving van de toepassing en hoe deze gebruikt
               wordt
-            content: ""
+            content: ''
             required: true
             type: textarea
           - identifier: intro3
             title: >-
               Naam primair aanspreekpunt binnen de organisatie voor de
               toepassing, bijv. producteigenaar
-            content: ""
+            content: ''
             tooltip: >-
               Wanneer er geen afgestemd aanspreekpunt of eigenaar is, vul hier
               dan voorlopig je eigen naam in. Het algoritme team kan dan contact
@@ -53,19 +53,19 @@ dynamic_form_engine:
             title: >-
               Mailadres primair aanspreekpunt binnen de organisatie voor de
               toepassing, bijv. producteigenaar
-            content: ""
+            content: ''
             required: true
             type: text
           - identifier: intro5
             title: >-
               Welk team binnen de organisatie is primair verantwoordelijk voor
               de toepassing?
-            content: ""
+            content: ''
             required: true
             type: text
           - identifier: intro6
             title: Binnen welke lijndirectie valt dit team?
-            content: ""
+            content: ''
             required: true
             type: text
       - questions:
@@ -80,29 +80,29 @@ dynamic_form_engine:
               zijn opgesteld en gedocumenteerd, kies hier dan "nee". Software
               vereisten (requirements) waar nog vrijheidsgraden in zitten, zijn
               geen expliciete door mensen opgestelde regels.*</ins>
-            tooltip: ""
+            tooltip: ''
+            use_card_style: false
             options:
               - id: yes1
                 value: yes1
-                title: "Ja, wet- of regelgeving "
+                title: 'Ja, wet- of regelgeving '
                 content: >
                   Eén-op-één automatisering van in wet- of regelgeving
                   vastgestelde regels
               - id: yes2
                 value: yes2
-                title: "Ja, door mensen opgesteld"
+                title: 'Ja, door mensen opgesteld'
                 content: >
                   Eén-op-één automatisering van door mensen opgestelde regels
                   (anders dan wet-of regelgeving)
-              - id: "no"
-                value: "no"
+              - id: 'no'
+                value: 'no'
                 title: Nee
-                content: ""
+                content: ''
             type: radio
-            use_card_style: true
           - identifier: q1-yes1
             title: Welke wet of regelgeving?
-            content: ""
+            content: ''
             required: true
             type: text
             visible_when_or:
@@ -113,51 +113,52 @@ dynamic_form_engine:
             title: >-
               Bevat de toepassing een model of beslisregels die uit data zijn
               afgeleid?
-            content: ""
+            content: ''
             tooltip: >-
               Bijvoorbeeld het berekenen van drempelwaardes voor (uitval)regels
               of weegfactoren voor beslissingen uit data, statistische
               modellering of machine learning, inclusief deep learning of large
               language modellen.
+            use_card_style: false
             options:
               - id: yes1
                 value: yes1
-                title: "Ja, handmatig opgesteld"
+                title: 'Ja, handmatig opgesteld'
                 content: >
                   Model of algoritme is handmatig opgesteld, maar ingegeven door
                   data-analyse om bijvoorbeeld selectie van variabelen,
                   weegfactoren of drempelwaardes te bepalen
               - id: yes2
                 value: yes2
-                title: "Ja, door statistische methode"
+                title: 'Ja, door statistische methode'
                 content: >
                   Model of algoritme is tot stand gekomen doormiddel van
                   optimalisatie, machine learning, simulatie of soortgelijk
-              - id: "no"
-                value: "no"
+              - id: 'no'
+                value: 'no'
                 title: Nee
-                content: ""
+                content: ''
             required: false
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q1
-                    value: "no"
+                    value: 'no'
           - identifier: q3
             title: >-
               Tot welke van de volgende categorieën behoort de uitkomst van de
               toepassing?
-            content: ""
+            content: ''
             tooltip: >-
               Kies de output categorie die het meest van toepassing is.  Data
               omvat alle vormen van elektronische gegevens. Tekst, afbeeldingen,
               audio zijn ook data.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
-                title: "Een ingeschatte score, rangschikking of kans"
-                content: ""
+                title: 'Een ingeschatte score, rangschikking of kans'
+                content: ''
               - id: option2
                 value: option2
                 title: Een ingeschat label of classificatie
@@ -166,29 +167,28 @@ dynamic_form_engine:
               - id: option3
                 value: option3
                 title: Een aanbeveling
-                content: ""
+                content: ''
               - id: option4
                 value: option4
                 title: Een beslissing
-                content: ""
+                content: ''
               - id: option5
                 value: option5
-                title: "Content (geschreven tekst, video, audio of  afbeeldingen)"
+                title: 'Content (geschreven tekst, video, audio of  afbeeldingen)'
                 content: |
                   Een grafiek of dashboard is geen content
               - id: option6
                 value: option6
                 title: Een ander soort output
-                content: ""
+                content: ''
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q2
                     value: yes2
           - identifier: q3-option6
             title: Geef een beschrijving van de output
-            content: ""
+            content: ''
             type: textarea
             visible_when_or:
               - visible_when_and:
@@ -198,37 +198,37 @@ dynamic_form_engine:
             title: >-
               Tot welke van de volgende categorieën behoort de uitkomst van de
               toepassing?
-            content: ""
+            content: ''
+            use_card_style: false
             options:
               - id: option1
                 value: option1
-                title: "Een ingeschatte score, rangschikking of kans"
-                content: ""
+                title: 'Een ingeschatte score, rangschikking of kans'
+                content: ''
               - id: option2
                 value: option2
                 title: >-
                   Een ingeschat label of classificatie (ja/nee, hoog/laag of een
                   indeling in groepen)
-                content: ""
+                content: ''
               - id: option3
                 value: option3
                 title: Een aanbeveling
-                content: ""
+                content: ''
               - id: option4
                 value: option4
                 title: Een beslissing
-                content: ""
+                content: ''
               - id: option5
                 value: option5
-                title: "Content (geschreven tekst, video, audio of  afbeeldingen)"
+                title: 'Content (geschreven tekst, video, audio of  afbeeldingen)'
                 content: |
                   Een grafiek of dashboard is geen content
               - id: option6
                 value: option6
                 title: Een ander soort output
-                content: ""
+                content: ''
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q1
@@ -238,7 +238,7 @@ dynamic_form_engine:
                     value: yes1
           - identifier: q4-option6
             title: Geef een beschrijving van de output
-            content: ""
+            content: ''
             required: true
             type: textarea
             visible_when_or:
@@ -252,9 +252,9 @@ dynamic_form_engine:
               hoeverre dit proces geautomatiseerd is en welke rol de toepassing
               heeft in het proces. We vragen hierna uit welke rol de toepassing
               speelt.
-            content: ""
+            content: ''
+            use_card_style: false
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q3
@@ -300,18 +300,18 @@ dynamic_form_engine:
               wel/geen verzoek aan burger om aanvullende informatie aan te
               leveren, wel/geen selectie voor controle of inspectie. Let op: een
               beslissing is veel breder dan een formeel besluit.
+            use_card_style: false
             options:
-              - id: "yes"
-                value: "yes"
+              - id: 'yes'
+                value: 'yes'
                 title: Ja
-                content: ""
-              - id: "no"
-                value: "no"
+                content: ''
+              - id: 'no'
+                value: 'no'
                 title: Nee
-                content: ""
+                content: ''
             required: false
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q3
@@ -348,6 +348,7 @@ dynamic_form_engine:
             content: >
               Wat voor soort beslissingen worden genomen in dit proces? Kies de
               optie die de grootste overeenkomst heeft met de soort beslissing.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
@@ -360,36 +361,35 @@ dynamic_form_engine:
                 title: >-
                   Beslissing over aanvragen en verzoeken zonder directe
                   financiële gevolgen
-                content: ""
+                content: ''
               - id: option3
                 value: option3
                 title: Beslissing over formele klachten en bezwaren
-                content: ""
+                content: ''
               - id: option4
                 value: option4
                 title: >-
                   Beslissing over prioritering of routering van aanvragen,
                   verzoeken, klachten en bezwaren
-                content: ""
+                content: ''
               - id: option5
                 value: option5
                 title: >-
                   Beslissing over controle, onderzoek of verzoek tot aanvullende
                   informatie verschaffing door de burger
-                content: ""
+                content: ''
               - id: option6
                 value: option6
                 title: Anders
-                content: ""
+                content: ''
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q5
-                    value: "yes"
+                    value: 'yes'
           - identifier: q6-option6
             title: Beschrijf het soort beslissing
-            content: ""
+            content: ''
             required: true
             type: textarea
             visible_when_or:
@@ -400,32 +400,33 @@ dynamic_form_engine:
             title: Interactie met burger
             content: >
               Het proces draagt bij aan hoe de overheid (groepen) inwoners
-              categoriseert of benadert? 
+              categoriseert of benadert?
 
 
               Kies "Ja" wanneer je onzeker bent, en beschrijf kort de manier
               waarop.
+            use_card_style: false
             options:
-              - id: "yes"
-                value: "yes"
+              - id: 'yes'
+                value: 'yes'
                 title: Ja
-                content: ""
-              - id: "no"
-                value: "no"
+                content: ''
+              - id: 'no'
+                value: 'no'
                 title: Nee
-                content: ""
+                content: ''
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q5
-                    value: "no"
+                    value: 'no'
           - identifier: q8
             title: Effect van toepassing
             content: |
               Wat is effect van de toepassing op de uitkomst van het proces?
 
               Kies de mogelijkheid die het beste past.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
@@ -468,9 +469,8 @@ dynamic_form_engine:
               - id: option5
                 value: option5
                 title: Een ander soort effect
-                content: ""
+                content: ''
             type: radio
-            use_card_style: true
             visible_when_or:
               - {}
               - visible_when_and:
@@ -490,10 +490,10 @@ dynamic_form_engine:
                     value: option1
               - visible_when_and:
                   - identifier: q7
-                    value: "yes"
+                    value: 'yes'
           - identifier: q8-option5
             title: Beschrijf het effect van de toepassing op het proces
-            content: ""
+            content: ''
             required: true
             type: textarea
             visible_when_or:
@@ -504,9 +504,9 @@ dynamic_form_engine:
             title: >-
               Uw toepassing is op basis van uw antwoorden waarschijnlijk
               impactvol algoritme.
-            content: ""
+            content: ''
+            use_card_style: false
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q8
@@ -522,9 +522,9 @@ dynamic_form_engine:
                     value: option1
           - identifier: output1
             title: Uw toepassing is geen AI-systeem of impactvol algoritme
-            content: ""
+            content: ''
+            use_card_style: false
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q6
@@ -537,7 +537,7 @@ dynamic_form_engine:
                     value: yes1
               - visible_when_and:
                   - identifier: q2
-                    value: "no"
+                    value: 'no'
               - visible_when_and:
                   - identifier: q4
                     value: option6
@@ -546,15 +546,15 @@ dynamic_form_engine:
                     value: option6
               - visible_when_and:
                   - identifier: q7
-                    value: "no"
+                    value: 'no'
           - identifier: output2
             title: >-
               Uw toepassing is op basis van uw antwoorden waarschijnlijk een
               AI-systeem.
             content: |
               Een AI Act risk assessment moet worden ingevuld.
+            use_card_style: false
             type: radio
-            use_card_style: true
             visible_when_or:
               - visible_when_and:
                   - identifier: q3
@@ -578,7 +578,7 @@ form1:
   title: Intake
   button_text: Meld aan
   backend_link: aa
-  id: "#form"
+  id: '#form'
   questions:
     - label: |
         Naam van product
@@ -588,9 +588,9 @@ form1:
       placeholder: Naam
 form2:
   title: Intakeformulier
-  content: ""
+  content: ''
   button_text: Meld product aan
-  backend_link: "https://formspree.io/f/xeojyqry"
+  backend_link: 'https://formspree.io/f/xeojyqry'
   id: intake
   questions:
     - label: Naam van product
@@ -610,7 +610,7 @@ form2:
       type: text
 overview_block:
   - title: Overzicht
-    content: ""
+    content: ''
     icon: null
     id: overview
     items:
