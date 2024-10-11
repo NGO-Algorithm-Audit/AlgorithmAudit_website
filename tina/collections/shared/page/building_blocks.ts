@@ -229,6 +229,11 @@ const building_blocks: TinaField[] = [
                 required: false,
               },
               {
+                type: "boolean",
+                name: "use_card_style",
+                label: "Use card style (only for radio buttons)",
+              },
+              {
                 type: "object",
                 name: "options",
                 label: "Options (only for radio buttons and checkboxes)",
