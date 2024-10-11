@@ -41,7 +41,7 @@ dynamic_form_engine:
           - identifier: intro3
             title: >-
               Naam primair aanspreekpunt binnen de organisatie voor de
-              toepassing, bijv. producteigenaar 
+              toepassing, bijv. producteigenaar
             content: ''
             tooltip: >-
               Wanneer er geen afgestemd aanspreekpunt of eigenaar is, vul hier
@@ -81,6 +81,7 @@ dynamic_form_engine:
               vereisten (requirements) waar nog vrijheidsgraden in zitten, zijn
               geen expliciete door mensen opgestelde regels.*</ins>
             tooltip: ''
+            use_card_style: false
             options:
               - id: yes1
                 value: yes1
@@ -118,6 +119,7 @@ dynamic_form_engine:
               of weegfactoren voor beslissingen uit data, statistische
               modellering of machine learning, inclusief deep learning of large
               language modellen.
+            use_card_style: false
             options:
               - id: yes1
                 value: yes1
@@ -151,6 +153,7 @@ dynamic_form_engine:
               Kies de output categorie die het meest van toepassing is.  Data
               omvat alle vormen van elektronische gegevens. Tekst, afbeeldingen,
               audio zijn ook data.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
@@ -196,6 +199,7 @@ dynamic_form_engine:
               Tot welke van de volgende categorieën behoort de uitkomst van de
               toepassing?
             content: ''
+            use_card_style: false
             options:
               - id: option1
                 value: option1
@@ -249,6 +253,7 @@ dynamic_form_engine:
               heeft in het proces. We vragen hierna uit welke rol de toepassing
               speelt.
             content: ''
+            use_card_style: false
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -295,6 +300,7 @@ dynamic_form_engine:
               wel/geen verzoek aan burger om aanvullende informatie aan te
               leveren, wel/geen selectie voor controle of inspectie. Let op: een
               beslissing is veel breder dan een formeel besluit.
+            use_card_style: false
             options:
               - id: 'yes'
                 value: 'yes'
@@ -342,6 +348,7 @@ dynamic_form_engine:
             content: >
               Wat voor soort beslissingen worden genomen in dit proces? Kies de
               optie die de grootste overeenkomst heeft met de soort beslissing.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
@@ -393,11 +400,12 @@ dynamic_form_engine:
             title: Interactie met burger
             content: >
               Het proces draagt bij aan hoe de overheid (groepen) inwoners
-              categoriseert of benadert? 
+              categoriseert of benadert?
 
 
               Kies "Ja" wanneer je onzeker bent, en beschrijf kort de manier
               waarop.
+            use_card_style: false
             options:
               - id: 'yes'
                 value: 'yes'
@@ -418,6 +426,7 @@ dynamic_form_engine:
               Wat is effect van de toepassing op de uitkomst van het proces?
 
               Kies de mogelijkheid die het beste past.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
@@ -496,6 +505,7 @@ dynamic_form_engine:
               Uw toepassing is op basis van uw antwoorden waarschijnlijk
               impactvol algoritme.
             content: ''
+            use_card_style: false
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -513,6 +523,7 @@ dynamic_form_engine:
           - identifier: output1
             title: Uw toepassing is geen AI-systeem of impactvol algoritme
             content: ''
+            use_card_style: false
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -542,6 +553,7 @@ dynamic_form_engine:
               AI-systeem.
             content: |
               Een AI Act risk assessment moet worden ingevuld.
+            use_card_style: false
             type: radio
             visible_when_or:
               - visible_when_and:

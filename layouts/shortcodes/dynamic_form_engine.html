@@ -20,7 +20,7 @@
     <form action="{{ .complete_form_options.backend_link | safeURL }}" method="POST" enctype="multipart/form-data">
       <p class="color-blue text-right mb-0" style="font-size:14px;">* {{ i18n "required"}}</p>
       {{ range .section }}
-      <h4>{{.title}}</h4>
+      <h3>{{.title}}</h3>
 
       {{ range .questions }}
       {{ $input := . }}
@@ -38,7 +38,7 @@
 
 
       <div class="score-card__question" {{if $visibilityCondition}}data-show-when="{{$visibilityCondition}}" {{end}}>
-        <h5>
+        <h4>
           {{ .title }}
           {{if .required}}*{{end}}
           {{ if .tooltip }}
@@ -47,7 +47,7 @@
             i
           </button>
           {{ end }}
-        </h5>
+        </h4>
 
         <p>
           {{ .content | markdownify }}
@@ -65,10 +65,12 @@
           {{ else if eq .type "checkbox"}}
           <!-- title -->
           {{ range .options}}
-          <div class="col-md col-sm-12 form-group">
-            <input type="{{$input.type}}" class="form-control checkbox" name={{$input.identifier}} id="{{.id}}" value="{{.value}}" {{if
-              $input.required}} required {{end}} name="{{.label}}" />
-            <label for="{{.id}}" class="mb-0">{{ .title | markdownify }}</label>
+          <div class="col-12 form-group">
+            <label class="my-2 d-flex">
+              <input type="{{$input.type}}" class="form-control checkbox" name={{$input.identifier}} id="{{.id}}"
+                value="{{.value}}" {{if $input.required}} required {{end}} name="{{.label}}" />
+              <h6 class="d-inline mb-0 ml-2">{{ .title | markdownify }}</h6>
+            </label>
           </div>
           {{end}}
 
@@ -88,14 +90,15 @@
           </div>
           <!-- radio buttons -->
           {{ else if eq .type "radio" }}
+          {{ if .use_card_style }}
           {{ range .options }}
           <div class="col-md-4 col-sm-12">
             <label>
-              <input type="radio" name={{$input.identifier}} class="card-input-element" value={{.value}} {{if
+              <input type="radio" id="{{$input.identifier}}_{{.value}}" name={{$input.identifier}} class="card-input-element" value={{.value}} {{if
                 $input.required}} required {{end}} />
               <div class="card card-input">
                 <div class="card-body {{ if not .content }}d-flex justify-content-center{{end}}">
-                  <h4 class="card-title">{{.title}}</h4>
+                  <h6 class="card-title">{{.title}}</h6>
                   <p class="card-text">
                     {{.content | markdownify}}
                   </p>
@@ -104,7 +107,22 @@
             </label>
           </div>
           {{ end }}
-
+          {{ else }}
+          {{ range .options }}
+          <div class="col-12">
+            <label class="my-2">
+              <input type="radio" id="{{$input.identifier}}_{{.value}}" name={{$input.identifier}} class="" value={{.value}} {{if
+                $input.required}} required {{end}} />
+              <h6 class="d-inline" >{{.title}}</h6>
+              {{ if .content }}
+              <p class="mb-0">
+                {{.content | markdownify}}
+              </p>
+              {{ end}}
+            </label>
+          </div>
+          {{ end}}
+          {{ end }}
 
           <!-- text boxes -->
           {{ else }}
@@ -169,7 +187,7 @@
               // Check for radio button
               let input = document.querySelector(`.score-card__question:not(.d-none) input[name=${name}]:checked`);
               // Check for checkbox
-              if(!input) {
+              if (!input) {
                 input = document.querySelector(`.score-card__question:not(.d-none) input[id=${name}]:checked`);
               }
               if (!input || input.value !== value) {
@@ -182,18 +200,18 @@
           });
           if (show) {
             $(this).removeClass("d-none");
-            if($(this).find('input').attr('data-required')) {
+            if ($(this).find('input').attr('data-required')) {
               $(this).find('input').prop('required', true);
             }
-            if($(this).find('textarea').attr('data-required')) {
+            if ($(this).find('textarea').attr('data-required')) {
               $(this).find('textarea').prop('required', true);
             }
           } else {
             $(this).addClass("d-none");
-            if($(this).find('input').attr('data-required')) {
+            if ($(this).find('input').attr('data-required')) {
               $(this).find('input').prop('required', false);
             }
-            if($(this).find('textarea').attr('data-required')) {
+            if ($(this).find('textarea').attr('data-required')) {
               $(this).find('textarea').prop('required', false);
             }
           }
