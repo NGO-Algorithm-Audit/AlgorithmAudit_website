@@ -93,7 +93,7 @@ dynamic_form_engine:
                 content: ''
             type: radio
           - identifier: q1-yes1
-            title: Welke wet of regelgeving?
+            title: Which law or regulation?
             content: ''
             required: true
             type: text
