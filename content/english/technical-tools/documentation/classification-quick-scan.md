@@ -113,22 +113,22 @@ dynamic_form_engine:
                     value: yes2
           - identifier: q2
             title: >-
-              Bevat de toepassing een model of beslisregels die uit data zijn
-              afgeleid?
+              Does the system contain a model or decision rules derived from
+              data?
             content: ''
             tooltip: >-
-              Bijvoorbeeld het berekenen van drempelwaardes voor (uitval)regels
-              of weegfactoren voor beslissingen uit data, statistische
-              modellering of machine learning, inclusief deep learning of large
-              language modellen.
+              For instance, calculating threshold values ​​for rules or
+              weighting factors for decisions formed based on data, statistical
+              modeling or machine learning, including deep learning or large
+              language models.
             options:
               - id: yes1
                 value: yes1
-                title: 'Ja, handmatig opgesteld'
+                title: 'Yes, manually created'
                 content: >
-                  Model of algoritme is handmatig opgesteld, maar ingegeven door
-                  data-analyse om bijvoorbeeld selectie van variabelen,
-                  weegfactoren of drempelwaardes te bepalen
+                  Model or algorithm is manually created, but with the help of
+                  data analysis to determine, for example, selection of
+                  variables, weighting factors or threshold values
               - id: yes2
                 value: yes2
                 title: 'Ja, door statistische methode'
