@@ -102,10 +102,10 @@ dynamic_form_engine:
                   - identifier: q1
                     value: yes1
           - identifier: output2
-            title: Vervolgvraag
+            title: Follow-up question
             content: >
-              Mogelijk sprake van een AI-systeem of algoritme. We stellen u nog
-              een vervolgvraag.
+              Possibly an AI system or algorithm. We will ask you a follow-up
+              question.
             type: radio
             visible_when_or:
               - visible_when_and:
