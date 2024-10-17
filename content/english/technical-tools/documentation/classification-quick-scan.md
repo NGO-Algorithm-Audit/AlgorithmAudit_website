@@ -377,14 +377,14 @@ dynamic_form_engine:
                   - identifier: q6
                     value: option6
           - identifier: q7
-            title: Interactie met burger
+            title: Interaction with citizen
             content: >
-              Het proces draagt bij aan hoe de overheid (groepen) inwoners
-              categoriseert of benadert?
+              Does the process contribute to how the government categorises or
+              approaches (groups of) residents?
             options:
               - id: 'yes'
                 value: 'yes'
-                title: Ja
+                title: 'Yes'
                 content: ''
               - id: 'no'
                 value: 'no'
