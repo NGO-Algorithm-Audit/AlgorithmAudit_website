@@ -419,14 +419,14 @@ dynamic_form_engine:
               - id: option3
                 value: option3
                 title: >-
-                  De uitkomst van het proces wordt in zekere mate beïnvloed door
-                  de output van de toepassing
+                  The outcome of the process is influenced to some extent by the
+                  output of the system
                 content: >
-                  De output  van de toepassing een belangrijke factor voor de
-                  procesuitkomst, maar een medewerker maakt zelf de keuze over
-                  de uitkomst. Deze medeweker heeft de juiste informatie,
-                  ervaring/kunde, mandaat en beschikbare tijd om deze keuze te
-                  maken.
+                  The output of the application is an important factor for the
+                  process outcome, but an employee makes the choice about the
+                  outcome itself. This employee has the right information,
+                  experience/skills, mandate and available time to make this
+                  choice.
               - id: option4
                 value: option4
                 title: >-
