@@ -131,10 +131,10 @@ dynamic_form_engine:
                   variables, weighting factors or threshold values
               - id: yes2
                 value: yes2
-                title: 'Ja, door statistische methode'
+                title: 'Yes, by statistical methods'
                 content: >
-                  Model of algoritme is tot stand gekomen doormiddel van
-                  optimalisatie, machine learning, simulatie of soortgelijk
+                  Model or algorithm is created through optimization, machine
+                  learning, simulation or something similar
               - id: 'no'
                 value: 'no'
                 title: Nee
