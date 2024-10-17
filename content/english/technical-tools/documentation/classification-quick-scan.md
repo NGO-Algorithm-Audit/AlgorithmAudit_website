@@ -48,8 +48,8 @@ dynamic_form_engine:
             type: textyes1
           - identifier: intro4
             title: >-
-              Mailadres primair aanspreekpunt binnen de organisatie voor de
-              toepassing, bijv. producteigenaar
+              Email address of primary point of contact within the organization
+              for the system, e.g. email address of a product owner
             content: ''
             required: true
             type: text
