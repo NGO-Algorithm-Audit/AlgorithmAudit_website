@@ -472,7 +472,7 @@ dynamic_form_engine:
                   - identifier: q8
                     value: option5
           - identifier: output4
-            title: Impactvol algoritme
+            title: Impactful algorithm
             content: ''
             type: radio
             visible_when_or:
