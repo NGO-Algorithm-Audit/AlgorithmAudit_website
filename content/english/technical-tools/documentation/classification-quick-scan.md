@@ -326,16 +326,16 @@ dynamic_form_engine:
                   - identifier: q4
                     value: option1
           - identifier: q6
-            title: Soort beslissing
+            title: Type of decision
             content: |
-              Wat voor soort beslissingen worden genomen in dit proces?
+              What kind of decisions are made in the process?
             options:
               - id: option1
                 value: option1
-                title: Beslissing met directe financiële gevolgen voor burger
+                title: Decision that has direct financial consequences for citizens
                 content: >
-                  Bijvoorbeeld beslissingen over uitkering, toeslag, subsidie,
-                  boete, terugbetaling of mogelijkheid tot betalingsregeling
+                  For instances, decisions about benefits, allowances, grants,
+                  fines, repayments or the possibility of a payment arrangement
               - id: option2
                 value: option2
                 title: >-
