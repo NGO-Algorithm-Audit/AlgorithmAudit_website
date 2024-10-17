@@ -83,10 +83,10 @@ dynamic_form_engine:
                   regulations
               - id: yes2
                 value: yes2
-                title: 'Ja, door mensen opgesteld'
+                title: 'Yes, made by people'
                 content: >
-                  Eén-op-één automatisering van door mensen opgestelde regels
-                  (anders dan wet-of regelgeving)
+                  One-on-one automation of human-generated rules (other than
+                  laws or regulations)
               - id: 'no'
                 value: 'no'
                 title: Nee
