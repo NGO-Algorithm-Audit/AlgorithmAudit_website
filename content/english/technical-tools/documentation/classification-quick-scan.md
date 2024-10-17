@@ -437,7 +437,7 @@ dynamic_form_engine:
                   The output of the system is not decisive in the choice.
               - id: option5
                 value: option5
-                title: Een ander soort effect
+                title: Another effect
                 content: ''
             type: radio
             visible_when_or:
