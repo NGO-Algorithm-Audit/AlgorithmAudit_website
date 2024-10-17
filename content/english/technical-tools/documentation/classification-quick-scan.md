@@ -489,7 +489,7 @@ dynamic_form_engine:
                   - identifier: q8
                     value: option1
           - identifier: output1
-            title: Uw toepassing is geen AI-systeem of impactvol algoritme
+            title: Your system is not an AI system or an impactful algorithm
             content: ''
             type: radio
             visible_when_or:
