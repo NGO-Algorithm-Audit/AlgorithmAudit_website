@@ -55,8 +55,8 @@ dynamic_form_engine:
             type: text
           - identifier: intro5
             title: >-
-              Welk team binnen de organisatie is primair verantwoordelijk voor
-              de toepassing?
+              Which team within the organization is primarily responsible for
+              the system?
             content: ''
             required: true
             type: text
