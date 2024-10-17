@@ -37,13 +37,13 @@ dynamic_form_engine:
             type: textarea
           - identifier: intro3
             title: >-
-              Naam primair aanspreekpunt binnen de organisatie voor de
-              toepassing, bijv. producteigenaar 
+              Name of primary point of contact within the organization for the
+              system, e.g. product owner
             content: ''
             tooltip: >-
-              Wanneer er geen afgestemd aanspreekpunt of eigenaar is, vul hier
-              dan voorlopig je eigen naam in. Het algoritme team kan dan contact
-              met je opnemen.
+              If there is no designated point of contact or owner, please fill
+              in your own name here for now. The algorithm team can then contact
+              you.
             required: true
             type: textyes1
           - identifier: intro4
