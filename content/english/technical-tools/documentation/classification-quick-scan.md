@@ -349,8 +349,8 @@ dynamic_form_engine:
               - id: option4
                 value: option4
                 title: >-
-                  Beslissing over prioritering of routering van aanvragen,
-                  verzoeken, klachten en bezwaren
+                  Decision about prioritization or routing of applications,
+                  requests, complaints and objections
                 content: ''
               - id: option5
                 value: option5
