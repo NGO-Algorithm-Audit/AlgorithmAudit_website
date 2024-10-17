@@ -61,7 +61,7 @@ dynamic_form_engine:
             required: true
             type: text
           - identifier: intro6
-            title: Binnen welke lijndirectie valt dit team?
+            title: Which line of management does this team fall under?
             content: ''
             required: true
             type: text
