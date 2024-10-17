@@ -205,9 +205,9 @@ dynamic_form_engine:
                   - identifier: q3
                     value: option6
           - identifier: output3
-            title: 'Toepassing is een AI-systeem '
+            title: 'System is an AI-systeem '
             content: |
-              Een AI Act risk assessment moet worden ingevuld.
+              An AI Act risk assessment must be filled out.
             type: radio
             visible_when_or:
               - visible_when_and:
