@@ -255,7 +255,7 @@ dynamic_form_engine:
                   A graph or dashboard is not considered content
               - id: option6
                 value: option6
-                title: Een ander soort output
+                title: Another kind of output
                 content: ''
             type: radio
             visible_when_or:
