@@ -19,7 +19,7 @@ dynamic_form_engine:
     icon: fa fa-star
     content: >
       Determine whether your system is an AI system or impactful algorithm by
-      answering a maximum of 8 questions.
+      answering a maximum of 8 questions. 
     section:
       - questions:
           - identifier: intro1
@@ -173,7 +173,7 @@ dynamic_form_engine:
                 value: option2
                 title: An estimated label or classification
                 content: |
-                  Ja/nee, hoog/laag of een indeling in groepen
+                  Yes/no, high/low or a division into groups
               - id: option3
                 value: option3
                 title: A recommendation
@@ -227,19 +227,20 @@ dynamic_form_engine:
                     value: option1
           - identifier: q4
             title: >-
-              Which of the following categories does the outcome of the system
-              fall under?
+              Tot welke van de volgende categorieën behoort de uitkomst van de
+              toepassing?
             content: ''
             options:
               - id: option1
                 value: option1
-                title: 'An estimated score, ranking or chance'
+                title: 'Een ingeschatte score, rangschikking of kans'
                 content: ''
               - id: option2
                 value: option2
-                title: An estimated label or classification
-                content: |
-                  Yes/no, high/low or a division into groups
+                title: >-
+                  Een ingeschat label of classificatie (ja/nee, hoog/laag of een
+                  indeling in groepen)
+                content: ''
               - id: option3
                 value: option3
                 title: Een aanbeveling
