@@ -275,19 +275,18 @@ dynamic_form_engine:
                   - identifier: q4
                     value: option6
           - identifier: q5
-            title: Rol in besluitvorming
-            content: >
-              Worden in het proces beslissingen genomen voor individuele
-              inwoners?
+            title: Role in decision making
+            content: |
+              Are decisions made for individual residents in the process?
             tooltip: >-
-              Denk aan wel/geen opvolging vraag of verzoek van een burger,
-              wel/geen verzoek aan burger om aanvullende informatie aan te
-              leveren, wel/geen selectie voor controle of inspectie. Let op: een
-              beslissing is veel breder dan een formeel besluit.
+              Think of whether or not to follow up on a question or request from
+              a citizen, request a citizen to provide additional information, or
+              to select for control or inspection. Note: a decision is much
+              broader than a formal decision.
             options:
               - id: 'yes'
                 value: 'yes'
-                title: Ja
+                title: 'Yes'
                 content: ''
               - id: 'no'
                 value: 'no'
