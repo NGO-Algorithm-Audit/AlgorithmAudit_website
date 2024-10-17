@@ -410,14 +410,12 @@ dynamic_form_engine:
                   can be applied afterwards by viewing or analyzing the results.
               - id: option2
                 value: option2
-                title: >-
-                  De uitkomst van het proces wordt in grote mate beïnvloed door
-                  de toepassing
+                title: The outcome of the process is largely influenced by the system
                 content: >
-                  Bijvoorbeeld doordat werkinstructies een consequentie
-                  verbinden aan een specifieke output van de toepassing. Een
-                  medewerker kan afwijkende keuzes maken, maar in de praktijk is
-                  de output een doorslaggevende factor voor de procesuitkomst.
+                  For instance, because work instructions connect a consequence
+                  to a specific output of the system. An employee can make
+                  different choices, but in practice the output is a decisive
+                  factor for the outcome of the process.
               - id: option3
                 value: option3
                 title: >-
