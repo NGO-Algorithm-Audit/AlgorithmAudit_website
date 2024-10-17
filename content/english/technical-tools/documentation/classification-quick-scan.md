@@ -171,7 +171,7 @@ dynamic_form_engine:
                 content: ''
               - id: option2
                 value: option2
-                title: Een ingeschat label of classificatie
+                title: An estimated label or classification
                 content: |
                   Ja/nee, hoog/laag of een indeling in groepen
               - id: option3
