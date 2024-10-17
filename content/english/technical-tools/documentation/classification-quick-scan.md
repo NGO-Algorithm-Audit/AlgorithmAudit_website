@@ -157,17 +157,17 @@ dynamic_form_engine:
                     value: yes1
           - identifier: q3
             title: >-
-              Tot welke van de volgende categorieën behoort de uitkomst van de
-              toepassing?
+              Which of the following categories does the outcome of the system
+              fall under?
             content: ''
             tooltip: >-
-              Kies de output categorie die het meest van toepassing is.  Data
-              omvat alle vormen van elektronische gegevens. Tekst, afbeeldingen,
-              audio zijn ook data.
+              Choose the output category that is the most applicable. Data
+              includes all forms of electronic data. Text, images, audio are
+              also data.
             options:
               - id: option1
                 value: option1
-                title: 'Een ingeschatte score, rangschikking of kans'
+                title: 'An estimated score, ranking or chance'
                 content: ''
               - id: option2
                 value: option2
