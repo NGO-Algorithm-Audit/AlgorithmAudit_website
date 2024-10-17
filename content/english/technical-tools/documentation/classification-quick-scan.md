@@ -339,8 +339,8 @@ dynamic_form_engine:
               - id: option2
                 value: option2
                 title: >-
-                  Beslissing over aanvragen en verzoeken zonder directe
-                  financiële gevolgen
+                  Decision on applications and requests without any direct
+                  financial consequences
                 content: ''
               - id: option3
                 value: option3
