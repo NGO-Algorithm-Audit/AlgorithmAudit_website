@@ -360,7 +360,7 @@ dynamic_form_engine:
                 content: ''
               - id: option6
                 value: option6
-                title: Anders
+                title: Other
                 content: ''
             type: radio
             visible_when_or:
