@@ -396,18 +396,18 @@ dynamic_form_engine:
                   - identifier: q5
                     value: 'no'
           - identifier: q8
-            title: Effect van toepassing
+            title: Effect of the system
             content: |
-              Wat is effect van de toepassing op de uitkomst van het proces?
+              What is the effect of the system on the outcome of the process?
             options:
               - id: option1
                 value: option1
                 title: >-
-                  De uitkomst van het proces wordt direct bepaald door de
-                  toepassing
+                  The outcome of the process is directly determined by the
+                  system
                 content: >
-                  Bijvoorbeeld straight through processing. Menselijk toezicht 
-                  kan achteraf door de uitkomsten te bekijken of analyseren.
+                  For instance straight through processing. Human supervision
+                  can be applied afterwards by viewing or analyzing the results.
               - id: option2
                 value: option2
                 title: >-
