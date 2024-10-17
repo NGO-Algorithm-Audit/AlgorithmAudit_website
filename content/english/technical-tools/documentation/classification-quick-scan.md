@@ -355,8 +355,8 @@ dynamic_form_engine:
               - id: option5
                 value: option5
                 title: >-
-                  Beslissing over controle, onderzoek of verzoek tot aanvullende
-                  informatie verschaffing door de burger
+                  Decision about inspection, research/investigation or request
+                  for additional information by the citizen
                 content: ''
               - id: option6
                 value: option6
