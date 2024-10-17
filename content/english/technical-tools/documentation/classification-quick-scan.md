@@ -1,34 +1,33 @@
 ---
 type: regular
-title: Documentatie voor AI-systemen
+title: Documentation for AI systems
 subtitle: >
-  Open-source templates voor modeldocumentatie van AI-systemen. Afgestemd op de
-  eisen uit de AI Verordening en Nederlandse soft law kaders (zoals
-  [Onderzoekskader
-  Algoritmes](https://www.rijksoverheid.nl/documenten/rapporten/2023/07/11/onderzoekskader-algoritmes-adr-2023#:~:text=De%20Auditdienst%20Rijk%20heeft%20een,risico's%20beheerst%20\(kunnen\)%20worden.)
-  van de Audit Dienst Rijk, het
-  [Algoritmekader](https://minbzk.github.io/Algoritmekader/) van het Ministerie
-  van Binnenlandse Zaken en impact assessments voor data privacy en fundamentele
-  rechten). Help mee ontwikkelen, deel feedback middels
-  [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of via
+  Open-source templates for model documentation of AI systems. In line with the
+  requirements of the AI Act and Dutch soft law frameworks (such as the
+  [Research Framework
+  Algorithms](https://www.rijksoverheid.nl/documenten/rapporten/2023/07/11/onderzoekskader-algoritmes-adr-2023#:~:text=De%20Auditdienst%20Rijk%20heeft%20een,risico's%20beheerst%20\(kunnen\)%20worden.)
+  of the The Central Government Audit Service, the [Algorithm
+  Framework](https://minbzk.github.io/Algoritmekader/) of the Ministry of the
+  Interior, and impact assessments for data privacy and fundamental rights).
+  Help develop model documentation by sharing your feedback via
+  [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) or via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
 dynamic_form_engine:
-  - title: Identificatie AI-systeem en impactvolle algoritmes
+  - title: Identification AI system and impactful algorithms
     id: form
     icon: fa fa-star
     content: >
-      Bepaal aan de hand van maximaal 8 vragen of uw toepassing een AI-systeem
-      of impactvol algoritme is.
+      Determine whether your system is an AI system or impactful algorithm by
+      answering a maximum of 8 questions. 
     section:
       - questions:
           - identifier: intro1
-            title: Naam van de toepassing
+            title: Name of the system
             content: ''
             tooltip: >-
-              Als de toepassing geen formele naam heeft, geef dan een naam op
-              die collega's onderling gebruiken om naar deze toepassing te
-              verwijzen.
+              If the system does not have a formal name, provide a name that
+              colleagues among themselves use to refer to this application.
             required: true
             type: text
           - identifier: intro2
@@ -201,6 +200,7 @@ dynamic_form_engine:
                     value: yes2
           - identifier: q3-option6
             title: Geef een beschrijving van de output
+            content: ''
             type: textarea
             visible_when_or:
               - visible_when_and:
