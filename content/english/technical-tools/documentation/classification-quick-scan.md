@@ -67,20 +67,20 @@ dynamic_form_engine:
             type: text
       - questions:
           - identifier: q1
-            title: Automatisering van wet- of regelgeving
+            title: Automation of legislation or regulations
             content: >
-              Is de toepassing een één-op-één automatisering van in wet- of
-              regelgeving of van anderszins door mensen opgestelde regels?
+              Is the system a one-on-one automation of rules established in
+              legislation, regulations or otherwise by people?
             tooltip: >-
-              Wanneer de regels binnen uw toepassing vooraf niet expliciet zijn
-              opgesteld en gedocumenteerd, kies hier dan "nee".
+              If the rules within your system have not been explicitly
+              established and documented in advance, please select "no".
             options:
               - id: yes1
                 value: yes1
-                title: 'Ja, wet- of regelgeving '
+                title: 'Yes, legislation or regulations'
                 content: >
-                  Eén-op-één automatisering van in wet- of regelgeving
-                  vastgestelde regels
+                  One-on-one automation of rules established in legislation or
+                  regulations
               - id: yes2
                 value: yes2
                 title: 'Ja, door mensen opgesteld'
