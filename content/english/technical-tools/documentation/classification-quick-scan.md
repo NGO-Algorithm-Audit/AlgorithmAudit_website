@@ -368,7 +368,7 @@ dynamic_form_engine:
                   - identifier: q5
                     value: 'yes'
           - identifier: q6-option6
-            title: Beschrijf het soort beslissing
+            title: Describe the type of decision
             content: ''
             required: true
             type: textarea
