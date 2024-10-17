@@ -430,12 +430,11 @@ dynamic_form_engine:
               - id: option4
                 value: option4
                 title: >-
-                  De uitkomst van het proces wordt volledig door een mens
-                  bepaald en wordt beïnvloed door meerdere factoren waarin de
-                  output slechts een van deze factoren is
-                content: >
-                  De output van de toepassing is niet doorslaggevend in de
-                  keuze.
+                  The outcome of the process is completely determined by a human
+                  and is influenced by multiple factors in which the output is
+                  only one of these factors
+                content: |
+                  The output of the system is not decisive in the choice.
               - id: option5
                 value: option5
                 title: Een ander soort effect
