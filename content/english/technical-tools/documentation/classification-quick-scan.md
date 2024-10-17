@@ -31,9 +31,7 @@ dynamic_form_engine:
             required: true
             type: text
           - identifier: intro2
-            title: >-
-              Geef een korte beschrijving van de toepassing en hoe deze gebruikt
-              wordt
+            title: Provide a brief description of the system and how it is used
             content: ''
             required: true
             type: textarea
