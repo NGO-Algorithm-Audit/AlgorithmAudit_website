@@ -250,9 +250,9 @@ dynamic_form_engine:
                 content: ''
               - id: option5
                 value: option5
-                title: 'Content (geschreven tekst, video, audio of  afbeeldingen)'
+                title: 'Content (written text, video, audio or images)'
                 content: |
-                  Een grafiek of dashboard is geen content
+                  A graph or dashboard is not considered content
               - id: option6
                 value: option6
                 title: Een ander soort output
