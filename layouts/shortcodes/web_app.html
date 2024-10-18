@@ -23,7 +23,27 @@
         {{ end }}
 
         <!-- Bias Detection Tool -->
-        <div id="app"></div>
+        <div class="web-app__container">
+          <iframe title="Bias detection example"
+            src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html">
+          </iframe>
+          <style>
+            .web-app__container {
+              background-color: #fff;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+
+            iframe {
+              border: none;
+              width: 100%;
+              height: 770px;
+            }
+          </style>
+        </div>
         <!-- /Bias Detection Tool -->
 
       </div>
@@ -32,6 +52,4 @@
   </div>
 </div>
 <!-- text field -->
-
-<script type="module" src="https://static-files-pdf.s3.amazonaws.com/assets/index.js"></script>
 {{ end }}
