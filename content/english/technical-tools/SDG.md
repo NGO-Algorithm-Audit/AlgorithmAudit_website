@@ -1,10 +1,4 @@
 ---
-title: Synethetic data generation
-subtitle: >
-  Synthetic data generation (SDG) provides a privacy-preserving alternative for
-  training and debiasing algorithmic systems. At Algorithm Audit, we build
-  public knowledge how SDG can be used best for AI bias testing.
-image: /images/svg-illustrations/knowledge_base.svg
 author: Parie
 type: regular
 text_field1:
@@ -37,6 +31,12 @@ text_field2:
     Algorithm Audit, we are investigating these open questions, and build public
     knowledge on what form of data-sharing practice (SDG or alternatives) is
     best suited for privacy-preserving AI bias testing.
+title: Synthetic data generation
+subtitle: >
+  Synthetic data generation (SDG) provides a privacy-preserving alternative for
+  training and debiasing algorithmic systems. At Algorithm Audit, we build
+  public knowledge how SDG can be used best for AI bias testing.
+image: /images/svg-illustrations/knowledge_base.svg
 ---
 
 {{< container_open title="Synthetic data generation – What is it?" icon="fas fa-database" id="info" >}}
