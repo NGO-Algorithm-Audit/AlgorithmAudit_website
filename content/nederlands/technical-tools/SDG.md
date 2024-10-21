@@ -1,5 +1,7 @@
 ---
-title: Synethetische data generatie
+author: Parie
+type: regular
+title: Synthetische data generatie
 subtitle: >
   Synethetische data generatie (SDG) is een privacy-behoudend methode om
   gevoelige datasets te delen met derden. SDG kan worden gebruikt om de
@@ -7,8 +9,6 @@ subtitle: >
   Algorithm Audit bouwen we praktische publieke kennis op hoe SDG ingezet kan
   worden voor AI bias testing.
 image: /images/svg-illustrations/knowledge_base.svg
-author: Parie
-type: regular
 ---
 
 {{< container_open title="Synthetische data generatie – Wat is het?" icon="fas fa-database" id="info" >}}

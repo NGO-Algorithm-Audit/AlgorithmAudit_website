@@ -21,50 +21,50 @@ dynamic_form_engine:
       Determine whether your system is an AI system or impactful algorithm by
       answering a maximum of 8 questions.
     section:
-      - questions:
-          - identifier: intro1
-            title: Name of the system
-            content: ''
-            tooltip: >-
-              If the system does not have a formal name, provide a name that
-              colleagues among themselves use to refer to this application.
-            required: true
-            type: text
-          - identifier: intro2
-            title: Provide a brief description of the system and how it is used
-            content: ''
-            required: true
-            type: textarea
-          - identifier: intro3
-            title: >-
-              Name of primary point of contact within the organization for the
-              system, e.g. product owner
-            content: ''
-            tooltip: >-
-              If there is no designated point of contact or owner, please fill
-              in your own name here for now. The algorithm team can then contact
-              you.
-            required: true
-            type: textyes1
-          - identifier: intro4
-            title: >-
-              Email address of primary point of contact within the organization
-              for the system, e.g. email address of a product owner
-            content: ''
-            required: true
-            type: text
-          - identifier: intro5
-            title: >-
-              Which team within the organization is primarily responsible for
-              the system?
-            content: ''
-            required: true
-            type: text
-          - identifier: intro6
-            title: Which line of management does this team fall under?
-            content: ''
-            required: true
-            type: text
+      # - questions:
+      #     - identifier: intro1
+      #       title: Name of the system
+      #       content: ''
+      #       tooltip: >-
+      #         If the system does not have a formal name, provide a name that
+      #         colleagues among themselves use to refer to this application.
+      #       required: true
+      #       type: text
+      #     - identifier: intro2
+      #       title: Provide a brief description of the system and how it is used
+      #       content: ''
+      #       required: true
+      #       type: textarea
+      #     - identifier: intro3
+      #       title: >-
+      #         Name of primary point of contact within the organization for the
+      #         system, e.g. product owner
+      #       content: ''
+      #       tooltip: >-
+      #         If there is no designated point of contact or owner, please fill
+      #         in your own name here for now. The algorithm team can then contact
+      #         you.
+      #       required: true
+      #       type: textyes1
+      #     - identifier: intro4
+      #       title: >-
+      #         Email address of primary point of contact within the organization
+      #         for the system, e.g. email address of a product owner
+      #       content: ''
+      #       required: true
+      #       type: text
+      #     - identifier: intro5
+      #       title: >-
+      #         Which team within the organization is primarily responsible for
+      #         the system?
+      #       content: ''
+      #       required: true
+      #       type: text
+      #     - identifier: intro6
+      #       title: Which line of management does this team fall under?
+      #       content: ''
+      #       required: true
+      #       type: text
       - questions:
           - identifier: q1
             title: Automation of legislation or regulations

@@ -21,53 +21,53 @@ dynamic_form_engine:
       Bepaal aan de hand van maximaal 8 vragen of uw toepassing een AI-systeem
       of impactvol algoritme is.
     section:
-      - questions:
-          - identifier: intro1
-            title: Naam van de toepassing
-            content: ''
-            tooltip: >-
-              Als de toepassing geen formele naam heeft, geef dan een naam op
-              die collega's onderling gebruiken om naar deze toepassing te
-              verwijzen.
-            required: true
-            type: text
-          - identifier: intro2
-            title: >-
-              Geef een korte beschrijving van de toepassing en hoe deze gebruikt
-              wordt
-            content: ''
-            required: true
-            type: textarea
-          - identifier: intro3
-            title: >-
-              Naam primair aanspreekpunt binnen de organisatie voor de
-              toepassing, bijv. producteigenaar
-            content: ''
-            tooltip: >-
-              Wanneer er geen afgestemd aanspreekpunt of eigenaar is, vul hier
-              dan voorlopig je eigen naam in. Het algoritme team kan dan contact
-              met je opnemen.
-            required: true
-            type: textyes1
-          - identifier: intro4
-            title: >-
-              Mailadres primair aanspreekpunt binnen de organisatie voor de
-              toepassing, bijv. producteigenaar
-            content: ''
-            required: true
-            type: text
-          - identifier: intro5
-            title: >-
-              Welk team binnen de organisatie is primair verantwoordelijk voor
-              de toepassing?
-            content: ''
-            required: true
-            type: text
-          - identifier: intro6
-            title: Binnen welke lijndirectie valt dit team?
-            content: ''
-            required: true
-            type: text
+      # - questions:
+      #     - identifier: intro1
+      #       title: Naam van de toepassing
+      #       content: ''
+      #       tooltip: >-
+      #         Als de toepassing geen formele naam heeft, geef dan een naam op
+      #         die collega's onderling gebruiken om naar deze toepassing te
+      #         verwijzen.
+      #       required: true
+      #       type: text
+      #     - identifier: intro2
+      #       title: >-
+      #         Geef een korte beschrijving van de toepassing en hoe deze gebruikt
+      #         wordt
+      #       content: ''
+      #       required: true
+      #       type: textarea
+      #     - identifier: intro3
+      #       title: >-
+      #         Naam primair aanspreekpunt binnen de organisatie voor de
+      #         toepassing, bijv. producteigenaar
+      #       content: ''
+      #       tooltip: >-
+      #         Wanneer er geen afgestemd aanspreekpunt of eigenaar is, vul hier
+      #         dan voorlopig je eigen naam in. Het algoritme team kan dan contact
+      #         met je opnemen.
+      #       required: true
+      #       type: textyes1
+      #     - identifier: intro4
+      #       title: >-
+      #         Mailadres primair aanspreekpunt binnen de organisatie voor de
+      #         toepassing, bijv. producteigenaar
+      #       content: ''
+      #       required: true
+      #       type: text
+      #     - identifier: intro5
+      #       title: >-
+      #         Welk team binnen de organisatie is primair verantwoordelijk voor
+      #         de toepassing?
+      #       content: ''
+      #       required: true
+      #       type: text
+      #     - identifier: intro6
+      #       title: Binnen welke lijndirectie valt dit team?
+      #       content: ''
+      #       required: true
+      #       type: text
       - questions:
           - identifier: q1
             title: Automatisering van door mensen opgestelde regels
