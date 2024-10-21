@@ -117,11 +117,12 @@ The bias detection tool currently works for tabular numerical and categorical da
 
 ##### Why this bias detection tool?
 
-* No data needed on protected attributes of users (unsupervised bias detection);
-* Model-agnostic
-* Informs human experts which characteristics of AI-sytem behavior should manually be scrutinized;
-* Connecting quantitative, statistical tools with the qualitative doctrine of law and ethics to assess fair AI;
-* Developed open-source and not-for-profit.
+* **Quantitative-qualitative joint method**: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
+* **Unsupervised bias detection**: No user data needed on protected attributes;
+* **Bias scan tool**: Scalable method based on statistical learning to detect algorithmic bias;
+* **Detects complex bias**: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
+* **Model-agnostic**: Works for all AI systems;
+* **Open-source and not-for-profit**: Easy to use and available for the entire AI auditing community.
 
 ##### By whom can the bias detection tool be used? 
 
@@ -129,21 +130,15 @@ The bias detection tool allows the entire ecosystem involved in auditing AI, e.g
 
 ##### What does the tool compute? 
 
-A statistical method is used to compute which clusters are relatively often misclassified by an AI system. A cluster is a group of data points sharing similar features. On these features the AI-system is initially trained. The tool identifies and visualizes the found clusters automatically. The tool also assesses how individuals in a deviating cluster differ (in terms of the provided features) from others outside the cluster. If the differences are statistically significant is directly tested by means of [Welch’s two-samples t-test](https://en.wikipedia.org/wiki/Welch%27s_t-test) for unequal variances. All results kan directly be downloaded as a pdf file.
+A statistical method is used to compute for which clusters an AI system underperforms. A cluster is a group of data points sharing similar features. On these features the AI system is initially trained. The tool identifies and visualizes the found clusters automatically. The tool also assesses how individuals in a deviating cluster differ (in terms of the provided features) from other data points outside the cluster. The differences between these clusters are tested on statistical significance. All results can directly be downloaded as a pdf file.
 
 #### The tool detects prohibited discrimination in AI? 
 
 No. The bias detection tool serves as a starting point to assess potentially unfair AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured disparities are legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are appropriate and necessary. In a [case study](/algoprudence/cases/bert-based-disinformation-classifier-aa202301/) of Algorithm Audit – in which the bias detection tool was tested on a BERT-based disinformation classifier – a normative advice commission argued that the measured quantitative deviations could be legitimised. Legitimisation of unequal treatment is a context-sensitive taks for which legal frameworks exist, such an assessment of proportionality, necessity and suitability. This qualitative judgement will always be a human task.
 
-##### For what type of AI does the tool work? 
+##### How is my data processed?
 
-Currently, only binary classification algorithms can be reviewed. For instance, prediction of loan approval (yes/no), disinformation detection (true/false) or disease detection (positive/negative).
-
-##### What happens with my data?
-
-Your csv file is uploaded to a Amazon Web Services (AWS) bucket, where it is processed by Python code. Once the HBAC-algorithm has identified clusters, the results are sent back to the browser and the data is immediately deleted. Usually, your data is stored only for 5-10 seconds in the cloud environment. The web application is built according to the below architecture diagram.
-
-{{< image id="architecture-diagram" width_desktop="12" width_mobile="12" image1="/images/BDT/architecture.png" alt1="Architecture diagram bias detection tool web app" caption1="Architecture diagram bias detection tool web app" >}}
+The tool is privacy preserving. It uses computing power of your own computer to analyze a dataset. In this architectural setup, data is processed entirely on your device and it not uploaded to any third party, such as cloud providers. This local-only feature allows organisations to securely use the tool with proprietary data. The used software is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`. [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
 
 ##### In sum 
 
