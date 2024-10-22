@@ -22,17 +22,15 @@ Activity_Feed:
   button_text: Meer evenementen...
   button_link: /nl/events/activities/#events
   featured_activities:
-    - title: >-
-        Vergelijkende analyse van 10 Fundamental Rights Impact Assessments
-        (FRIAs)
+    - title: Publieke standaard profileringsalgoritme
       intro: >
-        Evaluatie van 10 bestaande FRIA-kaders op basis van 12 vereisten op
-        juridisch, organisatorisch, technisch en sociaal vlak. Uit onze analyse
-        worden verschillen zichtbaar wat betreft de lengte en volledigheid van
-        FRIAs.
-      link: /nl/knowledge-platform/knowledge-base/comparative_review_10_frias/
-      image: /images/knowledge_base/Comparative_review_10_FRIAs.png
-      date: 21-09-2024
+        Voortbouwend op onze ervaring met het auditeren van
+        risicoprofileringsmethoden heeft Algorithm Audit een publieke standaard
+        opgesteld met kwalitatieve en kwantitatieve waarborgen voor de
+        verantwoorde inzet van dit type algoritmes.
+      link: /nl/knowledge-platform/knowledge-base/public_standard_profiling/
+      image: /images/knowledge_base/Public_standard_profiling.png
+      date: 22-10-2024
       type: white paper
   activities:
     - title: >-

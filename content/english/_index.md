@@ -18,15 +18,14 @@ Activity_Feed:
   button_text: View more...
   button_link: /events/activities/#events
   featured_activities:
-    - title: Comparative review of 10 Fundamental Rights Impact Assessments (FRIAs)
+    - title: Public standard profiling algorithms
       intro: >
-        Comparative review of 10 existing FRIAs frameworks, evaluating them
-        against 12 requirements across legal, organizational, technical and
-        social dimensions. Our assessment shows a sharp divide regarding the
-        length and completeness of FRIAs.
-      link: /knowledge-platform/knowledge-base/comparative_review_10_frias/
-      image: /images/knowledge_base/Comparative_review_10_FRIAs.png
-      date: 21-09-2024
+        Based on our case-based experience with auditing risk profiling systems,
+        Algorithm Audit publishes a public standard providing qualitative and
+        qualitative safeguards for responsible use of these type of algorithms.
+      link: /knowledge-platform/knowledge-base/public_standard_profiling/
+      image: /images/knowledge_base/Public_standard_profiling.png
+      date: 22-10-2024
       type: white paper
   activities:
     - title: >-
