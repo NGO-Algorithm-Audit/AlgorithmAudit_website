@@ -8,6 +8,8 @@ summary: Public standard profiling algorithms
 facets:
   - value: type_white_paper
     label: white paper
+  - value: type_standard
+    label: standard
   - value: subject_FR
     label: fundamental rights
   - value: subject_standard

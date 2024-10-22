@@ -55,7 +55,7 @@ Het uitgebrachte advies van de commissie wordt samen met het probleemstelling-do
 
 Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie ontwikkeld. Algorithm Audit's richtlijnen voor het bijeenbrengen van normatieve adviescommissie kunnen worden gevonden in onderstaand document.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1eHKVFu7YApSdbGmOX1aKLOuH7UIkm41a/preview" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1qu-dv1ZJvmqjYi6tVC7bbpxuzQdThhOk/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
 {{< container_close >}}
 

@@ -8,6 +8,8 @@ summary: Public standard profiling algorithms
 facets:
   - value: type_white_paper
     label: white paper
+  - value: type_standard
+    label: standard
   - value: subject_FR
     label: fundamental rights
   - value: subject_standard
@@ -31,6 +33,6 @@ Deployers of profiling systems should not wait for European harmonised standards
 2. Classic rule-based profiling systems, that are based on rules defined solely by natural persons, do not fall under the definition of an AI-system and are therefore not in scope of the AI Act
 3. AI Act standards will only be available behind the paywall of standardisation organisations and therefore impede public knowledge building about responsible algorithms.
 
-In the Netherlands, ‘simple’ rule-based profiling systems have been deployed irresponsibly for over the last 15 years. This public standard aims to contribute to concise risk management measures that can be implemented today to deploy profiling more reponsibly.
+In the Netherlands, ‘simple’ rule-based profiling systems have been deployed irresponsibly for over the last 15 years. This public standard aims to contribute to concise risk management measures that can be implemented today to deploy profiling more responsibly.
 
 {{< pdf_frame articleUrl1="https://drive.google.com/file/d/1_Bbeo-R7Mn3_om3hiwRCuqq_hppNwqmi/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}

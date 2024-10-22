@@ -54,7 +54,7 @@ Advice of commission is published together with problem statement on our website
 
 Over the years, we have developed our own deliberative audit methodology. Algorithm Audit's guidelines for convening a normative advice commission can be consulted in the below document. [Get in touch](/about/contact/) to share feedback about these guidelines.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1eHKVFu7YApSdbGmOX1aKLOuH7UIkm41a/preview" >}}
+{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1qu-dv1ZJvmqjYi6tVC7bbpxuzQdThhOk/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
 {{< container_close >}}
 

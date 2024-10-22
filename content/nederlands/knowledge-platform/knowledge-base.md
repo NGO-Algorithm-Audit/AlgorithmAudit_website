@@ -5,12 +5,14 @@ facet_groups:
     facets:
       - value: algoprudence
         label: Algoprudentie
+      - value: GDPR
+        label: Avg
       - value: DSA
         label: DSA
       - value: FR
         label: Grondrechten
-      - value: GDPR
-        label: Avg
+      - value: standard
+        label: Standaarden
       - value: scientific
         label: Wetenschappelijk
   - value: type
@@ -26,6 +28,8 @@ facet_groups:
         label: Opinie
       - value: report
         label: Rapport
+      - value: standard
+        label: Standaard
       - value: white_paper
         label: White paper
 pagesize: 4
@@ -43,3 +47,4 @@ subtitle: >
   Mis je een item? [Laat het weten](/nl/about/contact/).
 image: /images/svg-illustrations/knowledge_base.svg
 ---
+

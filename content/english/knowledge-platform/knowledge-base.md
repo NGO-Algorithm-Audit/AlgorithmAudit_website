@@ -13,6 +13,8 @@ facet_groups:
         label: GDPR
       - value: scientific
         label: Scientific
+      - value: standard
+        label: Standards
   - value: type
     title: Type
     facets:
@@ -26,6 +28,8 @@ facet_groups:
         label: Report
       - value: review
         label: Review
+      - value: standard
+        label: Standard
       - value: white_paper
         label: White paper
 pagesize: 4
