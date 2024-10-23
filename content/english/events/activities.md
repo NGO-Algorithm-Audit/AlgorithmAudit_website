@@ -4,6 +4,8 @@ facet_groups:
   - value: year
     title: Year
     facets:
+      - value: q4_2024
+        label: Q4-2024
       - value: q3_2024
         label: Q3-2024
       - value: q2_2024
@@ -24,16 +26,16 @@ facet_groups:
 events:
   - title: Guest speaker lunch seminar 'Risks of detection algorithms'
     description: >
-      Guest speaker during lunch seminar 'Risks of detection algorithms' organized by the
-      Ministery of van Justice and Security 
+      Guest speaker during lunch seminar 'Risks of detection algorithms'
+      organized by the Ministery of van Justice and Security
     image: /images/events/MinJenV_logo.png
     date: 02-10-2024
     facets:
       - value: year_2024
         label: '2024'
         hide: true
-      - value: year_q3_2024
-        label: Q3-2024
+      - value: year_q4_2024
+        label: Q4-2024
         hide: true
       - value: type_presentation
         label: presentation
@@ -54,8 +56,10 @@ events:
         label: presentation
   - title: 'Guest speaker in-depth session ''Bias, fairness and non-discrimination'''
     description: >
-      Guest speaker during symposium 'Profiling in the public sector' organized by the
-      Commission Personal Data Amsterdam (CPA) together with Thijs Teisman of Dutch Executive Agency for Education (DUO) on research into the College Grant Check process  
+      Guest speaker during symposium 'Profiling in the public sector' organized
+      by the Commission Personal Data Amsterdam (CPA) together with Thijs
+      Teisman of Dutch Executive Agency for Education (DUO) on research into the
+      College Grant Check process
 
 
       ![](</images/events/BZK event 2024.jpg>)
@@ -72,8 +76,10 @@ events:
         label: presentation
   - title: 'Guest speaker symposium ''Profiling in the public sector'' '
     description: >
-      Guest speaker during symposium 'Profiling in the public sector' organized by the
-      Commission Personal Data Amsterdam (CPA) together with Thijs Teisman of Dutch Executive Agency for Education (DUO) on research into the College Grant Check process  
+      Guest speaker during symposium 'Profiling in the public sector' organized
+      by the Commission Personal Data Amsterdam (CPA) together with Thijs
+      Teisman of Dutch Executive Agency for Education (DUO) on research into the
+      College Grant Check process
     image: /images/events/Amsterdam.png
     date: 12-09-2024
     facets:
