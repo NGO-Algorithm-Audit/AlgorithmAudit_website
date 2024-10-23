@@ -74,6 +74,10 @@ team2:
       name: Jurriaan Parie
       bio: |
         Director-board member
+    - image: /images/people/YRemmits.jpg
+      name: Ylja Remmits
+      bio: |
+        Head of Projects
     - image: /images/people/Unknown.jpeg
       name: Vardâyani Djwalapersad
       bio: |

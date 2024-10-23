@@ -25,13 +25,13 @@ image: /images/knowledge_base/Public_standard_profiling.png
 
 Voortbouwend op onze ervaring met het auditeren van risicoprofileringsmethoden heeft Algorithm Audit een publieke standaard opgesteld met kwalitatieve en kwantitatieve waarborgen voor de verantwoorde inzet van dit type algoritmes.
 
-The standaard biedt een concreet stappenplan voor de verantwoorde inzet van profileringsalgoritmes voor toepassing in de publieke sector. De standaard kan ook in de private sector worden gebruikt. 
+De standaard biedt een concreet stappenplan voor de verantwoorde inzet van profileringsalgoritmes voor toepassing in de publieke sector. De standaard kan ook in de private sector worden gebruikt.
 
-Ontwikkelaars van profileringsmethoden moeten om verschillende redenen niet wachten op Europese geharmoniseerde normen, die ter ondersteuning van de AI Verordening worden ontwikkeld, om profileringssystemen te reguleren:
+Er zijn verschillende redenen waarom ontwikkelaars van profileringsmethoden niet moeten wachten op Europese geharmoniseerde normen, die ter ondersteuning van de AI Verordening worden ontwikkeld, om profileringssystemen te reguleren:
 
-1. AI Verordeningen geharmonizeerde normen hebben een brede reikwijdte (alle type AI-systemen) en zijn daarom ineffectief om specifieke algoritische toepassingen te reguleren, zoals profilering
-2. Klassieke regelgebaseerde systemen, waarvan regels door de mens zijn opgesteld, vallen niet onder de definitie van een AI-systeem en vallen daarmee buiten de reikwijdte van de AI Verordening
-3. AI Verordeningen geharmonizeerde normen zullen enkel beschikbaar komen achter de betaalmuur van standaardiseringsorganisaties en hinderen daarmee publieke kennisopbouw over de verantwoorde inzet van algoritmes.
+1. AI Verordeningen geharmonizeerde normen hebben een brede reikwijdte (namelijk: alle type AI-systemen) en zijn daarom ineffectief om specifieke algoritische toepassingen te reguleren, zoals profilering;
+2. Klassieke regelgebaseerde systemen, waarvan regels door de mens zijn opgesteld (zie pre-ambule overweging 12), vallen niet onder de definitie van een AI-systeem en vallen daarmee buiten de reikwijdte van de AI Verordening;
+3. AI Verordeningen geharmonizeerde normen zullen enkel beschikbaar zijn achter de betaalmuur van standaardiseringsorganisaties en hinderen daarmee publieke kennisopbouw over de verantwoorde inzet van algoritmes.
 
 In Nederland hebben ‘simpele’ regelgebaseerde profileringsalgoritmes de afgelopen 15 jaar tot veel ophef geleid. Deze publieke standaard beoogt een bijdrage te leveren aan risicobeheersmaatregelen om de methoden op een meer verantwoorde manier in te zetten.
 
