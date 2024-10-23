@@ -4,6 +4,8 @@ facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: q4_2024
+        label: Q4-2024
       - value: q3_2024
         label: Q3-2024
       - value: q2_2024
@@ -32,8 +34,8 @@ events:
       - value: year_2024
         label: '2024'
         hide: true
-      - value: year_q3_2024
-        label: Q3-2024
+      - value: year_q4_2024
+        label: Q4-2024
         hide: true
       - value: type_presentation
         label: presentatie
