@@ -80,9 +80,7 @@ type: registration
 * <span style="color: #005aa7;">Where:</span> Auditorium Dutch Central Bank (DNB), Spaklerweg 4, 1096 BA Amsterdam
 * <span style="color: #005aa7;">Who:</span> European regulators and public sector professionals
 * <span style="color: #005aa7;">Program:</span> see flyer below
-* <span style="color: #005aa7;">Participation fee</span>
-  * In-person: €200
-  * Online: €100
+* <span style="color: #005aa7;">No participation fee</span>
 
 {{< button button_link="#form" button_text="Register" >}}
 
