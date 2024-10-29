@@ -48,7 +48,7 @@ form1:
       type: checkbox
     - label: >
         Vragen of opmerkingen voor de organisatie (bijv. dieetwensen en/of
-        allergieën) 
+        allergieën)
       id: questions
       type: textarea
     - label: >
@@ -82,8 +82,6 @@ type: registration
 * <span style="color: #005aa7;">Wie:</span> Europese toezichthouders en publieke sector professionals
 * <span style="color: #005aa7;">Programma:</span> zie flyer hieronder
 * <span style="color: #005aa7;">Deelnamekosten</span>
-  * Op locatie: €200
-  * Online: €100
 
 {{< button button_link="#form" button_text="Schrijf je in" >}}
 
