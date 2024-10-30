@@ -49,7 +49,7 @@ dynamic_form_engine:
                 content: >
                   Model of algoritme is tot stand gekomen doormiddel van
                   optimalisatie, machine learning, simulatie of soortgelijk
-              - id: 'no'
+              - id: no
                 value: 'no'
                 title: Nee
                 content: ''
@@ -135,7 +135,7 @@ dynamic_form_engine:
                 title: 'Ja, logica of kennis-gebaseerd systeem'
                 content: >
                   Logica- en kennis-gebaseerde benaderingen van AI waarbij uitkomsten worden afgeleid uit gecodeerde kennis of uit een symbolische weergave van de op te lossen taak
-              - id: 'no'
+              - id: no
                 value: 'no'
                 title: 'Nee'
                 content: >
@@ -194,17 +194,350 @@ dynamic_form_engine:
               speelt.
             use_card_style: false
             type: radio
+            # q1=yes1, q2=*, q3=*  ()    
             visible_when_or:
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option1
                   - identifier: q3
                     value: yes1
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option1
                   - identifier: q3
                     value: yes2
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option1
                   - identifier: q3
                     value: yes3
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option1
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes1
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: 'no'
+
+              # q1=yes2, q2=*, q3=*      
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option1
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option1
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option1
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option1
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: 'no'
+              
+
+              # q1=no, q3=* (q2 is skipped for this combination)
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'no'
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'no'
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'no'
+                  - identifier: q3
+                    value: 'no'
+
+              # q1=yes1, q3=*
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes1'
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes1'
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes1'
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes1'
+                  - identifier: q3
+                    value: 'no'
+
+              # q1=yes2, q3=*
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes2'
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes2'
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes2'
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes2'
                   - identifier: q3
                     value: 'no'
           - identifier: q4
@@ -224,117 +557,363 @@ dynamic_form_engine:
             use_card_style: false
             options:
               - id: yes
-                value: yes
+                value: 'yes'
                 title: Ja
                 content: ''
               - id: no
-                value: no
+                value: 'no'
                 title: Nee
                 content: ''
             required: false
             type: radio
+            # q1=yes1, q2=*, q3=*  ()    
             visible_when_or:
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option1
                   - identifier: q3
                     value: yes1
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option1
                   - identifier: q3
                     value: yes2
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option1
                   - identifier: q3
                     value: yes3
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option1
                   - identifier: q3
                     value: 'no'
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option2
                   - identifier: q3
                     value: yes1
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option2
                   - identifier: q3
                     value: yes2
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option2
                   - identifier: q3
                     value: yes3
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option2
                   - identifier: q3
                     value: 'no'
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option3
                   - identifier: q3
                     value: yes1
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option3
                   - identifier: q3
                     value: yes2
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option3
                   - identifier: q3
                     value: yes3
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option3
                   - identifier: q3
                     value: 'no'
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option4
                   - identifier: q3
                     value: yes1
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option4
                   - identifier: q3
                     value: yes2
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option4
                   - identifier: q3
                     value: yes3
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option4
                   - identifier: q3
                     value: 'no'
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option5
                   - identifier: q3
                     value: yes1
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option5
                   - identifier: q3
                     value: yes2
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option5
                   - identifier: q3
                     value: yes3
               - visible_when_and:
+                  - identifier: q1
+                    value: yes1
                   - identifier: q2
                     value: option5
                   - identifier: q3
                     value: 'no'
-          - identifier: q6
+
+              # q1=yes2, q2=*, q3=*      
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option1
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option1
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option1
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option1
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option2
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option3
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option4
+                  - identifier: q3
+                    value: 'no'
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: yes2
+                  - identifier: q2
+                    value: option5
+                  - identifier: q3
+                    value: 'no'
+              
+
+              # q1=no, q3=* (q2 is skipped for this combination)
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'no'
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'no'
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'no'
+                  - identifier: q3
+                    value: 'no'
+
+              # q1=yes1, q3=*
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes1'
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes1'
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes1'
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes1'
+                  - identifier: q3
+                    value: 'no'
+
+              # q1=yes2, q3=*
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes2'
+                  - identifier: q3
+                    value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes2'
+                  - identifier: q3
+                    value: yes2
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes2'
+                  - identifier: q3
+                    value: yes3
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'yes2'
+                  - identifier: q3
+                    value: 'no'
+
+          - identifier: q5
             title: Soort beslissing
             content: >
               Wat voor soort beslissingen worden genomen in dit proces? Kies de
@@ -343,34 +922,36 @@ dynamic_form_engine:
             options:
               - id: option1
                 value: option1
-                title: Beslissing met directe financiële gevolgen voor burger
+                title: Beslissing over prioritering of routering van aanvragen, verzoeken, klachten en bezwaren
                 content: >
-                  Bijvoorbeeld beslissingen over uitkering, toeslag, subsidie,
-                  boete, terugbetaling of mogelijkheid tot betalingsregeling
+                  
               - id: option2
                 value: option2
-                title: >-
-                  Beslissing over aanvragen en verzoeken zonder directe
-                  financiële gevolgen
-                content: ''
+                title: 'Beslissing over formele klachten en bezwaren'
+                content: >
+
               - id: option3
                 value: option3
-                title: Beslissing over formele klachten en bezwaren
-                content: ''
+                title: 'Beslissing met directe financiële gevolgen voor  burger'
+                content: 'Bijvoorbeeld beslissingen over uitkering, toeslag, subsidie, boete, terugbetaling of mogelijkheid tot betalingsregeling'
               - id: option4
                 value: option4
-                title: >-
-                  Beslissing over prioritering of routering van aanvragen,
-                  verzoeken, klachten en bezwaren
+                title: Beslissing over aanvragen en verzoeken zonder directe financiële gevolgen
                 content: ''
               - id: option5
                 value: option5
-                title: >-
-                  Beslissing over controle, onderzoek of verzoek tot aanvullende
-                  informatie verschaffing door de burger
+                title: Beslissing over controle, onderzoek of verzoek tot aanvullende informatie verschaffing door de burger
                 content: ''
               - id: option6
                 value: option6
+                title: Beslissing over toewijzing van scholen
+                content: ''
+              - id: option7
+                value: option7
+                title: Beslissingen over advisering of het (proactief) aanbieden van voorzieningen
+                content: ''
+              - id: option8
+                value: option8
                 title: Anders
                 content: ''
             type: radio
@@ -378,24 +959,23 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q4
                     value: 'yes'
-          - identifier: q6-option6
+          - identifier: q5-option8
             title: Beschrijf het soort beslissing
             content: ''
             required: true
             type: textarea
             visible_when_or:
               - visible_when_and:
-                  - identifier: q6
-                    value: option6
-          - identifier: q7
+                  - identifier: q5
+                    value: option8
+          - identifier: q6
             title: Type interactie met burger
             content: >
               Het proces draagt bij aan hoe de overheid (groepen) inwoners
               categoriseert of benadert?
 
 
-              Kies "Ja" wanneer je onzeker bent, en beschrijf kort de manier
-              waarom.
+              Kies "Ja" wanneer je het niet zeker weet en beschrijf hieronder kort waarom.
             use_card_style: false
             options:
               - id: 'yes'
@@ -411,7 +991,7 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q4
                     value: 'no'
-          - identifier: q8
+          - identifier: q7
             title: Effect van toepassing
             content: |
               Wat is effect van de toepassing op de uitkomst van het proces?
@@ -463,33 +1043,32 @@ dynamic_form_engine:
                 content: ''
             type: radio
             visible_when_or:
-              - {}
               - visible_when_and:
-                  - identifier: q6
+                  - identifier: q5
                     value: option5
               - visible_when_and:
-                  - identifier: q6
+                  - identifier: q5
                     value: option4
               - visible_when_and:
-                  - identifier: q6
+                  - identifier: q5
                     value: option3
               - visible_when_and:
-                  - identifier: q6
+                  - identifier: q5
                     value: option2
               - visible_when_and:
-                  - identifier: q6
+                  - identifier: q5
                     value: option1
               - visible_when_and:
-                  - identifier: q7
+                  - identifier: q6
                     value: 'yes'
-          - identifier: q8-option5
+          - identifier: q7-option5
             title: Beschrijf het effect van de toepassing op het proces
             content: ''
             required: true
             type: textarea
             visible_when_or:
               - visible_when_and:
-                  - identifier: q8
+                  - identifier: q7
                     value: option5
           - identifier: output1
             title: >-
@@ -503,26 +1082,25 @@ dynamic_form_engine:
             type: radio
             visible_when_or:
               - visible_when_and:
-                  - identifier: q6
-                    value: option6
-              - visible_when_and:
-                  - identifier: q8
-                    value: option4
-              - visible_when_and:
                   - identifier: q1
+                    value: 'no'
+                  - identifier: q3
                     value: yes1
               - visible_when_and:
                   - identifier: q2
+                    value: option6
+              - visible_when_and:
+                  - identifier: q5
+                    value: option8
+              - visible_when_and:
+                  - identifier: q6
                     value: 'no'
-              - visible_when_and:
-                  - identifier: q4
-                    value: option6
-              - visible_when_and:
-                  - identifier: q3
-                    value: option6
               - visible_when_and:
                   - identifier: q7
-                    value: 'no'
+                    value: option4
+              - visible_when_and:
+                  - identifier: q7
+                    value: option5
           - identifier: output2
             title: >-
               Uw toepassing is op basis van uw antwoorden waarschijnlijk een
@@ -533,20 +1111,25 @@ dynamic_form_engine:
             type: radio
             visible_when_or:
               - visible_when_and:
+                  - identifier: q1
+                    value: yes2
                   - identifier: q3
-                    value: option5
+                    value: yes3
               - visible_when_and:
-                  - identifier: q3
-                    value: option4
+                  - identifier: q2
+                    value: option1
               - visible_when_and:
-                  - identifier: q3
-                    value: option3
-              - visible_when_and:
-                  - identifier: q3
+                  - identifier: q2
                     value: option2
               - visible_when_and:
-                  - identifier: q3
-                    value: option1
+                  - identifier: q2
+                    value: option3
+              - visible_when_and:
+                  - identifier: q2
+                    value: option4
+              - visible_when_and:
+                  - identifier: q2
+                    value: option5
           - identifier: output3
             title: >-
               Uw toepassing is op basis van uw antwoorden waarschijnlijk een
@@ -556,17 +1139,14 @@ dynamic_form_engine:
             type: radio
             visible_when_or:
               - visible_when_and:
-                  - identifier: q8
-                    value: option5
+                  - identifier: q7
+                    value: option1
               - visible_when_and:
-                  - identifier: q8
-                    value: option3
-              - visible_when_and:
-                  - identifier: q8
+                  - identifier: q7
                     value: option2
               - visible_when_and:
-                  - identifier: q8
-                    value: option1
+                  - identifier: q7
+                    value: option3
     complete_form_options:
       type: submit
       button_text: Save as pdf
