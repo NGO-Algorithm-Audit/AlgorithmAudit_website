@@ -1,92 +1,46 @@
 ---
 type: regular
-title: Documentation for AI systems
+title: Documentatie voor AI-systemen
 subtitle: >
-  Open-source templates for model documentation of AI systems. In line with the
-  requirements of the AI Act and Dutch soft law frameworks (such as the
-  [Research Framework
-  Algorithms](https://www.rijksoverheid.nl/documenten/rapporten/2023/07/11/onderzoekskader-algoritmes-adr-2023#:~:text=De%20Auditdienst%20Rijk%20heeft%20een,risico's%20beheerst%20\(kunnen\)%20worden.)
-  of the The Central Government Audit Service, the [Algorithm
-  Framework](https://minbzk.github.io/Algoritmekader/) of the Ministry of the
-  Interior, and impact assessments for data privacy and fundamental rights).
-  Help develop model documentation by sharing your feedback via
-  [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) or via
+  Open-source templates voor modeldocumentatie van AI-systemen. Afgestemd op de
+  eisen uit de AI Verordening en Nederlandse soft law kaders, zoals de
+  [Handreiking
+  Algoritmeregister](https://www.digitaleoverheid.nl/document/handreiking-algoritmeregister/)
+  van het Ministerie van Binnenlandse Zaken. 
+
+
+  Help mee ontwikkelen, deel feedback middels
+  [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
 dynamic_form_engine:
-  - title: Identification AI system and impactful algorithms
+  - title: Identification AI systems and impactful algorithms
     id: form
     icon: fa fa-star
     content: >
-      Determine whether your system is an AI system or impactful algorithm by
-      answering a maximum of 8 questions.
+      Determine whether your system is an AI system or impactful algorithm by answering a maximum of 8 questions.
     section:
-      # - questions:
-      #     - identifier: intro1
-      #       title: Name of the system
-      #       content: ''
-      #       tooltip: >-
-      #         If the system does not have a formal name, provide a name that
-      #         colleagues among themselves use to refer to this application.
-      #       required: true
-      #       type: text
-      #     - identifier: intro2
-      #       title: Provide a brief description of the system and how it is used
-      #       content: ''
-      #       required: true
-      #       type: textarea
-      #     - identifier: intro3
-      #       title: >-
-      #         Name of primary point of contact within the organization for the
-      #         system, e.g. product owner
-      #       content: ''
-      #       tooltip: >-
-      #         If there is no designated point of contact or owner, please fill
-      #         in your own name here for now. The algorithm team can then contact
-      #         you.
-      #       required: true
-      #       type: textyes1
-      #     - identifier: intro4
-      #       title: >-
-      #         Email address of primary point of contact within the organization
-      #         for the system, e.g. email address of a product owner
-      #       content: ''
-      #       required: true
-      #       type: text
-      #     - identifier: intro5
-      #       title: >-
-      #         Which team within the organization is primarily responsible for
-      #         the system?
-      #       content: ''
-      #       required: true
-      #       type: text
-      #     - identifier: intro6
-      #       title: Which line of management does this team fall under?
-      #       content: ''
-      #       required: true
-      #       type: text
       - questions:
           - identifier: q1
-            title: Automation of legislation or regulations
+            title: Automation of rules devised by humans
             content: >
-              Is the system a one-on-one automation of rules established in
-              legislation, regulations or otherwise by people?
-            tooltip: >-
-              If the rules within your system have not been explicitly
-              established and documented in advance, please select "no".
+              Does the system directly automate rules established in legislation, regulations, or other guidelines created by people?
+
+
+              <ins>*If rules within your application are not explicilty predefined and documented, select here “no”. Software requirements with certain degrees of freedom are not considered to be rules devised by humans.*</ins>
+            tooltip: ''
+            use_card_style: false
             options:
               - id: yes1
                 value: yes1
-                title: 'Yes, legislation or regulations'
+                title: 'Yes, legislation or regulation'
                 content: >
-                  One-on-one automation of rules established in legislation or
-                  regulations
+                  One-on-one automation of rules established in legislation or regulations
               - id: yes2
                 value: yes2
-                title: 'Yes, made by people'
+                title: 'Yes, devised by people'
                 content: >
-                  One-on-one automation of human-generated rules (other than
-                  laws or regulations)
+                  One-on-one automation of human-generated rules (other than laws or regulations)
               - id: 'no'
                 value: 'no'
                 title: 'No'
@@ -101,43 +55,27 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q1
                     value: yes1
-          - identifier: output2
-            title: Follow-up question
-            content: >
-              Possibly an AI system or algorithm. We will ask you a follow-up
-              question.
-            type: radio
-            visible_when_or:
-              - visible_when_and:
-                  - identifier: q1
-                    value: yes2
           - identifier: q2
             title: >-
-              Does the system contain a model or decision rules derived from
-              data?
+              Does the system contain a model or decision rules derived from data?
             content: ''
             tooltip: >-
-              For instance, calculating threshold values ​​for rules or
-              weighting factors for decisions formed based on data, statistical
-              modeling or machine learning, including deep learning or large
-              language models.
+              For instance, calculating threshold values for rules or weighting factors for decisions formed based on data, statistical modeling or machine learning, including deep learning or large or exalanguage models.
+            use_card_style: false
             options:
               - id: yes1
                 value: yes1
                 title: 'Yes, manually created'
                 content: >
-                  Model or algorithm is manually created, but with the help of
-                  data analysis to determine, for example, selection of
-                  variables, weighting factors or threshold values
+                  Model or algorithm is manually created, but with the help of data analysis to determine, for example, selection of variables, weighting factors or threshold values
               - id: yes2
                 value: yes2
                 title: 'Yes, by statistical methods'
                 content: >
-                  Model or algorithm is created through optimization, machine
-                  learning, simulation or something similar
+                  Model or algorithm is created through optimization, machine learning, simulation or something similar
               - id: 'no'
                 value: 'no'
-                title: 'No'
+                title: No
                 content: ''
             required: false
             type: radio
@@ -145,25 +83,13 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q1
                     value: 'no'
-          - identifier: output3
-            title: Follow-up question
-            content: >
-              Possibly an AI system or algorithm. We will ask you a follow-up
-              question.
-            type: radio
-            visible_when_or:
-              - visible_when_and:
-                  - identifier: q2
-                    value: yes1
           - identifier: q3
             title: >-
-              Which of the following categories does the outcome of the system
-              fall under?
+              Which of the following categories does the system’s outcome fall into?
             content: ''
             tooltip: >-
-              Choose the output category that is the most applicable. Data
-              includes all forms of electronic data. Text, images, audio are
-              also data.
+              Select the output category that applies best. Data includes all forms of electronic information. Text, images, and audio are also considered data.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
@@ -173,7 +99,7 @@ dynamic_form_engine:
                 value: option2
                 title: An estimated label or classification
                 content: |
-                  Ja/nee, hoog/laag of een indeling in groepen
+                  Yes/no, high/low or a division into groups
               - id: option3
                 value: option3
                 title: A recommendation
@@ -204,32 +130,13 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q3
                     value: option6
-          - identifier: output3
-            title: 'System is an AI-systeem '
-            content: |
-              An AI Act risk assessment must be filled out.
-            type: radio
-            visible_when_or:
-              - visible_when_and:
-                  - identifier: q3
-                    value: option5
-              - visible_when_and:
-                  - identifier: q3
-                    value: option4
-              - visible_when_and:
-                  - identifier: q3
-                    value: option3
-              - visible_when_and:
-                  - identifier: q3
-                    value: option2
-              - visible_when_and:
-                  - identifier: q3
-                    value: option1
           - identifier: q4
             title: >-
-              Which of the following categories does the outcome of the system
-              fall under?
+              Which of the following categories does the system’s outcome fall into?
             content: ''
+            tooltip: >-
+              Select the output category that applies best. Data includes all forms of electronic information. Text, images, and audio are also considered data.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
@@ -274,23 +181,60 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q4
                     value: option6
+          - identifier: text1
+            title: >-
+              The following questions relate to the process in which the application is used. For the answers, it does not matter how automated this process is or what role the application has in the process. We will ask about the role of the application afterward.
+            content: ''
+            use_card_style: false
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q3
+                    value: option5
+              - visible_when_and:
+                  - identifier: q3
+                    value: option4
+              - visible_when_and:
+                  - identifier: q3
+                    value: option3
+              - visible_when_and:
+                  - identifier: q3
+                    value: option2
+              - visible_when_and:
+                  - identifier: q3
+                    value: option1
+              - visible_when_and:
+                  - identifier: q4
+                    value: option5
+              - visible_when_and:
+                  - identifier: q4
+                    value: option4
+              - visible_when_and:
+                  - identifier: q4
+                    value: option3
+              - visible_when_and:
+                  - identifier: q4
+                    value: option2
+              - visible_when_and:
+                  - identifier: q4
+                    value: option1
           - identifier: q5
             title: Role in decision making
-            content: |
-              Are decisions made for individual residents in the process?
+            content: >
+              Are decisions made for individual citizens in the process?
+
+              <ins>*Note: a decision is much broader than a formal resolution.*<ins>
             tooltip: >-
-              Think of whether or not to follow up on a question or request from
-              a citizen, request a citizen to provide additional information, or
-              to select for control or inspection. Note: a decision is much
-              broader than a formal decision.
+              Consider examples like approving or denying a citizen's request, requesting additional information from a citizen, or selecting for inspection or review. Note: a decision is much broader than a formal resolution.
+            use_card_style: false
             options:
               - id: 'yes'
                 value: 'yes'
-                title: 'Yes'
+                title: Yes
                 content: ''
               - id: 'no'
                 value: 'no'
-                title: 'No'
+                title: No
                 content: ''
             required: false
             type: radio
@@ -327,20 +271,19 @@ dynamic_form_engine:
                     value: option1
           - identifier: q6
             title: Type of decision
-            content: |
-              What kind of decisions are made in the process?
+            content: >
+              What kind of decisions are made in the process? Choose the option that best matches the type of decision.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
                 title: Decision that has direct financial consequences for citizens
                 content: >
-                  For instances, decisions about benefits, allowances, grants,
-                  fines, repayments or the possibility of a payment arrangement
+                  For instances, decisions about benefits, allowances, grants, fines, repayments or the possibility of a payment arrangement
               - id: option2
                 value: option2
                 title: >-
-                  Decision on applications and requests without any direct
-                  financial consequences
+                  Decision on applications and requests without any direct financial consequences
                 content: ''
               - id: option3
                 value: option3
@@ -349,14 +292,12 @@ dynamic_form_engine:
               - id: option4
                 value: option4
                 title: >-
-                  Decision about prioritization or routing of applications,
-                  requests, complaints, and objections
+                  Decision about prioritization or routing of applications, requests, complaints, and objections
                 content: ''
               - id: option5
                 value: option5
                 title: >-
-                  Decision about inspection, research/investigation or request
-                  for additional information by the citizen
+                  Decision about inspection, research/investigation or request for additional information by the citizen
                 content: ''
               - id: option6
                 value: option6
@@ -377,18 +318,21 @@ dynamic_form_engine:
                   - identifier: q6
                     value: option6
           - identifier: q7
-            title: Interaction with citizen
+            title: Type of interaction with citizen
             content: >
-              Does the process contribute to how the government categorises or
-              approaches (groups of) residents?
+              Does the process contribute to how the government categorises or approaches (groups of) residents?
+
+
+              Select "Yes" if you are uncertain, and briefly describe why.
+            use_card_style: false
             options:
               - id: 'yes'
                 value: 'yes'
-                title: 'Yes'
+                title: Yes
                 content: ''
               - id: 'no'
                 value: 'no'
-                title: 'No'
+                title: No
                 content: ''
             type: radio
             visible_when_or:
@@ -396,44 +340,36 @@ dynamic_form_engine:
                   - identifier: q5
                     value: 'no'
           - identifier: q8
-            title: Effect of the system
+            title: Effect of the application
             content: |
               What is the effect of the system on the outcome of the process?
+
+              Choose the option that best fits.
+            use_card_style: false
             options:
               - id: option1
                 value: option1
                 title: >-
-                  The outcome of the process is directly determined by the
-                  system
+                  The outcome of the process is directly determined by the system
                 content: >
-                  For instance straight through processing. Human supervision
-                  can be applied afterwards by viewing or analyzing the results.
+                   For instance, straight through processing. Human supervision can be applied afterwards by viewing or analyzing the results.
               - id: option2
                 value: option2
-                title: The outcome of the process is largely influenced by the system
+                title: >-
+                  The outcome of the process is largely influenced by the system
                 content: >
-                  For instance, because work instructions connect a consequence
-                  to a specific output of the system. An employee can make
-                  different choices, but in practice the output is a decisive
-                  factor for the outcome of the process.
+                  For instance, because work instructions connect a consequence to a specific output of the system. An employee can make different choices, but in practice the output is a decisive factor for the outcome of the process.
               - id: option3
                 value: option3
                 title: >-
-                  The outcome of the process is influenced to some extent by the
-                  output of the system
+                  The outcome of the process is influenced to some extent by the output of the system
                 content: >
-                  The output of the application is an important factor for the
-                  process outcome, but an employee makes the choice about the
-                  outcome itself. This employee has the right information,
-                  experience/skills, mandate and available time to make this
-                  choice.
+                  The output of the application is an important factor for the process outcome, but an employee makes the choice about the outcome itself. This employee has the right information, experience/skills, mandate and available time to make this choice.
               - id: option4
                 value: option4
                 title: >-
-                  The outcome of the process is completely determined by a human
-                  and is influenced by multiple factors in which the output is
-                  only one of these factors
-                content: |
+                  The outcome of the process is completely determined by a human and is influenced by multiple factors in which the output is only one of these factors
+                content: >
                   The output of the system is not decisive in the choice.
               - id: option5
                 value: option5
@@ -441,9 +377,7 @@ dynamic_form_engine:
                 content: ''
             type: radio
             visible_when_or:
-              - visible_when_and:
-                  - identifier: q6
-                    value: option6
+              - {}
               - visible_when_and:
                   - identifier: q6
                     value: option5
@@ -471,9 +405,11 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q8
                     value: option5
-          - identifier: output4
-            title: Impactful algorithm
+          - identifier: output3
+            title: >-
+              Based on your answers, your application is likely to be an impactful algorithm.
             content: ''
+            use_card_style: false
             type: radio
             visible_when_or:
               - visible_when_and:
@@ -491,8 +427,12 @@ dynamic_form_engine:
           - identifier: output1
             title: Your system is not an AI system or an impactful algorithm
             content: ''
+            use_card_style: false
             type: radio
             visible_when_or:
+              - visible_when_and:
+                  - identifier: q6
+                    value: option6
               - visible_when_and:
                   - identifier: q8
                     value: option4
@@ -511,50 +451,39 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q7
                     value: 'no'
+          - identifier: output2
+            title: >-
+              Based on your answers, your application is likely to be an impactful algorithm.
+            content: |
+              A risk assessment for the AI Act must be filled in. 
+            use_card_style: false
+            type: radio
+            visible_when_or:
+              - visible_when_and:
+                  - identifier: q3
+                    value: option5
+              - visible_when_and:
+                  - identifier: q3
+                    value: option4
+              - visible_when_and:
+                  - identifier: q3
+                    value: option3
+              - visible_when_and:
+                  - identifier: q3
+                    value: option2
+              - visible_when_and:
+                  - identifier: q3
+                    value: option1
     complete_form_options:
       type: submit
       button_text: Save as pdf
-form1:
-  title: Intake
-  button_text: Meld aan
-  backend_link: aa
-  id: '#form'
-  questions:
-    - label: |
-        Naam van product
-      id: name
-      required: true
-      type: text
-      placeholder: Naam
-form2:
-  title: Intakeformulier
-  content: ''
-  button_text: Meld product aan
-  backend_link: 'https://formspree.io/f/xeojyqry'
-  id: intake
-  questions:
-    - label: Naam van product
-      id: name
-      type: text
-    - label: Registratienummer (indien niet bekend veld graag leeg laten)
-      id: registration-number
-      type: text
-    - label: Domein waarbinnen product wordt toegepast
-      id: domain
-      type: text
-    - label: Producteigenaar (naam)
-      id: product-owner-name
-      type: text
-    - label: Producteigenaar (mailadres)
-      id: product-owner-mail
-      type: text
 overview_block:
-  - title: Overzicht
+  - title: Overview
     content: ''
     icon: null
     id: overview
     items:
-      - title: Terug naar overzicht
+      - title: Back to overview
         icon: fa fa-file
         link: /nl/technical-tools/documentation/#quick-scan
 ---
