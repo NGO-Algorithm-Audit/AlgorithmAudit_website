@@ -12,6 +12,7 @@ import button from "../templates/button";
 import container_close from "../templates/container_close";
 import container_open from "../templates/container_open";
 import dynamic_form_engine from "../templates/dynamic_form_engine";
+import embed_pdf from "../templates/embed_pdf";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
 import template_image from "../templates/image";
@@ -51,6 +52,7 @@ const building_blocks: TinaField[] = [
       container_open,
       container_close,
       dynamic_form_engine,
+      embed_pdf,
       form1,
       form2,
       template_image,
@@ -355,6 +357,25 @@ const building_blocks: TinaField[] = [
                         name: "value",
                         label: "Value",
                         required: true,
+                        description:
+                          "The value of the option, or * when all values are allowed",
+                      },
+                      {
+                        type: "string",
+                        name: "compareSign",
+                        label: "Should be",
+                        options: [
+                          {
+                            value: "==",
+                            label: "Equal to",
+                          },
+                          {
+                            value: "!=",
+                            label: "Unequal to",
+                          },
+                        ],
+                        description:
+                          "Allows equal or unequal comparison, empty or default is equal",
                       },
                     ],
                   },
