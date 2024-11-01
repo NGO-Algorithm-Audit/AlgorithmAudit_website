@@ -93,10 +93,6 @@ dynamic_form_engine:
                 title: Een ander soort output
                 content: ''
             type: radio
-            visible_when_or:
-              - visible_when_and:
-                  - identifier: q1
-                    value: yes2
           - identifier: q2-option6
             title: Geef een beschrijving van de output
             content: ''
@@ -196,6 +192,7 @@ dynamic_form_engine:
             type: radio
             # q1=yes1, q2=*, q3=*  ()    
             visible_when_or:
+            
               - visible_when_and:
                   - identifier: q1
                     value: yes1
