@@ -5,6 +5,7 @@ import { TinaField } from "tinacms";
 import facet_groups from "../shared/facets/facet_groups";
 import facets from "../shared/facets/facets";
 import building_blocks from "../shared/page/building_blocks";
+import embed_pdf from "../shared/templates/embed_pdf";
 import pdf_frame from "../shared/templates/pdf_frame";
 
 let specific_fields: TinaField[] = [
@@ -37,7 +38,7 @@ let specific_fields: TinaField[] = [
         type: "rich-text",
         name: "description",
         label: "Description",
-        templates: [pdf_frame],
+        templates: [embed_pdf, pdf_frame],
       },
       {
         type: "image",
