@@ -188,12 +188,22 @@ dynamic_form_engine:
             type: radio
             visible_when_or:
               - visible_when_and:
+                  - identifier: q1
+                    value: 'no'
+                    compareSign: '!='
+                  - identifier: q2
+                    value: option6
+                    compareSign: '!='
+              - visible_when_and:
                   - identifier: q3
-                    value: yes3
-                    compareSign: '=='
+                    value: 'no'
+                    compareSign: '!='
                   - identifier: q3
-                    value: yes2
-                    compareSign: '=='
+                    value: yes1
+                    compareSign: '!='
+                  - identifier: q2
+                    value: option6
+                    compareSign: '!='
           - identifier: q4
             title: Rol in beslissingproces
             content: >
@@ -420,6 +430,11 @@ dynamic_form_engine:
                     value: 'no'
                   - identifier: q3
                     value: yes1
+              - visible_when_and:
+                  - identifier: q1
+                    value: 'no'
+                  - identifier: q3
+                    value: 'no'
               - visible_when_and:
                   - identifier: q2
                     value: option6
