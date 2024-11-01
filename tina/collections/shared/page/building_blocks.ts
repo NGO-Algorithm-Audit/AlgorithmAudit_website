@@ -355,6 +355,25 @@ const building_blocks: TinaField[] = [
                         name: "value",
                         label: "Value",
                         required: true,
+                        description:
+                          "The value of the option, or * when all values are allowed",
+                      },
+                      {
+                        type: "string",
+                        name: "compareSign",
+                        label: "Should be",
+                        options: [
+                          {
+                            value: "==",
+                            label: "Equal to",
+                          },
+                          {
+                            value: "!=",
+                            label: "Unequal to",
+                          },
+                        ],
+                        description:
+                          "Allows equal or unequal comparison, empty or default is equal",
                       },
                     ],
                   },
