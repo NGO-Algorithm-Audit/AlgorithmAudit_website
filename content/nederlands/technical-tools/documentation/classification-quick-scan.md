@@ -155,8 +155,8 @@ dynamic_form_engine:
                     value: yes1
           - identifier: output2
             title: >-
-              Uw toepassing is op basis van uw antwoorden waarschijnlijk een
-              AI-systeem.
+              Uw toepassing is op basis van uw antwoorden waarschijnlijk een AI
+              systeem.
             content: |
               Een AI Act risk assessment moet worden ingevuld.
             use_card_style: false
@@ -170,12 +170,13 @@ dynamic_form_engine:
                     value: option6
                     compareSign: '!='
               - visible_when_and:
+                  - identifier: q2
+                    value: '*'
+                    compareSign: '=='
                   - identifier: q3
                     value: yes3
                     compareSign: '=='
-                  - identifier: q2
-                    value: option6
-                    compareSign: '!='
+            isOutput: false
           - identifier: text1
             title: Volgende stap
             content: >
@@ -195,14 +196,14 @@ dynamic_form_engine:
                     value: option6
                     compareSign: '!='
               - visible_when_and:
-                  - identifier: q3
+                  - identifier: q1
                     value: 'no'
-                    compareSign: '!='
+                    compareSign: '=='
+                  - identifier: q2
+                    value: '*'
+                    compareSign: '=='
                   - identifier: q3
                     value: yes1
-                    compareSign: '!='
-                  - identifier: q2
-                    value: option6
                     compareSign: '!='
           - identifier: q4
             title: Rol in beslissingproces
@@ -239,14 +240,14 @@ dynamic_form_engine:
                     value: option6
                     compareSign: '!='
               - visible_when_and:
-                  - identifier: q3
+                  - identifier: q1
                     value: 'no'
-                    compareSign: '!='
+                    compareSign: '=='
+                  - identifier: q2
+                    value: '*'
+                    compareSign: '=='
                   - identifier: q3
                     value: yes1
-                    compareSign: '!='
-                  - identifier: q2
-                    value: option6
                     compareSign: '!='
           - identifier: q5
             title: Soort beslissing
@@ -274,7 +275,7 @@ dynamic_form_engine:
               - id: option4
                 value: option4
                 title: >-
-                  Beslissing over aanvragen en verzoeken zonder directe
+                  Beslissing over aanvraag of verzoek zonder directe
                   financiële gevolgen
                 content: ''
               - id: option5
@@ -389,6 +390,14 @@ dynamic_form_engine:
             visible_when_or:
               - visible_when_and:
                   - identifier: q5
+                    value: option7
+                    compareSign: '=='
+              - visible_when_and:
+                  - identifier: q5
+                    value: option6
+                    compareSign: '=='
+              - visible_when_and:
+                  - identifier: q5
                     value: option5
               - visible_when_and:
                   - identifier: q5
@@ -416,7 +425,7 @@ dynamic_form_engine:
                     value: option5
           - identifier: output1
             title: >-
-              Uw toepassing is op basis van uw antwoorden geen AI-systeem of
+              Uw toepassing is op basis van uw antwoorden geen AI systeem of
               impactvol algoritme.
             content: >
               Het zou kunnen dat contact wordt opgenomen met het primair
@@ -433,9 +442,7 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q1
                     value: 'no'
-                  - identifier: q3
-                    value: 'no'
-              - visible_when_and:
+                    compareSign: '!='
                   - identifier: q2
                     value: option6
               - visible_when_and:
@@ -447,6 +454,7 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q7
                     value: option4
+            isOutput: true
           - identifier: output3
             title: >-
               Uw toepassing is op basis van uw antwoorden waarschijnlijk een
@@ -467,9 +475,13 @@ dynamic_form_engine:
               - visible_when_and:
                   - identifier: q7
                     value: option5
+            isOutput: true
     complete_form_options:
-      type: submit
+      type: print
       button_text: Save as pdf
+      button_text_csv: Save as csv
+      file_name: classification_output
+      onlyShowWithOutput: true
 form1:
   title: Intake
   button_text: Meld aan

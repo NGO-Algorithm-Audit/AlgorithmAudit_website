@@ -340,7 +340,11 @@ const building_blocks: TinaField[] = [
                     list: true,
                     ui: {
                       itemProps: (item) => {
-                        return { label: `${item?.identifier}=${item?.value}` };
+                        return {
+                          label: `${item?.identifier}${
+                            item?.compareSign ?? "=="
+                          }${item?.value}`,
+                        };
                       },
                     },
                     fields: [
@@ -381,6 +385,13 @@ const building_blocks: TinaField[] = [
                   },
                 ],
               },
+              {
+                type: "boolean",
+                name: "isOutput",
+                label: "Is output",
+                description:
+                  "Can be used to hide the save button, the button will show when an output field is shown.",
+              },
             ],
           },
         ],
@@ -419,6 +430,11 @@ const building_blocks: TinaField[] = [
             required: true,
           },
           {
+            name: "button_text_csv",
+            label: "Button text for CSV download",
+            type: "string",
+          },
+          {
             name: "backend_link",
             label: "Back end link (Required if you want to submit the data)",
             type: "string",
@@ -430,6 +446,11 @@ const building_blocks: TinaField[] = [
             label: "File name (Required if you want to print the data)",
             type: "string",
             required: false,
+          },
+          {
+            name: "onlyShowWithOutput",
+            label: "Only show when an output field is shown",
+            type: "boolean",
           },
         ],
       },
