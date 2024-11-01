@@ -430,6 +430,11 @@ const building_blocks: TinaField[] = [
             required: true,
           },
           {
+            name: "button_text_csv",
+            label: "Button text for CSV download",
+            type: "string",
+          },
+          {
             name: "backend_link",
             label: "Back end link (Required if you want to submit the data)",
             type: "string",
