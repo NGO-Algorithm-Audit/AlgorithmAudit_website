@@ -340,7 +340,11 @@ const building_blocks: TinaField[] = [
                     list: true,
                     ui: {
                       itemProps: (item) => {
-                        return { label: `${item?.identifier}=${item?.value}` };
+                        return {
+                          label: `${item?.identifier}${
+                            item?.compareSign ?? "=="
+                          }${item?.value}`,
+                        };
                       },
                     },
                     fields: [
