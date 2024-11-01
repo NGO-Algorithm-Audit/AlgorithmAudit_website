@@ -41,7 +41,7 @@
       {{ end }}
 
 
-      <div class="score-card__question" {{if $visibilityCondition}}data-show-when="{{$visibilityCondition}}" {{end}}>
+      <div class="score-card__question" {{if $visibilityCondition}}data-show-when="{{$visibilityCondition}}" {{end}} {{if .isOutput }} data-is-output="true" {{end}}>
         <h4>
           {{ .title }}
           {{if .required}}*{{end}}
@@ -144,7 +144,7 @@
 
       {{ end }}
 
-      <div class="row mt-5">
+      <div class="row mt-5 formSubmissionSection">
         <div class="col-xl col-sm-12">
 
           {{ with .complete_form_options }}
@@ -175,6 +175,10 @@
     }
 
     var calculateVisibleFields = function () {
+
+      {{if .complete_form_options.onlyShowWithOutput }}
+      $('#{{.id}} .formSubmissionSection').addClass('d-none');
+      {{end}}
       // this is what the data attribute looks like: data-show-when=="||&&data1==medium&&data2=medium||&&data1==low"
       // This field should be hidden when no input is selected, and shown if either data 1 and data 2 are medium or data 1 is low.
       $('.score-card__question').each(function () {
@@ -225,6 +229,10 @@
             }
             if ($(this).find('textarea').attr('data-required')) {
               $(this).find('textarea').prop('required', true);
+            }
+            if($(this).attr('data-is-output')) {
+              console.log('showing form submission section');
+              $('#{{.id}} .formSubmissionSection').removeClass('d-none');
             }
           } else {
             $(this).addClass("d-none");

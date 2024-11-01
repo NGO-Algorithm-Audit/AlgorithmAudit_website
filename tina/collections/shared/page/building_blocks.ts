@@ -385,6 +385,13 @@ const building_blocks: TinaField[] = [
                   },
                 ],
               },
+              {
+                type: "boolean",
+                name: "isOutput",
+                label: "Is output",
+                description:
+                  "Can be used to hide the save button, the button will show when an output field is shown.",
+              },
             ],
           },
         ],
@@ -434,6 +441,11 @@ const building_blocks: TinaField[] = [
             label: "File name (Required if you want to print the data)",
             type: "string",
             required: false,
+          },
+          {
+            name: "onlyShowWithOutput",
+            label: "Only show when an output field is shown",
+            type: "boolean",
           },
         ],
       },
