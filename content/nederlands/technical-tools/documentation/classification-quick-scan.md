@@ -275,7 +275,7 @@ dynamic_form_engine:
               - id: option4
                 value: option4
                 title: >-
-                  Beslissing over aanvragen en verzoeken zonder directe
+                  Beslissing over aanvraag of verzoek zonder directe
                   financiële gevolgen
                 content: ''
               - id: option5
