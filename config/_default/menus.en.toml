@@ -120,13 +120,6 @@ hasChildren = true
   weight = 2
   [[main.params]]
     icon = "fa-newspaper"
-  [[main]]
-  parent = "Events"
-  name = "Registration"
-  url = "/events/registration"
-  weight = 3
-  [[main.params]]
-    icon = "fa-ticket-alt"
 
 [[main]]
 name = "About"

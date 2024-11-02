@@ -14,11 +14,11 @@ subtitle: >
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
 dynamic_form_engine:
-  - title: Identificatie AI-systeem en impactvolle algoritmes
+  - title: Identificatie AI systeem en impactvolle algoritmes
     id: form
     icon: fa fa-star
     content: >
-      Bepaal aan de hand van maximaal 8 vragen of uw toepassing een AI-systeem
+      Bepaal aan de hand van maximaal 7 vragen of uw toepassing een AI systeem
       of impactvol algoritme is.
     section:
       - questions:
@@ -275,8 +275,8 @@ dynamic_form_engine:
               - id: option4
                 value: option4
                 title: >-
-                  Beslissing over aanvraag of verzoek zonder directe
-                  financiële gevolgen
+                  Beslissing over aanvraag of verzoek zonder directe financiële
+                  gevolgen
                 content: ''
               - id: option5
                 value: option5
