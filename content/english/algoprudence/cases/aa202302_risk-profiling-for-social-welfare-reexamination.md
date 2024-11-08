@@ -80,7 +80,7 @@ The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Dig
 
 Dowload the full report and problem statement [here](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing).
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1zRRUYRfaIzdKFA2hQtW9yeM4jrD-Abef/preview" articleUrl2="https://drive.google.com/file/d/11sQMVJQd3ZJlW0R6HjU01b4N4CmuFw2q/preview" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/AA202302A_EN.pdf" url2="/pdf-files/algoprudence/AA202302P_EN.pdf" >}}
 
 #### Normative advice commission
 
