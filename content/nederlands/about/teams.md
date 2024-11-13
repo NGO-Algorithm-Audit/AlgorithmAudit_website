@@ -74,7 +74,7 @@ team1:
         R\&D, Spotify
 team2:
   title: Coördinerend team
-  content: Team dat de verschillende werkzaamheden van Algorithm Audit coördineert.
+  content: Team dat full-time de verschillende werkzaamheden van Algorithm Audit coördineert.
   icon: fas fa-users
   id: coordinerend-team
   team_members:

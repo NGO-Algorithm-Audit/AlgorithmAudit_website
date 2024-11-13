@@ -66,7 +66,7 @@ team1:
         Research Scientist, Spotify
 team2:
   title: Executive team
-  content: Team coordinating the different activities of Algorithm Audit
+  content: Full-time team coordinating the different activities of Algorithm Audit
   icon: fas fa-users
   id: executive-team
   team_members:
