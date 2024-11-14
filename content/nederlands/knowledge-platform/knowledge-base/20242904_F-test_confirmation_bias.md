@@ -26,6 +26,6 @@ Volledige rapport: [https://www.tweedekamer.nl/kamerstukken/detail?id=2024D1777
 
 In de aanvraagprocedure Kort Verblijf Visum (KVV) van het Ministerie van Buitenlandse Zaken wordt een regel-gebaseerd classificatiemodel gebruikt om aanvragers in te delen in een snelle, reguliere of intensieve aanvraagprocedures. Het doel van dit onderzoek is om te bepalen "in hoeverre labeling van visumaanvragen invloed heeft op de uitkomsten van visumbeslissingen die worden genomen door beslismedewerkers?".
 
-Op een veldexperiment, waarin 42 fictieve casussen aan medewerkers zijn voorgelegd, is een eenzijdige F-test (ANOVA, fixed effects, omnibus) toegepast. Voor significantieniveau 5% volgt geen bewijs dat het label geen invloed heeft gehad op de genomen beslissing.
+Op een veldexperiment, waarin 42 fictieve casussen aan medewerkers zijn voorgelegd, is een eenzijdige F-test (ANOVA, fixed effects, omnibus) toegepast. Voor significantieniveau 5% volgt geen bewijs dat het label invloed heeft gehad op de genomen beslissing.
 
 De vorm van hypothesetesten geniet de voorkeur boven meer geavanceerde vormen van causale inferentie, zoals inverse probability weighting (IPW) en instrument variable (IV) analysis. Zie ook dit [artikel](/nl/knowledge-platform/knowledge-base/20240429_buza_sr/).
