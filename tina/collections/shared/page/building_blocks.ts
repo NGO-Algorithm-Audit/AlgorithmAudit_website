@@ -28,6 +28,7 @@ import team from "../templates/team";
 import team1 from "../templates/team1";
 import team2 from "../templates/team2";
 import tooltip from "../templates/tooltip";
+import webapp from "../templates/webapp";
 import image from "./image";
 import subtitle from "./subtitle";
 import title from "./title";
@@ -68,6 +69,7 @@ const building_blocks: TinaField[] = [
       team1,
       team2,
       tooltip,
+      webapp,
     ],
   },
   {

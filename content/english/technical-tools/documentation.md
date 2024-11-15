@@ -29,4 +29,6 @@ overview_block:
         link: classification-quick-scan/#form
 ---
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html" id="forms" height="700px" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html" id="forms" height="500px" >}}
+
+{{< webapp id="webapp" appId="AIActWizard" stylesheet="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.css" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}

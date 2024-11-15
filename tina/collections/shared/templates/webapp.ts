@@ -1,7 +1,7 @@
 import { RichTextTemplate } from "@tinacms/schema-tools/dist/types/index";
-const iframe: RichTextTemplate = {
-  name: "iframe",
-  label: "iFrame",
+const webapp: RichTextTemplate = {
+  name: "webapp",
+  label: "Web App",
   match: {
     start: "{{<",
     end: ">}}",
@@ -15,18 +15,24 @@ const iframe: RichTextTemplate = {
       required: true,
     },
     {
-      name: "src",
-      label: "URL",
+      name: "appId",
+      label: "App ID",
       type: "string",
-      description: "URL of the web app",
+      description: "App ID of the web app",
       required: true,
     },
     {
-      name: "height",
-      label: "Height",
+      name: "src",
+      label: "Script url",
       type: "string",
-      description: "Height of the iframe (i.e. 500px)",
+      description: "Script url of the web app",
       required: true,
+    },
+    {
+      name: "stylesheet",
+      label: "Stylesheet url",
+      type: "string",
+      description: "Stylesheet url of the web app",
     },
     {
       name: "title",
@@ -43,4 +49,4 @@ const iframe: RichTextTemplate = {
     },
   ],
 };
-export default iframe;
+export default webapp;

@@ -1,7 +1,7 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
 <div class="container-fluid mt-5 p-0">
-    <div class="shadow mobile-desktop-container-layout-web-app rounded-lg" id='{{.Get "id" }}'>
+    <div class="rounded-lg" id='{{.Get "id" }}'>
         <div class="row">
             <div class="col-12">
                 {{ if .Get "title" }}
@@ -19,7 +19,7 @@
         
                 {{ end }}
                 {{ end}}
-                <div class="i-frame__container" style="margin: 0px -20px;">
+                <div class="i-frame__container" >
                     <iframe class="iframe" src='{{.Get "src" }}'
                         title='.Get "title"'>
                     </iframe>
