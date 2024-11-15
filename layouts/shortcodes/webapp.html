@@ -1,0 +1,39 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<!-- text field -->
+<div class="container-fluid mt-5 p-0">
+    <div class="shadow mobile-desktop-container-layout-web-app bg-lightblue rounded-lg" id='{{ .Get "id" }}'>
+
+    <div class="row">
+      <div class="col-12">
+
+        {{ if .Get "title" }}
+        {{ if .Get "icon" }}
+        <!-- Title and icon -->
+        <h3 class="">
+          <span class='{{ .Get "icon" }} icon mb-4 pl-5'></span>
+        {{ .Get "title" | markdownify }}
+        </h3>
+
+        {{ else }}
+        <!-- Title -->
+        <h3 class="pl-3">{{ .Get "title" | markdownify }}
+        </h3>
+
+        {{ end }}
+        {{ end }}
+
+        <!-- Bias Detection Tool -->
+        <div id='{{.Get "appId" }}'></div>
+        <!-- /Bias Detection Tool -->
+
+    </div>
+</div>
+
+</div>
+</div>
+<!-- text field -->
+{{ if .Get "stylesheet" }}
+<link rel="stylesheet" href='{{ .Get "stylesheet" }}' />
+{{ end }}
+<script type="module" src='{{ .Get "src" }}'></script>

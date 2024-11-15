@@ -15,6 +15,7 @@ import dynamic_form_engine from "../templates/dynamic_form_engine";
 import embed_pdf from "../templates/embed_pdf";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
+import iframe from "../templates/iframe";
 import template_image from "../templates/image";
 import overview_block from "../templates/overview_block";
 import pdf_frame from "../templates/pdf_frame";
@@ -27,7 +28,7 @@ import team from "../templates/team";
 import team1 from "../templates/team1";
 import team2 from "../templates/team2";
 import tooltip from "../templates/tooltip";
-import web_app from "../templates/web_app";
+import webapp from "../templates/webapp";
 import image from "./image";
 import subtitle from "./subtitle";
 import title from "./title";
@@ -56,6 +57,7 @@ const building_blocks: TinaField[] = [
       form1,
       form2,
       template_image,
+      iframe,
       overview_block,
       pdf_frame,
       promo_bar,
@@ -67,7 +69,7 @@ const building_blocks: TinaField[] = [
       team1,
       team2,
       tooltip,
-      web_app,
+      webapp,
     ],
   },
   {
@@ -1101,41 +1103,6 @@ const building_blocks: TinaField[] = [
             isBody: false,
           },
         ],
-      },
-    ],
-  },
-  {
-    type: "object",
-    name: "web_app",
-    label: "Web app",
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        type: "string",
-        name: "icon",
-        label: "Icon",
-        description:
-          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "id",
-        label: "ID",
-        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-        required: false,
-      },
-      {
-        type: "rich-text",
-        name: "content",
-        label: "Content",
-        isBody: false,
       },
     ],
   },
