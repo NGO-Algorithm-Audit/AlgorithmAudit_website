@@ -81,7 +81,7 @@ Het adviesrapport (AA:2023:02:A) is op 29 november 2023 aangeboden aan de Staats
 
 Het adviesrapport (AA:2023:02:A) kan [hier](https://drive.google.com/file/d/19ZkqTXC5M9qx3wPZFNe3Vqn6Ha0B3Yii/view?usp=sharing) worden gedownload en de probleemstelling (AA:2023:02:P) [hier](https://drive.google.com/file/d/1GSGW0-jCTsJmxYJmu6tjq6UgZJkCN5_r/view?usp=sharing).
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1_8NclIHyQ2rE8e7lRc3cibW13VO8KbbE/preview" articleUrl2="https://drive.google.com/file/d/1t-hkH-lCU2fOu11XELX6xbifdTRiGAQ9/preview" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202302/ALGO_AA202302P_NL.pdf" url2="/pdf-files/algoprudence/ALGO_AA202302/ALGO_AA202302A_NL.pdf" >}}
 
 #### Normatieve adviescommissie
 

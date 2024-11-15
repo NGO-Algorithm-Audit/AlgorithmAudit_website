@@ -67,7 +67,7 @@ Dienst Uitvoering Onderwijs (DUO)
 
 Het volledige rapport (TA:AA:2024:02) kan <a href="https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview" target="_blank">hier</a> worden gedownload.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1OXs1PGFqi7BjxFz4Yj3ikMJxM8gVs1IE/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/TA_AA202402/TA_AA202402_Addendum_Vooringenomenheid_voorkomen.pdf" >}}
 
 #### Gefinancieerd door
 

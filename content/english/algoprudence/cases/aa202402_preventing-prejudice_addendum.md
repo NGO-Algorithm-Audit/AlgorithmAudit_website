@@ -66,7 +66,7 @@ Education Executive Agency of The Netherlands (DUO)
 
 The full report (TA:AA:2024:02) can be found <a href="https://drive.google.com/file/d/1uOhR9qXHW6P0i4uP7RNhil2G2dXzFjrp/preview" target="_blank">here</a>.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1uOhR9qXHW6P0i4uP7RNhil2G2dXzFjrp/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/TA_AA202402/TA_AA202402_Addendum_Preventing_prejudice.pdf" >}}
 
 #### Financed by
 

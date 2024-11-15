@@ -62,7 +62,7 @@ Education Executive Agency of The Netherlands (DUO)
 
 The technical audit report (TA:AA:2024:01) can be downloaded [here](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview).
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1waGi9gduj10AOGSrSDqKWOMfqcRWwyGy/preview" articleUrl2="" width_desktop_pdf="6" width_mobile_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/TA_AA202401/TA_AA202401_Preventing_prejudice.pdf" >}}
 
 <!-- #### AI Act standards
 
