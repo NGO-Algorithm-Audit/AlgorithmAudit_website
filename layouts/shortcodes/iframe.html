@@ -1,0 +1,46 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<div class="container-fluid mt-5 p-0">
+    <div class="rounded-lg" id='{{.Get "id" }}'>
+        <div class="row">
+            <div class="col-12">
+                {{ if .Get "title" }}
+                {{ if .Get "icon" }}
+                <!-- Title and icon -->
+                <h3 class="">
+                  <span class='{{ .Get "icon" }} icon mb-4 pl-5'></span>
+                  {{ .Get "title" }}
+                </h3>
+        
+                {{ else }}
+                <!-- Title -->
+                <h3 class="pl-3">{{ .Get "title" }}
+                </h3>
+        
+                {{ end }}
+                {{ end}}
+                <div class="i-frame__container" >
+                    <iframe class="iframe" src='{{.Get "src" }}'
+                        title='.Get "title"'>
+                    </iframe>
+                </div>
+                <style>
+                    .i-frame__container {
+                        background-color: #fff;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .iframe {
+                        border: none;
+                        width: 100%;
+                        height: {{.Get "height" }};
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+</div>

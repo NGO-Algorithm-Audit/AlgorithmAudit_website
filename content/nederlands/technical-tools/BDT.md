@@ -11,11 +11,6 @@ subtitle: >
   fairness assessment method (JFAM)</a> genaamd.
 image: /images/svg-illustrations/illustration_cases.svg
 type: bias-detection-tool
-web_app:
-  title: Bias detectie tool
-  icon: fas fa-cloud
-  id: web-app
-  content: ''
 reports_preview:
   title: Voorbeeld output bias detectie tool
   icon: fas fa-file
@@ -74,7 +69,7 @@ Gebruik de tool hieronder ⬇️
 
 {{< container_close >}}
 
-{{< web_app >}}
+{{< iframe title="Bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html" height="770px" >}}
 
 {{< promo_bar content="Waardeer je het werk van Algorithm Audit? ⭐️ ons op" id="promo" >}}
 
@@ -98,7 +93,7 @@ Algorithm Audit's bias detectie tool is onderdeel van de OECD's [Catalogus voor 
 
 {{< container_open title="Hierarchisch Bias-Bewust Clustering (HBAC) algoritme" icon="fas fa-code-branch" id="HBAC" >}}
 
-De bias detectie tool werkt momenteel alleen voor numeriek data. Volgens een hierarchisch schema clustert het *Hierarchical Bias-Aware Clustering* (HBAC) algoritme input data met behulp van k-means clustering algoritme. Op termijn kan de tool ook categorische data verwerken volgens k-modes clustering. Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkya in een [wetenschappelijk artikel](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) in *Information Processing and Management* (2021). Onze implementatie van het HBAC-algoritme is open source en kan worden gevonden in [Github.](https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge)
+De bias detectie tool werkt momenteel alleen voor numeriek data. Volgens een hierarchisch schema clustert het _Hierarchical Bias-Aware Clustering_ (HBAC) algoritme input data met behulp van k-means clustering algoritme. Op termijn kan de tool ook categorische data verwerken volgens k-modes clustering. Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkya in een [wetenschappelijk artikel](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) in *Information Processing and Management* (2021). Onze implementatie van het HBAC-algoritme is open source en kan worden gevonden in [Github.](https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge)
 
 [Download](https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/classifiers/BERT_disinformation_classifier/test_pred_BERT.csv) een voorbeeld dataset om de bias detectie tool te gebruiken.
 
@@ -108,10 +103,10 @@ De bias detectie tool werkt momenteel alleen voor numeriek data. Volgens een hie
 
 Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maximaal 5GB met kolommen kenmerken (`features`), de voorspelde waarde (`pred_label`) en de echte waarde (`true_label`). Alleen de volgorde van de kolommen is van belang (eerst `features`, dan `pred_label`, dan `true_label`). Alle kolommen moeten numeriek en ongeschaald (niet gestandaardiseerd of genormaliseerd) zijn. Samengevat:
 
-* `features`: ongeschaalde numerieke waarden, bijvoorbeeld `kenmerk_1`, `kenmerk_2`, ..., `kenmerk_n`;
-* `pred_label`: 0 of 1;
-* `true_label`: 0 of 1;
-* Biasmetriek: proportie valspositieven (FPR), proportie valsnegatieven (FNR) of nauwkeurigheid (Acc).
+- `features`: ongeschaalde numerieke waarden, bijvoorbeeld `kenmerk_1`, `kenmerk_2`, ..., `kenmerk_n`;
+- `pred_label`: 0 of 1;
+- `true_label`: 0 of 1;
+- Biasmetriek: proportie valspositieven (FPR), proportie valsnegatieven (FNR) of nauwkeurigheid (Acc).
 
 <div><p><u>Voorbeeld</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">eig_1</th><th class="tg-uox0">eig_2</th><th class="tg-uox0">...</th><th class="tg-uox0">eig_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overzicht van ondersteunde biasmetrieken</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Biasmetriek</th><th class="tg-1wig">Beschrijving</th></tr></thead><tbody><tr><td class="tg-0lax">Proportie valspositieven (FPR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valspositieven (False Positive Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie wel risicovol is, terwijl deze transactie dat na handmatige inspectie niet blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Proportie valsnegatieven (FNR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valsnegatieven (False Negative Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie niet risicovol is, terwijl deze transactie dat na handmatige inspectie wel blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Nauwkeurigheid (Acc)</td><td class="tg-0lax">Deel echt positieven (True Positives) en echt negatieven (True Negatives) van alle voorspellingen.</td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Meer informatie</a> over biasmetrieken.</div></div>
 
@@ -121,11 +116,11 @@ Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maxima
 
 ##### Waarom deze bias detectie tool?
 
-* Geen toegang nodig tot bijzondere persoonsgegevens (unsupervised bias detectie);
-* Model-agnostisch (werkt voor alle binaire classificatie algoritmen);
-* Informeert de mens welke gedrag van een AI-systeem gericht handmatig te onderzoeken.
-* Verbindt kwantitatieve, statissche methoden met de kwalitatieve doctrine van recht en ethiek om eerlijke AI vorm te geven;
-* Open-source ontwikkeld, zonder winstoogmerk.
+- Geen toegang nodig tot bijzondere persoonsgegevens (unsupervised bias detectie);
+- Model-agnostisch (werkt voor alle binaire classificatie algoritmen);
+- Informeert de mens welke gedrag van een AI-systeem gericht handmatig te onderzoeken.
+- Verbindt kwantitatieve, statissche methoden met de kwalitatieve doctrine van recht en ethiek om eerlijke AI vorm te geven;
+- Open-source ontwikkeld, zonder winstoogmerk.
 
 ##### Door wie kan deze bias detectie tool worden gebruikt? 
 
