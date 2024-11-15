@@ -28,6 +28,21 @@ const iframe: RichTextTemplate = {
       description: "Height of the iframe (i.e. 500px)",
       required: true,
     },
+    {
+      name: "title",
+      label: "Title",
+      type: "string",
+      description: "",
+      required: true,
+    },
+    {
+      type: "string",
+      name: "icon",
+      label: "Icon",
+      description:
+        "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+      required: false,
+    },
   ],
 };
 export default iframe;

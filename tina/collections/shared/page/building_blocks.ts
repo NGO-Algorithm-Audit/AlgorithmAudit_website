@@ -28,7 +28,6 @@ import team from "../templates/team";
 import team1 from "../templates/team1";
 import team2 from "../templates/team2";
 import tooltip from "../templates/tooltip";
-import web_app from "../templates/web_app";
 import image from "./image";
 import subtitle from "./subtitle";
 import title from "./title";
@@ -69,7 +68,6 @@ const building_blocks: TinaField[] = [
       team1,
       team2,
       tooltip,
-      web_app,
     ],
   },
   {
@@ -1103,41 +1101,6 @@ const building_blocks: TinaField[] = [
             isBody: false,
           },
         ],
-      },
-    ],
-  },
-  {
-    type: "object",
-    name: "web_app",
-    label: "Web app",
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        type: "string",
-        name: "icon",
-        label: "Icon",
-        description:
-          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "id",
-        label: "ID",
-        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-        required: false,
-      },
-      {
-        type: "rich-text",
-        name: "content",
-        label: "Content",
-        isBody: false,
       },
     ],
   },

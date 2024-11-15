@@ -57,11 +57,6 @@ team:
       name: Mackenzie Jorgensen
       bio: |
         PhD-candidate Computer Science, King’s College London
-web_app:
-  title: Bias detection tool
-  icon: fas fa-cloud
-  id: web-app
-  content: ''
 type: bias-detection-tool
 ---
 
@@ -75,7 +70,7 @@ The tool identifies potentially unfairly treated groups of similar users by an A
 
 ##### How is my data processed?
 
-The tool is privacy preserving. It uses computing power of your own computer to analyze a dataset. In this architectural setup, data is processed entirely on your device and it not uploaded to any third party, such as cloud providers. This local-only feature allows organisations to securely use the tool with proprietary data. The used software is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`. [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+The tool is privacy preserving. It uses computing power of your own computer to analyze a dataset. In this architectural setup, data is processed entirely on your device and it not uploaded to any third party, such as cloud providers. This local-only feature allows organisations to securely use the tool with proprietary data. The used software is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`. [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
 
 ##### What does the tool return?
 
@@ -85,7 +80,7 @@ Try the tool below ⬇️
 
 {{< container_close >}}
 
-{{< web_app >}}
+{{< iframe title="Bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html" height="770px" >}}
 
 {{< promo_bar content="Do you appreciate the work of Algorithm Audit? ⭐️ us on" id="promo" >}}
 
@@ -109,7 +104,7 @@ Algorithm Audit's bias detection tool is part of OECD's <a href="https://oecd.ai
 
 {{< container_open title="Hierarchical Bias-Aware Clustering (HBAC) algorithm" icon="fas fa-code-branch" id="HBAC" >}}
 
-The bias detection tool currently works for tabular numerical and categorical data. The *Hierarchical Bias-Aware Clustering* (HBAC) algorithm processes input data according to the k-means or k-modes clustering algorithm. The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* (2021). Our implementation of the HBAC-algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">Github</a>.
+The bias detection tool currently works for tabular numerical and categorical data. The _Hierarchical Bias-Aware Clustering_ (HBAC) algorithm processes input data according to the k-means or k-modes clustering algorithm. The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* (2021). Our implementation of the HBAC-algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">Github</a>.
 
 {{< container_close >}}
 
@@ -117,12 +112,12 @@ The bias detection tool currently works for tabular numerical and categorical da
 
 ##### Why this bias detection tool?
 
-* **Quantitative-qualitative joint method**: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
-* **Unsupervised bias detection**: No user data needed on protected attributes;
-* **Bias scan tool**: Scalable method based on statistical learning to detect algorithmic bias;
-* **Detects complex bias**: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
-* **Model-agnostic**: Works for all AI systems;
-* **Open-source and not-for-profit**: Easy to use and available for the entire AI auditing community.
+- **Quantitative-qualitative joint method**: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
+- **Unsupervised bias detection**: No user data needed on protected attributes;
+- **Bias scan tool**: Scalable method based on statistical learning to detect algorithmic bias;
+- **Detects complex bias**: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
+- **Model-agnostic**: Works for all AI systems;
+- **Open-source and not-for-profit**: Easy to use and available for the entire AI auditing community.
 
 ##### By whom can the bias detection tool be used? 
 
@@ -138,11 +133,11 @@ No. The bias detection tool serves as a starting point to assess potentially unf
 
 ##### How is my data processed?
 
-The tool is privacy preserving. It uses computing power of your own computer to analyze a dataset. In this architectural setup, data is processed entirely on your device and it not uploaded to any third party, such as cloud providers. This local-only feature allows organisations to securely use the tool with proprietary data. The used software is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`. [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+The tool is privacy preserving. It uses computing power of your own computer to analyze a dataset. In this architectural setup, data is processed entirely on your device and it not uploaded to any third party, such as cloud providers. This local-only feature allows organisations to securely use the tool with proprietary data. The used software is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`. [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
 
 ##### In sum 
 
-Quantitative methods, such as unsupervised bias detection, are helpful to discover potentially unfair treated groups of similar users in AI systems in a scalable manner. Automated identification of cluster disparities in AI models allows human experts to assess observed disparities in a qualitative manner, subject to political, social and environmental traits. This two-pronged approach bridges the gap between the qualitative requirements of law and ethics, and the quantitative nature of AI (see figure). In making normative advice, on identified ethical issues publicly available, over time a [repository](/algoprudence/) of case reviews emerges. We call case-based normative advice for ethical algorithm *algoprudence*. Data scientists and public authorities can learn from our algoprudence and can criticise it, as ultimately normative decisions regarding fair AI should be made within democratic sight.
+Quantitative methods, such as unsupervised bias detection, are helpful to discover potentially unfair treated groups of similar users in AI systems in a scalable manner. Automated identification of cluster disparities in AI models allows human experts to assess observed disparities in a qualitative manner, subject to political, social and environmental traits. This two-pronged approach bridges the gap between the qualitative requirements of law and ethics, and the quantitative nature of AI (see figure). In making normative advice, on identified ethical issues publicly available, over time a [repository](/algoprudence/) of case reviews emerges. We call case-based normative advice for ethical algorithm _algoprudence_. Data scientists and public authorities can learn from our algoprudence and can criticise it, as ultimately normative decisions regarding fair AI should be made within democratic sight.
 
 [Read more](/algoprudence/how-we-work/) about algoprudence and how Algorithm Audit's builds it.
 

@@ -4,9 +4,24 @@
     <div class="shadow mobile-desktop-container-layout-web-app rounded-lg" id='{{.Get "id" }}'>
         <div class="row">
             <div class="col-12">
+                {{ if .Get "title" }}
+                {{ if .Get "icon" }}
+                <!-- Title and icon -->
+                <h3 class="">
+                  <span class='{{ .Get "icon" }} icon mb-4 pl-5'></span>
+                  {{ .Get "title" }}
+                </h3>
+        
+                {{ else }}
+                <!-- Title -->
+                <h3 class="pl-3">{{ .Get "title" }}
+                </h3>
+        
+                {{ end }}
+                {{ end}}
                 <div class="i-frame__container" style="margin: 0px -20px;">
                     <iframe class="iframe" src='{{.Get "src" }}'
-                        title="">
+                        title='.Get "title"'>
                     </iframe>
                 </div>
                 <style>
