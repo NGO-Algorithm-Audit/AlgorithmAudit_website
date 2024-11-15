@@ -69,15 +69,23 @@ type: bias-detection-tool
 
 <br>
 
-##### What is the tool about?
+#### What is the tool about?
 
-The tool identifies potentially unfairly treated groups of similar users by an AI system. The tool returns clusters of users for which the system is underperforming compared to the rest of the data set. The tool makes use of <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a> – an unsupervised statistal learning method. This means that no data is required on protected attributes of users, e.g., gender, nationality or ethnicity, to detect higher-dimensional forms of apparently neutral differentiation, also referred to as higher-dimensional proxy or intersectional discrimination. The metric by which bias is defined can be manually chosen in advance and is referred to as the `performance metric`.
+The tool identifies potentially unfairly treated groups of similar users by an AI system. The tool returns clusters of users for which the system is underperforming compared to the rest of the data set. The tool makes use of <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a> – an unsupervised statistal learning method. This means that no data is required on protected attributes of users, e.g., gender, nationality or ethnicity, to detect indirect discrimination, also referred to as higher-dimensional proxy or intersectional discrimination. The metric by which bias is defined can be manually chosen and is referred to as the `performance metric`.
 
-##### How is my data processed?
+#### How is my data processed?
 
-The tool is privacy preserving. It uses computing power of your own computer to analyze a dataset. In this architectural setup, data is processed entirely on your device and it not uploaded to any third party, such as cloud providers. This local-only feature allows organisations to securely use the tool with proprietary data. The used software is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`. [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+The tool is privacy preserving. It uses computing power of your own computer to analyze the attached data set. In this architectural setup, data is processed entirely on your device and it not uploaded to any third-party, such as cloud providers. This computing approach is called *local-first* and allows organisations to securely use tools locally. 
 
-##### What does the tool return?
+The used software is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`.[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+
+#### What data can be processed?
+
+Numerical and categorical data set can be analysed. The type of data is automatically detected.
+
+<div><p><u>Example</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top} .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">eig_1</th><th class="tg-uox0">eig_2</th><th class="tg-uox0">...</th><th class="tg-uox0">eig_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table></div><br>
+
+#### What does the tool return?
 
 The tool returns a report which presents the cluster with the highest bias and describes this cluster by the features that characterizes it. This is quantitatively expressed by the (statistically significant) differences in feature means between the identified cluster and the rest of the data. These results serve as a starting point for a deliberative assessment by human experts to evaluate potential discrimination and unfairness in the AI system under review. The tool also visualizes the outcomes.
 
