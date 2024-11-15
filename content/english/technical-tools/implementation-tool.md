@@ -43,6 +43,11 @@ overview_block:
         color: black;
     }
 
+    /* Styling for form-group elements labels inside #AIActImplementationTool */
+    #AIActImplementationTool .form-group label {
+        color: black;
+    }
+
     /* Styling for intermediate-output labels in #AIActImplementationTool */
     #AIActImplementationTool .intermediate-output label {
         font-weight: 700;
