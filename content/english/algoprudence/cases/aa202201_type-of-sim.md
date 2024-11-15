@@ -90,7 +90,7 @@ Anonymized large multinational company with e-commerce platform.
 
 The problem statement and advice report can be downloaded <a href="https://drive.google.com/file/d/1fSETUhxOz0nF2nznsWq-4TyngP6lU7yH/preview" target="_blank">here</a>.
 
-{{< embed_pdf url="/pdf-files/algoprudence/Report_Type_SIM.pdf" url2="" width_desktop_pdf="" width_mobile_pdf="" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202201/ALGO_AA202201_Report_Type_SIM.pdf" >}}
 
 #### Normative advice commission
 

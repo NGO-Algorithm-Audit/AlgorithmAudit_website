@@ -114,7 +114,7 @@ A visual presentation of this case study can be found in this [slide deck](http
 
 Dowload the full report and problem statement [here](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing).
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/preview" articleUrl2="" >}}
+{{< embed_pdf url2="/pdf-files/algoprudence/ALGO_AA202301/ALGO_AA202301A_Case_study_disinfo.pdf" url="/pdf-files/algoprudence/ALGO_AA202301/ALGO_AA202301P_Case_study_disinfo.pdf" >}}
 
 #### Normative advice commission
 

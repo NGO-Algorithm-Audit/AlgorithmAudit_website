@@ -85,7 +85,7 @@ Geanonimiseerde multinational met e-commerce platform.
 
 De probleemstelling en het adviesrapport kunnen <a href="https://drive.google.com/file/d/1fSETUhxOz0nF2nznsWq-4TyngP6lU7yH/preview" target="_blank">hier</a> worden gedownload.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1fSETUhxOz0nF2nznsWq-4TyngP6lU7yH/preview" articleUrl2="" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202201/ALGO_AA202201_Report_Type_SIM.pdf" >}}
 
 #### Normatieve adviescommissie
 
