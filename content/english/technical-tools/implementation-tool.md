@@ -29,4 +29,40 @@ overview_block:
         link: classification-quick-scan/#form
 ---
 
-{{< webapp id="webapp" appId="AIActWizard" stylesheet="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.css" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
+{{< webapp id="webapp" appId="AIActWizard" title="" >}}
+
+<style>
+    /* Styling for form-group elements inside #AIActWizard */
+    #AIActWizard .form-group {
+        display: block;
+    }
+
+    /* Styling for form-group elements header labels inside #AIActWizard */
+    #AIActWizard .form-group .form-label {
+        margin-left: 0;
+        color: black;
+    }
+
+    /* Styling for intermediate-output labels in #AIActWizard */
+    #AIActWizard .intermediate-output label {
+        font-weight: 700;
+    }
+
+    /* Styling for intermediate-output textareas in #AIActWizard */
+    #AIActWizard .intermediate-output textarea {
+        border: none;
+        background-color: transparent;
+        resize: none;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        font-size: inherit;
+        font-family: inherit;
+        line-height: inherit;
+        color: inherit;
+        overflow: hidden;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+</style>
