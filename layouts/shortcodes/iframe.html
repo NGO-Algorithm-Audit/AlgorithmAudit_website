@@ -1,0 +1,31 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<div class="container-fluid mt-5 p-0">
+    <div class="shadow mobile-desktop-container-layout-web-app rounded-lg" id='{{.Get "id" }}'>
+        <div class="row">
+            <div class="col-12">
+                <div class="i-frame__container" style="margin: 0px -20px;">
+                    <iframe class="iframe" src='{{.Get "src" }}'
+                        title="">
+                    </iframe>
+                </div>
+                <style>
+                    .i-frame__container {
+                        background-color: #fff;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .iframe {
+                        border: none;
+                        width: 100%;
+                        height: {{.Get "height" }};
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+</div>

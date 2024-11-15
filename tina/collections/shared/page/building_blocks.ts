@@ -15,6 +15,7 @@ import dynamic_form_engine from "../templates/dynamic_form_engine";
 import embed_pdf from "../templates/embed_pdf";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
+import iframe from "../templates/iframe";
 import template_image from "../templates/image";
 import overview_block from "../templates/overview_block";
 import pdf_frame from "../templates/pdf_frame";
@@ -56,6 +57,7 @@ const building_blocks: TinaField[] = [
       form1,
       form2,
       template_image,
+      iframe,
       overview_block,
       pdf_frame,
       promo_bar,
