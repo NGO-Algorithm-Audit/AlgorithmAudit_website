@@ -1,10 +1,4 @@
 ---
-title: Type of SIM card as a predictor for detecting payment fraud
-subtitle: |
-  Probleem statement (ALGO:AA:2022:01:P) and advice document (ALGO:AA:2022:01:A)
-image: /images/algoprudence/AA202201/Cover.png
-layout: case
-icon: fa-sim-card
 summary: >
   The commission advises against using type of SIM card as an input variable in
   algorithmic models that predict payment defaults and block afterpay services
@@ -38,6 +32,12 @@ funded_by:
     image: /images/supported_by/sidn.png
   - url: 'https://europeanaifund.org/'
     image: /images/supported_by/EUAISFund.png
+icon: fa-sim-card
+layout: case
+title: Type of SIM card as a predictor for detecting payment fraud
+subtitle: |
+  Probleem statement (ALGO:AA:2022:01:P) and advice document (ALGO:AA:2022:01:A)
+image: /images/algoprudence/AA202201/Cover.png
 form1:
   title: React to this normative judgement
   content: >-
@@ -48,18 +48,22 @@ form1:
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
   questions:
-    - label: Name
+    - label: |
+        Name
       id: name
       required: true
       type: text
-    - label: Affiliated organization
+    - label: |
+        Affiliated organization
       id: affiliated-organization
       type: text
-    - label: Reaction
+    - label: |
+        Reaction
       id: reaction
       required: true
       type: textarea
-    - label: Contact detail
+    - label: |
+        Contact detail
       id: contact-details
       required: true
       type: email
@@ -86,7 +90,7 @@ Anonymized large multinational company with e-commerce platform.
 
 The problem statement and advice report can be downloaded <a href="https://drive.google.com/file/d/1fSETUhxOz0nF2nznsWq-4TyngP6lU7yH/preview" target="_blank">here</a>.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1fSETUhxOz0nF2nznsWq-4TyngP6lU7yH/preview" articleUrl2="" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/Report_Type_SIM.pdf" url2="" width_desktop_pdf="" width_mobile_pdf="" >}}
 
 #### Normative advice commission
 
