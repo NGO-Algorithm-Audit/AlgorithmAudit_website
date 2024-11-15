@@ -39,7 +39,7 @@ overview_block:
 
     /* Styling color output area inside #AIActImplementationTool */
     #AIActImplementationTool .card-body .bg-primary {
-        background color: #F8E5E3;
+        background-color: #F8E5E3;
     }
 
     /* Styling for form-group elements header labels inside #AIActImplementationTool */

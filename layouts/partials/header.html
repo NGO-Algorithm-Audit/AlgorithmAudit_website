@@ -62,15 +62,15 @@
           {{ range .Translations }}
           <li class="nav-item d-inline-block" style="min-width: 137px;">
             {{ if eq .Site.Language.Lang "en" }}
-            <a class="nav-link d-inline-block" title="English" href="{{ .RelPermalink }}">EN</a>
-            {{ else }}
             <a class="nav-link d-inline-block" style="font-weight: 350;" title="English" href="{{ .RelPermalink }}">EN</a>
+            {{ else }}
+            <a class="nav-link d-inline-block" title="English" href="{{ .RelPermalink }}">EN</a>
             {{ end }}
             |
             {{ if eq .Site.Language.Lang "nl" }}
-            <a class="nav-link d-inline-block" title="Dutch" href="{{ .RelPermalink }}">NL</a>
-            {{ else }}
             <a class="nav-link d-inline-block" style="font-weight: 350;" title="Dutch" href="{{ .RelPermalink }}">NL</a>
+            {{ else }}
+            <a class="nav-link d-inline-block" title="Dutch" href="{{ .RelPermalink }}">NL</a>
             {{ end }}
           </li>
           {{ end }}
