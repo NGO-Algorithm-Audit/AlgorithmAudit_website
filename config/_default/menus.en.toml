@@ -61,8 +61,8 @@ url = "/technical-tools/BDT"
     icon = "fa-table"
   [[main]]
   parent = "Technical tools"
-  name = "Documentation"
-  url = "/technical-tools/documentation"
+  name = "AI Act Implementation Tool"
+  url = "/technical-tools/implementation-tool"
   weight = 4
   [[main.params]]
     icon = "fa-file"

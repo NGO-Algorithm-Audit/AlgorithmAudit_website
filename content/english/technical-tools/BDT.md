@@ -66,25 +66,46 @@ type: bias-detection-tool
 
 #### What is the tool about?
 
-The tool identifies potentially unfairly treated groups of similar users by an AI system. The tool returns clusters of users for which the system is underperforming compared to the rest of the data set. The tool makes use of <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a> – an unsupervised statistal learning method. This means that no data is required on protected attributes of users, e.g., gender, nationality or ethnicity, to detect indirect discrimination, also referred to as higher-dimensional proxy or intersectional discrimination. The metric by which bias is defined can be manually chosen and is referred to as the `performance metric`.
-
-#### How is my data processed?
-
-The tool is privacy preserving. It uses computing power of your own computer to analyze the attached data set. In this architectural setup, data is processed entirely on your device and it not uploaded to any third-party, such as cloud providers. This computing approach is called *local-first* and allows organisations to securely use tools locally. 
-
-The used software is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`.[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+The tool identifies potentially unfairly treated groups of similar users by an AI system. The tool returns clusters of users for which the system is underperforming compared to the rest of the data set. The tool makes use of <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a> – an unsupervised statistal learning method. This means that no data are required on protected attributes of users, e.g., gender, nationality or ethnicity, to detect indirect discrimination, also referred to as higher-dimensional proxy or intersectional discrimination. The metric by which bias is defined can be manually chosen and is referred to as the `performance metric`.
 
 #### What data can be processed?
 
-Numerical and categorical data set can be analysed. The type of data is automatically detected.
+Numerical and categorical data can be analysed. The type of data is automatically detected by the tool. The `performance metric` column should always contain numerical values. The user should indicate in the app whether a higher of lower value of the `performance metric` is considered to be better.
 
-<div><p><u>Example</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top} .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">eig_1</th><th class="tg-uox0">eig_2</th><th class="tg-uox0">...</th><th class="tg-uox0">eig_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table></div><br>
+The tool contains a demo data set and a 'Try it out' button. More information can be found in the app.
+
+<div>
+  <p><u>Example of numerical data set</u>:</p>
+  <style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top} .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style>
+  <table class="tg">
+    <thead>
+      <tr>
+      <th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">perf_metr</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td></tr>
+      <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td></tr>
+      <tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td></tr>
+    </tbody>
+  </table>
+</div>
+<br>
+
+#### How is my data processed?
+
+The tool is privacy preserving. It uses computing power of your own computer to analyze the attached data set. In this architectural setup, data is processed entirely on your device and it not uploaded to any third-party, such as cloud providers. This computing approach is called *local-first* and allows organisations to securely use tools locally. Instructions how the tool can be hosted locally, incl. source code, can be found <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">here</a>.
+
+[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+Software of the used statistical methods is available in a seperate <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github repository</a>, and is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`.
 
 #### What does the tool return?
 
-The tool returns a report which presents the cluster with the highest bias and describes this cluster by the features that characterizes it. This is quantitatively expressed by the (statistically significant) differences in feature means between the identified cluster and the rest of the data. These results serve as a starting point for a deliberative assessment by human experts to evaluate potential discrimination and unfairness in the AI system under review. The tool also visualizes the outcomes.
+The tool returns a pdf report or `.json` file with identified clusters. It specifically focusses on the identified cluster with highest bias and describes this cluster by the features that characterizes it. These results serve as a starting point for a deliberative assessment by human experts to evaluate potential discrimination and unfairness in the AI system under review. The tool also visualizes the outcomes.
 
 Try the tool below ⬇️
+<!-- This is quantitatively expressed by the (statistically significant) differences in feature means between the identified cluster and the rest of the data.  -->
+
 
 {{< container_close >}}
 
@@ -112,7 +133,7 @@ Algorithm Audit's bias detection tool is part of OECD's <a href="https://oecd.ai
 
 {{< container_open title="Hierarchical Bias-Aware Clustering (HBAC) algorithm" icon="fas fa-code-branch" id="HBAC" >}}
 
-The bias detection tool currently works for tabular numerical and categorical data. The _Hierarchical Bias-Aware Clustering_ (HBAC) algorithm processes input data according to the k-means or k-modes clustering algorithm. The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* (2021). Our implementation of the HBAC-algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">Github</a>.
+The bias detection tool utilizes the _Hierarchical Bias-Aware Clustering_ (HBAC) algorithm. HBAC processes input data according to the k-means (for numerical data) or k-modes (for categorical data) clustering algorithm. The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* (2021). Our implementation of the HBAC-algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">Github</a>. The methodology has been reviewed by a team of machine learning engineers and statisticians, and is continuously undergoing evaluation.
 
 {{< container_close >}}
 
