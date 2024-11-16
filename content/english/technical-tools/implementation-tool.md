@@ -32,8 +32,8 @@ overview_block:
 {{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
 
 <style>
-    /* Targeting the first direct div inside #AiActImplementationTool */
-    #AiActImplementationTool > div:first-child {
+    /* Targeting the first direct div inside #AIActImplementationTool */
+    #AIActImplementationTool > div:first-child {
         height: auto!important;
         padding: 12px;
     }
