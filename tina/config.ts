@@ -20,8 +20,7 @@ import knowledge_platform_standards from "./collections/pages/knowledge_platform
 import privacy_policy from "./collections/pages/privacy_policy";
 import technical_tools_BDT from "./collections/pages/technical_tools_BDT";
 import technical_tools_SDG from "./collections/pages/technical_tools_SDG";
-import technical_tools_documentation from "./collections/pages/technical_tools_documentation";
-import technical_tools_documentation_item from "./collections/pages/technical_tools_documentation_item";
+import technical_tools_AIA_implementation_tool from "./collections/pages/technical_tools_AIA_implementation_tool";
 // Your hosting provider likely exposes this as an environment variable
 const branch =
   process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
@@ -51,8 +50,7 @@ export default defineConfig({
       algoprudence_how_we_work,
       technical_tools_BDT,
       technical_tools_SDG,
-      technical_tools_documentation,
-      technical_tools_documentation_item,
+      technical_tools_AIA_implementation_tool,
       knowledge_platform_standards,
       knowledge_platform_policy_observatory,
       knowledge_platform_overview,

@@ -1,11 +1,13 @@
 ---
 type: regular
-title: Documentation for AI-systems
+title: Documentation for AI systems
 subtitle: >
-  Open-source templates voor modeldocumentatie. Afgestemd op de eisen uit de AI Verordening en Nederlandse soft law kaders, zoals het [Onderzoekskader
+  Open-source templates voor modeldocumentatie. Afgestemd op de eisen uit de AI
+  Verordening en Nederlandse soft law kaders, zoals het [Onderzoekskader
   algoritmes](https://www.rijksoverheid.nl/documenten/rapporten/2023/07/11/onderzoekskader-algoritmes-adr-2023#:~:text=De%20Auditdienst%20Rijk%20heeft%20een,risico's%20beheerst%20\(kunnen\)%20worden.)
   van de Audit Dienst Rijk, het [Algoritmekader
-  ](https://minbzk.github.io/Algoritmekader/) van het Ministerie van Binnenlandse Zaken en de Impact Assessment Mensenrechten en Algoritmes
+  ](https://minbzk.github.io/Algoritmekader/) van het Ministerie van
+  Binnenlandse Zaken en de Impact Assessment Mensenrechten en Algoritmes
   ([IAMA](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes)).
 
 
@@ -16,6 +18,8 @@ image: /images/svg-illustrations/case_repository.svg
 ---
 
 {{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
 <style>
     /* Targeting the first direct div inside #AIActImplementationTool */

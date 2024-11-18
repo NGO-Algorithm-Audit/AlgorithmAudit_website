@@ -19,6 +19,8 @@ image: /images/svg-illustrations/case_repository.svg
 
 {{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
 
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
 <style>
     /* Targeting the first direct div inside #AIActImplementationTool */
     #AIActImplementationTool > div:first-child {
