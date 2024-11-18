@@ -1,14 +1,11 @@
 ---
 type: regular
-title: Documentation for AI-systems
+title: AI Act Implementation Tool
 subtitle: >
-  Open-source templates for model documentation. Based on AI Act requirements
-  and soft law frameworks, such as the [Research framework
-  Algorithms](https://www.rijksoverheid.nl/documenten/rapporten/2023/07/11/onderzoekskader-algoritmes-adr-2023#:~:text=De%20Auditdienst%20Rijk%20heeft%20een,risico's%20beheerst%20\(kunnen\)%20worden.)
-  of the Netherlands Executive Audit Agency, the [Algorithm
-  framework](https://minbzk.github.io/Algoritmekader/) of the Dutch Ministry of
-  the Interior and the Dutch Fundamental Rights Impact Assessment
-  ([IAMA](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes)).
+  Templates and tools for AI Act implementation. Simplification of the key
+  elements of the AI system definition into an intuitive decision tree. The tool
+  also identifies impactful algorithms that fall outside the scope of the AI
+  Act.
 
 
   Help developing and share feedback through
