@@ -1,14 +1,11 @@
 ---
 type: regular
-title: Documentation for AI systems
+title: AI-verordening implementatie tool
 subtitle: >
-  Open-source templates voor modeldocumentatie. Afgestemd op de eisen uit de AI
-  Verordening en Nederlandse soft law kaders, zoals het [Onderzoekskader
-  algoritmes](https://www.rijksoverheid.nl/documenten/rapporten/2023/07/11/onderzoekskader-algoritmes-adr-2023#:~:text=De%20Auditdienst%20Rijk%20heeft%20een,risico's%20beheerst%20\(kunnen\)%20worden.)
-  van de Audit Dienst Rijk, het [Algoritmekader
-  ](https://minbzk.github.io/Algoritmekader/) van het Ministerie van
-  Binnenlandse Zaken en de Impact Assessment Mensenrechten en Algoritmes
-  ([IAMA](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes)).
+  Templates en hulpmiddelen voor implementatie van de AI-verordening. Vertaling
+  van de belangrijkste aspecten van de AI-systeem definitie uit de verordening
+  naar begrijpbare vragen. De tool identificeert ook impactvolle algoritmes die
+  buiten de reikwijdte van de AI-verordening vallen.
 
 
   Help mee ontwikkelen, deel feedback middels
