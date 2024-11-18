@@ -15,18 +15,6 @@ subtitle: >
   [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) or via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
-overview_block:
-  - title: Identification of AI-systems and high-risk algorithms
-    content: >
-      By answering maximum 8 targeted questions, you can determine whether a
-      data-driven application qualifies as an AI-system or as an impactful
-      algorithm. Complete the dynamic questionnaire to find out.
-    icon: fas fa-search
-    id: quick-scan
-    items:
-      - title: Identify
-        icon: fas fa-star
-        link: classification-quick-scan/#form
 ---
 
 {{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
