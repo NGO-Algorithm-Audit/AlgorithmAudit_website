@@ -41,6 +41,16 @@ image: /images/svg-illustrations/case_repository.svg
         color: black;
     }
 
+    /* Allow new lines for small elements inside #AIActImplementationTool */
+    #AIActImplementationTool small {
+        white-space: pre-wrap;
+    }
+
+    /* Allow new lines for label elements inside #AIActImplementationTool */
+    #AIActImplementationTool label {
+        white-space: pre-wrap;
+    }
+
     /* Styling for form-group elements labels inside #AIActImplementationTool */
     #AIActImplementationTool .form-group label {
         color: black;
