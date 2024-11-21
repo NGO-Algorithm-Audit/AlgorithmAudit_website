@@ -14,7 +14,7 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 ---
 
-{{< container_open icon="fas fa-terminal" title="Is mijn datagedreven toepassing een algoritme of AI-systeem?" id="amsterdam" >}}
+{{< container_open icon="fa-solid fa-laptop-code" title="Is mijn datagedreven toepassing een algoritme of AI-systeem?" id="amsterdam" >}}
 
 Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een AI-systeem worden geidentificeerd?  Onderstaande tool helpt gebruikers en ontwikkelaars van AI-systemen bij implementatie van de AI-verordening middels twee dynamische vragenlijsten:
 
@@ -29,7 +29,14 @@ De vragenlijsten hebben als doel om aan de hand van enkele simpele vragen AI-sys
 
 {{< container_open icon="fas fa-layer-group" title="Uitkomsten vragenlijsten" id="amsterdam" >}}
 
-De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand fiuguur. <br> <br> <img src="/images/ai-act-implementation-tool/Outcome.png" alt="drawing" width="600"/>
+De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand figuur. Er wordt onderscheid gemaakt tussen:
+
+* Algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen
+* Impactvolle algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven wel extra beheersmaatregelen
+* AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen voor hoog-risico AI-systemen
+* Hoog risico AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen voor hoog-risico AI-systemen 
+
+ <br> <br> <img src="/images/ai-act-implementation-tool/Outcome.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
