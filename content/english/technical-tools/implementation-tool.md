@@ -16,7 +16,19 @@ image: /images/svg-illustrations/case_repository.svg
 
 {{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
 
+{{< container_open icon="fas fa-terminal" title="Development and source code" id="amsterdam" >}}
+
+The questions in the AI Act Implementation Tool are developed in collaboration with the municipaility of Amsterdam. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be re-used under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 license</a> <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>
+
+{{< container_close >}}
+
+{{< container_open icon="far fa-file" title="Documentation" id="documentation" >}}
+
+The reasoning and motivations behind the selected questions in the AI Act Implementation Tool are outlined in the document below.
+
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+{{< container_close >}}
 
 <style>
     /* Targeting the first direct div inside #AIActImplementationTool */
@@ -43,6 +55,7 @@ image: /images/svg-illustrations/case_repository.svg
 
     /* Allow new lines for small elements inside #AIActImplementationTool */
     #AIActImplementationTool small {
+        margin-top: 24px;
         white-space: pre-wrap;
     }
 
