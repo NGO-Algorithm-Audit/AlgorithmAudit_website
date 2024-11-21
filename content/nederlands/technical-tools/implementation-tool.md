@@ -14,9 +14,38 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 ---
 
+{{< container_open icon="fas fa-terminal" title="Is mijn datagedreven toepassing een algoritme of AI-systeem?" id="amsterdam" >}}
+
+Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een AI-systeem worden geidentificeerd?  Onderstaande tool helpt gebruikers en ontwikkelaars van AI-systemen bij implementatie van de AI-verordening middels twee dynamische vragenlijsten:
+
+1. Identificatie van AI-systeem en impactvolle algoritmes
+2. Identificatie van risicocategorie en verboden toepassingen.
+
+De vragenlijsten hebben als doel om aan de hand van enkele simpele vragen AI-systemen te identificeren en de juiste risicocategorie voor deze systemen te bepalen. Omdat lang alle algoritmes met invloed op burgers ook echt AI-systemen zijn, houdt de eerste vragenlijst houdt ook rekening met impactvolle algoritmes. Dit type algoritme is volgens de AI-verordening geen AI-systeem, maar brengt wel risico’s met zich mee die beheerst moeten worden. Alle mogelijke uitkomsten van de beslisboom zijn weergeven in het figuur beneden op deze pagina.
+
+{{< container_close >}}
+
 {{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< container_open icon="fas fa-layer-group" title="Uitkomsten vragenlijsten" id="amsterdam" >}}
+
+De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand fiuguur. <br> <br> <img src="/images/ai-act-implementation-tool/Outcome.png" alt="drawing" width="600"/>
+
+{{< container_close >}}
+
+{{< container_open icon="fas fa-terminal" title="Ontwikkeling en broncode" id="amsterdam" >}}
+
+De vragen in de AI-verordening implemenatie tool zijn ontwikkeld in samenwerking met de gemeente Amsterdam. De broncode van de tool is beschikbaar in <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> en kan worden (her)gebruikt onder de <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 licentie</a> <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>
+
+{{< container_close >}}
+
+{{< container_open icon="far fa-file" title="Documentatie" id="documentation" >}}
+
+Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand document beschreven.
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+{{< container_close >}}
 
 <style>
     /* Targeting the first direct div inside #AIActImplementationTool */
