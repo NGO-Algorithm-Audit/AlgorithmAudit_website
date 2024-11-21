@@ -14,11 +14,36 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 ---
 
+{{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application an algorithm or AI system?" id="amsterdam" >}}
+
+Implementation of the AI Act raises difficult questions. What is the scope of the AI system defintion? Based on which criteria can the risk category of an AI system be identified? The below tool helps deployers and producers of AI systems with implementation of the AI Act through two dynamic questionnaires:
+
+1. Identification of AI systems and impactful algorithms
+2. Identification of risk category and prohibited applications.
+
+Since many straightforward algorithms that impact people are not considered AI systems, the first questionnaire also identifies this type of *impactful algorithms*. Although these algorithms are not classified as an AI systems under the AI Act, they still bring risks that need to be managed, making their identification important. All potential outcomes of the first questionnaire are shown in the figure below on this webpage.
+
+{{< container_close >}}
+
 {{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
+
+{{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="amsterdam" >}}
+
+The outcomes of the first questionnaire are displayed in the below figure. The following categories are distinguished:
+
+* Algorithms: fall outside the scope of the AI Act, no additional control measures are needed
+* Impactful algorithms: fall outside the scope of the AI Act, additional control measures are needed
+* AI systems: are in scope of the AI Act, no additional control measures for high-risk AI systems are needed
+* High risk AI systems: are in scope of the AI Act, additional control measures for high-risk AI systems are needed
+* Prohibited AI systems: are in scope of the AI Act, usage of this type of AI systems is prohibited in the European Union
+
+<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram_EN.png" alt="drawing" width="600"/>
+
+{{< container_close >}}
 
 {{< container_open icon="fas fa-terminal" title="Development and source code" id="amsterdam" >}}
 
-The questions in the AI Act Implementation Tool are developed in collaboration with the municipaility of Amsterdam. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be re-used under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 license</a> <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>
+The questions in the AI Act Implementation Tool are developed in collaboration with the municipaility of Amsterdam. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be re-used under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 license</a> <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>.
 
 {{< container_close >}}
 

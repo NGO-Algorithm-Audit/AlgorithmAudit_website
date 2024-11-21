@@ -34,9 +34,10 @@ De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand
 * Algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen
 * Impactvolle algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven wel extra beheersmaatregelen
 * AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen voor hoog-risico AI-systemen
-* Hoog risico AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen voor hoog-risico AI-systemen 
+* Hoog risico AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen voor hoog-risico AI-systemen
+* Verboden AI-systemen: vallen binnen de reikwijdte van de AI-verordening, dit type AI-systemen zijn verboden in
 
- <br> <br> <img src="/images/ai-act-implementation-tool/Outcome.png" alt="drawing" width="600"/>
+<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram_EN.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
