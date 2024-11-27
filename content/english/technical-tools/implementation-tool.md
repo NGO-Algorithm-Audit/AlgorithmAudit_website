@@ -14,20 +14,24 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 ---
 
-{{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application a high-impact algorithm or AI system?" id="amsterdam" >}}
+{{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application a high-impact algorithm or AI system?" id="intro" >}}
 
 Implementation of the AI Act raises difficult questions. What is the scope of the AI system defintion? Based on which criteria can the risk category of an AI system be identified? The below tool helps deployers and producers of AI systems with implementation of the AI Act through two dynamic questionnaires:
 
 1. Identification of AI systems and impactful algorithms
 2. Identification of risk category and prohibited applications.
 
-Since many straightforward algorithms that impact people are not considered AI systems, the first questionnaire also identifies this type of *impactful algorithms*. Although these algorithms are not classified as an AI systems under the AI Act, they still bring risks that need to be managed, making their identification important. All potential outcomes of the first questionnaire are shown in the figure below on this webpage.
+The questionnaires are designed to identify AI systems and their risk category using straightforward questions.
+
+Since many straightforward algorithms that impact people are not considered AI systems, the first questionnaire also identifies *impactful algorithms*. The term 'impactful algorithms' is used by the Dutch government to refer to simple algorithms that do not meet the definition of an AI system under the AI Act but still require risk management measures. More information can be found in the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Registry Guidance Document</a> of the Dutch Ministry of the Interior.  
+
+All potential outcomes of the first questionnaire are shown in the [figure](/technical-tools/implementation-tool/#outcome) below on this webpage.
 
 {{< container_close >}}
 
 {{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
 
-{{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="amsterdam" >}}
+{{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="outcome" >}}
 
 The outcomes of the first questionnaire are displayed in the below figure. The following categories are distinguished:
 

@@ -14,20 +14,24 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 ---
 
-{{< container_open icon="fa-solid fa-laptop-code" title="Is mijn datagedreven toepassing een impactvol algoritme of AI-systeem?" id="amsterdam" >}}
+{{< container_open icon="fa-solid fa-laptop-code" title="Is mijn datagedreven toepassing een impactvol algoritme of AI-systeem?" id="intro" >}}
 
-Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een AI-systeem worden geidentificeerd?  Onderstaande tool helpt gebruikers en ontwikkelaars van AI-systemen bij implementatie van de AI-verordening middels twee dynamische vragenlijsten:
+Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een AI-systeem worden geidentificeerd?  Onderstaande tool helpt gebruikers en ontwikkelaars bij implementatie van de AI-verordening middels twee dynamische vragenlijsten:
 
 1. Identificatie van AI-systeem en impactvolle algoritmes
 2. Identificatie van risicocategorie en verboden toepassingen.
 
-De vragenlijsten hebben als doel om aan de hand van enkele simpele vragen AI-systemen te identificeren en de juiste risicocategorie voor deze systemen te bepalen. Omdat lang alle algoritmes met invloed op burgers ook echt AI-systemen zijn, houdt de eerste vragenlijst houdt ook rekening met impactvolle algoritmes. Dit type algoritme is volgens de AI-verordening geen AI-systeem, maar brengt wel risico’s met zich mee die beheerst moeten worden. Alle mogelijke uitkomsten van de beslisboom zijn weergeven in het figuur beneden op deze pagina.
+De vragenlijsten zijn ontworpen om AI-systemen en de bijbehorende risicocategorie te identificeren aan de hand van eenvoudige vragen.
+
+Omdat niet alle algoritmes met invloed op burgers een AI-systeem zijn, houdt de eerste vragenlijst ook rekening met *impactvolle algoritmes*. De term 'impactvolle algoritmes' wordt gebruik door de Rijksoverheid om te verwijzen naar algoritmes die niet voldoen aan de AI-systeem definitie uit de AI-verordening, maar waar wel risicobeheersmaatregelen voor ingericht dienen te worden. Meer informatie kan worden gevonden in de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a> van het Ministerie van Binnenlandse Zaken en Koningkrijksrelaties.
+
+Alle mogelijke uitkomsten van de beslisboom zijn weergeven in het [figuur](/nl/technical-tools/implementation-tool/#outcome) beneden op deze webpagina.
 
 {{< container_close >}}
 
 {{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
 
-{{< container_open icon="fas fa-layer-group" title="Uitkomsten vragenlijsten" id="amsterdam" >}}
+{{< container_open icon="fas fa-layer-group" title="Uitkomsten vragenlijsten" id="outcome" >}}
 
 De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand figuur. Er wordt onderscheid gemaakt tussen:
 
