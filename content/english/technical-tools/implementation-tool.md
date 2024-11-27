@@ -14,7 +14,7 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 ---
 
-{{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application an algorithm or AI system?" id="amsterdam" >}}
+{{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application a high-impact algorithm or AI system?" id="amsterdam" >}}
 
 Implementation of the AI Act raises difficult questions. What is the scope of the AI system defintion? Based on which criteria can the risk category of an AI system be identified? The below tool helps deployers and producers of AI systems with implementation of the AI Act through two dynamic questionnaires:
 
