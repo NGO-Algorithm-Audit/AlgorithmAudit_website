@@ -41,13 +41,13 @@ De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand
 * Hoog risico AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen voor hoog-risico AI-systemen
 * Verboden AI-systemen: vallen binnen de reikwijdte van de AI-verordening, dit type AI-systemen zijn verboden in
 
-<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram_EN.png" alt="drawing" width="600"/>
+<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram_NL.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
 {{< container_open icon="fas fa-terminal" title="Ontwikkeling en broncode" id="amsterdam" >}}
 
-De vragen in de AI-verordening implemenatie tool zijn ontwikkeld in samenwerking met de gemeente Amsterdam. De broncode van de tool is beschikbaar in <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> en kan worden (her)gebruikt onder de <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 licentie</a> <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>
+De vragen in de AI-verordening implemenatie tool zijn ontwikkeld in samenwerking met de gemeente Amsterdam. De broncode van de tool is beschikbaar in <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> en kan worden (her)gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>
 
 {{< container_close >}}
 
@@ -80,6 +80,17 @@ Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst
     #AIActImplementationTool .form-group .form-label {
         margin-left: 0;
         color: black;
+    }
+
+    /* Allow new lines for small elements inside #AIActImplementationTool */
+    #AIActImplementationTool small {
+        margin-top: 24px;
+        white-space: pre-wrap;
+    }
+
+    /* Allow new lines for label elements inside #AIActImplementationTool */
+    #AIActImplementationTool label {
+        white-space: pre-wrap;
     }
 
     /* Styling for form-group elements labels inside #AIActImplementationTool */

@@ -47,7 +47,7 @@ The outcomes of the first questionnaire are displayed in the below figure. The f
 
 {{< container_open icon="fas fa-terminal" title="Development and source code" id="amsterdam" >}}
 
-The questions in the AI Act Implementation Tool are developed in collaboration with the municipaility of Amsterdam. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be re-used under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 license</a> <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>.
+The questions in the AI Act Implementation Tool are developed in collaboration with the municipaility of Amsterdam. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be re-used under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>.
 
 {{< container_close >}}
 
