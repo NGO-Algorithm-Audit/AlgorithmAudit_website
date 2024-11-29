@@ -34,7 +34,7 @@
               {{if .Params.subtitle}}
               <p class="mb-0 mt-1 ml-3" style="color:#005aa7; font-weight:550; font-size:13px;">{{.Params.subtitle}}</p>
               {{end}}
-              <a class="dropdown-item" href="{{ .URL | relURL }}" target="{{ .Params.target }}"  title="{{ .Name }}" style="padding: 0.75rem 1.5rem;color: #005aa7;">
+              <a class="dropdown-item mr-4" href="{{ .URL | relURL }}" target="{{ .Params.target }}"  title="{{ .Name }}" style="padding: 0.75rem 1.5rem;color: #005aa7;">
                 {{if .Params.icon}}
                 <i class="fas {{.Params.icon}} col-2 pl-0"></i>
                 {{end}}
