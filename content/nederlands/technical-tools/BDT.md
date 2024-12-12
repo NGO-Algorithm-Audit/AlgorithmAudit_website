@@ -69,7 +69,7 @@ Gebruik de tool hieronder ⬇️
 
 {{< container_close >}}
 
-{{< iframe title="Bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=nl" height="770px" >}}
+{{< iframe title="Bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=nl" height="770px" >}} 
 
 {{< promo_bar content="Waardeer je het werk van Algorithm Audit? ⭐️ ons op" id="promo" >}}
 
