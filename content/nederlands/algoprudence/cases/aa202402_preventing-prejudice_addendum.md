@@ -69,12 +69,6 @@ Het volledige rapport (TA:AA:2024:02) kan <a href="https://drive.google.com/file
 
 {{< embed_pdf url="/pdf-files/algoprudence/TA_AA202402/TA_AA202402_Addendum_Vooringenomenheid_voorkomen.pdf" >}}
 
-#### Gefinancieerd door
-
-<br>
-
-{{< image image1="/images/partners/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" image2="" alt2="" caption2="" id="funded-by" image3="" alt3="" caption3="" link1="https://duo.nl/particulier/" width_desktop="4" width_mobile="6" link2="" link3="" >}}
-
 {{< tab_content_close >}}
 
 {{< tab_content_open icon="" title="" id="actions" >}}
