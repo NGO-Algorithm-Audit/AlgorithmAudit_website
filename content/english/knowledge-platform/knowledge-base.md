@@ -5,6 +5,8 @@ facet_groups:
     facets:
       - value: algoprudence
         label: Algoprudence
+      - value: AIAct
+        label: AI Act
       - value: DSA
         label: DSA
       - value: FR
