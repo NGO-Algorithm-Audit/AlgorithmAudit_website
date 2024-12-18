@@ -76,12 +76,6 @@ The technical audit report (TA:AA:2024:01) can be downloaded [here](https://dri
 * **Robustness specifications:** aa
 * **Quality management system:** aa -->
 
-#### Funded by
-
-<br>
-
-{{< image image1="/images/partners/DUO.png" alt1="Dutch public sector organisation DUO" caption1="Dutch public sector organisation DUO" image2="" alt2="" caption2="" id="funded-by" image3="" alt3="" caption3="" link1="https://duo.nl/particulier/" width_desktop="4" width_mobile="6" link2="" link3="" >}}
-
 {{< tab_content_close >}}
 
 {{< tab_content_open icon="" title="" id="actions" >}}

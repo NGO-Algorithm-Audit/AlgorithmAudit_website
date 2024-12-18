@@ -90,12 +90,6 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 * Munish Ramlal, Ombudsman Metropole region Amsterdam
 * Oskar Gstrein, Assistant Professor Governance and Innovation, University of Groningen
 
-#### Funded by
-
-<br>
-
-{{< image image1="/images/supported_by/sidn.png" alt1="SIDN" caption1="SIDN" image2="/images/supported_by/EUAISFund.png" alt2="European AI & Society Fund" caption2="European AI & Society Fund" id="funded-by" image3="/images/supported_by/BZK.jpg" alt3="Dutch Ministry of the Interior" caption3="Dutch Ministry of the Interior" link1="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" width_desktop="4" width_mobile="6" link2="https://europeanaifund.org/" link3="https://www.government.nl/ministries/ministry-of-the-interior-and-kingdom-relations" >}}
-
 {{< tab_content_close >}}
 
 {{< tab_content_open icon="" title="" id="actions" >}}

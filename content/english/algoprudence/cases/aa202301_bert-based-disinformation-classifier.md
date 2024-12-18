@@ -125,12 +125,6 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 * Carlos Hernández-Echevarría, Assistant Director and Head of Public Policy at the anti-disinformation nonprofit fact-checker [Maldita.es](https://maldita.es/maldita-es-journalism-to-not-be-fooled/)
 * Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank [Demos](https://demos.co.uk/)
 
-#### Funded by
-
-<br>
-
-{{< image id="funded-by" width_desktop="4" width_mobile="6" image1="/images/supported_by/EUAISFund.png" alt1="European Artificial Intelligence & Society Fund" caption1="European Artificial Intelligence & Society Fund" link1="https://europeanaifund.org/" >}}
-
 {{< tab_content_close >}}
 
 {{< tab_content_open icon="" title="" id="actions" >}}

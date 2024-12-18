@@ -94,12 +94,6 @@ De probleemstelling en het adviesrapport kunnen <a href="https://drive.google.co
 * Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg University
 * Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft
 
-#### Gefinancieerd door
-
-<br>
-
-{{< image id="funded-by" width_desktop="4" width_mobile="6" image1="/images/supported_by/sidn.png" alt1="SIDN Fonds" caption1="SIDN Fonds" link1="https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool" >}}
-
 {{< tab_content_close >}}
 
 {{< form1 >}}
