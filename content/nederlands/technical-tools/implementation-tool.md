@@ -53,11 +53,23 @@ De vragen in de AI-verordening implemenatie tool zijn ontwikkeld in samenwerking
 
 {{< container_open icon="far fa-file" title="Documentatie" id="documentation" >}}
 
-Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand document beschreven.
+Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand documenten beschreven.
+
+### Explainer - 10 voorbeelden van (geen) AI-systemen
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+### Explainer - Regelgebaseerde algoritmen onder de AI-verordening
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+### Explainer - Definitie van een AI-systeem onder de AI-verordening
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+### White paper - Richtlijnen voor AI-verordening implementatie
+
+{{< embed_pdf url="/pdf-files/knowledge-base/20241218_Guidelines_AI_system_definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 

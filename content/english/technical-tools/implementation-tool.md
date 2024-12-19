@@ -53,11 +53,23 @@ The questions in the AI Act Implementation Tool are developed in collaboration w
 
 {{< container_open icon="far fa-file" title="Documentation" id="documentation" >}}
 
-The reasoning and motivations behind the selected questions in the AI Act Implementation Tool are outlined in the document below.
+The reasoning and motivations behind the selected questions in the AI Act Implementation Tool are outlined in the below documents.
+
+### Explainer - 10 examples of (non) AI systems
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+### Explainer - Rule-based algorithms under the AI Act
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+### Explainer - Definition of an AI system under the AI Act
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+### White paper - Guidelines for AI Act Implementation
+
+{{< embed_pdf url="/pdf-files/knowledge-base/20241218_Guidelines_AI_system_definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
