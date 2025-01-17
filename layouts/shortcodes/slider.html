@@ -1,0 +1,37 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{$param := int (.Get "index")}}
+{{ with index .Page.Params.slider $param }}
+<!-- European knowledge platform -->
+<div class="row">
+    <!-- desktop version -->
+    <div class="col-12 text-center">
+      <div class="slider-wrapper justify-content-center">
+
+        <h3 style="color:#005aa7; font-weight:100;">{{.title_before}}</h3>
+
+        <!-- slider -->
+        <div class="ms-slider">
+          <ul class="ms-slider__words">
+            {{ range .labels }}
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+              </div>
+            </li>
+            {{ end }}
+            <!-- repeat the last item for the slider logic -->
+            {{ with index .labels 0 }}
+            <li class="ms-slider__word">
+              <div class="slider-wrapper mb-1 py-1">
+                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <!-- /slider -->
+        <h3 style="color:#005aa7; font-weight:100;">{{.title_after}}</h3>
+      </div>
+    </div>
+  </div>
+  {{ end }}

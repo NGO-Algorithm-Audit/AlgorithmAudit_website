@@ -21,6 +21,7 @@ import overview_block from "../templates/overview_block";
 import pdf_frame from "../templates/pdf_frame";
 import promo_bar from "../templates/promo_bar";
 import reports_preview from "../templates/reports_preview";
+import slider from "../templates/slider";
 import tab_content_close from "../templates/tab_content_close";
 import tab_content_open from "../templates/tab_content_open";
 import tab_header from "../templates/tab_header";
@@ -62,6 +63,7 @@ const building_blocks: TinaField[] = [
       pdf_frame,
       promo_bar,
       reports_preview,
+      slider,
       tab_content_open,
       tab_content_close,
       tab_header,
@@ -806,6 +808,49 @@ const building_blocks: TinaField[] = [
             isBody: true,
           },
         ],
+      },
+    ],
+  },
+  {
+    type: "object",
+    name: "slider",
+    label: "Slider",
+    list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.title_before };
+      },
+    },
+    fields: [
+      {
+        type: "string",
+        name: "title_before",
+        label: "Title before labels",
+      },
+      {
+        type: "object",
+        name: "labels",
+        label: "Labels",
+        list: true,
+        required: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.text };
+          },
+        },
+        fields: [
+          {
+            type: "string",
+            name: "text",
+            label: "Text",
+            required: true,
+          },
+        ],
+      },
+      {
+        type: "string",
+        name: "title_after",
+        label: "Title after labels",
       },
     ],
   },

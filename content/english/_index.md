@@ -236,7 +236,38 @@ Title_gif:
 Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
+title: Algorith Audit
 subtitle: ''
+image: /images/ai-act-implementation-tool/Venn diagram_NL.png
+slider:
+  - title_before: A European knowledge platform for
+    labels:
+      - text: responsible AI
+      - text: AI bias testing
+  - title_before: from a
+    labels:
+      - text: not-for-profit
+      - text: not-for-profit
+    title_after: perspective
+overview_block:
+  - title: Core activities
+    items:
+      - title: Knowledge platform
+        icon: fa fa-layer-group
+        link: /knowledge-platform/knowledge-base/
+      - title: Algoprudence
+        icon: fas fa-balance-scale
+        link: /algoprudence/
+      - title: Technical tools
+        icon: fas fa-toolbox
+        link: /technical-tools/
+      - title: Project work
+        icon: fas fa-briefcase
+        link: /knowledge-platform/project-work/
 ---
 
-{{< iframe id="123" src="https://algorithmaudit.eu/" height="500px" >}}
+{{< slider index="0" >}}
+
+{{< slider index="1" >}}
+
+{{< overview_block >}}
