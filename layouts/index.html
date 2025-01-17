@@ -4,6 +4,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
 <script src="/js/home_script.js"></script>
 
+<!-- Building blocks -->
+{{if .Content}}
+<section class="section">
+  <div class="container">
+
+      <div class="content">
+          {{.Content}}
+      </div>
+      
+  </div>
+</section>
+{{ end }}
+<!-- /Building blocks -->
+
 <!-- Banner -->
 {{ with .Params.Banner }}
 <section class="banner banner-background">
