@@ -22,7 +22,7 @@ reports_preview:
         conducting independent audits
 ---
 
-{{< tab_header width="2" default_tab="AIAct" tab1_id="AIAct" tab1_title="AI Act" tab2_id="GDPR" tab2_title="GDPR" tab3_id="administrative-law" tab3_title="Administrative law" tab4_id="FRIA" tab4_title="FRIA" tab5_id="algorithm-registers" tab5_title="Registers" tab6_id="DSA" tab6_title="DSA" >}}
+{{< tab_header width="2" default_tab="AIAct" tab1_id="AIAct" tab1_title="AI Act" tab2_id="GDPR" tab2_title="GDPR" tab3_id="administrative-law" tab3_title="Administrative law" tab4_id="FRIA" tab4_title="FRIA" tab5_id="DSA" tab5_title="DSA" >}}
 
 {{< tab_content_open id="AIAct" icon="fa-newspaper" title="AI Act" >}}
 
@@ -48,7 +48,7 @@ The [Digital Services Act (DSA)](https://eur-lex.europa.eu/legal-content/EN/TXT
   * Private auditors (like PwC and Deloitte) warn that the lack of guidance on criteria against which to audit poses a risk of subjective audits;
   * Tech companies (like Snap and Wikipedia) raise concerns about the industry’s lack of expertise to audit specific AI products, like company-tailored timeline recommender systems.
 
-#### Read our feedback to the Europen Commission on DSA Art. 37 Delegated Regulation
+#### Read Algorithm Audit's feedback to the Europen Commission on DSA Art. 37 Delegated Regulation
 
 {{< embed_pdf url="/pdf-files/policy-observatory/20230705_DSA_delegated_regulation.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
@@ -60,7 +60,7 @@ The [Digital Services Act (DSA)](https://eur-lex.europa.eu/legal-content/EN/TXT
 
 The GDPR has its strengths regarding participatory decision-making, but it has also weaknesses in regulating profiling algorithms and its focus on fully automated decision-making.
 
-* <a href="https://gdpr-info.eu/art-35-gdpr/" target="\_blank"> Participatory DPIA (art. 35 sub 9)</a> – This provision mandates that in cases where a Data Privacy Impact Assessment (DPIA) is obligatory, the opinions of data subjects regarding the planned data processing shall be seeked. This is a powerful legal mechanism to foster collaborative algorithm development. Nevertheless, the inclusion of data subjects in this manner is scarcely observed in practice;
+* <a href="https://gdpr-info.eu/art-35-gdpr/" target="\_blank"> Participatory Data Privacy Impact Assessment (DPIA) (art. 35 sub 9)</a> – This provision mandates that in cases where a Data Privacy Impact Assessment (DPIA) is obligatory, the opinions of data subjects regarding the planned data processing shall be seeked. This is a powerful legal mechanism to foster collaborative algorithm development. Nevertheless, the inclusion of data subjects in this manner is scarcely observed in practice;
 * <a href="https://gdpr-info.eu/art-22-gdpr/" target="\_blank"> Automated decision-making (art. 22 sub 2)</a> – Ongoing legal uncertainty what exactly is 'automated decision-making' and 'meaningful human interaction' given the <a href="[https://](https://curia.europa.eu/juris/liste.jsf?num=C-634/21)" target="_blank">Schüfa court</a> ruling by the Court of Justice of the European Union (CJEU).
 
 #### Article summarizing interaction GDPR and AI Act regarding data collection for debiasing
@@ -73,30 +73,24 @@ The GDPR has its strengths regarding participatory decision-making, but it has a
 
 Administrative law provides a normative framework for algorithmic-driven decision-making processes. In The Netherlands, for instance, through the codification of general principles of good administration (gpga). We argue that these principles are relevant to the algorithmic practice, but require contextualisation, which is often lacking. Take a closer look, for instance, to:
 
-* **Principle of reasoning:** On the basis of the principle of reasoning, it must be sufficiently clear on what grounds and why an administrative body takes a decision. What can and cannot be categorised as 'explainable' as a non-legal part of the legal norm of the principle of reasoning is undergoing extensive development, and concrete norms are therefore still lacking.
-* **Principle of due diligence:** This principle relates to the formation of a decision, and ML-driven risk profiling is precisely used in the phase of the decision-making process. The principle of due diligence can be jeopardized when ML-driven risk profiling is applied if the input data is incomplete or incorrect and if the risk profile does not include all the relevant facts. This principle suffers from a lack of interpretation, resulting in a lack of clear guidance.
+* **Duty to give reasons:** It must be sufficiently clear on what grounds and why an administrative body takes a decision. When an algorithm is used for decision support it should be explained how the output of the algorithm contributed to the decision-making process.
+* **Duty of care:** The duty of care, among others stating that a situation must be created in which all interest can be weighed and in which a suitable ML method is used;
 * **Fair play principle:** The principle of fair play, or proper treatment, which is partly codified as a prohibition of bias in Section 2:4 of the Dutch General Administrative Law Act, concerns impartial execution of tasks by an administrative body. We argue that ‘contextualising’ the gpga in the case of this principle should focus on new, digital manifestations of bias. Thereafter, a subsequent best-efforts obligation could be applied to prevent bias and guarantee fairness in algorithmic applications.
 
-#### Read Algorithm Audit's article How ‘algoprudence’ can contribute to responsible use of ML-algorithms and its interplay with the Dutch General Administrative Law Act
+#### Read the article How ‘algoprudence’ can contribute to responsible use of ML-algorithms and its interplay with the Dutch General Administrative Law Act
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1fIZ9oRTULNOlgzk6Dwsr3hYujSiRu85n/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
-
-{{< button button_link="/knowledge-platform/knowledge-base/njb-artikel/" button_text="Read the full white paper" >}}
+{{< embed_pdf url="/pdf-files/policy-observatory/20240516_White_paper_Algoprudence.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
 {{< tab_content_close >}}
 
 {{< tab_content_open icon="fa-newspaper" title="FRIA" id="FRIA" >}}
 
-The [Impact Assessment Human Rights and Algorithms (IAMA)](https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes) and the [Handbook for Non-Discrimination](https://www.rijksoverheid.nl/documenten/rapporten/2021/06/10/handreiking-non-discriminatie-by-design), both developed by the Dutch government, assess discriminatory practice mainly by asking questions that are meant to stimulate self-reflection. It does not provide answers or concrete guidelines how to realise ethical algorithms.
+Over the years, many Fundamental Rights Impact Assessments (FRIAs) have been developed. FRIAs typically assess responsible deployment of algorithms and AI by asking questions that are meant to stimulate self-reflection. It does not provide answers or concrete guidelines how to realise ethical algorithms.
+
+#### Read Algorithm Audit's comparative analysis of 10 FRIAs
+
+{{< embed_pdf url="/pdf-files/policy-observatory/20240918_Comparative review 10 FRIAs Algorithm Audit.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
 {{< tab_content_close >}}
-
-{{< tab_content_open icon="fa-newspaper" title="Registers" id="algorithm-registers" >}}
-
-Unifying principles of sound administration with (semi-) automated decision-making is challenging. For instance:
-
-Obligation to state reasons: Governmental institutions must always provide clear explanations for their decisions. However, when machine learning is employed, such as in variable selection for risk profiling, this transparency may be obscured. This leads to the question of how far arguments based on probability distributions are acceptable as explanations for why certain citizens are chosen for a particular profile.
-
-[Read Algoprudence AA:2023:02 for a review of xgboost machine learning used for risk profiling variable selection ](http://localhost:1313/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/)
 
 {{< tab_content_close >}}
