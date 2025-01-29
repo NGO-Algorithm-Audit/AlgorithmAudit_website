@@ -1,5 +1,5 @@
 ---
-pagesize: 5
+pagesize: 7
 facet_groups:
   - value: year
     title: Year
@@ -24,6 +24,111 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: Event 'Can Europe regulate AI?'
+    description: >
+      Book interview with Marietje Schaake – author of The Tech Coup – and Haroon Sheikh – author of Atlas of the Digital World – in debate centre Pakhuis de Zwijger
+
+
+      <a href="https://dezwijger.nl/programma/can-europe-regulate-ai" target="_blank">More information</a>
+
+
+      ![](/images/events/20251021_PdZ.jpeg)
+    image: /images/events/PdZ-logo-socials.png
+    date: 21-01-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q1_2025
+        label: Q1-2025
+        hide: true
+      - value: type_event
+        label: event
+  - title: Guest lecture 'How algoprudence can contribute to responsible use of ML algorithms'
+    description: >
+      Guest lecture for MSc Social Data Science students at the University of Oxford
+
+
+      ![](/images/events/20241213_Oxford.jpeg)
+    image: /images/events/Oxford-logo.png
+    date: 13-12-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: Presentation 'Inkoop van AI en algoritmen PIANOo'
+    description: >
+      Presentatie over de inkoop van AI en algoritmen bij PIANOo – Expertisecentrum Aanbesteden 
+
+    image: /images/events/pianoo-logo.svg
+    date: 10-12-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Break-out session 'Congres Binnenlands Bestuur'
+    description: >
+      Break-out session on algorithm and AI validation for Dutch municipalities
+
+    image: /images/events/BinnenlandsBestuur.svg
+    date: 03-12-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Masterclass 'AI validation and AI standards'
+    description: >
+      Day long master class on AI validation and AI standards for 30+
+      public sector organisations. With guest speakers Anne Meuwese (Leiden
+      University), Robbert Bos (Dutch Government ICT Guild) en Sven Stevenson (Directorate
+      Coordination Algorithms, Dutch Data Protection Authority)
+
+
+      ![](/images/events/20241106_DNB.jpeg)
+    image: /images/logo/logo.svg
+    date: 06-11-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_event
+        label: event
+  - title: Seminar 'Dutch Academy for Legislation'
+    description: >
+      Seminar on 'Safeguards for responsible use of profiling algorithms'
+      together with Prof. dr. Anne Meuwese
+
+
+      ![](/images/events/20241017_AcWet.jpeg)
+    image: /images/events/acwet.svg
+    date: 17-10-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: Guest speaker lunch seminar 'Risks of detection algorithms'
     description: >
       Guest speaker during lunch seminar 'Risks of detection algorithms'
@@ -300,7 +405,7 @@ events:
         hide: true
       - value: type_interview
         label: interview
-  - title: Seminar algorithm validation
+  - title: Seminar 'Algorithm validation'
     description: "Algorithm Audit hosted a public seminar on algorithm validation and algoprudence in The Hague. Anne Meuwese\_shared insights on the value of algoprudence in contextualizing legal norms. Floris Holstege shed light into statistical hypothesis testing which plays an important role in our recent techincal audits.\_\n\nWe appreciated the interactive Q\\&A with the participants, especially the curious and critical questions which enables us to clarify our work, but also contributes to the further development and refinement of our activities as an NGO.\n\n{{< pdf_frame articleUrl1=\"https://drive.google.com/file/d/1edrNqP4cBgJ1zKv1970DsUJ3Tark6waF/preview\" width_desktop_pdf=\"12\" width_mobile_pdf=\"12\" >}}\n"
     image: /images/logo/logo.svg
     date: 24-04-2024
