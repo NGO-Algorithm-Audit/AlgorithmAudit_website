@@ -1,21 +1,19 @@
 ---
-title: AI beleid observatorium
+title: AI beleidsobservatorium
 subtitle: >
-  Om concreet aan de slag te gaan met de verantwoorde inzet van algoritmes is
-  het urgent dat praktijkervaring op code-niveau publiek wordt gedeeld.
-  Algorithm Audit is van mening dat abstracte en top-down wet- en regelgeving
-  hier onvoldoende soelaas voor biedt. Per beleidsinstrument lichten we
-  hieronder toe waarom.
+  Er zijn verschillende beleidsinitiativen om algoritmes en AI verantwoord in te zetten. 
+  Op deze pagina wordt informatie bijgehouden over belangrijke Europese en nationale initiatieven, inclusief 
+  materiaal dat Algorithm Audit over het onderwerp heeft ontwikkeld.
 image: /images/svg-illustrations/knowledge_base.svg
 ---
 
-{{< tab_header width="2" default_tab="AI-Act" tab1_id="AI-Act" tab1_title="AI Act" tab2_id="DSA" tab2_title="DSA" tab3_id="AVG" tab3_title="AVG" tab4_id="Awb" tab4_title="Bestuurs recht" tab5_id="IAMA" tab5_title="IAMA" tab6_id="algorithm-registers" tab6_title="Algoritme register" >}}
+{{< tab_header width="2" default_tab="AIAct" tab1_id="AIAct" tab1_title="AI-verordening" tab2_id="GDPR" tab2_title="AVG" tab3_id="administrative-law" tab3_title="Bestuursrecht" tab4_id="FRIA" tab4_title="IAMA" tab5_id="algorithm-registers" tab5_title="Algoritme register" tab6_id="DSA" tab6_title="DSA">}}
 
-{{< tab_content_open id="AI-Act" icon="fa-newspaper" title="AI Verordening" >}}
+{{< tab_content_open id="AIAct" icon="fa-newspaper" title="AI-verordening" >}}
 
-De <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI Verordening</a> legt brede nieuwe verantwoordelijkheden op om risico's van AI-systemen te beheersen, maar specifieke normen voor de verantwoorde inzet van algoritmes ontbreken vooralsnog. Bijvoorbeeld:
+De <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&uri=CELEX%3A52021PC0206" target="_blank">AI-verordening</a> legt brede nieuwe verantwoordelijkheden op om risico's van AI-systemen te beheersen, maar specifieke normen voor de verantwoorde inzet van algoritmes ontbreken vooralsnog. Bijvoorbeeld:
 
-* **Risico- en kwaliteitmanagement systeem (Art. 9 and 17) –** Vereisten voor risico- en kwaliteitmanagement systemen blijven te generiek. De vereisten stellen bijvoorbeeld dat AI systemen niet mogen discrimineren en dat ethische risico's in kaart moeten worden gebracht. Er wordt echter niet toegelicht hoe discriminatie kan worden vastgesteld of hoe waardenspanningen beslecht kunnen worden;
+* **Risico- en kwaliteitmanagementsysteem (Art. 9 and 17) –** Vereisten voor risico- en kwaliteitmanagement systemen blijven te generiek. De vereisten stellen bijvoorbeeld dat AI systemen niet mogen discrimineren en dat ethische risico's in kaart moeten worden gebracht. Er wordt echter niet toegelicht hoe discriminatie kan worden vastgesteld of hoe waardenspanningen beslecht kunnen worden;
 * **Conformiteitsassessment (Art. 43) –** De AI Verordening leunt zwaar of interne controles en mechanismen die zelf-reflectie moeten bevorderen om AI systemen op een verantwoorde wijze in te zetten. Dit leidt echter tot subjectieve keuzen. Meer institutionele duiding is nodig over normatieve vraagstukken;
 * **Normatieve standaarden –** Enkel technische standaarden voor AI-systemen, zoals de Europese Commissie  standaardiseringsorganisaties CEN-CENELEC heeft verzocht te ontwikkelen, zijn onvoldoende om voor de verantwoorde inzet van AI systemen. Publieke kennis over technische én normatieve oordeelsvorming over verantwoorde AI-systemen is hard nodig. Maar juist hier is een gebrek aan.
 
@@ -23,7 +21,7 @@ Als lid van het Nederlands Normalisatie Instituut NEN draagt Stichting Algorithm
 
 #### Presentatie Algorithm Audit tijdens plenaire bijeenkomst Europese standaardiseringsorganisatie  CEN-CENELEC over diverse en inclusieve adviescommissies in Dublin, feb-2024
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" width_desktop_pdf="12" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/policy-observatory/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" width_desktop_pdf="12" width_mobile_pdf="12" >}}
 
 {{< button button_text="Kom meer te weten over onze standaardiseringsactiviteiten" button_link="/nl/knowledge-platform/standards/" >}}
 
@@ -45,7 +43,7 @@ The [Digital Services Act (DSA)](https://eur-lex.europa.eu/legal-content/EN/TXT
 
 #### Read our feedback to the Europen Commission on DSA Art. 37 Delegated Regulation
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1v6CApiRsT4vE1e-EXJnHDufk0FyXLHwL/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/policy-observatory/20230705_DSA_delegated_regulation.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
 {{< button button_text="Read the white paper" button_link="/knowledge-platform/knowledge-base/white_paper_dsa_delegated_regulation_feedback/" >}}
 
@@ -61,13 +59,13 @@ The GDPR has its strengths regarding participatory decision-making, but it has a
 
 #### Read Algorithm Audit's technical audit of a risk profiling-based control proces of a Dutch public sector organisation
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/TA_AA202401/TA_AA202401_Vooringenomenheid_voorkomen.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}
 
 {{< button button_link="/algoprudence/cases/aa202401_bias-prevented/" button_text="Technical audit" >}}
 
 {{< tab_content_close >}}
 
-{{< tab_content_open icon="fa-newspaper" title="Administrative law" id="administrative-law" >}}
+{{< tab_content_open icon="fa-newspaper" title="Bestuursrecht" id="administrative-law" >}}
 
 Administrative law provides a normative framework for algorithmic-driven decision-making processes. In The Netherlands, for instance, through the codification of general principles of good administration (gpga). We argue that these principles are relevant to the algorithmic practice, but require contextualisation, which is often lacking. Take a closer look, for instance, to:
 
