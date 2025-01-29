@@ -24,6 +24,26 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: Event 'Can Europe regulate AI?'
+    description: >
+      Boekinterview met Marietje Schaake – auteur van The Tech Coup – en Haroon Sheikh – auteur van Atlas of the Digital World – in debatcentrum Pakhuis de Zwijger
+
+
+      <a href="https://dezwijger.nl/programma/can-europe-regulate-ai" target="_blank">Meer informatie</a>
+
+
+      ![](/images/events/20251021_PdZ.jpeg)
+    image: /images/events/PdZ-logo-socials.png
+    date: 21-01-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q1_2025
+        label: Q1-2025
+        hide: true
+      - value: type_event
+        label: event
   - title: Gastcollege 'Hoe algoprudentie kan bijdragen aan de verantwoorde inzet van ML algoritmes'
     description: >
       Gastcollege bij MSc Social Data Science students van University of Oxford
@@ -41,9 +61,9 @@ events:
         hide: true
       - value: type_presentation
         label: presentation
-  - title: Presentation 'Procurement of AI and algorithms PIANOo'
+  - title: Presentatie 'Inkoop van algoritmes en AI'
     description: >
-      Presentation on the procurement of AI and algorithms for PIANOo – centre of expertise for public sector procurement  
+      Presentatie over inkoop van algoritmes en AI voor PIANOo – expertisecentrum voor aanbesteding door publieke sector organisaties  
 
     image: /images/events/pianoo-logo.svg
     date: 10-12-2024
