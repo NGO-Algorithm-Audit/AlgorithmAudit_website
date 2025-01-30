@@ -4,14 +4,16 @@ facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: q1_2025
+        label: Q1-2025   
       - value: q4_2024
         label: Q4-2024
       - value: q3_2024
         label: Q3-2024
       - value: q2_2024
         label: Q2-2024
-      - value: q1_2024
-        label: Q1-2024
+      - value: 2024
+        label: 2024
   - value: type
     title: Type evenement
     facets:

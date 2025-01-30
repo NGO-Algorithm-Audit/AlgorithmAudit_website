@@ -35,4 +35,4 @@ Er zijn verschillende redenen waarom ontwikkelaars van profileringsmethoden niet
 
 In Nederland hebben ‘simpele’ regelgebaseerde profileringsalgoritmes de afgelopen 15 jaar tot veel ophef geleid. Deze publieke standaard beoogt een bijdrage te leveren aan risicobeheersmaatregelen om de methoden op een meer verantwoorde manier in te zetten.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1lwaPipWJT_plsryO7QtZqRw5A7zGzqix/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20241022_Publieke standaard profileringsalgoritmes.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}

@@ -35,4 +35,4 @@ Deployers of profiling systems should not wait for European harmonised standards
 
 In the Netherlands, ‘simple’ rule-based profiling systems have often been deployed irresponsibly for over the last 15 years. This public standard aims to contribute to concise risk management measures that can be implemented today to deploy profiling more responsibly.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1_Bbeo-R7Mn3_om3hiwRCuqq_hppNwqmi/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20241022_Public standard profilering algorithms.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}
