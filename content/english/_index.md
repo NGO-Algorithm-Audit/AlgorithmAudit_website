@@ -238,15 +238,14 @@ title: Algorith Audit
 subtitle: ''
 image: /images/ai-act-implementation-tool/Venn diagram_NL.png
 slider:
-  - title_before: A European knowledge platform for
-    labels:
+  - title_before_line1: A European knowledge platform for
+    labels_line1:
       - text: responsible AI
       - text: AI bias testing
-  - title_before: from a
-    labels:
+    title_before_line2: from a
+    labels_line2:
       - text: not-for-profit
-      - text: not-for-profit
-    title_after: perspective
+    title_after_line2: perspective
 overview_block:
   - title: Core activities
     content: ''
@@ -272,7 +271,5 @@ overview_block:
 {{< radial_gradient id="radiant" color_start="#DD7F67" color_end="#FFFFFF" >}}
 
 {{< slider index="0" >}}
-
-{{< slider index="1" >}}
 
 {{< overview_block >}}

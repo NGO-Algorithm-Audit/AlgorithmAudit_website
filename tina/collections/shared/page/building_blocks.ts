@@ -826,13 +826,13 @@ const building_blocks: TinaField[] = [
     fields: [
       {
         type: "string",
-        name: "title_before",
-        label: "Title before labels",
+        name: "title_before_line1",
+        label: "Title before labels (line 1)",
       },
       {
         type: "object",
-        name: "labels",
-        label: "Labels",
+        name: "labels_line1",
+        label: "Labels (line 1)",
         list: true,
         required: true,
         ui: {
@@ -851,8 +851,39 @@ const building_blocks: TinaField[] = [
       },
       {
         type: "string",
-        name: "title_after",
-        label: "Title after labels",
+        name: "title_after_line1",
+        label: "Title after labels (line 1)",
+      },
+
+      {
+        type: "string",
+        name: "title_before_line2",
+        label: "Title before labels (line 2)",
+      },
+      {
+        type: "object",
+        name: "labels_line2",
+        label: "Labels (line 2)",
+        list: true,
+        required: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.text };
+          },
+        },
+        fields: [
+          {
+            type: "string",
+            name: "text",
+            label: "Text",
+            required: true,
+          },
+        ],
+      },
+      {
+        type: "string",
+        name: "title_after_line2",
+        label: "Title after labels (line 2)",
       },
     ],
   },

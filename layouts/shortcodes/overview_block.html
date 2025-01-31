@@ -7,13 +7,13 @@
 
         <!-- Title and icon -->
         <div class="row">
-            <h3 class="color-lightgray col">
+            <h4 class="color-lightgray col px-5" style="font-weight: 300;">
 
                 {{if .icon }}
                 <span class="{{.icon}} icon mb-4 pl-5 remove-on-pdf"></span>
                 {{ end }}
                 {{.title}}
-            </h3>
+            </h4>
         </div>
 
         {{ if .content }}
@@ -24,24 +24,24 @@
         </div>
         {{ end }}
 
-        <div class="row mt-0 mx-3 justify-content-between">
+        <div class="row mt-0 mx-0 justify-content-between">
             {{ range .items }}
-            <div style="border-radius: 1rem !important;" class="col-md-5 col-sm-12 my-3 border">
-                    <a class="clickable-wrapper" href="{{.link }}">
-                        <div class="row my-1 display-4 align-items-center h-100" >
-                            <div class="col-3 text-center">
-                                <span class={{.icon}} align-middle></span>
-                            </div>
-                            <div class="col-9">
-                                <h4 class="mb-0">{{.title}}</h4>
-                                {{ if .description }}
-                                <p class="mb-0">{{.description}}</p>
-                                {{ end }}
-                            </div>
+            <div class="col-md-6 col-sm-12 my-3 px-5">
+                <div style="border-radius: 1rem !important;" class="border align-items-center">
+                    <a class="clickable-wrapper row my-1 py-3 align-items-center h-100" href="{{.link }}">
+                        <div class="col-3 text-center">
+                            <span class='{{.icon}}' style="font-size: 2rem;"></span>
+                        </div>
+                        <div class="col-9">
+                            <h4 class="mb-0">{{.title}}</h4>
+                            {{ if .description }}
+                            <p class="mb-0">{{.description}}</p>
+                            {{ end }}
                         </div>
                         <div class="row mb-4">
                         </div>
                     </a>
+                </div>
             </div>
             {{ end }}
         </div>

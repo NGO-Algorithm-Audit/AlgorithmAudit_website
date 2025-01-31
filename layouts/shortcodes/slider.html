@@ -2,17 +2,14 @@
 {{$param := int (.Get "index")}}
 {{ with index .Page.Params.slider $param }}
 <!-- European knowledge platform -->
-<div class="row">
-    <!-- desktop version -->
+<div class="row" style="margin-top: 15vh;">
     <div class="col-12 text-center">
       <div class="slider-wrapper justify-content-center">
-
-        <h3 style="color:#005aa7; font-weight:100;">{{.title_before}}</h3>
-
+        <h3 style="color:#005aa7; font-weight:100;">{{.title_before_line1}}</h3>
         <!-- slider -->
-        <div class="ms-slider">
-          <ul class="ms-slider__words">
-            {{ range .labels }}
+        <div class="ms-slider" style="min-width: 180px;">
+          <ul class='{{if (gt (.labels_line1 | len) 1)}} ms-slider__words {{ end }} ul-slider' >
+            {{ range .labels_line1 }}
             <li class="ms-slider__word">
               <div class="slider-wrapper mb-1 py-1">
                 <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
@@ -20,7 +17,7 @@
             </li>
             {{ end }}
             <!-- repeat the last item for the slider logic -->
-            {{ with index .labels 0 }}
+            {{ with index .labels_line1 0 }}
             <li class="ms-slider__word">
               <div class="slider-wrapper mb-1 py-1">
                 <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
@@ -30,8 +27,39 @@
           </ul>
         </div>
         <!-- /slider -->
-        <h3 style="color:#005aa7; font-weight:100;">{{.title_after}}</h3>
+        <h3 style="color:#005aa7; font-weight:100;">{{.title_after_line1}}</h3>
       </div>
     </div>
   </div>
+  <div class="row mt-3" style="margin-bottom: 15vh;">
+      <div class="col-12 text-center">
+        <div class="slider-wrapper justify-content-center">
+  
+          <h3 style="color:#005aa7; font-weight:100;">{{.title_before_line2}}</h3>
+  
+          <!-- slider -->
+          <div class="ms-slider" style="min-width: 140px;">
+            <ul class='{{if (gt (.labels_line2 | len) 1)}} ms-slider__words {{ end }} ul-slider' >
+              {{ range .labels_line2 }}
+              <li class="ms-slider__word">
+                <div class="slider-wrapper mb-1 py-1">
+                  <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+                </div>
+              </li>
+              {{ end }}
+              <!-- repeat the last item for the slider logic -->
+              {{ with index .labels_line2 0 }}
+              <li class="ms-slider__word">
+                <div class="slider-wrapper mb-1 py-1">
+                  <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+                </div>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          <!-- /slider -->
+          <h3 style="color:#005aa7; font-weight:100;">{{.title_after_line2}}</h3>
+        </div>
+      </div>
+    </div>
   {{ end }}
