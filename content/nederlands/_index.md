@@ -33,26 +33,21 @@ Activity_Feed:
       date: 22-10-2024
       type: white paper
   activities:
+    - title: Event 'Can Europe regulate AI?'
+      link: /events/activities/#events
+      image: /images/events/PdZ-logo-socials.png
+      date: 21-01-2025
+      type: event
     - title: >-
-        Gastspreker lunchlezing 'Risico's van opsporingsalgoritmes', Ministerie
-        van Justitie en Veiligheid
-      link: /nl/events/activities/#events
-      image: /images/events/MinJenV_logo.png
-      date: 02-10-2024
+        Gastcollege 'Hoe algoprudentie kan bijdragen aan de verantwoorde inzet van ML algoritmes'
+      link: /events/activities/#events
+      image: /images/events/Oxford-logo.png
+      date: 13-12-2024
       type: presentatie
-    - title: >-
-        Masterclass 'Algoritmevalidatie', Vereniging van Nederlandse Gemeenten
-        (VNG)
-      link: /nl/events/activities/#events
-      image: /images/events/VNG_logo.png
-      date: 19-09-2024
-      type: presentatie
-    - title: >-
-        Gastspreker verdiepingssessie 'Bias, fairness en non-discriminatie',
-        Ministerie van Binnenlandse Zaken
-      link: /nl/events/activities/#events
-      image: /images/supported_by/BZK.jpg
-      date: 18-09-2024
+    - title: Presentatie 'Inkoop van algoritmes en AI PIANOo'
+      link: /events/activities/#events
+      image: /images/events/pianoo-logo.svg
+      date: 13-12-2024
       type: presentatie
 Supported_by:
   title: Samenwerking met

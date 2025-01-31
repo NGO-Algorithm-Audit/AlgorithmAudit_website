@@ -86,10 +86,6 @@ team2:
       name: Ylja Remmits
       bio: |
         Head of Projects
-    - image: /images/people/Unknown.jpeg
-      name: Vardâyani Djwalapersad
-      bio: |
-        Projectmanager Algoprudentie
 ---
 
 {{< about_AA >}}

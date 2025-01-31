@@ -1,17 +1,19 @@
 ---
-pagesize: 10
+pagesize: 7
 facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: q1_2025
+        label: Q1-2025   
       - value: q4_2024
         label: Q4-2024
       - value: q3_2024
         label: Q3-2024
       - value: q2_2024
         label: Q2-2024
-      - value: q1_2024
-        label: Q1-2024
+      - value: 2024
+        label: 2024
   - value: type
     title: Type evenement
     facets:
@@ -24,6 +26,111 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: Event 'Can Europe regulate AI?'
+    description: >
+      Boekinterview met Marietje Schaake – auteur van The Tech Coup – en Haroon Sheikh – auteur van Atlas of the Digital World – in debatcentrum Pakhuis de Zwijger
+
+
+      <a href="https://dezwijger.nl/programma/can-europe-regulate-ai" target="_blank">Meer informatie</a>
+
+
+      ![](/images/events/20251021_PdZ.jpeg)
+    image: /images/events/PdZ-logo-socials.png
+    date: 21-01-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q1_2025
+        label: Q1-2025
+        hide: true
+      - value: type_event
+        label: event
+  - title: Gastcollege 'Hoe algoprudentie kan bijdragen aan de verantwoorde inzet van ML algoritmes'
+    description: >
+      Gastcollege bij MSc Social Data Science students van University of Oxford
+
+
+      ![](/images/events/20241213_Oxford.jpeg)
+    image: /images/events/Oxford-logo.png
+    date: 13-12-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: Presentatie 'Inkoop van algoritmes en AI'
+    description: >
+      Presentatie over inkoop van algoritmes en AI voor PIANOo – expertisecentrum voor aanbesteding door publieke sector organisaties  
+
+    image: /images/events/pianoo-logo.svg
+    date: 10-12-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Break-out sessie 'Congres Binnenlands Bestuur'
+    description: >
+      Break-out sessie over algoritme en AI-validatie in de context van Nederlandse gemeenten
+
+    image: /images/events/BinnenlandsBestuur.svg
+    date: 03-12-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Masterclass 'AI validatie en AI standaarden'
+    description: >
+      Dagvullende masterclass over AI validatie en AI standaarden voor 30+
+      publieke sector organisaties. Met gastsprekers Anne Meuwese (Universiteit
+      Leiden), Robbert Bos (Rijks ICT Gilde) en Sven Stevenson (Directie
+      Coördinatie Algoritmes, Autoriteit Persoonsgegevens)
+
+
+      ![](/images/events/20241106_DNB.jpeg)
+    image: /images/logo/logo.svg
+    date: 06-11-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_event
+        label: event
+  - title: Gastbijdrage 'Academie voor wetgeving'
+    description: >
+      Gastbijdrage 'Waarborgen voor de verantwoorde inzet van
+      profileringsalgoritmes' in samenwerking met prof. dr. Anne Meuwese
+
+
+      ![](/images/events/20241017_AcWet.jpeg)
+    image: /images/events/acwet.svg
+    date: 17-10-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q4_2024
+        label: Q4-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
   - title: Gastspreker lunchlezing 'Risico's van opsporingsalgoritmes'
     description: >
       Gastspreker tijdens symposium 'Risico's van opsporingsalgoritmes' van het
@@ -77,9 +184,8 @@ events:
   - title: 'Gastspreker symposium ''Profilering in de publieke sector'' '
     description: >
       Gastspreker tijdens symposium 'Profilering in de publieke sector' van de
-      Commissie Persoonsgegevens Amsterdam (CPA) samen met
-      Thijs Teisman van DUO over onderzoek naar Controle Uitwonendenbeurs
-      (CUB)-proces.
+      Commissie Persoonsgegevens Amsterdam (CPA) samen met Thijs Teisman van DUO
+      over onderzoek naar Controle Uitwonendenbeurs (CUB)-proces.
     image: /images/events/Amsterdam.png
     date: 12-09-2024
     facets:
@@ -303,7 +409,7 @@ events:
         hide: true
       - value: type_interview
         label: interview
-  - title: Seminar algoritmevalidatie
+  - title: Seminar 'Algoritmevalidatie'
     description: >
       Criteria voor het auditeren van algoritmes krijgen langzaam vorm, zoals de
       Z-toets voor profileringsalgoritmes. Maar voor verantwoord gebruik van

@@ -83,7 +83,7 @@ url = "/nl/knowledge-platform/knowledge-base"
     icon = "fa-check"
   [[main]]
   parent = "Kennisplatform"
-  name = "AI beleid observatorium"
+  name = "AI beleidsobservatorium"
   url = "nl/knowledge-platform/policy-observatory"
   weight = 2
   [[main.params]]
