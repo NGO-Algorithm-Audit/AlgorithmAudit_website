@@ -264,7 +264,7 @@ overview_block:
         link: /knowledge-platform/project-work/
 ---
 
-{{< radial-gradient >}}
+{{< radial_gradient id="radiant" color_start="#DD7F67" color_end="#FFFFFF" >}}
 
 {{< slider index="0" >}}
 

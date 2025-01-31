@@ -20,6 +20,7 @@ import template_image from "../templates/image";
 import overview_block from "../templates/overview_block";
 import pdf_frame from "../templates/pdf_frame";
 import promo_bar from "../templates/promo_bar";
+import radial_gradient from "../templates/radial-gradient";
 import reports_preview from "../templates/reports_preview";
 import slider from "../templates/slider";
 import tab_content_close from "../templates/tab_content_close";
@@ -62,6 +63,7 @@ const building_blocks: TinaField[] = [
       overview_block,
       pdf_frame,
       promo_bar,
+      radial_gradient,
       reports_preview,
       slider,
       tab_content_open,
