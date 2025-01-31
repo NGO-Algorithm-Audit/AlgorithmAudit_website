@@ -287,8 +287,8 @@
   {{ $hideLoader = .Get "hideLoader2" }}
   {{ $renderPageNum = .Get "renderPageNum2" }}
   {{ $urlHash = substr (md5 $url) 0 8 }}
-  <div class="col-{{ $mobile_width }} col-lg-{{ $desktop_width }} my-5" style="display:table;">
-    <div class="embed-pdf-container mt-5" id="embed-pdf-container-{{ $urlHash }}">
+  <div class="col-{{ $mobile_width }} col-lg-{{ $desktop_width }} my-3" style="display:table;">
+    <div class="embed-pdf-container mt-0" id="embed-pdf-container-{{ $urlHash }}">
       <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ $urlHash }}">
         <div class="pdf-loading" id="pdf-loading-{{ $urlHash }}"></div>
       </div>

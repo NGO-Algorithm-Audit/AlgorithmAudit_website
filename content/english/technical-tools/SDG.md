@@ -47,6 +47,8 @@ Synthetic data generation (SDG) – the creation of artificial datasets mimickin
 
 {{< container_close >}}
 
+{{< iframe src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/synthetic-data.html?lang=en" title="Synthetic data generation tool" icon="fas fa-search" height="800px" >}}
+
 {{< container_open title="How can SDG be used for AI bias testing?" icon="fas fa-project-diagram" id="bias-testing" >}}
 
 SDG holds potential for third parties to audit datasets in a privacy-preserving way. There is currently not yet sufficient knowledge how and when SDG serves as a suitable method for external bias testing. First, the complex process of SDG may not always be necessary for bias testing when simple approaches such as univariate or bivariate aggregate statistics of the source data suffice. Second, SDG can be performed using a plethora of methods, e.g., parametric, non-parametric and copula-based estimation and inference methods. The best SDG method for a given use case depends on the underlying structure of the data and is therefore context-specific. At Algorithm Audit, we are investigating these open-ended questions, and build public knowledge on what form of data-sharing practice (SDG or alternatives) is best suited for privacy-preserving AI bias testing in specific use cases. Through our technical and qualitative work in this project, we contribute to this collective learning process.
