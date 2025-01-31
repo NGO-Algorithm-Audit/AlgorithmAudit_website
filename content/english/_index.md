@@ -28,24 +28,22 @@ Activity_Feed:
       date: 22-10-2024
       type: white paper
   activities:
+    - title: Event 'Can Europe regulate AI?'
+      link: /events/activities/#events
+      image: /images/events/PdZ-logo-socials.png
+      date: 21-01-2025
+      type: event
     - title: >-
-        Guest speaker lunch seminar 'Risks of detection algorithms', Ministry of
-        Justice en Security
+        Guest lecture 'How algoprudence can contribute to responsible use of ML
+        algorithms'
       link: /events/activities/#events
-      image: /images/events/MinJenV_logo.png
-      date: 02-10-2024
+      image: /images/events/Oxford-logo.png
+      date: 13-12-2024
       type: presentation
-    - title: 'Masterclass ''Algorithm validation'', Association of Dutch Municipalities'
+    - title: Presentation 'Procurement of AI and algorithms PIANOo'
       link: /events/activities/#events
-      image: /images/events/VNG_logo.png
-      date: 19-09-2024
-      type: presentation
-    - title: >-
-        Guest speaker in-depth session 'Bias, fairness and non-discrimination',
-        Ministry of the Interior
-      link: /events/activities/#events
-      image: /images/supported_by/BZK.jpg
-      date: 18-09-2024
+      image: /images/events/pianoo-logo.svg
+      date: 13-12-2024
       type: presentation
 Supported_by:
   title: Collaborating with

@@ -15,4 +15,4 @@ _Het originele artikel kan worden gevonden in het <a href="https://www.recht.nl/
 
 Jurist Ola al Khatib en collega's analyseren regel- en data-gedreven (selectie)algoritmes in de context van de Algemene wet bestuursrecht (Awb). Voortbouwend op de huidige discussie rond aanpassingen van de Awb met oog op het effectief reguleren van algoritmische systemen die door Nederlandse overheidsorganisaties worden ingezet, gaat het artikel in op mogelijke oplossingsrichtingen hoe de gelaagde reguleringsaanpak, in combinatie met de AI-verordening en _soft law_ kaders, verbeterd kan worden.
 
-{{< embed_pdf url="/pdf-files/knowledge-base/20250113_De_A_is_van_algoritme.pdf" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20250113_De_A_is_van_algoritme.pdf" width_desktop_pdf="6" width_mobile_pdf="12" >}}

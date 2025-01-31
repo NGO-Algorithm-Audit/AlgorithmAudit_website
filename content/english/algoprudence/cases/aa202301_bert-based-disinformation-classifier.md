@@ -75,8 +75,6 @@ actions:
       been selected as a finalist for [Stanford's AI Audit Challenge
       2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-
-      {{< pdf_frame >}}
     image: /images/supported_by/HAI.png
     date: 14-02-2024
     facets:
