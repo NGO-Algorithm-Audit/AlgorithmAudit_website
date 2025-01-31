@@ -23,23 +23,23 @@ Implementation of the AI Act raises difficult questions. What is the scope of th
 
 The questionnaires are designed to identify AI systems and their risk category using straightforward questions.
 
-Since many straightforward algorithms that impact people are not considered AI systems, the first questionnaire also identifies *impactful algorithms*. The term 'impactful algorithms' is used by the Dutch government to refer to simple algorithms that do not meet the definition of an AI system under the AI Act but still require risk management measures. More information can be found in the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Registry Guidance Document</a> of the Dutch Ministry of the Interior.  
+Since many straightforward algorithms that impact people are not considered AI systems, the first questionnaire also identifies _impactful algorithms_. The term 'impactful algorithms' is used by the Dutch government to refer to simple algorithms that do not meet the definition of an AI system under the AI Act but still require risk management measures. More information can be found in the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Registry Guidance Document</a> of the Dutch Ministry of the Interior.
 
 All potential outcomes of the first questionnaire are shown in the [figure](/technical-tools/implementation-tool/#outcome) below on this webpage.
 
 {{< container_close >}}
 
-{{< webapp id="webapp" appId="AIActImplementationTool" src="https://ai-documentation.s3.eu-central-1.amazonaws.com/AI-Act-Questionnaire-v1.0.0.js" title="" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" icon="" height="500px" >}}
 
 {{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="outcome" >}}
 
 The outcomes of the first questionnaire are displayed in the below figure. The following categories are distinguished:
 
-* Algorithms: fall outside the scope of the AI Act, no additional control measures are needed
-* Impactful algorithms: fall outside the scope of the AI Act, additional control measures are needed
-* AI systems: are in scope of the AI Act, no additional control measures for high-risk AI systems are needed
-* High risk AI systems: are in scope of the AI Act, additional control measures for high-risk AI systems are needed
-* Prohibited AI systems: are in scope of the AI Act, usage of this type of AI systems is prohibited in the European Union
+- Algorithms: fall outside the scope of the AI Act, no additional control measures are needed
+- Impactful algorithms: fall outside the scope of the AI Act, additional control measures are needed
+- AI systems: are in scope of the AI Act, no additional control measures for high-risk AI systems are needed
+- High risk AI systems: are in scope of the AI Act, additional control measures for high-risk AI systems are needed
+- Prohibited AI systems: are in scope of the AI Act, usage of this type of AI systems is prohibited in the European Union
 
 <br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram_EN.png" alt="drawing" width="600"/>
 
