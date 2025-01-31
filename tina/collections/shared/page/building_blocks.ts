@@ -992,6 +992,11 @@ const building_blocks: TinaField[] = [
           },
           {
             type: "string",
+            name: "description",
+            label: "Description",
+          },
+          {
+            type: "string",
             name: "icon",
             label: "Icon",
             required: true,
