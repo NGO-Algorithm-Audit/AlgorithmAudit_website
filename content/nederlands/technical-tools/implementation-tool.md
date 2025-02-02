@@ -29,7 +29,7 @@ Alle mogelijke uitkomsten van de beslisboom zijn weergeven in het [figuur](/nl/t
 
 {{< container_close >}}
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" icon="" height="500px" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="500px" >}}
 
 {{< container_open icon="fas fa-layer-group" title="Uitkomsten vragenlijsten" id="outcome" >}}
 

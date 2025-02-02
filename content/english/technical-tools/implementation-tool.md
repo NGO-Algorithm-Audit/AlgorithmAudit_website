@@ -29,7 +29,7 @@ All potential outcomes of the first questionnaire are shown in the [figure](/tec
 
 {{< container_close >}}
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" icon="" height="500px" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="500px" >}}
 
 {{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="outcome" >}}
 
