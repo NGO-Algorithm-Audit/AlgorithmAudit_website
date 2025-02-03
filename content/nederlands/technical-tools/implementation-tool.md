@@ -51,7 +51,7 @@ De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Richtlijnen voor AI-verordening implementatie" id="documentation" >}}
+{{< container_open icon="far fa-file" title="Richtlijnen voor AI-verordening implementatie" id="documentation-definition" >}}
 
 Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand documenten beschreven.
 
