@@ -77,6 +77,12 @@ Through examples the slides decks explain the intricacies of the AI system defin
 
 {{< container_close >}}
 
+{{< container_open icon="far fa-file" title="Flowchart" id="flowchart" >}}
+
+{{< embed_pdf url="/pdf-files/knowledge-base/20250203_Visio.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
 <style>
     /* Targeting the first direct div inside #AIActImplementationTool */
     #AIActImplementationTool > div:first-child {
