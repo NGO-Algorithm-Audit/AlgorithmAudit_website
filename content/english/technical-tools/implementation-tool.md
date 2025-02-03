@@ -29,7 +29,7 @@ All potential outcomes of the first questionnaire are shown in the [figure](/tec
 
 {{< container_close >}}
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="500px" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="750px" >}}
 
 {{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="outcome" >}}
 
@@ -74,6 +74,12 @@ Through examples the slides decks explain the intricacies of the AI system defin
 ### Definition of an AI system under the AI Act
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+{{< container_close >}}
+
+{{< container_open icon="far fa-file" title="Flowchart" id="flowchart" >}}
+
+{{< embed_pdf url="/pdf-files/knowledge-base/20250203_Visio.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 

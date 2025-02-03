@@ -29,7 +29,7 @@ Alle mogelijke uitkomsten van de beslisboom zijn weergeven in het [figuur](/nl/t
 
 {{< container_close >}}
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="500px" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="750px" >}}
 
 {{< container_open icon="fas fa-terminal" title="Ontwikkeling en broncode" id="amsterdam" >}}
 
@@ -74,6 +74,12 @@ Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit 
 ### Definitie van een AI-systeem onder de AI-verordening
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+{{< container_close >}}
+
+{{< container_open icon="far fa-file" title="Flowchart" id="flowchart" >}}
+
+{{< embed_pdf url="/pdf-files/knowledge-base/20250203_Visio.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 
