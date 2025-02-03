@@ -51,7 +51,7 @@ De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Richtlijnen voor AI-verordening implementatie" id="documentation" >}}
+{{< container_open icon="far fa-file" title="Richtlijnen voor AI-verordening implementatie" id="documentation-definition" >}}
 
 Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand documenten beschreven.
 
@@ -71,7 +71,7 @@ Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit 
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-### Definitie van een AI-systeem onder de AI-verordening 
+### Definitie van een AI-systeem onder de AI-verordening
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
