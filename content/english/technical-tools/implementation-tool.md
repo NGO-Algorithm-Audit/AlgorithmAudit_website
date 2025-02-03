@@ -79,7 +79,7 @@ Through examples the slides decks explain the intricacies of the AI system defin
 
 {{< container_open icon="far fa-file" title="Flowchart" id="flowchart" >}}
 
-{{< embed_pdf url="/pdf-files/knowledge-base/20250203_Visio.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250203_Visio.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 
