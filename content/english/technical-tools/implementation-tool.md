@@ -51,7 +51,7 @@ The questions in the AI Act Implementation Tool are developed in collaboration w
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Guidelines for AI Act implementation" id="documentation-definition" >}}
+{{< container_open icon="far fa-file" title="Guidelines for AI Act implementation" id="documentation-definition" >}} 
 
 The reasoning and motivations behind the selected questions in the AI Act Implementation Tool are outlined in the below documents.
 
