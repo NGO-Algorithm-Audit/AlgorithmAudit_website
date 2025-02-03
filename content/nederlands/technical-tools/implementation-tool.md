@@ -77,7 +77,7 @@ Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit 
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Flowchart" id="flowchart" >}}
+{{< container_open icon="far fa-file" title="Flowchart AI-verordening implementatie tool" id="flowchart" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250203_Visio.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
