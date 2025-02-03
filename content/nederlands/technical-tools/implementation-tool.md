@@ -71,7 +71,7 @@ Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit 
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-### Definitie van een AI-systeem onder de AI-verordening 
+### Definitie van een AI-systeem onder de AI-verordening
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
