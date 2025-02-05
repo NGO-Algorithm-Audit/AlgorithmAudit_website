@@ -29,7 +29,7 @@ Alle mogelijke uitkomsten van de beslisboom zijn weergeven in het [figuur](/nl/t
 
 {{< container_close >}}
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="750px" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="60vh" >}}
 
 {{< container_open icon="fas fa-terminal" title="Ontwikkeling en broncode" id="amsterdam" >}}
 
@@ -47,7 +47,7 @@ De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand
 - Hoog risico AI-systemen: vallen binnen de reikwijdte van de AI-verordening en behoeven extra beheersmaatregelen aan de hand van [geharmonizeerde normen](/nl/knowledge-platform/standards/).
 - Verboden AI-systemen: vallen binnen de reikwijdte van de AI-verordening, dit type AI-systemen zijn verboden. Meer toelichting over deze categorie kan gevonden worden op <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Digitale overheid</a>.
 
-<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram_NL.png" alt="drawing" width="600"/>
+<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram NL.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
@@ -55,11 +55,11 @@ De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand
 
 Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand documenten beschreven.
 
-{{< embed_pdf url="/pdf-files/knowledge-base/20241218_Guidelines_AI_system_definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20241218 Richtlijnen AI-systeem definitie.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Explainers" id="explainers" >}}
+{{< container_open icon="fas fa-chalkboard-teacher" title="Explainers" id="explainers" >}}
 
 Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit van de AI-systeem definitie toe.
 
@@ -71,77 +71,14 @@ Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit 
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-### Definitie van een AI-systeem onder de AI-verordening
+### Definitie van een AI-systeem volgens de AI-verordening
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Flowchart AI-verordening implementatie tool" id="flowchart" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart implementatie tool" id="flowchart" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250203_Visio.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250205_Flowchart_AIAIT_NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
-
-<style>
-    /* Targeting the first direct div inside #AIActImplementationTool */
-    #AIActImplementationTool > div:first-child {
-        height: auto!important;
-        padding: 12px;
-    }
-
-    /* Styling for form-group elements inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group {
-        display: block;
-    }
-
-    /* Styling color output area inside #AIActImplementationTool */
-    #AIActImplementationTool .card-body .bg-primary {
-        background-color: #F8E5E3;
-    }
-
-    /* Styling for form-group elements header labels inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group .form-label {
-        margin-left: 0;
-        color: black;
-    }
-
-    /* Allow new lines for small elements inside #AIActImplementationTool */
-    #AIActImplementationTool small {
-        margin-top: 24px;
-        white-space: pre-wrap;
-    }
-
-    /* Allow new lines for label elements inside #AIActImplementationTool */
-    #AIActImplementationTool label {
-        white-space: pre-wrap;
-    }
-
-    /* Styling for form-group elements labels inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group label {
-        color: black;
-    }
-
-    /* Styling for intermediate-output labels in #AIActImplementationTool */
-    #AIActImplementationTool .intermediate-output label {
-        font-weight: 700;
-    }
-
-    /* Styling for intermediate-output textareas in #AIActImplementationTool */
-    #AIActImplementationTool .intermediate-output textarea {
-        border: none;
-        background-color: transparent;
-        resize: none;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        font-size: inherit;
-        font-family: inherit;
-        line-height: inherit;
-        color: inherit;
-        overflow: hidden;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-    }
-</style>

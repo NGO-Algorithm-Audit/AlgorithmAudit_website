@@ -29,7 +29,7 @@ All potential outcomes of the first questionnaire are shown in the [figure](/tec
 
 {{< container_close >}}
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="750px" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="60vh" >}}
 
 {{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="outcome" >}}
 
@@ -41,7 +41,7 @@ The outcomes of the first questionnaire are displayed in the below figure. The f
 - High risk AI systems: are in scope of the AI Act, additional control measures for high-risk AI systems are needed through harmonized standards.
 - Prohibited AI systems: are in scope of the AI Act, usage of this type of AI systems is prohibited in the European Union. More information about this category is provided by the <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Dutch government</a>.
 
-<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram_EN.png" alt="drawing" width="600"/>
+<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram EN.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
@@ -59,7 +59,7 @@ The reasoning and motivations behind the selected questions in the AI Act Implem
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Explainers" id="explainers" >}}
+{{< container_open icon="fas fa-chalkboard-teacher" title="Explainers" id="explainers" >}}
 
 Through examples the slides decks explain the intricacies of the AI system definition. 
 
@@ -77,71 +77,8 @@ Through examples the slides decks explain the intricacies of the AI system defin
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Flowchart AI Act Implementation Tool" id="flowchart" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart Implementation Tool" id="flowchart" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250203_Visio.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250205_Flowchart_AIAIT_EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
-
-<style>
-    /* Targeting the first direct div inside #AIActImplementationTool */
-    #AIActImplementationTool > div:first-child {
-        height: auto!important;
-        padding: 12px;
-    }
-
-    /* Styling for form-group elements inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group {
-        display: block;
-    }
-
-    /* Styling color output area inside #AIActImplementationTool */
-    #AIActImplementationTool .card-body .bg-primary {
-        background-color: #F8E5E3;
-    }
-
-    /* Styling for form-group elements header labels inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group .form-label {
-        margin-left: 0;
-        color: black;
-    }
-
-    /* Allow new lines for small elements inside #AIActImplementationTool */
-    #AIActImplementationTool small {
-        margin-top: 24px;
-        white-space: pre-wrap;
-    }
-
-    /* Allow new lines for label elements inside #AIActImplementationTool */
-    #AIActImplementationTool label {
-        white-space: pre-wrap;
-    }
-
-    /* Styling for form-group elements labels inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group label {
-        color: black;
-    }
-
-    /* Styling for intermediate-output labels in #AIActImplementationTool */
-    #AIActImplementationTool .intermediate-output label {
-        font-weight: 700;
-    }
-
-    /* Styling for intermediate-output textareas in #AIActImplementationTool */
-    #AIActImplementationTool .intermediate-output textarea {
-        border: none;
-        background-color: transparent;
-        resize: none;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        font-size: inherit;
-        font-family: inherit;
-        line-height: inherit;
-        color: inherit;
-        overflow: hidden;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-    }
-</style>
