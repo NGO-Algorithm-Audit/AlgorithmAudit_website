@@ -11,7 +11,6 @@ const iframe: RichTextTemplate = {
       name: "id",
       label: "ID",
       type: "string",
-      description: "Use top level template",
       required: true,
     },
     {
@@ -27,6 +26,12 @@ const iframe: RichTextTemplate = {
       type: "string",
       description: "Height of the iframe (i.e. 500px)",
       required: true,
+    },
+    {
+      name: "height_mobile",
+      label: "Height mobile",
+      type: "string",
+      description: "Height of the iframe (i.e. 500px)",
     },
     {
       name: "title",
