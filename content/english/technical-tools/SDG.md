@@ -47,7 +47,7 @@ Synthetic data generation (SDG) – the creation of artificial datasets mimickin
 
 {{< container_close >}}
 
-{{< iframe src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/synthetic-data.html?lang=en" title="Synthetic data generation tool" icon="fas fa-search" height="800px" >}}
+{{< iframe src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/synthetic-data.html?lang=en" title="Synthetic data generation tool" icon="fas fa-search" id="web-app" height="800px" >}}
 
 {{< container_open title="How can SDG be used for AI bias testing?" icon="fas fa-project-diagram" id="bias-testing" >}}
 

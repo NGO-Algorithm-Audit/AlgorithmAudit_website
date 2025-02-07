@@ -29,19 +29,19 @@ All potential outcomes of the first questionnaire are shown in the [figure](/tec
 
 {{< container_close >}}
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" icon="" height="500px" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="60vh" >}}
 
 {{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="outcome" >}}
 
 The outcomes of the first questionnaire are displayed in the below figure. The following categories are distinguished:
 
-- Algorithms: fall outside the scope of the AI Act, no additional control measures are needed
-- Impactful algorithms: fall outside the scope of the AI Act, additional control measures are needed
-- AI systems: are in scope of the AI Act, no additional control measures for high-risk AI systems are needed
-- High risk AI systems: are in scope of the AI Act, additional control measures for high-risk AI systems are needed
-- Prohibited AI systems: are in scope of the AI Act, usage of this type of AI systems is prohibited in the European Union
+- Algorithms: fall outside the scope of the AI Act, no additional control measures are needed.
+- Impactful algorithms: fall outside the scope of the AI Act, additional control measures are needed. 
+- AI systems: are in scope of the AI Act, only additional control measures are needed in case of high-risk AI systems.
+- High risk AI systems: are in scope of the AI Act, additional control measures for high-risk AI systems are needed through harmonized standards.
+- Prohibited AI systems: are in scope of the AI Act, usage of this type of AI systems is prohibited in the European Union. More information about this category is provided by the <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Dutch government</a>.
 
-<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram_EN.png" alt="drawing" width="600"/>
+<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram EN.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
@@ -51,87 +51,34 @@ The questions in the AI Act Implementation Tool are developed in collaboration w
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Documentation" id="documentation" >}}
+{{< container_open icon="far fa-file" title="Guidelines for AI Act implementation" id="documentation-definition" >}} 
 
 The reasoning and motivations behind the selected questions in the AI Act Implementation Tool are outlined in the below documents.
-
-### Explainer - 10 examples of (non) AI systems
-
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
-
-### Explainer - Rule-based algorithms under the AI Act
-
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
-
-### Explainer - Definition of an AI system under the AI Act
-
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
-
-### White paper - Guidelines for AI Act Implementation
 
 {{< embed_pdf url="/pdf-files/knowledge-base/20241218_Guidelines_AI_system_definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
-<style>
-    /* Targeting the first direct div inside #AIActImplementationTool */
-    #AIActImplementationTool > div:first-child {
-        height: auto!important;
-        padding: 12px;
-    }
+{{< container_open icon="fas fa-chalkboard-teacher" title="Explainers" id="explainers" >}}
 
-    /* Styling for form-group elements inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group {
-        display: block;
-    }
+Through examples the slides decks explain the intricacies of the AI system definition. 
 
-    /* Styling color output area inside #AIActImplementationTool */
-    #AIActImplementationTool .card-body .bg-primary {
-        background-color: #F8E5E3;
-    }
+### 10 examples of (non) AI systems
 
-    /* Styling for form-group elements header labels inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group .form-label {
-        margin-left: 0;
-        color: black;
-    }
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-    /* Allow new lines for small elements inside #AIActImplementationTool */
-    #AIActImplementationTool small {
-        margin-top: 24px;
-        white-space: pre-wrap;
-    }
+### Rule-based algorithms under the AI Act
 
-    /* Allow new lines for label elements inside #AIActImplementationTool */
-    #AIActImplementationTool label {
-        white-space: pre-wrap;
-    }
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-    /* Styling for form-group elements labels inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group label {
-        color: black;
-    }
+### Definition of an AI system under the AI Act
 
-    /* Styling for intermediate-output labels in #AIActImplementationTool */
-    #AIActImplementationTool .intermediate-output label {
-        font-weight: 700;
-    }
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-    /* Styling for intermediate-output textareas in #AIActImplementationTool */
-    #AIActImplementationTool .intermediate-output textarea {
-        border: none;
-        background-color: transparent;
-        resize: none;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        font-size: inherit;
-        font-family: inherit;
-        line-height: inherit;
-        color: inherit;
-        overflow: hidden;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-    }
-</style>
+{{< container_close >}}
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart Implementation Tool" id="flowchart" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250205_Flowchart_AIAIT_EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}

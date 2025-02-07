@@ -29,21 +29,7 @@ Alle mogelijke uitkomsten van de beslisboom zijn weergeven in het [figuur](/nl/t
 
 {{< container_close >}}
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" icon="" height="500px" >}}
-
-{{< container_open icon="fas fa-layer-group" title="Uitkomsten vragenlijsten" id="outcome" >}}
-
-De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand figuur. Er wordt onderscheid gemaakt tussen:
-
-- Algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen
-- Impactvolle algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven wel extra beheersmaatregelen
-- AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen voor hoog-risico AI-systemen
-- Hoog risico AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven extra beheersmaatregelen voor hoog-risico AI-systemen
-- Verboden AI-systemen: vallen binnen de reikwijdte van de AI-verordening, dit type AI-systemen zijn verboden in
-
-<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram_NL.png" alt="drawing" width="600"/>
-
-{{< container_close >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="60vh" >}}
 
 {{< container_open icon="fas fa-terminal" title="Ontwikkeling en broncode" id="amsterdam" >}}
 
@@ -51,87 +37,48 @@ De vragen in de AI-verordening implemenatie tool zijn ontwikkeld in samenwerking
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Documentatie" id="documentation" >}}
+{{< container_open icon="fas fa-layer-group" title="Uitkomsten vragenlijsten" id="outcome" >}}
 
-Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand documenten beschreven.
+De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand figuur. Er wordt onderscheid gemaakt tussen:
 
-### Explainer - 10 voorbeelden van (geen) AI-systemen
+- Algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen.
+- Impactvolle algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven wel extra beheersmaatregelen.
+- AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven alleen extra beheersmaatregelen als er sprake is van hoog-risico AI-systemen en specifieke vormen van generieke AI.
+- Hoog risico AI-systemen: vallen binnen de reikwijdte van de AI-verordening en behoeven extra beheersmaatregelen aan de hand van [geharmonizeerde normen](/nl/knowledge-platform/standards/).
+- Verboden AI-systemen: vallen binnen de reikwijdte van de AI-verordening, dit type AI-systemen zijn verboden. Meer toelichting over deze categorie kan gevonden worden op <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Digitale overheid</a>.
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
-
-### Explainer - Regelgebaseerde algoritmen onder de AI-verordening
-
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
-
-### Explainer - Definitie van een AI-systeem onder de AI-verordening
-
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
-
-### White paper - Richtlijnen voor AI-verordening implementatie
-
-{{< embed_pdf url="/pdf-files/knowledge-base/20241218_Guidelines_AI_system_definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+<br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram NL.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
-<style>
-    /* Targeting the first direct div inside #AIActImplementationTool */
-    #AIActImplementationTool > div:first-child {
-        height: auto!important;
-        padding: 12px;
-    }
+{{< container_open icon="far fa-file" title="Richtlijnen voor AI-verordening implementatie" id="documentation-definition" >}}
 
-    /* Styling for form-group elements inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group {
-        display: block;
-    }
+Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand documenten beschreven.
 
-    /* Styling color output area inside #AIActImplementationTool */
-    #AIActImplementationTool .card-body .bg-primary {
-        background-color: #F8E5E3;
-    }
+{{< embed_pdf url="/pdf-files/knowledge-base/20241218 Richtlijnen AI-systeem definitie.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-    /* Styling for form-group elements header labels inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group .form-label {
-        margin-left: 0;
-        color: black;
-    }
+{{< container_close >}}
 
-    /* Allow new lines for small elements inside #AIActImplementationTool */
-    #AIActImplementationTool small {
-        margin-top: 24px;
-        white-space: pre-wrap;
-    }
+{{< container_open icon="fas fa-chalkboard-teacher" title="Explainers" id="explainers" >}}
 
-    /* Allow new lines for label elements inside #AIActImplementationTool */
-    #AIActImplementationTool label {
-        white-space: pre-wrap;
-    }
+Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit van de AI-systeem definitie toe.
 
-    /* Styling for form-group elements labels inside #AIActImplementationTool */
-    #AIActImplementationTool .form-group label {
-        color: black;
-    }
+### 10 voorbeelden van (geen) AI-systemen
 
-    /* Styling for intermediate-output labels in #AIActImplementationTool */
-    #AIActImplementationTool .intermediate-output label {
-        font-weight: 700;
-    }
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-    /* Styling for intermediate-output textareas in #AIActImplementationTool */
-    #AIActImplementationTool .intermediate-output textarea {
-        border: none;
-        background-color: transparent;
-        resize: none;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        font-size: inherit;
-        font-family: inherit;
-        line-height: inherit;
-        color: inherit;
-        overflow: hidden;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-    }
-</style>
+### Regelgebaseerde algoritmen onder de AI-verordening
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+### Definitie van een AI-systeem volgens de AI-verordening
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+{{< container_close >}}
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart implementatie tool" id="flowchart" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250205_Flowchart_AIAIT_NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
