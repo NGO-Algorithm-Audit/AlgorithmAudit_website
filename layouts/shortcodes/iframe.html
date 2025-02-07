@@ -3,7 +3,7 @@
 <div class="container-fluid mt-5 p-0">
     <div class="rounded-lg" id='{{.Get "id" }}'>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 p-0 p-lg-3">
                 {{ if .Get "title" }}
                 {{ if .Get "icon" }}
                 <!-- Title and icon -->
@@ -20,7 +20,7 @@
                 {{ end }}
                 {{ end}}
                 <div class="i-frame__container" >
-                    <iframe class="iframe" src='{{.Get "src" }}'
+                    <iframe id='{{.Get "id" }}' class="iframe" src='{{.Get "src" }}'
                         title='{{.Get "title"}}'>
                     </iframe>
                 </div>
@@ -34,11 +34,19 @@
                         align-items: center;
                     }
 
-                    .iframe {
+                    #{{.Get "id" }} {
                         border: none;
                         width: 100%;
                         height: {{.Get "height" }};
                     }
+
+                    {{ if .Get "height_mobile"}}
+                    @media only screen and (max-width: 992px) {
+                        #{{.Get "id" }} {
+                            height: {{.Get "height_mobile" }};
+                        }
+                    }
+                    {{ end }}
                 </style>
             </div>
         </div>

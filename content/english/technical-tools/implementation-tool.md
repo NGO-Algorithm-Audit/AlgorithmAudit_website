@@ -29,14 +29,14 @@ All potential outcomes of the first questionnaire are shown in the [figure](/tec
 
 {{< container_close >}}
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="60vh" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="60vh" height_mobile="100vh" >}}
 
 {{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="outcome" >}}
 
 The outcomes of the first questionnaire are displayed in the below figure. The following categories are distinguished:
 
 - Algorithms: fall outside the scope of the AI Act, no additional control measures are needed.
-- Impactful algorithms: fall outside the scope of the AI Act, additional control measures are needed. 
+- Impactful algorithms: fall outside the scope of the AI Act, additional control measures are needed.
 - AI systems: are in scope of the AI Act, only additional control measures are needed in case of high-risk AI systems.
 - High risk AI systems: are in scope of the AI Act, additional control measures for high-risk AI systems are needed through harmonized standards.
 - Prohibited AI systems: are in scope of the AI Act, usage of this type of AI systems is prohibited in the European Union. More information about this category is provided by the <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Dutch government</a>.
@@ -51,7 +51,7 @@ The questions in the AI Act Implementation Tool are developed in collaboration w
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Guidelines for AI Act implementation" id="documentation-definition" >}} 
+{{< container_open icon="far fa-file" title="Guidelines for AI Act implementation" id="documentation-definition" >}}
 
 The reasoning and motivations behind the selected questions in the AI Act Implementation Tool are outlined in the below documents.
 
@@ -61,7 +61,7 @@ The reasoning and motivations behind the selected questions in the AI Act Implem
 
 {{< container_open icon="fas fa-chalkboard-teacher" title="Explainers" id="explainers" >}}
 
-Through examples the slides decks explain the intricacies of the AI system definition. 
+Through examples the slides decks explain the intricacies of the AI system definition.
 
 ### 10 examples of (non) AI systems
 
