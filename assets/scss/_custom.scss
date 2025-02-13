@@ -23,6 +23,19 @@
 	padding: 0.25rem 0.5rem !important;
 }
 
+.yellow-button {
+	margin-left: 20px;
+	background-color: #005aa7;
+	pointer-events: none;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	font-size: 10px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
 .ac .ac-trigger {
 	font-family: avenir, sans-serif;
 }
