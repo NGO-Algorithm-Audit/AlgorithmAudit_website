@@ -47,14 +47,14 @@ form1:
 ---
 
 {{< accordions_area_open id="projectmedewerker" >}}
-{{< accordion_item_open title="Projectmedewerker (Dutch only)" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="1.0 fte" tag2="Schaal 7-8" tag3="≥01-05-2025" >}}
+{{< accordion_item_open title="Projectmedewerker" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="1.0 fte" tag2="Schaal 7-8" tag3="≥01-05-2025" >}}
 {{< button button_text="Solliciteer" button_link="#form" >}}
 #### Projectmedewerker (1.0 fte)
 
 Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol waarbij ieders belangen worden meegenomen? Kom stichting Algorithm Audit versterken als _Projectmedewerker_ en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
 
 #### Over stichting Algorithm Audit
-Stichting Algorithm Audit is een Europees kennisplatform voor AI bias testing en AI standaarden. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam, de Raad van Europa.
+Stichting Algorithm Audit is een Europees kennisplatform voor AI bias testing en AI standaarden. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam en de Raad van Europa.
 
 Voor specifieke vraagstukken bouwen we open source tools waar iedereen iets aan heeft, bijvoorbeeld ten behoeve van synthetische data generatie of implementatie van de AI-verordening. Door casusonderzoek en onafhankelijke oordeelsvorming door diverse adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases.
 
@@ -69,7 +69,7 @@ Als projectmedewerker bij Algorithm Audit:
 * Draag je schriftelijk bij aan o.a. technisch en/of juridische analyses, presentaties, beschrijvingen van technische tools;
 * Heb je inzicht in de statistische basis van algoritmen, AI en data-analyse (het zelfstandig kunnen ontwikkelen van Python-code is een pré);
 * Onderzoek je naar eigen inzicht onderwerpen waarvoor in het bedrijfsleven geen tijd is;
-* Doe je veel ervaring op en vind je her leuk expertise te ontwikkelen in verschillende vakgebieden;
+* Doe je veel ervaring op en vind je het leuk expertise te ontwikkelen in verschillende vakgebieden;
 * Ondersteun je het team met praktische aspecten die komen kijken bij het runnen van een jonge organisatie, zoals het hosten van events, PR en communicatie;
 * Licht je door Algorithm Audit opgedane inzichten in begrijpelijke taal toe, zodat deze met de samenleving, beleidsmakers en juristen kunnen worden gedeeld.
 
@@ -77,7 +77,7 @@ Als projectmedewerker bij Algorithm Audit:
 * Relevante universitaire studie afgerond (technisch, juridisch en/of bestuurskundig etc.)
 * Aantoonbare affiniteit met verantwoorde algoritmes en AI, vanuit een juridische, beleidsmatige en/of technische invalshoek;
 * 1-3 jaar werkervaring, bij voorkeur concrete ervaring met het ontwerpen of adviseren over verantwoorde algoritmes en AI;
-* Programmeervaardigheden zijn een pré;
+* Programmeervaardigheden en inzicht in statistiek zijn een pré;
 * Sterk organisatorisch vermogen;
 * In staat om in klein team in goede afstemming te werken en ook veel zelfstandig op te pakken;
 * Ondernemende en pionierende instelling passend bij een start-up;
@@ -108,7 +108,7 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 #### &#xA;Contact
 Stuur je sollicitatiebrief en CV uiterlijk voor 28-03-2025 naar info@algorithmaudit.eu.
 
-Bij vragen over de vacature of procedure, neem contact op met Ylja Remmits, y.remmits@algorithmaudit.eu.
+Bij vragen over de vacature of procedure, stuur een berichtje via het contactforumlier.
 {{< form1 >}}
 {{< accordion_item_close >}}
 {{< accordions_area_close >}}
@@ -121,7 +121,7 @@ Bij vragen over de vacature of procedure, neem contact op met Ylja Remmits, y.re
 Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol waarbij ieders belangen worden meegenomen? Kom stichting Algorithm Audit versterken als _Stagiair_ en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
 
 #### Over stichting Algorithm Audit
-Stichting Algorithm Audit is een Europees kennisplatform voor AI bias testing en AI standaarden. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam, de Raad van Europa.
+Stichting Algorithm Audit is een Europees kennisplatform voor AI bias testing en AI standaarden. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam en de Raad van Europa.
 
 Voor specifieke vraagstukken bouwen we open source tools waar iedereen iets aan heeft, bijvoorbeeld ten behoeve van synthetische data generatie of implementatie van de AI-verordening. Door casusonderzoek en onafhankelijke oordeelsvorming door diverse adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases.
 
@@ -173,7 +173,7 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 #### &#xA;Contact
 Stuur je sollicitatiebrief en CV uiterlijk voor 28-03-2025 naar info@algorithmaudit.eu.
 
-Bij vragen over de vacature of procedure, neem contact op met Ylja Remmits, y.remmits@algorithmaudit.eu.
+Bij vragen over de vacature of procedure, stuur een berichtje via het contactforumlier.
 {{< form1 >}}
 {{< accordion_item_close >}}
 {{< accordions_area_close >}}
