@@ -54,7 +54,7 @@ form1:
 Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol waarbij ieders belangen worden meegenomen? Kom stichting Algorithm Audit versterken als _Projectmedewerker_ en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
 
 #### Over stichting Algorithm Audit
-Stichting Algorithm Audit is een Europees kennisplatform voor AI bias testing en AI standaarden. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam, de Raad van Europa.
+Stichting Algorithm Audit is een Europees kennisplatform voor AI bias testing en AI standaarden. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam en de Raad van Europa.
 
 Voor specifieke vraagstukken bouwen we open source tools waar iedereen iets aan heeft, bijvoorbeeld ten behoeve van synthetische data generatie of implementatie van de AI-verordening. Door casusonderzoek en onafhankelijke oordeelsvorming door diverse adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases.
 
@@ -77,7 +77,7 @@ Als projectmedewerker bij Algorithm Audit:
 * Relevante universitaire studie afgerond (technisch, juridisch en/of bestuurskundig etc.)
 * Aantoonbare affiniteit met verantwoorde algoritmes en AI, vanuit een juridische, beleidsmatige en/of technische invalshoek;
 * 1-3 jaar werkervaring, bij voorkeur concrete ervaring met het ontwerpen of adviseren over verantwoorde algoritmes en AI;
-* Programmeervaardigheden zijn een pré;
+* Programmeervaardigheden en inzicht in statistiek zijn een pré;
 * Sterk organisatorisch vermogen;
 * In staat om in klein team in goede afstemming te werken en ook veel zelfstandig op te pakken;
 * Ondernemende en pionierende instelling passend bij een start-up;
@@ -108,7 +108,7 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 #### &#xA;Contact
 Stuur je sollicitatiebrief en CV uiterlijk voor 28-03-2025 naar info@algorithmaudit.eu.
 
-Bij vragen over de vacature of procedure, neem contact op met Ylja Remmits, y.remmits@algorithmaudit.eu.
+Bij vragen over de vacature of procedure, stuur een berichtje via het contactforumlier.
 {{< form1 >}}
 {{< accordion_item_close >}}
 {{< accordions_area_close >}}
@@ -121,7 +121,7 @@ Bij vragen over de vacature of procedure, neem contact op met Ylja Remmits, y.re
 Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol waarbij ieders belangen worden meegenomen? Kom stichting Algorithm Audit versterken als _Stagiair_ en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
 
 #### Over stichting Algorithm Audit
-Stichting Algorithm Audit is een Europees kennisplatform voor AI bias testing en AI standaarden. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam, de Raad van Europa.
+Stichting Algorithm Audit is een Europees kennisplatform voor AI bias testing en AI standaarden. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam en de Raad van Europa.
 
 Voor specifieke vraagstukken bouwen we open source tools waar iedereen iets aan heeft, bijvoorbeeld ten behoeve van synthetische data generatie of implementatie van de AI-verordening. Door casusonderzoek en onafhankelijke oordeelsvorming door diverse adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases.
 
@@ -173,7 +173,7 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 #### &#xA;Contact
 Stuur je sollicitatiebrief en CV uiterlijk voor 28-03-2025 naar info@algorithmaudit.eu.
 
-Bij vragen over de vacature of procedure, neem contact op met Ylja Remmits, y.remmits@algorithmaudit.eu.
+Bij vragen over de vacature of procedure, stuur een berichtje via het contactforumlier.
 {{< form1 >}}
 {{< accordion_item_close >}}
 {{< accordions_area_close >}}
