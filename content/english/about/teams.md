@@ -11,6 +11,14 @@ about_AA:
   icon: fas fa-balance-scale
   id: about
   items:
+    - subtitle: Knowledge platform
+      image: /images/about/knowledge-platform.svg
+      content: >
+        Bringing together experts and knowledge to foster the collective
+        learning process on the responsible use of algorithms, see for instance
+        our [AI policy observatory](/knowledge-platform/policy-observatory/),
+        [white papers](/knowledge-platform/knowledge-base/) and
+        [op-eds](/knowledge-platform/knowledge-base/).
     - subtitle: Normative advice commissions
       image: /images/about/commission.svg
       content: >
@@ -23,21 +31,13 @@ about_AA:
         Implementing and testing technical tools to detect and mitigate bias,
         e.g., [synthetic data generation](/technical-tools/sdg/) and [bias
         detection tool](/technical-tools/bdt/).
-    - subtitle: Knowledge platform
-      image: /images/about/knowledge-platform.svg
-      content: >
-        Bringing together experts and knowledge to foster the collective
-        learning process on the responsible use of algorithms, see for instance
-        our [AI policy observatory](/knowledge-platform/policy-observatory/),
-        [white papers](/knowledge-platform/knowledge-base/) and
-        [op-eds](/knowledge-platform/knowledge-base/).
     - subtitle: Project work
       image: /images/about/project.svg
       content: >
         Support for specific questions from public and private sector
         organisations regarding responsible use of AI
 team1:
-  title: Bias detection tool cohort
+  title: Bias detection tool team
   content: Part-time team working on unsupervised the bias detection tool
   icon: fas fa-search
   button_text: Bias detection tool
