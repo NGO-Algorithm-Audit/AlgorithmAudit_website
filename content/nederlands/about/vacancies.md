@@ -164,10 +164,7 @@ Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemen
 -	Een vergoeding: €750- per maand voor een fulltime stage, Bij minder beschikbaarheid komen we samen tot een redelijke afstemming.
 
 #### Praktische opmerkingen
--	Deze vacature staat online t/m 28-03-2025;
--	De eerste ronde sollicitatiegesprekken vinden plaats in de week van 28 april-02 mei in Den Haag;
--	Je ontvang schriftelijk reactie op je aanmelding voor 12-04-2025;
--	Startdatum medio mei-juni (in overleg).
+-	Startdatum en looptijd in overleg.
 
 #### Diversiteit en inclusie
 Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief meenemen. We hechten daarom sterk aan diversiteit en inclusie in al onze werkzaamheden, met name in het betrekken van verschillende belanghebbende groepen. Ook als organisatie willen we diversiteit weerspiegelen m.b.t. bijvoorbeeld gender, culturele en disciplinaire achtergrond.  
