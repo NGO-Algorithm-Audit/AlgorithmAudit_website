@@ -116,7 +116,7 @@ Bij vragen over de vacature of procedure, stuur een berichtje via het contactfor
 {{< accordions_area_close >}}
 
 {{< accordions_area_open id="stagiair" >}}
-{{< accordion_item_open title="Intership (Dutch only)" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="0.6-1.0 fte" tag2="Schaal 5" tag3="≥01-05-2025" >}}
+{{< accordion_item_open title="Internship (Dutch only)" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="0.6-1.0 fte" tag2="Schaal 5" tag3="≥01-05-2025" >}}
 {{< button button_text="Solliciteer" button_link="#form" >}}
 #### Stagiair (0.6-1.0 fte)
 
@@ -161,7 +161,7 @@ Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemen
 #### Wat bieden wij?
 -	Een kleine enthousiaste organisatie die een pionier is op het gebied van verantwoorde algoritmes en AI in de praktijk, en dit doet vanuit een onafhankelijke en maatschappelijke rol;
 -	Begeleiding bij je scriptie: wekelijkse check-in, inhoudelijk meedenken en meelezen bij je tussenproducten en scriptie;
--	Een vergoeding: €750- per maand voor een fulltime stage, Bij minder beschikbaarheid komen we samen tot een redelijke afstemming.
+-	Een vergoeding: €750- per maand voor een fulltime stage. Bij minder beschikbaarheid komen we samen tot een redelijke afstemming.
 
 #### Praktische opmerkingen
 -	Startdatum en looptijd in overleg.
