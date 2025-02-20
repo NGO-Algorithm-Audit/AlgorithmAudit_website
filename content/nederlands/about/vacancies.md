@@ -1,7 +1,7 @@
 ---
-title: Vacancies
+title: Vacatures
 subtitle: |
-  Find here an overview of current job openings at Algorithm Audit
+  Overizcht van vacatures bij Algorithm Audit
 image: /images/svg-illustrations/about.svg
 form1:
   title: Sollicitatieformulier
@@ -45,6 +45,8 @@ form1:
       required: true
       type: checkbox
 ---
+
+### Overzicht van vacatures
 
 {{< accordions_area_open id="projectmedewerker" >}}
 {{< accordion_item_open title="Projectmedewerker" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="1.0 fte" tag2="Schaal 7-8" tag3="≥01-05-2025" >}}
