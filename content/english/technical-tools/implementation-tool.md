@@ -13,10 +13,22 @@ subtitle: >
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
 quick_navigation:
-  title: Quick nav
+  title: Content overview
   links:
-    - title: Outcomes questionnaires
+    - title: Introduction
+      url: '#intro'
+    - title: Tool
+      url: '#tool'
+    - title: Outcomes tool
       url: '#outcome'
+    - title: Source code
+      url: '#source-code'
+    - title: Documentation
+      url: '#documentation-definition'
+    - title: Explainers
+      url: '#explainers'
+    - title: Flowchart
+      url: '#flowchart'    
 ---
 
 {{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application a high-impact algorithm or AI system?" id="intro" >}}
@@ -36,7 +48,7 @@ All potential outcomes of the first questionnaire are shown in the [figure](/tec
 
 {{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="60vh" height_mobile="100vh" >}}
 
-{{< container_open icon="fas fa-layer-group" title="Outcomes questionnaires" id="outcome" >}}
+{{< container_open icon="fas fa-layer-group" title="Outcomes tool" id="outcome" >}}
 
 The outcomes of the first questionnaire are displayed in the below figure. The following categories are distinguished:
 
@@ -50,7 +62,7 @@ The outcomes of the first questionnaire are displayed in the below figure. The f
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-terminal" title="Development and source code" id="amsterdam" >}}
+{{< container_open icon="fas fa-terminal" title="Development and source code" id="source-code" >}}
 
 The questions in the AI Act Implementation Tool are developed in collaboration with the municipaility of Amsterdam. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be re-used under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>.
 

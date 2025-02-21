@@ -12,6 +12,23 @@ subtitle: >
   [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/case_repository.svg
+quick_navigation:
+  title: Inhoudsopgave
+  links:
+    - title: Introductie
+      url: '#intro'
+    - title: Tool
+      url: '#tool'
+    - title: Uitkomsten tool
+      url: '#outcome'
+    - title: Broncode
+      url: '#source-code'
+    - title: Documentatie
+      url: '#documentation-definition'
+    - title: Voorbeelden
+      url: '#explainers'
+    - title: Flowchart
+      url: '#flowchart'  
 ---
 
 {{< container_open icon="fa-solid fa-laptop-code" title="Is mijn datagedreven toepassing een impactvol algoritme of AI-systeem?" id="intro" >}}
@@ -31,7 +48,7 @@ Alle mogelijke uitkomsten van de beslisboom zijn weergeven in het [figuur](/nl/t
 
 {{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="60vh" >}}
 
-{{< container_open icon="fas fa-terminal" title="Ontwikkeling en broncode" id="amsterdam" >}}
+{{< container_open icon="fas fa-terminal" title="Ontwikkeling en broncode" id="source-code" >}}
 
 De vragen in de AI-verordening implemenatie tool zijn ontwikkeld in samenwerking met de gemeente Amsterdam. De broncode van de tool is beschikbaar in <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> en kan worden (her)gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>
 
@@ -59,7 +76,7 @@ Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-chalkboard-teacher" title="Explainers" id="explainers" >}}
+{{< container_open icon="fas fa-chalkboard-teacher" title="Voorbeelden" id="explainers" >}}
 
 Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit van de AI-systeem definitie toe.
 
