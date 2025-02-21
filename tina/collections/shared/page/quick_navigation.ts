@@ -13,13 +13,13 @@ const quick_navigation: TinaField = {
       type: "string",
       name: "title",
       label: "Title",
-      required: true,
+      required: false,
     },
     {
       type: "object",
       name: "links",
       label: "Links",
-      required: true,
+      required: false,
       list: true,
       ui: {
         itemProps: (item) => {
@@ -43,7 +43,7 @@ const quick_navigation: TinaField = {
           type: "object",
           name: "links",
           label: "Links",
-          required: true,
+          required: false,
           list: true,
           ui: {
             itemProps: (item) => {
