@@ -16,6 +16,14 @@ about_AA:
   icon: fas fa-balance-scale
   id: about
   items:
+    - subtitle: Kennisplatform
+      image: /images/about/knowledge-platform.svg
+      content: >
+        Het samenbrengen van kennis en experts om het collectieve leerproces
+        over de verantwoorde inzet van algoritmes aan te jagen, zie ons [AI
+        beleidsobservatorium](/nl/knowledge-platform/policy-observatory/),
+        [white papers](/nl/knowledge-platform/knowledge-base/) en
+        [opinie-artikelen](/nl/knowledge-platform/knowledge-base/).
     - subtitle: Normatieve adviescommissies
       image: /images/about/commission.svg
       content: >
@@ -31,21 +39,13 @@ about_AA:
         [synthetische data generatie](/nl/technical-tools/sdg/) en [bias
         detectie tool](/nl/technical-tools/bdt/) om hoger-dimensionale proxy
         discriminatie mee te detecteren.
-    - subtitle: Kennisplatform
-      image: /images/about/knowledge-platform.svg
-      content: >
-        Het samenbrengen van kennis en experts om het collectieve leerproces
-        over de verantwoorde inzet van algoritmes aan te jagen, zie ons [AI
-        beleidsobservatorium](/nl/knowledge-platform/policy-observatory/),
-        [white papers](/nl/knowledge-platform/knowledge-base/) en
-        [opinie-artikelen](/nl/knowledge-platform/knowledge-base/).
     - subtitle: Projectwerk
       image: /images/about/project.svg
       content: >
         Ondersteuning bij specifieke vragen vanuit de publieke en private sector
-        over de verantwoorde inzet van algoritmes
+        over de verantwoorde inzet van algoritmes.
 team1:
-  title: Bias detectie tool cohort
+  title: Bias detectie tool team
   content: Team dat part-time werkt aan de unsupervised bias detectie tool
   icon: fas fa-search
   button_text: Bias detectie tool
