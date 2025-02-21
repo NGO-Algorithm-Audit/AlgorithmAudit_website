@@ -1173,3 +1173,9 @@ $accent: #FF4081;
     z-index: 1000;
   }
 }
+
+@media (min-width: 1500px) {
+  .container-xl {
+    max-width: 1430px;
+  }
+}

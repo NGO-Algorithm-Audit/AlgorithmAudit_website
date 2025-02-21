@@ -28,10 +28,10 @@
 {{ else }}
 {{ partial "page-header.html" . }}
 <section class="section">
-  <div class="container">
+  <div class="container container-xl">
     <div class="row">
       {{ if .Params.quick_navigation.links }}
-      <div class="col-lg-4 col-12 mx-auto">
+      <div class="col-lg-3 col-12 mx-auto">
         <div class="content quicklinks-mobile-sticky-top">
           <div class="container-fluid mt-5 p-0">
             <h3>{{.Params.quick_navigation.title}}</h3>
@@ -59,7 +59,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-8 col-12 mx-auto">
+      <div class="col-lg-9 col-12 mx-auto">
         <div class="content">{{ .Content }}</div>
       </div>
       {{ else }}
