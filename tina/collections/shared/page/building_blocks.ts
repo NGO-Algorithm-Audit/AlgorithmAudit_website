@@ -30,6 +30,7 @@ import team2 from "../templates/team2";
 import tooltip from "../templates/tooltip";
 import webapp from "../templates/webapp";
 import image from "./image";
+import quick_navigation from "./quick_navigation";
 import subtitle from "./subtitle";
 import title from "./title";
 
@@ -37,6 +38,7 @@ const building_blocks: TinaField[] = [
   title,
   subtitle,
   image,
+  quick_navigation,
   {
     type: "rich-text",
     name: "body",

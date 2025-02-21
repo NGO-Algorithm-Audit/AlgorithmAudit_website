@@ -1,16 +1,18 @@
 {{ define "main" }}
 
 <!-- checking blog -->
-{{ if or (or (eq .Section "post") (eq .Section "knowledge-base")) (or (eq .Section "categories") (eq .Section "tags") )}}
+{{ if or (or (eq .Section "post") (eq .Section "knowledge-base")) (or (eq .Section "categories") (eq .Section "tags")
+)}}
 
 <section class="section">
   <div class="container" style="padding-top: 150px;">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="img-fluid w-100 rounded mb-4" style='height: 276px; width: 420px; object-fit: contain'>
+        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="img-fluid w-100 rounded mb-4"
+          style='height: 276px; width: 420px; object-fit: contain'>
         <h2 class="mb-4" style="color: #005aa7;">{{ .Title }}</h2>
         <div class="content">{{.Content}}</div>
-        
+
         <!-- comments -->
         {{ if site.DisqusShortname }}
         <div class="mt-5">
@@ -28,9 +30,43 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 mx-auto">
+      {{ if .Params.quick_navigation }}
+      <div class="col-lg-4 col-12 mx-auto sticky-top">
+        <div class="content">
+          <div class="container-fluid mt-5 p-0">
+            <h3>{{.Params.quick_navigation.title}}</h3>
+            <ul>
+              {{ range .Params.quick_navigation.links }}
+              <li>
+                <a href='{{.url}}'>
+                  {{.title}}
+                </a>
+                {{ if .links }}
+                <ul>
+                  {{ range .links }}
+                  <li>
+                    <a href='{{.url}}'>
+                      {{.title}}
+                    </a>
+                  </li>
+                  {{ end }}
+                  
+                </ul>
+                {{ end }}
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-12 mx-auto">
         <div class="content">{{ .Content }}</div>
       </div>
+      {{ else }}
+      <div class="col-12 mx-auto">
+        <div class="content">{{ .Content }}</div>
+      </div>
+      {{ end }}
     </div>
   </div>
 </section>
