@@ -96,6 +96,6 @@ Through examples the slides decks explain the intricacies of the AI system defin
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart Implementation Tool" id="flowchart" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250205_Flowchart_AIAIT_EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250224 Flowchart identification AIAIT EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
