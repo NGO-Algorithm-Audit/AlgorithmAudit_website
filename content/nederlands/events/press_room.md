@@ -4,9 +4,18 @@ subtitle: >
   Persberichten van Stichting Algorithm Audit. Kom in contact met de organisatie
   door [dit](/nl/about/contact/) contactformulier in te vullen.
 image: /images/svg-illustrations/about.svg
+quick_navigation:
+  title: Overzicht
+  links:
+    - title: DUO2 Addendum Vooringenomenheid voorkomen
+      url: '#DUO_CBS'
+    - title: DUO1 Vooringenomenheid voorkomen
+      url: '#DUO'
+    - title: Onderzoek Rotterdam
+      url: '#Rotterdam'
 ---
 
-{{< accordions_area_open id="DUO" >}}
+{{< accordions_area_open id="DUO_CBS" >}}
 
 {{< accordion_item_open title="Controleproces DUO vooringenomen voor studenten met een niet-Europese migratieachtergrond" id="DUO_CBS" background_color="#ffffff" date="22-05-2024" tag1="DUO" tag2="CBS" tag3="bias analyse" image="/images/partners/DUO.png" >}}
 
