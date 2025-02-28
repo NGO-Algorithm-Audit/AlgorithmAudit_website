@@ -4,28 +4,13 @@ subtitle: >
   Over the years, we have developed our own deliberative audit methodology. We
   elaborate below on our 4-step working method.
 image: /images/svg-illustrations/main_illustration.svg
-team:
-  title: Algoprudence team
-  icon: fas fa-user-friends
-  button_text: Other teams
-  button_link: /about/teams/
-  team_members:
-    - image: /images/people/Unknown.jpeg
-      name: Vardâyani Djwalapersad
-      bio: |
-        Project manager Algoprudence
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Director-board member
-    - image: /images/people/AVoogt.jpeg
-      name: Ariën Voogt
-      bio: |
-        Board member
-    - image: /images/people/SMohammad.jpeg
-      name: Samaa Mohammad-Ulenberg
-      bio: |
-        Board member
+quick_navigation:
+  title: Content overview
+  links:
+    - title: Audit methodology
+      url: '#audit-methodology'
+    - title: Guidelines
+      url: '#guidelines'
 ---
 
 {{< container_open title="Our 4-step audit methodology" icon="fas fa-eye" id="methodology" >}}
@@ -57,5 +42,3 @@ Over the years, we have developed our own deliberative audit methodology. Algor
 {{< embed_pdf url="/pdf-files/algoprudence/Guidelines normative advice commission EN.pdf" >}}
 
 {{< container_close >}}
-
-{{< team >}}

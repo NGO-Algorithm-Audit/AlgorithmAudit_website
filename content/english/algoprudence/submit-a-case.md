@@ -118,28 +118,15 @@ reports_preview:
         Qualitative and quantitative audit of algorithmic-driven college
         allowances control process. Assessment of risk distributions through
         Z-tests and bias test in the control process
-team:
-  title: Team Algoprudence
-  icon: fas fa-user-friends
-  button_text: Other teams
-  button_link: /about/teams/
-  team_members:
-    - image: /images/people/VDjwalapersad.jpeg
-      name: Vardâyani Djwalapersad
-      bio: |
-        Project manager Algoprudence
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Director-board member
-    - image: /images/people/AVoogt.jpeg
-      name: Ariën Voogt
-      bio: |
-        Board member
-    - image: /images/people/SMohammad.jpeg
-      name: Samaa Mohammad-Ulenberg
-      bio: |
-        Board member
+quick_navigation:
+  title: Content overview
+  links:
+    - title: Submit a case
+      url: '#case-for-review'
+    - title: Next steps
+      url: '#next-steps'
+    - title: Recent cases
+      url: '#case-repository'
 ---
 
 {{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for normative review" tab2_id="case-repository" tab2_title="Add a case to algoprudence repository" >}}
@@ -168,6 +155,4 @@ Your submission is reviewed by Team Algoprudence. The team assesses whether de c
 
 {{< container_close >}}
 
-{{< team >}}
-
-{{< reports_preview >}}
+{{< reports_preview id="case-repository">}}

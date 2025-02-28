@@ -1,9 +1,10 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
-{{ with .Page.Params.Reports_preview}}
+
 <!-- Recent audits -->
 <div class="container-fluid mt-5 p-0">
-  <div class="shadow mobile-desktop-container-layout rounded-lg" id="{{ .ID }}">
+  <div id={{.Get "id" }} class="shadow mobile-desktop-container-layout rounded-lg">
+    {{ with .Page.Params.Reports_preview}}
     <div class="row">
       <div class="col-12">
 
@@ -68,7 +69,7 @@
 
       </div>
     </div>
+    {{ end }}
   </div>
 </div>
 <!-- Recent audits -->
-{{ end }}
