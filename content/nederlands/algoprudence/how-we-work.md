@@ -4,29 +4,13 @@ subtitle: >
   Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie
   ontwikkeld. We lichten hieronder onze 4-staps werkwijze toe.
 image: /images/svg-illustrations/main_illustration.svg
-team:
-  title: Team algoprudentie
-  icon: fas fa-user-friends
-  button_text: Andere teams
-  id: team
-  button_link: /nl/about/teams/
-  team_members:
-    - image: /images/people/Unknown.jpeg
-      name: Vardâyani Djwalapersad
-      bio: |
-        Projectmanager algoprudentie
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Directeur-bestuurder
-    - image: /images/people/AVoogt.jpeg
-      name: Ariën Voogt
-      bio: |
-        Bestuurder
-    - image: /images/people/SMohammad.jpeg
-      name: Samaa Mohammad-Ulenberg
-      bio: |
-        Bestuurder
+quick_navigation:
+  title: Inhoudsopgave
+  links:
+    - title: Audit methodologie
+      url: '#audit-methodologie'
+    - title: Richtlijnen
+      url: '#richtlijnen'
 ---
 
 {{< container_open title="Onze 4-staps audit methodologie" icon="fas fa-eye" id="audit-methodologie" >}}
@@ -58,5 +42,3 @@ Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie ontwikke
 {{< embed_pdf url="/pdf-files/algoprudence/Guidelines normative advice commission EN.pdf" >}}
 
 {{< container_close >}}
-
-{{< team >}}

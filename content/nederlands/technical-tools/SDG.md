@@ -9,6 +9,41 @@ subtitle: >
   Algorithm Audit bouwen we praktische publieke kennis op hoe SDG ingezet kan
   worden voor AI bias testing.
 image: /images/svg-illustrations/knowledge_base.svg
+team:
+  title: Synthetische data generatie team
+  icon: fas fa-user-friends
+  button_text: Other teams
+  button_link: /about/teams/
+  team_members:
+    - image: /images/people/EMenvouta.jpeg
+      name: Emmanuel Menvouta PhD
+      bio: |
+        Freelance machine learning engineer, gespecialiseerd in SDG methodologie
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
+      bio: |
+        Directeur-bestuurder Algorithm Audit
+    - image: /images/people/MLisdonk.png
+      name: Maikel van de Lisdonk
+      bio: |
+        Freelance software developer
+    - image: /images/people/RLangius.jpg
+      name: Ruben Langius
+      bio: |
+        Freelance software developer
+quick_navigation:
+  title: Content overview
+  links:
+    - title: Introductie
+      url: '#info'
+    - title: Tool
+      url: '#web-app'
+    - title: Bias testing toepassingen
+      url: '#bias-testing'
+    - title: Voorbeelden
+      url: '#past-usage'
+    - title: Team
+      url: '#team'
 ---
 
 {{< container_open title="Synthetische data generatie – Wat is het?" icon="fas fa-database" id="info" >}}
@@ -42,3 +77,5 @@ Onderzoeksjournalisten van [Lighthouse Reports](https://www.lighthousereports.co
 Artikel 10 van de AI Verordening bevat specifieke bepalingen over het gebruik van synthetische data voor bias detectie en -mitigatie doeleinden. Er geldt bijvoorbeeld een inspanningsverplichting voor aanbieders van AI-systemen om biases in data te rectificeren met behulp van synthetische of geanonimiseerde data.
 
 {{< container_close >}}
+
+{{< team id="team" >}}

@@ -11,9 +11,28 @@ subtitle: >
   Do you have a question or do you want to share feedback? [Contact
   us](/about/contact/).
 image: /images/svg-illustrations/faq.svg
+quick_navigation:
+  title: Content overview
+  links:
+    - title: What does Algorithm Audit audit?
+      url: '#reviews'
+    - title: What organizations may present a case?
+      url: '#eligible'
+    - title: Why do you work not-for-profit?
+      url: '#not-for-profit'
+    - title: Is your work open source?
+      url: '#open-source'
+    - title: What is the legitimacy of your organization?
+      url: '#legitimacy'
+    - title: How are you funded?
+      url: '#funding'
+    - title: How can I share ethical issues or knowledge?
+      url: '#share'
+    - title: How do you prevent ethics washing?
+      url: '#ethics-washing'
 ---
 
-{{< container_open icon="fas fa-bullseye" title="What exactly do you audit?" id="reviews" >}}
+{{< container_open icon="fas fa-bullseye" title="What does Algorithm Audit audit?" id="reviews" >}}
 
 Auditing is a multi-faceted concept. In the financial industry, an audit refers to an independent examination of book keeping. According to a pre-defined criteria a financial audit attempts to ensure that books of accounts are properly maintained. For AI systems, auditing is a relatively new concept and auditing criteria have not taken full shape. Due to it's context dependency, gaining case-based experience in dealing with concrete normative dilemmas in semi-automated decision-making processes is key. Since these dilemmas involve ethical considerations and trade-offs, they cannot be solved by technical audit standards only, but must involve collective deliberation by all stakeholders. Algorithm Audit's audits are therefore inclusive and deliberative in nature, which resonates with the meaning of the Latin word *audire*, from which "audit" is derived, meaning "to hear".
 
@@ -55,7 +74,7 @@ We are always happy to receive new cases for review. And we are always open to d
 
 {{< container_close >}}
 
-{{< container_open title="How do you prevent ethics washing?" id="ethics-washing" icon="fas fa-hands-wash" >}}
+{{< container_open title="How do you prevent ethics washing?" icon="fas fa-hands-wash" id="ethics-washing" >}}
 
 Ethics washing refers to the practice where a company or organization pays lip service to ethics or ethical review, to make it seem outwardly as though it operates in a responsible way. However, the company or organization actually does not wish to implement responsible practices in a meaningful way. We do not participate in ethical reviews as branding. As an organization, we do not confer ethics certificates or labels to our partners. We clearly communicate that our advice commissions only give normative advice and may not be used as stand-in for internal control or external accountability. This is established in explicit conditions under which we work and that we discuss with our partners beforehand. A concrete measure we will regularly adopt is making the partner anonymous in our publication of the case and reports.
 

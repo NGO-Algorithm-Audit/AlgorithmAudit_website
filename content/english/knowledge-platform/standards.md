@@ -22,14 +22,25 @@ team:
       name: Eike Petersen
       bio: |
         Senior Scientist Medical AI, Fraunhofer MEVIS, Hannover
-    - image: /images/people/IMastenbroek.jpg
-      name: Irma Mastenbroek
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
       bio: |
-        Independent AI ethicist and freelance mathematician, Berlin
-    - image: /images/people/SDas.jpg
-      name: Sneha Das
+        Director and board member, Algorithm Audit
+    - image: /images/people/YRemmits.jpg
+      name: Ylja Remmits
       bio: |
-        Assistant Professor Technical University of Denmark, Copenhagen
+        Head of Projects, Algorithm Audit
+quick_navigation:
+  title: Content overview
+  links:
+    - title: Introduction
+      url: '#standardization-request'
+    - title: AI Act standards
+      url: '#standards'
+    - title: Contributions
+      url: '#contributions'
+    - title: Team
+      url: '#team'
 ---
 
 {{< container_open icon="fas fa-check" title="AI Act standardization request" id="standardization-request" >}}
@@ -44,11 +55,9 @@ During last JTC21's plenary meeting in Dublin 12-14 Feb in Dublin, Algorithm Aud
 
 {{< image id="CEN-logo" width_desktop="3" width_mobile="6" image1="/images/partners/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partners/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" width_desktop_pdf="12" width_mobile_pdf="12" >}}
-
 {{< container_close >}}
 
-{{< container_open title="Standards" id="AI-standards" icon="fas fa-ruler" >}}
+{{< container_open title="AI Act standards" id="standards" icon="fas fa-ruler" >}}
 
 The standardization request of the European Commission, that will provide a presumption of conformity with the AI Act, relates to ten aspects:
 
@@ -69,4 +78,18 @@ In our audits, Algorithm Audit incorporates all of the above aspects, except 8. 
 
 {{< container_close >}}
 
-{{< team >}}
+{{< container_open icon="fas fa-file" title="Contributions" id="contributions" >}}
+
+Selection of contributions to JTC21 of CEN-CENELEC.
+
+#### Statistical hypothesis testing as risk management measure
+
+{{< embed_pdf url="/pdf-files/knowledge-base/standards/20240726_AlgorithmAudit_statistical_hypothesis_testing.pdf" width_desktop_pdf="12" width_mobile_pdf="12">}}
+
+#### Fundamental Rights Impact Assessment (FRIA) and stakeholder panels
+
+{{< embed_pdf url="/pdf-files/knowledge-base/standards/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" width_desktop_pdf="12" width_mobile_pdf="12">}}
+
+{{< container_close >}}
+
+{{< team id="team">}}

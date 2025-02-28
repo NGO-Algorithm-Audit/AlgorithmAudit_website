@@ -31,10 +31,9 @@ reports_preview:
         https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf
       content: "Voorbeeld van automatisch gegenereerde biasgegevens over \_[BERT-gebaseerde desinformatie detectie-algoritme (FPR) case study](https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf)\n"
 team:
-  title: Bias Detectie Tool Team
+  title: Unsupervised bias detectie team
   icon: fas fa-user-friends
   button_text: Andere teams
-  id: team
   button_link: /nl/about/teams/
   team_members:
     - image: /images/people/FHolstege.jpeg
@@ -54,9 +53,22 @@ team:
       bio: |
         PhD-kandidaat, Swiss AI Lab IDSIA
     - image: /images/people/MJorgensen.jpeg
-      name: Mackenzie Jorgensen
+      name: Mackenzie Jorgensen PhD
       bio: |
-        PhD-kandidaat Computer Science, King’s College London
+        Onderzoeker Alan Turing Institute, Londen
+quick_navigation:
+  title: Inhoudsopgave
+  links:
+    - title: Introductie
+      url: '#info'
+    - title: Tool
+      url: '#web-app'
+    - title: HBAC algoritme
+      url: '#HBAC'
+    - title: FAQ
+      url: '#FAQ'
+    - title: Team
+      url: '#team'
 ---
 
 {{< container_open title="Bias detectie tool – Wat is het?" icon="fas fa-search" id="info" >}}
@@ -112,7 +124,7 @@ Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maxima
 
 {{< container_close >}}
 
-{{< container_open title="Veelgestelde vragen" icon="fas fa-question-circle" >}}
+{{< container_open title="Veelgestelde vragen" icon="fas fa-question-circle" id="FAQ">}}
 
 ##### Waarom deze bias detectie tool?
 
@@ -154,4 +166,4 @@ Kwantitatieve methoden, zoals unsupervised bias detectie, zijn behulpzame method
 
 {{< container_close >}}
 
-{{< team >}}
+{{< team id="team">}}

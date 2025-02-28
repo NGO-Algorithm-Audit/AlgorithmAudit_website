@@ -5,8 +5,8 @@ image: /images/svg-illustrations/events.svg
 team2:
   title: 'Bestuur '
   content: Bestuur van Stichting Algorithm Audit
-  icon: fas fa-users
   id: board
+  icon: fas fa-users
   team_members:
     - image: /images/people/AVoogt.jpeg
       name: Ariën Voogt
@@ -20,11 +20,20 @@ team2:
       name: Jurriaan Parie
       bio: |
         Directeur-bestuurder
+quick_navigation:
+  title: Overzicht
+  links:
+    - title: Bestuur
+      url: '#board'
+    - title: Raad van advies
+      url: '#advisory-board'
+    - title: Raad van toezicht
+      url: '#supervisory-board'
 ---
 
-{{< team2 >}}
+{{< team2 id="board">}}
 
-{{< container_open title="Raad van Advies" id="rva" icon="fas fa-user-plus" >}}
+{{< container_open title="Raad van advies" id="advisory-board" icon="fas fa-user-plus" >}}
 
 * [Aileen Nielsen](https://hls.harvard.edu/faculty/aileen-nielsen/), Visiting Assistant Professor, Harvard Law School, auteur van het boek [Practical Fairness](https://www.oreilly.com/library/view/practical-fairness/9781492075721/)		&#x9;
 * [Anne Meuwese](https://www.universiteitleiden.nl/medewerkers/anne-meuwese#tab-1), Hoogleraar Staats- en Bestuursrecht, Universiteit Leiden
@@ -35,7 +44,7 @@ team2:
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-eye" title="Raad van Toezicht" id="rvt" >}}
+{{< container_open icon="fas fa-eye" title="Raad van toezicht" id="supervisory-board" >}}
 
 In oprichting
 

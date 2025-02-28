@@ -44,9 +44,14 @@ form1:
           id: agree
       required: true
       type: checkbox
+quick_navigation:
+  title: Overzicht
+  links:
+    - title: Projectmedewerker
+      url: '#projectmedewerker'
+    - title: Stagiair
+      url: '#stagiair'
 ---
-
-### Overzicht van vacatures
 
 {{< accordions_area_open id="projectmedewerker" >}}
 {{< accordion_item_open title="Projectmedewerker" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="1.0 fte" tag2="Schaal 7-8" tag3="≥01-05-2025" >}}

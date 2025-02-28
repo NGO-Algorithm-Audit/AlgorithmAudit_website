@@ -1,9 +1,9 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
-{{ with .Page.Params.about_AA }}
-
 <div class="container-fluid mt-5 p-0">
-  <div class="shadow mobile-desktop-container-layout rounded-lg" id="{{ .ID }}">
+  <div class="shadow mobile-desktop-container-layout rounded-lg" id={{.Get "id" }}>
+
+    {{ with .Page.Params.about_AA }}
 
     {{ if .icon }}
     <!-- Title and icon -->
@@ -41,8 +41,7 @@
     {{ end }}
     <!-- /item -->
 
+    {{ end }}
+
   </div>
-
 </div>
-
-{{ end }}

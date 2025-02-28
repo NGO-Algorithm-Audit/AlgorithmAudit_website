@@ -36,12 +36,34 @@ about_AA:
       content: >
         Support for specific questions from public and private sector
         organisations regarding responsible use of AI
+team:
+  title: Synthetic data generation team
+  content: Part-time team working on synthetic data generation
+  icon: fas fa-search
+  button_text: Use tool
+  button_link: /technical-tools/sdg/
+  team_members:
+    - image: /images/people/EMenvouta.jpeg
+      name: Emmanuel Menvouta PhD
+      bio: |
+        Freelance machine learning engineer, specialized in SDG methodology
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
+      bio: |
+        Director and board member at Algorithm Audit
+    - image: /images/people/MLisdonk.png
+      name: Maikel van de Lisdonk
+      bio: |
+        Freelance software developer
+    - image: /images/people/RLangius.jpg
+      name: Ruben Langius
+      bio: |
+        Freelance software developer
 team1:
   title: Bias detection tool team
   content: Part-time team working on unsupervised the bias detection tool
   icon: fas fa-search
-  button_text: Bias detection tool
-  id: bdt
+  button_text: Use the tool
   button_link: /technical-tools/bdt/
   team_members:
     - image: /images/people/KPadh.jpeg
@@ -78,10 +100,42 @@ team2:
       name: Ylja Remmits
       bio: |
         Head of Projects 
+team3:
+  title: AI Act standards team
+  content: Part-time team working on AI Act standards
+  icon: fas fa-search
+  button_text: More about standards
+  button_link: /knowledge-platform/standards/
+  team_members:
+    - image: /images/people/EPetersen.jpeg
+      name: Kirtan Padh
+      bio: |
+        Senior Scientist Medical AI, Fraunhofer MEVIS, Hannover
+    - image: /images/people/ALeoneDeCastris.jpg
+      name: Mackenzie Jorgensen
+      bio: |
+        AI Policy Researcher at The Alan Turing Institute, London
+quick_navigation:
+  title: Overview
+  links:
+    - title: Activities
+      url: '#about'
+    - title: Executive team
+      url: '#executive-team'
+    - title: Team unsupervised bias detectie
+      url: '#team-BDT'
+    - title: Team synthetic data generation
+      url: '#team-SDG'
+    - title: Team AI Act standards
+      url: '#team-standards'
 ---
 
-{{< about_AA >}}
+{{< about_AA id="about" >}}
 
-{{< team2 >}}
+{{< team2 id="executive-team">}}
 
-{{< team1 >}}
+{{< team1 id="team-BDT" >}}
+
+{{< team id="team-SDG" >}}
+
+{{< team3 id="team-standards" >}}

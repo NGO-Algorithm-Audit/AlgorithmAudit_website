@@ -111,29 +111,15 @@ reports_preview:
         Kwantitatief en kwalitatieve audit naar bias in algoritme-gedreven
         besluitvormingsproces, o.a., testen van risicodistributie middels
         Z-toetsen en analyse van organisatorische waarborgen
-team:
-  title: Team Algoprudentie
-  icon: fas fa-user-friends
-  button_text: Andere teams
-  id: team
-  button_link: /nl/about/teams/
-  team_members:
-    - image: /images/people/VDjwalapersad.jpeg
-      name: Vardâyani Djwalapersad
-      bio: |
-        Projectmanager algoprudentie
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Directeur-bestuurder
-    - image: /images/people/AVoogt.jpeg
-      name: Ariën Voogt
-      bio: |
-        Bestuurder
-    - image: /images/people/SMohammad.jpeg
-      name: Samaa Mohammad-Ulenberg
-      bio: |
-        Bestuurder
+quick_navigation:
+  title: Inhoudsopgave
+  links:
+    - title: Dien een case in
+      url: '#case-for-review'
+    - title: Vervolgstappen
+      url: '#next-steps'
+    - title: Recente cases
+      url: '#case-repository'
 ---
 
 {{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Dien een case in voor beoordeling" tab2_id="case-repository" tab2_title="Voeg oordeel toe aan algoprudentie uitspraken" >}}
@@ -164,4 +150,4 @@ Inzending worden behandeld door Team Algoprudentie. Het team beoordeelt of de ca
 
 {{< team >}}
 
-{{< reports_preview >}}
+{{< reports_preview id="case-repository">}}

@@ -44,9 +44,14 @@ form1:
           id: agree
       required: true
       type: checkbox
+quick_navigation:
+  title: Overview
+  links:
+    - title: Project employee
+      url: '#projectmedewerker'
+    - title: Internship
+      url: '#stagiair'
 ---
-
-### Overview of job openings
 
 {{< accordions_area_open id="projectmedewerker" >}}
 {{< accordion_item_open title="Project employee (Dutch only)" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="1.0 fte" tag2="Schaal 7-8" tag3="≥01-05-2025" >}}
