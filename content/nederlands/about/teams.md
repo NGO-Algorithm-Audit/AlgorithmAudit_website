@@ -44,12 +44,34 @@ about_AA:
       content: >
         Ondersteuning bij specifieke vragen vanuit de publieke en private sector
         over de verantwoorde inzet van algoritmes.
+team:
+  title: Synthetic data generatie team
+  content: Team dat part-time werkt aan synthetische data generatie tool
+  icon: fas fa-search
+  button_text: Gebruik de tool
+  button_link: /technical-tools/bdt/
+  team_members:
+    - image: /images/people/EMenvouta.jpeg
+      name: Emmanuel Menvouta PhD
+      bio: |
+        Freelance machine learning engineer, gespecialiseerd in SDG methodologie
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
+      bio: |
+        Directeur-bestuurder Algorithm Audit
+    - image: /images/people/MLisdonk.png
+      name: Maikel van de Lisdonk
+      bio: |
+        Freelance software developer
+    - image: /images/people/RLangius.jpg
+      name: Ruben Langius
+      bio: |
+        Freelance software developer
 team1:
   title: Bias detectie tool team
   content: Team dat part-time werkt aan de unsupervised bias detectie tool
   icon: fas fa-search
-  button_text: Bias detectie tool
-  id: bdt
+  button_text: Gebruik de tool
   button_link: /nl/technical-tools/bdt/
   team_members:
     - image: /images/people/KPadh.jpeg
@@ -76,7 +98,7 @@ team2:
   title: Coördinerend team
   content: Team dat full-time de verschillende werkzaamheden van Algorithm Audit coördineert.
   icon: fas fa-users
-  id: coordinerend-team
+  id: executive-team
   team_members:
     - image: /images/people/JParie.jpg
       name: Jurriaan Parie
@@ -86,10 +108,42 @@ team2:
       name: Ylja Remmits
       bio: |
         Head of Projects
+team3:
+  title: AI-verordening standaarden team
+  content: Team dat part-time werk aan AI-verordening standaarden
+  icon: fas fa-search
+  button_text: Meer over standaarden
+  button_link: /nl/knowledge-platform/standards/
+  team_members:
+    - image: /images/people/EPetersen.jpeg
+      name: Eike Petersen
+      bio: |
+        Senior wetenschapper medische AI, Fraunhofer MEVIS, Hannover
+    - image: /images/people/ALeoneDeCastris.jpg
+      name: Arcangelo Leone de Castris
+      bio: |
+        Onderzoeker naar AI beleid The Alan Turing Institute, Londen
+quick_navigation:
+  title: Overzicht
+  links:
+    - title: Activiteiten
+      url: '#about'
+    - title: Uitvoerend team
+      url: '#executive-team'
+    - title: Team unsupervised bias detectie
+      url: '#team-BDT'
+    - title: Team synthetische data generatie
+      url: '#team-SDG'
+    - title: Team AI-verordening standarden
+      url: '#team-standards'
 ---
 
-{{< about_AA >}}
+{{< about_AA id="about" >}}
 
-{{< team2 >}}
+{{< team2 id="executive-team">}}
 
-{{< team1 >}}
+{{< team1 id="team-BDT" >}}
+
+{{< team id="team-SDG" >}}
+
+{{< team3 id="team-standards" >}}

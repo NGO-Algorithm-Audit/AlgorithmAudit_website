@@ -27,6 +27,7 @@ import tab_header from "../templates/tab_header";
 import team from "../templates/team";
 import team1 from "../templates/team1";
 import team2 from "../templates/team2";
+import team3 from "../templates/team3";
 import tooltip from "../templates/tooltip";
 import webapp from "../templates/webapp";
 import image from "./image";
@@ -70,6 +71,7 @@ const building_blocks: TinaField[] = [
       team,
       team1,
       team2,
+      team3,
       tooltip,
       webapp,
     ],
@@ -1108,6 +1110,73 @@ const building_blocks: TinaField[] = [
       },
     ],
   },
+  {
+    type: "object",
+    name: "team3",
+    label: "Team #3",
+    fields: [
+      {
+        name: "title",
+        label: "Title",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "content",
+        label: "Content",
+        type: "string",
+        description: "",
+        required: false,
+      },
+      {
+        type: "string",
+        name: "icon",
+        label: "Icon",
+        description:
+          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+        required: false,
+      },
+      {
+        type: "string",
+        name: "id",
+        label: "ID",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: false,
+      },
+      {
+        type: "object",
+        name: "team_members",
+        label: "Team members",
+        list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.name };
+          },
+        },
+        fields: [
+          {
+            type: "image",
+            name: "image",
+            label: "image",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "name",
+            label: "Name",
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "bio",
+            label: "Bio",
+            isBody: false,
+          },
+        ],
+      },
+    ],
+  }
 ];
 
 export default building_blocks;

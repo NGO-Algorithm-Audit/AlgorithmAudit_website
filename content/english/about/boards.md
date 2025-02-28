@@ -5,8 +5,8 @@ image: /images/svg-illustrations/events.svg
 team2:
   title: Board
   content: Board of NGO Algorithm Audit
-  icon: fas fa-users
   id: board
+  icon: fas fa-users
   team_members:
     - image: /images/people/AVoogt.jpeg
       name: Ariën Voogt
@@ -20,11 +20,20 @@ team2:
       name: Jurriaan Parie
       bio: |
         Director-board member
+quick_navigation:
+  title: Overzicht
+  links:
+    - title: Board
+      url: '#board'
+    - title: Advisory board
+      url: '#advisory-board'
+    - title: Supervisory board
+      url: '#supervisory-board'
 ---
 
 {{< team2 >}}
 
-{{< container_open title="Board of Advice" id="advice-board" icon="fas fa-user-plus" >}}
+{{< container_open title="Advisory board" id="advisory-board" icon="fas fa-user-plus" >}}
 
 * [Aileen Nielsen](https://hls.harvard.edu/faculty/aileen-nielsen/), Visiting Assistant Professor, Harvard Law School, author of the book [Practical Fairness](https://www.oreilly.com/library/view/practical-fairness/9781492075721/)		&#x9;
 * [Anne Meuwese](https://www.universiteitleiden.nl/medewerkers/anne-meuwese#tab-1), Professor Public Law & Governance of AI, Leiden University

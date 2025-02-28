@@ -57,9 +57,9 @@ team:
       bio: |
         Onderzoeker Alan Turing Institute, Londen
 quick_navigation:
-  title: Content overview
+  title: Inhoudsopgave
   links:
-    - title: Inhoudsopgave
+    - title: Introductie
       url: '#info'
     - title: Tool
       url: '#web-app'

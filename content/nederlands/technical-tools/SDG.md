@@ -10,7 +10,7 @@ subtitle: >
   worden voor AI bias testing.
 image: /images/svg-illustrations/knowledge_base.svg
 team:
-  title: Synthetic data generation team
+  title: Synthetische data generatie team
   icon: fas fa-user-friends
   button_text: Other teams
   button_link: /about/teams/
@@ -18,7 +18,7 @@ team:
     - image: /images/people/EMenvouta.jpeg
       name: Emmanuel Menvouta PhD
       bio: |
-        Freelance machine learning engineer, specialized in SDG methodology
+        Freelance machine learning engineer, gespecialiseerd in SDG methodologie
     - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
@@ -34,7 +34,7 @@ team:
 quick_navigation:
   title: Content overview
   links:
-    - title: Introduction
+    - title: Introductie
       url: '#info'
     - title: Tool
       url: '#web-app'

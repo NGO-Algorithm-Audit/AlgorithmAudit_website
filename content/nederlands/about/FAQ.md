@@ -11,9 +11,28 @@ subtitle: >
   Heb je een vraag of wil je feedback delen? [Stuur een
   bericht.](/nl/about/contact/)
 image: /images/svg-illustrations/faq.svg
+quick_navigation:
+  title: Overzicht
+  links:
+    - title: Wat auditeert Algorithm Audit?
+      url: '#reviews'
+    - title: Welke organisaties kunnen een casus indienen?
+      url: '#eligible'
+    - title: Waarom werken jullie zonder winstoogmerk?
+      url: '#not-for-profit'
+    - title: Is jullie werk open source?
+      url: '#open-source'
+    - title: Wat is de legitimiteit van de organisatie?
+      url: '#legitimacy'
+    - title: Hoe worden jullie gefinancierd?
+      url: '#funding'
+    - title: Hoe kan ik ethische kwesties of kennis daarover delen?
+      url: '#share'
+    - title: Hoe voorkomen jullie ethics washing?
+      url: '#ethics-washing'
 ---
 
-{{< container_open icon="fas fa-bullseye" title="Wat auditeert Algorithm Audit precies?" id="reviews" >}}
+{{< container_open icon="fas fa-bullseye" title="Wat auditeert Algorithm Audit?" id="reviews" >}}
 
 Auditeren is een veelzijdig begrip. In de financiële sector verwijst een audit bijvoorbeeld naar een onafhankelijk keuring van boekhouding. Volgens vooraf gedefinieerde criteria toetst een financiële audit of administratie correct wordt bijgehouden. Audits voor AI-systemen zijn relatief nieuw en auditcriteria zijn nog volop in ontwikkeling. Algorithm Audit gelooft dat alleen technische auditcriteria onvoldoende zijn om te toetsen of algoritmes deugen. Wat eerlijke en verantwoorde algoritmes zijn hangt altijd af van de context. Het opdoen van case-based ervaring met normatieve keuzes die komen kijken bij het ontwikkelen en inzetten van algoritmes is hierbij van cruciaal belang. Deze normatieve dimensie kan alleen getoetst worden in overleg met belanghebbenden. De audits van Algorithm Audit zijn daarom inclusief en deliberatief van aard. Dit houdt verband met de etymologie van het Latijnse woord *audire* (horen) waarvan het woord ‘audit’ is afgeleid.
 
@@ -31,7 +50,7 @@ Het normatieve karakter van onze werkzaamheden staat op gespannen voet met het h
 
 {{< container_close >}}
 
-{{< container_open title="Is het werk open source?" icon="fas fa-box-open" id="open-source" >}}
+{{< container_open title="Is jullie werk open source?" icon="fas fa-box-open" id="open-source" >}}
 
 Al onze probleemstellingen en bijbehorend adviezen worden openbaar gemaakt, wat ten goede komt aan de publieke kennisopbouw over verantwoorde algoritmes. In die zin kan ons werk als open-source worden beschouwd. We publiceren alleen de definitieve probleemstelling en normatieve adviesdocument in onze [algoprudentie database](https://algorithmaudit.eu/nl/algoprudence/). Notulen en tussentijdse documentatie van de casus worden niet gedeeld. Daarnaast is alle code die voor deze website is ontwikkeld en voor de technische tools die wij maken, onderhouden en testen, te vinden op [Github](https://github.com/NGO-Algorithm-Audit).
 

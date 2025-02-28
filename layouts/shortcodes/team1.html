@@ -1,12 +1,11 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 
-<!-- team -->
-{{ with .Page.Params.team1}}
-
 <!-- desktop version -->
 <div class="container-fluid mt-5 desktop p-0">
-  <div class="shadow mobile-desktop-container-layout rounded-lg" id="{{ .ID }}">
+  <div class="shadow mobile-desktop-container-layout rounded-lg" id={{.Get "id" }}>
     
+    {{ with .Page.Params.team1}}
+
     {{ if .icon }}
     <!-- Title and icon -->
     <h3 class="">
@@ -46,35 +45,8 @@
     <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
     </div>
 
+    {{ end }}
+
   </div>
 </div>
 <!-- /desktop version -->
-
-<!-- mobile version -->
-<div class="container p-5 mobile rounded-blue-border">
-    
-  <h3 class="mb-5" style="color: #005aa7; font-weight:600;">{{ .title | markdownify }}</h3>
-
-  <div class="container-team">
-    <div class="row">
-      {{ range .team_members }}    
-      <div class="col-12 team-member p-3">
-        <div class="row">
-          <div class="col-3 text-center">
-            <img src="{{ .image | relURL }}" width="100%;" style="border-radius: 20px;">
-          </div>
-          <div class="col-9 member-details">
-            <h4 style="font-weight:100;">{{ .name | markdownify }}</h4>
-            <p>{{ .bio | markdownify }}</p>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-
-</div>
-<!-- /mobile version -->
-
-{{ end }}
-<!-- /team -->
