@@ -9,7 +9,7 @@ subtitle: >
   waarbij verschillende belanghebbende worden betrokken om AI vorm te geven.
 image: /images/svg-illustrations/case_repository.svg
 team:
-  title: AI Act standardisering team
+  title: AI-verordening standaarden team
   icon: fas fa-user-friends
   button_text: Andere teams
   id: team
@@ -18,22 +18,33 @@ team:
     - image: /images/people/ALeoneDeCastris.jpg
       name: Arcangelo Leone de Castris
       bio: |
-        AI beleidsonderzoeker bij The Alan Turing Institute, Londen
+        AI Policy Researcher at The Alan Turing Institute, London
     - image: /images/people/EPetersen.jpeg
       name: Eike Petersen
       bio: |
-        Senior onderzoeker medische AI, Fraunhofer MEVIS, Hannover
-    - image: /images/people/IMastenbroek.jpg
-      name: Irma Mastenbroek
+        Senior Scientist Medical AI, Fraunhofer MEVIS, Hannover
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
       bio: |
-        Onafhankelijke AI ethica en freelance wiskundige, Berlijn
-    - image: /images/people/SDas.jpg
-      name: Sneha Das
+        Director and board member, Algorithm Audit
+    - image: /images/people/YRemmits.jpg
+      name: Ylja Remmits
       bio: |
-        Assistant Professor Technische Universiteit Denemarken, Kopenhagen
+        Head of Projects, Algorithm Audit
+quick_navigation:
+  title: Inhoudsopgave
+  links:
+    - title: Introductie
+      url: '#standardization-request'
+    - title: AI-verordening standaarden
+      url: '#standards'
+    - title: Bijdragen
+      url: '#contributions'
+    - title: Team
+      url: '#team'
 ---
 
-{{< container_open icon="fas fa-check" title="AI Act standaarden" id="ai-act" >}}
+{{< container_open icon="fas fa-check" title="AI-verordening standaarden" id="standardization-request" >}}
 
 In 2023 hebben de Europese standaardiseringsorganisaties CEN en CENELEC het verzoek van de Europese Commissie geaccepteerd om standaarden te ontwikkelen voor Artificiële Intelligentie (AI). Joint Technical Committee 21 (JTC21) van CEN-CENELEC is momenteel bezig Europese standaarden voor AI te ontwikkelen, zoals standaarden voor risicomanagement, datakwaliteit en procedurele standaarden voor het testen van vooringenomenheid. Als  AI-ontwikkelaars en -gebruikers zich aan deze standaarden houden wordt naleving van de aanstaande AI Verordening verondersteld. Maar zo ver is het nog niet. Het ontwikkelen van standaarden is momenteel volop aan de gang. Als lid van het Nederlands Normaliseringsinstituut (NEN) draagt Algorithm Audit bij aan het Europese debat over de vorm deze AI standaarden aannemen, en in hoeverre technische standaarden ontwikkeld kunnen worden voor aan fundamentele rechten rakende standaarden, zoals non-discriminatie, menselijke tussenkomst en uitlegbaarheid van algoritme-gedreven besluitvorming. Dit doen wij door deel te nemen aan de volgende werkgroepen:
 
@@ -45,11 +56,9 @@ Tijdens de laatste plenaire bijeenkomst van JTC21 in Dublin 12-14 februari prese
 
 {{< image id="standaarden" width_desktop="3" width_mobile="6" image1="/images/partners/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partners/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview" width_desktop_pdf="12" width_mobile_pdf="12" >}}
-
 {{< container_close >}}
 
-{{< container_open icon="fas fa-ruler" title="Standaarden" id="AI-standaarden" >}}
+{{< container_open icon="fas fa-ruler" title="AI-verordening standaarden" id="standards" >}}
 
 Het standaardiseringsverzoek van de Europese Commissie, dat een uitgangsbasis biedt voor naleving van de AI Verordening, relateert aan de volgende tien aspecten:
 
@@ -70,4 +79,18 @@ In de audits van Algorithm Audit worden alle bovenstaande aspecten meegenomen, m
 
 {{< container_close >}}
 
-{{< team >}}
+{{< container_open icon="fas fa-file" title="Bijdragen" id="contributions" >}}
+
+Selectie van bijdragen aan normcommissie JTC21 van CEN-CENELEC.
+
+#### Statistische hypothese toest als risicobeheersmaatregel
+
+{{< embed_pdf url="/pdf-files/knowledge-base/standards/20240726_AlgorithmAudit_statistical_hypothesis_testing.pdf" width_desktop_pdf="12" width_mobile_pdf="12">}}
+
+#### Fundamental Rights Impact Assessment (FRIA) and stakeholder panels
+
+{{< embed_pdf url="/pdf-files/knowledge-base/standards/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" width_desktop_pdf="12" width_mobile_pdf="12">}}
+
+{{< container_close >}}
+
+{{< team id="team">}}
