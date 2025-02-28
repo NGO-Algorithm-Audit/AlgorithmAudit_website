@@ -37,6 +37,41 @@ subtitle: >
   training and debiasing algorithmic systems. At Algorithm Audit, we build
   public knowledge how SDG can be used best for AI bias testing.
 image: /images/svg-illustrations/knowledge_base.svg
+team:
+  title: Synthetic data generation team
+  icon: fas fa-user-friends
+  button_text: Other teams
+  button_link: /about/teams/
+  team_members:
+    - image: /images/people/EMenvouta.jpeg
+      name: Emmanuel Menvouta PhD
+      bio: |
+        Freelance machine learning engineer, specialized in SDG methodology
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
+      bio: |
+        Director and board member at Algorithm Audit
+    - image: /images/people/MLisdonk.png
+      name: Maikel van de Lisdonk
+      bio: |
+        Freelance software developer
+    - image: /images/people/RLangius.jpg
+      name: Ruben Langius
+      bio: |
+        Freelance software developer
+quick_navigation:
+  title: Content overview
+  links:
+    - title: Introduction
+      url: '#info'
+    - title: Tool
+      url: '#web-app'
+    - title: Bias testing applications
+      url: '#bias-testing'
+    - title: Past usage
+      url: '#past-usage'
+    - title: Team
+      url: '#team'
 ---
 
 {{< container_open title="Synthetic data generation – What is it?" icon="fas fa-database" id="info" >}}
@@ -70,3 +105,5 @@ Notably, [Lighthouse Reports](https://www.lighthousereports.com/suspicion-machin
 Furthermore, the AI Act (Article 10) contains a specific provision regarding the utilization of synthetic data for bias detection and mitigation, mandating AI system providers to rectify biases using synthetic or anonymized data rather than relying solely on "appropriate safeguards."
 
 {{< container_close >}}
+
+{{< team id="team" >}}

@@ -31,10 +31,9 @@ reports_preview:
         (higher-dimensional) proxy discrimination by the BERT-based
         disinformation classifier
 team:
-  title: Bias detection tool team
+  title: Unsupervised bias detection team
   icon: fas fa-user-friends
   button_text: Other teams
-  id: team
   button_link: /about/teams/
   team_members:
     - image: /images/people/FHolstege.jpeg
@@ -54,9 +53,22 @@ team:
       bio: |
         PhD-candidate, Swiss AI Lab IDSIA
     - image: /images/people/MJorgensen.jpeg
-      name: Mackenzie Jorgensen
+      name: Mackenzie Jorgensen PhD
       bio: |
-        PhD-candidate Computer Science, King’s College London
+        Researcher Alan Turing Institute, London
+quick_navigation:
+  title: Content overview
+  links:
+    - title: Introduction
+      url: '#info'
+    - title: Tool
+      url: '#web-app'
+    - title: HBAC algorithm
+      url: '#HBAC'
+    - title: FAQ
+      url: '#FAQ'
+    - title: Team
+      url: '#team'
 type: bias-detection-tool
 ---
 
@@ -137,7 +149,7 @@ The bias detection tool utilizes the _Hierarchical Bias-Aware Clustering_ (HBAC)
 
 {{< container_close >}}
 
-{{< container_open title="FAQ" icon="fas fa-question-circle" >}}
+{{< container_open title="FAQ" icon="fas fa-question-circle" id="FAQ">}}
 
 ##### Why this bias detection tool?
 
@@ -174,4 +186,4 @@ Quantitative methods, such as unsupervised bias detection, are helpful to discov
 
 {{< container_close >}}
 
-{{< team >}}
+{{< team id="team" >}}
