@@ -68,11 +68,13 @@ De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Richtlijnen voor AI-verordening implementatie" id="documentation-definition" >}}
+{{< container_open icon="far fa-file" title="Documentatie voor AI-verordening implementatie" id="documentation-definition" >}}
 
-Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand documenten beschreven.
+Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand documenten beschreven. Daarnaast wordt ook een inhoudelijke analyse gepresenteerd waarom de <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie over de definitie van een AI-systeem op gespannen voet staan met de wettekst van de AI-verordening.
 
-{{< embed_pdf url="/pdf-files/knowledge-base/20241218 Richtlijnen AI-systeem definitie.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 White paper Implentatie AI-verordening - definitie.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 Policy briefing richtlijnen EC AI-systeem definitie.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
