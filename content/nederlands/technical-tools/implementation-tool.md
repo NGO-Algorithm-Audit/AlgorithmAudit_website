@@ -27,22 +27,24 @@ quick_navigation:
       url: '#documentation-definition'
     - title: Voorbeelden
       url: '#explainers'
-    - title: Flowchart
-      url: '#flowchart'  
+    - title: Flowchart identificatie
+      url: '#flowchart-identification'
+    - title: Flowchart classificatie
+      url: '#flowchart-classification'  
 ---
 
 {{< container_open icon="fa-solid fa-laptop-code" title="Is mijn datagedreven toepassing een impactvol algoritme of AI-systeem?" id="intro" >}}
 
-Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een AI-systeem worden geidentificeerd? Onderstaande tool helpt gebruikers en ontwikkelaars bij implementatie van de AI-verordening middels twee dynamische vragenlijsten:
+Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een algoritme worden geïdentificeerd? Onderstaande tool helpt gebruikers en ontwikkelaars bij het beheren van risico's van algoritmische systemen aan de hand van twee dynamische vragenlijsten:
 
-1. Identificatie van AI-systeem en impactvolle algoritmes
+1. Identificatie van AI-systeem en impactvolle algoritmes;
 2. Identificatie van risicocategorie en verboden toepassingen.
 
 De vragenlijsten zijn ontworpen om AI-systemen en de bijbehorende risicocategorie te identificeren aan de hand van eenvoudige vragen.
 
-Omdat niet alle algoritmes met invloed op burgers een AI-systeem zijn, houdt de eerste vragenlijst ook rekening met _impactvolle algoritmes_. De term 'impactvolle algoritmes' wordt gebruik door de Rijksoverheid om te verwijzen naar algoritmes die niet voldoen aan de AI-systeem definitie uit de AI-verordening, maar waar wel risicobeheersmaatregelen voor ingericht dienen te worden. Meer informatie kan worden gevonden in de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a> van het Ministerie van Binnenlandse Zaken en Koningkrijksrelaties.
+Omdat niet alle algoritmes met invloed op burgers een AI-systeem zijn, houdt de eerste vragenlijst ook rekening met _impactvolle algoritmes_. Deze term wordt gebruik door de Rijksoverheid om te verwijzen naar algoritmes die niet voldoen aan de AI-systeem definitie uit de AI-verordening, maar waar wel risicobeheersmaatregelen voor ingericht dienen te worden. Meer informatie kan worden gevonden in de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a> van het Ministerie van Binnenlandse Zaken en Koningkrijksrelaties.
 
-Alle mogelijke uitkomsten van de beslisboom zijn weergeven in het [figuur](/nl/technical-tools/implementation-tool/#outcome) beneden op deze webpagina.
+Alle mogelijke uitkomsten van de vragenlijsten zijn weergeven in het [figuur](/nl/technical-tools/implementation-tool/#outcome) beneden op deze webpagina.
 
 {{< container_close >}}
 
@@ -70,7 +72,7 @@ De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand
 
 {{< container_open icon="far fa-file" title="Documentatie voor AI-verordening implementatie" id="documentation-definition" >}}
 
-Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool worden in onderstaand documenten beschreven. Daarnaast wordt ook een inhoudelijke analyse gepresenteerd waarom de <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie over de definitie van een AI-systeem op gespannen voet staan met de wettekst van de AI-verordening.
+Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst uit de AI-verordening implementatie tool met betrekking tot de AI-verordening wettekst en de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a> worden in de white paper 'Implementatie van de AI-verordening – Definitie van een AI-systeem' beschreven. In de policy briefing wordt uiteengezet waarom de <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie over de definitie van een AI-systeem op gespannen voet staan met de wettekst van de AI-verordening. De white paper en de vragenlijsten zijn aangepast naar aanleiding van de richtlijnen van de Europese Commissie.  
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 White paper Implentatie AI-verordening - definitie.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
@@ -80,7 +82,7 @@ Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst
 
 {{< container_open icon="fas fa-chalkboard-teacher" title="Voorbeelden" id="explainers" >}}
 
-Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit van de AI-systeem definitie toe.
+Aan de hand van voorbeelden lichten de volgende drie explainers de reikwijdte van de AI-systeem definitie toe.
 
 ### 10 voorbeelden van (geen) AI-systemen
 
@@ -96,8 +98,14 @@ Aan de hand van voorbeelden lichten de volgende drie explainers de complexiteit 
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart implementatie tool" id="flowchart" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart identificatie vragenlijst" id="flowchart-identification" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250224 Flowchart identification AIAIT EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250224 Flowchart identificatie AIAIT NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart risicoclassificatie vragenlijst" id="flowchart-classification" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250207 Flowchart classificatie NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
