@@ -28,7 +28,7 @@ quick_navigation:
       url: '#explainers'
     - title: Flowchart identificatie
       url: '#flowchart-identification'
-    - title: Flowchart classificatie
+    - title: Flowchart risicoclassificatie
       url: '#flowchart-classification'  
 ---
 
