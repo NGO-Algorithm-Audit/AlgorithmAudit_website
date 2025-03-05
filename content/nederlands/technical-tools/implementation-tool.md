@@ -2,16 +2,15 @@
 type: regular
 title: AI-verordening implementatie tool
 subtitle: >
-  Templates en hulpmiddelen voor implementatie van de AI-verordening. Vertaling
-  van de belangrijkste aspecten van de AI-systeem definitie uit de verordening
-  naar begrijpbare vragen. De tool identificeert ook impactvolle algoritmes die
-  buiten de reikwijdte van de AI-verordening vallen.
+  Dynamische vragenlijsten voor identificatie en risiciclassificatie van AI-systemen en _impactvolle algoritmes_. 
+  Complexe juridische definities uit de AI-verordening zijn vertaald naar begrijpbare taal. 
+  De tool is open-source ontwikkeld kan kosteloos binnen uw organisatie worden gebruikt.
 
 
-  Help mee ontwikkelen, deel feedback middels
+  Mee helpen ontwikkelen? Of wilt u meer informatie hoe de tool binnen uw oragnisatie gebruikt kan worden?
   [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
-image: /images/svg-illustrations/case_repository.svg
+image: /images/svg-illustrations/AI research.svg
 quick_navigation:
   title: Inhoudsopgave
   links:
@@ -35,16 +34,16 @@ quick_navigation:
 
 {{< container_open icon="fa-solid fa-laptop-code" title="Is mijn datagedreven toepassing een impactvol algoritme of AI-systeem?" id="intro" >}}
 
-Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een algoritme worden geïdentificeerd? Onderstaande tool helpt gebruikers en ontwikkelaars bij het beheren van risico's van algoritmische systemen aan de hand van twee dynamische vragenlijsten:
+Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een algoritme worden geïdentificeerd? Twee dynamische vragenlijsten helpen gebruikers en ontwikkelaars bij:
 
 1. Identificatie van AI-systeem en impactvolle algoritmes;
 2. Identificatie van risicocategorie en verboden toepassingen.
 
-De vragenlijsten zijn ontworpen om AI-systemen en de bijbehorende risicocategorie te identificeren aan de hand van eenvoudige vragen.
+Complexe juridische definities uit de AI-verordening en bijbehorende beleidsdocumenten zijn vertaald naar begrijpbare taal, zodat de tool door een brede doelgroep gebruikt kan worden.
 
 Omdat niet alle algoritmes met invloed op burgers een AI-systeem zijn, houdt de eerste vragenlijst ook rekening met _impactvolle algoritmes_. Deze term wordt gebruik door de Rijksoverheid om te verwijzen naar algoritmes die niet voldoen aan de AI-systeem definitie uit de AI-verordening, maar waar wel risicobeheersmaatregelen voor ingericht dienen te worden. Meer informatie kan worden gevonden in de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a> van het Ministerie van Binnenlandse Zaken en Koningkrijksrelaties.
 
-Alle mogelijke uitkomsten van de vragenlijsten zijn weergeven in het [figuur](/nl/technical-tools/implementation-tool/#outcome) beneden op deze webpagina.
+De tool is [open-source](/nl/technical-tools/implementation-tool/#source-code) ontwikkeld en kan kosteloos binnen uw organisatie worden gebruikt voor algoritemanagement. Alle mogelijke uitkomsten van de vragenlijsten zijn weergeven in het [figuur](/nl/technical-tools/implementation-tool/#outcome) beneden op deze webpagina.
 
 {{< container_close >}}
 
@@ -60,11 +59,11 @@ De vragen in de AI-verordening implemenatie tool zijn ontwikkeld in samenwerking
 
 De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand figuur. Er wordt onderscheid gemaakt tussen:
 
-- Algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen.
-- Impactvolle algoritmes: vallen buiten de reikwijdte van de AI-verordening, behoeven wel extra beheersmaatregelen.
-- AI-systemen: vallen binnen de reikwijdte van de AI-verordening, behoeven alleen extra beheersmaatregelen als er sprake is van hoog-risico AI-systemen en specifieke vormen van generieke AI.
-- Hoog risico AI-systemen: vallen binnen de reikwijdte van de AI-verordening en behoeven extra beheersmaatregelen aan de hand van [geharmonizeerde normen](/nl/knowledge-platform/standards/).
-- Verboden AI-systemen: vallen binnen de reikwijdte van de AI-verordening, dit type AI-systemen zijn verboden. Meer toelichting over deze categorie kan gevonden worden op <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Digitale overheid</a>.
+- <span style="color:#005AA7">Algoritmes</span>: vallen buiten de reikwijdte van de AI-verordening, behoeven geen extra beheersmaatregelen.
+- <span style="color:#005AA7">Impactvolle algoritmes</span>: vallen buiten de reikwijdte van de AI-verordening, behoeven wel extra beheersmaatregelen.
+- <span style="color:#005AA7">AI-systemen</span>: vallen binnen de reikwijdte van de AI-verordening, behoeven alleen extra beheersmaatregelen als er sprake is van hoog-risico AI-systemen en specifieke vormen van generieke AI.
+- <span style="color:#005AA7">Hoog risico AI-systemen</span>: vallen binnen de reikwijdte van de AI-verordening en behoeven extra beheersmaatregelen aan de hand van [geharmonizeerde normen](/nl/knowledge-platform/standards/).
+- <span style="color:#005AA7">Verboden AI-systemen</span>: vallen binnen de reikwijdte van de AI-verordening, dit type AI-systemen zijn verboden. Meer toelichting over deze categorie kan gevonden worden op <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Digitale overheid</a>.
 
 <br> <br> <img src="/images/ai-act-implementation-tool/Venn diagram NL.png" alt="drawing" width="600"/>
 

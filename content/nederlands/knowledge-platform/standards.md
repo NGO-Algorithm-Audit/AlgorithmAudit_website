@@ -1,5 +1,5 @@
 ---
-title: 'Standaarden voor AI '
+title: 'Standaarden voor AI-systemen'
 subtitle: >
   Verantwoorde inzet van AI zal niet worden opgelost door technische standaarden
   alleen. Om te bepalen wat de 'verantwoorde inzet' inhoudt is collectieve
