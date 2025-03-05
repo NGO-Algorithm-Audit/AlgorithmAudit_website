@@ -2,14 +2,12 @@
 type: regular
 title: AI Act Implementation Tool
 subtitle: >
-  Templates and tools for AI Act implementation. Simplification of the key
-  elements of the AI system definition into an intuitive decision tree. The tool
-  also identifies impactful algorithms that fall outside the scope of the AI
-  Act.
+  Dynamic questionnaires for identification and risk classification of AI systems and *high-impact algorithms*. Simplification of the key
+  elements of the AI system definition. The tool is developed open-source and can be used for free locally by your organisation.
 
 
-  Help developing and share feedback through
-  [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) or via
+  Do you want to help developing or want to learn more how to implement the tool within your organisation?
+  Check [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) or reach out through
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/AI research.svg
 quick_navigation:
@@ -27,22 +25,24 @@ quick_navigation:
       url: '#documentation-definition'
     - title: Explainers
       url: '#explainers'
-    - title: Flowchart
-      url: '#flowchart'    
+    - title: Flowchart identification
+      url: '#flowchart-identification'
+    - title: Flowchart risk classification
+      url: '#flowchart-classification'    
 ---
 
-{{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application a high-impact algorithm or AI system?" id="intro" >}}
+{{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application an AI system or high-impact algorithm?" id="intro" >}}
 
-Implementation of the AI Act raises difficult questions. What is the scope of the AI system defintion? Based on which criteria can the risk category of an AI system be identified? The below tool helps deployers and producers of AI systems with implementation of the AI Act through two dynamic questionnaires:
+Implementation of the AI Act raises difficult questions. What is the scope of the AI system defintion? Based on which criteria can the risk category of an algorithm be identified? Two dynamic questionnaires help deployers and producers with:
 
-1. Identification of AI systems and impactful algorithms
+1. Identification of AI systems and high-impact algorithms;
 2. Identification of risk category and prohibited applications.
 
-The questionnaires are designed to identify AI systems and their risk category using straightforward questions.
+Complex legal definitions from the AI Act and corresponding guidelines are translated into understandable language, such that the tool can be used by a wide audience. 
 
-Since many straightforward algorithms that impact people are not considered AI systems, the first questionnaire also identifies *impactful algorithms*. The term 'impactful algorithms' is used by the Dutch government to refer to simple algorithms that do not meet the definition of an AI system under the AI Act but still require risk management measures. More information can be found in the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Registry Guidance Document</a> of the Dutch Ministry of the Interior.
+Since many straightforward algorithms that impact people are not considered AI systems, the first questionnaire also identifies *high-impact algorithms*. This concept is used by the Dutch government to refer to simple algorithms that do not meet the definition of an AI system under the AI Act but still require control measures. More information can be found in the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Registry Guidance Document</a> of the Dutch Ministry of the Interior.
 
-All potential outcomes of the first questionnaire are shown in the [figure](/technical-tools/implementation-tool/#outcome) below on this webpage.
+The tool is developed [open-source](/technical-tools/implementation-tool/#source-code) and can be used for free within your organisation to manage algorithms. All potential outcomes of the first questionnaire are shown in the [figure](/technical-tools/implementation-tool/#outcome) below on this webpage. The flowcharts of both questionnaires can also be found [below](/technical-tools/implementation-tool/#flowchart-identification).
 
 {{< container_close >}}
 
@@ -53,7 +53,7 @@ All potential outcomes of the first questionnaire are shown in the [figure](/tec
 The outcomes of the first questionnaire are displayed in the below figure. The following categories are distinguished:
 
 * Algorithms: fall outside the scope of the AI Act, no additional control measures are needed.
-* Impactful algorithms: fall outside the scope of the AI Act, additional control measures are needed.
+* High-impact algorithms: fall outside the scope of the AI Act, additional control measures are needed.
 * AI systems: are in scope of the AI Act, only additional control measures are needed in case of high-risk AI systems.
 * High risk AI systems: are in scope of the AI Act, additional control measures for high-risk AI systems are needed through harmonized standards.
 * Prohibited AI systems: are in scope of the AI Act, usage of this type of AI systems is prohibited in the European Union. More information about this category is provided by the <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Dutch government</a>.
@@ -64,15 +64,17 @@ The outcomes of the first questionnaire are displayed in the below figure. The f
 
 {{< container_open icon="fas fa-terminal" title="Development and source code" id="source-code" >}}
 
-The questions in the AI Act Implementation Tool are developed in collaboration with the municipaility of Amsterdam. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be re-used under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>.
+The questions in the AI Act Implementation Tool are developed in collaboration with the municipaility of Amsterdam. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be (re-)used under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>.
 
 {{< container_close >}}
 
-{{< container_open icon="far fa-file" title="Guidelines for AI Act implementation" id="documentation-definition" >}}
+{{< container_open icon="far fa-file" title="Documentation for AI Act implementation" id="documentation-definition" >}}
 
-The reasoning and motivations behind the selected questions in the AI Act Implementation Tool are outlined in the below documents.
+Considerations and choices made during development of the questionnaires regarding the legislative text of the AI Act, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> from the European Commission, and the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Registry Guidance Document</a> are described in the white paper 'Implementation of the AI Regulation – Definition of an AI System'. The policy briefing explains why the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> from the European Commission on the definition of an AI system contradict the legislative text. Both the white paper and the questionnaires have been adjusted following the publication of the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> by the European Commission.
 
 {{< embed_pdf url="/pdf-files/knowledge-base/20241218_Guidelines_AI_system_definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 Policy briefing guidelines EC AI system definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
@@ -94,8 +96,14 @@ Through examples the slides decks explain the intricacies of the AI system defin
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart Implementation Tool" id="flowchart" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart identification questionnaire" id="flowchart-identification" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250224 Flowchart identification AIAIT EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart risk classification questionnaire" id="flowchart-classification" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250207 Flowchart classificatie NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
