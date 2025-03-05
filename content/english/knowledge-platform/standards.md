@@ -1,5 +1,5 @@
 ---
-title: Standards for AI
+title: Standards for AI systems
 subtitle: >
   Responsible AI involves ethical considerations and trade-offs, these cannot be
   solved by technical standards only, but must involve collective deliberation

@@ -11,7 +11,7 @@ subtitle: >
   Help developing and share feedback through
   [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) or via
   [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
-image: /images/svg-illustrations/case_repository.svg
+image: /images/svg-illustrations/AI research.svg
 quick_navigation:
   title: Content overview
   links:
