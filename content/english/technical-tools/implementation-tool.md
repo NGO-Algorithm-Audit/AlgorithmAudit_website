@@ -98,12 +98,12 @@ Through examples the slides decks explain the intricacies of the AI system defin
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart identification questionnaire" id="flowchart-identification" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250224 Flowchart identification AIAIT EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250224 Flowchart identification EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart risk classification questionnaire" id="flowchart-classification" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250207 Flowchart classificatie NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250306 Flowchart classificatie NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
