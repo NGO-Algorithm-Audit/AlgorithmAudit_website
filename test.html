@@ -91,13 +91,22 @@
         .shape-circle-top-middle__left {
             border-radius: 50%;
             top: -27%;
-            left: -3%;
+            left: -1%;
             padding: 9%;
+        }
+
+        .shape-triangle-top-middle {
+            top: -13%;
+            left: 7%;
+            padding: 12%;
+            transform-origin: top middle;
+            transform: rotate(-73deg);
+            clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
         }
 
         .shape-square-top-middle__middle {
             top: -4%;
-            left: 30%;
+            left: 40%;
             transform-origin: top left;
             transform: rotate(3deg);
             padding: 9%;
@@ -128,6 +137,7 @@
         </div>
         <div class="grid-cell grid-row1 grid-col2">
             <div class="shape shape-circle-top-middle__left"></div>
+            <div class="shape shape-triangle-top-middle"></div>
             <div class="shape shape-square-top-middle__middle"></div>
             <div class="shape shape-circle-top-middle__right"></div>
             <div class="shape shape-square-top-middle__right"></div>
