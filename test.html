@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .grid {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 2fr 8fr 2fr;
+            grid-template-rows: 4fr 5fr 3fr;
+        }
+
+        .grid-cell {
+            background-color: #DFF1FF;
+            position: relative;
+            border: black 1px solid;
+        }
+
+        .grid-row1 {
+            grid-row: 1;
+        }
+
+        .grid-row2 {
+            grid-row: 2;
+        }
+
+        .grid-row3 {
+            grid-row: 3;
+        }
+
+        .grid-col1 {
+            grid-column: 1;
+        }
+
+        .grid-col2 {
+            grid-column: 2;
+        }
+
+        .grid-col3 {
+            grid-column: 3;
+        }
+
+        .shape {
+            position: absolute;
+            background-color: #BED8F1;
+            z-index: 100;
+            box-sizing: border-box;
+        }
+
+        .shape-square-top-left {
+            top: 10%;
+            left: 0px;
+            transform-origin: top left;
+            transform: rotate(6deg);
+            width: 110%;
+            padding: 37%;
+        }
+
+        .shape-square-middle-left {
+            top: 80%;
+            right: 45%;
+            transform-origin: top right;
+            transform: rotate(-28deg);
+            padding: 37%;
+        }
+
+        .shape-square-bottom-left {
+            top: 17%;
+            right: 53%;
+            transform-origin: top right;
+            transform: rotate(4deg);
+            padding: 37%;
+        }
+
+        .shape-circle-bottom-middle {
+            border-radius: 50%;
+            top: 73%;
+            left: 37%;
+            padding: 33%;
+        }
+
+        .shape-circle-top-middle__left {
+            border-radius: 50%;
+            top: -27%;
+            left: -3%;
+            padding: 9%;
+        }
+
+        .shape-square-top-middle__middle {
+            top: -4%;
+            left: 30%;
+            transform-origin: top left;
+            transform: rotate(3deg);
+            padding: 9%;
+        }
+
+        .shape-circle-top-middle__right {
+            border-radius: 50%;
+            top: 20%;
+            right: 15%;
+            padding: 9%;
+        }
+
+        .shape-square-top-middle__right {
+            top: -9%;
+            right: -8%;
+            transform-origin: top left;
+            transform: rotate(23deg);
+            padding: 9%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="grid-cell grid-row1 grid-col1">
+            <div class="shape shape-square-top-left"></div>
+            <div class="shape shape-square-middle-left"></div>
+        </div>
+        <div class="grid-cell grid-row1 grid-col2">
+            <div class="shape shape-circle-top-middle__left"></div>
+            <div class="shape shape-square-top-middle__middle"></div>
+            <div class="shape shape-circle-top-middle__right"></div>
+            <div class="shape shape-square-top-middle__right"></div>
+        </div>
+        <div class="grid-cell grid-row1 grid-col3"></div>
+
+        <div class="grid-cell grid-row2 grid-col1">
+            <div class="shape shape-circle-bottom-middle"></div>
+        </div>
+        <div class="grid-cell grid-row2 grid-col2"><h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Inventore sed autem officia mollitia optio sequi ullam accusantium veritatis recusandae architecto assumenda
+            exercitationem animi quia vel dolores blanditiis, voluptatibus consequuntur labore.</h1></div>
+        <div class="grid-cell grid-row2 grid-col3"></div>
+
+        <div class="grid-cell grid-row3 grid-col1">
+            <div class="shape shape-square-bottom-left"></div>
+        </div>
+        <div class="grid-cell grid-row3 grid-col2"></div>
+        <div class="grid-cell grid-row3 grid-col3"></div>
+    </div>
+</body>
+
+</html>
