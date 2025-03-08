@@ -105,6 +105,6 @@ Aan de hand van voorbeelden lichten de volgende drie explainers de reikwijdte va
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart risicoclassificatie vragenlijst" id="flowchart-classification" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250306 Flowchart classificatie NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250310 Flowchart classificatie NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
