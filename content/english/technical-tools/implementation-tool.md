@@ -33,16 +33,16 @@ quick_navigation:
 
 {{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application an AI system or high-impact algorithm?" id="intro" >}}
 
-Implementation of the AI Act raises difficult questions. What is the scope of the AI system defintion? Based on which criteria can the risk category of an algorithm be identified? Two dynamic questionnaires help deployers and producers with:
+Implementation of the AI Act raises difficult questions. What is the scope of the AI system defintion? What criteria are used to determine the risk category of an algorithm? Two dynamic questionnaires help deployers and producers with:
 
 1. Identification of AI systems and high-impact algorithms;
-2. Identification of risk category and prohibited applications.
+2. Risk classification of AI systems.
 
-Complex legal definitions from the AI Act and corresponding guidelines are translated into understandable language, such that the tool can be used by a wide audience. 
+Complex legal definitions from the AI Act and its guidelines are simplified into clear and accessible language, making the tool suitable for a broad audience.
 
 Since many straightforward algorithms that impact people are not considered AI systems, the first questionnaire also identifies *high-impact algorithms*. This concept is used by the Dutch government to refer to simple algorithms that do not meet the definition of an AI system under the AI Act but still require control measures. More information can be found in the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Registry Guidance Document</a> of the Dutch Ministry of the Interior.
 
-The tool is developed [open-source](/technical-tools/implementation-tool/#source-code) and can be used for free within your organisation to manage algorithms. All potential outcomes of the first questionnaire are shown in the [figure](/technical-tools/implementation-tool/#outcome) below on this webpage. The flowcharts of both questionnaires can also be found [below](/technical-tools/implementation-tool/#flowchart-identification).
+The tool is developed [open-source](/technical-tools/implementation-tool/#source-code) in collaboration with the Municipality of Amsterdam and can be used for free within your organisation to manage algorithms. All potential outcomes of the questionnaires are shown in the [figure](/technical-tools/implementation-tool/#outcome) below on this webpage. The flowcharts of both questionnaires can also be found [below](/technical-tools/implementation-tool/#flowchart-identification).
 
 {{< container_close >}}
 
