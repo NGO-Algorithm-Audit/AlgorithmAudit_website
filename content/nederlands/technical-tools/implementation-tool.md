@@ -37,7 +37,7 @@ quick_navigation:
 Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een algoritme worden geïdentificeerd? Twee dynamische vragenlijsten helpen gebruikers en ontwikkelaars bij:
 
 1. Identificatie van AI-systeem en impactvolle algoritmes;
-2. Identificatie van risicocategorie en verboden toepassingen.
+2. Risicoclassificatie van AI-systemen.
 
 Complexe juridische definities uit de AI-verordening en bijbehorende richtlijnen zijn vertaald naar begrijpbare taal, zodat de tool door een brede doelgroep gebruikt kan worden.
 
