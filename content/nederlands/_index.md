@@ -33,21 +33,21 @@ Activity_Feed:
       date: 22-10-2024
       type: white paper
   activities:
-    - title: Event 'Can Europe regulate AI?'
-      link: /events/activities/#events
-      image: /images/events/PdZ-logo-socials.png
-      date: 21-01-2025
+    - title: Gastcollege ethische AI Universiteit Utrecht
+      link: /nl/events/activities/#events
+      image: /images/events/uu-logo.png
+      date: 10-03-2025
       type: event
     - title: >-
-        Gastcollege 'Hoe algoprudentie kan bijdragen aan de verantwoorde inzet van ML algoritmes'
-      link: /events/activities/#events
-      image: /images/events/Oxford-logo.png
-      date: 13-12-2024
+        Demo open-source AI auditing tools tijdens innovatiedag van het Ministerie van Binnenlandse Zaken
+      link: /nl/events/activities/#events
+      image: /images/events/MinBZK_logo.jpg
+      date: 13-02-2025
       type: presentatie
-    - title: Presentatie 'Inkoop van algoritmes en AI PIANOo'
-      link: /events/activities/#events
-      image: /images/events/pianoo-logo.svg
-      date: 13-12-2024
+    - title: Presentatie verantwoorde inzet AI - Innovatiefestival Ministrie van Infrastructuur en Waterstaat
+      link: /nl/events/activities/#events
+      image: /images/events/MinIenW_logo.png
+      date: 13-02-2025
       type: presentatie
 Supported_by:
   title: Samenwerking met
