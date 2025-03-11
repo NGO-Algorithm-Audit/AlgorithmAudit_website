@@ -26,6 +26,51 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: Gastcollege ethische AI Universiteit Utrecht
+    description: >
+      Gastcollege voor MSc Artificial Intelligence studenten met een minor in AI ethiek van de Universiteit Utrecht
+
+    image: /images/events/uu-logo.png
+    date: 10-03-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q1_2025
+        label: Q1-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Demo open-source AI auditing tools tijdens innovatiedag van het Ministerie van Binnenlandse Zaken
+    description: >
+      Presentatie en demo van open-source AI auditing tools zoals ontwikkeld met Innovationbudget 2024-25, een jaarlijkse competitie georganiseerd door het Ministerie van Binnenlandse Zaken.
+
+      ![](/images/events/20250213_Demodag2025.jpg)
+    image: /images/events/MinBZK_logo.jpg
+    date: 13-02-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q1_2025
+        label: Q1-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Presentatie verantwoorde inzet AI - Innovatiefestival Ministrie van Infrastructuur en Waterstaat
+    description: >
+      Presentatie over de verantwoorde inzet van algoritmes en AI tijdens het innovatiefestival van het Ministrie van Infrastructuur en Waterstaat.
+    image: /images/events/MinIenW_logo.png
+    date: 13-02-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q1_2025
+        label: Q1-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
   - title: Event 'Can Europe regulate AI?'
     description: >
       Boekinterview met Marietje Schaake – auteur van The Tech Coup – en Haroon Sheikh – auteur van Atlas of the Digital World – in debatcentrum Pakhuis de Zwijger
@@ -62,7 +107,7 @@ events:
         label: Q4-2024
         hide: true
       - value: type_presentation
-        label: presentation
+        label: presentatie
   - title: Presentatie 'Inkoop van algoritmes en AI'
     description: >
       Presentatie over inkoop van algoritmes en AI voor PIANOo – expertisecentrum voor aanbesteding door publieke sector organisaties  
@@ -90,6 +135,20 @@ events:
         hide: true
       - value: year_q4_2024
         label: Q4-2024
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Lunchlezing algoritmevalidatie - Ministrie van Infrastructuur en Waterstaat
+    description: >
+      Lunchlezing over het valideren van algoritmes en AI voor een breed spectrum aan werknemers van het Ministrie van Infrastructuur en Waterstaat.
+    image: /images/events/MinIenW_logo.png
+    date: 11-11-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q3_2024
+        label: Q3-2024
         hide: true
       - value: type_presentation
         label: presentatie
