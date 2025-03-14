@@ -42,17 +42,39 @@
 }
 
 .landing-page-title {
-    font-size: 4rem;
+    
+    
+    @media (max-width: 1200px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 4.25rem;
+    }
     text-align: center;
     font-weight: 600;
+    font-family: AvenirNextProDemi, avenir, sans-serif;
 }
 .landing-page-slogan-title {
+    @media (max-width: 1200px) {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 2.5rem;
+    }
     margin-top: 1rem;
 }
 
 .landing-page-slogan-slider {
-    margin-top: -0.25rem;
-    height: 4.25rem;
+    @media (max-width: 1200px) {
+        height: 3.75rem;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: -0.5rem;
+        height: 5rem;
+    }
 }
 
 .landing-page-slogan-slider-li {
@@ -60,6 +82,13 @@
 }
 
 .landing-page-slide-title {
+    @media (max-width: 1200px) {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 2.5rem;
+    }
     padding: 0.75rem;
     margin: 0;
     margin-top: -0.75rem;
@@ -201,6 +230,53 @@
         transform-origin: top right;
         transform: rotate(-16deg);
         padding: 9%;
+    }
+    
+    .landing-page-scroll-container {
+        z-index: 20;
+        position: absolute;
+        
+        @media (max-width: 1200px) {
+            bottom: 20%;
+            left: 43%;
+        }
+
+        @media (min-width: 1200px) {
+            bottom: 30%;
+            left: 45%;
+        }
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .landing-page-scroll-text {
+        font-size: 1.8rem;
+        color: #005aa7 !important;
+        font-family: sans-serif;
+        margin-bottom: 0rem;
+    }
+    .landing-page-scroll-icon {
+        font-size: 1.5rem;
+        color: #005aa7 !important;
+        animation: bounce 2s infinite;
+        animation-delay: 3s;
+    }
+
+    @-moz-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+        40% {-moz-transform: translateY(-15px);}
+        60% {-moz-transform: translateY(-7px);}
+    }
+     
+    @-o-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+        40% {-o-transform: translateY(-15px);}
+        60% {-o-transform: translateY(-7px);}
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-15px);}
+        60% {transform: translateY(-7px);}
     }
 }
 

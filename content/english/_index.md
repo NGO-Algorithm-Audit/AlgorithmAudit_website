@@ -2,7 +2,10 @@
 Banner:
   image: /images/svg-illustrations/main_illustration.svg
   tag: definition
-  title: Building public knowledge for responsible algorithms
+  title_line1: Building public knowledge
+  title_line2_before: for
+  title_line2_underline: responsible
+  title_line2_after: algorithms
   phonetica: /æl.ɡə-ˈpruː.dəns/
   type: noun
   description1: Case-based normative advice for ethical algorithms

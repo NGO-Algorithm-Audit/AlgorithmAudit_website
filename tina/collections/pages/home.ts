@@ -29,9 +29,27 @@ export default {
           required: true,
         },
         {
-          label: "title",
+          name: "title_line1",
           type: "string",
-          name: "title",
+          label: "title line 1",
+          required: true,
+        },
+        {
+          name: "title_line2_before",
+          type: "string",
+          label: "title line 2 before",
+          required: true,
+        },
+        {
+          name: "title_line2_underline",
+          type: "string",
+          label: "title line 2 underline",
+          required: true,
+        },
+        {
+          name: "title_line2_after",
+          type: "string",
+          label: "title line 2 after",
           required: true,
         },
         {
