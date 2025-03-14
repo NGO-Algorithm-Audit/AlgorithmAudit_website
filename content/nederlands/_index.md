@@ -2,7 +2,10 @@
 Banner:
   image: /images/svg-illustrations/main_illustration.svg
   tag: definitie
-  title: al-go-pru-dentie
+  title_line1: Publieke kennis opbouwen
+  title_line2_before: voor
+  title_line2_underline: verantwoorde
+  title_line2_after: algoritmes
   phonetica: /al.ɡo-ˈpru.dεn(t)si/
   type: zelfstandig naamwoord
   description1: >-
@@ -53,41 +56,41 @@ Supported_by:
   title: Samenwerking met
   funders:
     - image: /images/supported_by/sidn.png
-      link: 'https://www.sidnfonds.nl/projecten/open-source-ai-auditing'
+      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
       alt_text: Stichting Internet en Democratie Nederland
     - image: /images/supported_by/EUAISFund.png
-      link: 'https://europeanaifund.org/announcing-our-2022-open-call-grantees/'
+      link: "https://europeanaifund.org/announcing-our-2022-open-call-grantees/"
       alt_text: European AI&Society Fund
     - image: /images/supported_by/BZK.jpg
       link: >-
         https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
       alt_text: Ministerie van Binnelandse Zaken en Konkinkrijksrelaties
     - image: /images/supported_by/HAI.png
-      link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
+      link: "https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
       alt_text: Stanford University Human-Centered Artificial Intelligence Lab
     - image: /images/partners/DUO.png
-      link: 'https://duo.nl'
+      link: "https://duo.nl"
       alt_text: Dienst Uitvoering Onderwijs
     - image: /images/partners/NEN.svg
-      link: 'https://www.nen.nl'
+      link: "https://www.nen.nl"
       alt_text: Nederlands normalisatie instituut
     - image: /images/partners/CEN.jpg
-      link: 'https://www.cencenelec.eu'
-      alt_text: 'Europees standaardiseringcomité '
+      link: "https://www.cencenelec.eu"
+      alt_text: "Europees standaardiseringcomité "
     - image: /images/events/Amsterdam.png
-      link: 'https://www.amsterdam.nl'
+      link: "https://www.amsterdam.nl"
       alt_text: Gemeente Amsterdam
     - image: /images/supported_by/CoE.png
-      link: 'https://www.coe.int/en/web/portal/home'
+      link: "https://www.coe.int/en/web/portal/home"
       alt_text: Raad voor Europa
 Building_ai_audit_capacity:
   lines:
     - text_before: Opbouwen van
       text_highlighted: publieke kennis
-      text_after: ''
-    - text_before: ' over verantwoorde AI'
+      text_after: ""
+    - text_before: " over verantwoorde AI"
       text_highlighted: zonder winstoogmerk
-      text_after: ''
+      text_after: ""
 Distinctive_in:
   enable: true
   title: Onderscheidend in
@@ -242,4 +245,3 @@ Title_video:
   title: Video
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
-
