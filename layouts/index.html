@@ -1,82 +1,61 @@
 {{ define "main" }}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  rel="stylesheet" />
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="/js/home_script.js"></script>
 
 <!-- Banner -->
 {{ with .Params.Banner }}
-<section class="banner banner-background">
-  <div class="container">
-    <div class="row" style="display: flex; align-items: center;">
-
-      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-lg-1">
-
-        <!-- definition tag -->
-        <div class="row" style="padding:0 30px; margin-bottom:30px;">
-          <h5 class="highlight-blue" style="font-weight:100;">{{ .tag }}
-          </h5>
-        </div>
-        <!-- /definition tag -->
-
-        <!-- al-go-pru-dence -->
-        <div class="container">
-          <h2 style="color:#005aa7;">{{.title}}</h2>
-          <p style="color:#005aa7; font-size: 24px;">{{.phonetica}}</p>
-          <i>{{.type}}</i>
-        </div>
-        <div>
-          <div style="margin-top:30px; padding-left:15px;">
-            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">1.</b> {{.description1}}</p>
-          </div>
-          <div style="margin-top:15px; padding-left:15px;">
-            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">2.</b> {{.description2}}</p>
-          </div>
-          <div style="margin-top:15px; padding-left:15px;">
-            <p style="color:#005aa7; font-size: 18px;"> <b style="color:#005aa7;">3.</b> {{.description3}}</p>
-          </div>
-        </div>
-      </div>
-      <!-- /al-go-pru-dence -->
-
-      <!-- image -->
-      <div class="col-lg-6 col-md-12 col-sm-12 order-md-3 order-lg-2">
-        <img src='{{ .image  }}' class='img-fluid mt-5' style='margin-left: auto; margin-right: auto;'>
-      </div>
-      <!-- image -->
+<section class="container landing-page-container content mx-0 mt-5">
+  <div class="row landing-page-top-row">
+    <div class="landing-page-col col-xl-2 d-none d-xl-block">
+      <div class="shape shape-square-top-left"></div>
+      <div class="shape shape-square-middle-left"></div>
     </div>
-
+    <div class="landing-page-col col-xl-8 col-12">
+      <div class="shape shape-circle-top-middle__left"></div>
+      <div class="shape shape-triangle-top-middle"></div>
+      <div class="shape shape-square-top-middle__middle"></div>
+      <div class="shape shape-circle-top-middle__right"></div>
+      <div class="shape shape-square-top-middle__right"></div>
+    </div>
+    <div class="landing-page-col col-xl-2 d-none d-xl-block">
+      <div class="shape shape-circle-top-right"></div>
+    </div>
   </div>
-</section>
-{{ with .slogan }}
-<!-- Slogan -->
-<section class="banner banner-background" style="padding:0px;">
-  <!-- European knowledge platform -->
-  <div class="row pinDiv1">
-
-    <!-- desktop version -->
-    <div class="col-12 text-center desktop" style="margin-top:50px; margin-bottom:100px;">
-      <div class="slider-wrapper justify-content-center">
+  <div class="row landing-page-middle-row">
+    <div class="landing-page-col col-xl-2 d-none d-xl-block">
+      <div class="shape shape-circle-middle-left"></div>
+    </div>
+    <div class="landing-page-col landing-page-col-content col-xl-8 col-12">
+      <h1 class="landing-page-title mt-5 mb-0" style="color:#005aa7;">{{.title_line1}}</h1>
+      <h1 class="landing-page-title mt-0" style="color:#005aa7;">{{.title_line2_before}} <u>{{.title_line2_underline}}</u> {{.title_line2_after}}</h1>
+      {{ with .slogan }}
+      <!-- Slogan -->
+      <div class="slider-wrapper">
 
         <!-- main -->
-        <h3 style="color:#005aa7; font-weight:100;">{{.title}}</h3>
+        <h2 class="landing-page-slogan-title mb-3 d-inline-block" style="color:#005aa7; font-weight:100;">{{.title}}</h2>
         <!-- /main -->
 
         <!-- slider -->
-        <div class="ms-slider">
+        <div class="ms-slider d-inline-block landing-page-slogan-slider">
           <ul class="ms-slider__words">
             {{ range .labels }}
-            <li class="ms-slider__word">
+            <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
               <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+                <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
+                    class="highlight-red">{{.text}}</i></h2>
               </div>
             </li>
             {{ end }}
             <!-- repeat the last item for the slider logic -->
             {{ with index .labels 0 }}
-            <li class="ms-slider__word">
+            <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
               <div class="slider-wrapper mb-1 py-1">
-                <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
+                <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
+                    class="highlight-red">{{.text}}</i></h2>
               </div>
             </li>
             {{ end }}
@@ -85,91 +64,43 @@
         <!-- /slider -->
 
       </div>
+      
+      {{ end }}
     </div>
-    <!-- /desktop version -->
-
-    <!-- mobile version -->
-    <div class="col-12 mobile" style="margin-top:50px; padding: 0px 7.5%;">
-      <div class="slider-wrapper" style="padding-left:10px;">
-
-        <!-- main -->
-        <h3 style="color:#005aa7; font-weight:100;">{{.title}}</h3>
-        <!-- /main -->
-        
-      </div>
+    
+    <div class="landing-page-col col-xl-2 d-none d-xl-block">
+      <div class="shape shape-square-middle-right"></div>
     </div>
-
-    <!-- slider -->
-    <div class="col-12 mobile" style="margin-bottom:50px; padding: 0px 7.5%;">
-      <div class="ms-slider">
-        <ul class="ms-slider__words">
-          {{ range .labels }}
-          <li class="ms-slider__word">
-            <div class="slider-wrapper mb-1 py-1">
-              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
-            </div>
-          </li>
-          {{ end }}
-          <!-- repeat the last item for the slider logic -->
-          {{ with index .labels 0 }}
-          <li class="ms-slider__word">
-            <div class="slider-wrapper mb-1 py-1">
-              <h3 style="color:#005aa7; font-weight:100;"><i class="highlight-blue">{{.text}}</i></h3>
-            </div>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-    <!-- slider -->
-    <!-- /mobile version -->
-
   </div>
-  <!-- /European knowledge platform -->
+  <!-- /al-go-pru-dence -->
+  </div>
+  <div class="row landing-page-bottom-row">
+    <div class="landing-page-col col-xl-2 d-none d-xl-block">
+      <div class="shape shape-square-bottom-left"></div>
+    </div>
+    <div class="landing-page-col col-xl-8 col-12">
+      <div class="shape shape-square-bottom-middle__most-left"></div>
+      <div class="shape shape-square-bottom-middle__left"></div>
+      <div class="landing-page-scroll-container">
+        <p class="landing-page-scroll-text d-block">Scroll</p>
+        <i class="fas fa-arrow-down landing-page-scroll-icon"></i>
+      </div>
+      <div class="shape shape-square-bottom-middle__right"></div>
+      <div class="shape shape-square-bottom-middle__most-right"></div>
+    </div>
+    <div class="landing-page-col col-xl-2 d-none d-xl-block">
+      <div class="shape shape-triangle-bottom-right"></div>
+    </div>
+  </div>
 </section>
-{{ end }}
+<section class="landing-page-clear-bottom"></section>
 {{ end }}
 <!-- /Banner -->
-
-<!-- Divider block elements -->
-<div class="row" id="gradient-line-blocks">
-  <div class="col-2 divider-blocks">
-    <div class="row upper-blocks" id="box1"></div>
-    <div class="row lower-blocks justify-content-center border-gradient"
-      style="border-image:linear-gradient(to right, #FFFEE4, #F7F8E3) 1 0 0 0;"></div>
-  </div>
-  <div class="col-2 divider-blocks">
-    <div class="row upper-blocks" id="box2"></div>
-    <div class="row lower-blocks justify-content-center border-gradient"
-      style="border-image:linear-gradient(to right, #F7F8E3, #E9EFE0) 1 0 0 0;"></div>
-  </div>
-  <div class="col-2 divider-blocks">
-    <div class="row upper-blocks" id="box3"></div>
-    <div class="row lower-blocks justify-content-center border-gradient"
-      style="border-image:linear-gradient(to right, #E9EFE0, #D2DEDC) 1 0 0 0;"></div>
-  </div>
-  <div class="col-2 divider-blocks">
-    <div class="row upper-blocks" id="box4"></div>
-    <div class="row lower-blocks justify-content-center border-gradient"
-      style="border-image:linear-gradient(to right, #D2DEDC, #B4C8D5) 1 0 0 0;"></div>
-  </div>
-  <div class="col-2 divider-blocks">
-    <div class="row upper-blocks" id="box5"></div>
-    <div class="row lower-blocks justify-content-center border-gradient"
-      style="border-image:linear-gradient(to right, #B4C8D5, #8FAFD0) 1 0 0 0;"></div>
-  </div>
-  <div class="col-2 divider-blocks">
-    <div class="row upper-blocks" id="box6"></div>
-    <div class="row lower-blocks justify-content-center border-gradient"
-      style="border-image:linear-gradient(to right, #8FAFD0, #618EC7) 1 0 0 0;"></div>
-  </div>
-</div>
-<!-- /Divider block elements -->
 
 <!-- Activity Feed -->
 {{ with .Params.Activity_Feed}}
 {{ if .enable }}
-<section class="section-top">
+<section class="activitifeed-section">
   <div class="container" style="background-color:#deecf7;">
     <div class="row align-items-center border-gradient2">
 
@@ -242,10 +173,10 @@
         <a href="{{ .link | relURL }}">
 
           <div class="row justify-content-between mb-4">
-            
+
             <!-- image -->
             <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
-              <img class="img-fluid about-img p-5"  src="{{.image}}" />
+              <img class="img-fluid about-img p-5" src="{{.image}}" />
             </div>
             <!-- /image -->
 
@@ -289,106 +220,106 @@
       </div>
       <!-- /desktop version -->
 
-     <!-- mobile version -->
-     <div class="mx-4 col order-1 mobile">
+      <!-- mobile version -->
+      <div class="mx-4 col order-1 mobile">
 
-      <!-- Featured activities -->
-      {{ if .featured_activities }}
-      <div class="row mt-5">
-        <h3 class="section-title" style="color:#005aa7;">{{ i18n "featured" }}</h3>
-      </div>
-      {{ range .featured_activities }}
-      <a class="" href="{{.link | relURL }}">
-        <div class="row justify-content-between clickable-wrapper row p-5" style="background-color: #ffffff;">
-          <div class="col-12 pr-4" style="margin-bottom:50px;">
-            <img class="img-fluid about-img-mobile" src="{{.image}}" />
-          </div>
-          <div class="col-12">
-            <div class="row align-items-center">
-
-              <!-- title -->
-              <h4 class="mb-2" style="color:#005aa7;">{{.title}}</h4>
-              <!-- /title -->
-
-              <!-- intro text -->
-              <p style="color: #777;">
-                {{.intro | markdownify}}
-                <span style="color: #005aa7;">{{ i18n "read_more" }}</span>
-              </p>
-              <!-- intro text -->
-            </div>
-
-            <!-- metadata -->
-            <div class="row" style="position:relative;">
-              {{ if .date }}
-              <span style="color:#005aa7;" class="mr-1 mt-1 px-0 py-1 mx-0">
-                {{.date }}
-              </span>
-              {{ end }}
-              {{ if .type }}
-              <span class="highlight-blue">
-                {{ .type }}
-              </span>
-              {{ end }}
-            </div>
-            <!-- /metadata -->
-
-          </div>
+        <!-- Featured activities -->
+        {{ if .featured_activities }}
+        <div class="row mt-5">
+          <h3 class="section-title" style="color:#005aa7;">{{ i18n "featured" }}</h3>
         </div>
-      </a>
-      {{end}}
-      {{end}}
-      <!-- /Featured Activities -->
-
-      <!-- Activities -->
-      {{ if .activities }}
-      <div class="row mt-5">
-
-        <!-- title -->
-        <h3 class="section-title" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
-        <!-- /title -->
-
-      </div>
-      {{ range .activities }}
-      <a href="{{ .link | relURL }}">
-        <div class="row my-4">
-          <div class="col-12" style="background-color: #ffffff;">
-            <img class="img-fluid about-img-mobile p-5"  src="{{.image}}" />
-          </div>
-          <div class="col-12" style="background-color: #ffffff;">
-            <div class="row align-items-center p-3">
-              <h4 class="my-4 mx-3" style="color: #005aa7;">
-                {{.title}}
-              </h4>
+        {{ range .featured_activities }}
+        <a class="" href="{{.link | relURL }}">
+          <div class="row justify-content-between clickable-wrapper row p-5" style="background-color: #ffffff;">
+            <div class="col-12 pr-4" style="margin-bottom:50px;">
+              <img class="img-fluid about-img-mobile" src="{{.image}}" />
             </div>
-            <div class="row pl-4 mb-3" style="position:relative; bottom:0;">
-              {{ if .date }}
-              <span style="color:#005aa7;" class="mr-1 mt-1 px-2 py-1 mx-1">
-                {{.date }}
-              </span>
-              {{ end }}
-              {{ if .type }}
-              <span class="highlight-blue">
-                {{ .type }}
-              </span>
-              {{ end }}
+            <div class="col-12">
+              <div class="row align-items-center">
+
+                <!-- title -->
+                <h4 class="mb-2" style="color:#005aa7;">{{.title}}</h4>
+                <!-- /title -->
+
+                <!-- intro text -->
+                <p style="color: #777;">
+                  {{.intro | markdownify}}
+                  <span style="color: #005aa7;">{{ i18n "read_more" }}</span>
+                </p>
+                <!-- intro text -->
+              </div>
+
+              <!-- metadata -->
+              <div class="row" style="position:relative;">
+                {{ if .date }}
+                <span style="color:#005aa7;" class="mr-1 mt-1 px-0 py-1 mx-0">
+                  {{.date }}
+                </span>
+                {{ end }}
+                {{ if .type }}
+                <span class="highlight-blue">
+                  {{ .type }}
+                </span>
+                {{ end }}
+              </div>
+              <!-- /metadata -->
+
             </div>
           </div>
+        </a>
+        {{end}}
+        {{end}}
+        <!-- /Featured Activities -->
+
+        <!-- Activities -->
+        {{ if .activities }}
+        <div class="row mt-5">
+
+          <!-- title -->
+          <h3 class="section-title" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+          <!-- /title -->
+
         </div>
-      </a>
-      {{end}}
-      {{end}}
-      <!-- /Activities -->
+        {{ range .activities }}
+        <a href="{{ .link | relURL }}">
+          <div class="row my-4">
+            <div class="col-12" style="background-color: #ffffff;">
+              <img class="img-fluid about-img-mobile p-5" src="{{.image}}" />
+            </div>
+            <div class="col-12" style="background-color: #ffffff;">
+              <div class="row align-items-center p-3">
+                <h4 class="my-4 mx-3" style="color: #005aa7;">
+                  {{.title}}
+                </h4>
+              </div>
+              <div class="row pl-4 mb-3" style="position:relative; bottom:0;">
+                {{ if .date }}
+                <span style="color:#005aa7;" class="mr-1 mt-1 px-2 py-1 mx-1">
+                  {{.date }}
+                </span>
+                {{ end }}
+                {{ if .type }}
+                <span class="highlight-blue">
+                  {{ .type }}
+                </span>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </a>
+        {{end}}
+        {{end}}
+        <!-- /Activities -->
 
-      <!-- More -->
-      <div class="row mt-4 pb-3 justify-content-center d-flex">
-        <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
+        <!-- More -->
+        <div class="row mt-4 pb-3 justify-content-center d-flex">
+          <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
+        </div>
+        <!-- /More -->
+
+
       </div>
-      <!-- /More -->
-
-
-    </div>
-    <!-- /mobile version -->
+      <!-- /mobile version -->
 
     </div>
   </div>
@@ -435,13 +366,13 @@
     <!-- desktop version -->
     <div class="col-12 text-center desktop">
       {{ range .lines }}
-        <h1 class="mb-4" style="color:#005aa7; font-weight:100;">
-          {{ .text_before }}
-          <i class="highlight-blue">{{.text_highlighted}}</i>
-          {{.text_after}}
-          <br />
-        </h1>
-        <br>
+      <h1 class="mb-4" style="color:#005aa7; font-weight:100;">
+        {{ .text_before }}
+        <i class="highlight-blue">{{.text_highlighted}}</i>
+        {{.text_after}}
+        <br />
+      </h1>
+      <br>
       {{ end }}
     </div>
     <!-- /desktop version -->
@@ -449,13 +380,13 @@
     <!-- mobile version -->
     <div class="col-12 text-center mobile">
       {{ range .lines }}
-        <h1 class="mb-0" style="color:#005aa7; font-weight:100; line-height:2;">
-          {{ .text_before }}
-          <br />
-          <i class="highlight-blue">{{.text_highlighted}}</i>
-          {{.text_after}}
-        </h1>
-        <br>
+      <h1 class="mb-0" style="color:#005aa7; font-weight:100; line-height:2;">
+        {{ .text_before }}
+        <br />
+        <i class="highlight-blue">{{.text_highlighted}}</i>
+        {{.text_after}}
+      </h1>
+      <br>
       {{ end }}
     </div>
     <!-- /mobile version -->
@@ -496,8 +427,7 @@
       <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-white">
         <div class="feature-card-transparant">
           <i class="{{.icon}} mb-3" style="color:white; display:inline-block; font-size:22px;">
-            <h4 class=""
-              style="color:white; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
+            <h4 class="" style="color:white; display:inline-block; padding-left:10px; font-weight:100; font-size:18px;">
               {{ .name | markdownify }}
             </h4>
           </i>
@@ -577,20 +507,20 @@
 
     <!-- mobile version -->
     <div class="row justify-content-center mobile">
-    {{ range .feature_item }}
-    <div class="col-12 m-4 border-top-blue">
-      <div class="feature-card-transparant">
-        <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
-          <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
-            {{ .name | markdownify }}
-          </h4>
-        </i>
-        <p>{{ .content | markdownify }}</p>
+      {{ range .feature_item }}
+      <div class="col-12 m-4 border-top-blue">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
+            <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+              {{ .name | markdownify }}
+            </h4>
+          </i>
+          <p>{{ .content | markdownify }}</p>
+        </div>
       </div>
+      {{ end }}
     </div>
-    {{ end }}
-  </div>
-  <!-- /mobile version -->
+    <!-- /mobile version -->
 
     <!-- /areas of AI expertise -->
 
@@ -645,7 +575,7 @@
     <div class="row mobile">
       {{ range .feature_item }}
       <div class="col-12">
-        <img class="img-fluid about-img-mobile" src="{{.image}}"/>
+        <img class="img-fluid about-img-mobile" src="{{.image}}" />
       </div>
       <div class="col-12 clickable-wrapper mt-5 mb-5" data-href="{{.link | relURL }}">
         <h4 class="" style="color: #005aa7;">
@@ -755,7 +685,7 @@
 
 <!-- Advantages of algoprudence -->
 {{ with .Params.Advantages_of_algoprudence}}
-<section class="section bg-lightblue" >
+<section class="section bg-lightblue">
   <div class="container">
 
     <!-- Title -->
@@ -786,7 +716,7 @@
       <div class="col-md-6 col-sm-12 mb-4 d-flex align-items-center justify-content-center">
         <div class="row">
           <div class="col-12">
-            <img class="img-fluid" src="{{.image}}" style="height:200px; display:block; margin:auto;"/>
+            <img class="img-fluid" src="{{.image}}" style="height:200px; display:block; margin:auto;" />
             <a class="btn-link" href="{{.button_link | relURL}}">
               <h3 class="btn" style="color:#ffffff; font-weight:600; margin-top:30px;">
                 {{.button_text}}
@@ -818,7 +748,7 @@
       <div class="col-12 mb-4 d-flex align-items-center justify-content-center" style="margin-top:60px;">
         <div class="row">
           <div class="col-12">
-            <img class="img-fluid" src="{{.image}}" style="height:200px; display:block; margin:auto;"/>
+            <img class="img-fluid" src="{{.image}}" style="height:200px; display:block; margin:auto;" />
             <a class="btn-link" href="{{.button_link | relURL}}" style="">
               <h3 class="btn" style="color:#ffffff; font-weight:600; margin-top:50px;">
                 {{.button_text}}
@@ -843,25 +773,25 @@
 {{ with .Params.Title_gif}}
 <section class="section-none bg-white">
   <div class="container pinDiv2">
-      
-      <!-- Title -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
-        </div>
-      </div>
-      <!-- /Title -->
 
-      <!-- XX version -->
-      <div class="row">
-        <!-- algoprudence animation -->
-        <div class="text-center" id="imagesequence">
-          <img id="img-gif" src="/images/gif-algoprudence-frames/frame-036.png"><br>
-        </div>
-        <!-- /algoprudence animation -->
+    <!-- Title -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
       </div>
-      <!-- /XX version -->
-      
+    </div>
+    <!-- /Title -->
+
+    <!-- XX version -->
+    <div class="row">
+      <!-- algoprudence animation -->
+      <div class="text-center" id="imagesequence">
+        <img id="img-gif" src="/images/gif-algoprudence-frames/frame-036.png"><br>
+      </div>
+      <!-- /algoprudence animation -->
+    </div>
+    <!-- /XX version -->
+
   </div>
 </section>
 {{ end }}

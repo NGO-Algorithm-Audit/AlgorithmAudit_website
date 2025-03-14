@@ -23,6 +23,16 @@
 	padding: 0.25rem 0.5rem !important;
 }
 
+.highlight-red {
+	border: #FFCBBD 0.5rem solid;
+	border-radius: 1.4rem;
+	background-color: #FFCBBD;
+	color: #005aa7;
+	margin: 0.25rem 0.25rem 0.5rem 0.25rem !important;
+	padding: 0.25rem 0.5rem !important;
+	font-style: normal;
+}
+
 .yellow-button {
 	margin-left: 20px;
 	background-color: #005aa7;
@@ -37,7 +47,7 @@
 }
 
 .ac .ac-trigger {
-	font-family: avenir, sans-serif;
+	font-family: AvenirNextProDemi, avenir, sans-serif;
 }
 
 .ac .ac-trigger::after {

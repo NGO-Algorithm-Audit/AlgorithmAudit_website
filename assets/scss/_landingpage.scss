@@ -1,0 +1,296 @@
+.landing-page-container {
+    width: 100vw;
+    max-width: 100vw;
+    
+    @media (max-width: 1200px) {
+        min-height: 77vh;
+    }
+
+    @media (min-width: 1200px) {
+        min-height: 100vh;
+    }
+    background-color: #DFF1FF;
+}
+
+.landing-page-top-row {
+    @media (max-width: 1200px) {
+        min-height: 20vh;
+    }
+
+    @media (min-width: 1200px) {
+        min-height: 33vh;
+    }
+}
+
+.landing-page-middle-row {
+    min-height: 42vh;
+}
+
+.landing-page-bottom-row {
+    
+    @media (max-width: 1200px) {
+        min-height: 15vh;
+    }
+
+    @media (min-width: 1200px) {
+        min-height: 25vh;
+    }
+}
+
+.landing-page-col-content {
+    z-index: 20;
+}
+
+.landing-page-title {
+    
+    
+    @media (max-width: 1200px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 4.25rem;
+    }
+    text-align: center;
+    font-weight: 600;
+    font-family: AvenirNextProDemi, avenir, sans-serif;
+}
+.landing-page-slogan-title {
+    @media (max-width: 1200px) {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 2.5rem;
+    }
+    margin-top: 1rem;
+}
+
+.landing-page-slogan-slider {
+    @media (max-width: 1200px) {
+        height: 3.75rem;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: -0.5rem;
+        height: 5rem;
+    }
+}
+
+.landing-page-slogan-slider-li {
+    margin-top: 0.3rem;
+}
+
+.landing-page-slide-title {
+    @media (max-width: 1200px) {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 2.5rem;
+    }
+    padding: 0.75rem;
+    margin: 0;
+    margin-top: -0.75rem;
+    margin-left: -0.75rem;
+}
+
+.landing-page-col {
+    position: relative;
+
+    .shape {
+        position: absolute;
+        background-color: #BED8F1;
+        z-index: 10;
+        box-sizing: border-box;
+    }
+
+    .shape-square-top-left {
+        top: 10%;
+        left: 0px;
+        transform-origin: top left;
+        transform: rotate(6deg);
+        width: 110%;
+        padding: 37%;
+    }
+
+    .shape-square-middle-left {
+        top: 80%;
+        right: 45%;
+        transform-origin: top right;
+        transform: rotate(-28deg);
+        padding: 37%;
+    }
+
+    .shape-square-bottom-left {
+        top: 17%;
+        right: 63%;
+        transform-origin: top right;
+        transform: rotate(4deg);
+        padding: 37%;
+    }
+
+    .shape-circle-middle-left {
+        border-radius: 50%;
+        top: 73%;
+        right: 5%;
+        padding: 35%;
+    }
+
+    .shape-circle-top-middle__left {
+        border-radius: 50%;
+        bottom: 53%;
+        left: -1%;
+        padding: 9%;
+    }
+
+    .shape-triangle-top-middle {
+        bottom: 10%;
+        left: 7%;
+        padding: 12%;
+        transform-origin: top middle;
+        transform: rotate(-73deg);
+        clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
+    }
+
+    .shape-square-top-middle__middle {
+        top: 0;
+        left: 40%;
+        transform-origin: top right;
+        transform: rotate(3deg);
+        padding: 9%;
+    }
+
+    .shape-circle-top-middle__right {
+        border-radius: 50%;
+        bottom: 9%;
+        right: 15%;
+        padding: 9%;
+    }
+
+    .shape-square-top-middle__right {
+        bottom: 37%;
+        right: -8%;
+        transform-origin: top left;
+        transform: rotate(25deg);
+        padding: 9%;
+    }
+
+    .shape-circle-top-right {
+        border-radius: 50%;
+        top: 22%;
+        left: 40%;
+        padding: 35%;
+    }
+
+    .shape-square-middle-right {
+        top: 20%;
+        right: 0%;
+        transform-origin: bottom right;
+        transform: rotate(12deg);
+        padding: 37%;
+    }
+
+    .shape-triangle-bottom-right {
+        top: -35%;
+        left: -34%;
+        padding: 50%;
+        transform-origin: top;
+        transform: rotate(-37deg);
+        clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
+    }
+
+    .shape-square-bottom-middle__most-left {
+        top: 7%;
+        left: 0%;
+        transform-origin: top left;
+        transform: rotate(8deg);
+        padding: 9%;
+    }
+
+    .shape-square-bottom-middle__left {
+        top: 12%;
+        left: 12%;
+        transform-origin: top right;
+        transform: rotate(-33deg);
+        padding: 9%;
+    }
+
+    .shape-square-bottom-middle__right {
+        top: 27%;
+        left: 66%;
+        transform-origin: top left;
+        transform: rotate(9deg);
+        padding: 9%;
+    }
+
+    .shape-square-bottom-middle__most-right {
+        top: -10%;
+        right: 2%;
+        transform-origin: top right;
+        transform: rotate(-16deg);
+        padding: 9%;
+    }
+    
+    .landing-page-scroll-container {
+        z-index: 20;
+        position: absolute;
+        
+        @media (max-width: 1200px) {
+            bottom: 20%;
+            left: 43%;
+        }
+
+        @media (min-width: 1200px) {
+            bottom: 30%;
+            left: 45%;
+        }
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .landing-page-scroll-text {
+        font-size: 1.8rem;
+        color: #005aa7 !important;
+        font-family: sans-serif;
+        margin-bottom: 0rem;
+    }
+    .landing-page-scroll-icon {
+        font-size: 1.5rem;
+        color: #005aa7 !important;
+        animation: bounce 2s infinite;
+        animation-delay: 3s;
+    }
+
+    @-moz-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+        40% {-moz-transform: translateY(-15px);}
+        60% {-moz-transform: translateY(-7px);}
+    }
+     
+    @-o-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+        40% {-o-transform: translateY(-15px);}
+        60% {-o-transform: translateY(-7px);}
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-15px);}
+        60% {transform: translateY(-7px);}
+    }
+}
+
+.landing-page-clear-bottom {
+    z-index: 11;
+    background-color: #FFF;
+    width: 100vw;
+    min-height: 35vh;
+    position: relative;
+    margin-bottom: -20vh;
+    padding: 0;
+}
+
+.activitifeed-section {
+    z-index: 20;
+    position: relative;
+}
