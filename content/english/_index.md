@@ -2,7 +2,7 @@
 Banner:
   image: /images/svg-illustrations/main_illustration.svg
   tag: definition
-  title: al-go-pru-dence
+  title: Building public knowledge for responsible algorithms
   phonetica: /æl.ɡə-ˈpruː.dəns/
   type: noun
   description1: Case-based normative advice for ethical algorithms
@@ -34,12 +34,15 @@ Activity_Feed:
       date: 10-03-2025
       type: event
     - title: >-
-        Demo open-source AI auditing tools during innovation day Dutch Ministry of the Interior
+        Demo open-source AI auditing tools during innovation day Dutch Ministry
+        of the Interior
       link: /events/activities/#events
       image: /images/events/MinBZK_logo.jpg
       date: 13-02-2025
       type: presentatie
-    - title: Presentation Responsible AI - Innovation Festival Dutch Ministry of Infrastructure and Water
+    - title: >-
+        Presentation Responsible AI - Innovation Festival Dutch Ministry of
+        Infrastructure and Water
       link: /events/activities/#events
       image: /images/events/MinIenW_logo.png
       date: 13-02-2025

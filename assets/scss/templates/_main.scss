@@ -448,7 +448,7 @@ a.post-title {
       padding-left: 20px;
       position: relative;
 
-      &::before {
+      &:not(.ms-slider__word)::before {
         position: absolute;
         content: '';
         height: 8px;
@@ -727,12 +727,12 @@ vertical-align: top;
   padding-top: 5px;
 }
 
-.content ul li:before{
+.content ul li:not(.ms-slider__word):before{
   height: 0px;
   width: 0px;
 }
 
-.content ul li:before {
+.content ul li:not(.ms-slider__word):before {
   position: absolute;
   content: ">" !important;
   color:#005AA7;
