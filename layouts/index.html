@@ -35,26 +35,26 @@
       <div class="slider-wrapper">
 
         <!-- main -->
-        <h3 class="mb-0" style="color:#005aa7; font-weight:100;">{{.title}}</h3>
+        <h2 class="landing-page-slogan-title mb-0 d-inline-block" style="color:#005aa7; font-weight:100;">{{.title}}</h2>
         <!-- /main -->
 
         <!-- slider -->
-        <div class="ms-slider">
+        <div class="ms-slider d-inline-block landing-page-slogan-slider">
           <ul class="ms-slider__words">
             {{ range .labels }}
-            <li class="ms-slider__word pl-0">
+            <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
               <div class="slider-wrapper mb-1 py-1">
-                <h3 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
-                    class="highlight-red">{{.text}}</i></h3>
+                <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
+                    class="highlight-red">{{.text}}</i></h2>
               </div>
             </li>
             {{ end }}
             <!-- repeat the last item for the slider logic -->
             {{ with index .labels 0 }}
-            <li class="ms-slider__word pl-0">
+            <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
               <div class="slider-wrapper mb-1 py-1">
-                <h3 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
-                    class="highlight-red">{{.text}}</i></h3>
+                <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
+                    class="highlight-red">{{.text}}</i></h2>
               </div>
             </li>
             {{ end }}
@@ -88,13 +88,14 @@
     </div>
   </div>
 </section>
+<section class="landing-page-clear-bottom"></section>
 {{ end }}
 <!-- /Banner -->
 
 <!-- Activity Feed -->
 {{ with .Params.Activity_Feed}}
 {{ if .enable }}
-<section class="section-top">
+<section class="activitifeed-section">
   <div class="container" style="background-color:#deecf7;">
     <div class="row align-items-center border-gradient2">
 

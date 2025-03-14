@@ -1,20 +1,20 @@
 .landing-page-container {
     width: 100vw;
     max-width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #DFF1FF;
 }
 
 .landing-page-top-row {
-    height: 33vh;
+    min-height: 33vh;
 }
 
 .landing-page-middle-row {
-    height: 42vh;
+    min-height: 42vh;
 }
 
 .landing-page-bottom-row {
-    height: 25vh;
+    min-height: 25vh;
 }
 
 .landing-page-col-content {
@@ -25,6 +25,18 @@
     font-size: 5rem;
     text-align: center;
     font-weight: 600;
+}
+.landing-page-slogan-title {
+    margin-top: 1rem;
+}
+
+.landing-page-slogan-slider {
+    margin-top: -0.25rem;
+    height: 4.25rem;
+}
+
+.landing-page-slogan-slider-li {
+    margin-top: 0.3rem;
 }
 
 .landing-page-slide-title {
@@ -170,4 +182,19 @@
         transform: rotate(-16deg);
         padding: 9%;
     }
+}
+
+.landing-page-clear-bottom {
+    z-index: 11;
+    background-color: #FFF;
+    width: 100vw;
+    min-height: 35vh;
+    position: relative;
+    margin-bottom: -20vh;
+    padding: 0;
+}
+
+.activitifeed-section {
+    z-index: 20;
+    position: relative;
 }

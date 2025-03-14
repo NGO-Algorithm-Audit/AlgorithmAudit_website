@@ -922,9 +922,11 @@ padding: 20px 0px 0px 0px;
 }
 
 .slider-wrapper{
-  display: flex;
+  display: block;
   flex-direction: row;
   align-items: center;
+  width: 100%;
+  text-align: center;
 }
 
 .ms-slider {
