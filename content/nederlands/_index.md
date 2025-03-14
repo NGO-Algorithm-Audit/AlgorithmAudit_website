@@ -2,7 +2,7 @@
 Banner:
   image: /images/svg-illustrations/main_illustration.svg
   tag: definitie
-  title_line1: Publieke kennis opbouwen
+  title_line1: Publieke kennisopbouw
   title_line2_before: voor
   title_line2_underline: verantwoorde
   title_line2_after: algoritmes
