@@ -1,12 +1,25 @@
 .landing-page-container {
     width: 100vw;
     max-width: 100vw;
-    min-height: 100vh;
+    
+    @media (max-width: 1200px) {
+        min-height: 77vh;
+    }
+
+    @media (min-width: 1200px) {
+        min-height: 100vh;
+    }
     background-color: #DFF1FF;
 }
 
 .landing-page-top-row {
-    min-height: 33vh;
+    @media (max-width: 1200px) {
+        min-height: 20vh;
+    }
+
+    @media (min-width: 1200px) {
+        min-height: 33vh;
+    }
 }
 
 .landing-page-middle-row {
@@ -14,7 +27,14 @@
 }
 
 .landing-page-bottom-row {
-    min-height: 25vh;
+    
+    @media (max-width: 1200px) {
+        min-height: 15vh;
+    }
+
+    @media (min-width: 1200px) {
+        min-height: 25vh;
+    }
 }
 
 .landing-page-col-content {
@@ -22,7 +42,7 @@
 }
 
 .landing-page-title {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: 600;
 }
