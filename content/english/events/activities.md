@@ -26,6 +26,51 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: Guest lecture ethical AI 
+    description: >
+      Guest lecture for MSc Artificial Intelligence students with a minor in AI ethics at the University of Utrecht.
+
+    image: /images/events/uu-logo.png
+    date: 10-03-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q1_2025
+        label: Q1-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: Demo open-source AI auditing tools during innovation day Dutch Ministry of the Interior
+    description: >
+      Presentation and demo of open-source AI auditing tools as developed as part of Innovation budget 2024-25, a competition yearly hosted by the Dutch Ministry of the Interior.
+
+      ![](/images/events/20250213_Demodag2025.jpg)
+    image: /images/events/MinBZK_logo.jpg
+    date: 13-02-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q1_2025
+        label: Q1-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: Presentation Responsible AI - Innovation Festival Dutch Ministry of Infrastructure and Water
+    description: >
+      Presentation on responsible use of algorithms and AI during the Innovation Festival of the Dutch Ministry of Infrastructure and Water.
+    image: /images/events/MinIenW_logo.png
+    date: 13-02-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q1_2025
+        label: Q1-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: Event 'Can Europe regulate AI?'
     description: >
       Book interview with Marietje Schaake – author of The Tech Coup – and Haroon Sheikh – author of Atlas of the Digital World – in debate centre Pakhuis de Zwijger
@@ -65,7 +110,7 @@ events:
         label: presentation
   - title: Presentation 'Inkoop van AI en algoritmen PIANOo'
     description: >
-      Presentatie over de inkoop van AI en algoritmen bij PIANOo – Expertisecentrum Aanbesteden 
+      Presentation on procurement of AI and algorithm for PIANOo – an expertise centre for procurement of the Dutch government 
 
     image: /images/events/pianoo-logo.svg
     date: 10-12-2024
@@ -77,7 +122,7 @@ events:
         label: Q4-2024
         hide: true
       - value: type_presentation
-        label: presentatie
+        label: presentation
   - title: Break-out session 'Congres Binnenlands Bestuur'
     description: >
       Break-out session on algorithm and AI validation for Dutch municipalities
@@ -92,7 +137,21 @@ events:
         label: Q4-2024
         hide: true
       - value: type_presentation
-        label: presentatie
+        label: presentation
+  - title: Lunch lecture AI validation - Dutch Ministry of Infrastructure and Water
+    description: >
+      Lunch lecture on validation of algorithms and AI for a broad audience of employees of the Ministry of Infrastructure and Water.
+    image: /images/events/MinIenW_logo.png
+    date: 11-11-2024
+    facets:
+      - value: year_2024
+        label: '2024'
+        hide: true
+      - value: year_q3_2024
+        label: Q3-2024
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: Masterclass 'AI validation and AI standards'
     description: >
       Day long master class on AI validation and AI standards for 30+
@@ -593,7 +652,7 @@ events:
       Presentation on inclusive, deliberative stakeholder panels – Working Group
       1 Inclusiveness JTC21 CEN-CENELEC
     description: >
-      Presentatie about inclusive, deliberative normative advice commissions as
+      Presentation about inclusive, deliberative normative advice commissions as
       convened by NGO Algorithm Audit for members of WG1 Inclusiveness of JTC21
       CEN-CENELEC
     image: /images/events/jtc21.jpg

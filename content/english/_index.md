@@ -28,23 +28,22 @@ Activity_Feed:
       date: 22-10-2024
       type: white paper
   activities:
-    - title: Event 'Can Europe regulate AI?'
+    - title: Guest lecture ethical AI Utrecht University
       link: /events/activities/#events
-      image: /images/events/PdZ-logo-socials.png
-      date: 21-01-2025
+      image: /images/events/uu-logo.png
+      date: 10-03-2025
       type: event
     - title: >-
-        Guest lecture 'How algoprudence can contribute to responsible use of ML
-        algorithms'
+        Demo open-source AI auditing tools during innovation day Dutch Ministry of the Interior
       link: /events/activities/#events
-      image: /images/events/Oxford-logo.png
-      date: 13-12-2024
-      type: presentation
-    - title: Presentation 'Procurement of AI and algorithms PIANOo'
+      image: /images/events/MinBZK_logo.jpg
+      date: 13-02-2025
+      type: presentatie
+    - title: Presentation Responsible AI - Innovation Festival Dutch Ministry of Infrastructure and Water
       link: /events/activities/#events
-      image: /images/events/pianoo-logo.svg
-      date: 13-12-2024
-      type: presentation
+      image: /images/events/MinIenW_logo.png
+      date: 13-02-2025
+      type: presentatie
 Supported_by:
   title: Collaborating with
   funders:
