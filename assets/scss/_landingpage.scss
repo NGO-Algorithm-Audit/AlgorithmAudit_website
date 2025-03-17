@@ -105,6 +105,47 @@
         box-sizing: border-box;
     }
 
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @-moz-keyframes spin {
+        0% { -moz-transform: rotate(0deg); }
+        100% { -moz-transform: rotate(360deg); }
+    }
+
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
+    .shape-circle-middle-left,
+    .shape-circle-top-middle__right,
+    .shape-circle-top-right {
+        -webkit-animation: pulsate 3s infinite;
+        -moz-animation: pulsate 3s infinite;
+        animation: pulsate 3s infinite;
+    }
+
+    @keyframes pulsate {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+
+    @-moz-keyframes pulsate {
+        0% { -moz-transform: scale(1); }
+        50% { -moz-transform: scale(1.05); }
+        100% { -moz-transform: scale(1); }
+    }
+
+    @-webkit-keyframes pulsate {
+        0% { -webkit-transform: scale(1); }
+        50% { -webkit-transform: scale(1.05); }
+        100% { -webkit-transform: scale(1); }
+    }
+
     .shape-square-top-left {
         top: 10%;
         left: 0px;
@@ -112,6 +153,7 @@
         transform: rotate(6deg);
         width: 110%;
         padding: 37%;
+        background-color: #D5EBDB;
     }
 
     .shape-square-middle-left {
@@ -119,6 +161,12 @@
         right: 45%;
         transform-origin: top right;
         transform: rotate(-28deg);
+        -webkit-animation: spin 90s linear infinite;
+        -moz-animation: spin 90s linear infinite;
+        animation: spin 90s linear infinite;
+        -webkit-transform-origin: center;
+        -moz-transform-origin: center;
+        transform-origin: center;
         padding: 37%;
     }
 
@@ -148,8 +196,9 @@
         bottom: 10%;
         left: 7%;
         padding: 12%;
-        transform-origin: top middle;
-        transform: rotate(-73deg);
+        -webkit-animation: pulsate 5s infinite;
+        -moz-animation: pulsate 5s infinite;
+        animation: pulsate 5s infinite;
         clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
     }
 
@@ -189,6 +238,7 @@
         transform-origin: bottom right;
         transform: rotate(12deg);
         padding: 37%;
+        background-color: #064e72;
     }
 
     .shape-triangle-bottom-right {
@@ -206,6 +256,7 @@
         transform-origin: top left;
         transform: rotate(8deg);
         padding: 9%;
+        background-color: #ffcbbd;
     }
 
     .shape-square-bottom-middle__left {
@@ -226,10 +277,13 @@
 
     .shape-square-bottom-middle__most-right {
         top: -10%;
-        right: 2%;
+        right: -2%;
         transform-origin: top right;
         transform: rotate(-16deg);
         padding: 9%;
+        -webkit-animation: pulsate 5s infinite;
+        -moz-animation: pulsate 5s infinite;
+        animation: pulsate 5s infinite;
     }
     
     .landing-page-scroll-container {
