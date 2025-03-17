@@ -2,7 +2,7 @@
 type: regular
 title: AI-verordening implementatie tool
 subtitle: >
-  Dynamische vragenlijsten voor identificatie en risiciclassificatie van AI-systemen en _impactvolle algoritmes_. 
+  Dynamische vragenlijsten voor identificatie en risicoclassificatie van AI-systemen en _impactvolle algoritmes_. 
   Vertaling van complexe juridische definities uit de AI-verordening naar begrijpbare taal. 
   De tool is open-source ontwikkeld en kan lokaal kosteloos binnen uw organisatie worden gebruikt.
 
