@@ -193,12 +193,11 @@
     }
 
     .shape-triangle-top-middle {
-        bottom: 10%;
-        left: 7%;
+        bottom: 0%;
+        left: 27%;
         padding: 12%;
-        -webkit-animation: pulsate 5s infinite;
-        -moz-animation: pulsate 5s infinite;
-        animation: pulsate 5s infinite;
+        transform-origin: top;
+        transform: rotate(55deg);
         clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
     }
 
