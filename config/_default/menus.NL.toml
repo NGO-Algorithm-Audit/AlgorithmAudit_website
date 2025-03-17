@@ -63,7 +63,7 @@ url = "/nl/technical-tools/BDT"
     icon = "fa-table"
   [[main]]
   parent = "Technische tools"
-  name = "AI-verordening Implementatie Tool"
+  name = "AI-verordening implementatie tool"
   url = "nl/technical-tools/implementation-tool"
   weight = 4
   [[main.params]]
