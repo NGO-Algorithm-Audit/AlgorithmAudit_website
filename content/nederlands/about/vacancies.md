@@ -44,6 +44,47 @@ form1:
           id: agree
       required: true
       type: checkbox
+form2:
+  title: Sollicitatieformulier
+  button_text: Submit
+  backend_link: 'https://formspree.io/f/maneqoyd'
+  id: form2
+  questions:
+    - label: |
+        Naam
+      id: name
+      required: true
+      type: text
+    - label: |
+        Contactgegevens
+      id: contact-details
+      required: true
+      type: email
+      placeholder: Emailadres
+    - label: |
+        Motivatiebrief (max. 500 woorden)
+      id: motivation-letter2
+      file_upload_text: Kies bestand
+      required: true
+      file_type: '.docx, .pdf'
+      type: file
+    - label: |
+        CV
+      id: cv2
+      file_upload_text: Kies bestand
+      required: true
+      file_type: '.docx, .pdf'
+      type: file
+    - label: >
+        Opmerking over verwerking van je persoonsgegevens <br> <span style="font-size:12px;
+        color=#777;">Ingezonden gegevens zullen alleen verwerkt worden in het kader van het sollicitatieproces. Je gegevens zullen veilig worden opgeslagen en worden verwijderd nadat de procedure is afgerond.</span>
+      id: terms-conditions
+      values:
+        - label: Akkoord
+          value: agree
+          id: agree
+      required: true
+      type: checkbox
 quick_navigation:
   title: Overzicht
   links:
@@ -122,7 +163,7 @@ Bij vragen over de vacature of procedure, stuur een berichtje via het contactfor
 
 {{< accordions_area_open id="stagiair" >}}
 {{< accordion_item_open title="Stagiair" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="0.6-1.0 fte" tag2="Schaal 5" tag3="≥01-05-2025" >}}
-{{< button button_text="Solliciteer" button_link="#form" >}}
+{{< button button_text="Solliciteer" button_link="#form2" >}}
 #### Stagiair (0.6-1.0 fte)
 
 Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol waarbij ieders belangen worden meegenomen? Kom stichting Algorithm Audit versterken als _Stagiair_ en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
@@ -178,6 +219,6 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 Stuur je sollicitatiebrief en CV uiterlijk voor 28-03-2025 naar info@algorithmaudit.eu.
 
 Bij vragen over de vacature of procedure, stuur een berichtje via het contactforumlier.
-{{< form1 >}}
+{{< form2 >}}
 {{< accordion_item_close >}}
 {{< accordions_area_close >}}
