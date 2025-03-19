@@ -4,7 +4,7 @@ subtitle: |
   Find here an overview of current job openings at Algorithm Audit
 image: /images/svg-illustrations/about.svg
 form1:
-  title: Sollicitatieformulier
+  title: Application form
   button_text: Submit
   backend_link: 'https://formspree.io/f/mdoqdpnn'
   id: form
@@ -23,23 +23,62 @@ form1:
     - label: |
         Motivatiebrief (max. 500 woorden)
       id: motivation-letter
-      file_upload_text: Kies bestand
+      file_upload_text: Choose file
       required: true
       file_type: '.docx, .pdf'
       type: file
     - label: |
         CV
       id: cv
-      file_upload_text: Kies bestand
+      file_upload_text: Choose file
       required: true
       file_type: '.docx, .pdf'
       type: file
     - label: >
-        Opmerking over verwerking van je persoonsgegevens <br> <span style="font-size:12px;
-        color=#777;">Ingezonden gegevens zullen alleen verwerkt worden in het kader van het sollicitatieproces. Je gegevens zullen veilig worden opgeslagen en worden verwijderd nadat de procedure is afgerond.</span>
+        Note about processing personal data <br> <span style="font-size:12px; color=#777;">Submitted data will only be processed as part of the application process. Your data will be securely stored and deleted after the procedure is completed.</span>    
       id: terms-conditions
       values:
-        - label: Akkoord
+        - label: Agree
+          value: agree
+          id: agree
+      required: true
+      type: checkbox
+form2:
+  title: Application form
+  button_text: Submit
+  backend_link: 'https://formspree.io/f/mdoqdpnn'
+  id: form
+  questions:
+    - label: |
+        Naam
+      id: name
+      required: true
+      type: text
+    - label: |
+        Contactgegevens
+      id: contact-details
+      required: true
+      type: email
+      placeholder: Emailadres
+    - label: |
+        Motivatiebrief (max. 500 woorden)
+      id: motivation-letter2
+      file_upload_text: Choose file
+      required: true
+      file_type: '.docx, .pdf'
+      type: file
+    - label: |
+        CV
+      id: cv2
+      file_upload_text: Choose file
+      required: true
+      file_type: '.docx, .pdf'
+      type: file
+    - label: >
+        Note about processing personal data <br> <span style="font-size:12px; color=#777;">Submitted data will only be processed as part of the application process. Your data will be securely stored and deleted after the procedure is completed.</span>    
+      id: terms-conditions
+      values:
+        - label: Agree
           value: agree
           id: agree
       required: true
@@ -55,7 +94,7 @@ quick_navigation:
 
 {{< accordions_area_open id="projectmedewerker" >}}
 {{< accordion_item_open title="Project employee (Dutch only)" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="1.0 fte" tag2="Schaal 7-8" tag3="≥01-05-2025" >}}
-{{< button button_text="Solliciteer" button_link="#form" >}}
+{{< button button_text="Submit" button_link="#form" >}}
 #### Projectmedewerker (1.0 fte)
 
 Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol waarbij ieders belangen worden meegenomen? Kom stichting Algorithm Audit versterken als _Projectmedewerker_ en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
@@ -178,6 +217,6 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 Stuur je sollicitatiebrief en CV uiterlijk voor 28-03-2025 naar info@algorithmaudit.eu.
 
 Bij vragen over de vacature of procedure, stuur een berichtje via het contactforumlier.
-{{< form1 >}}
+{{< form2 >}}
 {{< accordion_item_close >}}
 {{< accordions_area_close >}}
