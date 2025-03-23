@@ -651,35 +651,6 @@ ul.dashed > li::before {
   }
 }
 
-.slick-dots {
-  text-align: center;
-  margin-top: 20px;
-  padding: 0;
-
-  li {
-    display: inline-block;
-    margin: 0 5px;
-
-    &.slick-active {
-      button {
-        background-color: $primary-color;
-      }
-    }
-
-    button {
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-      display: block;
-      color: transparent;
-      padding: 0;
-      border: 1px solid $primary-color;
-      background-color: transparent;
-      transition: .2s ease;
-    }
-  }
-}
-
 .module-border-wrap {
   height: 100%;
   width: 100%;

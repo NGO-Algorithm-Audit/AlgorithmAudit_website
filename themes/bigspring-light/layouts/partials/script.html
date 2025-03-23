@@ -24,7 +24,6 @@
 {{ $scripts = $scripts | append (resources.Get .link) }}
 {{ end }}
 {{ end }}
-{{ $scripts := $scripts | append (resources.Get "js/script.js" | minify) }}
 {{ $scripts := $scripts | resources.Concat "/js/script.js" | minify | fingerprint "sha512" }}
 <script crossorigin="anonymous" defer="defer" integrity="{{ $scripts.Data.Integrity }}" type="application/javascript">{{$scripts.Content | safeJS}}</script>
 

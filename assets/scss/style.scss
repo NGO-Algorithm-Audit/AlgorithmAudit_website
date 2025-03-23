@@ -29,3 +29,5 @@ $icon-font: '{{.icon_font | default "Font Awesome 5 Free"}}';
 @import 'custom';
 
 @import 'landingpage';
+
+@import 'menu';
