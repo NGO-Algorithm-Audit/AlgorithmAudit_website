@@ -14,7 +14,7 @@
 
 .landing-page-top-row {
     @media (max-width: 1200px) {
-        min-height: 23vh;
+        min-height: 20vh;
     }
 
     @media (min-width: 1200px) {
@@ -24,7 +24,7 @@
 
 .landing-page-middle-row {
     @media (max-width: 1200px) {
-        min-height: 52vh;
+        min-height: 55vh;
     }
 
     @media (min-width: 1200px) {
@@ -51,7 +51,7 @@
     
     
     @media (max-width: 1200px) {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
     @media (min-width: 1200px) {
@@ -356,28 +356,41 @@
     .landing-page-scroll-container {
         z-index: 20;
         position: absolute;
+        width: 100%;
         
         @media (max-width: 1200px) {
-            bottom: 20%;
-            left: 43%;
+            bottom: 0px;
         }
 
         @media (min-width: 1200px) {
-            bottom: 30%;
-            left: 45%;
+            bottom: 10%;
         }
         padding: 1rem;
         text-align: center;
     }
 
     .landing-page-scroll-text {
-        font-size: 1.4rem;
+        
+        @media (max-width: 1200px) {
+            font-size: 1rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 1.4rem;
+        }
         color: #005aa7 !important;
         font-family: sans-serif;
         margin-bottom: 0rem;
     }
     .landing-page-scroll-icon {
-        font-size: 1.5rem;
+        
+        @media (max-width: 1200px) {
+            font-size: 1rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 1.5rem;
+        }
         color: #005aa7 !important;
         animation: bounce 2s infinite;
         animation-delay: 3s;
