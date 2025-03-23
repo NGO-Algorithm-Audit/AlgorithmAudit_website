@@ -1,6 +1,7 @@
 .landing-page-container {
     width: 100vw;
     max-width: 100vw;
+    overflow: hidden;
     
     @media (max-width: 1200px) {
         min-height: 90vh;
