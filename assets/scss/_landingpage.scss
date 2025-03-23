@@ -3,7 +3,7 @@
     max-width: 100vw;
     
     @media (max-width: 1200px) {
-        min-height: 77vh;
+        min-height: 90vh;
     }
 
     @media (min-width: 1200px) {
@@ -14,7 +14,7 @@
 
 .landing-page-top-row {
     @media (max-width: 1200px) {
-        min-height: 20vh;
+        min-height: 23vh;
     }
 
     @media (min-width: 1200px) {
@@ -23,7 +23,13 @@
 }
 
 .landing-page-middle-row {
-    min-height: 42vh;
+    @media (max-width: 1200px) {
+        min-height: 52vh;
+    }
+
+    @media (min-width: 1200px) {
+        min-height: 42vh;
+    }
 }
 
 .landing-page-bottom-row {
@@ -122,7 +128,9 @@
 
     .shape-xl-circle-middle-left,
     .shape-xl-circle-top-middle__right,
-    .shape-xl-circle-top-right {
+    .shape-xl-circle-top-right,
+    .shape-sm-circle-top-right,
+    .shape-sm-circle-bottom-left {
         -webkit-animation: pulsate 3s infinite;
         -moz-animation: pulsate 3s infinite;
         animation: pulsate 3s infinite;
@@ -280,6 +288,69 @@
         transform-origin: top right;
         transform: rotate(-16deg);
         padding: 9%;
+    }
+
+    .shape-sm-square-top-left {
+        top: 30%;
+        left: 0%;
+        transform: rotate(-28deg);
+        -webkit-animation: spin 90s linear infinite;
+        -moz-animation: spin 90s linear infinite;
+        animation: spin 90s linear infinite;
+        -webkit-transform-origin: center;
+        -moz-transform-origin: center;
+        transform-origin: center;
+        padding: 12%;
+    }
+    .shape-sm-circle-top-left {
+        border-radius: 50%;
+        top: -7%;
+        left: 22%;
+        padding: 12%;
+        background-color: #D5EBDB;
+    }
+    .shape-sm-triangle-top-right {
+        top: 8%;
+        right: 10%;
+        padding: 15%;
+        transform-origin: top;
+        transform: rotate(50deg);
+        clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
+    }
+    .shape-sm-circle-top-right {
+        border-radius: 50%;
+        top: 33%;
+        right: 5%;
+        padding: 12%;
+    }
+    .shape-sm-square-bottom-left {
+        top: 15%;
+        left: 0%;
+        transform-origin: top left;
+        transform: rotate(8deg);
+        padding: 14%;
+        background-color: #ffcbbd;
+    }
+    .shape-sm-circle-bottom-left {
+        border-radius: 50%;
+        top: -35%;
+        left: 24%;
+        padding: 12%;
+    }
+    .shape-sm-square-bottom-middle_right {
+        top: 45%;
+        right: 10%;
+        transform: rotate(10deg);
+        transform-origin: top right;
+        padding: 12%;
+    }
+    .shape-sm-square-bottom-most-right {
+        top: -60%;
+        right: 6%;
+        transform: rotate(-47deg);
+        transform-origin: top right;
+        padding: 12%;
+        background-color: #064e72;
     }
     
     .landing-page-scroll-container {

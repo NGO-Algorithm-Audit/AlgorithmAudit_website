@@ -6,6 +6,10 @@ Banner:
   title_line2_before: voor
   title_line2_underline: verantwoorde
   title_line2_after: algoritmes
+  title_mobile_line1: Publieke kennisopbouw voor
+  title_mobile_line2:
+  title_mobile_line3_underline: verantwoorde
+  title_mobile_line3_after: algoritmes
   phonetica: /al.ɡo-ˈpru.dεn(t)si/
   type: zelfstandig naamwoord
   description1: >-
