@@ -1,34 +1,32 @@
 {{ define "main" }}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   rel="stylesheet" />
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="/js/home_script.js"></script>
 
 <!-- Banner -->
 {{ with .Params.Banner }}
-<section class="container landing-page-container content mx-0 mt-5">
+<!-- Desktop -->
+<section class="container landing-page-container content mx-0 mt-5 d-xl-block d-none">
   <div class="row landing-page-top-row">
-    <div class="landing-page-col col-xl-2 d-none d-xl-block">
-      <div class="shape shape-square-top-left"></div>
-      <div class="shape shape-square-middle-left"></div>
+    <div class="landing-page-col col-2 d-block">
+      <div class="shape shape-xl-square-top-left"></div>
+      <div class="shape shape-xl-square-middle-left"></div>
     </div>
-    <div class="landing-page-col col-xl-8 col-12">
-      <div class="shape shape-circle-top-middle__left"></div>
-      <div class="shape shape-triangle-top-middle"></div>
-      <div class="shape shape-square-top-middle__middle"></div>
-      <div class="shape shape-circle-top-middle__right"></div>
-      <div class="shape shape-square-top-middle__right"></div>
+    <div class="landing-page-col col-8">
+      <div class="shape shape-xl-circle-top-middle__left"></div>
+      <div class="shape shape-xl-triangle-top-middle"></div>
+      <div class="shape shape-xl-square-top-middle__middle"></div>
+      <div class="shape shape-xl-circle-top-middle__right"></div>
+      <div class="shape shape-xl-square-top-middle__right"></div>
     </div>
-    <div class="landing-page-col col-xl-2 d-none d-xl-block">
-      <div class="shape shape-circle-top-right"></div>
+    <div class="landing-page-col col-2 d-block">
+      <div class="shape shape-xl-circle-top-right"></div>
     </div>
   </div>
   <div class="row landing-page-middle-row">
-    <div class="landing-page-col col-xl-2 d-none d-xl-block">
-      <div class="shape shape-circle-middle-left"></div>
+    <div class="landing-page-col col-2 d-block">
+      <div class="shape shape-xl-circle-middle-left"></div>
     </div>
-    <div class="landing-page-col landing-page-col-content col-xl-8 col-12">
+    <div class="landing-page-col landing-page-col-content col-8">
       <h1 class="landing-page-title mt-5 mb-0" style="color:#005aa7;">{{.title_line1}}</h1>
       <h1 class="landing-page-title mt-0" style="color:#005aa7;">{{.title_line2_before}} <u>{{.title_line2_underline}}</u> {{.title_line2_after}}</h1>
       {{ with .slogan }}
@@ -68,32 +66,111 @@
       {{ end }}
     </div>
     
-    <div class="landing-page-col col-xl-2 d-none d-xl-block">
-      <div class="shape shape-square-middle-right"></div>
+    <div class="landing-page-col col-2 d-block">
+      <div class="shape shape-xl-square-middle-right"></div>
     </div>
   </div>
   <!-- /al-go-pru-dence -->
   </div>
   <div class="row landing-page-bottom-row">
-    <div class="landing-page-col col-xl-2 d-none d-xl-block">
-      <div class="shape shape-square-bottom-left"></div>
+    <div class="landing-page-col col-2 d-block">
+      <div class="shape shape-xl-square-bottom-left"></div>
     </div>
-    <div class="landing-page-col col-xl-8 col-12">
-      <div class="shape shape-square-bottom-middle__most-left"></div>
-      <div class="shape shape-square-bottom-middle__left"></div>
+    <div class="landing-page-col col-8">
+      <div class="shape shape-xl-square-bottom-middle__most-left"></div>
+      <div class="shape shape-xl-square-bottom-middle__left"></div>
       <div class="landing-page-scroll-container">
         <p class="landing-page-scroll-text d-block">scroll</p>
         <i class="fas fa-arrow-down landing-page-scroll-icon"></i>
       </div>
-      <div class="shape shape-square-bottom-middle__right"></div>
-      <div class="shape shape-square-bottom-middle__most-right"></div>
+      <div class="shape shape-xl-square-bottom-middle__right"></div>
+      <div class="shape shape-xl-square-bottom-middle__most-right"></div>
     </div>
-    <div class="landing-page-col col-xl-2 d-none d-xl-block">
-      <div class="shape shape-triangle-bottom-right"></div>
+    <div class="landing-page-col col-2 d-block">
+      <div class="shape shape-xl-triangle-bottom-right"></div>
     </div>
   </div>
 </section>
-<section class="landing-page-clear-bottom"></section>
+<section class="landing-page-clear-bottom d-xl-block d-none"></section>
+<!-- /Desktop -->
+<!-- Mobile -->
+<section class="container landing-page-container content mx-0 mt-5 d-block d-xl-none">
+  <div class="row landing-page-top-row">
+    <div class="landing-page-col col-12">
+      <div class="shape shape-sm-square-top-left"></div>
+      <div class="shape shape-sm-circle-top-left"></div>
+      <div class="shape shape-sm-triangle-top-right"></div>
+      <div class="shape shape-sm-circle-top-right"></div>
+    </div>
+  </div>
+  <div class="row landing-page-middle-row">
+    <div class="landing-page-col landing-page-col-content col-12">
+      <h1 class="landing-page-title mt-5 mb-0" style="color:#005aa7;">
+        {{.title_mobile_line1}}
+      </h1>
+      <h1 class="landing-page-title mt-0" style="color:#005aa7;">
+        {{.title_mobile_line2}}
+      </h1>
+      <h1 class="landing-page-title mt-0" style="color:#005aa7;">
+        <u>
+          {{.title_mobile_line3_underline}}
+        </u>
+        {{.title_mobile_line3_after}}
+      </h1>
+      {{ with .slogan }}
+      <!-- Slogan -->
+      <div class="slider-wrapper">
+
+        <!-- main -->
+        <h2 class="landing-page-slogan-title mt-5 mb-3 d-inline-block" style="color:#005aa7; font-weight:100;">{{.title}}</h2>
+        <!-- /main -->
+
+        <!-- slider -->
+        <div class="ms-slider d-block landing-page-slogan-slider">
+          <ul class="ms-slider__words">
+            {{ range .labels }}
+            <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
+              <div class="slider-wrapper mb-1 py-1">
+                <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
+                    class="highlight-red">{{.text}}</i></h2>
+              </div>
+            </li>
+            {{ end }}
+            <!-- repeat the last item for the slider logic -->
+            {{ with index .labels 0 }}
+            <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
+              <div class="slider-wrapper mb-1 py-1">
+                <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
+                    class="highlight-red">{{.text}}</i></h2>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <!-- /slider -->
+
+      </div>
+      
+      {{ end }}
+    </div>
+  </div>
+  <!-- /al-go-pru-dence -->
+  </div>
+  <div class="row landing-page-bottom-row">
+    <div class="landing-page-col col-12">
+      <div class="shape shape-sm-circle-bottom-left"></div>
+      <div class="shape shape-sm-square-bottom-left"></div>
+      <div class="landing-page-scroll-container">
+        <p class="landing-page-scroll-text d-block">scroll</p>
+        <i class="fas fa-arrow-down landing-page-scroll-icon"></i>
+      </div>
+      <div class="shape shape-sm-square-bottom-middle_right"></div>
+      <div class="shape shape-sm-square-bottom-most-right"></div>
+    </div>
+  </div>
+</section>
+<section class="landing-page-clear-bottom d-block d-xl-none"></section>
+<!-- /Mobile -->
 {{ end }}
 <!-- /Banner -->
 

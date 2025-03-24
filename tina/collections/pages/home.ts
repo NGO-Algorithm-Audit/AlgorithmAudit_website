@@ -53,6 +53,29 @@ export default {
           required: true,
         },
         {
+          name: "title_mobile_line1",
+          type: "string",
+          label: "title mobile line 1",
+          required: true,
+        },
+        {
+          name: "title_mobile_line2",
+          type: "string",
+          label: "title mobile line 2",
+        },
+        {
+          name: "title_mobile_line3_underline",
+          type: "string",
+          label: "title mobile line 3 underline",
+          required: true,
+        },
+        {
+          name: "title_mobile_line3_after",
+          type: "string",
+          label: "title mobile line 3 after",
+          required: true,
+        },
+        {
           label: "phonetica",
           type: "string",
           name: "phonetica",

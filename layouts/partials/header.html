@@ -58,20 +58,23 @@
           {{ end }}
 
           <!-- Language toggle -->
+           
           {{ if .IsTranslated }}
           {{ range .Translations }}
           <li class="nav-item d-inline-block" style="min-width: 137px;">
-            {{ if eq .Site.Language.Lang "en" }}
-            <a class="nav-link d-inline-block" style="font-weight: 350;" title="English" href="{{ .RelPermalink }}">EN</a>
-            {{ else }}
-            <a class="nav-link d-inline-block" title="English" href="{{ .RelPermalink }}">EN</a>
-            {{ end }}
-            |
-            {{ if eq .Site.Language.Lang "nl" }}
-            <a class="nav-link d-inline-block" style="font-weight: 350;" title="Dutch" href="{{ .RelPermalink }}">NL</a>
-            {{ else }}
-            <a class="nav-link d-inline-block" title="Dutch" href="{{ .RelPermalink }}">NL</a>
-            {{ end }}
+            <a href="{{ .RelPermalink }}" class="nav-link d-inline-block" title="Language toggle">
+              <div class="d-inline" {{ if eq .Site.Language.Lang "en" }} style="font-weight: 350;" {{ end}}>
+                EN
+              </div>
+              <!-- Rounded switch -->
+              <label class="switch d-inline-block">
+                <input type="checkbox" disabled aria-checked={{if eq .Site.Language.Lang "en" }} "true" checked {{else}} "false" {{ end }} id="lang-toggle" role="switch">
+                <span class="slider round"></span>
+              </label>
+              <div class="d-inline" {{ if eq .Site.Language.Lang "nl" }} style="font-weight: 350;" {{ end}}>
+                NL
+              </div>
+            </a>
           </li>
           {{ end }}
           {{ end }}
