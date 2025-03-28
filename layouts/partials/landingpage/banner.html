@@ -1,7 +1,7 @@
 <!-- Banner -->
 {{ with .Params.Banner }}
 <!-- Desktop -->
-<section class="container landing-page-container content mx-0 mt-5 d-xl-block d-none">
+<div class="container landing-page-container content mx-0 d-xl-block d-none">
   <div class="row landing-page-top-row">
     <div class="landing-page-col col-2 d-block">
       <div class="shape shape-xl-square-top-left"></div>
@@ -24,13 +24,16 @@
     </div>
     <div class="landing-page-col landing-page-col-content col-8">
       <h1 class="landing-page-title mt-5 mb-0" style="color:#005aa7;">{{.title_line1}}</h1>
-      <h1 class="landing-page-title mt-0" style="color:#005aa7;">{{.title_line2_before}} <u>{{.title_line2_underline}}</u> {{.title_line2_after}}</h1>
+      <h1 class="landing-page-title mt-0" style="color:#005aa7;">{{.title_line2_before}}
+        <u>{{.title_line2_underline}}</u> {{.title_line2_after}}
+      </h1>
       {{ with .slogan }}
       <!-- Slogan -->
       <div class="slider-wrapper">
 
         <!-- main -->
-        <h2 class="landing-page-slogan-title mt-5 mb-3 d-inline-block" style="color:#005aa7; font-weight:100;">{{.title}}</h2>
+        <h2 class="landing-page-slogan-title mt-5 mb-3 d-inline-block" style="color:#005aa7; font-weight:100;">
+          {{.title}}</h2>
         <!-- /main -->
 
         <!-- slider -->
@@ -58,15 +61,13 @@
         <!-- /slider -->
 
       </div>
-      
+
       {{ end }}
     </div>
-    
+
     <div class="landing-page-col col-2 d-block">
       <div class="shape shape-xl-square-middle-right"></div>
     </div>
-  </div>
-  <!-- /al-go-pru-dence -->
   </div>
   <div class="row landing-page-bottom-row">
     <div class="landing-page-col col-2 d-block">
@@ -86,11 +87,11 @@
       <div class="shape shape-xl-triangle-bottom-right"></div>
     </div>
   </div>
-</section>
-<section class="landing-page-clear-bottom d-xl-block d-none"></section>
+  <!-- /al-go-pru-dence -->
+</div>
 <!-- /Desktop -->
 <!-- Mobile -->
-<section class="container landing-page-container content mx-0 mt-5 d-block d-xl-none">
+<div class="container landing-page-container content mx-0 d-block d-xl-none">
   <div class="row landing-page-top-row">
     <div class="landing-page-col col-12">
       <div class="shape shape-sm-square-top-left"></div>
@@ -118,7 +119,8 @@
       <div class="slider-wrapper">
 
         <!-- main -->
-        <h2 class="landing-page-slogan-title mt-5 mb-3 d-inline-block" style="color:#005aa7; font-weight:100;">{{.title}}</h2>
+        <h2 class="landing-page-slogan-title mt-5 mb-3 d-inline-block" style="color:#005aa7; font-weight:100;">
+          {{.title}}</h2>
         <!-- /main -->
 
         <!-- slider -->
@@ -146,11 +148,9 @@
         <!-- /slider -->
 
       </div>
-      
+
       {{ end }}
     </div>
-  </div>
-  <!-- /al-go-pru-dence -->
   </div>
   <div class="row landing-page-bottom-row">
     <div class="landing-page-col col-12">
@@ -164,8 +164,8 @@
       <div class="shape shape-sm-square-bottom-most-right"></div>
     </div>
   </div>
-</section>
-<section class="landing-page-clear-bottom d-block d-xl-none"></section>
+  <!-- /al-go-pru-dence -->
+</div>
 <!-- /Mobile -->
 {{ end }}
 <!-- /Banner -->

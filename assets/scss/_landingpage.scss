@@ -3,19 +3,14 @@
     max-width: 100vw;
     overflow: hidden;
     
-    @media (max-width: 1200px) {
-        min-height: 90vh;
-    }
+    min-height: 100vh;
 
-    @media (min-width: 1200px) {
-        min-height: 100vh;
-    }
     background-color: #DFF1FF;
 }
 
 .landing-page-top-row {
     @media (max-width: 1200px) {
-        min-height: 20vh;
+        min-height: 25vh;
     }
 
     @media (min-width: 1200px) {
@@ -25,7 +20,7 @@
 
 .landing-page-middle-row {
     @media (max-width: 1200px) {
-        min-height: 55vh;
+        min-height: 60vh;
     }
 
     @media (min-width: 1200px) {

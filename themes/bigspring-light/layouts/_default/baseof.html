@@ -27,6 +27,9 @@ AUTHOR WEBSITE: https://gethugothemes.com
 	{{ else }}
 	{{ partial "preloader.html" . }}
 	{{ end }}
+	<div>
+		{{ block "pre-main" . }}{{ end }}
+	</div>
 	{{ partial "header.html" . }}
 
 	<main>

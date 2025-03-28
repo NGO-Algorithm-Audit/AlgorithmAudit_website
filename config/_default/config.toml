@@ -2,8 +2,6 @@
 baseURL = "https://algorithmaudit.eu"
 title = "Algorithm Audit"
 theme = "bigspring-light"
-# post pagination
-paginate = "6"
 # post excerpt
 summaryLength = "15"
 # disqus short name

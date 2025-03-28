@@ -35,7 +35,7 @@
 .navigation{
   // height: 10%;
   top: 0;
-  position: fixed;
+  position: sticky;
   z-index: 9999;
   width: 100%;
 }
@@ -107,6 +107,7 @@
     display: block;
     margin-top: 0; /* remove the gap so it doesn't close */
     min-width: 200px;
+    z-index: 9999;
   }
 }
 
