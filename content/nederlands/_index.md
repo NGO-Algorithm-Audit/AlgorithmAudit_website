@@ -27,6 +27,28 @@ Banner:
 About:
   content: >
     Algorithm Audit is een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken stichting die zich inspant voor publieke kennisopbouw over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties te bevorderen.
+Core_Activities:
+  activities:
+    - title: Kennisplatform
+      subtitle: Statistical and legal expertise
+      url: /nl/knowledge-platform/knowledge-base/
+      icon: fa-light fa-layer-group
+      color: "#E3F0FE"
+    - title: Algoprudentie
+      subtitle: Case-based normative advise
+      url: /nl/algoprudence/
+      icon: fa-light fa-scale-balanced
+      color: "#F7CDBF"
+    - title: Technische tools
+      subtitle: Open source AI auditing tools
+      url: /nl/technical-tools/bdt/
+      icon: fa-light fa-toolbox
+      color: "#EFEEDA"
+    - title: Projectwerk
+      subtitle: "Algorithm validation, AI Act"
+      url: /nl/knowledge-platform/project-work/
+      icon: fa-light fa-magnifying-glass-plus
+      color: "#B4DEE8"
 Activity_Feed:
   enable: true
   button_text: Meer evenementen...
