@@ -1,10 +1,5 @@
 # main menu
 [[main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[main]]
 name = "Algoprudence"
 weight = 2
 url = "/algoprudence"
@@ -69,7 +64,7 @@ url = "/technical-tools/BDT"
 
 [[main]]
 name = "Knowledge platform"
-weight = 4
+weight = 1
 hasChildren = true
 url = "/knowledge-platform/knowledge-base"
   [[main]]
@@ -104,7 +99,7 @@ url = "/knowledge-platform/knowledge-base"
 [[main]]
 name = "Events"
 url = "events"
-weight = 5
+weight = 4
 hasChildren = true
   [[main]]
   parent = "Events"
@@ -123,7 +118,7 @@ hasChildren = true
 
 [[main]]
 name = "About"
-weight = 6
+weight = 5
 hasChildren = true
 url = "/about/contact"
   [[main]]
