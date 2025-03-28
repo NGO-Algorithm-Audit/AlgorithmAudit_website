@@ -138,6 +138,53 @@ export default {
     },
     {
       type: "object",
+      name: "Core_Activities",
+      label: "Core activities",
+      fields: [
+        {
+          type: "object",
+          name: "activities",
+          label: "Activities",
+          list: true,
+          fields: [
+            {
+              type: "string",
+              name: "title",
+              label: "Title",
+              required: true,
+            },
+            {
+              type: "string",
+              name: "subtitle",
+              label: "Subtitle",
+            },
+            {
+              type: "string",
+              name: "url",
+              label: "Url",
+              required: true,
+            },
+            {
+              type: "string",
+              name: "icon",
+              label: "Icon",
+              required: true,
+              description:
+                "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+            },
+            {
+              type: "string",
+              name: "color",
+              label: "Color",
+              required: true,
+              description: "Hex color code (e.g. #FF0000)",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "object",
       name: "About",
       label: "About",
       fields: [

@@ -20,6 +20,28 @@ Banner:
     labels:
       - text: AI bias testing
       - text: AI standards
+Core_Activities:
+  activities:
+    - title: Knowledge platform
+      subtitle: Statistical and legal expertise
+      url: /knowledge-platform/knowledge-base/
+      icon: fa-light fa-layer-group
+      color: '#E3F0FE'
+    - title: Algoprudence
+      subtitle: Case-based normative advise
+      url: /algoprudence/
+      icon: fa-light fa-scale-balanced
+      color: '#F7CDBF'
+    - title: Technical tools
+      subtitle: Open source AI auditing tools
+      url: /technical-tools/bdt/
+      icon: fa-light fa-toolbox
+      color: '#EFEEDA'
+    - title: Project work
+      subtitle: 'Algorithm validation, AI Act'
+      url: /knowledge-platform/project-work/
+      icon: fa-light fa-magnifying-glass-plus
+      color: '#B4DEE8'
 About:
   content: >
     Algorithm Audit is a technically skilled, highly interdisciplinary and
