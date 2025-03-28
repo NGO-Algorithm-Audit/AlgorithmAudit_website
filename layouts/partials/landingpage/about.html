@@ -1,0 +1,10 @@
+
+{{ with .Params.About}}
+<div class="container landing-page-about">
+    <div class="row justify-content-center">
+        <div class="col-12 col-xl-8 color-blue text-xl-center font-AvenirNextProDemi .font-size-1rem font-size-xl-1_5rem">
+            {{ .content | markdownify }}
+        </div>
+    </div>
+</div>
+{{ end }}

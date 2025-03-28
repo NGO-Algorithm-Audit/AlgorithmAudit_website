@@ -20,6 +20,15 @@ Banner:
     labels:
       - text: AI bias testing
       - text: AI standards
+About:
+  content: >
+    Algorithm Audit is a technically skilled, highly interdisciplinary and
+    socially engaged organization building public knowledge about responsible AI
+    and algorithms. Through not-for-profit project work, we offer an alternative
+    to commercial consulting, maintaining at least the same quality standards
+    but without profit maximization. Our primary focus is advising public sector
+    organizations, and we actively promote knowledge exchange between government
+    entities.
 Activity_Feed:
   enable: true
   button_text: View more...
@@ -58,32 +67,32 @@ Supported_by:
   title: Collaborating with
   funders:
     - image: /images/supported_by/sidn.png
-      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
+      link: 'https://www.sidnfonds.nl/projecten/open-source-ai-auditing'
       alt_text: Foundation for Internet and Democracy Netherlands
     - image: /images/supported_by/EUAISFund.png
-      link: "https://europeanaifund.org/announcing-our-2022-open-call-grantees/"
+      link: 'https://europeanaifund.org/announcing-our-2022-open-call-grantees/'
       alt_text: European AI & Society Fund
     - image: /images/supported_by/BZK.jpg
       link: >-
         https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
       alt_text: Dutch Ministry of the Interior
     - image: /images/supported_by/HAI.png
-      link: "https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
+      link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
       alt_text: Stanford University Human-Centered Artificial Intelligence Lab
     - image: /images/partners/DUO.png
-      link: "https://duo.nl"
+      link: 'https://duo.nl'
       alt_text: Dutch Executive Agency for Education
     - image: /images/partners/NEN.svg
-      link: "https://www.nen.nl"
+      link: 'https://www.nen.nl'
       alt_text: Dutch standardisation institute
     - image: /images/partners/CEN.jpg
-      link: "https://www.cencenelec.eu"
-      alt_text: "Europees standardisation committee "
+      link: 'https://www.cencenelec.eu'
+      alt_text: 'Europees standardisation committee '
     - image: /images/events/Amsterdam.png
-      link: "https://www.amsterdam.nl"
+      link: 'https://www.amsterdam.nl'
       alt_text: Municipality of Amsterdam
     - image: /images/supported_by/CoE.png
-      link: "https://www.coe.int/en/web/portal/home"
+      link: 'https://www.coe.int/en/web/portal/home'
       alt_text: Council of Europe
 Building_ai_audit_capacity:
   lines:
@@ -166,7 +175,7 @@ Areas_of_AI_expertise:
 Recent_audits:
   title: Recent audits
   feature_item:
-    - name: "Risk Profiling Social Welfare Re-examination "
+    - name: 'Risk Profiling Social Welfare Re-examination '
       image: /images/reports/front_AA202302A.png
       link: >-
         /algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
@@ -244,3 +253,4 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+

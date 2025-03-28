@@ -24,6 +24,9 @@ Banner:
     labels:
       - text: AI bias testing
       - text: AI standaarden
+About:
+  content: >
+    Algorithm Audit is een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken stichting die zich inspant voor publieke kennisopbouw over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties te bevorderen.
 Activity_Feed:
   enable: true
   button_text: Meer evenementen...

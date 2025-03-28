@@ -136,6 +136,19 @@ export default {
         },
       ],
     },
+    {
+      type: "object",
+      name: "About",
+      label: "About",
+      fields: [
+        {
+          type: "rich-text",
+          name: "content",
+          label: "Content",
+          required: true,
+        },
+      ],
+    },
     // Activity feed
     {
       type: "object",
