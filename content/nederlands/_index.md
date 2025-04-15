@@ -26,7 +26,7 @@ Banner:
       - text: AI standaarden
 About:
   content: >
-    Algorithm Audit is een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken stichting die zich inspant voor publieke kennisopbouw over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties te bevorderen.
+    Wie beslist over de algoritmes die onze samenleving vormgeven? Wij vinden dat iedereen hierover moet kunnen meebeslissen. Bij Algorithm Audit bieden we oplossingen voor waardegedreven vragen die centraal staan bij de inzet van AI en data-analyse. Onze expertise richt zich op het effect van technische keuzes op mens en maatschappij. Als een non-profit kennisplatform slaat ons team van data scientists, juristen en ethici een brug tussen het bedrijfsleven, de wetenschap en openbaar bestuur. We verbinden ervaringen vanuit de uitvoeringspraktijk met de nieuwste technische inzichten. Met behulp van open-source tools, onafhankelijke validatie en projectwerk voor publieke sector organisaties, vertalen we kennis naar actie. Kom in contact om samen werk te maken van de verantwoorde inzet van AI.
 Core_Activities:
   activities:
     - title: Kennisplatform
