@@ -44,13 +44,7 @@ Core_Activities:
       color: '#B4DEE8'
 About:
   content: >
-    Algorithm Audit is a technically skilled, highly interdisciplinary and
-    socially engaged organization building public knowledge about responsible AI
-    and algorithms. Through not-for-profit project work, we offer an alternative
-    to commercial consulting, maintaining at least the same quality standards
-    but without profit maximization. Our primary focus is advising public sector
-    organizations, and we actively promote knowledge exchange between government
-    entities.
+    Who decides on the algorithms that shape our society? We believe this belongs to all of us. At Algorithm Audit, we tackle the value-based questions at the heart of AI and data modelling. We specialise in transparent deliberation over technical choices with regard to their real-world consequences. As a nonprofit knowledge platform, our team of data scientists, lawyers, and ethicists bridge the gap between industry, academia and public policy, connecting bottom-up experience with state-of-the-art insights. Through open-source tools, independent validation, and public sector guidance, we translate knowledge into action. Connect with us to make responsible AI a shared effort.
 Activity_Feed:
   enable: true
   button_text: View more...
