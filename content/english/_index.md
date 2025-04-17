@@ -24,7 +24,7 @@ Core_Activities:
   activities:
     - title: Knowledge platform
       subtitle: Statistical and legal expertise
-      url: /knowledge-platform/knowledge-base/
+      url: /knowledge-platform/
       icon: fa-light fa-layer-group
       color: '#E3F0FE'
     - title: Algoprudence
@@ -34,11 +34,11 @@ Core_Activities:
       color: '#F7CDBF'
     - title: Technical tools
       subtitle: Open source AI auditing tools
-      url: /technical-tools/bdt/
+      url: /technical-tools/
       icon: fa-light fa-toolbox
       color: '#EFEEDA'
     - title: Project work
-      subtitle: 'Algorithm validation, AI Act'
+      subtitle: Validation, AI Act etc.
       url: /knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
       color: '#B4DEE8'
