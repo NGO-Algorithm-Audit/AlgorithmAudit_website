@@ -1,5 +1,10 @@
 # main menu
 [[main]]
+name = "Home"
+url = "/nl"
+weight = 1
+
+[[main]]
 name = "Algoprudentie"
 weight = 2
 hasChildren = true

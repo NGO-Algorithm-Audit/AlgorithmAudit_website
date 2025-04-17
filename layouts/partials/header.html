@@ -4,11 +4,11 @@
   <div class="container col-12" id="header-container">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-xl navbar-light">
       <div class="navbar-div">
         <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
           {{ with site.Params.logo}}
-          <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
+          <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}" style="min-width: {{site.Params.logo_width}};">
           {{ else }}{{site.Title}}{{end}}
         </a>
       </div>
@@ -62,7 +62,7 @@
           {{ if .IsTranslated }}
           {{ range .Translations }}
           <li class="nav-item d-inline-block" style="min-width: 137px;">
-            <a href="{{ .RelPermalink }}" class="nav-link d-inline-block" title="Language toggle">
+            <a href="{{ .RelPermalink }}" class="nav-link d-inline-block nowrap" title="Language toggle">
               <div class="d-inline" {{ if eq .Site.Language.Lang "en" }} style="font-weight: 350;" {{ end}}>
                 EN
               </div>

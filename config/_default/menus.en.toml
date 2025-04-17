@@ -1,7 +1,12 @@
 # main menu
 [[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
 name = "Algoprudence"
-weight = 2
+weight = 3
 url = "/algoprudence"
 hasChildren = true
   [[main]]
@@ -28,7 +33,7 @@ hasChildren = true
 
 [[main]]
 name = "Technical tools"
-weight = 3
+weight = 4
 hasChildren = true
 url = "/technical-tools/BDT"
   [[main]]
@@ -64,7 +69,7 @@ url = "/technical-tools/BDT"
 
 [[main]]
 name = "Knowledge platform"
-weight = 1
+weight = 2
 hasChildren = true
 url = "/knowledge-platform/knowledge-base"
   [[main]]
@@ -99,7 +104,7 @@ url = "/knowledge-platform/knowledge-base"
 [[main]]
 name = "Events"
 url = "events"
-weight = 4
+weight = 5
 hasChildren = true
   [[main]]
   parent = "Events"
@@ -118,7 +123,7 @@ hasChildren = true
 
 [[main]]
 name = "About"
-weight = 5
+weight = 6
 hasChildren = true
 url = "/about/contact"
   [[main]]
