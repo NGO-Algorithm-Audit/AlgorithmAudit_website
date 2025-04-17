@@ -18,9 +18,10 @@ import knowledge_platform_policy_observatory from "./collections/pages/knowledge
 import knowledge_platform_project_work from "./collections/pages/knowledge_platform_project-work";
 import knowledge_platform_standards from "./collections/pages/knowledge_platform_standards";
 import privacy_policy from "./collections/pages/privacy_policy";
+import sublandingpage from "./collections/pages/sublandingpage";
+import technical_tools_AIA_implementation_tool from "./collections/pages/technical_tools_AIA_implementation_tool";
 import technical_tools_BDT from "./collections/pages/technical_tools_BDT";
 import technical_tools_SDG from "./collections/pages/technical_tools_SDG";
-import technical_tools_AIA_implementation_tool from "./collections/pages/technical_tools_AIA_implementation_tool";
 // Your hosting provider likely exposes this as an environment variable
 const branch =
   process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
@@ -44,6 +45,7 @@ export default defineConfig({
   schema: {
     collections: [
       home,
+      sublandingpage,
       algoprudence_submit_a_case,
       algoprudence_cases,
       algoprudence_repository,

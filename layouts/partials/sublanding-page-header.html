@@ -1,0 +1,49 @@
+<section class="banner banner-background">
+  <div class="container">
+    <div class="row" style="display:flex;">
+      <div class="col-12 col-lg-5">
+        <div class="landing-page-core-activities pb-5">
+          <div class="row">
+              <div class="col-12 col-lg-8 col-xl-6 p-1">
+                  <div style="background-color: {{.Params.color}};" class="rounded-lg color-white font-size-1rem font-size-xl-1_5rem container p-0">
+                      <div class="row mx-4 py-3">
+                          <i class="font-size-2rem fa {{ .Params.icon }}"></i>
+                      </div>
+                      <row class="row mx-4 pt-3">
+                          <h3 class="color-white font-size-1_3rem">{{.Params.title}}</h3>
+                      </row>
+                      <row class="row mx-4 pb-0 landing-page-core-activities-row-subtitle">
+                          <p class="color-white font-size-1rem">{{.Params.titleline2}}</p>
+                      </row>
+                  </div>
+              </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col">
+              <div class="pr-5 color-blue font-size-1_3rem">
+                {{.Params.subtitle | markdownify}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7">
+        <div class="container pb-5">
+          {{ range .Params.subpage_links }}
+          <a href={{.url}} class="row justify-content-center">
+            <div style="background-color: {{.color}};" class="rounded-lg color-blue p-0 m-2">
+              <div class="row mx-4 py-3">
+                <i class="font-size-1_5rem fa {{ .icon }}"></i>
+                <h3 class="color-blue font-size-1_5rem ml-4">{{.title}}</h3>
+              </div>
+              <row class="row mx-4 pb-0 landing-page-core-activities-row-subtitle">
+                <p class="color-blue font-size-1rem">{{.titleline2}}</p>
+              </row>
+            </div>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
