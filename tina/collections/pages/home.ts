@@ -2,6 +2,8 @@
  * @type {import('tinacms').Collection}
  */
 
+import color from "../shared/page/color";
+
 export default {
   name: "home",
   label: "Home",
@@ -172,13 +174,7 @@ export default {
               description:
                 "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
             },
-            {
-              type: "string",
-              name: "color",
-              label: "Color",
-              required: true,
-              description: "Hex color code (e.g. #FF0000)",
-            },
+            color,
           ],
         },
       ],
