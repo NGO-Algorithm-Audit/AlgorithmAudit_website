@@ -34,15 +34,12 @@ about_AA:
     - subtitle: Technische tools
       image: /images/about/technical-tools.svg
       content: >
-        Implementeren en testen van technische tools om bias in AI systemen te
-        detecteren en te mitigeren, zie bijvoorbeeld onze methoden voor
-        [synthetische data generatie](/nl/technical-tools/sdg/) en [bias
-        detectie tool](/nl/technical-tools/bdt/) om hoger-dimensionale proxy
-        discriminatie mee te detecteren.
+        Implementeren en testen van open-source software voor de verantwoorde inzet van algoritmes en AI, o.a. unsupervised [bias
+        detectie](/nl/technical-tools/bdt/) en [synthetische data generatie](/nl/technical-tools/sdg/);
     - subtitle: Projectwerk
       image: /images/about/project.svg
       content: >
-        Ondersteuning bij specifieke vragen vanuit de publieke en private sector
+        [Ondersteuning](/nl/knowledge-platform/project-work/) bij specifieke vragen vanuit de publieke en private sector
         over de verantwoorde inzet van algoritmes.
 team:
   title: Synthetic data generatie team
