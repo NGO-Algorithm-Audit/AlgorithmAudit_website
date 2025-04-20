@@ -36,15 +36,15 @@ Core_Activities:
       subtitle: Open source AI auditing tools
       url: /technical-tools/bdt/
       icon: fa-light fa-toolbox
-      color: '#EFEEDA'
+      color: '#D5EBDB'
     - title: Project work
       subtitle: 'Algorithm validation, AI Act'
       url: /knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
-      color: '#B4DEE8'
+      color: '#E3F0FE'
 About:
   content: >
-    Who decides on the algorithms that shape our society? We believe this belongs to all of us. At Algorithm Audit, we tackle the value-based questions at the heart of AI and data modelling. We specialise in transparent deliberation over technical choices with regard to their real-world consequences. As a nonprofit knowledge platform, our team of data scientists, lawyers, and ethicists bridge the gap between industry, academia and public policy, connecting bottom-up experience with state-of-the-art insights. Through open-source tools, independent validation, and public sector guidance, we translate knowledge into action. Connect with us to make responsible AI a shared effort.
+    Who decides on the algorithms that shape our daily lives? At Algorithm Audit, we believe this belongs to all of us.our team of data scientists, lawyers, and ethicists tackles value-based questions at the heart of AI and data modelling. Our focus is transparent deliberation about technical choices and their real-world consequences. As a nonprofit knowledge platform, we bridge the gap between industry, academia and public policy, connecting bottom-up experience with state-of-the-art technical insights. Through open-source tools, independent validation and public sector guidance, we translate knowledge into action. Connect with us to make responsible AI a shared effort.
 Activity_Feed:
   enable: true
   button_text: View more...
@@ -60,6 +60,11 @@ Activity_Feed:
       date: 22-10-2024
       type: white paper
   activities:
+    - title: Panel discussion Dutch Data Protection Authority
+      link: /events/activities/#events
+      image: /images/events/dutch-data-protection.jpg
+      date: 26-03-2025
+      type: panel discussion
     - title: Guest lecture ethical AI Utrecht University
       link: /events/activities/#events
       image: /images/events/uu-logo.png
@@ -71,14 +76,7 @@ Activity_Feed:
       link: /events/activities/#events
       image: /images/events/MinBZK_logo.jpg
       date: 13-02-2025
-      type: presentatie
-    - title: >-
-        Presentation Responsible AI - Innovation Festival Dutch Ministry of
-        Infrastructure and Water
-      link: /events/activities/#events
-      image: /images/events/MinIenW_logo.png
-      date: 13-02-2025
-      type: presentatie
+      type: presentation
 Supported_by:
   title: Collaborating with
   funders:
