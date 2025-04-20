@@ -5,24 +5,65 @@ url = "/"
 weight = 1
 
 [[main]]
+name = "Knowledge platform"
+weight = 2
+hasChildren = true
+url = "/knowledge-platform/knowledge-base"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "Knowledge base"
+  url = "/knowledge-platform/knowledge-base"
+  weight = 1
+  [[main.params]]
+    icon = "fa-brain"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "AI Act standards"
+  url = "/knowledge-platform/standards"
+  weight = 2
+  [[main.params]]
+    icon = "fa-check"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "AI policy observatory"
+  url = "/knowledge-platform/policy-observatory"
+  weight = 3
+  [[main.params]]
+    icon = "fa-binoculars"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "Project work"
+  url = "/knowledge-platform/project-work"
+  weight = 4
+  [[main.params]]
+    icon = "fa-hands-helping"
+  [[main]]
+  parent = "Knowledge platform"
+  name = "Overview"
+  url = "/knowledge-platform/"
+  weight = 5
+  [[main.params]]
+    featured = true
+
+[[main]]
 name = "Algoprudence"
 weight = 3
 url = "/algoprudence"
 hasChildren = true
   [[main]]
   parent = "Algoprudence"
-  name = "Submit a case"
-  url = "algoprudence/submit-a-case"
+  name = "Case repository"
+  url = "/algoprudence"
   weight = 1
   [[main.params]]
-    featured = true
+    icon = "fa-database"
   [[main]]
   parent = "Algoprudence"
-  name = "Cases"
-  url = "/algoprudence"
+  name = "Submit a case"
+  url = "algoprudence/submit-a-case"
   weight = 2
   [[main.params]]
-    icon = "fa-database"
+    icon = "fa-arrow-right"
   [[main]]
   parent = "Algoprudence"
   name = "How we work"
@@ -30,6 +71,13 @@ hasChildren = true
   weight = 3
   [[main.params]]
     icon = "fa-question"
+  [[main]]
+  parent = "Algoprudence"
+  name = "Overview "
+  url = "/algoprudence/"
+  weight = 4
+  [[main.params]]
+    featured = true
 
 [[main]]
 name = "Technical tools"
@@ -38,68 +86,34 @@ hasChildren = true
 url = "/technical-tools/BDT"
   [[main]]
   parent = "Technical tools"
-  name = "Github code"
-  url = "https://github.com/NGO-Algorithm-Audit/"
+  name = "Unsupervised bias detection tool"
+  url = "/technical-tools/BDT"
   weight = 1
   [[main.params]]
-    featured = true
-    target = "_blank"
+    icon = "fa-search-plus"
   [[main]]
   parent = "Technical tools"
-  name = "Bias detection tool"
-  url = "/technical-tools/BDT"
-  weight = 2
-  [[main.params]]
-    icon = "fa-search"
-    subtitle = "Open source AI auditing tools"
-  [[main]]
-  parent = "Technical tools"
-  name = "Synthetic data generation"
+  name = "Synthetic data generation tool"
   url = "/technical-tools/SDG"
-  weight = 3
+  weight = 2
   [[main.params]]
     icon = "fa-table"
   [[main]]
   parent = "Technical tools"
-  name = "AI Act Implementation Tool"
+  name = "AI Act implementation tool"
   url = "/technical-tools/implementation-tool"
-  weight = 4
-  [[main.params]]
-    icon = "fa-file"
-
-[[main]]
-name = "Knowledge platform"
-weight = 2
-hasChildren = true
-url = "/knowledge-platform/knowledge-base"
-  [[main]]
-  parent = "Knowledge platform"
-  name = "AI Act standards"
-  url = "/knowledge-platform/standards"
-  weight = 1
-  [[main.params]]
-    icon = "fa-check"
-  [[main]]
-  parent = "Knowledge platform"
-  name = "AI policy observatory"
-  url = "/knowledge-platform/policy-observatory"
-  weight = 2
-  [[main.params]]
-    icon = "fa-binoculars"
-  [[main]]
-  parent = "Knowledge platform"
-  name = "Knowledge base"
-  url = "/knowledge-platform/knowledge-base"
   weight = 3
   [[main.params]]
-    icon = "fa-brain"
+    icon = "fa-file"
   [[main]]
-  parent = "Knowledge platform"
-  name = "Project work"
-  url = "/knowledge-platform/project-work"
+  parent = "Technical tools"
+  name = "Overview  "
+  url = "/technical-tools/"
   weight = 4
   [[main.params]]
-    icon = "fa-hands-helping"
+    featured = true
+
+
 
 [[main]]
 name = "Events"

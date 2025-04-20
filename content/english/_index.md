@@ -36,12 +36,12 @@ Core_Activities:
       subtitle: Open source AI auditing tools
       url: /technical-tools/
       icon: fa-light fa-toolbox
-      color: '#EFEEDA'
+      color: '#D5EBDB'
     - title: Project work
       subtitle: Validation, AI Act etc.
       url: /knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
-      color: '#B4DEE8'
+      color: '#E3F0FE'
 About:
   content: >
     Who decides on the algorithms that shape our society? We believe this belongs to all of us. At Algorithm Audit, we tackle the value-based questions at the heart of AI and data modelling. We specialise in transparent deliberation over technical choices with regard to their real-world consequences. As a nonprofit knowledge platform, our team of data scientists, lawyers, and ethicists bridge the gap between industry, academia and public policy, connecting bottom-up experience with state-of-the-art insights. Through open-source tools, independent validation, and public sector guidance, we translate knowledge into action. Connect with us to make responsible AI a shared effort.
