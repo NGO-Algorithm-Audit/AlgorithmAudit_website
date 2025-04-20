@@ -65,6 +65,11 @@ Activity_Feed:
       date: 22-10-2024
       type: white paper
   activities:
+    - title: Paneldiscussie Autoriteit Persoonsgegevens
+      link: /events/activities/#events
+      image: /images/events/dutch-data-protection.jpg
+      date: 26-03-2025
+      type: paneldiscussie
     - title: Gastcollege ethische AI Universiteit Utrecht
       link: /nl/events/activities/#events
       image: /images/events/uu-logo.png
@@ -74,11 +79,6 @@ Activity_Feed:
         Demo open-source AI auditing tools tijdens innovatiedag van het Ministerie van Binnenlandse Zaken
       link: /nl/events/activities/#events
       image: /images/events/MinBZK_logo.jpg
-      date: 13-02-2025
-      type: presentatie
-    - title: Presentatie verantwoorde inzet AI - Innovatiefestival Ministrie van Infrastructuur en Waterstaat
-      link: /nl/events/activities/#events
-      image: /images/events/MinIenW_logo.png
       date: 13-02-2025
       type: presentatie
 Supported_by:

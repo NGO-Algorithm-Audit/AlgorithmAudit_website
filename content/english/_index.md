@@ -60,6 +60,11 @@ Activity_Feed:
       date: 22-10-2024
       type: white paper
   activities:
+    - title: Panel discussion Dutch Data Protection Authority
+      link: /events/activities/#events
+      image: /images/events/dutch-data-protection.jpg
+      date: 26-03-2025
+      type: panel discussion
     - title: Guest lecture ethical AI Utrecht University
       link: /events/activities/#events
       image: /images/events/uu-logo.png
@@ -71,14 +76,7 @@ Activity_Feed:
       link: /events/activities/#events
       image: /images/events/MinBZK_logo.jpg
       date: 13-02-2025
-      type: presentatie
-    - title: >-
-        Presentation Responsible AI - Innovation Festival Dutch Ministry of
-        Infrastructure and Water
-      link: /events/activities/#events
-      image: /images/events/MinIenW_logo.png
-      date: 13-02-2025
-      type: presentatie
+      type: presentation
 Supported_by:
   title: Collaborating with
   funders:
