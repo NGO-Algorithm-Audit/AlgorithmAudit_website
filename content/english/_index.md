@@ -44,7 +44,7 @@ Core_Activities:
       color: '#E3F0FE'
 About:
   content: >
-    Who decides on the algorithms that shape our society? We believe this belongs to all of us. At Algorithm Audit, we tackle the value-based questions at the heart of AI and data modelling. We specialise in transparent deliberation over technical choices with regard to their real-world consequences. As a nonprofit knowledge platform, our team of data scientists, lawyers, and ethicists bridge the gap between industry, academia and public policy, connecting bottom-up experience with state-of-the-art insights. Through open-source tools, independent validation, and public sector guidance, we translate knowledge into action. Connect with us to make responsible AI a shared effort.
+    Who decides on the algorithms that shape our daily lives? At Algorithm Audit, we believe this belongs to all of us.our team of data scientists, lawyers, and ethicists tackles value-based questions at the heart of AI and data modelling. Our focus is transparent deliberation about technical choices and their real-world consequences. As a nonprofit knowledge platform, we bridge the gap between industry, academia and public policy, connecting bottom-up experience with state-of-the-art technical insights. Through open-source tools, independent validation and public sector guidance, we translate knowledge into action. Connect with us to make responsible AI a shared effort.
 Activity_Feed:
   enable: true
   button_text: View more...
