@@ -43,12 +43,12 @@ Core_Activities:
       subtitle: Open source AI auditing tools
       url: /nl/technical-tools/bdt/
       icon: fa-light fa-toolbox
-      color: "#EFEEDA"
+      color: "#D5EBDB"
     - title: Projectwerk
       subtitle: "Algorithm validation, AI Act"
       url: /nl/knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
-      color: "#B4DEE8"
+      color: "#E3F0FE"
 Activity_Feed:
   enable: true
   button_text: Meer evenementen...
