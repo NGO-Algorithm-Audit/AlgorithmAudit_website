@@ -30,22 +30,22 @@ About:
 Core_Activities:
   activities:
     - title: Kennisplatform
-      subtitle: Statistical and legal expertise
-      url: /nl/knowledge-platform/knowledge-base/
+      subtitle: Expertise is statistiek en recht
+      url: /nl/knowledge-platform/
       icon: fa-light fa-layer-group
       color: "#E3F0FE"
     - title: Algoprudentie
-      subtitle: Case-based normative advise
+      subtitle: Case-based normatief advies
       url: /nl/algoprudence/
       icon: fa-light fa-scale-balanced
       color: "#F7CDBF"
     - title: Technische tools
       subtitle: Open source AI auditing tools
-      url: /nl/technical-tools/bdt/
+      url: /nl/technical-tools/
       icon: fa-light fa-toolbox
       color: "#D5EBDB"
     - title: Projectwerk
-      subtitle: "Algorithm validation, AI Act"
+      subtitle: Validatie, AI-verordening etc.
       url: /nl/knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
       color: "#E3F0FE"

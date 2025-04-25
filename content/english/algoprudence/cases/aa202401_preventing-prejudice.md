@@ -64,18 +64,6 @@ The technical audit report (TA:AA:2024:01) can be downloaded [here](https://dri
 
 {{< embed_pdf url="/pdf-files/algoprudence/TA_AA202401/TA_AA202401_Preventing_prejudice.pdf" >}}
 
-<!-- #### AI Act standards
-
-* **Risk management:** aa
-* **Governance & data quality:** aa
-  * **420001: 
-* **Record keeping:** aa
-* **Transparency provisions:** aa
-* **Human oversight:** aa
-* **Accuracy specifications:** aa
-* **Robustness specifications:** aa
-* **Quality management system:** aa -->
-
 {{< tab_content_close >}}
 
 {{< tab_content_open icon="" title="" id="actions" >}}

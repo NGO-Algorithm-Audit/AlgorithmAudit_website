@@ -24,7 +24,7 @@ Core_Activities:
   activities:
     - title: Knowledge platform
       subtitle: Statistical and legal expertise
-      url: /knowledge-platform/knowledge-base/
+      url: /knowledge-platform/
       icon: fa-light fa-layer-group
       color: "#E3F0FE"
     - title: Algoprudence
@@ -34,14 +34,14 @@ Core_Activities:
       color: "#F7CDBF"
     - title: Technical tools
       subtitle: Open source AI auditing tools
-      url: /technical-tools/bdt/
+      url: /technical-tools/
       icon: fa-light fa-toolbox
-      color: "#D5EBDB"
+      color: '#D5EBDB'
     - title: Project work
-      subtitle: "Algorithm validation, AI Act"
+      subtitle: Validation, AI Act etc.
       url: /knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
-      color: "#E3F0FE"
+      color: '#E3F0FE'
 About:
   content: >
     Who decides on the algorithms that shape our daily lives? At Algorithm Audit, we believe this belongs to all of us. Our team of data scientists, lawyers, and ethicists tackles value-based questions at the heart of AI and data modelling. Our focus is transparent deliberation about technical choices and their real-world consequences. As a nonprofit knowledge platform, we bridge the gap between industry, academia and public policy, connecting bottom-up experience with state-of-the-art technical insights. Through open-source tools, independent validation and public sector guidance, we translate knowledge into action. Connect with us to make responsible AI a shared effort.

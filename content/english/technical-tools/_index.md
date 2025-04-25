@@ -1,39 +1,25 @@
 ---
 layout: sublandingpage
-title: Knowledge platform
-titleline2: Statistical and legal expertise
+title: Technical tools
+titleline2: Open source AI auditing tools
 subtitle: >
-  We bring together expertise from various fields, including statistics, ethics
-  and law, to build public knowledge on responsible AI. We document our work in
-  a knowledge base. For key themes we build thematic resources, such as AI Act
-  standards and non-profit project work.
-icon: fa-light fa-layer-group
-color: '#2559A2'
+  We develop open source tools for AI auditing. This makes
+icon: fa-light fa-toolbox
+color: '#D5EBDB'
 subpage_links:
-  - title: Knowledge base
+  - title: Unsupervised bias detection tool
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
+      Anomaly detection to identify groups that may be subject to unfair treatment by AI systems
+    icon: fa-light fa-search-plus
     color: '#FFF'
-  - title: Knowledge base
+  - title: Synthetic data generation tool
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
+      Privacy-preserving browser-based tool to generate synthetic tabular data  
+    icon: fa-light fa-table
     color: '#FFF'
-  - title: Knowledge base
+  - title: AI Act implementation tool
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
-    color: '#FFF'
-  - title: Knowledge base
-    titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
+      Dynamic questionnaires for identification and risk classification of AI systems and high-impact algorithms
+    icon: fa-light fa-file
     color: '#FFF'
 ---
-
-TEST CONTENT
