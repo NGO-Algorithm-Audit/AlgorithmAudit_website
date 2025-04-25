@@ -44,7 +44,7 @@ quick_navigation:
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-eye" title="Raad van toezicht" id="supervisory-board" >}}
+{{< container_open icon="fas fa-eye" title="Raad van Advies" id="supervisory-board" >}}
 
 In oprichting
 

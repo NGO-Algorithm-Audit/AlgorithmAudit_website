@@ -44,7 +44,7 @@ quick_navigation:
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-eye" title="Supervisory board" id="supervisory-board" >}}
+{{< container_open icon="fas fa-eye" title="Board of advice" id="supervisory-board" >}}
 
 Currently being established
 
