@@ -38,6 +38,7 @@ url = "/knowledge-platform/knowledge-base"
   [[main.params]]
     icon = "fa-hands-helping"
   [[main]]
+  identifier = "knowledge_platform_overview"
   parent = "Knowledge platform"
   name = "Overview"
   url = "/knowledge-platform/"
@@ -72,8 +73,9 @@ hasChildren = true
   [[main.params]]
     icon = "fa-question"
   [[main]]
+  identifier = "algoprudence_overview"
   parent = "Algoprudence"
-  name = "Overview "
+  name = "Overview"
   url = "/algoprudence/"
   weight = 4
   [[main.params]]
@@ -106,8 +108,9 @@ url = "/technical-tools/BDT"
   [[main.params]]
     icon = "fa-file"
   [[main]]
+  identifier = "technical_tools_overview"
   parent = "Technical tools"
-  name = "Overview  "
+  name = "Overview"
   url = "/technical-tools/"
   weight = 4
   [[main.params]]
