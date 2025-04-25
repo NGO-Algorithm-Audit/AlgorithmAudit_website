@@ -8,27 +8,6 @@ let font_color: TinaField = {
   name: "font_color",
   label: "Font color",
   required: true,
-  options: [
-    {
-      value: "color-blue",
-      label: "blue",
-    },
-    {
-      value: "color-lightblue",
-      label: "lightblue",
-    },
-    {
-      value: "color-white",
-      label: "white",
-    },
-    {
-      value: "color-gray",
-      label: "gray",
-    },
-    {
-      value: "color-black",
-      label: "black",
-    },
-  ],
+  description: "Hex color code (e.g. #FF0000)",
 };
 export default font_color;

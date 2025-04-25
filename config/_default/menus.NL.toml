@@ -8,7 +8,7 @@ weight = 1
 name = "Algoprudentie"
 weight = 2
 hasChildren = true
-url = "/nl/algoprudence/case-repository"
+url = "/nl/algoprudence"
   [[main]]
   parent = "Algoprudentie"
   name = "Dien een case in"
@@ -35,7 +35,7 @@ url = "/nl/algoprudence/case-repository"
 name = "Technische tools"
 weight = 3
 hasChildren = true
-url = "/nl/technical-tools/BDT"
+url = "/nl/technical-tools"
   [[main.params]]
     icon = "fa-table"
   [[main]]
@@ -73,7 +73,7 @@ url = "/nl/technical-tools/BDT"
 name = "Kennisplatform"
 weight = 1
 hasChildren = true
-url = "/nl/knowledge-platform/knowledge-base"
+url = "/nl/knowledge-platform"
   [[main]]
   parent = "Kennisplatform"
   name = "AI Act standaarden"

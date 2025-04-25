@@ -7,17 +7,17 @@
               <div class="col-12 col-lg-8 col-xl-10 pr-5">
                   {{ $color := .Params.font_color }}
                   {{ if not ($color) }}
-                  {{ $color = "color-white" }}
+                  {{ $color = "#FFF" }}
                   {{ end }}
-                  <div style="background-color: {{.Params.color}};" class="rounded-lg {{$color}} font-size-1rem font-size-xl-1_5rem container p-0">
+                  <div style="background-color: {{.Params.color}}; color: {{$color}} !important" class="rounded-lg font-size-1rem font-size-xl-1_5rem container p-0">
                       <div class="row mx-4 py-3">
-                          <i class="font-size-2rem fa {{ .Params.icon }}"></i>
+                          <i style="color: {{$color}} !important" class="font-size-2rem fa {{ .Params.icon }}"></i>
                       </div>
                       <row class="row mx-4 pt-3">
-                          <h3 class="{{$color}} font-size-1_3rem">{{.Params.title}}</h3>
+                          <h3 style="color: {{$color}} !important" class="{font-size-1_3rem">{{.Params.title}}</h3>
                       </row>
                       <row class="row mx-4 pb-0 landing-page-core-activities-row-subtitle">
-                          <p class="{{$color}} font-size-1rem">{{.Params.titleline2}}</p>
+                          <p style="color: {{$color}} !important" class="font-size-1rem">{{.Params.titleline2}}</p>
                       </row>
                   </div>
               </div>
