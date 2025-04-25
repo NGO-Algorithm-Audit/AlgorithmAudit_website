@@ -9,6 +9,7 @@ import title from "./title";
 
 import { TinaField } from "tinacms";
 import titleline2 from "./titleline2";
+import url from "./url";
 const sublandingpageFields: TinaField[] = [
   {
     type: "string",
@@ -37,7 +38,7 @@ const sublandingpageFields: TinaField[] = [
         return { label: item?.title };
       },
     },
-    fields: [title, titleline2, icon, color],
+    fields: [title, titleline2, icon, color, url],
     defaultItem: () => {
       return {
         color: "#FFF",
