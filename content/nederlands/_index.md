@@ -26,7 +26,7 @@ Banner:
       - text: AI standaarden
 About:
   content: >
-    Wie beslist over de algoritmes die onze samenleving vormgeven? Wij vinden dat iedereen hierover moet kunnen meebeslissen. Bij Algorithm Audit bieden we oplossingen voor waardegedreven vragen die centraal staan bij de inzet van AI en data-analyse. Onze expertise richt zich op het effect van technische keuzes op mens en maatschappij. Als een non-profit kennisplatform slaat ons team van data scientists, juristen en ethici een brug tussen het bedrijfsleven, de wetenschap en openbaar bestuur. We verbinden ervaringen vanuit de uitvoeringspraktijk met de nieuwste technische inzichten. Met behulp van open-source tools, onafhankelijke validatie en projectwerk voor publieke sector organisaties, vertalen we kennis naar actie. Kom in contact om samen werk te maken van de verantwoorde inzet van AI.
+    Wie besluit over de algoritmes die onze dagelijkse realiteit steeds meer bepalen? Bij Algorithm Audit geloven we dat dit een zaak is van ons allemaal. Ons team van data scientists, juristen en ethici biedt oplossingen voor waardegedreven vraagstukken die centraal staan bij de inzet van AI en data-analyse. Onze focus is het maken van transparante afwegingen over technische keuzes en hun maatschappelijke gevolgen. Als non-profit kennisplatform slaan we een brug tussen bedrijfsleven, wetenschap en overheid. Zo verbinden we ervaringen vanuit de uitvoeringspraktijk met de nieuwste technische inzichten. Door middel van open-source tools, onafhankelijke validatie en advies aan publieke organisaties zetten we kennis om in actie. Kom in contact om samen werk te maken van de verantwoorde inzet van AI.
 Core_Activities:
   activities:
     - title: Kennisplatform
@@ -43,12 +43,12 @@ Core_Activities:
       subtitle: Open source AI auditing tools
       url: /nl/technical-tools/
       icon: fa-light fa-toolbox
-      color: "#EFEEDA"
+      color: "#D5EBDB"
     - title: Projectwerk
       subtitle: Validatie, AI-verordening etc.
       url: /nl/knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
-      color: "#B4DEE8"
+      color: "#E3F0FE"
 Activity_Feed:
   enable: true
   button_text: Meer evenementen...
@@ -65,6 +65,11 @@ Activity_Feed:
       date: 22-10-2024
       type: white paper
   activities:
+    - title: Paneldiscussie Autoriteit Persoonsgegevens
+      link: /events/activities/#events
+      image: /images/events/dutch-data-protection.jpg
+      date: 26-03-2025
+      type: paneldiscussie
     - title: Gastcollege ethische AI Universiteit Utrecht
       link: /nl/events/activities/#events
       image: /images/events/uu-logo.png
@@ -74,11 +79,6 @@ Activity_Feed:
         Demo open-source AI auditing tools tijdens innovatiedag van het Ministerie van Binnenlandse Zaken
       link: /nl/events/activities/#events
       image: /images/events/MinBZK_logo.jpg
-      date: 13-02-2025
-      type: presentatie
-    - title: Presentatie verantwoorde inzet AI - Innovatiefestival Ministrie van Infrastructuur en Waterstaat
-      link: /nl/events/activities/#events
-      image: /images/events/MinIenW_logo.png
       date: 13-02-2025
       type: presentatie
 Supported_by:

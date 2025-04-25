@@ -34,7 +34,7 @@ about_AA:
     - subtitle: Project work
       image: /images/about/project.svg
       content: >
-        Support for specific questions from public and private sector
+        [Support](/knowledge-platform/project-work/) for specific questions from public and private sector
         organisations regarding responsible use of AI
 team:
   title: Synthetic data generation team

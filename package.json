@@ -11,12 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tinacms/cli": "^1.9.0",
-    "hugo": "^0.0.3",
-    "hugo-extended": "^0.145.0",
     "tinacms": "^2.7.0"
   },
   "devDependencies": {
-    "@types/node": "^22.5.1"
+    "@types/node": "^22.5.1",
+    "@tinacms/cli": "^1.9.0",
+    "hugo": "^0.0.3",
+    "hugo-extended": "^0.145.0"
   }
 }

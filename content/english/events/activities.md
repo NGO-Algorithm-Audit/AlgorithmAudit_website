@@ -4,14 +4,14 @@ facet_groups:
   - value: year
     title: Year
     facets:
+      - value: q2_2025
+        label: Q2-2025
       - value: q1_2025
         label: Q1-2025    
       - value: q4_2024
         label: Q4-2024
       - value: q3_2024
         label: Q3-2024
-      - value: q2_2024
-        label: Q2-2024
       - value: 2024
         label: 2024
   - value: type
@@ -26,6 +26,24 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: Panel discussion Dutch Data Protection Authority
+    description: >
+      Participating in panel discussion on research into indirect discrimination in algorithic-driven decision-making processes during the event 'Learning in practice: working on the responsible use of algorithms and AI' of the Dutch Data Protection Authority
+
+
+      ![](/images/events/20250326_DCA.jpeg)
+
+    image: /images/events/dutch-data-protection.jpg
+    date: 26-03-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_panel
+        label: panel discussion
   - title: Guest lecture ethical AI 
     description: >
       Guest lecture for MSc Artificial Intelligence students with a minor in AI ethics at the University of Utrecht.

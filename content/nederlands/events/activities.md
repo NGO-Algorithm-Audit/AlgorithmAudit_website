@@ -4,14 +4,14 @@ facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: q2_2025
+        label: Q2-2025
       - value: q1_2025
         label: Q1-2025   
       - value: q4_2024
         label: Q4-2024
       - value: q3_2024
         label: Q3-2024
-      - value: q2_2024
-        label: Q2-2024
       - value: 2024
         label: 2024
   - value: type
@@ -26,6 +26,24 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: Paneldiscussie Autoriteit Persoonsgegevens
+    description: >
+      Deelname aan paneldiscussie over onderzoek naar indirecte discriminatie in algoritme-gedreven besluitvorming tijdens het event 'Leren in de praktijk: werken aan de verantwoorde inzet van algoritmes en AI' van de Autoriteit Persoonsgegevens
+
+
+      ![](/images/events/20250326_DCA.jpeg)
+
+    image: /images/events/dutch-data-protection.jpg
+    date: 26-03-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_panel
+        label: paneldiscussie
   - title: Gastcollege ethische AI Universiteit Utrecht
     description: >
       Gastcollege voor MSc Artificial Intelligence studenten met een minor in AI ethiek van de Universiteit Utrecht
@@ -504,7 +522,7 @@ events:
     image: /images/events/images.jpeg
     date: 16-04-2024
     facets:
-      - value: '2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q2_2024
@@ -543,7 +561,7 @@ events:
     image: /images/events/DH_rekenkamer.png
     date: 27-03-2024
     facets:
-      - value: '2024'
+      - value: year_2024
         label: '2024'
         hide: true
       - value: year_q1_2024
@@ -610,7 +628,7 @@ events:
       - value: year_q1_2024
         label: Q1-2024
         hide: true
-      - value: '2024'
+      - value: year_2024
         label: '2024'
         hide: true
   - title: >-
