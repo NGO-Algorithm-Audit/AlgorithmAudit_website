@@ -53,7 +53,7 @@ hasChildren = true
   [[main]]
   parent = "Algoprudence"
   name = "Case repository"
-  url = "/algoprudence"
+  url = "/algoprudence/case-repository"
   weight = 1
   [[main.params]]
     icon = "fa-database"

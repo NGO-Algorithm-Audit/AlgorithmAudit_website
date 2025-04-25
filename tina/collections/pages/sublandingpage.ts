@@ -19,7 +19,8 @@ export default {
   label: "Sublandingpage",
   path: "content/",
   match: {
-    include: "**/{knowledge-platform,technical-tools,events,about}/_index",
+    include:
+      "**/{knowledge-platform,technical-tools,events,about,algoprudence}/_index",
   },
   fields: sublandingpageFields.concat(filteredBuildingBlocks),
 };
