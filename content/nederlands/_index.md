@@ -27,7 +27,7 @@ Banner:
 About:
   content: >
     Wie besluit over de algoritmes die onze dagelijkse realiteit steeds meer bepalen? Bij Algorithm Audit geloven we dat dit een zaak is van ons allemaal. Ons team van data scientists, juristen en ethici biedt oplossingen voor waardegedreven vraagstukken die centraal staan bij de inzet van AI en data-analyse. Onze focus is het maken van transparante afwegingen over technische keuzes en hun maatschappelijke gevolgen. Als non-profit kennisplatform slaan we een brug tussen bedrijfsleven, wetenschap en overheid. Zo verbinden we ervaringen vanuit de uitvoeringspraktijk met de nieuwste technische inzichten. Door middel van open-source tools, onafhankelijke validatie en advies aan publieke organisaties zetten we kennis om in actie. Kom in contact om samen werk te maken van de verantwoorde inzet van AI.
-Core_Activities:
+overview_block:
   activities:
     - title: Kennisplatform
       subtitle: Expertise is statistiek en recht

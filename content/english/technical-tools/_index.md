@@ -2,24 +2,49 @@
 layout: sublandingpage
 title: Technical tools
 titleline2: Open source AI auditing tools
-subtitle: >
+subtitle: |
   We develop open source tools for AI auditing. This makes
 icon: fa-light fa-toolbox
-color: '#D5EBDB'
+color: "#D5EBDB"
+font_color: color-blue
 subpage_links:
   - title: Unsupervised bias detection tool
     titleline2: >-
-      Anomaly detection to identify groups that may be subject to unfair treatment by AI systems
+      Anomaly detection to identify groups that may be subject to unfair
+      treatment by AI systems
     icon: fa-light fa-search-plus
-    color: '#FFF'
+    color: "#FFF"
   - title: Synthetic data generation tool
-    titleline2: >-
-      Privacy-preserving browser-based tool to generate synthetic tabular data  
+    titleline2: "Privacy-preserving browser-based tool to generate synthetic tabular data  "
     icon: fa-light fa-table
-    color: '#FFF'
+    color: "#FFF"
   - title: AI Act implementation tool
     titleline2: >-
-      Dynamic questionnaires for identification and risk classification of AI systems and high-impact algorithms
+      Dynamic questionnaires for identification and risk classification of AI
+      systems and high-impact algorithms
     icon: fa-light fa-file
-    color: '#FFF'
+    color: "#FFF"
+overview_block:
+  activities:
+    - title: Knowledge platform
+      subtitle: Statistical and legal expertise
+      url: /knowledge-platform/
+      icon: fa-light fa-layer-group
+      color: "#E3F0FE"
+    - title: Algoprudence
+      subtitle: Case-based normative advise
+      url: /algoprudence/
+      icon: fas fa-balance-scale
+      color: "#F7CDBF"
+    - title: Project work
+      subtitle: "Validation, AI Act etc."
+      url: /knowledge-platform/project-work/
+      icon: fas fa-search-plus
+      color: "#E3F0FE"
 ---
+
+{{< tab_content_open id="overview" title="Other core activities" >}}
+
+{{< overview_block >}}
+
+{{< tab_content_close >}}

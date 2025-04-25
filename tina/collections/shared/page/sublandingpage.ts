@@ -8,6 +8,7 @@ import subtitle from "./subtitle";
 import title from "./title";
 
 import { TinaField } from "tinacms";
+import font_color from "./font_color";
 import titleline2 from "./titleline2";
 import url from "./url";
 const sublandingpageFields: TinaField[] = [
@@ -28,6 +29,7 @@ const sublandingpageFields: TinaField[] = [
   subtitle,
   icon,
   color,
+  font_color,
   {
     type: "object",
     name: "subpage_links",

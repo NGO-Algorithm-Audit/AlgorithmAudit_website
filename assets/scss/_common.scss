@@ -1165,6 +1165,9 @@ $accent: #FF4081;
   color: #777;
 }
 
+.color-black {
+  color: #000;
+}
 .font-AvenirNextProDemi {
   font-family: AvenirNextProDemi, avenir, sans-serif;
 }
@@ -1213,6 +1216,12 @@ $accent: #FF4081;
 @media (min-width: 1500px) {
   .container {
     max-width: 70vw;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    max-width: 67vw;
   }
 }
 
