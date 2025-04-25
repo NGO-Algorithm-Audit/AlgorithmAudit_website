@@ -33,7 +33,7 @@ quick_navigation:
 
 {{< team2 >}}
 
-{{< container_open title="Advisory board" id="advisory-board" icon="fas fa-user-plus" >}}
+{{< container_open title="International expert group" id="advisory-board" icon="fas fa-user-plus" >}}
 
 * [Aileen Nielsen](https://hls.harvard.edu/faculty/aileen-nielsen/), Visiting Assistant Professor, Harvard Law School, author of the book [Practical Fairness](https://www.oreilly.com/library/view/practical-fairness/9781492075721/)		&#x9;
 * [Anne Meuwese](https://www.universiteitleiden.nl/medewerkers/anne-meuwese#tab-1), Professor Public Law & Governance of AI, Leiden University
@@ -44,7 +44,7 @@ quick_navigation:
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-eye" title="Supervisory board" id="supervisory-board" >}}
+{{< container_open icon="fas fa-eye" title="Board of advice" id="supervisory-board" >}}
 
 Currently being established
 
