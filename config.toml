@@ -46,3 +46,7 @@ link = "plugins/bootstrap/bootstrap.min.js"
 # [[params.plugins.js]]
 # link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
 # attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
+
+# Build
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
