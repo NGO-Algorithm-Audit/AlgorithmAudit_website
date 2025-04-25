@@ -1,14 +1,12 @@
 ---
 layout: sublandingpage
-title: Knowledge platform
-titleline2: Statistical and legal expertise
+title: Algoprudence
+titleline2: Case-based normative advice
 subtitle: >
-  We bring together expertise from various fields to build public, including statistics, ethics
-  and law, to build public knowledge on responsible AI. We document our work in
-  a knowledge base. For key themes we build thematic resources, such as AI Act
-  standards and non-profit project work.
+  Delibration value-based questions
 icon: fa-layer-group
-color: '#2559A2'
+color: '#FED8CB'
+font_color: '#005AA7'
 subpage_links:
   - title: Knowledge base
     titleline2: >-

@@ -28,7 +28,7 @@ overview_block:
       icon: fa-light fa-layer-group
       color: "#E3F0FE"
     - title: Algoprudence
-      subtitle: Case-based normative advise
+      subtitle: Case-based normative advice
       url: /algoprudence/
       icon: fa-light fa-scale-balanced
       color: "#F7CDBF"
