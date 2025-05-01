@@ -2,6 +2,7 @@
  * @type {import('tinacms').TinaField}
  */
 import { TinaField } from "tinacms";
+import url from "./url";
 
 const quick_navigation: TinaField = {
   type: "object",
@@ -33,12 +34,7 @@ const quick_navigation: TinaField = {
           label: "Title",
           required: true,
         },
-        {
-          type: "string",
-          name: "url",
-          label: "Url",
-          required: true,
-        },
+        url,
         {
           type: "object",
           name: "links",

@@ -17,7 +17,7 @@ import form1 from "../templates/form1";
 import form2 from "../templates/form2";
 import iframe from "../templates/iframe";
 import template_image from "../templates/image";
-import overview_block from "../templates/overview_block";
+import overview_block_template from "../templates/overview_block_template";
 import pdf_frame from "../templates/pdf_frame";
 import promo_bar from "../templates/promo_bar";
 import reports_preview from "../templates/reports_preview";
@@ -31,6 +31,7 @@ import team3 from "../templates/team3";
 import tooltip from "../templates/tooltip";
 import webapp from "../templates/webapp";
 import image from "./image";
+import overview_block from "./overview_block";
 import quick_navigation from "./quick_navigation";
 import subtitle from "./subtitle";
 import title from "./title";
@@ -61,7 +62,7 @@ const building_blocks: TinaField[] = [
       form2,
       template_image,
       iframe,
-      overview_block,
+      overview_block_template,
       pdf_frame,
       promo_bar,
       reports_preview,
@@ -892,78 +893,7 @@ const building_blocks: TinaField[] = [
       },
     ],
   },
-  {
-    type: "object",
-    name: "overview_block",
-    label: "Overview block",
-    list: true,
-    ui: {
-      itemProps: (item) => {
-        return { label: item?.title };
-      },
-    },
-    fields: [
-      {
-        type: "string",
-        name: "title",
-        label: "Title",
-        required: true,
-      },
-      {
-        type: "rich-text",
-        name: "content",
-        label: "Content",
-        required: true,
-      },
-      {
-        type: "string",
-        name: "icon",
-        label: "Icon",
-        description:
-          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "id",
-        label: "ID",
-        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-        required: false,
-      },
-      {
-        type: "object",
-        name: "items",
-        label: "Items",
-        list: true,
-        ui: {
-          itemProps: (item) => {
-            return { label: item?.title };
-          },
-        },
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            required: true,
-          },
-          {
-            type: "string",
-            name: "icon",
-            label: "Icon",
-            required: true,
-            description:
-              "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-          },
-          {
-            type: "string",
-            name: "link",
-            label: "Link",
-          },
-        ],
-      },
-    ],
-  },
+  overview_block,
   {
     type: "object",
     name: "team1",
@@ -1176,7 +1106,7 @@ const building_blocks: TinaField[] = [
         ],
       },
     ],
-  }
+  },
 ];
 
 export default building_blocks;

@@ -2,13 +2,16 @@
 type: regular
 title: AI Act Implementation Tool
 subtitle: >
-  Dynamic questionnaires for identification and risk classification of AI systems and *high-impact algorithms*. Simplification of the key
-  elements of the AI system definition. The tool is developed open-source and can be used for free locally by your organisation.
+  Dynamic questionnaires for identification and risk classification of AI
+  systems and *high-impact algorithms*. Simplification of the key elements of
+  the AI system definition. The tool is developed open-source and can be used
+  for free locally by your organisation.
 
 
-  Do you want to help developing or want to learn more how to implement the tool within your organisation?
-  Check [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) or reach out through
-  [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
+  Do you want to help developing or want to learn more how to implement the tool
+  within your organisation? Check
+  [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) or
+  reach out through [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/AI research.svg
 quick_navigation:
   title: Content overview
@@ -28,7 +31,7 @@ quick_navigation:
     - title: Flowchart identification
       url: '#flowchart-identification'
     - title: Flowchart risk classification
-      url: '#flowchart-classification'    
+      url: '#flowchart-classification'
 ---
 
 {{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application an AI system or high-impact algorithm?" id="intro" >}}
@@ -72,9 +75,7 @@ The questions in the AI Act Implementation Tool are developed in collaboration w
 
 Considerations and choices made during development of the questionnaires regarding the legislative text of the AI Act, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> from the European Commission, and the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Registry Guidance Document</a> are described in the white paper 'Implementation of the AI Regulation – Definition of an AI System'. The policy briefing explains why the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> from the European Commission on the definition of an AI system contradict the legislative text. Both the white paper and the questionnaires have been adjusted following the publication of the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> by the European Commission.
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 White paper Implementation AI Act - definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
-
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 Policy briefing guidelines EC AI system definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 White paper Implementation AI Act - definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 White paper Implementation AI Act - definition.pdf" >}}
 
 {{< container_close >}}
 

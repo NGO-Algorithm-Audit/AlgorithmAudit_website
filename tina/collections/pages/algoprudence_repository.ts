@@ -70,7 +70,7 @@ export default {
   label: "Algoprudence (repository)",
   path: "content/",
   match: {
-    include: "**/algoprudence/_index",
+    include: "**/algoprudence/case-repository",
   },
   fields: building_blocks.concat(specific_fields),
 };
