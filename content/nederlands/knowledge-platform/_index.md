@@ -1,39 +1,34 @@
 ---
 layout: sublandingpage
-title: Knowledge platform
-titleline2: Statistical and legal expertise
+title: Kennisplatform
+titleline2: Statistische en juridische expertise
 subtitle: >
-  We bring together expertise from various fields, including statistics, ethics
-  and law, to build public knowledge on responsible AI. We document our work in
-  a knowledge base. For key themes we build thematic resources, such as AI Act
-  standards and non-profit project work.
+  We verbinden vakgebieden – onder meer statistiek, ethiek en recht – om publieke kennis over verantwoorde AI op te bouwen. We documenteren ons werk in een kennisbank. Voor belangrijke thema's ontwikkelen we domeinkennis middels white papers en publieke standaarden.
 icon: fa-light fa-layer-group
 color: "#2559A2"
 subpage_links:
-  - title: Knowledge base
+  - title: Kennisbank
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
-    color: "#FFF"
-  - title: Knowledge base
+      Verzameling van onze publieke standaarden, whitepapers, opiniestukken, lezenswaardige artikelen en meer, inclusief zoekfunctionaliteiten
+    icon: fa-brain
+    color: '#FFF'
+    url: /nl/knowledge-platform/knowledge-base/
+  - title: AI-verordening standaarden
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
-    color: "#FFF"
-  - title: Knowledge base
+      Publieke kennis over geharmoniseerde standaarden ontwikkeld door CEN-CENELEC voor naleving van de AI-verordening
+    icon: fa-check
+    color: '#FFF'
+    url: /nl/knowledge-platform/standards/
+  - title: AI beleidsobservatorium
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
-    color: "#FFF"
-  - title: Knowledge base
+      Overzicht van beleidsontwikkelingen rondom AI regulering, waaronder de AI-verordening, AVG, DSA, nationaal bestuursrecht etc.
+    icon: fa-binoculars
+    color: '#FFF'
+    url: /nl/knowledge-platform/policy-observatory/
+  - title: Projectwerk
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
-    color: "#FFF"
+      Voor specifieke vragen over de verantwoorde inzet van AI verricht Algorithm Audit not-for-profit projectwerk voor publieke en private sector organisaties
+    icon: fa-hands-helping
+    color: '#FFF'
+    url: /nl/knowledge-platform/project-work/
 ---
-
-TEST CONTENT

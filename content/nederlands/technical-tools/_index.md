@@ -1,39 +1,28 @@
 ---
 layout: sublandingpage
-title: Technical tools
-titleline2: Open source AI auditing tools
-subtitle: >
-  We bring together expertise from various fields, including statistics, ethics
-  and law, to build public knowledge on responsible AI. We document our work in
-  a knowledge base. For key themes we build thematic resources, such as AI Act
-  standards and non-profit project work.
+title: Technische tools
+titleline2: Open-source AI auditing tools
+subtitle: |
+  Algorithm Audit ontwikkelt open-source en local-first tools voor AI auditing. Dit betekent dat onze tools privacy-vriendelijk zijn, omdat data de browser niet verllat en geen gebruik maken van cloudinfrastructuur. Onze tools maken het voor iedereen eenvoudiger om AI te auditen.
 icon: fa-light fa-toolbox
-color: "#D5EBDB"
+color: '#2559A2'
+font_color: '#FFFFFF'
 subpage_links:
-  - title: Knowledge base
+  - title: Unsupervised bias detectie tool
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
-    color: "#FFF"
-  - title: Knowledge base
+      Anomaliedetectie om groepen te identificeren die mogelijk oneerlijk worden behandeld door AI-systemen
+    icon: fa-light fa-search-plus
+    color: '#FFF'
+    url: /nl/technical-tools/bdt/
+  - title: Synthetische data generatie tool
+    titleline2: Privacy-behoudende browsergebaseerde tool voor het genereren van synthetische tabeldata  
+    icon: fa-light fa-table  
+    color: '#FFF'  
+    url: /nl/technical-tools/sdg/  
+  - title: AI-verordening implementation tool
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
-    color: "#FFF"
-  - title: Knowledge base
-    titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
-    color: "#FFF"
-  - title: Knowledge base
-    titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
-    color: "#FFF"
+      Dynamische vragenlijsten voor identificatie en risicoclassificatie van AI-systemen en impactvolle algoritmes
+    icon: fa-light fa-file
+    color: '#FFF'
+    url: /nl/technical-tools/implementation-tool/
 ---
-
-TEST CONTENT

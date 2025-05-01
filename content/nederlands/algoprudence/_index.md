@@ -1,40 +1,35 @@
 ---
 layout: sublandingpage
-title: Knowledge platform
+title: Algoprudentie
 titleline2: Case-based normatief advies
 subtitle: >
-  We bring together expertise from various fields, including statistics, ethics
-  and law, to build public knowledge on responsible AI. We document our work in
-  a knowledge base. For key themes we build thematic resources, such as AI Act
-  standards and non-profit project work.
+  Case-based beraad over ethische algoritmes. Algorithm Audit brengt diverse adviescommissies samen die op deliberatieve en transparante wijze normatieve vragen beantwoorden over verantwoorde AI. Met algoprudentie als resultaat: jurisprudentie voor algoritmes.
 icon: fa-light fa-layer-group
-color: "#FED8CB"
-font_color: '#005AA7'
+color: "#2559A2"
+font_color: '#FFFFFF'
 subpage_links:
-  - title: Knowledge base
+  - title: Casuïstiek
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
+      Overzicht van recent normatief advies en technische audits van concrete cases over verantwoorde AI
+    icon: fa-light fa-database
     color: "#FFF"
-  - title: Knowledge base
+    url: /nl/algoprudence/case-repository/
+  - title: Dien een case in
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
+      Dien een case in ter beoordeling door een diverse groep belanghebbenden
+    icon: fa-light fa-arrow-right
     color: "#FFF"
-  - title: Knowledge base
+    url: /nl/algoprudence/submit-a-case/
+  - title: Werkwijze
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
+      Leer meer over onze algoprudentie-werkwijze en hoe we diverse groepen belanghebbenden samenbrengen
+    icon: fa-light fa-question
     color: "#FFF"
-  - title: Knowledge base
+    url: /nl/algoprudence/how-we-work/
+  - title: White paper
     titleline2: >-
-      Collection of our public AI Standards, white papers, op-eds and readworthy
-      articles, including search functionalities.
-    icon: fa-light fa-layer-group
+      Lees onze visie op verantwoorde AI door de lens van bestaande juridische kaders en hoe effectieve democratische controle over AI eruit zou kunnen zien
+    icon: fa-light fa-file
     color: "#FFF"
+    url: /nl/knowledge-platform/knowledge-base/white_paper_algoprudence/
 ---
-
-TEST CONTENT

@@ -1,12 +1,12 @@
 ---
 layout: sublandingpage
 title: Technical tools
-titleline2: Open source AI auditing tools
+titleline2: Open-source AI auditing tools
 subtitle: |
-  We develop open source tools for AI auditing. This makes
+  We develop open-source and local-first tools for AI auditing. This means our tools are privacy-preserving, as data don't leave the browser and don't rely on cloud infrastructure. Our tools make it easier for all to audit AI.
 icon: fa-light fa-toolbox
-color: '#D5EBDB'
-font_color: '#005AA7'
+color: '#2559A2'
+font_color: '#FFFFFF'
 subpage_links:
   - title: Unsupervised bias detection tool
     titleline2: >-
@@ -14,32 +14,18 @@ subpage_links:
       treatment by AI systems
     icon: fa-light fa-search-plus
     color: '#FFF'
+    url: /technical-tools/bdt/
   - title: Synthetic data generation tool
     titleline2: 'Privacy-preserving browser-based tool to generate synthetic tabular data  '
     icon: fa-light fa-table
     color: '#FFF'
+    url: /technical-tools/sdg/
   - title: AI Act implementation tool
     titleline2: >-
       Dynamic questionnaires for identification and risk classification of AI
       systems and high-impact algorithms
     icon: fa-light fa-file
     color: '#FFF'
-overview_block:
-  activities:
-    - title: Knowledge platform
-      subtitle: Statistical and legal expertise
-      url: /knowledge-platform/
-      icon: fa-light fa-layer-group
-      color: '#E3F0FE'
-    - title: Algoprudence
-      subtitle: Case-based normative advise
-      url: /algoprudence/
-      icon: fas fa-balance-scale
-      color: '#F7CDBF'
-    - title: Project work
-      subtitle: 'Validation, AI Act etc.'
-      url: /knowledge-platform/project-work/
-      icon: fas fa-search-plus
-      color: '#E3F0FE'
+    url: /technical-tools/implementation-tool/
 ---
 

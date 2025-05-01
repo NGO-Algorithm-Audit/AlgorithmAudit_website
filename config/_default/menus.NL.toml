@@ -1,117 +1,132 @@
 # main menu
 [[main]]
 name = "Home"
-url = "/nl"
+url = "/"
 weight = 1
-
-[[main]]
-name = "Algoprudentie"
-weight = 2
-hasChildren = true
-url = "/nl/algoprudence"
-  [[main]]
-  parent = "Algoprudentie"
-  name = "Dien een case in"
-  url = "nl/algoprudence/submit-a-case"
-  weight = 1
-  [[main.params]]
-    featured = true
-  [[main]]
-  parent = "Algoprudentie"
-  name = "Casuïstiek"
-  url = "nl/algoprudence/case-repository"
-  weight = 2
-  [[main.params]]
-    icon = "fa-database"
-  [[main]]
-  parent = "Algoprudentie"
-  name = "Onze werkwijze"
-  url = "nl/algoprudence/how-we-work"
-  weight = 3
-  [[main.params]]
-    icon = "fa-question"
-
-[[main]]
-name = "Technische tools"
-weight = 3
-hasChildren = true
-url = "/nl/technical-tools"
-  [[main.params]]
-    icon = "fa-table"
-  [[main]]
-  parent = "Technische tools"
-  name = "Github code"
-  url = "https://github.com/NGO-Algorithm-Audit/"
-  weight = 1
-  [[main.params]]
-    featured = true
-    target = "_blank"
-  [[main]]
-  parent = "Technische tools"
-  name = "Bias detectie tool"
-  url = "/nl/technical-tools/bdt/"
-  weight = 2
-  [[main.params]]
-    icon = "fa-search"
-    subtitle = "Open source AI audit tools"
-  [[main]]
-  parent = "Technische tools"
-  name = "Synthetische data generatie"
-  url = "nl/technical-tools/sdg"
-  weight = 3
-  [[main.params]]
-    icon = "fa-table"
-  [[main]]
-  parent = "Technische tools"
-  name = "AI-verordening implementatie tool"
-  url = "nl/technical-tools/implementation-tool"
-  weight = 4
-  [[main.params]]
-    icon = "fa-file"
 
 [[main]]
 name = "Kennisplatform"
-weight = 1
+weight = 2
 hasChildren = true
 url = "/nl/knowledge-platform"
   [[main]]
   parent = "Kennisplatform"
-  name = "AI Act standaarden"
-  url = "nl/knowledge-platform/standards"
+  name = "Kennisbank"
+  url = "/nl/knowledge-platform/knowledge-base"
   weight = 1
+  [[main.params]]
+    icon = "fa-brain"
+  [[main]]
+  parent = "Kennisplatform"
+  name = "AI-verordening standaarden"
+  url = "/nl/knowledge-platform/standards"
+  weight = 2
   [[main.params]]
     icon = "fa-check"
   [[main]]
   parent = "Kennisplatform"
   name = "AI beleidsobservatorium"
-  url = "nl/knowledge-platform/policy-observatory"
-  weight = 2
+  url = "/nl/knowledge-platform/policy-observatory"
+  weight = 3
   [[main.params]]
     icon = "fa-binoculars"
   [[main]]
   parent = "Kennisplatform"
-  name = "Kennisbank"
-  url = "/nl/knowledge-platform/knowledge-base"
-  weight = 3
-  [[main.params]]
-    icon = "fa-brain"
-  [[main]]
-  parent = "Kennisplatform"
   name = "Projectwerk"
-  url = "nl/knowledge-platform/project-work"
+  url = "/nl/knowledge-platform/project-work"
   weight = 4
   [[main.params]]
     icon = "fa-hands-helping"
+  [[main]]
+  identifier = "knowledge_platform_overview"
+  parent = "Kennisplatform"
+  name = "Overzicht"
+  url = "/nl/knowledge-platform/"
+  weight = 5
+  [[main.params]]
+    featured = true
+
+[[main]]
+name = "Algoprudentie"
+weight = 3
+url = "/algoprudence"
+hasChildren = true
+  [[main]]
+  parent = "Algoprudentie"
+  name = "Casuïstiek"
+  url = "/nl/algoprudence/case-repository"
+  weight = 1
+  [[main.params]]
+    icon = "fa-database"
+  [[main]]
+  parent = "Algoprudentie"
+  name = "Dien een case in"
+  url = "/nl/algoprudence/submit-a-case"
+  weight = 2
+  [[main.params]]
+    icon = "fa-arrow-right"
+  [[main]]
+  parent = "Algoprudentie"
+  name = "Werkwijze"
+  url = "/nl/algoprudence/how-we-work"
+  weight = 3
+  [[main.params]]
+    icon = "fa-question"
+  [[main]]
+  identifier = "algoprudence_overview"
+  parent = "Algoprudentie"
+  name = "Overzicht"
+  url = "/nl/algoprudence/"
+  weight = 4
+  [[main.params]]
+    featured = true
+
+[[main]]
+name = "Technische tools"
+weight = 4
+hasChildren = true
+url = "/nl/technical-tools"
+  [[main]]
+  parent = "Technische tools"
+  name = "Unsupervised bias detectie tool"
+  url = "/nl/technical-tools/BDT"
+  weight = 1
+  [[main.params]]
+    icon = "fa-search-plus"
+  [[main]]
+  parent = "Technische tools"
+  name = "Synthetische data generatie tool"
+  url = "/nl/technical-tools/SDG"
+  weight = 2
+  [[main.params]]
+    icon = "fa-table"
+  [[main]]
+  parent = "Technische tools"
+  name = "AI-verordening implementatie tool"
+  url = "/nl/technical-tools/implementation-tool"
+  weight = 3
+  [[main.params]]
+    icon = "fa-file"
+  [[main]]
+  identifier = "technical_tools_overview"
+  parent = "Technische tools"
+  name = "Overzicht"
+  url = "/nl/technical-tools/"
+  weight = 4
+  [[main.params]]
+    featured = true
+
+
 
 [[main]]
 name = "Evenementen"
-url = "nl/events"
-weight = 4
+url = "events"
+weight = 5
 hasChildren = true
   [[main]]
   parent = "Evenementen"
   name = "Activiteiten"
-  url = "nl/events/activities"
+  url = "/nl/events/activities"
   weight = 1
   [[main.params]]
     icon = "fa-calendar"
@@ -125,41 +140,42 @@ hasChildren = true
 
 [[main]]
 name = "Over ons"
-weight = 5
+weight = 6
 hasChildren = true
-url = "/nl/about/contact"
   [[main]]
-  parent = "Over ons"
-  name = "Kom in contact"
-  url = "nl/about/contact"
-  weight = 1
-  [[main.params]]
     featured = true
   [[main]]
   parent = "Over ons"
-  name = "Veelgestelde vragen"
-  url = "nl/about/faq"
-  weight = 2
+  name = "FAQ"
+  url = "/nl/about/faq"
+  weight = 1
   [[main.params]]
     icon = "fa-question"
   [[main]]
   parent = "Over ons"
   name = "Teams"
-  url = "nl/about/teams"
-  weight = 3
+  url = "/nl/about/teams"
+  weight = 2
   [[main.params]]
     icon = "fa-users"
   [[main]]
   parent = "Over ons"
   name = "Bestuur"
-  url = "nl/about/boards"
-  weight = 4
+  url = "/nl/about/boards"
+  weight = 3
   [[main.params]]
     icon = "fa-user-friends"
   [[main]]
   parent = "Over ons"
   name = "Vacatures"
-  url = "nl/about/vacancies"
-  weight = 5
+  url = "/nl/about/vacancies"
+  weight = 4
   [[main.params]]
     icon = "fa-user-check"
+  [[main]]
+  parent = "Over ons"
+  name = "Kom in contact"
+  url = "/nl/about/contact"
+  weight = 5
+  [[main.params]]
+    featured = true
