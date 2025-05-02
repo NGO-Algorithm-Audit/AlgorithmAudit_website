@@ -26,26 +26,26 @@ Banner:
       - text: AI standaarden
 About:
   content: >
-    Wie besluit over de algoritmes die onze dagelijkse realiteit steeds meer bepalen? Bij Algorithm Audit geloven we dat dit een zaak is van ons allemaal. Ons team van data scientists, juristen en ethici biedt oplossingen voor waardegedreven vraagstukken die centraal staan bij de inzet van AI en data-analyse. Onze focus is het maken van transparante afwegingen over technische keuzes en hun maatschappelijke gevolgen. Als non-profit kennisplatform slaan we een brug tussen bedrijfsleven, wetenschap en overheid. Zo verbinden we ervaringen vanuit de uitvoeringspraktijk met de nieuwste technische inzichten. Door middel van open-source tools, onafhankelijke validatie en advies aan publieke organisaties zetten we kennis om in actie. Kom in contact om samen werk te maken van de verantwoorde inzet van AI.
-Core_Activities:
+    Wie besluit over de algoritmes die onze dagelijkse realiteit steeds meer bepalen? Bij Algorithm Audit geloven we dat dit een zaak is van ons allemaal. Ons team van data scientists, juristen en ethici biedt oplossingen voor waardegedreven vraagstukken die centraal staan bij de inzet van AI en data-analyse. We focussen ons op het maken van transparante afwegingen over technische keuzes en hun maatschappelijke gevolgen. Als non-profit kennisplatform slaan we een brug tussen bedrijfsleven, wetenschap en overheid. Zo verbinden we ervaringen vanuit de uitvoeringspraktijk met de nieuwste technische inzichten. Door middel van open-source tools, onafhankelijke validatie en advies aan publieke en private organisaties zetten we kennis om in actie. Kom in contact om samen werk te maken van de verantwoorde inzet van AI.
+overview_block:
   activities:
     - title: Kennisplatform
-      subtitle: Statistical and legal expertise
-      url: /nl/knowledge-platform/knowledge-base/
+      subtitle: Expertise is statistiek en recht
+      url: /nl/knowledge-platform/
       icon: fa-light fa-layer-group
       color: "#E3F0FE"
     - title: Algoprudentie
-      subtitle: Case-based normative advise
+      subtitle: Case-based normatief advies
       url: /nl/algoprudence/
       icon: fa-light fa-scale-balanced
       color: "#F7CDBF"
     - title: Technische tools
       subtitle: Open source AI auditing tools
-      url: /nl/technical-tools/bdt/
+      url: /nl/technical-tools/
       icon: fa-light fa-toolbox
       color: "#D5EBDB"
     - title: Projectwerk
-      subtitle: "Algorithm validation, AI Act"
+      subtitle: Validatie, AI-verordening etc.
       url: /nl/knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
       color: "#E3F0FE"

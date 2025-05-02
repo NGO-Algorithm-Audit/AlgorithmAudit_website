@@ -679,6 +679,7 @@ h4, .h4 {
   left: 0;
   right: 0;
   bottom: 0;
+  max-height: 100%;
 }
 
 .featured-img{
@@ -1150,17 +1151,24 @@ $accent: #FF4081;
 }
 
 .color-blue {
-  color: #005aa7;
+  color: #005aa7 !important;
 }
 
 .color-lightblue {
-  color: #deecf7;
+  color: #deecf7 !important;
+}
+
+.color-white {
+  color: #fff !important;
 }
 
 .color-gray {
   color: #777;
 }
 
+.color-black {
+  color: #000;
+}
 .font-AvenirNextProDemi {
   font-family: AvenirNextProDemi, avenir, sans-serif;
 }
@@ -1171,6 +1179,10 @@ $accent: #FF4081;
 
 .font-size-1_3rem {
   font-size: 1.3rem;
+}
+
+.font-size-1_5rem {
+  font-size: 1.5rem;
 }
 
 .font-size-xl-1_5rem {
@@ -1195,10 +1207,23 @@ $accent: #FF4081;
     z-index: 1000;
   }
 }
+body {
+  @media (min-width: 1500px) {
+    .container-xl {
+      max-width: 90vw;
+    }
+  }
+}
 
 @media (min-width: 1500px) {
-  .container-xl {
-    max-width: 90vw;
+  .container {
+    max-width: 70vw;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    max-width: 67vw;
   }
 }
 

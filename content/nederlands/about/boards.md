@@ -33,7 +33,7 @@ quick_navigation:
 
 {{< team2 id="board">}}
 
-{{< container_open title="Raad van advies" id="advisory-board" icon="fas fa-user-plus" >}}
+{{< container_open title="Internationale expertgroep" id="advisory-board" icon="fas fa-user-plus" >}}
 
 * [Aileen Nielsen](https://hls.harvard.edu/faculty/aileen-nielsen/), Visiting Assistant Professor, Harvard Law School, auteur van het boek [Practical Fairness](https://www.oreilly.com/library/view/practical-fairness/9781492075721/)		&#x9;
 * [Anne Meuwese](https://www.universiteitleiden.nl/medewerkers/anne-meuwese#tab-1), Hoogleraar Staats- en Bestuursrecht, Universiteit Leiden
@@ -44,7 +44,7 @@ quick_navigation:
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-eye" title="Raad van toezicht" id="supervisory-board" >}}
+{{< container_open icon="fas fa-eye" title="Raad van Advies" id="supervisory-board" >}}
 
 In oprichting
 

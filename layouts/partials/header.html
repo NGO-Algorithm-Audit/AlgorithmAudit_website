@@ -1,11 +1,11 @@
 {{ "<!-- navigation -->" | safeHTML }}
 
-<header class="navigation col-12 shadow-sm" id="header-navigation">
-  <div class="container col-12" id="header-container">
+<header class="navigation col-12 shadow-sm px-0" id="header-navigation">
+  <div class="container" id="header-container">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-xl navbar-light">
-      <div class="navbar-div">
+    <nav class="navbar navbar-expand-xl navbar-light row">
+      <div class="navbar-div col">
         <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
           {{ with site.Params.logo}}
           <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}" style="min-width: {{site.Params.logo_width}};">
@@ -43,7 +43,6 @@
                 {{ end }}
                   {{.Pre}}{{ .Name }}{{.Post}}
                 {{ if .Params.Featured }}
-                <i class='fas fa-arrow-right ml-2'></i>
                 </div>
                 {{ end }}
               </a>
