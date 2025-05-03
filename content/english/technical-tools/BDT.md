@@ -78,7 +78,7 @@ type: bias-detection-tool
 
 #### What is the tool about?
 
-The tool identifies potentially unfairly treated groups of similar users by an AI system. The tool returns clusters of users for which the system is underperforming compared to the rest of the data set. The tool makes use of <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a> – an unsupervised statistal learning method. This means that no data are required on protected attributes of users, e.g., gender, nationality or ethnicity, to detect indirect discrimination, also referred to as higher-dimensional proxy or intersectional discrimination. The metric by which bias is defined can be manually chosen and is referred to as the `performance metric`.
+The tool identifies groups where an algorithm or AI system shows variations in performance. This type of monitoring is referred to as *anomaly detection*. To identify anomalous patterns, the tool uses <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is a form of _unsupervised learning_. This means detecting disparate treatment (bias) does not require any data on protected attributes of users – such as gender, nationality, or ethnicity. The metric used to measure bias can be manually selected and is referred to as the `bias metric`.
 
 #### What data can be processed?
 
@@ -116,8 +116,6 @@ Software of the used statistical methods is available in a seperate <a href="htt
 The tool returns a pdf report or `.json` file with identified clusters. It specifically focusses on the identified cluster with highest bias and describes this cluster by the features that characterizes it. These results serve as a starting point for a deliberative assessment by human experts to evaluate potential discrimination and unfairness in the AI system under review. The tool also visualizes the outcomes.
 
 Try the tool below ⬇️
-<!-- This is quantitatively expressed by the (statistically significant) differences in feature means between the identified cluster and the rest of the data.  -->
-
 
 {{< container_close >}}
 

@@ -63,7 +63,7 @@ quick_navigation:
       url: '#info'
     - title: Tool
       url: '#web-app'
-    - title: HBAC algoritme
+    - title: Anomaliedetectie-algoritme
       url: '#HBAC'
     - title: FAQ
       url: '#FAQ'
@@ -71,13 +71,50 @@ quick_navigation:
       url: '#team'
 ---
 
-{{< container_open title="Bias detectie tool – Wat is het?" icon="fas fa-search" id="info" >}}
+{{< container_open title="Bias detection tool" icon="fas fa-search" id="info" >}}
 
-De bias detectie tool identificeert mogelijk ongelijk behandelde groepen door een AI-systeem. De tool werkt momenteel alleen voor AI-systemen die individuen in twee groepen opdelen, bijvoorbeeld de voorspelling of een financiële transactie wel/niet risicovol is. De tool vindt groepen gebruikers die door het algoritme systematisch een afwijkende voorspelling krijgen. Deze afwijking wordt berekend aan de hand van een bepaalde maat, bijvoorbeeld de hoeveelheid valspositieven (het algoritme voorspelt dat de financiële transactie verdacht is, maar is dat niet), valsnegatieven (het algoritme voorspelt dat de financiële transactie niet-verdacht is, maar is dat wel) of een combinatie van deze twee. De tool maakt gebruik van [clustering](https://nl.wikipedia.org/wiki/Clusteranalyse) (unsupervised machine learning), wat betekent dat geen toegang nodig is tot de bijzondere persoonsgegevens van individuen – zoals geslacht, nationaliteit of etniciteit – om afwijkingen met betrekking tot deze gronden te detecteren. Omdat de tool gebruik maakt van statistiek is het in staat om hoger-dimensionale vormen van ogenschijnlijk neutraal onderscheid – ook wel meervoudige proxy of intersectionele discriminatie genoemd – te detecteren.
+<br>
 
-Via onderstaande web app kan de tool direct worden gebruikt. Mits de geüploade data voldoet aan de hieronder gespecificeerde structuur, voert de tool direct een clusteranalyse uit en retourneert het cluster met de grootste afwijking (volgens de gekozen metriek) naar de browser. De resultaten kunnen worden gedownload als pdf-bestand.
+#### Wat doet de tool?
 
-Gebruik de tool hieronder ⬇️
+De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert. Naar deze vorm van monitoring wordt verwezen als *anomaliedetectie*. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is een vorm van _unsupervised learning_. Dit betekent dat er geen gegevens nodig zijn over beschermde kenmerken van gebruikers – zoals geslacht, nationaliteit of etniciteit – om verdacht onderscheid (bias) te detecteren. De metriek aan de hand waarvan ondercheid wordt gemeten kan handmatig worden gekozen en wordt aangeduid als de `gelijkheidsmetriek`.
+
+#### Welke data kan worden verwerkt?
+
+Numerieke en categorische data kunnen worden geanalyseerd. Het type data wordt automatisch gedetecteerd door de tool. De kolom `prestatiemetriek` moet altijd numerieke waarden bevatten. De gebruiker moet in de app aangeven of een hogere of lagere waarde van de `prestatiemetriek` als beter wordt beschouwd.
+
+De tool bevat een demo-dataset en een 'Probeer het uit'-knop. Meer informatie is te vinden in de app.
+
+<div>
+  <p><u>Example of numerical data set</u>:</p>
+  <style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top} .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style>
+  <table class="tg">
+    <thead>
+      <tr>
+      <th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">perf_metr</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td></tr>
+      <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td></tr>
+      <tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td></tr>
+    </tbody>
+  </table>
+</div>
+<br>
+
+#### How is my data processed?
+
+The tool is privacy preserving. It uses computing power of your own computer to analyze the attached data set. In this architectural setup, data is processed entirely on your device and it not uploaded to any third-party, such as cloud providers. This computing approach is called *local-first* and allows organisations to securely use tools locally. Instructions how the tool can be hosted locally, incl. source code, can be found <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">here</a>.
+
+[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+Software of the used statistical methods is available in a seperate <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github repository</a>, and is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`.
+
+#### What does the tool return?
+
+The tool returns a pdf report or `.json` file with identified clusters. It specifically focusses on the identified cluster with highest bias and describes this cluster by the features that characterizes it. These results serve as a starting point for a deliberative assessment by human experts to evaluate potential discrimination and unfairness in the AI system under review. The tool also visualizes the outcomes.
+
+Try the tool below ⬇️
 
 {{< container_close >}}
 
