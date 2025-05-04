@@ -1,40 +1,8 @@
 ---
 layout: case
 title: Type simkaart als voorspeller voor betalingsfraude
-icon: fa-sim-card
-summary: >
-  The audit commission advises against using type of SIM card as an input
-  variable in algorithmic models that predict payment defaults and block
-  afterpay services for specific customers. As it is likely that type of SIM
-  card acts as a proxy-variable for sensitive demographic categories, the model
-  would run an intolerable risk of disproportionally excluding vulnerable
-  demographic groups from the payment service. Absent reliable data that
-  demonstrates otherwise, the ethical risk of including the SIM card variable
-  outweighs potential benefits. The commission advises to consider a variety of
-  alternatives in dealing with payment defaults.
-sources: |
-  Anonymized large multinational company with e-commerce platform.
-algoprudence:
-  title: Report
-  intro: "Dowload the full report and problem statement\_[here](https://drive.google.com/file/d/16Au8tb9NGOeCF0EZLIQQ1cNLhLAmTylL/view).\n"
-  reports:
-    - url: >-
-        https://drive.google.com/file/d/16Au8tb9NGOeCF0EZLIQQ1cNLhLAmTylL/preview
-normative_advice_members:
-  - name: |
-      Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University
-  - name: |
-      Jan Overgoor, PhD Management Science and Engineering, Stanford University
-  - name: >
-      Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg
-      University
-  - name: |
-      Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft
-funded_by:
-  - url: 'https://www.sidnfonds.nl/projecten/ethical-risk-assessment-tool'
-    image: /images/supported_by/sidn.png
 subtitle: |
-  Probleemstelling (AA:2022:01:P) en adviesdocument (AA:2022:01:A)
+  Probleemstelling (ALGO:AA:2022:01:P) en adviesdocument (ALGO:AA:2022:01:A)
 image: /images/algoprudence/AA202201/Cover.png
 form1:
   title: Reageer op dit normatieve oordeel
@@ -47,18 +15,22 @@ form1:
   backend_link: 'https://formspree.io/f/xyyrjyzr'
   id: case-reaction
   questions:
-    - label: Naam
+    - label: |
+        Naam
       id: name
       required: true
       type: text
-    - label: Affiliated organization
+    - label: |
+        Affiliated organization
       id: affiliated-organization
       type: text
-    - label: Reactie
+    - label: |
+        Reactie
       id: reaction
       required: true
       type: textarea
-    - label: Contactgegevens
+    - label: |
+        Contactgegevens
       id: contact-details
       required: true
       type: email
@@ -71,7 +43,7 @@ form1:
 
 #### Algoprudentienummer
 
-AA:2022:01
+ALGO:AA:2022:01
 
 #### Samenvatting advies
 
@@ -81,9 +53,7 @@ De normatieve adviescommissie adviseert tegen het gebruik van type simkaart als 
 
 Geanonimiseerde multinational met e-commerce platform.
 
-#### Algoprudentie
-
-De probleemstelling en het adviesrapport kunnen <a href="https://drive.google.com/file/d/1fSETUhxOz0nF2nznsWq-4TyngP6lU7yH/preview" target="_blank">hier</a> worden gedownload.
+#### Probleemstelling en adviesdocument
 
 {{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202201/ALGO_AA202201_Report_Type_SIM.pdf" >}}
 

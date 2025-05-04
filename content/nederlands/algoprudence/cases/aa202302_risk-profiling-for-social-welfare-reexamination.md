@@ -3,7 +3,7 @@ icon: fa-poll-h
 layout: case
 title: Risicoprofilering heronderzoek bijstandsuitkering
 subtitle: |
-  Probleemstelling (AA:2023:02:P) en adviesdocument (ALGO:AA:2023:02:A)
+  Probleemstelling (ALGO:AA:2023:02:P) en adviesdocument (ALGO:AA:2023:02:A)
 image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
 form1:
   title: Reageer op dit normatieve oordeel
@@ -44,7 +44,7 @@ form1:
 
 #### Algoprudentienummer
 
-AA:2023:02
+ALGO:AA:2023:02
 
 #### Hoofdpunten normatieve adviescommissie
 
@@ -73,13 +73,11 @@ Ongevraagd advies aan alle 340+ Nederlandse gemeenten. Onderzoek bouwt voort op�
 
 #### Presentatie
 
-Het adviesrapport (AA:2023:02:A) is op 29 november 2023 aangeboden aan de Staatssecretaris van Digitalisering. Een persbericht kan [hier](https://algorithmaudit.eu/pressroom) worden gevonden. 
+Het adviesrapport (ALGO:AA:2023:02:A) is op 29 november 2023 aangeboden aan de Staatssecretaris van Digitalisering. Een persbericht kan [hier](https://algorithmaudit.eu/pressroom) worden gevonden. 
 
 {{< image id="presentation-minister" image1="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt1="Presentation advice report to Dutch Minister of Digitalization" caption1="Presentation advice report to Dutch Minister of Digitalization" width_desktop="5" width_mobile="12" >}}
 
-#### Algoprudentie
-
-Het adviesrapport (AA:2023:02:A) kan [hier](https://drive.google.com/file/d/19ZkqTXC5M9qx3wPZFNe3Vqn6Ha0B3Yii/view?usp=sharing) worden gedownload en de probleemstelling (AA:2023:02:P) [hier](https://drive.google.com/file/d/1GSGW0-jCTsJmxYJmu6tjq6UgZJkCN5_r/view?usp=sharing).
+#### Probleemstelling en adviesdocument
 
 {{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202302/ALGO_AA202302P_NL.pdf" url2="/pdf-files/algoprudence/ALGO_AA202302/ALGO_AA202302A_NL.pdf" >}}
 
@@ -107,7 +105,7 @@ Raadsleden hebben naar aanleiding van adviesrapport AA-2023:02:A <a href="https
 * uitlegbaarheidsvereisten voor het gebruikte explainable boosting algoritme
 * implicaties van de aanstaande AI Verordening voor deze vorm van risicoprofileren.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1oPiO_s9KuV7446BqC9a4P2qjW7MGUyxu/preview" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202302/Actions/20231204_236 sv Aslami, IJmker en Garmy inzake toegepaste profileringscriteria gemeentelijke algoritmes.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< accordion_item_close >}}
 

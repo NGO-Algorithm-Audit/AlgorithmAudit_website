@@ -494,9 +494,7 @@ events:
       normatieve oordeelsvorming over eerlijke algoritmes?
 
 
-      {{< pdf_frame
-      articleUrl1="https://drive.google.com/file/d/1edrNqP4cBgJ1zKv1970DsUJ3Tark6waF/preview"
-      width_desktop_pdf="12" width_mobile_pdf="12" >}}
+      {{< embed_pdf url="/pdf-files/events/activities/20240424_Nutshuis.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
     image: /images/logo/logo.svg
     date: 24-04-2024
     facets:
@@ -516,9 +514,8 @@ events:
       tijdens een seminar van UvA AI, Media & Democratie lab
 
 
-      {{< pdf_frame
-      articleUrl1="https://drive.google.com/file/d/1J4HojWGUE4IBhVsxIsht0SXorIex8ngH/preview"
-      width_desktop_pdf="12" width_mobile_pdf="12" >}}
+      {{< embed_pdf url="/pdf-files/events/activities/20240416_UvA_MDLab.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
     image: /images/events/images.jpeg
     date: 16-04-2024
     facets:
@@ -555,9 +552,8 @@ events:
       als kwantitatief perspectief
 
 
-      {{< pdf_frame
-      articleUrl1="https://drive.google.com/file/d/1CwCrQLdFP29ssxu-mnjAZxEGlfF66OW6/preview"
-      width_desktop_pdf="12" width_mobile_pdf="12" >}}
+      {{< embed_pdf url="/pdf-files/events/activities/20240327_AA_Rekenkamer_DenHaag.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
     image: /images/events/DH_rekenkamer.png
     date: 27-03-2024
     facets:
@@ -619,6 +615,9 @@ events:
       Presentatie Fundamentele Rechten Impact Assessment (FRIAs) en inclusieve,
       deliberatieve adviescommissies voor verantwoorde AI – plenaire bijeenkomst
       JTC21 CEN-CENELEC Dublin
+
+
+      {{< embed_pdf url="/pdf-files/events/activities/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
     image: /images/events/jtc21.jpg
     date: 13-02-2024
     facets:

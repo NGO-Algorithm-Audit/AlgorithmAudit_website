@@ -3,10 +3,9 @@ icon: fas fa-balance-scale-left
 layout: case
 title: Addendum Preventing prejudice
 subtitle: >
-  Addendum for ealier [research](/algoprudence/cases/aa202401_bias-prevented/) –
+  Addendum for previous [audit report](/algoprudence/cases/aa202401_bias-prevented/) –
   Supervised bias analysis of aggregtation statistics on the country of birth
-  and country of origin of 300.000+ students as provided by the Dutch office of
-  statistics
+  and country of origin of 300.000+ students as provided by Statistics Netherlands
 image: /images/algoprudence/AA202402/AA202402_cover_EN.png
 form1:
   title: React to this technical audit
@@ -62,12 +61,9 @@ Education Executive Agency of The Netherlands (DUO)
 
 [https://github.com/NGO-Algorithm-Audit/DUO-CUB](https://github.com/NGO-Algorithm-Audit/DUO-CUB)
 
-#### Algoprudence
-
-The full report (TA:AA:2024:02) can be found <a href="https://drive.google.com/file/d/1uOhR9qXHW6P0i4uP7RNhil2G2dXzFjrp/preview" target="_blank">here</a>.
+#### Audit report
 
 {{< embed_pdf url="/pdf-files/algoprudence/TA_AA202402/TA_AA202402_Addendum_Preventing_prejudice.pdf" >}}
-
 
 {{< tab_content_close >}}
 

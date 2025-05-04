@@ -485,7 +485,11 @@ events:
       - value: type_interview
         label: interview
   - title: Seminar 'Algorithm validation'
-    description: "Algorithm Audit hosted a public seminar on algorithm validation and algoprudence in The Hague. Anne Meuwese\_shared insights on the value of algoprudence in contextualizing legal norms. Floris Holstege shed light into statistical hypothesis testing which plays an important role in our recent techincal audits.\_\n\nWe appreciated the interactive Q\\&A with the participants, especially the curious and critical questions which enables us to clarify our work, but also contributes to the further development and refinement of our activities as an NGO.\n\n{{< pdf_frame articleUrl1=\"https://drive.google.com/file/d/1edrNqP4cBgJ1zKv1970DsUJ3Tark6waF/preview\" width_desktop_pdf=\"12\" width_mobile_pdf=\"12\" >}}\n"
+    description: >
+      Algorithm Audit hosted a public seminar on algorithm validation and algoprudence in The Hague. Anne Meuwese shared insights on the value of algoprudence in contextualizing legal norms. Floris Holstege shed light into statistical hypothesis testing which plays an important role in our recent techincal audits. We appreciated the interactive Q&A with the participants, especially the curious and critical questions which enables us to clarify our work, but also contributes to the further development and refinement of our activities as an NGO.
+
+      {{< embed_pdf url="/pdf-files/events/activities/20240424_Nutshuis.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
     image: /images/logo/logo.svg
     date: 24-04-2024
     facets:
@@ -505,9 +509,8 @@ events:
       Media & Democracy lab
 
 
-      {{< pdf_frame
-      articleUrl1="https://drive.google.com/file/d/1J4HojWGUE4IBhVsxIsht0SXorIex8ngH/preview"
-      width_desktop_pdf="12" width_mobile_pdf="12" >}}
+      {{< embed_pdf url="/pdf-files/events/activities/20240416_UvA_MDLab.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
     image: /images/events/images.jpeg
     date: 16-04-2024
     facets:
@@ -543,10 +546,8 @@ events:
       Knowledge sharing event on auditing algorithms from both a quantitative
       and qualitative perspective
 
+      {{< embed_pdf url="/pdf-files/events/activities/20240327_AA_Rekenkamer_DenHaag.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
-      {{< pdf_frame
-      articleUrl1="https://drive.google.com/file/d/1CwCrQLdFP29ssxu-mnjAZxEGlfF66OW6/preview"
-      width_desktop_pdf="12" width_mobile_pdf="12" >}}
     image: /images/events/DH_rekenkamer.png
     date: 27-03-2024
     facets:
@@ -607,9 +608,8 @@ events:
       CEN-CENELEC Dublin
 
 
-      {{< pdf_frame
-      articleUrl1="https://drive.google.com/file/d/1vadydN4_ZEXJ0h_Sj-4GRUwJSacM0fCK/preview"
-      width_desktop_pdf="12" width_mobile_pdf="12" >}}
+      {{< embed_pdf url="/pdf-files/events/activities/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+      
     image: /images/events/jtc21.jpg
     date: 13-02-2024
     facets:

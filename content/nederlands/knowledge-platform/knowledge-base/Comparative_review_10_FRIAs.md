@@ -30,4 +30,4 @@ Uit onze beoordeling komt naar voren dat er een groot verschil bestaat wat betre
 
 Gebruikt u FRIAs vaker of bent u een ontwikkelaar van een FRIA, neem dan contact op met [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu) om inzichten te delen op basis van onze casus-gebaseerde AI-auditervaring.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/127jKVdGqkiiLSE_MjfLP1nv4Q_lqib1S/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20240918_Comparative review 10 FRIAs Algorithm Audit.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}

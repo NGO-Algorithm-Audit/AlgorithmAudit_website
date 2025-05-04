@@ -31,4 +31,4 @@ Our assessment shows a sharp divide regarding the length and completeness of FRI
 
 Are you a frequent user, or a developer of a FRIA, please reach out to [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu) to share insights based on our case-based AI auditing experience.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/127jKVdGqkiiLSE_MjfLP1nv4Q_lqib1S/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20240918_Comparative review 10 FRIAs Algorithm Audit.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}

@@ -32,4 +32,4 @@ This is what we advise policy makers across the EU to facilitate reversing the b
 
 This document formulates actionable suggestions to improve legal protection for citizens and consumers in the European Union in the context for (semi-)automated decision-making (ADM). The suggestions in this document are linked to an existing concept in EU non- discrimination law: the reversal of the burden of proof.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1gZo_1IUFuCmTFZfHW4j7jSk9QzCyGbxN/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20220627_White_paper_reversal_burden_of_proof.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}

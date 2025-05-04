@@ -72,13 +72,11 @@ Unsolicited research, build upon [freedom of information requests](https://www.
 
 #### Presentation
 
-The advice report (AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found [here](/events/press_room/#rotterdam-algoritme).
+The advice report (ALGO:AA:2023:02:A) has been presented to the Dutch Minister of Digitalization on November 29, 2023. A press release can be found [here](/events/press_room/#rotterdam-algoritme).
 
 {{< image id="presentation-minister" image1="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt1="Presentation advice report to Dutch Minister of Digitalization" caption1="Presentation advice report to Dutch Minister of Digitalization" width_desktop="5" width_mobile="12" >}}
 
-#### Report
-
-Dowload the full report and problem statement [here](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing).
+#### Problem statement and advice document
 
 {{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202302/ALGO_AA202302P_EN.pdf" url2="/pdf-files/algoprudence/ALGO_AA202302/ALGO_AA202302A_EN.pdf" >}}
 
@@ -100,13 +98,13 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 ##### Description
 
- Council members submitted <a href="https://amsterdam.raadsinformatie.nl/document/13573898/1/236+sv+Aslami%2C+IJmker+en+Garmy+inzake+toegepaste+profileringscriteria+gemeentelijke+algoritmes" target="_blank">questions</a> whether the machine learning (ML)-driven risk profiling algorithm currently tested by the City of Amsterdam satisfies the requirements as set out in AA-2023:02:A, including:
+ Council members submitted <a href="https://amsterdam.raadsinformatie.nl/document/13573898/1/236+sv+Aslami%2C+IJmker+en+Garmy+inzake+toegepaste+profileringscriteria+gemeentelijke+algoritmes" target="_blank">questions</a> whether the machine learning (ML)-driven risk profiling algorithm currently tested by the City of Amsterdam satisfies the requirements as set out in ALGO:AA:2023:02:A, including:
 
 * (in)eligible selection criteria fed to the ML model
 * explainability requirements for the used explainable boosting algorithm
 * implications of the AIAct for this particular form of risk profiling.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1oPiO_s9KuV7446BqC9a4P2qjW7MGUyxu/preview" >}}
+{{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202302/Actions/20231204_236 sv Aslami, IJmker en Garmy inzake toegepaste profileringscriteria gemeentelijke algoritmes.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< accordion_item_close >}}
 
@@ -114,7 +112,7 @@ Dowload the full report and problem statement [here](https://drive.google.com/f
 
 ##### Description
 
-News website for Dutch public sector administration reported on AA:2023:02:A. See [link](https://www.binnenlandsbestuur.nl/digitaal/algoritmische-profilering-onder-strikte-voorwaarden-mogelijk).
+News website for Dutch public sector administration reported on ALGO:AA:2023:02:A. See [link](https://www.binnenlandsbestuur.nl/digitaal/algoritmische-profilering-onder-strikte-voorwaarden-mogelijk).
 
 {{< accordion_item_close >}}
 
