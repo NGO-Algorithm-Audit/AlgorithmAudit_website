@@ -1,14 +1,10 @@
 ---
-title: Bias detectie tool
+title: Unsupervised bias detectie tool
 subtitle: >
-  Algorithm Audit's bias detectie tool gebruikt statistiek om mogelijk ongelijk
-  behandelde groepen door een AI-systeem te identificeren. De tool informeert de
-  kwalitatieve doctrine van het recht en de ethiek welke afwijkingen in
-  algoritmische systemen handmatig onderzocht moeten worden. Algorithm Audit
-  combineert kwantitatieve en kwalitatieve methoden om keuzes te maken oven
-  eerlijke AI, ook wel onze <a
-  href="https://github.com/NGO-Algorithm-Audit/Bias_scan" target="_blank">joint
-  fairness assessment method (JFAM)</a> genaamd.
+  Privacy behoudende tool die gebruik maakt van statistiek om mogelijk ongelijk
+  behandelde groepen door algoritmes of AI te identificeren. De tool informeert de
+  kwalitatieve doctrine van het recht en de ethiek welke afwijkingen onderzocht moeten worden door domeinexperts.
+  
 image: /images/svg-illustrations/illustration_cases.svg
 type: bias-detection-tool
 reports_preview:
@@ -31,7 +27,7 @@ reports_preview:
         https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf
       content: "Voorbeeld van automatisch gegenereerde biasgegevens over \_[BERT-gebaseerde desinformatie detectie-algoritme (FPR) case study](https://static-files-pdf.s3.amazonaws.com/bias_scan_FPR_test_pred_BERT.pdf)\n"
 team:
-  title: Unsupervised bias detectie team
+  title: Team
   icon: fas fa-user-friends
   button_text: Andere teams
   button_link: /nl/about/teams/
@@ -61,108 +57,193 @@ quick_navigation:
   links:
     - title: Introductie
       url: '#info'
-    - title: Tool
+    - title: Web app
       url: '#web-app'
-    - title: HBAC algoritme
+    - title: Broncode
+      url: '#source-code'
+    - title: Anomaliedetectie-algoritme
       url: '#HBAC'
-    - title: FAQ
-      url: '#FAQ'
+    - title: Wetenschappelijke paper en auditrapport
+      url: '#scientific-paper'
+    - title: Ondersteund door
+      url: '#supported-by'
+    - title: Prijzen en ondersteuning
+      url: '#awards-acknowledgements'
+    - title: Samenvatting
+      url: '#summary'
     - title: Team
       url: '#team'
 ---
 
-{{< container_open title="Bias detectie tool – Wat is het?" icon="fas fa-search" id="info" >}}
 
-De bias detectie tool identificeert mogelijk ongelijk behandelde groepen door een AI-systeem. De tool werkt momenteel alleen voor AI-systemen die individuen in twee groepen opdelen, bijvoorbeeld de voorspelling of een financiële transactie wel/niet risicovol is. De tool vindt groepen gebruikers die door het algoritme systematisch een afwijkende voorspelling krijgen. Deze afwijking wordt berekend aan de hand van een bepaalde maat, bijvoorbeeld de hoeveelheid valspositieven (het algoritme voorspelt dat de financiële transactie verdacht is, maar is dat niet), valsnegatieven (het algoritme voorspelt dat de financiële transactie niet-verdacht is, maar is dat wel) of een combinatie van deze twee. De tool maakt gebruik van [clustering](https://nl.wikipedia.org/wiki/Clusteranalyse) (unsupervised machine learning), wat betekent dat geen toegang nodig is tot de bijzondere persoonsgegevens van individuen – zoals geslacht, nationaliteit of etniciteit – om afwijkingen met betrekking tot deze gronden te detecteren. Omdat de tool gebruik maakt van statistiek is het in staat om hoger-dimensionale vormen van ogenschijnlijk neutraal onderscheid – ook wel meervoudige proxy of intersectionele discriminatie genoemd – te detecteren.
 
-Via onderstaande web app kan de tool direct worden gebruikt. Mits de geüploade data voldoet aan de hieronder gespecificeerde structuur, voert de tool direct een clusteranalyse uit en retourneert het cluster met de grootste afwijking (volgens de gekozen metriek) naar de browser. De resultaten kunnen worden gedownload als pdf-bestand.
+<!-- Introductie -->
 
-Gebruik de tool hieronder ⬇️
+{{< container_open title="Introductie – Unsupervised bias detectie tool" icon="fas fa-search" id="info" >}}
+
+<br>
+
+#### Wat doet de tool?
+De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert. Naar deze vorm van monitoring wordt verwezen als *anomaliedetectie*. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is een vorm van _unsupervised learning_. Dit betekent dat er geen gegevens nodig zijn over beschermde kenmerken van gebruikers, zoals geslacht, nationaliteit of etniciteit, om verdacht onderscheid (bias) te detecteren. De metriek aan de hand waarvan onderscheid wordt bepaald kan handmatig worden gekozen en wordt naar verwezen als de `gelijkheidsmetriek`.
+
+#### Welke data kan worden verwerkt?
+De tool verwerkt alle data in tabel-vorm. Het type data (numerieke, categorische, tijden etc.) wordt automatisch gedetecteerd. Eén kolom moet geselecteerd worden als de `gelijkheidsmetriek`, welke een numerieke waarde moet zijn. De gebruiker dient aan te aangeven of een hoge of lage waarde van de `gelijkheidsmetriek` beter is. Voorbeeld: als de `gelijkheidsmetriek` een foutpercentage betreft dan is een lage waarde beter, terwijl bij nauwkeurigheid een hoge waarde beter is. 
+
+<div>
+  <p><u>Voorbeeld van numerieke dataset</u>:</p>
+  <style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top} .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style>
+  <table class="tg">
+    <thead>
+      <tr>
+      <th class="tg-uox0">Leeftijd</th><th class="tg-uox0">Inkomen</th><th class="tg-uox0">...</th><th class="tg-uox0">Aantal auto's</th><th class="tg-uox0"><span style="font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace; color:#e83e8c; font-weight:300">Geselecteerd voor controle</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="tg-uoz0">35</td><td class="tg-uoz0">55.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr>
+      <tr><td class="tg-uoz0">40</td><td class="tg-uoz0">45.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
+      <tr><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td></tr>
+      <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">30.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
+    </tbody>
+  </table>
+</div>
+<br>
+
+#### Wat zijn de uitkomsten van de tool?
+De tool identificeert afwijkende clusters. Een samenvatting van de resultaten wordt beschikbaar gemaakt in een bias analyse-rapport dat als pdf gedownload kan worden. In een .json-bestand kunnen alle geïdentificeerde clusters worden gedownload. De tool richt zich specifiek op het in negatieve zin meest afwijkende cluster en geeft een beschrijving van dit cluster. Deze resultaten zijn het startpunt voor vervolgonderzoek door domeinexperts die een oordeel kunnen vellen of het waargenomen onderscheid daadwerkelijk onwenselijk is. De tool visualiseert ook de uitkomsten.
+
+#### Overzicht van proces
+<div style="margin-bottom:50px; display: flex; justify-content: center;">
+  <img src="/images/BDT/overview_tool NL.png" alt="drawing" width="600px"/>
+</div>
+
+#### How wordt mijn data verwerkt?
+De tool is privacyvriendelijk omdat de data alleen in de browser worden verwerkt. De data verlaten je computer en de omgeving van je organisatie niet. De tool gebruikt de rekenkracht van je eigen computer om data te analyseren. Naar deze vorm browser-based software wordt verwezen als *local-first*. De tool uploadt de data dus niet naar derden, zoals cloudproviders. Instructies over hoe de tool lokaal binnen je eigen organisatie gehost kan worden, inclusief de broncode, vind je in <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+
+Gebruik de tool hier beneden ⬇️
 
 {{< container_close >}}
 
-{{< iframe title="Bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=nl" height="770px" >}} 
+
+
+<!-- Web app -->
+
+{{< iframe title="Web app – Unsupervised bias detectie tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=nl" height="770px" >}} 
+
+
+
+<!-- Promobar -->
 
 {{< promo_bar content="Waardeer je het werk van Algorithm Audit? ⭐️ ons op" id="promo" >}}
 
-{{< reports_preview >}}
 
-{{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
 
-Met de inzending Joint Fairness Assessment Method (JFAM) is Algorithm Audit's bias detectie tool geselecteerd als finalist voor [Stanford’s AI Audit Competition 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< image id="stanford" width_desktop="4" width_mobile="8" image1="/images/supported_by/HAI.png" alt1="Stanford University" caption1="Stanford University" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" >}}
+<!-- Broncode -->
 
-{{< container_close >}}
+{{< container_open title="Broncode" id="source-code" icon="fas fa-toolbox" >}}
 
-{{< container_open title="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" icon="fas fa-toolbox" >}}
+- De broncode van het anomaliedetectie-algoritme is beschikbaar op <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> en als <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`. 
+[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
 
-Algorithm Audit's bias detectie tool is onderdeel van de OECD's [Catalogus voor Tools & Metrieken voor Verantwoorde AI.](https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool)
-
-{{< image id="OECD-logo" width_desktop="4" width_mobile="8" image1="/images/BDT/oecd_logo.svg" alt1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" caption1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" link1="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" >}}
+- De achitectuur om web apps local-first te gebruiken is ook beschikbaar op <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 {{< container_close >}}
 
-{{< container_open title="Hierarchisch Bias-Bewust Clustering (HBAC) algoritme" icon="fas fa-code-branch" id="HBAC" >}}
 
-De bias detectie tool werkt momenteel alleen voor numeriek data. Volgens een hierarchisch schema clustert het _Hierarchical Bias-Aware Clustering_ (HBAC) algoritme input data met behulp van k-means clustering algoritme. Op termijn kan de tool ook categorische data verwerken volgens k-modes clustering. Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkya in een [wetenschappelijk artikel](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) in *Information Processing and Management* (2021). Onze implementatie van het HBAC-algoritme is open source en kan worden gevonden in [Github.](https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge)
 
-[Download](https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/classifiers/BERT_disinformation_classifier/test_pred_BERT.csv) een voorbeeld dataset om de bias detectie tool te gebruiken.
+<!-- Anolamiedetection algoritme -->
 
-{{< container_close >}}
+{{< container_open title="Anolamiedetectie algoritme – Hierarchisch Bias-Aware Clustering (HBAC)" icon="fas fa-code-branch" id="HBAC" >}}
 
-{{< container_open title="Input data" icon="fas fa-database" id="input-data" >}}
-
-Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maximaal 5GB met kolommen kenmerken (`features`), de voorspelde waarde (`pred_label`) en de echte waarde (`true_label`). Alleen de volgorde van de kolommen is van belang (eerst `features`, dan `pred_label`, dan `true_label`). Alle kolommen moeten numeriek en ongeschaald (niet gestandaardiseerd of genormaliseerd) zijn. Samengevat:
-
-- `features`: ongeschaalde numerieke waarden, bijvoorbeeld `kenmerk_1`, `kenmerk_2`, ..., `kenmerk_n`;
-- `pred_label`: 0 of 1;
-- `true_label`: 0 of 1;
-- Biasmetriek: proportie valspositieven (FPR), proportie valsnegatieven (FNR) of nauwkeurigheid (Acc).
-
-<div><p><u>Voorbeeld</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">eig_1</th><th class="tg-uox0">eig_2</th><th class="tg-uox0">...</th><th class="tg-uox0">eig_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overzicht van ondersteunde biasmetrieken</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Biasmetriek</th><th class="tg-1wig">Beschrijving</th></tr></thead><tbody><tr><td class="tg-0lax">Proportie valspositieven (FPR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valspositieven (False Positive Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie wel risicovol is, terwijl deze transactie dat na handmatige inspectie niet blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Proportie valsnegatieven (FNR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valsnegatieven (False Negative Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie niet risicovol is, terwijl deze transactie dat na handmatige inspectie wel blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Nauwkeurigheid (Acc)</td><td class="tg-0lax">Deel echt positieven (True Positives) en echt negatieven (True Negatives) van alle voorspellingen.</td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Meer informatie</a> over biasmetrieken.</div></div>
+De tool maakt gebruik van het _Hierarchisch Bias-Aware Clustering_ (HBAC) algoritme. HBAC verwerkt invoergegevens volgens het k-means (voor numerieke data) of k-modes (voor categorische data) clustering algoritme. Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkhya in een [wetenschappelijk artikel](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) gepubliceerd in *Information Processing and Management* (2021). Onze implementatie van het HBAC-algoritme, inclusief aanvullende methodologische controles om daadwerkelijke bias van ruis te onderscheiden, zoals sample splitting, het toetsen van statistische hypotheses en het meten van clusterstabiliteit, is te vinden in de <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">unsupervised-bias-detection</a> pip package.
 
 {{< container_close >}}
 
-{{< container_open title="Veelgestelde vragen" icon="fas fa-question-circle" id="FAQ">}}
 
-##### Waarom deze bias detectie tool?
 
-- Geen toegang nodig tot bijzondere persoonsgegevens (unsupervised bias detectie);
-- Model-agnostisch (werkt voor alle binaire classificatie algoritmen);
-- Informeert de mens welke gedrag van een AI-systeem gericht handmatig te onderzoeken.
-- Verbindt kwantitatieve, statissche methoden met de kwalitatieve doctrine van recht en ethiek om eerlijke AI vorm te geven;
-- Open-source ontwikkeld, zonder winstoogmerk.
+<!-- Wetenschappelijke paper en auditrapport -->
 
-##### Door wie kan deze bias detectie tool worden gebruikt? 
+{{< container_open icon="far fa-file" title="Wetenschappelijke paper en auditrapport" id="scientific-paper" >}}
 
-De bias detectie tool kan gebruikt worden door de het gehele gemeenschap die aan AI auditing werkt, in het bijzonder data scientists, journalisten, beleidsmakers, publieke- en private auditors.
+De unsupervised bias detectie tool is in de praktijk toegepast om een risicoprofileringsalgoritme van de Dienst Uitvoering Onderwijs (DUO) te auditen. Ons [team](/technical-tools/bdt/#team) heeft deze casus gedocumenteerd in een wetenschappelijke paper. De tool identificeerde proxies voor studenten met een niet-Europese migratieachtergrond in het risicoprofileringsalgoritme, specifiek opleidingsniveau en de afstand tussen het adres van de student en dat van hun ouder(s). De resultaten worden ook beschreven in Appendix A van het onderstaande rapport. Dit rapport is op 22-05-2024 naar de <a href="https://www.tweedekamer.nl/kamerstukken/detail?id=2024D20431&did=2024D20431" target="_blank">Tweede Kamer</a> gestuurd.
 
-##### Wat berekent de tool? 
+{{< embed_pdf url="/pdf-files/technical-tools/UBDT/20250205 Auditing a Dutch Public Sector Risk Profiling Algorithm.pdf" url2="/pdf-files/algoprudence/TA_AA202402/TA_AA202402_Addendum_Vooringenomenheid_voorkomen.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-Een statistische methode berekent welke clusters relatief vaak verkeerd geclassificeerd worden door een AI-systeem. Een cluster is een groep individuen die bepaalde kenmerken. Op deze kenmerken is het classificerende AI-systeem initieel getraind. De tool identificeert en visualiseert de gevonden clusters automatisch. De tool bepaalt ook hoe de individuen in clusters per kenmerk verschillen ten opzichte van anderen buiten het cluster. Of de verschillen tussen de groepen statistisch significant zijn wordt direct getoetst aan de hand van [Welch's t-toets](https://en.wikipedia.org/wiki/Welch%27s_t-test) voor twee deelgroepen met ongelijke variantie. Alle resultaten kunnen worden gedownload in een pdf-bestand.
+{{< container_close >}}
 
-##### Detecteert de tool discriminatie in AI-systemen? 
 
-Nee, de bias detectie tool kan fungeren als startpunt om discriminerende AI aannemelijk te maken. Om discriminatie aan te tonen zijn echter altijd domeinexperts nodig. Experts kunnen bijvoorbeeld toetsen of een verband bestaat tussen de kenmerken van een geïdentificeerd cluster en beschermde gronden. Daarnaast kan de kwantitatieve afwijking van het meest afwijkende cluster kwalitatief worden geïnterpreteerd. In een [case studie](/nl/algoprudence/cases/bert-based-disinformation-classifier-aa202301/) van Algorithm Audit – waarbij de bias detectie tool is getest op een BERT-gebaseerde desinformatie classifier – achtte een commissie van het experts de gemeten afwijkingen bijvoorbeeld te legitimeren. Legitimeren van gemaakt onderscheid is een context-afhankelijke taak waarvoor het recht kaders biedt, zoals het duiden van noodzakelijkheid, proportionaliteit en geschiktheid. Dit kwalitatieve oordeel vellen zal altijd een menselijke taak zijn.
 
-##### Voor welk type AI-systeem werkt de tool? 
+<!-- Supported by -->
 
-De tool werkt momenteel alleen voor AI-systemen die individuen in twee groepen opdelen, bijvoorbeeld de voorspelling of een financiële transactie wel/niet risicovol is of het wel/niet diagnostiseren van een ziekte.
+{{< container_open title="Ondersteund door" icon="fas fa-toolbox" id="supported-by">}}
 
-##### Wat gebeurt er met mijn data als ik de web app gebruik?
+Deze tool is ontwikkeld met de steun van publieke en filantropische financiering.
 
-Het csv-bestand wordt geupload naar een bucket van Amazon Web Services (AWS), waar Python-code de data verwerkt. Als het HBAC-algoritme clusters heeft geïdentificeerd worden alleen de resultaten terug gestuurd naar de browser en wordt de data in AWS verwijderd. Doorgaans wordt de data dus slechts 5-10 seconden in de cloud opgeslagen. De web applicatie is gebouwd volgens onderstaand architecture diagram.
+{{< accordions_area_open>}}
 
-{{< image id="architecure-diagram" width_desktop="12" width_mobile="12" image1="/images/BDT/architecture.png" alt1="Architectuur diagram web app bias detectie tool" caption1="Architectuur diagram web app bias detectie tool" >}}
+{{< accordion_item_open title="Innovatiebudget Ministerie van Binnenlandse Zaken" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
 
-##### Samenvattend
+##### Description
+In samenwerking met de Dienst Uitvoering Onderwijs (DUO) en het Ministerie van Binnenlandse Zaken heeft Algorithm Audit deze tool ontwikkeld en getest in de periode juli 2024 tot juli 2025 met ondersteuning van <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">innovatiebudget</a>, een jaarlijkse competitie georganiseerd door het Ministerie van Binnenlandse Zaken. De voortgang van het project werd gedeeld tijdens een bijeenkomst op 13-02-2025.
 
-Kwantitatieve methoden, zoals unsupervised bias detectie, zijn behulpzame methoden om mogelijk door AI-systemen ongelijk behandelde groepen te detecteren op een schaalbare manier. Het geautomatiseerd detecteren van afwijkende clusters stelt menselijke experts in staat de groepen afwijkende individuen handmatig te inspecteren, waarbij de politieke en sociale context van het gebruikte AI-systeem in ogenschouw kan worden genomen. Deze duale aanpak om bias in AI-systemen te detecteren overbrugt de kloof tussen de kwalitatieve eisen van het recht en de ethiek, en de kwantitatieve modus operandi van AI. Door normatieve afwegingen over de verantwoorde inzet van AI publiek toegankelijk te maken vormt zich in de loop van tijd een [kennisbank](/nl/algoprudence/) op met collectieve oordeelsvorming. Van deze keuzes kunnen data scientists, publieke autoriteiten en anderen leren, maar ook bekritiseren. Want uiteindelijk moet in democratisch zicht normatieve knopen worden doorgehakt over wat wel en niet verantwoorde AI is.
+![](/images/events/20250213_Demodag2025.jpg)
 
-[Lees meer](/nl/algoprudence/how-we-work/) over algoprudentie en onze werkwijze.
+{{< accordion_item_close >}}
 
-{{< image id="overzicht-JFAM" width_desktop="12" width_mobile="12" image1="/images/BDT/Qualitative_quantitative_NL.png" alt1="Overzicht Joint Fairness Assessment Method" caption1="Overzicht Joint Fairness Assessment Method" >}}
+{{< accordion_item_open title="SIDN Fonds" image="/images/supported_by/sidn.png" tag1="2024" >}}
+
+##### Description
+
+In 2024 ondersteunde het SIDN Fonds <a href="https://www.sidnfonds.nl/projecten/open-source-ai-auditing" target="_blank">Algorithm Audit</a> bij het ontwikkelen van een eerste demo van de unsupervised bias detectie tool.
+
+{{< accordion_item_close >}}
+
+{{< accordions_area_close >}}
+
+{{< container_close >}}
+
+
+
+<!-- Prijzen en ondersteuning -->
+
+{{< container_open title="Prijzen en ondersteuning" icon="fas fa-medal" id="awards-acknowledgements">}}
+
+De tool heeft prijzen ontvangen en wordt ondersteund door verschillende <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection?tab=readme-ov-file#contributing-members" target="_blank">belanghebbenden</a>, waaronder maatschappelijke organisaties, vertegenwoordigers uit de industrie en academici.
+
+{{< accordions_area_open>}}
+
+{{< accordion_item_open title="Finalist Stanford’s AI Audit Challenge 2023" image="/images/supported_by/HAI.png" tag1="06-2023" >}}
+
+##### Description
+Onder de naam Joint Fairness Assessment Method (JFAM) is de unsupervised bias detectie tool geselecteerd als finalist voor <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">Stanford’s AI Audit Competition 2023</a>.
+
+{{< accordion_item_close >}}
+
+{{< accordion_item_open title="OECD Catalogue of Tools & Metrics for Trustworthy AI" image="/images/BDT/oecd_logo.svg" tag1="2024" >}}
+
+##### Description
+De unsupervised bias detectie tool maakt deel uit van de <a href="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" target="_blank">Catalogue of Tools & Metrics for Trustworthy AI</a>.
+
+{{< accordion_item_close >}}
+
+{{< accordions_area_close >}}
+
+{{< container_close >}}
+
+
+
+<!-- Samenvatting -->
+
+{{< container_open title="Samenvatting" icon="fas fa-dot-circle" id="summary">}}
+
+Belangrijkste punten over de unsupervised bias detectie tool:
+
+- <span style="color:#005AA7">Kwantitatieve-kwalitatieve onderzoeksmethode</span>: Data-gedreven onderzoek naar bias ter ondersteuning van delibartief en context-afhankelijk oordeel van domeinexperts;
+- <span style="color:#005AA7">Unsupervised bias detectie</span>: Vereist geen toegang tot bijzondere persoonsgegevens (_unsupervised learning_);
+- <span style="color:#005AA7">Anolamiedetectie</span>: Schaalbare methode gebaseerd op statische analyse;
+- <span style="color:#005AA7">Detecteert complexe bias</span>: Identificeert groepen die structureel afwijkend worden behandeld en geeft een beschrijving van deze groepen, is in staat intersectionele bias te detecteren;
+- <span style="color:#005AA7">Model-agnostic</span>: Werkt voor alle binaire classificatie algoritmen en AI-systemen;
+- <span style="color:#005AA7">Open-source en zonder winstoogmerk</span>: Gebruiksvriendelijke en gratis te gebruiken voor de gehele AI auditing gemeenschap.
 
 {{< container_close >}}
 

@@ -1,13 +1,9 @@
 ---
-title: Bias detection tool
+title: Unsupervised bias detection tool
 subtitle: >
-  Algorithm Audit's bias detection tool uses statistical analysis to identify
-  groups that may be subject to unfair treatment by AI systems. The tool informs
+  Privacy-preserving tool using statistical analysis to identify groups that may be subject to unfair treatment by algorithms or AI. The tool informs
   the qualitative doctrine of law and ethics which disparities need to be
-  scrutinised manually by human experts. Algorithm Audit combines quantitative
-  and qualitative methods to make normative decisions about fair AI, also known
-  as our <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan"
-  target="_blank">joint fairness assessment method (JFAM)</a>.
+  scrutinised manually by domain experts. 
 image: /images/svg-illustrations/illustration_cases.svg
 reports_preview:
   title: Example output bias detection tool
@@ -31,7 +27,7 @@ reports_preview:
         (higher-dimensional) proxy discrimination by the BERT-based
         disinformation classifier
 team:
-  title: Unsupervised bias detection team
+  title: Team
   icon: fas fa-user-friends
   button_text: Other teams
   button_link: /about/teams/
@@ -61,30 +57,39 @@ quick_navigation:
   links:
     - title: Introduction
       url: '#info'
-    - title: Tool
+    - title: Web app
       url: '#web-app'
-    - title: HBAC algorithm
+    - title: Source code
+      url: '#source-code'
+    - title: Anomaly detection algorithm
       url: '#HBAC'
-    - title: FAQ
-      url: '#FAQ'
+    - title: Scientific paper and audit report
+      url: '#scientific-paper'
+    - title: Supported by
+      url: '#supported-by'
+    - title: Awards and acknowledgements
+      url: '#awards-acknowledgements'
+    - title: Summary
+      url: '#summary'
     - title: Team
       url: '#team'
 type: bias-detection-tool
 ---
 
-{{< container_open title="Bias detection tool" icon="fas fa-search" id="info" >}}
+
+<!-- Introduction -->
+
+{{< container_open title="Introduction – Unsupervised bias detection tool" icon="fas fa-search" id="info" >}}
 
 <br>
 
 #### What is the tool about?
-
-The tool identifies potentially unfairly treated groups of similar users by an AI system. The tool returns clusters of users for which the system is underperforming compared to the rest of the data set. The tool makes use of <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a> – an unsupervised statistal learning method. This means that no data are required on protected attributes of users, e.g., gender, nationality or ethnicity, to detect indirect discrimination, also referred to as higher-dimensional proxy or intersectional discrimination. The metric by which bias is defined can be manually chosen and is referred to as the `performance metric`.
+The tool identifies groups where an algorithm or AI system shows variations in performance. This type of monitoring is referred to as *anomaly detection*. To identify anomalous patterns, the tool uses <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is a form of _unsupervised learning_. This means detecting disparate treatment (bias) does not require any data on protected attributes of users, such as gender, nationality, or ethnicity. The metric used to measure bias can be manually selected and is referred to as the `bias metric`.
 
 #### What data can be processed?
+The tool processes all data in table format. The type of data (numerical, categorical, time, etc.) is automatically detected. One column must be selected as the `bias metric` – which should be a numerical value. The user must specify whether a high or low value of the `bias metric` is considered better. For example: for an error rate, a low value is better, while for accuracy, a high value is better. 
 
-Numerical and categorical data can be analysed. The type of data is automatically detected by the tool. The `performance metric` column should always contain numerical values. The user should indicate in the app whether a higher of lower value of the `performance metric` is considered to be better.
-
-The tool contains a demo data set and a 'Try it out' button. More information can be found in the app.
+The tool contains a demo data for which output is generated. Hit the 'Try it out' button.
 
 <div>
   <p><u>Example of numerical data set</u>:</p>
@@ -92,97 +97,156 @@ The tool contains a demo data set and a 'Try it out' button. More information ca
   <table class="tg">
     <thead>
       <tr>
-      <th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">perf_metr</th>
+      <th class="tg-uox0">Age</th><th class="tg-uox0">Income</th><th class="tg-uox0">...</th><th class="tg-uox0">Number of cars</th><th class="tg-uox0"><span style="font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace; color:#e83e8c; font-weight:300">Selected for control</span></th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td></tr>
-      <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td></tr>
-      <tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td></tr>
+      <tr><td class="tg-uoz0">35</td><td class="tg-uoz0">55.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr>
+      <tr><td class="tg-uoz0">40</td><td class="tg-uoz0">45.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
+      <tr><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td></tr>
+      <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">30.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
     </tbody>
   </table>
 </div>
 <br>
 
-#### How is my data processed?
-
-The tool is privacy preserving. It uses computing power of your own computer to analyze the attached data set. In this architectural setup, data is processed entirely on your device and it not uploaded to any third-party, such as cloud providers. This computing approach is called *local-first* and allows organisations to securely use tools locally. Instructions how the tool can be hosted locally, incl. source code, can be found <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">here</a>.
-
-[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
-Software of the used statistical methods is available in a seperate <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github repository</a>, and is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`.
-
 #### What does the tool return?
+The tool identifies deviating clusters. A summary of the results is made available in a bias analysis report that can be downloaded as a pdf. All identified clusters can be downloaded in a .json file. The tool specifically focuses on the most negatively deviating cluster and provides a description of this cluster. These results serve as a starting point for further investigation by domain experts, who can assess whether the observed disparities are indeed undesirable. The tool also visualizes the outcomes.
 
-The tool returns a pdf report or `.json` file with identified clusters. It specifically focusses on the identified cluster with highest bias and describes this cluster by the features that characterizes it. These results serve as a starting point for a deliberative assessment by human experts to evaluate potential discrimination and unfairness in the AI system under review. The tool also visualizes the outcomes.
+#### Overview of process
+
+<div style="margin-bottom:50px; display: flex; justify-content: center;">
+  <img src="/images/BDT/overview_tool.png" alt="drawing" width="600px"/>
+</div>
+
+#### How is my data processed?
+The tool is privacy-friendly because the data is processed entirely within the browser. The data does not leave your computer or the environment of your organization. The tool utilizes the computing power of your own computer to analyze the data. This type of browser-based software is referred to as *local-first*. Therefore, the tool does not upload the data to third parties, such as cloud providers. Instructions on how to host the tool locally within your own organization, including the source code, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 Try the tool below ⬇️
-<!-- This is quantitatively expressed by the (statistically significant) differences in feature means between the identified cluster and the rest of the data.  -->
-
 
 {{< container_close >}}
 
-{{< iframe title="Bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=en" height="770px" >}} 
+
+
+<!-- Web app -->
+
+{{< iframe title="Web app – Unsupervised bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=en" height="770px" >}} 
+
+
+
+<!-- Promo bar -->
 
 {{< promo_bar content="Do you appreciate the work of Algorithm Audit? ⭐️ us on" id="promo" >}}
 
-{{< reports_preview >}}
 
-{{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
 
-Under the name Joint Fairness Assessment Method (JFAM) our bias scan tool has been selected as a finalist in <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">Stanford’s AI Audit Competition 2023</a>.
+<!-- Source code -->
 
-{{< image id="stanford" width_desktop="4" width_mobile="12" image1="/images/supported_by/HAI.png" alt1="Stanford University" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" caption1="Stanford University" >}}
+{{< container_open title="Source code" id="source-code" icon="fas fa-toolbox" >}}
 
-{{< container_close >}}
+- The source code of the anolamy detection-algorithm is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`. 
+[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
 
-{{< container_open title="OECD Catalogue of Tools & Metrics for Trustworthy AI" icon="fas fa-toolbox" id="OECD" >}}
-
-Algorithm Audit's bias detection tool is part of OECD's <a href="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" target="_blank">Catalogue of Tools & Metrics for Trustworthy AI</a>.
-
-{{< image id="oecd-image" width_desktop="4" width_mobile="12" image1="/images/BDT/oecd_logo.svg" alt1="OECD AI Policy Observatory" caption1="OECD AI Policy Observatory" link1="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" >}}
+- The architecture to run web apps local-first is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 {{< container_close >}}
 
-{{< container_open title="Hierarchical Bias-Aware Clustering (HBAC) algorithm" icon="fas fa-code-branch" id="HBAC" >}}
 
-The bias detection tool utilizes the _Hierarchical Bias-Aware Clustering_ (HBAC) algorithm. HBAC processes input data according to the k-means (for numerical data) or k-modes (for categorical data) clustering algorithm. The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* (2021). Our implementation of the HBAC-algorithm can be found on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">Github</a>. The methodology has been reviewed by a team of machine learning engineers and statisticians, and is continuously undergoing evaluation.
+
+<!-- Anolamy detection algorithm -->
+
+{{< container_open title="Anolamy detection algorithm – Hierarchical Bias-Aware Clustering (HBAC)" icon="fas fa-code-branch" id="HBAC" >}}
+
+The tool uses the _Hierarchical Bias-Aware Clustering_ (HBAC) algorithm. HBAC processes input data according to the k-means (for numerical data) or k-modes (for categorical data) clustering algorithm. The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* (2021). Our implementation of the HBAC-algorithm, including additional methodological checks to distinguish real bias from noise, such as sample splitting, statistical hypothesis testing and measuring cluster stability, can be found in the <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">unsupervised-bias-detection</a> pip package.
 
 {{< container_close >}}
 
-{{< container_open title="FAQ" icon="fas fa-question-circle" id="FAQ">}}
 
-##### Why this bias detection tool?
 
-- **Quantitative-qualitative joint method**: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
-- **Unsupervised bias detection**: No user data needed on protected attributes;
-- **Bias scan tool**: Scalable method based on statistical learning to detect algorithmic bias;
-- **Detects complex bias**: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
-- **Model-agnostic**: Works for all AI systems;
-- **Open-source and not-for-profit**: Easy to use and available for the entire AI auditing community.
+<!-- Scientific paper and audit report -->
 
-##### By whom can the bias detection tool be used? 
+{{< container_open icon="far fa-file" title="Scientific paper and audit report" id="scientific-paper" >}}
 
-The bias detection tool allows the entire ecosystem involved in auditing AI, e.g., data scientists, journalists, policy makers, public- and private auditors, to use quantitative methods to detect bias in AI systems.
+The unsupervised bias detection tool has been applied in practice to audit a Dutch public sector risk profiling algorithm. Our [team](/technical-tools/bdt/#team) documented this use case in a scientific paper. The tool identified proxies for students with a non-European migration background in the risk profiling algorithm, specifically education level and distance between the student's address and their parent(s)' address. The results are also described in Appendix A of the below report. This report was sent to <a href="https://www.tweedekamer.nl/kamerstukken/detail?id=2024D20431&did=2024D20431" target="_blank">Dutch parliament</a> on 22-05-2024.
 
-##### What does the tool compute? 
+{{< embed_pdf url="/pdf-files/technical-tools/UBDT/20250205 Auditing a Dutch Public Sector Risk Profiling Algorithm.pdf" url2="/pdf-files/algoprudence/TA_AA202402/TA_AA202402_Addendum_Preventing_prejudice.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
-A statistical method is used to compute for which clusters an AI system underperforms. A cluster is a group of data points sharing similar features. On these features the AI system is initially trained. The tool identifies and visualizes the found clusters automatically. The tool also assesses how individuals in a deviating cluster differ (in terms of the provided features) from other data points outside the cluster. The differences between these clusters are tested on statistical significance. All results can directly be downloaded as a pdf file.
+{{< container_close >}}
 
-#### The tool detects prohibited discrimination in AI? 
 
-No. The bias detection tool serves as a starting point to assess potentially unfair AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured disparities are legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are appropriate and necessary. In a [case study](/algoprudence/cases/bert-based-disinformation-classifier-aa202301/) of Algorithm Audit – in which the bias detection tool was tested on a BERT-based disinformation classifier – a normative advice commission argued that the measured quantitative deviations could be legitimised. Legitimisation of unequal treatment is a context-sensitive taks for which legal frameworks exist, such an assessment of proportionality, necessity and suitability. This qualitative judgement will always be a human task.
 
-##### How is my data processed?
+<!-- Supported by -->
 
-The tool is privacy preserving. It uses computing power of your own computer to analyze a dataset. In this architectural setup, data is processed entirely on your device and it not uploaded to any third party, such as cloud providers. This local-only feature allows organisations to securely use the tool with proprietary data. The used software is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`. [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+{{< container_open title="Supported by" icon="fas fa-toolbox" id="supported-by">}}
 
-##### In sum 
+This tool is developed with the support of public and philanthropic funding.
 
-Quantitative methods, such as unsupervised bias detection, are helpful to discover potentially unfair treated groups of similar users in AI systems in a scalable manner. Automated identification of cluster disparities in AI models allows human experts to assess observed disparities in a qualitative manner, subject to political, social and environmental traits. This two-pronged approach bridges the gap between the qualitative requirements of law and ethics, and the quantitative nature of AI (see figure). In making normative advice, on identified ethical issues publicly available, over time a [repository](/algoprudence/) of case reviews emerges. We call case-based normative advice for ethical algorithm _algoprudence_. Data scientists and public authorities can learn from our algoprudence and can criticise it, as ultimately normative decisions regarding fair AI should be made within democratic sight.
+{{< accordions_area_open>}}
 
-[Read more](/algoprudence/how-we-work/) about algoprudence and how Algorithm Audit's builds it.
+{{< accordion_item_open title="Innovation grant Dutch Ministry of the Interior" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
 
-{{< image id="overview-JFAM" width_desktop="12" width_mobile="12" image1="/images/BDT/Qualitative_quantitative_EN.png" alt1="Overview Joint Fairness Assessment Method" caption1="Overview Joint Fairness Assessment Method" >}}
+##### Description
+In partnership with the Dutch Executive Agency for Education and the Dutch Ministry of the Interior, Algorithm Audit has been developing and testing this tool from July 2024 to July 2025, supported by an <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">innovation grant</a> from the annual competition hosted by the Dutch Ministry of the Interior. Project progress was shared at a community gathering on 13-02-2025.
+
+![](/images/events/20250213_Demodag2025.jpg)
+
+{{< accordion_item_close >}}
+
+{{< accordion_item_open title="SIDN Fund" image="/images/supported_by/sidn.png" tag1="2024" >}}
+
+##### Description
+
+In 2024, the SIDN Fund <a href="https://www.sidnfonds.nl/projecten/open-source-ai-auditing" target="_blank">supported</a> Algorithm Audit to develop a first demo of the unsupervised bias detection tool.
+
+{{< accordion_item_close >}}
+
+{{< accordions_area_close >}}
+
+{{< container_close >}}
+
+
+
+<!-- Awards and acknowledgements -->
+
+{{< container_open title="Awards and acknowledgements" icon="fas fa-medal" id="awards-acknowledgements">}}
+
+This tool has received awards and is acknowledged by various <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection?tab=readme-ov-file#contributing-members" target="_blank">stakeholders</a>, including civil society organisations, industry representatives and academics.
+
+{{< accordions_area_open>}}
+
+{{< accordion_item_open title="Finalist Stanford’s AI Audit Challenge 2023" image="/images/supported_by/HAI.png" tag1="06-2023" >}}
+
+##### Description
+Under the name Joint Fairness Assessment Method (JFAM) the unsupervised bias detection tool has been selected as a finalist in <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">Stanford’s AI Audit Competition 2023</a>.
+
+{{< accordion_item_close >}}
+
+{{< accordion_item_open title="OECD Catalogue of Tools & Metrics for Trustworthy AI" image="/images/BDT/oecd_logo.svg" tag1="2024" >}}
+
+##### Description
+
+The unsupervised bias detection tool is part of OECD's <a href="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" target="_blank">Catalogue of Tools & Metrics for Trustworthy AI</a>.
+
+{{< accordion_item_close >}}
+
+{{< accordions_area_close >}}
+
+{{< container_close >}}
+
+
+
+<!-- Summary -->
+
+{{< container_open title="Summary" icon="fas fa-dot-circle" id="summary">}}
+
+Key take-aways about unsupervised bias detection tool:
+
+- <span style="color:#005AA7">Quantitative-qualitative research method</span>: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
+- <span style="color:#005AA7">Unsupervised bias detection</span>: No user data needed on protected attributes (_unsupervised learning_);
+- <span style="color:#005AA7">Anolamy detection</span>: Scalable method based on statistical analysis;
+- <span style="color:#005AA7">Detects complex bias</span>: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
+- <span style="color:#005AA7">Model-agnostic</span>: Works for all binary classification algorithms and AI systems;
+- <span style="color:#005AA7">Open-source and not-for-profit</span>: User friendly and free to use for the entire AI auditing community.
 
 {{< container_close >}}
 
