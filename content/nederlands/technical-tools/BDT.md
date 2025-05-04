@@ -1,14 +1,10 @@
 ---
-title: Bias detectie tool
+title: Unsupervised bias detectie tool
 subtitle: >
-  Algorithm Audit's bias detectie tool gebruikt statistiek om mogelijk ongelijk
-  behandelde groepen door een AI-systeem te identificeren. De tool informeert de
-  kwalitatieve doctrine van het recht en de ethiek welke afwijkingen in
-  algoritmische systemen handmatig onderzocht moeten worden. Algorithm Audit
-  combineert kwantitatieve en kwalitatieve methoden om keuzes te maken oven
-  eerlijke AI, ook wel onze <a
-  href="https://github.com/NGO-Algorithm-Audit/Bias_scan" target="_blank">joint
-  fairness assessment method (JFAM)</a> genaamd.
+  Privacy behoudende tool die gebruik maakt van statistiek om mogelijk ongelijk
+  behandelde groepen door algoritmes of AI te identificeren. De tool informeert de
+  kwalitatieve doctrine van het recht en de ethiek welke afwijkingen onderzocht moeten worden door domeinexperts.
+  
 image: /images/svg-illustrations/illustration_cases.svg
 type: bias-detection-tool
 reports_preview:
@@ -76,12 +72,10 @@ quick_navigation:
 <br>
 
 #### Wat doet de tool?
-
-De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert. Naar deze vorm van monitoring wordt verwezen als *anomaliedetectie*. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is een vorm van _unsupervised learning_. Dit betekent dat er geen gegevens nodig zijn over beschermde kenmerken van gebruikers – zoals geslacht, nationaliteit of etniciteit – om verdacht onderscheid (bias) te detecteren. De metriek aan de hand waarvan onderscheid wordt bepaald kan handmatig worden gekozen en wordt naar verwezen als de `gelijkheidsmetriek`.
+De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert. Naar deze vorm van monitoring wordt verwezen als *anomaliedetectie*. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is een vorm van _unsupervised learning_. Dit betekent dat er geen gegevens nodig zijn over beschermde kenmerken van gebruikers, zoals geslacht, nationaliteit of etniciteit, om verdacht onderscheid (bias) te detecteren. De metriek aan de hand waarvan onderscheid wordt bepaald kan handmatig worden gekozen en wordt naar verwezen als de `gelijkheidsmetriek`.
 
 #### Welke data kan worden verwerkt?
-
-De tool verwerkt alle data in tabel-vorm. Het type data (numerieke, categorische, tijden etc.) wordt automatisch gedetecteerd. Eén kolom moet geselecteerd worden als `gelijkheidsmetriek`, welke een numerieke waarde moet zijn. De gebruiker dient aan te aangeven of een hoge of lage waarde van de `gelijkheidsmetriek` beter is. Voorbeeld: als de `gelijkheidsmetriek` een foutpercentage betreft dan is een lage waarde beter, terwijl bij nauwkeurigheid een hoge waarde beter is. 
+De tool verwerkt alle data in tabel-vorm. Het type data (numerieke, categorische, tijden etc.) wordt automatisch gedetecteerd. Eén kolom moet geselecteerd worden als de `gelijkheidsmetriek`, welke een numerieke waarde moet zijn. De gebruiker dient aan te aangeven of een hoge of lage waarde van de `gelijkheidsmetriek` beter is. Voorbeeld: als de `gelijkheidsmetriek` een foutpercentage betreft dan is een lage waarde beter, terwijl bij nauwkeurigheid een hoge waarde beter is. 
 
 <div>
   <p><u>Voorbeeld van numerieke dataset</u>:</p>
@@ -89,12 +83,13 @@ De tool verwerkt alle data in tabel-vorm. Het type data (numerieke, categorische
   <table class="tg">
     <thead>
       <tr>
-      <th class="tg-uox0">Leeftijd</th><th class="tg-uox0">Inkomen</th><th class="tg-uox0">...</th><th class="tg-uox0">Aantal auto's</th><th class="tg-uox0"><span style="font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace; color:#e83e8c">Geselecteerd voor controle</span></th>
+      <th class="tg-uox0">Leeftijd</th><th class="tg-uox0">Inkomen</th><th class="tg-uox0">...</th><th class="tg-uox0">Aantal auto's</th><th class="tg-uox0"><span style="font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace; color:#e83e8c; font-weight:300">Geselecteerd voor controle</span></th>
       </tr>
     </thead>
     <tbody>
       <tr><td class="tg-uoz0">35</td><td class="tg-uoz0">55.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr>
       <tr><td class="tg-uoz0">40</td><td class="tg-uoz0">45.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
+      <tr><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td></tr>
       <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">30.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
     </tbody>
   </table>
@@ -102,9 +97,9 @@ De tool verwerkt alle data in tabel-vorm. Het type data (numerieke, categorische
 <br>
 
 #### Wat zijn de uitkomsten van de tool?
-De tool identificeert afwijkende clusters. Een samenvatting van deze gegevens wordt automatisch beschikbaar gemaakt in een biasrapport dat als pdf gedownload kan worden. In een .json-bestand kunnen alle geïdentificeerde clusters worden gedownload. De tool richt zich specifiek op het in negatieve zin meest afwijkende cluster en geeft een beschrijving van dit cluster. Deze resultaten zijn het startpunt voor vervolgonderzoek door domeinexperts die een oordeel kunnen vellen of het waargenomen onderscheid daadwerkelijk onwenselijk is. De tool visualiseert ook de uitkomsten.
+De tool identificeert afwijkende clusters. Een samenvatting van de resultaten wordt beschikbaar gemaakt in een bias analyse-rapport dat als pdf gedownload kan worden. In een .json-bestand kunnen alle geïdentificeerde clusters worden gedownload. De tool richt zich specifiek op het in negatieve zin meest afwijkende cluster en geeft een beschrijving van dit cluster. Deze resultaten zijn het startpunt voor vervolgonderzoek door domeinexperts die een oordeel kunnen vellen of het waargenomen onderscheid daadwerkelijk onwenselijk is. De tool visualiseert ook de uitkomsten.
 
-#### How wordt data verwerkt?
+#### How wordt mijn data verwerkt?
 De tool is privacyvriendelijk omdat de data alleen in de browser worden verwerkt. De data verlaten je computer en de omgeving van je organisatie niet. De tool gebruikt de rekenkracht van je eigen computer om data te analyseren. Naar deze vorm browser-based software wordt verwezen als *local-first*. De tool uploadt de data dus niet naar derden, zoals cloudproviders. Instructies over hoe de tool lokaal binnen je eigen organisatie gehost kan worden, inclusief de broncode, vind je in <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 Gebruik de tool hier beneden ⬇️

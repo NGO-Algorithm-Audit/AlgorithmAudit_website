@@ -1,13 +1,9 @@
 ---
-title: Bias detection tool
+title: Unsupervised bias detection tool
 subtitle: >
-  Algorithm Audit's bias detection tool uses statistical analysis to identify
-  groups that may be subject to unfair treatment by AI systems. The tool informs
+  Privacy-preserving tool using statistical analysis to identify groups that may be subject to unfair treatment by algorithms or AI. The tool informs
   the qualitative doctrine of law and ethics which disparities need to be
-  scrutinised manually by human experts. Algorithm Audit combines quantitative
-  and qualitative methods to make normative decisions about fair AI, also known
-  as our <a href="https://github.com/NGO-Algorithm-Audit/Bias_scan"
-  target="_blank">joint fairness assessment method (JFAM)</a>.
+  scrutinised manually by domain experts. 
 image: /images/svg-illustrations/illustration_cases.svg
 reports_preview:
   title: Example output bias detection tool
@@ -72,16 +68,14 @@ quick_navigation:
 type: bias-detection-tool
 ---
 
-{{< container_open title="Introduction unsupervised bias detection tool" icon="fas fa-search" id="info" >}}
+{{< container_open title="Introduction – Unsupervised bias detection tool" icon="fas fa-search" id="info" >}}
 
 <br>
 
 #### What is the tool about?
-
-The tool identifies groups where an algorithm or AI system shows variations in performance. This type of monitoring is referred to as *anomaly detection*. To identify anomalous patterns, the tool uses <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is a form of _unsupervised learning_. This means detecting disparate treatment (bias) does not require any data on protected attributes of users – such as gender, nationality, or ethnicity. The metric used to measure bias can be manually selected and is referred to as the `bias metric`.
+The tool identifies groups where an algorithm or AI system shows variations in performance. This type of monitoring is referred to as *anomaly detection*. To identify anomalous patterns, the tool uses <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is a form of _unsupervised learning_. This means detecting disparate treatment (bias) does not require any data on protected attributes of users, such as gender, nationality, or ethnicity. The metric used to measure bias can be manually selected and is referred to as the `bias metric`.
 
 #### What data can be processed?
-
 The tool processes all data in table format. The type of data (numerical, categorical, time, etc.) is automatically detected. One column must be selected as the `bias metric` – which should be a numerical value. The user must specify whether a high or low value of the `bias metric` is considered better. For example: for an error rate, a low value is better, while for accuracy, a high value is better. 
 
 The tool contains a demo data for which output is generated. Hit the 'Try it out' button.
@@ -92,28 +86,24 @@ The tool contains a demo data for which output is generated. Hit the 'Try it out
   <table class="tg">
     <thead>
       <tr>
-      <th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">perf_metr</th>
+      <th class="tg-uox0">Age</th><th class="tg-uox0">Income</th><th class="tg-uox0">...</th><th class="tg-uox0">Number of cars</th><th class="tg-uox0"><span style="font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace; color:#e83e8c; font-weight:300">Selected for control</span></th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td></tr>
-      <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td></tr>
-      <tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td></tr>
+      <tr><td class="tg-uoz0">35</td><td class="tg-uoz0">55.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr>
+      <tr><td class="tg-uoz0">40</td><td class="tg-uoz0">45.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
+      <tr><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td><td class="tg-uoz0">...</td></tr>
+      <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">30.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
     </tbody>
   </table>
 </div>
 <br>
 
-#### How is my data processed?
-
-The tool is privacy preserving. It uses computing power of your own computer to analyze the attached data set. In this architectural setup, data is processed entirely on your device and it not uploaded to any third-party, such as cloud providers. This computing approach is called *local-first* and allows organisations to securely use tools locally. Instructions how the tool can be hosted locally, incl. source code, can be found <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">here</a>.
-
-[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
-Software of the used statistical methods is available in a seperate <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github repository</a>, and is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`.
-
 #### What does the tool return?
+The tool identifies deviating clusters. A summary of the results is made available in a bias analysis report that can be downloaded as a PDF. All identified clusters can be downloaded in a `.json` file. The tool specifically focuses on the most negatively deviating cluster and provides a description of this cluster. These results serve as a starting point for further investigation by domain experts, who can assess whether the observed disparities are indeed undesirable. The tool also visualizes the outcomes.
 
-The tool returns a pdf report or `.json` file with identified clusters. It specifically focusses on the identified cluster with highest bias and describes this cluster by the features that characterizes it. These results serve as a starting point for a deliberative assessment by human experts to evaluate potential discrimination and unfairness in the AI system under review. The tool also visualizes the outcomes.
+#### How is my data processed?
+The tool is privacy-friendly because the data is processed entirely within the browser. The data does not leave your computer or the environment of your organization. The tool utilizes the computing power of your own computer to analyze the data. This type of browser-based software is referred to as *local-first*. Therefore, the tool does not upload the data to third parties, such as cloud providers. Instructions on how to host the tool locally within your own organization, including the source code, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 Try the tool below ⬇️
 
