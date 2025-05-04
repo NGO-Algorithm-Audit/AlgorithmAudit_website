@@ -3,8 +3,7 @@ icon: fas fa-greater-than-equal
 layout: case
 title: Vooringenomenheid voorkomen
 subtitle: >
-  Technische audit – Bevindingen en aanbevelingen over risicoprofilering in het
-  Controle Uitwonendenbeurs-proces van DUO
+  Technische audit van risicoprofileringsalgoritme zoals gebruikt door de Dienst Uitvoering Onderwijs (DUO)
 image: /images/algoprudence/AA202401/Cover.png
 form1:
   title: Reageer op deze technische audit
@@ -57,9 +56,7 @@ Een persbericht kan [hier](https://algorithmaudit.eu/nl/events/press_room/#DUO)
 
 Dienst Uitvoering Onderwijs (DUO)
 
-#### Algoprudentie
-
-Het volledige rapport (AA:2024:01:TA) kan [hier](https://drive.google.com/file/d/17dwU4zAqpyixwVTKCYM7Ezq1VM5_kcDa/preview) worden gedownload.
+#### Auditrapport
 
 {{< embed_pdf url="/pdf-files/algoprudence/TA_AA202401/TA_AA202401_Vooringenomenheid_voorkomen.pdf" >}}
 

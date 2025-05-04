@@ -23,4 +23,4 @@ Op-ed, as <a href="https://www.parool.nl/columns-opinie/opinie-onderzoek-vooring
 - They argue therefore that, as a result of the performed bias test by the City of Amsterdam, not only should the explainable boosting ML-model be abandoned, but also the allegedly detected human biases within the processes of the City of Amsterdam should be subject to further investigation;
 - Because more open and transparent research is needed to strengthen human-machine interplay to prevent systemic biases in the digital future.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1rtXD82BsXu2qRPlIemOgKYijZMYSrRNT/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20240214_Human-vs-machine-bias.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}

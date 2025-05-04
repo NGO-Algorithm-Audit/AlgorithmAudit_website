@@ -1,96 +1,23 @@
 ---
 layout: case
 title: >-
-  Hoger-dimensionale bias in een BERT-gebaseerde disinformatie
-  detectie-algoritme
-icon: fa-newspaper
-summary: >
-  The audit commission believes there is a low risk of (higher-dimensional)
-  proxy discrimination by the BERT-based disinformation classifier and that the
-  particular difference in treatment identified by the quantitative bias scan
-  can be justified, if certain conditions apply.
-sources: "Applying our self-build unsupervised\_[bias detection tool](https://algorithmaudit.eu/bias_scan)\_on a self-trained BERT-based disinformation classifier on the Twitter1516 dataset. Learn more on\_[Github](https://github.com/NGO-Algorithm-Audit/Bias_scan).\n"
-additional_content:
-  - title: Stanford's AI Audit Challenge 2023
-    content: "This case study, in combination with our\_[bias scan tool](https://algorithmaudit.eu/bias_scan), has been selected as a finalist for\_[Stanford's AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).\n"
-    image: /images/supported_by/HAI.png
-    image_link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
-    width: 8
-  - title: Presentation
-    content: "A visual presentation of this case study can be found in this\_[slide deck](https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/Main_presentation_joint_fairness_assessment_method.pdf).\n"
-    width: 12
-algoprudence:
-  title: Report
-  intro: "Dowload the full report and problem statement\_[here](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing).\n"
-  reports:
-    - url: >-
-        https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/preview
-normative_advice_members:
-  - name: |
-      Anne Meuwese, Professor in Public Law & AI at Leiden University
-  - name: >
-      Hinda Haned, Professor in Responsible Data Science at University of
-      Amsterdam
-  - name: |
-      Raphaële Xenidis, Associate Professor in EU law at Sciences Po Paris
-  - name: |
-      Aileen Nielsen, Fellow Law\&Tech at ETH Zürich
-  - name: "Carlos Hernández-Echevarría, Assistant Director and Head of Public Policy at the anti-disinformation nonprofit fact-checker\_[Maldita.es](https://maldita.es/maldita-es-journalism-to-not-be-fooled/)\n"
-  - name: "Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank\_[Demos](https://demos.co.uk/)\n"
-funded_by:
-  - url: 'https://europeanaifund.org/'
-    image: /images/supported_by/EUAISFund.png
-actions:
-  - title: Geselecteerd als finalist voor Stanford's AI Audit Challenge 2023
-    description: "Onze\_[bias detectie tool](http://localhost:5173/technical-tools/BDT)\_en bijbehorende algoprudentie van het BERT-gebaseerde disinformatie detectie algoritme is geselecteerd als finalist voor\_[Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).\n\n{{< pdf_frame >}}\n"
-    image: /images/supported_by/HAI.png
-    date: 06-04-2023
-    facets:
-      - value: Finalist
-        label: Finalist
+  Multidimensionale bias in een BERT-gebaseerde disinformatiedetectie-algoritme
 subtitle: |
   Problemstelling (ALGO:AA:2023:01:P) en adviesdocument (ALGO:AA:2023:01:A)
 image: /images/algoprudence/AA202301/Cover.png
-form1:
-  title: Reageer op deze technische audit
-  content: >-
-    Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie
-    en, indien het verenigbaar is met Algorithm Audit's richtlijnen voor
-    publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
-    sectie.
-  button_text: Verstuur
-  backend_link: 'https://formspree.io/f/xyyrjyzr'
-  id: case-reaction
-  questions:
-    - label: Naam
-      id: name
-      required: true
-      type: text
-    - label: Affiliated organization
-      id: affiliated-organization
-      type: text
-    - label: Reactie
-      id: reaction
-      required: true
-      type: textarea
-    - label: Contactgegevens
-      id: contact-details
-      required: true
-      type: email
-      placeholder: Emailadres
 ---
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving van algoprudentie" tab2_id="actions" tab2_title="Acties volgend op algoprudentie" tab3_id="" tab3_title="" default_tab="description" >}}
 
-{{< tab_content_open icon="fa-newspaper" title="Hoger-dimensionale bias in een BERT-gebaseerde disinformatie detectie-algoritme" id="description" >}}
+{{< tab_content_open icon="fa-newspaper" title="Multidimensionale bias in een BERT-gebaseerd disinformatiedetectie-algoritme" id="description" >}}
 
 #### Algoprudentienummer
 
-AA:2023:01
+ALGO:AA:2023:01
 
 #### Samenvatting advies
 
-De adviescommissie is van mening dat er een laag risico is op (hoger-dimensionale) proxydiscriminatie door de BERT-gebaseerde desinformatiedetectie-algoritme. Het concrete waargenomen verschil in ongelijke behandeling van verschillende Twitter-gebruikers kan gelegitimeerd worden, indien bepaalde maatregelen zijn getroffen.
+De adviescommissie is van mening dat er een laag risico is op (multi-dimensionale) proxydiscriminatie door de BERT-gebaseerde desinformatiedetectie-algoritme. Het concrete waargenomen verschil in ongelijke behandeling van verschillende Twitter-gebruikers kan gelegitimeerd worden, indien bepaalde maatregelen zijn getroffen.
 
 #### Bron van de casus
 
@@ -106,9 +33,7 @@ Deze algoprudentie, in combinatie met de [bias detectie tool,](/technical-tools
 
 Een visuele presentatie van deze case study kan worden gevonden in [dit](https://github.com/NGO-Algorithm-Audit/Bias-detection-tool/blob/master/Main_presentation_joint_fairness_assessment_method.pdf) slide deck.
 
-#### Rapport
-
-De probleemstelling en adviesrapport kan [hier](https://drive.google.com/file/d/1GHPwDaal3oBJZluFYVR59e1_LHhP8kni/view?usp=sharing) worden gedownload.
+#### Probleemstelling en adviesrapport
 
 {{< embed_pdf url2="/pdf-files/algoprudence/ALGO_AA202301/ALGO_AA202301A_Case_study_disinfo.pdf" url="/pdf-files/algoprudence/ALGO_AA202301/ALGO_AA202301P_Case_study_disinfo.pdf" >}}
 
@@ -139,7 +64,7 @@ Het [SIDN Fonds](https://www.sidnfonds.nl/projecten/open-source-ai-auditing) ond
 
 ##### Beschrijving
 
-Deze algoprudentie, in combinatie met de [bias detectie tool,](/technical-tools/bdt/) is onder de naam Joint Fairness Assessment Method (JFAM) geselecteerd als finalist voor [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+Deze algoprudentie, in combinatie met de [unsupervised bias detectie tool,](/technical-tools/bdt/) is onder de naam Joint Fairness Assessment Method (JFAM) geselecteerd als finalist voor [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
 {{< accordion_item_close >}}
 

@@ -28,4 +28,4 @@ Daarnaast stelt het artikel dat er geen sprake is van adequate rechtsbescherming
 
 Lees het hele artikel, zoals <a href="https://fd.nl/opinie/1436425/we-moeten-ons-bezinnen-op-het-bestaansrecht-van-algoritmen" target="_blank">gepubliceerd</a> in Het Financieele Dagblad op 13-04-2022, hier beneden.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1_duRpTI_WZyxvXkOr6M40kjbkhg2E1zv/preview" width_desktop_pdf="6" width_mobile_pdf="12" articleUrl2="https://drive.google.com/file/d/1gZo_1IUFuCmTFZfHW4j7jSk9QzCyGbxN/preview" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20220413_We moeten ons bezinnen op het bestaansrecht van algoritmen.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}

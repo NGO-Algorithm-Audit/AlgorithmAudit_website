@@ -23,4 +23,4 @@ Opinieartikel, zoals <a href="https://www.parool.nl/columns-opinie/opinie-onderz
 * De auteurs beargumenteren daarom, voortbordurend op de resultaten van de eindevaluatie 'Slimme check levensonderhoud' van de gemeente Amsterdam, dat niet alleen het *explainable boosting* ML-algoritme stop gezet moet worden, maar dat ook de onderste steen boven moet komen over de gemeten bias in het menselijke besluitvormingsproces waar de gemeente nu op terugvalt;
 * Uiteindelijk kan meer onafhankelijk en transparant onderzoek leiden tot een mens-machine interactie waarin systemische vooringenomenheid in de digitale toekomst minder vaak voorkomt.
 
-{{< pdf_frame articleUrl1="https://drive.google.com/file/d/1rtXD82BsXu2qRPlIemOgKYijZMYSrRNT/preview" width_desktop_pdf="6" width_mobile_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20240214_Human-vs-machine-bias.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
