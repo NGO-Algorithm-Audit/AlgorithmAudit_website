@@ -91,6 +91,20 @@ Report *Preventing prejudice* has been <a href="https://www.rijksoverheid.nl/doc
 
 {{< accordions_area_open id="discussion" >}}
 
+{{< accordion_item_open title="Reaction Netherlands Human Rights Institute on age discrimination" id="cvrm" background_color="#eef2f6" date="12-04-2024" tag1="reaction" image="/images/algoprudence/AA202302/Discussion&debate/CvRM.svg" >}}
+
+#### Age Discrimination
+
+Policies, such as those implemented by public sector agencies investigating (un)duly granted social welfare or employers seeking new employees, can intentionally or unintentionally lead to differentiation between certain groups of people. If an organization makes this distinction based on grounds that are legally protected, such as gender, origin, sexual orientation, or a disability or chronic illness, and there is no valid justifying reason for doing so, then the organization is engaging in prohibited discrimination. We refer to this as discrimination.
+
+But what about age? Both the Rotterdam-algorithm and DUO-algorithm, as studied by Algorithm Audit, differentiated based on age. However, in these cases, age discrimination does not occur.
+
+EU non-discrimination law also prohibits discrimination on the basis of age. For instance, arbitrarily rejecting a job applicant because someone is too old is not unlawful. However, legislation regarding age differentiation allows more room for a justifying argument than for the aforementioned personal characteristics. This is especially true when the algorithm is not applied in the context of labor.
+
+Therefore, in the case of detecting unduly granted social welfare or misuse of college loan, it is not necessarily prohibited for an algorithm to consider someone's age. However, there must be a clear connection between age and the aim pursued. Until it is shown that someone's age increases the likelihood of misuse or fraud, age is ineligible as a selection criteria in algorithmic-driven selection procedures. For example, pertaining to disability allowances for youngsters (Wajong) a clear connection exists and an algorithm can lawfully differentiate upon age.
+
+{{< accordion_item_close >}}
+
 {{< accordions_area_close >}}
 
 {{< tab_content_close >}}
