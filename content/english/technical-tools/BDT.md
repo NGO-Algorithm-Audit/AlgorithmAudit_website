@@ -61,9 +61,9 @@ quick_navigation:
   links:
     - title: Introduction
       url: '#info'
-    - title: Tool
+    - title: Web app
       url: '#web-app'
-    - title: HBAC algorithm
+    - title: Anomaly detection algorithm
       url: '#HBAC'
     - title: FAQ
       url: '#FAQ'
@@ -72,7 +72,7 @@ quick_navigation:
 type: bias-detection-tool
 ---
 
-{{< container_open title="Bias detection tool" icon="fas fa-search" id="info" >}}
+{{< container_open title="Introduction unsupervised bias detection tool" icon="fas fa-search" id="info" >}}
 
 <br>
 
@@ -82,9 +82,9 @@ The tool identifies groups where an algorithm or AI system shows variations in p
 
 #### What data can be processed?
 
-Numerical and categorical data can be analysed. The type of data is automatically detected by the tool. The `performance metric` column should always contain numerical values. The user should indicate in the app whether a higher of lower value of the `performance metric` is considered to be better.
+The tool processes all data in table format. The type of data (numerical, categorical, time, etc.) is automatically detected. One column must be selected as the `bias metric` – which should be a numerical value. The user must specify whether a high or low value of the `bias metric` is considered better. For example: for an error rate, a low value is better, while for accuracy, a high value is better. 
 
-The tool contains a demo data set and a 'Try it out' button. More information can be found in the app.
+The tool contains a demo data for which output is generated. Hit the 'Try it out' button.
 
 <div>
   <p><u>Example of numerical data set</u>:</p>
@@ -125,6 +125,23 @@ Try the tool below ⬇️
 
 {{< reports_preview >}}
 
+{{< container_open title="Source code" id="source-code" icon="fas fa-toolbox" >}}
+
+- The source code of the clustering method is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`. 
+[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+
+- The local-first architecture in available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github repository</a> 
+
+{{< container_close >}}
+
+{{< container_open title="Innovatiebudget" icon="fas fa-toolbox" >}}
+
+Algorithm Audit's bias detectie tool is onderdeel van de OECD's [Catalogus voor Tools & Metrieken voor Verantwoorde AI.](https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool)
+
+{{< image id="OECD-logo" width_desktop="4" width_mobile="8" image1="/images/BDT/oecd_logo.svg" alt1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" caption1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" link1="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" >}}
+
+{{< container_close >}}
+
 {{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
 
 Under the name Joint Fairness Assessment Method (JFAM) our bias scan tool has been selected as a finalist in <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">Stanford’s AI Audit Competition 2023</a>.
@@ -153,22 +170,14 @@ The bias detection tool utilizes the _Hierarchical Bias-Aware Clustering_ (HBAC)
 
 - **Quantitative-qualitative joint method**: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
 - **Unsupervised bias detection**: No user data needed on protected attributes;
-- **Bias scan tool**: Scalable method based on statistical learning to detect algorithmic bias;
+- **Anolamy detection**: Scalable method based on statistical learning to detect bias;
 - **Detects complex bias**: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
-- **Model-agnostic**: Works for all AI systems;
-- **Open-source and not-for-profit**: Easy to use and available for the entire AI auditing community.
-
-##### By whom can the bias detection tool be used? 
-
-The bias detection tool allows the entire ecosystem involved in auditing AI, e.g., data scientists, journalists, policy makers, public- and private auditors, to use quantitative methods to detect bias in AI systems.
-
-##### What does the tool compute? 
-
-A statistical method is used to compute for which clusters an AI system underperforms. A cluster is a group of data points sharing similar features. On these features the AI system is initially trained. The tool identifies and visualizes the found clusters automatically. The tool also assesses how individuals in a deviating cluster differ (in terms of the provided features) from other data points outside the cluster. The differences between these clusters are tested on statistical significance. All results can directly be downloaded as a pdf file.
+- **Model-agnostic**: Works for all classification algorithms and AI systems;
+- **Open-source and not-for-profit**: User friendly and free to use for the entire AI auditing community.
 
 #### The tool detects prohibited discrimination in AI? 
 
-No. The bias detection tool serves as a starting point to assess potentially unfair AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured disparities are legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are appropriate and necessary. In a [case study](/algoprudence/cases/bert-based-disinformation-classifier-aa202301/) of Algorithm Audit – in which the bias detection tool was tested on a BERT-based disinformation classifier – a normative advice commission argued that the measured quantitative deviations could be legitimised. Legitimisation of unequal treatment is a context-sensitive taks for which legal frameworks exist, such an assessment of proportionality, necessity and suitability. This qualitative judgement will always be a human task.
+No. The bias detection tool serves as a starting point to assess potentially unfair AI classifiers with the help of subject-matter expertise. The features of identified clusters are examined on critical links with protected grounds, and whether the measured disparities are legitimate. This is a qualitative assessment for which the context-sensitive legal doctrine provides guidelines, i.e., to assess the legitimacy of the aim pursued and whether the means of achieving that aim are appropriate and necessary. In a [case study](/algoprudence/cases/bert-based-disinformation-classifier-aa202301/) of Algorithm Audit – in which the bias detection tool was tested on a BERT-based disinformation classifier – a normative advice commission argued that the measured quantitative deviations could be legitimised. Legitimisation of unequal treatment is a context-sensitive taks for which legal frameworks exist, such as an assessment of proportionality, necessity and suitability. This qualitative judgement will always be a human task.
 
 ##### How is my data processed?
 

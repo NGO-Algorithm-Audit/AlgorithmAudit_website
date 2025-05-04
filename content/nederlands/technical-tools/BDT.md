@@ -61,7 +61,7 @@ quick_navigation:
   links:
     - title: Introductie
       url: '#info'
-    - title: Tool
+    - title: Web app
       url: '#web-app'
     - title: Anomaliedetectie-algoritme
       url: '#HBAC'
@@ -71,64 +71,66 @@ quick_navigation:
       url: '#team'
 ---
 
-{{< container_open title="Bias detection tool" icon="fas fa-search" id="info" >}}
+{{< container_open title="Introductie – Unsupervised bias detectie tool" icon="fas fa-search" id="info" >}}
 
 <br>
 
 #### Wat doet de tool?
 
-De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert. Naar deze vorm van monitoring wordt verwezen als *anomaliedetectie*. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is een vorm van _unsupervised learning_. Dit betekent dat er geen gegevens nodig zijn over beschermde kenmerken van gebruikers – zoals geslacht, nationaliteit of etniciteit – om verdacht onderscheid (bias) te detecteren. De metriek aan de hand waarvan ondercheid wordt gemeten kan handmatig worden gekozen en wordt aangeduid als de `gelijkheidsmetriek`.
+De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert. Naar deze vorm van monitoring wordt verwezen als *anomaliedetectie*. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is een vorm van _unsupervised learning_. Dit betekent dat er geen gegevens nodig zijn over beschermde kenmerken van gebruikers – zoals geslacht, nationaliteit of etniciteit – om verdacht onderscheid (bias) te detecteren. De metriek aan de hand waarvan onderscheid wordt bepaald kan handmatig worden gekozen en wordt naar verwezen als de `gelijkheidsmetriek`.
 
 #### Welke data kan worden verwerkt?
 
-Numerieke en categorische data kunnen worden geanalyseerd. Het type data wordt automatisch gedetecteerd door de tool. De kolom `prestatiemetriek` moet altijd numerieke waarden bevatten. De gebruiker moet in de app aangeven of een hogere of lagere waarde van de `prestatiemetriek` als beter wordt beschouwd.
-
-De tool bevat een demo-dataset en een 'Probeer het uit'-knop. Meer informatie is te vinden in de app.
+De tool verwerkt alle data in tabel-vorm. Het type data (numerieke, categorische, tijden etc.) wordt automatisch gedetecteerd. Eén kolom moet geselecteerd worden als `gelijkheidsmetriek`, welke een numerieke waarde moet zijn. De gebruiker dient aan te aangeven of een hoge of lage waarde van de `gelijkheidsmetriek` beter is. Voorbeeld: als de `gelijkheidsmetriek` een foutpercentage betreft dan is een lage waarde beter, terwijl bij nauwkeurigheid een hoge waarde beter is. 
 
 <div>
-  <p><u>Example of numerical data set</u>:</p>
+  <p><u>Voorbeeld van numerieke dataset</u>:</p>
   <style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top} .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style>
   <table class="tg">
     <thead>
       <tr>
-      <th class="tg-uox0">feat_1</th><th class="tg-uox0">feat_2</th><th class="tg-uox0">...</th><th class="tg-uox0">feat_n</th><th class="tg-uox0">perf_metr</th>
+      <th class="tg-uox0">Leeftijd</th><th class="tg-uox0">Inkomen</th><th class="tg-uox0">...</th><th class="tg-uox0">Aantal auto's</th><th class="tg-uox0"><span style="font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace; color:#e83e8c">Geselecteerd voor controle</span></th>
       </tr>
     </thead>
     <tbody>
-      <tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td></tr>
-      <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td></tr>
-      <tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td></tr>
+      <tr><td class="tg-uoz0">35</td><td class="tg-uoz0">55.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr>
+      <tr><td class="tg-uoz0">40</td><td class="tg-uoz0">45.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
+      <tr><td class="tg-uoz0">20</td><td class="tg-uoz0">30.000</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr>
     </tbody>
   </table>
 </div>
 <br>
 
-#### How is my data processed?
+#### Wat zijn de uitkomsten van de tool?
+De tool identificeert afwijkende clusters. Een samenvatting van deze gegevens wordt automatisch beschikbaar gemaakt in een biasrapport dat als pdf gedownload kan worden. In een .json-bestand kunnen alle geïdentificeerde clusters worden gedownload. De tool richt zich specifiek op het in negatieve zin meest afwijkende cluster en geeft een beschrijving van dit cluster. Deze resultaten zijn het startpunt voor vervolgonderzoek door domeinexperts die een oordeel kunnen vellen of het waargenomen onderscheid daadwerkelijk onwenselijk is. De tool visualiseert ook de uitkomsten.
 
-The tool is privacy preserving. It uses computing power of your own computer to analyze the attached data set. In this architectural setup, data is processed entirely on your device and it not uploaded to any third-party, such as cloud providers. This computing approach is called *local-first* and allows organisations to securely use tools locally. Instructions how the tool can be hosted locally, incl. source code, can be found <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">here</a>.
+#### How wordt data verwerkt?
+De tool is privacyvriendelijk omdat de data alleen in de browser worden verwerkt. De data verlaten je computer en de omgeving van je organisatie niet. De tool gebruikt de rekenkracht van je eigen computer om data te analyseren. Naar deze vorm browser-based software wordt verwezen als *local-first*. De tool uploadt de data dus niet naar derden, zoals cloudproviders. Instructies over hoe de tool lokaal binnen je eigen organisatie gehost kan worden, inclusief de broncode, vind je in <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
-[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
-Software of the used statistical methods is available in a seperate <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github repository</a>, and is also available as <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a> `unsupervised-bias-detection`.
-
-#### What does the tool return?
-
-The tool returns a pdf report or `.json` file with identified clusters. It specifically focusses on the identified cluster with highest bias and describes this cluster by the features that characterizes it. These results serve as a starting point for a deliberative assessment by human experts to evaluate potential discrimination and unfairness in the AI system under review. The tool also visualizes the outcomes.
-
-Try the tool below ⬇️
+Gebruik de tool hier beneden ⬇️
 
 {{< container_close >}}
 
-{{< iframe title="Bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=nl" height="770px" >}} 
+{{< iframe title="Web app – Unsupervised bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=nl" height="770px" >}} 
 
 {{< promo_bar content="Waardeer je het werk van Algorithm Audit? ⭐️ ons op" id="promo" >}}
 
 {{< reports_preview >}}
 
-{{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
+{{< container_open title="Broncode" id="source-code" icon="fas fa-toolbox" >}}
 
-Met de inzending Joint Fairness Assessment Method (JFAM) is Algorithm Audit's bias detectie tool geselecteerd als finalist voor [Stanford’s AI Audit Competition 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+- The source code of the clustering method is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`. 
+[![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
 
-{{< image id="stanford" width_desktop="4" width_mobile="8" image1="/images/supported_by/HAI.png" alt1="Stanford University" caption1="Stanford University" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" >}}
+- The local-first architecture in available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github repository</a> 
+
+{{< container_close >}}
+
+{{< container_open title="Innovatiebudget" icon="fas fa-toolbox" >}}
+
+Algorithm Audit's bias detectie tool is onderdeel van de OECD's [Catalogus voor Tools & Metrieken voor Verantwoorde AI.](https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool)
+
+{{< image id="OECD-logo" width_desktop="4" width_mobile="8" image1="/images/BDT/oecd_logo.svg" alt1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" caption1="OECD Catalogus voor Tools & Metrieken voor Verantwoorde AI" link1="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" >}}
 
 {{< container_close >}}
 
@@ -140,24 +142,19 @@ Algorithm Audit's bias detectie tool is onderdeel van de OECD's [Catalogus voor 
 
 {{< container_close >}}
 
+{{< container_open title="Finalist Stanford’s AI Audit Challenge 2023" icon="fas fa-medal" id="finalist" >}}
+
+Met de inzending Joint Fairness Assessment Method (JFAM) is Algorithm Audit's bias detectie tool geselecteerd als finalist voor [Stanford’s AI Audit Competition 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
+
+{{< image id="stanford" width_desktop="4" width_mobile="8" image1="/images/supported_by/HAI.png" alt1="Stanford University" caption1="Stanford University" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" >}}
+
+{{< container_close >}}
+
 {{< container_open title="Hierarchisch Bias-Bewust Clustering (HBAC) algoritme" icon="fas fa-code-branch" id="HBAC" >}}
 
 De bias detectie tool werkt momenteel alleen voor numeriek data. Volgens een hierarchisch schema clustert het _Hierarchical Bias-Aware Clustering_ (HBAC) algoritme input data met behulp van k-means clustering algoritme. Op termijn kan de tool ook categorische data verwerken volgens k-modes clustering. Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkya in een [wetenschappelijk artikel](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) in *Information Processing and Management* (2021). Onze implementatie van het HBAC-algoritme is open source en kan worden gevonden in [Github.](https://github.com/NGO-Algorithm-Audit/AI_Audit_Challenge)
 
 [Download](https://github.com/NGO-Algorithm-Audit/Bias_scan/blob/master/classifiers/BERT_disinformation_classifier/test_pred_BERT.csv) een voorbeeld dataset om de bias detectie tool te gebruiken.
-
-{{< container_close >}}
-
-{{< container_open title="Input data" icon="fas fa-database" id="input-data" >}}
-
-Welke input data kan de bias detectie tool verwerken? Een csv-bestand van maximaal 5GB met kolommen kenmerken (`features`), de voorspelde waarde (`pred_label`) en de echte waarde (`true_label`). Alleen de volgorde van de kolommen is van belang (eerst `features`, dan `pred_label`, dan `true_label`). Alle kolommen moeten numeriek en ongeschaald (niet gestandaardiseerd of genormaliseerd) zijn. Samengevat:
-
-- `features`: ongeschaalde numerieke waarden, bijvoorbeeld `kenmerk_1`, `kenmerk_2`, ..., `kenmerk_n`;
-- `pred_label`: 0 of 1;
-- `true_label`: 0 of 1;
-- Biasmetriek: proportie valspositieven (FPR), proportie valsnegatieven (FNR) of nauwkeurigheid (Acc).
-
-<div><p><u>Voorbeeld</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#grey;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-uox0{border-color:#grey;font-weight:700;text-align:left;vertical-align:top}.tg .tg-uoz0{border-color:#grey;text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-uox0">eig_1</th><th class="tg-uox0">eig_2</th><th class="tg-uox0">...</th><th class="tg-uox0">eig_n</th><th class="tg-uox0">pred_label</th><th class="tg-uox0">true_label</th></tr></thead><tbody><tr><td class="tg-uoz0">10</td><td class="tg-uoz0">1</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.1</td><td class="tg-uoz0">1</td><td class="tg-uoz0">1</td></tr><tr><td class="tg-uoz0">20</td><td class="tg-uoz0">2</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.2</td><td class="tg-uoz0">1</td><td class="tg-uoz0">0</td></tr><tr><td class="tg-uoz0">30</td><td class="tg-uoz0">3</td><td class="tg-uoz0">...</td><td class="tg-uoz0">0.3</td><td class="tg-uoz0">0</td><td class="tg-uoz0">0</td></tr></tbody></table><br><p><u>Overzicht van ondersteunde biasmetrieken</u>:</p><style type="text/css">.tg{border-collapse:collapse;border-spacing:0}.tg td{border-color:#000;border-style:solid;border-width:1px;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal}.tg th{border-color:#000;border-style:solid;border-width:1px;font-size:14px;font-weight:400;overflow:hidden;padding:10px 5px;word-break:normal}.tg .tg-1wig{font-weight:700;text-align:left;vertical-align:top}.tg .tg-0lax{text-align:left;vertical-align:top}</style><table class="tg"><thead><tr><th class="tg-1wig">Biasmetriek</th><th class="tg-1wig">Beschrijving</th></tr></thead><tbody><tr><td class="tg-0lax">Proportie valspositieven (FPR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valspositieven (False Positive Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie wel risicovol is, terwijl deze transactie dat na handmatige inspectie niet blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Proportie valsnegatieven (FNR)</td><td class="tg-0lax">De bias detectie tool vindt het cluster met de hoogste proportie valsnegatieven (False Negative Rate). Bijvoorbeeld: algoritme voorspelt dat een financiële transactie niet risicovol is, terwijl deze transactie dat na handmatige inspectie wel blijkt te zijn.</span></td></tr><tr><td class="tg-0lax">Nauwkeurigheid (Acc)</td><td class="tg-0lax">Deel echt positieven (True Positives) en echt negatieven (True Negatives) van alle voorspellingen.</td></tr></tbody></table><div style="margin-top:20px"><a style="color:#005aa7" href="https://en.wikipedia.org/wiki/Confusion_matrix#Table_of_confusion" target="_blank">Meer informatie</a> over biasmetrieken.</div></div>
 
 {{< container_close >}}
 
