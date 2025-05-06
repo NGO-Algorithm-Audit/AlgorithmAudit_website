@@ -96,7 +96,7 @@ Try the tool below ⬇️
 
 <!-- Source code -->
 
-{{< container_open title="Broncode" id="source-code" icon="fas fa-toolbox" >}}
+{{< container_open title="Source code" id="source-code" icon="fas fa-toolbox" >}}
 
 - The source code of the synthetic data generation methods are available on <a href="https://github.com/NGO-Algorithm-Audit/python-synhtpop" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install python-synthpop`. 
 [![!pypi](https://img.shields.io/pypi/v/python-synthpop?logo=pypi\&color=blue)](https://pypi.org/project/python-synthpop/)
