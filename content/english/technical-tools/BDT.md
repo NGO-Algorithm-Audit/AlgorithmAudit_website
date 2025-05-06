@@ -1,7 +1,7 @@
 ---
 title: Unsupervised bias detection tool
 subtitle: >
-  Privacy-preserving tool using statistical analysis to identify groups that may be subject to unfair treatment by algorithms or AI. The tool informs
+  Local-first tool using statistical analysis to identify groups that may be subject to unfair treatment by algorithms or AI. The tool informs
   the qualitative doctrine of law and ethics which disparities need to be
   scrutinised manually by domain experts. 
 image: /images/svg-illustrations/illustration_cases.svg
@@ -65,6 +65,8 @@ quick_navigation:
       url: '#HBAC'
     - title: Scientific paper and audit report
       url: '#scientific-paper'
+    - title: Local-first computing
+      url: '#local-first'
     - title: Supported by
       url: '#supported-by'
     - title: Awards and acknowledgements
@@ -120,7 +122,7 @@ The tool identifies deviating clusters. A summary of the results is made availab
 </div>
 
 #### How is my data processed?
-The tool is privacy-friendly because the data is processed entirely within the browser. The data does not leave your computer or the environment of your organization. The tool utilizes the computing power of your own computer to analyze the data. This type of browser-based software is referred to as *local-first*. Therefore, the tool does not upload the data to third parties, such as cloud providers. Instructions on how to host the tool locally within your own organization, including the source code, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+The tool is privacy-friendly because the data is processed entirely within the browser. The data does not leave your computer or the environment of your organization. The tool utilizes the computing power of your own computer to analyze the data. This type of browser-based software is referred to as *local-first*. The tool does not upload data to third parties, such as cloud providers. Instructions on how to host the tool and local-first architecture can be hosted locally within your own organization can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 Try the tool below ⬇️
 
@@ -175,18 +177,37 @@ The unsupervised bias detection tool has been applied in practice to audit a Dut
 
 
 
+<!-- Local-first architecture -->
+
+{{< container_open title="Local-first architecture" icon="fas fa-map-pin" id="local-first" >}}
+
+<br>
+
+#### What is local-first computing?
+Local-first computing is the opposite of cloud computing: the data is not uploaded to third-parties, such as a cloud providers, and is processed by your own computer. The data attached to the tool therefore doesn't leave your computer or the environment of your organization. The tool is privacy-friendly because the data can be processed within the mandate of your organisation and doesn't need to be shared with new parties. The unsupervised bias detection tool can also be hosted locally within your organization. Instructions, including the source code or the web app, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+
+#### Overview of local-first architecture
+
+<div style="margin-bottom:50px; display: flex; justify-content: center;">
+  <img src="/images/BDT/local-first EN.png" alt="drawing" width="100%"/>
+</div>
+
+{{< container_close >}}
+
+
+
 <!-- Supported by -->
 
 {{< container_open title="Supported by" icon="fas fa-toolbox" id="supported-by">}}
 
-This tool is developed with the support of public and philanthropic funding.
+This tool is developed with support of public and philanthropic organisations.
 
 {{< accordions_area_open>}}
 
 {{< accordion_item_open title="Innovation grant Dutch Ministry of the Interior" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
 
 ##### Description
-In partnership with the Dutch Executive Agency for Education and the Dutch Ministry of the Interior, Algorithm Audit has been developing and testing this tool from July 2024 to July 2025, supported by an <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">innovation grant</a> from the annual competition hosted by the Dutch Ministry of the Interior. Project progress was shared at a community gathering on 13-02-2025.
+In partnership with the Dutch Executive Agency for Education and the Dutch Ministry of the Interior, Algorithm Audit has been developing and testing this tool from July 2024 to July 2025, supported by an <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">Innovation grant</a> from the annual competition hosted by the Dutch Ministry of the Interior. Project progress was shared at a community gathering on 13-02-2025.
 
 ![](/images/events/20250213_Demodag2025.jpg)
 
@@ -249,5 +270,9 @@ Key take-aways about unsupervised bias detection tool:
 - <span style="color:#005AA7">Open-source and not-for-profit</span>: User friendly and free to use for the entire AI auditing community.
 
 {{< container_close >}}
+
+
+
+<!-- Team -->
 
 {{< team id="team" >}}
