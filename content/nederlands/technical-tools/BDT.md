@@ -1,7 +1,7 @@
 ---
 title: Unsupervised bias detectie tool
 subtitle: >
-  Privacy behoudende tool die gebruik maakt van statistiek om mogelijk ongelijk
+  Local-first tool die gebruik maakt van statistiek om mogelijk ongelijk
   behandelde groepen door algoritmes of AI te identificeren. De tool informeert de
   kwalitatieve doctrine van het recht en de ethiek welke afwijkingen onderzocht moeten worden door domeinexperts.
   
@@ -65,6 +65,8 @@ quick_navigation:
       url: '#HBAC'
     - title: Wetenschappelijke paper en auditrapport
       url: '#scientific-paper'
+    - title: Local-first
+      url: '#local-first'
     - title: Ondersteund door
       url: '#supported-by'
     - title: Prijzen en ondersteuning
@@ -173,18 +175,37 @@ De unsupervised bias detectie tool is in de praktijk toegepast om een risicoprof
 
 
 
-<!-- Supported by -->
+<!-- Local-first architectuur -->
+
+{{< container_open title="Local-first architectuur" icon="fas fa-map-pin" id="local-first" >}}
+
+<br>
+
+#### Wat is local-first?
+Local-first is het tegenovergestelde van cloud computing: de data wordt niet geüpload naar derden, zoals cloudproviders, en wordt verwerkt door je eigen computer. De data die aan de tool wordt gekoppeld, verlaat je computer of de omgeving van je organisatie dus niet. De tool is privacyvriendelijk omdat de data binnen bestaande bevoegdheden verwerkt kan worden en niet gedeeld hoeft te worden met nieuwe partijen. De unsupervised bias detectie tool kan ook lokaal binnen je organisatie worden gehost. Instructies, inclusief de broncode van de tool, zijn te vinden op <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+
+#### Overzicht van local-first architectuur
+
+<div style="margin-bottom:50px; display: flex; justify-content: center;">
+  <img src="/images/BDT/local-first NL.png" alt="drawing" width="100%"/>
+</div>
+
+{{< container_close >}}
+
+
+
+<!-- Ondersteund door -->
 
 {{< container_open title="Ondersteund door" icon="fas fa-toolbox" id="supported-by">}}
 
-Deze tool is ontwikkeld met de steun van publieke en filantropische financiering.
+Deze tool is ontwikkeld met steun van publieke en filantropische organisaties.
 
 {{< accordions_area_open>}}
 
 {{< accordion_item_open title="Innovatiebudget Ministerie van Binnenlandse Zaken" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
 
-##### Description
-In samenwerking met de Dienst Uitvoering Onderwijs (DUO) en het Ministerie van Binnenlandse Zaken heeft Algorithm Audit deze tool ontwikkeld en getest in de periode juli 2024 tot juli 2025 met ondersteuning van <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">innovatiebudget</a>, een jaarlijkse competitie georganiseerd door het Ministerie van Binnenlandse Zaken. De voortgang van het project werd gedeeld tijdens een bijeenkomst op 13-02-2025.
+##### Beschrijving
+In samenwerking met de Dienst Uitvoering Onderwijs (DUO) en het Ministerie van Binnenlandse Zaken heeft Algorithm Audit deze tool ontwikkeld en getest in de periode juli 2024 tot juli 2025 met ondersteuning van <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">Innovatiebudget</a>, een jaarlijkse competitie georganiseerd door het Ministerie van Binnenlandse Zaken. De voortgang van het project werd gedeeld tijdens een bijeenkomst op 13-02-2025.
 
 ![](/images/events/20250213_Demodag2025.jpg)
 
@@ -192,8 +213,7 @@ In samenwerking met de Dienst Uitvoering Onderwijs (DUO) en het Ministerie van B
 
 {{< accordion_item_open title="SIDN Fonds" image="/images/supported_by/sidn.png" tag1="2024" >}}
 
-##### Description
-
+##### Beschrijving
 In 2024 ondersteunde het SIDN Fonds <a href="https://www.sidnfonds.nl/projecten/open-source-ai-auditing" target="_blank">Algorithm Audit</a> bij het ontwikkelen van een eerste demo van de unsupervised bias detectie tool.
 
 {{< accordion_item_close >}}
@@ -246,5 +266,9 @@ Belangrijkste punten over de unsupervised bias detectie tool:
 - <span style="color:#005AA7">Open-source en zonder winstoogmerk</span>: Gebruiksvriendelijke en gratis te gebruiken voor de gehele AI auditing gemeenschap.
 
 {{< container_close >}}
+
+
+
+<!-- Team -->
 
 {{< team id="team">}}
