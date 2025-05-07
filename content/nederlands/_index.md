@@ -65,6 +65,12 @@ Activity_Feed:
       date: 22-10-2024
       type: white paper
   activities:
+    - title: >-
+        Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
+      link: /events/activities/#events
+      image: /images/events/RUG.png
+      date: 06-05-2025
+      type: event
     - title: Paneldiscussie Autoriteit Persoonsgegevens
       link: /events/activities/#events
       image: /images/events/dutch-data-protection.jpg
@@ -75,12 +81,6 @@ Activity_Feed:
       image: /images/events/uu-logo.png
       date: 10-03-2025
       type: event
-    - title: >-
-        Demo open-source AI auditing tools tijdens innovatiedag van het Ministerie van Binnenlandse Zaken
-      link: /nl/events/activities/#events
-      image: /images/events/MinBZK_logo.jpg
-      date: 13-02-2025
-      type: presentatie
 Supported_by:
   title: Samenwerking met
   funders:

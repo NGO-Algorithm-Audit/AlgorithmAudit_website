@@ -26,6 +26,28 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
+    description: >
+      Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
+
+      1. Pleaire bijdrage samen met Dienst Uitvoering Onderwijs (DUO) over [onderzoek](/nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/) naar controle uitwonendenbeurs-proces
+
+      2. Drie break-out sessies over [publieke standaard voor profileringsalgoritmes](/nl/knowledge-platform/knowledge-base/public_standard_profiling/)
+
+
+      ![](/images/events/20250506_RUG.jpeg)
+
+    image: /images/events/RUG.png
+    date: 06-05-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: Paneldiscussie Autoriteit Persoonsgegevens
     description: >
       Deelname aan paneldiscussie over onderzoek naar indirecte discriminatie in algoritme-gedreven besluitvorming tijdens het event 'Leren in de praktijk: werken aan de verantwoorde inzet van algoritmes en AI' van de Autoriteit Persoonsgegevens
@@ -97,7 +119,7 @@ events:
       <a href="https://dezwijger.nl/programma/can-europe-regulate-ai" target="_blank">Meer informatie</a>
 
 
-      ![](/images/events/20251021_PdZ.jpeg)
+      ![](/images/events/20250121_PdZ.jpeg)
     image: /images/events/PdZ-logo-socials.png
     date: 21-01-2025
     facets:
