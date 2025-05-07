@@ -28,4 +28,4 @@ De white paper bouwt voort op een reeks slides over AI-verordening implementatie
 - Verkenning wanneer regelgebaseerde systemen voldoen aan de definitie van een AI-systeem: https://lnkd.in/ez7dJshQ
 - 10 voorbeelden van (geen) AI-systemen: https://www.linkedin.com/posts/algorithm-audit_10-examples-of-non-ai-systems-activity-7274353190588891136-FiMD?utm_source=share&utm_medium=member_desktop
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 White paper Implementatie AI-verordening - definitie" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 White paper Implementatie AI-verordening - definitie.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
