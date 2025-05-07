@@ -2,7 +2,7 @@
 type: regular
 title: Synthetic data generation tool
 subtitle: >
-  Local-first tool to generate tabular synthetic data. The tool automatically generates an evaluation report to assess the quality of the data. All data are locally processed without using cloud solutions.
+  Local-first tool to generate synthetic data. The tool automatically generates an evaluation report to assess the quality of the generated data. All data are locally processed without using cloud solutions.
 image: /images/svg-illustrations/knowledge_base.svg
 team:
   title: Synthetic data generation team
@@ -61,10 +61,10 @@ quick_navigation:
 Synthetic data is artificial data mimicking the original dataset's statistical characteristics without sharing personal data.
 
 #### What data can be processed?
-The tool processes all data in table format. The type of data (numerical, categorical, time, etc.) and missing values are automatically detected. The user has several option how missing values can be processed. More info is provided in the tool. 
+The tool processes all data in table format. The type of data (numerical, categorical, time, etc.) and missing values are automatically detected. The user has several option how missing values can be processed. More info how missing values can be treated is provided in the tool. 
 
 #### What synthetic data generation methods are supported?
-Users can currently choose two methods for synthetic data generation: 
+Users can currently choose two methods for generating synthetic data: 
 1. Classification And Regression Trees (CART); and 
 2. Gaussian Copula (GC). 
 
@@ -74,7 +74,7 @@ By default, CART is used. CART generally produces higher quality synthetic data,
 The tool generates synthetic data. An evaluation report of the generated data, including various evaluation metrics, is automatically created and can be downloaded as a pdf. The synthetic data can be downloaded in .csv and .json format. 
 
 #### How is my data processed?
-The tool is privacy-friendly because the data is processed entirely within the browser. The data does not leave your computer or the environment of your organization. The tool utilizes the computing power of your own computer to analyze the data. This type of browser-based software is referred to as [*local-first*](/technical-tools/sdg/#local-first). The tool does not upload data to third parties, such as cloud providers. Instructions on how the tool and the local-first architecture can be hosted locally within your own organization can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+The tool is privacy-friendly because the data are processed entirely within the browser. The data does not leave your computer or the environment of your organization. The tool utilizes the computing power of your own computer to analyze the data. This type of browser-based software is referred to as [*local-first*](/technical-tools/sdg/#local-first). The tool does not upload data to third parties, such as cloud providers. Instructions on how the tool and the local-first architecture can be hosted locally within your own organization can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 Try the tool below ⬇️
 
@@ -125,15 +125,17 @@ Synthetic data generation (SDG) offers a solution. By creating artificial data t
 
 {{< container_open title="Has SDG been used in the past?" icon="fas fa-history" id="use-cases" >}}
 
-Widespread adoption of synthetic data generation has long been hindered by privacy concerns related to data sharing. Many commercial APIs depend on cloud-based software, making them unsuitable for public sector organizations, where citizen data cannot easily be shared externally. A [local-first](/technical-tools/sdg/#local-first) approach offers a viable solution, enabling synthetic data to be generated within an organisation using browsed-based software. Besides, recent years have showcased groundbreaking use cases that highlight how SDG can enable secure data sharing while ensuring privacy.
+For two reasons, the use of synthetic data has long been hindered:
+1. - <span style="color:#005AA7">Privacy risks</span> – Concerns, particularly among legal professionals, existed about the risks of personal data being exposed when sharing synthetic data. Research and practical examples have demonstrated that these risks can be mitigated. See the attached [memo](/technical-tools/sdg/#privacy-legal) below for more background information on the legal aspects of synthetic data generation.
+2. <span style="color:#005AA7">Cloud dependencies risks</span> – Many existing (commercial) APIs rely on cloud-based software, making them unsuitable for public organizations, as citizen data cannot simply be uploaded to cloud platforms. [Local-first](/technical-tools/sdg/#local-first) data processing offers a solution to this problem. With this tool, synthetic data can be generated directly in the browser. The data does not leave the user's computer or the organization's environment.
 
-#### Use cases
+In sum, recent use cases have shown that synthetic data can be safely shared and generated without the involvement of a cloud provider. It is time to scale up so that stakeholders can gain more and better insights into the data managed by government organizations.
 
-Notably, <a href="https://www.lighthousereports.com/suspicion-machines-methodology/" target="_blank">Lighthouse Reports</a> shared inadvertently acquired data to the public through SDG, shedding light on biases in a massive data set that the Municipality of Rotterdam used for ML-driven risk profiling in the context of social welfare re-examination.
+#### Applications
+<a href="https://www.lighthousereports.com/suspicion-machines-methodology/" target="_blank">Lighthouse Reports</a> was able to publicly share unintentionally obtained data using synthetic data, revealing bias in a dataset from the Municipality of Rotterdam. This dataset was used for machine learning-driven risk profiling in the context of social welfare re-examination.
 
 #### AI Act
-
-Furthermore, Article 10(5) of the AI Act contains a specific provision on the use of synthetic data for bias detection and mitigation. It requires AI system providers to address biases by utilizing synthetic or anonymized data first, rather than drirectly "processing special categories of personal data".
+Additionally, Article 10(5) of the AI Act includes a specific provision regarding the use of synthetic data for bias detection and mitigation. It requires AI system providers to first investigate bias using synthetic or anonymized data, rather than directly processing "special categories of personal data."
 
 {{< container_close >}}
 
@@ -158,7 +160,7 @@ To be translated to English
 <br>
 
 #### What is local-first computing?
-Local-first computing is the opposite of cloud computing: the data is not uploaded to third-parties, such as a cloud providers, and is processed by your own computer. The data attached to the tool therefore doesn't leave your computer or the environment of your organization. The tool is privacy-friendly because the data can be processed within the mandate of your organisation and doesn't need to be shared with new parties. The unsupervised bias detection tool can also be hosted locally within your organization. Instructions, including the source code or the web app, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+Local-first computing is the opposite of cloud computing: the data are not uploaded to third-parties, such as a cloud providers, and are processed by your own computer. The data attached to the tool therefore don't leave your computer or the environment of your organization. The tool is privacy-friendly because the data can be processed within the mandate of your organisation and don't need to be shared with new parties. This synthetic data generation tool can also be hosted locally within your organization. Instructions for local hosting, including the source code or the web app, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 #### Overview of local-first architecture
 
@@ -174,14 +176,14 @@ Local-first computing is the opposite of cloud computing: the data is not upload
 
 {{< container_open title="Supported by" icon="fas fa-toolbox" id="supported-by">}}
 
-This tool is developed with support of public and philanthropic organisations.
+This local-first synthetic data generation tool is developed with support of public and philanthropic organisations.
 
 {{< accordions_area_open>}}
 
 {{< accordion_item_open title="Innovation grant Dutch Ministry of the Interior" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
 
 ##### Description
-In partnership with the Dutch Executive Agency for Education and the Dutch Ministry of the Interior, Algorithm Audit has been developing and testing this tool from July 2024 to July 2025, supported by an <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">Innovation grant</a> from the annual competition hosted by the Dutch Ministry of the Interior. Project progress was shared at a community gathering on 13-02-2025.
+In partnership with the Dutch Executive Agency for Education and the Dutch Ministry of the Interior, Algorithm Audit has been developing and testing this tool from July 2024 to July 2025, supported by an <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">Innovation grant</a> from the annual competition hosted by the Dutch Ministry of the Interior. Project progress was shared at a community gathering on 13-02-2025. A first version of the tools are launched during a webinar on 10-06-2025.
 
 ![](/images/events/20250213_Demodag2025.jpg)
 
@@ -191,7 +193,7 @@ In partnership with the Dutch Executive Agency for Education and the Dutch Minis
 
 ##### Description
 
-In 2024, the SIDN Fund <a href="https://www.sidnfonds.nl/projecten/open-source-ai-auditing" target="_blank">supported</a> Algorithm Audit to develop a first demo of the unsupervised bias detection tool.
+In 2024, the SIDN Fund <a href="https://www.sidnfonds.nl/projecten/open-source-ai-auditing" target="_blank">supported</a> Algorithm Audit to develop a first demo of the synthetic data generation tool.
 
 {{< accordion_item_close >}}
 
