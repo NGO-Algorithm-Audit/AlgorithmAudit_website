@@ -10,41 +10,41 @@ weight = 2
 hasChildren = true
 url = "/nl/knowledge-platform"
   [[main]]
+  identifier = "knowledge_platform_overview"
+  parent = "Kennisplatform"
+  name = "Overzicht"
+  url = "/nl/knowledge-platform/"
+  weight = 1
+  [[main.params]]
+    featured = true
+  [[main]]
   parent = "Kennisplatform"
   name = "Kennisbank"
   url = "/nl/knowledge-platform/knowledge-base"
-  weight = 1
+  weight = 2
   [[main.params]]
     icon = "fa-brain"
   [[main]]
   parent = "Kennisplatform"
   name = "AI-verordening standaarden"
   url = "/nl/knowledge-platform/standards"
-  weight = 2
+  weight = 3
   [[main.params]]
     icon = "fa-check"
   [[main]]
   parent = "Kennisplatform"
   name = "AI beleidsobservatorium"
   url = "/nl/knowledge-platform/policy-observatory"
-  weight = 3
+  weight = 4
   [[main.params]]
     icon = "fa-binoculars"
   [[main]]
   parent = "Kennisplatform"
   name = "Projectwerk"
   url = "/nl/knowledge-platform/project-work"
-  weight = 4
-  [[main.params]]
-    icon = "fa-hands-helping"
-  [[main]]
-  identifier = "knowledge_platform_overview"
-  parent = "Kennisplatform"
-  name = "Overzicht"
-  url = "/nl/knowledge-platform/"
   weight = 5
   [[main.params]]
-    featured = true
+    icon = "fa-hands-helping"
 
 [[main]]
 name = "Algoprudentie"
@@ -52,34 +52,34 @@ weight = 3
 url = "/algoprudence"
 hasChildren = true
   [[main]]
+  identifier = "algoprudence_overview"
+  parent = "Algoprudentie"
+  name = "Overzicht"
+  url = "/nl/algoprudence/"
+  weight = 1
+  [[main.params]]
+    featured = true
+  [[main]]
   parent = "Algoprudentie"
   name = "Casuïstiek"
   url = "/nl/algoprudence/case-repository"
-  weight = 1
+  weight = 2
   [[main.params]]
     icon = "fa-database"
   [[main]]
   parent = "Algoprudentie"
   name = "Dien een case in"
   url = "/nl/algoprudence/submit-a-case"
-  weight = 2
+  weight = 3
   [[main.params]]
     icon = "fa-arrow-right"
   [[main]]
   parent = "Algoprudentie"
   name = "Werkwijze"
   url = "/nl/algoprudence/how-we-work"
-  weight = 3
-  [[main.params]]
-    icon = "fa-question"
-  [[main]]
-  identifier = "algoprudence_overview"
-  parent = "Algoprudentie"
-  name = "Overzicht"
-  url = "/nl/algoprudence/"
   weight = 4
   [[main.params]]
-    featured = true
+    icon = "fa-question"
 
 [[main]]
 name = "Technische tools"
@@ -87,36 +87,34 @@ weight = 4
 hasChildren = true
 url = "/nl/technical-tools"
   [[main]]
+  identifier = "technical_tools_overview"
+  parent = "Technische tools"
+  name = "Overzicht"
+  url = "/nl/technical-tools/"
+  weight = 1
+  [[main.params]]
+    featured = true
+  [[main]]
   parent = "Technische tools"
   name = "Unsupervised bias detectie tool"
   url = "/nl/technical-tools/BDT"
-  weight = 1
+  weight = 2
   [[main.params]]
     icon = "fa-search-plus"
   [[main]]
   parent = "Technische tools"
   name = "Synthetische data generatie tool"
   url = "/nl/technical-tools/SDG"
-  weight = 2
+  weight = 3
   [[main.params]]
     icon = "fa-table"
   [[main]]
   parent = "Technische tools"
   name = "AI-verordening implementatie tool"
   url = "/nl/technical-tools/implementation-tool"
-  weight = 3
-  [[main.params]]
-    icon = "fa-file"
-  [[main]]
-  identifier = "technical_tools_overview"
-  parent = "Technische tools"
-  name = "Overzicht"
-  url = "/nl/technical-tools/"
   weight = 4
   [[main.params]]
-    featured = true
-
-
+    icon = "fa-file"
 
 [[main]]
 name = "Evenementen"
@@ -143,39 +141,37 @@ name = "Over ons"
 weight = 6
 hasChildren = true
   [[main]]
+  parent = "Over ons"
+  name = "Kom in contact"
+  url = "/nl/about/contact"
+  weight = 1
+  [[main.params]]
     featured = true
   [[main]]
   parent = "Over ons"
   name = "FAQ"
   url = "/nl/about/faq"
-  weight = 1
+  weight = 2
   [[main.params]]
     icon = "fa-question"
   [[main]]
   parent = "Over ons"
   name = "Teams"
   url = "/nl/about/teams"
-  weight = 2
+  weight = 3
   [[main.params]]
     icon = "fa-users"
   [[main]]
   parent = "Over ons"
   name = "Bestuur"
   url = "/nl/about/boards"
-  weight = 3
+  weight = 4
   [[main.params]]
     icon = "fa-user-friends"
   [[main]]
   parent = "Over ons"
   name = "Vacatures"
   url = "/nl/about/vacancies"
-  weight = 4
-  [[main.params]]
-    icon = "fa-user-check"
-  [[main]]
-  parent = "Over ons"
-  name = "Kom in contact"
-  url = "/nl/about/contact"
   weight = 5
   [[main.params]]
-    featured = true
+    icon = "fa-user-check"

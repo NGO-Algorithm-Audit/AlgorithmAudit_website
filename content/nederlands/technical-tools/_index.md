@@ -3,7 +3,7 @@ layout: sublandingpage
 title: Technische tools
 titleline2: Open-source AI auditing tools
 subtitle: |
-  Algorithm Audit ontwikkelt open-source en local-first tools voor AI auditing. Dit betekent dat onze tools privacy-vriendelijk zijn, omdat data de browser niet verllat en geen gebruik maken van cloudinfrastructuur. Onze tools maken het voor iedereen eenvoudiger om AI te auditen.
+  We ontwikkelen tools die het voor een breed publiek gemakkelijker te maken om AI te auditeren. Onze tools zijn gratis te gebruiken, open source en local-first. Dit betekent dat data de browser niet verlaat, geen gebruik wordt gemaakt van cloud-toepassingen en dat de tools eenvoudig door organisaties op een privacy-vriendelijke manier lokaal gebruikt kunnen worden.
 icon: fa-light fa-toolbox
 color: '#2559A2'
 font_color: '#FFFFFF'
