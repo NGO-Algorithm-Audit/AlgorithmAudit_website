@@ -3,7 +3,7 @@ layout: sublandingpage
 title: Kennisplatform
 titleline2: Statistische en juridische expertise
 subtitle: >
-  We verbinden vakgebieden – onder meer statistiek, ethiek en recht – om publieke kennis over verantwoorde AI op te bouwen. We documenteren ons werk in een kennisbank. Voor belangrijke thema's ontwikkelen we domeinkennis middels white papers en publieke standaarden.
+  We verbinden domeinexpertise in statistiek, AI engineering, recht en ethiek om publieke kennis over verantwoorde AI op te bouwen. We jagen de verspreiding van kennis tussen beleidsmakers, bedrijfsleven en onderzoek aan. Voor belangrijke thema's ontwikkelen we domeinkennis middels white papers en publieke standaarden.
 icon: fa-light fa-layer-group
 color: "#2559A2"
 subpage_links:

@@ -1,9 +1,9 @@
 ---
 layout: sublandingpage
 title: Technical tools
-titleline2: Open-source AI auditing tools
+titleline2: Open source AI auditing tools
 subtitle: |
-  We develop open-source and local-first tools for AI auditing. This means our tools are privacy-preserving, as data don't leave the browser and don't rely on cloud infrastructure. Our tools make it easier for all to audit AI.
+  We develop tools that make it easier for everyone to audit AI. Our tools are free, open source and local-first. Data does not leave your browser, do not rely on cloud solutions and our tools can be used in a fully privacy-preserving way locally by organizations.
 icon: fa-light fa-toolbox
 color: '#2559A2'
 font_color: '#FFFFFF'
