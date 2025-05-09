@@ -9,7 +9,7 @@ image: /images/svg-illustrations/case_repository.svg
 form1:
   title: Informatie over de case
   button_text: Verstuur
-  backend_link: 'https://formspree.io/f/xzbnrlan'
+  backend_link: "https://formspree.io/f/xzbnrlan"
   id: submit-a-case
   questions:
     - label: |
@@ -58,9 +58,9 @@ form1:
       type: checkbox
 form2:
   title: Informatie over het oordeel
-  content: ''
+  content: ""
   button_text: Verstuur
-  backend_link: 'https://formspree.io/f/xleqlakw'
+  backend_link: "https://formspree.io/f/xleqlakw"
   id: case-for-repository
   questions:
     - label: Naam organisatie
@@ -115,11 +115,11 @@ quick_navigation:
   title: Inhoudsopgave
   links:
     - title: Dien een case in
-      url: '#case-for-review'
+      url: "#case-for-review_tab_btn"
     - title: Vervolgstappen
-      url: '#next-steps'
+      url: "#next-steps"
     - title: Recente cases
-      url: '#case-repository'
+      url: "#case-repository"
 ---
 
 {{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Dien een case in voor beoordeling" tab2_id="case-repository" tab2_title="Voeg oordeel toe aan algoprudentie uitspraken" >}}

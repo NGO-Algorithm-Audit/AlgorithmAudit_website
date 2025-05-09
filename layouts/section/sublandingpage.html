@@ -12,28 +12,17 @@
             <h3>{{.Params.quick_navigation.title}}</h3>
             <ul>
               {{ range .Params.quick_navigation.links }}
-              <li>
-                <a href='{{.url}}'>
+              <li class="quick_navigation_li d-flex align-items-center mb-0">
+                <a href='{{.url}}' class="highlight-potential-sm d-inline-block ml-3">
                   {{.title}}
                 </a>
-                {{ if .links }}
-                <ul>
-                  {{ range .links }}
-                  <li>
-                    <a href='{{.url}}'>
-                      {{.title}}
-                    </a>
-                  </li>
-                  {{ end }}
-                  
-                </ul>
-                {{ end }}
               </li>
               {{ end }}
             </ul>
           </div>
         </div>
       </div>
+
       <div class="col-lg-8 col-12 mx-auto">
         <div class="content">{{ .Content }}</div>
       </div>

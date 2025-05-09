@@ -448,7 +448,7 @@ a.post-title {
       padding-left: 20px;
       position: relative;
 
-      &:not(.ms-slider__word)::before {
+      &:not(.ms-slider__word):not(.quick_navigation_li)::before {
         position: absolute;
         content: '';
         height: 8px;
@@ -698,7 +698,7 @@ vertical-align: top;
   padding-top: 5px;
 }
 
-.content ul li:not(.ms-slider__word):before{
+.content ul li:not(.ms-slider__word):not(.quick_navigation_li):before{
   height: 0px;
   width: 0px;
 }

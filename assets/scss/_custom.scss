@@ -33,6 +33,17 @@
 	font-style: normal;
 }
 
+.highlight-potential-sm {
+	border: rgba(255, 255, 255, 0) 0.3rem solid;
+	border-radius: 0.75rem;
+	padding: 0.25rem 0.5rem !important;
+	color: #005aa7;
+	font-style: normal;
+}
+.highlight-red-sm {
+	background-color: rgba(255, 203, 189, 0.5);
+}
+
 .yellow-button {
 	margin-left: 20px;
 	background-color: #005aa7;

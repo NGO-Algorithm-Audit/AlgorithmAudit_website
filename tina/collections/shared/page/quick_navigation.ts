@@ -35,32 +35,6 @@ const quick_navigation: TinaField = {
           required: true,
         },
         url,
-        {
-          type: "object",
-          name: "links",
-          label: "Links",
-          required: false,
-          list: true,
-          ui: {
-            itemProps: (item) => {
-              return { label: item?.title };
-            },
-          },
-          fields: [
-            {
-              type: "string",
-              name: "title",
-              label: "Title",
-              required: true,
-            },
-            {
-              type: "string",
-              name: "url",
-              label: "Url",
-              required: true,
-            },
-          ],
-        },
       ],
     },
   ],
