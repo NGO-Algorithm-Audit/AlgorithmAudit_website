@@ -8,9 +8,9 @@ subtitle: >
 image: /images/svg-illustrations/case_repository.svg
 form1:
   title: Case information
-  content: ''
+  content: ""
   button_text: Submit
-  backend_link: 'https://formspree.io/f/xzbnrlan'
+  backend_link: "https://formspree.io/f/xzbnrlan"
   id: submit-a-case
   questions:
     - label: |
@@ -61,9 +61,9 @@ form1:
       type: checkbox
 form2:
   title: Case information
-  content: ''
-  button_text: 'Submit '
-  backend_link: 'https://formspree.io/f/xleqlakw'
+  content: ""
+  button_text: "Submit "
+  backend_link: "https://formspree.io/f/xleqlakw"
   id: case-for-repository
   questions:
     - label: Name organisation
@@ -88,7 +88,7 @@ form2:
       file_upload_text: Choose file
       file_type: .pdf
       type: file
-      placeholder: ''
+      placeholder: ""
     - label: >
         Terms and conditions <br> <span style="font-size:12px;
         color=#777;">Submitted data will only be processed for the purpose
@@ -103,7 +103,7 @@ reports_preview:
   button_text: Case repository
   button_link: /algoprudence
   feature_item:
-    - name: 'Risk Profiling Social Welfare Re-examination '
+    - name: "Risk Profiling Social Welfare Re-examination "
       image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
       link: >-
         /algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
@@ -122,11 +122,11 @@ quick_navigation:
   title: Content overview
   links:
     - title: Submit a case
-      url: '#case-for-review'
+      url: "#case-for-review_tab_btn"
     - title: Next steps
-      url: '#next-steps'
+      url: "#next-steps"
     - title: Recent cases
-      url: '#case-repository'
+      url: "#case-repository"
 ---
 
 {{< tab_header width="6" tab1_id="case-for-review" default_tab="case-for-review" tab1_title="Submit a case for normative review" tab2_id="case-repository" tab2_title="Add a case to algoprudence repository" >}}

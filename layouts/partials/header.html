@@ -26,7 +26,10 @@
           {{ range site.Menus.main }}
           {{ if .HasChildren }}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle d-none d-xl-block" href="{{ .URL | relURL }}" role="button">
+              {{ .Name }}
+            </a>
+            <a class="nav-link dropdown-toggle d-block d-xl-none" href="{{ .URL | relURL }}" role="button" data-toggle="dropdown" >
               {{ .Name }}
             </a>
             <div class="dropdown-menu shadow-lg" style="padding: 1rem 0.25rem;">
