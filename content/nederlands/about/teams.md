@@ -7,7 +7,7 @@ subtitle: >
   meer](/nl/about/boards/) over de governance van de stichting.
 image: /images/svg-illustrations/about.svg
 about_AA:
-  title: Activiteiten
+  title: Kernactiviteiten
   content: >-
     Stichting Algorithm Audit is in 2021 opgericht vanuit het idee dat de
     verantwoorde inzet van algoritmes alleen slaagt als normatieve aspecten van
@@ -123,7 +123,7 @@ team3:
 quick_navigation:
   title: Overzicht
   links:
-    - title: Activiteiten
+    - title: Kernactiviteiten
       url: '#about'
     - title: Uitvoerend team
       url: '#executive-team'

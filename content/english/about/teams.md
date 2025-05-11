@@ -3,7 +3,7 @@ title: Teams
 subtitle: "Algorithm Audit consists of an executive board, advisory board, supervisory board, various teams and works with case-based advice commissions that consist of independent experts and stakeholder. Learn more about\_our the [governance](/about/boards/).\n"
 image: /images/svg-illustrations/about.svg
 about_AA:
-  title: Activities
+  title: Core activities
   content: >-
     In 2021, NGO Algorithm Audit was founded on the idea that ethics in
     algorithmic methods urgently needs a case-based and bottom-up approach.
@@ -118,7 +118,7 @@ team3:
 quick_navigation:
   title: Overview
   links:
-    - title: Activities
+    - title: Core activities
       url: '#about'
     - title: Executive team
       url: '#executive-team'
