@@ -80,7 +80,11 @@ Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst
 
 {{< container_open icon="fas fa-chalkboard-teacher" title="Voorbeelden" id="explainers" >}}
 
-Aan de hand van voorbeelden lichten de volgende drie explainers de reikwijdte van de AI-systeem definitie toe.
+Aan de hand van voorbeelden lichten we belangrijke concepten uit de AI-verordening in begrijpelijke taal toe.
+
+### Risicoclassificatie
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250512 AI risk identification Algorithm Audit.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 ### 10 voorbeelden van (geen) AI-systemen
 

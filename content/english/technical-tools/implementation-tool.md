@@ -81,7 +81,11 @@ Considerations and choices made during development of the questionnaires regardi
 
 {{< container_open icon="fas fa-chalkboard-teacher" title="Explainers" id="explainers" >}}
 
-Through examples the slides decks explain the intricacies of the AI system definition.
+We simplify the complex concepts of the AI Act by explaining them with clear, relatable examples.
+
+### Risk classification
+
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250512 AI risk identification Algorithm Audit.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 ### 10 examples of (non) AI systems
 
