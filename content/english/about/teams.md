@@ -112,11 +112,11 @@ team3:
   button_link: /knowledge-platform/standards/
   team_members:
     - image: /images/people/EPetersen.jpeg
-      name: Kirtan Padh
+      name: Eike Petersen
       bio: |
         Senior Scientist Medical AI, Fraunhofer MEVIS, Hannover
     - image: /images/people/ALeoneDeCastris.jpg
-      name: Mackenzie Jorgensen
+      name: Arcangelo Leone de Castris
       bio: |
         AI Policy Researcher at The Alan Turing Institute, London
 quick_navigation:
