@@ -37,7 +37,7 @@ about_AA:
         [Support](/knowledge-platform/project-work/) for specific questions from public and private sector
         organisations regarding responsible use of AI
 team:
-  title: Synthetic data generation team
+  title: Team synthetic data generation
   content: Part-time team working on synthetic data generation
   icon: fas fa-search
   button_text: Use tool
@@ -60,7 +60,7 @@ team:
       bio: |
         Freelance software developer
 team1:
-  title: Bias detection tool team
+  title: Team unsupervised bias detection tool
   content: Part-time team working on unsupervised the bias detection tool
   icon: fas fa-search
   button_text: Use the tool
@@ -100,8 +100,12 @@ team2:
       name: Ylja Remmits
       bio: |
         Head of Projects 
+    - image: /images/people/JVerbeek.jpeg
+      name: Jet Verbeek
+      bio: |
+        Intern/work student
 team3:
-  title: AI Act standards team
+  title: Team AI Act standards
   content: Part-time team working on AI Act standards
   icon: fas fa-search
   button_text: More about standards

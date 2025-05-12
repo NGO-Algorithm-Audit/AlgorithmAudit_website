@@ -42,7 +42,7 @@ about_AA:
         [Ondersteuning](/nl/knowledge-platform/project-work/) bij specifieke vragen vanuit de publieke en private sector
         over de verantwoorde inzet van algoritmes.
 team:
-  title: Synthetic data generatie team
+  title: Team synthetische data generatie
   content: Team dat part-time werkt aan synthetische data generatie tool
   icon: fas fa-search
   button_text: Gebruik de tool
@@ -65,7 +65,7 @@ team:
       bio: |
         Freelance software developer
 team1:
-  title: Bias detectie tool team
+  title: Team unsupervised bias detectie
   content: Team dat part-time werkt aan de unsupervised bias detectie tool
   icon: fas fa-search
   button_text: Gebruik de tool
@@ -105,8 +105,12 @@ team2:
       name: Ylja Remmits
       bio: |
         Head of Projects
+    - image: /images/people/JVerbeek.jpeg
+      name: Jet Verbeek
+      bio: |
+        Stagiair/werkstudent
 team3:
-  title: AI-verordening standaarden team
+  title: Team AI-verordening standaarden
   content: Team dat part-time werk aan AI-verordening standaarden
   icon: fas fa-search
   button_text: Meer over standaarden
@@ -125,7 +129,7 @@ quick_navigation:
   links:
     - title: Kernactiviteiten
       url: '#about'
-    - title: Uitvoerend team
+    - title: Coördinerend team
       url: '#executive-team'
     - title: Team unsupervised bias detectie
       url: '#team-BDT'
