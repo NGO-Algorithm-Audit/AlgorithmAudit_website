@@ -714,4 +714,3 @@ subtitle: >
   touch](/about/contact/) to discuss contributions.
 image: /images/svg-illustrations/events.svg
 ---
-

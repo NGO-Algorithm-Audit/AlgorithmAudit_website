@@ -35,5 +35,3 @@ subpage_links:
     icon: fa-light fa-layer-group
     color: "#FFF"
 ---
-
-TEST CONTENT

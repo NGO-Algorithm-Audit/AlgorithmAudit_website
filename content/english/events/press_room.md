@@ -5,7 +5,7 @@ subtitle: >
   submitting [this](/about/contact/) contact form.
 image: /images/svg-illustrations/about.svg
 quick_navigation:
-  title: Overzicht
+  title: Overview
   links:
     - title: DUO2 Addendum Preventing prejudice
       url: '#DUO_CBS'
