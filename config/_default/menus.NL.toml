@@ -123,16 +123,23 @@ weight = 5
 hasChildren = true
   [[main]]
   parent = "Evenementen"
+  name = "Registratie"
+  url = "/nl/events/registration"
+  weight = 1
+  [[main.params]]
+    featured = true
+  [[main]]
+  parent = "Evenementen"
   name = "Activiteiten"
   url = "/nl/events/activities"
-  weight = 1
+  weight = 2
   [[main.params]]
     icon = "fa-calendar"
   [[main]]
   parent = "Evenementen"
   name = "Persberichten"
   url = "/nl/events/press_room"
-  weight = 2
+  weight = 3
   [[main.params]]
     icon = "fa-newspaper"
 
