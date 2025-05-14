@@ -20,4 +20,4 @@ image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
 
 ...
 
-{{< embed_pdf url="/pdf-files/knowledge-base/20250515 Public standard Meaningful human intervention.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20250515 Public standard Meaningful human intervention.pdf" url2="/pdf-files/knowledge-base/20250515 Carrousel Meaningful human intervention risk profiling algorithms.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}

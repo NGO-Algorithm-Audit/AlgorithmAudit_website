@@ -20,4 +20,4 @@ image: /images/knowledge_base/Publieke_standaard_Betekenisvolle_menselijke_tusse
 
 ...
 
-{{< embed_pdf url="/pdf-files/knowledge-base/20250515 Publieke standaard Betekenisvolle menselijke tussenkomst.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20250515 Publieke standaard Betekenisvolle menselijke tussenkomst.pdf" url2="/pdf-files/knowledge-base/20250515 Carrousel Meaningful human intervention risk profiling algorithms.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
