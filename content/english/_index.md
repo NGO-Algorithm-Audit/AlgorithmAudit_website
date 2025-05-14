@@ -50,15 +50,13 @@ Activity_Feed:
   button_text: View more...
   button_link: /events/activities/#events
   featured_activities:
-    - title: Public standard profiling algorithms
+    - title: Public standard 'Meaningful human intervention for risk profiling algorithms'
       intro: >
-        Based on our case-based experience with auditing risk profiling systems,
-        Algorithm Audit publishes a public standard providing qualitative and
-        qualitative safeguards for responsible use of these type of algorithms.
-      link: /knowledge-platform/knowledge-base/public_standard_profiling/
-      image: /images/knowledge_base/Public_standard_profiling.png
-      date: 22-10-2024
-      type: white paper
+        Step-by-step guide to prevent prohibited automated decision-making solely based on profilings, as stated in Article 22 GDPR. Based on case-based experiences with risk profiling algorithms and aligned with recent literature.
+      link: /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
+      image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
+      date: 15-05-2025
+      type: public standard
   activities:
     - title: >-
         Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen

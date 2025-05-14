@@ -11,8 +11,6 @@ facet_groups:
         label: DSA
       - value: FR
         label: Grondrechten
-      - value: standard
-        label: Standaarden
       - value: scientific
         label: Wetenschappelijk
   - value: type
@@ -29,11 +27,11 @@ facet_groups:
       - value: report
         label: Rapport
       - value: standard
-        label: Standaard
+        label: Publieke standaard
       - value: white_paper
         label: White paper
 pagesize: 4
-title_content: Articles
+title_content: Artikelen
 layout: overview
 title: Kennisbank
 subtitle: >
