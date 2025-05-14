@@ -1,6 +1,5 @@
 ---
 icon: fas fa-search
-featured: true
 layout: article
 type: knowledgebase_item
 author: Algorithm Audit

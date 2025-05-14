@@ -54,16 +54,13 @@ Activity_Feed:
   button_text: Meer evenementen...
   button_link: /nl/events/activities/#events
   featured_activities:
-    - title: Publieke standaard profileringsalgoritme
+    - title: Publieke standaard 'Betekenisvolle menselijke tussenkomst voor risicoprofileringsalgoritmes'
       intro: >
-        Voortbouwend op onze ervaring met het auditeren van
-        risicoprofileringsmethoden heeft Algorithm Audit een publieke standaard
-        opgesteld met kwalitatieve en kwantitatieve waarborgen voor de
-        verantwoorde inzet van dit type algoritmes.
-      link: /nl/knowledge-platform/knowledge-base/public_standard_profiling/
-      image: /images/knowledge_base/Public_standard_profiling.png
-      date: 22-10-2024
-      type: white paper
+        Stappenplan om verboden geautomatiseerde besluitvorming uitsluitend gebaseerd op profilering te voorkomen, zoals vermeld in Artikel 22 AVG. Gebaseerd op case-based ervaringen met risicoprofileringsalgoritmes en afgestemd op recente literatuur.    
+      link: /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
+      image: /images/knowledge_base/Publieke_standaard_Betekenisvolle_menselijke_tussenkomst.png
+      date: 15-05-2025
+      type: publieke standaard
   activities:
     - title: >-
         Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen

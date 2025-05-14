@@ -4,7 +4,7 @@ featured: true
 layout: article
 type: knowledgebase_item
 author: Algorithm Audit
-summary: Public standard profiling algorithms
+summary: Public standard 'Profileringsalgoritmes'
 facets:
   - value: type_white_paper
     label: white paper
@@ -13,11 +13,11 @@ facets:
   - value: subject_FR
     label: fundamental rights
   - value: subject_standard
-    label: standard
+    label: publieke standaard
 weight: -12
-title: Publieke standaard profileringsalgoritme
+title: Publieke standaard 'Profileringsalgoritmes'
 subtitle: |
-  Publieke standaard profileringsalgoritme
+  Publieke standaard 'Profileringsalgoritme'
 image: /images/knowledge_base/Public_standard_profiling.png
 ---
 

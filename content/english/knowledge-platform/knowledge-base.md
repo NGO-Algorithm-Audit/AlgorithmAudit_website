@@ -15,8 +15,6 @@ facet_groups:
         label: GDPR
       - value: scientific
         label: Scientific
-      - value: standard
-        label: Standards
   - value: type
     title: Type
     facets:
@@ -31,7 +29,7 @@ facet_groups:
       - value: review
         label: Review
       - value: standard
-        label: Standard
+        label: Publieke standaard
       - value: white_paper
         label: White paper
 pagesize: 4
@@ -40,7 +38,7 @@ layout: overview
 title: Knowledge base
 subtitle: >
   Our knowledge base is a collection of readworthy articles, books and other
-  publications from various disciplines about algorithmic fairness. Each piece
+  publications from various disciplines about responsible AI. Each piece
   of writing has been summarized and/or reviewed.
 
 
