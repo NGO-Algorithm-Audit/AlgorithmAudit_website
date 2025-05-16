@@ -36,7 +36,7 @@ overview_block:
       subtitle: Open source AI auditing tools
       url: /technical-tools/
       icon: fa-light fa-toolbox
-      color: "#D5EBDB"
+      color: "#FFFDE4"
     - title: Project work
       subtitle: Validation, AI Act etc.
       url: /knowledge-platform/project-work/

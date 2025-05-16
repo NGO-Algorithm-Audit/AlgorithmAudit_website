@@ -43,7 +43,7 @@ overview_block:
       subtitle: Open source AI auditing tools
       url: /nl/technical-tools/
       icon: fa-light fa-toolbox
-      color: "#D5EBDB"
+      color: "#FFFDE4"
     - title: Projectwerk
       subtitle: Validatie, AI-verordening etc.
       url: /nl/knowledge-platform/project-work/
@@ -56,7 +56,7 @@ Activity_Feed:
   featured_activities:
     - title: Publieke standaard 'Betekenisvolle menselijke tussenkomst voor risicoprofileringsalgoritmes'
       intro: >
-        Stappenplan om verboden geautomatiseerde besluitvorming uitsluitend gebaseerd op profilering te voorkomen, zoals vermeld in Artikel 22 AVG. Gebaseerd op case-based ervaringen met risicoprofileringsalgoritmes en afgestemd op recente literatuur.    
+        Stappenplan om verboden geautomatiseerde besluitvorming uitsluitend gebaseerd op profilering te voorkomen, zoals vermeld in Artikel 22 AVG. Gebaseerd op case-based ervaringen met risicoprofileringsalgoritmes en afgestemd op recente literatuur.
       link: /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       image: /images/knowledge_base/Publieke_standaard_Betekenisvolle_menselijke_tussenkomst.png
       date: 15-05-2025
