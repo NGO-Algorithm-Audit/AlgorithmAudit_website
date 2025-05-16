@@ -5,8 +5,12 @@ docReady(function () {
     var sections = quickLinks.map(function () {
       return $(this).attr("href");
     });
-    var sectionOffsets = sections.map(function (index, section) {
-      return $(section).offset().top - 300; // Adjust offset as needed
+    var sectionOffsets = sections.map(function (_, section) {
+      const sectionElement = $(section);
+      if (sectionElement.length === 0) {
+        return -1;
+      }
+      return sectionElement.offset().top - 250; // Adjust offset as needed
     });
     let highestActiveIndex = -1;
     var scrollPos = $(this).scrollTop();
@@ -14,7 +18,7 @@ docReady(function () {
       $(this).removeClass("highlight-red-sm");
     });
     sectionOffsets.each(function (index) {
-      if (scrollPos >= this) {
+      if (this > 0 && scrollPos >= this) {
         highestActiveIndex = index;
       }
     });

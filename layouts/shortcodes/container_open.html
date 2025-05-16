@@ -1,16 +1,38 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-<div id={{.Get "id" }} class="container-fluid mt-5 p-0">
-    <div class="shadow mobile-desktop-container-layout rounded-lg">
-        <div class="row">
-            <div class="col-12">
+{{ $id := .Get "id" }}
+{{ $isAccordion := .Get "isAccordion" }}
+{{ if $isAccordion }}
+<script>
+    docReady(function () {
+        new Accordion('.accordion_container_{{$id}}');
+
+        $(".accordion_container_{{$id}} .ac-trigger").click(function() {
+            const isExpanded = $(this).attr("aria-expanded");
+            const elementToSetChevronOn = $(this).find("h3 > span.fas");
+            if  (isExpanded === "true") {
+                elementToSetChevronOn.removeClass("fa-chevron-up");
+                elementToSetChevronOn.addClass("fa-chevron-down");
+            } else {
+                elementToSetChevronOn.removeClass("fa-chevron-down");
+                elementToSetChevronOn.addClass("fa-chevron-up");
+            }
+        });
+    });
+</script>
+{{ end }}
+<div id={{$id}} class="{{ if $isAccordion }} accordion_container_{{$id}} {{ end }} container-fluid mt-5 p-0">
+    <div class="{{ if $isAccordion }} ac {{ end }} shadow mobile-desktop-container-layout rounded-lg ">
+        <div class="{{ if $isAccordion }} ac-header {{ end }} ">
+            <div class="col-12 row ac--has-own-icon {{ if $isAccordion }} ac-trigger {{ end }}">
         
                 <!-- Title and icon -->
                 <div>
                     <h3>
-                        <span class="{{.Get "icon" }} icon mb-4 pl-5"></span>
+                        <span class="{{if $isAccordion }} fas fa-chevron-up {{else}} {{.Get "icon" }} {{end}} icon mb-4 pl-5"></span>
                         {{ .Get "title" }}
                     </h3>
                 </div>
                 
             </div>
         </div>
+        <div class="{{ if $isAccordion }} ac-panel {{ end }} ">

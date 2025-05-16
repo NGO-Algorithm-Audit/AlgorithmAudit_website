@@ -20,7 +20,7 @@
     padding: 0
 }
 
-.ac .ac-trigger {
+.ac .ac-trigger:not(    .ac--has-own-icon) {
     text-align: left;
     width: 100%;
     padding: 8px 32px 8px 8px;
@@ -34,7 +34,7 @@
     border: 0
 }
 
-.ac .ac-trigger::after {
+.ac .ac-trigger:not(    .ac--has-own-icon)::after {
     content: "+";
     text-align: center;
     width: 15px;
@@ -68,6 +68,6 @@
     visibility: visible
 }
 
-.ac.is-active>.ac-header .ac-trigger::after {
+.ac.is-active>.ac-header .ac-trigger.ac-trigger:not(.ac--has-own-icon)::after {
     content: "–"
 }

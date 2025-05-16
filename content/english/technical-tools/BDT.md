@@ -1,10 +1,34 @@
 ---
 title: Unsupervised bias detection tool
 subtitle: >
-  Local-first tool using statistical analysis to identify groups that may be subject to unfair treatment by algorithms or AI. The tool informs
-  the qualitative doctrine of law and ethics which disparities need to be
+  Local-first tool using statistical analysis to identify groups that may be
+  subject to unfair treatment by algorithms or AI. The tool informs the
+  qualitative doctrine of law and ethics which disparities need to be
   scrutinised manually by domain experts.
 image: /images/svg-illustrations/illustration_cases.svg
+quick_navigation:
+  title: Content overview
+  links:
+    - title: Introduction
+      url: "#info"
+    - title: Web app
+      url: "#web-app"
+    - title: Source code
+      url: "#source-code"
+    - title: Anomaly detection algorithm
+      url: "#HBAC"
+    - title: Scientific paper and audit report
+      url: "#scientific-paper"
+    - title: Local-first computing
+      url: "#local-first"
+    - title: Supported by
+      url: "#supported-by"
+    - title: Awards and acknowledgements
+      url: "#awards-acknowledgements"
+    - title: Summary
+      url: "#summary"
+    - title: Team
+      url: "#team"
 reports_preview:
   title: Example output bias detection tool
   icon: fas fa-file
@@ -52,35 +76,12 @@ team:
       name: Mackenzie Jorgensen PhD
       bio: |
         Researcher Alan Turing Institute, London
-quick_navigation:
-  title: Content overview
-  links:
-    - title: Introduction
-      url: "#info"
-    - title: Web app
-      url: "#web-app"
-    - title: Source code
-      url: "#source-code"
-    - title: Anomaly detection algorithm
-      url: "#HBAC"
-    - title: Scientific paper and audit report
-      url: "#scientific-paper"
-    - title: Local-first computing
-      url: "#local-first"
-    - title: Supported by
-      url: "#supported-by"
-    - title: Awards and acknowledgements
-      url: "#awards-acknowledgements"
-    - title: Summary
-      url: "#summary"
-    - title: Team
-      url: "#team"
 type: bias-detection-tool
 ---
 
 <!-- Introduction -->
 
-{{< container_open title="Introduction – Unsupervised bias detection tool" icon="fas fa-search" id="info" >}}
+{{< container_open title="Introduction – Unsupervised bias detection tool" icon="fas fa-search" id="info" isAccordion={true} >}}
 
 <br>
 
@@ -145,7 +146,6 @@ Try the tool below ⬇️
 
 - The source code of the anolamy detection-algorithm is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`.
   [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
-
 - The architecture to run web apps local-first is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 {{< container_close >}}
@@ -188,11 +188,11 @@ Local-first computing is the opposite of cloud computing: the data is not upload
 
 <!-- Supported by -->
 
-{{< container_open title="Supported by" icon="fas fa-toolbox" id="supported-by">}}
+{{< container_open title="Supported by" icon="fas fa-toolbox" id="supported-by" >}}
 
 This tool is developed with support of public and philanthropic organisations.
 
-{{< accordions_area_open id="supported-by-accordion">}}
+{{< accordions_area_open id="supported-by-accordion" >}}
 
 {{< accordion_item_open title="Innovation grant Dutch Ministry of the Interior" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
 
@@ -218,7 +218,7 @@ In 2024, the SIDN Fund <a href="https://www.sidnfonds.nl/projecten/open-source-a
 
 <!-- Awards and acknowledgements -->
 
-{{< container_open title="Awards and acknowledgements" icon="fas fa-medal" id="awards-acknowledgements">}}
+{{< container_open title="Awards and acknowledgements" icon="fas fa-medal" id="awards-acknowledgements" >}}
 
 This tool has received awards and is acknowledged by various <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection?tab=readme-ov-file#contributing-members" target="_blank">stakeholders</a>, including civil society organisations, industry representatives and academics.
 
@@ -246,7 +246,7 @@ The unsupervised bias detection tool is part of OECD's <a href="https://oecd.ai/
 
 <!-- Summary -->
 
-{{< container_open title="Summary" icon="fas fa-dot-circle" id="summary">}}
+{{< container_open title="Summary" icon="fas fa-dot-circle" id="summary" >}}
 
 Key take-aways about unsupervised bias detection tool:
 
