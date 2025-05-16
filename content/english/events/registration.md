@@ -45,7 +45,7 @@ form1:
 
 {{< accordions_area_open id="webinar" >}}
 
-{{< accordion_item_open title="Lunch webinar 'Open source tools for AI validation" id="webinar" background_color="#ffffff" date="11-06-2025" tag1="webinar" tag2="technical tools" image="/images/logo/logo.svg" >}}
+{{< accordion_item_open title="Lunch webinar 'Open source tools for AI validation" id="webinar" background_color="#ffffff" date="13-06-2025" tag1="webinar" tag2="technical tools" image="/images/logo/logo.svg" >}}
 
 {{< button button_text="Register" button_link="#form" >}}
 
