@@ -60,7 +60,7 @@ In 2023-25 werkt Stichting Algorithm Audit samen met de Dienst Uitvoering Onderw
 
 Voor deze werkzaamheden wordt Algorithm Audit, DUO en het Ministerie van Binnenlandse Zaken ondersteund door Innovatiebudget 2024-25.
 
-{{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/partners/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
+{{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/supported_by/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
 
 {{< button button_text="Lees de volledige auditrapporten" button_link="/nl/algoprudence/" >}}
 

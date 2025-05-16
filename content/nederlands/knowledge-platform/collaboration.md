@@ -41,7 +41,7 @@ In 2023-24 werkt Stichting Algorithm Audit samen met de Dienst Uitvoering Onderw
 * een ingediend verzoek bij het Centraal Bureau voor de Statistiek (CBS) om een rigoreus onderzoek te verrichten naar proxy-attributen;
 * het ontwikkelen van werkmethoden om om te leren gaan met de normatieve dimensie van het auditeren van algoritmes, bijvoorbeeld door het betrekken van verschillende belanghebbende bij oordeelsvorming over normatieve vraagstukken.
 
-{{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/partners/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
+{{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/supported_by/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
 
 {{< button button_text="Lees het volledige audit rapport" button_link="/nl/algoprudence/cases/aa202401_bias-prevented/" >}}
 

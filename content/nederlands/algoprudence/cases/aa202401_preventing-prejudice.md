@@ -75,7 +75,7 @@ Rapport *Vooringenomenheid voorkomen* is als onderdeel van het Interne onderzoek
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="DUO biedt excuses aan voor indirecte discriminatie bij controles op de uitwonendenbeurs" image="/images/partners/DUO.png" id="DUO-excuses" date="01-03-2024" tag1="persbericht" >}}
+{{< accordion_item_open title="DUO biedt excuses aan voor indirecte discriminatie bij controles op de uitwonendenbeurs" image="/images/supported_by/DUO.png" id="DUO-excuses" date="01-03-2024" tag1="persbericht" >}}
 
 ##### Beschrijving
 

@@ -94,7 +94,7 @@ Supported_by:
     - image: /images/supported_by/HAI.png
       link: "https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
       alt_text: Stanford University Human-Centered Artificial Intelligence Lab
-    - image: /images/partners/DUO.png
+    - image: /images/supported_by/DUO.png
       link: "https://duo.nl"
       alt_text: Dienst Uitvoering Onderwijs
     - image: /images/partners/NEN.svg

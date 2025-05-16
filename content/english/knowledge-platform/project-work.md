@@ -60,7 +60,7 @@ In 2023-25, Algorithm Audit pairs up with Dutch public sector organisation DUO t
 
 * Applying the algoprudence way of working to issue normative advice in the context of algorithm validations. More information on algoprudence can be found [here](/algoprudence/how-we-work/).
 
-{{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/partners/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
+{{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/supported_by/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
 
 {{< button button_text="Read the full audit reports" button_link="/algoprudence/" >}}
 
