@@ -17,7 +17,7 @@ quick_navigation:
 
 {{< accordions_area_open id="DUO_CBS" >}}
 
-{{< accordion_item_open title="Controleproces DUO vooringenomen voor studenten met een niet-Europese migratieachtergrond" id="DUO_CBS" background_color="#ffffff" date="22-05-2024" tag1="DUO" tag2="CBS" tag3="bias analyse" image="/images/partners/DUO.png" >}}
+{{< accordion_item_open title="Controleproces DUO vooringenomen voor studenten met een niet-Europese migratieachtergrond" id="DUO_CBS" background_color="#ffffff" date="22-05-2024" tag1="DUO" tag2="CBS" tag3="bias analyse" image="/images/supported_by/DUO.png" >}}
 
 **DEN HAAG – In de controle op rechtmatig gebruik van studiefinanciering
 voor uitwonende studenten controleerde DUO aanzienlijk vaker studenten met een niet-Europese
@@ -89,7 +89,7 @@ voorkomen (addendum) kan [hier](/nl/algoprudence/cases/aa202402_bias-prevented_a
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="Afwijkingen geconstateerd in controleproces DUO naar misbruik met uitwonendenbeurs" id="DUO" background_color="#ffffff" date="01-03-2024" tag1="DUO" image="/images/partners/DUO.png" tag2="audit rapport" >}}
+{{< accordion_item_open title="Afwijkingen geconstateerd in controleproces DUO naar misbruik met uitwonendenbeurs" id="DUO" background_color="#ffffff" date="01-03-2024" tag1="DUO" image="/images/supported_by/DUO.png" tag2="audit rapport" >}}
 
 <b>DEN HAAG – DUO selecteerde in onderzoek naar misbruik met de uitwonendenbeurs aanzienlijk
 vaker studenten die dicht bij hun ouder(s) woonden. Het algoritme dat ter ondersteuning van
