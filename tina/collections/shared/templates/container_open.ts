@@ -8,12 +8,22 @@ let template: RichTextTemplate = {
   },
   fields: [
     {
-      type: "boolean",
+      type: "string",
       name: "isAccordion",
       label: "Is Accordion",
       description:
         "Is this a collapsible accordion?, if so, the icon below is ignored",
       required: false,
+      options: [
+        {
+          label: "No",
+          value: "",
+        },
+        {
+          label: "Yes",
+          value: "true",
+        },
+      ],
     },
     {
       type: "string",

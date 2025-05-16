@@ -10,25 +10,25 @@ quick_navigation:
   title: Content overview
   links:
     - title: Introduction
-      url: "#info"
+      url: '#info'
     - title: Web app
-      url: "#web-app"
+      url: '#web-app'
     - title: Source code
-      url: "#source-code"
+      url: '#source-code'
     - title: Anomaly detection algorithm
-      url: "#HBAC"
+      url: '#HBAC'
     - title: Scientific paper and audit report
-      url: "#scientific-paper"
+      url: '#scientific-paper'
     - title: Local-first computing
-      url: "#local-first"
+      url: '#local-first'
     - title: Supported by
-      url: "#supported-by"
+      url: '#supported-by'
     - title: Awards and acknowledgements
-      url: "#awards-acknowledgements"
+      url: '#awards-acknowledgements'
     - title: Summary
-      url: "#summary"
+      url: '#summary'
     - title: Team
-      url: "#team"
+      url: '#team'
 reports_preview:
   title: Example output bias detection tool
   icon: fas fa-file
@@ -81,13 +81,13 @@ type: bias-detection-tool
 
 <!-- Introduction -->
 
-{{< container_open title="Introduction – Unsupervised bias detection tool" icon="fas fa-search" id="info" isAccordion={true} >}}
+{{< container_open title="Introduction – Unsupervised bias detection tool" icon="fas fa-search " id="info" isAccordion="" >}}
 
 <br>
 
 #### What is the tool about?
 
-The tool identifies groups where an algorithm or AI system shows variations in performance. This type of monitoring is referred to as _anomaly detection_. To identify anomalous patterns, the tool uses <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is a form of _unsupervised learning_. This means detecting disparate treatment (bias) does not require any data on protected attributes of users, such as gender, nationality, or ethnicity. The metric used to measure bias can be manually selected and is referred to as the `bias metric`.
+The tool identifies groups where an algorithm or AI system shows variations in performance. This type of monitoring is referred to as *anomaly detection*. To identify anomalous patterns, the tool uses <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is a form of *unsupervised learning*. This means detecting disparate treatment (bias) does not require any data on protected attributes of users, such as gender, nationality, or ethnicity. The metric used to measure bias can be manually selected and is referred to as the `bias metric`.
 
 #### What data can be processed?
 
@@ -126,7 +126,7 @@ The tool identifies deviating clusters. A summary of the results is made availab
 
 #### How is my data processed?
 
-The tool is privacy-friendly because the data is processed entirely within the browser. The data does not leave your computer or the environment of your organization. The tool utilizes the computing power of your own computer to analyze the data. This type of browser-based software is referred to as _local-first_. The tool does not upload data to third parties, such as cloud providers. Instructions on how to host the tool and local-first architecture can be hosted locally within your own organization can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+The tool is privacy-friendly because the data is processed entirely within the browser. The data does not leave your computer or the environment of your organization. The tool utilizes the computing power of your own computer to analyze the data. This type of browser-based software is referred to as *local-first*. The tool does not upload data to third parties, such as cloud providers. Instructions on how to host the tool and local-first architecture can be hosted locally within your own organization can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 Try the tool below ⬇️
 
@@ -144,9 +144,9 @@ Try the tool below ⬇️
 
 {{< container_open title="Source code" id="source-code" icon="fas fa-toolbox" >}}
 
-- The source code of the anolamy detection-algorithm is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`.
-  [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
-- The architecture to run web apps local-first is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+* The source code of the anolamy detection-algorithm is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`.
+  [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+* The architecture to run web apps local-first is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 {{< container_close >}}
 
@@ -154,7 +154,7 @@ Try the tool below ⬇️
 
 {{< container_open title="Anolamy detection algorithm – Hierarchical Bias-Aware Clustering (HBAC)" icon="fas fa-code-branch" id="HBAC" >}}
 
-The tool uses the _Hierarchical Bias-Aware Clustering_ (HBAC) algorithm. HBAC processes input data according to the k-means (for numerical data) or k-modes (for categorical data) clustering algorithm. The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* (2021). Our implementation of the HBAC-algorithm, including additional methodological checks to distinguish real bias from noise, such as sample splitting, statistical hypothesis testing and measuring cluster stability, can be found in the <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">unsupervised-bias-detection</a> pip package.
+The tool uses the *Hierarchical Bias-Aware Clustering* (HBAC) algorithm. HBAC processes input data according to the k-means (for numerical data) or k-modes (for categorical data) clustering algorithm. The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* (2021). Our implementation of the HBAC-algorithm, including additional methodological checks to distinguish real bias from noise, such as sample splitting, statistical hypothesis testing and measuring cluster stability, can be found in the <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">unsupervised-bias-detection</a> pip package.
 
 {{< container_close >}}
 
@@ -250,12 +250,12 @@ The unsupervised bias detection tool is part of OECD's <a href="https://oecd.ai/
 
 Key take-aways about unsupervised bias detection tool:
 
-- <span style="color:#005AA7">Quantitative-qualitative research method</span>: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
-- <span style="color:#005AA7">Unsupervised bias detection</span>: No user data needed on protected attributes (_unsupervised learning_);
-- <span style="color:#005AA7">Anolamy detection</span>: Scalable method based on statistical analysis;
-- <span style="color:#005AA7">Detects complex bias</span>: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
-- <span style="color:#005AA7">Model-agnostic</span>: Works for all binary classification algorithms and AI systems;
-- <span style="color:#005AA7">Open-source and not-for-profit</span>: User friendly and free to use for the entire AI auditing community.
+* <span style="color:#005AA7">Quantitative-qualitative research method</span>: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
+* <span style="color:#005AA7">Unsupervised bias detection</span>: No user data needed on protected attributes (*unsupervised learning*);
+* <span style="color:#005AA7">Anolamy detection</span>: Scalable method based on statistical analysis;
+* <span style="color:#005AA7">Detects complex bias</span>: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
+* <span style="color:#005AA7">Model-agnostic</span>: Works for all binary classification algorithms and AI systems;
+* <span style="color:#005AA7">Open-source and not-for-profit</span>: User friendly and free to use for the entire AI auditing community.
 
 {{< container_close >}}
 
