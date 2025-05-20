@@ -54,8 +54,7 @@ You will work remotely on assigned tasks and share your insights with Algorithm 
 #### What will you do as project team member?
 * Dedicate 2-4 hours per week from 01-07-2025 up to 31-01-2026;
 * Execute work items as discussed with Algorithm Audit’s team coordinating this project;
-* Present your work first internally in the project team, and in a later phase of the project to the international AI auditing community during (online) events, workshop and presentations;
-* No reimbursement available.
+* Present your work first internally in the project team, and in a later phase of the project to the international AI auditing community during (online) events, workshop and presentations.
 
 #### Candidate profile
 * Professional experience with LLM applications, software engineering, data science, machine learning, or similar; OR
@@ -63,6 +62,10 @@ You will work remotely on assigned tasks and share your insights with Algorithm 
 * 3+ years of development experience in Python, JavaScript or similar;
 * Methodological expertise relating to LLM and/or NLP;
 * Familiarity with packages commonly used for LLM applications, e.g., LangChain, ChromaDB etc.
+
+#### Practicalities
+* No reimbursement available;
+* Apply before Wednesday June 11th 23h59 CET.
 
 #### Our approach to diversity, equity and inclusion
 Algorithm Audit’s commitment is reflected in its core mission to strengthen the fairness and non-discriminatory deployment of AI in all parts of society. We build and share public knowledge about discriminatory bias and fostering equitable algorithms and methods for data-analysis. In all our work special attention is paid to the inclusion of various cultural and gender backgrounds.
