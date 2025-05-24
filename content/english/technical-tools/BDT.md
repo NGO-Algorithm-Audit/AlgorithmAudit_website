@@ -15,11 +15,9 @@ quick_navigation:
       url: '#web-app'
     - title: Source code
       url: '#source-code'
-    - title: Anomaly detection algorithm
-      url: '#HBAC'
     - title: Scientific paper and audit report
       url: '#scientific-paper'
-    - title: Local-first computing
+    - title: Local-first architecture
       url: '#local-first'
     - title: Supported by
       url: '#supported-by'
@@ -64,6 +62,10 @@ team:
       name: Joel Persson PhD
       bio: |
         Research Scientist, Spotify
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
+      bio: |
+        Director, Algorithm Audit
     - image: /images/people/KPadh.jpeg
       name: Kirtan Padh
       bio: |
@@ -71,7 +73,7 @@ team:
     - image: /images/people/KProrokovic.jpeg
       name: Krsto Proroković
       bio: |
-        PhD-candidate, Swiss AI Lab IDSIA
+        Freelance software developer and AI researcher
     - image: /images/people/MJorgensen.jpeg
       name: Mackenzie Jorgensen PhD
       bio: |
@@ -85,15 +87,11 @@ type: bias-detection-tool
 
 <br>
 
-#### What is the tool about?
+#### What does the tool do?
+The tool helps find groups where an AI system or algorithm performs differently, which could indicate unfair treatment or bias. It does this using a technique called <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>, which groups similar data points together (in a cluster). The tool doesn’t need information like gender, nationality, or ethnicity to find these patterns. Instead, it uses a `bias metric` to measure deviations in the performace of the algorithmic system, which you can choose based on your data.
 
-The tool identifies groups where an algorithm or AI system shows variations in performance. This type of monitoring is referred to as *anomaly detection*. To identify anomalous patterns, the tool uses <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is a form of *unsupervised learning*. This means detecting disparate treatment (bias) does not require any data on protected attributes of users, such as gender, nationality, or ethnicity. The metric used to measure bias can be manually selected and is referred to as the `bias metric`.
-
-#### What data can be processed?
-
-The tool processes all data in table format. The type of data (numerical, categorical, time, etc.) is automatically detected. One column must be selected as the `bias metric` – which should be a numerical value. The user must specify whether a high or low value of the `bias metric` is considered better. For example: for an error rate, a low value is better, while for accuracy, a high value is better.
-
-The tool contains a demo data for which output is generated. Hit the 'Try it out' button.
+#### What kind of data does it work with?
+The tool works with data in a table format, consisting solely of numbers or categories. You just need to pick one column in the data to use as the `bias metric`. This column should have numbers only, and you’ll specify whether a higher or lower number is better. For example, if you’re looking at error rates, lower numbers are better. For accuracy, higher numbers are better. The tool also comes with a demo dataset you can use by clicking "Try it out."
 
 <div>
   <p><u>Example of numerical data set</u>:</p>
@@ -101,7 +99,7 @@ The tool contains a demo data for which output is generated. Hit the 'Try it out
   <table class="tg">
     <thead>
       <tr>
-      <th class="tg-uox0">Age</th><th class="tg-uox0">Income</th><th class="tg-uox0">...</th><th class="tg-uox0">Number of cars</th><th class="tg-uox0"><span style="font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace; color:#e83e8c; font-weight:300">Selected for control</span></th>
+      <th class="tg-uox0">Age</th><th class="tg-uox0">Income</th><th class="tg-uox0">...</th><th class="tg-uox0">Number of cars</th><th class="tg-uox0"><span style="font-family:SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace; color:#e83e8c; font-weight:300">Selected for investigation</span></th>
       </tr>
     </thead>
     <tbody>
@@ -114,21 +112,52 @@ The tool contains a demo data for which output is generated. Hit the 'Try it out
 </div>
 <br>
 
-#### What does the tool return?
+#### What results does it give?
+The tool finds groups (clusters) where performance of the algorithmic system is significantly different. It highlights the group with the worst performance and creates a report called a bias analysis report, which you can download as a PDF. You can also download all the identified groups in a .json file. Additionally, the tool provides visual summaries of the results, helping experts dive deeper into the identified deviations.
 
-The tool identifies deviating clusters. A summary of the results is made available in a bias analysis report that can be downloaded as a pdf. All identified clusters can be downloaded in a .json file. The tool specifically focuses on the most negatively deviating cluster and provides a description of this cluster. These results serve as a starting point for further investigation by domain experts, who can assess whether the observed disparities are indeed undesirable. The tool also visualizes the outcomes.
-
-#### Overview of process
-
-<div style="margin-bottom:50px; display: flex; justify-content: center;">
-  <img src="/images/BDT/overview_tool.png" alt="drawing" width="600px"/>
-</div>
-
-#### How is my data processed?
-
-The tool is privacy-friendly because the data is processed entirely within the browser. The data does not leave your computer or the environment of your organization. The tool utilizes the computing power of your own computer to analyze the data. This type of browser-based software is referred to as *local-first*. The tool does not upload data to third parties, such as cloud providers. Instructions on how to host the tool and local-first architecture can be hosted locally within your own organization can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+#### Is my data safe?
+Yes! Your data stays on your computer and never leaves your organization’s environment. The tool runs directly in your browser, using your computer’s power to analyze the data. This setup, called 'local-first', ensures no data is sent to cloud providers or third parties. Instructions for hosting the tool securely within your organization are available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 Try the tool below ⬇️
+
+{{< container_close >}}
+
+<!-- Technical details -->
+
+{{< container_open isAccordion="true" title="Technical details – Unsupervised bias detection tool" id="technical-introduction" >}}
+
+<br>
+
+#### Steps undertaken by the tool  
+The unsupervised bias detection tool operates a series of steps:
+
+##### Prepared by the user:
+<span style="color:#005AA7">1. Dataset:</span> The data must be provided in a tabular format. All columns, except the bias metric column, should have uniform data types, e.g., either all numerical or all categorical. The bias metric column must be numerical. Any missing values should be removed or replaced. The dataset should then be divided into training and testing subset, following a 80-20 ratio.
+
+<span style="color:#005AA7">2. Bias metric:</span> The user selects one column from the dataset to serve as the `bias metric`. In step 3, clustering will be performed based on this chosen `bias metric`. The chosen bias metric must be numerical. Examples include metrics such as "being classified as high risk", "error rate" or "selected for an investigation".
+
+##### Performed by the tool:
+<span style="color:#005AA7">3. Hierarchical Bias-Aware Clustering (HBAC):</span> The HBAC algorithm (detailed below) is applied to the training dataset. The centroids of the resulting clusters are saved and later used to assign cluster labels to data points in the test dataset.
+
+<span style="color:#005AA7">4. Testing differences in bias metric:</span> Statistical hypothesis testing is performed to evaluate whether the most deviating cluster contains significantly more bias compared to the rest of the dataset. A two-sample t-test is used to compare the bias metrics between clusters. For multiple hypothesis testing, Bonferonni correction should be applied. Further details can are available in our [scientific paper](/technical-tools/bdt/#scientific-paper).
+
+A schematic overview of the above steps is depicted below.
+
+<div style="margin-bottom:50px; display: flex; justify-content: center;">
+  <img src="/images/BDT/overview_tool.png" alt="drawing" width="800px"/>
+</div>
+
+#### How does the clustering algorithm work?
+The *Hierarchical Bias-Aware Clustering* (HBAC) algorithm identifies clusters in the provided dataset based on a user-defined `bias metric`. The objective is to find clusters with low variation in the bias metric within each cluster and significant variation between clusters. HBAC iteratively finds clusters in the data using k-means (for numerical data) or k-modes clustering (for categorical data).  For the initial split, HBAC takes the full dataset and splits it in two clusters. Cluster `C` – with the highest standard deviation of the bias metric – is selected. Then, cluster `C` is divided into two candidate clusters `C'` and `C''`'. If the average bias metric in either candidate cluster exceed the the average bias metric in `C`, the candidate cluster with highest bias metric is selected as a new cluster. This process repeats until the maximum number of iterations (`max_iterations`) is reached or the resulting cluster fails to meet the minimum size requirement (`n_min`). The pseudo-code of the HBAC algorithm is provided below.
+
+<div style="display: flex; justify-content: center;">
+  <img src="/images/BDT/pseudo_code_HBAC.png" alt="drawing" width="800px"/>
+</div>
+
+The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* in 2021. Our implementation of the HBAC-algorithm advances this implementation by proposing additional methodological checks to distinguish real bias from noise, such as sample splitting, statistical hypothesis testing and measuring cluster stability. Algorithm Audit's implementation of the algorithm can be found in the <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">unsupervised-bias-detection</a> pip package.
+
+#### How should the results of the tool be interpreted?
+The HBAC algorithm maximizes the difference in the bias metric between clusters. To prevent incorrect conclusions that there is bias in the decision-making process under review when there truly is none, we split the dataset in training and test data, and hypothesis testing prevents us from (wrongly) concluding that there is a difference in the bias metric while there is none. If statistically significant bias is detected, the outcome of the tool serves as a starting point for human experts to assess potential discrimination in the decision-making processes. 
 
 {{< container_close >}}
 
@@ -145,16 +174,8 @@ Try the tool below ⬇️
 {{< container_open title="Source code" id="source-code" icon="fas fa-toolbox" >}}
 
 * The source code of the anolamy detection-algorithm is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`.
-  [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
+
 * The architecture to run web apps local-first is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
-
-{{< container_close >}}
-
-<!-- Anolamy detection algorithm -->
-
-{{< container_open title="Anolamy detection algorithm – Hierarchical Bias-Aware Clustering (HBAC)" icon="fas fa-code-branch" id="HBAC" >}}
-
-The tool uses the *Hierarchical Bias-Aware Clustering* (HBAC) algorithm. HBAC processes input data according to the k-means (for numerical data) or k-modes (for categorical data) clustering algorithm. The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* (2021). Our implementation of the HBAC-algorithm, including additional methodological checks to distinguish real bias from noise, such as sample splitting, statistical hypothesis testing and measuring cluster stability, can be found in the <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">unsupervised-bias-detection</a> pip package.
 
 {{< container_close >}}
 
@@ -174,9 +195,8 @@ The unsupervised bias detection tool has been applied in practice to audit a Dut
 
 <br>
 
-#### What is local-first computing?
-
-Local-first computing is the opposite of cloud computing: the data is not uploaded to third-parties, such as a cloud providers, and is processed by your own computer. The data attached to the tool therefore doesn't leave your computer or the environment of your organization. The tool is privacy-friendly because the data can be processed within the mandate of your organisation and doesn't need to be shared with new parties. The unsupervised bias detection tool can also be hosted locally within your organization. Instructions, including the source code or the web app, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+#### What is local-first?
+Local-first computing is the opposite of cloud computing: the data is not uploaded to third-parties, such as a cloud providers, but is processed by your own computer. The data attached to the tool therefore doesn't leave your computer or the environment of your organization. The tool is privacy-friendly because the data can be processed within the mandate of your organisation and doesn't need to be shared with new parties. The unsupervised bias detection tool can also be hosted locally within your organization. Instructions, including the source code or the web app, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 #### Overview of local-first architecture
 
