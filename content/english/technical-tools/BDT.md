@@ -1,10 +1,7 @@
 ---
 title: Unsupervised bias detection tool
 subtitle: >
-  Local-first tool using statistical analysis to identify groups that may be
-  subject to unfair treatment by algorithms or AI. The tool informs the
-  qualitative doctrine of law and ethics which disparities need to be
-  scrutinised manually by domain experts.
+  A statistical tool that identifies groups where an AI system or algorithm shows deviating performance, potentially indicating unfair treatment or bias. The tool informs the qualitative doctrine of law and ethics which disparities need to be scrutinised manually by domain experts.
 image: /images/svg-illustrations/illustration_cases.svg
 quick_navigation:
   title: Content overview
@@ -128,7 +125,7 @@ Try the tool below ⬇️
 
 <br>
 
-#### Steps undertaken by the tool  
+#### Which steps does the tool undertake?
 The unsupervised bias detection tool operates a series of steps:
 
 ##### Prepared by the user:
