@@ -62,22 +62,22 @@ Activity_Feed:
       date: 15-05-2025
       type: publieke standaard
   activities:
+    - title: Gastcollege 'Fairness and Algorithms' ETH Zürich
+      link: /nl/events/activities/#events
+      image: /images/events/eth-zurich.jpg
+      date: 23-05-2025
+      type: event
     - title: >-
         Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
-      link: /events/activities/#events
+      link: /nl/events/activities/#events
       image: /images/events/RUG.png
       date: 06-05-2025
       type: event
     - title: Paneldiscussie Autoriteit Persoonsgegevens
-      link: /events/activities/#events
+      link: /nl/events/activities/#events
       image: /images/events/dutch-data-protection.jpg
       date: 26-03-2025
       type: paneldiscussie
-    - title: Gastcollege ethische AI Universiteit Utrecht
-      link: /nl/events/activities/#events
-      image: /images/events/uu-logo.png
-      date: 10-03-2025
-      type: event
 Supported_by:
   title: Samenwerking met
   funders:

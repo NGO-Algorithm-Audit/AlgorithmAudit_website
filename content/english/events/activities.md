@@ -26,11 +26,11 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
-  - title: Guest lecture 'Fairness and Algorithms', ETH Zürich
+  - title: Guest lecture 'Fairness and Algorithms' ETH Zürich
     description: >
       Guest lecture for the course 'Fairness and Algorithms' at ETH Zürich invited by Aileen Nielsen
 
-      {{< embed_pdf url="/pdf-files/events/activities/20240416_UvA_MDLab.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+      {{< embed_pdf url="/pdf-files/events/activities/20250523_AlgorithmAudit EXT.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
     image: /images/events/eth-zurich.jpg
     date: 23-05-2025
