@@ -58,6 +58,11 @@ Activity_Feed:
       date: 15-05-2025
       type: public standard
   activities:
+    - title: Guest lecture 'Fairness and Algorithms' ETH Zürich
+      link: /events/activities/#events
+      image: /images/events/eth-zurich.jpg
+      date: 23-05-2025
+      type: event
     - title: >-
         Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
       link: /events/activities/#events
@@ -69,11 +74,6 @@ Activity_Feed:
       image: /images/events/dutch-data-protection.jpg
       date: 26-03-2025
       type: panel discussion
-    - title: Guest lecture ethical AI Utrecht University
-      link: /events/activities/#events
-      image: /images/events/uu-logo.png
-      date: 10-03-2025
-      type: event
 Supported_by:
   title: Collaborating with
   funders:

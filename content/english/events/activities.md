@@ -26,6 +26,23 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: Guest lecture 'Fairness and Algorithms' ETH Zürich
+    description: >
+      Guest lecture for the course 'Fairness and Algorithms' at ETH Zürich invited by Aileen Nielsen
+
+      {{< embed_pdf url="/pdf-files/events/activities/20250523_AlgorithmAudit EXT.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+    image: /images/events/eth-zurich.jpg
+    date: 23-05-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
     description: >
       Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
