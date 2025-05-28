@@ -32,6 +32,22 @@ quick_navigation:
       url: '#flowchart-classification'  
 ---
 
+<!-- Promobar -->
+
+<div id={{.Get "id" }} class="container-fluid mt-0 p-0">
+    <div class="shadow bg-lightblue">
+        <div class="row promobar-mobile-desktop-layout">
+            <div class="col-12 flex justify-center items-center px-5">
+                <!-- Content -->
+                <span class="mr-3" style="font-size:16px; color:#005aa7;">
+                    <b>👋 Wil je deze tool ook lokaal implementeren? Dat is eenvoudiger dan je denkt! Neem <u><a href="/nl/about/contact/" >contact</a></u> met ons op.</b>    </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Introductie -->
+
 {{< container_open icon="fa-solid fa-laptop-code" title="Is mijn datagedreven toepassing een AI-systeem of impactvol algoritme?" id="intro" >}}
 
 Implementatie van de AI-verordening brengt lastige vragen met zich mee. Wat is de reikwijdte van de AI-systeem definitie? Aan de hand van welke criteria kan de risicocategorie van een algoritme worden geïdentificeerd? Twee dynamische vragenlijsten helpen gebruikers en ontwikkelaars bij:
