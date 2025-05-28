@@ -1,9 +1,7 @@
 ---
 title: Unsupervised bias detectie tool
 subtitle: >
-  Local-first tool die gebruik maakt van statistiek om mogelijk ongelijk
-  behandelde groepen door algoritmes of AI te identificeren. De tool informeert de
-  kwalitatieve doctrine van het recht en de ethiek welke afwijkingen onderzocht moeten worden door domeinexperts.
+  Tool die mogelijk ongelijk behandelde groepen door algoritmes of AI identificeert zonder daarvoor gebruik te maken van bijzondere persoonsgegevens, zoals geslacht of afkomst. De tool informeert welke afwijkingen onderzocht moeten worden door domeinexperts.
   
 image: /images/svg-illustrations/illustration_cases.svg
 type: bias-detection-tool
@@ -77,8 +75,6 @@ quick_navigation:
       url: '#team'
 ---
 
-
-
 <!-- Introductie -->
 
 {{< container_open title="Introductie – Unsupervised bias detectie tool" icon="fas fa-search" id="info" >}}
@@ -86,10 +82,10 @@ quick_navigation:
 <br>
 
 #### Wat doet de tool?
-De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert. Naar deze vorm van monitoring wordt verwezen als *anomaliedetectie*. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is een vorm van _unsupervised learning_. Dit betekent dat er geen gegevens nodig zijn over beschermde kenmerken van gebruikers, zoals geslacht, nationaliteit of etniciteit, om verdacht onderscheid (bias) te detecteren. De metriek aan de hand waarvan onderscheid wordt bepaald kan handmatig worden gekozen en wordt naar verwezen als de `gelijkheidsmetriek`.
+De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert. Naar deze vorm van monitoring wordt verwezen als *anomaliedetectie*. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>. Clustering is een vorm van _unsupervised learning_. Dit betekent dat er geen gegevens nodig zijn over beschermde kenmerken van gebruikers, zoals geslacht, nationaliteit of etniciteit, om verdacht onderscheid (bias) te detecteren. De metriek aan de hand waarvan onderscheid wordt bepaald kan handmatig worden gekozen en wordt naar verwezen als de `bias score`.
 
 #### Welke data kan worden verwerkt?
-De tool verwerkt alle data in tabel-vorm. Het type data (numerieke, categorische, tijden etc.) wordt automatisch gedetecteerd. Eén kolom moet geselecteerd worden als de `gelijkheidsmetriek`, welke een numerieke waarde moet zijn. De gebruiker dient aan te aangeven of een hoge of lage waarde van de `gelijkheidsmetriek` beter is. Voorbeeld: als de `gelijkheidsmetriek` een foutpercentage betreft dan is een lage waarde beter, terwijl bij nauwkeurigheid een hoge waarde beter is. 
+De tool verwerkt alle data in tabel-vorm. Het type data (numerieke, categorische, tijden etc.) wordt automatisch gedetecteerd. Eén kolom moet geselecteerd worden als de `bias score`, welke een numerieke waarde moet zijn. De gebruiker dient aan te aangeven of een hoge of lage waarde van de `bias score` beter is. Voorbeeld: als de `bias score` een foutpercentage betreft dan is een lage waarde beter, terwijl bij nauwkeurigheid een hoge waarde beter is. 
 
 <div>
   <p><u>Voorbeeld van numerieke dataset</u>:</p>
@@ -126,11 +122,9 @@ Gebruik de tool hier beneden ⬇️
 {{< container_close >}}
 
 
-
 <!-- Web app -->
 
 {{< iframe title="Web app – Unsupervised bias detectie tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=nl" height="770px" >}} 
-
 
 
 <!-- Promobar -->
