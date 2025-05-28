@@ -14,8 +14,8 @@ quick_navigation:
       url: '#source-code'
     - title: Scientific paper and audit report
       url: '#scientific-paper'
-    - title: Local-first architecture
-      url: '#local-first'
+    - title: local-only architecture
+      url: '#local-only'
     - title: Supported by
       url: '#supported-by'
     - title: Awards and acknowledgements
@@ -102,7 +102,11 @@ type: bias-detection-tool
 The tool helps find groups where an AI system or algorithm performs differently, which could indicate unfair treatment. It does this using a technique called <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>, which groups similar data points together (in a cluster). The tool doesn’t need information like gender, nationality, or ethnicity to find these patterns. Instead, it uses a `bias score` to measure deviations in the performace of the system, which you can choose based on your data.
 
 #### What results does it give?
-The tool finds groups (clusters) where performance of the algorithmic system is significantly deviating. It highlights the group with the worst `bias score` and creates a report called a bias analysis report, which you can download as a PDF. You can also download all the identified groups (clusters) in a .json file. Additionally, the tool provides visual summaries of the results, helping experts dive deeper into the identified deviations.
+The tool finds groups (clusters) where performance of the algorithmic system is significantly deviating. It highlights the group with the worst `bias score` and creates a report called a bias analysis report, which you can download as a PDF. You can also download all the identified groups (clusters) in a .json file. Additionally, the tool provides visual summaries of the results, helping experts dive deeper into the identified deviations. Example below ⬇️.
+
+<div style="margin-bottom:50px; display: flex; justify-content: center;">
+  <img src="/images/BDT/example_COMPAS.png" alt="drawing" width="600px"/>
+</div>
 
 #### What kind of data does it work with?
 The tool works with data in a table format, consisting solely of numbers or categories. You just need to pick one column in the data to use as the `bias score`. This column should have numbers only, and you’ll specify whether a higher or lower number is better. For example, if you’re looking at error rates, lower numbers are better. For accuracy, higher numbers are better. The tool also comes with a demo dataset you can use by clicking "Try it out."
@@ -127,7 +131,7 @@ The tool works with data in a table format, consisting solely of numbers or cate
 <br>
 
 #### Is my data safe?
-Yes! Your data stays on your computer and never leaves your organization’s environment. The tool runs directly in your browser, using your computer’s power to analyze the data. This setup, called 'local-first', ensures no data is sent to cloud providers or third parties. Instructions for hosting the tool securely within your organization are available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+Yes! Your data stays on your computer and never leaves your organization’s environment. The tool runs directly in your browser, using your computer’s power to analyze the data. This setup, called 'local-only', ensures no data is sent to cloud providers or third parties. Instructions for hosting the tool securely within your organization are available on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
 Try the tool below ⬇️
 
@@ -174,7 +178,7 @@ The HBAC algorithm maximizes the difference in the bias score between clusters. 
 
 <!-- Web app -->
 
-{{< iframe title="Web app – Unsupervised bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=en" height="770px" >}}
+{{< iframe title="Web app – Unsupervised bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-only-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=en" height="770px" >}}
 
 <!-- Promo bar -->
 
@@ -186,7 +190,7 @@ The HBAC algorithm maximizes the difference in the bias score between clusters. 
 
 * The source code of the anolamy detection-algorithm is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`.
 
-* The architecture to run web apps local-first is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+* The architecture to run web apps local-only is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
 {{< container_close >}}
 
@@ -200,19 +204,19 @@ The unsupervised bias detection tool has been applied in practice to audit a Dut
 
 {{< container_close >}}
 
-<!-- Local-first architecture -->
+<!-- local-only architecture -->
 
-{{< container_open title="Local-first architecture" icon="fas fa-map-pin" id="local-first" >}}
+{{< container_open title="local-only architecture" icon="fas fa-map-pin" id="local-only" >}}
 
 <br>
 
-#### What is local-first?
-Local-first computing is the opposite of cloud computing: the data is not uploaded to third-parties, such as a cloud providers, but is processed by your own computer. The data attached to the tool therefore doesn't leave your computer or the environment of your organization. The tool is privacy-friendly because the data can be processed within the mandate of your organisation and doesn't need to be shared with new parties. The unsupervised bias detection tool can also be hosted locally within your organization. Instructions, including the source code or the web app, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+#### What is local-only?
+local-only computing is the opposite of cloud computing: the data is not uploaded to third-parties, such as a cloud providers, but is processed by your own computer. The data attached to the tool therefore doesn't leave your computer or the environment of your organization. The tool is privacy-friendly because the data can be processed within the mandate of your organisation and doesn't need to be shared with new parties. The unsupervised bias detection tool can also be hosted locally within your organization. Instructions, including the source code or the web app, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
-#### Overview of local-first architecture
+#### Overview of local-only architecture
 
 <div style="margin-bottom:50px; display: flex; justify-content: center;">
-  <img src="/images/BDT/local-first EN.png" alt="drawing" width="100%"/>
+  <img src="/images/BDT/local-only EN.png" alt="drawing" width="100%"/>
 </div>
 
 {{< container_close >}}
