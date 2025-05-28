@@ -34,6 +34,22 @@ quick_navigation:
       url: '#flowchart-classification'
 ---
 
+<!-- Promobar -->
+
+<div id={{.Get "id" }} class="container-fluid mt-0 p-0">
+    <div class="shadow bg-lightblue">
+        <div class="row promobar-mobile-desktop-layout">
+            <div class="col-12 flex justify-center items-center px-5">
+                <!-- Content -->
+                <span class="mr-3" style="font-size:16px; color:#005aa7;">
+                    <b>👋 Do you also want to start using the tool locally? It's easier than you think! Get in <u><a href="/nl/about/contact/" >contact</a></u> to learn more.</b>    </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Introduction -->
+
 {{< container_open icon="fa-solid fa-laptop-code" title="Is my data-driven application an AI system or high-impact algorithm?" id="intro" >}}
 
 Implementation of the AI Act raises difficult questions. What is the scope of the AI system defintion? What criteria are used to determine the risk category of an algorithm? Two dynamic questionnaires help deployers and producers with:
