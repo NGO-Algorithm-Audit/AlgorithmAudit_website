@@ -140,17 +140,13 @@ Additionally, Article 10(5) of the AI Act includes a specific provision regardin
 {{< container_close >}}
 
 
-
 <!-- Privacy en legal aspects synthetic tabular data -->
 
 {{< container_open icon="far fa-file" title="Privacy en legal aspects synthetic tabular data" id="privacy-legal" >}}
 
-To be translated to English
-
-{{< embed_pdf url="/pdf-files/technical-tools/SDG/Memo_Privacy___Juridische_Aspecten_Synthetische_Data_-_Publieke_Versie.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/SDG/Memo Privacy and Legal Aspects of Synthetic Data.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
-
 
 
 <!-- Local-first architecture -->
