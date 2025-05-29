@@ -102,7 +102,7 @@ type: bias-detection-tool
 The tool helps find groups where an AI system or algorithm performs differently, which could indicate unfair treatment. It does this using a technique called <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>, which groups similar data points together (in a cluster). The tool doesn’t need information like gender, nationality, or ethnicity to find these patterns. Instead, it uses a `bias score` to measure deviations in the performace of the system, which you can choose based on your data.
 
 #### What results does it give?
-The tool finds groups (clusters) where performance of the algorithmic system is significantly deviating. It highlights the group with the worst `bias score` and creates a report called a bias analysis report, which you can download as a PDF. You can also download all the identified groups (clusters) in a .json file. Additionally, the tool provides visual summaries of the results, helping experts dive deeper into the identified deviations. Example below ⬇️.
+The tool finds groups (clusters) where performance of the algorithmic system is significantly deviating. It highlights the group with the worst `bias score` and creates a report called a bias analysis report, which you can download as a PDF. You can also download all the identified groups (clusters) in a .json file. Additionally, the tool provides visual summaries of the results, helping experts dive deeper into the identified deviations. Example below. {{< tooltip tooltip_content="The figure below shows that cluster 0, the cluster with highest bias score, includes a higher-than-average proportion of African-American and a lower-than-average proportion of Caucasian people. For other demographic groups, cluster 0 reflects an average distribution. Additional details about this example are available in the demo dataset." >}}
 
 <div style="margin-bottom:50px; display: flex; justify-content: center;">
   <img src="/images/BDT/example_COMPAS.png" alt="drawing" width="600px"/>
@@ -178,7 +178,7 @@ The HBAC algorithm maximizes the difference in the bias score between clusters. 
 
 <!-- Web app -->
 
-{{< iframe title="Web app – Unsupervised bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-only-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=en" height="770px" >}}
+{{< iframe title="Web app – Unsupervised bias detection tool" icon="fas fa-cloud" id="web-app" src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/bias-detection.html?lang=en" height="770px" >}}
 
 <!-- Promo bar -->
 
