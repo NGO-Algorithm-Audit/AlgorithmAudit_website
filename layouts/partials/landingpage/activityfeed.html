@@ -1,12 +1,11 @@
 <!-- Activity Feed -->
 {{ with .Params.Activity_Feed}}
 {{ if .enable }}
-<section class="activitifeed-section mt-5" id="activityfeed">
+<section class="activitifeed-section mt-5" id="featured">
   <div class="container" style="background-color:#deecf7;">
-    <div class="row align-items-center border-gradient2">
+    <div class="row align-items-center">
 
-      <!-- desktop version -->
-      <div class="mx-4 col order-1 desktop">
+      <div class="mx-4 col order-1">
 
         <!-- Featured activities -->
         {{ if .featured_activities }}
@@ -21,12 +20,12 @@
           <div class="row justify-content-between clickable-wrapper p-5" style="background-color: #ffffff;">
 
             <!-- image -->
-            <div class="col-3 pr-4">
-              <img class="featured-img" src="{{.image}}" />
+            <div class="col-lg-3 col-12 pr-4">
+              <img class="featured-img img-fluid d-block mx-auto mb-5 mb-lg-0" src="{{.image}}" />
             </div>
             <!-- /image -->
 
-            <div class="col-9">
+            <div class="col-lg-9 col-12">
               <div class="row align-items-center">
 
                 <!-- title featured article -->
@@ -44,12 +43,12 @@
               <!-- metadata -->
               <div class="row" style="position:relative;">
                 {{ if .date }}
-                <span style="color:#005aa7;" class="mr-1 mb-2 px-1 py-1 mx-0">
+                <span class="highlight-red">
                   {{.date }}
                 </span>
                 {{ end }}
                 {{ if .type }}
-                <span style="background-color: #005aa7; color: #ffffff;" class="mr-1 mb-2 px-2 py-1 mx-2">
+                <span class="highlight-red">
                   {{ .type }}
                 </span>
                 {{ end }}
@@ -73,17 +72,17 @@
         {{ range .activities }}
         <a href="{{ .link | relURL }}">
 
-          <div class="row justify-content-between mb-4">
+          <div class="row justify-content-between mb-lg-4 my-4 my-lg-0">
 
             <!-- image -->
-            <div class="col-2 mr-4 box p-0 mt-0" style="background-color: #ffffff;">
-              <img class="img-fluid about-img p-3" src="{{.image}}" />
+            <div class="col-12 col-lg-3 pt-5 p-lg-0 bg-white landinge-page-activityfeed-activity-image-wrapper">
+              <img class="img-fluid landinge-page-activityfeed-activity-image p-lg-5" src="{{.image}}" />
             </div>
             <!-- /image -->
 
             <!-- title -->
-            <div class="col" style="background-color: #ffffff;">
-              <div class="row align-items-center">
+            <div class="col-12 col-lg-9 py-5 bg-white">
+              <div class="px-3 row align-items-center">
                 <h4 class="my-4 ml-3 mr-5" style="color: #005aa7;">
                   {{.title}}
                 </h4>
@@ -91,14 +90,14 @@
               <!-- /title -->
 
               <!-- metadata -->
-              <div class="row" style="position: relative; bottom: 0;">
+              <div class="px-3 row" style="position: relative; bottom: 0;">
                 {{ if .date }}
-                <span style="color:#005aa7;" class="mr-1 mb-2 px-2 py-1 ml-2">
+                <span class="ml-3 highlight-red-sm">
                   {{.date }}
                 </span>
                 {{ end }}
                 {{ if .type }}
-                <span style="background-color: #005aa7; color: #ffffff;" class="mb-2 px-2 py-1">
+                <span class="ml-3 highlight-red-sm">
                   {{ .type }}
                 </span>
                 {{ end }}
@@ -119,108 +118,6 @@
 
 
       </div>
-      <!-- /desktop version -->
-
-      <!-- mobile version -->
-      <div class="mx-4 col order-1 mobile">
-
-        <!-- Featured activities -->
-        {{ if .featured_activities }}
-        <div class="row mt-5">
-          <h3 class="section-title" style="color:#005aa7;">{{ i18n "featured" }}</h3>
-        </div>
-        {{ range .featured_activities }}
-        <a class="" href="{{.link | relURL }}">
-          <div class="row justify-content-between clickable-wrapper row p-5" style="background-color: #ffffff;">
-            <div class="col-12 pr-4" style="margin-bottom:50px;">
-              <img class="img-fluid about-img-mobile" src="{{.image}}" />
-            </div>
-            <div class="col-12">
-              <div class="row align-items-center">
-
-                <!-- title -->
-                <h4 class="mb-2" style="color:#005aa7;">{{.title}}</h4>
-                <!-- /title -->
-
-                <!-- intro text -->
-                <p style="color: #777;">
-                  {{.intro | markdownify}}
-                  <span style="color: #005aa7;">{{ i18n "read_more" }}</span>
-                </p>
-                <!-- intro text -->
-              </div>
-
-              <!-- metadata -->
-              <div class="row" style="position:relative;">
-                {{ if .date }}
-                <span style="color:#005aa7;" class="mr-1 mt-1 px-0 py-1 mx-0">
-                  {{.date }}
-                </span>
-                {{ end }}
-                {{ if .type }}
-                <span class="highlight-blue">
-                  {{ .type }}
-                </span>
-                {{ end }}
-              </div>
-              <!-- /metadata -->
-
-            </div>
-          </div>
-        </a>
-        {{end}}
-        {{end}}
-        <!-- /Featured Activities -->
-
-        <!-- Activities -->
-        {{ if .activities }}
-        <div class="row mt-5">
-
-          <!-- title -->
-          <h3 class="section-title" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
-          <!-- /title -->
-
-        </div>
-        {{ range .activities }}
-        <a href="{{ .link | relURL }}">
-          <div class="row my-4">
-            <div class="col-12" style="background-color: #ffffff;">
-              <img class="img-fluid about-img-mobile p-5" src="{{.image}}" />
-            </div>
-            <div class="col-12" style="background-color: #ffffff;">
-              <div class="row align-items-center p-3">
-                <h4 class="my-4 mx-3" style="color: #005aa7;">
-                  {{.title}}
-                </h4>
-              </div>
-              <div class="row pl-4 mb-3" style="position:relative; bottom:0;">
-                {{ if .date }}
-                <span style="color:#005aa7;" class="mr-1 mt-1 px-2 py-1 mx-1">
-                  {{.date }}
-                </span>
-                {{ end }}
-                {{ if .type }}
-                <span class="highlight-blue">
-                  {{ .type }}
-                </span>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-        </a>
-        {{end}}
-        {{end}}
-        <!-- /Activities -->
-
-        <!-- More -->
-        <div class="row mt-4 pb-3 justify-content-center d-flex">
-          <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
-        </div>
-        <!-- /More -->
-
-
-      </div>
-      <!-- /mobile version -->
 
     </div>
   </div>

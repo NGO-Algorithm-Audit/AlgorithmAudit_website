@@ -427,6 +427,16 @@
     z-index: 20;
     position: relative;
 }
+.landinge-page-activityfeed-activity-image-wrapper {
+    @media (max-width: 992px) {
+        height: 200px;
+    }
+}
+.landinge-page-activityfeed-activity-image {
+  margin: auto;
+  max-height: 100%;
+  display: block;
+}
 
 .landing-page-about {
     margin-top: 7rem;
