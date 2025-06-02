@@ -67,17 +67,17 @@ Activity_Feed:
       image: /images/events/eth-zurich.jpg
       date: 23-05-2025
       type: event
+    - title: Paneldiscussie CPDP'25
+      link: /nl/events/activities/#events
+      image: /images/events/cpdp-logo-2025.svg
+      date: 21-05-2025
+      type: paneldiscussie
     - title: >-
         Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
       link: /nl/events/activities/#events
       image: /images/events/RUG.png
       date: 06-05-2025
       type: event
-    - title: Paneldiscussie Autoriteit Persoonsgegevens
-      link: /nl/events/activities/#events
-      image: /images/events/dutch-data-protection.jpg
-      date: 26-03-2025
-      type: paneldiscussie
 Supported_by:
   title: Samenwerking met
   funders:
