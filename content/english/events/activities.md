@@ -43,6 +43,30 @@ events:
         hide: true
       - value: type_presentation
         label: presentation
+  - title: Panel discussion CPDP 2025
+    description: >
+      Panel discussion on 'Empirical methods for fairer AI – Lessons from auditing a Dutch public sector risk profiling algorithm' with Marie Beth van Egmond (Dutch DPA), Carlos Mougan (Europe’s AI Office), Prof Brent Mittelstadt (Oxford Internet Institute) and Ylja Remmits (Algorithm Audit).
+
+      * To what extent should a state collect sensitive data attributes, such as ethnicity and race, about its inhabitants?
+
+      * Why do quantitative insights relating to the proxy nature of profiling characteristics matter?
+
+      * What hinders the widespread adoption of empirical methods for testing bias in algorithmic systems?
+
+      * Does bias testing inevitably lead to the feared ‘battle of numbers’, or could it play a crucial role for establishing meaningful democratic oversight of AI?
+
+      ![](</images/events/20250521_CPDP25.jpeg>)
+    image: /images/events/cpdp-logo-2025.svg
+    date: 21-05-2025
+    facets:
+      - value: year_2025
+        label: '2024'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_panel
+        label: panel discussion
   - title: Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
     description: >
       Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
