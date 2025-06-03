@@ -156,26 +156,10 @@ export default {
     {
       type: "object",
       name: "Activity_Feed",
-      label: "Activity Feed",
+      label: "Featured and recent items",
       fields: [
         {
-          type: "boolean",
-          name: "enable",
-          label: "Enable",
-          required: true,
-        },
-        {
-          label: "Button text",
-          type: "string",
-          name: "button_text",
-        },
-        {
-          label: "View all link",
-          type: "string",
-          name: "button_link",
-        },
-        {
-          label: "Featured Activities",
+          label: "Featured Items",
           type: "object",
           name: "featured_activities",
           list: true,
@@ -218,7 +202,17 @@ export default {
           ],
         },
         {
-          label: "Activities",
+          label: "View more featured button text",
+          type: "string",
+          name: "featured_button_text",
+        },
+        {
+          label: "View more featured link",
+          type: "string",
+          name: "featured_button_link",
+        },
+        {
+          label: "Items",
           type: "object",
           name: "activities",
           list: true,
@@ -253,6 +247,16 @@ export default {
               description: "tag",
             },
           ],
+        },
+        {
+          label: "View more items button text",
+          type: "string",
+          name: "items_button_text",
+        },
+        {
+          label: "View more items link",
+          type: "string",
+          name: "items_button_link",
         },
       ],
     },

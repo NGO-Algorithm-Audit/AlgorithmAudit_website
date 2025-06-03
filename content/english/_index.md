@@ -26,37 +26,48 @@ overview_block:
       subtitle: Statistical and legal expertise
       url: /knowledge-platform/
       icon: fa-light fa-layer-group
-      color: "#E3F0FE"
+      color: '#E3F0FE'
     - title: Algoprudence
       subtitle: Case-based normative advice
       url: /algoprudence/
       icon: fa-light fa-scale-balanced
-      color: "#F7CDBF"
+      color: '#F7CDBF'
     - title: Technical tools
       subtitle: Open source AI auditing tools
       url: /technical-tools/
       icon: fa-light fa-toolbox
-      color: "#FFFDE4"
+      color: '#FFFDE4'
     - title: Project work
-      subtitle: Validation, AI Act etc.
+      subtitle: 'Validation, AI Act etc.'
       url: /knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
-      color: "#E3F0FE"
+      color: '#E3F0FE'
 About:
   content: >
-    Who decides on the algorithms that shape our daily lives? We believe this belongs to all of us. Our team of data scientists, lawyers, and ethicists tackles value-based questions at the heart of AI. As a knowledge platform, we bridge the gap between policy initiatives, academic insights and case-based experience. Through open-source tools, independent validation and advice, we translate knowledge into action. Connect with us to make responsible AI a shared effort.
+    Who decides on the algorithms that shape our daily lives? We believe this
+    belongs to all of us. Our team of data scientists, lawyers, and ethicists
+    tackles value-based questions at the heart of AI. As a knowledge platform,
+    we bridge the gap between policy initiatives, academic insights and
+    case-based experience. Through open-source tools, independent validation and
+    advice, we translate knowledge into action. Connect with us to make
+    responsible AI a shared effort.
 Activity_Feed:
-  enable: true
-  button_text: View more...
-  button_link: /events/activities/#events
   featured_activities:
-    - title: Public standard 'Meaningful human intervention for risk profiling algorithms'
+    - title: >-
+        Public standard 'Meaningful human intervention for risk profiling
+        algorithms'
       intro: >
-        Step-by-step guide to prevent prohibited automated decision-making solely based on profilings, as stated in Article 22 GDPR. Based on case-based experiences with risk profiling algorithms and aligned with recent literature.
-      link: /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
+        Step-by-step guide to prevent prohibited automated decision-making
+        solely based on profilings, as stated in Article 22 GDPR. Based on
+        case-based experiences with risk profiling algorithms and aligned with
+        recent literature.
+      link: >-
+        /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
       date: 15-05-2025
       type: public standard
+  featured_button_text: More items
+  featured_button_link: /knowledge-platform/knowledge-base/
   activities:
     - title: Guest lecture 'Fairness and Algorithms' ETH Zürich
       link: /events/activities/#events
@@ -69,41 +80,44 @@ Activity_Feed:
       date: 21-05-2025
       type: panel discussion
     - title: >-
-        Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
+        Masterclass 'From data to decision', Jantina Tammes School of Digital
+        Society, Technology and AI University of Groningen
       link: /events/activities/#events
       image: /images/events/RUG.png
       date: 06-05-2025
       type: event
+  items_button_text: More events
+  items_button_link: /events/activities/
 Supported_by:
   title: Collaborating with
   funders:
     - image: /images/supported_by/sidn.png
-      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
+      link: 'https://www.sidnfonds.nl/projecten/open-source-ai-auditing'
       alt_text: Foundation for Internet and Democracy Netherlands
     - image: /images/supported_by/EUAISFund.png
-      link: "https://europeanaifund.org/announcing-our-2022-open-call-grantees/"
+      link: 'https://europeanaifund.org/announcing-our-2022-open-call-grantees/'
       alt_text: European AI & Society Fund
     - image: /images/supported_by/BZK.jpg
       link: >-
         https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
       alt_text: Dutch Ministry of the Interior
     - image: /images/supported_by/HAI.png
-      link: "https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
+      link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
       alt_text: Stanford University Human-Centered Artificial Intelligence Lab
     - image: /images/supported_by/DUO.png
-      link: "https://duo.nl"
+      link: 'https://duo.nl'
       alt_text: Dutch Executive Agency for Education
     - image: /images/partners/NEN.svg
-      link: "https://www.nen.nl"
+      link: 'https://www.nen.nl'
       alt_text: Dutch standardisation institute
     - image: /images/partners/CEN.jpg
-      link: "https://www.cencenelec.eu"
-      alt_text: "Europees standardisation committee "
+      link: 'https://www.cencenelec.eu'
+      alt_text: 'Europees standardisation committee '
     - image: /images/events/Amsterdam.png
-      link: "https://www.amsterdam.nl"
+      link: 'https://www.amsterdam.nl'
       alt_text: Municipality of Amsterdam
     - image: /images/supported_by/CoE.png
-      link: "https://www.coe.int/en/web/portal/home"
+      link: 'https://www.coe.int/en/web/portal/home'
       alt_text: Council of Europe
 Building_ai_audit_capacity:
   lines:
@@ -186,7 +200,7 @@ Areas_of_AI_expertise:
 Recent_audits:
   title: Recent audits
   feature_item:
-    - name: "Risk Profiling Social Welfare Re-examination "
+    - name: 'Risk Profiling Social Welfare Re-examination '
       image: /images/reports/front_AA202302A.png
       link: >-
         /algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
@@ -264,3 +278,4 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
+
