@@ -20,17 +20,6 @@ export default {
       required: true,
       fields: [
         {
-          label: "Image",
-          type: "image",
-          name: "image",
-        },
-        {
-          label: "tag",
-          type: "string",
-          name: "tag",
-          required: true,
-        },
-        {
           name: "title_line1",
           type: "string",
           label: "title line 1",
@@ -138,7 +127,6 @@ export default {
         },
       ],
     },
-    overview_block,
     {
       type: "object",
       name: "About",
@@ -152,6 +140,7 @@ export default {
         },
       ],
     },
+    overview_block,
     // Activity feed
     {
       type: "object",
@@ -260,147 +249,6 @@ export default {
         },
       ],
     },
-    // Supported by
-    {
-      type: "object",
-      name: "Supported_by",
-      label: "Supported by",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-          required: true,
-        },
-        {
-          type: "object",
-          name: "funders",
-          label: "Funders",
-          list: true,
-          fields: [
-            {
-              label: "Image",
-              type: "image",
-              name: "image",
-            },
-            {
-              label: "Link",
-              type: "string",
-              name: "link",
-            },
-            {
-              label: "Alt-text",
-              type: "string",
-              name: "alt_text",
-            },
-          ],
-        },
-      ],
-    },
-    // Slogan
-    {
-      type: "object",
-      name: "Building_ai_audit_capacity",
-      label: "Building AI audit capacity",
-      fields: [
-        {
-          type: "object",
-          name: "lines",
-          label: "Lines",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "text_before",
-              label: "Text before",
-              required: true,
-            },
-            {
-              type: "string",
-              label: "Highlighted text",
-              name: "text_highlighted",
-            },
-            {
-              type: "string",
-              label: "Text after",
-              name: "text_after",
-            },
-            {
-              type: "string",
-              label: "Highlighted text #2",
-              name: "text_highlighted2",
-            },
-          ],
-        },
-      ],
-    },
-    // Distinctive in
-    {
-      type: "object",
-      name: "Distinctive_in",
-      label: "Distinctive in",
-      fields: [
-        {
-          type: "boolean",
-          name: "enable",
-          label: "Enable",
-          required: true,
-        },
-        {
-          type: "string",
-          name: "title",
-          label: "Enable",
-          required: true,
-        },
-        {
-          type: "number",
-          name: "width_m",
-          label: "Width medium screens (12 is the maximum)",
-          description: "Divide the number of articles per row by 12",
-          required: true,
-        },
-        {
-          type: "number",
-          name: "width_s",
-          label: "Width small screens (12 is the maximum)",
-          description: "Divide the number of articles per row by 12",
-          required: true,
-        },
-        {
-          type: "object",
-          name: "feature_item",
-          label: "Featured Items",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "name",
-              label: "Name",
-              required: true,
-            },
-            {
-              type: "string",
-              name: "icon",
-              label: "Icon",
-              required: true,
-            },
-            {
-              type: "rich-text",
-              name: "content",
-              label: "Content",
-              isBody: true,
-            },
-          ],
-        },
-      ],
-      defaultItem: () => {
-        return {
-          width_m: 4,
-          width_s: 2,
-          width_xs: 1,
-        };
-      },
-    },
     // Areas of expertise
     {
       type: "object",
@@ -477,11 +325,11 @@ export default {
         };
       },
     },
-    // Recent audits
+    // Supported by
     {
       type: "object",
-      name: "Recent_audits",
-      label: "Recent audits",
+      name: "Supported_by",
+      label: "Supported by",
       fields: [
         {
           type: "string",
@@ -491,21 +339,14 @@ export default {
         },
         {
           type: "object",
-          name: "feature_item",
-          label: "Featured Items",
+          name: "funders",
+          label: "Funders",
           list: true,
           fields: [
             {
-              type: "string",
-              name: "name",
-              label: "Name",
-              required: true,
-            },
-            {
+              label: "Image",
               type: "image",
               name: "image",
-              label: "Image",
-              required: true,
             },
             {
               label: "Link",
@@ -513,120 +354,11 @@ export default {
               name: "link",
             },
             {
-              type: "rich-text",
-              name: "content",
-              label: "Content",
-              isBody: true,
+              label: "Alt-text",
+              type: "string",
+              name: "alt_text",
             },
           ],
-        },
-      ],
-    },
-    // How we build algoprudence
-    {
-      type: "object",
-      name: "Building_algoprudence",
-      label: "How we build algoprudence",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-        },
-        {
-          type: "string",
-          name: "button_text",
-          label: "Button text",
-        },
-        {
-          label: "Link",
-          type: "string",
-          name: "button_link",
-        },
-        {
-          type: "object",
-          name: "steps",
-          label: "Steps",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "title",
-              label: "Title",
-            },
-            {
-              type: "rich-text",
-              name: "content",
-              label: "Content",
-            },
-          ],
-        },
-      ],
-    },
-    // Advantages of algoprudence
-    {
-      type: "object",
-      name: "Advantages_of_algoprudence",
-      label: "Advantages of algoprudence",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-        },
-        {
-          type: "image",
-          name: "image",
-          label: "Image above button",
-        },
-        {
-          type: "string",
-          name: "button_text",
-          label: "Button text",
-        },
-        {
-          label: "Link",
-          type: "string",
-          name: "button_link",
-        },
-        {
-          type: "object",
-          name: "feature_item",
-          label: "Featured Items",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "name",
-              label: "Name",
-              required: true,
-            },
-            {
-              type: "string",
-              name: "icon",
-              label: "Icon",
-              required: true,
-            },
-            {
-              type: "rich-text",
-              name: "content",
-              label: "Content",
-              isBody: true,
-            },
-          ],
-        },
-      ],
-    },
-    // GIF algoprudence
-    {
-      type: "object",
-      name: "Title_gif",
-      label: "Title of gif",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
         },
       ],
     },
