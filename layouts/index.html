@@ -38,15 +38,15 @@
       {{if .width_s}}
       {{$width_s = .width_s}}
       {{end}}
-      {{ range .feature_item }}
-      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-blue">
+      {{ range $index, $item := .feature_item }}
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 {{if eq $index 0}}{{else}}border-left-blue{{end}}">
         <div class="feature-card-transparant">
-          <i class="{{.icon}} mb-3" style="font-size:22px;">
+          <i class="{{$item.icon}} mb-3" style="font-size:22px;">
             <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
-              {{ .name | markdownify }}
+              {{ $item.name | markdownify }}
             </h4>
           </i>
-          <p class="color-blue">{{ .content | markdownify }}</p>
+          <p class="color-blue">{{ $item.content | markdownify }}</p>
         </div>
       </div>
       {{ end }}
@@ -101,7 +101,6 @@
     </div>
     <!-- /Title -->
 
-    <!-- areas of AI expertise -->
 
     <!-- desktop version -->
     <div class="row justify-content-center desktop">
@@ -113,15 +112,15 @@
       {{if .width_s}}
       {{$width_s = .width_s}}
       {{end}}
-      {{ range .feature_item }}
-      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-blue">
+      {{ range $index, $item := .feature_item }}
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 {{if eq $index 0}}{{else}}border-left-blue{{end}}">
         <div class="feature-card-transparant">
-          <i class="{{.icon}} mb-3" style="font-size:22px;">
+          <i class="{{$item.icon}} mb-3" style="font-size:22px;">
             <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
-              {{ .name | markdownify }}
+              {{ $item.name | markdownify }}
             </h4>
           </i>
-          <p class="color-blue">{{ .content | markdownify }}</p>
+          <p class="color-blue">{{ $item.content | markdownify }}</p>
         </div>
       </div>
       {{ end }}
@@ -145,7 +144,6 @@
     </div>
     <!-- /mobile version -->
 
-    <!-- /areas of AI expertise -->
 
     <!-- Button -->
     <div class="row text-center">

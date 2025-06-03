@@ -33,22 +33,22 @@ overview_block:
       subtitle: Statistical and legal expertise
       url: /knowledge-platform/
       icon: fa-light fa-layer-group
-      color: '#E3F0FE'
+      color: "#E3F0FE"
     - title: Algoprudence
       subtitle: Case-based normative advice
       url: /algoprudence/
       icon: fa-light fa-scale-balanced
-      color: '#F7CDBF'
+      color: "#F7CDBF"
     - title: Technical tools
       subtitle: Open source AI auditing tools
       url: /technical-tools/
       icon: fa-light fa-toolbox
-      color: '#FFFDE4'
+      color: "#FFFDE4"
     - title: Project work
-      subtitle: 'Validation, AI Act etc.'
+      subtitle: "Validation, AI Act etc."
       url: /knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
-      color: '#E3F0FE'
+      color: "#E3F0FE"
 Activity_Feed:
   featured_title: Featured
   featured_activities:
@@ -89,7 +89,7 @@ Activity_Feed:
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:
-  title: AI expertise
+  title: Expertise
   enable: true
   width_m: 4
   width_s: 12
@@ -115,23 +115,6 @@ Areas_of_AI_expertise:
         Auditing rule-based and ML-driven profiling, e.g., differentiation
         policies, selection criteria, Z-testing, model validation and
         organizational aspects
-    - name: FP-FN balancing
-      icon: fa-solid fa-scale-balanced
-      content: >
-        Context-dependent review of ML and DL confusion matrix-based evaluation
-        metrics, such as False Positives (FPs) and False Negatives (FNs)
-    - name: Ranking
-      icon: fas fa-ranking-star
-      content: >
-        Recommender systems are everywhere. With the new Digital Services Act
-        (DSA) that came into force last summer, auditing ranking systems is
-        highly relevant
-    - name: Generative AI
-      icon: fas fa-robot
-      content: >
-        Auditing training process of foundation models, among others selection
-        of training data, human feedback for reinforcement learning and risk
-        management, according to AI Act standards
   button_text: Discuss collaboration
   button_link: /knowledge-platform/project-work/
 Distinctive_in:
@@ -163,32 +146,32 @@ Supported_by:
   title: Collaborating with
   funders:
     - image: /images/supported_by/sidn.png
-      link: 'https://www.sidnfonds.nl/projecten/open-source-ai-auditing'
+      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
       alt_text: Foundation for Internet and Democracy Netherlands
     - image: /images/supported_by/EUAISFund.png
-      link: 'https://europeanaifund.org/announcing-our-2022-open-call-grantees/'
+      link: "https://europeanaifund.org/announcing-our-2022-open-call-grantees/"
       alt_text: European AI & Society Fund
     - image: /images/supported_by/BZK.jpg
       link: >-
         https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
       alt_text: Dutch Ministry of the Interior
     - image: /images/supported_by/HAI.png
-      link: 'https://hai.stanford.edu/ai-audit-challenge-2023-finalists'
+      link: "https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
       alt_text: Stanford University Human-Centered Artificial Intelligence Lab
     - image: /images/supported_by/DUO.png
-      link: 'https://duo.nl'
+      link: "https://duo.nl"
       alt_text: Dutch Executive Agency for Education
     - image: /images/partners/NEN.svg
-      link: 'https://www.nen.nl'
+      link: "https://www.nen.nl"
       alt_text: Dutch standardisation institute
     - image: /images/partners/CEN.jpg
-      link: 'https://www.cencenelec.eu'
-      alt_text: 'Europees standardisation committee '
+      link: "https://www.cencenelec.eu"
+      alt_text: "Europees standardisation committee "
     - image: /images/events/Amsterdam.png
-      link: 'https://www.amsterdam.nl'
+      link: "https://www.amsterdam.nl"
       alt_text: Municipality of Amsterdam
     - image: /images/supported_by/CoE.png
-      link: 'https://www.coe.int/en/web/portal/home'
+      link: "https://www.coe.int/en/web/portal/home"
       alt_text: Council of Europe
   button_text: And more
   button_link: /funded-by
@@ -196,4 +179,3 @@ Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
-
