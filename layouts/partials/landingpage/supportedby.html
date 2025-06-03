@@ -13,7 +13,7 @@
       </div>
 
       {{ range .funders }}
-      <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 my-5 inner d-flex justify-content-center sponsor">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-5 inner d-flex justify-content-center sponsor">
         <a href="{{.link}}" target="_blank">
           <img src="{{ .image | relURL }}" style="max-height: 100px;" alt="{{.alt_text}}" class="img-fluid">
         </a>
@@ -21,6 +21,16 @@
       {{ end }}
     </div>
 
+
+    <!-- Button -->
+    <div class="row text-center">
+      <div class="col-12" style="margin-top:25px;">
+        <a class="btn-link" href="{{.button_link | relURL}}">
+          <h3 class="btn" style="color:#ffffff;">{{.button_text}}</h3>
+        </a>
+      </div>
+    </div>
+    <!-- /Button -->
   </div>
 </section>
 {{ end }}

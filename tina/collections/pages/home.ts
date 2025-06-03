@@ -253,7 +253,7 @@ export default {
     {
       type: "object",
       name: "Areas_of_AI_expertise",
-      label: "Areas of AI Expertise",
+      label: "Areas of Expertise",
       fields: [
         {
           type: "string",
@@ -282,6 +282,32 @@ export default {
           required: true,
         },
         {
+          type: "object",
+          name: "feature_item",
+          label: "Featured Items",
+          list: true,
+          fields: [
+            {
+              type: "string",
+              name: "name",
+              label: "Name",
+              required: true,
+            },
+            {
+              type: "string",
+              name: "icon",
+              label: "Icon",
+              required: true,
+            },
+            {
+              type: "rich-text",
+              name: "content",
+              label: "Content",
+              isBody: true,
+            },
+          ],
+        },
+        {
           type: "string",
           name: "button_text",
           label: "Button text",
@@ -290,6 +316,46 @@ export default {
           label: "Link",
           type: "string",
           name: "button_link",
+        },
+      ],
+      defaultItem: () => {
+        return {
+          width_m: 4,
+          width_s: 2,
+        };
+      },
+    },
+    // Distinctive in
+    {
+      type: "object",
+      name: "Distinctive_in",
+      label: "Distinctive in",
+      fields: [
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+          required: true,
+        },
+        {
+          type: "boolean",
+          name: "enable",
+          label: "Enable",
+          required: true,
+        },
+        {
+          type: "number",
+          name: "width_m",
+          label: "Width medium screens (12 is the maximum)",
+          description: "Divide the number of articles per row by 12",
+          required: true,
+        },
+        {
+          type: "number",
+          name: "width_s",
+          label: "Width small screens (12 is the maximum)",
+          description: "Divide the number of articles per row by 12",
+          required: true,
         },
         {
           type: "object",
@@ -316,6 +382,16 @@ export default {
               isBody: true,
             },
           ],
+        },
+        {
+          type: "string",
+          name: "button_text",
+          label: "Button text",
+        },
+        {
+          label: "Link",
+          type: "string",
+          name: "button_link",
         },
       ],
       defaultItem: () => {
@@ -359,6 +435,16 @@ export default {
               name: "alt_text",
             },
           ],
+        },
+        {
+          type: "string",
+          name: "button_text",
+          label: "Button text",
+        },
+        {
+          label: "Link",
+          type: "string",
+          name: "button_link",
         },
       ],
     },

@@ -12,16 +12,16 @@
 
 {{ partial "landingpage/activityfeed.html" . }}
 
-<!-- Areas of AI expertise -->
+<!-- Areas of expertise -->
 {{ with .Params.Areas_of_AI_expertise }}
 {{ if .enable }}
-<section class="section bg-white">
-  <div class="container">
+<section class="section color-blue">
+  <div class="container bg-white">
 
     <!-- Title -->
     <div class="row">
       <div class="col-12">
-        <h3 class="section-title" style="color: #005aa7;">{{ .title | markdownify }}</h3>
+        <h3 class="section-title color-blue">{{ .title | markdownify }}</h3>
       </div>
     </div>
     <!-- /Title -->
@@ -41,12 +41,12 @@
       {{ range .feature_item }}
       <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-blue">
         <div class="feature-card-transparant">
-          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
-            <h4 class="" style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+          <i class="{{.icon}} mb-3" style="font-size:22px;">
+            <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
               {{ .name | markdownify }}
             </h4>
           </i>
-          <p>{{ .content | markdownify }}</p>
+          <p class="color-blue">{{ .content | markdownify }}</p>
         </div>
       </div>
       {{ end }}
@@ -58,12 +58,12 @@
       {{ range .feature_item }}
       <div class="col-12 m-4 border-top-blue">
         <div class="feature-card-transparant">
-          <i class="{{.icon}} mb-3" style="color: #005aa7; display:inline-block; font-size:22px;">
-            <h4 style="color:#005aa7; display:inline-block; padding-left:10px; font-weight:100;">
+          <i class="{{.icon}} mb-3" style="font-size:22px;">
+            <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
               {{ .name | markdownify }}
             </h4>
           </i>
-          <p>{{ .content | markdownify }}</p>
+          <p class="color-blue">{{ .content | markdownify }}</p>
         </div>
       </div>
       {{ end }}
@@ -76,7 +76,7 @@
     <div class="row text-center">
       <div class="col-12" style="margin-top:25px;">
         <a class="btn-link" href="{{.button_link | relURL}}">
-          <h3 class="btn" style="color:#ffffff;">{{.button_text}}</h3>
+          <h3 class="btn color-white">{{.button_text}}</h3>
         </a>
       </div>
     </div>
@@ -85,7 +85,82 @@
 </section>
 {{end}}
 {{end}}
-<!-- /Areas of AI expertise -->
+<!-- /Areas of expertise -->
+
+<!-- Distinctive in -->
+{{ with .Params.Distinctive_in }}
+{{ if .enable }}
+<section class="section color-blue">
+  <div class="container bg-lightblue py-5">
+
+    <!-- Title -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title color-blue">{{ .title | markdownify }}</h3>
+      </div>
+    </div>
+    <!-- /Title -->
+
+    <!-- areas of AI expertise -->
+
+    <!-- desktop version -->
+    <div class="row justify-content-center desktop">
+      {{$width_m := 4}}
+      {{$width_s := 2}}
+      {{if .width_m}}
+      {{$width_m = .width_m}}
+      {{end}}
+      {{if .width_s}}
+      {{$width_s = .width_s}}
+      {{end}}
+      {{ range .feature_item }}
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-blue">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="font-size:22px;">
+            <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
+              {{ .name | markdownify }}
+            </h4>
+          </i>
+          <p class="color-blue">{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <!-- /desktop version -->
+
+    <!-- mobile version -->
+    <div class="row justify-content-center mobile">
+      {{ range .feature_item }}
+      <div class="col-12 m-4 border-top-blue">
+        <div class="feature-card-transparant">
+          <i class="{{.icon}} mb-3" style="font-size:22px;">
+            <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
+              {{ .name | markdownify }}
+            </h4>
+          </i>
+          <p class="color-blue">{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <!-- /mobile version -->
+
+    <!-- /areas of AI expertise -->
+
+    <!-- Button -->
+    <div class="row text-center">
+      <div class="col-12" style="margin-top:25px;">
+        <a class="btn-link" href="{{.button_link | relURL}}">
+          <h3 class="btn color-white">{{.button_text}}</h3>
+        </a>
+      </div>
+    </div>
+    <!-- /Button -->
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Distinctive in -->
 
 
 

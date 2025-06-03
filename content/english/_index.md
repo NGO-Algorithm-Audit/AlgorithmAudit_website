@@ -91,8 +91,6 @@ Areas_of_AI_expertise:
   enable: true
   width_m: 4
   width_s: 12
-  button_text: Discuss collaboration
-  button_link: /knowledge-platform/project-work/
   feature_item:
     - name: Algorithms for decision support
       icon: fas fa-divide
@@ -132,6 +130,34 @@ Areas_of_AI_expertise:
         Auditing training process of foundation models, among others selection
         of training data, human feedback for reinforcement learning and risk
         management, according to AI Act standards
+  button_text: Discuss collaboration
+  button_link: /knowledge-platform/project-work/
+Distinctive_in:
+  title: Distinctive in
+  enable: true
+  width_m: 4
+  width_s: 2
+  feature_item:
+    - name: Independence
+      icon: fas fa-star-of-life
+      content: >
+        By working nonprofit and under explicit terms and conditions, we ensure
+        the independence and quality of our audits and normative advice
+    - name: Normative advice
+      icon: fas fa-search
+      content: >
+        Mindful of societal impact our commissions provide normative advice on
+        ethical issues that arise in algorithmic use cases
+    - name: Public knowledge
+      icon: fab fa-slideshare
+      content: >
+        Audits and corresponding advice (*algoprudence*) are made <a
+        href="https://algorithmaudit.eu/algoprudence/"
+        style="text-decoration: underline;">publicly available</a>,
+        increasing collective knowledge how to deploy and use algorithms in an
+        responsible way
+  button_text: Project work
+  button_link: /knowledge-platform/project-work/
 Supported_by:
   title: Collaborating with
   funders:
@@ -163,6 +189,8 @@ Supported_by:
     - image: /images/supported_by/CoE.png
       link: "https://www.coe.int/en/web/portal/home"
       alt_text: Council of Europe
+  button_text: And more
+  button_link: /funded-by
 Title_video:
   title: The Movie
   video_mp4: /videos/AA_video_(1080p).mp4
