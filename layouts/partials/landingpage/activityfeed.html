@@ -8,7 +8,7 @@
         {{ if .featured_activities }}
         <div class="row mt-5">
           <!-- title featured section -->
-          <h3 class="section-title" style="color: #005aa7;">{{ i18n "featured" }}</h3>
+          <h3 class="section-title" style="color: #005aa7;">{{ .featured_title }}</h3>
           <!-- /title featured section -->
         </div>
 
@@ -68,6 +68,8 @@
   </div>
 </section>
 <!-- /Featured Activities -->
+
+<!-- Items -->
 <section class="activitifeed-section pt-5 mt-5" id="events">
   <div class="container" style="background-color:#deecf7;">
     <div class="row align-items-center">
@@ -76,7 +78,7 @@
         {{ if .activities }}
         <div class="row mt-5">
           <!-- title recent activities section -->
-          <h3 class="section-title" style="color: #005aa7;">{{ i18n "recent-activity" }}</h3>
+          <h3 class="section-title" style="color: #005aa7;">{{ .items_title }}</h3>
           <!-- /title recent activities section -->
         </div>
         {{ range .activities }}
@@ -132,5 +134,6 @@
     </div>
   </div>
 </section>
+<!-- /Items -->
 {{ end }}
 <!-- /Activity Feed -->

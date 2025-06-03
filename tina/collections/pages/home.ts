@@ -148,6 +148,13 @@ export default {
       label: "Featured and recent items",
       fields: [
         {
+          label: "Featured Title",
+          type: "string",
+          name: "featured_title",
+          isTitle: true,
+          required: true,
+        },
+        {
           label: "Featured Items",
           type: "object",
           name: "featured_activities",
@@ -199,6 +206,13 @@ export default {
           label: "View more featured link",
           type: "string",
           name: "featured_button_link",
+        },
+        {
+          label: "Items Title",
+          type: "string",
+          name: "items_title",
+          isTitle: true,
+          required: true,
         },
         {
           label: "Items",
