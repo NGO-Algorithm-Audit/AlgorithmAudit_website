@@ -12,8 +12,6 @@
 
 {{ partial "landingpage/activityfeed.html" . }}
 
-{{ partial "landingpage/supportedby.html" . }}
-
 <!-- Building AI auditing capacity from a not-for-profit perspective -->
 {{ if .Params.Building_ai_audit_capacity }}
 {{ with .Params.Building_ai_audit_capacity}}
@@ -453,6 +451,8 @@
 </section>
 {{ end }}
 <!-- /gif animation -->
+
+{{ partial "landingpage/supportedby.html" . }}
 
 <!-- Video -->
 {{ with .Params.Title_video }}
