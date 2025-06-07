@@ -163,6 +163,7 @@ Het *Hierarchisch Bias-Aware Clustering* (HBAC) algoritme identificeert clusters
 <div style="display: flex; justify-content: center;">
   <img src="/images/BDT/pseudo_code_HBAC.png" alt="drawing" width="800px"/>
 </div>
+
 Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkhya in een [wetenschappelijk artikel](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) gepubliceerd in *Information Processing and Management* (2021). Onze implementatie van het HBAC-algoritme bouwt hierop voort door aanvullende methodologische checks toe te voegen om echte signalen van ruis te onderscheiden, zoals sample splitting, het statistisch toetsen van hypotheses en het meten van clusterstabiliteit. De implementatie van het algoritme door Algorithm Audit is te vinden in het <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">unsupervised-bias-detection</a> pip package.
 
 #### Hoe moeten de resultaten van de tool worden geïnterpreteerd?
