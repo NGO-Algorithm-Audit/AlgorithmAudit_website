@@ -2,6 +2,7 @@
  * @type {import('tinacms').TinaField}
  */
 import { TinaField } from "tinacms";
+import title from "./title";
 import url from "./url";
 
 const quick_navigation: TinaField = {
@@ -28,13 +29,15 @@ const quick_navigation: TinaField = {
         },
       },
       fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-          required: true,
-        },
+        title,
         url,
+        {
+          type: "number",
+          name: "indent",
+          label: "Indent",
+          description: "Indent level for the link, 0 is the default",
+          required: false,
+        },
       ],
     },
   ],

@@ -1,7 +1,9 @@
 ---
 title: Unsupervised bias detection tool
 subtitle: >
-  A statistical tool that identifies groups where an AI system or algorithm shows deviating performance, potentially indicating unfair treatment. The tool informs which disparities need to be examimed manually by domain experts.
+  A statistical tool that identifies groups where an AI system or algorithm
+  shows deviating performance, potentially indicating unfair treatment. The tool
+  informs which disparities need to be examimed manually by domain experts.
 image: /images/svg-illustrations/illustration_cases.svg
 quick_navigation:
   title: Content overview
@@ -10,6 +12,7 @@ quick_navigation:
       url: '#info'
     - title: Web app
       url: '#web-app'
+      indent: 1
     - title: Source code
       url: '#source-code'
     - title: Scientific paper and audit report
@@ -99,9 +102,11 @@ type: bias-detection-tool
 <br>
 
 #### What does the tool do?
+
 The tool helps find groups where an AI system or algorithm performs differently, which could indicate unfair treatment. It does this using a technique called <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>, which groups similar data points together (in a cluster). The tool doesn’t need information like gender, nationality, or ethnicity to find these patterns. Instead, it uses a `bias score` to measure deviations in the performace of the system, which you can choose based on your data.
 
 #### What results does it give?
+
 The tool finds groups (clusters) where performance of the algorithmic system is significantly deviating. It highlights the group with the worst `bias score` and creates a report called a bias analysis report, which you can download as a PDF. You can also download all the identified groups (clusters) in a .json file. Additionally, the tool provides visual summaries of the results, helping experts dive deeper into the identified deviations. Example below. {{< tooltip tooltip_content="The figure below shows that cluster 0, the cluster with highest bias score, includes a higher-than-average proportion of African-American and a lower-than-average proportion of Caucasian people. For other demographic groups, cluster 0 reflects an average distribution. Additional details about this example are available in the demo dataset." >}}
 
 <div style="margin-bottom:50px; display: flex; justify-content: center;">
@@ -109,6 +114,7 @@ The tool finds groups (clusters) where performance of the algorithmic system is 
 </div>
 
 #### What kind of data does it work with?
+
 The tool works with data in a table format, consisting solely of numbers or categories. You just need to pick one column in the data to use as the `bias score`. This column should have numbers only, and you’ll specify whether a higher or lower number is better. For example, if you’re looking at error rates, lower numbers are better. For accuracy, higher numbers are better. The tool also comes with a demo dataset you can use by clicking "Try it out."
 
 <div>
@@ -131,6 +137,7 @@ The tool works with data in a table format, consisting solely of numbers or cate
 <br>
 
 #### Is my data safe?
+
 Yes! Your data stays on your computer and never leaves your organization’s environment. The tool runs directly in your browser, using your computer’s power to analyze the data. This setup, called 'local-only', ensures no data is sent to cloud providers or third parties. Instructions for hosting the tool securely within your organization are available on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
 Try the tool below ⬇️
@@ -144,14 +151,17 @@ Try the tool below ⬇️
 <br>
 
 #### Which steps does the tool undertake?
+
 The unsupervised bias detection tool operates a series of steps:
 
 ##### Prepared by the user:
+
 <span style="color:#005AA7">1. Dataset:</span> The data must be provided in a tabular format. All columns, except the bias score column, should have uniform data types, e.g., either all numerical or all categorical. The bias score column must be numerical. Any missing values should be removed or replaced. The dataset should then be divided into training and testing subset, following a 80-20 ratio.
 
 <span style="color:#005AA7">2. bias score:</span> The user selects one column from the dataset to serve as the `bias score`. In step 3, clustering will be performed based on this chosen `bias score`. The chosen bias score must be numerical. Examples include metrics such as "being classified as high risk", "error rate" or "selected for an investigation".
 
 ##### Performed by the tool:
+
 <span style="color:#005AA7">3. Hierarchical Bias-Aware Clustering (HBAC):</span> The HBAC algorithm (detailed below) is applied to the training dataset. The centroids of the resulting clusters are saved and later used to assign cluster labels to data points in the test dataset.
 
 <span style="color:#005AA7">4. Testing differences in bias score:</span> Statistical hypothesis testing is performed to evaluate whether the most deviating cluster contains significantly more bias compared to the rest of the dataset. A two-sample t-test is used to compare the bias scores between clusters. For multiple hypothesis testing, Bonferonni correction should be applied. Further details can are available in our [scientific paper](/technical-tools/bdt/#scientific-paper).
@@ -163,6 +173,7 @@ A schematic overview of the above steps is depicted below.
 </div>
 
 #### How does the clustering algorithm work?
+
 The *Hierarchical Bias-Aware Clustering* (HBAC) algorithm identifies clusters in the provided dataset based on a user-defined `bias score`. The objective is to find clusters with low variation in the bias score within each cluster and significant variation between clusters. HBAC iteratively finds clusters in the data using k-means (for numerical data) or k-modes clustering (for categorical data).  For the initial split, HBAC takes the full dataset and splits it in two clusters. Cluster `C` – with the highest standard deviation of the bias score – is selected. Then, cluster `C` is divided into two candidate clusters `C'` and `C''`'. If the average bias score in either candidate cluster exceed the the average bias score in `C`, the candidate cluster with highest bias score is selected as a new cluster. This process repeats until the maximum number of iterations (`max_iterations`) is reached or the resulting cluster fails to meet the minimum size requirement (`n_min`). The pseudo-code of the HBAC algorithm is provided below.
 
 <div style="display: flex; justify-content: center;">
@@ -172,7 +183,8 @@ The *Hierarchical Bias-Aware Clustering* (HBAC) algorithm identifies clusters in
 The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientific article](https://www.sciencedirect.com/science/article/abs/pii/S0306457321000285) as published in *Information Processing and Management* in 2021. Our implementation of the HBAC-algorithm advances this implementation by proposing additional methodological checks to distinguish real bias from noise, such as sample splitting, statistical hypothesis testing and measuring cluster stability. Algorithm Audit's implementation of the algorithm can be found in the <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection/blob/master/README.md" target="_blank">unsupervised-bias-detection</a> pip package.
 
 #### How should the results of the tool be interpreted?
-The HBAC algorithm maximizes the difference in the bias score between clusters. To prevent incorrect conclusions that there is bias in the decision-making process under review when there truly is none, we split the dataset in training and test data, and hypothesis testing prevents us from (wrongly) concluding that there is a difference in the bias score while there is none. If statistically significant bias is detected, the outcome of the tool serves as a starting point for human experts to assess potential discrimination in the decision-making processes. 
+
+The HBAC algorithm maximizes the difference in the bias score between clusters. To prevent incorrect conclusions that there is bias in the decision-making process under review when there truly is none, we split the dataset in training and test data, and hypothesis testing prevents us from (wrongly) concluding that there is a difference in the bias score while there is none. If statistically significant bias is detected, the outcome of the tool serves as a starting point for human experts to assess potential discrimination in the decision-making processes.
 
 {{< container_close >}}
 
@@ -189,7 +201,6 @@ The HBAC algorithm maximizes the difference in the bias score between clusters. 
 {{< container_open title="Source code" id="source-code" icon="fas fa-toolbox" >}}
 
 * The source code of the anolamy detection-algorithm is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`.
-
 * The architecture to run web apps local-only is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
 {{< container_close >}}
@@ -211,6 +222,7 @@ The unsupervised bias detection tool has been applied in practice to audit a Dut
 <br>
 
 #### What is local-only?
+
 local-only computing is the opposite of cloud computing: the data is not uploaded to third-parties, such as a cloud providers, but is processed by your own computer. The data attached to the tool therefore doesn't leave your computer or the environment of your organization. The tool is privacy-friendly because the data can be processed within the mandate of your organisation and doesn't need to be shared with new parties. The unsupervised bias detection tool can also be hosted locally within your organization. Instructions, including the source code or the web app, can be found on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
 #### Overview of local-only architecture

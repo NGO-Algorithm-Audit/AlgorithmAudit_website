@@ -37,11 +37,17 @@
             <h3>{{.Params.quick_navigation.title}}</h3>
             <ul>
               {{ range .Params.quick_navigation.links }}
-              <li class="quick_navigation_li d-flex align-items-center mb-0">
-                <a href='{{.url}}' class="highlight-potential-sm d-inline-block ml-3">
-                  {{.title}}
-                </a>
-              </li>
+                {{ range $index, $num := (seq .indent) }}
+                  <div class="ml-4">
+                {{ end }}
+                  <li class="quick_navigation_li d-flex align-items-center mb-0">
+                    <a href='{{.url}}' class="highlight-potential-sm d-inline-block ml-3">
+                      {{.title}}
+                    </a>
+                  </li>
+                {{ range $index, $num := (seq .indent) }}
+                  </div>
+                {{ end }}
               {{ end }}
             </ul>
           </div>
