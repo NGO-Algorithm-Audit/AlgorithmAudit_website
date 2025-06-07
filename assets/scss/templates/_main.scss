@@ -79,7 +79,7 @@ input[type="checkbox"] {
 
     // gradient
     border-bottom: 5px solid transparent;
-    border-image: linear-gradient(to left, #618EC7, #fffde4);
+    border-image: linear-gradient(to left, #ffcbbd, #fffde4);
     border-image-slice: 1;
     width:100%;
   }
@@ -91,7 +91,7 @@ input[type="checkbox"] {
 
     // gradient
     border-bottom: 5px solid transparent;
-    border-image: linear-gradient(to left, #618EC7, #fffde4);
+    border-image: linear-gradient(to left, #ffcbbd, #fffde4);
     border-image-slice: 1;
     width:100%;
   }
@@ -151,7 +151,7 @@ input[type="checkbox"] {
 
     // gradient
     border-bottom: 5px solid transparent;
-    border-image: linear-gradient(to left, #618EC7, #fffde4);
+    border-image: linear-gradient(to left, #ffcbbd, #fffde4);
     border-image-slice: 1;
     width:100%;
   }
@@ -163,7 +163,7 @@ input[type="checkbox"] {
 
     // gradient
     border-bottom: 5px solid transparent;
-    border-image: linear-gradient(to left, #618EC7, #fffde4);
+    border-image: linear-gradient(to left, #ffcbbd, #fffde4);
     border-image-slice: 1;
     width:100%;
   }
@@ -809,9 +809,8 @@ padding: 20px 0px 0px 0px;
 
 .border-gradient {
   box-sizing: border-box;
-  border-width: 12px 0 0 0;
+  border-width: 8px 0 0 0;
   border-style: solid;
-  background-color:lightcoral;
   margin: 0px;
 }
 
