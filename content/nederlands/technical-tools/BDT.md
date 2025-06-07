@@ -154,7 +154,7 @@ De unsupervised bias detectie tool voert de volgende stappen uit:
 Een schematisch overzicht van bovenstaande stappen wordt hieronder weergegeven.
 
 <div style="margin-bottom:50px; display: flex; justify-content: center;">
-  <img src="/images/BDT/Overview_tool EN.png" alt="drawing" width="800px"/>
+  <img src="/images/BDT/Overview_tool NL.png" alt="drawing" width="800px"/>
 </div>
 
 #### Hoe werkt het clustering algoritme?
