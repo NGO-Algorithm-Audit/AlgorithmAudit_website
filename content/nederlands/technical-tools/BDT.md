@@ -187,7 +187,7 @@ Het HBAC-algoritme maximaliseert het verschil in uitkomstlabels tussen clusters.
 - De broncode van unsupervised bias detectie door middel van het HBAC-algoritme is beschikbaar op <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> en als <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`. 
 [![!pypi](https://img.shields.io/pypi/v/unsupervised-bias-detection?logo=pypi\&color=blue)](https://pypi.org/project/unsupervised-bias-detection/)
 
-- De achitectuur om web apps local-first te gebruiken is ook beschikbaar op <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
+- De achitectuur om web apps local-only te gebruiken is ook beschikbaar op <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 {{< container_close >}}
 
