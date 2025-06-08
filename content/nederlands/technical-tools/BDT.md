@@ -108,11 +108,6 @@ De tool verwerkt data in tabel-formaat, dat enkel  uit numerieke of categorische
 </div>
 <br>
 
-#### Overzicht van proces
-<div style="margin-bottom:50px; display: flex; justify-content: center;">
-  <img src="/images/BDT/overview_tool NL.png" alt="drawing" width="600px"/>
-</div>
-
 #### Is mijn data veilig?
 Ja! Je data blijft op je eigen computer en verlaat de omgeving van je organisatie niet. De tool werkt in je browser en gebruikt de rekenkracht van je lokla apparaat om de data te analyseren. Deze aanpak, ‘local-only’ genoemd, zorgt ervoor dat er geen data met cloudproviders of anderen wordt gedeeld. Meer informatie over deze local-only architectuur vind je [hieronder](/nl/technical-tools/bdt/#local-only). Instructies om local-only tools binnen je organisatie te hosten zijn te vinden op <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
