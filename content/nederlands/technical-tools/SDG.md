@@ -2,7 +2,7 @@
 type: regular
 title: Synthetische data generatie tool
 subtitle: >
-  Local-first tool voor het genereren van synthetische data. De tool genereert automatisch een evaluatierapport om de kwaliteit van de gegenereerde data te beoordelen. Alle data worden lokaal verwerkt zonder gebruik te maken van cloud-toepassingen.
+  Tool voor het genereren van synthetische data. De tool genereert automatisch een evaluatierapport om de kwaliteit van de gegenereerde data te beoordelen. Alle data worden lokaal verwerkt zonder gebruik te maken van cloud-toepassingen.
 image: /images/svg-illustrations/knowledge_base.svg
 team:
   title: Synthetische data generatioe team
@@ -31,7 +31,10 @@ quick_navigation:
   links:
     - title: Introductie
       url: '#info'
-    - title: Tool
+    - title: Technical introduction
+      url: '#technical-introduction'
+      indent: 1
+    - title: Web app
       url: '#web-app'
     - title: Broncode
       url: '#source-code'
@@ -48,6 +51,20 @@ quick_navigation:
     - title: Team
       url: '#team'
 ---
+
+<!-- Promobar -->
+
+<div id={{.Get "id" }} class="container-fluid mt-0 p-0">
+    <div class="shadow bg-lightblue">
+        <div class="row promobar-mobile-desktop-layout">
+            <div class="col-12 flex justify-center items-center px-5">
+                <!-- Content -->
+                <span class="mr-3" style="font-size:16px; color:#005aa7;">
+                    <b>👋 Wil je de tool ook lokaal gebruiken? Dat is gemakkelijker dan je denkt! Kom in <u><a href="/nl/about/contact/" >contact</a></u> voor meer informatie.</b>    </span>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -77,6 +94,65 @@ De tool genereert synthetische data. Een evaluatierapport van de gegenereerde da
 De tool is privacyvriendelijk omdat de data volledig binnen de browser worden verwerkt. De data verlaat uw computer of de omgeving van uw organisatie niet. De tool maakt gebruik van de rekenkracht van uw eigen computer om de data te analyseren. Dit type browsergebaseerde software wordt aangeduid als [*local-first*](/technical-tools/sdg/#local-first). De tool uploadt geen data naar derden, zoals cloudproviders. Instructies over hoe de tool en de local-first architectuur lokaal binnen uw eigen organisatie kunnen worden gebruikt, zijn te vinden op <a href="https://github.com/NGO-Algorithm-Audit/local-first-web-tool" target="_blank">Github</a>.
 
 Probeer de tool hieronder uit ⬇️
+
+{{< container_close >}}
+
+
+
+<!-- Technische details -->
+
+{{< container_open isAccordion="true" title="Technische details – Synthetic data generation" id="technical-introduction" >}}
+
+<br>
+De tool voor synthetische datageneratie doorloopt de volgende stappen:
+
+#### Benodigdheden van de gebruiker:
+De gebruiker dient de volgende aspecten van de te verwerken data voor te bereiden:
+- <span style="color:#005AA7">Dataset:</span> Categorie-, numerieke of tijdsdata.
+- <span style="color:#005AA7">Methode:</span> Standaard wordt de CART-methode gebruikt om synthetische data te genereren. CART levert doorgaans synthetische data van hoge kwaliteit, maar werkt mogelijk minder goed bij datasets met categorische variabelen met meer dan 20 categorieën. Gebruik in dat geval Gaussian Copula.
+- <span style="color:#005AA7">Aantal synthetische datapunten:</span> Aantal synthetische datapunten dat door de tool wordt gegenereerd. Vanwege de rekencapaciteit van browser-gebaseerde datageneratie is het maximum ingesteld op 5.000.
+
+#### Uitgevoerd door de tool
+
+##### Stap 1. Detecteren van datatypes:
+De tool detecteert het type data voor elke kolom van de toegevoegde dataset (numeriek, categorisch of datum/tijd).
+
+##### Stap 2. Verwerken van missende data:
+- <span style="color:#005AA7">Missing at Random (MAR):</span> De kans dat data ontbreekt hangt samen met de waargenomen data, maar niet met de ontbrekende data zelf. Het ontbreken kan worden voorspeld door andere variabelen in de dataset. Voorbeeld: Toetsresultaten van studenten ontbreken, maar het ontbreken hangt samen met hun aanwezigheid. In dit scenario worden missende waarden geïmputeerd.
+- <span style="color:#005AA7">Missing Not at Random (MNAR):</span> De kans dat data ontbreekt hangt samen met de ontbrekende data zelf. Er is een systematisch patroon in het ontbreken dat samenhangt met de niet-waargenomen data. Voorbeeld: Patiënten met ernstigere symptomen rapporteren deze minder vaak, waardoor ontbrekende data samenhangt met de ernst van de symptomen. Ook hier worden missende waarden geïmputeerd.
+- <span style="color:#005AA7">Missing Completely at Random (MCAR):</span> De kans dat data ontbreekt is volledig onafhankelijk van zowel waargenomen als niet-waargenomen data. Er is geen systematisch patroon. Voorbeeld: Een respondent slaat per ongeluk een vraag over door een drukfout. In dit scenario worden missende waarden verwijderd.
+
+##### Stap 3. Preprocessing:
+Alle data wordt omgezet naar numeriek formaat met behulp van `LabelEncoder` voor categorische kolommen met minder dan 10 unieke waarden, `OneHotEncoder` voor minder dan 50 unieke waarden en `FrequencyEncoding` voor overige gevallen. Voor numerieke data wordt `StandardScaler` gebruikt.
+
+##### Stap 4. Synthese:
+- <span style="color:#005AA7">CART:</span> De CART-methode (Classification and Regression Trees) genereert synthetische data door patronen te leren uit de echte data via een beslisboom die data splitst in homogene groepen op basis van kenmerken. Voor numerieke data worden gemiddelden voorspeld, voor categorische data de meest voorkomende categorie. Op basis hiervan worden nieuwe synthetische datapunten gegenereerd.
+- <span style="color:#005AA7">Gaussian Copula:</span> Gaussian Copula werkt in twee stappen: 1. De echte data wordt getransformeerd naar een uniforme verdeling. Correlaties tussen variabelen worden gemodelleerd met een multivariate normale verdeling (de Gaussian copula); en 2. Synthetische data wordt gegenereerd door te sampelen uit deze copula en de samples terug te transformeren naar de oorspronkelijke verdelingen.
+
+##### Stap 5. Postprocessing:
+De gecodeerde data wordt teruggezet naar het oorspronkelijke formaat.
+
+##### Stap 6. Evaluatie:
+- <span style="color:#005AA7">Visualisatie:</span> Univariate en bivariate grafieken worden gemaakt voor de gegenereerde synthetische data. Voor categorische variabelen worden staafdiagrammen getoond. Voor een combinatie van numerieke en categorische variabelen worden violin plots gemaakt. Voor numerieke variabelen wordt een LOESS-plot getoond. In alle gevallen geldt: de synthetische data is van hoge kwaliteit als de verdelingen van de synthetische data overeenkomen met die van de echte data.
+- <span style="color:#005AA7">Diagnostisch rapport:</span> Voor elke kolom worden diagnostische resultaten berekend voor de kwaliteit van de gegenereerde synthetische data. De gebruikte metrics zijn afhankelijk van het datatype.
+
+Voor numerieke (of datum/tijd) kolommen worden de volgende metrics berekend:
+
+- Overeenkomst ontbrekende waarden: Vergelijkt of het aandeel ontbrekende waarden in de synthetische data gelijk is aan dat in de echte data;
+- Range coverage: Meet of een synthetische kolom het volledige bereik van waarden uit de echte kolom dekt;
+- Boundary adherence: Meet of een synthetische kolom binnen de minimum- en maximumwaarden van de echte kolom blijft. Geeft het percentage synthetische rijen dat binnen de grenzen valt;
+- Statistische overeenkomst: Vergelijkt gemiddelde, standaarddeviatie en mediaan tussen echte en synthetische kolom;
+- Kolmogorov–Smirnov (KS) complement: Meet de overeenkomst tussen de verdelingen (1D histogram) van echte en synthetische kolommen.
+
+Voor categorische (of booleaanse) kolommen worden de volgende metrics berekend:
+
+- Overeenkomst ontbrekende waarden: Vergelijkt of het aandeel ontbrekende waarden in de synthetische data gelijk is aan dat in de echte data;
+- Category coverage: Meet of een synthetische kolom alle categorieën uit de echte kolom bevat;
+- Category adherence: Meet of een synthetische kolom zich houdt aan de categorieën uit de echte data;
+- Total variation (TV) complement: Meet de overeenkomst tussen de verdelingen (1D histogram) van echte en synthetische kolommen.
+
+💯 Alle waarden dienen dicht bij 1.0 te liggen.
+- <span style="color:#005AA7">Download:</span> De gegenereerde synthetische data kan worden gedownload als csv- en json-bestand. De evaluatie volgens bovenstaande metrics kan als evaluatierapport in pdf worden gedownload.
 
 {{< container_close >}}
 

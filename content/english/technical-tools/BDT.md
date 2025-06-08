@@ -90,7 +90,7 @@ The tool helps find groups where an AI system or algorithm performs differently,
 #### What results does it give?
 The tool finds groups (clusters) where performance of the algorithmic system is significantly deviating. It highlights the group with the worst outcome labels and creates a report called a bias analysis report, which you can download as a PDF. You can also download all the identified groups (clusters) in a .json file. Additionally, the tool provides visual summaries of the results, helping experts dive deeper into the identified deviations. An example can be found below. {{< tooltip tooltip_content="The figure below shows that cluster 0, the cluster with systemic deviating outcome labels, includes a higher-than-average proportion of African-American and a lower-than-average proportion of Caucasian people. For other demographic groups, cluster 0 reflects an average distribution. Additional details about this example are available in the demo dataset." >}}
 
-<div style="margin-bottom:50px; display: flex; justify-content: center;">
+<div style="margin-bottom:25px; display: flex; justify-content: center;">
   <img src="/images/BDT/example_COMPAS.png" alt="drawing" width="600px"/>
 </div>
 
