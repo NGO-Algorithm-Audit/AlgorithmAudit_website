@@ -145,7 +145,7 @@ Univariate en bivariate grafieken worden gemaakt om de gegenereerde synthetische
 ###### Stap 4.2 Diagnostisch rapport:
 Voor elke kolom worden diagnostische resultaten bepaald voor de kwaliteit van de gegenereerde synthetische data. De gebruikte metrieken zijn afhankelijk van het datatype.
 
-###### Diagnostic results:
+###### Diagnostische resultaten:
 - <span style="color:#005AA7">Overeenkomst ontbrekende waarden:</span> Vergelijkt of het aandeel missende waarden in de synthetische data gelijk is aan dat in de echte data;
 - <span style="color:#005AA7">Bereik dekkend:</span> Bepaalt per kolom of synthetische data het volledige bereik van waarden uit de echte data dekt;
 - <span style="color:#005AA7">Grens eerbiediging:</span> Bepaalt per kolom  of synthetische data binnen de minimum- en maximumwaarden van de echte data blijven. Geeft het percentage rijen synthetische data dat binnen de grenzen valt;
