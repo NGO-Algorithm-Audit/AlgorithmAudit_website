@@ -26,7 +26,7 @@ quick_navigation:
       url: '#source-code'
     - title: Documentation
       url: '#documentation-definition'
-    - title: Explainers
+    - title: Examples and explainers
       url: '#explainers'
     - title: Flowchart identification
       url: '#flowchart-identification'
@@ -65,7 +65,15 @@ The tool is developed [open-source](/technical-tools/implementation-tool/#source
 
 {{< container_close >}}
 
+
+
+<!-- Web app -->
+
 {{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="60vh" height_mobile="100vh" >}}
+
+
+
+<!-- Outcomes tool -->
 
 {{< container_open icon="fas fa-layer-group" title="Outcomes tool" id="outcome" >}}
 
@@ -81,11 +89,19 @@ The outcomes of the first questionnaire are displayed in the below figure. The f
 
 {{< container_close >}}
 
+
+
+<!-- Source code -->
+
 {{< container_open icon="fas fa-terminal" title="Development and source code" id="source-code" >}}
 
 The questions in the AI Act Implementation Tool are developed in collaboration with the municipaility of Amsterdam. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be (re-)used under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>.
 
 {{< container_close >}}
+
+
+
+<!-- Documentation -->
 
 {{< container_open icon="far fa-file" title="Documentation for AI Act implementation" id="documentation-definition" >}}
 
@@ -95,7 +111,11 @@ Considerations and choices made during development of the questionnaires regardi
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-chalkboard-teacher" title="Explainers" id="explainers" >}}
+
+
+<!-- Examples and explainers -->
+
+{{< container_open icon="fas fa-chalkboard-teacher" title="Examples and explainers" id="explainers" >}}
 
 We simplify the complex concepts of the AI Act by explaining them with clear, relatable examples.
 
@@ -117,11 +137,19 @@ We simplify the complex concepts of the AI Act by explaining them with clear, re
 
 {{< container_close >}}
 
+
+
+<!-- Flowchart identification -->
+
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart identification questionnaire" id="flowchart-identification" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250224 Flowchart identification EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
+
+
+
+<!-- Flowchart risk classification -->
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart risk classification questionnaire" id="flowchart-classification" >}}
 

@@ -1,6 +1,6 @@
 ---
 title: Teams
-subtitle: "Algorithm Audit consists of an executive board, advisory board, supervisory board, various teams and works with case-based advice commissions that consist of independent experts and stakeholder. Learn more about\_our the [governance](/about/boards/).\n"
+subtitle: "Algorithm Audit consists of an executive board, international advisors, an advisory board and project teams. Learn more about\_our the [governance](/about/boards/) of the organisation."
 image: /images/svg-illustrations/about.svg
 about_AA:
   title: Core activities
@@ -18,7 +18,7 @@ about_AA:
         learning process on the responsible use of algorithms, see for instance
         our [AI policy observatory](/knowledge-platform/policy-observatory/),
         [white papers](/knowledge-platform/knowledge-base/) and
-        [op-eds](/knowledge-platform/knowledge-base/).
+        [public standards](/knowledge-platform/knowledge-base/).
     - subtitle: Normative advice commissions
       image: /images/about/commission.svg
       content: >
@@ -29,8 +29,7 @@ about_AA:
       image: /images/about/technical-tools.svg
       content: >
         Implementing and testing technical tools to detect and mitigate bias,
-        e.g., [synthetic data generation](/technical-tools/sdg/) and [bias
-        detection tool](/technical-tools/bdt/).
+        e.g., [unsupervised bias detection tool](/technical-tools/bdt/) and [synthetic data generation](/technical-tools/sdg/).
     - subtitle: Project work
       image: /images/about/project.svg
       content: >

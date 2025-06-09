@@ -1,6 +1,6 @@
 ---
 title: Boards
-subtitle: "Algorithm Audit consists of an executive board, advisory board, supervisory board, various teams and works with case-based advice commissions that consist of independent experts and stakeholder. Learn more about\_the executive [teams](/about/teams/).\n"
+subtitle: "Algorithm Audit consists of an executive board, international advisors, an advisory board and project teams. Learn more about\_our the work of the [project teams](/about/teams/)."
 image: /images/svg-illustrations/events.svg
 team2:
   title: Board
@@ -10,10 +10,6 @@ team2:
   team_members:
     - image: /images/people/AVoogt.jpeg
       name: Ariën Voogt
-      bio: |
-        Board member
-    - image: /images/people/SMohammad.jpeg
-      name: Samaa Mohammad-Ulenberg
       bio: |
         Board member
     - image: /images/people/JParie.jpg
