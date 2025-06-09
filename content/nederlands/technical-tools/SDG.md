@@ -3,7 +3,7 @@ type: regular
 title: Synthetische data generatie tool
 subtitle: >
   Tool voor het genereren van synthetische data. De tool genereert automatisch een evaluatierapport om de kwaliteit van de gegenereerde data te beoordelen. Alle data worden lokaal verwerkt zonder gebruik te maken van cloud-toepassingen.
-image: /images/svg-illustrations/knowledge_base.svg
+image: /images/svg-illustrations/local-only.svg
 team:
   title: Synthetische data generatioe team
   icon: fas fa-user-friends
