@@ -13,7 +13,7 @@ quick_navigation:
     - title: Technical introduction
       url: '#technical-introduction'
       indent: 1
-    - title: Web app
+    - title: Tool
       url: '#web-app'
     - title: Source code
       url: '#source-code'
@@ -43,10 +43,6 @@ team:
       name: Joel Persson PhD
       bio: |
         Research Scientist, Spotify
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Director, Algorithm Audit
     - image: /images/people/KPadh.jpeg
       name: Kirtan Padh
       bio: |

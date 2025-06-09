@@ -14,10 +14,6 @@ team:
       name: Emmanuel Menvouta PhD
       bio: |
         Freelance machine learning engineer, gespecialiseerd in SDG methodologie
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Directeur-bestuurder Algorithm Audit
     - image: /images/people/MLisdonk.png
       name: Maikel van de Lisdonk
       bio: |
@@ -31,10 +27,10 @@ quick_navigation:
   links:
     - title: Introductie
       url: '#info'
-    - title: Technical introduction
+    - title: Technische introductie
       url: '#technical-introduction'
       indent: 1
-    - title: Web app
+    - title: Tool
       url: '#web-app'
     - title: Broncode
       url: '#source-code'
@@ -44,7 +40,7 @@ quick_navigation:
       url: '#use-cases'
     - title: Privacy en juridische aspecten
       url: '#privacy-legal'
-    - title: Local-only computing
+    - title: Local-only architectuur
       url: '#local-only'
     - title: Supported by
       url: '#supported-by'
