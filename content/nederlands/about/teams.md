@@ -1,9 +1,7 @@
 ---
 title: Teams
 subtitle: >
-  Stichting Algorithm Audit bestaat uit een bestuur, raad van advies, raad van
-  toezicht (in oprichting), verschillende teams en werkt met adviescommissies op
-  projectbasis, bestaande uit onafhankelijke experts en belanghebbenden. [Lees
+  Stichting Algorithm Audit bestaat uit een bestuur, internationale adviseurs, Raad van Advies en verschillende projectteams. [Lees
   meer](/nl/about/boards/) over de governance van de stichting.
 image: /images/svg-illustrations/about.svg
 about_AA:
@@ -23,7 +21,7 @@ about_AA:
         over de verantwoorde inzet van algoritmes aan te jagen, zie ons [AI
         beleidsobservatorium](/nl/knowledge-platform/policy-observatory/),
         [white papers](/nl/knowledge-platform/knowledge-base/) en
-        [opinie-artikelen](/nl/knowledge-platform/knowledge-base/).
+        [publieke standaarden](/nl/knowledge-platform/knowledge-base/).
     - subtitle: Normatieve adviescommissies
       image: /images/about/commission.svg
       content: >
@@ -34,8 +32,8 @@ about_AA:
     - subtitle: Technische tools
       image: /images/about/technical-tools.svg
       content: >
-        Implementeren en testen van open-source software voor de verantwoorde inzet van algoritmes en AI, o.a. unsupervised [bias
-        detectie](/nl/technical-tools/bdt/) en [synthetische data generatie](/nl/technical-tools/sdg/);
+        Implementeren en testen van open-source software voor de verantwoorde inzet van algoritmes en AI, o.a. [unsupervised bias
+        detectie](/nl/technical-tools/bdt/) en [synthetische data generatie](/nl/technical-tools/sdg/).
     - subtitle: Projectwerk
       image: /images/about/project.svg
       content: >

@@ -24,7 +24,7 @@ quick_navigation:
       url: '#source-code'
     - title: Documentatie
       url: '#documentation-definition'
-    - title: Voorbeelden
+    - title: Voorbeelden en explainers
       url: '#explainers'
     - title: Flowchart identificatie
       url: '#flowchart-identification'
@@ -63,13 +63,15 @@ De tool is [open-source](/nl/technical-tools/implementation-tool/#source-code) o
 
 {{< container_close >}}
 
+
+
+<!-- Web app -->
+
 {{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="60vh" >}}
 
-{{< container_open icon="fas fa-terminal" title="Ontwikkeling en broncode" id="source-code" >}}
 
-De vragen in de AI-verordening implemenatie tool zijn ontwikkeld in samenwerking met de gemeente Amsterdam. De broncode van de tool is beschikbaar in <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> en kan worden (her)gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>
 
-{{< container_close >}}
+<!-- Uitkomsten tool -->
 
 {{< container_open icon="fas fa-layer-group" title="Uitkomsten vragenlijsten" id="outcome" >}}
 
@@ -85,6 +87,20 @@ De uitkomst van de eerste vragenlijst wordt schematisch weergeven in onderstaand
 
 {{< container_close >}}
 
+
+
+<!-- Broncode -->
+
+{{< container_open icon="fas fa-terminal" title="Ontwikkeling en broncode" id="source-code" >}}
+
+De vragen in de AI-verordening implemenatie tool zijn ontwikkeld in samenwerking met de gemeente Amsterdam. De broncode van de tool is beschikbaar in <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> en kan worden (her)gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. <br> <br> <img src="/images/events/Amsterdam.png" alt="drawing" width="200"/>
+
+{{< container_close >}}
+
+
+
+<!-- Documentatie -->
+
 {{< container_open icon="far fa-file" title="Documentatie voor AI-verordening implementatie" id="documentation-definition" >}}
 
 Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijsten met betrekking tot de wettekst, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a>  van de Europese Commissie en de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a> worden in de white paper 'Implementatie van de AI-verordening – Definitie van een AI-systeem' beschreven. In de policy briefing wordt toegelicht waarom de <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie over de definitie van een AI-systeem op gespannen voet staan met de wettekst van de AI-verordening. De white paper en de vragenlijsten zijn beiden aangepast naar aanleiding van publicatie van de <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie.  
@@ -94,7 +110,10 @@ Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijst
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-chalkboard-teacher" title="Voorbeelden" id="explainers" >}}
+
+<!-- Voorbeelden en explainers -->
+
+{{< container_open icon="fas fa-chalkboard-teacher" title="Voorbeelden en explainers" id="explainers" >}}
 
 Aan de hand van voorbeelden lichten we belangrijke concepten uit de AI-verordening in begrijpelijke taal toe.
 
@@ -116,11 +135,19 @@ Aan de hand van voorbeelden lichten we belangrijke concepten uit de AI-verordeni
 
 {{< container_close >}}
 
+
+
+<!-- Flowchart identificatie -->
+
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart identificatie vragenlijst" id="flowchart-identification" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250224 Flowchart identificatie NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
+
+
+
+<!-- Flowchart risicoclassificatie -->
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart risicoclassificatie vragenlijst" id="flowchart-classification" >}}
 
