@@ -74,7 +74,7 @@ quick_navigation:
 Synthetic data is artificial data mimicking the original dataset's statistical characteristics without sharing personal data.
 
 #### What data can be processed?
-The tool processes all data in table format. The type of data (numerical, categorical, time, etc.) and missing values are automatically detected. The user has several options how missing values can be processed. More info how missing values can be treated is provided in the tool. 
+The tool processes all data in table format. The type of data (numerical, categorical, time, etc.) and missing values are automatically detected. The user has several options for how missing values can be processed. More info about how missing values can be treated is provided in the tool. 
 
 #### What does the tool return?
 The tool generates synthetic data. An evaluation report of the generated data, including various evaluation metrics, is automatically created and can be downloaded as a pdf. The synthetic data can be downloaded in .csv and .json format. 
