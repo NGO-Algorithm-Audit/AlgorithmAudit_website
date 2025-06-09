@@ -43,10 +43,6 @@ team:
       name: Joel Persson PhD
       bio: |
         Research Scientist, Spotify
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Director, Algorithm Audit
     - image: /images/people/KPadh.jpeg
       name: Kirtan Padh
       bio: |
