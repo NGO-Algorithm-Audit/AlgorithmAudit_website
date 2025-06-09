@@ -99,9 +99,9 @@ Probeer de tool hieronder uit ⬇️
 
 
 
-<!-- Technische details -->
+<!-- Technische introductie -->
 
-{{< container_open isAccordion="true" title="Technische details – Synthetische data generatie" id="technical-introduction" >}}
+{{< container_open isAccordion="true" title="Technische introductie – Synthetische data generatie" id="technical-introduction" >}}
 
 <br>
 
@@ -109,7 +109,7 @@ De tool voor synthetische data generatie doorloopt de volgende stappen:
 
 #### Benodigdheden van de gebruiker:
 De gebruiker dient de volgende aspecten voor te bereiden:
-- <span style="color:#005AA7">Dataset:</span> Moet bestaan uit categorische, numerieke of tijdsdata.
+- <span style="color:#005AA7">Dataset:</span> Alleen categorische, numerieke of tijdsdata kunnen worden verwerkt. Datasets mogen maximaal 8 kolommen bevatten, dienen een header te hebben met kolomnamen en hoeven geen index-kolom te hebben.
 - <span style="color:#005AA7">Methode:</span> Standaard wordt de CART-methode gebruikt om synthetische data te genereren. CART levert doorgaans synthetische data van hoge kwaliteit, maar werkt mogelijk minder goed bij datasets met categorische variabelen met meer dan 20 categorieën. Gebruik in dat geval Gaussian Copula.
 - <span style="color:#005AA7">Aantal synthetische datapunten:</span> Aantal synthetische datapunten die door de tool worden gegenereerd. Vanwege de rekencapaciteit van browser-gebaseerde datageneratie is het maximum ingesteld op 5.000.
 
@@ -182,9 +182,8 @@ De *onthullings beschermings metriek* meet het aandeel synthetische datapunten d
 ##### Step 5. Download:
 De gegenereerde synthetische data kan worden gedownload als csv- en json-bestand. De evaluatie volgens bovenstaande metrics kan als evaluatierapport in pdf worden gedownload.
 
-
-#### Documentation
-More documentation about the tool and underlying SDG methods can be found on <a href="https://github.com/NGO-Algorithm-Audit/python-synhtpop" target="_blank">Github</a>.
+#### Documentatie
+Meer documentatie over de tool en onderliggende SDG methoden kunnen worden gevonden op <a href="https://github.com/NGO-Algorithm-Audit/python-synhtpop" target="_blank">Github</a>.
 
 {{< container_close >}}
 
@@ -192,7 +191,7 @@ More documentation about the tool and underlying SDG methods can be found on <a 
 
 <!-- Web app -->
 
-{{< iframe src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/synthetic-data.html?lang=nl" title="Synthetic data generation tool" icon="fas fa-search" id="web-app" height="800px" >}}
+{{< iframe src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/synthetic-data.html?lang=nl" title="Synthetische data generatie tool" icon="fas fa-search" id="web-app" height="800px" >}}
 
 
 
