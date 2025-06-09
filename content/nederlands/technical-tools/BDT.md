@@ -12,7 +12,7 @@ quick_navigation:
     - title: Technical introductie
       url: '#technical-introduction'
       indent: 1
-    - title: Web app
+    - title: Tool
       url: '#web-app'
     - title: Broncode
       url: '#source-code'

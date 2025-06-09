@@ -50,10 +50,6 @@ team:
       name: Emmanuel Menvouta PhD
       bio: |
         Freelance machine learning engineer, gespecialiseerd in SDG methodologie
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Directeur-bestuurder Algorithm Audit
     - image: /images/people/MLisdonk.png
       name: Maikel van de Lisdonk
       bio: |

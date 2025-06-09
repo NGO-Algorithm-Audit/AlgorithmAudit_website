@@ -30,7 +30,7 @@ quick_navigation:
     - title: Technical introduction
       url: '#technical-introduction'
       indent: 1
-    - title: Web app
+    - title: Tool
       url: '#web-app'
     - title: Source code
       url: '#source-code'
@@ -38,7 +38,7 @@ quick_navigation:
       url: '#use-cases'
     - title: Privacy and legal aspects
       url: '#privacy-legal'
-    - title: Local-only computing
+    - title: Local-only architecture
       url: '#local-only'
     - title: Synthetic data for AI auditing
       url: '#ai-auditing'
