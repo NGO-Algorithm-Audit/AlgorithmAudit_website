@@ -23,7 +23,7 @@ team:
       bio: |
         Freelance software developer
 quick_navigation:
-  title: Content overview
+  title: Inhoudsopgave
   links:
     - title: Introductie
       url: '#info'
@@ -42,7 +42,7 @@ quick_navigation:
       url: '#privacy-legal'
     - title: Local-only architectuur
       url: '#local-only'
-    - title: Supported by
+    - title: Ondersteund door
       url: '#supported-by'
     - title: Team
       url: '#team'
@@ -191,7 +191,7 @@ Meer documentatie over de tool en onderliggende SDG methoden kunnen worden gevon
 
 <!-- Web app -->
 
-{{< iframe src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/synthetic-data.html?lang=nl" title="Synthetische data generatie tool" icon="fas fa-search" id="web-app" height="800px" >}}
+{{< iframe src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/synthetic-data.html?lang=nl" title="Synthetische data generatie tool" icon="fas fa-table" id="web-app" height="800px" >}}
 
 
 

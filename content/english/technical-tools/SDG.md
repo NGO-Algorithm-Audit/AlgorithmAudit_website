@@ -193,7 +193,7 @@ More documentation about the tool and underlying SDG methods can be found on <a 
 
 <!-- Web app -->
 
-{{< iframe src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/synthetic-data.html?lang=en" title="Synthetic data generation tool" icon="fas fa-search" id="web-app" height="800px" >}}
+{{< iframe src="https://local-first-bias-detection.s3.eu-central-1.amazonaws.com/synthetic-data.html?lang=en" title="Synthetic data generation tool" icon="fas fa-table" id="web-app" height="800px" >}}
 
 
 
