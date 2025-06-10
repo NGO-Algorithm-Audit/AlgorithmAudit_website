@@ -9,7 +9,7 @@ quick_navigation:
   links:
     - title: Introductie
       url: '#info'
-    - title: Technical introductie
+    - title: Technische introductie
       url: '#technical-introduction'
       indent: 1
     - title: Tool
@@ -119,7 +119,7 @@ Gebruik de tool hier beneden ⬇️
 
 <!-- Technische details -->
 
-{{< container_open isAccordion="true" title="Technische details – Unsupervised bias detectie tool" id="technical-introduction" >}}
+{{< container_open isAccordion="true" title="Technische introductie – Unsupervised bias detectie tool" id="technical-introduction" >}}
 
 <br>
 
@@ -149,7 +149,7 @@ De unsupervised bias detectie tool voert de volgende stappen uit:
 Een schematisch overzicht van bovenstaande stappen wordt hieronder weergegeven.
 
 <div style="margin-bottom:50px; display: flex; justify-content: center;">
-  <img src="/images/BDT/Overview_tool NL.png" alt="drawing" width="800px"/>
+  <img src="/images/BDT/Overview_tool_NL.png" alt="drawing" width="800px"/>
 </div>
 
 #### Hoe werkt het clustering algoritme?

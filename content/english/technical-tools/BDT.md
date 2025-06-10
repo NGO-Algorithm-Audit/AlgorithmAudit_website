@@ -123,7 +123,7 @@ Try the tool below ⬇️
 
 <!-- Technical details -->
 
-{{< container_open isAccordion="true" title="Technical details – Unsupervised bias detection tool" id="technical-introduction" >}}
+{{< container_open isAccordion="true" title="Technical introduction – Unsupervised bias detection tool" id="technical-introduction" >}}
 
 <br>
 
@@ -153,7 +153,7 @@ The unsupervised bias detection tool performs a series of steps:
 A schematic overview of the above steps is depicted below.
 
 <div style="margin-bottom:50px; display: flex; justify-content: center;">
-  <img src="/images/BDT/Overview_tool EN.png" alt="drawing" width="800px"/>
+  <img src="/images/BDT/Overview_tool_EN.png" alt="drawing" width="800px"/>
 </div>
 
 #### How does the clustering algorithm work?
