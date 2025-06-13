@@ -65,6 +65,19 @@ Activity_Feed:
       image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
       date: 15-05-2025
       type: public standard
+    - title: >-
+        Public standard 'Meaningful human intervention for risk profiling
+        algorithms'
+      intro: >
+        Step-by-step guide to prevent prohibited automated decision-making
+        solely based on profilings, as stated in Article 22 GDPR. Based on
+        case-based experiences with risk profiling algorithms and aligned with
+        recent literature.
+      link: >-
+        /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
+      image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
+      date: 15-05-2025
+      type: public standard
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events

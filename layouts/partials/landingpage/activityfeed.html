@@ -8,54 +8,57 @@
         {{ if .featured_activities }}
         <div class="row mt-5">
           <!-- title featured section -->
-          <h3 class="section-title" style="color: #005aa7;">{{ .featured_title }}</h3>
+          <h3 class="color-blue section-title">{{ .featured_title }}</h3>
           <!-- /title featured section -->
         </div>
 
-        {{ range .featured_activities }}
-        <a class="" href="{{.link | relURL }}">
-          <div class="row justify-content-between clickable-wrapper p-5" style="background-color: #ffffff;">
+        <div class="row justify-content-between">
+          {{ range $index, $item := .featured_activities }}
+          <div class="col-lg col-12">
+            <a href="{{$item.link | relURL }}">
+              <div class="row p-5 bg-white {{if eq $index 0}}mr-lg-2 mb-3 mb-lg-0{{else}}ml-lg-2 mt-3 mt-lg-0{{end}}">
+                <!-- image -->
+                <div class="col-lg-3 col-12 p-0 pr-4">
+                  <img class="featured-img img-fluid d-block mx-auto mb-5 mb-lg-0" src="{{$item.image}}" />
+                </div>
+                <!-- /image -->
 
-            <!-- image -->
-            <div class="col-lg-3 col-12 pr-4">
-              <img class="featured-img img-fluid d-block mx-auto mb-5 mb-lg-0" src="{{.image}}" />
-            </div>
-            <!-- /image -->
+                <div class="col-lg-9 col-12">
+                  <div class="row align-items-center">
 
-            <div class="col-lg-9 col-12">
-              <div class="row align-items-center">
+                    <!-- title featured article -->
+                    <h3 class="mb-2" style="color: #005aa7;">{{$item.title}}</h3>
+                    <!-- /title featured article -->
 
-                <!-- title featured article -->
-                <h3 class="mb-2" style="color: #005aa7;">{{.title}}</h3>
-                <!-- /title featured article -->
+                    <!-- intro text -->
+                    <p style="color: #777;">
+                      {{$item.intro | markdownify}}
+                      <span style="color: #005aa7;">{{ i18n "read_more" }}</span>
+                    </p>
+                    <!-- intro text -->
+                  </div>
 
-                <!-- intro text -->
-                <p style="color: #777;">
-                  {{.intro | markdownify}}
-                  <span style="color: #005aa7;">{{ i18n "read_more" }}</span>
-                </p>
-                <!-- intro text -->
+                  <!-- metadata -->
+                  <div class="row" style="position:relative;">
+                    {{ if $item.date }}
+                    <span class="highlight-red">
+                      {{$item.date }}
+                    </span>
+                    {{ end }}
+                    {{ if $item.type }}
+                    <span class="highlight-red">
+                      {{ $item.type }}
+                    </span>
+                    {{ end }}
+                  </div>
+                  <!-- /metadata -->
+
+                </div>
               </div>
-
-              <!-- metadata -->
-              <div class="row" style="position:relative;">
-                {{ if .date }}
-                <span class="highlight-red">
-                  {{.date }}
-                </span>
-                {{ end }}
-                {{ if .type }}
-                <span class="highlight-red">
-                  {{ .type }}
-                </span>
-                {{ end }}
-              </div>
-              <!-- /metadata -->
-
-            </div>
+            </a>
           </div>
-        </a>
-        {{end}}
+          {{end}}
+        </div>
 
         <!-- More -->
         <div class="row mt-4 pb-3 justify-content-center d-flex">
@@ -70,7 +73,7 @@
 <!-- /Featured Activities -->
 
 <!-- Items -->
-<section class="activitifeed-section pt-5 mt-5" id="events">
+<section class="activitifeed-section pt-5 mt-2" id="events">
   <div class="container" style="background-color:#deecf7;">
     <div class="row align-items-center">
       <div class="mx-4 col order-1">
