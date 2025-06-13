@@ -4,8 +4,8 @@
   <div class="container" id="header-container">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-xl navbar-light row">
-      <div class="navbar-div col">
+    <nav class="navbar navbar-expand-xl navbar-light">
+      <div class="navbar-div">
         <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
           {{ with site.Params.logo}}
           <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}" style="min-width: {{site.Params.logo_width}};">
@@ -22,7 +22,7 @@
 
       <!-- nav items -->
       <div class="collapse navbar-collapse text-center" id="navigation">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav ml-auto">
           {{ range site.Menus.main }}
           {{ if .HasChildren }}
           <li class="nav-item dropdown">

@@ -20,17 +20,6 @@ export default {
       required: true,
       fields: [
         {
-          label: "Image",
-          type: "image",
-          name: "image",
-        },
-        {
-          label: "tag",
-          type: "string",
-          name: "tag",
-          required: true,
-        },
-        {
           name: "title_line1",
           type: "string",
           label: "title line 1",
@@ -138,7 +127,6 @@ export default {
         },
       ],
     },
-    overview_block,
     {
       type: "object",
       name: "About",
@@ -152,30 +140,22 @@ export default {
         },
       ],
     },
+    overview_block,
     // Activity feed
     {
       type: "object",
       name: "Activity_Feed",
-      label: "Activity Feed",
+      label: "Featured and recent items",
       fields: [
         {
-          type: "boolean",
-          name: "enable",
-          label: "Enable",
+          label: "Featured Title",
+          type: "string",
+          name: "featured_title",
+          isTitle: true,
           required: true,
         },
         {
-          label: "Button text",
-          type: "string",
-          name: "button_text",
-        },
-        {
-          label: "View all link",
-          type: "string",
-          name: "button_link",
-        },
-        {
-          label: "Featured Activities",
+          label: "Featured Items",
           type: "object",
           name: "featured_activities",
           list: true,
@@ -218,7 +198,24 @@ export default {
           ],
         },
         {
-          label: "Activities",
+          label: "View more featured button text",
+          type: "string",
+          name: "featured_button_text",
+        },
+        {
+          label: "View more featured link",
+          type: "string",
+          name: "featured_button_link",
+        },
+        {
+          label: "Items Title",
+          type: "string",
+          name: "items_title",
+          isTitle: true,
+          required: true,
+        },
+        {
+          label: "Items",
           type: "object",
           name: "activities",
           list: true,
@@ -254,7 +251,169 @@ export default {
             },
           ],
         },
+        {
+          label: "View more items button text",
+          type: "string",
+          name: "items_button_text",
+        },
+        {
+          label: "View more items link",
+          type: "string",
+          name: "items_button_link",
+        },
       ],
+    },
+    // Areas of expertise
+    {
+      type: "object",
+      name: "Areas_of_AI_expertise",
+      label: "Areas of Expertise",
+      fields: [
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+          required: true,
+        },
+        {
+          type: "boolean",
+          name: "enable",
+          label: "Enable",
+          required: true,
+        },
+        {
+          type: "number",
+          name: "width_m",
+          label: "Width medium screens (12 is the maximum)",
+          description: "Divide the number of articles per row by 12",
+          required: true,
+        },
+        {
+          type: "number",
+          name: "width_s",
+          label: "Width small screens (12 is the maximum)",
+          description: "Divide the number of articles per row by 12",
+          required: true,
+        },
+        {
+          type: "object",
+          name: "feature_item",
+          label: "Featured Items",
+          list: true,
+          fields: [
+            {
+              type: "string",
+              name: "name",
+              label: "Name",
+              required: true,
+            },
+            {
+              type: "string",
+              name: "icon",
+              label: "Icon",
+              required: true,
+            },
+            {
+              type: "rich-text",
+              name: "content",
+              label: "Content",
+              isBody: true,
+            },
+          ],
+        },
+        {
+          type: "string",
+          name: "button_text",
+          label: "Button text",
+        },
+        {
+          label: "Link",
+          type: "string",
+          name: "button_link",
+        },
+      ],
+      defaultItem: () => {
+        return {
+          width_m: 4,
+          width_s: 2,
+        };
+      },
+    },
+    // Distinctive in
+    {
+      type: "object",
+      name: "Distinctive_in",
+      label: "Distinctive in",
+      fields: [
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+          required: true,
+        },
+        {
+          type: "boolean",
+          name: "enable",
+          label: "Enable",
+          required: true,
+        },
+        {
+          type: "number",
+          name: "width_m",
+          label: "Width medium screens (12 is the maximum)",
+          description: "Divide the number of articles per row by 12",
+          required: true,
+        },
+        {
+          type: "number",
+          name: "width_s",
+          label: "Width small screens (12 is the maximum)",
+          description: "Divide the number of articles per row by 12",
+          required: true,
+        },
+        {
+          type: "object",
+          name: "feature_item",
+          label: "Featured Items",
+          list: true,
+          fields: [
+            {
+              type: "string",
+              name: "name",
+              label: "Name",
+              required: true,
+            },
+            {
+              type: "string",
+              name: "icon",
+              label: "Icon",
+              required: true,
+            },
+            {
+              type: "rich-text",
+              name: "content",
+              label: "Content",
+              isBody: true,
+            },
+          ],
+        },
+        {
+          type: "string",
+          name: "button_text",
+          label: "Button text",
+        },
+        {
+          label: "Link",
+          type: "string",
+          name: "button_link",
+        },
+      ],
+      defaultItem: () => {
+        return {
+          width_m: 4,
+          width_s: 2,
+        };
+      },
     },
     // Supported by
     {
@@ -291,144 +450,6 @@ export default {
             },
           ],
         },
-      ],
-    },
-    // Slogan
-    {
-      type: "object",
-      name: "Building_ai_audit_capacity",
-      label: "Building AI audit capacity",
-      fields: [
-        {
-          type: "object",
-          name: "lines",
-          label: "Lines",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "text_before",
-              label: "Text before",
-              required: true,
-            },
-            {
-              type: "string",
-              label: "Highlighted text",
-              name: "text_highlighted",
-            },
-            {
-              type: "string",
-              label: "Text after",
-              name: "text_after",
-            },
-            {
-              type: "string",
-              label: "Highlighted text #2",
-              name: "text_highlighted2",
-            },
-          ],
-        },
-      ],
-    },
-    // Distinctive in
-    {
-      type: "object",
-      name: "Distinctive_in",
-      label: "Distinctive in",
-      fields: [
-        {
-          type: "boolean",
-          name: "enable",
-          label: "Enable",
-          required: true,
-        },
-        {
-          type: "string",
-          name: "title",
-          label: "Enable",
-          required: true,
-        },
-        {
-          type: "number",
-          name: "width_m",
-          label: "Width medium screens (12 is the maximum)",
-          description: "Divide the number of articles per row by 12",
-          required: true,
-        },
-        {
-          type: "number",
-          name: "width_s",
-          label: "Width small screens (12 is the maximum)",
-          description: "Divide the number of articles per row by 12",
-          required: true,
-        },
-        {
-          type: "object",
-          name: "feature_item",
-          label: "Featured Items",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "name",
-              label: "Name",
-              required: true,
-            },
-            {
-              type: "string",
-              name: "icon",
-              label: "Icon",
-              required: true,
-            },
-            {
-              type: "rich-text",
-              name: "content",
-              label: "Content",
-              isBody: true,
-            },
-          ],
-        },
-      ],
-      defaultItem: () => {
-        return {
-          width_m: 4,
-          width_s: 2,
-          width_xs: 1,
-        };
-      },
-    },
-    // Areas of expertise
-    {
-      type: "object",
-      name: "Areas_of_AI_expertise",
-      label: "Areas of AI Expertise",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-          required: true,
-        },
-        {
-          type: "boolean",
-          name: "enable",
-          label: "Enable",
-          required: true,
-        },
-        {
-          type: "number",
-          name: "width_m",
-          label: "Width medium screens (12 is the maximum)",
-          description: "Divide the number of articles per row by 12",
-          required: true,
-        },
-        {
-          type: "number",
-          name: "width_s",
-          label: "Width small screens (12 is the maximum)",
-          description: "Divide the number of articles per row by 12",
-          required: true,
-        },
         {
           type: "string",
           name: "button_text",
@@ -438,191 +459,6 @@ export default {
           label: "Link",
           type: "string",
           name: "button_link",
-        },
-        {
-          type: "object",
-          name: "feature_item",
-          label: "Featured Items",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "name",
-              label: "Name",
-              required: true,
-            },
-            {
-              type: "string",
-              name: "icon",
-              label: "Icon",
-              required: true,
-            },
-            {
-              type: "rich-text",
-              name: "content",
-              label: "Content",
-              isBody: true,
-            },
-          ],
-        },
-      ],
-      defaultItem: () => {
-        return {
-          width_m: 4,
-          width_s: 2,
-        };
-      },
-    },
-    // Recent audits
-    {
-      type: "object",
-      name: "Recent_audits",
-      label: "Recent audits",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-          required: true,
-        },
-        {
-          type: "object",
-          name: "feature_item",
-          label: "Featured Items",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "name",
-              label: "Name",
-              required: true,
-            },
-            {
-              type: "image",
-              name: "image",
-              label: "Image",
-              required: true,
-            },
-            {
-              label: "Link",
-              type: "string",
-              name: "link",
-            },
-            {
-              type: "rich-text",
-              name: "content",
-              label: "Content",
-              isBody: true,
-            },
-          ],
-        },
-      ],
-    },
-    // How we build algoprudence
-    {
-      type: "object",
-      name: "Building_algoprudence",
-      label: "How we build algoprudence",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-        },
-        {
-          type: "string",
-          name: "button_text",
-          label: "Button text",
-        },
-        {
-          label: "Link",
-          type: "string",
-          name: "button_link",
-        },
-        {
-          type: "object",
-          name: "steps",
-          label: "Steps",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "title",
-              label: "Title",
-            },
-            {
-              type: "rich-text",
-              name: "content",
-              label: "Content",
-            },
-          ],
-        },
-      ],
-    },
-    // Advantages of algoprudence
-    {
-      type: "object",
-      name: "Advantages_of_algoprudence",
-      label: "Advantages of algoprudence",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-        },
-        {
-          type: "image",
-          name: "image",
-          label: "Image above button",
-        },
-        {
-          type: "string",
-          name: "button_text",
-          label: "Button text",
-        },
-        {
-          label: "Link",
-          type: "string",
-          name: "button_link",
-        },
-        {
-          type: "object",
-          name: "feature_item",
-          label: "Featured Items",
-          list: true,
-          fields: [
-            {
-              type: "string",
-              name: "name",
-              label: "Name",
-              required: true,
-            },
-            {
-              type: "string",
-              name: "icon",
-              label: "Icon",
-              required: true,
-            },
-            {
-              type: "rich-text",
-              name: "content",
-              label: "Content",
-              isBody: true,
-            },
-          ],
-        },
-      ],
-    },
-    // GIF algoprudence
-    {
-      type: "object",
-      name: "Title_gif",
-      label: "Title of gif",
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
         },
       ],
     },
