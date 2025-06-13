@@ -108,6 +108,12 @@ input[type="checkbox"] {
   }
 }
 
+.img-event{
+  max-height: 140px;
+  @media (max-width: 992px) {
+    max-height:120px;
+  }
+}
 // view ≤992px
 @media (max-width: 992px) {
   .margin-banner-image {
@@ -130,9 +136,6 @@ input[type="checkbox"] {
     height:100px;
     padding: 15px;
     margin: 20px 0px;
-  }
-  .img-event{
-    height:200px;
   }
   #img-gif{
     width: 100%;
