@@ -3,47 +3,9 @@ title: Registration
 subtitle: >
   Register for events of Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-quick_navigation:
-  title: Overview
-  links:
-    - title: Lunch webinar
-      url: '#webinar'
-form1:
-  title: Registration form
-  button_text: Submit
-  backend_link: 'https://formspree.io/f/xeogpapg'
-  id: form
-  questions:
-    - label: |
-        Name
-      id: name
-      required: true
-      type: text
-    - label: |
-        Affiliated organisation
-      id: organisation
-      required: true
-      type: text
-    - label: |
-        Contact details
-      id: contact-details
-      required: true
-      type: email
-    - label: >
-        Terms and conditions <br> <span style="font-size:12px;
-        color=#777;">Submitted data will only be processed for the purpose
-        described above, kept for the minimum necessary duration, and is
-        securely stored in a protected environment</span>
-      id: terms-conditions
-      values:
-        - label: Agree
-          value: agree
-          id: agree
-      required: true
-      type: checkbox
 ---
 
-{{< accordions_area_open id="webinar" >}}
+<!-- {{< accordions_area_open id="webinar" >}}
 
 {{< accordion_item_open title="Lunch webinar 'Open source tools for AI validation" id="webinar" background_color="#ffffff" date="13-06-2025" tag1="webinar" tag2="technical tools" image="/images/logo/logo.svg" >}}
 
@@ -66,4 +28,4 @@ Primarily data scientists who can start using the tools, but secondarily also le
 
 {{< form1 >}}
 
-{{< accordion_item_close >}}
+{{< accordion_item_close >}} -->

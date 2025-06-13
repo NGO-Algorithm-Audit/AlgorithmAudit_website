@@ -3,14 +3,9 @@ title: Registratie
 subtitle: >
   Meld je aan voor events van Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-quick_navigation:
-  title: Overizcht
-  links:
-    - title: Lunch webinar
-      url: '#webinar'  
 ---
 
-{{< accordions_area_open id="webinar" >}}
+<!-- {{< accordions_area_open id="webinar" >}}
 
 {{< accordion_item_open title="Lunch webinar 'Open source tools voor AI validatie" id="webinar" background_color="#ffffff" date="10-06-2025" tag1="webinar" tag2="technische tools" image="/images/logo/logo.svg" >}}
 
@@ -34,4 +29,4 @@ Meld je aan via de website van <a href="https://aienalgoritmes.pleio.nl/events/v
 
 {{< form1 >}}
 
-{{< accordion_item_close >}}
+{{< accordion_item_close >}} -->
