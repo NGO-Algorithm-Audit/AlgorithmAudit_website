@@ -451,3 +451,13 @@
 .sublandingpage-banner-padding-bottom {
     padding-bottom: 7rem;
 }
+
+.collaberating_logo {
+    max-width: 300px;
+    max-height: 140px;
+    width: 100%;
+    @media (max-width: 992px) {
+        max-width: 200px;
+        max-height: 94px;
+    }
+}

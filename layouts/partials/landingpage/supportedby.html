@@ -13,9 +13,9 @@
       </div>
 
       {{ range .funders }}
-      <div class="col-lg-4 col-6 my-2">
+      <div class="col-lg-4 col-6 my-5">
         <a href="{{.link}}" target="_blank">
-          <img src="{{ .image | relURL }}" class="d-block mx-auto" style="max-height: 140px; max-width: 300px;" alt="{{.alt_text}}" class="img-fluid">
+          <img src="{{ .image | relURL }}" class="d-block mx-auto img-fluid collaberating_logo" alt="{{.alt_text}}" class="">
         </a>
       </div>
       {{ end }}
