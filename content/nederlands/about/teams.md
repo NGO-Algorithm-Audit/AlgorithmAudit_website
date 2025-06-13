@@ -32,7 +32,7 @@ about_AA:
     - subtitle: Technische tools
       image: /images/about/technical-tools.svg
       content: >
-        Implementeren en testen van open-source software voor de verantwoorde inzet van algoritmes en AI, o.a. [unsupervised bias
+        Implementeren en testen van open-source software voor de verantwoorde inzet van algoritmes en AI, o.a. sociotechnische evaluatie van generatieve AI, [unsupervised bias
         detectie](/nl/technical-tools/bdt/) en [synthetische data generatie](/nl/technical-tools/sdg/).
     - subtitle: Projectwerk
       image: /images/about/project.svg

@@ -29,7 +29,7 @@ about_AA:
       image: /images/about/technical-tools.svg
       content: >
         Implementing and testing technical tools to detect and mitigate bias,
-        e.g., [unsupervised bias detection tool](/technical-tools/bdt/) and [synthetic data generation](/technical-tools/sdg/).
+        e.g., sociotechnical evaluation of generative AI, [unsupervised bias detection tool](/technical-tools/bdt/) and [synthetic data generation](/technical-tools/sdg/).
     - subtitle: Project work
       image: /images/about/project.svg
       content: >
