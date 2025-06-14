@@ -64,18 +64,18 @@ Activity_Feed:
   activities:
     - title: Gastcollege 'Fairness and Algorithms' ETH Zürich
       link: /nl/events/activities/#events
-      image: /images/events/eth-zurich.jpg
+      image: /images/partner logo-cropped/ETH.jpg
       date: 23-05-2025
       type: event
     - title: Paneldiscussie CPDP'25
       link: /nl/events/activities/#events
-      image: /images/events/cpdp-logo-2025.svg
+      image: /images/partner logo-cropped/CPDP25.svg
       date: 21-05-2025
       type: paneldiscussie
     - title: >-
         Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
       link: /nl/events/activities/#events
-      image: /images/events/RUG.png
+      image: /images/partner logo-cropped/RUG.png
       date: 06-05-2025
       type: event
 Supported_by:
@@ -97,13 +97,13 @@ Supported_by:
     - image: /images/supported_by/DUO.png
       link: "https://duo.nl"
       alt_text: Dienst Uitvoering Onderwijs
-    - image: /images/partners/NEN.svg
+    - image: /images/partner logo-cropped/NEN.svg
       link: "https://www.nen.nl"
       alt_text: Nederlands normalisatie instituut
-    - image: /images/partners/CEN.jpg
+    - image: /images/partner logo-cropped/CEN.jpg
       link: "https://www.cencenelec.eu"
       alt_text: "Europees standaardiseringcomité "
-    - image: /images/events/Amsterdam.png
+    - image: /images/partner logo-cropped/GemeenteAmsterdam.png
       link: "https://www.amsterdam.nl"
       alt_text: Gemeente Amsterdam
     - image: /images/supported_by/CoE.png

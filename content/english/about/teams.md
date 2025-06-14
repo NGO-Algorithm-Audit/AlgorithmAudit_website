@@ -15,8 +15,7 @@ about_AA:
       image: /images/about/knowledge-platform.svg
       content: >
         Bringing together experts and knowledge to foster the collective
-        learning process on the responsible use of algorithms, see for instance
-        our [AI policy observatory](/knowledge-platform/policy-observatory/),
+        learning process on the responsible use of algorithms, see our
         [white papers](/knowledge-platform/knowledge-base/) and
         [public standards](/knowledge-platform/knowledge-base/).
     - subtitle: Normative advice commissions

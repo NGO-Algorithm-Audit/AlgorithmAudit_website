@@ -32,7 +32,7 @@ events:
 
       {{< embed_pdf url="/pdf-files/events/activities/20250523_AlgorithmAudit EXT.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
-    image: /images/events/eth-zurich.jpg
+    image: /images/partner logo-cropped/ETH.jpg
     date: 23-05-2025
     facets:
       - value: year_2025
@@ -56,7 +56,7 @@ events:
       * Leidt bias testing onvermijdelijk tot de gevreesde battle of numbers’, of kan het juist een cruciale rol spelen bij het realiseren van betekenisvol democratisch toezicht op AI?
 
       ![](</images/events/20250521_CPDP25.jpeg>)
-    image: /images/events/cpdp-logo-2025.svg
+    image: /images/partner logo-cropped/CPDP25.svg
     date: 21-05-2025
     facets:
       - value: year_2025
@@ -78,7 +78,7 @@ events:
 
       ![](/images/events/20250506_RUG.jpeg)
 
-    image: /images/events/RUG.png
+    image: /images/partner logo-cropped/RUG.png
     date: 06-05-2025
     facets:
       - value: year_2025
@@ -96,7 +96,7 @@ events:
 
       ![](/images/events/20250326_DCA.jpeg)
 
-    image: /images/events/dutch-data-protection.jpg
+    image: /images/partner logo-cropped/AP.png
     date: 26-03-2025
     facets:
       - value: year_2025
@@ -111,7 +111,7 @@ events:
     description: >
       Gastcollege voor MSc Artificial Intelligence studenten met een minor in AI ethiek van de Universiteit Utrecht
 
-    image: /images/events/uu-logo.png
+    image: /images/partner logo-cropped/UtrechtUniversity.png
     date: 10-03-2025
     facets:
       - value: year_2025
@@ -127,7 +127,7 @@ events:
       Presentatie en demo van open-source AI auditing tools zoals ontwikkeld met Innovationbudget 2024-25, een jaarlijkse competitie georganiseerd door het Ministerie van Binnenlandse Zaken.
 
       ![](/images/events/20250213_Demodag2025.jpg)
-    image: /images/events/MinBZK_logo.jpg
+    image: /images/partner logo-cropped/MinBZK.png
     date: 13-02-2025
     facets:
       - value: year_2025
@@ -161,7 +161,7 @@ events:
 
 
       ![](/images/events/20250121_PdZ.jpeg)
-    image: /images/events/PdZ-logo-socials.png
+    image: /images/partner logo-cropped/PakhuisDeZwijger.png
     date: 21-01-2025
     facets:
       - value: year_2025
@@ -178,7 +178,7 @@ events:
 
 
       ![](/images/events/20241213_Oxford.jpeg)
-    image: /images/events/Oxford-logo.png
+    image: /images/partner logo-cropped/OxfordUniversity.png
     date: 13-12-2024
     facets:
       - value: year_2024
@@ -193,7 +193,7 @@ events:
     description: >
       Presentatie over inkoop van algoritmes en AI voor PIANOo – expertisecentrum voor aanbesteding door publieke sector organisaties  
 
-    image: /images/events/pianoo-logo.svg
+    image: /images/partner logo-cropped/pianoo-logo.svg
     date: 10-12-2024
     facets:
       - value: year_2024
@@ -208,7 +208,7 @@ events:
     description: >
       Break-out sessie over algoritme en AI-validatie in de context van Nederlandse gemeenten
 
-    image: /images/events/BinnenlandsBestuur.svg
+    image: /images/partner logo-cropped/BinnenlandsBestuur.svg
     date: 03-12-2024
     facets:
       - value: year_2024
@@ -260,7 +260,7 @@ events:
 
 
       ![](/images/events/20241017_AcWet.jpeg)
-    image: /images/events/acwet.svg
+    image: /images/partner logo-cropped/acwet.svg
     date: 17-10-2024
     facets:
       - value: year_2024
@@ -275,7 +275,7 @@ events:
     description: >
       Gastspreker tijdens symposium 'Risico's van opsporingsalgoritmes' van het
       Ministerie van Justitie en Veiligheid
-    image: /images/events/MinJenV_logo.png
+    image: /images/partner logo-cropped/MinJenV.png
     date: 02-10-2024
     facets:
       - value: year_2024
@@ -290,7 +290,7 @@ events:
     description: >
       Masterclass 'Algoritmevalidatie' voor de Vereniging van Nederlandse
       Gemeenten (VNG)
-    image: /images/events/VNG_logo.png
+    image: /images/partner logo-cropped/VNG.png
     date: 19-09-2024
     facets:
       - value: year_2024
@@ -309,7 +309,7 @@ events:
       (CUB)-proces.
 
 
-      ![](</images/events/BZK event 2024.jpg>)
+      ![](</images/events/20240818_BZK.jpg>)
     image: /images/supported_by/BZK.jpg
     date: 18-09-2024
     facets:
@@ -326,7 +326,7 @@ events:
       Gastspreker tijdens symposium 'Profilering in de publieke sector' van de
       Commissie Persoonsgegevens Amsterdam (CPA) samen met Thijs Teisman van DUO
       over onderzoek naar Controle Uitwonendenbeurs (CUB)-proces.
-    image: /images/events/Amsterdam.png
+    image: /images/partner logo-cropped/GemeenteAmsterdam.png
     date: 12-09-2024
     facets:
       - value: year_2024
@@ -351,8 +351,8 @@ events:
       [https://github.com/NGO-Algorithm-Audit/DUO-CUB](https://github.com/NGO-Algorithm-Audit/DUO-CUB)
 
 
-      ![](/images/events/CBS.jpeg)
-    image: /images/events/CBS_logo.png
+      ![](/images/events/20240605_CBS.jpeg)
+    image: /images/partner logo-cropped/CBS.png
     date: 25-06-2024
     facets:
       - value: year_2024
@@ -364,8 +364,8 @@ events:
       - value: type_presentation
         label: presentatie
   - title: Europese Academie voor Standardisering jaarlijkse conferentie
-    description: "Evenement om Europese aanwezigheid in het internationale standardiserings landschap te verstevigen – Impact en hoogtepunten van het StandICT.eu\_2026 project\n\nGeorganiseerd door:\n\n* Europese Academie voor Standardisering (EURAS)\n* Nederlands Normalisatie Instituut (NEN)\n* TU Delft, TU Eindhoven, Rotterdam School of Management, Universiteit Tilburg\n\n![](/images/events/StandICT.jpeg)\n"
-    image: /images/events/StandICT.jpg
+    description: "Evenement om Europese aanwezigheid in het internationale standardiserings landschap te verstevigen – Impact en hoogtepunten van het StandICT.eu\_2026 project\n\nGeorganiseerd door:\n\n* Europese Academie voor Standardisering (EURAS)\n* Nederlands Normalisatie Instituut (NEN)\n* TU Delft, TU Eindhoven, Rotterdam School of Management, Universiteit Tilburg\n\n![](/images/events/20240619_StandICT.jpeg)\n"
+    image: /images/partner logo-cropped/StandICT.jpg
     date: 19-06-2024
     facets:
       - value: year_2024
@@ -386,7 +386,7 @@ events:
 
 
       [https://globalphilanthropyproject.org/gpp-events/ai-philanthropy-summit-at-mozfest/](https://globalphilanthropyproject.org/gpp-events/ai-philanthropy-summit-at-mozfest/)
-    image: /images/events/MozillaFestival.png
+    image: /images/partner logo-cropped/MozillaFestival.png
     date: 11-06-2024
     facets:
       - value: year_2024
@@ -404,7 +404,7 @@ events:
 
 
       [https://www.uu.nl/organisatie/alumni/sharing-days](https://www.uu.nl/en/organisation/alumni/sharing-days)
-    image: /images/events/uu-logo.png
+    image: /images/partner logo-cropped/UtrechtUniversity.png
     date: 06-06-2024
     facets:
       - value: year_2024
@@ -453,7 +453,7 @@ events:
 
 
       [https://outvie.nl/conferenties/artificial-intelligence-impact-update/](https://outvie.nl/conferenties/artificial-intelligence-impact-update/)
-    image: /images/events/Outvie_RGB_op_witte_achtergrond.png
+    image: /images/partner logo-cropped/Outvie.png
     date: 30-05-2024
     facets:
       - value: type_presentation
@@ -482,8 +482,8 @@ events:
       [https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/](https://clara-wichmann.nl/nieuws/discriminerende-algoritmes-bestrijden-via-het-recht/)
 
 
-      ![](</images/events/meta case panel.png>)
-    image: /images/events/spui 25.jpg
+      ![](</images/events/20240529_Meta case.png>)
+    image: /images/partner logo-cropped/Spui25.jpg
     date: 29-05-2024
     facets:
       - value: type_panel
@@ -518,8 +518,8 @@ events:
       eerlijkere AI-beslissingen?
 
 
-      ![](</images/events/CPDP Brussels 2024.jpeg>)
-    image: /images/events/CPDP Brussels 2024 logo.png
+      ![](</images/events/20240524_CPDP.jpeg>)
+    image: /images/partner logo-cropped/CPDP24.png
     date: 24-05-2024
     facets:
       - value: type_panel
@@ -538,7 +538,7 @@ events:
 
       Interview:
       [https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken\~bca4caa8/](https://www.volkskrant.nl/binnenland/wiskundige-jurriaan-parie-niet-het-algoritme-is-de-boeman-maar-de-manier-waarop-mensen-het-gebruiken~bca4caa8/)
-    image: /images/events/Volkskrant.png
+    image: /images/partner logo-cropped/Volkskrant.png
     date: 23-05-2024
     facets:
       - value: year_2024
@@ -579,7 +579,7 @@ events:
 
       {{< embed_pdf url="/pdf-files/events/activities/20240416_UvA_MDLab.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
-    image: /images/events/images.jpeg
+    image: /images/partner logo-cropped/AIMediaDemocracyLab.jpg
     date: 16-04-2024
     facets:
       - value: year_2024
@@ -617,7 +617,7 @@ events:
 
       {{< embed_pdf url="/pdf-files/events/activities/20240327_AA_Rekenkamer_DenHaag.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
-    image: /images/events/DH_rekenkamer.png
+    image: /images/partner logo-cropped/RekenkamerDenHaag.png
     date: 27-03-2024
     facets:
       - value: year_2024
@@ -643,7 +643,7 @@ events:
       *
       [Opinie-artikel](/nl/knowledge-platform/knowledge-base/op-ed_human_vs_machine_bias/)
       over deze thematiek zoals gepubliceerd in Het Parool op 14-02-2024.
-    image: /images/events/Amsterdam.png
+    image: /images/partner logo-cropped/GemeenteAmsterdam.png
     date: 20-03-2024
     facets:
       - value: year_2024
@@ -659,7 +659,7 @@ events:
       Workshop over normatieve dimensies van toepassing van een balanced random
       forest model in practice, o.a. het selecteren van (hyper)parameter en
       balanceren van recall/precision
-    image: /images/events/mathematics and computer science tu delft.png
+    image: /images/partner logo-cropped/TUDelft.png
     date: 07-03-2024
     facets:
       - value: type_presentation
@@ -681,7 +681,7 @@ events:
 
 
       {{< embed_pdf url="/pdf-files/events/activities/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
-    image: /images/events/jtc21.jpg
+    image: /images/partner logo-cropped/CEN.jpg
     date: 13-02-2024
     facets:
       - value: type_presentation
@@ -699,7 +699,7 @@ events:
     description: >
       Paneldiscussie over het auditeren van algoritmes. Delen van
       praktijkervaring.
-    image: /images/events/dutch-data-protection.jpg
+    image: /images/partner logo-cropped/AP.png
     date: 08-02-2024
     facets:
       - value: year_2024
@@ -713,7 +713,7 @@ events:
   - title: 'Rijksuniversiteit Groningen (RUG) AI Verordening '
     description: |
       Bijdrage aan paneldiscussie
-    image: /images/events/RUG.png
+    image: /images/partner logo-cropped/RUG.png
     date: 06-02-2024
     facets:
       - value: year_2024
@@ -730,7 +730,7 @@ events:
     description: >
       Lunchlezing Bias Detection Tool studievereniging Christiaan Huygens voor
       wiskunde en informatica TU Delft.
-    image: /images/events/mathematics and computer science tu delft.png
+    image: /images/partner logo-cropped/TUDelft.png
     date: 08-01-2024
     facets:
       - value: year_2024
@@ -748,7 +748,7 @@ events:
       Kennisdeling over het bijeenbrengen van inclusieve, deliberatieve
       adviescommissies door Stichting Algorithm Audit voor de Inclusiviteit
       werkgroep van JTC21 CEN-CENELEC
-    image: /images/events/jtc21.jpg
+    image: /images/partner logo-cropped/CEN.jpg
     date: 07-01-2024
     facets:
       - value: year_2024

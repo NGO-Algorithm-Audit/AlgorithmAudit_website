@@ -53,7 +53,7 @@ In 2023, European standardization bodies CEN and CENELEC have accepted a standar
 
 During last JTC21's plenary meeting in Dublin 12-14 Feb in Dublin, Algorithm Audit presented below slides on Fundamental Rights Impact Assessments (FRIAs) and the need for inclusive, deliberative stakeholder panels to deploy responsible AI.
 
-{{< image id="CEN-logo" width_desktop="3" width_mobile="6" image1="/images/partners/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partners/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
+{{< image id="CEN-logo" width_desktop="3" width_mobile="6" image1="/images/partner logo-cropped/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partner logo-cropped/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
 
 {{< container_close >}}
 

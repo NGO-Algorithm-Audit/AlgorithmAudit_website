@@ -70,7 +70,7 @@ In 2023-25, Algorithm Audit pairs up with Dutch public sector organisation DUO t
 
 Over the course of 2024, Algorithm Audit paired up with the municipality of Amsterdam to build public knowledge on pragmatic risk management measures for algorithms falling within and outside the AI-system defintion under the AI Act. 
 
-{{< image image1="/images/events/Amsterdam.png" alt1="Municipality of Amsterdam" caption1="Municipality of Amsterdam" link1="" width_desktop="3" id="amsterdam-logo" >}}
+{{< image image1="/images/partner logo-cropped/GemeenteAmsterdam.png" alt1="Municipality of Amsterdam" caption1="Municipality of Amsterdam" link1="" width_desktop="3" id="amsterdam-logo" >}}
 
 {{< container_close >}}
 

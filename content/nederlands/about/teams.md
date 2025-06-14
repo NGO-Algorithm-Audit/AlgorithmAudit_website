@@ -18,8 +18,7 @@ about_AA:
       image: /images/about/knowledge-platform.svg
       content: >
         Het samenbrengen van kennis en experts om het collectieve leerproces
-        over de verantwoorde inzet van algoritmes aan te jagen, zie ons [AI
-        beleidsobservatorium](/nl/knowledge-platform/policy-observatory/),
+        over de verantwoorde inzet van algoritmes aan te jagen, zie onze
         [white papers](/nl/knowledge-platform/knowledge-base/) en
         [publieke standaarden](/nl/knowledge-platform/knowledge-base/).
     - subtitle: Normatieve adviescommissies

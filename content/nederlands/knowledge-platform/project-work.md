@@ -70,7 +70,7 @@ Voor deze werkzaamheden wordt Algorithm Audit, DUO en het Ministerie van Binnenl
 
 In 2024 werkte Algorithm Audit samen met de Gemeente Amsterdam om publieke kennis op te bouwen over pragmatische beheerskader voor voor algoritmes die zowel binnen als buiten de AI-systeem van de AI Verordening vallen. 
 
-{{< image image1="/images/events/Amsterdam.png" alt1="Municipality of Amsterdam" caption1="Municipality of Amsterdam" link1="" width_desktop="3" id="amsterdam-logo" >}}
+{{< image image1="/images/partner logo-cropped/GemeenteAmsterdam.png" alt1="Municipality of Amsterdam" caption1="Municipality of Amsterdam" link1="" width_desktop="3" id="amsterdam-logo" >}}
 
 {{< container_close >}}
 

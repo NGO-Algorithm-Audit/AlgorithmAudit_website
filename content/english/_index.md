@@ -53,18 +53,14 @@ Activity_Feed:
   featured_title: Featured
   featured_activities:
     - title: >-
-        Public standard 'Meaningful human intervention for risk profiling
-        algorithms'
+        Local-only tools for AI validation
       intro: >
-        Step-by-step guide to prevent prohibited automated decision-making
-        solely based on profilings, as stated in Article 22 GDPR. Based on
-        case-based experiences with risk profiling algorithms and aligned with
-        recent literature.
+        Slides explaining the concept of local-only tools. Highlighting similarities and differences with cloud computing and providing examples of architerctural set-up for Algorithm Audit's unsupervised bias detection and synthetic data generation tool.
       link: >-
-        /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
-      image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
-      date: 15-05-2025
-      type: public standard
+        /technical-tools/bdt/#local-only
+      image: /images/BDT/20250605_carrousel_local-only.png
+      date: 05-06-2025
+      type: white paper
     - title: >-
         Public standard 'Meaningful human intervention for risk profiling
         algorithms'
@@ -84,19 +80,19 @@ Activity_Feed:
   activities:
     - title: Guest lecture 'Fairness and Algorithms' ETH Zürich
       link: /events/activities/#events
-      image: /images/events/eth-zurich.jpg
+      image: /images/partner logo-cropped/ETH.jpg
       date: 23-05-2025
       type: event
     - title: Panel discussion CPDP'25
       link: /events/activities/#events
-      image: /images/events/cpdp-logo-2025.svg
+      image: /images/partner logo-cropped/CPDP25.svg
       date: 21-05-2025
       type: panel discussion
     - title: >-
         Masterclass 'From data to decision', Jantina Tammes School of Digital
         Society, Technology and AI University of Groningen
       link: /events/activities/#events
-      image: /images/events/RUG.png
+      image: /images/partner logo-cropped/RUG.png
       date: 06-05-2025
       type: event
   items_button_text: More events
@@ -107,27 +103,25 @@ Areas_of_AI_expertise:
   width_m: 4
   width_s: 12
   feature_item:
-    - name: Algorithms for decision support
-      icon: fas fa-divide
+    - name: Sociotechnical evaluation of generative AI
+      icon: fas fa-robot
       content: >
         Auditing data-analysis methods and algorithms used for decision support.
         Among others by checking organizational checks and balances, and
         assessing the quantitative dimension
-    - name: AI Act standards
+    - name: AI Act implementation
       icon: fas fa-certificate
       content: >
-        As Algorithm Audit is part of Dutch and Europen standardization
-        organisations NEN and CEN-CENELEC, AI systems are audited according to
-        the latest standards. See also our public <a
+        Algorithm Audit is well-informed about techno-legal concepts in the AI Act. As a member of Dutch and Europen standardization organisations NEN and CEN-CENELEC, Algorithm Audit monitors and contributes to the development of standards for AI systems. See also our public <a
         href="https://algorithmaudit.eu/knowledge-platform/standards/"
         style="text-decoration: underline;">knowledge base</a> on
         standardization
-    - name: Profiling
+    - name: Bias analysis
       icon: fas fa-chart-pie
       content: >
-        Auditing rule-based and ML-driven profiling, e.g., differentiation
-        policies, selection criteria, Z-testing, model validation and
-        organizational aspects
+        Auditing data-analysis methods and algorithms used for decision support.
+        Among others by checking organizational checks and balances, and
+        assessing the quantitative dimension
   button_text: Discuss collaboration
   button_link: /knowledge-platform/project-work/
 Distinctive_in:
@@ -158,34 +152,35 @@ Distinctive_in:
 Supported_by:
   title: Collaborating with
   funders:
-    - image: /images/supported_by/sidn.png
-      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
-      alt_text: Foundation for Internet and Democracy Netherlands
-    - image: /images/supported_by/EUAISFund.png
+    - image: /images/supported_by/CoE.png
+      link: "https://www.coe.int/en/web/portal/home"
+      alt_text: Council of Europe
+    - image: /images/partner logo-cropped/EAISF.png
       link: "https://europeanaifund.org/announcing-our-2022-open-call-grantees/"
       alt_text: European AI & Society Fund
+    - image: /images/partner logo-cropped/CEN.jpg
+      link: "https://www.cencenelec.eu"
+      alt_text: "Europees standardisation committee "
+    - image: /images/supported_by/HAI.png
+      link: "https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
+      alt_text: Stanford University Human-Centered Artificial Intelligence Lab
     - image: /images/supported_by/BZK.jpg
       link: >-
         https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
       alt_text: Dutch Ministry of the Interior
-    - image: /images/supported_by/HAI.png
-      link: "https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
-      alt_text: Stanford University Human-Centered Artificial Intelligence Lab
-    - image: /images/supported_by/DUO.png
+    - image: /images/partner logo-cropped/DUO.png
       link: "https://duo.nl"
       alt_text: Dutch Executive Agency for Education
-    - image: /images/partners/NEN.svg
-      link: "https://www.nen.nl"
-      alt_text: Dutch standardisation institute
-    - image: /images/partners/CEN.jpg
-      link: "https://www.cencenelec.eu"
-      alt_text: "Europees standardisation committee "
-    - image: /images/events/Amsterdam.png
+    - image: /images/partner logo-cropped/GemeenteAmsterdam.png
       link: "https://www.amsterdam.nl"
       alt_text: Municipality of Amsterdam
-    - image: /images/supported_by/CoE.png
-      link: "https://www.coe.int/en/web/portal/home"
-      alt_text: Council of Europe
+    - image: /images/partner logo-cropped/NEN.svg
+      link: "https://www.nen.nl"
+      alt_text: Dutch standardisation institute
+    - image: /images/supported_by/sidn.png
+      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
+      alt_text: Foundation for Internet and Democracy Netherlands
+
   button_text: And more
   button_link: /funded-by
 Title_video:
