@@ -49,7 +49,7 @@ url = "/nl/knowledge-platform"
 [[main]]
 name = "Algoprudentie"
 weight = 3
-url = "/algoprudence"
+url = "/nl/algoprudence"
 hasChildren = true
   [[main]]
   identifier = "algoprudence_overview"
@@ -118,33 +118,29 @@ url = "/nl/technical-tools"
 
 [[main]]
 name = "Evenementen"
-url = "events"
+url = "/nl/events/activities"
 weight = 5
 hasChildren = true
   [[main]]
-  parent = "Evenementen"
-  name = "Registratie"
-  url = "/nl/events/registration"
-  weight = 1
-  [[main.params]]
     featured = true
   [[main]]
   parent = "Evenementen"
   name = "Activiteiten"
   url = "/nl/events/activities"
-  weight = 2
+  weight = 1
   [[main.params]]
     icon = "fa-calendar"
   [[main]]
   parent = "Evenementen"
   name = "Persberichten"
   url = "/nl/events/press_room"
-  weight = 3
+  weight = 2
   [[main.params]]
     icon = "fa-newspaper"
 
 [[main]]
 name = "Over ons"
+url = "/nl/about/teams"
 weight = 6
 hasChildren = true
   [[main]]
