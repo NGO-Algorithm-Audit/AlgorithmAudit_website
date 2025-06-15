@@ -49,7 +49,7 @@ url = "/nl/knowledge-platform"
 [[main]]
 name = "Algoprudentie"
 weight = 3
-url = "/algoprudence"
+url = "/nl/algoprudence"
 hasChildren = true
   [[main]]
   identifier = "algoprudence_overview"
@@ -118,7 +118,7 @@ url = "/nl/technical-tools"
 
 [[main]]
 name = "Evenementen"
-url = "events"
+url = "/nl/events/activities"
 weight = 5
 hasChildren = true
   [[main]]
@@ -140,6 +140,7 @@ hasChildren = true
 
 [[main]]
 name = "Over ons"
+url = "/nl/about/teams"
 weight = 6
 hasChildren = true
   [[main]]

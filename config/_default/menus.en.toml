@@ -118,7 +118,7 @@ url = "/technical-tools"
 
 [[main]]
 name = "Events"
-url = "events"
+url = "/events/activities"
 weight = 5
 hasChildren = true
   [[main]]
@@ -140,9 +140,9 @@ hasChildren = true
 
 [[main]]
 name = "About"
+url = "/about/teams"
 weight = 6
 hasChildren = true
-url = "/about/contact"
   [[main]]
   parent = "About"
   name = "Get in touch"
