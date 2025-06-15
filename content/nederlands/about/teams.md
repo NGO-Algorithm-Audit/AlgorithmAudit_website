@@ -18,8 +18,7 @@ about_AA:
       image: /images/about/knowledge-platform.svg
       content: >
         Het samenbrengen van kennis en experts om het collectieve leerproces
-        over de verantwoorde inzet van algoritmes aan te jagen, zie ons [AI
-        beleidsobservatorium](/nl/knowledge-platform/policy-observatory/),
+        over de verantwoorde inzet van algoritmes aan te jagen, zie onze
         [white papers](/nl/knowledge-platform/knowledge-base/) en
         [publieke standaarden](/nl/knowledge-platform/knowledge-base/).
     - subtitle: Normatieve adviescommissies
@@ -32,7 +31,7 @@ about_AA:
     - subtitle: Technische tools
       image: /images/about/technical-tools.svg
       content: >
-        Implementeren en testen van open-source software voor de verantwoorde inzet van algoritmes en AI, o.a. [unsupervised bias
+        Implementeren en testen van open-source software voor de verantwoorde inzet van algoritmes en AI, o.a. sociotechnische evaluatie van generatieve AI, [unsupervised bias
         detectie](/nl/technical-tools/bdt/) en [synthetische data generatie](/nl/technical-tools/sdg/).
     - subtitle: Projectwerk
       image: /images/about/project.svg

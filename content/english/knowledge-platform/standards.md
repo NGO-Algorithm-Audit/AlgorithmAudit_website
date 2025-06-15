@@ -4,24 +4,15 @@ subtitle: >
   Responsible AI involves ethical considerations and trade-offs, these cannot be
   solved by technical standards only, but must involve collective deliberation
   by all stakeholders. Through national and European standardization bodies, we
-  participate in discussions on the bandwidth of technical and normative AI
-  standards
+  participate in discussions on the possibilities and limitations of technical and normative standards for responsible use of AI.
 image: /images/svg-illustrations/case_repository.svg
 team:
-  title: AI Act standardization team
+  title: Team AI Act harmonised standards
   icon: fas fa-user-friends
   button_text: Other teams
   id: team
   button_link: /about/teams/
   team_members:
-    - image: /images/people/ALeoneDeCastris.jpg
-      name: Arcangelo Leone de Castris
-      bio: |
-        AI Policy Researcher at The Alan Turing Institute, London
-    - image: /images/people/EPetersen.jpeg
-      name: Eike Petersen
-      bio: |
-        Senior Scientist Medical AI, Fraunhofer MEVIS, Hannover
     - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
@@ -35,7 +26,7 @@ quick_navigation:
   links:
     - title: Introduction
       url: '#standardization-request'
-    - title: AI Act standards
+    - title: AI Act harmonised standards
       url: '#standards'
     - title: Contributions
       url: '#contributions'
@@ -53,11 +44,11 @@ In 2023, European standardization bodies CEN and CENELEC have accepted a standar
 
 During last JTC21's plenary meeting in Dublin 12-14 Feb in Dublin, Algorithm Audit presented below slides on Fundamental Rights Impact Assessments (FRIAs) and the need for inclusive, deliberative stakeholder panels to deploy responsible AI.
 
-{{< image id="CEN-logo" width_desktop="3" width_mobile="6" image1="/images/partners/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partners/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
+{{< image id="CEN-logo" width_desktop="3" width_mobile="6" image1="/images/partner logo-cropped/NEN.svg" alt1="Stichting Koninklijk Nederlands Normalisatie Instituut" caption1="Stichting Koninklijk Nederlands Normalisatie Instituut" image2="/images/partner logo-cropped/CEN.jpg" alt2="European Committee for Standardization" caption2="European Committee for Standardization" >}}
 
 {{< container_close >}}
 
-{{< container_open title="AI Act standards" id="standards" icon="fas fa-ruler" >}}
+{{< container_open title="AI Act harmonised standards" id="standards" icon="fas fa-ruler" >}}
 
 The standardization request of the European Commission, that will provide a presumption of conformity with the AI Act, relates to ten aspects:
 

@@ -13,24 +13,14 @@
       </div>
 
       {{ range .funders }}
-      <div class="col-lg-4 col-6 my-2">
+      <div class="col-lg-4 col-6 my-5">
         <a href="{{.link}}" target="_blank">
-          <img src="{{ .image | relURL }}" class="d-block mx-auto" style="max-height: 100px; max-width: 220px;" alt="{{.alt_text}}" class="img-fluid">
+          <img src="{{ .image | relURL }}" class="d-block mx-auto img-fluid collaberating_logo" alt="{{.alt_text}}" class="">
         </a>
       </div>
       {{ end }}
     </div>
 
-
-    <!-- Button -->
-    <div class="row text-center">
-      <div class="col-12" style="margin-top:25px;">
-        <a class="btn-link" href="{{.button_link | relURL}}">
-          <h3 class="btn" style="color:#ffffff;">{{.button_text}}</h3>
-        </a>
-      </div>
-    </div>
-    <!-- /Button -->
   </div>
 </section>
 {{ end }}

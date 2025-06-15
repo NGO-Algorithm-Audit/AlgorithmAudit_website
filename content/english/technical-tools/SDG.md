@@ -289,7 +289,7 @@ This local-first synthetic data generation tool is developed with support of pub
 
 {{< accordions_area_open>}}
 
-{{< accordion_item_open title="Innovation grant Dutch Ministry of the Interior" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
+{{< accordion_item_open title="Innovation grant Dutch Ministry of the Interior" image="/images/partner logo-cropped/MinBZK.png" tag1="2024-25" >}}
 
 ##### Description
 In partnership with the Dutch Executive Agency for Education and the Dutch Ministry of the Interior, Algorithm Audit has been developing and testing this tool from July 2024 to July 2025, supported by an <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">Innovation grant</a> from the annual competition hosted by the Dutch Ministry of the Interior. Project progress was shared at a community gathering on 13-02-2025. A first version of the tools are launched during a webinar on 10-06-2025.
@@ -298,7 +298,7 @@ In partnership with the Dutch Executive Agency for Education and the Dutch Minis
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="SIDN Fund" image="/images/supported_by/sidn.png" tag1="2024" >}}
+{{< accordion_item_open title="SIDN Fund" image="/images/partner logo-cropped/SIDN.png" tag1="2024" >}}
 
 ##### Description
 

@@ -288,7 +288,7 @@ Deze local-only synthetische data generatie tool is ontwikkeld met steun van pub
 
 {{< accordions_area_open>}}
 
-{{< accordion_item_open title="Innovatiebudget Ministerie van Binnenlandse Zaken" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
+{{< accordion_item_open title="Innovatiebudget Ministerie van Binnenlandse Zaken" image="/images/partner logo-cropped/MinBZK.png" tag1="2024-25" >}}
 
 ##### Beschrijving
 In samenwerking met de Dienst Uitvoering Onderwijs (DUO) en het Ministerie van Binnenlandse Zaken heeft Algorithm Audit deze tool ontwikkeld en getest in de periode juli 2024 tot juli 2025 met ondersteuning van <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">Innovatiebudget</a>, een jaarlijkse competitie georganiseerd door het Ministerie van Binnenlandse Zaken. De voortgang van het project werd gedeeld tijdens een bijeenkomst op 13-02-2025. Een eerste versie van de tools zijn tijdens een webinar online gelanceerd op 10-06-2025.
@@ -297,7 +297,7 @@ In samenwerking met de Dienst Uitvoering Onderwijs (DUO) en het Ministerie van B
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="SIDN Fonds" image="/images/supported_by/sidn.png" tag1="2024" >}}
+{{< accordion_item_open title="SIDN Fonds" image="/images/partner logo-cropped/SIDN.png" tag1="2024" >}}
 
 ##### Beschrijving
 In 2024 ondersteunde het SIDN Fonds <a href="https://www.sidnfonds.nl/projecten/open-source-ai-auditing" target="_blank">Algorithm Audit</a> bij het ontwikkelen van een eerste demo van de synthetische data generatie tool.

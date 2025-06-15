@@ -450,16 +450,6 @@ export default {
             },
           ],
         },
-        {
-          type: "string",
-          name: "button_text",
-          label: "Button text",
-        },
-        {
-          label: "Link",
-          type: "string",
-          name: "button_link",
-        },
       ],
     },
     // Video

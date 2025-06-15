@@ -75,7 +75,7 @@ Report *Preventing prejudice* has been <a href="https://www.rijksoverheid.nl/doc
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="DUO apologizes for indirect discrimination in college allowances control process" image="/images/supported_by/DUO.png" id="DUO-apologies" date="01-03-2024" tag1="press release" >}}
+{{< accordion_item_open title="DUO apologizes for indirect discrimination in college allowances control process" image="/images/partner logo-cropped/DUO.png" id="DUO-apologies" date="01-03-2024" tag1="press release" >}}
 
 ##### Description
 

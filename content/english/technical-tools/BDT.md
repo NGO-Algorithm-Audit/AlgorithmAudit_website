@@ -236,7 +236,7 @@ This tool is developed with support of public and philanthropic organisations.
 
 {{< accordions_area_open id="supported-by-accordion" >}}
 
-{{< accordion_item_open title="Innovation grant Dutch Ministry of the Interior" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
+{{< accordion_item_open title="Innovation grant Dutch Ministry of the Interior" image="/images/partner logo-cropped/MinBZK.png" tag1="2024-25" >}}
 
 ##### Description
 In partnership with the Dutch Executive Agency for Education and the Dutch Ministry of the Interior, Algorithm Audit has been developing and testing this tool from July 2024 to July 2025, supported by an <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">Innovation grant</a> from the annual competition hosted by the Dutch Ministry of the Interior. Project progress was shared at a community gathering on 13-02-2025.
@@ -245,7 +245,7 @@ In partnership with the Dutch Executive Agency for Education and the Dutch Minis
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="SIDN Fund" image="/images/supported_by/sidn.png" tag1="2024" >}}
+{{< accordion_item_open title="SIDN Fund" image="/images/partner logo-cropped/SIDN.png" tag1="2024" >}}
 
 ##### Description
 
@@ -267,7 +267,7 @@ This tool has received awards and is acknowledged by various <a href="https://gi
 
 {{< accordions_area_open id="awards-accordion" >}}
 
-{{< accordion_item_open title="Finalist Stanford’s AI Audit Challenge 2023" image="/images/supported_by/HAI.png" tag1="06-2023" >}}
+{{< accordion_item_open title="Finalist Stanford’s AI Audit Challenge 2023" image="/images/partner logo-cropped/StanfordHAI.png" tag1="06-2023" >}}
 
 ##### Description
 Under the name Joint Fairness Assessment Method (JFAM) the unsupervised bias detection tool has been selected as a finalist in <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">Stanford’s AI Audit Competition 2023</a>.

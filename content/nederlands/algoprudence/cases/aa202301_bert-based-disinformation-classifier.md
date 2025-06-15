@@ -27,7 +27,7 @@ Toepassing van de door Algorithm Audit zelf-geimplementeerde unsupervised [bias
 
 Deze algoprudentie, in combinatie met de [bias detectie tool,](/technical-tools/bdt/) is onder de naam Joint Fairness Assessment Method (JFAM) geselecteerd als finalist voor [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/supported_by/HAI.png" alt1="Universiteit Stanford" caption1="Universiteit Stanford" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" >}}
+{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/partner logo-cropped/StanfordHAI.png" alt1="Universiteit Stanford" caption1="Universiteit Stanford" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" >}}
 
 #### Presentatie
 
@@ -52,7 +52,7 @@ Een visuele presentatie van deze case study kan worden gevonden in [dit](https:/
 
 {{< accordions_area_open id="actions" >}}
 
-{{< accordion_item_open image="/images/supported_by/sidn.png" title="Ondersteuning voor verdere ontwikkeling" id="sidn" date="01-12-2023" tag1="financiering" tag2="open source" tag3="AI auditing tool" >}}
+{{< accordion_item_open image="/images/partner logo-cropped/SIDN.png" title="Ondersteuning voor verdere ontwikkeling" id="sidn" date="01-12-2023" tag1="financiering" tag2="open source" tag3="AI auditing tool" >}}
 
 ##### Beschrijving
 
@@ -60,7 +60,7 @@ Het [SIDN Fonds](https://www.sidnfonds.nl/projecten/open-source-ai-auditing) ond
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="Finalist Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="28-04-2023" tag1="finalist" >}}
+{{< accordion_item_open title="Finalist Stanford's AI Audit Challenge 2023" image="/images/partner logo-cropped/StanfordHAI.png" id="ai_audit_challenge" date="28-04-2023" tag1="finalist" >}}
 
 ##### Beschrijving
 
