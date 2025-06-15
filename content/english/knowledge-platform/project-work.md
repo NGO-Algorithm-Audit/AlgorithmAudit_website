@@ -34,23 +34,39 @@ form1:
 quick_navigation:
   title: Overview
   links:
+    - title: 2025
+      url: '#LLM-validation'
     - title: LLM validation – Dutch judiciary
       url: '#LLM-validation'
+      indent: 1
     - title: Assessment protocol – Council of Europe
       url: '#assessment-protocol'
+      indent: 1
+    - title: Bias analysis – Municipality of Utrecht
+      url: '#utrecht'
+      indent: 1
+    - title: Research support – Court of Auditors Deventer
+      url: '#deventer'
+      indent: 1
     - title: Knowledge partner – DUO
       url: '#DUO2'
+      indent: 1
     - title: eLearning – Council of Europe
       url: '#elearning'
+      indent: 1
+    - title: 2024
+      url: '#amsterdam'
     - title: AI Act implementation – Municipality of Amsterdam
       url: '#amsterdam'
+      indent: 1
     - title: Bias analysis – DUO
       url: '#DUO1'
+      indent: 1
     - title: Discuss collaboration
       url: '#form'
 ---
 
-
+# 2025
 
 <!-- voorRecht LLM validation -->
 
@@ -78,6 +94,32 @@ From Q3-2025 up to Q4-2025, Algorithm Audit supports the Council of Europe (CoE)
 
 
 
+<!-- Gemeente Utrecht -->
+
+{{< container_open title="Bias analysis – Municipality of Utrecht" id="utrecht" icon="fas fa-search" >}}
+
+In Q2-2025 and Q3-2025, Algorithm Audit supports the Municipality of Utrecht with conducting a bias analysis of an algorithmic system. 
+
+<br>
+
+{{< image id="logo-gemeente-utrecht" width_desktop="2" width_mobile="12" image1="/images/partner logo-cropped/GemeenteUtrecht.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
+
+{{< container_close >}} 
+
+
+
+<!-- Rekenkamer Deventer -->
+
+{{< container_open title="Research support – Court of Auditors Deventer" id="deventer" icon="fas fa-plus" >}}
+
+From Q2-2025 up to Q3-2025, Algorithm Audit supports the Court of Auditors Deventer with an investigation into usage of algorithms and AI systems by the Municipality of Deventer.
+
+{{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
+
+{{< container_close >}} 
+
+
+
 <!-- DUO Kennispartner -->
 
 {{< container_open title="Knowledge partner – Dutch Executive Education Agency (DUO)" id="DUO2" icon="fas fa-user-graduate" >}}
@@ -99,8 +141,9 @@ From Q3-2024 up to Q1-2025, Algorithm Audit supported the Council of Europe (CoE
 {{< image image1="/images/partner logo-cropped/CoE.png" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="2" >}}
 
 {{< container_close >}}
+<br>
 
-
+# 2024
 
 <!-- Gemeente Amsterdam -->
 
