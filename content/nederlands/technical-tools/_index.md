@@ -1,12 +1,12 @@
 ---
 layout: sublandingpage
 title: Technische tools
-titleline2: Open-source AI auditing tools
+titleline2: Open-source tools voor validatie van algorithmische systemen
 subtitle: |
   We ontwikkelen tools die het voor een breed publiek gemakkelijker te maken om AI te auditeren. Onze tools zijn gratis te gebruiken, open source en local-first. Dit betekent dat data de browser niet verlaat, geen gebruik wordt gemaakt van cloud-toepassingen en dat de tools eenvoudig door organisaties op een privacy-vriendelijke manier lokaal gebruikt kunnen worden.
 icon: fa-light fa-toolbox
-color: '#2559A2'
-font_color: '#FFFFFF'
+color: '#FFFDE4'
+font_color: '#005AA7'
 subpage_links:
   - title: Unsupervised bias detectie tool
     titleline2: >-

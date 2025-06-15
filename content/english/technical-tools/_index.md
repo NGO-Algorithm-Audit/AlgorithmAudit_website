@@ -1,12 +1,12 @@
 ---
 layout: sublandingpage
 title: Technical tools
-titleline2: Open source AI auditing tools
+titleline2: Open source tools for validating algorithmic systems
 subtitle: |
   We develop tools that make it easier for everyone to audit AI. Our tools are free, open source and local-first. Data does not leave your browser, do not rely on cloud solutions and our tools can be used in a fully privacy-preserving way locally by organizations.
 icon: fa-light fa-toolbox
-color: '#2559A2'
-font_color: '#FFFFFF'
+color: '#FFFDE4'
+font_color: '#005AA7'
 subpage_links:
   - title: Unsupervised bias detection tool
     titleline2: >-
