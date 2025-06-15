@@ -25,7 +25,7 @@ About:
 overview_block:
   activities:
     - title: Knowledge platform
-      subtitle: Expertise in statistics, software development, legal framework and ethics
+      subtitle: Expertise in statistics, software development, law and ethics
       url: /knowledge-platform/
       icon: fa-light fa-layer-group
       color: "#E3F0FE"
@@ -119,7 +119,7 @@ Areas_of_AI_expertise:
         We evaluate algorithmic systems both from a qualitative and quantitative dimension. Besides expertise about data analysis and AI engineering, we possess have in-depth knowledge of legal frameworks concerning non-discrimination, automated decision-making and organizational risk management. See our <a
         href="/knowledge-platform/knowledge-base/"
         style="text-decoration: underline;">public standards</a> how to deploy algorithmic systems responsibly.
-  button_text: Discuss collaboration
+  button_text: Explore collaboration
   button_link: /knowledge-platform/project-work/#form
 Distinctive_in:
   title: Distinctive in

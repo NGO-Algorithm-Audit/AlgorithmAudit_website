@@ -1,7 +1,7 @@
 ---
 layout: sublandingpage
 title: Knowledge platform
-titleline2: Building and sharing public knowledge
+titleline2: Expertise in statistics, software development, law and ethics
 subtitle: >
   We connect domain expertise in statistics, AI engineering, law and ethics to build public knowledge on responsible AI. We help share knowledge between policy makers, industry, and research. For our key insights check out our white papers and public standards.
 icon: fa-layer-group

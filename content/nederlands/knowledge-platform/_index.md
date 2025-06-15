@@ -1,7 +1,7 @@
 ---
 layout: sublandingpage
 title: Kennisplatform
-titleline2: Statistische en juridische expertise
+titleline2: Expertise in statisitek, software development, recht en ethiek
 subtitle: >
   We verbinden domeinexpertise in statistiek, AI engineering, recht en ethiek om publieke kennis over verantwoorde AI op te bouwen. We jagen de verspreiding van kennis tussen beleidsmakers, bedrijfsleven en onderzoek aan. Voor belangrijke thema's ontwikkelen we domeinkennis middels white papers en publieke standaarden.
 icon: fa-light fa-layer-group

@@ -1,12 +1,12 @@
 ---
 layout: sublandingpage
 title: Algoprudence
-titleline2: Case-based normative advice
+titleline2: Case-based normative advice about responsible AI
 subtitle: >
   Case-based advice on tough problems. Algorithm Audit convenes independent advice commissions to decide on concrete normative questions relating to responsible AI. We transparently publish advices as _algoprudence_ – jurisprudence for algorithms. Explore our case repository to learn from real-world cases.
 icon: fa-light fa-layer-group
-color: "#2559A2"
-font_color: '#FFFFFF'
+color: "#ffcbbd"
+font_color: '#005AA7'
 subpage_links:
   - title: Case repository
     titleline2: >-

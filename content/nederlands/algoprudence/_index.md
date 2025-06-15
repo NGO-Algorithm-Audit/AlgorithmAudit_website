@@ -1,12 +1,12 @@
 ---
 layout: sublandingpage
 title: Algoprudentie
-titleline2: Case-based normatief advies
+titleline2: Case-based normatief advies over de verantwoorde inzet van AI
 subtitle: >
   Case-based advies over complexe vraagstukken. Algorithm Audit brengt onafhankelijke adviescommissies samen om over concrete normatieve vragen met betrekking tot verantwoorde AI besluiten te nemen. We publiceren de adviezen als _algoprudentie_: jurisprudentie voor algoritmes. Werp een blik op onze casuïstiek om te leren van de praktijk.
 icon: fa-light fa-layer-group
-color: "#2559A2"
-font_color: '#FFFFFF'
+color: "#ffcbbd"
+font_color: '#005AA7'
 subpage_links:
   - title: Casuïstiek
     titleline2: >-
