@@ -122,24 +122,19 @@ url = "events"
 weight = 5
 hasChildren = true
   [[main]]
-  parent = "Events"
-  name = "Registration"
-  url = "/events/registration"
-  weight = 1
-  [[main.params]]
     featured = true
   [[main]]
   parent = "Events"
   name = "Activities"
   url = "/events/activities"
-  weight = 2
+  weight = 1
   [[main.params]]
     icon = "fa-calendar"
   [[main]]
   parent = "Events"
   name = "Press room"
   url = "/events/press_room"
-  weight = 3
+  weight = 2
   [[main.params]]
     icon = "fa-newspaper"
 
