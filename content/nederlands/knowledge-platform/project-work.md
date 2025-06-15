@@ -3,11 +3,11 @@ title: Projectwerk
 subtitle: >
   Algorithm Audit biedt middels projectwerk ondersteuning bij specifieke vragen
   van publieke en private sector organisaties over de verantwoorde inzet van
-  algoritmes. Een overzicht van onze technisch audits en normatieve reviews kan
+  algoritmes en AI. Een overzicht van onze technisch audits en normatieve reviews kan
   worden gevonden in onze [case repository](/nl/algoprudence/)
 image: /images/svg-illustrations/knowledge_base.svg
 form1:
-  title: Kom in contact om samenwerking te verkennen
+  title: Kom in contact om samenwerking te bespreken
   content: >-
     Uw bericht wordt verstuurd naar Algorithm Audit’s auditing team. Het team
     stuurt binnen afzienbare tijd een reactie.
@@ -32,45 +32,98 @@ form1:
       required: true
       type: textarea
 quick_navigation:
-  title: Overzicht
+  title: Inhoudsopgave
   links:
-    - title: Raad van Europa
-      url: '#COE'
-    - title: Dienst Uitvoering Onderwijs (DUO)
-      url: '#DUO'
-    - title: Gemeente Amsterdam
+    - title: LLM validatie – Rechtspraak
+      url: '#LLM-validation'
+    - title: Discriminatie beoordelingsprotocol – Raad van Europa
+      url: '#assessment-protocol'
+    - title: Kennispartner – DUO
+      url: '#DUO2'
+    - title: eLearning – Raad van Europa
+      url: '#elearning'
+    - title: AI-verordening implementatie – Gemeente Amsterdam
       url: '#amsterdam'
+    - title: Bias analyse – DUO
+      url: '#DUO1'
+    - title: Bespreek samenwerking
+      url: '#form'
 ---
 
-{{< container_open title="eLearning modules – Raad van Europa" id="COE" icon="fas fa-star" >}}
 
-In Q3-2024 tot en met Q1-2025 ondersteunde Algorithm Audit de Raad van Europa (RvE) met het updaten van eLearning relaterend aan de AI-verordening en de RvE kaderverdrag over AI.
 
-{{< image image1="/images/supported_by/CoE.png" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="3" >}}
+<!-- voorRecht LLM validation -->
 
-{{< container_close >}}
+{{< container_open title="LLM validatie – Rechtspraak" id="LLM-validation" icon="fas fa-robot" >}}
 
-{{< container_open title="Samenwerking Dienst Uitvoering Onderwijs (DUO)" id="DUO" icon="fas fa-user-graduate" >}}
+Van Q3-2025 tot en met Q1-2026 neemt Algorithm Audit deel aan een consortium met de Rechtspraak, Technische Universiteit Eindhoven, T&T Data Consultancy en Deloitte in een project om de LLM-gebaseerde chatbot <a href="https://www.voorrecht-rechtspraak.nl" target="_blank">voorrecht-Rechtspraak</a> te valideren. Het resultaat van het project is een validatiekader voor LLMs die worden gebruikt voor publieke informatievoorziening. Dit project wordt ondersteund door het programma <a href="https://www.sidnfonds.nl/nieuws/dit-zijn-de-10-toegekende-projecten-van-de-call-responsible-ai-in-de" target="_blank">'Responsible AI in de praktijk'</a> van het SIDN Fonds en TopSectorICT.
 
-In 2023-25 werkt Stichting Algorithm Audit samen met de Dienst Uitvoering Onderwijs (DUO) om gezamenlijk ervaring op te doen met het valideren van algoritmes, uit zowel kwalitatief als kwantitatief oogpunt. Op de volgende vlakken vindt samenwerking plaats:
+</br>
 
-* Een technische auditrapport van vooringenomenheid in het controle uitwonendenbeurs (CUB)-proces. Het rapport [_Vooringenomenheid voorkomen_](/nl/algoprudence/cases/aa202401_preventing-prejudice/) is op 01-03-2024 verstuurd naar de Tweede Kamer;
-* Een tweede [audtirapport](/nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/) naar exacte groepssamenstelling in het verloop van het CUB-proces, aan de hand van een <a href="https://github.com/NGO-Algorithm-Audit/DUO-CUB" target="_blank">data analyse</a> gebaseerd op maatwerktabllen van het Centraal Bureau voor de Statistiek (CBS);
-* Toepassen van de algoprudentie-werkwijze voor normatieve oordeelsvorming in de context van algoritmevalidaties. Meer informatie over algoprudentie kan [hier](/nl/algoprudence/how-we-work/) worden gevonden.
-
-Voor deze werkzaamheden wordt Algorithm Audit, DUO en het Ministerie van Binnenlandse Zaken ondersteund door Innovatiebudget 2024-25.
-
-{{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/supported_by/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
-
-{{< button button_text="Lees de volledige auditrapporten" button_link="/nl/algoprudence/" >}}
+{{< image image1="/images/partner logo-cropped/voorRecht.svg" alt1="voorRecht-Rechtspraak" caption1="voorRecht-Rechtspraak" link1="" width_desktop="3" >}}
 
 {{< container_close >}}
 
-{{< container_open title="Samenwerking Gemeente Amsterdam" id="amsterdam" icon="fas fa-list-ol" >}}
 
-In 2024 werkte Algorithm Audit samen met de Gemeente Amsterdam om publieke kennis op te bouwen over pragmatische beheerskader voor voor algoritmes die zowel binnen als buiten de AI-systeem van de AI Verordening vallen. 
 
-{{< image image1="/images/partner logo-cropped/GemeenteAmsterdam.png" alt1="Municipality of Amsterdam" caption1="Municipality of Amsterdam" link1="" width_desktop="3" id="amsterdam-logo" >}}
+<!-- CoE Assessment protocol -->
+
+{{< container_open title="Discriminatie beoordelingsprotocol – Raad van Europa" id="assessment-protocol" icon="fas fa-scroll" >}}
+
+Van Q3-2025 tot en met Q4-2025 ondersteunt Algorithm Audit de Raad van Europa (RvE) en de mensenrechteninstituten van België, Finland en Portugal bij het ontwikkelen van beoordelingsprotocollen om gelijke behandeling en non-discriminatie te waarborgen bij het gebruik van AI in de publieke sector.
+
+{{< image image1="/images/partner logo-cropped/CoE.png" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="2" >}}
+
+{{< container_close >}}
+
+
+
+<!-- DUO Kennispartner -->
+
+{{< container_open title="Kennispartner – Dienst Uitvoering Onderwijs (DUO)" id="DUO2" icon="fas fa-user-graduate" >}}
+
+In 2025 werkt Algorithm Audit samen met de Dienst Uitvoering Onderwijs (DUO) aan het opbouwen van interne validatiecapaciteit om algoritme-gedreven besluitvormingsprocessen zowel kwalitatief als kwantitatief te beoordelen.
+
+{{< image id="DUO" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
+
+{{< container_close >}} 
+
+
+
+<!-- CoE eLearning -->
+
+{{< container_open title="eLearning modules – Raad van Europa" id="elearning" icon="fas fa-star" >}}
+
+Van Q3-2024 tot en met Q1-2025 ondersteunde Algorithm Audit de Raad van Europa (RvE) bij het actualiseren van eLearning-modules met materiaal over de AI-verordening en het CoE Framework Convention on AI.
+
+{{< image image1="/images/partner logo-cropped/CoE.png" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="2" >}}
+
+{{< container_close >}}
+
+
+
+<!-- Gemeente Amsterdam -->
+
+{{< container_open title="AI-verordening implementatie – Gemeente Amsterdam" id="amsterdam" icon="fas fa-list-ol" >}}
+
+Van Q3-2024 tot en met Q1-2025 werkte Algorithm Audit samen met de Gemeente Amsterdam om AI-systemen te identificeren die onder de reikwijdte van de AI-verordening vallen en deze systemen de juiste risicocategorieën toe te wijzen.
+
+{{< image image1="/images/partner logo-cropped/GemeenteAmsterdam.png" alt1="Municipality of Amsterdam" caption1="Municipality of Amsterdam" link1="" width_desktop="2" id="amsterdam-logo" >}}
+
+{{< container_close >}}
+
+
+
+<!-- DUO CUB -->
+
+{{< container_open title="Bias analyse – Dienst Uitvoering Onderwijs (DUO)" id="DUO1" icon="<fa-solid fa-bell" >}}
+
+Van Q3-2023 tot en met Q2-2024 ondersteunde Algorithm Audit de Dienst Uitvoering Onderwijs (DUO) bij een intern onderzoek naar een naar verluid bevooroordeeld algoritme-gedreven besluitvormingsproces.
+
+- Het eerste [auditrapport](/algoprudence/cases/aa202401_preventing-prejudice/) is op 01-01-2024 aan DUO en de Tweede Kamer aangeboden;
+- Het tweede [auditrapport](/algoprudence/cases/aa202401_preventing-prejudice/) is op 22-05-2024 aan DUO en de Tweede Kamer aangeboden.
+
+{{< image image1="/images/partner logo-cropped/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" link1="" width_desktop="3" id="DUO-logo" >}}
 
 {{< container_close >}}
 

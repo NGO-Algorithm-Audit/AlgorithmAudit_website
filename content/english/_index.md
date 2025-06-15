@@ -8,11 +8,6 @@ Banner:
   title_mobile_line2: knowledge for
   title_mobile_line3_underline: responsible
   title_mobile_line3_after: algorithms
-  phonetica: /æl.ɡə-ˈpruː.dəns/
-  type: noun
-  description1: Case-based normative advice for ethical algorithms
-  description2: Guidance for decentralised self-assessment of fair AI
-  description3: Jurisprudence for algorithms
   slogan:
     title: A European knowledge platform for
     labels:
@@ -30,22 +25,22 @@ About:
 overview_block:
   activities:
     - title: Knowledge platform
-      subtitle: Statistical and legal expertise
+      subtitle: Expertise in statistics, software development, legal framework and ethics
       url: /knowledge-platform/
       icon: fa-light fa-layer-group
       color: "#E3F0FE"
     - title: Algoprudence
-      subtitle: Case-based normative advice
+      subtitle: Case-based normative advice about responsible AI
       url: /algoprudence/
       icon: fa-light fa-scale-balanced
       color: "#F7CDBF"
     - title: Technical tools
-      subtitle: Open source AI auditing tools
+      subtitle: Open source tools for validating algorithmic systems
       url: /technical-tools/
       icon: fa-light fa-toolbox
       color: "#FFFDE4"
     - title: Project work
-      subtitle: "Validation, AI Act etc."
+      subtitle: Validation, AI Act implementation, organisational control measures etc. 
       url: /knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
       color: "#E3F0FE"
@@ -55,20 +50,20 @@ Activity_Feed:
     - title: >-
         Local-only tools for AI validation
       intro: >
-        Slides explaining the concept of local-only tools. Highlighting similarities and differences with cloud computing and providing examples of architerctural set-up for Algorithm Audit's unsupervised bias detection and synthetic data generation tool.
+        Slides explaining the concept of 'local-only' tools. Highlighting similarities and differences with cloud computing, including examples how Algorithm Audit's open source software can be used for unsupervised bias detection and synthetic data generation tool.
       link: >-
         /technical-tools/bdt/#local-only
       image: /images/BDT/20250605_carrousel_local-only.png
       date: 05-06-2025
-      type: white paper
+      type: open source code
     - title: >-
         Public standard 'Meaningful human intervention for risk profiling
         algorithms'
       intro: >
         Step-by-step guide to prevent prohibited automated decision-making
-        solely based on profilings, as stated in Article 22 GDPR. Based on
+        solely based on profiling, as stated in article 22 GDPR. Based on
         case-based experiences with risk profiling algorithms and aligned with
-        recent literature.
+        recent (scientific) publications.
       link: >-
         /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
@@ -106,53 +101,50 @@ Areas_of_AI_expertise:
     - name: Sociotechnical evaluation of generative AI
       icon: fas fa-robot
       content: >
-        Auditing data-analysis methods and algorithms used for decision support.
-        Among others by checking organizational checks and balances, and
-        assessing the quantitative dimension
-    - name: AI Act implementation
+        Evaluating Large Language Models (LLMs) and other general-purpose AI models for robustness, privacy and AI Act compliance. Based on real-world examples, are developing a framework to analyze content filters, guardrails and user interaction design choices. <a
+        href="/knowledge-platform/project-work/#LLM-validation"
+        style="text-decoration: underline;">Learn more</a> about our evaluation framework.
+    - name: AI Act implementation and standards
       icon: fas fa-certificate
       content: >
-        Algorithm Audit is well-informed about techno-legal concepts in the AI Act. As a member of Dutch and Europen standardization organisations NEN and CEN-CENELEC, Algorithm Audit monitors and contributes to the development of standards for AI systems. See also our public <a
-        href="https://algorithmaudit.eu/knowledge-platform/standards/"
+        Our open-source <a
+        href="/technical-tools/implementation-tool/"
+        style="text-decoration: underline;">AI Act Implementation Tool</a> helps organizations identifying AI systems and assigning the right risk category. As a member of Dutch and European standardization organisations NEN and CEN-CENELEC, Algorithm Audit monitors and contributes to the development of standards for AI systems. See also our public <a
+        href="/knowledge-platform/standards/"
         style="text-decoration: underline;">knowledge base</a> on
         standardization
     - name: Bias analysis
       icon: fas fa-chart-pie
       content: >
-        Auditing data-analysis methods and algorithms used for decision support.
-        Among others by checking organizational checks and balances, and
-        assessing the quantitative dimension
+        We evaluate algorithmic systems both from a qualitative and quantitative dimension. Besides expertise about data analysis and AI engineering, we possess have in-depth knowledge of legal frameworks concerning non-discrimination, automated decision-making and organizational risk management. See our <a
+        href="/knowledge-platform/knowledge-base/"
+        style="text-decoration: underline;">public standards</a> how to deploy algorithmic systems responsibly.
   button_text: Discuss collaboration
-  button_link: /knowledge-platform/project-work/
+  button_link: /knowledge-platform/project-work/#form
 Distinctive_in:
   title: Distinctive in
   enable: true
   width_m: 4
   width_s: 2
   feature_item:
-    - name: Independence
-      icon: fas fa-star-of-life
+    - name: Multi-disciplinary expertise
+      icon: fas fa-brain
       content: >
-        By working nonprofit and under explicit terms and conditions, we ensure
-        the independence and quality of our audits and normative advice
-    - name: Normative advice
-      icon: fas fa-search
+        We are pioneering the future of responsible AI by bringing together expertise in statistics, software development, law and ethics. Our work is widely read throughout Europe and beyond.
+    - name: Not-for-profit
+      icon: fas fa-seedling
       content: >
-        Mindful of societal impact our commissions provide normative advice on
-        ethical issues that arise in algorithmic use cases
-    - name: Public knowledge
-      icon: fab fa-slideshare
+        We work closely together with private and public sector organisations, regulators and policy makers to foster knowledge exchange about responsible AI. Working nonprofit suits our activities and goals best.
+    - name: Public knowledge building
+      icon: fas fa-box-open
       content: >
-        Audits and corresponding advice (*algoprudence*) are made <a
-        href="https://algorithmaudit.eu/algoprudence/" style="text-decoration:
-        underline;">publicly available</a>, increasing collective knowledge how
-        to deploy and use algorithms in an responsible way
-  button_text: Project work
+        We make our reports, software and best-practices publicy available, contributing to collective knowledge on the responsible deployment and use of AI. We prioritize public knowledge building over protecting our intellectual property.
+  button_text: Our projects
   button_link: /knowledge-platform/project-work/
 Supported_by:
-  title: Collaborating with
+  title: Working together with
   funders:
-    - image: /images/supported_by/CoE.png
+    - image: /images/partner logo-cropped/CoE.png
       link: "https://www.coe.int/en/web/portal/home"
       alt_text: Council of Europe
     - image: /images/partner logo-cropped/EAISF.png
@@ -160,30 +152,27 @@ Supported_by:
       alt_text: European AI & Society Fund
     - image: /images/partner logo-cropped/CEN.jpg
       link: "https://www.cencenelec.eu"
-      alt_text: "Europees standardisation committee "
-    - image: /images/supported_by/HAI.png
-      link: "https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
-      alt_text: Stanford University Human-Centered Artificial Intelligence Lab
-    - image: /images/supported_by/BZK.jpg
+      alt_text: "European standardisation committee "
+    - image: /images/partner logo-cropped/MinBZK.png
       link: >-
         https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
       alt_text: Dutch Ministry of the Interior
+    - image: /images/partner logo-cropped/MinJenV.png
+      link: "https://www.rijksoverheid.nl/ministeries/ministerie-van-justitie-en-veiligheid"
+      alt_text: Dutch Ministry of Justice and Security
     - image: /images/partner logo-cropped/DUO.png
       link: "https://duo.nl"
       alt_text: Dutch Executive Agency for Education
     - image: /images/partner logo-cropped/GemeenteAmsterdam.png
       link: "https://www.amsterdam.nl"
       alt_text: Municipality of Amsterdam
+    - image: /images/partner logo-cropped/SIDN.png
+      link: "https://www.sidnfonds.nl/excerpt"
+      alt_text: Foundation Internet Domain registration Netherlands
     - image: /images/partner logo-cropped/NEN.svg
       link: "https://www.nen.nl"
       alt_text: Dutch standardisation institute
-    - image: /images/supported_by/sidn.png
-      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
-      alt_text: Foundation for Internet and Democracy Netherlands
-
-  button_text: And more
-  button_link: /funded-by
 Title_video:
-  title: The Movie
+  title: Video
   video_mp4: /videos/AA_video_(1080p).mp4
 ---

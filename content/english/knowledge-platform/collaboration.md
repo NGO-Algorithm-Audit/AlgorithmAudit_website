@@ -41,7 +41,7 @@ Over the course of 2023-24, Algorithm Audit has paired up with Dutch public sect
 * collaboratively submitted a request to the Dutch National Office of Statistics in order to conduct a large-scale study on proxy characteristics;
 * finding solutions to deal with the normative dimension of auditing and evaluating algorithmic-driven decision-making processes, for instance involvement of various stakeholders to qualitatively interpret quantitative measurements.
 
-{{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/supported_by/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
+{{< image id="DUO" width_desktop="4" width_mobile="12" image1="/images/partner logo-cropped/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
 
 {{< button button_text="Read the full audit report" button_link="/algoprudence/cases/aa202401_bias-prevented/" >}}
 

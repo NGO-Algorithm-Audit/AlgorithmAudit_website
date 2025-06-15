@@ -236,7 +236,7 @@ Deze tool is ontwikkeld met steun van publieke en filantropische organisaties.
 
 {{< accordions_area_open id="supported-by-accordion" >}}
 
-{{< accordion_item_open title="Innovatiebudget Ministerie van Binnenlandse Zaken" image="/images/supported_by/BZK.jpg" tag1="2024-25" >}}
+{{< accordion_item_open title="Innovatiebudget Ministerie van Binnenlandse Zaken" image="/images/partner logo-cropped/MinBZK.png" tag1="2024-25" >}}
 
 ##### Beschrijving
 In samenwerking met de Dienst Uitvoering Onderwijs (DUO) en het Ministerie van Binnenlandse Zaken heeft Algorithm Audit deze tool ontwikkeld en getest in de periode juli 2024 tot juli 2025 met ondersteuning van <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/innovatie/innovatiebudget/toekenning-innovatiebudget-2024/" target="_blank">Innovatiebudget</a>, een jaarlijkse competitie georganiseerd door het Ministerie van Binnenlandse Zaken. De voortgang van het project werd gedeeld tijdens een bijeenkomst op 13-02-2025.
@@ -245,7 +245,7 @@ In samenwerking met de Dienst Uitvoering Onderwijs (DUO) en het Ministerie van B
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="SIDN Fonds" image="/images/supported_by/sidn.png" tag1="2024" >}}
+{{< accordion_item_open title="SIDN Fonds" image="/images/partner logo-cropped/SIDN.png" tag1="2024" >}}
 
 ##### Beschrijving
 In 2024 ondersteunde het SIDN Fonds <a href="https://www.sidnfonds.nl/projecten/open-source-ai-auditing" target="_blank">Algorithm Audit</a> bij het ontwikkelen van een eerste demo van de unsupervised bias detectie tool.
@@ -266,7 +266,7 @@ De tool heeft prijzen ontvangen en wordt ondersteund door verschillende <a href=
 
 {{< accordions_area_open>}}
 
-{{< accordion_item_open title="Finalist Stanford’s AI Audit Challenge 2023" image="/images/supported_by/HAI.png" tag1="06-2023" >}}
+{{< accordion_item_open title="Finalist Stanford’s AI Audit Challenge 2023" image="/images/partner logo-cropped/StanfordHAI.png" tag1="06-2023" >}}
 
 ##### Beschrijving
 Onder de naam Joint Fairness Assessment Method (JFAM) is de unsupervised bias detectie tool geselecteerd als finalist voor <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">Stanford’s AI Audit Competition 2023</a>.

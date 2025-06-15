@@ -1,7 +1,5 @@
 ---
 Banner:
-  image: /images/svg-illustrations/main_illustration.svg
-  tag: definitie
   title_line1: Publieke kennisopbouw
   title_line2_before: voor
   title_line2_underline: verantwoorde
@@ -10,15 +8,6 @@ Banner:
   title_mobile_line2:
   title_mobile_line3_underline: verantwoorde
   title_mobile_line3_after: algoritmes
-  phonetica: /al.ɡo-ˈpru.dεn(t)si/
-  type: zelfstandig naamwoord
-  description1: >-
-    Transparante collectieve oordeelsvorming over de verantwoorde inzet van
-    algoritmes
-  description2: >-
-    Richtlijnen voor het gedecentraliseerd beslechten van
-    mensenrechtenspanningen
-  description3: Jurisprudentie voor algoritmes
   slogan:
     title: Een Europees kennisplatform voor
     labels:
@@ -30,37 +19,50 @@ About:
 overview_block:
   activities:
     - title: Kennisplatform
-      subtitle: Expertise is statistiek en recht
+      subtitle: Expertise in statistiek, software development, recht en ethiek
       url: /nl/knowledge-platform/
       icon: fa-light fa-layer-group
       color: "#E3F0FE"
     - title: Algoprudentie
-      subtitle: Case-based normatief advies
+      subtitle: Case-based normatief advies voor verantwoorde AI
       url: /nl/algoprudence/
       icon: fa-light fa-scale-balanced
       color: "#F7CDBF"
     - title: Technische tools
-      subtitle: Open source AI auditing tools
+      subtitle: Open source tools voor validatie van algorithmische systemen 
       url: /nl/technical-tools/
       icon: fa-light fa-toolbox
       color: "#FFFDE4"
     - title: Projectwerk
-      subtitle: Validatie, AI-verordening etc.
+      subtitle: Validatie, implementatie AI-verordening, organisatorische beheersmaatregelen etc.
       url: /nl/knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
       color: "#E3F0FE"
 Activity_Feed:
-  enable: true
-  button_text: Meer evenementen...
-  button_link: /nl/events/activities/#events
+  featured_title: Uitgelicht
   featured_activities:
-    - title: Publieke standaard 'Betekenisvolle menselijke tussenkomst voor risicoprofileringsalgoritmes'
+    - title: >-
+        Local-only tools voor AI validatie
       intro: >
-        Stappenplan om verboden geautomatiseerde besluitvorming uitsluitend gebaseerd op profilering te voorkomen, zoals vermeld in Artikel 22 AVG. Gebaseerd op case-based ervaringen met risicoprofileringsalgoritmes en afgestemd op recente literatuur.
-      link: /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
-      image: /images/knowledge_base/Publieke_standaard_Betekenisvolle_menselijke_tussenkomst.png
+        Slides die het concept van 'local-only' tools uitleggen. Verschillen en overeenkomsten met cloud computing worden toegelicht, inclusief voorbeelden hoe Algorithm Audit’s open source software gebruikt kan worden gebruikt voor usnupervised bias detectie en synthetische datageneratie.    
+      link: >-
+        /nl/technical-tools/bdt/#local-only
+      image: /images/BDT/20250605_carrousel_local-only.png
+      date: 05-06-2025
+      type: open source code
+    - title: >-
+        Publieke standaard 'Betekenisvolle menselijke tussenkomst risicoprofileringsalgoritmes'
+      intro: >
+        Stappenplan om verboden geautomatiseerde besluitvorming uitsluitend gebaseerd op profilering te voorkomen, zoals vermeld in artikel 22 AVG. Gebaseerd op ervaringen uit de uitvoeringspraktijk met risicoprofileringsalgoritmes en in overeenstemming met recente (wetenschappelijke) publicaties.
+        recent literature.
+      link: >-
+        /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
+      image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
       date: 15-05-2025
-      type: publieke standaard
+      type: public standard
+  featured_button_text: Meer items
+  featured_button_link: /nl/knowledge-platform/knowledge-base/
+  items_title: Aankomende events
   activities:
     - title: Gastcollege 'Fairness and Algorithms' ETH Zürich
       link: /nl/events/activities/#events
@@ -73,200 +75,93 @@ Activity_Feed:
       date: 21-05-2025
       type: paneldiscussie
     - title: >-
-        Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
+        Masterclass 'From data to decision', Jantina Tammes School of Digital
+        Society, Technology and AI University of Groningen
       link: /nl/events/activities/#events
       image: /images/partner logo-cropped/RUG.png
       date: 06-05-2025
       type: event
-Supported_by:
-  title: Samenwerking met
-  funders:
-    - image: /images/supported_by/sidn.png
-      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
-      alt_text: Stichting Internet en Democratie Nederland
-    - image: /images/supported_by/EUAISFund.png
-      link: "https://europeanaifund.org/announcing-our-2022-open-call-grantees/"
-      alt_text: European AI&Society Fund
-    - image: /images/supported_by/BZK.jpg
-      link: >-
-        https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
-      alt_text: Ministerie van Binnelandse Zaken en Konkinkrijksrelaties
-    - image: /images/supported_by/HAI.png
-      link: "https://hai.stanford.edu/ai-audit-challenge-2023-finalists"
-      alt_text: Stanford University Human-Centered Artificial Intelligence Lab
-    - image: /images/supported_by/DUO.png
-      link: "https://duo.nl"
-      alt_text: Dienst Uitvoering Onderwijs
-    - image: /images/partner logo-cropped/NEN.svg
-      link: "https://www.nen.nl"
-      alt_text: Nederlands normalisatie instituut
-    - image: /images/partner logo-cropped/CEN.jpg
-      link: "https://www.cencenelec.eu"
-      alt_text: "Europees standaardiseringcomité "
-    - image: /images/partner logo-cropped/GemeenteAmsterdam.png
-      link: "https://www.amsterdam.nl"
-      alt_text: Gemeente Amsterdam
-    - image: /images/supported_by/CoE.png
-      link: "https://www.coe.int/en/web/portal/home"
-      alt_text: Raad voor Europa
-Building_ai_audit_capacity:
-  lines:
-    - text_before: Opbouwen van
-      text_highlighted: publieke kennis
-      text_after: ""
-    - text_before: " over verantwoorde AI"
-      text_highlighted: zonder winstoogmerk
-      text_after: ""
-Distinctive_in:
-  enable: true
-  title: Onderscheidend in
-  width_m: 4
-  width_s: 2
-  feature_item:
-    - name: Onafhankelijkheid
-      icon: fas fa-star-of-life
-      content: >
-        Algorithm Audit werkt zonder winstoogmerk. Onze werkafspraken garanderen
-        onafhankelijkheid en diversiteit van onze adviescommissies en
-        voortkomend normatief advies
-    - name: Normatief advies
-      icon: fas fa-search
-      content: >
-        Algorithm Audit's adviescommissies geven normatief advies over concrete
-        ethische vraagtukken die zich voordoen bij gebruik van algoritmes en
-        data-analyse
-    - name: Publieke kennis
-      icon: fab fa-slideshare
-      content: >
-        Casuïstiek en bijbehorend advies (algoprudentie) is <a
-        href="https://algorithmaudit.eu/nl/algoprudence/"
-        style="color:white;text-decoration: underline;">openbaar</a>. Zo dragen
-        we bij aan publieke kennisopbouw over de verantwoorde inzet van
-        algoritmes
+  items_button_text: Meer events
+  items_button_link: /nl/events/activities/
 Areas_of_AI_expertise:
-  title: AI expertise
+  title: Expertise
   enable: true
   width_m: 4
   width_s: 12
-  button_text: Samenwerking bespreken
-  button_link: /nl/knowledge-platform/project-work/
   feature_item:
-    - name: Ondersteuning van besluitvorming
-      icon: fas fa-divide
-      content: >
-        Auditeren van data-analysemethode en algoritmes die
-        besluitvormingsprocessen ondersteunen. Onder andere aan de hand van
-        check op organisatorische waarborgen en check op kwantitatieve dimensie
-    - name: AI Verordening standaarden
-      icon: fas fa-certificate
-      content: >
-        Als onderdeel van Nederlands en Europees standaardiseringsorganisaties
-        NEN en CEN-CENELEC worden AI systemen volgens de laatste normen
-        geauditeerd. Zie ook onze publieke <a
-        href="https://algorithmaudit.eu/nl/knowledge-platform/standards/"
-        style="text-decoration: underline;">kennisbank</a> over standaardisering
-    - name: Profilering
-      icon: fas fa-chart-pie
-      content: >
-        Auditeren van regel-gebaseerde en ML-gedreven profileringsalgoritmes,
-        o.a. op normatieve onderbouwing van selectiecriteria, statistische
-        Z-toets op risicodistirbuties en organisatorische waarborgen
-    - name: Balanceren FP-FNs
-      icon: fa-solid fa-scale-balanced
-      content: >
-        Normatief advies over context-afhankelijke interpretatie van confusion
-        matrix-gebaseerde evaluatiemetrieken, zoals False Positives (FPs) and
-        False Negatives (FNs)
-    - name: Aanbevelingssystemen
-      icon: fas fa-ranking-star
-      content: >
-        Validatie van hyperparameterselectie voor aanbevelingssystemen, zoals <a
-        href="https://en.wikipedia.org/wiki/Learning_to_rank"
-        style="text-decoration: underline;">learning-to-rank</a>. Zie ook onze
-        <a
-        href="/knowledge-platform/knowledge-base/white_paper_dsa_delegated_regulation_feedback/"
-        style="text-decoration: underline;">feedback</a> naar de Europese
-        Commissie over onafhankelijke third-party audits van recommender systems
-    - name: Generatieve AI
+    - name: Socio-technische evaluatie van generatieve AI
       icon: fas fa-robot
       content: >
-        Auditeren van trainingsproces van foundation model, o.a. selectie
-        trainingsdata, menselijke feedback voor reinformcement learning en
-        risicobeheersmaatregelen, volgens AI Verordening standaarden
-Recent_audits:
-  title: Recente audits
+        Evaluatie van Large Language Models (LLMs) en andere generatieve AI-modellen met betrekking tot robuustheid, privacy en naleving van de AI-verordening. Op basis van praktijkvoorbeelden ontwikkelen we een validatiekader om contentfilters, guardrails en ontwerpkeuzes voor gebruikersinteractie te beoordelen. <a
+          href="/nl/knowledge-platform/project-work/#LLM-validation"
+          style="text-decoration: underline;">Lees meer</a> over ons validatiekader.
+    - name: AI-verordening implementatie en normen
+      icon: fas fa-certificate
+      content: >
+        Onze open-source <a
+          href="/technical-tools/implementation-tool/"
+          style="text-decoration: underline;">AI-verordening implementatie tool</a> helpt organisaties bij het identificeren van AI-systemen en het toewijzen van de juiste risicocategorie. Als lid van Nederlandse en Europese normalisatieorganisaties NEN en CEN-CENELEC volgt en draagt Algorithm Audit actief bij aan de ontwikkeling van geharmoniseerde normen voor AI-systemen. Zie ook onze publieke <a
+          href="/nl/knowledge-platform/standards/"
+          style="text-decoration: underline;">kennisbank</a> over standaardisatie.
+    - name: Bias analysis
+      icon: fas fa-chart-pie
+      content: >
+        We evalueren algoritmische systemen vanuit zowel een kwalitatieve als kwantitatieve dimensie. Naast expertise in data-analyse en software ontwikkeling beschikken we over kennis van juridische kaders rondom non-discriminatie, geautomatiseerde besluitvorming en organisatorisch risicomanagement. Zie onze <a
+          href="/nl/knowledge-platform/knowledge-base/"
+          style="text-decoration: underline;">publieke standaarden</a> voor verantwoord gebruik van algoritmische systemen.
+  button_text: Bespreek samenwerking
+  button_link: /nl/knowledge-platform/project-work/#form
+Distinctive_in:
+  title: Onderscheidend in
+  enable: true
+  width_m: 4
+  width_s: 2
   feature_item:
-    - name: Risicoprofilering heronderzoek bijstandsuitkering
-      image: /images/reports/front_AA202302A.png
+    - name: Multi-disciplinary expertise
+      icon: fas fa-brain
+      content: >
+        Wij geven vorm aan de toekomst van verantwoorde AI door expertise in statistiek, softwareontwikkeling, recht en ethiek samen te brengen. Ons werk wordt gelezen door heel Europa en daarbuiten.
+    - name: Geen winstoogmerk
+      icon: fas fa-seedling
+      content: >
+        We werken nauw samen met organisaties uit de publieke en private sector, toezichthouders en beleidsmakers om kennisuitwisseling over verantwoorde AI te bevorderen. Werken zonder winstoogmerk sluit het beste aan bij onze activiteiten en doelstellingen.
+    - name: Publieke kennisopbouw
+      icon: fas fa-box-open
+      content: >
+        Wij stellen onze rapporten, software en best practices publiek beschikbaar en dragen zo bij aan het collectieve leerproces over de verantwoorde inzet van AI. We prioriteren publieke kennisopbouw boven het beschermen van ons intellectueel eigendom.
+  button_text: Onze projecten
+  button_link: /nl/knowledge-platform/project-work/
+Supported_by:
+  title: Samenwerking met
+  funders:
+    - image: /images/partner logo-cropped/CoE.png
+      link: "https://www.coe.int/en/web/portal/home"
+      alt_text: Raad van Europa
+    - image: /images/partner logo-cropped/EAISF.png
+      link: "https://europeanaifund.org/announcing-our-2022-open-call-grantees/"
+      alt_text: European AI&Society Fund
+    - image: /images/partner logo-cropped/CEN.jpg
+      link: "https://www.cencenelec.eu"
+      alt_text: "Europees standaardiseringcomité"
+    - image: /images/partner logo-cropped/MinBZK.png
       link: >-
-        /nl/algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
-      content: >
-        De commissie oordeelt dat algoritmische risicoprofilering onder strikte
-        voorwaarden kan worden ingezet voor het selecteren van burgers met een
-        bijstandsuitkering voor heronderzoek
-    - name: Technische audit indirecte discriminatie
-      image: /images/algoprudence/AA202401/Cover.png
-      link: /nl/algoprudence/cases/aa202401_bias-prevented/
-      content: >
-        Audit op rechtmatigheid van gemaakt onderscheid aan de hand van
-        Z-toetsen en biasmeting op verschillende plekken in het
-        algoritme-gedreven besluitvormingsproces
-Building_algoprudence:
-  title: Opbouwen van _algoprudentie_
-  button_text: Onze werkwijze
-  button_link: /nl/algoprudence/how-we-work/
-  steps:
-    - title: Identificeren van een casus
-      content: >
-        Identificeren van een concreet ethisch vraagstuk bij gebruik van een
-        algoritme of data-analyse
-    - title: Probleemstelling
-      content: >
-        Beschrijving van ethische kwestie, juridisch kaders, statistische
-        methodologie en het horen van verschillende belanghebbenden en
-        benadeelde groepen
-    - title: Normatieve adviescommissie
-      content: >
-        Deliberatief gesprek van een diverse and inclusieve adviescommissie over
-        het probleemstelling-document
-    - title: Publiek advies
-      content: >
-        Het uitgebrachte advies van de commissie wordt samen met het
-        probleemstelling-document gepubliceerd op onze website. Het publiek
-        delen van het probleemstelling-document en normatieve advies wordt
-        *algoprudentie* genoemd
-Advantages_of_algoprudence:
-  title: Voordelen van algoprudentie
-  image: /images/knowledge_base/NJB-cover.jpg
-  button_text: Lees het hele artikel
-  button_link: /nl/knowledge-platform/knowledge-base/white_paper_algoprudence/
-  feature_item:
-    - name: Leren & harmoniseren
-      icon: fas fa-book-reader
-      content: >
-        [<span style="color:#005aa7">></span>](/algoprudence) Aanjagen van
-        collectieve leerproces voor de verantwoorde inzet van algoritmes en
-        data-analyse
-
-
-        [<span style="color:#005aa7">></span> ](/algoprudence)Harmoniseren van
-        de omgang met ethische vraagstukken en de interpretatie van open
-        juridische normen
-    - name: Discussie & debat
-      icon: fas fa-comment
-      content: >
-        [<span style="color:#005aa7">></span>](/algoprudence) Transparantie
-        maakt kritiek mogelijk op normatieve besluitvorming bij de publieke
-        inzet van algoritmen
-
-
-        [<span style="color:#005aa7">></span> ](/algoprudence)Opent ruimte voor
-        maatschappelijk debat over normatieve keuzes in democratisch zicht
-    - name: Inclusie & participatie
-      icon: fas fa-hands-helping
-      content: "[<span style=\"color:#005aa7\">></span> ](/algoprudence)Betrekt verschillende belanghebbenden bij vormgeven van algoritmes\n\n[<span style=\"color:#005aa7\">></span> ](/algoprudence)Nederlands antwoord hoe AI\_democratisch\_kan worden ontwikkeld en\_verantwoord\_kan worden ingezet\n"
-Title_gif:
-  title: Jurisprudentie voor algoritmes
+        https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
+      alt_text: Ministerie van Binnelandse Zaken en Konkinkrijksrelaties
+    - image: /images/partner logo-cropped/MinJenV.png
+      link: "https://www.rijksoverheid.nl/ministeries/ministerie-van-justitie-en-veiligheid"
+      alt_text: Ministerie van Justitie en Veiligheid
+    - image: /images/partner logo-cropped/DUO.png
+      link: "https://duo.nl"
+      alt_text: Dienst Uitvoering Onderwijs
+    - image: /images/partner logo-cropped/GemeenteAmsterdam.png
+      link: "https://www.amsterdam.nl"
+      alt_text: Gemeente Amsterdam
+    - image: /images/partner logo-cropped/SIDN.png
+      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
+      alt_text: Stichting Internet en Democratie Nederland
+    - image: /images/partner logo-cropped/NEN.svg
+      link: "https://www.nen.nl"
+      alt_text: Nederlands normalisatie instituut
 Title_video:
   title: Video
   video_mp4: /videos/AA_video_(1080p).mp4

@@ -310,7 +310,7 @@ events:
 
 
       ![](</images/events/20240818_BZK.jpg>)
-    image: /images/supported_by/BZK.jpg
+    image: /images/partner logo-cropped/MinBZK.png
     date: 18-09-2024
     facets:
       - value: year_2024
@@ -419,7 +419,7 @@ events:
 
       Interview:
       [https://www.sidnfonds.nl/nieuws/niet-elke-beslissing-is-te-kwantificeren](https://www.sidnfonds.nl/nieuws/niet-elke-beslissing-is-te-kwantificeren)
-    image: /images/supported_by/sidn.png
+    image: /images/partner logo-cropped/SIDN.png
     date: 31-05-2024
     facets:
       - value: year_2024

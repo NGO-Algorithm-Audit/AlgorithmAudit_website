@@ -9,20 +9,12 @@ subtitle: >
   waarbij verschillende belanghebbende worden betrokken om AI vorm te geven.
 image: /images/svg-illustrations/case_repository.svg
 team:
-  title: AI-verordening standaarden team
+  title: Team AI-verordening geharmoniseerde normen
   icon: fas fa-user-friends
   button_text: Andere teams
   id: team
   button_link: /nl/about/teams/
   team_members:
-    - image: /images/people/ALeoneDeCastris.jpg
-      name: Arcangelo Leone de Castris
-      bio: |
-        AI Policy Researcher at The Alan Turing Institute, London
-    - image: /images/people/EPetersen.jpeg
-      name: Eike Petersen
-      bio: |
-        Senior Scientist Medical AI, Fraunhofer MEVIS, Hannover
     - image: /images/people/JParie.jpg
       name: Jurriaan Parie
       bio: |
@@ -36,7 +28,7 @@ quick_navigation:
   links:
     - title: Introductie
       url: '#standardization-request'
-    - title: AI-verordening standaarden
+    - title: AI-verordening geharmoniseerde normen
       url: '#standards'
     - title: Bijdragen
       url: '#contributions'
@@ -44,7 +36,7 @@ quick_navigation:
       url: '#team'
 ---
 
-{{< container_open icon="fas fa-check" title="AI-verordening standaarden" id="standardization-request" >}}
+{{< container_open icon="fas fa-check" title="AI-verordening geharmoniseerde normen" id="standardization-request" >}}
 
 In 2023 hebben de Europese standaardiseringsorganisaties CEN en CENELEC het verzoek van de Europese Commissie geaccepteerd om standaarden te ontwikkelen voor Artificiële Intelligentie (AI). Joint Technical Committee 21 (JTC21) van CEN-CENELEC is momenteel bezig Europese standaarden voor AI te ontwikkelen, zoals standaarden voor risicomanagement, datakwaliteit en procedurele standaarden voor het testen van vooringenomenheid. Als  AI-ontwikkelaars en -gebruikers zich aan deze standaarden houden wordt naleving van de aanstaande AI Verordening verondersteld. Maar zo ver is het nog niet. Het ontwikkelen van standaarden is momenteel volop aan de gang. Als lid van het Nederlands Normaliseringsinstituut (NEN) draagt Algorithm Audit bij aan het Europese debat over de vorm deze AI standaarden aannemen, en in hoeverre technische standaarden ontwikkeld kunnen worden voor aan fundamentele rechten rakende standaarden, zoals non-discriminatie, menselijke tussenkomst en uitlegbaarheid van algoritme-gedreven besluitvorming. Dit doen wij door deel te nemen aan de volgende werkgroepen:
 
@@ -58,7 +50,7 @@ Tijdens de laatste plenaire bijeenkomst van JTC21 in Dublin 12-14 februari prese
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-ruler" title="AI-verordening standaarden" id="standards" >}}
+{{< container_open icon="fas fa-ruler" title="AI-verordening geharmoniseerde normen" id="standards" >}}
 
 Het standaardiseringsverzoek van de Europese Commissie, dat een uitgangsbasis biedt voor naleving van de AI Verordening, relateert aan de volgende tien aspecten:
 

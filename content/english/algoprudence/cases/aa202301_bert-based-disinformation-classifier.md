@@ -26,7 +26,7 @@ Applying our self-build unsupervised [bias detection tool](/technical-tools/bdt
 
 This case study, in combination with our [bias detection tool](/technical-tools/bdt/), has been selected as a finalist for [Stanford’s AI Audit Challenge 2023](https://hai.stanford.edu/ai-audit-challenge-2023-finalists).
 
-{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/supported_by/HAI.png" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" alt1="Stanford University" caption1="Stanford University" >}}
+{{< image id="stanford" width_desktop="6" width_mobile="12" image1="/images/partner logo-cropped/StanfordHAI.png" link1="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" alt1="Stanford University" caption1="Stanford University" >}}
 
 #### Presentation
 
@@ -51,7 +51,7 @@ A visual presentation of this case study can be found in this [slide deck](http
 
 {{< accordions_area_open id="actions" >}}
 
-{{< accordion_item_open image="/images/supported_by/sidn.png" title="Funding for further development" id="sidn" date="01-12-2023" tag1="funding" tag2="open source" tag3="AI auditing tool" >}}
+{{< accordion_item_open image="/images/partner logo-cropped/SIDN.png" title="Funding for further development" id="sidn" date="01-12-2023" tag1="funding" tag2="open source" tag3="AI auditing tool" >}}
 
 ##### Description
 
@@ -59,7 +59,7 @@ A visual presentation of this case study can be found in this [slide deck](http
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="Finalist selection Stanford's AI Audit Challenge 2023" image="/images/supported_by/HAI.png" id="ai_audit_challenge" date="28-04-2023" tag1="finalist" >}}
+{{< accordion_item_open title="Finalist selection Stanford's AI Audit Challenge 2023" image="/images/partner logo-cropped/StanfordHAI.png" id="ai_audit_challenge" date="28-04-2023" tag1="finalist" >}}
 
 ##### Description
 
