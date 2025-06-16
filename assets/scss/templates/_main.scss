@@ -108,7 +108,7 @@ input[type="checkbox"] {
   }
 }
 
-.img-center {
+.img-event{
   width: auto;
   height: auto;
   position: absolute;
@@ -117,12 +117,10 @@ input[type="checkbox"] {
   left: 0;
   right: 0;
   margin: auto;
-}
-
-.img-event{
   max-height: 140px;
   @media (max-width: 992px) {
     max-height:120px;
+    position: inherit;
   }
 }
 // view ≤992px
