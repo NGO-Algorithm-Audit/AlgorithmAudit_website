@@ -89,7 +89,7 @@ Areas_of_AI_expertise:
   width_m: 4
   width_s: 12
   feature_item:
-    - name: Socio-technische evaluatie van generatieve AI
+    - name: Socio-technische evaluatie generatieve AI
       icon: fas fa-robot
       content: >
         Evaluatie van Large Language Models (LLMs) en andere generatieve AI-modellen met betrekking tot robuustheid, privacy en naleving van de AI-verordening. Op basis van praktijkvoorbeelden ontwikkelen we een validatiekader om contentfilters, guardrails en ontwerpkeuzes voor gebruikersinteractie te beoordelen. <a
