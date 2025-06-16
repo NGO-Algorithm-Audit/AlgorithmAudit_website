@@ -29,7 +29,7 @@ facet_groups:
       - value: review
         label: Review
       - value: standard
-        label: Publieke standaard
+        label: Public standard
       - value: white_paper
         label: White paper
 pagesize: 4

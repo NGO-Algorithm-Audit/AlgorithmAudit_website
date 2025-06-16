@@ -6,7 +6,7 @@ facet_groups:
       - value: algoprudence
         label: Algoprudentie
       - value: GDPR
-        label: Avg
+        label: AVG
       - value: DSA
         label: DSA
       - value: FR
