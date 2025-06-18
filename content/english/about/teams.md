@@ -28,12 +28,12 @@ about_AA:
       image: /images/about/technical-tools.svg
       content: >
         Implementing and testing technical tools to detect and mitigate bias,
-        e.g., sociotechnical evaluation of generative AI, [unsupervised bias detection tool](/technical-tools/bdt/) and [synthetic data generation](/technical-tools/sdg/).
+        e.g., sociotechnical evaluation of generative AI, [unsupervised bias detection](/technical-tools/bdt/) and [synthetic data generation](/technical-tools/sdg/).
     - subtitle: Project work
       image: /images/about/project.svg
       content: >
-        [Support](/knowledge-platform/project-work/) for specific questions from public and private sector
-        organisations regarding responsible use of AI
+        [Supporting](/knowledge-platform/project-work/) public and private sector
+        organisations with specific questions regarding responsible use of AI, from a not-for-profit perspective.
 team:
   title: Team synthetic data generation
   content: Part-time team working on synthetic data generation
