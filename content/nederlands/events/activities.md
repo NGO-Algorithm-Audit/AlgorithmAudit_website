@@ -8,10 +8,6 @@ facet_groups:
         label: Q2-2025
       - value: q1_2025
         label: Q1-2025   
-      - value: q4_2024
-        label: Q4-2024
-      - value: q3_2024
-        label: Q3-2024
       - value: 2024
         label: 2024
   - value: type
@@ -26,6 +22,70 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: 'Panel discussie "Between Promise and Problem: Data-Driven Models in Sustainability Policy", Data for Policy conferentie'
+    description: >
+      Hoe verhouden de kansen van complexe, data-gedreven modellen zich tot hun beperkingen en politieke gevoeligheden, en welke realistische eisen kunnen we stellen aan de standaardisatie en transparantie van hun wetenschappelijke en democratische legitimiteit?
+
+      Besproken onderwerpen:
+      * Welke (theoretische) kaders en instrumenten zijn beschikbaar voor het valideren, verifiëren en waarborgen van transparantie bij de inzet van modellen (en algoritmes) door overheden?
+
+      * Welk (theoretisch) “menu” bieden deze kaders waaruit overheden kunnen kiezen?
+      
+      * Welke mogelijkheden zien we voor overheden om op een consistente en controleerbare manier open te communiceren over hun gebruik van modellen?
+
+
+      ![](</images/events/20250613_DataforPolicy.jpeg>)
+    image: /images/partner logo-cropped/DataforPolicy.jpg
+    date: 13-06-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_panel
+        label: paneldiscussie
+  - title: Lunch webinar 'Open source tools voor AI validatie', Ministerie van Binnenlandse Zaken
+    description: >
+      In 2024-25 werkte Algorithm Audit samen met het Ministerie van Binnenlandse Zaken en de Dienst Uivoering Onderwijs (DUO) aan de ontwikkeling en het testen van tools voor de validatie van algoritmische systemen. Twee open-source tools werden gelanceerd op 10-06-2025 (Nederlands) en 13-06-2025 (Engels) tijdens online lunch webinars. Besproken onderwerpen:
+
+      1. [Unsupervised bias detection tool](/technical-tools/bdt/#web-app): Hoe detecteer je bias als er geen demografische data beschikbaar is?
+
+      2. [Synthetic data generation](/technical-tools/sdg/#web-app): Hoe kunnen derden de representativiteit van datasets beoordelen zonder dat persoonsgegevens gedeeld worden?
+
+
+      De ontwikkelde tools bieden antwoorden op bovenstaande vragen. De tools zijn ontwikkeld volgens een local-only architectuur, wat betekent dat data uitsluitend op je eigen apparaat worden verwerkt en niet worden geüpload naar externe (commerciële) platforms of cloudproviders.
+
+      {{< embed_pdf url="/pdf-files/events/activities/20250610 Open-source local-only tools voor AI-validatie.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+    image: /images/partner logo-cropped/MinBZK.png
+    date: 10-06-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_event
+        label: event
+  - title: Interview Trouw/MIT Review
+    description: >
+      [Interview](https://www.trouw.nl/verdieping/amsterdam-wilde-met-ai-de-bijstand-eerlijker-en-efficienter-maken-het-liep-anders~b2890374/) met Ylja Remmits en Jurriaan Parie met Trouw. Onderzoek is ook beschreven in item [MIT Review](https://www.technologyreview.com/2025/06/11/1118233/amsterdam-fair-welfare-ai-discriminatory-algorithms-failure/).
+
+
+      ![](</images/events/20250606_Trouw.png>)
+    image: /images/partner logo-cropped/Trouw.png
+    date: 06-06-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_interview
+        label: interview
   - title: Gastcollege 'Fairness and Algorithms' ETH Zürich
     description: >
       Gastcollege bij het vak 'Fairness and Algorithms' aan de ETH Zürich op uitnodiging van Aileen Nielsen.
@@ -141,7 +201,7 @@ events:
   - title: Presentatie verantwoorde inzet AI - Innovatiefestival Ministrie van Infrastructuur en Waterstaat
     description: >
       Presentatie over de verantwoorde inzet van algoritmes en AI tijdens het innovatiefestival van het Ministrie van Infrastructuur en Waterstaat.
-    image: /images/events/MinIenW_logo.png
+    image: /images/partner logo-cropped/MinIenW.png
     date: 13-02-2025
     facets:
       - value: year_2025
@@ -152,7 +212,7 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: Event 'Can Europe regulate AI?'
+  - title: Event 'Can Europe regulate AI?' hosted by Algorithm Audit 
     description: >
       Boekinterview met Marietje Schaake – auteur van The Tech Coup – en Haroon Sheikh – auteur van Atlas of the Digital World – in debatcentrum Pakhuis de Zwijger
 
