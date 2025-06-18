@@ -17,27 +17,24 @@ about_AA:
     - subtitle: Kennisplatform
       image: /images/about/knowledge-platform.svg
       content: >
-        Het samenbrengen van kennis en experts om het collectieve leerproces
+        Samenbrengen van kennis en experts om het collectieve leerproces
         over de verantwoorde inzet van algoritmes aan te jagen, zie onze
         [white papers](/nl/knowledge-platform/knowledge-base/) en
         [publieke standaarden](/nl/knowledge-platform/knowledge-base/).
     - subtitle: Normatieve adviescommissies
       image: /images/about/commission.svg
       content: >
-        Samenbrengen van adviescommissies die op een deliberatieve en inclusieve
-        wijze normatief advies uitbrengen over concrete ethische kwesties die
-        zich voordoen bij de inzet van algoritmes, met
-        [algoprudentie](/nl/algoprudence/) als resultaat.
+        Adviseren over ethische vraagstukken die zich voordoen in de algoritmische praktijk door het faciliteren van deliberatieve en inclusieve adviescommissies, met [algoprudentie](/nl/algoprudence/) als resultaat
     - subtitle: Technische tools
       image: /images/about/technical-tools.svg
       content: >
-        Implementeren en testen van open-source software voor de verantwoorde inzet van algoritmes en AI, o.a. sociotechnische evaluatie van generatieve AI, [unsupervised bias
+        Implementeren en testen van open source software voor de verantwoorde inzet van algoritmes en AI, o.a. socio-technische evaluatie van generatieve AI, [unsupervised bias
         detectie](/nl/technical-tools/bdt/) en [synthetische data generatie](/nl/technical-tools/sdg/).
     - subtitle: Projectwerk
       image: /images/about/project.svg
       content: >
         [Ondersteuning](/nl/knowledge-platform/project-work/) bij specifieke vragen vanuit de publieke en private sector
-        over de verantwoorde inzet van algoritmes.
+        over de verantwoorde inzet van algoritmes, zonder winstoogmerk.
 team:
   title: Team synthetische data generatie
   content: Team dat part-time werkt aan synthetische data generatie tool
