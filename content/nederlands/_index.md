@@ -64,23 +64,16 @@ Activity_Feed:
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
-    - title: Gastcollege 'Fairness and Algorithms' ETH Zürich
-      link: /nl/events/activities/#events
-      image: /images/partner logo-cropped/ETH.jpg
-      date: 23-05-2025
-      type: event
-    - title: Paneldiscussie CPDP'25
-      link: /nl/events/activities/#events
-      image: /images/partner logo-cropped/CPDP25.svg
-      date: 21-05-2025
-      type: paneldiscussie
-    - title: >-
-        Masterclass 'From data to decision', Jantina Tammes School of Digital
-        Society, Technology and AI University of Groningen
-      link: /nl/events/activities/#events
-      image: /images/partner logo-cropped/RUG.png
-      date: 06-05-2025
-      type: event
+    - title: Platform AI & Overheid
+      link: https://forms.zohopublic.eu/ecpplatform/form/AanmeldformulieronlineAIlunchbreaksessies/formperma/9n7oFcEAlLYZtxJ73sMRbsNiPMDYHeMaIAFcUc7fWOA
+      image: /images/partner logo-cropped/PlatformAI_Overheid.jpg
+      date: 20-08-2025
+      type: presentatie
+    - title: Audit Analytics Summit 2025, Nyenrode Business University & Utrecht University
+      link: https://www.statisticalauditing.com/conference
+      image: /images/partner logo-cropped/AuditAnalyticsSummit2025.svg
+      date: 20-06-2025
+      type: presentatie
   items_button_text: Meer events
   items_button_link: /nl/events/activities/
 Areas_of_AI_expertise:
