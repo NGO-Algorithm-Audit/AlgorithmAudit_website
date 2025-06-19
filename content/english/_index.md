@@ -73,12 +73,17 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
-    - title: The Netherlands Platform AI & Government
+    - title: Presentation 'Local-only tools for AI validation', The Netherlands Platform AI & Government
       link: https://forms.zohopublic.eu/ecpplatform/form/AanmeldformulieronlineAIlunchbreaksessies/formperma/9n7oFcEAlLYZtxJ73sMRbsNiPMDYHeMaIAFcUc7fWOA
       image: /images/partner logo-cropped/PlatformAI_Overheid.jpg
       date: 20-08-2025
       type: presentation
-    - title: Audit Analytics Summit 2025, Nyenrode Business University & Utrecht University
+    - title: Presentation 'AI x Governance & Regulation - The EU AI Act is here', Big Data Republic and Kickstart AI
+      link: https://meetup-july3.kickstartai-events.org
+      image: /images/partner logo-cropped/AIxRegulation.png
+      date: 03-07-2025
+      type: presentation
+    - title: Presentation 'A Public Standard for Auditing Risk Profiling Algorithms', Audit Analytics Summit 2025, Nyenrode Business University and Utrecht University
       link: https://www.statisticalauditing.com/conference
       image: /images/partner logo-cropped/AuditAnalyticsSummit2025.svg
       date: 20-06-2025
