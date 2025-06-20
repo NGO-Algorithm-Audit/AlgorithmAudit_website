@@ -47,27 +47,19 @@ quick_navigation:
     - title: Team
       url: "#team"
 promo_bar:
+  - content: "**\U0001F44B Do you also want to start using the tool locally? It's easier than you think! Get in [contact](/about/contact/) to learn more.**\n"
+    id: promo-contact
   - content: >
       **Do you appreciate the work of Algorithm Audit? ⭐️ us on
-      [GitHub](https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection)**
+      [GitHub](https://github.com/NGO-Algorithm-Audit/python-synthpop)**
     id: promo
     iframe: >-
-      https://ghbtns.com/github-btn.html?user=NGO-Algorithm-Audit&repo=unsupervised-bias-detection&type=star&count=true
+      https://ghbtns.com/github-btn.html?user=NGO-Algorithm-Audit&repo=python-synthpop&type=star&count=true
 ---
 
 <!-- Promobar -->
 
-<div id={{.Get "id" }} class="container-fluid mt-0 p-0">
-    <div class="shadow bg-lightblue">
-        <div class="row promobar-mobile-desktop-layout">
-            <div class="col-12 flex justify-center items-center px-5">
-                <!-- Content -->
-                <span class="mr-3" style="font-size:16px; color:#005aa7;">
-                    <b>👋 Do you also want to start using the tool locally? It's easier than you think! Get in <u><a href="/about/contact/" >contact</a></u> to learn more.</b>    </span>
-            </div>
-        </div>
-    </div>
-</div>
+{{< promo_bar index="0" >}}
 
 <!-- Introduction -->
 
@@ -223,7 +215,7 @@ More documentation about the tool and underlying SDG methods can be found on <a 
 
 <!-- Promo bar -->
 
-{{< promo_bar index="0" >}}
+{{< promo_bar index="1" >}}
 
 <!-- Source code -->
 
