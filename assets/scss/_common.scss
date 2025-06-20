@@ -70,6 +70,9 @@ a:hover {
   text-decoration: underline;
 }
 
+.link__force-underline a {
+  text-decoration: underline !important;
+}
 h1, .h1 {
   font-size:36px;
 }

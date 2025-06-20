@@ -1,16 +1,20 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-<div id={{.Get "id" }} class="container-fluid mt-0 p-0">
+{{$param := int (.Get "index")}}
+{{ with index .Page.Params.promo_bar $param }}
+<div id={{.id}} class="container-fluid mt-0 p-0">
     <div class="shadow bg-lightblue">
         <div class="row promobar-mobile-desktop-layout">
-            <div class="col-12 flex justify-center items-center px-5">
-                <!-- Content -->
+            <div class=" d-flex justify-center items-center px-5 link__force-underline">
                 <span class="mr-3" style="font-size:16px; color:#005aa7;">
-                    <b>{{ .Get "content" }} <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" style="text-decoration: underline;" target="_blank">GitHub</a></b>
+                    {{ .content | markdownify }}
                 </span>
+                {{if .iframe }}
                 <span>
-                    <iframe src="https://ghbtns.com/github-btn.html?user=NGO-Algorithm-Audit&repo=unsupervised-bias-detection&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+                    <iframe src={{.iframe}} frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
                 </span>
+                {{ end }}
             </div>
         </div>
     </div>
 </div>
+{{ end }}
