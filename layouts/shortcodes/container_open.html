@@ -21,7 +21,7 @@
 </script>
 {{ end }}
 <div id={{$id}} class="{{ if $isAccordion }} accordion_container_{{$id}} {{ end }} container-fluid mt-5 p-0">
-    <div class="{{ if $isAccordion }} ac {{ end }} shadow mobile-desktop-container-layout rounded-lg ">
+    <div class="{{ if $isAccordion }} ac {{else}} border-bottom-gradient {{ end }} shadow mobile-desktop-container-layout rounded-lg ">
         <div class="{{ if $isAccordion }} ac-header {{ end }} ">
             <div class="col-12 row ac--has-own-icon {{ if $isAccordion }} ac-trigger {{ end }}">
         
