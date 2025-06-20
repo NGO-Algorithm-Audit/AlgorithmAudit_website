@@ -193,6 +193,11 @@ input[type="checkbox"] {
   }
 }
 
+.border-bottom-gradient {
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to left, #ffcbbd, #fffde4);
+  border-image-slice: 1;
+}
 // view ≥768px (md and lg)
 @media (min-width: 768px) {
   .show-mobile {
