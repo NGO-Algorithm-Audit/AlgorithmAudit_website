@@ -41,7 +41,7 @@
 	color: #005aa7;
 	font-style: normal;
 }
-.highlight-red-sm {
+.highlight-lightred-sm {
 	border: rgba(255, 255, 255, 0) 0.3rem solid;
 	border-radius: 0.75rem;
 	padding: 0.25rem 0.5rem !important;
@@ -50,6 +50,17 @@
 	text-decoration: none !important;
 	
 	background-color: rgba(255, 203, 189, 0.5);
+}
+
+.highlight-red-sm {
+	border: rgba(255, 255, 255, 0) 0.3rem solid;
+	border-radius: 0.75rem;
+	padding: 0.25rem 0.5rem !important;
+	color: #005aa7;
+	font-style: normal;
+	text-decoration: none !important;
+	
+	background-color: #FFCBBD;
 }
 
 .yellow-button {

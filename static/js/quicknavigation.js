@@ -15,7 +15,7 @@ docReady(function () {
     let highestActiveIndex = -1;
     var scrollPos = $(this).scrollTop();
     quickLinks.each(function () {
-      $(this).removeClass("highlight-red-sm");
+      $(this).removeClass("highlight-lightred-sm");
     });
     sectionOffsets.each(function (index) {
       if (this > 0 && scrollPos >= this) {
@@ -23,7 +23,7 @@ docReady(function () {
       }
     });
     if (highestActiveIndex >= 0) {
-      quickLinks.eq(highestActiveIndex).addClass("highlight-red-sm");
+      quickLinks.eq(highestActiveIndex).addClass("highlight-lightred-sm");
     }
   };
   $(window).on("scroll", setActiveSideNavigation);
