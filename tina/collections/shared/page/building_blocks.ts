@@ -740,6 +740,37 @@ const building_blocks: TinaField[] = [
   },
   {
     type: "object",
+    name: "promo_bar",
+    label: "Promo bar",
+    list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.id };
+      },
+    },
+    fields: [
+      {
+        type: "rich-text",
+        name: "content",
+        label: "content",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "id",
+        label: "ID",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: false,
+      },
+      {
+        type: "string",
+        name: "iframe",
+        label: "iFrame",
+      },
+    ],
+  },
+  {
+    type: "object",
     name: "reports_preview",
     label: "Reports preview",
     fields: [

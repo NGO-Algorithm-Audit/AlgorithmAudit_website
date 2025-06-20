@@ -48,7 +48,7 @@
                                 <!-- Featured Article -->
                                 {{ range $item := first 1 (where $knowledgebase_items "Params.featured" "==" true) }}
                                     <div class="col-12 mb-5 pb-5">
-                                        <div class="row align-items-center shadow mobile-desktop-container-layout rounded-lg">
+                                        <div class="row align-items-center shadow mobile-desktop-container-layout border-bottom-gradient rounded-lg">
                                             <div class="col-md-6 mb-4 mb-md-0">
                                                 <div style=" margin-left: auto; margin-right: auto;">
                                                     <img src="{{ .Params.image | relURL }}" alt="{{.Title}}"
@@ -82,7 +82,7 @@
                                         $facet.value | printf "%s" }}
                                     {{ end }}
                                     <div class="col-md-6 mb-4 facet-item" data-facets="{{$facets_for_data_attribute}}">
-                                        <div class="shadow mobile-desktop-container-layout rounded-lg">
+                                        <div class="shadow mobile-desktop-container-layout border-bottom-gradient rounded-lg">
                                             <div style=" margin-left: auto; margin-right: auto; display: table;">
                                                 <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" style='height: 276px; margin-bottom: 25px;'>
                                             </div>
