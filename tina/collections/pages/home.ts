@@ -3,6 +3,7 @@
  */
 
 import overview_block from "../shared/page/overview_block";
+import search from "../shared/page/search";
 
 export default {
   name: "home",
@@ -12,6 +13,7 @@ export default {
     include: "*/_index",
   },
   fields: [
+    search,
     // Banner
     {
       type: "object",

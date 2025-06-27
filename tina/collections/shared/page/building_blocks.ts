@@ -33,6 +33,7 @@ import webapp from "../templates/webapp";
 import image from "./image";
 import overview_block from "./overview_block";
 import quick_navigation from "./quick_navigation";
+import search from "./search";
 import subtitle from "./subtitle";
 import title from "./title";
 
@@ -40,6 +41,7 @@ const building_blocks: TinaField[] = [
   title,
   subtitle,
   image,
+  search,
   quick_navigation,
   {
     type: "rich-text",

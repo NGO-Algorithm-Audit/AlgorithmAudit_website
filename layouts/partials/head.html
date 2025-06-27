@@ -17,6 +17,10 @@
 
 <meta name="algolia-site-verification"  content="5A3FFC70E885F0D0" />
 
+<meta name="search_title" content="{{if .Params.search.title}}{{.Params.search.title}}{{else}}{{.Params.title}}{{end}}"> 
+<meta name="search_subtitle" content="{{if .Params.search.title}}{{.Params.search.subtitle}}{{else}}{{.Params.subtitle}}{{end}}"> 
+<meta name="search_image" content="{{if .Params.search.image}}{{.Params.search.image}}{{else}}{{.Params.image}}{{end}}"> 
+
 <!--Favicon-->
 <link rel="shortcut icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
 <link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
