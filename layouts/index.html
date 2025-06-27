@@ -10,6 +10,139 @@
 
 {{ partial "overview_block.html" .}}
 
+<style>
+.algolia-search {
+  .header {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(284deg, #fedd4e, #fcb43a);
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .header a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  .header-title::after {
+    content: ' ▸ ';
+    padding: 0 0.5rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .search-panel {
+    display: flex;
+  }
+
+  .search-panel__filters {
+    flex: 1;
+  }
+
+  .search-panel__results {
+    flex: 3;
+  }
+
+  .ais-Highlight-highlighted {
+    color: inherit;
+    font-size: inherit;
+  }
+
+  #searchbox {
+    margin-bottom: 2rem;
+  }
+
+  #pagination {
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .ais-Hits-item article {
+    display: flex;
+  }
+
+  .ais-Hits-item img {
+    max-height: 125px;
+    padding-right: 16px;
+  }
+}
+</style>
+<!-- Search -->
+<div class="container algolia-search">
+  <div class="search-panel">
+    <div class="search-panel__filters">
+    </div>
+
+    <div class="search-panel__results">
+      <div id="searchbox"></div>
+      <div id="hits"></div>
+      <div id="pagination"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.79.0"></script>
+<script>
+  const { algoliasearch, instantsearch } = window;
+
+  const searchClient = algoliasearch(
+    'R5LXP5NUID',
+    '4b504b6988d05a7631d6a330fb7afa58'
+  );
+
+  const search = instantsearch({
+    indexName: 'website_pages',
+    searchClient,
+    future: { preserveSharedStateOnUnmount: true },
+  });
+
+  search.addWidgets([
+    instantsearch.widgets.searchBox({
+      container: '#searchbox',
+    }),
+    instantsearch.widgets.hits({
+      container: '#hits',
+      templates: {
+        item: (hit, { html, components }) => html`
+          <article>
+            <img src=${hit.image} alt=${hit.title} />
+            <div>
+              <h1>${components.Highlight({ hit, attribute: 'title' })}</h1>
+              <p>${components.Highlight({ hit, attribute: 'subtitle' })}</p>
+            </div>
+          </article>
+        `,
+      },
+    }),
+    instantsearch.widgets.configure({
+      hitsPerPage: 8,
+    }),
+    instantsearch.widgets.pagination({
+      container: '#pagination',
+    }),
+  ]);
+
+  search.start();
+</script>
+<!-- /Search -->
+
 {{ partial "landingpage/activityfeed.html" . }}
 
 <!-- Areas of expertise -->
