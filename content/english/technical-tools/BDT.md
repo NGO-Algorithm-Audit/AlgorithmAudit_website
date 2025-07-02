@@ -150,18 +150,6 @@ The unsupervised bias detection tool performs a series of steps:
 <span style="color:#005AA7">Step 4. Hierarchical Bias-Aware Clustering (HBAC):</span> The HBAC algorithm (detailed below) is applied to the train dataset. The centroids of the resulting clusters are saved and later used to assign cluster labels to data points in the test dataset.
 
 <span style="color:#005AA7">Step 5. Testing cluster differences wrt. bias variable:</span> Statistical hypothesis testing is performed to evaluate whether the bias variable differ significantly in the most deviating cluster compared to the rest of the dataset. A one-sided Z-test is used to compare the means of the bias variable by testing the following hypothesis:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
-
-H_0: no difference in `bias_variable` between the most deviating cluster and the rest of the dataset
-H_A: difference in `bias_variable` between the most deviating cluster and the rest of the dataset
->>>>>>> Stashed changes
-
-H_0: no difference in `bias_variable` between the most deviating cluster and the rest of the dataset
-H_A: difference in `bias_variable` between the most deviating cluster and the rest of the dataset
->>>>>>> Stashed changes
 
 ```
 H_0: no difference in bias variable between the most deviating cluster and the rest of the dataset
