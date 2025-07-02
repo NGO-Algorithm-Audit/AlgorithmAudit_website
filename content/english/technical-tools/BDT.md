@@ -78,17 +78,17 @@ team:
 
 #### What does the tool do?
 
-The tool helps find groups where an AI system or algorithm performs differently, which could indicate unfair treatment. This type of monitoring is called *anomaly detection*. It detect deviations using a technique called <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>, which groups similar data points together (in clusters). The tool doesn’t need information like gender, nationality, or ethnicity to find deviations. Instead, it uses an `bias variable` to measure deviations in the performace of the system, which you can choose based on your data.
+The tool helps find groups where an AI system or algorithm performs differently, which could indicate unfair treatment. This type of monitoring is called *anomaly detection*. It detects deviations using a technique called <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>, which groups similar data points together (in clusters). The tool doesn’t need information like gender, nationality, or ethnicity to find deviations. Instead, it uses an `bias variable` to measure deviations in the performace of the system, which you can choose based on your data.
 
 #### What results does it give?
 
-The tool finds groups (clusters) where performance of the algorithmic system is significantly deviating. It highlights the group with the worst bias variables and creates a report called a bias analysis report, which you can download as a PDF. You can also download all the identified groups (clusters) in a .json file. Additionally, the tool provides visual summaries of the results, helping experts dive deeper into the identified deviations. An example can be found below. {{< tooltip tooltip_content="The figure below shows that cluster 0, the cluster with systemic deviating bias variable, includes a higher-than-average proportion of African-American and a lower-than-average proportion of Caucasian people. For other demographic groups, cluster 0 reflects an average distribution. Additional details about this example are available in the demo dataset." >}}
+The tool finds groups (clusters) where performance of the algorithmic system is significantly deviating. It highlights the group with the worst bias variables and creates a report called a bias analysis report, which you can download as a PDF. You can also download all the identified groups (clusters) in a .json file. Additionally, the tool provides visual summaries of the results, helping experts dive deeper into the identified deviations. An example can be found below. {{< tooltip tooltip_content="The figure below shows that cluster 0, the cluster with most deviating bias variable, includes a higher-than-average proportion of African-American and a lower-than-average proportion of Caucasian people. For other demographic groups, cluster 0 reflects an average distribution. Additional details about this example are available in the demo dataset." >}}
 
 <div style="margin-bottom:25px; display: flex; justify-content: center;">
   <img src="/images/BDT/example_COMPAS.png" alt="drawing" width="600px"/>
 </div>
 
-#### What kind of data does it work with?
+#### What kind of data does the tool work with?
 
 The tool works with data in a table format, consisting solely of numbers or categories. You need to pick one column in the data to use as the `bias variable`. This column should have numbers only, and you’ll specify whether a higher or lower number is better. For example, if you’re looking at error rates, lower numbers are better. For accuracy, higher numbers are better. The tool also comes with a demo dataset you can use by clicking "Demo dataset".
 
@@ -113,7 +113,7 @@ The tool works with data in a table format, consisting solely of numbers or cate
 
 #### Is my data safe?
 
-Yes! Your data stay on your computer and don't leave your organization’s environment. The tool runs directly in your browser, using your local device's computing power to analyze the data. This setup, called 'local-only', ensures no data are sent to cloud providers or third parties. More information about this local-only architecture can be found [below](/technical-tools/bdt/#local-only). Instructions for hosting local-only tools within your organization are available on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
+Yes! Your data stay on your computer and never leave your organization’s environment. The tool runs directly in your browser, using your local device’s computing power to analyze the data. This setup, called 'local-only', ensures no data are sent to cloud providers or third parties – not even to Algorithm Audit. More information about this local-only architecture can be found [below](/technical-tools/bdt/#local-only). Instructions for hosting local-only tools within your organization are available on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
 Try the tool below ⬇️
 
@@ -135,11 +135,11 @@ The unsupervised bias detection tool performs a series of steps:
 
 * <span style="color:#005AA7">Dataset:</span> The data must be provided in a tabular format. Any missing values should be removed or replaced.
 * <span style="color:#005AA7">Type of data:</span> All columns, except the bias variable column, should have uniform data types, e.g., either all numerical or all categorical. The user selects whether numerical of categorical data are processed.
-* <span style="color:#005AA7">Bias variable:</span> A column should be selected from the dataset to serve as the `bias variable`, which needs to be numerical. In step 4, clustering will be performed based on these numerical values. Examples include metrics such as "being classified as high risk", "error rate" or "selected for an investigation".
+* <span style="color:#005AA7">Bias variable:</span> A column should be selected from the dataset to serve as the `bias variable`, which needs to be categorical. In step 4, clustering will be performed based on these categorical values. Examples include metrics such as "being classified as high risk", "error rate" or "selected for an investigation".
 
-<span style="color:#005AA7">Step 2. Parameters:</span> the user shoulds set the following hyperparameters:
+<span style="color:#005AA7">Step 2. Hyperparameters:</span> the user shoulds set the following hyperparameters:
 
-* <span style="color:#005AA7">Iterations:</span> How often the data are allowed to be split in smaller clusters, by default 10 iterations are selected.
+* <span style="color:#005AA7">Iterations:</span> How often the data are allowed to be split in smaller clusters, by default 3 iterations are selected.
 * <span style="color:#005AA7">Minimal cluster size:</span> How many datapoints the identified clusters may contain, by deafault set to 1% of the number of rows in the attached dataset. More guidance on well-informed choice of the minimal cluster size can be found in section 3.3 of our [scientific paper](/technical-tools/bdt/#scientific-paper).
 * <span style="color:#005AA7">Bias variable interpretation:</span> How the bias variable should be interpreted. For instance, when error rate or misclassifications are chosen as the bias variable, a lower value is preferred, as the goal is to minimize errors. Conversely, when accuracy or precision is selected as the bias variable, a higher value is preferred, reflecting the aim to maximize performance.
 
@@ -149,9 +149,20 @@ The unsupervised bias detection tool performs a series of steps:
 
 <span style="color:#005AA7">Step 4. Hierarchical Bias-Aware Clustering (HBAC):</span> The HBAC algorithm (detailed below) is applied to the train dataset. The centroids of the resulting clusters are saved and later used to assign cluster labels to data points in the test dataset.
 
-<span style="color:#005AA7">Step 5. Testing cluster differences wrt. bias variable:</span> Statistical hypothesis testing is performed to evaluate whether the bias variable differ significantly in the most deviating cluster compared to the rest of the dataset. A t-test is used to compare the means of the bias variable.
+<span style="color:#005AA7">Step 5. Testing cluster differences wrt. bias variable:</span> Statistical hypothesis testing is performed to evaluate whether the bias variable differ significantly in the most deviating cluster compared to the rest of the dataset. A one-sided Z-test is used to compare the means of the bias variable by testing the following hypothesis:
+<<<<<<< Updated upstream
+=======
 
-<span style="color:#005AA7">Step 6. Testing cluster differences wrt. features:</span> If a statistically significant difference in bias variable between the most deviating cluster and the rest of the dataset occurs, feature diffences are examined. For this, also statistical hypothesis testing is used, namely a t-test in case numercial data and Pearson’s 𝜒2-test in case categorical data are processed. For multiple hypothesis testing, Bonferonni correction should be applied. Further details can be found in section 3.4 of our [scientific paper](/technical-tools/bdt/#scientific-paper).
+H_0: no difference in `bias_variable` between the most deviating cluster and the rest of the dataset
+H_A: difference in `bias_variable` between the most deviating cluster and the rest of the dataset
+>>>>>>> Stashed changes
+
+```
+H_0: no difference in bias variable between the most deviating cluster and the rest of the dataset
+H_A: difference in bias variable between the most deviating cluster and the rest of the dataset.
+```
+
+<span style="color:#005AA7">Step 6. Testing cluster differences wrt. features:</span> If H_0 is rejected and H_1 is accepted, i.e., a statistically significant difference in bias variable between the most deviating cluster and the rest of the dataset occurs, feature diffences between the most deviating cluster and the rest of the dataset are examined. For this, also statistical hypothesis testing is used, namely a t-test in case numercial data and Pearson’s 𝜒2-test in case categorical data are processed. For multiple hypothesis testing, Bonferonni correction is applied. Further details can be found in section 3.4 of our [scientific paper](/technical-tools/bdt/#scientific-paper).
 
 A schematic overview of the above steps is depicted below.
 
@@ -171,7 +182,7 @@ The HBAC-algorithm is introduced by Misztal-Radecka and Indurkya in a [scientifi
 
 #### How should the results of the tool be interpreted?
 
-The HBAC algorithm maximizes the difference in bias variable between clusters. To prevent incorrect conclusions that there are unwanted deviations in the decision-making process under review when there truly is none, we split the dataset in training and test data, and hypothesis testing prevents us from (wrongly) concluding that there is a difference in bias variable while there is none. If a statistically significant deviation is detected, the outcome of the tool serves as a starting point for human experts to assess the identified deviations in the decision-making processes.
+The HBAC algorithm maximizes the difference in bias variable between clusters. To prevent incorrect conclusions that there are unwanted deviations in the decision-making process under review when there truly is none, we: 1) split the dataset in training and test data; and 2) test hypotheses. If a statistically significant deviation is detected, the outcome of the tool serves as a starting point for human experts to assess the identified deviations in the decision-making processes.
 
 {{< container_close >}}
 

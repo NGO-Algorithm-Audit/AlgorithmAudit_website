@@ -78,11 +78,11 @@ team:
 
 #### Wat doet de tool?
 
-De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert, wat kan duidelijk op ongelijke behandeling. Naar deze vorm van monitoring wordt verwezen als _anomaliedetectie_. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a> om datapunten te groeperen (in clusters). Dit tool heeft geen beschermde kenmerken nodig van gebruikers, zoals geslacht, nationaliteit of etniciteit, om afwijkingen te detecteren. De metriek aan de hand waarvan onderscheid wordt bepaald kan handmatig worden gekozen en wordt naar verwezen als de `bias variabele`.
+De tool detecteert groepen waarvoor een algoritme of AI-systeem afwijkend presteert, wat mogelijk zou kunnen duiden op ongelijke behandeling. Naar deze vorm van monitoring wordt verwezen als _anomaliedetectie_. Voor het detecteren van afwijkende partonen maakt de tool gebruik van <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a> om datapunten te groeperen (in clusters). De tool heeft geen beschermde kenmerken nodig van gebruikers, zoals geslacht, nationaliteit of etniciteit, om afwijkingen te detecteren. De variabele aan de hand waarvan onderscheid wordt bepaald kan handmatig worden gekozen en wordt naar verwezen als de `bias variabele`.
 
-#### Wat zijn de uitkomsten van de tool?
+#### Welke uitkomsten geeft de tool?
 
-De tool identificeert groepen (clusters) waarvoor de prestaties van het algoritmisch systeem significant afwijken. Het cluster met de meest nadelinge bias variabele wordt uitgelicht en er wordt een bias analyse-rapport gegenereerd dat als PDF kan worden gedownload. Ook kunnen alle geïdentificeerde groepen (clusters) als .json-bestand worden gedownload. Daarnaast biedt de tool visualisaties van de resultaten, zodat domeinexperts de gevonden afwijkingen nader kunnen onderzoeken. Een voorbeeld is hieronder te zien. {{< tooltip tooltip_content="Onderstaande figuur laat zien dat cluster 0, het cluster met systemtisch afwijkende bias variabele, een hoger dan gemiddeld aandeel Afro-Amerikaanse en een lager dan gemiddeld aandeel 'Kaukasische' personen bevat. Voor andere demografische groepen bevat cluster 0 een gemiddelde verdeling. Meer details over dit voorbeeld zijn te vinden in de demo dataset." >}}
+De tool identificeert groepen (clusters) waarvoor de prestaties van het algoritme systematisch afwijken. Het cluster met de meest afwijkende bias variabele wordt uitgelicht en er wordt een bias analyse-rapport gegenereerd dat als PDF kan worden gedownload. Ook kunnen alle geïdentificeerde groepen (clusters) als .json-bestand worden gedownload. Daarnaast biedt de tool visualisaties van de resultaten, zodat domeinexperts de gevonden afwijkingen nader kunnen onderzoeken. Een voorbeeld is hieronder te zien. {{< tooltip tooltip_content="Onderstaande figuur laat zien dat cluster 0, het cluster met de meest afwijkende bias variabele (valspositieven in dit voorbeeld), een hoger dan gemiddeld aandeel Afro-Amerikaanse en een lager dan gemiddeld aandeel 'Kaukasische' personen bevat. Voor andere demografische groepen bevat cluster 0 een gemiddelde verdeling. Meer details over dit voorbeeld zijn te vinden in de demo dataset." >}}
 
 <div style="margin-bottom:50px; display: flex; justify-content: center;">
   <img src="/images/BDT/example_COMPAS.png" alt="drawing" width="600px"/>
@@ -90,7 +90,7 @@ De tool identificeert groepen (clusters) waarvoor de prestaties van het algoritm
 
 #### Welke data kan worden verwerkt?
 
-De tool verwerkt data in tabel-formaat, dat enkel uit numerieke of categorische waarden bestaat. Eén kolom moet worden geselecteerd als `bias variabele`. Deze kolom mag enkel uit numerieke waarden bestaan. De gebruiker dient aan te aangeven of een hoge of lage waarde van de `uitkomstscore` beter is. Voorbeeld: als je kijkt naar foutpercentages, zijn lagere waarden beter; voor nauwkeurigheid zijn hogere waarden beter. De tool bevat ook een demo dataset die je kunt gebruiken door op "Demo dataset" te klikken.
+De tool verwerkt data in tabel-formaat, dat enkel uit numerieke of categorische waarden bestaat. Eén kolom moet worden geselecteerd als `bias variabele`. Deze kolom mag enkel uit categorische waarden bestaan. De gebruiker dient aan te aangeven of een hoge of lage waarde van de `bias variabele` beter is. Voorbeeld: als je kijkt naar foutpercentages, zijn lagere waarden beter; voor nauwkeurigheid zijn hogere waarden beter. De tool bevat ook een demo dataset die je kunt gebruiken door op "Demo dataset" te klikken.
 
 <div>
   <p><u>Voorbeeld van numerieke dataset</u>:</p>
@@ -113,7 +113,7 @@ De tool verwerkt data in tabel-formaat, dat enkel uit numerieke of categorische 
 
 #### Is mijn data veilig?
 
-Ja! Je data blijft op je eigen computer en verlaat de omgeving van je organisatie niet. De tool werkt in je browser en gebruikt de rekenkracht van je lokla apparaat om de data te analyseren. Deze aanpak, ‘local-only’ genoemd, zorgt ervoor dat er geen data met cloudproviders of anderen wordt gedeeld. Meer informatie over deze local-only architectuur vind je [hieronder](/nl/technical-tools/bdt/#local-only). Instructies om local-only tools binnen je organisatie te hosten zijn te vinden op <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
+Ja! Je data blijft op je eigen computer en verlaat de omgeving van je organisatie niet. De tool werkt in je browser en gebruikt de rekenkracht van je lokla apparaat om de data te analyseren. Deze aanpak, ‘local-only’ genaamd, zorgt ervoor dat er geen data met cloudproviders of andere derde partijen wordt gedeeld – ook niet met Algorithm Audit. Meer informatie over deze local-only architectuur vind je [hieronder](/nl/technical-tools/bdt/#local-only). Instructies om local-only tools binnen je organisatie te hosten zijn te vinden op <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
 Gebruik de tool hier beneden ⬇️
 
@@ -135,11 +135,11 @@ De unsupervised bias detectie tool voert de volgende stappen uit:
 
 - <span style="color:#005AA7">Dataset:</span> De data moet worden aangeleverd in tabelvorm. Eventuele ontbrekende waarden dienen te worden verwijderd of vervangen.
 - <span style="color:#005AA7">Type data:</span> Alle kolommen, behalve de bias variabele-kolom, moeten hetzelfde datatype hebben, bijvoorbeeld allemaal numeriek of allemaal categorisch. De gebruiker geeft aan of numerieke of categorische data worden verwerkt.
-- <span style="color:#005AA7">Bias variabele:</span> Er moet een kolom uit de dataset worden geselecteerd als `bias variabele`, welke numeriek moet zijn. In stap 4 wordt op basis van deze numerieke waarden clustering uitgevoerd. Voorbeelden zijn: "aangewezen als hoog risico", "foutpercentage" of "geselecteerd voor controle".
+- <span style="color:#005AA7">Bias variabele:</span> Er moet een kolom uit de dataset worden geselecteerd als `bias variabele`, welke categorisch moet zijn. In stap 4 wordt op basis van deze categorische waarden clustering uitgevoerd. Voorbeelden zijn: "aangewezen als hoog risico", "foutpercentage" of "geselecteerd voor controle".
 
-<span style="color:#005AA7">Stap 2. Parameters:</span> de gebruiker kiest de volgende hyperparameters:
+<span style="color:#005AA7">Stap 2. Hyperparameters:</span> de gebruiker kiest de volgende hyperparameters:
 
-- <span style="color:#005AA7">Iteraties:</span> Hoe vaak de data mogen worden gesplitst in kleinere clusters; standaard zijn 10 iteraties ingesteld.
+- <span style="color:#005AA7">Iteraties:</span> Hoe vaak de data mogen worden gesplitst in kleinere clusters; standaard zijn 3 iteraties ingesteld.
 - <span style="color:#005AA7">Minimale clustergrootte:</span> Hoeveel datapunten de gevonden clusters minimaal moeten bevatten; standaard is dit 1% van het aantal rijen in de dataset. Meer uitleg over een geïnformeerde keuze voor de minimale clustergrootte is te vinden in sectie 3.3 van onze [wetenschappelijke paper](/technical-tools/bdt/#scientific-paper).
 - <span style="color:#005AA7">Interpretatie bias variabele:</span> Hoe de bias variabele geïnterpreteerd moet worden. Bijvoorbeeld: als foutpercentage of misclassificaties als bias variabele worden gekozen, is een lagere waarde beter, omdat het doel is fouten te minimaliseren. Als nauwkeurigheid of precisie als bias variabele wordt gekozen, is een hogere waarde beter, omdat het doel is de prestaties te maximaliseren.
 
@@ -149,9 +149,14 @@ De unsupervised bias detectie tool voert de volgende stappen uit:
 
 <span style="color:#005AA7">Stap 4. Hierarchisch Bias-Aware Clustering (HBAC):</span> Het HBAC-algoritme (hieronder toegelicht) wordt toegepast op de train dataset. De centra van de gevonden clusters worden opgeslagen en later gebruikt om clusterlabels toe te wijzen aan datapunten in de test dataset.
 
-<span style="color:#005AA7">Stap 5. Toetsen van verschillen tussen clusters mbt. bias variabele:</span> Statistische hypothesetoets wordt uitgevoerd om te bepalen of de bias variabele significant verschilt in het meest afwijkende cluster ten opzichte van de rest van de dataset. Hiervoor wordt een t-toets gebruikt om de gemiddelden van de bias variabelen te vergelijken.
+<span style="color:#005AA7">Stap 5. Toetsen van verschillen tussen clusters mbt. bias variabele:</span> Statistische hypothesetoets wordt uitgevoerd om te bepalen of de bias variabele significant verschilt in het meest afwijkende cluster ten opzichte van de rest van de dataset. Hiervoor wordt een eenzijdige Z-toets gebruikt om de gemiddelden van de bias variabelen te vergelijken middels de volgende hypothesetoets: 
 
-<span style="color:#005AA7">Stap 6. Toetsen van verschillen tussen cluster mbt. eigenschappen:</span> Indien een statistisch significant verschil in bias variabele wordt gevonden tussen het meest afwijkende cluster en de rest van de dataset, worden de verschillen in eigenschappen onderzocht. Ook hiervoor wordt statistische hypothesetoetsing gebruikt, namelijk een t-toets wanneer numerieke data en de Pearson 𝜒²-toets wanneer categorische data worden verwerkt. Bij het uitvoeren van meerdere hypothesetoetsen dient Bonferroni-correctie te worden toegepast. Meer informatie hierover kan worden gevonden in sectie 3.4 van onze [wetenschappelijke paper](/nl/technical-tools/bdt/#scientific-paper).
+```
+H_0: geen verschil in bias variable tussen het meest afwijkende cluster en de rest van de dataset
+H_A: verschil in bias variable tussen het meest afwijkende cluster en de rest van de dataset.
+```
+
+<span style="color:#005AA7">Stap 6. Toetsen van verschillen tussen cluster mbt. eigenschappen:</span> Indien een statistisch significant verschil in bias variabele wordt gevonden tussen het meest afwijkende cluster en de rest van de dataset, worden de verschillen in eigenschappen (tussen het meest afwijkende cluster en de rest van de dataset) onderzocht. Ook hiervoor wordt statistische hypothesetoetsen gebruikt, namelijk een t-toets wanneer numerieke data en de Pearson 𝜒²-toets wanneer categorische data worden verwerkt. Bij het uitvoeren van meerdere hypothesetoetsen wordt Bonferroni-correctie toegepast. Meer informatie hierover kan worden gevonden in sectie 3.4 van onze [wetenschappelijke paper](/nl/technical-tools/bdt/#scientific-paper).
 
 Een schematisch overzicht van bovenstaande stappen wordt hieronder weergegeven.
 
@@ -161,7 +166,7 @@ Een schematisch overzicht van bovenstaande stappen wordt hieronder weergegeven.
 
 #### Hoe werkt het clustering algoritme?
 
-Het _Hierarchisch Bias-Aware Clustering_ (HBAC) algoritme identificeert clusters in de aangeleverde dataset op basis van een door de gebruiker gekozen `bias variabele`. Het doel is om clusters te vinden met een lage variatie in bias variabele binnen elk cluster, terwijl de variatie tussen clusters juist hoog is. HBAC vindt iteratief clusters in de data met behulp van k-means (voor numerieke data) of k-modes clustering (voor categorische data). Voor de eerste split neemt HBAC de volledige dataset en splitst deze in twee clusters. Cluster `C` – met de hoogste standaarddeviatie van de bias variabele – wordt geselecteerd. Vervolgens wordt cluster `C` opgesplitst in twee kandidaat-clusters `C'` en `C''`. Als het gemiddelde van de bias variabele in een van de kandidaat-clusters hoger is dan het gemiddelde in `C`, wordt het kandidaat-cluster met de hoogste bias variabele geselecteerd als nieuw cluster. Dit proces herhaalt zich totdat het maximale aantal iteraties (`max_iteraties`) is bereikt of het resulterende cluster niet meer voldoet aan de minimale grootte (`n_min`). De pseudo-code van het HBAC-algoritme is hieronder weergegeven.
+Het _Hierarchisch Bias-Aware Clustering_ (HBAC) algoritme identificeert clusters in de aangeleverde dataset op basis van een door de gebruiker gekozen `bias variabele`. Het doel is om clusters te vinden met een lage variatie in bias variabele binnen elk cluster, terwijl de variatie tussen clusters juist hoog is. HBAC vindt iteratief clusters in de data met behulp van k-means clustering (voor numerieke data) of k-modes clustering (voor categorische data). Voor de eerste split neemt HBAC de volledige dataset en splitst deze in twee clusters. Cluster `C` – met de hoogste standaarddeviatie van de bias variabele – wordt geselecteerd. Vervolgens wordt cluster `C` opgesplitst in twee kandidaat-clusters `C'` en `C''`. Als het gemiddelde van de bias variabele in een van de kandidaat-clusters hoger is dan het gemiddelde in `C`, wordt het kandidaat-cluster met de hoogste bias variabele geselecteerd als nieuw cluster. Dit proces herhaalt zich totdat het maximale aantal iteraties (`max_iteraties`) is bereikt of het resulterende cluster niet meer voldoet aan de minimale grootte (`n_min`). De pseudo-code van het HBAC-algoritme is hieronder weergegeven.
 
 <div style="display: flex; justify-content: center;">
   <img src="/images/BDT/pseudo_code_HBAC.png" alt="drawing" width="800px"/>
@@ -171,7 +176,7 @@ Het HBAC-algoritme is geïntroduceerd door Misztal-Radecka en Indurkhya in een [
 
 #### Hoe moeten de resultaten van de tool worden geïnterpreteerd?
 
-Het HBAC-algoritme maximaliseert het verschil in bias variabele tussen clusters. Om te voorkomen dat er ten onrechte wordt geconcludeerd dat er ongewenste afwijkingen zijn in het onderzochte besluitvormingsproces terwijl die er niet zijn, wordt de dataset gesplitst in train- en testdata en voorkomt hypothesetoetsing dat we (onterecht) concluderen dat er een verschil is in bias variabele terwijl dat niet zo is. Als een statistisch significante afwijking wordt gedetecteerd, vormt de uitkomst van de tool een startpunt voor domeinexperts om de geïdentificeerde afwijkingen in het besluitvormingsproces te beoordelen.
+Het HBAC-algoritme maximaliseert het verschil in bias variabele tussen clusters. Om te voorkomen dat er ten onrechte wordt geconcludeerd dat er ongewenste afwijkingen zijn in het onderzochte besluitvormingsproces terwijl die er niet zijn, wordt: 1) de dataset gesplitst in train- en testdata; en 2) toetsen we hyptotheses. Als een statistisch significante afwijking wordt gedetecteerd, vormt de uitkomst van de tool een startpunt voor domeinexperts om de geïdentificeerde afwijkingen in het besluitvormingsproces te beoordelen.
 
 {{< container_close >}}
 
