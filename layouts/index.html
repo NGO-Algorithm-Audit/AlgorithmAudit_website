@@ -12,47 +12,8 @@
 
 <style>
 .algolia-search {
-  .header {
-    display: flex;
-    align-items: center;
-    min-height: 50px;
-    padding: 0.5rem 1rem;
-    background-image: linear-gradient(284deg, #fedd4e, #fcb43a);
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-
-  .header a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .header-title {
-    font-size: 1.2rem;
-    font-weight: normal;
-  }
-
-  .header-title::after {
-    content: ' ▸ ';
-    padding: 0 0.5rem;
-  }
-
-  .header-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
   .search-panel {
     display: flex;
-  }
-
-  .search-panel__filters {
-    flex: 1;
   }
 
   .search-panel__results {
@@ -72,30 +33,55 @@
     margin: 2rem auto;
     text-align: center;
   }
-
-  .ais-Hits-item article {
-    display: flex;
+  .search-result-row {
+    @media (min-width: 992px) {
+      height: 220px;
+    }
+  }
+  .ais-Hits-item {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .search-result-image {
+    height: auto;
+    max-height: 175px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .search-result-title {
+    margin-top: 40px;
   }
 
-  .ais-Hits-item img {
-    max-height: 125px;
-    padding-right: 16px;
+  ol.ais-Hits-list {
+    list-style: none;
+  }
+  .ais-Highlight-highlighted, .ais-Snippet-highlighted {
+    background-color: #FFFF92;
   }
 }
 </style>
 <!-- Search -->
-<div class="container algolia-search">
-  <div class="search-panel">
-    <div class="search-panel__filters">
+ <section class="section color-blue">
+  <div class="container algolia-search rounded-lg bg-lightblue">
+    <div class="row">
+      <div class="col">
+        <h2 class="pt-5 color-blue">Search</h2>
+      </div>
     </div>
-
-    <div class="search-panel__results">
-      <div id="searchbox"></div>
-      <div id="hits"></div>
-      <div id="pagination"></div>
+    <div class="row">
+      <div class="col">
+        <div class="search-panel">
+          <div class="search-panel__results d-block">
+            <div id="searchbox"></div>
+            <div id="hits"></div>
+            <div id="pagination"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.79.0"></script>
@@ -121,18 +107,25 @@
       container: '#hits',
       templates: {
         item: (hit, { html, components }) => html`
-          <article>
-            <img src=${hit.image} alt=${hit.title} />
-            <div>
-              <h1>${components.Highlight({ hit, attribute: 'title' })}</h1>
-              <p>${components.Highlight({ hit, attribute: 'subtitle' })}</p>
+        <a href=${hit.url} class="container">
+          <div class="row search-result-row">
+            <div class="col-12 col-lg-2">
+              <div class="my-3">
+                <img class="image-fluid search-result-image d-flex" src=${hit.image} alt=${hit.title} />
+              </div>
             </div>
-          </article>
+            <div class="col-12 col-lg-10">
+              <h3 class="color-blue search-result-title">${components.Highlight({ hit, attribute: 'title' })}</h3>
+              <p class="color-gray search-result-subtitle">${components.Highlight({ hit, attribute: 'subtitle' })}</p>
+            </div>
+          </div>
+        </a>
         `,
       },
     }),
     instantsearch.widgets.configure({
       hitsPerPage: 8,
+      filters: "language:{{$.Site.Language.Lang}}"
     }),
     instantsearch.widgets.pagination({
       container: '#pagination',
