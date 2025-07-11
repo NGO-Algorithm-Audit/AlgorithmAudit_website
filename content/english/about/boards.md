@@ -1,6 +1,6 @@
 ---
-title: Boards
-subtitle: "Algorithm Audit consists of an executive board, international advisors, an advisory board and project teams. Learn more about\_our the work of the [project teams](/about/teams/)."
+title: Board and advisors
+subtitle: "Algorithm Audit consists of an executive board, international advisors and an advisory board."
 image: /images/svg-illustrations/events.svg
 team2:
   title: Board
@@ -16,20 +16,24 @@ team2:
       name: Jurriaan Parie
       bio: |
         Director-board member
+    - image: /images/people/Profile.png
+      name: 
+      bio: |
+        to be announced
 quick_navigation:
   title: Overzicht
   links:
     - title: Board
       url: '#board'
+    - title: International experts
+      url: '#international-experts'
     - title: Advisory board
       url: '#advisory-board'
-    - title: Supervisory board
-      url: '#supervisory-board'
 ---
 
 {{< team2 >}}
 
-{{< container_open title="International expert group" id="advisory-board" icon="fas fa-user-plus" >}}
+{{< container_open title="International expert group" id="international-experts" icon="fas fa-user-plus" >}}
 
 * [Aileen Nielsen](https://hls.harvard.edu/faculty/aileen-nielsen/), Visiting Assistant Professor, Harvard Law School, author of the book [Practical Fairness](https://www.oreilly.com/library/view/practical-fairness/9781492075721/)		&#x9;
 * [Anne Meuwese](https://www.universiteitleiden.nl/medewerkers/anne-meuwese#tab-1), Professor Public Law & Governance of AI, Leiden University
@@ -40,7 +44,7 @@ quick_navigation:
 
 {{< container_close >}}
 
-{{< container_open icon="fas fa-eye" title="Board of advice" id="supervisory-board" >}}
+{{< container_open icon="fas fa-eye" title="Advisory board" id="advisory-board" >}}
 
 Currently being established
 

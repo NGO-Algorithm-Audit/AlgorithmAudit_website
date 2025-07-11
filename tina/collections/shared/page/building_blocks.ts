@@ -15,6 +15,8 @@ import dynamic_form_engine from "../templates/dynamic_form_engine";
 import embed_pdf from "../templates/embed_pdf";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
+import form3 from "../templates/form3";
+import form4 from "../templates/form4";
 import iframe from "../templates/iframe";
 import template_image from "../templates/image";
 import overview_block_template from "../templates/overview_block_template";
@@ -28,6 +30,7 @@ import team from "../templates/team";
 import team1 from "../templates/team1";
 import team2 from "../templates/team2";
 import team3 from "../templates/team3";
+import team4 from "../templates/team4";
 import tooltip from "../templates/tooltip";
 import webapp from "../templates/webapp";
 import image from "./image";
@@ -62,6 +65,7 @@ const building_blocks: TinaField[] = [
       embed_pdf,
       form1,
       form2,
+      form3,
       template_image,
       iframe,
       overview_block_template,
@@ -75,6 +79,7 @@ const building_blocks: TinaField[] = [
       team1,
       team2,
       team3,
+      team4,
       tooltip,
       webapp,
     ],
@@ -742,6 +747,256 @@ const building_blocks: TinaField[] = [
   },
   {
     type: "object",
+    name: "form3",
+    label: "Form #3",
+    fields: [
+      {
+        name: "title",
+        label: "Title",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "content",
+        label: "Content",
+        type: "string",
+        description: "grey text under title",
+        required: false,
+      },
+      {
+        name: "button_text",
+        label: "Button text",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "backend_link",
+        label: "Back end link",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "id",
+        label: "ID",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: false,
+      },
+      {
+        type: "object",
+        name: "questions",
+        label: "Questions",
+        list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.label };
+          },
+        },
+        fields: [
+          {
+            type: "string",
+            name: "label",
+            label: "Label",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "id",
+            label: "Id",
+            required: true,
+            description:
+              "Unique identifier (as can be seen when recieving the submitted form)",
+          },
+          {
+            type: "string",
+            name: "value",
+            label: "Value (only for checkboxes)",
+            required: false,
+          },
+          {
+            name: "file_upload_text",
+            label: "File upload text (only for file upload)",
+            type: "string",
+            description: "Text displayed in file upload field",
+            required: false,
+          },
+          {
+            type: "boolean",
+            name: "required",
+            label: "required",
+          },
+          {
+            type: "string",
+            name: "file_type",
+            label: "File type (e.g, .docx, .pdf)",
+          },
+          {
+            type: "string",
+            name: "type",
+            label: "Type",
+            required: true,
+            options: [
+              {
+                value: "text",
+                label: "Text box",
+              },
+              {
+                value: "checkbox",
+                label: "Check box",
+              },
+              {
+                value: "textarea",
+                label: "Text area",
+              },
+              {
+                value: "file",
+                label: "File",
+              },
+              {
+                value: "email",
+                label: "Email",
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "placeholder",
+            label: "Placeholder",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "object",
+    name: "form4",
+    label: "Form #4",
+    fields: [
+      {
+        name: "title",
+        label: "Title",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "content",
+        label: "Content",
+        type: "string",
+        description: "grey text under title",
+        required: false,
+      },
+      {
+        name: "button_text",
+        label: "Button text",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "backend_link",
+        label: "Back end link",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "id",
+        label: "ID",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: false,
+      },
+      {
+        type: "object",
+        name: "questions",
+        label: "Questions",
+        list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.label };
+          },
+        },
+        fields: [
+          {
+            type: "string",
+            name: "label",
+            label: "Label",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "id",
+            label: "Id",
+            required: true,
+            description:
+              "Unique identifier (as can be seen when recieving the submitted form)",
+          },
+          {
+            type: "string",
+            name: "value",
+            label: "Value (only for checkboxes)",
+            required: false,
+          },
+          {
+            name: "file_upload_text",
+            label: "File upload text (only for file upload)",
+            type: "string",
+            description: "Text displayed in file upload field",
+            required: false,
+          },
+          {
+            type: "boolean",
+            name: "required",
+            label: "required",
+          },
+          {
+            type: "string",
+            name: "file_type",
+            label: "File type (e.g, .docx, .pdf)",
+          },
+          {
+            type: "string",
+            name: "type",
+            label: "Type",
+            required: true,
+            options: [
+              {
+                value: "text",
+                label: "Text box",
+              },
+              {
+                value: "checkbox",
+                label: "Check box",
+              },
+              {
+                value: "textarea",
+                label: "Text area",
+              },
+              {
+                value: "file",
+                label: "File",
+              },
+              {
+                value: "email",
+                label: "Email",
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "placeholder",
+            label: "Placeholder",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "object",
     name: "promo_bar",
     label: "Promo bar",
     list: true,
@@ -1077,6 +1332,73 @@ const building_blocks: TinaField[] = [
     type: "object",
     name: "team3",
     label: "Team #3",
+    fields: [
+      {
+        name: "title",
+        label: "Title",
+        type: "string",
+        description: "",
+        required: true,
+      },
+      {
+        name: "content",
+        label: "Content",
+        type: "string",
+        description: "",
+        required: false,
+      },
+      {
+        type: "string",
+        name: "icon",
+        label: "Icon",
+        description:
+          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
+        required: false,
+      },
+      {
+        type: "string",
+        name: "id",
+        label: "ID",
+        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
+        required: false,
+      },
+      {
+        type: "object",
+        name: "team_members",
+        label: "Team members",
+        list: true,
+        ui: {
+          itemProps: (item) => {
+            return { label: item?.name };
+          },
+        },
+        fields: [
+          {
+            type: "image",
+            name: "image",
+            label: "image",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "name",
+            label: "Name",
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "bio",
+            label: "Bio",
+            isBody: false,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "object",
+    name: "team4",
+    label: "Team #4",
     fields: [
       {
         name: "title",

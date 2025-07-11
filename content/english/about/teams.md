@@ -1,6 +1,7 @@
 ---
 title: Teams
-subtitle: "Algorithm Audit consists of an executive board, international advisors, an advisory board and project teams. Learn more about\_our the [governance](/about/boards/) of the organisation."
+subtitle: >
+  Algorithm Audit consists of an executive team and a collection of multidisciplinary experts that contribute to projects on a part-time basis.
 image: /images/svg-illustrations/about.svg
 about_AA:
   title: Core activities
@@ -34,30 +35,57 @@ about_AA:
       content: >
         [Supporting](/knowledge-platform/project-work/) public and private sector
         organisations with specific questions regarding responsible use of AI, from a not-for-profit perspective.
-team:
-  title: Team synthetic data generation
-  content: Part-time team working on synthetic data generation
-  icon: fas fa-search
-  button_text: Use tool
-  button_link: /technical-tools/sdg/
+team2:
+  title: Executive team
+  content: Full-time team coordinating the different activities of Algorithm Audit
+  icon: fas fa-users
+  id: executive-team
   team_members:
-    - image: /images/people/EMenvouta.jpeg
-      name: Emmanuel Menvouta PhD
+    - image: /images/people/JParie.jpg
+      name: Jurriaan Parie
       bio: |
-        Freelance machine learning engineer, specialized in SDG methodology
-    - image: /images/people/MLisdonk.png
-      name: Maikel van de Lisdonk
+        Director-board member
+    - image: /images/people/YRemmits.jpg
+      name: Ylja Remmits
       bio: |
-        Freelance software developer
-    - image: /images/people/RLangius.jpg
-      name: Ruben Langius
+        Head of Projects 
+team3:
+  title: Legal experts
+  content: Part-time team working on human rights and data privacy challenges
+  icon: fas fa-search
+  team_members:
+    - image: /images/people/IPapageorgiou.jpg
+      name: Ioanna Papageorgiou
       bio: |
-        Freelance software developer
+        Doctoral researcher AI Fairness & Privacy, University of Hannover
+    - image: /images/people/LNaudts.jpg
+      name: Laurens Naudts
+      bio: |
+        Postdoctoral researcher AI, Media and Democracy Lab, University of Amsterdam
+team4:
+  title: Team Large Language Models (LLMs)
+  content: Part-time team working on socio-technical evaluation of Large Language Models
+  icon: fas fa-robot
+  button_text: More about our evaluations
+  button_link: /knowledge-platform/project-work/#LLM-validation
+  team_members:
+    - image: /images/people/JChristoph.png
+      name: Joël Christoph
+      bio: |
+        PhD-candidate European University Institute
+    - image: /images/people/TvanOsch.jpg
+      name: Thomas van Osch
+      bio: |
+        ML engineer
+    - image: /images/people/TDriessen.jpg
+      name: Tom Driessen
+      bio: |
+        PhD-candidate Cognitive Robotics, TU Delft
 team1:
-  title: Team unsupervised bias detection tool
+  title: Team unsupervised bias detection 
   content: Part-time team working on unsupervised the bias detection tool
   icon: fas fa-search
-  button_text: Use the tool
+  button_text: More about the tool
   button_link: /technical-tools/bdt/
   team_members:
     - image: /images/people/KPadh.jpeg
@@ -80,39 +108,25 @@ team1:
       name: Joel Persson PhD
       bio: |
         Research Scientist, Spotify
-team2:
-  title: Executive team
-  content: Full-time team coordinating the different activities of Algorithm Audit
-  icon: fas fa-users
-  id: executive-team
+team:
+  title: Team synthetic data generation
+  content: Part-time team working on synthetic data generation tool
+  icon: fas fa-table
+  button_text: More about the tool
+  button_link: /technical-tools/sdg/
   team_members:
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
+    - image: /images/people/EMenvouta.jpeg
+      name: Emmanuel Menvouta PhD
       bio: |
-        Director-board member
-    - image: /images/people/YRemmits.jpg
-      name: Ylja Remmits
+        Freelance machine learning engineer, specialized in SDG methodology
+    - image: /images/people/MLisdonk.png
+      name: Maikel van de Lisdonk
       bio: |
-        Head of Projects 
-    - image: /images/people/JVerbeek.jpeg
-      name: Jet Verbeek
+        Freelance software developer
+    - image: /images/people/RLangius.jpg
+      name: Ruben Langius
       bio: |
-        Intern/work student
-team3:
-  title: Team AI Act standards
-  content: Part-time team working on AI Act standards
-  icon: fas fa-search
-  button_text: More about standards
-  button_link: /knowledge-platform/standards/
-  team_members:
-    - image: /images/people/EPetersen.jpeg
-      name: Eike Petersen
-      bio: |
-        Senior Scientist Medical AI, Fraunhofer MEVIS, Hannover
-    - image: /images/people/ALeoneDeCastris.jpg
-      name: Arcangelo Leone de Castris
-      bio: |
-        AI Policy Researcher at The Alan Turing Institute, London
+        Freelance software developer
 quick_navigation:
   title: Overview
   links:
@@ -120,20 +134,24 @@ quick_navigation:
       url: '#about'
     - title: Executive team
       url: '#executive-team'
-    - title: Team unsupervised bias detectie
+    - title: Legal experts
+      url: '#team-legal'
+    - title: Team LLMs
+      url: '#team-LLMs'
+    - title: Team unsupervised bias detection
       url: '#team-BDT'
     - title: Team synthetic data generation
       url: '#team-SDG'
-    - title: Team AI Act standards
-      url: '#team-standards'
 ---
 
 {{< about_AA id="about" >}}
 
 {{< team2 id="executive-team">}}
 
+{{< team3 id="team-legal" >}}
+
+{{< team4 id="team-LLMs" >}}
+
 {{< team1 id="team-BDT" >}}
 
 {{< team id="team-SDG" >}}
-
-{{< team3 id="team-standards" >}}

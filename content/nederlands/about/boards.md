@@ -1,6 +1,6 @@
 ---
 title: Bestuur en adviesorganen
-subtitle: "Stichting Algorithm Audit bestaat uit een bestuur, internationale adviseurs, Raad van Advies en verschillende projectteams.\_[Lees meer](/nl/about/teams/)\_over de projectteams."
+subtitle: "Stichting Algorithm Audit bestaat uit een bestuur, internationale adviseurs en een Raad van Advies (RvA)."
 image: /images/svg-illustrations/events.svg
 team2:
   title: 'Bestuur '
@@ -16,6 +16,10 @@ team2:
       name: Jurriaan Parie
       bio: |
         Directeur-bestuurder
+    - image: /images/people/Profile.png
+      name: 
+      bio: |
+        aan te kondigen
 quick_navigation:
   title: Overzicht
   links:
