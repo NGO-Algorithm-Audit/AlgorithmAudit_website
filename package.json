@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tinacms": "^2.7.0"
+    "tinacms": "^2.7.0",
+    "algoliasearch": "4",
+    "instantsearch.js": "4.79.0"
   },
   "devDependencies": {
     "@types/node": "^22.5.1",
