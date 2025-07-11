@@ -11,58 +11,64 @@
 {{ partial "overview_block.html" .}}
 
 <style>
-.algolia-search {
-  .search-panel {
-    display: flex;
-  }
+  .algolia-search {
+    .search-panel {
+      display: flex;
+    }
 
-  .search-panel__results {
-    flex: 3;
-  }
+    .search-panel__results {
+      flex: 3;
+    }
 
-  .ais-Highlight-highlighted {
-    color: inherit;
-    font-size: inherit;
-  }
+    .ais-Highlight-highlighted {
+      color: inherit;
+      font-size: inherit;
+    }
 
-  #searchbox {
-    margin-bottom: 2rem;
-  }
+    #searchbox {
+      margin-bottom: 2rem;
+    }
 
-  #pagination {
-    margin: 2rem auto;
-    text-align: center;
-  }
-  .search-result-row {
-    @media (min-width: 992px) {
-      height: 220px;
+    #pagination {
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    .search-result-row {
+      @media (min-width: 992px) {
+        height: 220px;
+      }
+    }
+
+    .ais-Hits-item {
+      padding: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .search-result-image {
+      height: auto;
+      max-height: 175px;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .search-result-title {
+      margin-top: 40px;
+    }
+
+    ol.ais-Hits-list {
+      list-style: none;
+    }
+
+    .ais-Highlight-highlighted,
+    .ais-Snippet-highlighted {
+      background-color: #FFFF92;
     }
   }
-  .ais-Hits-item {
-    padding: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .search-result-image {
-    height: auto;
-    max-height: 175px;
-    max-width: 100%;
-    margin: auto;
-  }
-  .search-result-title {
-    margin-top: 40px;
-  }
-
-  ol.ais-Hits-list {
-    list-style: none;
-  }
-  .ais-Highlight-highlighted, .ais-Snippet-highlighted {
-    background-color: #FFFF92;
-  }
-}
 </style>
 <!-- Search -->
- <section class="section color-blue">
+<section class="section color-blue">
   <div class="container algolia-search rounded-lg bg-lightblue">
     <div class="row">
       <div class="col">
@@ -99,38 +105,68 @@
     future: { preserveSharedStateOnUnmount: true },
   });
 
+  let lastRenderArgs;
+
+  const infiniteHits = instantsearch.connectors.connectInfiniteHits(
+    (renderArgs, isFirstRender) => {
+      const { items, showMore, widgetParams } = renderArgs;
+      const { container } = widgetParams;
+
+      lastRenderArgs = renderArgs;
+
+      if (isFirstRender) {
+        const sentinel = document.createElement('div');
+        container.appendChild(document.createElement('ul'));
+        container.appendChild(sentinel);
+
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !lastRenderArgs.isLastPage) {
+              showMore();
+            }
+          });
+        });
+
+        observer.observe(sentinel);
+
+        return;
+      }
+
+      container.querySelector('ul').innerHTML = items
+        .map(
+          item => {
+            return `
+            <a href=${item.url} class="container">
+              <div class="row search-result-row bg-white">
+                <div class="col-12 col-lg-2">
+                  <div class="my-3">
+                    <img class="image-fluid search-result-image d-flex" src=${item.image} alt=${item.title} />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-10">
+                  <h3 class="color-blue search-result-title">${item.title}</h3>
+                  <p class="color-gray search-result-subtitle">${item.subtitle}</p>
+                </div>
+              </div>
+            </a>
+          `;
+          })
+        .join('');
+    }
+  );
   search.addWidgets([
     instantsearch.widgets.searchBox({
       container: '#searchbox',
-    }),
-    instantsearch.widgets.hits({
-      container: '#hits',
-      templates: {
-        item: (hit, { html, components }) => html`
-        <a href=${hit.url} class="container">
-          <div class="row search-result-row">
-            <div class="col-12 col-lg-2">
-              <div class="my-3">
-                <img class="image-fluid search-result-image d-flex" src=${hit.image} alt=${hit.title} />
-              </div>
-            </div>
-            <div class="col-12 col-lg-10">
-              <h3 class="color-blue search-result-title">${components.Highlight({ hit, attribute: 'title' })}</h3>
-              <p class="color-gray search-result-subtitle">${components.Highlight({ hit, attribute: 'subtitle' })}</p>
-            </div>
-          </div>
-        </a>
-        `,
-      },
     }),
     instantsearch.widgets.configure({
       hitsPerPage: 8,
       filters: "language:{{$.Site.Language.Lang}}"
     }),
-    instantsearch.widgets.pagination({
-      container: '#pagination',
+    infiniteHits({
+      container: document.querySelector('#hits'),
     }),
   ]);
+
 
   search.start();
 </script>
