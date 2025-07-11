@@ -103,6 +103,12 @@
     indexName: 'website_pages',
     searchClient,
     future: { preserveSharedStateOnUnmount: true },
+    searchFunction: function(helper) {
+      if (helper.state.query === '') {
+        return;
+      }
+      helper.search();
+    }
   });
 
   let lastRenderArgs;
@@ -116,12 +122,19 @@
 
       if (isFirstRender) {
         const sentinel = document.createElement('div');
-        container.appendChild(document.createElement('ul'));
+        const containerDiv = document.createElement('div');
+        containerDiv.className = 'ais-Hits';
+        const containerOl = document.createElement('ol');
+        containerOl.className = 'ais-Hits-list';
+        containerDiv.appendChild(containerOl);
+        container.appendChild(containerDiv);
         container.appendChild(sentinel);
 
         const observer = new IntersectionObserver(entries => {
           entries.forEach(entry => {
-            if (entry.isIntersecting && !lastRenderArgs.isLastPage) {
+            if (entry.isIntersecting 
+                && !lastRenderArgs.isLastPage
+                && $(document.activeElement)?.attr("class") === "ais-SearchBox-input" ) {
               showMore();
             }
           });
@@ -132,23 +145,25 @@
         return;
       }
 
-      container.querySelector('ul').innerHTML = items
+      container.querySelector('ol').innerHTML = items
         .map(
           item => {
             return `
-            <a href=${item.url} class="container">
-              <div class="row search-result-row bg-white">
-                <div class="col-12 col-lg-2">
-                  <div class="my-3">
-                    <img class="image-fluid search-result-image d-flex" src=${item.image} alt=${item.title} />
+            <li class="ais-Hits-item">
+              <a href=${item.url} class="container">
+                <div class="row search-result-row">
+                  <div class="col-12 col-lg-2">
+                    <div class="my-3">
+                      <img class="image-fluid search-result-image d-flex" src=${item.image} alt=${item.title} />
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-10">
+                    <h3 class="color-blue search-result-title">${item.title}</h3>
+                    <p class="color-gray search-result-subtitle">${item.subtitle}</p>
                   </div>
                 </div>
-                <div class="col-12 col-lg-10">
-                  <h3 class="color-blue search-result-title">${item.title}</h3>
-                  <p class="color-gray search-result-subtitle">${item.subtitle}</p>
-                </div>
-              </div>
-            </a>
+              </a>
+            </li>
           `;
           })
         .join('');
@@ -159,7 +174,7 @@
       container: '#searchbox',
     }),
     instantsearch.widgets.configure({
-      hitsPerPage: 8,
+      hitsPerPage: 3,
       filters: "language:{{$.Site.Language.Lang}}"
     }),
     infiniteHits({
