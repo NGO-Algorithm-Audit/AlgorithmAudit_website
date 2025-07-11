@@ -90,3 +90,6 @@ other = "Medium risico"
 
 [score-card--low-risk]
 other = "Laag risico"
+
+[search-type-to-start]
+other = "Typ om te beginnen met zoeken"

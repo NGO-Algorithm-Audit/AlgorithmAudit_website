@@ -11,9 +11,23 @@
 {{ partial "overview_block.html" .}}
 
 <style>
+    
+  .search-overlay {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1000;
+  }
+
   .algolia-search {
+    z-index: 5000;
+    position: relative;
     .search-panel {
-      display: flex;
+      display: block;
     }
 
     .search-panel__results {
@@ -68,6 +82,7 @@
   }
 </style>
 <!-- Search -->
+<div class="search-overlay d-none"></div>
 <section class="section color-blue">
   <div class="container algolia-search rounded-lg">
     <div class="row">
@@ -81,7 +96,6 @@
           <div class="search-panel__results d-block">
             <div id="searchbox"></div>
             <div id="hits"></div>
-            <div id="pagination"></div>
           </div>
         </div>
       </div>
@@ -92,63 +106,69 @@
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.79.0"></script>
 <script>
-  const { algoliasearch, instantsearch } = window;
+  docReady(function () {
+    const { algoliasearch, instantsearch } = window;
 
-  const searchClient = algoliasearch(
-    'R5LXP5NUID',
-    '4b504b6988d05a7631d6a330fb7afa58'
-  );
+    const searchClient = algoliasearch(
+      'R5LXP5NUID',
+      '4b504b6988d05a7631d6a330fb7afa58'
+    );
 
-  const search = instantsearch({
-    indexName: 'website_pages',
-    searchClient,
-    future: { preserveSharedStateOnUnmount: true },
-    searchFunction: function(helper) {
-      if (helper.state.query === '') {
-        return;
+    const search = instantsearch({
+      indexName: 'website_pages',
+      searchClient,
+      future: { preserveSharedStateOnUnmount: true },
+      searchFunction: function(helper) {
+        if (helper.state.query === '') {
+          return;
+        }
+
+        helper.search();
       }
-      helper.search();
-    }
-  });
+    });
 
-  let lastRenderArgs;
+    let lastRenderArgs;
 
-  const infiniteHits = instantsearch.connectors.connectInfiniteHits(
-    (renderArgs, isFirstRender) => {
-      const { items, showMore, widgetParams } = renderArgs;
-      const { container } = widgetParams;
+    const infiniteHits = instantsearch.connectors.connectInfiniteHits(
+      (renderArgs, isFirstRender) => {
+        const { items, showMore, widgetParams } = renderArgs;
+        const { container } = widgetParams;
 
-      lastRenderArgs = renderArgs;
+        lastRenderArgs = renderArgs;
 
-      if (isFirstRender) {
-        const sentinel = document.createElement('div');
-        const containerDiv = document.createElement('div');
-        containerDiv.className = 'ais-Hits';
-        const containerOl = document.createElement('ol');
-        containerOl.className = 'ais-Hits-list';
-        containerDiv.appendChild(containerOl);
-        container.appendChild(containerDiv);
-        container.appendChild(sentinel);
-
-        const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting 
-                && !lastRenderArgs.isLastPage
-                && $(document.activeElement)?.attr("class") === "ais-SearchBox-input" ) {
-              showMore();
-            }
+        if (isFirstRender) {
+          const sentinel = document.createElement('div');
+          const containerDiv = document.createElement('div');
+          containerDiv.className = 'ais-Hits';
+          const containerOl = document.createElement('ol');
+          containerOl.className = 'ais-Hits-list';
+          containerDiv.appendChild(containerOl);
+          container.appendChild(containerDiv);
+          container.appendChild(sentinel);
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting
+                && !lastRenderArgs.isLastPage) {
+                showMore();
+              }
+            });
           });
-        });
 
-        observer.observe(sentinel);
+          observer.observe(sentinel);
 
-        return;
-      }
+          return;
+        }
 
-      container.querySelector('ol').innerHTML = items
-        .map(
-          item => {
-            return `
+        const searchInput = $(".ais-SearchBox-input");
+        if(!searchInput.is(":focus")) {
+          container.querySelector('ol').innerHTML = "";
+          return;
+        }
+
+        container.querySelector('ol').innerHTML = items
+          .map(
+            item => {
+              return `
             <li class="ais-Hits-item">
               <a href=${item.url} class="container">
                 <div class="row search-result-row">
@@ -165,25 +185,46 @@
               </a>
             </li>
           `;
-          })
-        .join('');
-    }
-  );
-  search.addWidgets([
-    instantsearch.widgets.searchBox({
-      container: '#searchbox',
-    }),
-    instantsearch.widgets.configure({
-      hitsPerPage: 3,
-      filters: "language:{{$.Site.Language.Lang}}"
-    }),
-    infiniteHits({
-      container: document.querySelector('#hits'),
-    }),
-  ]);
+            })
+          .join('');
+      }
+    );
+    search.addWidgets([
+      instantsearch.widgets.searchBox({
+        container: '#searchbox',
+        placeholder: '{{ i18n "search-type-to-start" }}',
+      }),
+      instantsearch.widgets.configure({
+        hitsPerPage: 3,
+        filters: "language:{{$.Site.Language.Lang}}"
+      }),
+      infiniteHits({
+        container: document.querySelector('#hits'),
+      }),
+    ]);
 
 
-  search.start();
+    search.start();
+  });
+</script>
+<script>
+  docReady(function () {
+    $("input.ais-SearchBox-input").on("focus", function () {
+      $(".algolia-search").addClass("bg-lightblue");
+      $("#hits").addClass("d-block");
+      $("#hits").removeClass("d-none");
+      $(".search-overlay").removeClass("d-none");
+      $(".search-overlay").addClass("d-block");
+    });
+
+    $(".search-overlay").on("click", function () {
+      $(".algolia-search").removeClass("bg-lightblue");
+      $("#hits").removeClass("d-block");
+      $("#hits").addClass("d-none");
+      $(".search-overlay").addClass("d-none");
+      $(".search-overlay").removeClass("d-block");
+    });
+  });
 </script>
 <!-- /Search -->
 
