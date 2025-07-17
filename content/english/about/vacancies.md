@@ -180,7 +180,7 @@ quick_navigation:
 
 <!-- LLM validator -->
 
-{{< accordions_area_open id="LLM-validator" >}}
+<!-- {{< accordions_area_open id="LLM-validator" >}}
 {{< accordion_item_open title="Socio-technical LLM validator (NL + EN)" image="/images/logo/logo.svg" background_color="#ffffff" id="LLM-validator" tag1="1.0 fte" tag2="Salary level 7-8" tag3="rolling application" >}}
 {{< button button_text="Solliciteer" button_link="#form1" >}}
 ### Internship (0.6-1.0 fte)
@@ -242,12 +242,12 @@ Send your cover letter and CV by 28-03-2025 to info@algorithmaudit.eu.
 For questions about the vacancy or procedure, send a message via the contact form.
 {{< form1 >}}
 {{< accordion_item_close >}}
-{{< accordions_area_close >}}
+{{< accordions_area_close >}} -->
 
 
 <!-- Business developer -->
 
-{{< accordions_area_open id="business-developer" >}}
+<!-- {{< accordions_area_open id="business-developer" >}}
 {{< accordion_item_open title="Product owner/Business developer – AI inventarisatie tool (NL only)" image="/images/logo/logo.svg" background_color="#ffffff" id="business-developer" tag1="1.0 fte" tag2="Salary level 7-8" tag3="rolling application" >}}
 {{< button button_text="Solliciteer" button_link="#form2" >}}
 
@@ -315,12 +315,12 @@ Stuur je sollicitatiebrief en CV uiterlijk voor 28-03-2025 naar info@algorithmau
 Bij vragen over de vacature of procedure, stuur een berichtje via het contactforumlier.
 {{< form2 >}}
 {{< accordion_item_close >}}
-{{< accordions_area_close >}}
+{{< accordions_area_close >}} -->
 
 
 <!-- Projectmedewerker (jr) -->
 
-{{< accordions_area_open id="projectmedewerker" >}}
+<!-- {{< accordions_area_open id="projectmedewerker" >}}
 {{< accordion_item_open title="Projectmedewerker (NL only)" image="/images/logo/logo.svg" background_color="#ffffff" id="projectmedewerker" tag1="1.0 fte" tag2="Salary level 6-7" tag3="rolling application" >}}
 {{< button button_text="Solliciteer" button_link="#form3" >}}
 
@@ -381,11 +381,11 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 Vragen over de vacature of de procedure? Stuur een email naar info@algorithmaudit.eu.
 {{< form3 >}}
 {{< accordion_item_close >}}
-{{< accordions_area_close >}}
+{{< accordions_area_close >}} -->
 
 <!-- Intern -->
 
-{{< accordions_area_open id="stagiair" >}}
+<!-- {{< accordions_area_open id="stagiair" >}}
 {{< accordion_item_open title="Internship (NL + EN)" image="/images/logo/logo.svg" background_color="#ffffff" id="stagiair" tag1="0.6-1.0 fte" tag2="Salary level 5" tag3="rolling application" >}}
 {{< button button_text="Apply" button_link="#form4" >}}
 
@@ -446,4 +446,4 @@ We can only think about responsible algorithms if we consider everyone's perspec
 Questions about the vacancy or procedure? Send an email to info@algorithmaudit.eu.
 {{< form4 >}}
 {{< accordion_item_close >}}
-{{< accordions_area_close >}}
+{{< accordions_area_close >}} -->
