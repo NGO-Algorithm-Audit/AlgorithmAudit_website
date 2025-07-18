@@ -86,9 +86,9 @@ From Q3-2025 up to Q1-2026, Algorithm Audit participates in a consortium with th
 
 {{< container_open title="Discrimination assessment protocol – Council of Europe" id="assessment-protocol" icon="fas fa-scroll" >}}
 
-From Q3-2025 up to Q4-2025, Algorithm Audit supports the Council of Europe (CoE) and the equality bodies of Belgium, Finland and Portugal to develop assessment protocols to uphold equality and non-discrimination by use of AI in public administration.
+From Q3-2025 up to Q4-2025, Algorithm Audit supports the Council of Europe (CoE) and the equality bodies of Belgium, Finland and Portugal to develop assessment protocols to uphold equality and non-discrimination by use of AI in public administration. More information about the project can be found <a href="https://www.coe.int/en/web/inclusion-and-antidiscrimination/upholding-equality-and-non-discrimination-by-equality-bodies-regarding-the-use-of-artificial-intelligence-ai-in-public-administrations1" target="_blank">here</a>.
 
-{{< image image1="/images/partner logo-cropped/CoE.png" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="2" >}}
+{{< image image1="/images/partner logo-cropped/CoE_EU.jpg" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="6" >}}
 
 {{< container_close >}}
 
