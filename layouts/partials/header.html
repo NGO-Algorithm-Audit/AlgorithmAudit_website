@@ -59,8 +59,14 @@
           {{ end }}
           {{ end }}
 
+          <!-- Search -->
+          <li class="nav-item">
+            <a class="nav-link" href='{{ if eq .Site.Language.Lang "en" }}{{else}}/nl/#search{{end}}' title="Search">{{i18n "search" }} <i class="fas fa-search"></i></a>
+          </li>
+          <!-- /Search -->
+
+
           <!-- Language toggle -->
-           
           {{ if .IsTranslated }}
           {{ range .Translations }}
           <li class="nav-item d-inline-block" style="min-width: 137px;">
