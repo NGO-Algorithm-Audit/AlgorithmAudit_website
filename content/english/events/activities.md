@@ -4,6 +4,8 @@ facet_groups:
   - value: year
     title: Year
     facets:
+      - value: q3_2025
+        label: Q3-2025
       - value: q2_2025
         label: Q2-2025
       - value: q1_2025
@@ -22,6 +24,40 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: Presentation 'AI x Governance & Regulation - The EU AI Act is here', Big Data Republic and Kickstart AI
+    description: >
+      Presentation 'Auditing a private sector machine learning-driven risk profiling algorithm'
+
+      ![](</images/events/20250703_BDR.jpeg>)
+
+    image: /images/partner logo-cropped/AIxRegulation.png
+    date: 03-07-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: Presentation 'A Public Standard for Auditing Risk Profiling Algorithms', Audit Analytics Summit 2025, Nyenrode Business University and Utrecht University 
+    description: >
+      Presentation 'A Public Standard for Auditing Risk Profiling Algorithms', <a href="https://www.statisticalauditing.com/conference" target="_blank">Audit Analytics Summit 2025</a>, Nyenrode Business University and Utrecht University
+
+      ![](</images/events/20250620_AuditAnalyticsSummit.jpeg>)
+
+    image: /images/partner logo-cropped/AuditAnalyticsSummit2025.svg
+    date: 20-06-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: 'Panel discussion "Between Promise and Problem: Data-Driven Models in Sustainability Policy", Data for Policy conference'
     description: >
       How do the opportunities of complex, data-driven models relate to their limitations and political sensitivities, and what realistic demands can we make regarding the standardization and transparency of their scientific and democratic legitimacy?
@@ -812,7 +848,6 @@ layout: overview
 title: Activities
 subtitle: >
   Knowledge sharing is an integral part of Algorithm Audit's mission. Members of
-  our team speak at events. An overview can be found below. [Get in
-  touch](/about/contact/) to discuss contributions.
+  our team speak at events. On this page an overview of past event can be found.
 image: /images/svg-illustrations/events.svg
 ---
