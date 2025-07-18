@@ -54,9 +54,16 @@
       margin-top: 10px;
       margin-bottom: 10px;
     }
-
     .search-result-image {
       height: auto;
+      width: auto;
+      @media (min-width: 992px) {
+        position: absolute;
+      }
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
       max-height: 175px;
       max-width: 100%;
       margin: auto;
@@ -172,8 +179,8 @@
               <a href=${item.url} class="container">
                 <div class="row search-result-row">
                   <div class="col-12 col-lg-2">
-                    <div class="my-3">
-                      <img class="image-fluid search-result-image d-flex" src=${item.image} alt=${item.title} />
+                    <div class="my-3 text-center image-frame">
+                      <img class="image-fluid search-result-image d-inline p-2" src=${item.image} alt=${item.title} />
                     </div>
                   </div>
                   <div class="col-12 col-lg-10">
