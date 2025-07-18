@@ -159,6 +159,11 @@
           return;
         }
 
+        if(!items || !items.length > 0) {
+          container.querySelector('ol').innerHTML = `<p>{{i18n "search-no-results"}}</p>`;
+          return;
+        }
+        
         container.querySelector('ol').innerHTML = items
           .map(
             item => {
