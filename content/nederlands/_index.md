@@ -83,26 +83,17 @@ Activity_Feed:
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
+    - title: >-
+        Presentatie 'Betekenisvolle menselijke tussenkomst', Netwerk van Publieke Dienstverleners
+      image: /images/partner logo-cropped/NPD.png
+      link: /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
+      date: 30-10-2025
+      type: presentatie
     - title: 'Presentatie ''Local-only tools voor AI validatie'', Platform AI & Overheid'
       link: >-
         https://forms.zohopublic.eu/ecpplatform/form/AanmeldformulieronlineAIlunchbreaksessies/formperma/9n7oFcEAlLYZtxJ73sMRbsNiPMDYHeMaIAFcUc7fWOA
       image: /images/partner logo-cropped/PlatformAI_Overheid.jpg
       date: 20-08-2025
-      type: presentatie
-    - title: >-
-        Presentation 'AI x Governance & Regulation - The EU AI Act is here', Big
-        Data Republic and Kickstart AI
-      link: 'https://meetup-july3.kickstartai-events.org'
-      image: /images/partner logo-cropped/AIxRegulation.png
-      date: 03-07-2025
-      type: presentatie
-    - title: >-
-        Presentatie 'A Public Standard for Auditing Risk Profiling Algorithms',
-        Audit Analytics Summit 2025, Nyenrode Business University en
-        Universiteit Utrecht
-      link: 'https://www.statisticalauditing.com/conference'
-      image: /images/partner logo-cropped/AuditAnalyticsSummit2025.svg
-      date: 20-06-2025
       type: presentatie
   items_button_text: Meer events
   items_button_link: /nl/events/activities/

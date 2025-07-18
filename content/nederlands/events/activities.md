@@ -4,6 +4,8 @@ facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: q3_2025
+        label: Q3-2025
       - value: q2_2025
         label: Q2-2025
       - value: q1_2025
@@ -22,6 +24,40 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: Presentatie 'AI x Governance & Regulation - The EU AI Act is here', Big Data Republic en Kickstart AI
+    description: >
+      Presentatie 'Het auditeren van een private sector machine learning-gedreven risicoprofileringsalgoritme'
+
+      ![](</images/events/20250703_BDR.jpeg>)
+
+    image: /images/partner logo-cropped/AIxRegulation.png
+    date: 03-07-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: Presentatie 'Een publieke standaard voor het auditeren van risicoprofileringsalgoritmen', Audit Analytics Summit 2025, Nyenrode Business University en Universiteit Utrecht 
+    description: >
+      Presentatie 'Een publieke standaard voor het auditeren van risicoprofileringsalgoritmen', <a href="https://www.statisticalauditing.com/conference" target="_blank">Audit Analytics Summit 2025</a>, Nyenrode Business University en Universiteit Utrecht
+
+      ![](</images/events/20250620_AuditAnalyticsSummit.jpeg>)
+
+    image: /images/partner logo-cropped/AuditAnalyticsSummit2025.svg
+    date: 20-06-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q2_2025
+        label: Q2-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
   - title: 'Panel discussie "Between Promise and Problem: Data-Driven Models in Sustainability Policy", Data for Policy conferentie'
     description: >
       Hoe verhouden de kansen van complexe, data-gedreven modellen zich tot hun beperkingen en politieke gevoeligheden, en welke realistische eisen kunnen we stellen aan de standaardisatie en transparantie van hun wetenschappelijke en democratische legitimiteit?
@@ -822,9 +858,7 @@ events:
 layout: overview
 title: Evenementen
 subtitle: >
-  Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. We
-  spreken regelmatig op events. Stuur een [bericht](/nl/about/contact/) om een
-  mogelijke bijdrage te bespreken.
+  Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. Leden van ons team spreken geregeld op events. Op deze pagina kan een overzicht van events uit het verleden worden gevonden.
 image: /images/svg-illustrations/events.svg
 ---
 

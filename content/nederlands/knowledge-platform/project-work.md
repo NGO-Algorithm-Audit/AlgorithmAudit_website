@@ -86,9 +86,9 @@ Van Q3-2025 tot en met Q1-2026 neemt Algorithm Audit deel aan een consortium met
 
 {{< container_open title="Discriminatie beoordelingsprotocol – Raad van Europa" id="assessment-protocol" icon="fas fa-scroll" >}}
 
-Van Q3-2025 tot en met Q4-2025 ondersteunt Algorithm Audit de Raad van Europa (RvE) en de mensenrechteninstituten van België, Finland en Portugal bij het ontwikkelen van beoordelingsprotocollen om gelijke behandeling en non-discriminatie te waarborgen bij het gebruik van AI in de publieke sector.
+Van Q3-2025 tot en met Q4-2025 ondersteunt Algorithm Audit de Raad van Europa (RvE) en de mensenrechteninstituten van België, Finland en Portugal bij het ontwikkelen van beoordelingsprotocollen om gelijke behandeling en non-discriminatie te waarborgen bij het gebruik van AI in de publieke sector. Meer information over het project kan <a href="https://www.coe.int/en/web/inclusion-and-antidiscrimination/upholding-equality-and-non-discrimination-by-equality-bodies-regarding-the-use-of-artificial-intelligence-ai-in-public-administrations1" target="_blank">hier</a> worden gevonden.
 
-{{< image image1="/images/partner logo-cropped/CoE.png" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="2" >}}
+{{< image image1="/images/partner logo-cropped/CoE_EU.jpg" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="6" >}}
 
 {{< container_close >}}
 
