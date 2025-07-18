@@ -34,11 +34,6 @@
       flex: 3;
     }
 
-    .ais-Highlight-highlighted {
-      color: inherit;
-      font-size: inherit;
-    }
-
     #searchbox {
       margin-bottom: 2rem;
     }
@@ -75,8 +70,7 @@
       list-style: none;
     }
 
-    .ais-Highlight-highlighted,
-    .ais-Snippet-highlighted {
+    mark {
       background-color: #FFFF92;
     }
   }
@@ -178,8 +172,8 @@
                     </div>
                   </div>
                   <div class="col-12 col-lg-10">
-                    <h3 class="color-blue search-result-title">${item.title}</h3>
-                    <p class="color-gray search-result-subtitle">${item.subtitle}</p>
+                    <h3 class="color-blue search-result-title">${item._highlightResult.title.value}</h3>
+                    <p class="color-gray search-result-subtitle">${item._highlightResult.subtitle.value}</p>
                   </div>
                 </div>
               </a>
