@@ -91,5 +91,11 @@ other = "Medium risk"
 [score-card--low-risk]
 other = "Low risk"
 
+[search]
+other = "Search"
+
 [search-type-to-start]
 other = "Type to start searching"
+
+[search-no-results]
+other = "No results found"

@@ -20,11 +20,13 @@
     width: 100%;
     height: 200vh;
     background-color: rgba(0, 0, 0, 0.35);
-    z-index: 1000;
+    z-index: 11000;
   }
 
   .algolia-search {
-    z-index: 5000;
+    &.isfocused {
+      z-index: 12000;
+    }
     position: relative;
     .search-panel {
       display: block;
@@ -32,11 +34,6 @@
 
     .search-panel__results {
       flex: 3;
-    }
-
-    .ais-Highlight-highlighted {
-      color: inherit;
-      font-size: inherit;
     }
 
     #searchbox {
@@ -59,9 +56,16 @@
       margin-top: 10px;
       margin-bottom: 10px;
     }
-
     .search-result-image {
       height: auto;
+      width: auto;
+      @media (min-width: 992px) {
+        position: absolute;
+      }
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
       max-height: 175px;
       max-width: 100%;
       margin: auto;
@@ -75,19 +79,18 @@
       list-style: none;
     }
 
-    .ais-Highlight-highlighted,
-    .ais-Snippet-highlighted {
+    mark {
       background-color: #FFFF92;
     }
   }
 </style>
 <!-- Search -->
 <div class="search-overlay d-none"></div>
-<section class="section color-blue">
+<section class="section color-blue" id="search">
   <div class="container algolia-search rounded-lg">
     <div class="row">
       <div class="col">
-        <h2 class="pt-5 color-blue">Search</h2>
+        <h2 class="pt-5 color-blue">{{i18n "search" }}</h2>
       </div>
     </div>
     <div class="row">
@@ -165,6 +168,11 @@
           return;
         }
 
+        if(!items || !items.length > 0) {
+          container.querySelector('ol').innerHTML = `<p>{{i18n "search-no-results"}}</p>`;
+          return;
+        }
+        
         container.querySelector('ol').innerHTML = items
           .map(
             item => {
@@ -173,13 +181,13 @@
               <a href=${item.url} class="container">
                 <div class="row search-result-row">
                   <div class="col-12 col-lg-2">
-                    <div class="my-3">
-                      <img class="image-fluid search-result-image d-flex" src=${item.image} alt=${item.title} />
+                    <div class="my-3 text-center image-frame">
+                      <img class="image-fluid search-result-image d-inline p-2" src=${item.image} alt=${item.title} />
                     </div>
                   </div>
                   <div class="col-12 col-lg-10">
-                    <h3 class="color-blue search-result-title">${item.title}</h3>
-                    <p class="color-gray search-result-subtitle">${item.subtitle}</p>
+                    <h3 class="color-blue search-result-title">${item._highlightResult.title.value}</h3>
+                    <p class="color-gray search-result-subtitle">${item._highlightResult.subtitle.value}</p>
                   </div>
                 </div>
               </a>
@@ -195,7 +203,7 @@
         placeholder: '{{ i18n "search-type-to-start" }}',
       }),
       instantsearch.widgets.configure({
-        hitsPerPage: 3,
+        hitsPerPage: 8,
         filters: "language:{{$.Site.Language.Lang}}"
       }),
       infiniteHits({
@@ -211,6 +219,7 @@
   docReady(function () {
     $("input.ais-SearchBox-input").on("focus", function () {
       $(".algolia-search").addClass("bg-lightblue");
+      $(".algolia-search").addClass("isfocused");
       $("#hits").addClass("d-block");
       $("#hits").removeClass("d-none");
       $(".search-overlay").removeClass("d-none");
@@ -219,6 +228,7 @@
 
     $(".search-overlay").on("click", function () {
       $(".algolia-search").removeClass("bg-lightblue");
+      $(".algolia-search").removeClass("isfocused");
       $("#hits").removeClass("d-block");
       $("#hits").addClass("d-none");
       $(".search-overlay").addClass("d-none");
