@@ -17,16 +17,19 @@ dynamic_form_engine:
     section:
       - questions:
           - identifier: name
+            id: name
             title: Naam
             content: ''
             required: true
             type: text
           - identifier: mail
+            id: contact-details
             title: Mailadres
             content: ''
             required: true
             type: email
           - identifier: motivation
+            id: motivation-letter
             title: Motivatiebrief
             content: |
               Maximaal één A4.
@@ -34,6 +37,7 @@ dynamic_form_engine:
             required: true
             type: file
           - identifier: CV
+            id: cv
             title: CV
             content: ''
             file_upload_text: Selecteer bestand
@@ -41,6 +45,7 @@ dynamic_form_engine:
             file_type: ''
             type: file
           - identifier: terms-and-conditions
+            id: terms-conditions
             title: Toestemming verwerking persoonsgegevens
             content: >
               Ingezonden gegevens zullen alleen verwerkt worden in het kader van
