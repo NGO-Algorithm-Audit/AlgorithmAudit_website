@@ -62,7 +62,7 @@
           <!-- text area -->
           {{ if eq .type "textarea" }}
           <div class="col-md col-sm-12">
-            <textarea type="text" class="form-control" id="{{.identifier}}" name="{{.label}}" {{if .required}} required {{end}}
+            <textarea type="text" class="form-control" id="{{.identifier}}" name="{{.title}}" {{if .required}} required {{end}}
               rows="4" cols="50"></textarea>
           </div>
 
@@ -73,7 +73,7 @@
           <div class="col-12 form-group">
             <label class="my-2 d-flex">
               <input type="{{$input.type}}" class="form-control checkbox" name={{$input.identifier}} id="{{.id}}"
-                value="{{.value}}" {{if $input.required}} required {{end}} name="{{.label}}" />
+                value="{{.value}}" {{if $input.required}} required {{end}} name="{{.title}}" />
               <h6 class="d-inline mb-0 ml-2">{{ .title | markdownify }}</h6>
             </label>
           </div>
@@ -86,7 +86,7 @@
             <!-- upload zone -->
             <label style="font-weight:500;" class="file-upload" for="{{.identifier}}">
               <input type="{{.type}}" onchange="displayFile({{.identifier}})" class="form-control" id="{{.identifier}}"
-                value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
+                value="{{.value}}" {{if .required}} required {{end}} name="{{.title}}" placeholder="{{.placeholder}}" accept="{{.file_type}}" />
               <div style="display:grid; place-items:center;">
                 <i class="fas fa-upload my-2" style="font-size:24px;"></i>
                 <p id="upload-text" style="color:#005AA7;">{{.file_upload_text}}</p>
@@ -132,8 +132,8 @@
           <!-- text boxes -->
           {{ else }}
           <div class="col-md col-sm-12">
-            <input type="{{.type}}" class="form-control" id="{{.identifier}}" accept="{{.file_type}}" value="{{.value}}" {{if
-              .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
+            <input type="{{.type}}" class="form-control" id="{{.identifier}}" value="{{.value}}" {{if
+              .required}} required {{end}} name="{{.title}}" placeholder="{{.placeholder}}" />
           </div>
           {{ end }}
 
