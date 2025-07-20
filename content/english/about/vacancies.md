@@ -6,5 +6,7 @@ image: /images/svg-illustrations/about.svg
 quick_navigation:
   title: Overview
   links:
+    - title: Intern
+      url: '#stagiair'
 ---
 
