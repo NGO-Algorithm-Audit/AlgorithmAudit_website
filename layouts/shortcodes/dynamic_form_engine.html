@@ -62,7 +62,7 @@
           <!-- text area -->
           {{ if eq .type "textarea" }}
           <div class="col-md col-sm-12">
-            <textarea type="text" class="form-control" id="{{.id}}" name="{{.label}}" {{if .required}} required {{end}}
+            <textarea type="text" class="form-control" id="{{.identifier}}" name="{{.label}}" {{if .required}} required {{end}}
               rows="4" cols="50"></textarea>
           </div>
 
@@ -84,8 +84,8 @@
 
           <div class="col-md col-sm-12">
             <!-- upload zone -->
-            <label style="font-weight:500;" class="file-upload" for="{{.id}}">
-              <input type="{{.type}}" onchange="displayFile({{.id}})" class="form-control" id="{{.id}}"
+            <label style="font-weight:500;" class="file-upload" for="{{.identifier}}">
+              <input type="{{.type}}" onchange="displayFile({{.identifier}})" class="form-control" id="{{.identifier}}"
                 value="{{.value}}" {{if .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
               <div style="display:grid; place-items:center;">
                 <i class="fas fa-upload my-2" style="font-size:24px;"></i>
@@ -132,7 +132,7 @@
           <!-- text boxes -->
           {{ else }}
           <div class="col-md col-sm-12">
-            <input type="{{.type}}" class="form-control" id="{{.id}}" accept="{{.file_type}}" value="{{.value}}" {{if
+            <input type="{{.type}}" class="form-control" id="{{.identifier}}" accept="{{.file_type}}" value="{{.value}}" {{if
               .required}} required {{end}} name="{{.label}}" placeholder="{{.placeholder}}" />
           </div>
           {{ end }}

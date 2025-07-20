@@ -7,7 +7,7 @@ quick_navigation:
   title: Overzicht
   links:
     - title: Stagiair
-      url: /nl/about/vacancies/#accordion_area_stagiair
+      url: '#accordion_area_stagiair'
 dynamic_form_engine:
   - title: Sollicitatieformulier
     id: form1
@@ -23,6 +23,7 @@ dynamic_form_engine:
             type: text
           - identifier: mail
             title: Mailadres
+            content: ''
             required: true
             type: email
           - identifier: motivation
@@ -87,7 +88,7 @@ Als stagiair bij Algorithm Audit:
 * Stem je je precieze takenpakket in samenspraak af, afhankelijk van je beschikbaarheid en affiniteit;
 * Doe je veel ervaring op en vind je het leuk expertise te ontwikkelen in verschillende vakgebieden.
 
-Het is ook mogelijk om binnen je stage bij Algorithm Audit een masterscriptie te schrijven op het gebied van verantwoorde AI en algoritmes. We stemmen dan samen af hoeveel tijd jij nodig hebt voor je scriptie en hoeveel tijd je hebt om als stagiair mee te draaien in de organisatie. 
+Het is ook mogelijk om binnen je stage bij Algorithm Audit een masterscriptie te schrijven op het gebied van verantwoorde AI en algoritmes. We stemmen dan samen af hoeveel tijd jij nodig hebt voor je scriptie en hoeveel tijd je hebt om als stagiair mee te draaien in de organisatie.
 
 Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemene focusgebieden van Algorithm Audit. We staan open voor eigen ideeën voor een scriptieonderwerp en we kunnen je ook ondersteunen bij het specifiek definiëren hiervan. Denk bijvoorbeeld aan:
 
@@ -98,10 +99,10 @@ Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemen
 #### Vaardigheden
 
 * Je bent bezig met een relevante masteropleiding;
-* Je vindt het leuk om aan multidisciplinaire thema’s te werken. Je laat je niet afschrikken door jargon van een ander vakgebied; 
+* Je vindt het leuk om aan multidisciplinaire thema’s te werken. Je laat je niet afschrikken door jargon van een ander vakgebied;
 * Je hebt aantoonbare affiniteit met verantwoorde inzet van AI en algoritmes (aantoonbare multidisciplinaire ervaring is een pré);
 * Je bent gedreven en op de hoogte van het publieke debat rondom AI en algoritmes;
-* Je bent staat om in een klein team in goede afstemming te werken en ook veel zelfstandig op te pakken; 
+* Je bent staat om in een klein team in goede afstemming te werken en ook veel zelfstandig op te pakken;
 * Volledige werkvaardigheid in Nederlands en Engels.
 
 #### Wat verwachten wij?
@@ -114,7 +115,7 @@ Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemen
 
 * Een kleine enthousiaste organisatie die een pionier is op het gebied van verantwoorde algoritmes en AI in de praktijk, en dit doet vanuit een onafhankelijke en maatschappelijke rol;
 * Begeleiding bij je scriptie: wekelijkse check-in, inhoudelijk meedenken en meelezen bij je tussenproducten en scriptie;
-* Een vergoeding: 
+* Een vergoeding:
   * €750,- per maand voor een fulltime stage;
   * Bij minder beschikbaarheid komen we samen tot een redelijke afstemming.
 
@@ -127,11 +128,11 @@ Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemen
 
 #### Diversiteit en inclusie
 
-Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief meenemen. We hechten daarom sterk aan diversiteit en inclusie in al onze werkzaamheden, met name in het betrekken van verschillende belanghebbende groepen. Ook als organisatie willen we diversiteit weerspiegelen m.b.t. bijvoorbeeld gender, culturele en disciplinaire achtergrond. 
+Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief meenemen. We hechten daarom sterk aan diversiteit en inclusie in al onze werkzaamheden, met name in het betrekken van verschillende belanghebbende groepen. Ook als organisatie willen we diversiteit weerspiegelen m.b.t. bijvoorbeeld gender, culturele en disciplinaire achtergrond.
 
 #### Contact
 
-Vragen over de vacature of de procedure? Stuur een email naar info\@algorithmaudit.eu.
+Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 
 {{< dynamic_form_engine >}}
 
