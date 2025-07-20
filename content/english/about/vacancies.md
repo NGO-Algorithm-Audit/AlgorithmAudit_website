@@ -6,9 +6,5 @@ image: /images/svg-illustrations/about.svg
 quick_navigation:
   title: Overview
   links:
-    - title: Projectmedewerker
-      url: '#projectmedewerker'
-    - title: Intern
-      url: '#stagiair'
 ---
 
