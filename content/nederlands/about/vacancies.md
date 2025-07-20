@@ -18,20 +18,17 @@ dynamic_form_engine:
       - questions:
           - identifier: name
             id: name
-            id: name
             title: Naam
             content: ''
             required: true
             type: text
           - identifier: mail
             id: contact-details
-            id: contact-details
             title: Mailadres
             content: ''
             required: true
             type: email
           - identifier: motivation
-            id: motivation-letter
             id: motivation-letter
             title: Motivatiebrief
             content: |
@@ -41,7 +38,6 @@ dynamic_form_engine:
             type: file
           - identifier: CV
             id: cv
-            id: cv
             title: CV
             content: ''
             file_upload_text: Selecteer bestand
@@ -50,7 +46,6 @@ dynamic_form_engine:
             type: file
           - identifier: terms-and-conditions
             id: terms-and-conditions
-            id: terms-conditions
             title: Toestemming verwerking persoonsgegevens
             content: >
               Ingezonden gegevens zullen alleen verwerkt worden in het kader van
