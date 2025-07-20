@@ -67,7 +67,7 @@ dynamic_form_engine:
 
 {{< accordions_area_open id="stagiair" >}}
 
-{{< accordion_item_open title="Stagiar (0.8-1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="schaal 6" tag2="doorlopende sollicitatie" >}}
+{{< accordion_item_open title="Stagiair (0.8-1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="schaal 6" tag2="doorlopende sollicitatie" >}}
 
 {{< button button_text="Solliciteer" button_link="#form1" >}}
 
