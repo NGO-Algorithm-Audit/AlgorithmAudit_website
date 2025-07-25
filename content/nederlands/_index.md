@@ -1,5 +1,6 @@
 ---
 search:
+  excludeFromSearch: true
   title: Publieke kennisopbouw voor verantwoorde algoritmes
   subtitle: Een Europees kennisplatform voor  AI bias testing en AI standaarden.
   image: /images/logo/logo.svg
@@ -84,9 +85,11 @@ Activity_Feed:
   items_title: Aankomende events
   activities:
     - title: >-
-        Presentatie 'Betekenisvolle menselijke tussenkomst', Netwerk van Publieke Dienstverleners
+        Presentatie 'Betekenisvolle menselijke tussenkomst', Netwerk van
+        Publieke Dienstverleners
+      link: >-
+        /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       image: /images/partner logo-cropped/NPD.png
-      link: /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       date: 30-10-2025
       type: presentatie
     - title: 'Presentatie ''Local-only tools voor AI validatie'', Platform AI & Overheid'
