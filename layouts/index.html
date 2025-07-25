@@ -11,7 +11,6 @@
 {{ partial "overview_block.html" .}}
 
 <style>
-    
   .search-overlay {
     cursor: pointer;
     position: fixed;
@@ -27,7 +26,9 @@
     &.isfocused {
       z-index: 12000;
     }
+
     position: relative;
+
     .search-panel {
       display: block;
     }
@@ -56,12 +57,15 @@
       margin-top: 10px;
       margin-bottom: 10px;
     }
+
     .search-result-image {
       height: auto;
       width: auto;
+
       @media (min-width: 992px) {
         position: absolute;
       }
+
       top: 0;
       left: 0;
       bottom: 0;
@@ -73,6 +77,27 @@
 
     .search-result-title {
       margin-top: 40px;
+    }
+
+    .search-tags-desktop {
+      @media (max-width: 992px) {
+        display: none;
+      }
+
+      @media (min-width: 992px) {
+        bottom: 13px;
+      }
+    }
+
+    .search-tags-mobile {
+      @media (min-width: 992px) {
+        display: none;
+      }
+
+      @media (max-width: 992px) {
+        top: 30px;
+        right: 30px;
+      }
     }
 
     ol.ais-Hits-list {
@@ -121,7 +146,7 @@
       indexName: 'website_pages',
       searchClient,
       future: { preserveSharedStateOnUnmount: true },
-      searchFunction: function(helper) {
+      searchFunction: function (helper) {
         if (helper.state.query === '') {
           return;
         }
@@ -163,16 +188,50 @@
         }
 
         const searchInput = $(".ais-SearchBox-input");
-        if(!searchInput.is(":focus")) {
+        if (!searchInput.is(":focus")) {
           container.querySelector('ol').innerHTML = "";
           return;
         }
 
-        if(!items || !items.length > 0) {
+        if (!items || !items.length > 0) {
           container.querySelector('ol').innerHTML = `<p>{{i18n "search-no-results"}}</p>`;
           return;
         }
-        
+
+        const tagToHighlightClass = (tag) => {
+          if (tag === "Kennisplatform"
+          || tag === "Knowledge platform") {
+            return `highlight-lightblue-sm`;
+          }
+
+          if (tag === "Algoprudentie"
+          || tag === "Algoprudence") {
+            return `highlight-red-sm`;
+          }
+
+          if (tag === "Technische tools"
+          || tag === "Technical tools") {
+            return `highlight-yellow-sm`;
+          }
+
+          if (tag === "Events"
+          || tag === "Evenementen") {
+            return `highlight-lightblue-sm`;
+          }
+
+          if (tag === "About"
+          || tag === "Over ons") {
+            return `highlight-lightblue-sm`;
+          }
+        }
+
+        const tagToHtml = (tag) => {
+          if (!tag) {
+            return '';
+          }
+          return `<span class="${tagToHighlightClass(tag)} mr-3">${tag}</span>`;
+        };
+
         container.querySelector('ol').innerHTML = items
           .map(
             item => {
@@ -181,6 +240,9 @@
               <a href=${item.url} class="container">
                 <div class="row search-result-row">
                   <div class="col-12 col-lg-2">
+                    <div class="position-absolute search-tags-mobile">
+                      ${tagToHtml(item.tag)}
+                    </div>
                     <div class="my-3 text-center image-frame">
                       <img class="image-fluid search-result-image d-inline p-2" src='${item.image}' alt='${item.title}' />
                     </div>
@@ -188,8 +250,12 @@
                   <div class="col-12 col-lg-10">
                     <h3 class="color-blue search-result-title">${item._highlightResult.title.value}</h3>
                     <p class="color-gray search-result-subtitle">${item._highlightResult.subtitle.value}</p>
+                    <div class="position-absolute search-tags-desktop">
+                      ${tagToHtml(item.tag)}
+                    </div>
                   </div>
                 </div>
+                
               </a>
             </li>
           `;

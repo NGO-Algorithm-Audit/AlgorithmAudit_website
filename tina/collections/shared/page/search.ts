@@ -8,6 +8,11 @@ const search: TinaField = {
     "Search configuration for Algolia. This will be used to populate the search index. If left empty, the values above will be used. It is recommended to fill this out for better search results.",
   fields: [
     {
+      type: "boolean",
+      name: "excludeFromSearch",
+      label: "Exclude from Algolia Search",
+    },
+    {
       type: "string",
       name: "title",
       label: "Title",
@@ -21,7 +26,11 @@ const search: TinaField = {
       type: "image",
       name: "image",
       label: "Image",
-      required: true,
+    },
+    {
+      type: "string",
+      name: "searchableText",
+      label: "Searchable Text",
     },
   ],
 };

@@ -1,5 +1,6 @@
 ---
 search:
+  excludeFromSearch: true
   title: Building public knowledge for responsible algorithms
   subtitle: A European knowledge platform for AI bias testing and AI standards.
   image: /images/logo/logo.svg
@@ -79,9 +80,11 @@ Activity_Feed:
   items_title: Upcoming events
   activities:
     - title: >-
-        Presentation 'Meaningful human interaction', Network of Dutch Public Service Suppiers
+        Presentation 'Meaningful human interaction', Network of Dutch Public
+        Service Suppiers
+      link: >-
+        /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       image: /images/partner logo-cropped/NPD.png
-      link: /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       date: 30-10-2025
       type: presentation
     - title: >-
