@@ -11,12 +11,12 @@ import ai_policy_observatory from "../templates/ai_policy_observatory";
 import button from "../templates/button";
 import container_close from "../templates/container_close";
 import container_open from "../templates/container_open";
+import donation from "../templates/donation";
 import dynamic_form_engine from "../templates/dynamic_form_engine";
 import embed_pdf from "../templates/embed_pdf";
 import form1 from "../templates/form1";
 import form2 from "../templates/form2";
 import form3 from "../templates/form3";
-import form4 from "../templates/form4";
 import iframe from "../templates/iframe";
 import template_image from "../templates/image";
 import overview_block_template from "../templates/overview_block_template";
@@ -61,6 +61,7 @@ const building_blocks: TinaField[] = [
       button,
       container_open,
       container_close,
+      donation,
       dynamic_form_engine,
       embed_pdf,
       form1,
