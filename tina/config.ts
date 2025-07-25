@@ -8,6 +8,7 @@ import algoprudence_cases from "./collections/pages/algoprudence_cases";
 import algoprudence_how_we_work from "./collections/pages/algoprudence_how_we_work";
 import algoprudence_repository from "./collections/pages/algoprudence_repository";
 import algoprudence_submit_a_case from "./collections/pages/algoprudence_submit_a_case";
+import donation from "./collections/pages/donation";
 import events_activities from "./collections/pages/events_activities";
 import events_press_room from "./collections/pages/events_press_room";
 import events_registration from "./collections/pages/events_registration";
@@ -67,6 +68,7 @@ export default defineConfig({
       about_boards,
       about_vacancies,
       privacy_policy,
+      donation,
     ],
   },
 });
