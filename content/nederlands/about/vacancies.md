@@ -11,7 +11,7 @@ quick_navigation:
     - title: Stagiair
       url: '#accordion_area_stagiair'
 dynamic_form_engine:
-  - title: Sollicitatieformulier
+  - title: Sollicitatieformulier AI adviseur/validator
     id: form1
     icon: fas fa-user-tag
     content: |
@@ -19,19 +19,16 @@ dynamic_form_engine:
     section:
       - questions:
           - identifier: name
-            id: name
             title: Naam
             content: ''
             required: true
             type: text
           - identifier: mail
-            id: contact-details
             title: Mailadres
             content: ''
             required: true
             type: email
           - identifier: motivation
-            id: motivation-letter
             title: Motivatiebrief
             content: |
               Maximaal één A4.
@@ -39,7 +36,6 @@ dynamic_form_engine:
             required: true
             type: file
           - identifier: CV
-            id: cv
             title: CV
             content: ''
             file_upload_text: Selecteer bestand
@@ -47,7 +43,6 @@ dynamic_form_engine:
             file_type: ''
             type: file
           - identifier: terms-and-conditions
-            id: terms-and-conditions
             title: Toestemming verwerking persoonsgegevens
             content: >
               Ingezonden gegevens zullen alleen verwerkt worden in het kader van
@@ -65,7 +60,7 @@ dynamic_form_engine:
       type: submit
       button_text: Solliciteer
       backend_link: 'https://formspree.io/f/mdoqdpnn'
-  - title: Sollicitatieformulier
+  - title: Sollicitatieformulier stagiair
     id: form2
     icon: fas fa-user-tag
     content: |
@@ -73,19 +68,16 @@ dynamic_form_engine:
     section:
       - questions:
           - identifier: name2
-            id: name2
             title: Naam
             content: ''
             required: true
             type: text
           - identifier: mail2
-            id: contact-details2
             title: Mailadres
             content: ''
             required: true
             type: email
           - identifier: motivation2
-            id: motivation-letter2
             title: Motivatiebrief
             content: |
               Maximaal één A4.
@@ -93,7 +85,6 @@ dynamic_form_engine:
             required: true
             type: file
           - identifier: CV2
-            id: cv2
             title: CV
             content: ''
             file_upload_text: Selecteer bestand
@@ -101,7 +92,6 @@ dynamic_form_engine:
             file_type: ''
             type: file
           - identifier: terms-and-conditions2
-            id: terms-and-conditions2
             title: Toestemming verwerking persoonsgegevens
             content: >
               Ingezonden gegevens zullen alleen verwerkt worden in het kader van
@@ -142,37 +132,41 @@ Wij zijn een jonge, enthousiaste en snelgroeiende organisatie met een klein kern
 #### Wat zoeken wij?
 
 Als AI adviseur/validator bij Algorithm Audit:
--	Verricht je projectwerk met betrekking tot de verantwoorde inzet van algoritmen en AI voor verschillende klanten, voornamelijk in de publieke sector;
--	Analyseer je documentatie over algoritmes en heb je affiniteit met toepasselijke wet- en regelgeving;
--	Je bent in staat een brug te vormen tussen juristen, ethici en technici die vanuit hun eigen disciplines werken aan de verantwoorde inzet van algoritmes en AI;
--	Draai je mee in een team met ervaren adviseurs;
--	Draag je schriftelijk bij aan o.a. technisch en/of juridische analyses, presentaties, beschrijvingen van technische tools;
--	Heb je inzicht in de statistische basis van algoritmen, AI en data-analyse (het zelfstandig kunnen ontwikkelen van Python-code is een pré);
--	Onderzoek je naar eigen inzicht onderwerpen waarvoor in het bedrijfsleven geen tijd is;
--	Ondersteun je het team met praktische aspecten die komen kijken bij het runnen van een jonge organisatie, zoals het hosten van events, PR en communicatie;
--	Licht je door Algorithm Audit opgedane inzichten in begrijpelijke taal toe, zodat deze met de samenleving, beleidsmakers en juristen kunnen worden gedeeld.
+
+* Verricht je projectwerk met betrekking tot de verantwoorde inzet van algoritmen en AI voor verschillende klanten, voornamelijk in de publieke sector;
+* Analyseer je documentatie over algoritmes en heb je affiniteit met toepasselijke wet- en regelgeving;
+* Je bent in staat een brug te vormen tussen juristen, ethici en technici die vanuit hun eigen disciplines werken aan de verantwoorde inzet van algoritmes en AI;
+* Draai je mee in een team met ervaren adviseurs;
+* Draag je schriftelijk bij aan o.a. technisch en/of juridische analyses, presentaties, beschrijvingen van technische tools;
+* Heb je inzicht in de statistische basis van algoritmen, AI en data-analyse (het zelfstandig kunnen ontwikkelen van Python-code is een pré);
+* Onderzoek je naar eigen inzicht onderwerpen waarvoor in het bedrijfsleven geen tijd is;
+* Ondersteun je het team met praktische aspecten die komen kijken bij het runnen van een jonge organisatie, zoals het hosten van events, PR en communicatie;
+* Licht je door Algorithm Audit opgedane inzichten in begrijpelijke taal toe, zodat deze met de samenleving, beleidsmakers en juristen kunnen worden gedeeld.
 
 #### Thematische werkzaamheden
+
 Binnen het team verdelen we de werkzaamheden. Afhankelijk van je ervaring en affiniteit krijg je een eigen takenpakket. De volgende onderwerpen zijn voorbeelden van thema’s waaraan Algorithm Audit werkt:
-*	Implementatie van de AI-verordening:
-    * Verdiepen in wettekst en koppeling maken tussen concepten uit de wet en de algoritmische praktijk;
-    * Verdiepen in standaarden, inhoudelijke evaluatie van AI-systemen en de rapportage hierover;
-    * Inzichten verwerken in Algorithm Audit’s open source AI-verordening implementatie tool, incl. business development
-*	Socio-technologische evaluatie van Large Language Models (LLMs):
-    * Begrip van kerncomponenten uit LLM-applicaties, zoals embeddings, Retrieval-Augmented Generation (RAG), knowledge bases, chunking etc.;
-    * Opstellen van domein-specifieke evaluatiecriteria voor LLM-toepassingen;
-    * Pro-actief contact leggen en onderhouden met LLM-gemeenschap in Nederland en Europa die zich verdiepen in socio-technologische evaluatie van LLM-toepassingen.
+
+* Implementatie van de AI-verordening:
+  * Verdiepen in wettekst en koppeling maken tussen concepten uit de wet en de algoritmische praktijk;
+  * Verdiepen in standaarden, inhoudelijke evaluatie van AI-systemen en de rapportage hierover;
+  * Inzichten verwerken in Algorithm Audit’s open source AI-verordening implementatie tool, incl. business development
+* Socio-technologische evaluatie van Large Language Models (LLMs):
+  * Begrip van kerncomponenten uit LLM-applicaties, zoals embeddings, Retrieval-Augmented Generation (RAG), knowledge bases, chunking etc.;
+  * Opstellen van domein-specifieke evaluatiecriteria voor LLM-toepassingen;
+  * Pro-actief contact leggen en onderhouden met LLM-gemeenschap in Nederland en Europa die zich verdiepen in socio-technologische evaluatie van LLM-toepassingen.
 * Non-discriminatie en bias-analyse:
-    * Verdiepen in algoritmische discriminatie en non-discriminatierecht;
-    * Uitvoeren van bias toesten;
-    * Doorontwikkelen van methodologie voor het toetsen en voorkomen van algoritmische discriminatie.
+  * Verdiepen in algoritmische discriminatie en non-discriminatierecht;
+  * Uitvoeren van bias toesten;
+  * Doorontwikkelen van methodologie voor het toetsen en voorkomen van algoritmische discriminatie.
 
 #### Vaardigheden
+
 * Relevante universitaire studie afgerond (technisch, juridisch en/of bestuurskundig etc.);
 * Aantoonbare affiniteit met verantwoorde algoritmes en AI, vanuit een juridische, beleidsmatige en/of technische invalshoek;
 * Werkervaring:
-    * Junior: 1-3 jaar werkervaring, bij voorkeur concrete ervaring met het ontwerpen of adviseren over verantwoorde algoritmes en AI;
-    * Medior: 3-8 jaar werkervaring, ten minste 3 jaar ervaring met het ontwerpen van of adviseren over verantwoorde algoritmes en AI;
+  * Junior: 1-3 jaar werkervaring, bij voorkeur concrete ervaring met het ontwerpen of adviseren over verantwoorde algoritmes en AI;
+  * Medior: 3-8 jaar werkervaring, ten minste 3 jaar ervaring met het ontwerpen van of adviseren over verantwoorde algoritmes en AI;
 * Programmeervaardigheden en inzicht in statistiek zijn een pré;
 * Sterk organisatorisch vermogen;
 * In staat om in klein team in goede afstemming te werken en ook veel zelfstandig op te pakken;
@@ -180,33 +174,40 @@ Binnen het team verdelen we de werkzaamheden. Afhankelijk van je ervaring en aff
 * Representatief naar opdrachtgevers en belanghebbenden;
 * Uitstekende schrijfvaardigheid Engels en Nederlands.
 
-
 #### Wat verwachten wij?
--	Je bent 3-5 dagen per week op kantoor in Den Haag;
--	Bereidheid om binnenlands te reizen, en incidenteel Europees;
--	Nederlandse nationaliteit of werkvergunning.
+
+* Je bent 3-5 dagen per week op kantoor in Den Haag;
+* Bereidheid om binnenlands te reizen, en incidenteel Europees;
+* Nederlandse nationaliteit of werkvergunning.
 
 #### Arbeidsvoorwaarden
+
 * Salaris op basis van 1.0 fte, excl. vakantietoeslag, 13e maand, pensioenopbouw (6% bruto per maand), thuiswerkvergoeding. Het salaris kan worden bijgesteld naar boven bij buitengewone werkervaring:
-    * Junior: Bruto maandsalaris van €3.200-4.200/maand 
-    * Medior: Bruto maandsalaris van €3.800-5.000/maand
+  * Junior: Bruto maandsalaris van €3.200-4.200/maand
+  * Medior: Bruto maandsalaris van €3.800-5.000/maand
 * 26 vakantiedagen;
 * Hybride werkopstelling, waarbij minimaal drie dagen aanwezigheid op kantoor wordt verwacht;
 * Arbeidsovereenkomst voor één jaar.
 
 #### Praktische opmerkingen
--	Deze vacature staat open voor doorlopende sollicitaties;
--	Op basis van de aangeleverde documenten kun je worden uitgenodigd voor een online kennismakingsgesprek;
--	Bij een wederzijdse match volgen 1-2 vervolggesprekken op locatie;
--	De startdatum wordt in overleg bepaald.
+
+* Deze vacature staat open voor doorlopende sollicitaties;
+* Op basis van de aangeleverde documenten kun je worden uitgenodigd voor een online kennismakingsgesprek;
+* Bij een wederzijdse match volgen 1-2 vervolggesprekken op locatie;
+* De startdatum wordt in overleg bepaald.
 
 #### Diversiteit en inclusie
-Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief meenemen. We hechten daarom sterk aan diversiteit en inclusie in al onze werkzaamheden, met name in het betrekken van verschillende belanghebbende groepen. Ook als organisatie willen we diversiteit weerspiegelen m.b.t. bijvoorbeeld gender, culturele en disciplinaire achtergrond.  
+
+Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief meenemen. We hechten daarom sterk aan diversiteit en inclusie in al onze werkzaamheden, met name in het betrekken van verschillende belanghebbende groepen. Ook als organisatie willen we diversiteit weerspiegelen m.b.t. bijvoorbeeld gender, culturele en disciplinaire achtergrond.
 
 #### Contact
-Vragen over de vacature of de procedure? Stuur een email naar info@algorithmaudit.eu.
 
-{{< dynamic_form_engine >}}
+Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
+
+{{< dynamic_form_engine index="0" >}}
+
+
+<!-- Stagiair -->
 
 {{< accordion_item_close >}}
 
@@ -216,7 +217,7 @@ Vragen over de vacature of de procedure? Stuur een email naar info@algorithmaudi
 
 {{< accordion_item_open title="Stagiair (0.8-1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="doorlopende sollicitatie" >}}
 
-{{< button button_text="Solliciteer" button_link="#form1" >}}
+{{< button button_text="Solliciteer" button_link="#form2" >}}
 
 #### Functietitel: Stagiair (0.8-1.0 fte)
 
@@ -286,7 +287,7 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 
 Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 
-{{< dynamic_form_engine >}}
+{{< dynamic_form_engine index="1" >}}
 
 {{< accordion_item_close >}}
 

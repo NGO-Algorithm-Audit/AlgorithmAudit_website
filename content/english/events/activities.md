@@ -925,6 +925,6 @@ subtitle: >
   our team speak at events. On this page an overview of past event can be found.
 image: /images/svg-illustrations/events.svg
 search:
-  searchableText: Utrecht Oxford
+  searchableText: Utrecht Oxford pakhuis
 ---
 

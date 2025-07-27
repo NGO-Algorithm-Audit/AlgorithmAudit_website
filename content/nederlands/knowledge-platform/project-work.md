@@ -6,6 +6,8 @@ subtitle: >
   algoritmes en AI. Een overzicht van onze technisch audits en normatieve reviews kan
   worden gevonden in onze [case repository](/nl/algoprudence/)
 image: /images/svg-illustrations/knowledge_base.svg
+search:
+  searchableText: Amsterdam
 form1:
   title: Kom in contact om samenwerking te bespreken
   content: >-
