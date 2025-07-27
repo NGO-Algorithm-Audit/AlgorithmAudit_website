@@ -11,7 +11,7 @@ quick_navigation:
     - title: Intern
       url: '#accordion_area_stagiair'
 dynamic_form_engine:
-  - title: Sollicitatieformulier
+  - title: Sollicitatieformulier AI adviseur/validator
     id: form1
     icon: fas fa-user-tag
     content: |
@@ -65,7 +65,7 @@ dynamic_form_engine:
       type: submit
       button_text: Solliciteer
       backend_link: 'https://formspree.io/f/mdoqdpnn'
-  - title: Sollicitatieformulier
+  - title: Sollicitatieformulier stagiair
     id: form2
     icon: fas fa-user-tag
     content: |
@@ -206,7 +206,7 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 #### Contact
 Vragen over de vacature of de procedure? Stuur een email naar info@algorithmaudit.eu.
 
-{{< dynamic_form_engine >}}
+{{< dynamic_form_engine index="0" >}}
 
 {{< accordion_item_close >}}
 
@@ -216,7 +216,7 @@ Vragen over de vacature of de procedure? Stuur een email naar info@algorithmaudi
 
 {{< accordion_item_open title="Intern (0.8-1.0 fte) (Dutch speaking only)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="rolling application" >}}
 
-{{< button button_text="Solliciteer" button_link="#form1" >}}
+{{< button button_text="Solliciteer" button_link="#form2" >}}
 
 #### Functietitel: Stagiair (0.8-1.0 fte)
 
@@ -286,7 +286,7 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 
 Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 
-{{< dynamic_form_engine >}}
+{{< dynamic_form_engine index="1" >}}
 
 {{< accordion_item_close >}}
 
