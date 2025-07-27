@@ -178,3 +178,10 @@ hasChildren = true
   weight = 5
   [[main.params]]
     icon = "fa-user-check"
+  [[main]]
+  parent = "About"
+  name = "Support"
+  url = "/about/support-us"
+  weight = 6
+  [[main.params]]
+    icon = "fa-hand-holding-medical"
