@@ -201,7 +201,7 @@
         const tagToHighlightClass = (tag) => {
           if (tag === "Kennisplatform"
           || tag === "Knowledge platform") {
-            return `highlight-lightblue-sm`;
+            return `highlight-red-sm`;
           }
 
           if (tag === "Algoprudentie"
@@ -211,12 +211,12 @@
 
           if (tag === "Technische tools"
           || tag === "Technical tools") {
-            return `highlight-yellow-sm`;
+            return `highlight-red-sm`;
           }
 
           if (tag === "Events"
           || tag === "Evenementen") {
-            return `highlight-lightblue-sm`;
+            return `highlight-red-sm`;
           }
 
           if (tag === "About"
@@ -250,7 +250,7 @@
                   <div class="col-12 col-lg-10">
                     <h3 class="color-blue search-result-title">${item._highlightResult.title.value}</h3>
                     <p class="color-gray search-result-subtitle">${item._highlightResult.subtitle.value}</p>
-                    <div class="position-absolute search-tags-desktop">
+                    <div class="pt-3 search-tags-desktop">
                       ${tagToHtml(item.tag)}
                     </div>
                   </div>

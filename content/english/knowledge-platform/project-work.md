@@ -6,6 +6,8 @@ subtitle: >
   overview of technical audits and normative reviews can be found in our [case
   repository](/nl/algoprudence/)
 image: /images/svg-illustrations/knowledge_base.svg
+search:
+  searchableText: Amsterdam
 form1:
   title: Get in touch to explore potential collaboration
   content: >-
