@@ -204,7 +204,7 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 
 Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 
-{{< dynamic_form_engine >}}
+{{< dynamic_form_engine index="0" >}}
 
 {{< accordion_item_close >}}
 
@@ -284,7 +284,7 @@ Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief
 
 Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 
-{{< dynamic_form_engine >}}
+{{< dynamic_form_engine index="1" >}}
 
 {{< accordion_item_close >}}
 
