@@ -5,37 +5,41 @@ title: Risicoprofilering heronderzoek bijstandsuitkering
 subtitle: |
   Probleemstelling (ALGO:AA:2023:02:P) en adviesdocument (ALGO:AA:2023:02:A)
 image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
-form1:
-  title: Reageer op dit normatieve oordeel
-  content: >-
-    Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie
-    en, indien het verenigbaar is met Algorithm Audit's richtlijnen voor
-    publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
-    sectie.
-  button_text: Verstuur
-  backend_link: 'https://formspree.io/f/xyyrjyzr'
-  id: case-reaction
-  questions:
-    - label: |
-        Naam
-      id: name
-      required: true
-      type: text
-    - label: |
-        Affiliated organization
-      id: affiliated-organization
-      type: text
-    - label: |
-        Reactie
-      id: reaction
-      required: true
-      type: textarea
-    - label: |
-        Contactgegevens
-      id: contact-details
-      required: true
-      type: email
-      placeholder: Emailadres
+dynamic_form_engine:
+  - title: Reageer op dit normatieve oordeel
+    content: >-
+      Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie
+      en, indien het verenigbaar is met Algorithm Audit's richtlijnen voor
+      publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
+      sectie.
+    id: case-reaction
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Naam
+            identifier: name
+            required: true
+            type: text
+          - title: |
+              Affiliated organization
+            identifier: affiliated-organization
+            type: text
+          - title: |
+              Reactie
+            identifier: reaction
+            required: true
+            type: textarea
+          - title: |
+              Contactgegevens
+            identifier: contact-details
+            required: true
+            type: email
+            placeholder: Emailadres
+    complete_form_options:
+      type: submit
+      button_text: Verstuur
+      backend_link: "https://formspree.io/f/xyyrjyzr"
 ---
 
 {{< tab_header width="4" tab1_id="description" tab1_title="Beschrijving algoprudentie" tab2_id="actions" tab2_title="Acties volgend op algoprudentie" tab3_id="discussion" tab3_title="Discussie & debat" default_tab="description" >}}
@@ -48,15 +52,15 @@ ALGO:AA:2023:02
 
 #### Hoofdpunten normatieve adviescommissie
 
-* <span style="color:#005aa7; font-weight:600;">Algoritmische profilering is onder strikte voorwaarden mogelijk</span>\
+- <span style="color:#005aa7; font-weight:600;">Algoritmische profilering is onder strikte voorwaarden mogelijk</span>\
   Mits zorgvuldig toegepast kan algoritmische profilering verantwoord worden ingezet voor heronderzoek naar de rechtmatigheid van bijstandsuitkeringen.
-* <span style="color:#005aa7; font-weight:600;">Profilering moet geen verdenking zijn</span>\
+- <span style="color:#005aa7; font-weight:600;">Profilering moet geen verdenking zijn</span>\
   Heronderzoek moet meer op dienstverlening en minder op wantrouwen zijn gebaseerd.
-* <span style="color:#005aa7; font-weight:600;">Diversiteit aan selectiemethoden</span>\
+- <span style="color:#005aa7; font-weight:600;">Diversiteit aan selectiemethoden</span>\
   Om tunnelvisie en feedbackloops te vermijden is het wenselijk om algoritmische profilering te combineren met expert-gedreven profilering en aselecte steekproeven.
-* <span style="color:#005aa7; font-weight:600;">Verantwoord gebruik van profileringscriteria</span>\
+- <span style="color:#005aa7; font-weight:600;">Verantwoord gebruik van profileringscriteria</span>\
   Met oog op het voorkomen van (proxy)discriminatie en andere onwenselijke vormen van onderscheid maakt de commissie per variabele een afweging over de geschiktheid voor profileringsdoeleinden (zie Infographic).
-* <span style="color:#005aa7; font-weight:600;">Uitlegbaarheidsvereisten machine learning</span>\
+- <span style="color:#005aa7; font-weight:600;">Uitlegbaarheidsvereisten machine learning</span>\
   Het is noodzakelijk dat de selectie van inwoners door de gehele besluitvormingsketen uitlegbaar is. Complexe trainingsmethoden om profileringscriteria te selecteren, zoals het onderhavige xgboost-algoritme, worden te complex geacht om te voldoen aan uitlegbaarheidsvereisten.
 
 #### Infographic
@@ -73,7 +77,7 @@ Ongevraagd advies aan alle 340+ Nederlandse gemeenten. Onderzoek bouwt voort op�
 
 #### Presentatie
 
-Het adviesrapport (ALGO:AA:2023:02:A) is op 29 november 2023 aangeboden aan de Staatssecretaris van Digitalisering. Een persbericht kan [hier](https://algorithmaudit.eu/pressroom) worden gevonden. 
+Het adviesrapport (ALGO:AA:2023:02:A) is op 29 november 2023 aangeboden aan de Staatssecretaris van Digitalisering. Een persbericht kan [hier](https://algorithmaudit.eu/pressroom) worden gevonden.
 
 {{< image id="presentation-minister" image1="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt1="Presentation advice report to Dutch Minister of Digitalization" caption1="Presentation advice report to Dutch Minister of Digitalization" width_desktop="5" width_mobile="12" >}}
 
@@ -83,11 +87,11 @@ Het adviesrapport (ALGO:AA:2023:02:A) is op 29 november 2023 aangeboden aan de S
 
 #### Normatieve adviescommissie
 
-* Abderrahman El Aazani, onderzoeker bij Ombudsman Rotterdam-Rijnmond
-* Francien Dechesne, Associate Professor Law and Digital Technologies, Universiteit Leiden
-* Maarten van Asten, wethouder Financiën, Digitalisering, Sport en Evenementen Gemeente Tilburg
-* Munish Ramlal, ombudsman Metropool Amsterdam
-* Oskar Gstrein, Assistant Professor Governance and Innovation, Rijksuniversiteit Groningen
+- Abderrahman El Aazani, onderzoeker bij Ombudsman Rotterdam-Rijnmond
+- Francien Dechesne, Associate Professor Law and Digital Technologies, Universiteit Leiden
+- Maarten van Asten, wethouder Financiën, Digitalisering, Sport en Evenementen Gemeente Tilburg
+- Munish Ramlal, ombudsman Metropool Amsterdam
+- Oskar Gstrein, Assistant Professor Governance and Innovation, Rijksuniversiteit Groningen
 
 {{< tab_content_close >}}
 
@@ -101,9 +105,9 @@ Het adviesrapport (ALGO:AA:2023:02:A) is op 29 november 2023 aangeboden aan de S
 
 Raadsleden hebben naar aanleiding van adviesrapport AA-2023:02:A <a href="https://amsterdam.raadsinformatie.nl/document/13573898/1/236+sv+Aslami%2C+IJmker+en+Garmy+inzake+toegepaste+profileringscriteria+gemeentelijke+algoritmes" target="_blank">vragen</a> gesteld aan het college van Burgemeester en Wethouders over een vergelijkbaar machine learning-gedreven algoritme ‘Slimme check levensonderhoud’ dat de gemeente Amsterdam momenteel als pilot test. De vragen hebben betrekking tot:
 
-* (on)geschikte selectiecriteria die aan het ML gevoed kunnen worden voor variabeleselectie
-* uitlegbaarheidsvereisten voor het gebruikte explainable boosting algoritme
-* implicaties van de aanstaande AI Verordening voor deze vorm van risicoprofileren.
+- (on)geschikte selectiecriteria die aan het ML gevoed kunnen worden voor variabeleselectie
+- uitlegbaarheidsvereisten voor het gebruikte explainable boosting algoritme
+- implicaties van de aanstaande AI Verordening voor deze vorm van risicoprofileren.
 
 {{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202302/Actions/20231204_236 sv Aslami, IJmker en Garmy inzake toegepaste profileringscriteria gemeentelijke algoritmes.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
@@ -129,12 +133,9 @@ Raadsleden hebben naar aanleiding van adviesrapport AA-2023:02:A <a href="https
 
 #### Leeftijdsdiscriminatie
 
+Een beleid, zoals een overheidsinstantie die fraude onderzoekt of een werkgever die nieuwe werknemers zoekt, kan bedoeld of onbedoeld leiden tot onderscheid tussen bepaalde groepen mensen. Als een organisatie dit onderscheid maakt op gronden die wettelijk beschermd zijn, zoals geslacht, afkomst, seksuele oriëntatie, of een handicap of chronische ziekte, en hiervoor is geen goede, rechtvaardigende reden voor te geven is, dan maakt de organisatie verboden onderscheid. We spreken dan van discriminatie.
 
-Een beleid, zoals een overheidsinstantie die fraude onderzoekt of een werkgever die nieuwe werknemers zoekt, kan bedoeld of onbedoeld leiden tot onderscheid tussen bepaalde groepen mensen. Als een organisatie dit onderscheid maakt op gronden die wettelijk beschermd zijn, zoals geslacht, afkomst, seksuele oriëntatie, of een handicap of chronische ziekte, en hiervoor is geen goede, rechtvaardigende reden voor te geven is, dan maakt de organisatie verboden onderscheid. We spreken dan van discriminatie. 
-
-
-En leeftijd dan? Zowel het Rotterdamse als het DUO-algoritme waar Algorithm Audit onderzoek naar deed, maakte daar onderscheid op. Toch is er in die gevallen geen sprake van leeftijdsdiscriminatie. 
-
+En leeftijd dan? Zowel het Rotterdamse als het DUO-algoritme waar Algorithm Audit onderzoek naar deed, maakte daar onderscheid op. Toch is er in die gevallen geen sprake van leeftijdsdiscriminatie.
 
 De gelijkebehandelingswetgeving kent ook een verbod op onderscheid naar leeftijd. Een sollicitant zomaar weigeren voor een baan omdat diegene te oud is, mag dus niet. Maar de wetgeving rond leeftijdonderscheid laat wel meer ruimte voor een rechtvaardigend argument dan de eerdergenoemde persoonskenmerken. Dit geldt zeker als het algoritme niet gaat over arbeidskwesties.  In het geval van opsporing van bijstandsfraude of misbruik van studiefinanciering is het daarom niet per se verboden dat een algoritme iemands leeftijd meeneemt. Toch zal er wel een duidelijk verband moet zijn tussen leeftijd en het doel van het algoritme. Zolang niet is aangetoond dat iemands leeftijd de kans vergroot op misbruik of fraude mag je leeftijd evengoed niet laten meewegen in de algoritmische selectie. Als het bijvoorbeeld gaat om een Wajong-uitkering die je alleen tot een bepaalde leeftijd mag aanvragen, dan is er wel een duidelijk verband, en dan zou een algoritme daar wel naar kunnen kijken.
 
@@ -144,4 +145,4 @@ De gelijkebehandelingswetgeving kent ook een verbod op onderscheid naar leeftijd
 
 {{< tab_content_close >}}
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}

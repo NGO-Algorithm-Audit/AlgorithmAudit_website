@@ -5,36 +5,40 @@ title: Risk Profiling for Social Welfare Reexamination
 subtitle: |
   Problem statement (ALGO:AA:2023:02:P) en advice document (ALGO:AA:2023:02:A)
 image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
-form1:
-  title: React to this normative judgement
-  content: >-
-    Your reaction will be sent to the team maintaining algoprudence. A team will
-    review your response and, if it complies with the guidelines, it will be
-    placed in the Discussion & debate section above.
-  button_text: Submit
-  backend_link: 'https://formspree.io/f/xyyrjyzr'
-  id: case-reaction
-  questions:
-    - label: |
-        Name
-      id: name
-      required: true
-      type: text
-    - label: |
-        Affiliated organization
-      id: affiliated-organization
-      type: text
-    - label: |
-        Reaction
-      id: reaction
-      required: true
-      type: textarea
-    - label: |
-        Contact details
-      id: contact-details
-      required: true
-      type: text
-      placeholder: Mail address
+dynamic_form_engine:
+  - title: React to this normative judgement
+    content: >-
+      Your reaction will be sent to the team maintaining algoprudence. A team will
+      review your response and, if it complies with the guidelines, it will be
+      placed in the Discussion & debate section above.
+    id: case-reaction
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Name
+            identifier: name
+            required: true
+            type: text
+          - title: |
+              Affiliated organization
+            identifier: affiliated-organization
+            type: text
+          - title: |
+              Reaction
+            identifier: reaction
+            required: true
+            type: textarea
+          - title: |
+              Contact details
+            identifier: contact-details
+            required: true
+            type: text
+            placeholder: Mail address
+    complete_form_options:
+      type: submit
+      button_text: Submit
+      backend_link: "https://formspree.io/f/xyyrjyzr"
 ---
 
 {{< tab_header width="4" tab1_id="description" tab1_title="Description of algoprudence" tab2_id="actions" tab2_title="Actions following algoprudence" tab3_id="discussion" tab3_title="Discussion & debate" default_tab="description" >}}
@@ -47,15 +51,15 @@ ALGO:AA:2023:02
 
 #### Key takeaways normative advice commission
 
-* <span style="color:#005aa7; font-weight:600;">Algorithmic profiling is possible under strict conditions</span>\
+- <span style="color:#005aa7; font-weight:600;">Algorithmic profiling is possible under strict conditions</span>\
   The use of algorithmic profiling to re-examine whether social welfare benefits have been duly granted, is acceptable if applied responsibly.
-* <span style="color:#005aa7; font-weight:600;">Profiling must not equate suspicion</span>\
+- <span style="color:#005aa7; font-weight:600;">Profiling must not equate suspicion</span>\
   Re-examination needs to be based more on service and less on distrust.
-* <span style="color:#005aa7; font-weight:600;">Diversity in selection methods</span>\
+- <span style="color:#005aa7; font-weight:600;">Diversity in selection methods</span>\
   To avoid tunnel vision and negative feedback loops, algorithmic profiling ought to be combined with expert-driven profiling and random sampling.
-* <span style="color:#005aa7; font-weight:600;">Well-considered use of profiling criteria</span>\
+- <span style="color:#005aa7; font-weight:600;">Well-considered use of profiling criteria</span>\
   Caring to avoid (proxy) discrimination and other undesirable forms of differentiation, the normative advice commission assessed variables individually on their eligibility for profiling (see Infographic).
-* <span style="color:#005aa7; font-weight:600;">Explainability requirements for machine learning</span>\
+- <span style="color:#005aa7; font-weight:600;">Explainability requirements for machine learning</span>\
   It is necessary that the sampling of residents can be explained throughout the entire decision-making process. Complex training methods for variable selection, such as the xgboost algorithm discussed in this case study, are considered too complex to meet explainability requirements.
 
 #### Infographic
@@ -82,11 +86,11 @@ The advice report (ALGO:AA:2023:02:A) has been presented to the Dutch Minister o
 
 #### Normative advice commission
 
-* Abderrahman El Aazani, Researcher at the Ombudsman Rotterdam-Rijnmond
-* Francien Dechesne, Associate Professor Law and Digital Technologies, Leiden University
-* Maarten van Asten, Alderman Finance, Digitalization, Sports and Events Municipality of Tilburg
-* Munish Ramlal, Ombudsman Metropole region Amsterdam
-* Oskar Gstrein, Assistant Professor Governance and Innovation, University of Groningen
+- Abderrahman El Aazani, Researcher at the Ombudsman Rotterdam-Rijnmond
+- Francien Dechesne, Associate Professor Law and Digital Technologies, Leiden University
+- Maarten van Asten, Alderman Finance, Digitalization, Sports and Events Municipality of Tilburg
+- Munish Ramlal, Ombudsman Metropole region Amsterdam
+- Oskar Gstrein, Assistant Professor Governance and Innovation, University of Groningen
 
 {{< tab_content_close >}}
 
@@ -98,11 +102,11 @@ The advice report (ALGO:AA:2023:02:A) has been presented to the Dutch Minister o
 
 ##### Description
 
- Council members submitted <a href="https://amsterdam.raadsinformatie.nl/document/13573898/1/236+sv+Aslami%2C+IJmker+en+Garmy+inzake+toegepaste+profileringscriteria+gemeentelijke+algoritmes" target="_blank">questions</a> whether the machine learning (ML)-driven risk profiling algorithm currently tested by the City of Amsterdam satisfies the requirements as set out in ALGO:AA:2023:02:A, including:
+Council members submitted <a href="https://amsterdam.raadsinformatie.nl/document/13573898/1/236+sv+Aslami%2C+IJmker+en+Garmy+inzake+toegepaste+profileringscriteria+gemeentelijke+algoritmes" target="_blank">questions</a> whether the machine learning (ML)-driven risk profiling algorithm currently tested by the City of Amsterdam satisfies the requirements as set out in ALGO:AA:2023:02:A, including:
 
-* (in)eligible selection criteria fed to the ML model
-* explainability requirements for the used explainable boosting algorithm
-* implications of the AIAct for this particular form of risk profiling.
+- (in)eligible selection criteria fed to the ML model
+- explainability requirements for the used explainable boosting algorithm
+- implications of the AIAct for this particular form of risk profiling.
 
 {{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202302/Actions/20231204_236 sv Aslami, IJmker en Garmy inzake toegepaste profileringscriteria gemeentelijke algoritmes.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
@@ -142,4 +146,4 @@ Therefore, in the case of detecting unduly granted social welfare or misuse of c
 
 {{< tab_content_close >}}
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}

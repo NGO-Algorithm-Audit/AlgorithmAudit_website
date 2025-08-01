@@ -6,97 +6,93 @@ subtitle: >
   algorithm. Or submit a carefully documented normative judgement for inlcusion
   in our case repository.
 image: /images/svg-illustrations/case_repository.svg
-form1:
-  title: Case information
-  content: ""
-  button_text: Submit
-  backend_link: "https://formspree.io/f/xzbnrlan"
-  id: submit-a-case
-  questions:
-    - label: |
-        Name algorithm
-      id: name
-      required: true
-      type: text
-    - label: >
-        Short description – Define the specific task of the algorithm and its
-        the context in which it operates (max. 200 words)
-      id: description
-      required: true
-      type: textarea
-    - label: >
-        Technical dimension – Description of data collection, used statistical
-        methodologies and used evaluation criteria
-      id: technical-dimension
-      type: textarea
-    - label: >
-        Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU
-        non-discrimination law
-      id: legal-framework
-      required: false
-      type: textarea
-    - label: >
-        Ethical issues – Description of the identified ethical issue given it’s
-        technical and legal framework
-      id: ethical-issue
-      required: true
-      type: textarea
-    - label: |
-        Contact details
-      id: contact-details
-      required: false
-      type: email
-      placeholder: Mail address
-    - label: >
-        Terms and conditions <br> <span style="font-size:12px;
-        color=#777;">Submitted data will only be processed for the purpose
-        described above, kept for the minimum necessary duration, and is
-        securely stored in a protected environment</span>
-      id: terms-conditions
-      values:
-        - label: Agree
-          value: agree
-          id: agree
-      required: true
-      type: checkbox
-form2:
-  title: Case information
-  content: ""
-  button_text: "Submit "
-  backend_link: "https://formspree.io/f/xleqlakw"
-  id: case-for-repository
-  questions:
-    - label: Name organisation
-      id: name
-      required: true
-      type: text
-    - label: >-
-        Normative decision taken – Define the specific task of the algorithm,
-        its socio-technical context, statistical methodology, the relevant legal
-        framework and what decision is taken to deal with the identified ethical
-        issue
-      id: description
-      required: true
-      type: textarea
-    - label: Contact details
-      id: contact-details
-      required: true
-      type: email
-      placeholder: Mail address
-    - label: Relevant documents
-      id: file-upload
-      file_upload_text: Choose file
-      file_type: .pdf
-      type: file
-      placeholder: ""
-    - label: >
-        Terms and conditions <br> <span style="font-size:12px;
-        color=#777;">Submitted data will only be processed for the purpose
-        described above, kept for the minimum necessary duration, and is
-        securely stored in a protected environment</span>
-      id: terms-conditions
-      required: true
-      type: checkbox
+dynamic_form_engine:
+  - title: Case information
+    id: submit-a-case
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: Name algorithm
+            identifier: name
+            required: true
+            type: text
+          - title: Short description – Define the specific task of the algorithm and its the context in which it operates (max. 200 words)
+            identifier: description
+            required: true
+            type: textarea
+          - title: Technical dimension – Description of data collection, used statistical methodologies and used evaluation criteria
+            identifier: technical-dimension
+            type: textarea
+          - title: Legal framework – Applicable laws and open legal norms, e.g., GDPR, EU non-discrimination law
+            identifier: legal-framework
+            required: false
+            type: textarea
+          - title: Ethical issues – Description of the identified ethical issue given it’s technical and legal framework
+            identifier: ethical-issue
+            required: true
+            type: textarea
+          - title: Contact details
+            identifier: contact-details
+            required: false
+            type: email
+            placeholder: Mail address
+          - title: Terms and conditions <br> <span style="font-size:12px; color=#777;">Submitted data will only be processed for the purpose described above, kept for the minimum necessary duration, and is securely stored in a protected environment</span>
+            identifier: terms-conditions
+            options:
+              - title: Agree
+                value: agree
+                id: agree
+            required: true
+            type: checkbox
+    complete_form_options:
+      type: submit
+      button_text: Submit
+      backend_link: "https://formspree.io/f/xzbnrlan"
+  - title: Case information
+    content: ""
+    id: case-for-repository
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: Name organisation
+            identifier: name
+            required: true
+            type: text
+          - title: >-
+              Normative decision taken – Define the specific task of the algorithm,
+              its socio-technical context, statistical methodology, the relevant legal
+              framework and what decision is taken to deal with the identified ethical
+              issue
+            identifier: description
+            required: true
+            type: textarea
+          - title: Contact details
+            identifier: contact-details
+            required: true
+            type: email
+            placeholder: Mail address
+          - title: Relevant documents
+            identifier: file-upload
+            file_upload_text: Choose file
+            file_type: .pdf
+            type: file
+            placeholder: ""
+          - title: >
+              Terms and conditions <br> <span style="font-size:12px;
+              color=#777;">Submitted data will only be processed for the purpose
+              described above, kept for the minimum necessary duration, and is
+              securely stored in a protected environment</span>
+            identifier: terms-conditions
+            options:
+              - title: Agree
+                value: agree
+                id: agree
+            required: true
+            type: checkbox
+    complete_form_options:
+      type: submit
+      button_text: "Submit "
+      backend_link: "https://formspree.io/f/xleqlakw"
 reports_preview:
   title: Recent audits
   icon: fas fa-file
@@ -135,7 +131,7 @@ quick_navigation:
 
 Cases can be submitted anonymously. Read more about [how we work](/algoprudence/how-we-work/). You can find more information [below](#next-steps) about next steps after case submission.
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}
 
 {{< tab_content_close >}}
 
@@ -143,7 +139,7 @@ Cases can be submitted anonymously. Read more about [how we work](/algoprudence/
 
 Would you like to contribute to our algoprudence repository? Please complete the below form. Please familiarize yourself with the cases already present in the repository. You can find more information [below](#next-steps) about next steps after case submission.
 
-{{< form2 >}}
+{{< dynamic_form_engine index="1" >}}
 
 {{< tab_content_close >}}
 

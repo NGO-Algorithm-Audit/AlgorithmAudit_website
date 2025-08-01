@@ -6,39 +6,43 @@ subtitle: >
   Addendum op eerder
   [auditrapport](/nl/algoprudence/cases/aa202401_preventing-prejudice/)
   (TA:AA:2024:01) – Biasmeting aan de hand van CBS-data over het Controle
-  Uitwonendenbeurs (CUB) proces van DUO 
+  Uitwonendenbeurs (CUB) proces van DUO
 image: /images/algoprudence/AA202402/AA202402_cover.png
-form1:
-  title: Reageer op deze technische audit
-  content: >-
-    Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie
-    en, indien het verenigbaar is met Algorithm Audit's richtlijnen voor
-    publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
-    sectie.
-  button_text: Verstuur
-  backend_link: 'https://formspree.io/f/xyyrjyzr'
-  id: case-reaction
-  questions:
-    - label: |
-        Naam
-      id: name
-      required: true
-      type: text
-    - label: |
-        Affiliated organization
-      id: affiliated-organization
-      type: text
-    - label: |
-        Reactie
-      id: reaction
-      required: true
-      type: textarea
-    - label: |
-        Contactgegevens
-      id: contact-details
-      required: true
-      type: email
-      placeholder: Emailadres
+dynamic_form_engine:
+  - title: Reageer op deze technische audit
+    content: >-
+      Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie
+      en, indien het verenigbaar is met Algorithm Audit's richtlijnen voor
+      publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
+      sectie.
+    id: case-reaction
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Naam
+            identifier: name
+            required: true
+            type: text
+          - title: |
+              Affiliated organization
+            identifier: affiliated-organization
+            type: text
+          - title: |
+              Reactie
+            identifier: reaction
+            required: true
+            type: textarea
+          - title: |
+              Contactgegevens
+            identifier: contact-details
+            required: true
+            type: email
+            placeholder: Emailadres
+    complete_form_options:
+      type: submit
+      button_text: Verstuur
+      backend_link: "https://formspree.io/f/xyyrjyzr"
 ---
 
 {{< tab_header width="4" tab1_id="description" tab1_title="Beschrijving van technische audit" tab2_id="actions" tab2_title="Acties volgend op technische audit" tab3_id="discussion" tab3_title="Discussie & debat" default_tab="description" >}}
@@ -93,9 +97,9 @@ Officiële <a href='https://www.tweedekamer.nl/kamerstukken/brieven_regering/det
 
 #### Leeftijdsdiscriminatie
 
-Een beleid, zoals een overheidsinstantie die fraude onderzoekt of een werkgever die nieuwe werknemers zoekt, kan bedoeld of onbedoeld leiden tot onderscheid tussen bepaalde groepen mensen. Als een organisatie dit onderscheid maakt op gronden die wettelijk beschermd zijn, zoals geslacht, afkomst, seksuele oriëntatie, of een handicap of chronische ziekte, en hiervoor is geen goede, rechtvaardigende reden voor te geven is, dan maakt de organisatie verboden onderscheid. We spreken dan van discriminatie. 
+Een beleid, zoals een overheidsinstantie die fraude onderzoekt of een werkgever die nieuwe werknemers zoekt, kan bedoeld of onbedoeld leiden tot onderscheid tussen bepaalde groepen mensen. Als een organisatie dit onderscheid maakt op gronden die wettelijk beschermd zijn, zoals geslacht, afkomst, seksuele oriëntatie, of een handicap of chronische ziekte, en hiervoor is geen goede, rechtvaardigende reden voor te geven is, dan maakt de organisatie verboden onderscheid. We spreken dan van discriminatie.
 
-En leeftijd dan? Zowel het Rotterdamse als het DUO-algoritme waar Algorithm Audit onderzoek naar deed, maakte daar onderscheid op. Toch is er in die gevallen geen sprake van leeftijdsdiscriminatie. 
+En leeftijd dan? Zowel het Rotterdamse als het DUO-algoritme waar Algorithm Audit onderzoek naar deed, maakte daar onderscheid op. Toch is er in die gevallen geen sprake van leeftijdsdiscriminatie.
 
 De gelijkebehandelingswetgeving kent ook een verbod op onderscheid naar leeftijd. Een sollicitant zomaar weigeren voor een baan omdat diegene te oud is, mag dus niet. Maar de wetgeving rond leeftijdonderscheid laat wel meer ruimte voor een rechtvaardigend argument dan de eerdergenoemde persoonskenmerken. Dit geldt zeker als het algoritme niet gaat over arbeidskwesties.  In het geval van opsporing van bijstandsfraude of misbruik van studiefinanciering is het daarom niet per se verboden dat een algoritme iemands leeftijd meeneemt. Toch zal er wel een duidelijk verband moet zijn tussen leeftijd en het doel van het algoritme. Zolang niet is aangetoond dat iemands leeftijd de kans vergroot op misbruik of fraude mag je leeftijd evengoed niet laten meewegen in de algoritmische selectie. Als het bijvoorbeeld gaat om een Wajong-uitkering die je alleen tot een bepaalde leeftijd mag aanvragen, dan is er wel een duidelijk verband, en dan zou een algoritme daar wel naar kunnen kijken.
 
@@ -105,4 +109,4 @@ De gelijkebehandelingswetgeving kent ook een verbod op onderscheid naar leeftijd
 
 {{< tab_content_close >}}
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}

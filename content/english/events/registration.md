@@ -26,6 +26,4 @@ Friday June 13th 12h00-13h00 CET
 #### Audience
 Primarily data scientists who can start using the tools, but secondarily also less technical audiences (policy officers, implementation experts, etc.)
 
-{{< form1 >}}
-
 {{< accordion_item_close >}} -->

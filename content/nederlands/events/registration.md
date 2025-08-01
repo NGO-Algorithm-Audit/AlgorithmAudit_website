@@ -21,12 +21,10 @@ Dinsdag 10 juni 12:00-13:00 uur
 - 12:20-12:40 Introductie en lancering ‘Synthetische data generatie tool’ + use case DUO (AA + DUO)
 - 12:40-13:00 Q&A publiek
 
-#### Doelgroep 
+#### Doelgroep
 Primair data scientists die tools kunnen gaan gebruiken, maar secundair ook minder technisch publiek (beleidsmedewerkers, uitvoeringsdeskundigen etc)
 
 #### Aanmelden
 Meld je aan via de website van <a href="https://aienalgoritmes.pleio.nl/events/view/cc0a0410-d537-422a-82a4-efd817273ec0/webinar-open-source-tools-voor-ai-validatie" target="_blank">Digitale Overheid</a>.
-
-{{< form1 >}}
 
 {{< accordion_item_close >}} -->
