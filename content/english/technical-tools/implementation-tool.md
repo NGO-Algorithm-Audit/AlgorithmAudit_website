@@ -4,14 +4,8 @@ title: AI Act Implementation Tool
 subtitle: >
   Dynamic questionnaires for identification and risk classification of AI
   systems and *high-impact algorithms*. Simplification of the key elements of
-  the AI system definition. The tool is developed open-source and can be used
+  the AI system definition. The tool is developed open source and can be used
   for free locally by your organisation.
-
-
-  Do you want to help developing or want to learn more how to implement the tool
-  within your organisation? Check
-  [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) or
-  reach out through [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/AI research.svg
 quick_navigation:
   title: Content overview

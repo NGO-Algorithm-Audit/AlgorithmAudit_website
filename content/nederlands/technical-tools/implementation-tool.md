@@ -5,11 +5,6 @@ subtitle: >
   Dynamische vragenlijsten voor identificatie en risicoclassificatie van AI-systemen en _impactvolle algoritmes_. 
   Vertaling van complexe juridische definities uit de AI-verordening naar begrijpbare taal. 
   De tool is open-source ontwikkeld en kan lokaal kosteloos binnen uw organisatie worden gebruikt.
-
-
-  Mee helpen ontwikkelen? Of wilt u meer informatie hoe de tool binnen uw organisatie gebruikt kan worden?
-  Check [Github](https://github.com/NGO-Algorithm-Audit/AlgorithmAudit_website) of benader ons via
-  [info@algorithmaudit.eu](mailto:info@algorithmaudit.eu).
 image: /images/svg-illustrations/AI research.svg
 quick_navigation:
   title: Inhoudsopgave
