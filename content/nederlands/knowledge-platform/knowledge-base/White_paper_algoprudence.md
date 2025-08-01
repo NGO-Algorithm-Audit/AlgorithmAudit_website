@@ -18,6 +18,8 @@ title: >-
   learning-algoritmes
 subtitle: ''
 image: /images/knowledge_base/NJB-cover.jpg
+search:
+  searchableText: njb
 ---
 
 Artikel in Nederlands Juristenblad 10 [https://www.njb.nl/magazines/njb-10-2024/](https://www.njb.nl/magazines/njb-10-2024/)
