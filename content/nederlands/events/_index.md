@@ -9,6 +9,8 @@ subtitle: >
   standards and non-profit project work.
 icon: fa-light fa-layer-group
 color: "#2559A2"
+search:
+  excludeFromSearch: true
 subpage_links:
   - title: Knowledge base
     titleline2: >-

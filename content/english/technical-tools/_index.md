@@ -7,6 +7,8 @@ subtitle: |
 icon: fa-light fa-toolbox
 color: '#FFFDE4'
 font_color: '#005AA7'
+search:
+  excludeFromSearch: true
 subpage_links:
   - title: Unsupervised bias detection tool
     titleline2: >-
