@@ -7,6 +7,8 @@ subtitle: >
 icon: fa-light fa-layer-group
 color: "#ffcbbd"
 font_color: '#005AA7'
+search:
+  excludeFromSearch: true
 subpage_links:
   - title: Casuïstiek
     titleline2: >-
