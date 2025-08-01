@@ -1,5 +1,5 @@
 import { RichTextTemplate } from "@tinacms/schema-tools/dist/types/index";
-let pdf_frame: RichTextTemplate = {
+let team: RichTextTemplate = {
   name: "team",
   label: "Team",
   match: {
@@ -8,17 +8,13 @@ let pdf_frame: RichTextTemplate = {
   },
   fields: [
     {
-      name: "id",
-      label: "ID",
+      name: "index",
+      label: "Index of the form entry",
       type: "string",
-    },
-    {
-      name: "title",
-      label: "DONT USE",
-      type: "string",
-      description: "Use top level template",
-      required: false,
+      description:
+        "0-based index of the form entry of the fields on the page (Team)",
+      required: true,
     },
   ],
 };
-export default pdf_frame;
+export default team;

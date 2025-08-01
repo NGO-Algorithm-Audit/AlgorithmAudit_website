@@ -2,23 +2,16 @@
 title: Algoprudence repository
 subtitle: "Stakeholders learn from our\_techno-ethical jurisprudence, can help to improve it and can use it as to resolve ethical issues in a harmonized manner.\n\nWe are open to new cases. Please <span style=\"color:#005aa7\">[submit</span>](/algoprudence/submit-a-case/) a case for review.\n\nOr read our <span style=\"color:#005aa7\">[white paper</span>](/knowledge-platform/knowledge-base/white_paper_algoprudence/) on algoprudence.\n"
 image: /images/svg-illustrations/case_repository.svg
-team:
-  title: Algoprudence team
-  team_members:
-    - image: /images/people/JFP.svg
-      name: Jurriaan
-      bio: |
-        test
 facet_groups:
   - value: year
     title: Year
     facets:
-      - value: '2024'
-        label: '2024'
-      - value: '2023'
-        label: '2023'
-      - value: '2022'
-        label: '2022'
+      - value: "2024"
+        label: "2024"
+      - value: "2023"
+        label: "2023"
+      - value: "2022"
+        label: "2022"
   - value: type_of_audit
     title: Type of audit
     facets:
@@ -86,9 +79,9 @@ algoprudences:
     link: /algoprudence/cases/aa202402_preventing-prejudice_addendum/
     facets:
       - value: AA202402
-        label: 'TA:AA:2024:02'
+        label: "TA:AA:2024:02"
       - value: year_2024
-        label: '2024'
+        label: "2024"
         hide: true
       - value: type_of_audit_technical
         label: technical audit
@@ -126,9 +119,9 @@ algoprudences:
     link: /algoprudence/cases/aa202401_preventing-prejudice/
     facets:
       - value: algoprudence
-        label: 'TA:AA:2024:01'
+        label: "TA:AA:2024:01"
       - value: year_2024
-        label: '2024'
+        label: "2024"
         hide: true
       - value: type_of_audit_technical
         label: technical audit
@@ -166,9 +159,9 @@ algoprudences:
       /algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination/
     facets:
       - value: aa202302
-        label: 'ALGO:AA:2023:02'
+        label: "ALGO:AA:2023:02"
       - value: year_2023
-        label: '2023'
+        label: "2023"
         hide: true
       - value: type_of_audit_normative
         label: normative review
@@ -213,9 +206,9 @@ algoprudences:
     link: /algoprudence/cases/aa202301_bert-based-disinformation-classifier
     facets:
       - value: aa_2023_01
-        label: 'ALGO:AA:2023:01'
+        label: "ALGO:AA:2023:01"
       - value: year_2023
-        label: '2023'
+        label: "2023"
         hide: true
       - value: type_of_audit_normative
         label: normative review
@@ -252,9 +245,9 @@ algoprudences:
     link: /algoprudence/cases/aa202201_type-of-sim
     facets:
       - value: AA-2022-01
-        label: 'ALGO:AA:2022:01'
+        label: "ALGO:AA:2022:01"
       - value: year_2022
-        label: '2022'
+        label: "2022"
         hide: true
       - value: type_of_audit_normative
         label: normative review
@@ -277,4 +270,3 @@ algoprudences:
         hide: true
 layout: repository
 ---
-

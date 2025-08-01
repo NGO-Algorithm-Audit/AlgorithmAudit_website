@@ -7,40 +7,40 @@ subtitle: >
   participate in discussions on the possibilities and limitations of technical and normative standards for responsible use of AI.
 image: /images/svg-illustrations/case_repository.svg
 team:
-  title: Team AI Act harmonised standards
-  icon: fas fa-user-friends
-  button_text: Other teams
-  id: team
-  button_link: /about/teams/
-  team_members:
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Director and board member, Algorithm Audit
-    - image: /images/people/YRemmits.jpg
-      name: Ylja Remmits
-      bio: |
-        Head of Projects, Algorithm Audit
+  - id: team
+    title: Team AI Act harmonised standards
+    icon: fas fa-user-friends
+    button_text: Other teams
+    button_link: /about/teams/
+    team_members:
+      - image: /images/people/JParie.jpg
+        name: Jurriaan Parie
+        bio: |
+          Director and board member, Algorithm Audit
+      - image: /images/people/YRemmits.jpg
+        name: Ylja Remmits
+        bio: |
+          Head of Projects, Algorithm Audit
 quick_navigation:
   title: Content overview
   links:
     - title: Introduction
-      url: '#standardization-request'
+      url: "#standardization-request"
     - title: AI Act harmonised standards
-      url: '#standards'
+      url: "#standards"
     - title: Contributions
-      url: '#contributions'
+      url: "#contributions"
     - title: Team
-      url: '#team'
+      url: "#team"
 ---
 
 {{< container_open icon="fas fa-check" title="AI Act standardization request" id="standardization-request" >}}
 
 In 2023, European standardization bodies CEN and CENELEC have accepted a standardization request on Artificial Intelligence from the European Commission. Joint Technical Committee 21 (JTC21) of CEN-CLC is currently developing European standards which, in the future, would be able to provide manufacturers the presumption of conformity with the upcoming AI Act. As a member of Dutch standardization body NEN, Algorithm Audit contributes to the European debate how fundamental rights should be co-regulated by product safety. We do this by participating in the following working groups of JTC21:
 
-* WG2 – Risk management systems
-* WG3 – Engineering aspects
-* WG4 – Trustworthiness framework.
+- WG2 – Risk management systems
+- WG3 – Engineering aspects
+- WG4 – Trustworthiness framework.
 
 During last JTC21's plenary meeting in Dublin 12-14 Feb in Dublin, Algorithm Audit presented below slides on Fundamental Rights Impact Assessments (FRIAs) and the need for inclusive, deliberative stakeholder panels to deploy responsible AI.
 
@@ -83,4 +83,4 @@ Selection of contributions to JTC21 of CEN-CENELEC.
 
 {{< container_close >}}
 
-{{< team id="team">}}
+{{< team index="0" >}}

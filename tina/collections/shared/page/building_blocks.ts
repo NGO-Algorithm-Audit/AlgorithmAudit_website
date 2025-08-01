@@ -24,10 +24,6 @@ import tab_content_close from "../templates/tab_content_close";
 import tab_content_open from "../templates/tab_content_open";
 import tab_header from "../templates/tab_header";
 import team from "../templates/team";
-import team1 from "../templates/team1";
-import team2 from "../templates/team2";
-import team3 from "../templates/team3";
-import team4 from "../templates/team4";
 import tooltip from "../templates/tooltip";
 import webapp from "../templates/webapp";
 import image from "./image";
@@ -71,10 +67,6 @@ const building_blocks: TinaField[] = [
       tab_content_close,
       tab_header,
       team,
-      team1,
-      team2,
-      team3,
-      team4,
       tooltip,
       webapp,
     ],
@@ -570,6 +562,12 @@ const building_blocks: TinaField[] = [
     type: "object",
     name: "team",
     label: "Team",
+    list: true,
+    ui: {
+      itemProps: (item) => {
+        return { label: item?.title };
+      },
+    },
     fields: [
       {
         name: "title",
@@ -646,286 +644,6 @@ const building_blocks: TinaField[] = [
     ],
   },
   overview_block,
-  {
-    type: "object",
-    name: "team1",
-    label: "Team #1",
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        name: "content",
-        label: "Content",
-        type: "string",
-        description: "",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "icon",
-        label: "Icon",
-        description:
-          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "button_text",
-        label: "Button text",
-        required: true,
-      },
-      {
-        type: "string",
-        name: "id",
-        label: "ID",
-        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "button_link",
-        label: "Button link",
-        required: true,
-      },
-      {
-        type: "object",
-        name: "team_members",
-        label: "Team members",
-        list: true,
-        ui: {
-          itemProps: (item) => {
-            return { label: item?.name };
-          },
-        },
-        fields: [
-          {
-            type: "image",
-            name: "image",
-            label: "image",
-            required: true,
-          },
-          {
-            type: "string",
-            name: "name",
-            label: "Name",
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "bio",
-            label: "Bio",
-            isBody: false,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "object",
-    name: "team2",
-    label: "Team #2",
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        name: "content",
-        label: "Content",
-        type: "string",
-        description: "",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "icon",
-        label: "Icon",
-        description:
-          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "id",
-        label: "ID",
-        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-        required: false,
-      },
-      {
-        type: "object",
-        name: "team_members",
-        label: "Team members",
-        list: true,
-        ui: {
-          itemProps: (item) => {
-            return { label: item?.name };
-          },
-        },
-        fields: [
-          {
-            type: "image",
-            name: "image",
-            label: "image",
-            required: true,
-          },
-          {
-            type: "string",
-            name: "name",
-            label: "Name",
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "bio",
-            label: "Bio",
-            isBody: false,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "object",
-    name: "team3",
-    label: "Team #3",
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        name: "content",
-        label: "Content",
-        type: "string",
-        description: "",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "icon",
-        label: "Icon",
-        description:
-          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "id",
-        label: "ID",
-        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-        required: false,
-      },
-      {
-        type: "object",
-        name: "team_members",
-        label: "Team members",
-        list: true,
-        ui: {
-          itemProps: (item) => {
-            return { label: item?.name };
-          },
-        },
-        fields: [
-          {
-            type: "image",
-            name: "image",
-            label: "image",
-            required: true,
-          },
-          {
-            type: "string",
-            name: "name",
-            label: "Name",
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "bio",
-            label: "Bio",
-            isBody: false,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "object",
-    name: "team4",
-    label: "Team #4",
-    fields: [
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        description: "",
-        required: true,
-      },
-      {
-        name: "content",
-        label: "Content",
-        type: "string",
-        description: "",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "icon",
-        label: "Icon",
-        description:
-          "From https://fontawesome.com/v5/search?m=free (e.g. fa fa-list for https://fontawesome.com/icons/list?f=classic&s=solid)",
-        required: false,
-      },
-      {
-        type: "string",
-        name: "id",
-        label: "ID",
-        description: "ID to refer to this block as algorithmaudit.eu/.../#ID",
-        required: false,
-      },
-      {
-        type: "object",
-        name: "team_members",
-        label: "Team members",
-        list: true,
-        ui: {
-          itemProps: (item) => {
-            return { label: item?.name };
-          },
-        },
-        fields: [
-          {
-            type: "image",
-            name: "image",
-            label: "image",
-            required: true,
-          },
-          {
-            type: "string",
-            name: "name",
-            label: "Name",
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "bio",
-            label: "Bio",
-            isBody: false,
-          },
-        ],
-      },
-    ],
-  },
 ];
 
 export default building_blocks;
