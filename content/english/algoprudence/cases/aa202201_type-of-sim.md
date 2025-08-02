@@ -4,36 +4,40 @@ title: Type of SIM card as a predictor for detecting payment fraud
 subtitle: |
   Probleem statement (ALGO:AA:2022:01:P) and advice document (ALGO:AA:2022:01:A)
 image: /images/algoprudence/AA202201/Cover.png
-form1:
-  title: React to this normative judgement
-  content: >-
-    Your reaction will be sent to the team maintaining algoprudence. A team will
-    review your response and, if it complies with the guidelines, it will be
-    placed in the Discussion & debate section above.
-  button_text: Submit
-  backend_link: 'https://formspree.io/f/xyyrjyzr'
-  id: case-reaction
-  questions:
-    - label: |
-        Name
-      id: name
-      required: true
-      type: text
-    - label: |
-        Affiliated organization
-      id: affiliated-organization
-      type: text
-    - label: |
-        Reaction
-      id: reaction
-      required: true
-      type: textarea
-    - label: |
-        Contact details
-      id: contact-details
-      required: true
-      type: text
-      placeholder: Mail address
+dynamic_form_engine:
+  - title: React to this normative judgement
+    content: >-
+      Your reaction will be sent to the team maintaining algoprudence. A team will
+      review your response and, if it complies with the guidelines, it will be
+      placed in the Discussion & debate section above.
+    id: case-reaction
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Name
+            identifier: name
+            required: true
+            type: text
+          - title: |
+              Affiliated organization
+            identifier: affiliated-organization
+            type: text
+          - title: |
+              Reaction
+            identifier: reaction
+            required: true
+            type: textarea
+          - title: |
+              Contact details
+            identifier: contact-details
+            required: true
+            type: text
+            placeholder: Mail address
+    complete_form_options:
+      type: submit
+      button_text: Submit
+      backend_link: "https://formspree.io/f/xyyrjyzr"
 ---
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Description of algoprudence" tab2_id="" tab2_title="" tab3_id="" tab3_title="" default_tab="description" >}}
@@ -58,11 +62,11 @@ Anonymized large multinational company with e-commerce platform.
 
 #### Normative advice commission
 
-* Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University
-* Jan Overgoor, PhD Management Science and Engineering, Stanford University
-* Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg University
-* Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft
+- Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University
+- Jan Overgoor, PhD Management Science and Engineering, Stanford University
+- Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg University
+- Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft
 
 {{< tab_content_close >}}
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}

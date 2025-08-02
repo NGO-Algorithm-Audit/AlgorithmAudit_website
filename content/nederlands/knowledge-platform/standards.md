@@ -1,5 +1,5 @@
 ---
-title: 'Standaarden voor AI-systemen'
+title: "Standaarden voor AI-systemen"
 subtitle: >
   Verantwoorde inzet van AI zal niet worden opgelost door technische standaarden
   alleen. Om te bepalen wat de 'verantwoorde inzet' inhoudt is collectieve
@@ -9,40 +9,40 @@ subtitle: >
   waarbij verschillende belanghebbende worden betrokken om AI vorm te geven.
 image: /images/svg-illustrations/case_repository.svg
 team:
-  title: Team AI-verordening geharmoniseerde normen
-  icon: fas fa-user-friends
-  button_text: Andere teams
-  id: team
-  button_link: /nl/about/teams/
-  team_members:
-    - image: /images/people/JParie.jpg
-      name: Jurriaan Parie
-      bio: |
-        Director and board member, Algorithm Audit
-    - image: /images/people/YRemmits.jpg
-      name: Ylja Remmits
-      bio: |
-        Head of Projects, Algorithm Audit
+  - id: team
+    title: Team AI-verordening geharmoniseerde normen
+    icon: fas fa-user-friends
+    button_text: Andere teams
+    button_link: /nl/about/teams/
+    team_members:
+      - image: /images/people/JParie.jpg
+        name: Jurriaan Parie
+        bio: |
+          Director and board member, Algorithm Audit
+      - image: /images/people/YRemmits.jpg
+        name: Ylja Remmits
+        bio: |
+          Head of Projects, Algorithm Audit
 quick_navigation:
   title: Inhoudsopgave
   links:
     - title: Introductie
-      url: '#standardization-request'
+      url: "#standardization-request"
     - title: AI-verordening geharmoniseerde normen
-      url: '#standards'
+      url: "#standards"
     - title: Bijdragen
-      url: '#contributions'
+      url: "#contributions"
     - title: Team
-      url: '#team'
+      url: "#team"
 ---
 
 {{< container_open icon="fas fa-check" title="AI-verordening geharmoniseerde normen" id="standardization-request" >}}
 
-In 2023 hebben de Europese standaardiseringsorganisaties CEN en CENELEC het verzoek van de Europese Commissie geaccepteerd om standaarden te ontwikkelen voor Artificiële Intelligentie (AI). Joint Technical Committee 21 (JTC21) van CEN-CENELEC is momenteel bezig Europese standaarden voor AI te ontwikkelen, zoals standaarden voor risicomanagement, datakwaliteit en procedurele standaarden voor het testen van vooringenomenheid. Als  AI-ontwikkelaars en -gebruikers zich aan deze standaarden houden wordt naleving van de aanstaande AI Verordening verondersteld. Maar zo ver is het nog niet. Het ontwikkelen van standaarden is momenteel volop aan de gang. Als lid van het Nederlands Normaliseringsinstituut (NEN) draagt Algorithm Audit bij aan het Europese debat over de vorm deze AI standaarden aannemen, en in hoeverre technische standaarden ontwikkeld kunnen worden voor aan fundamentele rechten rakende standaarden, zoals non-discriminatie, menselijke tussenkomst en uitlegbaarheid van algoritme-gedreven besluitvorming. Dit doen wij door deel te nemen aan de volgende werkgroepen:
+In 2023 hebben de Europese standaardiseringsorganisaties CEN en CENELEC het verzoek van de Europese Commissie geaccepteerd om standaarden te ontwikkelen voor Artificiële Intelligentie (AI). Joint Technical Committee 21 (JTC21) van CEN-CENELEC is momenteel bezig Europese standaarden voor AI te ontwikkelen, zoals standaarden voor risicomanagement, datakwaliteit en procedurele standaarden voor het testen van vooringenomenheid. Als AI-ontwikkelaars en -gebruikers zich aan deze standaarden houden wordt naleving van de aanstaande AI Verordening verondersteld. Maar zo ver is het nog niet. Het ontwikkelen van standaarden is momenteel volop aan de gang. Als lid van het Nederlands Normaliseringsinstituut (NEN) draagt Algorithm Audit bij aan het Europese debat over de vorm deze AI standaarden aannemen, en in hoeverre technische standaarden ontwikkeld kunnen worden voor aan fundamentele rechten rakende standaarden, zoals non-discriminatie, menselijke tussenkomst en uitlegbaarheid van algoritme-gedreven besluitvorming. Dit doen wij door deel te nemen aan de volgende werkgroepen:
 
-* WG2 – Risicomanagement (risk management systems)
-* WG3 – Technische aspects (engineering aspects)
-* WG4 – Verantwoorde AI (trustworthy AI).
+- WG2 – Risicomanagement (risk management systems)
+- WG3 – Technische aspects (engineering aspects)
+- WG4 – Verantwoorde AI (trustworthy AI).
 
 Tijdens de laatste plenaire bijeenkomst van JTC21 in Dublin 12-14 februari presenteerde Algorithm Audit onderaan bijgevoegde slides over Fundamentele Rechten Impact Assessments (FRIAs) voor AI en de noodzaak voor inclusieve, deliberatieve adviescommissies om verantwoorde AI in te zetten.
 
@@ -85,4 +85,4 @@ Selectie van bijdragen aan normcommissie JTC21 van CEN-CENELEC.
 
 {{< container_close >}}
 
-{{< team id="team">}}
+{{< team index="0" >}}

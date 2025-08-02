@@ -1,10 +1,9 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-
+{{$param := int (.Get "index")}}
+{{ with index .Page.Params.team $param }}
 <!-- desktop version -->
 <div class="container-fluid mt-5 desktop p-0">
-  <div class="shadow mobile-desktop-container-layout border-bottom-gradient rounded-lg" id={{.Get "id" }}>
-    
-    {{ with .Page.Params.team}}
+  <div class="shadow mobile-desktop-container-layout border-bottom-gradient rounded-lg" id={{.id }}>
 
     {{ if .icon }}
     <!-- Title and icon -->
@@ -41,12 +40,13 @@
     </div>
 
     <!-- button -->
+    {{ if .button_text }}
     <div class="row mt-4 pb-3 justify-content-center d-flex">
     <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
     </div>
-
     {{ end }}
 
   </div>
 </div>
+{{ end }}
 <!-- /desktop version -->

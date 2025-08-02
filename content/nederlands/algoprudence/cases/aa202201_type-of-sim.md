@@ -4,37 +4,41 @@ title: Type simkaart als voorspeller voor betalingsfraude
 subtitle: |
   Probleemstelling (ALGO:AA:2022:01:P) en adviesdocument (ALGO:AA:2022:01:A)
 image: /images/algoprudence/AA202201/Cover.png
-form1:
-  title: Reageer op dit normatieve oordeel
-  content: >-
-    Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie
-    en, indien het verenigbaar is met Algorithm Audit's richtlijnen voor
-    publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
-    sectie.
-  button_text: Verstuur
-  backend_link: 'https://formspree.io/f/xyyrjyzr'
-  id: case-reaction
-  questions:
-    - label: |
-        Naam
-      id: name
-      required: true
-      type: text
-    - label: |
-        Affiliated organization
-      id: affiliated-organization
-      type: text
-    - label: |
-        Reactie
-      id: reaction
-      required: true
-      type: textarea
-    - label: |
-        Contactgegevens
-      id: contact-details
-      required: true
-      type: email
-      placeholder: Emailadres
+dynamic_form_engine:
+  - title: Reageer op dit normatieve oordeel
+    content: >-
+      Uw reactie wordt verstuurd naar het auditing team. Het team leest de reactie
+      en, indien het verenigbaar is met Algorithm Audit's richtlijnen voor
+      publicatie, wordt de reactie geplaatst in bovenstaande Discussie & debat
+      sectie.
+    id: case-reaction
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Naam
+            identifier: name
+            required: true
+            type: text
+          - title: |
+              Affiliated organization
+            identifier: affiliated-organization
+            type: text
+          - title: |
+              Reactie
+            identifier: reaction
+            required: true
+            type: textarea
+          - title: |
+              Contactgegevens
+            identifier: contact-details
+            required: true
+            type: email
+            placeholder: Emailadres
+    complete_form_options:
+      type: submit
+      button_text: Verstuur
+      backend_link: "https://formspree.io/f/xyyrjyzr"
 ---
 
 {{< tab_header width="6" tab1_id="description" tab1_title="Beschrijving algoprudentie" tab2_id="" tab2_title="" tab3_id="" tab3_title="" default_tab="description" >}}
@@ -59,11 +63,11 @@ Geanonimiseerde multinational met e-commerce platform.
 
 #### Normatieve adviescommissie
 
-* Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University
-* Jan Overgoor, PhD Management Science and Engineering, Stanford University
-* Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg University
-* Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft
+- Fleur Jongepier, Assistant Professor Digital Ethics, Radboud University
+- Jan Overgoor, PhD Management Science and Engineering, Stanford University
+- Merel Noorman, Assistant Professor Law, Technology and Society, Tilburg University
+- Roel Dobbe, Assistant Professor Engineering Systems and Services, TU Delft
 
 {{< tab_content_close >}}
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}

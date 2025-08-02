@@ -7,7 +7,7 @@
     <!-- Title and icon -->
     <h3 class="">
       <span class="{{.icon}} icon mb-4 pl-5 remove-on-pdf"></span>
-      {{.title}}
+      {{.title | markdownify}}
     </h3>
 
     <div class="row mt-4">
@@ -20,7 +20,7 @@
     <form action="{{ .complete_form_options.backend_link | safeURL }}" method="POST" enctype="multipart/form-data">
       <p class="color-blue text-right mb-0" style="font-size:14px;">* {{ i18n "required"}}</p>
       {{ range .section }}
-      <h3>{{.title}}</h3>
+      <h3>{{.title | markdownify}}</h3>
 
       {{ range .questions }}
       {{ $input := . }}
@@ -44,7 +44,7 @@
       <div class="score-card__question" {{if $visibilityCondition}}data-show-when="{{$visibilityCondition}}" {{end}}
         {{if .isOutput }} data-is-output="true" {{end}}>
         <h4>
-          <div class="csv-title d-inline">{{ .title }}</div>
+          <div class="csv-title d-inline">{{ .title | markdownify }}</div>
           {{if .required}}*{{end}}
           {{ if .tooltip }}
           <button class="remove-on-pdf information-button mt-0" data-toggle="tooltip" data-placement="right"

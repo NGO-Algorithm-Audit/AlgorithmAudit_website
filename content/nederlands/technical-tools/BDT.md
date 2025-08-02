@@ -39,31 +39,32 @@ promo_bar:
     iframe: >-
       https://ghbtns.com/github-btn.html?user=NGO-Algorithm-Audit&repo=unsupervised-bias-detection&type=star&count=true
 team:
-  title: Team
-  icon: fas fa-user-friends
-  button_text: Andere teams
-  button_link: /nl/about/teams/
-  team_members:
-    - image: /images/people/FHolstege.jpeg
-      name: Floris Holstege
-      bio: |
-        PhD-kandidaat Machine Learning, Universiteit van Amsterdam
-    - image: /images/people/JPersson.jpeg
-      name: Joel Persson PhD
-      bio: |
-        R\&D, Spotify
-    - image: /images/people/KPadh.jpeg
-      name: Kirtan Padh
-      bio: |
-        PhD-kandidaat Causal Inference and Machine Learning, TU München
-    - image: /images/people/KProrokovic.jpeg
-      name: Krsto Proroković
-      bio: |
-        PhD-kandidaat, Swiss AI Lab IDSIA
-    - image: /images/people/MJorgensen.jpeg
-      name: Mackenzie Jorgensen PhD
-      bio: |
-        Onderzoeker Alan Turing Institute, Londen
+  - id: team
+    title: Team
+    icon: fas fa-user-friends
+    button_text: Andere teams
+    button_link: /nl/about/teams/
+    team_members:
+      - image: /images/people/FHolstege.jpeg
+        name: Floris Holstege
+        bio: |
+          PhD-kandidaat Machine Learning, Universiteit van Amsterdam
+      - image: /images/people/JPersson.jpeg
+        name: Joel Persson PhD
+        bio: |
+          R\&D, Spotify
+      - image: /images/people/KPadh.jpeg
+        name: Kirtan Padh
+        bio: |
+          PhD-kandidaat Causal Inference and Machine Learning, TU München
+      - image: /images/people/KProrokovic.jpeg
+        name: Krsto Proroković
+        bio: |
+          PhD-kandidaat, Swiss AI Lab IDSIA
+      - image: /images/people/MJorgensen.jpeg
+        name: Mackenzie Jorgensen PhD
+        bio: |
+          Onderzoeker Alan Turing Institute, Londen
 ---
 
 <!-- Promobar -->
@@ -149,7 +150,7 @@ De unsupervised bias detectie tool voert de volgende stappen uit:
 
 <span style="color:#005AA7">Stap 4. Hierarchisch Bias-Aware Clustering (HBAC):</span> Het HBAC-algoritme (hieronder toegelicht) wordt toegepast op de train dataset. De centra van de gevonden clusters worden opgeslagen en later gebruikt om clusterlabels toe te wijzen aan datapunten in de test dataset.
 
-<span style="color:#005AA7">Stap 5. Toetsen van verschillen tussen clusters mbt. bias variabele:</span> Statistische hypothesetoets wordt uitgevoerd om te bepalen of de bias variabele significant verschilt in het meest afwijkende cluster ten opzichte van de rest van de dataset. Hiervoor wordt een eenzijdige Z-toets gebruikt om de gemiddelden van de bias variabelen te vergelijken middels de volgende hypothesetoets: 
+<span style="color:#005AA7">Stap 5. Toetsen van verschillen tussen clusters mbt. bias variabele:</span> Statistische hypothesetoets wordt uitgevoerd om te bepalen of de bias variabele significant verschilt in het meest afwijkende cluster ten opzichte van de rest van de dataset. Hiervoor wordt een eenzijdige Z-toets gebruikt om de gemiddelden van de bias variabelen te vergelijken middels de volgende hypothesetoets:
 
 ```
 H_0: geen verschil in bias variable tussen het meest afwijkende cluster en de rest van de dataset
@@ -306,4 +307,4 @@ Belangrijkste punten over de unsupervised bias detectie tool:
 
 <!-- Team -->
 
-{{< team id="team">}}
+{{< team index="0">}}

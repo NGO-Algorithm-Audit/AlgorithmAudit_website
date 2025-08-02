@@ -5,23 +5,24 @@ subtitle: >
   Tool voor het genereren van synthetische data. De tool genereert automatisch een evaluatierapport om de kwaliteit van de gegenereerde data te beoordelen. Alle data worden lokaal verwerkt zonder gebruik te maken van cloud-toepassingen.
 image: /images/svg-illustrations/local-only.svg
 team:
-  title: Synthetische data generatioe team
-  icon: fas fa-user-friends
-  button_text: Andere teams
-  button_link: /about/teams/
-  team_members:
-    - image: /images/people/EMenvouta.jpeg
-      name: Emmanuel Menvouta PhD
-      bio: |
-        Freelance machine learning engineer, gespecialiseerd in SDG methodologie
-    - image: /images/people/MLisdonk.png
-      name: Maikel van de Lisdonk
-      bio: |
-        Freelance software developer
-    - image: /images/people/RLangius.jpg
-      name: Ruben Langius
-      bio: |
-        Freelance software developer
+  - id: team
+    title: Synthetische data generatioe team
+    icon: fas fa-user-friends
+    button_text: Andere teams
+    button_link: /about/teams/
+    team_members:
+      - image: /images/people/EMenvouta.jpeg
+        name: Emmanuel Menvouta PhD
+        bio: |
+          Freelance machine learning engineer, gespecialiseerd in SDG methodologie
+      - image: /images/people/MLisdonk.png
+        name: Maikel van de Lisdonk
+        bio: |
+          Freelance software developer
+      - image: /images/people/RLangius.jpg
+        name: Ruben Langius
+        bio: |
+          Freelance software developer
 quick_navigation:
   title: Inhoudsopgave
   links:
@@ -326,4 +327,4 @@ In 2024 ondersteunde het SIDN Fonds <a href="https://www.sidnfonds.nl/projecten/
 
 <!-- Team -->
 
-{{< team id="team" >}}
+{{< team index="0" >}}

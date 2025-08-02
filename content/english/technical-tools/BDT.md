@@ -9,26 +9,26 @@ quick_navigation:
   title: Content overview
   links:
     - title: Introduction
-      url: '#info'
+      url: "#info"
     - title: Technical introduction
-      url: '#technical-introduction'
+      url: "#technical-introduction"
       indent: 1
     - title: Tool
-      url: '#web-app'
+      url: "#web-app"
     - title: Source code
-      url: '#source-code'
+      url: "#source-code"
     - title: Scientific paper and audit report
-      url: '#scientific-paper'
+      url: "#scientific-paper"
     - title: Local-only architecture
-      url: '#local-only'
+      url: "#local-only"
     - title: Supported by
-      url: '#supported-by'
+      url: "#supported-by"
     - title: Awards and acknowledgements
-      url: '#awards-acknowledgements'
+      url: "#awards-acknowledgements"
     - title: Summary
-      url: '#summary'
+      url: "#summary"
     - title: Team
-      url: '#team'
+      url: "#team"
 promo_bar:
   - content: "**\U0001F44B Do you also want to start using the tool locally? It's easier than you think! Get in [contact](/about/contact/) to learn more.**\n"
     id: promo-contact
@@ -39,31 +39,32 @@ promo_bar:
     iframe: >-
       https://ghbtns.com/github-btn.html?user=NGO-Algorithm-Audit&repo=unsupervised-bias-detection&type=star&count=true
 team:
-  title: Team
-  icon: fas fa-user-friends
-  button_text: Other teams
-  button_link: /about/teams/
-  team_members:
-    - image: /images/people/FHolstege.jpeg
-      name: Floris Holstege
-      bio: |
-        PhD-candidate Machine Learning, University of Amsterdam
-    - image: /images/people/JPersson.jpeg
-      name: Joel Persson PhD
-      bio: |
-        Research Scientist, Spotify
-    - image: /images/people/KPadh.jpeg
-      name: Kirtan Padh
-      bio: |
-        PhD-candidate Causal Inference and Machine Learning, TU München
-    - image: /images/people/KProrokovic.jpeg
-      name: Krsto Proroković
-      bio: |
-        Freelance software developer and AI researcher
-    - image: /images/people/MJorgensen.jpeg
-      name: Mackenzie Jorgensen PhD
-      bio: |
-        Researcher Alan Turing Institute, London
+  - id: team
+    title: Team
+    icon: fas fa-user-friends
+    button_text: Other teams
+    button_link: /about/teams/
+    team_members:
+      - image: /images/people/FHolstege.jpeg
+        name: Floris Holstege
+        bio: |
+          PhD-candidate Machine Learning, University of Amsterdam
+      - image: /images/people/JPersson.jpeg
+        name: Joel Persson PhD
+        bio: |
+          Research Scientist, Spotify
+      - image: /images/people/KPadh.jpeg
+        name: Kirtan Padh
+        bio: |
+          PhD-candidate Causal Inference and Machine Learning, TU München
+      - image: /images/people/KProrokovic.jpeg
+        name: Krsto Proroković
+        bio: |
+          Freelance software developer and AI researcher
+      - image: /images/people/MJorgensen.jpeg
+        name: Mackenzie Jorgensen PhD
+        bio: |
+          Researcher Alan Turing Institute, London
 ---
 
 <!-- Promobar -->
@@ -78,7 +79,7 @@ team:
 
 #### What does the tool do?
 
-The tool helps find groups where an AI system or algorithm performs differently, which could indicate unfair treatment. This type of monitoring is called *anomaly detection*. It detects deviations using a technique called <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>, which groups similar data points together (in clusters). The tool doesn’t need information like gender, nationality, or ethnicity to find deviations. Instead, it uses an `bias variable` to measure deviations in the performace of the system, which you can choose based on your data.
+The tool helps find groups where an AI system or algorithm performs differently, which could indicate unfair treatment. This type of monitoring is called _anomaly detection_. It detects deviations using a technique called <a href="https://en.wikipedia.org/wiki/Cluster_analysis" target="_blank">clustering</a>, which groups similar data points together (in clusters). The tool doesn’t need information like gender, nationality, or ethnicity to find deviations. Instead, it uses an `bias variable` to measure deviations in the performace of the system, which you can choose based on your data.
 
 #### What results does it give?
 
@@ -133,15 +134,15 @@ The unsupervised bias detection tool performs a series of steps:
 
 <span style="color:#005AA7">Step 1. Data:</span> the user shoulds prepare the following aspects relating to the processed data:
 
-* <span style="color:#005AA7">Dataset:</span> The data must be provided in a tabular format. Any missing values should be removed or replaced.
-* <span style="color:#005AA7">Type of data:</span> All columns, except the bias variable column, should have uniform data types, e.g., either all numerical or all categorical. The user selects whether numerical of categorical data are processed.
-* <span style="color:#005AA7">Bias variable:</span> A column should be selected from the dataset to serve as the `bias variable`, which needs to be categorical. In step 4, clustering will be performed based on these categorical values. Examples include metrics such as "being classified as high risk", "error rate" or "selected for an investigation".
+- <span style="color:#005AA7">Dataset:</span> The data must be provided in a tabular format. Any missing values should be removed or replaced.
+- <span style="color:#005AA7">Type of data:</span> All columns, except the bias variable column, should have uniform data types, e.g., either all numerical or all categorical. The user selects whether numerical of categorical data are processed.
+- <span style="color:#005AA7">Bias variable:</span> A column should be selected from the dataset to serve as the `bias variable`, which needs to be categorical. In step 4, clustering will be performed based on these categorical values. Examples include metrics such as "being classified as high risk", "error rate" or "selected for an investigation".
 
 <span style="color:#005AA7">Step 2. Hyperparameters:</span> the user shoulds set the following hyperparameters:
 
-* <span style="color:#005AA7">Iterations:</span> How often the data are allowed to be split in smaller clusters, by default 3 iterations are selected.
-* <span style="color:#005AA7">Minimal cluster size:</span> How many datapoints the identified clusters may contain, by deafault set to 1% of the number of rows in the attached dataset. More guidance on well-informed choice of the minimal cluster size can be found in section 3.3 of our [scientific paper](/technical-tools/bdt/#scientific-paper).
-* <span style="color:#005AA7">Bias variable interpretation:</span> How the bias variable should be interpreted. For instance, when error rate or misclassifications are chosen as the bias variable, a lower value is preferred, as the goal is to minimize errors. Conversely, when accuracy or precision is selected as the bias variable, a higher value is preferred, reflecting the aim to maximize performance.
+- <span style="color:#005AA7">Iterations:</span> How often the data are allowed to be split in smaller clusters, by default 3 iterations are selected.
+- <span style="color:#005AA7">Minimal cluster size:</span> How many datapoints the identified clusters may contain, by deafault set to 1% of the number of rows in the attached dataset. More guidance on well-informed choice of the minimal cluster size can be found in section 3.3 of our [scientific paper](/technical-tools/bdt/#scientific-paper).
+- <span style="color:#005AA7">Bias variable interpretation:</span> How the bias variable should be interpreted. For instance, when error rate or misclassifications are chosen as the bias variable, a lower value is preferred, as the goal is to minimize errors. Conversely, when accuracy or precision is selected as the bias variable, a higher value is preferred, reflecting the aim to maximize performance.
 
 ##### Performed by the tool:
 
@@ -166,7 +167,7 @@ A schematic overview of the above steps is depicted below.
 
 #### How does the clustering algorithm work?
 
-The *Hierarchical Bias-Aware Clustering* (HBAC) algorithm identifies clusters in the provided dataset based on a user-defined `bias variable`. The objective is to find clusters with low variation in the bias variable within each cluster. Variation in the bias variable between clusters should be high. HBAC iteratively finds clusters in the data using k-means (for numerical data) or k-modes clustering (for categorical data). For the initial split, HBAC takes the full dataset and splits it in two clusters. Cluster `C` – with the highest standard deviation of the bias variable – is selected. Then, cluster `C` is divided into two candidate clusters `C'` and `C''`'. If the average bias variable in either candidate cluster exceed the the average bias variable in `C`, the candidate cluster with highest bias variable is selected as a new cluster. This process repeats until the maximum number of iterations (`max_iterations`) is reached or the resulting cluster fails to meet the minimum size requirement (`n_min`). The pseudo-code of the HBAC algorithm is provided below.
+The _Hierarchical Bias-Aware Clustering_ (HBAC) algorithm identifies clusters in the provided dataset based on a user-defined `bias variable`. The objective is to find clusters with low variation in the bias variable within each cluster. Variation in the bias variable between clusters should be high. HBAC iteratively finds clusters in the data using k-means (for numerical data) or k-modes clustering (for categorical data). For the initial split, HBAC takes the full dataset and splits it in two clusters. Cluster `C` – with the highest standard deviation of the bias variable – is selected. Then, cluster `C` is divided into two candidate clusters `C'` and `C''`'. If the average bias variable in either candidate cluster exceed the the average bias variable in `C`, the candidate cluster with highest bias variable is selected as a new cluster. This process repeats until the maximum number of iterations (`max_iterations`) is reached or the resulting cluster fails to meet the minimum size requirement (`n_min`). The pseudo-code of the HBAC algorithm is provided below.
 
 <div style="display: flex; justify-content: center;">
   <img src="/images/BDT/pseudo_code_HBAC.png" alt="drawing" width="800px"/>
@@ -192,8 +193,8 @@ The HBAC algorithm maximizes the difference in bias variable between clusters. T
 
 {{< container_open title="Source code" id="source-code" icon="fas fa-toolbox" >}}
 
-* The source code of unsupervised bias detection using the HBAC algorithm is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`.
-* The architecture to run local-only web apps is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
+- The source code of unsupervised bias detection using the HBAC algorithm is available on <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection" target="_blank">Github</a> and as a <a href="https://pypi.org/project/unsupervised-bias-detection/" target="_blank">pip package</a>: `pip install unsupervised-bias-detection`.
+- The architecture to run local-only web apps is also available on <a href="https://github.com/NGO-Algorithm-Audit/local-only-web-tool" target="_blank">Github</a>.
 
 {{< container_close >}}
 
@@ -293,15 +294,15 @@ The unsupervised bias detection tool is part of OECD's <a href="https://oecd.ai/
 
 Key take-aways about unsupervised bias detection tool:
 
-* <span style="color:#005AA7">Quantitative-qualitative research method</span>: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
-* <span style="color:#005AA7">Unsupervised bias detection</span>: No data needed on protected attributes, e.g., gender or ethnicity (*unsupervised learning*);
-* <span style="color:#005AA7">Anolamy detection</span>: Scalable method based on statistical analysis;
-* <span style="color:#005AA7">Detects complex bias</span>: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
-* <span style="color:#005AA7">Model-agnostic</span>: Works for all algorithms and AI systems;
-* <span style="color:#005AA7">Open-source and not-for-profit</span>: User friendly and free to use for the entire AI auditing community.
+- <span style="color:#005AA7">Quantitative-qualitative research method</span>: Data-driven bias testing combined with the balanced and context-sensitive judgment of human experts;
+- <span style="color:#005AA7">Unsupervised bias detection</span>: No data needed on protected attributes, e.g., gender or ethnicity (_unsupervised learning_);
+- <span style="color:#005AA7">Anolamy detection</span>: Scalable method based on statistical analysis;
+- <span style="color:#005AA7">Detects complex bias</span>: Identifies unfairly treated groups characterized by mixture of features, detects intersectional bias;
+- <span style="color:#005AA7">Model-agnostic</span>: Works for all algorithms and AI systems;
+- <span style="color:#005AA7">Open-source and not-for-profit</span>: User friendly and free to use for the entire AI auditing community.
 
 {{< container_close >}}
 
 <!-- Team -->
 
-{{< team id="team" >}}
+{{< team index="0" >}}

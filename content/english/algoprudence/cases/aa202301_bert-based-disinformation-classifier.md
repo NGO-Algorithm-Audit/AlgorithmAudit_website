@@ -38,12 +38,12 @@ A visual presentation of this case study can be found in this [slide deck](http
 
 #### Normative advice commission
 
-* Anne Meuwese, Professor in Public Law & AI at Leiden University
-* Hinda Haned, Professor in Responsible Data Science at University of Amsterdam
-* Raphaële Xenidis, Associate Professor in EU law at Sciences Po Paris
-* Aileen Nielsen, Fellow Law\&Tech at ETH Zürich
-* Carlos Hernández-Echevarría, Assistant Director and Head of Public Policy at the anti-disinformation nonprofit fact-checker [Maldita.es](https://maldita.es/maldita-es-journalism-to-not-be-fooled/)
-* Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank [Demos](https://demos.co.uk/)
+- Anne Meuwese, Professor in Public Law & AI at Leiden University
+- Hinda Haned, Professor in Responsible Data Science at University of Amsterdam
+- Raphaële Xenidis, Associate Professor in EU law at Sciences Po Paris
+- Aileen Nielsen, Fellow Law\&Tech at ETH Zürich
+- Carlos Hernández-Echevarría, Assistant Director and Head of Public Policy at the anti-disinformation nonprofit fact-checker [Maldita.es](https://maldita.es/maldita-es-journalism-to-not-be-fooled/)
+- Ellen Judson, Head of CASM and Sophia Knight, Researcher, CASM at Britain’s leading cross-party think tank [Demos](https://demos.co.uk/)
 
 {{< tab_content_close >}}
 
@@ -70,5 +70,3 @@ Our [unsupervised bias detection tool](/technical-tools/bdt/) and this case st
 {{< accordions_area_close >}}
 
 {{< tab_content_close >}}
-
-{{< form1 >}}

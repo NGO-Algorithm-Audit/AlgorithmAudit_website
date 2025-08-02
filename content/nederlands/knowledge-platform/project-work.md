@@ -8,64 +8,68 @@ subtitle: >
 image: /images/svg-illustrations/knowledge_base.svg
 search:
   searchableText: Amsterdam
-form1:
-  title: Kom in contact om samenwerking te bespreken
-  content: >-
-    Uw bericht wordt verstuurd naar Algorithm Audit’s auditing team. Het team
-    stuurt binnen afzienbare tijd een reactie.
-  button_text: Verstuur
-  backend_link: 'https://formspree.io/f/mrgrwnyo'
-  id: form
-  questions:
-    - label: |
-        Naam
-      id: name
-      required: true
-      type: textarea
-    - label: |
-        Contactgegevens
-      id: contact-details
-      required: true
-      type: text
-      placeholder: Emailadres
-    - label: |
-        Bericht
-      id: message
-      required: true
-      type: textarea
+dynamic_form_engine:
+  - title: Kom in contact om samenwerking te bespreken
+    content: >-
+      Uw bericht wordt verstuurd naar Algorithm Audit’s auditing team. Het team
+      stuurt binnen afzienbare tijd een reactie.
+    id: form
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Naam
+            identifier: name
+            required: true
+            type: textarea
+          - title: |
+              Contactgegevens
+            identifier: contact-details
+            required: true
+            type: text
+            placeholder: Emailadres
+          - title: |
+              Bericht
+            identifier: message
+            required: true
+            type: textarea
+    complete_form_options:
+      type: submit
+      button_text: Verstuur
+      backend_link: "https://formspree.io/f/mrgrwnyo"
 quick_navigation:
   title: Inhoudsopgave
   links:
     - title: 2025
-      url: '#LLM-validation'
+      url: "#LLM-validation"
     - title: LLM validatie – Rechtspraak
-      url: '#LLM-validation'
+      url: "#LLM-validation"
       indent: 1
     - title: Discriminatie beoordelingsprotocol – Raad van Europa
-      url: '#assessment-protocol'
+      url: "#assessment-protocol"
       indent: 1
     - title: Biasanalyse – Municipality of Utrecht
-      url: '#utrecht'
+      url: "#utrecht"
       indent: 1
     - title: Onderzoeksondersteuning – Rekenkamer Deventer
-      url: '#deventer'
+      url: "#deventer"
       indent: 1
     - title: Kennispartner – DUO
-      url: '#DUO2'
+      url: "#DUO2"
       indent: 1
     - title: eLearning – Raad van Europa
-      url: '#elearning'
+      url: "#elearning"
       indent: 1
     - title: 2024
-      url: '#amsterdam'
+      url: "#amsterdam"
     - title: AI-verordening implementatie – Gemeente Amsterdam
-      url: '#amsterdam'
+      url: "#amsterdam"
       indent: 1
     - title: Biasanalyse – DUO
-      url: '#DUO1'
+      url: "#DUO1"
       indent: 1
     - title: Bespreek samenwerking
-      url: '#form'
+      url: "#form"
 ---
 
 # 2025
@@ -82,8 +86,6 @@ Van Q3-2025 tot en met Q1-2026 neemt Algorithm Audit deel aan een consortium met
 
 {{< container_close >}}
 
-
-
 <!-- CoE Assessment protocol -->
 
 {{< container_open title="Discriminatie beoordelingsprotocol – Raad van Europa" id="assessment-protocol" icon="fas fa-scroll" >}}
@@ -93,8 +95,6 @@ Van Q3-2025 tot en met Q4-2025 ondersteunt Algorithm Audit de Raad van Europa (R
 {{< image image1="/images/partner logo-cropped/CoE_EU.jpg" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="6" >}}
 
 {{< container_close >}}
-
-
 
 <!-- Gemeente Utrecht -->
 
@@ -106,9 +106,7 @@ In Q2-2025 en Q3-2025 ondersteunt Algorithm Audit de Gemeente Utrecht bij het ui
 
 {{< image id="logo-gemeente-utrecht" width_desktop="2" width_mobile="12" image1="/images/partner logo-cropped/GemeenteUtrecht.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 
-{{< container_close >}} 
-
-
+{{< container_close >}}
 
 <!-- Rekenkamer Deventer -->
 
@@ -118,9 +116,7 @@ Van Q2-2025 tot en met Q3-2025 ondersteunt Algorithm Audit de Rekenkamer Devente
 
 {{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 
-{{< container_close >}} 
-
-
+{{< container_close >}}
 
 <!-- DUO Kennispartner -->
 
@@ -130,9 +126,7 @@ In 2025 werkt Algorithm Audit samen met de Dienst Uitvoering Onderwijs (DUO) aan
 
 {{< image id="DUO" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
 
-{{< container_close >}} 
-
-
+{{< container_close >}}
 
 <!-- CoE eLearning -->
 
@@ -147,7 +141,6 @@ Van Q3-2024 tot en met Q1-2025 ondersteunde Algorithm Audit de Raad van Europa (
 
 # 2024
 
-
 <!-- Gemeente Amsterdam -->
 
 {{< container_open title="AI-verordening implementatie – Gemeente Amsterdam" id="amsterdam" icon="fas fa-list-ol" >}}
@@ -157,8 +150,6 @@ Van Q3-2024 tot en met Q1-2025 werkte Algorithm Audit samen met de Gemeente Amst
 {{< image image1="/images/partner logo-cropped/GemeenteAmsterdam.png" alt1="Municipality of Amsterdam" caption1="Municipality of Amsterdam" link1="" width_desktop="2" id="amsterdam-logo" >}}
 
 {{< container_close >}}
-
-
 
 <!-- DUO CUB -->
 
@@ -173,4 +164,4 @@ Van Q3-2023 tot en met Q2-2024 ondersteunde Algorithm Audit de Dienst Uitvoering
 
 {{< container_close >}}
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}

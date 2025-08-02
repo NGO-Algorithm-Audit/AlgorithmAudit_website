@@ -6,89 +6,100 @@ subtitle: >
   geaudit wilt hebben. Of dien een zorgvuldig gedocumenteerd normatief oordeel
   in dat u in onze case repository gepubliceerd wilt hebben.
 image: /images/svg-illustrations/case_repository.svg
-form1:
-  title: Informatie over de case
-  button_text: Verstuur
-  backend_link: "https://formspree.io/f/xzbnrlan"
-  id: submit-a-case
-  questions:
-    - label: |
-        Naam algoritme
-      id: name
-      required: true
-      type: text
-    - label: |
-        Korte beschrijving van algoritme (max. 200 woorden)
-      id: description
-      required: true
-      type: textarea
-    - label: >
-        Technische aspecten – Beschrijving van o.a. verzamelde data, gehanteerde
-        statistische methode en gebruikte evaluatie criteria
-      id: technical
-      type: textarea
-    - label: >
-        Juridisch kader – Relevante wet- en regelgeving, beschrijving van open
-        juridische normen, bijvoorbeeld in de Algemene Verordening
-        Gegevensbescherming (AVG) of de Algemene Wet Gelijke Behandeling (AWGB)
-      id: legal-framework
-      type: textarea
-    - label: >
-        Ethische aspecten – Beschrijving van geïdentificeerd ethische kwesties
-        gegeven de technische en juridische achtergrond
-      id: ethical-issues
-      required: true
-      type: textarea
-    - label: |
-        Contactgegevens
-      id: reaction
-      type: email
-      placeholder: Emailadres
-    - label: >
-        Voorwaarden <br> <span style="font-size:12px; color=#777;">Verstrekte
-        gegevens worden alleen verwerkt voor het hierboven beschreven doel, de
-        gegevens worden niet langer opgeslagen dan strikt noodzakelijk en worden
-        opgeslagen in een beschermde omgeving</span>
-      id: terms-conditions
-      values:
-        - label: Agree
-          value: agree
-          id: agree
-      required: true
-      type: checkbox
-form2:
-  title: Informatie over het oordeel
-  content: ""
-  button_text: Verstuur
-  backend_link: "https://formspree.io/f/xleqlakw"
-  id: case-for-repository
-  questions:
-    - label: Naam organisatie
-      id: name
-      type: text
-    - label: >-
-        Geveld normatief oordeel – Geef een beschrijving van het de taak van het
-        algoritme, de socio-technologische context, statistische methodologie,
-        het relevante juridische kader en welke keuze is genomen inzake de
-        geïdentificeerde ethische kwesties
-      id: description
-      type: textarea
-    - label: Contactgegevens
-      id: contact-details
-      type: email
-      placeholder: Emailadres
-    - label: Relevante documenten
-      id: documents
-      file_upload_text: Kies bestand
-      type: file
-    - label: >
-        Voorwaarden <br> <span style="font-size:12px; color=#777;">Verstrekte
-        gegevens worden alleen verwerkt voor het hierboven beschreven doel, de
-        gegevens worden niet langer opgeslagen dan strikt noodzakelijk en worden
-        opgeslagen in een beschermde omgeving</span>
-      id: terms-conditions
-      required: true
-      type: checkbox
+dynamic_form_engine:
+  - title: Informatie over de case
+    id: submit-a-case
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Naam algoritme
+            identifier: name
+            required: true
+            type: text
+          - title: |
+              Korte beschrijving van algoritme (max. 200 woorden)
+            identifier: description
+            required: true
+            type: textarea
+          - title: >
+              Technische aspecten – Beschrijving van o.a. verzamelde data, gehanteerde
+              statistische methode en gebruikte evaluatie criteria
+            identifier: technical
+            type: textarea
+          - title: >
+              Juridisch kader – Relevante wet- en regelgeving, beschrijving van open
+              juridische normen, bijvoorbeeld in de Algemene Verordening
+              Gegevensbescherming (AVG) of de Algemene Wet Gelijke Behandeling (AWGB)
+            identifier: legal-framework
+            type: textarea
+          - title: >
+              Ethische aspecten – Beschrijving van geïdentificeerd ethische kwesties
+              gegeven de technische en juridische achtergrond
+            identifier: ethical-issues
+            required: true
+            type: textarea
+          - title: |
+              Contactgegevens
+            identifier: reaction
+            type: email
+            placeholder: Emailadres
+          - title: >
+              Voorwaarden <br> <span style="font-size:12px; color=#777;">Verstrekte
+              gegevens worden alleen verwerkt voor het hierboven beschreven doel, de
+              gegevens worden niet langer opgeslagen dan strikt noodzakelijk en worden
+              opgeslagen in een beschermde omgeving</span>
+            identifier: terms-conditions
+            options:
+              - title: Agree
+                value: agree
+                id: agree
+            required: true
+            type: checkbox
+    complete_form_options:
+      type: submit
+      button_text: Verstuur
+      backend_link: "https://formspree.io/f/xzbnrlan"
+  - title: Informatie over het oordeel
+    content: ""
+    id: case-for-repository
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: Naam organisatie
+            identifier: name
+            type: text
+          - title: >-
+              Geveld normatief oordeel – Geef een beschrijving van het de taak van het
+              algoritme, de socio-technologische context, statistische methodologie,
+              het relevante juridische kader en welke keuze is genomen inzake de
+              geïdentificeerde ethische kwesties
+            identifier: description
+            type: textarea
+          - title: Contactgegevens
+            identifier: contact-details
+            type: email
+            placeholder: Emailadres
+          - title: Relevante documenten
+            identifier: documents
+            file_upload_text: Kies bestand
+            type: file
+          - title: >
+              Voorwaarden <br> <span style="font-size:12px; color=#777;">Verstrekte
+              gegevens worden alleen verwerkt voor het hierboven beschreven doel, de
+              gegevens worden niet langer opgeslagen dan strikt noodzakelijk en worden
+              opgeslagen in een beschermde omgeving</span>
+            identifier: terms-conditions
+            required: true
+            type: checkbox
+            options:
+              - title: Agree
+                value: agree
+                id: agree
+    complete_form_options:
+      type: submit
+      button_text: Verstuur
+      backend_link: "https://formspree.io/f/xleqlakw"
 reports_preview:
   title: Recente audits
   icon: fas fa-file
@@ -128,7 +139,7 @@ quick_navigation:
 
 Cases kunnen anoniem worden behandeld. Kom meer te weten over onze [werkwijze](/nl/algoprudence/how-we-work/). Informatie over de stappen die volgen na het indienen van een case kunnen [beneden](#next-steps) worden gevonden.
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}
 
 {{< tab_content_close >}}
 
@@ -136,7 +147,7 @@ Cases kunnen anoniem worden behandeld. Kom meer te weten over onze [werkwijze](/
 
 Wil uw organisatie bijdragen aan het overzicht van algoprudentie uitspraken? Vul onderstaand formulier in. U wordt aangemoedigd oordelen die eerder in het [overzicht](/nl/algoprudence/) zijn opgenomen zorgvuldig door te nemen. Informatie over de stappen die volgen na het indienen van een case kunnen [beneden](http://localhost:1313/nl/algoprudence/submit-a-case/#next-steps) worden gevonden.
 
-{{< form2 >}}
+{{< dynamic_form_engine index="1" >}}
 
 {{< tab_content_close >}}
 

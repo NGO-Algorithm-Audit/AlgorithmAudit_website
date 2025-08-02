@@ -5,23 +5,24 @@ subtitle: >
   Tool for generating synthetic data. The tool automatically generates an evaluation report to assess the quality of the generated synthetic data. All data are locally processed without using cloud solutions.
 image: /images/svg-illustrations/local-only.svg
 team:
-  title: Synthetic data generation team
-  icon: fas fa-user-friends
-  button_text: Other teams
-  button_link: /about/teams/
-  team_members:
-    - image: /images/people/EMenvouta.jpeg
-      name: Emmanuel Menvouta PhD
-      bio: |
-        Freelance machine learning engineer, specialized in SDG methodology
-    - image: /images/people/MLisdonk.png
-      name: Maikel van de Lisdonk
-      bio: |
-        Freelance software developer
-    - image: /images/people/RLangius.jpg
-      name: Ruben Langius
-      bio: |
-        Freelance software developer
+  - id: team
+    title: Synthetic data generation team
+    icon: fas fa-user-friends
+    button_text: Other teams
+    button_link: /about/teams/
+    team_members:
+      - image: /images/people/EMenvouta.jpeg
+        name: Emmanuel Menvouta PhD
+        bio: |
+          Freelance machine learning engineer, specialized in SDG methodology
+      - image: /images/people/MLisdonk.png
+        name: Maikel van de Lisdonk
+        bio: |
+          Freelance software developer
+      - image: /images/people/RLangius.jpg
+        name: Ruben Langius
+        bio: |
+          Freelance software developer
 quick_navigation:
   title: Content overview
   links:
@@ -320,4 +321,4 @@ In 2024, the SIDN Fund <a href="https://www.sidnfonds.nl/projecten/open-source-a
 
 <!-- Team -->
 
-{{< team id="team" >}}
+{{< team index="0" >}}

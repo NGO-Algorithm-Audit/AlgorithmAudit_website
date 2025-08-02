@@ -7,36 +7,40 @@ subtitle: >
   Supervised bias analysis of aggregtation statistics on the country of birth
   and country of origin of 300.000+ students as provided by Statistics Netherlands
 image: /images/algoprudence/AA202402/AA202402_cover_EN.png
-form1:
-  title: React to this technical audit
-  content: >-
-    Your reaction will be sent to the auditing team. The team will review your
-    response and, if it complies with Algorithm Audit's guidelines, the reaction
-    will be placed in the Discussion & debate section above.
-  button_text: Submit
-  backend_link: 'https://formspree.io/f/xyyrjyzr'
-  id: case-reaction
-  questions:
-    - label: |
-        Name
-      id: name
-      required: true
-      type: text
-    - label: |
-        Affiliated organization
-      id: affiliated-organization
-      type: text
-    - label: |
-        Reaction
-      id: reaction
-      required: true
-      type: textarea
-    - label: |
-        Contact details
-      id: contact-details
-      required: true
-      type: email
-      placeholder: Mail address
+dynamic_form_engine:
+  - title: React to this technical audit
+    content: >-
+      Your reaction will be sent to the auditing team. The team will review your
+      response and, if it complies with Algorithm Audit's guidelines, the reaction
+      will be placed in the Discussion & debate section above.
+    id: case-reaction
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Name
+            identifier: name
+            required: true
+            type: text
+          - title: |
+              Affiliated organization
+            identifier: affiliated-organization
+            type: text
+          - title: |
+              Reaction
+            identifier: reaction
+            required: true
+            type: textarea
+          - title: |
+              Contact details
+            identifier: contact-details
+            required: true
+            type: email
+            placeholder: Mail address
+    complete_form_options:
+      type: submit
+      button_text: Submit
+      backend_link: "https://formspree.io/f/xyyrjyzr"
 ---
 
 {{< tab_header width="4" tab1_id="description" tab1_title="Description of technical audit" tab2_id="actions" tab2_title="Actions following technical audit" tab3_id="discussion" tab3_title="Discussion & debate" default_tab="description" >}}
@@ -105,4 +109,4 @@ Therefore, in the case of detecting unduly granted social welfare or misuse of c
 
 {{< tab_content_close >}}
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}

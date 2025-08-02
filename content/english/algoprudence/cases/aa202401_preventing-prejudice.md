@@ -6,36 +6,40 @@ subtitle: >
   Technical audit (TA:AA:2024:01) of risk profiling algorithm used by Dutch Executive Agency of Education
   control process
 image: /images/algoprudence/AA202401/Cover_EN.png
-form1:
-  title: React to this technical audit
-  content: >-
-    Your reaction will be sent to the auditing team. The team will review your
-    response and, if it complies with Algorithm Audit's guidelines, the reaction
-    will be placed in the Discussion & debate section above.
-  button_text: Submit
-  backend_link: 'https://formspree.io/f/xyyrjyzr'
-  id: case-reaction
-  questions:
-    - label: |
-        Name
-      id: name
-      required: true
-      type: text
-    - label: |
-        Affiliated organization
-      id: affiliated-organization
-      type: text
-    - label: |
-        Reaction
-      id: reaction
-      required: true
-      type: textarea
-    - label: |
-        Contact details
-      id: contact-details
-      required: true
-      type: email
-      placeholder: Mail address
+dynamic_form_engine:
+  - title: React to this technical audit
+    content: >-
+      Your reaction will be sent to the auditing team. The team will review your
+      response and, if it complies with Algorithm Audit's guidelines, the reaction
+      will be placed in the Discussion & debate section above.
+    id: case-reaction
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Name
+            identifier: name
+            required: true
+            type: text
+          - title: |
+              Affiliated organization
+            identifier: affiliated-organization
+            type: text
+          - title: |
+              Reaction
+            identifier: reaction
+            required: true
+            type: textarea
+          - title: |
+              Contact details
+            identifier: contact-details
+            required: true
+            type: email
+            placeholder: Mail address
+    complete_form_options:
+      type: submit
+      button_text: Submit
+      backend_link: "https://formspree.io/f/xyyrjyzr"
 ---
 
 {{< tab_header width="4" tab1_id="description" tab1_title="Description of technical audit" tab2_id="actions" tab2_title="Actions following technical audit" tab3_id="discussion" tab3_title="Discussion & debate" default_tab="description" >}}
@@ -48,7 +52,7 @@ TA:AA:2024:01
 
 #### Summary
 
-In the period 2012-2022,  students who lived close to their parent(s) have been selected significantly more often by Dutch public sector organisation DUO than other students. The algorithm used to support the selection procedure performed as expected. The combination of the algorithm-driven risk scoring and manual selection for the contorl process resulted in a significant overrepresentation of certain groups. Selected students were visited at home to verify whether they were not misusing college allowances. This is the main conclusion of the audit conducted by the Algorithm Audit Foundation on behalf of DUO. DUO's control process came under scrutiny in 2023 following <a href="https://nos.nl/op3/video/2479701-zo-checkt-duo-of-jij-fraudeert-en-dat-systeem-rammelt" target="_blank">news items</a> from Investico and NOS, which stated that students with a migration background were more often accused of abuse than other students.
+In the period 2012-2022, students who lived close to their parent(s) have been selected significantly more often by Dutch public sector organisation DUO than other students. The algorithm used to support the selection procedure performed as expected. The combination of the algorithm-driven risk scoring and manual selection for the contorl process resulted in a significant overrepresentation of certain groups. Selected students were visited at home to verify whether they were not misusing college allowances. This is the main conclusion of the audit conducted by the Algorithm Audit Foundation on behalf of DUO. DUO's control process came under scrutiny in 2023 following <a href="https://nos.nl/op3/video/2479701-zo-checkt-duo-of-jij-fraudeert-en-dat-systeem-rammelt" target="_blank">news items</a> from Investico and NOS, which stated that students with a migration background were more often accused of abuse than other students.
 berichtgeving
 
 A press release can be found [here](/events/press_room/#DUO).
@@ -71,7 +75,7 @@ Education Executive Agency of The Netherlands (DUO)
 
 ##### Description
 
-Report *Preventing prejudice* has been <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2024/03/01/kabinetsreactie-onderzoek-naar-controleproces-uitwonendenbeurs" target="_blank">sent</a> as part of the Internal research documents to  Dutch Parliament
+Report _Preventing prejudice_ has been <a href="https://www.rijksoverheid.nl/documenten/kamerstukken/2024/03/01/kabinetsreactie-onderzoek-naar-controleproces-uitwonendenbeurs" target="_blank">sent</a> as part of the Internal research documents to Dutch Parliament
 
 {{< accordion_item_close >}}
 
@@ -109,4 +113,4 @@ Therefore, in the case of detecting unduly granted social welfare or misuse of c
 
 {{< tab_content_close >}}
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}

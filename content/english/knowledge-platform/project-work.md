@@ -8,64 +8,68 @@ subtitle: >
 image: /images/svg-illustrations/knowledge_base.svg
 search:
   searchableText: Amsterdam
-form1:
-  title: Get in touch to explore potential collaboration
-  content: >-
-    Your message will be forwarded to Algorithm Audit's auditing team, who will
-    promptly provide a response.
-  button_text: Submit
-  backend_link: 'https://formspree.io/f/mrgrwnyo'
-  id: form
-  questions:
-    - label: |
-        Name
-      id: name
-      required: true
-      type: text
-    - label: |
-        Contact details
-      id: contact-details
-      required: true
-      type: textarea
-      placeholder: Mail address
-    - label: |
-        Message
-      id: message
-      required: true
-      type: textarea
+dynamic_form_engine:
+  - title: Get in touch to explore potential collaboration
+    content: >-
+      Your message will be forwarded to Algorithm Audit's auditing team, who will
+      promptly provide a response.
+    id: form
+    icon: fas fa-align-justify
+    section:
+      - questions:
+          - title: |
+              Name
+            identifier: name
+            required: true
+            type: text
+          - title: |
+              Contact details
+            identifier: contact-details
+            required: true
+            type: textarea
+            placeholder: Mail address
+          - title: |
+              Message
+            identifier: message
+            required: true
+            type: textarea
+    complete_form_options:
+      type: submit
+      button_text: Submit
+      backend_link: "https://formspree.io/f/mrgrwnyo"
 quick_navigation:
   title: Overview
   links:
     - title: 2025
-      url: '#LLM-validation'
+      url: "#LLM-validation"
     - title: LLM validation – Dutch judiciary
-      url: '#LLM-validation'
+      url: "#LLM-validation"
       indent: 1
     - title: Assessment protocol – Council of Europe
-      url: '#assessment-protocol'
+      url: "#assessment-protocol"
       indent: 1
     - title: Bias analysis – Municipality of Utrecht
-      url: '#utrecht'
+      url: "#utrecht"
       indent: 1
     - title: Research support – Court of Auditors Deventer
-      url: '#deventer'
+      url: "#deventer"
       indent: 1
     - title: Knowledge partner – DUO
-      url: '#DUO2'
+      url: "#DUO2"
       indent: 1
     - title: eLearning – Council of Europe
-      url: '#elearning'
+      url: "#elearning"
       indent: 1
     - title: 2024
-      url: '#amsterdam'
+      url: "#amsterdam"
     - title: AI Act implementation – Municipality of Amsterdam
-      url: '#amsterdam'
+      url: "#amsterdam"
       indent: 1
     - title: Bias analysis – DUO
-      url: '#DUO1'
+      url: "#DUO1"
       indent: 1
     - title: Discuss collaboration
-      url: '#form'
+      url: "#form"
 ---
 
 # 2025
@@ -82,8 +86,6 @@ From Q3-2025 up to Q1-2026, Algorithm Audit participates in a consortium with th
 
 {{< container_close >}}
 
-
-
 <!-- CoE Assessment protocol -->
 
 {{< container_open title="Discrimination assessment protocol – Council of Europe" id="assessment-protocol" icon="fas fa-scroll" >}}
@@ -94,21 +96,17 @@ From Q3-2025 up to Q4-2025, Algorithm Audit supports the Council of Europe (CoE)
 
 {{< container_close >}}
 
-
-
 <!-- Gemeente Utrecht -->
 
 {{< container_open title="Bias analysis – Municipality of Utrecht" id="utrecht" icon="fas fa-search" >}}
 
-In Q2-2025 and Q3-2025, Algorithm Audit supports the Municipality of Utrecht with conducting a bias analysis of an algorithmic system. 
+In Q2-2025 and Q3-2025, Algorithm Audit supports the Municipality of Utrecht with conducting a bias analysis of an algorithmic system.
 
 <br>
 
 {{< image id="logo-gemeente-utrecht" width_desktop="2" width_mobile="12" image1="/images/partner logo-cropped/GemeenteUtrecht.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 
-{{< container_close >}} 
-
-
+{{< container_close >}}
 
 <!-- Rekenkamer Deventer -->
 
@@ -118,9 +116,7 @@ From Q2-2025 up to Q3-2025, Algorithm Audit supports the Court of Auditors Deven
 
 {{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 
-{{< container_close >}} 
-
-
+{{< container_close >}}
 
 <!-- DUO Kennispartner -->
 
@@ -130,9 +126,7 @@ In 2025, Algorithm Audit works otgether with the Dutch Executive Education Agenc
 
 {{< image id="DUO" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/DUO.png" alt1="Dutch Executive Education Agency (DUO)" caption1="Dutch Executive Education Agency (DUO)" >}}
 
-{{< container_close >}} 
-
-
+{{< container_close >}}
 
 <!-- CoE eLearning -->
 
@@ -157,8 +151,6 @@ From Q3-2024 up to Q1-2025, Algorithm Audit assisted the Municipality of Amsterd
 
 {{< container_close >}}
 
-
-
 <!-- DUO CUB -->
 
 {{< container_open title="Bias analysis – Dutch Executive Education Agency (DUO)" id="DUO1" icon="<fa-solid fa-bell" >}}
@@ -172,4 +164,4 @@ From Q3-2023 up to Q2-2024, Algorithm Audit assisted the Dutch Executive Eductai
 
 {{< container_close >}}
 
-{{< form1 >}}
+{{< dynamic_form_engine index="0" >}}
