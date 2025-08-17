@@ -3,8 +3,7 @@ title: Projectwerk
 subtitle: >
   Algorithm Audit biedt middels projectwerk ondersteuning bij specifieke vragen
   van publieke en private sector organisaties over de verantwoorde inzet van
-  algoritmes en AI. Een overzicht van onze technisch audits en normatieve reviews kan
-  worden gevonden in onze [case repository](/nl/algoprudence/)
+  algoritmes en AI. Een overzicht van deze projecten kan hieronder worden gevonden.
 image: /images/svg-illustrations/knowledge_base.svg
 search:
   searchableText: Amsterdam
