@@ -3,8 +3,7 @@ title: Project work
 subtitle: >
   Through project work Algorithm Audit provides support to public and private
   sector organizations for specific questions about responsible algorithms. An
-  overview of technical audits and normative reviews can be found in our [case
-  repository](/nl/algoprudence/)
+  overview of our project work can be found below.
 image: /images/svg-illustrations/knowledge_base.svg
 search:
   searchableText: Amsterdam
