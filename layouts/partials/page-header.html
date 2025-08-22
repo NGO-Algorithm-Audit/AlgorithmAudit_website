@@ -22,20 +22,7 @@
   </div>
 </section>
 
-{{ $divider_block_class := "divider-blocks"}}
-{{ $divider_lower_block_class := "lower-blocks"}}
-
-{{ if eq .Params.background_color "#f9f9f9" }}
-{{$divider_block_class = "divider-blocks__grey"}}
-{{$divider_lower_block_class = "lower-blocks__grey"}}
-{{end}}
-
 <!-- Divider block elements -->
-<div class="row" id="gradient-line-blocks">
-  <div class="col-12 {{$divider_block_class}}">
-    <div class="row upper-blocks" id="box1"></div>
-    <div class="row {{$divider_lower_block_class}} justify-content-center border-gradient"
-      style="border-image:linear-gradient(to right, #FFFDE4, #ffcbbd) 1 0 0 0;"></div>
-  </div>
+<div class="border-bottom-gradient">
 </div>
 <!-- /Divider block elements -->
