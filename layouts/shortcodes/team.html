@@ -1,15 +1,14 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{$param := int (.Get "index")}}
 {{ with index .Page.Params.team $param }}
-<!-- desktop version -->
-<div class="container-fluid mt-5 desktop p-0">
+<div class="container-fluid mt-5 p-0">
   <div class="shadow mobile-desktop-container-layout border-bottom-gradient rounded-lg" id={{.id }}>
 
     {{ if .icon }}
     <!-- Title and icon -->
     <h3 class="">
-    <span class="{{ .icon }} icon mb-4 pl-5"></span>
-    {{ .title | markdownify }}
+      <span class="{{ .icon }} icon mb-4 pl-5"></span>
+      {{ .title | markdownify }}
     </h3>
 
     {{ else }}
@@ -23,16 +22,42 @@
     <div class="container-team mt-4">
       <p>{{ .content | markdownify }}</p>
       <div class="row">
-        {{ range .team_members }}    
-        <div class="col-md-6 team-member p-3">
-          <div class="row">
-            <div class="col-md-3">
+        {{ range .team_members }}
+        {{ if .accordion_id}}
+        <script>
+          docReady(function () {
+            new Accordion('#accordion_area_team_{{.accordion_id}}');
+          });
+        </script>
+        {{ end }}
+        <div class="col-md-6 col-12 team-member p-3 " id="accordion_area_team_{{.accordion_id}}">
+          <div class="row {{if .accordion_content}}ac{{end}}" style="border:none;">
+            <div class="col-3">
               <img src="{{ .image | relURL }}" width="100%;" style="border-radius: 20px;">
             </div>
-            <div class="col-md-9 member-details">
-              <h4 style="font-weight:100;">{{ .name | markdownify }}</h4>
-              <p>{{ .bio | markdownify }}</p>
+            <div class="col-9 member-details pb-0 p-1 {{if .accordion_content}}ac-header{{end}}" >
+              <div class="{{if .accordion_content}}ac-trigger{{end}} p-1">
+                <h4 style="font-weight:100;">{{ .name | markdownify }}</h4>
+                <p>{{ .bio | markdownify }}</p>
+              </div>
             </div>
+            {{ if .linkedIn }}
+            <div class="col-3"></div>
+            <div class="col-9 p-1 pt-0 pb-3 pl-2" style="margin-top: -30px;">
+              <a href="{{ .linkedIn }}" target="_blank"><span class="fab fa-linkedin" style="font-size: 30px;"></span></a>
+            </div>
+            {{ end }}
+            {{ if .accordion_content }}
+            <div class="ac-panel w-100">
+              <div class="row justify-content-between ac-text p-0">
+                <div class="col-3">
+                </div>
+                <div class="col-9 py-4 px-5" style="background-color:#eef2f6;">
+                  <p>{{ .accordion_content | markdownify }}</p>
+                </div>
+              </div>
+            </div>
+            {{ end }}
           </div>
         </div>
         {{ end }}
@@ -42,11 +67,10 @@
     <!-- button -->
     {{ if .button_text }}
     <div class="row mt-4 pb-3 justify-content-center d-flex">
-    <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
+      <a href="{{.button_link}}"><label class="btn">{{.button_text}}</label></a>
     </div>
     {{ end }}
 
   </div>
 </div>
 {{ end }}
-<!-- /desktop version -->

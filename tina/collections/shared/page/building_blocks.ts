@@ -595,7 +595,6 @@ const building_blocks: TinaField[] = [
         type: "string",
         name: "button_text",
         label: "Button text",
-        required: true,
       },
       {
         type: "string",
@@ -608,7 +607,6 @@ const building_blocks: TinaField[] = [
         type: "string",
         name: "button_link",
         label: "Button link",
-        required: true,
       },
       {
         type: "object",
@@ -637,7 +635,25 @@ const building_blocks: TinaField[] = [
             type: "rich-text",
             name: "bio",
             label: "Bio",
-            isBody: false,
+          },
+          {
+            type: "string",
+            name: "linkedIn",
+            label: "LinkedIn",
+          },
+          {
+            type: "rich-text",
+            name: "accordion_content",
+            label: "Accordion Content",
+            description:
+              "If this field is filled, an accordion will be created to show more information",
+          },
+          {
+            type: "string",
+            name: "accordion_id",
+            label: "Accordion ID",
+            description:
+              "Unique identifier needed to make the accordion work, e.g. use the person's name without spaces and include the team section in it, e.g. coreTeamJohnDoe",
           },
         ],
       },
