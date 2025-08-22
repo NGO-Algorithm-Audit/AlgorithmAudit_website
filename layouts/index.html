@@ -76,7 +76,11 @@
     }
 
     .search-result-title {
-      margin-top: 40px;
+      margin-top: 25px;
+    }
+
+    .search-result-subtitle {
+      text-overflow: ellipsis;
     }
 
     .search-tags-desktop {
@@ -85,7 +89,7 @@
       }
 
       @media (min-width: 992px) {
-        bottom: 13px;
+        bottom: 20px;
       }
     }
 
@@ -250,7 +254,7 @@
                   <div class="col-12 col-lg-10">
                     <h3 class="color-blue search-result-title">${item._highlightResult.title.value}</h3>
                     <p class="color-gray search-result-subtitle">${item._highlightResult.subtitle.value}</p>
-                    <div class="pt-3 search-tags-desktop">
+                    <div class="position-absolute search-tags-desktop">
                       ${tagToHtml(item.tag)}
                     </div>
                   </div>
