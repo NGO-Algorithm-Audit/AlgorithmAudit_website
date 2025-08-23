@@ -46,14 +46,12 @@ team:
         name: Emmanuel Menvouta PhD
         bio: |
           Freelance machine learning engineer, gespecialiseerd in SDG methodologie
+        linkedIn: "https://www.linkedin.com/in/emmanuelmenvouta"
       - image: /images/people/MLisdonk.png
         name: Maikel van de Lisdonk
         bio: |
           Freelance software developer
-      - image: /images/people/RLangius.jpg
-        name: Ruben Langius
-        bio: |
-          Freelance software developer
+        linkedIn: "https://www.linkedin.com/in/devhelpr"
   - id: team-BDT
     title: Team unsupervised bias detectie
     content: Team dat part-time werkt aan de unsupervised bias detectie tool
@@ -65,24 +63,46 @@ team:
         name: Kirtan Padh
         bio: |
           PhD-kandidaat Causal Inference and Machine Learning, TU München
+        linkedIn: "https://www.linkedin.com/in/kirtan-padh"
       - image: /images/people/MJorgensen.jpeg
-        name: Mackenzie Jorgensen
+        name: Mackenzie Jorgensen PhD
         bio: |
-          PhD-kandidaat Computer Science, King’s College London
+          Postdoctoraal onderzoeker, Northumbria University
+        linkedIn: "https://www.linkedin.com/in/mackenzie-j-447763142"
       - image: /images/people/KProrokovic.jpeg
         name: Krsto Proroković
         bio: |
           PhD-kandidaat, Zwitsers AI Lab IDSIA
+        linkedIn: "https://www.linkedin.com/in/krstopro"
       - image: /images/people/FHolstege.jpeg
         name: Floris Holstege
         bio: |
           PhD-kandidaat Machine Learning, Universiteit van Amsterdam
+        linkedIn: "https://www.linkedin.com/in/fholstege"
       - image: /images/people/JPersson.jpeg
         name: Joel Persson PhD
         bio: |
           R\&D, Spotify
-  - id: team-LLMs
-    title: Team Large Language Models (LLMs)
+        linkedIn: "https://www.linkedin.com/in/joelpersson"
+  - title: Team software development
+    content: Part-time team voor software development, o.a. Algorithm Audit's tools en website
+    icon: fas fa-code
+    id: team-SD
+    team_members:
+      - image: /images/people/RLangius.jpg
+        name: Ruben Langius
+        bio: |
+          Freelance software developer
+        linkedIn: "https://www.linkedin.com/in/ruben-langius-19aa8b112"
+        accordion_content: ""
+      - image: /images/people/ETorck.jpeg
+        name: Erik Torck
+        bio: |
+          Freelance software developer
+        linkedIn: "https://www.linkedin.com/in/eptorck"
+        accordion_content: ""
+  - title: Team Large Language Models (LLMs)
+    id: team-LLMs
     content: Team dat part-time werkt aan socio-technologische evaluatie van Large Language Models
     icon: fas fa-robot
     button_text: Meer over onze evaluaties
@@ -92,14 +112,17 @@ team:
         name: Joël Christoph
         bio: |
           PhD-candidate European University Institute
+        linkedIn: "https://www.linkedin.com/in/joelchristoph/"
       - image: /images/people/TvanOsch.jpg
         name: Thomas van Osch
         bio: |
           ML engineer
+        linkedIn: "https://www.linkedin.com/in/thomas-van-osch"
       - image: /images/people/TDriessen.jpg
         name: Tom Driessen
         bio: |
           PhD-candidate Cognitive Robotics, TU Delft
+        linkedIn: "https://www.linkedin.com/in/tdries"
   - id: team-legal
     title: Juridische experts
     content: Team dat part-time werkt aan mensenrechten- en privacy-vraagstukken
@@ -109,10 +132,12 @@ team:
         name: Ioanna Papageorgiou
         bio: |
           PhD-kandidaat AI Fairness & Privacy, Universiteit Hannover
+        linkedIn: "https://www.linkedin.com/in/ioanna-papageorgiou-b25201201"
       - image: /images/people/LNaudts.jpg
         name: Laurens Naudts
         bio: |
           Postdoctorale onderzoeker AI, Media en Democratie Lab, Universiteit van Amsterdam
+        linkedIn: "https://www.linkedin.com/in/laurens-naudts-9a935729"
   - id: executive-team
     title: Coördinerend team
     content: Team dat full-time de verschillende werkzaamheden van Algorithm Audit coördineert.
@@ -122,10 +147,12 @@ team:
         name: Jurriaan Parie
         bio: |
           Directeur-bestuurder
+        linkedIn: "https://www.linkedin.com/in/jfparie/"
       - image: /images/people/YRemmits.jpg
         name: Ylja Remmits
         bio: |
           Head of Projects
+        linkedIn: "https://www.linkedin.com/in/ylja-remmits-21185188"
 quick_navigation:
   title: Overzicht
   links:
@@ -137,6 +164,8 @@ quick_navigation:
       url: "#team-legal"
     - title: Team LLMs
       url: "#team-LLMs"
+    - title: Team software development
+      url: "#team-SD"
     - title: Team unsupervised bias detectie
       url: "#team-BDT"
     - title: Team synthetische data generatie
@@ -144,6 +173,8 @@ quick_navigation:
 ---
 
 {{< about_AA id="about" >}}
+
+{{< team index="5" >}}
 
 {{< team index="4" >}}
 

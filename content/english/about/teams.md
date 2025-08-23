@@ -15,6 +15,8 @@ quick_navigation:
       url: "#team-legal"
     - title: Team LLMs
       url: "#team-LLMs"
+    - title: Team software development
+      url: "#team-SD"
     - title: Team unsupervised bias detection
       url: "#team-BDT"
     - title: Team synthetic data generation
@@ -65,17 +67,14 @@ team:
       - image: /images/people/EMenvouta.jpeg
         name: Emmanuel Menvouta PhD
         bio: |
-          Freelance machine learning engineer, specialized in SDG methodology
+          Freelance machine learning engineer, PhD in synthetic data
+        linkedIn: "https://www.linkedin.com/in/emmanuelmenvouta"
         accordion_content: ""
       - image: /images/people/MLisdonk.png
         name: Maikel van de Lisdonk
         bio: |
           Freelance software developer
-        accordion_content: ""
-      - image: /images/people/RLangius.jpg
-        name: Ruben Langius
-        bio: |
-          Freelance software developer
+        linkedIn: "https://www.linkedin.com/in/devhelpr"
         accordion_content: ""
   - title: Team unsupervised bias detection
     content: Part-time team working on unsupervised the bias detection tool
@@ -88,26 +87,48 @@ team:
         name: Kirtan Padh
         bio: |
           PhD-candidate Causal Inference and Machine Learning, TU München
+        linkedIn: "https://www.linkedin.com/in/kirtan-padh"
         accordion_content: ""
       - image: /images/people/MJorgensen.jpeg
-        name: Mackenzie Jorgensen
+        name: Mackenzie Jorgensen PhD
         bio: |
-          PhD-candidate Computer Science, King’s College London
+          Postdoctoral Research Fellow, Northumbria University
         accordion_content: ""
+        linkedIn: "https://www.linkedin.com/in/mackenzie-j-447763142"
       - image: /images/people/KProrokovic.jpeg
         name: Krsto Proroković
         bio: |
-          PhD-candidate, Swiss AI Lab IDSIA
+          Software Engineer and AI Researcher
+        linkedIn: "https://www.linkedin.com/in/krstopro"
         accordion_content: ""
       - image: /images/people/FHolstege.jpeg
         name: Floris Holstege
         bio: |
           PhD-candidate Machine Learning, University of Amsterdam
+        linkedIn: "https://www.linkedin.com/in/fholstege"
         accordion_content: ""
       - image: /images/people/JPersson.jpeg
         name: Joel Persson PhD
         bio: |
           Research Scientist, Spotify
+        linkedIn: "https://www.linkedin.com/in/joelpersson"
+        accordion_content: ""
+  - title: Team software development
+    content: Part-time team working on software development, among others working on Algorithm Audit's tools and website
+    icon: fas fa-code
+    id: team-SD
+    team_members:
+      - image: /images/people/RLangius.jpg
+        name: Ruben Langius
+        bio: |
+          Freelance software developer
+        linkedIn: "https://www.linkedin.com/in/ruben-langius-19aa8b112"
+        accordion_content: ""
+      - image: /images/people/ETorck.jpeg
+        name: Erik Torck
+        bio: |
+          Freelance software developer
+        linkedIn: "https://www.linkedin.com/in/eptorck"
         accordion_content: ""
   - title: Team Large Language Models (LLMs)
     content: >-
@@ -122,16 +143,19 @@ team:
         name: Joël Christoph
         bio: |
           PhD-candidate European University Institute
+        linkedIn: "https://www.linkedin.com/in/joelchristoph/"
         accordion_content: ""
       - image: /images/people/TvanOsch.jpg
         name: Thomas van Osch
         bio: |
           ML engineer
+        linkedIn: "https://www.linkedin.com/in/thomas-van-osch"
         accordion_content: ""
       - image: /images/people/TDriessen.jpg
         name: Tom Driessen
         bio: |
           PhD-candidate Cognitive Robotics, TU Delft
+        linkedIn: "https://www.linkedin.com/in/tdries"
         accordion_content: ""
   - title: Legal experts
     content: Part-time team working on human rights and data privacy challenges
@@ -142,12 +166,14 @@ team:
         name: Ioanna Papageorgiou
         bio: |
           Doctoral researcher AI Fairness & Privacy, University of Hannover
+        linkedIn: "https://www.linkedin.com/in/ioanna-papageorgiou-b25201201"
         accordion_content: ""
       - image: /images/people/LNaudts.jpg
         name: Laurens Naudts
         bio: >
           Postdoctoral researcher AI, Media and Democracy Lab, University of
           Amsterdam
+        linkedIn: "https://www.linkedin.com/in/laurens-naudts-9a935729"
         accordion_content: ""
   - title: Executive team
     content: Full-time team coordinating the different activities of Algorithm Audit
@@ -163,9 +189,12 @@ team:
         name: Ylja Remmits
         bio: |
           Head of Projects
+        linkedIn: "https://www.linkedin.com/in/ylja-remmits-21185188"
 ---
 
-{{< about_AA >}}
+{{< about_AA id="about" >}}
+
+{{< team index="5" >}}
 
 {{< team index="4" >}}
 
