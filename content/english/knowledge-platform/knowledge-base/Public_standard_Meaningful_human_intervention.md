@@ -1,6 +1,6 @@
 ---
 layout: article
-featured: true
+featured: false
 type: knowledgebase_item
 author: Algorithm Audit
 summary: >-
