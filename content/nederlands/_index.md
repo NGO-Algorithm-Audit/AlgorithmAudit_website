@@ -55,6 +55,15 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
+    - title: >-
+        Inventarisatie 14 ministries Algoritmeregister
+      intro: >
+        Afgelopen zomer hebben 14 Nederlandse ministeries hun inventarisaties van hoog-risico AI-systemen en impactvolle algoritmes gedeeld. Wij maakten een inventarisatie.
+      link: >-
+        /nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/
+      image: /images/knowledge_base/Inventarisatie Algoritmeregister.png
+      date: 26-08-2025
+      type: onderzoek
     - title: Local-only tools voor AI validatie
       intro: >
         Slides die het concept van 'local-only' tools uitleggen. Verschillen en
@@ -66,24 +75,17 @@ Activity_Feed:
       image: /images/BDT/20250605_carrousel_local-only.png
       date: 05-06-2025
       type: open source code
-    - title: >-
-        Publieke standaard 'Betekenisvolle menselijke tussenkomst
-        risicoprofileringsalgoritmes'
-      intro: >
-        Stappenplan om verboden geautomatiseerde besluitvorming uitsluitend
-        gebaseerd op profilering te voorkomen, zoals vermeld in artikel 22 AVG.
-        Gebaseerd op ervaringen uit de uitvoeringspraktijk met
-        risicoprofileringsalgoritmes en in overeenstemming met recente
-        (wetenschappelijke) publicaties. recent literature.
-      link: >-
-        /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
-      image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
-      date: 15-05-2025
-      type: public standard
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
+    - title: >-
+        Expert rondetafel II: Kennisopbouw voor toezichthouder op AI
+      link: >-
+        https://unesdoc.unesco.org/ark:/48223/pf0000395086
+      image: /images/partner logo-cropped/UNESCO.png
+      date: 31-09-2025
+      type: paneldiscussie
     - title: >-
         Presentatie 'Betekenisvolle menselijke tussenkomst', Netwerk van
         Publieke Dienstverleners
@@ -91,12 +93,6 @@ Activity_Feed:
         /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       image: /images/partner logo-cropped/NPD.png
       date: 30-10-2025
-      type: presentatie
-    - title: 'Presentatie ''Local-only tools voor AI validatie'', Platform AI & Overheid'
-      link: >-
-        https://forms.zohopublic.eu/ecpplatform/form/AanmeldformulieronlineAIlunchbreaksessies/formperma/9n7oFcEAlLYZtxJ73sMRbsNiPMDYHeMaIAFcUc7fWOA
-      image: /images/partner logo-cropped/PlatformAI_Overheid.jpg
-      date: 20-08-2025
       type: presentatie
   items_button_text: Meer events
   items_button_link: /nl/events/activities/

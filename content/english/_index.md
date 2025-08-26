@@ -52,6 +52,15 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
+    - title: >-
+        Inventory 14 Dutch Ministries Netherlands Algorithm Registry
+      intro: >
+        Last summer, 14 Dutch ministries published their inventories of high-risk AI systems and high-impact algorithms. We compiled an overview.
+      link: >-
+        /knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/
+      image: /images/knowledge_base/Inventarisation Netherlands Algorithm Registry.png
+      date: 26-08-2025
+      type: review
     - title: Local-only tools for AI validation
       intro: >
         Slides explaining the concept of 'local-only' tools. Highlighting
@@ -62,23 +71,17 @@ Activity_Feed:
       image: /images/BDT/20250605_carrousel_local-only.png
       date: 05-06-2025
       type: open source code
-    - title: >-
-        Public standard 'Meaningful human intervention for risk profiling
-        algorithms'
-      intro: >
-        Step-by-step guide to prevent prohibited automated decision-making
-        solely based on profiling, as stated in article 22 GDPR. Based on
-        case-based experiences with risk profiling algorithms and aligned with
-        recent (scientific) publications.
-      link: >-
-        /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
-      image: /images/knowledge_base/Public_standard_meaningful_human_intervention.png
-      date: 15-05-2025
-      type: public standard
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
+    - title: >-
+        Expert Roundtable II: Capacity Building for Competent Authorities on AI
+      link: >-
+        https://unesdoc.unesco.org/ark:/48223/pf0000395086
+      image: /images/partner logo-cropped/UNESCO.png
+      date: 31-09-2025
+      type: panel discussion
     - title: >-
         Presentation 'Meaningful human interaction', Network of Dutch Public
         Service Suppiers
@@ -86,14 +89,6 @@ Activity_Feed:
         /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       image: /images/partner logo-cropped/NPD.png
       date: 30-10-2025
-      type: presentation
-    - title: >-
-        Presentation 'Local-only tools for AI validation', The Netherlands
-        Platform AI & Government
-      link: >-
-        https://forms.zohopublic.eu/ecpplatform/form/AanmeldformulieronlineAIlunchbreaksessies/formperma/9n7oFcEAlLYZtxJ73sMRbsNiPMDYHeMaIAFcUc7fWOA
-      image: /images/partner logo-cropped/PlatformAI_Overheid.jpg
-      date: 20-08-2025
       type: presentation
   items_button_text: More events
   items_button_link: /events/activities/
