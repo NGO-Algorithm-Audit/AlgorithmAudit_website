@@ -28,7 +28,7 @@
       </div>
       <div class="col-lg-2 col-12"></div>
       {{ else }}
-      <div class="col-12 mx-auto">
+      <div class="col-12 {{if.Params.quick_navigation.custom_page_width}}col-lg-{{.Params.quick_navigation.custom_page_width}}{{end}} mx-auto">
         <div class="content">{{ .Content }}</div>
       </div>
       {{ end }}
