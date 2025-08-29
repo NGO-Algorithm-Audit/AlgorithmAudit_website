@@ -99,8 +99,8 @@
       }
 
       @media (max-width: 992px) {
-        top: 12px;
-        right: -11px;
+        top: -18px;
+        left: 14px;
       }
     }
 
@@ -244,14 +244,14 @@
               <a href=${item.url} class="container">
                 <div class="row search-result-row">
                   <div class="col-12 col-lg-2">
-                    <div class="position-absolute search-tags-mobile">
-                      ${tagToHtml(item.tag)}
-                    </div>
                     <div class="my-3 text-center image-frame">
                       <img class="image-fluid search-result-image d-inline p-2" src='${item.image}' alt='${item.title}' />
                     </div>
                   </div>
                   <div class="col-12 col-lg-10">
+                    <div class="position-absolute search-tags-mobile">
+                      ${tagToHtml(item.tag)}
+                    </div>
                     <h3 class="color-blue search-result-title">${item._highlightResult.title.value}</h3>
                     <p class="color-gray search-result-subtitle">${item._highlightResult.subtitle.value}</p>
                     <div class="position-absolute search-tags-desktop">
