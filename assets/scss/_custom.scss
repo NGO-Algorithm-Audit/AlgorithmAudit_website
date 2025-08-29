@@ -152,8 +152,14 @@
 	border-color:#005aa7;
 	color:#005aa7;
 	border-radius: 100px;
-	width: 30px;
-	height: 30px;
+	width: 18px;
+	height: 18px;
 	background-color: #fff;
 	margin-left: 2px;
+	position: relative;
+	top: 6px;
+	b {
+		position: relative;
+		top: -6px;
+	}
 }
