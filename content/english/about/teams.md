@@ -93,8 +93,8 @@ team:
         name: Mackenzie Jorgensen PhD
         bio: |
           Postdoctoral Research Fellow, Northumbria University
-        accordion_content: ""
         linkedIn: "https://www.linkedin.com/in/mackenzie-j-447763142"
+        accordion_content: ""
       - image: /images/people/KProrokovic.jpeg
         name: Krsto Proroković
         bio: |
@@ -114,7 +114,9 @@ team:
         linkedIn: "https://www.linkedin.com/in/joelpersson"
         accordion_content: ""
   - title: Team software development
-    content: Part-time team working on software development, among others working on Algorithm Audit's tools and website
+    content: >-
+      Part-time team working on software development, among others working on
+      Algorithm Audit's tools and website
     icon: fas fa-code
     id: team-SD
     team_members:
@@ -174,7 +176,8 @@ team:
           Postdoctoral researcher AI, Media and Democracy Lab, University of
           Amsterdam
         linkedIn: "https://www.linkedin.com/in/laurens-naudts-9a935729"
-        accordion_content: ""
+        accordion_content: |
+          TEST
   - title: Executive team
     content: Full-time team coordinating the different activities of Algorithm Audit
     icon: fas fa-users
@@ -185,14 +188,16 @@ team:
         bio: |
           Director-board member
         linkedIn: "https://www.linkedin.com/in/jfparie/"
+        accordion_content: ""
       - image: /images/people/YRemmits.jpg
         name: Ylja Remmits
         bio: |
           Head of Projects
         linkedIn: "https://www.linkedin.com/in/ylja-remmits-21185188"
+        accordion_content: ""
 ---
 
-{{< about_AA id="about" >}}
+{{< about_AA >}}
 
 {{< team index="5" >}}
 

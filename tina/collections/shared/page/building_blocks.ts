@@ -648,13 +648,6 @@ const building_blocks: TinaField[] = [
             description:
               "If this field is filled, an accordion will be created to show more information",
           },
-          {
-            type: "string",
-            name: "accordion_id",
-            label: "Accordion ID",
-            description:
-              "Unique identifier needed to make the accordion work, e.g. use the person's name without spaces and include the team section in it, e.g. coreTeamJohnDoe",
-          },
         ],
       },
     ],
