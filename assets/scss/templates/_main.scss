@@ -297,15 +297,24 @@ input[type="checkbox"] {
 }
 
 .border-left-blue{
-  border-left: 1px solid #005AA7;
+  border-left: 2px solid #005AA7;
+}
+
+.border-left-darkred {
+  border-left: 2px solid #E38167;
 }
 
 .border-left-white{
-  border-left: 1px solid #ffffff;
+  border-left: 2px solid #ffffff;
 }
 
 .border-top-blue{
-  border-top: 1px solid #005AA7;
+  border-top: 2px solid #005AA7;
+  padding-top: 25px;
+}
+
+.border-top-darkred{
+  border-top: 2px solid #E38167;
   padding-top: 25px;
 }
 

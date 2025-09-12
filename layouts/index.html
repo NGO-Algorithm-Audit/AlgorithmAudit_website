@@ -335,7 +335,7 @@
     <!-- areas of AI expertise -->
 
     <!-- desktop version -->
-    <div class="row justify-content-center desktop mx-3">
+    <div class="row justify-content-center desktop">
       {{$width_m := 4}}
       {{$width_s := 2}}
       {{if .width_m}}
@@ -345,7 +345,7 @@
       {{$width_s = .width_s}}
       {{end}}
       {{ range $index, $item := .feature_item }}
-      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 {{if eq $index 0}}{{else}}border-left-blue{{end}}">
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-darkred">
         <div class="feature-card-transparant">
           <i class="{{$item.icon}} mb-3" style="font-size:22px;">
             <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
@@ -362,7 +362,7 @@
     <!-- mobile version -->
     <div class="row justify-content-center mobile">
       {{ range .feature_item }}
-      <div class="col-12 m-4 border-top-blue">
+      <div class="col-12 m-4 border-top-darkred">
         <div class="feature-card-transparant">
           <i class="{{.icon}} mb-3" style="font-size:22px;">
             <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
@@ -419,7 +419,7 @@
       {{$width_s = .width_s}}
       {{end}}
       {{ range $index, $item := .feature_item }}
-      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 {{if eq $index 0}}{{else}}border-left-blue{{end}}">
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-darkred">
         <div class="feature-card-transparant">
           <i class="{{$item.icon}} mb-3" style="font-size:22px;">
             <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
@@ -436,7 +436,7 @@
     <!-- mobile version -->
     <div class="row justify-content-center mobile">
       {{ range .feature_item }}
-      <div class="col-12 m-4 border-top-blue">
+      <div class="col-12 m-4 border-top-darkred">
         <div class="feature-card-transparant">
           <i class="{{.icon}} mb-3" style="font-size:22px;">
             <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
