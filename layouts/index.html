@@ -304,6 +304,14 @@
       $(".search-overlay").addClass("d-none");
       $(".search-overlay").removeClass("d-block");
     });
+
+    $("a[title='Search']").on("click", function (e) {
+      setTimeout(() => $("input.ais-SearchBox-input").focus(), 50);
+    });
+
+    if(window.location.hash == "#search") {
+      setTimeout(() => $("input.ais-SearchBox-input").focus(), 50);
+    }
   });
 </script>
 <!-- /Search -->

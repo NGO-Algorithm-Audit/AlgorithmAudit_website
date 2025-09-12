@@ -8,7 +8,8 @@
       <div class="navbar-div">
         <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
           {{ with site.Params.logo}}
-          <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}" style="min-width: {{site.Params.logo_width}};">
+          <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}"
+            style="min-width: {{site.Params.logo_width}};">
           {{ else }}{{site.Title}}{{end}}
         </a>
       </div>
@@ -29,7 +30,8 @@
             <a class="nav-link dropdown-toggle d-none d-xl-block" href="{{ .URL | relURL }}" role="button">
               {{ .Name }}
             </a>
-            <a class="nav-link dropdown-toggle d-block d-xl-none" href="{{ .URL | relURL }}" role="button" data-toggle="dropdown" >
+            <a class="nav-link dropdown-toggle d-block d-xl-none" href="{{ .URL | relURL }}" role="button"
+              data-toggle="dropdown">
               {{ .Name }}
             </a>
             <div class="dropdown-menu shadow-lg" style="padding: 1rem 0.25rem;">
@@ -37,15 +39,16 @@
               {{if .Params.subtitle}}
               <p class="mb-0 mt-1 ml-3" style="color:#005aa7; font-weight:550; font-size:13px;">{{.Params.subtitle}}</p>
               {{end}}
-              <a class="dropdown-item mr-4" href="{{ .URL | relURL }}" target="{{ .Params.target }}"  title="{{ .Name }}" style="padding: 0.75rem 1.5rem;color: #005aa7;">
+              <a class="dropdown-item mr-4" href="{{ .URL | relURL }}" target="{{ .Params.target }}" title="{{ .Name }}"
+                style="padding: 0.75rem 1.5rem;color: #005aa7;">
                 {{if .Params.icon}}
                 <i class="fas {{.Params.icon}} col-2 pl-0"></i>
                 {{end}}
                 {{ if .Params.Featured }}
                 <div class="mb-1 text-center rounded" style="padding: 0.5rem 0.5rem; background-color: #dfeaf4;">
-                {{ end }}
+                  {{ end }}
                   {{.Pre}}{{ .Name }}{{.Post}}
-                {{ if .Params.Featured }}
+                  {{ if .Params.Featured }}
                 </div>
                 {{ end }}
               </a>
@@ -61,7 +64,11 @@
 
           <!-- Search -->
           <li class="nav-item">
-            <a class="nav-link" href='{{ if eq .Site.Language.Lang "en" }}{{else}}/nl{{end}}/#search' title="Search"><i class="fas fa-search"></i></a>
+            <a style="max-width: 200px;" class="nav-link rounded-lg bg-lightblue py-1 my-1 mx-auto"
+              href='{{ if eq .Site.Language.Lang "en" }}{{else}}/nl{{end}}/#search' title="Search"><i
+                class="fas fa-search d-inline" id="search-hotkeys"></i>
+              <p class="d-inline ml-2" id="search-hotkeys-text"></p>
+            </a>
           </li>
           <!-- /Search -->
 
@@ -76,7 +83,8 @@
               </div>
               <!-- Rounded switch -->
               <label class="switch d-inline-block mx-1">
-                <input type="checkbox" disabled aria-checked={{if eq .Site.Language.Lang "en" }} "true" checked {{else}} "false" {{ end }} id="lang-toggle" role="switch">
+                <input type="checkbox" disabled aria-checked={{if eq .Site.Language.Lang "en" }} "true" checked
+                  {{else}} "false" {{ end }} id="lang-toggle" role="switch">
                 <span class="slider round"></span>
               </label>
               <div class="d-inline" {{ if eq .Site.Language.Lang "nl" }} style="font-weight: 350;" {{ end}}>
@@ -98,5 +106,29 @@
   </div>
 
 </header>
+<script>
+  docReady(function () {
+    console.log(navigator.platform);
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      const isMac = navigator.platform.indexOf('Mac') >= 0;
+      if (isMac) {
+        $("#search-hotkeys-text").text("[⌘] + [\\]");
+      }
+      else {
+        $("#search-hotkeys-text").text("[Ctrl] + [\\]");
+      }
+      $("a[title='Search']").addClass("rounded-lg bg-lightblue");
 
+      $(window).keydown(function (k) {
+
+        console.log(k);
+        if (k.which == 220 && (k.ctrlKey == true && !isMac || k.metaKey == true && isMac)) {
+          $("a[title='Search']")[0].click();
+          k.preventDefault();
+          return false;
+        }
+      });
+    }
+  });
+</script>
 {{ "<!-- /navigation -->" | safeHTML }}
