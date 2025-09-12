@@ -5,16 +5,16 @@
         {{ range .activities }}
         
         <a href={{.url}} class="col-12 col-lg-6 col-xl-3 p-1">
-            <div style="background-color: {{.color}};" class="rounded-lg color-blue font-size-1rem font-size-xl-1_5rem container p-0">
+            <div style="background-color: {{.color}};" class="rounded-lg color-blue font-size-1rem font-size-xl-1_5rem container p-0 h-100">
                 <div class="row mx-4 py-3">
                     <i class="font-size-2rem fa {{ .icon }}"></i>
                 </div>
-                <row class="row mx-4 pt-3">
+                <div class="row mx-4 pt-3">
                     <h3 class="color-blue font-size-1_3rem">{{.title}}</h3>
-                </row>
-                <row class="row mx-4 pb-0 landing-page-core-activities-row-subtitle">
+                </div>
+                <div class="row mx-4 pb-0 landing-page-core-activities-row-subtitle align-items-end position-relative bottom-0">
                     <p class="color-blue font-size-1rem">{{.subtitle}}</p>
-                </row>
+                </div>
             </div>
         </a>
         {{ end }}
