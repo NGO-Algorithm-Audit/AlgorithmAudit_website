@@ -80,8 +80,22 @@ Activity_Feed:
       link: >-
         https://unesdoc.unesco.org/ark:/48223/pf0000395086
       image: /images/partner logo-cropped/UNESCO.png
-      date: 31-09-2025
+      date: 30-09-2025
       type: panel discussion
+    - title: >-
+        Association of Insurers – Data day 2025
+      link: >-
+        https://www.verzekeraars.nl/academy/activiteitenoverzicht/data-dag-2025
+      image: /images/partner logo-cropped/VerbondvanVerzekeraars.svg
+      date: 02-10-2025
+      type: presentation
+    - title: >-
+        Brussels Privacy Symposium 2025 – A data protection (r)evolution?
+      link: >-
+        https://fpf.org/fpf-event/brussels-privacy-symposium-2025/
+      image: /images/partner logo-cropped/FPF.png
+      date: 14-10-2025
+      type: presentation
     - title: >-
         Presentation 'Meaningful human interaction', Network of Dutch Public
         Service Suppiers
