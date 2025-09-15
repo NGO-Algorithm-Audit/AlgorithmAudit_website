@@ -25,6 +25,22 @@ facet_groups:
         label: Presentatie
 events:
   - title: >-
+      Interview Binnenlands Bestuur
+    description: >
+      Interview met <a href="https://www.binnenlandsbestuur.nl/digitaal/rijk-zegt-nauwelijks-hoog-risico-ai-te-gebruiken" target="_blank">Binnenlands Bestuur </a> over de <a href="https://algorithmaudit.eu/nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventarisatie</a> van Algorithm Audit van de registraties van 14 ministries en rijksoverheidsorganisaties in het landelijke algoritmeregister.
+
+    image: /images/partner logo-cropped/BinnenlandsBestuur.svg
+    date: 27-08-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_interview
+        label: interview
+  - title: >-
       Presentation 'Local AI and AI governance' – Platform AI & Overheid
     description: >
       Presentation 'Local AI and AI governance' bij <a href="https://platformaioverheid.nl/?" target="_blank">Platform AI & Overheid</a>
