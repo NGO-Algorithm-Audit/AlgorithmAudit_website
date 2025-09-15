@@ -24,6 +24,39 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: >-
+      Interview Binnenlands Bestuur
+    description: >
+      Interview met <a href="https://www.binnenlandsbestuur.nl/digitaal/rijk-zegt-nauwelijks-hoog-risico-ai-te-gebruiken" target="_blank">Binnenlands Bestuur </a> over de <a href="https://algorithmaudit.eu/nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventarisatie</a> van Algorithm Audit van de registraties van 14 ministries en rijksoverheidsorganisaties in het landelijke algoritmeregister.
+
+    image: /images/partner logo-cropped/BinnenlandsBestuur.svg
+    date: 27-08-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_interview
+        label: interview
+  - title: >-
+      Presentation 'Local AI and AI governance' – Platform AI & Overheid
+    description: >
+      Presentation 'Local AI and AI governance' bij <a href="https://platformaioverheid.nl/?" target="_blank">Platform AI & Overheid</a>
+
+      {{< embed_pdf url="/pdf-files/events/activities/20250819 Algorithm Audit lokale AI en governance.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+    image: /images/partner logo-cropped/PlatformAI_Overheid.jpg
+    date: 19-08-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: Presentatie 'AI x Governance & Regulation - The EU AI Act is here', Big Data Republic en Kickstart AI
     description: >
       Presentatie 'Het auditeren van een private sector machine learning-gedreven risicoprofileringsalgoritme'

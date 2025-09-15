@@ -25,6 +25,39 @@ facet_groups:
         label: Presentation
 events:
   - title: >-
+      Interview Binnenlands Bestuur
+    description: >
+      Interview with platform for Dutch public governance <a href="https://www.binnenlandsbestuur.nl/digitaal/rijk-zegt-nauwelijks-hoog-risico-ai-te-gebruiken" target="_blank">Binnenlands Bestuur </a> relating to Algorithm Audit's <a href="https://algorithmaudit.eu/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventory of 14 Dutch ministries' registration in the Netherlands' national algorithm registry</a>.
+
+    image: /images/partner logo-cropped/BinnenlandsBestuur.svg
+    date: 27-08-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_interview
+        label: interview
+  - title: >-
+      Presentation 'Local AI and AI governance' – Platform AI & Government
+    description: >
+      Presentation 'Local AI and AI governance' at <a href="https://platformaioverheid.nl/?" target="_blank">Platform AI & Government</a>
+
+      {{< embed_pdf url="/pdf-files/events/activities/20250819 Algorithm Audit lokale AI en governance.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+    image: /images/partner logo-cropped/PlatformAI_Overheid.jpg
+    date: 19-08-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: >-
       Presentation 'AI x Governance & Regulation - The EU AI Act is here', Big
       Data Republic and Kickstart AI
     description: >
