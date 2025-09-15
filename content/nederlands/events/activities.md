@@ -24,6 +24,23 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: >-
+      Presentation 'Local AI and AI governance' – Platform AI & Overheid
+    description: >
+      Presentation 'Local AI and AI governance' bij <a href="https://platformaioverheid.nl/?" target="_blank">Platform AI & Overheid</a>
+
+      {{< embed_pdf url="/pdf-files/events/activities/20250819 Algorithm Audit lokale AI en governance.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+    image: /images/partner logo-cropped/PlatformAI_Overheid.jpg
+    date: 19-08-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: Presentatie 'AI x Governance & Regulation - The EU AI Act is here', Big Data Republic en Kickstart AI
     description: >
       Presentatie 'Het auditeren van een private sector machine learning-gedreven risicoprofileringsalgoritme'
