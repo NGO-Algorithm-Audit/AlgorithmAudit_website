@@ -83,8 +83,8 @@
                                     {{ end }}
                                     <div class="col-md-6 mb-4 facet-item" data-facets="{{$facets_for_data_attribute}}">
                                         <div class="shadow mobile-desktop-container-layout border-bottom-gradient rounded-lg">
-                                            <div style=" margin-left: auto; margin-right: auto; display: table;">
-                                                <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" style='height: 276px; margin-bottom: 25px;'>
+                                            <div>
+                                                <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" class="mx-auto mw-100" style='max-height: 350px; margin-bottom: 25px;'>
                                             </div>
                                             <div class="card-body p-0 mb-3">
                                                 <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title" style="width:90%;">{{ .Title }}</a></h3>
