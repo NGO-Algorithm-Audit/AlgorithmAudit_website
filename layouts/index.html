@@ -99,8 +99,8 @@
       }
 
       @media (max-width: 992px) {
-        top: 12px;
-        right: -11px;
+        top: -18px;
+        left: 14px;
       }
     }
 
@@ -244,14 +244,14 @@
               <a href=${item.url} class="container">
                 <div class="row search-result-row">
                   <div class="col-12 col-lg-2">
-                    <div class="position-absolute search-tags-mobile">
-                      ${tagToHtml(item.tag)}
-                    </div>
                     <div class="my-3 text-center image-frame">
                       <img class="image-fluid search-result-image d-inline p-2" src='${item.image}' alt='${item.title}' />
                     </div>
                   </div>
                   <div class="col-12 col-lg-10">
+                    <div class="position-absolute search-tags-mobile">
+                      ${tagToHtml(item.tag)}
+                    </div>
                     <h3 class="color-blue search-result-title">${item._highlightResult.title.value}</h3>
                     <p class="color-gray search-result-subtitle">${item._highlightResult.subtitle.value}</p>
                     <div class="position-absolute search-tags-desktop">
@@ -267,10 +267,14 @@
           .join('');
       }
     );
+    let placeholderSearchText = '{{ if eq .Site.Language.Lang "en" }}Type to start searching{{else}}Typ om te beginnen met zoeken{{end}}';
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      placeholderSearchText = '{{ if eq .Site.Language.Lang "en" }}Type [\\] to start searching{{else}}Typ [\\] om te beginnen met zoeken{{end}}';
+    }
     search.addWidgets([
       instantsearch.widgets.searchBox({
         container: '#searchbox',
-        placeholder: '{{ i18n "search-type-to-start" }}',
+        placeholder: placeholderSearchText,
       }),
       instantsearch.widgets.configure({
         hitsPerPage: 8,
@@ -304,6 +308,14 @@
       $(".search-overlay").addClass("d-none");
       $(".search-overlay").removeClass("d-block");
     });
+
+    $("a[title='Search']").on("click", function (e) {
+      setTimeout(() => $("input.ais-SearchBox-input").focus(), 50);
+    });
+
+    if(window.location.hash == "#search") {
+      setTimeout(() => $("input.ais-SearchBox-input").focus(), 50);
+    }
   });
 </script>
 <!-- /Search -->
@@ -327,7 +339,7 @@
     <!-- areas of AI expertise -->
 
     <!-- desktop version -->
-    <div class="row justify-content-center desktop mx-3">
+    <div class="row justify-content-center desktop">
       {{$width_m := 4}}
       {{$width_s := 2}}
       {{if .width_m}}
@@ -337,7 +349,7 @@
       {{$width_s = .width_s}}
       {{end}}
       {{ range $index, $item := .feature_item }}
-      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 {{if eq $index 0}}{{else}}border-left-blue{{end}}">
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-red">
         <div class="feature-card-transparant">
           <i class="{{$item.icon}} mb-3" style="font-size:22px;">
             <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
@@ -354,7 +366,7 @@
     <!-- mobile version -->
     <div class="row justify-content-center mobile">
       {{ range .feature_item }}
-      <div class="col-12 m-4 border-top-blue">
+      <div class="col-12 m-4 border-top-red">
         <div class="feature-card-transparant">
           <i class="{{.icon}} mb-3" style="font-size:22px;">
             <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">
@@ -411,7 +423,7 @@
       {{$width_s = .width_s}}
       {{end}}
       {{ range $index, $item := .feature_item }}
-      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 {{if eq $index 0}}{{else}}border-left-blue{{end}}">
+      <div class="col-md-{{$width_m}} col-sm-{{$width_s}} mb-4 border-left-blue">
         <div class="feature-card-transparant">
           <i class="{{$item.icon}} mb-3" style="font-size:22px;">
             <h4 class="color-blue d-inline-block" style="padding-left:10px; font-weight:100;">

@@ -94,8 +94,5 @@ other = "Laag risico"
 [search]
 other = "Zoeken"
 
-[search-type-to-start]
-other = "Typ om te beginnen met zoeken"
-
 [search-no-results]
 other = "Geen resultaten gevonden"

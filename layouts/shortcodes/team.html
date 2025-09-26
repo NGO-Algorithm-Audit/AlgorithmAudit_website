@@ -17,20 +17,20 @@
     </h3>
 
     {{ end }}
-
+    {{ $accordion_team_id := .id }}
     <!-- team members -->
     <div class="container-team mt-4">
       <p>{{ .content | markdownify }}</p>
       <div class="row">
-        {{ range .team_members }}
-        {{ if .accordion_id}}
+        {{ range $memberIndex, $teamMember := .team_members }}
+        {{ if .accordion_content }}
         <script>
           docReady(function () {
-            new Accordion('#accordion_area_team_{{.accordion_id}}');
+            new Accordion('#accordion_area_team_{{$accordion_team_id}}_{{$memberIndex}}');
           });
         </script>
         {{ end }}
-        <div class="col-md-6 col-12 team-member p-3 " id="accordion_area_team_{{.accordion_id}}">
+        <div class="col-md-6 col-12 team-member p-3 " id="accordion_area_team_{{$accordion_team_id}}_{{$memberIndex}}">
           <div class="row {{if .accordion_content}}ac{{end}}" style="border:none;">
             <div class="col-3">
               <img src="{{ .image | relURL }}" width="100%;" style="border-radius: 20px;">

@@ -18,6 +18,12 @@ const quick_navigation: TinaField = {
       required: false,
     },
     {
+      type: "string",
+      name: "custom_page_width",
+      label: "Custom page width for large screens (1-12)",
+      required: false,
+    },
+    {
       type: "object",
       name: "links",
       label: "Links",

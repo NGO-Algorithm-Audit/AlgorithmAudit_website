@@ -5,6 +5,8 @@ subtitle: >
   and AI. On this page information is collected about these initiatives,
   including reference material that Algorithm Audit has developed.
 image: /images/svg-illustrations/knowledge_base.svg
+quick_navigation:
+  custom_page_width: '9'
 reports_preview:
   title: White papers
   icon: fas fa-file

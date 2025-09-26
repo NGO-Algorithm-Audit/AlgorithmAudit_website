@@ -31,36 +31,36 @@ About:
 overview_block:
   activities:
     - title: Kennisplatform
-      subtitle: 'Expertise in statistiek, software development, recht en ethiek'
+      subtitle: "Expertise in statistiek, software development, recht en ethiek"
       url: /nl/knowledge-platform/
       icon: fa-light fa-layer-group
-      color: '#E3F0FE'
+      color: "#E3F0FE"
     - title: Algoprudentie
       subtitle: Case-based normatief advies voor verantwoorde AI
       url: /nl/algoprudence/
       icon: fa-light fa-scale-balanced
-      color: '#F7CDBF'
+      color: "#F7CDBF"
     - title: Technische tools
       subtitle: Open source tools voor validatie van algorithmische systemen
       url: /nl/technical-tools/
       icon: fa-light fa-toolbox
-      color: '#FFFDE4'
+      color: "#FFFDE4"
     - title: Projectwerk
       subtitle: >-
         Validatie, implementatie AI-verordening, organisatorische
         beheersmaatregelen etc.
       url: /nl/knowledge-platform/project-work/
       icon: fa-light fa-magnifying-glass-plus
-      color: '#E3F0FE'
+      color: "#E3F0FE"
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
-    - title: >-
-        Inventarisatie 14 ministries Algoritmeregister
+    - title: Inventarisatie 14 ministries Algoritmeregister
       intro: >
-        Afgelopen zomer hebben 14 Nederlandse ministeries hun inventarisaties van hoog-risico AI-systemen en impactvolle algoritmes gedeeld. Wij maakten een inventarisatie.
-      link: >-
-        /nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/
+        Afgelopen zomer hebben 14 Nederlandse ministeries hun inventarisaties
+        van hoog-risico AI-systemen en impactvolle algoritmes gedeeld. Wij
+        maakten een inventarisatie.
+      link: /nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/
       image: /images/knowledge_base/Inventarisatie Algoritmeregister.png
       date: 26-08-2025
       type: onderzoek
@@ -79,10 +79,8 @@ Activity_Feed:
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
-    - title: >-
-        Expert rondetafel II: Kennisopbouw voor toezichthouder op AI
-      link: >-
-        https://unesdoc.unesco.org/ark:/48223/pf0000395086
+    - title: "Expert rondetafel II: Kennisopbouw voor toezichthouder op AI"
+      link: "https://unesdoc.unesco.org/ark:/48223/pf0000395086"
       image: /images/partner logo-cropped/UNESCO.png
       date: 30-09-2025
       type: paneldiscussie
@@ -113,7 +111,7 @@ Activity_Feed:
 Areas_of_AI_expertise:
   title: Expertise
   enable: true
-  width_m: 4
+  width_m: 6
   width_s: 12
   feature_item:
     - name: Socio-technische evaluatie generatieve AI
@@ -159,6 +157,22 @@ Areas_of_AI_expertise:
 
         style="text-decoration: underline;">publieke standaarden</a> voor
         verantwoord gebruik van algoritmische systemen.
+    - name: Op maat gemaakte technische hulpmiddelen
+      icon: fas fa-code
+      content: >
+        Voor specifieke toepassingen ten behoeven van de verantwoorde inzet van
+        algoritmes en AI ontwikkelt Algorith Audit technische tools. Zie
+        bijvoorbeeld onze open source tools voor <a
+        href="/nl/technical-tools/sdg/"
+        style="text-decoration: underline;">synthetische data
+        generatie</a> en <a
+        href="/nl/technical-tools/bdt/"
+        style="text-decoration: underline;">unsupervised bias
+        detectie</a>, zoals ontwikkeld in samenwerking
+        met het Ministerie van Binnenlandse Zaken en de Diesnt Uitvoering
+        Onderwijs (DUO). Onze tools zijn local-only. Dat betekent dat data de
+        omgeving van organisaties niet verlaten en er geen afhankelijkheden zijn
+        van cloudplatforms.
   button_text: Bespreek samenwerking
   button_link: /nl/knowledge-platform/project-work/#form
 Distinctive_in:
@@ -193,13 +207,13 @@ Supported_by:
   title: Samenwerking met
   funders:
     - image: /images/partner logo-cropped/CoE.png
-      link: 'https://www.coe.int/en/web/portal/home'
+      link: "https://www.coe.int/en/web/portal/home"
       alt_text: Raad van Europa
     - image: /images/partner logo-cropped/EAISF.png
-      link: 'https://europeanaifund.org/announcing-our-2022-open-call-grantees/'
+      link: "https://europeanaifund.org/announcing-our-2022-open-call-grantees/"
       alt_text: European AI&Society Fund
     - image: /images/partner logo-cropped/CEN.jpg
-      link: 'https://www.cencenelec.eu'
+      link: "https://www.cencenelec.eu"
       alt_text: Europees standaardiseringcomité
     - image: /images/partner logo-cropped/MinBZK.png
       link: >-
@@ -210,19 +224,18 @@ Supported_by:
         https://www.rijksoverheid.nl/ministeries/ministerie-van-justitie-en-veiligheid
       alt_text: Ministerie van Justitie en Veiligheid
     - image: /images/partner logo-cropped/DUO.png
-      link: 'https://duo.nl'
+      link: "https://duo.nl"
       alt_text: Dienst Uitvoering Onderwijs
     - image: /images/partner logo-cropped/GemeenteAmsterdam.png
-      link: 'https://www.amsterdam.nl'
+      link: "https://www.amsterdam.nl"
       alt_text: Gemeente Amsterdam
     - image: /images/partner logo-cropped/SIDN.png
-      link: 'https://www.sidnfonds.nl/projecten/open-source-ai-auditing'
+      link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
       alt_text: Stichting Internet en Democratie Nederland
     - image: /images/partner logo-cropped/NEN.svg
-      link: 'https://www.nen.nl'
+      link: "https://www.nen.nl"
       alt_text: Nederlands normalisatie instituut
 Title_video:
   title: Video
   video_mp4: /videos/AA_video_(1080p).mp4
 ---
-
