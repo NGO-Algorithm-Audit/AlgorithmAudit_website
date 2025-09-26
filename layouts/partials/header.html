@@ -64,7 +64,7 @@
 
           <!-- Search -->
           <li class="nav-item">
-            <a style="max-width: 200px;" class="nav-link rounded-lg bg-lightblue py-1 my-1 mx-auto"
+            <a style="max-width: 200px;" class="nav-link py-1 my-1 mx-auto"
               href='{{ if eq .Site.Language.Lang "en" }}{{else}}/nl{{end}}/#search' title="Search"><i
                 class="fas fa-search d-inline" id="search-hotkeys"></i>
               <p class="d-inline ml-2" id="search-hotkeys-text"></p>
@@ -108,21 +108,9 @@
 </header>
 <script>
   docReady(function () {
-    console.log(navigator.platform);
     if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      const isMac = navigator.platform.indexOf('Mac') >= 0;
-      if (isMac) {
-        $("#search-hotkeys-text").text("[⌘] + [\\]");
-      }
-      else {
-        $("#search-hotkeys-text").text("[Ctrl] + [\\]");
-      }
-      $("a[title='Search']").addClass("rounded-lg bg-lightblue");
-
       $(window).keydown(function (k) {
-
-        console.log(k);
-        if (k.which == 220 && (k.ctrlKey == true && !isMac || k.metaKey == true && isMac)) {
+        if (k.which == 220) {
           $("a[title='Search']")[0].click();
           k.preventDefault();
           return false;
