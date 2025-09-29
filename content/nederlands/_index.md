@@ -100,8 +100,15 @@ Activity_Feed:
       link: >-
         /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       image: /images/partner logo-cropped/NPD.png
-      date: 30-10-2025
+      date: 31-10-2025
       type: presentatie
+    - title: >-
+        Paneldiscussie ‘Statistiek: kwaal of wondermiddel voor effectief toezicht op algoritmes en AI?’, Tijdschrift voor Toezicht en professional association VIDE
+      link: >-
+        https://www.videnet.nl/activiteiten/detail/157/seminar-toezicht-op-emerging-technologies/schedule
+      image: /images/partner logo-cropped/Vide.png
+      date: 31-10-2025
+      type: paneldiscussion
   items_button_text: Meer events
   items_button_link: /nl/events/activities/
 Areas_of_AI_expertise:

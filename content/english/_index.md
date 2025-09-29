@@ -99,8 +99,15 @@ Activity_Feed:
       link: >-
         /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
       image: /images/partner logo-cropped/NPD.png
-      date: 30-10-2025
+      date: 31-10-2025
       type: presentation
+    - title: >-
+        Panel discussion 'Statistics: burden or solution for efficient supervision on algorithms and AI?', Dutch Journal for Supervision and network of competent authorities VIDE
+      link: >-
+        https://www.videnet.nl/activiteiten/detail/157/seminar-toezicht-op-emerging-technologies/schedule
+      image: /images/partner logo-cropped/Vide.png
+      date: 31-10-2025
+      type: panel discussion
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:
