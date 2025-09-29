@@ -55,6 +55,13 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
+    - title: 'Algoprudentie: Voorspellen van onverantwoord rijgedrag'
+      intro: >
+        Case study naar het voorspellen van onverantwoord rijgedrag op basis van de data van een autodeelplatform.
+      link: /nl/algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/
+      image: /images/algoprudence/AA202501/Cover_NL.png
+      date: 30-09-2025
+      type: algoprudence
     - title: Inventarisatie 14 ministries Algoritmeregister
       intro: >
         Afgelopen zomer hebben 14 Nederlandse ministeries hun inventarisaties
@@ -64,17 +71,6 @@ Activity_Feed:
       image: /images/knowledge_base/Inventarisatie Algoritmeregister.png
       date: 26-08-2025
       type: onderzoek
-    - title: Local-only tools voor AI validatie
-      intro: >
-        Slides die het concept van 'local-only' tools uitleggen. Verschillen en
-        overeenkomsten met cloud computing worden toegelicht, inclusief
-        voorbeelden hoe Algorithm Audit’s open source software gebruikt kan
-        worden gebruikt voor usnupervised bias detectie en synthetische
-        datageneratie.
-      link: /nl/technical-tools/bdt/#local-only
-      image: /images/BDT/20250605_carrousel_local-only.png
-      date: 05-06-2025
-      type: open source code
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events

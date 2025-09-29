@@ -52,25 +52,22 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
+    - title: 'Algoprudence: Predicting irresponsible driving'
+      intro: >
+        Case study how irresponsible driving can be predicted based on data of a car sharing platform.
+      link: /algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/
+      image: /images/algoprudence/AA202501/Cover_EN.png
+      date: 30-09-2025
+      type: algoprudence
     - title: >-
         Inventory 14 Dutch Ministries Netherlands Algorithm Registry
       intro: >
-        Last summer, 14 Dutch ministries published their inventories of high-risk AI systems and high-impact algorithms. We compiled an overview.
+        Overview of 14 Dutch ministries' inventories of high-risk AI systems and high-impact algorithms.
       link: >-
         /knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/
       image: /images/knowledge_base/Inventarisation Netherlands Algorithm Registry.png
       date: 26-08-2025
       type: review
-    - title: Local-only tools for AI validation
-      intro: >
-        Slides explaining the concept of 'local-only' tools. Highlighting
-        similarities and differences with cloud computing, including examples
-        how Algorithm Audit's open source software can be used for unsupervised
-        bias detection and synthetic data generation tool.
-      link: /technical-tools/bdt/#local-only
-      image: /images/BDT/20250605_carrousel_local-only.png
-      date: 05-06-2025
-      type: open source code
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
