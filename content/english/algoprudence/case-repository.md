@@ -1,11 +1,14 @@
 ---
+layout: repository
 title: Algoprudence repository
-subtitle: "Stakeholders learn from our\_techno-ethical jurisprudence, can help to improve it and can use it as to resolve ethical issues in a harmonized manner.\n\nWe are open to new cases. Please <span style=\"color:#005aa7\">[submit</span>](/algoprudence/submit-a-case/) a case for review.\n\nOr read our <span style=\"color:#005aa7\">[white paper</span>](/knowledge-platform/knowledge-base/white_paper_algoprudence/) on algoprudence.\n"
+subtitle: "Stakeholders learn from our case law for algorithms (_algoprudence_), can help to improve it and can use it to resolve ethical issues in a harmonized manner when deploying algorithmic systems"
 image: /images/svg-illustrations/case_repository.svg
 facet_groups:
   - value: year
     title: Year
     facets:
+      - value: "2025"
+        label: "2025"
       - value: "2024"
         label: "2024"
       - value: "2023"
@@ -69,6 +72,51 @@ facet_groups:
         label: Algorithm Audit
 title_content: Case repository
 algoprudences:
+  - title: Predicting irresponsible driving
+    intro: >-
+      Case study how irresponsible driving can be identified and predicted in the database of a car sharing platform. An independent commission issues advice on among others model validity, balancing false positives and false negatives and meaningful transparency.
+    image: /images/algoprudence/AA202501/AA202501P_EN.png
+    link: /algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/
+    facets:
+      - value: AA202501
+        label: "TA:AA:2025:01"
+      - value: year_2025
+        label: "2025"
+        hide: true
+      - value: type_of_audit_normative
+        label: normative review
+      - value: type_of_algorithm_ml
+        label: machine learning
+      - value: type_of_algorithm_profiling
+        label: profiling
+      - value: ethical_issue_fp_fn_balancing
+        label: FP-FN balancing
+      - value: owner_private
+        label: car sharing platform
+      - value: standard_risk_management
+        label: risk management
+        hide: true
+      - value: standard_governance_data_quality
+        label: governance & data quality
+        hide: true
+      - value: standard_transparency_provisions
+        label: transparancy provisions
+        hide: true
+      - value: standard_human_oversight
+        label: human oversight
+        hide: true
+      - value: standard_quality_management_system
+        label: quality management
+        hide: true
+      - value: standard_accuracy_specifications
+        label: Accuracy specifications
+        hide: true
+      - value: standard_robustness_specifications
+        label: Robustness specifications
+        hide: true
+      - value: standard_quality_management_system
+        label: Quality management system
+        hide: true
   - title: Addendum Preventing prejudice
     intro: >-
       Further research into CUB process of Education Executive Agency of The
@@ -92,9 +140,9 @@ algoprudences:
       - value: ethical_issue_proxy
         label: proxy discrimination
       - value: owner_public
-        label: public organisation
+        label: DUO
       - value: standard_risk_management
-        label: risk mmanagement
+        label: risk management
         hide: true
       - value: standard_governance_data_quality
         label: governance & data quality
@@ -132,7 +180,7 @@ algoprudences:
       - value: ethical_issue_proxy
         label: proxy discrimination
       - value: owner_public
-        label: public organisation
+        label: DUO
       - value: standard_risk_management
         label: risk management
         hide: true
@@ -150,8 +198,8 @@ algoprudences:
         hide: true
   - title: Risk Profiling for Social Welfare Reexamination
     intro: >-
-      The commission judges that algorithmic risk profiling can be used under
-      strict conditions for sampling residents receiving social welfare for
+      Case study to ML-driven risk predictions on unduly granted social welfare. An independent commission judges that algorithmic risk profiling can be used under
+      strict conditions for sampling residents for
       re-examination. The aim of re-examination is a leading factor in judging
       profiling criteria.
     image: /images/algoprudence/AA202302/AA202302A_cover_EN.png
@@ -170,11 +218,11 @@ algoprudences:
       - value: type_of_algorithm_ml
         label: ML
       - value: type_of_algorithm_high_risk_AI
-        label: high-risk AI
+        label: high-risk AI system
       - value: ethical_issue_proxy
         label: proxy discrimination
       - value: owner_public
-        label: public organisation
+        label: Municipality of Rotterdam
       - value: standard_risk_management
         label: risk management
         hide: true
@@ -198,10 +246,7 @@ algoprudences:
         hide: true
   - title: BERT-based disinformation classifier
     intro: >-
-      The audit commission believes there is a low risk of (higher-dimensional)
-      proxy discrimination by the BERT-based disinformation classifier and that
-      the particular difference in treatment identified by the quantitative bias
-      scan can be justified, if certain conditions apply.
+      Case study to algorithmic detection on fake news on Twitter. An independent advice commission believes there is a low risk of proxy discrimination by the BERT-based disinformation classifier and that the particular difference in treatment identified by the quantitative bias scan can be justified, if certain conditions apply.
     image: /images/algoprudence/AA202301/Cover.png
     link: /algoprudence/cases/aa202301_bert-based-disinformation-classifier
     facets:
@@ -222,6 +267,7 @@ algoprudences:
         label: FP-FN balancing
       - value: owner_self
         label: Algorithm Audit
+        hide: true
       - value: disinformation
         label: disinformation
       - value: standard_risk_management
@@ -235,12 +281,8 @@ algoprudences:
         hide: true
   - title: Type of SIM card as a predictor variable to detect payment fraud
     intro: >-
-      The audit commission advises against using type of SIM card as an input
-      variable in algorithmic models that predict payment defaults and block
-      afterpay services for specific customers. As it is likely that type of SIM
-      card acts as a proxy-variable for sensitive demographic categories, the
-      model would run an intolerable risk of disproportionally excluding
-      vulnerable demographic groups from the payment service.
+      Case study to ML-driven risk profiling to detect after-pay fraud at an e-commerce platform. An independent commission advises against using type of SIM card as an input variable in the algorithmic risk model. As it is likely that type of SIM
+      card acts as a proxy-variable for sensitive demographic categories, the model would run an intolerable risk of disproportionally excluding vulnerable demographic groups from the payment service.
     image: /images/algoprudence/AA202201/Cover.png
     link: /algoprudence/cases/aa202201_type-of-sim
     facets:
@@ -268,5 +310,4 @@ algoprudences:
       - value: standard_transparency_provisions
         label: transparency provisions
         hide: true
-layout: repository
 ---

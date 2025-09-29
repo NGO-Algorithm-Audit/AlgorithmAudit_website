@@ -1,23 +1,14 @@
 ---
 layout: repository 
-title: Algoprudentie database
-subtitle: >
-  Algoprudentie is beschikbaar voor verschillende soorten algoritmes, onder
-  andere machine learning-, profilering-, publieke- en private algoritmes.
-
-
-  We staan open voor nieuwe cases. Dien <span
-  style="color:#005aa7">[hier</span>](/nl/algoprudence/submit-a-case/) een case
-  in voor review.
-
-
-  Of lees onze <span
-  style="color:#005aa7">[white paper</span>](/nl/knowledge-platform/knowledge-base/white_paper_algoprudence/) over algoprudentie.
+title: Algoprudentie casussen
+subtitle: "Belanghebbenden leren van onze jurisprudentie voor algoritme (_algoprudentie_), helpen het te verbeteren en gebruiken het om ethische vraagstukken omtrent de verantwoorde inzet van algoritmische systemen op een geharmonizeerde wijze op te lossen"
 image: /images/svg-illustrations/case_repository.svg
 facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: "2025"
+        label: "2025"
       - value: '2024'
         label: '2024'
       - value: '2023'
@@ -37,13 +28,13 @@ facet_groups:
       - value: profiling
         label: Profilering
       - value: rule_based
-        label: Regel gebaseerd
+        label: Regelgebaseerd
       - value: ml
         label: Machine learning
       - value: bias_detection_tool
         label: Bias detectie tool
       - value: high_risk_AI
-        label: Hoog-risico AI-systeem
+        label: Hoog risico AI-systeem
   - value: ethical_issue
     title: Ethische kwestie
     facets:
@@ -79,8 +70,53 @@ facet_groups:
         label: Private organisatie
       - value: self
         label: Algorithm Audit
-title_content: Algoprudentie database
+title_content: Algoprudentie casussen
 algoprudences:
+  - title: Voorspellen van onverantwoord rijgedrag
+    intro: >-
+      Case study naar het identificeren en voorspellen van onverantwoord rijgedrag in de database van een autodeelplatform. Een onafhankelijke adviescommissie heeft advies uitgebracht over onder meer modelvaliditeit, het balanceren van fout-positieven en fout-negatieven en betekenisvolle uitleg.
+    image: /images/algoprudence/AA202501/AA202501P_EN.png
+    link: /nl/algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/
+    facets:
+      - value: AA202501
+        label: "TA:AA:2025:01"
+      - value: year_2025
+        label: "2025"
+        hide: true
+      - value: type_of_audit_normative
+        label: normatief oordeel
+      - value: type_of_algorithm_ml
+        label: machine learning
+      - value: type_of_algorithm_profiling
+        label: profilering
+      - value: ethical_issue_fp_fn_balancing
+        label: FP-FN balanceren
+      - value: owner_private
+        label: autodeelplatform
+      - value: standard_risk_management
+        label: risicomanagement
+        hide: true
+      - value: standard_governance_data_quality
+        label: governance & datakwaliteit
+        hide: true
+      - value: standard_transparency_provisions
+        label: transparantiebepalingen
+        hide: true
+      - value: standard_human_oversight
+        label: menselijke toezicht
+        hide: true
+      - value: standard_quality_management_system
+        label: kwaliteitmanagement
+        hide: true
+      - value: standard_accuracy_specifications
+        label: Accuracy specifications
+        hide: true
+      - value: standard_robustness_specifications
+        label: Robustness specifications
+        hide: true
+      - value: standard_quality_management_system
+        label: Kwaliteitmanagementsysteem
+        hide: true
   - title: Addendum Vooringenomen voorkomen
     intro: >-
       Vervolgonderzoek naar CUB-proces DUO aan de hand van
@@ -97,13 +133,13 @@ algoprudences:
       - value: type_of_audit_technical
         label: technische audit
       - value: type_of_algorithm_rule_based
-        label: regel gebaseerd
+        label: regelgebaseerd
       - value: type_of_algorithm_profiling
         label: profilering
       - value: ethical_issue_proxy
         label: proxydiscriminatie
       - value: owner_public
-        label: publieke organisatie
+        label: DUO
       - value: standard_risk_management
         label: risicomanagement
         hide: true
@@ -114,7 +150,7 @@ algoprudences:
         label: transparantiebepalingen
         hide: true
       - value: standard_human_oversight
-        label: menselijke tussenkomst
+        label: menselijke toezicht
         hide: true
       - value: standard_quality_management_system
         label: kwaliteitmanagement
@@ -138,13 +174,13 @@ algoprudences:
       - value: type_of_audit_technical
         label: technische audit
       - value: type_of_algorithm_rule_based
-        label: regel gebaseerd
+        label: regelgebaseerd
       - value: type_of_algorithm_profiling
         label: profilering
       - value: ethical_issue_proxy
         label: proxydiscriminatie
       - value: owner_public
-        label: publieke organisatie
+        label: DUO
       - value: standard_risk_management
         label: risicomanagement
         hide: true
@@ -158,14 +194,11 @@ algoprudences:
         label: menselijke tussenkomst
         hide: true
       - value: standard_quality_management_system
-        label: kwaliteitmanagement
+        label: kwaliteitmanagementsysteem
         hide: true
   - title: Risicoprofilering heronderzoek bijstandsuitkering
     intro: >-
-      De commissie oordeelt dat algoritmische risicoprofilering onder strikte
-      voorwaarden kan worden ingezet voor het selecteren van burgers met een
-      bijstandsuitkering voor heronderzoek. Het oogmerk van heronderzoek is een
-      leidende factor bij de beoordeling van profile- ringscriteria.
+      Case study naar ML-gedreven risicovoorspellingen over onrechtmatig gebruik van bijstand. Een onafhankelijke commissie oordeelt dat algoritmische risicoprofilering onder strikte voorwaarden kan worden ingezet voor het selecteren van burgers voor heronderzoek. Het oogmerk van heronderzoek is een leidende factor bij de beoordeling van profile- ringscriteria.
     image: /images/algoprudence/AA202302/AA202302A_front_icon_NL.png
     link: >-
       /nl/algoprudence/cases/aa202302_risk-profiling-for-social-welfare-reexamination
@@ -175,18 +208,18 @@ algoprudences:
       - value: year_2023
         label: '2023'
         hide: true
-      - value: owner_public
-        label: publieke organisatie
-      - value: type_of_algorithm_profiling
-        label: profilering
       - value: type_of_audit_normative
         label: normatief oordeel
+      - value: type_of_algorithm_profiling
+        label: profilering
       - value: type_of_algorithm_ml
         label: machine learning
       - value: type_of_algorithm_high_risk_AI
         label: hoog-risico AI-systeem
       - value: ethical_issue_proxy
         label: proxydiscriminatie
+      - value: owner_public
+        label: Gemeente Rotterdam
       - value: standard_risk_management
         label: risicomanagement
         hide: true
@@ -210,12 +243,9 @@ algoprudences:
         hide: true
   - title: BERT-gebaseerd disinformatie detectie-algoritme
     intro: >-
-      De adviescommissie oordeelt dat er een laag risico is van
-      (hoger-dimensionale) proxy discriminatie bij de BERT-gebaseerde
-      disinformatie detector en dat het waargenomen verschil in algoritmische
-      behandeling tussen verschillende soorten Twitter gebruikers
-      gerechtvaardigd kan worden, indien bepaalde voorwaarden van toepassing
-      zijn.
+      Case study naar algoritmische detectie van nepnieuws op Twitter. Een onafhankelijke adviescommissie oordeelt dat er een laag risico is van
+      proxy discriminatie bij de BERT-gebaseerde disinformatie detector en dat het waargenomen verschil in algoritmische
+      behandeling tussen verschillende soorten Twitter gebruikers gerechtvaardigd kan worden, indien bepaalde voorwaarden van toepassing zijn.
     image: /images/algoprudence/AA202301/Cover.png
     link: /nl/algoprudence/cases/aa202301_bert-based-disinformation-classifier
     facets:
@@ -249,11 +279,8 @@ algoprudences:
         hide: true
   - title: Type simkaart als voorspeller voor betalingsfraude
     intro: >-
-      De adviescommissie adviseert tegen gebruik van type simkaart als input
-      variabele voor een risicopredictie-algoritme om misbruik met het achteraf
-      betalen van online bestelde producten te voorspellen. Type sim-kaart wordt
-      geacht dusdanig een proxy-attribuut te zijn voor bijzondere
-      persoonsgegevens dat het predictie-algoritme een onaanvaardbaar risico
+      Case study naar ML-gedreven risicoprofilering voor het detecteren van misbruik met het achteraf betalen bij een e-commerce platform. De adviescommissie adviseert tegen gebruik van type simkaart als input
+      variabele voor een risicopredictie-algoritme. Type sim-kaart wordt geacht dusdanig een proxy-attribuut te zijn voor bijzondere persoonsgegevens dat het predictie-algoritme een onaanvaardbaar risico
       loopt om specifieke demografische groepen van de dienst uit te sluiten.
     image: /images/algoprudence/AA202201/Cover.png
     link: /nl/algoprudence/cases/aa202201_type-of-sim
