@@ -75,7 +75,7 @@ algoprudences:
   - title: Voorspellen van onverantwoord rijgedrag
     intro: >-
       Case study naar het identificeren en voorspellen van onverantwoord rijgedrag in de database van een autodeelplatform. Een onafhankelijke adviescommissie heeft advies uitgebracht over onder meer modelvaliditeit, het balanceren van fout-positieven en fout-negatieven en betekenisvolle uitleg.
-    image: /images/algoprudence/AA202501/AA202501P_EN.png
+    image: /images/algoprudence/AA202501/Cover_NL.png
     link: /nl/algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/
     facets:
       - value: AA202501

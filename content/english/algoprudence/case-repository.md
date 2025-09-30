@@ -75,7 +75,7 @@ algoprudences:
   - title: Predicting irresponsible driving
     intro: >-
       Case study how irresponsible driving can be identified and predicted in the database of a car sharing platform. An independent commission issues advice on among others model validity, balancing false positives and false negatives and meaningful transparency.
-    image: /images/algoprudence/AA202501/AA202501P_EN.png
+    image: /images/algoprudence/AA202501/Cover_EN.png
     link: /algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/
     facets:
       - value: AA202501
