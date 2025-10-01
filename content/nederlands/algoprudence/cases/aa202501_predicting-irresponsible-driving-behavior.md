@@ -40,7 +40,7 @@ dynamic_form_engine:
 
 {{< tab_header width="4" tab1_id="description" tab1_title="Beschrijving algoprudentie" tab2_id="actions" tab2_title="Acties volgend op algoprudentie" tab3_id="discussion" tab3_title="Discussie & debat" default_tab="description" >}}
 
-{{< tab_content_open icon="fa-car" title="Predicting irresponsible driving" id="description" >}}
+{{< tab_content_open icon="fa-car" title="Voorspellen van onverantwoord rijgedrag" id="description" >}}
 
 #### Algoprudentienummer
 
