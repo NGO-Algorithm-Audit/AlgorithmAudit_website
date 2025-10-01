@@ -79,8 +79,7 @@ facilitate appeal and redress by users.
 
 #### Source of case
 
-Collaboration with car sharing platform. Both the commission and Algorithm Audit have conducted this
-study independently from the car sharing platform. Neither the investigation nor the advice have been commissioned or funded by the platform.
+The case originates from an (anonymized) car sharing platform, which has cooperated with Algorithm Audit to provide details about the case. Both the commission and Algorithm Audit have conducted this study independently from the car sharing platform. Neither the investigation nor the advice have been commissioned or funded by the platform.
 
 #### Presentation
 

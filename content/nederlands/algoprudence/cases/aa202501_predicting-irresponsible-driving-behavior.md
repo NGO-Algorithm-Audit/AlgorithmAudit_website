@@ -82,7 +82,7 @@ onterechte waarschuwingen wordt verkleind en gebruikers in bezwaar kunnen gaan t
 
 #### Bron van de casus
 
-Samenwerking met autodeelplatform. Zowel de adviescommissie als Algorithm Audit hebben dit onderzoek onafhankelijk van het autodeelplatform uitgevoerd. Het onderzoek en het advies zijn niet in opdracht van of gefinancierd door het platform.
+De casus is afkomstig van een (geanonimiseerd) autodeelplatform, dat met Algorithm Audit heeft samengewerkt om details over de casus te verstrekken. Zowel de commissie als Algorithm Audit hebben dit onderzoek onafhankelijk van het autodeelplatform uitgevoerd. Het onderzoek en het advies zijn niet in opdracht of met financiering van het platform uitgevoerd.
 
 #### Presentatie
 
