@@ -75,18 +75,6 @@ Activity_Feed:
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
-    - title: "Expert rondetafel II: Kennisopbouw voor toezichthouder op AI"
-      link: "https://unesdoc.unesco.org/ark:/48223/pf0000395086"
-      image: /images/partner logo-cropped/UNESCO.png
-      date: 30-09-2025
-      type: paneldiscussie
-    - title: >-
-        Verbond van Verzekeraars – Data dag 2025
-      link: >-
-        https://www.verzekeraars.nl/academy/activiteitenoverzicht/data-dag-2025
-      image: /images/partner logo-cropped/VerbondvanVerzekeraars.svg
-      date: 02-10-2025
-      type: presentatie
     - title: >-
         Brussels Privacy Symposium 2025 – A data protection (r)evolution?
       link: >-
@@ -109,6 +97,20 @@ Activity_Feed:
       image: /images/partner logo-cropped/Vide.png
       date: 31-10-2025
       type: paneldiscussion
+    - title: >-
+        Cursus 'AI risicomanagement in de EU', European Institute of Public Administration
+      link: >-
+        https://www.eipa.eu/courses/artificial-intelligence/
+      image: /images/partner logo-cropped/EIPA.png
+      date: 18-11-2025
+      type: training
+    - title: >-
+        Leeratelier 'Generatieve AI: waar op te letten bij verstandig gebruik?', Academie voor Wetgeving
+      link: >-
+        https://rechtenoverheid.nl/cursus/leeratelier-generatieve-ai-waar-op-te-letten-bij-verstandig-gebruik-2452
+      image: /images/partner logo-cropped/acwet.svg
+      date: 26-02-2026
+      type: training
   items_button_text: Meer events
   items_button_link: /nl/events/activities/
 Areas_of_AI_expertise:

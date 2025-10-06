@@ -25,9 +25,59 @@ facet_groups:
         label: Presentatie
 events:
   - title: >-
-      Interview Binnenlands Bestuur
+      Verbond van verzekeraars – Datadag 2025
     description: >
-      Interview met <a href="https://www.binnenlandsbestuur.nl/digitaal/rijk-zegt-nauwelijks-hoog-risico-ai-te-gebruiken" target="_blank">Binnenlands Bestuur </a> over de <a href="https://algorithmaudit.eu/nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventarisatie</a> van Algorithm Audit van de registraties van 14 ministries en rijksoverheidsorganisaties in het landelijke algoritmeregister.
+      Presentatie over de AI-verordening tijde Datadag 2025 van het Verbond van verzekeraars
+
+    image: /images/partner logo-cropped/VerbondvanVerzekeraars.svg
+    date: 02-10-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: >-
+      Paneldiscussie 'Expert Roundtable II: Capacity Building for Competent Authorities on AI', UNESCO in Paris
+    description: >
+      Paneldiscussie over 'Tools for Supervising Authorities: Understanding Algorithm Audits'. Tijdens de paneldiscussie is Algorithm Audit's case study ['Voorspellen van onverantwoord rijgedrag'](/algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/) gepubliceerd.
+
+
+      ![](/images/algoprudence/AA202501/Photo2.jpeg)
+    image: /images/partner logo-cropped/UNESCO.png
+    date: 30-09-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_panel
+        label: paneldiscussie
+  - title: >-
+      Interview Binnenlands Bestuur met Ylja Remmits over hoog risico AI systemen
+    description: >
+      <a href="https://www.binnenlandsbestuur.nl/digitaal/overheden-worstelen-met-mogelijke-hoog-risico-ai-systemen" target="_blank">Interview</a> met Binnenlands Bestuur over hoog risico classificatie van AI-systemen naar aanleiding van  Algorithm Audit's <a href="https://algorithmaudit.eu/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventarisatie</a> van de registraties van 14 ministries en rijksoverheidsorganisaties in het landelijke algoritmeregister.
+
+    image: /images/partner logo-cropped/BinnenlandsBestuur.svg
+    date: 22-09-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_interview
+        label: interview
+  - title: >-
+      Interview Binnenlands Bestuur met Jurriaan Parie over definitie van een AI-systeem
+    description: >
+      Interview met <a href="https://www.binnenlandsbestuur.nl/digitaal/rijk-zegt-nauwelijks-hoog-risico-ai-te-gebruiken" target="_blank">Binnenlands Bestuur </a> over de definitie van een AI-systeem naar aanleiding van <a href="https://algorithmaudit.eu/nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventarisatie</a> van Algorithm Audit van de registraties van 14 ministries en rijksoverheidsorganisaties in het landelijke algoritmeregister.
 
     image: /images/partner logo-cropped/BinnenlandsBestuur.svg
     date: 27-08-2025
@@ -56,7 +106,7 @@ events:
         label: Q3-2025
         hide: true
       - value: type_presentation
-        label: presentation
+        label: presentatie
   - title: Presentatie 'AI x Governance & Regulation - The EU AI Act is here', Big Data Republic en Kickstart AI
     description: >
       Presentatie 'Het auditeren van een private sector machine learning-gedreven risicoprofileringsalgoritme'
