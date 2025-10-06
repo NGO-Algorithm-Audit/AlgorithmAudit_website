@@ -160,7 +160,7 @@ team:
         linkedIn: "https://www.linkedin.com/in/tdries"
         accordion_content: ""
   - title: Legal experts
-    content: Part-time team working on human rights and data privacy challenges
+    content: Part-time team working on human rights and data privacy
     icon: fas fa-search
     id: team-legal
     team_members:
@@ -194,6 +194,12 @@ team:
         bio: |
           Head of Projects
         linkedIn: "https://www.linkedin.com/in/ylja-remmits-21185188"
+        accordion_content: ""
+      - image: /images/people/YBergstra.jpg
+        name: Ydo Bergstra
+        bio: |
+          Intern
+        linkedIn: "https://www.linkedin.com/in/ydo-bergstra-471215246/"
         accordion_content: ""
 ---
 

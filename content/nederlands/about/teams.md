@@ -153,6 +153,12 @@ team:
         bio: |
           Head of Projects
         linkedIn: "https://www.linkedin.com/in/ylja-remmits-21185188"
+      - image: /images/people/YBergstra.jpg
+        name: Ydo Bergstra
+        bio: |
+          Werkstudent
+        linkedIn: "https://www.linkedin.com/in/ydo-bergstra-471215246/"
+        accordion_content: ""
 quick_navigation:
   title: Overzicht
   links:
