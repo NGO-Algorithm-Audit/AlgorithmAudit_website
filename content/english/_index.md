@@ -73,20 +73,6 @@ Activity_Feed:
   items_title: Upcoming events
   activities:
     - title: >-
-        Expert Roundtable II: Capacity Building for Competent Authorities on AI
-      link: >-
-        https://unesdoc.unesco.org/ark:/48223/pf0000395086
-      image: /images/partner logo-cropped/UNESCO.png
-      date: 30-09-2025
-      type: panel discussion
-    - title: >-
-        Association of Insurers – Data day 2025
-      link: >-
-        https://www.verzekeraars.nl/academy/activiteitenoverzicht/data-dag-2025
-      image: /images/partner logo-cropped/VerbondvanVerzekeraars.svg
-      date: 02-10-2025
-      type: presentation
-    - title: >-
         Brussels Privacy Symposium 2025 – A data protection (r)evolution?
       link: >-
         https://fpf.org/fpf-event/brussels-privacy-symposium-2025/
@@ -108,6 +94,20 @@ Activity_Feed:
       image: /images/partner logo-cropped/Vide.png
       date: 31-10-2025
       type: panel discussion
+    - title: >-
+        Course on 'AI Risk Management in the EU', European Institute of Public Administration
+      link: >-
+        https://www.eipa.eu/courses/artificial-intelligence/
+      image: /images/partner logo-cropped/EIPA.png
+      date: 18-11-2025
+      type: training
+    - title: >-
+        Course on 'GPAI validation framework', Dutch Academy for Legislation
+      link: >-
+        https://rechtenoverheid.nl/cursus/leeratelier-generatieve-ai-waar-op-te-letten-bij-verstandig-gebruik-2452
+      image: /images/partner logo-cropped/acwet.svg
+      date: 26-02-2026
+      type: training
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:

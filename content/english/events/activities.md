@@ -25,7 +25,57 @@ facet_groups:
         label: Presentation
 events:
   - title: >-
-      Interview Binnenlands Bestuur
+      Association of Insurers – Data day 2025
+    description: >
+      Presentation on the AI Act during Data Day 2025 of Dutch Association of Insurers
+
+    image: /images/partner logo-cropped/VerbondvanVerzekeraars.svg
+    date: 02-10-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: >-
+      Panel discussion during 'Expert Roundtable II: Capacity Building for Competent Authorities on AI', UNESCO in Paris
+    description: >
+      Panel discussion on 'Tools for Supervising Authorities: Understanding Algorithm Audits'. During the panel discussion we announced publication of Algorithm Audit's case study ['Predicting irresponsible driving'](/algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/)
+
+
+      ![](/images/algoprudence/AA202501/Photo2.jpeg)
+    image: /images/partner logo-cropped/UNESCO.png
+    date: 30-09-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_panel
+        label: panel discussion
+  - title: >-
+      Interview Binnenlands Bestuur with Ylja Remmits about 'high-risk AI systems'
+    description: >
+      <a href="https://www.binnenlandsbestuur.nl/digitaal/overheden-worstelen-met-mogelijke-hoog-risico-ai-systemen" target="_blank">Interview</a> with platform for Dutch public governance Binnenlands Bestuur on high-risk classification of AI systems, following Algorithm Audit's <a href="https://algorithmaudit.eu/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventory of 14 Dutch ministries' registration in the Netherlands' national algorithm registry</a>.
+
+    image: /images/partner logo-cropped/BinnenlandsBestuur.svg
+    date: 22-09-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q3_2025
+        label: Q3-2025
+        hide: true
+      - value: type_interview
+        label: interview
+  - title: >-
+      Interview Binnenlands Bestuur with Jurriaan Parie about 'AI system definition'
     description: >
       Interview with platform for Dutch public governance <a href="https://www.binnenlandsbestuur.nl/digitaal/rijk-zegt-nauwelijks-hoog-risico-ai-te-gebruiken" target="_blank">Binnenlands Bestuur </a> relating to Algorithm Audit's <a href="https://algorithmaudit.eu/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventory of 14 Dutch ministries' registration in the Netherlands' national algorithm registry</a>.
 
