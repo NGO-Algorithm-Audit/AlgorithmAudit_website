@@ -85,7 +85,7 @@ The case originates from an (anonymized) car sharing platform, which has coopera
 
 This case study was published during UNESCO's Expert roundtable II: Capacity building for AI supervisory authorities in Paris on September 30, 2025. 
 
-<!-- {{< image id="presentation-minister" image1="/images/algoprudence/AA202302/Algorithm audit presentatie BZK FB-18.jpg" alt1="Presentation advice report to Dutch Minister of Digitalization" caption1="Presentation advice report to Dutch Minister of Digitalization" width_desktop="5" width_mobile="12" >}} -->
+{{< image id="presentation-unesco" image1="/images/algoprudence/AA202501/Photo1.jpg" alt1="Presentation advice report during UNESCO Expert roundtable II: capacity building for AI supervisory authorities" caption1="Presentation advice report during UNESCO Expert roundtable II: capacity building for AI supervisory authorities" width_desktop="6" width_mobile="12" image2="/images/algoprudence/AA202501/Photo2.jpeg" alt2="Presentation advice report during UNESCO Expert roundtable II: capacity building for AI supervisory authorities" caption2="Presentation advice report during UNESCO Expert roundtable II: capacity building for AI supervisory authorities" >}}
 
 #### Problem statement and advice document
 
@@ -98,7 +98,14 @@ This case study was published during UNESCO's Expert roundtable II: Capacity bui
 - Joris Krijger, AI & Ethics Officer, De Volksbank
 - Maaike Harbers, Professor of Applied Sciences (lector) Artificial Intelligence & Society, Rotterdam University of Applied Sciences
 - Monique Steijns, Founder The People’s AI agency
-- Anne Rijlaarsdam, user car sharing platform.
+- Anne Rijlaarsdam, user car sharing platform
+
+#### Focus group
+
+Algorithm Audit has brought together a focus group to gather user perspectives on data processing, algorithmic predictions and communication by shared mobility platforms. The insights from this focus group are shared in the document below. On the basis of the problem statement (ALGO:AA:2025:01:P) and the focus group results, the normative advice commission issued advice on the identified issues in the advice document (ALGO:AA:2025:01:A).
+
+{{< embed_pdf url="/pdf-files/algoprudence/ALGO_AA202501/EN/Focus group Predicting irresponsible driving behavior.pdf" >}}
+
 
 {{< tab_content_close >}}
 
