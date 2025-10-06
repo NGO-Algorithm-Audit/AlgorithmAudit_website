@@ -3,13 +3,13 @@ title: Vacancies
 subtitle: |
   Overview of current job openings at Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-quick_navigation:
-  title: Overview
-  links:
-    - title: AI advisor/validator
-      url: '#accordion_area_AI-advisor'
-    - title: Intern
-      url: '#accordion_area_stagiair'
+# quick_navigation:
+#   title: Overview
+#   links:
+#     - title: AI advisor/validator
+#       url: '#accordion_area_AI-advisor'
+#     - title: Intern
+#       url: '#accordion_area_stagiair'
 dynamic_form_engine:
   - title: Sollicitatieformulier AI adviseur/validator
     id: form1
@@ -121,7 +121,7 @@ dynamic_form_engine:
       backend_link: 'https://formspree.io/f/maneqoyd'
 ---
 
-{{< accordions_area_open id="AI-advisor" >}}
+<!-- {{< accordions_area_open id="AI-advisor" >}}
 
 {{< accordion_item_open title="AI adviseur/validator (1.0 fte) (Dutch speaking only)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="rolling application" >}}
 
@@ -290,4 +290,4 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}
+{{< accordions_area_close >}} -->
