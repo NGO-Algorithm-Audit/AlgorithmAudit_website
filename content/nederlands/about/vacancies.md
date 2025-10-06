@@ -3,13 +3,13 @@ title: Vacatures
 subtitle: |
   Overzicht van vacatures bij Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-quick_navigation:
-  title: Overzicht
-  links:
-    - title: AI adviseur/validator
-      url: '#accordion_area_AI-adviseur'
-    - title: Stagiair
-      url: '#accordion_area_stagiair'
+# quick_navigation:
+#   title: Overzicht
+#   links:
+#     - title: AI adviseur/validator
+#       url: '#accordion_area_AI-adviseur'
+#     - title: Stagiair
+#       url: '#accordion_area_stagiair'
 dynamic_form_engine:
   - title: Sollicitatieformulier AI adviseur/validator
     id: form1
@@ -111,7 +111,7 @@ dynamic_form_engine:
       backend_link: 'https://formspree.io/f/maneqoyd'
 ---
 
-{{< accordions_area_open id="AI-adviseur" >}}
+<!-- {{< accordions_area_open id="AI-adviseur" >}}
 
 {{< accordion_item_open title="AI adviseur/validator (1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="doorlopende sollicitatie" >}}
 
@@ -207,7 +207,6 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 {{< dynamic_form_engine index="0" >}}
 
 
-<!-- Stagiair -->
 
 {{< accordion_item_close >}}
 
@@ -291,4 +290,4 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}
+{{< accordions_area_close >}} -->
