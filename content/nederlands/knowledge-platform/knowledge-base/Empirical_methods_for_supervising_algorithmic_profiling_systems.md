@@ -15,7 +15,7 @@ summary: >-
 weight: -16
 title: 'Praktische handvatten voor empirisch toezicht op profileringsalgoritmes'
 subtitle: ''
-image: /images/knowledge_base/White_paper_Empirical_methods.png
+image: /images/knowledge_base/White_paper_Empirische_toetsingsmethoden.png
 search:
   searchableText: tvt, toezicht, tijdschrift voor toezicht
 ---
@@ -33,4 +33,4 @@ toezichthouders ondersteunt in het stellen van gerichte vragen over indirect ond
 algoritmes en AI. Deze aanpak bouwt voort op weBelijke kaders en stelt toezichthouders in staat met
 beperkte middelen eﬀec8ef toezicht te houden op algoritme-gedreven besluitvormingsprocessen.
 
-{{< embed_pdf url="/pdf-files/knowledge-base/20250826_Empirical_methods_for_supervising_algorithmic_profiling_systems.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20251010 Tijdschift voor Toezicht.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
