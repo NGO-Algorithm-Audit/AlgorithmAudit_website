@@ -55,6 +55,13 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
+    - title: Praktische handvatten voor empirisch toezicht op profileringsalgoritmes
+      intro: >
+        Artikel geschreven in samenwerking met onderzoekers van het Centraal Planbureau (CPB) over toezicht op profileringsalgoritmes.
+      link: /nl/knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/
+      image: /images/knowledge_base/White_paper_Empirische_toetsingsmethoden.png
+      date: 31-10-2025
+      type: artikel
     - title: 'Algoprudentie: Voorspellen van onverantwoord rijgedrag'
       intro: >
         Case study naar het voorspellen van onverantwoord rijgedrag op basis van de data van een autodeelplatform.
@@ -62,41 +69,10 @@ Activity_Feed:
       image: /images/algoprudence/AA202501/Cover_NL.png
       date: 30-09-2025
       type: algoprudence
-    - title: Inventarisatie 14 ministries Algoritmeregister
-      intro: >
-        Afgelopen zomer hebben 14 Nederlandse ministeries hun inventarisaties
-        van hoog-risico AI-systemen en impactvolle algoritmes gedeeld. Wij
-        maakten een inventarisatie.
-      link: /nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/
-      image: /images/knowledge_base/Inventarisatie Algoritmeregister.png
-      date: 26-08-2025
-      type: onderzoek
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
-    - title: >-
-        Brussels Privacy Symposium 2025 – A data protection (r)evolution?
-      link: >-
-        https://fpf.org/fpf-event/brussels-privacy-symposium-2025/
-      image: /images/partner logo-cropped/FPF.png
-      date: 14-10-2025
-      type: presentatie
-    - title: >-
-        Presentatie 'Betekenisvolle menselijke tussenkomst', Netwerk van
-        Publieke Dienstverleners
-      link: >-
-        /nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
-      image: /images/partner logo-cropped/NPD.png
-      date: 31-10-2025
-      type: presentatie
-    - title: >-
-        Paneldiscussie ‘Statistiek: kwaal of wondermiddel voor effectief toezicht op algoritmes en AI?’, Tijdschrift voor Toezicht en professional association VIDE
-      link: >-
-        https://www.videnet.nl/activiteiten/detail/157/seminar-toezicht-op-emerging-technologies/schedule
-      image: /images/partner logo-cropped/Vide.png
-      date: 31-10-2025
-      type: paneldiscussion
     - title: >-
         Cursus 'AI risicomanagement in de EU', European Institute of Public Administration
       link: >-
