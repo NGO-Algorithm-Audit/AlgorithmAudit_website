@@ -52,6 +52,13 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
+    - title: Empirical methods for supervising algorithmic profiling systems
+      intro: >
+        Article written in collaboration with researchers of the Netherlands Bureau for Economic Policy Analysis (CPB).
+      link: /knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/
+      image: /images/knowledge_base/White_paper_Empirical_methods.png
+      date: 31-10-2025
+      type: article
     - title: 'Algoprudence: Predicting irresponsible driving'
       intro: >
         Case study how irresponsible driving can be predicted based on data of a car sharing platform.
@@ -59,15 +66,6 @@ Activity_Feed:
       image: /images/algoprudence/AA202501/Cover_EN.png
       date: 30-09-2025
       type: algoprudence
-    - title: >-
-        Inventory 14 Dutch Ministries Netherlands Algorithm Registry
-      intro: >
-        Overview of 14 Dutch ministries' inventories of high-risk AI systems and high-impact algorithms.
-      link: >-
-        /knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/
-      image: /images/knowledge_base/Inventarisation Netherlands Algorithm Registry.png
-      date: 26-08-2025
-      type: review
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
