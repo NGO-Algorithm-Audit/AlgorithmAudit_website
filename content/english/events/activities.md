@@ -4,6 +4,8 @@ facet_groups:
   - value: year
     title: Year
     facets:
+      - value: q4_2025
+        label: Q4-2025
       - value: q3_2025
         label: Q3-2025
       - value: q2_2025
@@ -24,6 +26,63 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: >-
+      Panel discussion 'Statistics: burden or solution for efficient supervision on algorithms and AI?'
+    description: >
+      Panel discussion on article ['Empirical methods for supervising algorithmic profiling systems'](/knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/) published in Dutch Journal for Supervision during seminar 'Supervising emerging technologies' organised by Dutch Journal for Supervision and network of competent authorities VIDE with:
+
+      * Brenn Hekkelman, researcher at the Netherlands Planning Agencey (CPB)
+
+      * Cecile Schut, consultant at Parell and former director System Supervision at Dutch Data Protection Authority
+
+      * Jesse Six Dijkstra, former member of Dutch Parliament, i.a. Digital Affairs on behalf of NSC
+
+      ![](/images/events/20251031_TvT.jpg)
+    image: /images/partner logo-cropped/VIDE.png
+    date: 31-10-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_panel
+        label: panel discussion
+  - title: >-
+      Presentation 'Responsible use of profiling algorithms', Network of Dutch Public Service Suppiers
+    description: >
+      Presentation about Algorithm Audit's public standards on ['Profiling algorithms'](/knowledge-platform/knowledge-base/public_standard_profiling/) and ['Meaningful human intervention for risk profiling algorithms'](/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/) during theme day of Network of Dutch Public Service Suppiers.
+
+    image: /images/partner logo-cropped/NPD.png
+    date: 31-10-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: >-
+      Brussels Privacy Symposium 2025 – A data protection (r)evolution?
+    description: >
+      Presentation about Algorithm Audit's public standard on ['Meaningful human intervention for risk profiling algorithms'](/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/) during Brussels Privacy Symposium 2025.
+
+
+      ![](/images/events/20251014_FPF.jpeg)
+    image: /images/partner logo-cropped/FPF.png
+    date: 14-10-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: >-
       Association of Insurers – Data day 2025
     description: >

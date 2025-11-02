@@ -71,28 +71,6 @@ Activity_Feed:
   items_title: Upcoming events
   activities:
     - title: >-
-        Brussels Privacy Symposium 2025 – A data protection (r)evolution?
-      link: >-
-        https://fpf.org/fpf-event/brussels-privacy-symposium-2025/
-      image: /images/partner logo-cropped/FPF.png
-      date: 14-10-2025
-      type: presentation
-    - title: >-
-        Presentation 'Meaningful human interaction', Network of Dutch Public
-        Service Suppiers
-      link: >-
-        /knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/
-      image: /images/partner logo-cropped/NPD.png
-      date: 31-10-2025
-      type: presentation
-    - title: >-
-        Panel discussion 'Statistics: burden or solution for efficient supervision on algorithms and AI?', Dutch Journal for Supervision and network of competent authorities VIDE
-      link: >-
-        https://www.videnet.nl/activiteiten/detail/157/seminar-toezicht-op-emerging-technologies/schedule
-      image: /images/partner logo-cropped/Vide.png
-      date: 31-10-2025
-      type: panel discussion
-    - title: >-
         Course on 'AI Risk Management in the EU', European Institute of Public Administration
       link: >-
         https://www.eipa.eu/courses/artificial-intelligence/

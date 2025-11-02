@@ -4,6 +4,8 @@ facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: q4_2025
+        label: Q4-2025
       - value: q3_2025
         label: Q3-2025
       - value: q2_2025
@@ -24,6 +26,63 @@ facet_groups:
       - value: presentation
         label: Presentatie
 events:
+  - title: >-
+      Paneldiscussie 'Statistiek: kwaal of wondermiddel voor effectief toezicht op algoritmes en AI?’
+    description: >
+      Paneldiscussie over artikel ['Praktische handvatten voor empirisch toezicht op profileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/) gepubliceerd het Tijdschrift voor Toezicht (TvT) tijdens seminar 'Toezicht op emerging technologies' georganiseerd door TvT en beroepsvereniging VIDE met:
+
+      * Brenn Hekkelman, onderzoeker bij het Centraal Planbureau (CPB)
+
+      * Cecile Schut, consultant bij Parell en oud-directeur Systemtoezicht bij de Autoriteit Persoonsgegevens
+
+      * Jesse Six Dijkstra, oud Tweede Kamerlid met digitaliseringsportefeuille voor NSC
+
+      ![](/images/events/20251031_TvT.jpg)
+    image: /images/partner logo-cropped/VIDE.png
+    date: 31-10-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_panel
+        label: panel discussion
+  - title: >-
+      Presentatie 'Verantwoord gebruik van profilingsalgoritmes', Netwerk van Publieke Dienstverleners
+    description: >
+      Presentatie over Algorithm Audit's publieke standaarden over ['Profileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/public_standard_profiling/) en ['Betekenisvolle menselijke tussenkomst voor risicoprofileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/) tijdens themadag van Netwerk van Publieke Dienstverleners.
+
+    image: /images/partner logo-cropped/NPD.png
+    date: 31-10-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: >-
+      Brussels Privacy Symposium 2025 – Een databescherming (r)evolutie?
+    description: >
+      Presentatie over Algorithm Audit's publieke standaard ['Betekenisvolle menselijke tussenkomst voor risicoprofileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/) tijdens Brussels Privacy Symposium 2025.
+
+
+      ![](/images/events/20251014_FPF.jpeg)
+    image: /images/partner logo-cropped/FPF.png
+    date: 14-10-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
   - title: >-
       Verbond van verzekeraars – Datadag 2025
     description: >
