@@ -74,6 +74,13 @@ Activity_Feed:
   items_title: Aankomende events
   activities:
     - title: >-
+        AI Act Implementatie Congres
+      link: >-
+        https://aic4nl.nl/evenement/ai-act-implementatie-congres/
+      image: /images/partner logo-cropped/AIC4NL.png
+      date: 11-11-2025
+      type: presentatie
+    - title: >-
         Cursus 'AI risicomanagement in de EU', European Institute of Public Administration
       link: >-
         https://www.eipa.eu/courses/artificial-intelligence/
