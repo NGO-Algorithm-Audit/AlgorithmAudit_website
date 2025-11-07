@@ -27,6 +27,23 @@ facet_groups:
         label: Presentation
 events:
   - title: >-
+      'Dutch Technical Agreement (NTA) Profiling Algorithms', AI4Oversight Lab 
+    description: >
+      Presentation during symposium of ['AI4Oversight Lab'](https://www.ai4oversight.nl) on status of development of Dutch National Agreement (NTA) for profiling algorithms.
+
+      {{< embed_pdf url="/pdf-files/events/activities/20251105 Dutch Technical Agreement Profiling Algorithms.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+    image: /images/partner logo-cropped/AI4OversightLab.jpg
+    date: 05-11-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
+  - title: >-
       Panel discussion 'Statistics: burden or solution for efficient supervision on algorithms and AI?'
     description: >
       Panel discussion on article ['Empirical methods for supervising algorithmic profiling systems'](/knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/) published in Dutch Journal for Supervision during seminar 'Supervising emerging technologies' organised by Dutch Journal for Supervision and network of competent authorities VIDE with:

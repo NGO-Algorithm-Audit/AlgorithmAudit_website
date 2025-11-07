@@ -71,7 +71,7 @@ Activity_Feed:
   items_title: Upcoming events
   activities:
     - title: >-
-        AI Act Implementation Congres
+        AI Act Implementation Congres, The Netherlands AI Coalition
       link: >-
         https://aic4nl.nl/evenement/ai-act-implementatie-congres/
       image: /images/partner logo-cropped/AIC4NL.png
@@ -85,11 +85,18 @@ Activity_Feed:
       date: 18-11-2025
       type: training
     - title: >-
+        ODI Europe & UN Women 'Governing the Algorithm: Embedding Gender Equality in Europe’s Digital Future '
+      link: >-
+        https://odi.org/en/about/our-work/odi-europe/
+      image: /images/partner logo-cropped/ODI_Europe.png
+      date: 08-12-2025
+      type: panel discussion
+    - title: >-
         Course on 'GPAI validation framework', Dutch Academy for Legislation
       link: >-
         https://rechtenoverheid.nl/cursus/leeratelier-generatieve-ai-waar-op-te-letten-bij-verstandig-gebruik-2452
       image: /images/partner logo-cropped/acwet.svg
-      date: 26-02-2026
+      date: 23-02-2026
       type: training
   items_button_text: More events
   items_button_link: /events/activities/
