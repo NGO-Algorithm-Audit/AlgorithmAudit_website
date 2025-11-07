@@ -27,6 +27,23 @@ facet_groups:
         label: Presentatie
 events:
   - title: >-
+      'Nederlands Technische Afspraak (NTA) Profileringsalgoritmes', AI4Oversight Lab 
+    description: >
+      Presentatie tijdens symposium van ['AI4Oversight Lab'](https://www.ai4oversight.nl) over de staat van ontwikkeling Nederlands Technische Afspraak (NTA) voor profilingsalgoritmes.
+
+      {{< embed_pdf url="/pdf-files/events/activities/20251105 Dutch Technical Agreement Profiling Algorithms.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+    image: /images/partner logo-cropped/AI4OversightLab.jpg
+    date: 05-11-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: >-
       Paneldiscussie 'Statistiek: kwaal of wondermiddel voor effectief toezicht op algoritmes en AI?’
     description: >
       Paneldiscussie over artikel ['Praktische handvatten voor empirisch toezicht op profileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/) gepubliceerd het Tijdschrift voor Toezicht (TvT) tijdens seminar 'Toezicht op emerging technologies' georganiseerd door TvT en beroepsvereniging VIDE met:
