@@ -40,7 +40,10 @@ quick_navigation:
   title: Inhoudsopgave
   links:
     - title: 2025
-      url: "#LLM-validation"
+      url: "#implementation-protocol"
+    - title: Implementatie protocol – UNIA
+      url: "#implementation-protocol"
+      indent: 1
     - title: LLM validatie – Rechtspraak
       url: "#LLM-validation"
       indent: 1
@@ -73,6 +76,16 @@ quick_navigation:
 
 # 2025
 
+<!-- CoE3-4 Implementation assessment protocol UNIA -->
+
+{{< container_open title="Implementatie discriminatieprotocol – UNIA" id="implementation-protocol" icon="fas fa-binoculars" >}}
+
+In Q3-Q4 2025 ondersteunt Algorithm Audit UNIA, het mensenrechteninstituut van België, bij het implementeren van een beoordelingsprotocol om gebruik van algoritmes en AI door overheidsorganisaties te onderzoeken bij klachten over discriminatie.
+
+{{< image image1="/images/partner logo-cropped/UNIA.svg.png" alt1="UNIA" caption1="UNIA" link1="" width_desktop="3" >}}
+
+{{< container_close >}}
+
 <!-- voorRecht LLM validation -->
 
 {{< container_open title="LLM validatie – Rechtspraak" id="LLM-validation" icon="fas fa-robot" >}}
@@ -85,7 +98,7 @@ Van Q3-2025 tot en met Q1-2026 neemt Algorithm Audit deel aan een consortium met
 
 {{< container_close >}}
 
-<!-- CoE Assessment protocol -->
+<!-- CoE2 Assessment protocol -->
 
 {{< container_open title="Discriminatie beoordelingsprotocol – Raad van Europa" id="assessment-protocol" icon="fas fa-scroll" >}}
 
@@ -99,7 +112,7 @@ Van Q3-2025 tot en met Q4-2025 ondersteunt Algorithm Audit de Raad van Europa (R
 
 {{< container_open title="Biasanalyse – Gemeente Utrecht" id="utrecht" icon="fas fa-search" >}}
 
-In Q2-2025 en Q3-2025 ondersteunt Algorithm Audit de Gemeente Utrecht bij het uitvoeren van een biasanalyse van een algoritmisch systeem.
+In Q3-2025 en Q1-2026 ondersteunt Algorithm Audit de Gemeente Utrecht bij het uitvoeren van een biasanalyse van een algoritmisch systeem.
 
 <br>
 
@@ -111,9 +124,9 @@ In Q2-2025 en Q3-2025 ondersteunt Algorithm Audit de Gemeente Utrecht bij het ui
 
 {{< container_open title="Onderzoeksondersteuning – Rekenkamer Deventer" id="deventer" icon="fas fa-plus" >}}
 
-Van Q2-2025 tot en met Q3-2025 ondersteunt Algorithm Audit de Rekenkamer Deventer bij een onderzoek naar gebruik van algoritmes en AI-systemen door de Gemeente Deventer.
+Van Q2-2025 tot en met Q4-2025 ondersteunt Algorithm Audit de Rekenkamer Deventer bij een onderzoek naar gebruik van algoritmes en AI-systemen door de Gemeente Deventer.
 
-{{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
+{{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.svg" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 
 {{< container_close >}}
 
@@ -121,7 +134,7 @@ Van Q2-2025 tot en met Q3-2025 ondersteunt Algorithm Audit de Rekenkamer Devente
 
 {{< container_open title="Kennispartner – Dienst Uitvoering Onderwijs (DUO)" id="DUO2" icon="fas fa-user-graduate" >}}
 
-In 2025 werkt Algorithm Audit samen met de Dienst Uitvoering Onderwijs (DUO) aan het opbouwen van interne validatiecapaciteit om algoritme-gedreven besluitvormingsprocessen zowel kwalitatief als kwantitatief te beoordelen.
+In 2025-26 werkt Algorithm Audit samen met de Dienst Uitvoering Onderwijs (DUO) aan het opbouwen van interne validatiecapaciteit om algoritme-gedreven besluitvormingsprocessen zowel kwalitatief als kwantitatief te beoordelen.
 
 {{< image id="DUO" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" >}}
 

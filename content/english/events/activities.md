@@ -55,7 +55,7 @@ events:
       * Jesse Six Dijkstra, former member of Dutch Parliament, i.a. Digital Affairs on behalf of NSC
 
       ![](/images/events/20251031_TvT.jpg)
-    image: /images/partner logo-cropped/VIDE.png
+    image: /images/partner logo-cropped/Vide.png
     date: 31-10-2025
     facets:
       - value: year_2025

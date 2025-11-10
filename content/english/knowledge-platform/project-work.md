@@ -40,7 +40,10 @@ quick_navigation:
   title: Overview
   links:
     - title: 2025
-      url: "#LLM-validation"
+      url: "#implementation-protocol"
+    - title: Implementation protocol – UNIA
+      url: "#implementation-protocol"
+      indent: 1
     - title: LLM validation – Dutch judiciary
       url: "#LLM-validation"
       indent: 1
@@ -73,6 +76,16 @@ quick_navigation:
 
 # 2025
 
+<!-- CoE3-4 Implementation assessment protocol UNIA -->
+
+{{< container_open title="Implementation discrimination protocol – UNIA" id="implementation-protocol" icon="fas fa-binoculars" >}}
+
+In Q3–Q4 2025, Algorithm Audit supports UNIA, the Belgian human rights institute, in implementing an assessment protocol to review complaints about the use of algorithms and AI by public authorities in alleged discrimination cases.
+
+{{< image image1="/images/partner logo-cropped/UNIA.svg.png" alt1="UNIA" caption1="UNIA" link1="" width_desktop="3" >}}
+
+{{< container_close >}}
+
 <!-- voorRecht LLM validation -->
 
 {{< container_open title="LLM validation – Dutch judiciary" id="LLM-validation" icon="fas fa-robot" >}}
@@ -89,7 +102,7 @@ From Q3-2025 up to Q1-2026, Algorithm Audit participates in a consortium with th
 
 {{< container_open title="Discrimination assessment protocol – Council of Europe" id="assessment-protocol" icon="fas fa-scroll" >}}
 
-From Q3-2025 up to Q4-2025, Algorithm Audit supports the Council of Europe (CoE) and the equality bodies of Belgium, Finland and Portugal to develop assessment protocols to uphold equality and non-discrimination by use of AI in public administration. More information about the project can be found <a href="https://www.coe.int/en/web/inclusion-and-antidiscrimination/upholding-equality-and-non-discrimination-by-equality-bodies-regarding-the-use-of-artificial-intelligence-ai-in-public-administrations1" target="_blank">here</a>.
+From Q2-2025 up to Q4-2025, Algorithm Audit supports the Council of Europe (CoE) and the equality bodies of Belgium, Finland and Portugal to develop assessment protocols to uphold equality and non-discrimination by use of AI in public administration. More information about the project can be found <a href="https://www.coe.int/en/web/inclusion-and-antidiscrimination/upholding-equality-and-non-discrimination-by-equality-bodies-regarding-the-use-of-artificial-intelligence-ai-in-public-administrations1" target="_blank">here</a>.
 
 {{< image image1="/images/partner logo-cropped/CoE_EU.jpg" alt1="Council of Europe" caption1="Council of Europe" link1="" width_desktop="6" >}}
 
@@ -99,7 +112,7 @@ From Q3-2025 up to Q4-2025, Algorithm Audit supports the Council of Europe (CoE)
 
 {{< container_open title="Bias analysis – Municipality of Utrecht" id="utrecht" icon="fas fa-search" >}}
 
-In Q2-2025 and Q3-2025, Algorithm Audit supports the Municipality of Utrecht with conducting a bias analysis of an algorithmic system.
+In Q3-2025 up to Q1-2026, Algorithm Audit supports the Municipality of Utrecht with conducting a bias analysis of an algorithmic system.
 
 <br>
 
@@ -111,9 +124,9 @@ In Q2-2025 and Q3-2025, Algorithm Audit supports the Municipality of Utrecht wit
 
 {{< container_open title="Research support – Court of Auditors Deventer" id="deventer" icon="fas fa-plus" >}}
 
-From Q2-2025 up to Q3-2025, Algorithm Audit supports the Court of Auditors Deventer with an investigation into usage of algorithms and AI systems by the Municipality of Deventer.
+From Q2-2025 up to Q4-2025, Algorithm Audit supports the Court of Auditors Deventer with an investigation into usage of algorithms and AI systems by the Municipality of Deventer.
 
-{{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
+{{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.svg" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 
 {{< container_close >}}
 
@@ -121,7 +134,7 @@ From Q2-2025 up to Q3-2025, Algorithm Audit supports the Court of Auditors Deven
 
 {{< container_open title="Knowledge partner – Dutch Executive Education Agency (DUO)" id="DUO2" icon="fas fa-user-graduate" >}}
 
-In 2025, Algorithm Audit works otgether with the Dutch Executive Education Agency (DUO) to build internal validation capacity to assess algorithmic-driven decision-making processes from both qualitative and quantitative perspectives.
+In 2025-26, Algorithm Audit works otgether with the Dutch Executive Education Agency (DUO) to build internal validation capacity to assess algorithmic-driven decision-making processes from both qualitative and quantitative perspectives.
 
 {{< image id="DUO" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/DUO.png" alt1="Dutch Executive Education Agency (DUO)" caption1="Dutch Executive Education Agency (DUO)" >}}
 
