@@ -80,7 +80,7 @@ quick_navigation:
 
 {{< container_open title="Implementation discrimination protocol – UNIA" id="implementation-protocol" icon="fas fa-binoculars" >}}
 
-In Q3–Q4 2025, Algorithm Audit supports UNIA, the Belgian human rights institute, in implementing an assessment protocol to review complaints about the use of algorithms and AI by public authorities in alleged discrimination cases.
+Between Q3 2025 and Q2 2026, Algorithm Audit supports UNIA, the Belgian human rights institute, in implementing an assessment protocol to assess the use of algorithms and AI in alleged discrimination cases.
 
 {{< image image1="/images/partner logo-cropped/UNIA.svg.png" alt1="UNIA" caption1="UNIA" link1="" width_desktop="3" >}}
 
