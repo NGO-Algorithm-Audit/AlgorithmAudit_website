@@ -113,7 +113,7 @@ In Q2-2025 and Q3-2025, Algorithm Audit supports the Municipality of Utrecht wit
 
 From Q2-2025 up to Q3-2025, Algorithm Audit supports the Court of Auditors Deventer with an investigation into usage of algorithms and AI systems by the Municipality of Deventer.
 
-{{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
+{{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.svg" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 
 {{< container_close >}}
 

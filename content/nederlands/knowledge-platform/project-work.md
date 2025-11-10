@@ -113,7 +113,7 @@ In Q2-2025 en Q3-2025 ondersteunt Algorithm Audit de Gemeente Utrecht bij het ui
 
 Van Q2-2025 tot en met Q3-2025 ondersteunt Algorithm Audit de Rekenkamer Deventer bij een onderzoek naar gebruik van algoritmes en AI-systemen door de Gemeente Deventer.
 
-{{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.png" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
+{{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.svg" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 
 {{< container_close >}}
 
