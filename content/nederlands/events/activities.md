@@ -27,6 +27,21 @@ facet_groups:
         label: Presentatie
 events:
   - title: >-
+      AI-verordening Implementatie Congres, AI Coalitie 4NL  
+    description: >
+      Presentatie tijdens symposium van ['AI Coalitie 4NL'](https://aic4nl.nl/evenement/ai-act-implementatie-congres/) (AIC4NL) over algoritme en AI identificatie en risicoclassificatie tool.
+    image: /images/partner logo-cropped/AIC4NL.png
+    date: 11-11-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_presentation
+        label: presentatie
+  - title: >-
       'Nederlands Technische Afspraak (NTA) Profileringsalgoritmes', AI4Oversight Lab 
     description: >
       Presentatie tijdens symposium van ['AI4Oversight Lab'](https://www.ai4oversight.nl) over de staat van ontwikkeling Nederlands Technische Afspraak (NTA) voor profilingsalgoritmes.
@@ -65,7 +80,7 @@ events:
         label: Q4-2025
         hide: true
       - value: type_panel
-        label: panel discussion
+        label: panel discussie
   - title: >-
       Presentatie 'Verantwoord gebruik van profilingsalgoritmes', Netwerk van Publieke Dienstverleners
     description: >

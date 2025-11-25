@@ -4,6 +4,8 @@ facet_groups:
   - value: year
     title: Year
     facets:
+      - value: q1_2026
+        label: Q1-2026
       - value: q4_2025
         label: Q4-2025
       - value: q3_2025
@@ -26,6 +28,21 @@ facet_groups:
       - value: presentation
         label: Presentation
 events:
+  - title: >-
+      AI Act Implementation Congres, The Netherlands AI Coalition
+    description: >
+      Presentation during symposium of ['AI Coalition for Netherlands'](https://aic4nl.nl/evenement/ai-act-implementatie-congres/) (AIC4NL) about algorithm and AI identification and risk classification tool.
+    image: /images/partner logo-cropped/AIC4NL.png
+    date: 11-11-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_presentation
+        label: presentation
   - title: >-
       'Dutch Technical Agreement (NTA) Profiling Algorithms', AI4Oversight Lab 
     description: >
