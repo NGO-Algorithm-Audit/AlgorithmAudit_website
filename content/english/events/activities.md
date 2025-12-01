@@ -27,7 +27,24 @@ facet_groups:
         label: Panel discussion
       - value: presentation
         label: Presentation
+      - value: training
+        label: Training
 events:
+  - title: >-
+      Course on 'AI Risk Management in the EU', European Institute of Public Administration
+    description: >
+      This intensive two-day course by the ['European Institute of Public Administration'](https://www.eipa.eu/) (EIPA) offered a deep dive into AI compliance and risk management in the EU. Participants became familiar with the EU AI Act’s risk-based approach and explored its interplay with the larger digital regulatory frameworks, thereby gaining a rich understanding of their impact on AI development, deployment, and governance.
+    image: /images/partner logo-cropped/EIPA.png
+    date: 18-11-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_training
+        label: training
   - title: >-
       AI Act Implementation Congres, The Netherlands AI Coalition
     description: >

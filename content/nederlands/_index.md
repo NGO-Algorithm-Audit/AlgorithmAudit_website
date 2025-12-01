@@ -74,13 +74,6 @@ Activity_Feed:
   items_title: Aankomende events
   activities:
     - title: >-
-        Cursus 'AI risicomanagement in de EU', European Institute of Public Administration
-      link: >-
-        https://www.eipa.eu/courses/artificial-intelligence/
-      image: /images/partner logo-cropped/EIPA.png
-      date: 18-11-2025
-      type: training
-    - title: >-
         ODI Europe & UN Women 'Governing the Algorithm: Embedding Gender Equality in Europe’s Digital Future '
       link: >-
         https://odi.org/en/about/our-work/odi-europe/

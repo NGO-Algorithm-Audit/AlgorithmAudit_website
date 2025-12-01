@@ -25,7 +25,24 @@ facet_groups:
         label: Paneldiscussie
       - value: presentation
         label: Presentatie
+      - value: training
+        label: Training
 events:
+  - title: >-
+      Cursus 'AI risicomanagement in de EU', European Institute of Public Administration
+    description: >
+      Deze intensieve tweedaagse cursus van het [‘European Institute of Public Administration’](https://www.eipa.eu/) (EIPA) bood een diepgaande kijk op AI-compliance en risicobeheer in de EU. Deelnemers raakten vertrouwd met de risicogebaseerde aanpak van de EU-AI-verordening en verkenden de wisselwerking met de bredere digitale regelgevingskaders, waardoor ze een goed inzicht kregen in de impact ervan op de ontwikkeling, implementatie en governance van AI.
+    image: /images/partner logo-cropped/EIPA.png
+    date: 18-11-2025
+    facets:
+      - value: year_2025
+        label: '2025'
+        hide: true
+      - value: year_q4_2025
+        label: Q4-2025
+        hide: true
+      - value: type_training
+        label: training
   - title: >-
       AI-verordening Implementatie Congres, AI Coalitie 4NL  
     description: >
