@@ -195,6 +195,12 @@ team:
           Head of Projects
         linkedIn: "https://www.linkedin.com/in/ylja-remmits-21185188"
         accordion_content: ""
+      - image: /images/people/KFilipov.jpeg
+        name: Kaloyan Filipov
+        bio: |
+          AI Advisor / Validator
+        linkedIn: "https://www.linkedin.com/in/kaloyan-filipov/"
+        accordion_content: ""
       - image: /images/people/YBergstra.jpg
         name: Ydo Bergstra
         bio: |
