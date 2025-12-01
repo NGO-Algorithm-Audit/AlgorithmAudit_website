@@ -195,7 +195,7 @@ team:
           Head of Projects
         linkedIn: "https://www.linkedin.com/in/ylja-remmits-21185188"
         accordion_content: ""
-      - image: /images/people/KFilipov.jpg
+      - image: /images/people/KFilipov.jpeg
         name: Kaloyan Filipov
         bio: |
           AI Advisor / Validator
