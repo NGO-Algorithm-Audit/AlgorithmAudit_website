@@ -18,10 +18,11 @@ team:
         bio: |
           Directeur-bestuurder
         linkedIn: "https://www.linkedin.com/in/jfparie/"
-      - image: /images/people/Profile.png
-        name:
+      - image: /images/people/EMok.jpeg
+        name: Ellen Mok
         bio: |
-          aan te kondigen
+          Bestuurder
+        linkedIn: "https://www.linkedin.com/in/ellen-mok-a238727b/"
   - title: Raad van Advies
     id: advisory-board
     content: De Raad van Advies coacht het bestuur van stichting Algorithm Audit over governance en strategie van de organisatie.

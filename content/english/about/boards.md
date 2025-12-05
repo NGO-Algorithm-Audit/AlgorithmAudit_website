@@ -18,10 +18,11 @@ team:
         bio: |
           Director-board member
         linkedIn: "https://www.linkedin.com/in/jfparie/"
-      - image: /images/people/Profile.png
-        name:
+      - image: /images/people/EMok.jpeg
+        name: Ellen Mok
         bio: |
-          to be announced
+          Board member
+        linkedIn: "https://www.linkedin.com/in/ellen-mok-a238727b/"
   - title: Advisory Board
     id: advisory-board
     content: Advisory Board coaching the board of Algorithm Audit regarding governance and strategy
