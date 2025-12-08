@@ -15,7 +15,7 @@ quick_navigation:
 
 {{< container_open title="Onze 4-stappen audit methodologie" icon="fas fa-eye" id="audit-methodologie" >}}
 
-{{< image id="audit-methodologie" width_desktop="12" width_mobile="12" image1="/images/other/howwework NL.svg" alt1="Audit methodologie" caption1="Audit methodologie" >}}
+{{< image id="audit-methodologie" width_desktop="12" width_mobile="12" image1="/images/other/howwework.svg" alt1="Audit methodologie" caption1="Audit methodologie" >}}
 
 #### Stap 1 – Identificeren van een casus
 
