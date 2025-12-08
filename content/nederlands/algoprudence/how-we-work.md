@@ -2,7 +2,7 @@
 title: Onze werkwijze
 subtitle: >
   Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie
-  ontwikkeld. We lichten hieronder onze 4-staps werkwijze toe.
+  ontwikkeld. We lichten hieronder onze 4-stappen werkwijze toe.
 image: /images/svg-illustrations/main_illustration.svg
 quick_navigation:
   title: Inhoudsopgave
@@ -13,9 +13,9 @@ quick_navigation:
       url: '#richtlijnen'
 ---
 
-{{< container_open title="Onze 4-staps audit methodologie" icon="fas fa-eye" id="audit-methodologie" >}}
+{{< container_open title="Onze 4-stappen audit methodologie" icon="fas fa-eye" id="audit-methodologie" >}}
 
-{{< image id="audit-methodologie" width_desktop="12" width_mobile="12" image1="/images/other/howwework.svg" alt1="Audit methodologie" caption1="Audit methodologie" >}}
+{{< image id="audit-methodologie" width_desktop="12" width_mobile="12" image1="/images/other/howwework NL.svg" alt1="Audit methodologie" caption1="Audit methodologie" >}}
 
 #### Stap 1 – Identificeren van een casus
 

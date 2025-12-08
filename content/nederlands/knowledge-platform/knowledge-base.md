@@ -38,7 +38,7 @@ subtitle: >
   Deze kennisbank is een verzameling van (opinie)artikelen en white papers van
   Algorithm Audit. Daarnaast bevat de kennisbank noemenswaardige rapporten,
   boeken en andere publicaties vanuit verschillende disciplines over de
-  verantwoorde inzet van algoritmes. Ieder stuk in de kennisbank ik samengevat
+  verantwoorde inzet van algoritmes. Ieder stuk in de kennisbank is samengevat
   en gereviewd.
 
 
