@@ -24,13 +24,13 @@ Dit artikel is gepubliceerd in een thema-editie van het Tijdschrift voor Toezich
 
 ###### Abstract
 
-Bij toezicht op algoritmes en AI staat niet alleen het recht, maar ook de sta8s8ek centraal. Aan de hand
-van een concreet profileringsalgoritme lichten we toe dat bestaande kaders, handreikingen en so> law
+Bij toezicht op algoritmes en AI staat niet alleen het recht, maar ook de statistiek centraal. Aan de hand
+van een concreet profileringsalgoritme lichten we toe dat bestaande kaders, handreikingen en soft law
 onvoldoende houvast bieden voor het invullen van open normen uit het gelijke behandelingsrecht. We
-illustreren dat beproefde methoden uit de empirische wetenschap handvaBen bieden om deze normen
-in te vullen. Aan de hand van het prak8jkvoorbeeld wordt een vragenlijst geïntroduceerd die
+illustreren dat beproefde methoden uit de empirische wetenschap handvatten bieden om deze normen
+in te vullen. Aan de hand van het praktijkvoorbeeld wordt een vragenlijst geïntroduceerd die
 toezichthouders ondersteunt in het stellen van gerichte vragen over indirect onderscheid door
-algoritmes en AI. Deze aanpak bouwt voort op weBelijke kaders en stelt toezichthouders in staat met
-beperkte middelen eﬀec8ef toezicht te houden op algoritme-gedreven besluitvormingsprocessen.
+algoritmes en AI. Deze aanpak bouwt voort op wettelijke kaders en stelt toezichthouders in staat met
+beperkte middelen effectief toezicht te houden op algoritme-gedreven besluitvormingsprocessen.
 
 {{< embed_pdf url="/pdf-files/knowledge-base/20251010 Tijdschift voor Toezicht.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
