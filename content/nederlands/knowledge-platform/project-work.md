@@ -170,7 +170,7 @@ Van Q3-2024 tot en met Q1-2025 werkte Algorithm Audit samen met de Gemeente Amst
 Van Q3-2023 tot en met Q2-2024 ondersteunde Algorithm Audit de Dienst Uitvoering Onderwijs (DUO) bij een intern onderzoek naar een naar verluid bevooroordeeld algoritme-gedreven besluitvormingsproces.
 
 - Het eerste [auditrapport](/algoprudence/cases/aa202401_preventing-prejudice/) is op 01-01-2024 aan DUO en de Tweede Kamer aangeboden;
-- Het tweede [auditrapport](/algoprudence/cases/aa202401_preventing-prejudice/) is op 22-05-2024 aan DUO en de Tweede Kamer aangeboden.
+- Het tweede [auditrapport](/algoprudence/cases/aa202402_preventing-prejudice_addendum/) is op 22-05-2024 aan DUO en de Tweede Kamer aangeboden.
 
 {{< image image1="/images/partner logo-cropped/DUO.png" alt1="Dienst Uitvoering Onderwijs (DUO)" caption1="Dienst Uitvoering Onderwijs (DUO)" link1="" width_desktop="3" id="DUO-logo" >}}
 

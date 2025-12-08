@@ -170,7 +170,7 @@ From Q3-2024 up to Q1-2025, Algorithm Audit assisted the Municipality of Amsterd
 From Q3-2023 up to Q2-2024, Algorithm Audit assisted the Dutch Executive Eductaion Agency's (DUO) with an internal investigation into an allegedly biased algorithmic-driven decision-making process.
 
 - The first [audit report](/algoprudence/cases/aa202401_preventing-prejudice/) was sent to DUO and Dutch Parliament on 01-01-2024;
-- The second [audit report](/algoprudence/cases/aa202401_preventing-prejudice/) was sent to DUO and Dutch Parliament on 22-05-2024.
+- The second [audit report](/algoprudence/cases/aa202402_preventing-prejudice_addendum/) was sent to DUO and Dutch Parliament on 22-05-2024.
 
 {{< image image1="/images/partner logo-cropped/DUO.png" alt1="Dutch Executive Education Agency (DUO)" caption1="Dutch Executive Education Agency (DUO)" link1="" width_desktop="3" id="DUO-logo" >}}
 
