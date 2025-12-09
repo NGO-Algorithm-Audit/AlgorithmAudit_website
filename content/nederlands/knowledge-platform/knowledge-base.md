@@ -5,6 +5,8 @@ facet_groups:
     facets:
       - value: algoprudence
         label: Algoprudentie
+      - value: AIAct
+        label: AI-verordening
       - value: GDPR
         label: AVG
       - value: DSA

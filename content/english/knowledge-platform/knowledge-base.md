@@ -18,6 +18,8 @@ facet_groups:
   - value: type
     title: Type
     facets:
+      - value: analysis
+        label: Analysis
       - value: article
         label: Article
       - value: book
@@ -26,14 +28,10 @@ facet_groups:
         label: Op-ed
       - value: report
         label: Report
-      - value: review
-        label: Review
       - value: standard
         label: Public standard
       - value: white_paper
         label: White paper
-      - value: analysis
-        label: Analysis
 pagesize: 4
 title_content: Articles
 layout: overview

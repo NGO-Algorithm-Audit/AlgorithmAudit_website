@@ -54,7 +54,7 @@ Activity_Feed:
   featured_activities:
     - title: Analysis Dutch Algorithmm Register
       intro: >
-        More than 1.245 algorithms have already been published by 289 organisations in the Dutch Algorithm Register. But how informative is the information that’s currently provided?
+        More than 1.245 algorithms have already been published in the Dutch Algorithm Register. But how informative are the published records?
       link: /knowledge-platform/knowledge-base/analysis_dutch_algorithm_register/
       image: /images/knowledge_base/Analysis Dutch Algorithm Register.png
       date: 09-12-2025
