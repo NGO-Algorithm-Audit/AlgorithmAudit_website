@@ -55,6 +55,13 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
+    - title: Analyse Algoritmeregister
+      intro: >
+        Meer dan 1.245 algoritmes zijn al gepubliceerd in het Algoritmeregister. Maar hoe informatief zijn de gepubliceerde gegevens?    
+      link: /nl/knowledge-platform/knowledge-base/analysis_dutch_algorithm_register/
+      image: /images/knowledge_base/Analysis Dutch Algorithm Register.png
+      date: 09-12-2025
+      type: analyse
     - title: Praktische handvatten voor empirisch toezicht op profileringsalgoritmes
       intro: >
         Artikel geschreven in samenwerking met onderzoekers van het Centraal Planbureau (CPB) over toezicht op profileringsalgoritmes.
@@ -62,13 +69,6 @@ Activity_Feed:
       image: /images/knowledge_base/White_paper_Empirische_toetsingsmethoden.png
       date: 31-10-2025
       type: artikel
-    - title: 'Algoprudentie: Voorspellen van onverantwoord rijgedrag'
-      intro: >
-        Case study naar het voorspellen van onverantwoord rijgedrag op basis van de data van een autodeelplatform.
-      link: /nl/algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/
-      image: /images/algoprudence/AA202501/Cover_NL.png
-      date: 30-09-2025
-      type: algoprudence
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
