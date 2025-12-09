@@ -32,6 +32,8 @@ facet_groups:
         label: Public standard
       - value: white_paper
         label: White paper
+      - value: analysis
+        label: Analysis
 pagesize: 4
 title_content: Articles
 layout: overview

@@ -52,6 +52,13 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
+    - title: Analysis Dutch Algorithmm Register
+      intro: >
+        More than 1.245 algorithms have already been published by 289 organisations in the Dutch Algorithm Register. But how informative is the information that’s currently provided?
+      link: /knowledge-platform/knowledge-base/analysis_dutch_algorithm_register/
+      image: /images/knowledge_base/Analysis Dutch Algorithm Register.png
+      date: 09-12-2025
+      type: analysis
     - title: Empirical methods for supervising algorithmic profiling systems
       intro: >
         Article written in collaboration with researchers of the Netherlands Bureau for Economic Policy Analysis (CPB).
@@ -59,13 +66,6 @@ Activity_Feed:
       image: /images/knowledge_base/White_paper_Empirical_methods.png
       date: 31-10-2025
       type: article
-    - title: 'Algoprudence: Predicting irresponsible driving'
-      intro: >
-        Case study how irresponsible driving can be predicted based on data of a car sharing platform.
-      link: /algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/
-      image: /images/algoprudence/AA202501/Cover_EN.png
-      date: 30-09-2025
-      type: algoprudence
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
