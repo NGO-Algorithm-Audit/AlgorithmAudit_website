@@ -5,8 +5,8 @@ featured: false
 layout: article
 type: knowledgebase_item
 facets:
-  - value: type_review
-    label: review
+  - value: type_analysis
+    label: analysis
   - value: subject_AIAct
     label: AI Act
 author: Algorithm Audit

@@ -8,7 +8,7 @@ facets:
   - value: type_white_paper
     label: white paper
   - value: subject_scientific
-    label: scientific
+    label: scientific article
 author: Algorithm Audit and Netherlands Bureau for Economic Policy Analysis
 summary: >-
   How empirical methods can help regulating AI

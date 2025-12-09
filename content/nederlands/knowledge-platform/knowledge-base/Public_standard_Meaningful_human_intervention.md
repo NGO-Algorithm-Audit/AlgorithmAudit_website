@@ -7,7 +7,11 @@ summary: >-
   Stappenplan om uitsluitend op profilering gebaseerde besluitvorming te voorkomen
 facets:
   - value: type_standard
-    label: standard
+    label: publieke standaard
+  - value: type_analyse
+    label: analyse
+  - value: subject_GDPR
+    label: AVG
 weight: -15
 title: >-
   Publiek standaard 'Betekenisvolle menselijke tussenkomst risicoprofileringsalgoritmes'

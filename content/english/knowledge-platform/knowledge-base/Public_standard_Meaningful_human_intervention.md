@@ -7,7 +7,11 @@ summary: >-
   Step-by-step guide to prevent automated decision-making based solely on profiling
 facets:
   - value: type_standard
-    label: standard
+    label: public standard
+  - value: type_analysis
+    label: analysis
+  - value: subject_GDPR
+    label: GDPR
 weight: -15
 title: >-
   Public standard 'Meaningful human intervention for risk profiling algorithms'

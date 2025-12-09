@@ -8,7 +8,7 @@ facets:
   - value: type_white_paper
     label: white paper
   - value: subject_scientific
-    label: wetenschappelijk
+    label: wetenschappelijk artikel
 author: Algorithm Audit en Centraal Planbureau
 summary: >-
   Hoe empirische methoden ondersteunen bij toezicht op AI

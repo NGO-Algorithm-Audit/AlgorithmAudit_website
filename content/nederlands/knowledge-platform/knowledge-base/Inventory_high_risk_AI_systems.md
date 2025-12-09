@@ -5,8 +5,8 @@ featured: false
 layout: article
 type: knowledgebase_item
 facets:
-  - value: type_review
-    label: onderzoek
+  - value: type_analysis
+    label: analyse
   - value: subject_AIAct
     label: AI-verordening
 author: Algorithm Audit

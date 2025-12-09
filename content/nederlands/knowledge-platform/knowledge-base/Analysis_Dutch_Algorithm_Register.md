@@ -6,9 +6,9 @@ layout: article
 type: knowledgebase_item
 facets:
   - value: type_analysis
-    label: Analysis
+    label: analysis
   - value: subject_AIAct
-    label: AI Act
+    label: AI-verordening
 author: Algorithm Audit
 summary: >-
   Algorithm Register: from pinnacle of transparency to puzzle of paperwork  
