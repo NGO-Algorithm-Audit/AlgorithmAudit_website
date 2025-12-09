@@ -13,7 +13,7 @@ author: Algorithm Audit
 summary: >-
   Algorithm Register: from pinnacle of transparency to puzzle of paperwork  
 weight: -16
-title: 'Analysis Dutch Algorithmm Register'
+title: 'Analysis Dutch Algorithm Register'
 subtitle: ''
 image: /images/knowledge_base/Analysis Dutch Algorithm Register.png
 search:
