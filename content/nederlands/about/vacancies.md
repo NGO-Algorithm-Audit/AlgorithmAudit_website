@@ -3,13 +3,11 @@ title: Vacatures
 subtitle: |
   Overzicht van vacatures bij Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-# quick_navigation:
-#   title: Overzicht
-#   links:
-#     - title: AI adviseur/validator
-#       url: '#accordion_area_AI-adviseur'
-#     - title: Stagiair
-#       url: '#accordion_area_stagiair'
+quick_navigation:
+  title: Overzicht
+  links:
+    - title: Stagiair/werkstudent
+      url: '#accordion_area_stagiair'
 dynamic_form_engine:
   - title: Sollicitatieformulier AI adviseur/validator
     id: form1
@@ -220,25 +218,25 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordions_area_open id="stagiair" >}}
 
-{{< accordion_item_open title="Stagiair (0.6-1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="doorlopende sollicitatie" >}}
+{{< accordion_item_open title="Stagiair/werkstudent (0.6-1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="doorlopende sollicitatie" >}}
 
 {{< button button_text="Solliciteer" button_link="#form2" >}}
 
-#### Functietitel: Stagiair (0.6-1.0 fte) 
+#### Functietitel: Stagiair/werkstudent (0.6-1.0 fte) 
 
 Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol waarbij ieders belangen worden meegenomen? Kom stichting Algorithm Audit versterken als Stagiair en draag bij aan de collectieve kennisopbouw over verantwoorde AI. 
 
-#### Over Stichting Algorithm Audit
+#### Over stichting Algorithm Audit
 
-Stichting Algorithm Audit is een Europees kennisplatform voor AI-standaarden op het gebied van bias en verantwoorde inzet. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam, de Raad van Europa. 
+Stichting Algorithm Audit is een Europees kennisplatform voor AI-standaarden op het gebied van bias en verantwoorde inzet. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. We verrichten projectwerk voor onder meer de Europese Commissie, de Raad van Europa, de Dienst Uitvoering Onderwijs (DUO) en Nederlandse gemeenten. 
 
-Voor specifieke vraagstukken bouwen we open source tools waar iedereen iets aan heeft, bijvoorbeeld ten behoeve van synthetische data generatie of implementatie van de AI-verordening. Door casusonderzoek en onafhankelijke oordeelsvorming door diverse adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases. 
+Voor specifieke vraagstukken bouwen we open source tools waar iedereen iets aan heeft, bijvoorbeeld voor het evalueren van general purpose AI-modellen of ten behoeve van de implementatie van de AI-verordening. Door casusonderzoek en onafhankelijke oordeelsvorming door diverse adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases. 
 
 Wij zijn een jonge, enthousiaste en snelgroeiende organisatie met een klein kernteam maar met een groot netwerk van academici, beleidsmakers en experts in Nederland en Europa waar we mee samenwerken. Ons kantoor is gevestigd in Den Haag. 
 
 #### Werkzaamheden
 
-Als stagiair bij Algorithm Audit:
+Als stagiair/werkstudent bij Algorithm Audit:
 
 * Draai je mee in het team van Algorithm Audit bestaande uit ervaren consultants;
 * Draag je schriftelijk bij aan o.a. technisch en/of juridische analyses, presentaties, beschrijvingen en mogelijk doorontwikkeling van technische tools;
