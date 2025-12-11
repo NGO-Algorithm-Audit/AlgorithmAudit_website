@@ -210,43 +210,44 @@ Vragen over de vacature of de procedure? Stuur een email naar info@algorithmaudi
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}
+{{< accordions_area_close >}} -->
 
 {{< accordions_area_open id="stagiair" >}}
 
-{{< accordion_item_open title="Intern (0.8-1.0 fte) (Dutch speaking only)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="rolling application" >}}
+{{< accordion_item_open title="Intern (0.6-1.0 fte) (Dutch speaking only)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="rolling application" >}}
 
 {{< button button_text="Solliciteer" button_link="#form2" >}}
 
-#### Functietitel: Stagiair (0.8-1.0 fte)
+#### Functietitel: Stagiair (0.6-1.0 fte) 
 
-Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol waarbij ieders belangen worden meegenomen? Kom stichting Algorithm Audit versterken als stagiair en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
+Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol waarbij ieders belangen worden meegenomen? Kom stichting Algorithm Audit versterken als Stagiair en draag bij aan de collectieve kennisopbouw over verantwoorde AI. 
 
 #### Over Stichting Algorithm Audit
 
-Stichting Algorithm Audit is een Europees kennisplatform voor AI bias testing en AI standaarden. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam, de Raad van Europa.
+Stichting Algorithm Audit is een Europees kennisplatform voor AI-standaarden op het gebied van bias en verantwoorde inzet. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over AI en algoritmes. Door het verrichten van not-for-profit projectwerk zijn we een alternatief voor commerciële consulting, waarbij we minimaal dezelfde kwaliteitsstandaarden hanteren maar dan zonder winstmaximalisatie. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. Recent hebben we projectwerk verricht voor o.a. DUO, het Ministerie van Justitie en Veiligheid, de Gemeente Amsterdam, de Raad van Europa. 
 
-Voor specifieke vraagstukken bouwen we open source tools waar iedereen iets aan heeft, bijvoorbeeld ten behoeve van synthetische data generatie of implementatie van de AI-verordening. Door casusonderzoek en onafhankelijke oordeelsvorming door diverse adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases.
+Voor specifieke vraagstukken bouwen we open source tools waar iedereen iets aan heeft, bijvoorbeeld ten behoeve van synthetische data generatie of implementatie van de AI-verordening. Door casusonderzoek en onafhankelijke oordeelsvorming door diverse adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases. 
 
-Wij zijn een jonge, enthousiaste en snelgroeiende organisatie met een klein kernteam maar met een groot netwerk van academici, beleidsmakers en experts in Nederland en Europa waar we mee samenwerken. Ons kantoor is gevestigd in Den Haag.
+Wij zijn een jonge, enthousiaste en snelgroeiende organisatie met een klein kernteam maar met een groot netwerk van academici, beleidsmakers en experts in Nederland en Europa waar we mee samenwerken. Ons kantoor is gevestigd in Den Haag. 
 
-#### Wat zoeken wij?
+#### Werkzaamheden
 
 Als stagiair bij Algorithm Audit:
 
 * Draai je mee in het team van Algorithm Audit bestaande uit ervaren consultants;
 * Draag je schriftelijk bij aan o.a. technisch en/of juridische analyses, presentaties, beschrijvingen en mogelijk doorontwikkeling van technische tools;
 * Help je bij de praktische aspecten die komen kijken bij het runnen van een jonge organisatie, zoals het organiseren van events, PR en communicatie;
-* Stem je je precieze takenpakket in samenspraak af, afhankelijk van je beschikbaarheid en affiniteit;
-* Doe je veel ervaring op en vind je het leuk expertise te ontwikkelen in verschillende vakgebieden.
+* Stem je je precieze takenpakket in samenspraak af, afhankelijk van je beschikbaarheid en affiniteit; 
+* Doe je veel ervaring op en vind je het leuk expertise te ontwikkelen in verschillende vakgebieden. 
 
-Het is ook mogelijk om binnen je stage bij Algorithm Audit een masterscriptie te schrijven op het gebied van verantwoorde AI en algoritmes. We stemmen dan samen af hoeveel tijd jij nodig hebt voor je scriptie en hoeveel tijd je hebt om als stagiair mee te draaien in de organisatie.
+#### Wie zoeken wij?
 
-Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemene focusgebieden van Algorithm Audit. We staan open voor eigen ideeën voor een scriptieonderwerp en we kunnen je ook ondersteunen bij het specifiek definiëren hiervan. Denk bijvoorbeeld aan:
-
-* Juridisch: Vraagstukken rondom de AI-verordening, digitaal bestuursrecht, of gelijke behandeling bij algoritmes;
-* Bestuurskundig: Onderzoek naar publieke beleidsvorming rondom algoritmes en AI of naar goed algoritmemanagementbeleid;
-* Technisch: Onderzoek naar bias en fairness of naar evaluatiemethodes voor LLMs. In je onderzoek weet je de brug te leggen naar concrete use cases en de praktijk.
+* Je bent bezig met een relevante masteropleiding; 
+* Je vindt het leuk om aan multidisciplinaire thema’s te werken. Je laat je niet afschrikken door jargon van een ander vakgebied;  
+* Je hebt aantoonbare affiniteit met verantwoorde inzet van AI en algoritmes (aantoonbare multidisciplinaire ervaring is een pré); 
+* Je bent gedreven en op de hoogte van het publieke debat rondom AI en algoritmes; 
+* Je bent staat om in een klein team in goede afstemming te werken en ook veel zelfstandig op te pakken;  
+* Volledige werkvaardigheid in Nederlands en Engels.
 
 #### Vaardigheden
 
@@ -263,13 +264,25 @@ Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemen
 * Bereidheid om binnenlands te reizen, en incidenteel Europees;
 * Nederlandse nationaliteit of werkvergunning.
 
-#### Wat bieden wij?
+#### Wat bieden wij? 
 
-* Een kleine enthousiaste organisatie die een pionier is op het gebied van verantwoorde algoritmes en AI in de praktijk, en dit doet vanuit een onafhankelijke en maatschappelijke rol;
-* Begeleiding bij je scriptie: wekelijkse check-in, inhoudelijk meedenken en meelezen bij je tussenproducten en scriptie;
+* Een kleine enthousiaste organisatie die een pionier is op het gebied van verantwoorde algoritmes en AI in de praktijk, en dit doet vanuit een onafhankelijke en maatschappelijke rol; 
+* Begeleiding: wekelijkse check-in, inhoudelijk meedenken en meelezen bij je (tussen)producten, constructieve feedback en het helpen ontwikkelen van professionele vaardigheden; 
 * Een vergoeding:
   * €750,- per maand voor een fulltime stage;
-  * Bij minder beschikbaarheid komen we samen tot een redelijke afstemming.
+  * Bij minder beschikbaarheid komen we samen tot een redelijke afstemming. 
+
+#### Eigen project onder onze begeleiding? 
+
+Het is ook mogelijk om binnen je stage bij Algorithm Audit een masterscriptie te schrijven op het gebied van verantwoorde AI en algoritmes. We stemmen dan samen af hoeveel tijd jij nodig hebt voor je scriptie en hoeveel tijd je hebt om als stagiair mee te draaien in de organisatie.   
+
+Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemene focusgebieden van Algorithm Audit. We staan open voor eigen ideeën voor een scriptieonderwerp en we kunnen je ook ondersteunen bij het specifiek definiëren hiervan. Denk bijvoorbeeld aan: 
+
+* Juridisch: Vraagstukken rondom de AI-verordening, digitaal bestuursrecht, of gelijke behandeling bij algoritmes; 
+* Bestuurskundig: Onderzoek naar publieke beleidsvorming rondom algoritmes en AI of naar goed algoritmemanagementbeleid; 
+* Technisch: Onderzoek naar bias en fairness of naar evaluatiemethodes voor LLMs. In je onderzoek weet je de brug te leggen naar concrete use cases en de praktijk. 
+
+Hierbij bieden wij begeleiding door met jou in de inhoud te duiken, en samen te kijken naar de aan te leveren documenten voor jouw scriptie.  
 
 #### Praktische opmerkingen
 
@@ -290,4 +303,4 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}} -->
+{{< accordions_area_close >}} 
