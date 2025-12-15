@@ -15,7 +15,7 @@ quick_navigation:
 
 {{< container_open title="Our 4-step audit methodology" icon="fas fa-eye" id="methodology" >}}
 
-{{< image id="audit-methodology" width_desktop="12" width_mobile="12" image1="/images/other/howwework.svg" alt1="Audit methodology" caption1="Audit methodology" >}}
+{{< image id="audit-methodology" width_desktop="12" width_mobile="12" image1="/images/other/howwework_EN.svg" alt1="Audit methodology" caption1="Audit methodology" >}}
 
 #### Step 1 – Identifying an issue
 
