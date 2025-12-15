@@ -8,7 +8,7 @@ summary: >-
 facets:
   - value: type_standard
     label: publieke standaard
-  - value: type_analyse
+  - value: type_analysis
     label: analyse
   - value: subject_GDPR
     label: AVG

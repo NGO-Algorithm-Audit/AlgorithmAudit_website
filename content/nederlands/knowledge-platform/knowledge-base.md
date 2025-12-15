@@ -18,7 +18,7 @@ facet_groups:
   - value: type
     title: Type
     facets:
-      - value: review
+      - value: analysis
         label: Analyse
       - value: article
         label: Artikel
