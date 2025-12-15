@@ -6,7 +6,7 @@ layout: article
 type: knowledgebase_item
 facets:
   - value: type_analysis
-    label: Analysis
+    label: analysis
   - value: subject_AIAct
     label: AI Act
 author: Algorithm Audit
