@@ -52,7 +52,7 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
-    - title: Analysis Dutch Algorithmm Register
+    - title: Analysis Dutch Algorithm Register
       intro: >
         More than 1.245 algorithms have already been published in the Dutch Algorithm Register. But how informative are the published records?
       link: /knowledge-platform/knowledge-base/analysis_dutch_algorithm_register/
