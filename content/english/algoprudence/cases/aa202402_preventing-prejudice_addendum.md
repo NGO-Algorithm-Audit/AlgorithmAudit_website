@@ -63,7 +63,13 @@ Education Executive Agency of The Netherlands (DUO)
 
 #### Github repository
 
-[https://github.com/NGO-Algorithm-Audit/DUO-CUB](https://github.com/NGO-Algorithm-Audit/DUO-CUB)
+<p>
+  <a href="https://github.com/NGO-Algorithm-Audit/DUO-CUB"
+     target="_blank"
+     rel="noopener">
+    https://github.com/NGO-Algorithm-Audit/DUO-CUB
+  </a>
+</p>
 
 #### Audit report
 
