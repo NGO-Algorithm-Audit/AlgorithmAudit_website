@@ -61,7 +61,13 @@ Een persbericht kan [hier](/nl/events/press_room/) worden gevonden.
 
 #### Github repository
 
-[https://github.com/NGO-Algorithm-Audit/DUO-CUB](https://github.com/NGO-Algorithm-Audit/DUO-CUB)
+<p>
+  <a href="https://github.com/NGO-Algorithm-Audit/DUO-CUB"
+     target="_blank"
+     rel="noopener">
+    https://github.com/NGO-Algorithm-Audit/DUO-CUB
+  </a>
+</p>
 
 #### Bron van de casus
 
