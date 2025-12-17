@@ -1,7 +1,7 @@
 ---
 title: AI beleidsobservatorium
 subtitle: >
-  Er zijn verschillende beleidsinitiativen om algoritmes en AI verantwoord in te zetten. 
+  Er zijn verschillende beleidsinitiatieven om algoritmes en AI verantwoord in te zetten. 
   Op deze pagina wordt informatie bijgehouden over belangrijke Europese en nationale initiatieven, inclusief 
   materiaal dat Algorithm Audit over het onderwerp heeft ontwikkeld.
 image: /images/svg-illustrations/knowledge_base.svg
