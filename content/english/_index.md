@@ -71,13 +71,6 @@ Activity_Feed:
   items_title: Upcoming events
   activities:
     - title: >-
-        ODI Europe & UN Women 'Governing the Algorithm: Embedding Gender Equality in Europe’s Digital Future '
-      link: >-
-        https://odi.org/en/about/our-work/odi-europe/
-      image: /images/partner logo-cropped/ODI_Europe.png
-      date: 08-12-2025
-      type: panel discussion
-    - title: >-
         Course on 'GPAI validation framework', Dutch Academy for Legislation
       link: >-
         https://rechtenoverheid.nl/cursus/leeratelier-generatieve-ai-waar-op-te-letten-bij-verstandig-gebruik-2452

@@ -74,13 +74,6 @@ Activity_Feed:
   items_title: Aankomende events
   activities:
     - title: >-
-        ODI Europe & UN Women 'Governing the Algorithm: Embedding Gender Equality in Europe’s Digital Future '
-      link: >-
-        https://odi.org/en/about/our-work/odi-europe/
-      image: /images/partner logo-cropped/ODI_Europe.png
-      date: 08-12-2025
-      type: paneldiscussie
-    - title: >-
         Leeratelier 'Generatieve AI: waar op te letten bij verstandig gebruik?', Academie voor Wetgeving
       link: >-
         https://rechtenoverheid.nl/cursus/leeratelier-generatieve-ai-waar-op-te-letten-bij-verstandig-gebruik-2452
