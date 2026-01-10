@@ -21,7 +21,7 @@ subpage_links:
     icon: fa-light fa-table  
     color: '#FFF'  
     url: /nl/technical-tools/sdg/  
-  - title: AI-verordening implementatie tool
+  - title: AI en algoritmes kwalificatietoolkit (AI AQT)
     titleline2: >-
       Dynamische vragenlijsten voor identificatie en risicoclassificatie van AI-systemen en algoritmes
     icon: fa-light fa-file
