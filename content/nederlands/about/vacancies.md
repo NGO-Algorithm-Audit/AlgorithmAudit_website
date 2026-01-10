@@ -148,7 +148,7 @@ Binnen het team verdelen we de werkzaamheden. Afhankelijk van je ervaring en aff
 * Implementatie van de AI-verordening:
   * Verdiepen in wettekst en koppeling maken tussen concepten uit de wet en de algoritmische praktijk;
   * Verdiepen in standaarden, inhoudelijke evaluatie van AI-systemen en de rapportage hierover;
-  * Inzichten verwerken in Algorithm Audit’s open source AI-verordening implementatie tool, incl. business development
+  * Inzichten verwerken in Algorithm Audit’s open source AI en algoritmes kwalificatietoolkit (AI AQT), incl. business development
 * Socio-technologische evaluatie van Large Language Models (LLMs):
   * Begrip van kerncomponenten uit LLM-applicaties, zoals embeddings, Retrieval-Augmented Generation (RAG), knowledge bases, chunking etc.;
   * Opstellen van domein-specifieke evaluatiecriteria voor LLM-toepassingen;
