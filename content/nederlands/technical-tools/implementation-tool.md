@@ -153,38 +153,20 @@ Vragenlijst 1B (in bèta) wordt spoedig opgenomen in de documentatie.
 
 Aan de hand van voorbeelden lichten we de uitwerking van juridische concepten relevant voor algoritmische systemen toe.
 
-<div style="
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap:2rem;
-">
+#### Risicoclassificatie
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250512 AI risk identification Algorithm Audit.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
 
-<div>
-  <h3><br>&nbsp;Risicoclassificatie</h3>
-  {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250512 AI risk identification Algorithm Audit.pdf" width_mobile_pdf="6" width_desktop_pdf="10" >}}
-</div>
+#### 10 voorbeelden van (geen) AI-systemen
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
 
-<div>
-  <h3>10 voorbeelden van (geen) AI-systemen</h3>
-  {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="6" width_desktop_pdf="10" >}}
-</div>
+#### Regelgebaseerde algoritmen onder de AI-verordening
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
 
-<div>
-  <h3>Regelgebaseerde algoritmen onder de AI-verordening</h3>
-  {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="6" width_desktop_pdf="10" >}}
-</div>
+#### Definitie van een AI-systeem volgens de AI-verordening
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
 
-<div>
-  <h3>Definitie van een AI-systeem volgens de AI-verordening</h3>
-  {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="6" width_desktop_pdf="10" >}}
-</div>
-
-<div>
-  <h3>Voorkomen van uitsluitend op profilering gebaseerde besluitvorming</h3>
-  {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250515 Publieke standaard Betekenisvolle menselijke tussenkomst.pdf" width_mobile_pdf="6" width_desktop_pdf="10" >}}
-</div>
-
-</div>
+#### Voorkomen van uitsluitend op profilering gebaseerde besluitvorming
+{{< embed_pdf url="/pdf-files/knowledge-base/20250515 Carrousel Meaningful human intervention risk profiling algorithms.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
