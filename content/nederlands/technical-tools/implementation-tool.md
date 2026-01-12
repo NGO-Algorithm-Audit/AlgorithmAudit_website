@@ -72,13 +72,9 @@ De tool is [open-source](/nl/technical-tools/implementation-tool/#source-code) o
 
 <!-- Kwalificatie en reikwijdte -->
 
-{{< container_open icon="fa-solid fa-clipboard-check" title="Waarom een juiste kwalificatie van algoritmische systemen belangrijk is" id="kwalificatie-reikwijdte" >}}
+{{< container_open icon="fa-solid fa-clipboard-check" title="Waarom de correct kwalificeren van algoritmische systemen belangrijk is" id="kwalificatie-reikwijdte" >}}
 
-Het toepassen van juridische definities in de praktijk roept lastige vragen op. Bijvoorbeeld: Welke kenmerken onderscheiden AI van andere data-gedreven systemen? En welke criteria bepalen de risicocategorie van een AI-systeem? 
-
-Gestandaardiseerde vragenlijsten helpen om algoritmemanagement efficiënte uit te voeren. Vragenlijsten kunnen binnen de gehele organisatie worden gedeeld en centraal worden verwerkt. AI AQT biedt hiervoor een eenduidige en gebruiksvriendelijke werkwijze en is daarmee een bouwsteen richting wettelijke naleving. 
-
-Niet alleen in het kader van de AI-verordening, ook in het kader van de AVG en aanvullende beleidsinstrumenten, zoals de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a>, is identificatie en risicoclassificatie relevant.  
+Het toepassen van juridische definities in de praktijk roept lastige vragen op. Bijvoorbeeld: Welke kenmerken onderscheiden AI van andere data-gedreven systemen? En welke criteria bepalen de risicocategorie van een AI-systeem? Gestandaardiseerde vragenlijsten helpen om algoritmemanagement efficiënt uit te voeren. Vragenlijsten kunnen binnen de gehele organisatie worden gedeeld en centraal worden verwerkt. AI AQT biedt hiervoor een eenduidige en gebruiksvriendelijke werkwijze en is daarmee een bouwsteen richting wettelijke naleving. Niet alleen in het kader van de AI-verordening, ook in het kader van de AVG en aanvullende beleidsinstrumenten, zoals de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a>, is identificatie en risicoclassificatie relevant.  
 
 {{< container_close >}}
 
@@ -88,18 +84,18 @@ Niet alleen in het kader van de AI-verordening, ook in het kader van de AVG en a
 
 De uitkomsten van de tool worden weergegeven in onderstaande figuur. Er wordt onderscheid gemaakt tussen de volgende categorieën:  
 
-Vragenlijst 1A:
+#### Vragenlijst 1A:
 - <span style="color:#005AA7">AI-systemen</span>: Vallen onder de reikwijdte van de AI-verordening. Afhankelijk van de risicocategorie zijn aanvullende beheersmaatregelen wettelijk verplicht. Ga verder met Vragenlijst 2.
 - <span style="color:#005AA7">Impactvolle algoritmes</span>: Vallen buiten de reikwijdte van de AI-verordening, maar binnen de reikwijdte van het Nederlandse algoritmesregister. Aanvullende controlemaatregelen zijn nodig.
 
-Vragenlijst 1B [BETA]:
+#### Vragenlijst 1B [BETA]:
 
 - <span style="color:#005AA7">Volledig geautomatiseerde besluitvorming</span>: Vallen onder de reikwijdte van artikel 22 van de AVG. Aanvullende beheersmaatregelen zijn nodig. 
-- <span style="color:#005AA7">AI-systemen</span>: zie uitkomst Vragenlijst 1. 
+- <span style="color:#005AA7">AI-systemen</span>: Zie uitkomst Vragenlijst 1. 
 - <span style="color:#005AA7">Impactvolle algoritmes</span>: Zie uitkomst Vragenlijst 1.
 - <span style="color:#005AA7">Overige systemen</span>: Vallen buiten de reikwijdte van de AI-verordening, het Nederlandse Algoritmesregister en artikel 22 van de AVG. 
 
-Vragenlijst 2:
+#### Vragenlijst 2:
 
 - <span style="color:#005AA7">Verboden AI-systemen</span>: Het gebruik van dit type AI-systeem is verboden in de Europese Unie. Meer informatie over deze categorie wordt verstrekt door de <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Nederlandse overheid</a>. 
 - <span style="color:#005AA7">Hoog-risico AI-systemen</span>: Er zijn aanvullende controlemaatregelen voor AI-systemen met een hoog risico nodig door middel van geharmoniseerde normen. 
@@ -127,11 +123,10 @@ De AI en Algoritme Kwalificatie Toolkit (AI AQT) zijn ontwikkeld in samenwerking
 
 AI AQT wordt gebruikt door onder meer: 
 
-<div style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap;">
-  <img src="/images/partner logo-cropped/De Nederlandsche Bank.png" alt="De Nederlandsche Bank" width="200">
-  <img src="/images/partner logo-cropped/Belastingdienst.png" alt="Belastingdienst" width="200">
-  <img src="/images/partner logo-cropped/GemeenteDenHaag.png" alt="Gemeente Den Haag" width="200">
-</div>
+<img src="/images/partner logo-cropped/GemeenteAmsterdam.png" alt="Belastingdienst" width="200">
+<img src="/images/partner logo-cropped/De Nederlandsche Bank.png" alt="De Nederlandsche Bank" width="200">
+<img src="/images/partner logo-cropped/GemeenteDenHaag.png" alt="Gemeente Den Haag" width="200">
+
 {{< container_close >}}
 
 <!-- Documentatie -->
@@ -154,33 +149,33 @@ Vragenlijst 1B (in bèta) wordt spoedig opgenomen in de documentatie.
 Aan de hand van voorbeelden lichten we de uitwerking van juridische concepten relevant voor algoritmische systemen toe.
 
 #### Risicoclassificatie
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250512 AI risk identification Algorithm Audit.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250512 AI risk identification Algorithm Audit.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 #### 10 voorbeelden van (geen) AI-systemen
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 #### Regelgebaseerde algoritmen onder de AI-verordening
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 #### Definitie van een AI-systeem volgens de AI-verordening
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 #### Voorkomen van uitsluitend op profilering gebaseerde besluitvorming
-{{< embed_pdf url="/pdf-files/knowledge-base/20250515 Carrousel Meaningful human intervention risk profiling algorithms.pdf" width_mobile_pdf="6" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20250515 Carrousel Meaningful human intervention risk profiling algorithms.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
-<!-- Flowchart 1A - AI-verordening -->
+<!-- Flowchart 1A/1B - AI-verordening -->
 
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart Vragenlijst 1A - AI-verordening" id="flowchart-identification-AI" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart Vragenlijst 1A/1B - AI-verordening" id="flowchart-identification-AI" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/Scoping beslisboom V9 - AI.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 
-<!-- Flowchart 1A - Impactvol algoritme -->
+<!-- Flowchart 1A/1B - Impactvol algoritme -->
 
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart Vragenlijst 1A - Impactvol Algoritme" id="flowchart-identification-algoritme" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart Vragenlijst 1A/1B - Impactvol Algoritme" id="flowchart-identification-algoritme" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/Scoping beslisboom V9 - Algo.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
