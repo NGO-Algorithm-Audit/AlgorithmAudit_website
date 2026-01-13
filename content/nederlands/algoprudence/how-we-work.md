@@ -1,43 +1,43 @@
 ---
 title: Onze werkwijze
 subtitle: >
-  Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie
-  ontwikkeld. We lichten hieronder onze 4-stappen werkwijze toe.
+  We hanteren onze eigen deliberatieve aanpak om te bepalen wat verantwoorde AI is. We
+  lichten de vier van de _algoprudentie_ werkwijze toe.
 image: /images/svg-illustrations/main_illustration.svg
 quick_navigation:
   title: Inhoudsopgave
   links:
-    - title: Audit methodologie
-      url: '#audit-methodologie'
+    - title: Werkwijze
+      url: '#werkwijze'
     - title: Richtlijnen
       url: '#richtlijnen'
 ---
 
-{{< container_open title="Onze 4-stappen audit methodologie" icon="fas fa-eye" id="audit-methodologie" >}}
+{{< container_open title="Algoprudentie in vier stappen" icon="fas fa-eye" id="werkwijze" >}}
 
-{{< image id="audit-methodologie" width_desktop="12" width_mobile="12" image1="/images/other/howwework_NL.svg" alt1="Audit methodologie" caption1="Audit methodologie" >}}
+{{< image id="werkwijze" width_desktop="12" width_mobile="12" image1="/images/other/howwework_NL.svg" alt1="Werkwijze" caption1="Werkwijze" >}}
 
-#### Stap 1 – Identificeren van een casus
+#### Stap 1 – Identificeren vraagstuk
 
-Identificeren van een concreet ethisch vraagstuk bij gebruik van een algoritme of data-analyse
+Identificeren van een concreet vraagstuk dat zich voordoet bij gebruik van AI, algoritme of data-analyse.
 
 #### Stap 2 – Probleemstelling
 
-Beschrijving van ethische kwestie, juridisch kaders, statistische methodologie en het horen van verschillende belanghebbenden en benadeelde groepen
+Beschrijving van vraagstuk, inclusief juridisch kaders, statistische methodologie en het horen van verschillende belanghebbenden en benadeelde groepen.
 
 #### Stap 3 – Normatieve adviescommissie
 
-Deliberatief gesprek van een diverse and inclusieve adviescommissie over het probleemstelling-document
+Fysieke bijeenkomst van diverse en inclusieve adviescommissie. Deliberatief gesprek over het opgestelde probleemstelling-document.
 
 #### Stap 4 – Publiek advies
 
-Het uitgebrachte advies van de commissie wordt samen met het probleemstelling-document gepubliceerd op onze website. Het publiek delen van het  probleemstelling-document en normatieve advies wordt *algoprudentie* genoemd.
+Het uitgebrachte advies van de commissie wordt samen met het probleemstelling-document [gepubliceerd](/nl/algoprudence/case-repository/) op onze website. Het publiek delen van het  probleemstelling-document en normatieve advies wordt *algoprudentie* genoemd (jurisprudentie voor algoritmes).
 
 {{< container_close >}}
 
-{{< container_open icon="fa-file" title="Richtlijnen voor normatieve adviescommissies" id="richtlijnen" >}}
+{{< container_open icon="fa-file" title="Richtlijnen voor het bijeenbrengen van normatieve adviescommissies" id="richtlijnen" >}}
 
-Door de jaren heen hebben we onze eigen deliberatieve auditmethodologie ontwikkeld. Algorithm Audit's richtlijnen voor het bijeenbrengen van normatieve adviescommissie kunnen worden gevonden in onderstaand document.
+Na [verschillende](/nl/algoprudence/case-repository/) algoprudentiële advies op te hebben gesteld, heeft Algorithm Audit richtlijnen opgesteld voor het bijeenbrengen van adviescommissies. Deze kunnen worden gevonden in onderstaand document.
 
 {{< embed_pdf url="/pdf-files/algoprudence/Guidelines normative advice commission EN.pdf" >}}
 
