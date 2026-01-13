@@ -71,6 +71,13 @@ Activity_Feed:
   items_title: Upcoming events
   activities:
     - title: >-
+        Jan Brouwer Conference & presentation of the KHMW Brouwer Trust Awards 2026, Royal Dutch Society of Science
+      link: >-
+        https://khmw.nl/events/jan-brouwer-conferentie-uitreiking-khmw-brouwer-vertrouwensprijzen-2026/
+      image: /images/partner logo-cropped/KHMW.png
+      date: 19-01-2026
+      type: conference
+    - title: >-
         Course on 'GPAI validation framework', Dutch Academy for Legislation
       link: >-
         https://rechtenoverheid.nl/cursus/leeratelier-generatieve-ai-waar-op-te-letten-bij-verstandig-gebruik-2452

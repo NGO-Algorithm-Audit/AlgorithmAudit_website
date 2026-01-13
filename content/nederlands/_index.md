@@ -74,6 +74,13 @@ Activity_Feed:
   items_title: Aankomende events
   activities:
     - title: >-
+        Jan Brouwer Conferentie & uitreiking KHMW Brouwer Vertrouwensprijzen 2026, Koninklijke Hollandsche Maatschappij der Wetenschappen
+      link: >-
+        https://khmw.nl/events/jan-brouwer-conferentie-uitreiking-khmw-brouwer-vertrouwensprijzen-2026/
+      image: /images/partner logo-cropped/KHMW.png
+      date: 19-01-2026
+      type: conferentie
+    - title: >-
         Leeratelier 'Generatieve AI: waar op te letten bij verstandig gebruik?', Academie voor Wetgeving
       link: >-
         https://rechtenoverheid.nl/cursus/leeratelier-generatieve-ai-waar-op-te-letten-bij-verstandig-gebruik-2452
