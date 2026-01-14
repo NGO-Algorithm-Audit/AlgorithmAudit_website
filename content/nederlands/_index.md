@@ -77,7 +77,7 @@ Activity_Feed:
         Jan Brouwer Conferentie & uitreiking KHMW Brouwer Vertrouwensprijzen 2026, Koninklijke Hollandsche Maatschappij der Wetenschappen
       link: >-
         https://khmw.nl/events/jan-brouwer-conferentie-uitreiking-khmw-brouwer-vertrouwensprijzen-2026/
-      image: /images/partner logo-cropped/ODI_Europe.png
+      image: /images/partner logo-cropped/KHMW.png
       date: 19-01-2026
       type: conferentie
     - title: >-
