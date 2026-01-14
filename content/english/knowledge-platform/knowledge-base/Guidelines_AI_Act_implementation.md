@@ -27,4 +27,4 @@ It builds on our series of slides on AI Act implementation, integrating feedback
 - Explained when rule-based systems fulfil the AI system definition: https://lnkd.in/ez7dJshQ
 - 10 examples of (non) AI systems: https://www.linkedin.com/posts/algorithm-audit_10-examples-of-non-ai-systems-activity-7274353190588891136-FiMD?utm_source=share&utm_medium=member_desktop
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 White paper Implementation AI Act - definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20250228 White paper Implementation AI Act - definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
