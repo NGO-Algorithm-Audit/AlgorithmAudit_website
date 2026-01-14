@@ -101,7 +101,7 @@ The questions in the AI Act Implementation Tool are developed in collaboration w
 
 Considerations and choices made during development of the questionnaires regarding the legislative text of the AI Act, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> from the European Commission, and the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Registry Guidance Document</a> are described in the white paper 'Implementation of the AI Regulation – Definition of an AI System'. The policy briefing explains why the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> from the European Commission on the definition of an AI system contradict the legislative text. Both the white paper and the questionnaires have been adjusted following the publication of the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> by the European Commission.
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 White paper Implementation AI Act - definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AIA-Implementation-Tool/20250228 Policy briefing guidelines EC AI system definition.pdf" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20250228 White paper Implementation AI Act - definition.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20250228 Policy briefing guidelines EC AI system definition.pdf" >}}
 
 {{< container_close >}}
 
@@ -115,19 +115,19 @@ We simplify the complex concepts of the AI Act by explaining them with clear, re
 
 ### Risk classification
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250512 AI risk identification Algorithm Audit.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20250512 AI risk identification Algorithm Audit.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 ### 10 examples of (non) AI systems
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20241216_10_examples_(non)_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 ### Rule-based algorithms under the AI Act
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 ### Definition of an AI system under the AI Act
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
@@ -137,7 +137,7 @@ We simplify the complex concepts of the AI Act by explaining them with clear, re
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart identification questionnaire" id="flowchart-identification" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250224 Flowchart identification EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20250224 Flowchart identification EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 
@@ -147,6 +147,6 @@ We simplify the complex concepts of the AI Act by explaining them with clear, re
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart risk classification questionnaire" id="flowchart-classification" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AIA-Implementation-Tool/20250310 Flowchart classification EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20250310 Flowchart classification EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
