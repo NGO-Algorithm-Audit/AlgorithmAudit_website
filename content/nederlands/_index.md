@@ -77,9 +77,16 @@ Activity_Feed:
         Jan Brouwer Conferentie & uitreiking KHMW Brouwer Vertrouwensprijzen 2026, Koninklijke Hollandsche Maatschappij der Wetenschappen
       link: >-
         https://khmw.nl/events/jan-brouwer-conferentie-uitreiking-khmw-brouwer-vertrouwensprijzen-2026/
-      image: /images/partner logo-cropped/KHMW.png
+      image: /images/partner logo-cropped/ODI_Europe.png
       date: 19-01-2026
       type: conferentie
+    - title: >-
+        Governing the algorithm: embedding gender equality in Europe’s digital future, ODI Europe en UN Women
+      link: >-
+        https://odi.org/en/events/governing-the-algorithm-embedding-gender-equality-in-europes-digital-future/
+      image: /images/partner logo-cropped/ODI_Europe.png
+      date: 26-01-2026
+      type: panel discussie
     - title: >-
         Leeratelier 'Generatieve AI: waar op te letten bij verstandig gebruik?', Academie voor Wetgeving
       link: >-
