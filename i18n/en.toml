@@ -96,3 +96,9 @@ other = "Search"
 
 [search-no-results]
 other = "No results found"
+
+[Previous]
+other = "Previous"
+
+[Next]
+other = "Next"

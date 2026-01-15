@@ -96,3 +96,9 @@ other = "Zoeken"
 
 [search-no-results]
 other = "Geen resultaten gevonden"
+
+[Previous]
+other = "Vorige"
+
+[Next]
+other = "Volgende"
