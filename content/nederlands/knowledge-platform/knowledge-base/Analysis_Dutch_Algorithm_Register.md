@@ -1,12 +1,12 @@
 ---
 intro: >-
   More than 1.245 algorithms have already been published by 289 organisations in the Dutch Algorithm Register. But how informative are the registrations? 
-featured: true
+featured: false
 layout: article
 type: knowledgebase_item
 facets:
   - value: type_analysis
-    label: analyse
+    label: Analyse
   - value: subject_AIAct
     label: AI-verordening
 author: Algorithm Audit

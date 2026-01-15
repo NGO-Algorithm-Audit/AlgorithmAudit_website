@@ -52,6 +52,13 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
+    - title: Quick scan Court of Auditors municipality of Deventer
+      intro: >
+        Quick scan on the use of algorithms and AI by the municipality of Deventer
+      link: /knowledge-platform/knowledge-base/20260115_rekenkamerdeventer/
+      image: /images/knowledge_base/20260115 Quick Scan Algoritmes en AI Rekenkamer Deventer.png
+      date: 15-01-2026
+      type: report
     - title: Analysis Dutch Algorithm Register
       intro: >
         More than 1.245 algorithms have already been published in the Dutch Algorithm Register. But how informative are the published records?
@@ -59,13 +66,6 @@ Activity_Feed:
       image: /images/knowledge_base/Analysis Dutch Algorithm Register.png
       date: 09-12-2025
       type: analysis
-    - title: Empirical methods for supervising algorithmic profiling systems
-      intro: >
-        Article written in collaboration with researchers of the Netherlands Bureau for Economic Policy Analysis (CPB).
-      link: /knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/
-      image: /images/knowledge_base/White_paper_Empirical_methods.png
-      date: 31-10-2025
-      type: article
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
