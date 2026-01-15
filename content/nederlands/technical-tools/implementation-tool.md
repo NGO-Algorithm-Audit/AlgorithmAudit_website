@@ -12,38 +12,28 @@ quick_navigation:
   title: Inhoudsopgave
   links:
     - title: Introductie
-      url: '#intro'
+      url: "#intro"
     - title: Tool
-      url: '#tool'
+      url: "#tool"
     - title: Uitkomsten tool
-      url: '#outcome'
+      url: "#outcome"
     - title: Broncode
-      url: '#source-code'
+      url: "#source-code"
     - title: Documentatie
-      url: '#documentation-definition'
+      url: "#documentation-definition"
     - title: Voorbeelden en explainers
-      url: '#explainers'
+      url: "#explainers"
     - title: Flowchart Vragenlijst 1A
-      url: '#flowchart-questionnaire-1A'
+      url: "#flowchart-questionnaire-1A"
     - title: Flowchart Vragenlijst 1B
-      url: '#flowchart-questionnaire-1B'
+      url: "#flowchart-questionnaire-1B"
     - title: Flowchart Vragenlijst 2
-      url: '#flowchart-questionnaire-2'
+      url: "#flowchart-questionnaire-2"
+promo_bar:
+  - content: "**\U0001F44B Wil je deze tool ook lokaal implementeren? Dat is eenvoudiger dan je denkt! Neem [contact ](/nl/about/contact)met ons op.**\n"
 ---
 
-<!-- Promobar -->
-
-<div id={{.Get "id" }} class="container-fluid mt-0 p-0">
-    <div class="shadow bg-lightblue">
-        <div class="row promobar-mobile-desktop-layout">
-            <div class="col-12 flex justify-center items-center px-5">
-                <!-- Content -->
-                <span class="mr-3" style="font-size:16px; color:#005aa7;">
-                    <b>👋 Wil je deze tool ook lokaal implementeren? Dat is eenvoudiger dan je denkt! Neem <u><a href="/nl/about/contact/" >contact</a></u> met ons op.</b>    </span>
-            </div>
-        </div>
-    </div>
-</div>
+{{< promo_bar index="0" >}}
 
 <!-- Introductie -->
 
@@ -85,22 +75,22 @@ De uitkomsten van de tool worden weergegeven in onderstaande figuur. Er wordt on
 
 #### Vragenlijst 1A:
 
-* <span style="color:#005AA7">AI-systemen</span>: Vallen onder de reikwijdte van de AI-verordening. Afhankelijk van de risicocategorie zijn aanvullende beheersmaatregelen wettelijk verplicht. Ga verder met Vragenlijst 2.
-* <span style="color:#005AA7">Impactvolle algoritmes</span>: Vallen buiten de reikwijdte van de AI-verordening, maar binnen de reikwijdte van het Nederlandse Algoritmesregister. Aanvullende controlemaatregelen zijn nodig.
+- <span style="color:#005AA7">AI-systemen</span>: Vallen onder de reikwijdte van de AI-verordening. Afhankelijk van de risicocategorie zijn aanvullende beheersmaatregelen wettelijk verplicht. Ga verder met Vragenlijst 2.
+- <span style="color:#005AA7">Impactvolle algoritmes</span>: Vallen buiten de reikwijdte van de AI-verordening, maar binnen de reikwijdte van het Nederlandse Algoritmesregister. Aanvullende controlemaatregelen zijn nodig.
 
 #### Vragenlijst 1B \[BETA]:
 
-* <span style="color:#005AA7">AI-systemen</span>: Zie uitkomst Vragenlijst 1A.
-* <span style="color:#005AA7">Impactvolle algoritmes</span>: Zie uitkomst Vragenlijst 1A.
-* <span style="color:#005AA7">Volledig geautomatiseerde besluitvorming</span>: Vallen onder de reikwijdte van artikel 22 van de AVG. Aanvullende beheersmaatregelen zijn nodig.
-* <span style="color:#005AA7">Overige systemen</span>: Vallen buiten de reikwijdte van de AI-verordening, het Nederlandse Algoritmesregister en artikel 22 van de AVG.
+- <span style="color:#005AA7">AI-systemen</span>: Zie uitkomst Vragenlijst 1A.
+- <span style="color:#005AA7">Impactvolle algoritmes</span>: Zie uitkomst Vragenlijst 1A.
+- <span style="color:#005AA7">Volledig geautomatiseerde besluitvorming</span>: Vallen onder de reikwijdte van artikel 22 van de AVG. Aanvullende beheersmaatregelen zijn nodig.
+- <span style="color:#005AA7">Overige systemen</span>: Vallen buiten de reikwijdte van de AI-verordening, het Nederlandse Algoritmesregister en artikel 22 van de AVG.
 
 #### Vragenlijst 2:
 
-* <span style="color:#005AA7">Verboden AI-systemen</span>: Het gebruik van dit type AI-systeem is verboden in de Europese Unie. Meer informatie over deze categorie wordt verstrekt door de <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Nederlandse overheid</a>.
-* <span style="color:#005AA7">Hoog-risico AI-systemen</span>: Er zijn aanvullende controlemaatregelen voor AI-systemen met een hoog risico nodig door middel van geharmoniseerde normen.
-* <span style="color:#005AA7">Aanvullende transparantievereisten</span>: Dit type AI-systeem vereist aanvullende transparantie, maar er zijn geen controlemaatregelen nodig.
-* <span style="color:#005AA7">AI-modellen voor algemene doeleinden (General Purpose AI)</span>: Er gelden aanvullende eisen voor de ontwikkelaars.
+- <span style="color:#005AA7">Verboden AI-systemen</span>: Het gebruik van dit type AI-systeem is verboden in de Europese Unie. Meer informatie over deze categorie wordt verstrekt door de <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Nederlandse overheid</a>.
+- <span style="color:#005AA7">Hoog-risico AI-systemen</span>: Er zijn aanvullende controlemaatregelen voor AI-systemen met een hoog risico nodig door middel van geharmoniseerde normen.
+- <span style="color:#005AA7">Aanvullende transparantievereisten</span>: Dit type AI-systeem vereist aanvullende transparantie, maar er zijn geen controlemaatregelen nodig.
+- <span style="color:#005AA7">AI-modellen voor algemene doeleinden (General Purpose AI)</span>: Er gelden aanvullende eisen voor de ontwikkelaars.
 
 <img src="/images/ai-act-implementation-tool/Venn diagram NL V2.png" alt="drawing" width="600"/>
 
