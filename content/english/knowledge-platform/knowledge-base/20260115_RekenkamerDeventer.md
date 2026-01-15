@@ -1,6 +1,7 @@
 ---
 layout: article
 type: knowledgebase_item
+featured: true
 author: Algorithm Audit
 summary: >-
   Quick scan on the use of algorithms and AI by the municipality of Deventer
