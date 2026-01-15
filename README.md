@@ -1,6 +1,6 @@
 # Developer installation
 
-Install node.js > v20.17.0
+Install node.js > v25.3.0
 (check with `node -v`)
 
 Install npm packages
