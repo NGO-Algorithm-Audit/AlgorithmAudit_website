@@ -251,6 +251,25 @@ export default {
               name: "type",
               description: "tag",
             },
+            {
+              label: "Tags",
+              type: "object",
+              name: "tags",
+              description: "Additional tags",
+              list: true,
+              ui: {
+                itemProps: (item: any) => {
+                  return { label: item.tag };
+                },
+              },
+              fields: [
+                {
+                  label: "Tag",
+                  type: "string",
+                  name: "tag",
+                },
+              ],
+            },
           ],
         },
         {
