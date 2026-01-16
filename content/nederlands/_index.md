@@ -55,6 +55,13 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
+    - title: Quick scan Rekenkamer Deventer
+      intro: >
+        Quick scan naar gebruik van algoritmes en AI door de gemeente Deventer
+      link: /nl/knowledge-platform/knowledge-base/20260115_rekenkamerdeventer/
+      image: /images/knowledge_base/20260115 Quick Scan Algoritmes en AI Rekenkamer Deventer.png
+      date: 15-01-2026
+      type: report
     - title: Analyse Algoritmeregister
       intro: >
         Meer dan 1.245 algoritmes zijn al gepubliceerd in het Algoritmeregister. Maar hoe informatief zijn de gepubliceerde gegevens?    
@@ -62,13 +69,6 @@ Activity_Feed:
       image: /images/knowledge_base/Analysis Dutch Algorithm Register.png
       date: 09-12-2025
       type: analyse
-    - title: Praktische handvatten voor empirisch toezicht op profileringsalgoritmes
-      intro: >
-        Artikel geschreven in samenwerking met onderzoekers van het Centraal Planbureau (CPB) over toezicht op profileringsalgoritmes.
-      link: /nl/knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/
-      image: /images/knowledge_base/White_paper_Empirische_toetsingsmethoden.png
-      date: 31-10-2025
-      type: artikel
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events

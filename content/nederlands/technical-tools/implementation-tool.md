@@ -152,7 +152,9 @@ Aan de hand van voorbeelden lichten we de uitwerking van juridische concepten re
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart Vragenlijst 1B - Identificatie van AI-systemen, impactvolle algoritmes en volledig geautomatiseerde besluitvorming" id="flowchart-questionnaire-1B" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260114 Flowchart identificatie - Vragenlijst 1B.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260115 Flowchart identificatie - Vragenlijst 1B.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+Link naar flow chart met volledige logica met alle vragen voor de drie definities zoals geïmplementeerd in Vragenlijst 1B: https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260115%20Full%20flowchart%20identification.pdf
 
 {{< container_close >}}
 

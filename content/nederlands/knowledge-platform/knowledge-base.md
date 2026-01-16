@@ -13,6 +13,8 @@ facet_groups:
         label: DSA
       - value: FR
         label: Grondrechten
+      - value: rekenkamer
+        label: Rekenkamer
       - value: scientific
         label: Wetenschappelijk
   - value: type
