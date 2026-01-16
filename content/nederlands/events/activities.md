@@ -11,9 +11,9 @@ facet_groups:
       - value: q2_2025
         label: Q2-2025
       - value: q1_2025
-        label: Q1-2025   
-      - value: 2024
-        label: 2024
+        label: Q1-2025
+      - value: '2024'
+        label: '2024'
   - value: type
     title: Type evenement
     facets:
@@ -29,9 +29,16 @@ facet_groups:
         label: Training
 events:
   - title: >-
-      Cursus 'AI risicomanagement in de EU', European Institute of Public Administration
+      Cursus 'AI risicomanagement in de EU', European Institute of Public
+      Administration
     description: >
-      Deze intensieve tweedaagse cursus van het [‘European Institute of Public Administration’](https://www.eipa.eu/) (EIPA) bood een diepgaande kijk op AI-compliance en risicobeheer in de EU. Deelnemers raakten vertrouwd met de risicogebaseerde aanpak van de EU-AI-verordening en verkenden de wisselwerking met de bredere digitale regelgevingskaders, waardoor ze een goed inzicht kregen in de impact ervan op de ontwikkeling, implementatie en governance van AI.
+      Deze intensieve tweedaagse cursus van het [‘European Institute of Public
+      Administration’](https://www.eipa.eu/) (EIPA) bood een diepgaande kijk op
+      AI-compliance en risicobeheer in de EU. Deelnemers raakten vertrouwd met
+      de risicogebaseerde aanpak van de EU-AI-verordening en verkenden de
+      wisselwerking met de bredere digitale regelgevingskaders, waardoor ze een
+      goed inzicht kregen in de impact ervan op de ontwikkeling, implementatie
+      en governance van AI.
     image: /images/partner logo-cropped/EIPA.png
     date: 18-11-2025
     facets:
@@ -43,10 +50,11 @@ events:
         hide: true
       - value: type_training
         label: training
-  - title: >-
-      AI-verordening Implementatie Congres, AI Coalitie 4NL  
+  - title: 'AI-verordening Implementatie Congres, AI Coalitie 4NL'
     description: >
-      Presentatie tijdens symposium van ['AI Coalitie 4NL'](https://aic4nl.nl/evenement/ai-act-implementatie-congres/) (AIC4NL) over algoritme en AI identificatie en risicoclassificatie tool.
+      Presentatie tijdens symposium van ['AI Coalitie
+      4NL'](https://aic4nl.nl/evenement/ai-act-implementatie-congres/) (AIC4NL)
+      over algoritme en AI identificatie en risicoclassificatie tool.
     image: /images/partner logo-cropped/AIC4NL.png
     date: 11-11-2025
     facets:
@@ -59,11 +67,17 @@ events:
       - value: type_presentation
         label: presentatie
   - title: >-
-      'Nederlands Technische Afspraak (NTA) Profileringsalgoritmes', AI4Oversight Lab 
+      'Nederlands Technische Afspraak (NTA) Profileringsalgoritmes',
+      AI4Oversight Lab
     description: >
-      Presentatie tijdens symposium van ['AI4Oversight Lab'](https://www.ai4oversight.nl) over de staat van ontwikkeling Nederlands Technische Afspraak (NTA) voor profilingsalgoritmes.
+      Presentatie tijdens symposium van ['AI4Oversight
+      Lab'](https://www.ai4oversight.nl) over de staat van ontwikkeling
+      Nederlands Technische Afspraak (NTA) voor profilingsalgoritmes.
 
-      {{< embed_pdf url="/pdf-files/events/activities/20251105 Dutch Technical Agreement Profiling Algorithms.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+      {{< embed_pdf url="/pdf-files/events/activities/20251105 Dutch Technical
+      Agreement Profiling Algorithms.pdf" width_mobile_pdf="12"
+      width_desktop_pdf="12" >}}
     image: /images/partner logo-cropped/AI4OversightLab.jpg
     date: 05-11-2025
     facets:
@@ -76,17 +90,25 @@ events:
       - value: type_presentation
         label: presentatie
   - title: >-
-      Paneldiscussie 'Statistiek: kwaal of wondermiddel voor effectief toezicht op algoritmes en AI?’
+      Paneldiscussie 'Statistiek: kwaal of wondermiddel voor effectief toezicht
+      op algoritmes en AI?’
     description: >
-      Paneldiscussie over artikel ['Praktische handvatten voor empirisch toezicht op profileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/) gepubliceerd het Tijdschrift voor Toezicht (TvT) tijdens seminar 'Toezicht op emerging technologies' georganiseerd door TvT en beroepsvereniging VIDE met:
+      Paneldiscussie over artikel ['Praktische handvatten voor empirisch
+      toezicht op
+      profileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/empirical_methods_for_supervising_algorithmic_profiling_systems/)
+      gepubliceerd het Tijdschrift voor Toezicht (TvT) tijdens seminar 'Toezicht
+      op emerging technologies' georganiseerd door TvT en beroepsvereniging VIDE
+      met:
+
 
       * Brenn Hekkelman, onderzoeker bij het Centraal Planbureau (CPB)
 
-      * Cecile Schut, consultant bij Parell en oud-directeur Systemtoezicht bij de Autoriteit Persoonsgegevens
+      * Cecile Schut, consultant bij Parell en oud-directeur Systemtoezicht bij
+      de Autoriteit Persoonsgegevens
 
-      * Jesse Six Dijkstra, oud Tweede Kamerlid met digitaliseringsportefeuille voor NSC
-
-      ![](/images/events/20251031_TvT.jpg)
+      * Jesse Six Dijkstra, oud Tweede Kamerlid met digitaliseringsportefeuille
+      voor NSC
+        ![](/images/events/20251031_TvT.jpg)
     image: /images/partner logo-cropped/Vide.png
     date: 31-10-2025
     facets:
@@ -99,10 +121,14 @@ events:
       - value: type_panel
         label: panel discussie
   - title: >-
-      Presentatie 'Verantwoord gebruik van profilingsalgoritmes', Netwerk van Publieke Dienstverleners
+      Presentatie 'Verantwoord gebruik van profilingsalgoritmes', Netwerk van
+      Publieke Dienstverleners
     description: >
-      Presentatie over Algorithm Audit's publieke standaarden over ['Profileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/public_standard_profiling/) en ['Betekenisvolle menselijke tussenkomst voor risicoprofileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/) tijdens themadag van Netwerk van Publieke Dienstverleners.
-
+      Presentatie over Algorithm Audit's publieke standaarden over
+      ['Profileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/public_standard_profiling/)
+      en ['Betekenisvolle menselijke tussenkomst voor
+      risicoprofileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/)
+      tijdens themadag van Netwerk van Publieke Dienstverleners.
     image: /images/partner logo-cropped/NPD.png
     date: 31-10-2025
     facets:
@@ -114,10 +140,12 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: >-
-      Brussels Privacy Symposium 2025 – Een databescherming (r)evolutie?
+  - title: Brussels Privacy Symposium 2025 – Een databescherming (r)evolutie?
     description: >
-      Presentatie over Algorithm Audit's publieke standaard ['Betekenisvolle menselijke tussenkomst voor risicoprofileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/) tijdens Brussels Privacy Symposium 2025.
+      Presentatie over Algorithm Audit's publieke standaard ['Betekenisvolle
+      menselijke tussenkomst voor
+      risicoprofileringsalgoritmes'](/nl/knowledge-platform/knowledge-base/public_standard_meaningful_human_intervention/)
+      tijdens Brussels Privacy Symposium 2025.
 
 
       ![](/images/events/20251014_FPF.jpeg)
@@ -132,11 +160,10 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: >-
-      Verbond van verzekeraars – Datadag 2025
+  - title: Verbond van verzekeraars – Datadag 2025
     description: >
-      Presentatie over de AI-verordening tijde Datadag 2025 van het Verbond van verzekeraars
-
+      Presentatie over de AI-verordening tijde Datadag 2025 van het Verbond van
+      verzekeraars
     image: /images/partner logo-cropped/VerbondvanVerzekeraars.svg
     date: 02-10-2025
     facets:
@@ -149,9 +176,14 @@ events:
       - value: type_presentation
         label: presentatie
   - title: >-
-      Paneldiscussie 'Expert Roundtable II: Capacity Building for Competent Authorities on AI', UNESCO in Paris
+      Paneldiscussie 'Expert Roundtable II: Capacity Building for Competent
+      Authorities on AI', UNESCO in Paris
     description: >
-      Paneldiscussie over 'Tools for Supervising Authorities: Understanding Algorithm Audits'. Tijdens de paneldiscussie is Algorithm Audit's case study ['Voorspellen van onverantwoord rijgedrag'](/algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/) gepubliceerd.
+      Paneldiscussie over 'Tools for Supervising Authorities: Understanding
+      Algorithm Audits'. Tijdens de paneldiscussie is Algorithm Audit's case
+      study ['Voorspellen van onverantwoord
+      rijgedrag'](/algoprudence/cases/aa202501_predicting-irresponsible-driving-behavior/)
+      gepubliceerd.
 
 
       ![](/images/algoprudence/AA202501/Photo2.jpeg)
@@ -167,10 +199,16 @@ events:
       - value: type_panel
         label: paneldiscussie
   - title: >-
-      Interview Binnenlands Bestuur met Ylja Remmits over hoog risico AI systemen
+      Interview Binnenlands Bestuur met Ylja Remmits over hoog risico AI
+      systemen
     description: >
-      <a href="https://www.binnenlandsbestuur.nl/digitaal/overheden-worstelen-met-mogelijke-hoog-risico-ai-systemen" target="_blank">Interview</a> met Binnenlands Bestuur over hoog risico classificatie van AI-systemen naar aanleiding van  Algorithm Audit's <a href="https://algorithmaudit.eu/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventarisatie</a> van de registraties van 14 ministries en rijksoverheidsorganisaties in het landelijke algoritmeregister.
-
+      <a
+      href="https://www.binnenlandsbestuur.nl/digitaal/overheden-worstelen-met-mogelijke-hoog-risico-ai-systemen"
+      target="_blank">Interview</a> met Binnenlands Bestuur over hoog risico
+      classificatie van AI-systemen naar aanleiding van  Algorithm Audit's <a
+      href="https://algorithmaudit.eu/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/"
+      target="_blank">inventarisatie</a> van de registraties van 14 ministries
+      en rijksoverheidsorganisaties in het landelijke algoritmeregister.
     image: /images/partner logo-cropped/BinnenlandsBestuur.svg
     date: 22-09-2025
     facets:
@@ -183,10 +221,17 @@ events:
       - value: type_interview
         label: interview
   - title: >-
-      Interview Binnenlands Bestuur met Jurriaan Parie over definitie van een AI-systeem
+      Interview Binnenlands Bestuur met Jurriaan Parie over definitie van een
+      AI-systeem
     description: >
-      Interview met <a href="https://www.binnenlandsbestuur.nl/digitaal/rijk-zegt-nauwelijks-hoog-risico-ai-te-gebruiken" target="_blank">Binnenlands Bestuur </a> over de definitie van een AI-systeem naar aanleiding van <a href="https://algorithmaudit.eu/nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/" target="_blank">inventarisatie</a> van Algorithm Audit van de registraties van 14 ministries en rijksoverheidsorganisaties in het landelijke algoritmeregister.
-
+      Interview met <a
+      href="https://www.binnenlandsbestuur.nl/digitaal/rijk-zegt-nauwelijks-hoog-risico-ai-te-gebruiken"
+      target="_blank">Binnenlands Bestuur </a> over de definitie van een
+      AI-systeem naar aanleiding van <a
+      href="https://algorithmaudit.eu/nl/knowledge-platform/knowledge-base/inventory_high_risk_ai_systems/"
+      target="_blank">inventarisatie</a> van Algorithm Audit van de registraties
+      van 14 ministries en rijksoverheidsorganisaties in het landelijke
+      algoritmeregister.
     image: /images/partner logo-cropped/BinnenlandsBestuur.svg
     date: 27-08-2025
     facets:
@@ -198,12 +243,16 @@ events:
         hide: true
       - value: type_interview
         label: interview
-  - title: >-
-      Presentation 'Local AI and AI governance' – Platform AI & Overheid
+  - title: Presentation 'Local AI and AI governance' – Platform AI & Overheid
     description: >
-      Presentation 'Local AI and AI governance' bij <a href="https://platformaioverheid.nl/?" target="_blank">Platform AI & Overheid</a>
+      Presentation 'Local AI and AI governance' bij <a
+      href="https://platformaioverheid.nl/?" target="_blank">Platform AI &
+      Overheid</a>
 
-      {{< embed_pdf url="/pdf-files/events/activities/20250819 Algorithm Audit lokale AI en governance.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+      {{< embed_pdf url="/pdf-files/events/activities/20250819 Algorithm Audit
+      lokale AI en governance.pdf" width_mobile_pdf="12" width_desktop_pdf="12"
+      >}}
     image: /images/partner logo-cropped/PlatformAI_Overheid.jpg
     date: 19-08-2025
     facets:
@@ -215,12 +264,14 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: Presentatie 'AI x Governance & Regulation - The EU AI Act is here', Big Data Republic en Kickstart AI
+  - title: >-
+      Presentatie 'AI x Governance & Regulation - The EU AI Act is here', Big
+      Data Republic en Kickstart AI
     description: >
-      Presentatie 'Het auditeren van een private sector machine learning-gedreven risicoprofileringsalgoritme'
+      Presentatie 'Het auditeren van een private sector machine
+      learning-gedreven risicoprofileringsalgoritme'
 
-      ![](</images/events/20250703_BDR.jpeg>)
-
+      ![](/images/events/20250703_BDR.jpeg)
     image: /images/partner logo-cropped/AIxRegulation.png
     date: 03-07-2025
     facets:
@@ -232,12 +283,18 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: Presentatie 'Een publieke standaard voor het auditeren van risicoprofileringsalgoritmen', Audit Analytics Summit 2025, Nyenrode Business University en Universiteit Utrecht 
+  - title: >-
+      Presentatie 'Een publieke standaard voor het auditeren van
+      risicoprofileringsalgoritmen', Audit Analytics Summit 2025, Nyenrode
+      Business University en Universiteit Utrecht
     description: >
-      Presentatie 'Een publieke standaard voor het auditeren van risicoprofileringsalgoritmen', <a href="https://www.statisticalauditing.com/conference" target="_blank">Audit Analytics Summit 2025</a>, Nyenrode Business University en Universiteit Utrecht
+      Presentatie 'Een publieke standaard voor het auditeren van
+      risicoprofileringsalgoritmen', <a
+      href="https://www.statisticalauditing.com/conference"
+      target="_blank">Audit Analytics Summit 2025</a>, Nyenrode Business
+      University en Universiteit Utrecht
 
-      ![](</images/events/20250620_AuditAnalyticsSummit.jpeg>)
-
+      ![](/images/events/20250620_AuditAnalyticsSummit.jpeg)
     image: /images/partner logo-cropped/AuditAnalyticsSummit2025.svg
     date: 20-06-2025
     facets:
@@ -249,19 +306,28 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: 'Panel discussie "Between Promise and Problem: Data-Driven Models in Sustainability Policy", Data for Policy conferentie'
+  - title: >-
+      Panel discussie "Between Promise and Problem: Data-Driven Models in
+      Sustainability Policy", Data for Policy conferentie
     description: >
-      Hoe verhouden de kansen van complexe, data-gedreven modellen zich tot hun beperkingen en politieke gevoeligheden, en welke realistische eisen kunnen we stellen aan de standaardisatie en transparantie van hun wetenschappelijke en democratische legitimiteit?
+      Hoe verhouden de kansen van complexe, data-gedreven modellen zich tot hun
+      beperkingen en politieke gevoeligheden, en welke realistische eisen kunnen
+      we stellen aan de standaardisatie en transparantie van hun
+      wetenschappelijke en democratische legitimiteit?
 
-      Besproken onderwerpen:
-      * Welke (theoretische) kaders en instrumenten zijn beschikbaar voor het valideren, verifiëren en waarborgen van transparantie bij de inzet van modellen (en algoritmes) door overheden?
-
-      * Welk (theoretisch) “menu” bieden deze kaders waaruit overheden kunnen kiezen?
-      
-      * Welke mogelijkheden zien we voor overheden om op een consistente en controleerbare manier open te communiceren over hun gebruik van modellen?
+      Besproken onderwerpen: \* Welke (theoretische) kaders en instrumenten zijn
+      beschikbaar voor het valideren, verifiëren en waarborgen van transparantie
+      bij de inzet van modellen (en algoritmes) door overheden?
 
 
-      ![](</images/events/20250613_DataforPolicy.jpeg>)
+      * Welk (theoretisch) “menu” bieden deze kaders waaruit overheden kunnen
+      kiezen?
+
+      * Welke mogelijkheden zien we voor overheden om op een consistente en
+      controleerbare manier open te communiceren over hun gebruik van modellen?
+
+
+      ![](/images/events/20250613_DataforPolicy.jpeg)
     image: /images/partner logo-cropped/DataforPolicy.jpg
     date: 13-06-2025
     facets:
@@ -273,18 +339,35 @@ events:
         hide: true
       - value: type_panel
         label: paneldiscussie
-  - title: Lunch webinar 'Open source tools voor AI validatie', Ministerie van Binnenlandse Zaken
+  - title: >-
+      Lunch webinar 'Open source tools voor AI validatie', Ministerie van
+      Binnenlandse Zaken
     description: >
-      In 2024-25 werkte Algorithm Audit samen met het Ministerie van Binnenlandse Zaken en de Dienst Uivoering Onderwijs (DUO) aan de ontwikkeling en het testen van tools voor de validatie van algoritmische systemen. Twee open-source tools werden gelanceerd op 10-06-2025 (Nederlands) en 13-06-2025 (Engels) tijdens online lunch webinars. Besproken onderwerpen:
+      In 2024-25 werkte Algorithm Audit samen met het Ministerie van
+      Binnenlandse Zaken en de Dienst Uivoering Onderwijs (DUO) aan de
+      ontwikkeling en het testen van tools voor de validatie van algoritmische
+      systemen. Twee open-source tools werden gelanceerd op 10-06-2025
+      (Nederlands) en 13-06-2025 (Engels) tijdens online lunch webinars.
+      Besproken onderwerpen:
 
-      1. [Unsupervised bias detection tool](/technical-tools/bdt/#web-app): Hoe detecteer je bias als er geen demografische data beschikbaar is?
 
-      2. [Synthetic data generation](/technical-tools/sdg/#web-app): Hoe kunnen derden de representativiteit van datasets beoordelen zonder dat persoonsgegevens gedeeld worden?
+      1. [Unsupervised bias detection tool](/technical-tools/bdt/#web-app): Hoe
+      detecteer je bias als er geen demografische data beschikbaar is?
+
+      2. [Synthetic data generation](/technical-tools/sdg/#web-app): Hoe kunnen
+      derden de representativiteit van datasets beoordelen zonder dat
+      persoonsgegevens gedeeld worden?
 
 
-      De ontwikkelde tools bieden antwoorden op bovenstaande vragen. De tools zijn ontwikkeld volgens een local-only architectuur, wat betekent dat data uitsluitend op je eigen apparaat worden verwerkt en niet worden geüpload naar externe (commerciële) platforms of cloudproviders.
+      De ontwikkelde tools bieden antwoorden op bovenstaande vragen. De tools
+      zijn ontwikkeld volgens een local-only architectuur, wat betekent dat data
+      uitsluitend op je eigen apparaat worden verwerkt en niet worden geüpload
+      naar externe (commerciële) platforms of cloudproviders.
 
-      {{< embed_pdf url="/pdf-files/events/activities/20250610 Open-source local-only tools voor AI-validatie.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+      {{< embed_pdf url="/pdf-files/events/activities/20250610 Open-source
+      local-only tools voor AI-validatie.pdf" width_mobile_pdf="12"
+      width_desktop_pdf="12" >}}
     image: /images/partner logo-cropped/MinBZK.png
     date: 10-06-2025
     facets:
@@ -298,10 +381,13 @@ events:
         label: event
   - title: Interview Trouw/MIT Review
     description: >
-      [Interview](https://www.trouw.nl/verdieping/amsterdam-wilde-met-ai-de-bijstand-eerlijker-en-efficienter-maken-het-liep-anders~b2890374/) met Ylja Remmits en Jurriaan Parie met Trouw. Onderzoek is ook beschreven in item [MIT Review](https://www.technologyreview.com/2025/06/11/1118233/amsterdam-fair-welfare-ai-discriminatory-algorithms-failure/).
+      [Interview](https://www.trouw.nl/verdieping/amsterdam-wilde-met-ai-de-bijstand-eerlijker-en-efficienter-maken-het-liep-anders~b2890374/)
+      met Ylja Remmits en Jurriaan Parie met Trouw. Onderzoek is ook beschreven
+      in item [MIT
+      Review](https://www.technologyreview.com/2025/06/11/1118233/amsterdam-fair-welfare-ai-discriminatory-algorithms-failure/).
 
 
-      ![](</images/events/20250606_Trouw.png>)
+      ![](/images/events/20250606_Trouw.png)
     image: /images/partner logo-cropped/Trouw.png
     date: 06-06-2025
     facets:
@@ -315,10 +401,12 @@ events:
         label: interview
   - title: Gastcollege 'Fairness and Algorithms' ETH Zürich
     description: >
-      Gastcollege bij het vak 'Fairness and Algorithms' aan de ETH Zürich op uitnodiging van Aileen Nielsen.
+      Gastcollege bij het vak 'Fairness and Algorithms' aan de ETH Zürich op
+      uitnodiging van Aileen Nielsen.
 
-      {{< embed_pdf url="/pdf-files/events/activities/20250523_AlgorithmAudit EXT.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
+      {{< embed_pdf url="/pdf-files/events/activities/20250523_AlgorithmAudit
+      EXT.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
     image: /images/partner logo-cropped/ETH.jpg
     date: 23-05-2025
     facets:
@@ -332,17 +420,27 @@ events:
         label: presentatie
   - title: Paneldiscussie CPDP 2025
     description: >
-      Paneldiscussie over 'Empirische methoden voor eerlijkere AI – Lessen naar volgend uit onderzoek naar Nederlands publiek sector risicoprofileringsalgoritme' met Marie Beth van Egmond (Autoriteit Persoonsgegevens), Carlos Mougan (AI Office, Europese Commissie), Prof. Brent Mittelstadt (Oxford Internet Institute) en Ylja Remmits (Algorithm Audit).
+      Paneldiscussie over 'Empirische methoden voor eerlijkere AI – Lessen naar
+      volgend uit onderzoek naar Nederlands publiek sector
+      risicoprofileringsalgoritme' met Marie Beth van Egmond (Autoriteit
+      Persoonsgegevens), Carlos Mougan (AI Office, Europese Commissie), Prof.
+      Brent Mittelstadt (Oxford Internet Institute) en Ylja Remmits (Algorithm
+      Audit).
 
-      * In hoeverre zou een staat gevoelige gegevens zoals etniciteit en ras moeten verzamelen over haar inwoners?
 
-      * Waarom zijn kwantitatieve inzichten over het proxy-karakter van profileringskenmerken van belang?
+      * In hoeverre zou een staat gevoelige gegevens zoals etniciteit en ras
+      moeten verzamelen over haar inwoners?
 
-      * Wat belemmert de brede toepassing van empirische methoden voor het testen van bias in algoritmische systemen?
+      * Waarom zijn kwantitatieve inzichten over het proxy-karakter van
+      profileringskenmerken van belang?
 
-      * Leidt bias testing onvermijdelijk tot de gevreesde battle of numbers’, of kan het juist een cruciale rol spelen bij het realiseren van betekenisvol democratisch toezicht op AI?
+      * Wat belemmert de brede toepassing van empirische methoden voor het
+      testen van bias in algoritmische systemen?
 
-      ![](</images/events/20250521_CPDP25.jpeg>)
+      * Leidt bias testing onvermijdelijk tot de gevreesde battle of numbers’,
+      of kan het juist een cruciale rol spelen bij het realiseren van
+      betekenisvol democratisch toezicht op AI?
+        ![](/images/events/20250521_CPDP25.jpeg)
     image: /images/partner logo-cropped/CPDP25.svg
     date: 21-05-2025
     facets:
@@ -354,17 +452,23 @@ events:
         hide: true
       - value: type_panel
         label: paneldiscussie
-  - title: Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
+  - title: >-
+      Masterclass 'From data to decision', Jantina Tammes School of Digital
+      Society, Technology and AI University of Groningen
     description: >
-      Masterclass 'From data to decision', Jantina Tammes School of Digital Society, Technology and AI University of Groningen
+      Masterclass 'From data to decision', Jantina Tammes School of Digital
+      Society, Technology and AI University of Groningen
 
-      1. Pleaire bijdrage samen met Dienst Uitvoering Onderwijs (DUO) over [onderzoek](/nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/) naar controle uitwonendenbeurs-proces
 
-      2. Drie break-out sessies over [publieke standaard voor profileringsalgoritmes](/nl/knowledge-platform/knowledge-base/public_standard_profiling/)
+      1. Pleaire bijdrage samen met Dienst Uitvoering Onderwijs (DUO) over
+      [onderzoek](/nl/algoprudence/cases/aa202402_preventing-prejudice_addendum/)
+      naar controle uitwonendenbeurs-proces
+
+      2. Drie break-out sessies over [publieke standaard voor
+      profileringsalgoritmes](/nl/knowledge-platform/knowledge-base/public_standard_profiling/)
 
 
       ![](/images/events/20250506_RUG.jpeg)
-
     image: /images/partner logo-cropped/RUG.png
     date: 06-05-2025
     facets:
@@ -378,11 +482,13 @@ events:
         label: presentation
   - title: Paneldiscussie Autoriteit Persoonsgegevens
     description: >
-      Deelname aan paneldiscussie over onderzoek naar indirecte discriminatie in algoritme-gedreven besluitvorming tijdens het event 'Leren in de praktijk: werken aan de verantwoorde inzet van algoritmes en AI' van de Autoriteit Persoonsgegevens
+      Deelname aan paneldiscussie over onderzoek naar indirecte discriminatie in
+      algoritme-gedreven besluitvorming tijdens het event 'Leren in de praktijk:
+      werken aan de verantwoorde inzet van algoritmes en AI' van de Autoriteit
+      Persoonsgegevens
 
 
       ![](/images/events/20250326_DCA.jpeg)
-
     image: /images/partner logo-cropped/AP.png
     date: 26-03-2025
     facets:
@@ -396,8 +502,8 @@ events:
         label: paneldiscussie
   - title: Gastcollege ethische AI Universiteit Utrecht
     description: >
-      Gastcollege voor MSc Artificial Intelligence studenten met een minor in AI ethiek van de Universiteit Utrecht
-
+      Gastcollege voor MSc Artificial Intelligence studenten met een minor in AI
+      ethiek van de Universiteit Utrecht
     image: /images/partner logo-cropped/UtrechtUniversity.png
     date: 10-03-2025
     facets:
@@ -409,9 +515,13 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: Demo open-source AI auditing tools tijdens innovatiedag van het Ministerie van Binnenlandse Zaken
+  - title: >-
+      Demo open-source AI auditing tools tijdens innovatiedag van het Ministerie
+      van Binnenlandse Zaken
     description: >
-      Presentatie en demo van open-source AI auditing tools zoals ontwikkeld met Innovationbudget 2024-25, een jaarlijkse competitie georganiseerd door het Ministerie van Binnenlandse Zaken.
+      Presentatie en demo van open-source AI auditing tools zoals ontwikkeld met
+      Innovationbudget 2024-25, een jaarlijkse competitie georganiseerd door het
+      Ministerie van Binnenlandse Zaken.
 
       ![](/images/events/20250213_Demodag2025.jpg)
     image: /images/partner logo-cropped/MinBZK.png
@@ -425,9 +535,12 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: Presentatie verantwoorde inzet AI - Innovatiefestival Ministrie van Infrastructuur en Waterstaat
+  - title: >-
+      Presentatie verantwoorde inzet AI - Innovatiefestival Ministrie van
+      Infrastructuur en Waterstaat
     description: >
-      Presentatie over de verantwoorde inzet van algoritmes en AI tijdens het innovatiefestival van het Ministrie van Infrastructuur en Waterstaat.
+      Presentatie over de verantwoorde inzet van algoritmes en AI tijdens het
+      innovatiefestival van het Ministrie van Infrastructuur en Waterstaat.
     image: /images/partner logo-cropped/MinIenW.png
     date: 13-02-2025
     facets:
@@ -439,12 +552,15 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: Event 'Can Europe regulate AI?' hosted by Algorithm Audit 
+  - title: Event 'Can Europe regulate AI?' hosted by Algorithm Audit
     description: >
-      Boekinterview met Marietje Schaake – auteur van The Tech Coup – en Haroon Sheikh – auteur van Atlas of the Digital World – in debatcentrum Pakhuis de Zwijger
+      Boekinterview met Marietje Schaake – auteur van The Tech Coup – en Haroon
+      Sheikh – auteur van Atlas of the Digital World – in debatcentrum Pakhuis
+      de Zwijger
 
 
-      <a href="https://dezwijger.nl/programma/can-europe-regulate-ai" target="_blank">Meer informatie</a>
+      <a href="https://dezwijger.nl/programma/can-europe-regulate-ai"
+      target="_blank">Meer informatie</a>
 
 
       ![](/images/events/20250121_PdZ.jpeg)
@@ -459,10 +575,11 @@ events:
         hide: true
       - value: type_event
         label: event
-  - title: Gastcollege 'Hoe algoprudentie kan bijdragen aan de verantwoorde inzet van ML algoritmes'
-    description: >
+  - title: >-
+      Gastcollege 'Hoe algoprudentie kan bijdragen aan de verantwoorde inzet van
+      ML algoritmes'
+    description: |
       Gastcollege bij MSc Social Data Science students van University of Oxford
-
 
       ![](/images/events/20241213_Oxford.jpeg)
     image: /images/partner logo-cropped/OxfordUniversity.png
@@ -478,8 +595,8 @@ events:
         label: presentatie
   - title: Presentatie 'Inkoop van algoritmes en AI'
     description: >
-      Presentatie over inkoop van algoritmes en AI voor PIANOo – expertisecentrum voor aanbesteding door publieke sector organisaties  
-
+      Presentatie over inkoop van algoritmes en AI voor PIANOo –
+      expertisecentrum voor aanbesteding door publieke sector organisaties
     image: /images/partner logo-cropped/pianoo-logo.svg
     date: 10-12-2024
     facets:
@@ -493,8 +610,8 @@ events:
         label: presentatie
   - title: Break-out sessie 'Congres Binnenlands Bestuur'
     description: >
-      Break-out sessie over algoritme en AI-validatie in de context van Nederlandse gemeenten
-
+      Break-out sessie over algoritme en AI-validatie in de context van
+      Nederlandse gemeenten
     image: /images/partner logo-cropped/BinnenlandsBestuur.svg
     date: 03-12-2024
     facets:
@@ -506,9 +623,13 @@ events:
         hide: true
       - value: type_presentation
         label: presentatie
-  - title: Lunchlezing algoritmevalidatie - Ministrie van Infrastructuur en Waterstaat
+  - title: >-
+      Lunchlezing algoritmevalidatie - Ministrie van Infrastructuur en
+      Waterstaat
     description: >
-      Lunchlezing over het valideren van algoritmes en AI voor een breed spectrum aan werknemers van het Ministrie van Infrastructuur en Waterstaat.
+      Lunchlezing over het valideren van algoritmes en AI voor een breed
+      spectrum aan werknemers van het Ministrie van Infrastructuur en
+      Waterstaat.
     image: /images/events/MinIenW_logo.png
     date: 11-11-2024
     facets:
@@ -596,7 +717,7 @@ events:
       (CUB)-proces.
 
 
-      ![](</images/events/20240818_BZK.jpg>)
+      ![](/images/events/20240818_BZK.jpg)
     image: /images/partner logo-cropped/MinBZK.png
     date: 18-09-2024
     facets:
@@ -805,7 +926,7 @@ events:
       eerlijkere AI-beslissingen?
 
 
-      ![](</images/events/20240524_CPDP.jpeg>)
+      ![](/images/events/20240524_CPDP.jpeg)
     image: /images/partner logo-cropped/CPDP24.png
     date: 24-05-2024
     facets:
@@ -844,7 +965,8 @@ events:
       normatieve oordeelsvorming over eerlijke algoritmes?
 
 
-      {{< embed_pdf url="/pdf-files/events/activities/20240424_Nutshuis.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+      {{< embed_pdf url="/pdf-files/events/activities/20240424_Nutshuis.pdf"
+      width_mobile_pdf="12" width_desktop_pdf="12" >}}
     image: /images/logo/logo.svg
     date: 24-04-2024
     facets:
@@ -864,8 +986,8 @@ events:
       tijdens een seminar van UvA AI, Media & Democratie lab
 
 
-      {{< embed_pdf url="/pdf-files/events/activities/20240416_UvA_MDLab.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
-
+      {{< embed_pdf url="/pdf-files/events/activities/20240416_UvA_MDLab.pdf"
+      width_mobile_pdf="12" width_desktop_pdf="12" >}}
     image: /images/partner logo-cropped/AIMediaDemocracyLab.jpg
     date: 16-04-2024
     facets:
@@ -902,8 +1024,9 @@ events:
       als kwantitatief perspectief
 
 
-      {{< embed_pdf url="/pdf-files/events/activities/20240327_AA_Rekenkamer_DenHaag.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
-
+      {{< embed_pdf
+      url="/pdf-files/events/activities/20240327_AA_Rekenkamer_DenHaag.pdf"
+      width_mobile_pdf="12" width_desktop_pdf="12" >}}
     image: /images/partner logo-cropped/RekenkamerDenHaag.png
     date: 27-03-2024
     facets:
@@ -967,7 +1090,9 @@ events:
       JTC21 CEN-CENELEC Dublin
 
 
-      {{< embed_pdf url="/pdf-files/events/activities/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+      {{< embed_pdf
+      url="/pdf-files/events/activities/20240213_JTC21_plenary_FRIAs_stakeholder_panels.pdf"
+      width_mobile_pdf="12" width_desktop_pdf="12" >}}
     image: /images/partner logo-cropped/CEN.jpg
     date: 13-02-2024
     facets:
@@ -1030,7 +1155,7 @@ events:
         label: presentatie
   - title: >-
       Presentatie over inclusieve, deliberatieve adviescommissies – Werkgroep 1
-      Inclusiviteit JTC21 CEN-CENELEC 
+      Inclusiviteit JTC21 CEN-CENELEC
     description: >
       Kennisdeling over het bijeenbrengen van inclusieve, deliberatieve
       adviescommissies door Stichting Algorithm Audit voor de Inclusiviteit
@@ -1049,7 +1174,13 @@ events:
 layout: overview
 title: Evenementen
 subtitle: >
-  Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. Leden van ons team spreken geregeld op events. Op deze pagina kan een overzicht van events uit het verleden worden gevonden.
+  Kennisdeling is een belangrijk onderdeel van Algorithm Audit's missie. Leden
+  van ons team spreken geregeld op events. Op deze pagina kan een overzicht van
+  events uit het verleden worden gevonden.
 image: /images/svg-illustrations/events.svg
+promo_bar:
+  - content: |
+      [Klik hier voor aankomende activiteiten.](/nl#events)
 ---
 
+{{< promo_bar index="0" >}}

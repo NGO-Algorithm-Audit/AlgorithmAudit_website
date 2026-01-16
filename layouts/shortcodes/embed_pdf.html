@@ -111,6 +111,7 @@
 
 <div class="row">
   <div class="col-{{ $mobile_width }} col-lg-{{ $desktop_width }} my-3" style="display:table;">
+    {{if .Get "title"}}<h4>{{.Get "title"}}</h4>{{end}}
     <div class="embed-pdf-container mt-0" id="embed-pdf-container-{{ $urlHash }}">
       <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ $urlHash }}">
         <div class="pdf-loading" id="pdf-loading-{{ $urlHash }}"></div>
@@ -119,8 +120,8 @@
     </div>
 
     <div class="pdf-paginator mt-1 mb-5" id="pdf-paginator-{{ $urlHash }}">
-      <button class="btn py-1" id="pdf-prev-{{ $urlHash }}">Previous</button>
-      <button class="btn py-1" id="pdf-next-{{ $urlHash }}">Next</button> &nbsp; &nbsp;
+      <button class="btn py-1" id="pdf-prev-{{ $urlHash }}">{{i18n "Previous"}}</button>
+      <button class="btn py-1" id="pdf-next-{{ $urlHash }}">{{i18n "Next"}}</button> &nbsp; &nbsp;
       <span>
         <span class="pdf-pagenum" id="pdf-pagenum-{{ $urlHash }}"></span> / <span class="pdf-pagecount"
           id="pdf-pagecount-{{ $urlHash }}"></span>
@@ -288,6 +289,7 @@
   {{ $renderPageNum = .Get "renderPageNum2" }}
   {{ $urlHash = substr (md5 $url) 0 8 }}
   <div class="col-{{ $mobile_width }} col-lg-{{ $desktop_width }} my-3" style="display:table;">
+    {{if .Get "title2"}}<h4>{{.Get "title2"}}</h4>{{end}}
     <div class="embed-pdf-container mt-0" id="embed-pdf-container-{{ $urlHash }}">
       <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-{{ $urlHash }}">
         <div class="pdf-loading" id="pdf-loading-{{ $urlHash }}"></div>
@@ -296,8 +298,8 @@
     </div>
 
     <div class="pdf-paginator mt-1 mb-5" id="pdf-paginator-{{ $urlHash }}">
-      <button class="btn py-1" id="pdf-prev-{{ $urlHash }}">Previous</button>
-      <button class="btn py-1" id="pdf-next-{{ $urlHash }}">Next</button> &nbsp; &nbsp;
+      <button class="btn py-1" id="pdf-prev-{{ $urlHash }}">{{i18n "Previous"}}</button>
+      <button class="btn py-1" id="pdf-next-{{ $urlHash }}">{{i18n "Next"}}</button> &nbsp; &nbsp;
       <span>
         <span class="pdf-pagenum" id="pdf-pagenum-{{ $urlHash }}"></span> / <span class="pdf-pagecount"
           id="pdf-pagecount-{{ $urlHash }}"></span>

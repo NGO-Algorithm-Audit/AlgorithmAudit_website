@@ -14,6 +14,11 @@ let embed_pdf: RichTextTemplate = {
       required: true,
     },
     {
+      name: "title",
+      label: "Title",
+      type: "string",
+    },
+    {
       type: "string",
       name: "hidePaginator",
       label: "Hide paginator",
@@ -38,6 +43,11 @@ let embed_pdf: RichTextTemplate = {
       name: "url2",
       label: "Url 2",
       type: "image",
+    },
+    {
+      name: "title2",
+      label: "Title 2",
+      type: "string",
     },
     {
       type: "string",

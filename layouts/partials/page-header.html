@@ -1,23 +1,38 @@
 <section class="banner banner-background">
   <div class="container">
-    <div class="row" style="display:flex; align-items:center;">
-
-      <div class="col-lg-6 col-md-12 col-sm-12 mb-5 order-lg-1 order-md-2 order-sm-2">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 mt-5 pt-0 pt-lg-5 order-lg-1 order-sm-2">
         <!-- title -->
-        <h2 class="pr-5" style="color:#005aa7;">{{ .Params.Title | markdownify }}</h2>
-        <div class="pr-5">
-          <p style="color:#777777; font-size: 16px;"> {{.Params.subtitle | markdownify}} </p>
+        <h2 class="color-blue">{{ .Params.Title | markdownify }}</h2>
+        {{ if .Params.author }}
+        <p class="color-gray">{{ i18n "authors"}} {{ .Params.author }}</p>
+        {{ end }}
+        <p class="color-gray">
+          {{ if .Params.subtitle }}{{.Params.subtitle | markdownify}}
+          {{ else if .Params.summary }}{{.Params.summary | markdownify}}
+          {{ end }}
+        </p>
+        {{ if .Params.facets }}
+        <div class="row">
+          <div class="col-12 order-3">
+            {{ range $facet := .Params.facets }}
+              {{ if $facet.hide }}
+              {{ else }}
+              <span class="highlight-red-sm m-1">{{$facet.label}}</span>
+              {{ end }}
+            {{end}}
+          </div>
         </div>
+        {{ end }}
       </div>
       <!-- /al-go-pru-dence -->
 
       <!-- image -->
-      <div class="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 order-first text-center">
-        <img src='{{ .Params.image | relURL }}' class='img-fluid center-block mt-5' style='margin-bottom: 100px; height: 400px;'>
+      <div class="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-sm-1 text-center">
+        <img src='{{ .Params.image | relURL }}' class='img-fluid center-block my-1' style='height: 400px;'>
       </div>
       <!-- image -->
     </div>
-
     <div class="pinDiv1"></div>
   </div>
 </section>
