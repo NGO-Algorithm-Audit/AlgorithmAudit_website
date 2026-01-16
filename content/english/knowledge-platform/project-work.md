@@ -39,6 +39,11 @@ dynamic_form_engine:
 quick_navigation:
   title: Overview
   links:
+    - title: 2026
+      url: "#AI-safety"
+    - title: Sociotechnical risk - European Commission
+      url: "#AI-safety"
+      indent: 1
     - title: 2025
       url: "#implementation-protocol"
     - title: Implementation protocol – UNIA
@@ -73,6 +78,19 @@ quick_navigation:
     - title: Discuss collaboration
       url: "#form"
 ---
+
+# 2026
+
+<!-- EC1 Evaluating sociotechnical risks of GPAI -->
+
+{{< container_open title="Evaluating sociotechnical risks of GPAI – European Commission" id="AI-safety" icon="fas fa-asterisk" >}}
+
+As part of a broader consortium, Algorithm Audit supports the AI Office of the European Commission in the course of 2026-28 in evaluating the sociotechnical risks of General Purpose AI (GPAI) models. The project will be carried out in collaboration with, among others, Technopolis Group, TNO, Leiden University and Oxford Internet Institute.
+
+{{< image image1="/images/partner logo-cropped/EC.png" alt1="European Commission" caption1="European Commission" link1="" width_desktop="3" >}}
+
+{{< container_close >}}
+<br>
 
 # 2025
 
