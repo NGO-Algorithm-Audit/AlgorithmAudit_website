@@ -52,6 +52,13 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
+    - title: Projectwerk Europese Commissie
+      intro: >
+        Project work for the European Commission relating to evaluation of sociotechnical risks of GPAI models.
+      link: /knowledge-platform/project-work/#AI-safety
+      image: /images/partner logo-cropped/EC.png
+      date: 15-01-2026
+      type: project work
     - title: Quick scan Court of Auditors municipality of Deventer
       intro: >
         Quick scan on the use of algorithms and AI by the municipality of Deventer
@@ -59,13 +66,6 @@ Activity_Feed:
       image: /images/knowledge_base/20260115 Quick Scan Algoritmes en AI Rekenkamer Deventer.png
       date: 15-01-2026
       type: report
-    - title: Analysis Dutch Algorithm Register
-      intro: >
-        More than 1.245 algorithms have already been published in the Dutch Algorithm Register. But how informative are the published records?
-      link: /knowledge-platform/knowledge-base/analysis_dutch_algorithm_register/
-      image: /images/knowledge_base/Analysis Dutch Algorithm Register.png
-      date: 09-12-2025
-      type: analysis
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
@@ -162,15 +162,15 @@ Distinctive_in:
 Supported_by:
   title: Working together with
   funders:
+    - image: /images/partner logo-cropped/EC.png
+      link: 'https://commission.europa.eu/index_en'
+      alt_text: 'European Commission'
     - image: /images/partner logo-cropped/CoE.png
       link: 'https://www.coe.int/en/web/portal/home'
       alt_text: Council of Europe
     - image: /images/partner logo-cropped/EAISF.png
-      link: 'https://europeanaifund.org/announcing-our-2022-open-call-grantees/'
+      link: 'https://europeanaifund.org/'
       alt_text: European AI & Society Fund
-    - image: /images/partner logo-cropped/CEN.jpg
-      link: 'https://www.cencenelec.eu'
-      alt_text: 'European standardisation committee '
     - image: /images/partner logo-cropped/MinBZK.png
       link: >-
         https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
@@ -185,12 +185,12 @@ Supported_by:
     - image: /images/partner logo-cropped/GemeenteAmsterdam.png
       link: 'https://www.amsterdam.nl'
       alt_text: Municipality of Amsterdam
+    - image: /images/partner logo-cropped/GemeenteUtrecht.png
+      link: 'https://www.utrecht.nl'
+      alt_text: Municipality of Utrecht
     - image: /images/partner logo-cropped/SIDN.png
       link: 'https://www.sidnfonds.nl/excerpt'
       alt_text: Foundation Internet Domain registration Netherlands
-    - image: /images/partner logo-cropped/NEN.svg
-      link: 'https://www.nen.nl'
-      alt_text: Dutch standardisation institute
 Title_video:
   title: Video
   video_mp4: /videos/AA_video_(1080p).mp4

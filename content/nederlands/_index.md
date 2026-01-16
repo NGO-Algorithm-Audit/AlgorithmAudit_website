@@ -55,6 +55,13 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
+    - title: Projectwerk Europese Commissie
+      intro: >
+        Project werk voor de Europese Commissie in het kader van het evalueren van sociotechnische risico's van GPAI-modellen.
+      link: /nl/knowledge-platform/project-work/#AI-safety
+      image: /images/partner logo-cropped/EC.png
+      date: 15-01-2026
+      type: project werk
     - title: Quick scan Rekenkamer Deventer
       intro: >
         Quick scan naar gebruik van algoritmes en AI door de gemeente Deventer
@@ -62,13 +69,6 @@ Activity_Feed:
       image: /images/knowledge_base/20260115 Quick Scan Algoritmes en AI Rekenkamer Deventer.png
       date: 15-01-2026
       type: report
-    - title: Analyse Algoritmeregister
-      intro: >
-        Meer dan 1.245 algoritmes zijn al gepubliceerd in het Algoritmeregister. Maar hoe informatief zijn de gepubliceerde gegevens?    
-      link: /nl/knowledge-platform/knowledge-base/analysis_dutch_algorithm_register/
-      image: /images/knowledge_base/Analysis Dutch Algorithm Register.png
-      date: 09-12-2025
-      type: analyse
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
@@ -194,15 +194,15 @@ Distinctive_in:
 Supported_by:
   title: Samenwerking met
   funders:
+    - image: /images/partner logo-cropped/EC.png
+      link: 'https://commission.europa.eu/index_en'
+      alt_text: 'Europese Commissie'
     - image: /images/partner logo-cropped/CoE.png
       link: "https://www.coe.int/en/web/portal/home"
       alt_text: Raad van Europa
     - image: /images/partner logo-cropped/EAISF.png
-      link: "https://europeanaifund.org/announcing-our-2022-open-call-grantees/"
+      link: "https://europeanaifund.org/"
       alt_text: European AI&Society Fund
-    - image: /images/partner logo-cropped/CEN.jpg
-      link: "https://www.cencenelec.eu"
-      alt_text: Europees standaardiseringcomité
     - image: /images/partner logo-cropped/MinBZK.png
       link: >-
         https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties
@@ -217,12 +217,12 @@ Supported_by:
     - image: /images/partner logo-cropped/GemeenteAmsterdam.png
       link: "https://www.amsterdam.nl"
       alt_text: Gemeente Amsterdam
+    - image: /images/partner logo-cropped/GemeenteUtrecht.png
+      link: "https://www.utrecht.nl"
+      alt_text: Gemeente Utrecht
     - image: /images/partner logo-cropped/SIDN.png
       link: "https://www.sidnfonds.nl/projecten/open-source-ai-auditing"
       alt_text: Stichting Internet en Democratie Nederland
-    - image: /images/partner logo-cropped/NEN.svg
-      link: "https://www.nen.nl"
-      alt_text: Nederlands normalisatie instituut
 Title_video:
   title: Video
   video_mp4: /videos/AA_video_(1080p).mp4
