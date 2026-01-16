@@ -69,12 +69,6 @@ quick_navigation:
       indent: 1
     - title: 2024
       url: "#amsterdam"
-    - title: AI Act implementation – Municipality of Amsterdam
-      url: "#amsterdam"
-      indent: 1
-    - title: Bias analysis – DUO
-      url: "#DUO1"
-      indent: 1
     - title: Discuss collaboration
       url: "#form"
 ---
@@ -142,7 +136,7 @@ In Q3-2025 up to Q1-2026, Algorithm Audit supports the Municipality of Utrecht w
 
 {{< container_open title="Research support – Court of Auditors Deventer" id="deventer" icon="fas fa-plus" >}}
 
-From Q2-2025 up to Q4-2025, Algorithm Audit supports the Court of Auditors Deventer with an investigation into usage of algorithms and AI systems by the Municipality of Deventer.
+From Q2-2025 up to Q4-2025, Algorithm Audit supports the Court of Auditors Deventer with an investigation into usage of algorithms and AI systems by the Municipality of Deventer. See [report](/knowledge-platform/knowledge-base/20260115_rekenkamerdeventer/).
 
 {{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.svg" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 

@@ -69,12 +69,6 @@ quick_navigation:
       indent: 1
     - title: 2024
       url: "#amsterdam"
-    - title: AI-verordening implementatie – Gemeente Amsterdam
-      url: "#amsterdam"
-      indent: 1
-    - title: Biasanalyse – DUO
-      url: "#DUO1"
-      indent: 1
     - title: Bespreek samenwerking
       url: "#form"
 ---
@@ -142,7 +136,7 @@ In Q3-2025 en Q1-2026 ondersteunt Algorithm Audit de Gemeente Utrecht bij het ui
 
 {{< container_open title="Onderzoeksondersteuning – Rekenkamer Deventer" id="deventer" icon="fas fa-plus" >}}
 
-Van Q2-2025 tot en met Q4-2025 ondersteunt Algorithm Audit de Rekenkamer Deventer bij een onderzoek naar gebruik van algoritmes en AI-systemen door de Gemeente Deventer.
+Van Q2-2025 tot en met Q4-2025 ondersteunt Algorithm Audit de Rekenkamer Deventer bij een onderzoek naar gebruik van algoritmes en AI-systemen door de Gemeente Deventer. Zie [rapport](/nl/knowledge-platform/knowledge-base/20260115_rekenkamerdeventer/).
 
 {{< image id="logo-gemeente-deventer" width_desktop="3" width_mobile="12" image1="/images/partner logo-cropped/GemeenteDeventer.svg" alt1="Municipality of Deventer" caption1="Municipality of Deventer" >}}
 
