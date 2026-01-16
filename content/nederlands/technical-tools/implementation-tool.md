@@ -126,17 +126,9 @@ Aan de hand van voorbeelden lichten we de uitwerking van juridische concepten re
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20250512 AI risk identification Algorithm Audit.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20241216_10_examples_(non)_AI_system.pdf" title="Risicoclassificatie" title2="10 voorbeelden van (geen) AI-systemen" >}}
 
-#### Regelgebaseerde algoritmen onder de AI-verordening
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20241118_AI_definition_carrousel.pdf" title="Regelgebaseerde algoritmen onder de AI-verordening" title2="Definitie van een AI-systeem volgens de AI-verordening" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20241203_Rule_based_or_AI_system.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
-
-#### Definitie van een AI-systeem volgens de AI-verordening
-
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20241118_AI_definition_carrousel.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
-
-#### Voorkomen van uitsluitend op profilering gebaseerde besluitvorming
-
-{{< embed_pdf url="/pdf-files/knowledge-base/20250515 Carrousel Meaningful human intervention risk profiling algorithms.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/knowledge-base/20250515 Carrousel Meaningful human intervention risk profiling algorithms.pdf" width_mobile_pdf="12" width_desktop_pdf="6" title="Voorkomen van uitsluitend op profilering gebaseerde besluitvorming">}}
 
 {{< container_close >}}
 
