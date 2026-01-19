@@ -3,11 +3,11 @@ title: Vacatures
 subtitle: |
   Overzicht van vacatures bij Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-quick_navigation:
-  title: Overzicht
-  links:
-    - title: Stagiair/werkstudent
-      url: '#accordion_area_stagiair'
+# quick_navigation:
+#  title: Overzicht
+#  links:
+#    - title: Stagiair/werkstudent
+#      url: '#accordion_area_stagiair'
 dynamic_form_engine:
   - title: Sollicitatieformulier AI adviseur/validator
     id: form1
@@ -216,7 +216,7 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< button button_text="Solliciteer" button_link="#form2" >}}-->
 
-{{< accordions_area_open id="stagiair" >}}
+<!-- {{< accordions_area_open id="stagiair" >}}
 
 {{< accordion_item_open title="Stagiair/werkstudent (0.6-1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="doorlopende sollicitatie" >}}
 
@@ -307,4 +307,4 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}} 
+{{< accordions_area_close >}}-->

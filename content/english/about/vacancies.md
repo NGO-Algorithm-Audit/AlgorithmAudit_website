@@ -3,11 +3,11 @@ title: Vacancies
 subtitle: |
   Overview of current job openings at Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-quick_navigation:
-  title: Overview
-  links:
-    - title: Intern
-      url: '#accordion_area_stagiair'
+# quick_navigation:
+#  title: Overview
+#  links:
+#    - title: Intern
+#      url: '#accordion_area_stagiair'
 dynamic_form_engine:
   - title: Sollicitatieformulier AI adviseur/validator
     id: form1
@@ -210,7 +210,7 @@ Vragen over de vacature of de procedure? Stuur een email naar info@algorithmaudi
 
 {{< accordions_area_close >}} -->
 
-{{< accordions_area_open id="stagiair" >}}
+<!--{{< accordions_area_open id="stagiair" >}}
 
 {{< accordion_item_open title="Intern (0.6-1.0 fte) (Dutch speaking only)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="rolling application" >}}
 
@@ -301,4 +301,4 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}} 
+{{< accordions_area_close >}}--> 
