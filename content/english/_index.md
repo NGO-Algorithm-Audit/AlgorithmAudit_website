@@ -52,6 +52,13 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
+    - title: Brouwer Trust Prize
+      intro: >
+        Algorithm Audit won the Brouwer Trust Prize awarded by the Royal Holland Society of Sciences and Humanities (KHMW) 
+      link: /events/press_room/#KHMW
+      image: /images/partner logo-cropped/KHMW.png
+      date: 19-01-2026
+      type: prize
     - title: Projectwerk Europese Commissie
       intro: >
         Project work for the European Commission relating to evaluation of sociotechnical risks of GPAI models.
@@ -59,24 +66,10 @@ Activity_Feed:
       image: /images/partner logo-cropped/EC.png
       date: 15-01-2026
       type: project work
-    - title: Quick scan Court of Auditors municipality of Deventer
-      intro: >
-        Quick scan on the use of algorithms and AI by the municipality of Deventer
-      link: /knowledge-platform/knowledge-base/20260115_rekenkamerdeventer/
-      image: /images/knowledge_base/20260115 Quick Scan Algoritmes en AI Rekenkamer Deventer.png
-      date: 15-01-2026
-      type: report
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
-    - title: >-
-        Jan Brouwer Conference & presentation of the KHMW Brouwer Trust Awards 2026, Royal Dutch Society of Science
-      link: >-
-        https://khmw.nl/events/jan-brouwer-conferentie-uitreiking-khmw-brouwer-vertrouwensprijzen-2026/
-      image: /images/partner logo-cropped/KHMW.png
-      date: 19-01-2026
-      type: conference
     - title: >-
         Governing the algorithm: embedding gender equality in Europe’s digital future, ODI Europe and UN Women
       link: >-

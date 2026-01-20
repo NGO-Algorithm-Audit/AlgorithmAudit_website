@@ -55,6 +55,13 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
+    - title: Brouwer Vertrouwensprijs
+      intro: >
+        Algorithm Audit heeft de Brouwer Vertouwensprijs gewonnen uitgereikt door de Koninklijke Hollandsche Maatschappij der Wetenschappen  (KHMW) 
+      link: /nl/events/press_room/#KHMW
+      image: /images/partner logo-cropped/KHMW.png
+      date: 19-01-2026
+      type: prijs
     - title: Projectwerk Europese Commissie
       intro: >
         Project werk voor de Europese Commissie in het kader van het evalueren van sociotechnische risico's van GPAI-modellen.
@@ -62,24 +69,10 @@ Activity_Feed:
       image: /images/partner logo-cropped/EC.png
       date: 15-01-2026
       type: project werk
-    - title: Quick scan Rekenkamer Deventer
-      intro: >
-        Quick scan naar gebruik van algoritmes en AI door de gemeente Deventer
-      link: /nl/knowledge-platform/knowledge-base/20260115_rekenkamerdeventer/
-      image: /images/knowledge_base/20260115 Quick Scan Algoritmes en AI Rekenkamer Deventer.png
-      date: 15-01-2026
-      type: report
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
-    - title: >-
-        Jan Brouwer Conferentie & uitreiking KHMW Brouwer Vertrouwensprijzen 2026, Koninklijke Hollandsche Maatschappij der Wetenschappen
-      link: >-
-        https://khmw.nl/events/jan-brouwer-conferentie-uitreiking-khmw-brouwer-vertrouwensprijzen-2026/
-      image: /images/partner logo-cropped/KHMW.png
-      date: 19-01-2026
-      type: conferentie
     - title: >-
         Governing the algorithm: embedding gender equality in Europe’s digital future, ODI Europe en UN Women
       link: >-
