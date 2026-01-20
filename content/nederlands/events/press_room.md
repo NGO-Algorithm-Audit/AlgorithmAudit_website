@@ -7,17 +7,52 @@ image: /images/svg-illustrations/about.svg
 quick_navigation:
   title: Overzicht
   links:
+    - title: Brouwer Vertrouwensprijs
+      url: '#KHMW'
     - title: DUO2 Addendum Vooringenomenheid voorkomen
       url: '#DUO_CBS'
     - title: DUO1 Vooringenomenheid voorkomen
       url: '#DUO'
-    - title: Onderzoek Rotterdam
+    - title: Rotterdam case study
       url: '#Rotterdam'
 ---
 
-{{< accordions_area_open id="DUO_CBS" >}}
+<!-- KHMW -->
 
-{{< accordion_item_open title="Controleproces DUO vooringenomen voor studenten met een niet-Europese migratieachtergrond" id="DUO_CBS" background_color="#ffffff" date="22-05-2024" tag1="DUO" tag2="CBS" tag3="bias analyse" image="/images/partner logo-cropped/DUO.png" >}}
+{{< accordions_area_open id="KHWM">}}
+
+{{< accordion_item_open title="Algorithm Audit wint Brouwer Vertrouwensprijs van €100.000" id="KHMW" background_color="#ffffff" tag1="19-01-2026" tag2="KHMW" tag3="Brouwer Vertrouwensprijs" image="/images/partner logo-cropped/KHMW.png" >}}
+
+<b>DEN HAAG – Algorithm Audit viert feest: maandag 19 januari mochten we de eerste prijs van de KHMW Brouwer Vertrouwensprijzen 2026 in ontvangst nemen. Deze prijs is een belangrijke mijlpaal voor onze stichting en een erkenning van de maatschappelijke relevantie van ons werk.</b>
+
+Met de <a href="https://khmw.nl" target="_blank">Brouwer Vertrouwensprijzen</a> stimuleert de Koninklijke Hollandsche Maatschappij der Wetenschappen (KHMW) maatschappelijke initiatieven die het onderling vertrouwen in de Nederlandse samenleving versterken. Dit jaar gaat de eerste prijs (€100.000) naar stichting Algorithm Audit. Mede dankzij deze prijs kunnen we de komende jaren meer casusonderzoek doen en zo bijdragen aan de verantwoorde inzet van AI. Directeur Jurriaan Parie in een <a href="https://khmw.nl/winnaar-eerste-prijs-khmw-brouwer-vertrouwensprijzen-2026-algorithm-audit/" target="_blank">interview</a> met de KHMW: ‘Zeggenschap over technologie geeft grip, en grip vergroot vertrouwen. Dankzij de Brouwer Vertrouwensprijs kunnen wij onze maatschappelijke ambities blijven nastreven'.
+
+#### Lof van de jury
+De jury benadrukte tijdens uitreiking van de Vertouwensprijs in Haarlem dat “Algorithm Audit een enorm actueel onderwerp aanpakt en zij een belangrijk tegenwicht vormt aan de opkomende macht van techbedrijven en AI en ook aan de ongelijke machtsverhouding die er nu vaak bestaat tussen overheid en burger”. De jury sprak hierbij de hoop uit “dat toenemende bekendheid en kracht van Algorithm Audit ook zal leiden tot een meer zelfregulerende houding van de betreffende bedrijven en instanties, waarbij door zelfkritisch hun eigen algoritmes te evalueren en indien nodig aan te passen zij ook een meer geloofwaardiger partner worden van burgers en klanten”.
+
+#### Meebelissen over de inzet van algoritmes en AI
+Het winnen van deze prijs voelt als de kroon op ons werk van de afgelopen jaren. Sinds de oprichting in 2021 zet stichting Algorithm Audit zich in om burgers en belanghebbenden een stem te geven in de manier waarop algoritmes en AI worden ingezet. De stichting brengt onafhankelijke adviescommissies bijeen waarin wetenschappelijke experts en burgervertegenwoordigers samen concrete AI-toepassingen beoordelen. 
+
+Deze werkwijze, die wij ‘algoprudentie’ noemen, zorgt ervoor dat we als samenleving op een transparante en democratische wijze kunnen meedenken over de toekomst van deze cruciale technologie. Jurriaan Parie: ‘We willen burgers en het maatschappelijk middenveld een stem geven in de manier waarop technologie wordt ingezet, door overheden én bedrijven. Technologie beïnvloedt steeds meer ons dagelijks leven. De vraag is: hoeveel grip hebben we daarop, en wie kan daarover meepraten?’
+In de afgelopen jaren onderzocht Algorithm Audit onder meerdere risicoprofileringsalgoritmen bij gemeenten, bij de uitvoeringsorganisatie Dienst Uitvoering Onderwijs (DUO) en een platform voor leenauto’s. Dat leidde tot concrete adviezen aan overheden, publieke verantwoording en aantoonbare verbeteringen in beleid en uitvoering. De tools die we ontwikkelen om datagedreven toepassingen te onderzoeken stellen we open source beschikbaar zodat iedereen ze kan gebruiken om bijvoorbeeld discriminatie op te sporen.
+
+#### Onze plannen
+Met het prijzengeld kunnen we de organisatie versterken en ons werkterrein uitbreiden. We willen ons de komende jaren verder verdiepen in generatieve AI. Met de opkomst van chatbots die steeds vaker tussen overheid en burger, en tussen consument en bedrijven komen te staan, gaan risico’s gepaard. Daar zijn nieuwe evaluatiemethoden voor nodig: geven dit soort informatiesystemen betrouwbare informatie, zijn ze daadwerkelijk effectief en verwijzen chatbots adequaat door naar menselijke medewerkers? 
+
+De komende tijd gaan we hete hangijzers identificeren en casussen uitwerken. Onze algoprudentie voegt maatschappelijke waarde toe doordat de stem van een diverse groep van belanghebbende wordt vastgelegd en publiekelijk wordt gedeeld. Door kennis te delen en belanghebbenden samen te brengen, willen we bijdragen aan een samenleving waarin technologie het onderlinge vertrouwen versterkt in plaats van ondermijnt.
+
+#### Meer over Algorithm Audit
+Algorithm Audit is een kennisplatform voor verantwoorde AI. De stichting brengt expertise samen op het raakvlak van techniek, recht en ethiek. Als groeiend nationaal en Europees kennisplatform delen we onze expertise via onderzoek, whitepapers, workshops en lezingen. Algorithm Audit is een onafhankelijke stichting en verricht zijn activiteiten zonder winstoogmerk.
+
+![](/images/events/20260119_KHMW.jpg)
+V.l.n.r.: Ylja Remmits (Head of Projects), Ariën Voogt (bestuurder) en Jurriaan Parie (directeur-bestuurder)
+
+{{< accordion_item_close >}}
+
+
+<!-- DUO 2 -->
+
+{{< accordion_item_open title="Controleproces DUO vooringenomen voor studenten met een niet-Europese migratieachtergrond" id="DUO_CBS" background_color="#ffffff" tag1="22-05-2024" tag2="DUO" tag3="Addendum" image="/images/partner logo-cropped/DUO.png" >}}
 
 **DEN HAAG – In de controle op rechtmatig gebruik van studiefinanciering
 voor uitwonende studenten controleerde DUO aanzienlijk vaker studenten met een niet-Europese
@@ -89,7 +124,9 @@ voorkomen (addendum) kan [hier](/nl/algoprudence/cases/aa202402_bias-prevented_a
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="Afwijkingen geconstateerd in controleproces DUO naar misbruik met uitwonendenbeurs" id="DUO" background_color="#ffffff" date="01-03-2024" tag1="DUO" image="/images/partner logo-cropped/DUO.png" tag2="audit rapport" >}}
+<!-- DUO 1 -->
+
+{{< accordion_item_open title="Afwijkingen geconstateerd in controleproces DUO naar misbruik met uitwonendenbeurs" id="DUO" background_color="#ffffff" tag1="01-03-2024" tag2="DUO" tag3="Onderzoeksrapport" image="/images/partner logo-cropped/DUO.png" >}}
 
 <b>DEN HAAG – DUO selecteerde in onderzoek naar misbruik met de uitwonendenbeurs aanzienlijk
 vaker studenten die dicht bij hun ouder(s) woonden. Het algoritme dat ter ondersteuning van
@@ -161,7 +198,9 @@ Het volledige rapport *Vooringenomenheid voorkomen* (AA:2024:01) kan [hier](http
 
 {{< accordion_item_close >}}
 
-{{< accordion_item_open title="Onafhankelijke commissie publiceert advies aan gemeenten voor risicoprofilering in de bijstand" id="Rotterdam" background_color="#ffffff" date="29-11-2023" image="/images/logo/logo.svg" tag1="gemeente Rotterdam" tag2="algoprudentie" tag3="machine learning" >}}
+<!-- Rotterdam case -->
+
+{{< accordion_item_open title="Onafhankelijke commissie publiceert advies aan gemeenten voor risicoprofilering in de bijstand" id="Rotterdam" background_color="#ffffff" image="/images/logo/logo.svg" tag1="29-11-2023" tag2="Gemeente Rotterdam" tag3="Algoprudentie" >}}
 
 **DEN HAAG – Staatssecretaris Alexandra van Huffelen heeft op 29 november het [adviesrapport](/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/) aangenomen met daarin concrete normen voor de verantwoorde inzet van algoritmes. Stichting Algorithm Audit stelde een onafhankelijke commissie samen van experts die advies uitbrengt om oneerlijke behandeling te voorkomen bij bijstandsheronderzoek. De aanleiding voor het opstellen van het advies is het controversiële risicomodel dat gebruikt is door de Gemeente Rotterdam tot 2021.**
 

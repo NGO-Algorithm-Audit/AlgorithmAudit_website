@@ -31,6 +31,26 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Interview Royal Holland Society of Sciences and Humanities (KHMW)
+    description: >
+      Jurriaan Parie – director and board member of NGO Algorithm Audit – was <a
+      href="https://khmw.nl/winnaar-eerste-prijs-khmw-brouwer-vertrouwensprijzen-2026-algorithm-audit/" target="_blank">interviewed</a> by Royal Holland Society of Sciences and Humanities (KHMW) on the occassion of the presentation of the <a href="https://khmw.nl/" target="_blank">Brouwer Trust Prize</a> (1st prize).
+
+      <br>
+      ![](/images/events/20260119_KHMW.jpg)
+
+    image: /images/partner logo-cropped/KHMW.png
+    date: 19-01-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q1_2026
+        label: Q1-2026
+        hide: true
+      - value: type_interview
+        label: interview
+  - title: >-
       Course on 'AI Risk Management in the EU', European Institute of Public Administration
     description: >
       This intensive two-day course by the ['European Institute of Public Administration'](https://www.eipa.eu/) (EIPA) offered a deep dive into AI compliance and risk management in the EU. Participants became familiar with the EU AI Act’s risk-based approach and explored its interplay with the larger digital regulatory frameworks, thereby gaining a rich understanding of their impact on AI development, deployment, and governance.
@@ -1117,7 +1137,15 @@ subtitle: >
   Knowledge sharing is an integral part of Algorithm Audit's mission. Members of
   our team speak at events. On this page an overview of past event can be found.
 image: /images/svg-illustrations/events.svg
+promo_bar:
+  - content: |
+      [Clich here for upcoming activities](/#events)
 search:
   searchableText: Utrecht Oxford pakhuis
 ---
 
+{{< promo_bar index="0" >}}
+
+<br>
+
+### Past events
