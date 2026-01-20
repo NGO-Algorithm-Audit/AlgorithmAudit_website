@@ -7,6 +7,8 @@ image: /images/svg-illustrations/about.svg
 quick_navigation:
   title: Overview
   links:
+    - title: Brouwer Trust Prize
+      url: '#KHMW'
     - title: DUO2 Addendum Preventing prejudice
       url: '#DUO_CBS'
     - title: DUO1 Preventing prejudice
@@ -15,7 +17,37 @@ quick_navigation:
       url: '#Rotterdam'
 ---
 
-{{< accordions_area_open id="DUO_CBS" >}}
+<!-- KHMW -->
+
+{{< accordions_area_open id="KHWM">}}
+
+{{< accordion_item_open title="Algorithm Audit wins Brouwer Trust Prize of €100.000" id="KHMW" background_color="#ffffff" date="19-01-2026" tag1="KHMW" tag2="Brouwer Trust Prize" image="/images/partner logo-cropped/KHMW.png" >}}
+
+<b>THE HAGUE – Algorithm Audit is celebrating: on Monday 19 January we received the first prize of the KHMW Brouwer Trust Prizes 2026. This prize is an important milestone for our foundation and a recognition of the societal relevance of our work.</b>
+
+With the <a href="https://khmw.nl" target="_blank">Brouwer Trust Prizes</a>, the Royal Holland Society of Sciences and Humanities (KHMW) supports societal initiatives that strengthen mutual trust in Dutch society. This year, the first prize (€100.000) goes to stichting Algorithm Audit. Thanks in part to this prize, we can conduct more case studies in the coming years and thus contribute to the responsible deployment of AI. Director Jurriaan Parie in an <a href="https://khmw.nl/winnaar-eerste-prijs-khmw-brouwer-vertrouwensprijzen-2026-algorithm-audit/" target="_blank">interview</a> with KHMW: “Having agency in how technology works gives people a sense of control, and that control cultivates trust. Thanks to the Brouwer Trust Prize, we can continue to pursue our societal ambitions”.
+
+#### Laudatio by the jury
+During the award ceremony of the Trust Prize in Haarlem, the jury emphasized that “Algorithm Audit addresses a highly topical issue and provides an important counterweight to the rising power of tech companies and AI, as well as to the unequal balance of power that often exists between government and citizens.” The jury expressed the hope “that the increasing visibility and strength of Algorithm Audit will also lead to a more self-regulating attitude among the relevant companies and institutions, who, by critically evaluating their own algorithms and adjusting them where necessary, will become more credible partners for citizens and customers.”
+
+#### Having a say in the deployment of algorithms and AI
+Winning this prize feels like the crowning achievement of our work over the past years. Since its founding in 2021, Algorithm Audit has worked to give citizens and stakeholders a voice in how algorithms and AI are deployed. The foundation convenes independent advice commissions in which academic experts and citizen representatives jointly assess concrete AI applications. 
+
+This approach, which we call <i>algoprudence</i>, ensures that society can help shape the future of technology in a transparent and democratic way. Jurriaan Parie: “We want to give citizens and civil society a voice in how technology is deployed, by governments and companies alike. Technology is increasingly shaping our daily lives. The question is: how much agency do we have over it, and who gets to have a say?”
+In recent years, Algorithm Audit has examined multiple risk-profiling algorithms at Dutch municipalities, at the Education Executive Agency (DUO), and at a car-sharing platform. This led to concrete recommendations to governmental actors, public accountability and improvements in policy measures and deployment of algorithmic system. The tools we develop to investigate data-driven applications are made available open source so that anyone can use them to, for example, detect anomalies.
+
+#### Our plans
+With the prize money we can strengthen the organization and expand the scope of our work. In the coming years we plan to delve further into generative AI. As chatbots increasingly mediate between government and citizens, and between consumers and companies, risks arise. New evaluation methods are needed: do these information systems provide reliable information, are they actually effective, and do chatbots appropriately refer users to human help? 
+
+In the near future we will identify pressing issues and develop case studies. Our algoprudence adds societal value by capturing and publicly sharing the voices of a diverse group of stakeholders. By sharing knowledge and bringing stakeholders together, we aim to contribute to a society in which technology strengthens, rather than undermines, mutual trust.
+
+#### More about Algorithm Audit
+Algorithm Audit is a knowledge platform for responsible AI. The not-for-profit organisation brings together expertise at the intersection of technology, law and ethics. As a growing national and European knowledge platform, we share our expertise through research, white papers, workshops, and lectures.
+
+{{< accordion_item_close >}}
+
+
+<!-- DUO 2 -->
 
 {{< accordion_item_open title="DUO control process biased towards students with a non-European migration background" id="DUO_CBS" background_color="#ffffff" date="22-05-2024" tag1="DUO" tag2="CBS" tag3="bias analysis" image="/images/partner logo-cropped/DUO.png" >}}
 
@@ -35,6 +67,8 @@ The Bias Prevented report (addendum) can be found [here](https://algorithmaudit.
 
 {{< accordion_item_close >}}
 
+<!-- DUO 1 -->
+
 {{< accordion_item_open title="Irregularities identified in college allowances control process by Dutch public sector organization DUO" id="DUO" background_color="#ffffff" date="01-03-2024" tag1="DUO" tag2="audit report" tag3="" image="/images/partner logo-cropped/DUO.png" >}}
 
 **THE HAGUE – In its control process into misuse of the allowances for students living away from home, Dutch public sector organization DUO selected individuals who lived close to their parent(s) significantly more often. The risk-taxation algorithm, that was used as an assisting tool for selecting students, worked as expected. However, the combination of the algorithm and manual selection resulted in a large overrepresentation of certain groups. Selected students were visited at home to inspect whether allowances were unduly granted. This is the main conclusion of research carried out by NGO Algorithm Audit on behalf of DUO. DUO’s control process was discredited in 2023 after media attention, in which was mentioned that students with a migration background were accused of misuse more often than other students.**
@@ -50,6 +84,8 @@ The results of the studies will be used to determine whether risk profiling can 
 The full report Bias prevented can be found [here](https://algorithmaudit.eu/algoprudence/cases/aa202401_bias-prevented/).
 
 {{< accordion_item_close >}}
+
+<!-- Rotterdam -->
 
 {{< accordion_item_open title="Independent commission publishes advice to Dutch municipalities on risk profiling for social welfare re-examination" id="Rotterdam" background_color="#ffffff" date="29-11-2023" image="/images/logo/logo.svg" tag1="municipality of Rotterdam" tag2="algoprudence" tag3="machine learning" >}}
 
