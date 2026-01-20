@@ -13,7 +13,7 @@ quick_navigation:
       url: '#DUO_CBS'
     - title: DUO1 Preventing prejudice
       url: '#DUO'
-    - title: Onderzoek Rotterdam
+    - title: Rotterdam case study
       url: '#Rotterdam'
 ---
 
@@ -21,7 +21,7 @@ quick_navigation:
 
 {{< accordions_area_open id="KHWM">}}
 
-{{< accordion_item_open title="Algorithm Audit wins Brouwer Trust Prize of €100.000" id="KHMW" background_color="#ffffff" date="19-01-2026" tag1="KHMW" tag2="Brouwer Trust Prize" image="/images/partner logo-cropped/KHMW.png" >}}
+{{< accordion_item_open title="Algorithm Audit wins Brouwer Trust Prize of €100.000" id="KHMW" background_color="#ffffff" tag1="19-01-2026" tag2="KHMW" tag3="Brouwer Trust Prize" image="/images/partner logo-cropped/KHMW.png" >}}
 
 <b>THE HAGUE – Algorithm Audit is celebrating: on Monday 19 January we received the first prize of the KHMW Brouwer Trust Prizes 2026. This prize is an important milestone for our foundation and a recognition of the societal relevance of our work.</b>
 
@@ -44,12 +44,15 @@ In the near future we will identify pressing issues and develop case studies. Ou
 #### More about Algorithm Audit
 Algorithm Audit is a knowledge platform for responsible AI. The not-for-profit organisation brings together expertise at the intersection of technology, law and ethics. As a growing national and European knowledge platform, we share our expertise through research, white papers, workshops, and lectures.
 
+![](/images/events/20260119_KHMW.jpg)
+F.l.t.r.: Ylja Remmits (Head of Projects), Ariën Voogt (board member) en Jurriaan Parie (director and board member)
+
 {{< accordion_item_close >}}
 
 
 <!-- DUO 2 -->
 
-{{< accordion_item_open title="DUO control process biased towards students with a non-European migration background" id="DUO_CBS" background_color="#ffffff" date="22-05-2024" tag1="DUO" tag2="CBS" tag3="bias analysis" image="/images/partner logo-cropped/DUO.png" >}}
+{{< accordion_item_open title="DUO control process biased towards students with a non-European migration background" id="DUO_CBS" background_color="#ffffff" tag1="22-05-2024" tag2="DUO" tag3="Addendum" image="/images/partner logo-cropped/DUO.png" >}}
 
 **THE HAGUE - In its inspection of the legitimate use of student finance for students living away from home, DUO selected students for control with a non-European migration background significantly more often. This demonstrates an unconscious bias in DUO's control process. Students with a non-European migration background were assigned a higher risk score by a risk profile and were more often manually selected for a home visit. This is evident from follow-up research that NGO Algorithm Audit carried out on behalf of DUO, which was sent by the minister to the House of Representatives on May 22. The results of the research strengthen the outcomes of previous research, on the basis of which the minister apologized on behalf of the cabinet on March 1, 2024 for indirect discrimination in the control process.**
 
@@ -69,7 +72,7 @@ The Bias Prevented report (addendum) can be found [here](https://algorithmaudit.
 
 <!-- DUO 1 -->
 
-{{< accordion_item_open title="Irregularities identified in college allowances control process by Dutch public sector organization DUO" id="DUO" background_color="#ffffff" date="01-03-2024" tag1="DUO" tag2="audit report" tag3="" image="/images/partner logo-cropped/DUO.png" >}}
+{{< accordion_item_open title="Irregularities identified in college allowances control process by Dutch public sector organization DUO" id="DUO" background_color="#ffffff" tag1="01-03-2024" tag2="DUO" tag3="Investigation report" image="/images/partner logo-cropped/DUO.png" >}}
 
 **THE HAGUE – In its control process into misuse of the allowances for students living away from home, Dutch public sector organization DUO selected individuals who lived close to their parent(s) significantly more often. The risk-taxation algorithm, that was used as an assisting tool for selecting students, worked as expected. However, the combination of the algorithm and manual selection resulted in a large overrepresentation of certain groups. Selected students were visited at home to inspect whether allowances were unduly granted. This is the main conclusion of research carried out by NGO Algorithm Audit on behalf of DUO. DUO’s control process was discredited in 2023 after media attention, in which was mentioned that students with a migration background were accused of misuse more often than other students.**
 
@@ -87,7 +90,7 @@ The full report Bias prevented can be found [here](https://algorithmaudit.eu/alg
 
 <!-- Rotterdam -->
 
-{{< accordion_item_open title="Independent commission publishes advice to Dutch municipalities on risk profiling for social welfare re-examination" id="Rotterdam" background_color="#ffffff" date="29-11-2023" image="/images/logo/logo.svg" tag1="municipality of Rotterdam" tag2="algoprudence" tag3="machine learning" >}}
+{{< accordion_item_open title="Independent commission publishes advice to Dutch municipalities on risk profiling for social welfare re-examination" id="Rotterdam" background_color="#ffffff" image="/images/logo/logo.svg" tag1="29-11-2023" tag2="Municipality of Rotterdam" tag3="Algoprudence" >}}
 
 **THE HAGUE – On November 29, Dutch Minister of Digitalisation Alexandra van Huffelen accepted the advice report containing specific norms for the responsible utilization of algorithms. Algorithm Audit convened an independent commission of experts to provide advice aimed at preventing unfair treatment in social welfare re-examinations. The impetus for drafting this advice was the controversial risk model used by the Municipality of Rotterdam until 2021.**
 

@@ -13,7 +13,7 @@ quick_navigation:
       url: '#DUO_CBS'
     - title: DUO1 Vooringenomenheid voorkomen
       url: '#DUO'
-    - title: Onderzoek Rotterdam
+    - title: Rotterdam case study
       url: '#Rotterdam'
 ---
 
@@ -21,7 +21,7 @@ quick_navigation:
 
 {{< accordions_area_open id="KHWM">}}
 
-{{< accordion_item_open title="Algorithm Audit wint Brouwer Vertrouwensprijs van €100.000" id="KHMW" background_color="#ffffff" date="19-01-2026" tag1="KHMW" tag2="Brouwer Vertrouwensprijs" image="/images/partner logo-cropped/KHMW.png" >}}
+{{< accordion_item_open title="Algorithm Audit wint Brouwer Vertrouwensprijs van €100.000" id="KHMW" background_color="#ffffff" tag1="19-01-2026" tag2="KHMW" tag3="Brouwer Vertrouwensprijs" image="/images/partner logo-cropped/KHMW.png" >}}
 
 <b>DEN HAAG – Algorithm Audit viert feest: maandag 19 januari mochten we de eerste prijs van de KHMW Brouwer Vertrouwensprijzen 2026 in ontvangst nemen. Deze prijs is een belangrijke mijlpaal voor onze stichting en een erkenning van de maatschappelijke relevantie van ons werk.</b>
 
@@ -44,12 +44,15 @@ De komende tijd gaan we hete hangijzers identificeren en casussen uitwerken. Onz
 #### Meer over Algorithm Audit
 Algorithm Audit is een kennisplatform voor verantwoorde AI. De stichting brengt expertise samen op het raakvlak van techniek, recht en ethiek. Als groeiend nationaal en Europees kennisplatform delen we onze expertise via onderzoek, whitepapers, workshops en lezingen. Algorithm Audit is een onafhankelijke stichting en verricht zijn activiteiten zonder winstoogmerk.
 
+![](/images/events/20260119_KHMW.jpg)
+V.l.n.r.: Ylja Remmits (Head of Projects), Ariën Voogt (bestuurder) en Jurriaan Parie (directeur-bestuurder)
+
 {{< accordion_item_close >}}
 
 
 <!-- DUO 2 -->
 
-{{< accordion_item_open title="Controleproces DUO vooringenomen voor studenten met een niet-Europese migratieachtergrond" id="DUO_CBS" background_color="#ffffff" date="22-05-2024" tag1="DUO" tag2="CBS" tag3="bias analyse" image="/images/partner logo-cropped/DUO.png" >}}
+{{< accordion_item_open title="Controleproces DUO vooringenomen voor studenten met een niet-Europese migratieachtergrond" id="DUO_CBS" background_color="#ffffff" tag1="22-05-2024" tag2="DUO" tag3="Addendum" image="/images/partner logo-cropped/DUO.png" >}}
 
 **DEN HAAG – In de controle op rechtmatig gebruik van studiefinanciering
 voor uitwonende studenten controleerde DUO aanzienlijk vaker studenten met een niet-Europese
@@ -123,7 +126,7 @@ voorkomen (addendum) kan [hier](/nl/algoprudence/cases/aa202402_bias-prevented_a
 
 <!-- DUO 1 -->
 
-{{< accordion_item_open title="Afwijkingen geconstateerd in controleproces DUO naar misbruik met uitwonendenbeurs" id="DUO" background_color="#ffffff" date="01-03-2024" tag1="DUO" image="/images/partner logo-cropped/DUO.png" tag2="audit rapport" >}}
+{{< accordion_item_open title="Afwijkingen geconstateerd in controleproces DUO naar misbruik met uitwonendenbeurs" id="DUO" background_color="#ffffff" tag1="01-03-2024" tag2="DUO" tag3="Onderzoeksrapport" image="/images/partner logo-cropped/DUO.png" >}}
 
 <b>DEN HAAG – DUO selecteerde in onderzoek naar misbruik met de uitwonendenbeurs aanzienlijk
 vaker studenten die dicht bij hun ouder(s) woonden. Het algoritme dat ter ondersteuning van
@@ -197,7 +200,7 @@ Het volledige rapport *Vooringenomenheid voorkomen* (AA:2024:01) kan [hier](http
 
 <!-- Rotterdam case -->
 
-{{< accordion_item_open title="Onafhankelijke commissie publiceert advies aan gemeenten voor risicoprofilering in de bijstand" id="Rotterdam" background_color="#ffffff" date="29-11-2023" image="/images/logo/logo.svg" tag1="gemeente Rotterdam" tag2="algoprudentie" tag3="machine learning" >}}
+{{< accordion_item_open title="Onafhankelijke commissie publiceert advies aan gemeenten voor risicoprofilering in de bijstand" id="Rotterdam" background_color="#ffffff" image="/images/logo/logo.svg" tag1="29-11-2023" tag2="Gemeente Rotterdam" tag3="Algoprudentie" >}}
 
 **DEN HAAG – Staatssecretaris Alexandra van Huffelen heeft op 29 november het [adviesrapport](/algoprudence/cases/risk-profiling-for-social-welfare-reexamination-aa202302/) aangenomen met daarin concrete normen voor de verantwoorde inzet van algoritmes. Stichting Algorithm Audit stelde een onafhankelijke commissie samen van experts die advies uitbrengt om oneerlijke behandeling te voorkomen bij bijstandsheronderzoek. De aanleiding voor het opstellen van het advies is het controversiële risicomodel dat gebruikt is door de Gemeente Rotterdam tot 2021.**
 

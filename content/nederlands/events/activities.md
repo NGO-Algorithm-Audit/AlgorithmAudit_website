@@ -4,14 +4,14 @@ facet_groups:
   - value: year
     title: Jaar
     facets:
+      - value: q1_2026
+        label: Q1-2026
       - value: q4_2025
         label: Q4-2025
       - value: q3_2025
         label: Q3-2025
       - value: q2_2025
         label: Q2-2025
-      - value: q1_2025
-        label: Q1-2025
       - value: '2024'
         label: '2024'
   - value: type
@@ -28,6 +28,26 @@ facet_groups:
       - value: training
         label: Training
 events:
+  - title: >-
+      Interview Koninklijke Hollandsche Maatschappij der Wetenschappen (KHMW)
+    description: >
+      Jurriaan Parie – directeur-bestuurder van stichting Algorithm Audit – werd <a
+      href="https://khmw.nl/winnaar-eerste-prijs-khmw-brouwer-vertrouwensprijzen-2026-algorithm-audit/" target="_blank">geïnterviewd</a>  door de Koninklijke Hollandsche Maatschappij der Wetenschappen (KHMW) ter gelegenheid van de uitreiking van de <a href="https://khmw.nl/" target="_blank">Brouwer Vertrouwensprijs</a> (1e prijs).
+
+      <br>
+      ![](/images/events/20260119_KHMW.jpg)
+
+    image: /images/partner logo-cropped/KHMW.png
+    date: 19-01-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q1_2026
+        label: Q1-2026
+        hide: true
+      - value: type_interview
+        label: interview
   - title: >-
       Cursus 'AI risicomanagement in de EU', European Institute of Public
       Administration
@@ -1184,3 +1204,7 @@ promo_bar:
 ---
 
 {{< promo_bar index="0" >}}
+
+<br>
+
+### Gepasseerde events
