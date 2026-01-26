@@ -31,6 +31,22 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Governing the algorithm: embedding gender equality in Europe’s digital future, ODI Europe en UN Women
+    description: >
+      Algorithm Audit director and board member Jurriaan Parie took part in the panel discussion at <a href="https://odi.org/en/about/our-work/odi-europe/" target="_blank">ODI Europe</a> and <a href="https://www.unwomen.org/en" target="_blank">UN Women’s</a> Governing the Algorithm event, which explored how algorithmic systems, platform governance and EU digital regulation can reinforce or challenge gender inequality and shape democratic values.
+
+    image: /images/partner logo-cropped/ODI_Europe.png
+    date: 26-01-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q1_2026
+        label: Q1-2026
+        hide: true
+      - value: type_panel
+        label: panel discussion
+  - title: >-
       Interview Royal Holland Society of Sciences and Humanities (KHMW)
     description: >
       Jurriaan Parie – director and board member of NGO Algorithm Audit – was <a
