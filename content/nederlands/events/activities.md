@@ -42,7 +42,7 @@ events:
       - value: year_q1_2026
         label: Q1-2026
         hide: true
-      - value: panel
+      - value: type_panel
         label: paneldiscussie
   - title: >-
       Interview Koninklijke Hollandsche Maatschappij der Wetenschappen (KHMW)

@@ -44,7 +44,7 @@ events:
       - value: year_q1_2026
         label: Q1-2026
         hide: true
-      - value: panel
+      - value: type_panel
         label: panel discussion
   - title: >-
       Interview Royal Holland Society of Sciences and Humanities (KHMW)
