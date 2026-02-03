@@ -99,7 +99,7 @@ Areas_of_AI_expertise:
       icon: fas fa-certificate
       content: >
         Our open-source <a href="/technical-tools/implementation-tool/"
-        style="text-decoration: underline;">AI Act Implementation Tool</a> helps
+        style="text-decoration: underline;">AI and Algorithms Qualification Toolkit (AI AQT)</a> helps
         organizations identifying AI systems and assigning the right risk
         category. As a member of Dutch and European standardization
         organisations NEN and CEN-CENELEC, Algorithm Audit monitors and
