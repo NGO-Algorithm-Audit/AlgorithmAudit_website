@@ -51,6 +51,11 @@ dynamic_form_engine:
 promo_bar:
   - content: |
       Er zijn nog een paar plekken over voor het event. Aanmelden betekent geen automatische bevestiging voor deelname aan het event. U wordt uiterlijk dinsdag 24 februari geïnformeerd of u bij het event aanwezig kunt zijn.
+quick_navigation:
+  title: Inhoudsopgave
+  links:
+    - title: Validatiekader
+      url: "#event"
 ---
 
 {{< accordions_area_open id="event" >}}
