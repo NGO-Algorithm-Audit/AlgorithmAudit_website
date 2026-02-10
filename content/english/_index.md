@@ -77,6 +77,13 @@ Activity_Feed:
       image: /images/partner logo-cropped/acwet.svg
       date: 23-02-2026
       type: training
+    - title: >-
+        Presentation Validation framework 'Responsible use of Large Language Models (LLM) for public information provision' (Dutch only) 
+      link: >-
+        https://algorithmaudit.eu/nl/events/registration/
+      image: /images/events/20260226_Validatiekader.png
+      date: 26-02-2026
+      type: event
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:
