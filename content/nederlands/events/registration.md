@@ -51,11 +51,16 @@ dynamic_form_engine:
 promo_bar:
   - content: |
       Er zijn nog een paar plekken over voor het event. Aanmelden betekent geen automatische bevestiging voor deelname aan het event. U wordt uiterlijk dinsdag 24 februari geïnformeerd of u bij het event aanwezig kunt zijn.
+quick_navigation:
+  title: Inhoudsopgave
+  links:
+    - title: Validatiekader
+      url: "#event"
 ---
 
 {{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening'" id="event" background_color="#ffffff" tag1="26-02-2026" tag2="event" tag3="Validatiekader LLMs" image="/images/logo/logo.svg" >}}
+{{< accordion_item_open title="Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening'" id="event" background_color="#ffffff" tag1="26-02-2026" tag2="event" tag3="Validatiekader LLMs" image="/images/events/20260226_Validatiekader.png" >}}
 
 {{< promo_bar index="0" >}}
 
