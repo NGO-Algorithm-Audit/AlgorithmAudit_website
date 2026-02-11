@@ -84,7 +84,7 @@ input[type="checkbox"] {
     padding-bottom: 3rem;
   }
   .promobar-mobile-desktop-layout{
-    height: 50px;
+    min-height: 50px;
     align-items: center;
     justify-content: center;
   }
@@ -156,7 +156,7 @@ input[type="checkbox"] {
     padding-bottom: 1rem;
   }
   .promobar-mobile-desktop-layout{
-    height: 100px;
+    min-height: 100px;
   }
   .mobile-desktop-margin{
     padding-top: 3rem;

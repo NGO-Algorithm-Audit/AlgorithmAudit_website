@@ -62,22 +62,22 @@
                                                 <div class="col-12 col-lg-2 p-0 mt-0 text-center">
                                                     <img class="img-fluid img-event p-4" src="{{$event.image}}" />
                                                 </div>
-                                                <div class="col pt-3 pb-5" style="background-color: #ffffff;">
+                                                <div class="col py-3" style="background-color: #ffffff;">
                                                     <div class="row align-items-center">
                                                         <h4 class="mb-4 mx-3" style="color: #005aa7;">
                                                             {{$event.title}}
                                                         </h4>
                                                     </div>
-                                                    <div class="row pl-3" style="position: absolute; bottom: 0; font-weight: 300; font-size: 15px;">
+                                                    <div class="row pl-3" style="font-weight: 300; font-size: 15px;">
                                                         {{ if $event.date }}
-                                                        <span class="highlight-red-sm mr-2">
+                                                        <span class="highlight-red-sm m-1">
                                                             {{ $event.date }}
                                                         </span>
                                                         {{ end }}
                                                         {{ range $facet := $event.facets }}
                                                         {{ if $facet.hide }}
                                                         {{ else }}
-                                                        <span class="highlight-red-sm">{{$facet.label}}</span>
+                                                        <span class="highlight-red-sm m-1">{{$facet.label}}</span>
                                                         {{ end }}
                                                         {{end}}
                                                     </div>

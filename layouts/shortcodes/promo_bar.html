@@ -1,19 +1,17 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 {{$param := int (.Get "index")}}
 {{ with index .Page.Params.promo_bar $param }}
-<div id={{.id}} class="container-fluid mt-0 p-0">
-    <div class="shadow bg-lightblue">
-        <div class="row promobar-mobile-desktop-layout">
-            <div class="d-flex justify-center align-items-center px-5 link__force-underline mx-auto">
-                <span class="mr-3" style="font-size:16px; color:#005aa7;">
-                    {{ .content | markdownify }}
-                </span>
-                {{if .iframe }}
-                <span>
-                    <iframe src={{.iframe}} frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
-                </span>
-                {{ end }}
-            </div>
+<div id={{.id}} class="container-fluid mt-0 p-0 shadow bg-lightblue">
+    <div class="row promobar-mobile-desktop-layout">
+        <div class="d-flex justify-center align-items-center py-4 px-5 link__force-underline mx-auto">
+            <span style="font-size:16px; color:#005aa7;">
+                {{ .content | markdownify }}
+            </span>
+            {{if .iframe }}
+            <span class="ml-2">
+                <iframe src={{.iframe}} frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+            </span>
+            {{ end }}
         </div>
     </div>
 </div>
