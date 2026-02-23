@@ -74,13 +74,6 @@ Activity_Feed:
   items_title: Aankomende events
   activities:
     - title: >-
-        Leeratelier 'Generatieve AI: waar op te letten bij verstandig gebruik?', Academie voor Wetgeving
-      link: >-
-        https://rechtenoverheid.nl/cursus/leeratelier-generatieve-ai-waar-op-te-letten-bij-verstandig-gebruik-2452
-      image: /images/partner logo-cropped/acwet.svg
-      date: 23-02-2026
-      type: training
-    - title: >-
         Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening' 
       link: >-
         https://algorithmaudit.eu/nl/events/registration/

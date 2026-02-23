@@ -71,13 +71,6 @@ Activity_Feed:
   items_title: Upcoming events
   activities:
     - title: >-
-        Course on 'GPAI validation framework', Dutch Academy for Legislation
-      link: >-
-        https://rechtenoverheid.nl/cursus/leeratelier-generatieve-ai-waar-op-te-letten-bij-verstandig-gebruik-2452
-      image: /images/partner logo-cropped/acwet.svg
-      date: 23-02-2026
-      type: training
-    - title: >-
         Presentation Validation framework 'Responsible use of Large Language Models (LLM) for public information provision' (Dutch only) 
       link: >-
         https://algorithmaudit.eu/nl/events/registration/
