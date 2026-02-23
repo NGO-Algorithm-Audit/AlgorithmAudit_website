@@ -36,7 +36,7 @@ The <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1623335154975&u
 
 As a member of Dutch standardization body NEN, Algorithm Audit contributes to the European debate how fundamental rights should be co-regulated by product safety.
 
-{{< button button_text="Learn more about our AI Act Implementation Tool" button_link="/technical-tools/implementation-tool/" >}}
+{{< button button_text="Learn more about our AI and Algorithms Qualification Toolkit (AI AQT)" button_link="/technical-tools/implementation-tool/" >}}
 
 {{< tab_content_close >}}
 

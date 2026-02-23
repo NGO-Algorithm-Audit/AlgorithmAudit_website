@@ -110,7 +110,7 @@ url = "/technical-tools"
     icon = "fa-table"
   [[main]]
   parent = "Technical tools"
-  name = "AI Act implementation tool"
+  name = "AI and Algorithms Qualification Toolkit (AI AQT)"
   url = "/technical-tools/implementation-tool"
   weight = 4
   [[main.params]]

@@ -29,6 +29,21 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Leeratelier 'Generatieve AI: waar op te letten bij verstandig gebruik?', Academie voor Wetgeving
+    description: >
+      Deze cursus van de <a href="https://www.academievoorwetgeving.nl/" target="_blank">Academie voor Wetgeving</a> introduceerde deelnemers aan een validatiekader voor naleving van de AVG, AI-verordening en Awb bij gebruik van GenAI. Dit kader is gebaseerd op de prijswinnende pilot <a href="https://www.voorrecht-rechtspraak.nl/?gad_campaignid=20543704506&gad_source=1&gbraid=0AAAAAqISXNk5lT50oQXLDxbh9WnFhs2tS&gclid=EAIaIQobChMI7sKPh6yRjgMVZJGDBx0nJRHJEAAYASAAEgKdX_D_BwE" target="_blank">voorRecht-Rechtspraak</a>, waarin LLM's worden ingezet om burgers te ondersteunen bij geschillen rond bouw- en huisvestingsrecht. De cursus ging in op het nut van tekstfilters voor gegevensbescherming, hoe betrouwbaarheid bij het synthetiseren van tekst te waarborgen, links van de AI-verordening met principes in de Awb, en hoe chatbot-interacties verantwoord en burgervriendelijk kunnen worden gemaakt.
+    image: /images/partner logo-cropped/acwet.svg
+    date: 23-02-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q1_2026
+        label: Q1-2026
+        hide: true
+      - value: type_training
+        label: Training
+  - title: >-
       Paneldiscussie over 'Trust in institutions: What is working and what is not working, and why?', European Institute of Public Administration
     description: >
       Paneldiscussie over welke oplossingen het functioneren van het openbaar bestuur kunnen verbeteren. Hoe best practices, trends en aanbevelingen voor institutionele innovatie in het digitale tijdperk te delen?

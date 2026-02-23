@@ -21,7 +21,7 @@ subpage_links:
     icon: fa-light fa-table
     color: '#FFF'
     url: /technical-tools/sdg/
-  - title: AI Act implementation tool
+  - title: AI and Algorithms Qualification Toolkit (AI AQT)
     titleline2: >-
       Dynamic questionnaires for identification and risk classification of AI
       systems and algorithms

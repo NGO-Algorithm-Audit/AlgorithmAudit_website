@@ -20,7 +20,7 @@ quick_navigation:
     - title: Broncode
       url: "#source-code"
     - title: Documentatie
-      url: "#documentation-definition"
+      url: "#documentation"
     - title: Voorbeelden en explainers
       url: "#explainers"
     - title: Flowchart Vragenlijst 1A
@@ -37,7 +37,7 @@ promo_bar:
 
 <!-- Introductie -->
 
-{{< container_open icon="fa-solid fa-toolbox" title="Introductie - Een oplossing voor de AI-verordening en meer" id="intro" >}}
+{{< container_open icon="fa-solid fa-toolbox" title="Introductie - een oplossing voor de AI-verordening en meer" id="intro" >}}
 
 Wettelijke naleving veronderstelt correcte vaststelling of algoritmische systemen onder de reikwijdte van wet- en regelgeving vallen, inclusief bijbehorende risicocategorieën. AI AQT bestaat uit dynamische vragenlijsten die helpen bij:
 
@@ -47,23 +47,23 @@ Wettelijke naleving veronderstelt correcte vaststelling of algoritmische systeme
 
 2 – Risicoclassificatie van AI-systemen.
 
-De tool is [open-source](/nl/technical-tools/implementation-tool/#source-code) ontwikkeld in samenwerking met de gemeente Amsterdam en kan kosteloos binnen uw organisatie worden gebruikt voor algoritmemanagement. Alle mogelijke uitkomsten van de vragenlijsten worden weergegeven in onderstaand [figuur](/nl/technical-tools/implementation-tool/#outcome). De flowcharts van de vragenlijsten kunnen ook [hieronder](/nl/technical-tools/implementation-tool/#flowchart-identification) worden gevonden.
+De tool is [open-source](/nl/technical-tools/implementation-tool/#source-code) ontwikkeld in samenwerking met de gemeente Amsterdam en kan kosteloos binnen uw organisatie worden gebruikt voor algoritmemanagement. Alle mogelijke uitkomsten van de vragenlijsten worden weergegeven in onderstaand [figuur](/nl/technical-tools/implementation-tool/#outcome). De flowcharts van de vragenlijsten kunnen ook [hieronder](/nl/technical-tools/implementation-tool/#flowchart-questionnaire-1A) worden gevonden.
 
 {{< container_close >}}
 
 <!-- Web app -->
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="60vh" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="60vh" height_mobile="100vh" >}}
 
 <!-- Kwalificatie en reikwijdte -->
 
 {{< container_open icon="fa-solid fa-clipboard-check" title="Waarom de correct kwalificeren van algoritmische systemen belangrijk is" id="kwalificatie-reikwijdte" >}}
 
-Het toepassen van juridische definities in de praktijk roept lastige vragen op. Bijvoorbeeld: Welke kenmerken onderscheiden AI van andere data-gedreven systemen? En welke criteria bepalen de risicocategorie van een AI-systeem? Gestandaardiseerde vragenlijsten helpen om algoritmemanagement efficiënt uit te voeren. Vragenlijsten kunnen binnen de gehele organisatie worden gedeeld en centraal worden verwerkt. AI AQT biedt hiervoor een eenduidige en gebruiksvriendelijke werkwijze en is daarmee een bouwsteen richting wettelijke naleving. Niet alleen in het kader van de AI-verordening, ook in het kader van de AVG en aanvullende beleidsinstrumenten, zoals de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a>, is identificatie en risicoclassificatie relevant. Hoe deze regelgeving is verwerkt in de AI AQT kan worden gevonden in onderstaand figuur.
+Het toepassen van juridische definities in de praktijk roept lastige vragen op. Bijvoorbeeld: Welke kenmerken onderscheiden AI van andere algoritmische systemen? En welke criteria bepalen de risicocategorie van een AI-systeem? Gestandaardiseerde vragenlijsten helpen om algoritmemanagement efficiënt uit te voeren. Vragenlijsten kunnen binnen de gehele organisatie worden gedeeld en centraal worden verwerkt. AI AQT biedt hiervoor een eenduidige en gebruiksvriendelijke werkwijze en is daarmee een bouwsteen richting wettelijke naleving. Niet alleen in het kader van de AI-verordening, ook in het kader van de AVG en aanvullende beleidsinstrumenten, zoals de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a>, is identificatie en risicoclassificatie relevant. Hoe deze regelgeving is verwerkt in de AI AQT kan worden gevonden in onderstaand figuur.
 
 #### Verloop van AI AQT vragenlijsten
 
-<img src="/images/ai-act-implementation-tool/Overview infographic.png" alt="drawing"/>
+<img src="/images/ai-act-implementation-tool/Infographic NL.png" alt="drawing"/>
 
 {{< container_close >}}
 
@@ -82,7 +82,7 @@ De uitkomsten van de tool worden weergegeven in onderstaande figuur. Er wordt on
 
 - <span style="color:#005AA7">AI-systemen</span>: Zie uitkomst Vragenlijst 1A.
 - <span style="color:#005AA7">Impactvolle algoritmes</span>: Zie uitkomst Vragenlijst 1A.
-- <span style="color:#005AA7">Volledig geautomatiseerde besluitvorming</span>: Vallen onder de reikwijdte van artikel 22 van de AVG. Aanvullende beheersmaatregelen zijn nodig.
+- <span style="color:#005AA7">Volledig geautomatiseerde besluitvorming (sADM)</span>: Vallen onder de reikwijdte van artikel 22 van de AVG. Aanvullende beheersmaatregelen zijn nodig.
 - <span style="color:#005AA7">Overige systemen</span>: Vallen buiten de reikwijdte van de AI-verordening, het Nederlandse Algoritmesregister en artikel 22 van de AVG.
 
 #### Vragenlijst 2:
@@ -92,7 +92,7 @@ De uitkomsten van de tool worden weergegeven in onderstaande figuur. Er wordt on
 - <span style="color:#005AA7">Aanvullende transparantievereisten</span>: Dit type AI-systeem vereist aanvullende transparantie, maar er zijn geen controlemaatregelen nodig.
 - <span style="color:#005AA7">AI-modellen voor algemene doeleinden (General Purpose AI)</span>: Er gelden aanvullende eisen voor de ontwikkelaars.
 
-<img src="/images/ai-act-implementation-tool/Venn diagram NL V2.png" alt="drawing" width="600"/>
+<img src="/images/ai-act-implementation-tool/Venn diagram NL.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
@@ -108,7 +108,7 @@ De AI en Algoritme Kwalificatie Toolkit (AI AQT) is ontwikkeld in samenwerking m
 
 <!-- Documentatie -->
 
-{{< container_open icon="far fa-file" title="Documentatie AI AQT vragenlijsten" id="documentation-definition" >}}
+{{< container_open icon="far fa-file" title="Documentatie AI AQT vragenlijsten" id="documentation" >}}
 
 Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijsten met betrekking tot interpretatie van de AI-verordening, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie over de definitie van een AI-systeem, artikel 22 AVG richtlijnen van de <a href="https://ec.europa.eu/newsroom/article29/items/612053" target="_blank">EPDB</a> en <a href="https://www.autoriteitpersoonsgegevens.nl/documenten/advies-geautomatiseerde-besluitvorming" target="_blank">Autoriteit Persoonsgegevens</a> (AP) en de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a> worden beschreven in de white paper 'Implementatie van de AI-verordening – Definitie van een AI-systeem'. In de policy briefing wordt toegelicht waarom bepaalde passages uit de <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie over de definitie van een AI-systeem op gespannen voet staan met de wettekst van de AI-verordening.
 
@@ -144,9 +144,9 @@ Aan de hand van voorbeelden lichten we de uitwerking van juridische concepten re
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart Vragenlijst 1B - Identificatie van AI-systemen, impactvolle algoritmes en volledig geautomatiseerde besluitvorming" id="flowchart-questionnaire-1B" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260115 Flowchart identificatie - Vragenlijst 1B.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260203 - Flowcharts identificatie NL merged - Vragenlijst 1B.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
-Link naar flow chart met volledige logica met alle vragen voor de drie definities zoals geïmplementeerd in Vragenlijst 1B: https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260115%20Full%20flowchart%20identification.pdf
+De bovenstaande flowcharts voor Vragenlijst 1B zijn vereenvoudigde weergaven van alleen de logica die nodig is om vast te stellen of een systeem onder een van de wettelijke definities valt, afzonderlijk beschouwd (AI, impactvol algoritme of sADM). Bij een daadwerkelijk doorlop van de vragenlijst overlappen de vragen elkaar en komen gebruikers elk van de vragen slechts één keer tegen. Een volledige flowchart van Vragenlijst 1B met alle paden en uitkomsten is <a href="https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260115%20Full%20flowchart%20identificatie%20NL.pdf" target="_blank">hier</a> te vinden. 
 
 {{< container_close >}}
 
