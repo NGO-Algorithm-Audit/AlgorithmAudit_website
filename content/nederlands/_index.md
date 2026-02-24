@@ -76,7 +76,7 @@ Activity_Feed:
     - title: >-
         Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening' 
       link: >-
-        https://algorithmaudit.eu/nl/events/registration/
+        /nl/events/activities/
       image: /images/events/20260226_Validatiekader.png
       date: 26-02-2026
       type: event
