@@ -97,7 +97,7 @@ Areas_of_AI_expertise:
         validatiekader om contentfilters, guardrails en ontwerpkeuzes voor
         gebruikersinteractie te beoordelen. <a
 
-        href="/nl/knowledge-platform/project-work/#LLM-validation"
+        href="/nl/technical-tools/eval-gen-ai"
 
         style="text-decoration: underline;">Lees meer</a> over ons
         validatiekader.
