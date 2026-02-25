@@ -91,9 +91,8 @@ Areas_of_AI_expertise:
         Evaluating Large Language Models (LLMs) and other general-purpose AI
         models for robustness, privacy and AI Act compliance. Based on
         real-world examples, are developing a framework to analyze content
-        filters, guardrails and user interaction design choices. <a
-        href="/knowledge-platform/project-work/#LLM-validation"
-        style="text-decoration: underline;">Learn more</a> about our evaluation
+        filters, guardrails and user interaction design choices. <a href="/technical-tools/eval-gen-ai" style="text-decoration:
+        underline;">Learn more</a> about our evaluation
         framework.
     - name: AI Act implementation and standards
       icon: fas fa-certificate
