@@ -31,8 +31,6 @@ Algorithm Audit heeft diverse expertise over het evalueren van generatieve AI. W
 
 {{< container_open icon="far fa-check" title="Validatiekader" id="validation-framework" >}}
 
-Wordt binnenkort gepubliceerd
-
 {{< embed_pdf url="/pdf-files/technical-tools/eval-gen-ai/20260226 Validatiekader 'Verantwoorde inzet van LLMs voor publieke informatievoorziening'.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
