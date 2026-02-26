@@ -2,17 +2,17 @@
 type: regular
 title: Evaluation of generative AI
 subtitle: >
-  Overview of Algorithm Audit's expertise pertaining to generative AI. 
+  Overview of Algorithm Audit's expertise pertaining to generative AI.
 image: /images/technical tools/eval-gen-ai/Kader.png
 quick_navigation:
   title: Content overview
   links:
     - title: Introduction
-      url: '#intro'
+      url: "#intro"
     - title: Validation framework
-      url: '#validation-framework'
+      url: "#validation-framework"
     - title: Development and usage
-      url: '#development-and-usage'
+      url: "#development-and-usage"
 promo_bar:
   - content: "**\U0001F44B Do you want to learn more about Algorithm Audit's expertise on generative AI? Get in [contact](/en/about/contact).**"
 ---
@@ -27,7 +27,6 @@ Algorithm Audit has versatile expertise in evaluating generative AI. We have con
 
 {{< container_close >}}
 
-
 <!-- Validation framework -->
 
 {{< container_open icon="far fa-check" title="Validation framework" id="validation-framework" >}}
@@ -38,7 +37,6 @@ Soon available in English.
 
 {{< container_close >}}
 
-
 <!-- Development and usage -->
 
 {{< container_open icon="fas fa-terminal" title="Development and usage of validation framework:" id="development-and-usage" >}}
@@ -47,6 +45,6 @@ The validation framework 'Responsible use of Large Language Models (LLMs) for pu
 
 The Validation framework is published under the CC BY-4.0 license.
 
-{{< image image1="/images/partner%20logo-cropped/Rechtspraak.png" image2="/images/partner%20logo-cropped/TUEindhoven.svg.png" image3="/images/partner%20logo-cropped/T&TDataConsultancy.png" image4="/images/partner%20logo-cropped/Deloitte.png" width_desktop="3" width_mobile="1" alt1="De Rechtspraak" alt2="Technische Universiteit Eindhoven" alt3="T&T Data Consultancy" alt4="Deloitte" caption1="De Rechtspraak" caption2="Technische Universiteit Eindhoven" caption3="T&T Data Consultancy" caption4="Deloitte" >}}
+{{< image image1="/images/partner%20logo-cropped/Rechtspraak.png" image2="/images/partner%20logo-cropped/TUEindhoven.svg.png" image3="/images/partner%20logo-cropped/T&TDataConsultancy.png" image4="/images/partner%20logo-cropped/Deloitte.png" width_desktop="3" width_mobile="6" alt1="De Rechtspraak" alt2="Technische Universiteit Eindhoven" alt3="T&T Data Consultancy" alt4="Deloitte" caption1="De Rechtspraak" caption2="Technische Universiteit Eindhoven" caption3="T&T Data Consultancy" caption4="Deloitte" >}}
 
 {{< container_close >}}
