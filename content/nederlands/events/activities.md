@@ -29,6 +29,12 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening'
+    description: >
+      Deze presentatie begeleidde de lancering van ons validatiekader voor <a href="https://algorithmaudit.eu/nl/technical-tools/eval-gen-ai/" target="_blank">‘Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening’</a>. De tool is ontwikkeld in samenwerking met Rechtspraak, TU Eindhoven, T&T Data Consultancy en Deloitte, en is mogelijk gemaakt door medefinanciering uit de call <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in de praktijk''</a>. De presentatie bood gelegenheid voor diepgaande discussies over het bredere vraagstuk van LLM's in de openbare informatievoorziening, met bijdragen van Rechtspraak, SIDN en het EU AI Office.
+    image: /images/events/20260226_Validatiekader.png
+    date: 26-02-2026
+  - title: >-
       Leeratelier 'Generatieve AI: waar op te letten bij verstandig gebruik?', Academie voor Wetgeving
     description: >
       Deze cursus van de <a href="https://www.academievoorwetgeving.nl/" target="_blank">Academie voor Wetgeving</a> introduceerde deelnemers aan een validatiekader voor naleving van de AVG, AI-verordening en Awb bij gebruik van GenAI. Dit kader is gebaseerd op de prijswinnende pilot <a href="https://www.voorrecht-rechtspraak.nl/?gad_campaignid=20543704506&gad_source=1&gbraid=0AAAAAqISXNk5lT50oQXLDxbh9WnFhs2tS&gclid=EAIaIQobChMI7sKPh6yRjgMVZJGDBx0nJRHJEAAYASAAEgKdX_D_BwE" target="_blank">voorRecht-Rechtspraak</a>, waarin LLM's worden ingezet om burgers te ondersteunen bij geschillen rond bouw- en huisvestingsrecht. De cursus ging in op het nut van tekstfilters voor gegevensbescherming, hoe betrouwbaarheid bij het synthetiseren van tekst te waarborgen, links van de AI-verordening met principes in de Awb, en hoe chatbot-interacties verantwoord en burgervriendelijk kunnen worden gemaakt.
