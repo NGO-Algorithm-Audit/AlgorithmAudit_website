@@ -31,7 +31,7 @@ events:
   - title: >-
       Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening'
     description: >
-      Deze presentatie begeleidde de lancering van ons validatiekader voor <a href="https://algorithmaudit.eu/nl/technical-tools/eval-gen-ai/" target="_blank">‘Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening’</a>. De tool is ontwikkeld in samenwerking met Rechtspraak, TU Eindhoven, T&T Data Consultancy en Deloitte, en is mogelijk gemaakt door medefinanciering uit de call <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in de praktijk''</a>. De presentatie bood gelegenheid voor diepgaande discussies over het bredere vraagstuk van LLM's in de openbare informatievoorziening, met bijdragen van Rechtspraak, SIDN en het EU AI Office.
+      Deze presentatie begeleidde de lancering van ons validatiekader <a href="https://algorithmaudit.eu/nl/technical-tools/eval-gen-ai/" target="_blank">‘Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening’</a>. De tool is ontwikkeld in samenwerking met Rechtspraak, TU Eindhoven, T&T Data Consultancy en Deloitte, en is mogelijk gemaakt door medefinanciering uit de call <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in de praktijk''</a>. Het evenement bood ruimte voor een brede discussie over het gebruik van LLM's bij de verstrekking van openbare informatie door middel van paneldiscussies. Daarnaast waren er sprekers van SIDN en het EU AI Office aanwezig.
     image: /images/events/20260226_Validatiekader.png
     date: 26-02-2026
   - title: >-

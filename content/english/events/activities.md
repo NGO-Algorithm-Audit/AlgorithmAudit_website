@@ -33,7 +33,7 @@ events:
   - title: >-
       Presentation Validation framework 'Responsible use of Large Language Models (LLM) for public information provision' (Dutch only)
     description: >
-     This presentation accompanied the launch of our validation framework <a href="https://algorithmaudit.eu/nl/technical-tools/eval-gen-ai/" target="_blank">'Responsible use of Large Language Models (LLM) for public information provision'</a>. The tool was created in collaboration with the Council for the Judiciary, Eindhoven University of Technology, T&T Data Consultancy and Deloitte, and made possible by co-financing from the <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in practice'</a> call. The presentation provided opportunity for involved discussions around the larger issue of LLM's in public information provision with contributions from the Rechtspraak, SIDN and the EU AI Office.   
+     This presentation accompanied the launch of our validation framework <a href="https://algorithmaudit.eu/technical-tools/eval-gen-ai/" target="_blank">'Responsible use of Large Language Models (LLM) for public information provision'</a>. The tool was created in collaboration with the Council for the Judiciary, Eindhoven University of Technology, T&T Data Consultancy and Deloitte, and made possible by co-financing from the <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in practice'</a> call. The event facilitated broad discussion about using LLM's in public information provision through panel discussions and also featured speakers SIDN and the EU AI Office.   
     image: /images/events/20260226_Validatiekader.png
     date: 26-02-2026
   - title: >-
