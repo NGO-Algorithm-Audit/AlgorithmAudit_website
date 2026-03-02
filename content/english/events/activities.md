@@ -31,6 +31,12 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Presentation Validation framework 'Responsible use of Large Language Models (LLM) for public information provision' (Dutch only)
+    description: >
+     This presentation accompanied the launch of our validation framework <a href="https://algorithmaudit.eu/technical-tools/eval-gen-ai/" target="_blank">'Responsible use of Large Language Models (LLM) for public information provision'</a>. The tool was created in collaboration with the Council for the Judiciary, Eindhoven University of Technology, T&T Data Consultancy and Deloitte, and made possible by co-financing from the <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in practice'</a> call. The event facilitated broad discussion about using LLM's in public information provision through panel discussions and also featured speakers SIDN and the EU AI Office.   
+    image: /images/events/20260226_Validatiekader.png
+    date: 26-02-2026
+  - title: >-
       Course on 'GPAI validation framework', Dutch Academy for Legislation
     description: >
       This course by the <a href="https://www.academievoorwetgeving.nl/" target="_blank">Academy for Legislation</a> introduced participants to a validation framework for GenAI compliance with the GDPR, AI Act, and Awb. This framework is based on the award-winning pilot <a href="https://www.voorrecht-rechtspraak.nl/?gad_campaignid=20543704506&gad_source=1&gbraid=0AAAAAqISXNk5lT50oQXLDxbh9WnFhs2tS&gclid=EAIaIQobChMI7sKPh6yRjgMVZJGDBx0nJRHJEAAYASAAEgKdX_D_BwE" target="_blank">voorRecht-Rechtspraak</a>, in which LLMs are leveraged to support citizens in disputes around construction and housing law. The course touched on the usefulness of text filters for data protection, how to ensure reliability when synthesizing text, link between the AI Act and Awb, as well making chatbot interactions responsible and citizen-friendly.
