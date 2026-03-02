@@ -31,9 +31,20 @@ events:
   - title: >-
       Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening'
     description: >
-      Deze presentatie begeleidde de lancering van ons validatiekader <a href="https://algorithmaudit.eu/nl/technical-tools/eval-gen-ai/" target="_blank">‘Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening’</a>. De tool is ontwikkeld in samenwerking met Rechtspraak, TU Eindhoven, T&T Data Consultancy en Deloitte, en is mogelijk gemaakt door medefinanciering uit de call <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in de praktijk''</a>. Het evenement bood ruimte voor een brede discussie over het gebruik van LLM's bij de verstrekking van openbare informatie door middel van paneldiscussies. Daarnaast waren er sprekers van SIDN en het EU AI Office aanwezig.
+      Lanceringevent van ons validatiekader <a href="https://algorithmaudit.eu/nl/technical-tools/eval-gen-ai/" target="_blank">‘Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening’</a>. Het kader is ontwikkeld in samenwerking met de Rechtspraak, TU Eindhoven, T&T Data Consultancy en Deloitte, en is mede-mogelijk gemaakt door de call <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in de praktijk''</a> van het SIDN fonds en Digital Holland. Het evenement bood ruimte voor een brede discussie over het gebruik van LLM's bij de verstrekking van openbare informatie door middel van paneldiscussies. Daarnaast waren er sprekers van de Rechtspraak, het SIDN fonds en de EU AI Office.
+
+      ![](/images/events/20260226_Validatiekader2.jpg)
     image: /images/events/20260226_Validatiekader.png
     date: 26-02-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q1_2026
+        label: Q1-2026
+        hide: true
+      - value: type_event
+        label: Event
   - title: >-
       Leeratelier 'Generatieve AI: waar op te letten bij verstandig gebruik?', Academie voor Wetgeving
     description: >
