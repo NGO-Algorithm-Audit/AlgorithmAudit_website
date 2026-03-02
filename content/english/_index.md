@@ -69,7 +69,7 @@ Activity_Feed:
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
-  activities: 
+  activities: []
   # - title: >-
   #     Presentation Validation framework 'Responsible use of Large Language Models (LLM) for public information provision' (Dutch only)
   #   link: >-

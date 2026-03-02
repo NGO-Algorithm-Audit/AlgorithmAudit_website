@@ -72,7 +72,7 @@ Activity_Feed:
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
-  activities:
+  activities: []
   #  - title: >-
   #      Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening' 
   #    link: >-
