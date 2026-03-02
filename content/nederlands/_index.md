@@ -72,14 +72,7 @@ Activity_Feed:
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
-  activities: []
-  #  - title: >-
-  #      Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening' 
-  #    link: >-
-  #      https://algorithmaudit.eu/nl/events/registration/
-  #    image: /images/events/20260226_Validatiekader.png
-  #    date: 26-02-2026
-  #    type: event
+  activities:
   items_button_text: Meer events
   items_button_link: /nl/events/activities/
 Areas_of_AI_expertise:
