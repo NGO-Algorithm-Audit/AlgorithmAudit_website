@@ -73,6 +73,7 @@ Activity_Feed:
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
+<<<<<<< HEAD
   #  - title: >-
   #      Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening' 
   #    link: >-
@@ -80,6 +81,15 @@ Activity_Feed:
   #    image: /images/events/20260226_Validatiekader.png
   #    date: 26-02-2026
   #    type: event
+=======
+    - title: >-
+        Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening' 
+      link: >-
+        /nl/events/activities/
+      image: /images/events/20260226_Validatiekader.png
+      date: 26-02-2026
+      type: event
+>>>>>>> master
   items_button_text: Meer events
   items_button_link: /nl/events/activities/
 Areas_of_AI_expertise:
@@ -97,7 +107,7 @@ Areas_of_AI_expertise:
         validatiekader om contentfilters, guardrails en ontwerpkeuzes voor
         gebruikersinteractie te beoordelen. <a
 
-        href="/nl/knowledge-platform/project-work/#LLM-validation"
+        href="/nl/technical-tools/eval-gen-ai"
 
         style="text-decoration: underline;">Lees meer</a> over ons
         validatiekader.

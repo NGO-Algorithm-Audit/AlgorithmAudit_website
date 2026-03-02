@@ -110,11 +110,18 @@ url = "/nl/technical-tools"
     icon = "fa-table"
   [[main]]
   parent = "Technische tools"
-  name = "AI AQT"
+  name = "AI en algoritmes kwalificatie tool (AI AQT)"
   url = "/nl/technical-tools/AI-AQT"
   weight = 4
   [[main.params]]
     icon = "fa-file"
+  [[main]]
+  parent = "Technische tools"
+  name = "Evaluatie generatieve AI"
+  url = "/nl/technical-tools/eval-gen-ai"
+  weight = 5
+  [[main.params]]
+    icon = "fa-robot"
 
 [[main]]
 name = "Evenementen"
@@ -137,13 +144,6 @@ hasChildren = true
   weight = 2
   [[main.params]]
     icon = "fa-newspaper"
-  [[main]]
-  parent = "Evenementen"
-  name = "Registreren"
-  url = "/nl/events/registration"
-  weight = 3
-  [[main.params]]
-    icon = "fa-address-card"
 [[main]]
 name = "Over ons"
 url = "/nl/about/teams"

@@ -69,6 +69,7 @@ Activity_Feed:
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
+<<<<<<< HEAD
   activities: 
   # - title: >-
   #     Presentation Validation framework 'Responsible use of Large Language Models (LLM) for public information provision' (Dutch only)
@@ -77,6 +78,16 @@ Activity_Feed:
   #   image: /images/events/20260226_Validatiekader.png
   #   date: 26-02-2026
   #   type: event
+=======
+  activities:
+    - title: >-
+        Presentation Validation framework 'Responsible use of Large Language Models (LLM) for public information provision' (Dutch only) 
+      link: >-
+        /events/activities/
+      image: /images/events/20260226_Validatiekader.png
+      date: 26-02-2026
+      type: event
+>>>>>>> master
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:
@@ -91,9 +102,8 @@ Areas_of_AI_expertise:
         Evaluating Large Language Models (LLMs) and other general-purpose AI
         models for robustness, privacy and AI Act compliance. Based on
         real-world examples, are developing a framework to analyze content
-        filters, guardrails and user interaction design choices. <a
-        href="/knowledge-platform/project-work/#LLM-validation"
-        style="text-decoration: underline;">Learn more</a> about our evaluation
+        filters, guardrails and user interaction design choices. <a href="/technical-tools/eval-gen-ai" style="text-decoration:
+        underline;">Learn more</a> about our evaluation
         framework.
     - name: AI Act implementation and standards
       icon: fas fa-certificate

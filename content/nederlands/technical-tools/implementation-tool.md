@@ -1,6 +1,6 @@
 ---
 type: regular
-title: AI en algoritmes kwalificatietoolkit (AI AQT)
+title: AI en algoritmes kwalificatie tool (AI AQT)
 subtitle: >
   AI AQT is een tool die ondersteunt bij het identificeren en
   risicoclassificeren van AI en andere data-gedreven systemen. Complexe

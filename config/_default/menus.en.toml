@@ -110,11 +110,18 @@ url = "/technical-tools"
     icon = "fa-table"
   [[main]]
   parent = "Technical tools"
-  name = "AI and Algorithms Qualification Toolkit (AI AQT)"
+  name = "AI and Algorithms Qualification Tool (AI AQT)"
   url = "/technical-tools/implementation-tool"
   weight = 4
   [[main.params]]
     icon = "fa-file"
+  [[main]]
+  parent = "Technical tools"
+  name = "Evaluating generative AI"
+  url = "/technical-tools/eval-gen-ai"
+  weight = 5
+  [[main.params]]
+    icon = "fa-robot"
 
 [[main]]
 name = "Events"

@@ -22,8 +22,8 @@ quick_navigation:
       url: "#local-only"
     - title: Ondersteund door
       url: "#supported-by"
-    - title: Prijzen en ondersteuning
-      url: "#awards-acknowledgements"
+    - title: Prijzen en publicaties
+      url: "#awards-publications"
     - title: Samenvatting
       url: "#summary"
     - title: Team
@@ -64,7 +64,11 @@ team:
       - image: /images/people/MJorgensen.jpeg
         name: Mackenzie Jorgensen PhD
         bio: |
-          Onderzoeker Alan Turing Institute, Londen
+          Postdoctorale onderzoeker, Northumbria University
+      - image: /images/people/JParie.jpg
+        name: Jurriaan Parie
+        bio: |
+          Directeurr, Algorithm Audit
 ---
 
 <!-- Promobar -->
@@ -206,7 +210,7 @@ Het HBAC-algoritme maximaliseert het verschil in bias variabele tussen clusters.
 
 De unsupervised bias detectie tool is in de praktijk toegepast om een risicoprofileringsalgoritme van de Dienst Uitvoering Onderwijs (DUO) te auditen. Ons [team](/technical-tools/bdt/#team) heeft deze casus uitgewerkt in een wetenschappelijke paper. De tool identificeerde proxies voor studenten met een niet-Europese migratieachtergrond in het risicoprofileringsalgoritme, specifiek opleidingsniveau en de afstand tussen het adres van de student en dat van hun ouder(s). Afwijkingen in het controleproces hadden dus ook gevonden kunnen worden als CBS-data over de herkomst van studenten niet beschikbaar was geweest. De resultaten worden ook beschreven in Appendix A van het onderstaande rapport. Dit rapport is op 22-05-2024 naar de <a href="https://www.tweedekamer.nl/kamerstukken/detail?id=2024D20431&did=2024D20431" target="_blank">Tweede Kamer</a> gestuurd.
 
-{{< embed_pdf url="/pdf-files/technical-tools/UBDT/20250205 Auditing a Dutch Public Sector Risk Profiling Algorithm.pdf" url2="/pdf-files/algoprudence/TA_AA202402/TA_AA202402_Addendum_Vooringenomenheid_voorkomen.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/UBDT/20260215 Auditing a Dutch Public Sector Risk Profiling Algorithm.pdf" url2="/pdf-files/algoprudence/TA_AA202402/TA_AA202402_Addendum_Vooringenomenheid_voorkomen.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
@@ -262,19 +266,19 @@ In 2024 ondersteunde het SIDN Fonds <a href="https://www.sidnfonds.nl/projecten/
 
 {{< container_close >}}
 
-<!-- Prijzen en ondersteuning -->
+<!-- Prijzen en publicaties -->
 
-{{< container_open title="Prijzen en ondersteuning" icon="fas fa-medal" id="awards-acknowledgements">}}
+{{< container_open title="Prijzen en publicaties" icon="fas fa-medal" id="awards-publications">}}
 
-De tool heeft prijzen ontvangen en wordt ondersteund door verschillende <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection?tab=readme-ov-file#contributing-members" target="_blank">belanghebbenden</a>, waaronder maatschappelijke organisaties, vertegenwoordigers uit de industrie en academici.
+De tool heeft prijzen ontvangen en is erkend door verschillende <a href="https://github.com/NGO-Algorithm-Audit/unsupervised-bias-detection?tab=readme-ov-file#contributing-members" target="_blank">belanghebbenden</a>, waaronder maatschappelijke organisaties, vertegenwoordigers uit de industrie en academische outlets.
 
 {{< accordions_area_open>}}
 
-{{< accordion_item_open title="Finalist Stanford’s AI Audit Challenge 2023" image="/images/partner logo-cropped/StanfordHAI.png" tag1="06-2023" >}}
+{{< accordion_item_open title="IASEAI’26 presentatie" image="/images/BDT/IASEAI_logo.png" tag1="2026" >}}
 
-##### Beschrijving
+##### Description
 
-Onder de naam Joint Fairness Assessment Method (JFAM) is de unsupervised bias detectie tool geselecteerd als finalist voor <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">Stanford’s AI Audit Competition 2023</a>.
+De [wetenschappelijke paper](/#scientific-paper) over de tool werd gepresenteerd tijds het International Association for Safe and Ethical Artificial Intelligence (<a href="https://www.iaseai.org" target="_blank">IASEAI’26</a>).
 
 {{< accordion_item_close >}}
 
@@ -283,6 +287,14 @@ Onder de naam Joint Fairness Assessment Method (JFAM) is de unsupervised bias de
 ##### Description
 
 De unsupervised bias detectie tool maakt deel uit van de <a href="https://oecd.ai/en/catalogue/tools/unsupervised-bias-detection-tool" target="_blank">Catalogue of Tools & Metrics for Trustworthy AI</a>.
+
+{{< accordion_item_close >}}
+
+{{< accordion_item_open title="Finalist Stanford’s AI Audit Challenge 2023" image="/images/partner logo-cropped/StanfordHAI.png" tag1="2023" >}}
+
+##### Beschrijving
+
+Onder de naam Joint Fairness Assessment Method (JFAM) is de unsupervised bias detectie tool geselecteerd als finalist voor <a href="https://hai.stanford.edu/ai-audit-challenge-2023-finalists" target="_blank">Stanford’s AI Audit Competition 2023</a>.
 
 {{< accordion_item_close >}}
 
