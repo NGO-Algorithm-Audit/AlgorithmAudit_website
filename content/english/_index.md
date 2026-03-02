@@ -70,6 +70,11 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
+     - title: Responsible use of AI and Algorithmic Management, DG EMPL
+       link:
+       image: /images/partner logo-cropped/EC.png
+       date: 06-05-2026
+       type: event
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:
