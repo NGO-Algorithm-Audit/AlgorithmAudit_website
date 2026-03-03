@@ -55,6 +55,13 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
+    - title: Validatiekader 'Verantwoord gebruik van LLMs voor publieke informatievoorziening'
+      intro: >
+        Algorithm Audit heeft in consortiumverband een validatiekader ontwikkeld voor de verantwoorde inzet van LLMs.
+      link: /technical-tools/eval-gen-ai/
+      image: /images/events/20260226_Validatiekader.png
+      date: 26-02-2026
+      type: tool launch
     - title: Brouwer Vertrouwensprijs
       intro: >
         Algorithm Audit heeft de Brouwer Vertouwensprijs gewonnen uitgereikt door de Koninklijke Hollandsche Maatschappij der Wetenschappen  (KHMW) 
@@ -62,13 +69,6 @@ Activity_Feed:
       image: /images/partner logo-cropped/KHMW.png
       date: 19-01-2026
       type: prijs
-    - title: Projectwerk Europese Commissie
-      intro: >
-        Project werk voor de Europese Commissie in het kader van het evalueren van sociotechnische risico's van GPAI-modellen.
-      link: /nl/knowledge-platform/project-work/#AI-safety
-      image: /images/partner logo-cropped/EC.png
-      date: 15-01-2026
-      type: project werk
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events

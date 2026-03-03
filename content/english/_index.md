@@ -52,6 +52,13 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
+    - title: Validation framework 'Responsible use of Large Language Models (LLM) for public information provision'
+      intro: >
+        Algorithm Audit has developed a validation framework for the responsible use of LLMs in a consortium.
+      link: /technical-tools/eval-gen-ai/
+      image: /images/events/20260226_Validatiekader.png
+      date: 26-02-2026
+      type: tool launch
     - title: Brouwer Trust Prize
       intro: >
         Algorithm Audit won the Brouwer Trust Prize awarded by the Royal Holland Society of Sciences and Humanities (KHMW) 
@@ -59,13 +66,6 @@ Activity_Feed:
       image: /images/partner logo-cropped/KHMW.png
       date: 19-01-2026
       type: prize
-    - title: Projectwerk Europese Commissie
-      intro: >
-        Project work for the European Commission relating to evaluation of sociotechnical risks of GPAI models.
-      link: /knowledge-platform/project-work/#AI-safety
-      image: /images/partner logo-cropped/EC.png
-      date: 15-01-2026
-      type: project work
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
