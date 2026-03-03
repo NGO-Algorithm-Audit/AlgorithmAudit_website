@@ -70,6 +70,11 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
+     - title: The Dutch AI Congres 2026 - Impact with AI, the Fair Tech way
+       link: https://172676.aanmelder.nl/subscribe
+       image: /images/partner logo-cropped/AIC4NL.png
+       date: 14-04-2026
+       type: event
      - title: Responsible use of AI and Algorithmic Management, DG EMPL
        link:
        image: /images/partner logo-cropped/EC.png
