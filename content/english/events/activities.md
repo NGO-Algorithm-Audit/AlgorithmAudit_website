@@ -12,8 +12,6 @@ facet_groups:
         label: Q3-2025
       - value: q2_2025
         label: Q2-2025
-      - value: q1_2025
-        label: Q1-2025
       - value: '2024'
         label: '2024'
   - value: type
@@ -33,9 +31,20 @@ events:
   - title: >-
       Presentation Validation framework 'Responsible use of Large Language Models (LLM) for public information provision' (Dutch only)
     description: >
-     This presentation accompanied the launch of our validation framework <a href="https://algorithmaudit.eu/technical-tools/eval-gen-ai/" target="_blank">'Responsible use of Large Language Models (LLM) for public information provision'</a>. The tool was created in collaboration with the Council for the Judiciary, Eindhoven University of Technology, T&T Data Consultancy and Deloitte, and made possible by co-financing from the <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in practice'</a> call. The event facilitated broad discussion about using LLM's in public information provision through panel discussions and also featured speakers SIDN and the EU AI Office.   
+     Launching event of our validation framework <a href="https://algorithmaudit.eu/technical-tools/eval-gen-ai/" target="_blank">'Responsible use of Large Language Models (LLM) for public information provision'</a>. The tool was created in collaboration with the Dutch Judiciary, Eindhoven University of Technology, T&T Data Consultancy and Deloitte, and made possible by co-financing from the SIDN fonds and Digital Holland through the call <a href="https://www.sidnfonds.nl/themed-call-responsible-ai-in-practice" target="_blank">'Responsible AI in practice'</a> call. The event facilitated broad discussion about using LLM's in public information provision through panel discussions and also featured speakers of the Dutch judiciary, the SIDN fund and the EU AI Office. 
+     
+     ![](/images/events/20260226_Validatiekader2.jpg)
     image: /images/events/20260226_Validatiekader.png
     date: 26-02-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q1_2026
+        label: Q1-2026
+        hide: true
+      - value: type_event
+        label: Event
   - title: >-
       Course on 'GPAI validation framework', Dutch Academy for Legislation
     description: >
