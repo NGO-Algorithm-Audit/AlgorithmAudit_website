@@ -111,7 +111,7 @@ url = "/nl/technical-tools"
   [[main]]
   parent = "Technische tools"
   name = "AI en algoritmes kwalificatie tool (AI AQT)"
-  url = "/nl/technical-tools/AI-AQT"
+  url = "/nl/technical-tools/implementation-tool"
   weight = 4
   [[main.params]]
     icon = "fa-file"
