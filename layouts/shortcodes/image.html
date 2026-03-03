@@ -10,63 +10,22 @@
 {{ $width_mobile = .Get "width_mobile" }}
 {{ end }}
 
-{{ if .Get "image3" }}
 <div class="row mb-5 align-items-center" id={{ .Get "id" }}>
-    <!-- image1 -->
-    {{ $image1 := .Get "image1" | relURL }}
-    {{ $alt1 := .Get "alt1" | relURL }}
-    {{ $caption1 := .Get "caption1" | relURL }}
-    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block ">
-        {{ if .Get "link1" }}
-        <a href={{ .Get "link1" }} target="_blank">
+    {{ range (seq 1 4)}}
+        {{ if $.Get (print "image" .) }}
+        {{ $image := $.Get (print "image" .) | relURL }}
+        {{ $alt := $.Get (print "alt" .) | relURL }}
+        {{ $caption := $.Get (print "caption" .) | relURL }}
+        {{ $link := $.Get (print "link" .) | relURL }}
+        <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block ">
+            {{ if $link }}
+            <a href={{ $link }} target="_blank">
+            {{ end }}
+                <img src={{ $image }} alt={{ $alt }} title={{ $caption }}> </img>
+            {{ if $link }}
+            </a>
+            {{ end }}
+        </div>
         {{ end }}
-            <img src={{ .Get "image1" }} alt={{ .Get "alt1" }} title={{ .Get "caption1" }}> </img>
-        {{ if .Get "link1" }}
-        </a>
-        {{ end }}
-    </div>
-    <!-- /image1 -->
-    <!-- image2 -->
-    {{ $image2 := .Get "image2" | relURL }}
-    {{ $alt2 := .Get "alt2" | relURL }}
-    {{ $caption2 := .Get "caption2" | relURL }}
-    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block ">
-        {{ if .Get "link2" }}
-        <a href={{ .Get "link2" }} target="_blank">
-        {{ end }}
-            <img src={{ .Get "image2" }} alt={{ .Get "alt2" }} title={{ .Get "caption2" }}> </img>
-        {{ if .Get "link2" }}
-        </a>
-        {{ end }}
-    </div>
-    <!-- /image2 -->
-    <!-- image3 -->
-    {{ $image3 := .Get "image3" | relURL }}
-    {{ $alt3 := .Get "alt3" | relURL }}
-    {{ $caption3 := .Get "caption3" | relURL }}
-    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block ">
-        {{ if .Get "link3" }}
-        <a href={{ .Get "link3" }} target="_blank">
-        {{ end }}
-            <img src={{ .Get "image3" }} alt={{ .Get "alt3" }} title={{ .Get "caption3" }}> </img>
-        {{ if .Get "link3" }}
-        </a>
-        {{ end }}
-    </div>
-    <!-- /image3 -->
-    <!-- image4 -->
-    {{ $image4 := .Get "image4" | relURL }}
-    {{ $alt4 := .Get "alt4" | relURL }}
-    {{ $caption4 := .Get "caption4" | relURL }}
-    <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block ">
-        {{ if .Get "link4" }}
-        <a href={{ .Get "link4" }} target="_blank">
-        {{ end }}
-            <img src={{ .Get "image4" }} alt={{ .Get "alt4" }} title={{ .Get "caption4" }}> </img>
-        {{ if .Get "link4" }}
-        </a>
-        {{ end }}
-    </div>
-    <!-- /image4 -->
+    {{ end }}
 </div>
-{{ end }}
