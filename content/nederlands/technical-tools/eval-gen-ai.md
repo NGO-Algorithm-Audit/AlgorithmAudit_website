@@ -1,7 +1,6 @@
 ---
-type: regular
 title: Evaluatie van generatieve AI
-subtitle: >
+subtitle: |
   Overzicht van Algorithm Audit's expertise met betrekking tot generatieve AI.
 image: /images/technical tools/eval-gen-ai/Kader.png
 quick_navigation:
@@ -14,7 +13,8 @@ quick_navigation:
     - title: Ontwikkeling en gebruik
       url: "#development-and-usage"
 promo_bar:
-  - content: "**\U0001F44B Wil je meer weten over Algorithm Audit's expertise over generatieve AI? Stuur een [bericht](/nl/about/contact).**"
+  - content: "**\U0001F44B Wil je meer weten over Algorithm Audit's expertise over generatieve AI? Stuur een [bericht](/nl/about/contact).**\n"
+type: regular
 ---
 
 {{< promo_bar index="0" >}}
@@ -38,7 +38,8 @@ Algorithm Audit heeft diverse expertise over het evalueren van generatieve AI. W
 <!-- Ontwikkeling en gebruik -->
 
 {{< container_open icon="fas fa-terminal" title="Ontwikkeling en gebruik van validatiekader:" id="development-and-usage" >}}
-Het validatiekader 'Verantwoord gebruik van Large Language Models (LLM's) voor publieke informatievoorziening' is ontwikkeld in samenwerking met de Rechtspraak, de Technische Universiteit Eindhoven (TU/e), T&T Data Consultancy en Deloitte. Het validatiekader is voor een groot deel gebaseerd op de LLM-pilot <a href="https://www.voorrecht-rechtspraak.nl" target="_blank">voorrecht-Rechtspraak</a>. Het project wordt ondersteund door het programma <a href="https://www.sidnfonds.nl/projecten/validatiekader-betrouwbare-llms-voor-publieke-informatievoorziening" target="_blank">'Responsible AI in de praktijk'</a> van het SIDN Fonds en TopSectorICT.
+
+Het validatiekader 'Verantwoord gebruik van Large Language Models (LLM's) voor publieke informatievoorziening' is ontwikkeld in samenwerking met de Rechtspraak, de Technische Universiteit Eindhoven (TU/e), T\&T Data Consultancy en Deloitte. Het validatiekader is voor een groot deel gebaseerd op de LLM-pilot <a href="https://www.voorrecht-rechtspraak.nl" target="_blank">voorrecht-Rechtspraak</a>. Het project wordt ondersteund door het programma <a href="https://www.sidnfonds.nl/projecten/validatiekader-betrouwbare-llms-voor-publieke-informatievoorziening" target="_blank">'Responsible AI in de praktijk'</a> van het SIDN Fonds en TopSectorICT.
 
 Het validatiekader is gepubliceerd onder de CC BY-4.0 licentie.
 

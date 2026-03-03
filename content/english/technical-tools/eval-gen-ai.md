@@ -1,20 +1,20 @@
 ---
-type: regular
 title: Evaluation of generative AI
-subtitle: >
+subtitle: |
   Overview of Algorithm Audit's expertise pertaining to generative AI.
 image: /images/technical tools/eval-gen-ai/Kader.png
 quick_navigation:
   title: Content overview
   links:
     - title: Introduction
-      url: "#intro"
+      url: '#intro'
     - title: Validation framework
-      url: "#validation-framework"
+      url: '#validation-framework'
     - title: Development and usage
-      url: "#development-and-usage"
+      url: '#development-and-usage'
 promo_bar:
-  - content: "**\U0001F44B Do you want to learn more about Algorithm Audit's expertise on generative AI? Get in [contact](/en/about/contact).**"
+  - content: "**\U0001F44B Do you want to learn more about Algorithm Audit's expertise on generative AI? Get in [contact](/en/about/contact).**\n"
+type: regular
 ---
 
 {{< promo_bar index="0" >}}
@@ -41,7 +41,7 @@ Soon available in English.
 
 {{< container_open icon="fas fa-terminal" title="Development and usage of validation framework:" id="development-and-usage" >}}
 
-The validation framework 'Responsible use of Large Language Models (LLMs) for public information provision' has been developed in collaboration with the Dutch judiciary, Technical University Eindhoven (TU/e), T&T Data Consultancy and Deloitte. The validation framework is for a large extent inspired on the LLM-pilot [voorrecht-Rechtspraak](https://www.voorrecht-rechtspraak.nl). The project is supported by the program <a href="https://www.sidnfonds.nl/projecten/validatiekader-betrouwbare-llms-voor-publieke-informatievoorziening" target="_blank">‘Responsible AI in de praktijk'</a> of the SIDN Fund and TopSectorICT.
+The validation framework 'Responsible use of Large Language Models (LLMs) for public information provision' has been developed in collaboration with the Dutch judiciary, Technical University Eindhoven (TU/e), T\&T Data Consultancy and Deloitte. The validation framework is for a large extent inspired on the LLM-pilot [voorrecht-Rechtspraak](https://www.voorrecht-rechtspraak.nl). The project is supported by the program <a href="https://www.sidnfonds.nl/projecten/validatiekader-betrouwbare-llms-voor-publieke-informatievoorziening" target="_blank">‘Responsible AI in de praktijk'</a> of the SIDN Fund and TopSectorICT.
 
 The Validation framework is published under the CC BY-4.0 license.
 
