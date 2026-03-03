@@ -58,7 +58,7 @@ Activity_Feed:
     - title: Validatiekader 'Verantwoord gebruik van LLMs voor publieke informatievoorziening'
       intro: >
         Algorithm Audit heeft in consortiumverband een validatiekader ontwikkeld voor de verantwoorde inzet van LLMs.
-      link: /technical-tools/eval-gen-ai/
+      link: nl/technical-tools/eval-gen-ai/
       image: /images/events/20260226_Validatiekader.png
       date: 26-02-2026
       type: tool launch
