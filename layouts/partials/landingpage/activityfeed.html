@@ -1,6 +1,7 @@
 <!-- Activity Feed -->
 {{ with .Params.Activity_Feed}}
 <!-- Featured activities -->
+{{ if .featured_activities}}
 <section class="activitifeed-section pb-5 mt-5" id="featured">
   <div class="container border-bottom-gradient rounded-lg" style="background-color:#deecf7;">
     <div class="row align-items-center">
@@ -70,9 +71,10 @@
     </div>
   </div>
 </section>
+{{ end }}
 <!-- /Featured Activities -->
-
 <!-- Items -->
+ {{ if .activities }}
 <section class="activitifeed-section pt-5 mt-2" id="events">
   <div class="container border-bottom-gradient rounded-lg" style="background-color:#deecf7;">
     <div class="row align-items-center">
@@ -135,6 +137,7 @@
     </div>
   </div>
 </section>
+{{ end}}
 <!-- /Items -->
 {{ end }}
 <!-- /Activity Feed -->

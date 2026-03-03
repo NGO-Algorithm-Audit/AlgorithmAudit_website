@@ -198,6 +198,7 @@ export default {
               description: "tag",
             },
           ],
+          description: "Leave empty to hide the featured activities",
         },
         {
           label: "View more featured button text",
@@ -271,6 +272,7 @@ export default {
               ],
             },
           ],
+          description: "Leave empty to hide the activities",
         },
         {
           label: "View more items button text",

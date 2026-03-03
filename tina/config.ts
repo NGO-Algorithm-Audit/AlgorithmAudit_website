@@ -22,7 +22,9 @@ import privacy_policy from "./collections/pages/privacy_policy";
 import sublandingpage from "./collections/pages/sublandingpage";
 import technical_tools_AIA_implementation_tool from "./collections/pages/technical_tools_AIA_implementation_tool";
 import technical_tools_BDT from "./collections/pages/technical_tools_BDT";
+import technical_tools_EvalGenAi from "./collections/pages/technical_tools_EvalGenAi";
 import technical_tools_SDG from "./collections/pages/technical_tools_SDG";
+
 // Your hosting provider likely exposes this as an environment variable
 const branch =
   process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
@@ -54,6 +56,7 @@ export default defineConfig({
       technical_tools_BDT,
       technical_tools_SDG,
       technical_tools_AIA_implementation_tool,
+      technical_tools_EvalGenAi,
       knowledge_platform_standards,
       knowledge_platform_policy_observatory,
       knowledge_platform_overview,
