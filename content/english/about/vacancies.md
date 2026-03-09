@@ -123,60 +123,44 @@ dynamic_form_engine:
 
 {{< accordions_area_open id="gen-AI" >}}
 
-{{< accordion_item_open title="Lead generatieve AI (1.0 fte) (Dutch speaking only)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="deadline 20-04-2026" tag2="Dutch speaking" >}}
+{{< accordion_item_open title="Lead generatieve AI evaluatie (1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="deadline 20-04-2026" >}}
 
 {{< button button_text="Solliciteer" button_link="#form1" >}}
 
-#### Functietitel: Lead generatieve AI (1.0 fte)
+#### Functietitel: Lead generatieve AI evaluatie (1.0 fte)
 
-Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol? Kom stichting Algorithm Audit versterken als Lead generatieve AI en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
+Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol? Kom stichting Algorithm Audit versterken als Lead generatieve AI evaluatie en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
 
 #### Over stichting Algorithm Audit
 
 Stichting Algorithm Audit is een Europees kennisplatform voor verantwoorde AI en AI-evaluatie. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. In enkele jaren zijn we uitgegroeid tot een internationaal erkende kennispartner op het gebied van AI bias testing, non-discriminatie, en de evaluatie van AI-systemen op socio-technische risico’s. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. We verrichten <a href="https://algorithmaudit.eu/nl/knowledge-platform/project-work/" target="_blank">projectwerk</a> voor o.a. de AI Office van de Europese Commissie, de Raad van Europa, Nederlandse uitvoeringsorganisaties en gemeenten.
 
-Wat ons als nonprofit drijft is het maatschappelijk belang en niet winstmaximalisatie. Wij publiceren onze adviezen en delen onze kennis via white papers. Door ons businessmodel zijn wij een alternatief voor commerciële consulting, waarin we onze maatschappelijke drive combineren met praktijkervaring. We ontwikkelen open source tools en evaluatiemethodieken: bijvoorbeeld een <a href="https://algorithmaudit.eu/nl/technical-tools/eval-gen-ai/#validation-framework" target="_blank">validatiekader</a> voor taalmodellen in publieke informatievoorziening en Nederlandse benchmark datasets voor evaluatie van generatieve AI. Door casusonderzoek en oordeelsvorming door onafhankelijke adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases. Voor deze werkzaamheden ontvingen we de <a href="https://khmw.nl/winnaar-eerste-prijs-khmw-brouwer-vertrouwensprijzen-2026-algorithm-audit/" target="_blank">Brouwer Vertrouwensprijs 2026</a> van de Koninklijke Hollandsche Maatschappij der Wetenschappen.
+Wat ons als nonprofit drijft is het maatschappelijk belang en niet winstmaximalisatie. Wij publiceren onze adviezen en delen onze kennis via white papers. Door ons businessmodel zijn wij een alternatief voor commerciële consulting, waarin we onze maatschappelijke drive combineren met praktijkervaring. We ontwikkelen open source tools en evaluatiemethodieken: bijvoorbeeld een <a href="https://algorithmaudit.eu/nl/technical-tools/eval-gen-ai/#validation-framework" target="_blank">validatiekader</a> voor taalmodellen die voor publieke informatievoorziening worden ingezet en Nederlandse benchmark datasets voor evaluatie van generatieve AI. Door casusonderzoek en oordeelsvorming door onafhankelijke adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases. Voor deze werkzaamheden ontvingen we de <a href="https://khmw.nl/winnaar-eerste-prijs-khmw-brouwer-vertrouwensprijzen-2026-algorithm-audit/" target="_blank">Brouwer Vertrouwensprijs 2026</a> van de Koninklijke Hollandsche Maatschappij der Wetenschappen.
 
 Wij zijn een jonge, enthousiaste en snelgroeiende organisatie met een klein kernteam maar met een groot netwerk van academici, beleidsmakers en experts in Nederland en Europa waar we mee samenwerken. Ons kantoor is gevestigd in Den Haag.
 
 #### Wat zoeken wij?
 
-Als Lead generatieve AI bij Algorithm Audit:
+Als Lead generatieve AI evaluatie bij Algorithm Audit:
 
-* Verricht je projectwerk voor de AI Office van de Europese Commissie met betrekking tot het evalueren van socio-technische risico’s van GPAI-modellen;
+* Verricht je projectwerk voor de AI Office van de Europese Commissie met betrekking tot het evalueren van socio-technische risico’s van GPAI-modellen en AI-systeem toepassingen;
 * Ben je een schakel tussen technische en juridische wetenschappers (van onder meer de Universiteit Leiden, Oxford en TNO) en beleidsmakers (van de Europese Commissie en Nederlandse ministeries);
-* Beoordeel je de methodologische zuiverheid van evaluatiemethoden voor GPAI en heb je inzicht hoe nieuwe evaluatiemethoden te ontwikkelen;
-* Werk je samen met software engineers om evaluatiemethoden voor GPAI-modellen te ontwikkelen en draag je bij aan de ontwikkelde code en documentatie voor deze evaluaties;
-* Onderzoek je verschillende benchmark datasets (bijv. BBQ, CommonSenseQA) en kun je de vertaalslag maken welke benchmark dataset nodig zijn voor de Nederlandse taal;
+* Beoordeel je de methodologische zuiverheid van evaluatiemethoden voor GPAI en generatieve AI-systemen en heb je inzicht hoe nieuwe evaluatiemethoden te ontwikkelen;
+* Werk je samen met software engineers om evaluatiemethoden voor GPAI-modellen en generatieve AI-systemen te ontwikkelen en draag je bij aan de ontwikkelde code en documentatie voor deze evaluaties;
+* Onderzoek je verschillende benchmark datasets (bijv. BBQ, CommonSenseQA) en kun je de vertaalslag maken welke benchmark datasets nodig zijn voor de Nederlandse taal;
 * Analyseer je documentatie over GPAI-modellen en heb je affiniteit met toepasselijke wet- en regelgeving (AI-verordening, Digitale Dienstenwet);
-* Draag je schriftelijk bij aan o.a. technisch en/of juridische analyses, presentaties, beschrijvingen van bevindingen over GPAI-modellen;
+* Draag je schriftelijk bij aan o.a. technisch en/of juridische analyses, presentaties, beschrijvingen van bevindingen over GPAI-modellen en generatieve AI-systemen;
 * Licht je door Algorithm Audit opgedane inzichten in begrijpelijke taal toe, zodat deze met de samenleving, beleidsmakers en juristen kunnen worden gedeeld;
 * Zie jij kansen voor nieuwe werkzaamheden op het gebied van de evaluatie van GPAI-toepassingen en draag je bij aan business development.
 
-<span style="color:#005AA7">Merk op:</span> Bovenstaande lijst is het profiel van een ideale kandidaat. Voldoe je aan enkele kenmerken en denk je de andere skills in korte tijd bij te kunnen leren, solliciteer en licht dit toe in je brief!
+<span style="color:#005AA7">NB:</span> Bovenstaande lijst is het profiel van een ideale kandidaat. Voldoe je aan enkele kenmerken en denk je relatief snel naar dit functieprofiel toe te kunnen groeien, solliciteer en licht dit toe in je brief!
 
 De exacte invulling van de werkzaamheden worden nader met het team afgestemd.
 
-#### Thematische werkzaamheden
-
-Binnen het team verdelen we de werkzaamheden. Afhankelijk van je ervaring en affiniteit krijg je een eigen takenpakket. De volgende onderwerpen zijn voorbeelden van thema’s waaraan Algorithm Audit werkt:
-
-* Implementatie van de AI-verordening:
-  * Verdiepen in wettekst en koppeling maken tussen concepten uit de wet en de algoritmische praktijk;
-  * Verdiepen in standaarden, inhoudelijke evaluatie van AI-systemen en de rapportage hierover;
-  * Inzichten verwerken in Algorithm Audit’s open source AI en algoritmes kwalificatietoolkit (AI AQT), incl. business development
-* Socio-technologische evaluatie van Large Language Models (LLMs):
-  * Begrip van kerncomponenten uit LLM-applicaties, zoals embeddings, Retrieval-Augmented Generation (RAG), knowledge bases, chunking etc.;
-  * Opstellen van domein-specifieke evaluatiecriteria voor LLM-toepassingen;
-  * Pro-actief contact leggen en onderhouden met LLM-gemeenschap in Nederland en Europa die zich verdiepen in socio-technologische evaluatie van LLM-toepassingen.
-* Non-discriminatie en bias-analyse:
-  * Verdiepen in algoritmische discriminatie en non-discriminatierecht;
-  * Uitvoeren van bias toesten;
-  * Doorontwikkelen van methodologie voor het toetsen en voorkomen van algoritmische discriminatie.
-
 #### Vaardigheden
 
-* 2-8 jaar werkervaring, waarvan ten minste 1 jaar ervaring met het evalueren van GPAI-toepassingen;
+* 2-8 jaar werkervaring, waarvan ten minste 1 jaar ervaring met het evalueren van GPAI-toepassingen en/of generatieve AI-toepassingen;
+*	Kennis, kunde en praktijkervaring met specifieke benchmark-frameworks, zoals Hugging Face, Inspect AI, LM Eval, DeepEval, LangSmith, etc
 * Ervaring met het bouwen van RAG-applicaties, foundation models en/of guardrails is een pré
 * Relevante masterstudie afgerond (data science, AI, statistiek, computationele taalwetenschappen etc.)
 * Aantoonbare affiniteit met verantwoorde algoritmes en AI
