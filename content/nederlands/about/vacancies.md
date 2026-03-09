@@ -113,7 +113,7 @@ dynamic_form_engine:
 
 {{< accordions_area_open id="gen-AI" >}}
 
-{{< accordion_item_open title="Lead generatieve AI evaluatie (1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="deadline 20-04-2026" >}}
+{{< accordion_item_open title="Lead generatieve AI evaluatie (1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="deadline 30-04-2026" >}}
 
 {{< button button_text="Solliciteer" button_link="#form1" >}}
 
@@ -133,32 +133,33 @@ Wij zijn een jonge, enthousiaste en snelgroeiende organisatie met een klein kern
 
 Als Lead generatieve AI evaluatie bij Algorithm Audit:
 
-* Verricht je projectwerk voor de AI Office van de Europese Commissie met betrekking tot het evalueren van socio-technische risico’s van GPAI-modellen en AI-systeem toepassingen;
+* Verricht je projectwerk voor de AI Office van de Europese Commissie met betrekking tot het evalueren van socio-technische risico’s van general purpose (GP)AI-modellen en -toepassingen;
 * Ben je een schakel tussen technische en juridische wetenschappers (van onder meer de Universiteit Leiden, Oxford en TNO) en beleidsmakers (van de Europese Commissie en Nederlandse ministeries);
-* Beoordeel je de methodologische zuiverheid van evaluatiemethoden voor GPAI en generatieve AI-systemen en heb je inzicht hoe nieuwe evaluatiemethoden te ontwikkelen;
-* Werk je samen met software engineers om evaluatiemethoden voor GPAI-modellen en generatieve AI-systemen te ontwikkelen en draag je bij aan de ontwikkelde code en documentatie voor deze evaluaties;
+* Beoordeel je de methodologische zuiverheid van evaluatiemethoden voor generatieve AI-systemen en heb je inzicht hoe nieuwe evaluatiemethoden te ontwikkelen;
+* Werk je samen met software engineers om evaluatiemethoden voor generatieve AI-systemen te ontwikkelen en draag je bij aan de ontwikkelde code en documentatie voor deze evaluaties;
 * Onderzoek je verschillende benchmark datasets (bijv. BBQ, CommonSenseQA) en kun je de vertaalslag maken welke benchmark datasets nodig zijn voor de Nederlandse taal;
-* Analyseer je documentatie over GPAI-modellen en heb je affiniteit met toepasselijke wet- en regelgeving (AI-verordening, Digitale Dienstenwet);
+* Analyseer je documentatie over generatieve AI-modellen en heb je affiniteit met toepasselijke wet- en regelgeving (AI-verordening, Digitale Dienstenwet);
 * Draag je schriftelijk bij aan o.a. technisch en/of juridische analyses, presentaties, beschrijvingen van bevindingen over GPAI-modellen en generatieve AI-systemen;
+*	Ben je flexibel om het team ook op andere projecten (bijv. bias testing, algoritme-inventarisatie en toetsing) bij te staan;
 * Licht je door Algorithm Audit opgedane inzichten in begrijpelijke taal toe, zodat deze met de samenleving, beleidsmakers en juristen kunnen worden gedeeld;
-* Zie jij kansen voor nieuwe werkzaamheden op het gebied van de evaluatie van GPAI-toepassingen en draag je bij aan business development.
-
-<span style="color:#005AA7">NB:</span> Bovenstaande lijst is het profiel van een ideale kandidaat. Voldoe je aan enkele kenmerken en denk je relatief snel naar dit functieprofiel toe te kunnen groeien, solliciteer en licht dit toe in je brief!
+* Zie jij kansen voor nieuwe werkzaamheden op het gebied van de evaluatie van generatieve AI-toepassingen en draag je bij aan business development.
 
 De exacte invulling van de werkzaamheden worden nader met het team afgestemd.
 
 #### Vaardigheden
 
-* 2-8 jaar werkervaring, waarvan ten minste 1 jaar ervaring met het evalueren van GPAI-toepassingen en/of generatieve AI-toepassingen;
-*	Kennis, kunde en praktijkervaring met specifieke benchmark-frameworks, zoals Hugging Face, Inspect AI, LM Eval, DeepEval, LangSmith, etc
-* Ervaring met het bouwen van RAG-applicaties, foundation models en/of guardrails is een pré
-* Relevante masterstudie afgerond (data science, AI, statistiek, computationele taalwetenschappen etc.)
-* Aantoonbare affiniteit met verantwoorde algoritmes en AI
-* Sterk organisatorisch vermogen en inzicht in het snel ontwikkelde vakgebied
-* In staat om in klein team in goede afstemming te werken en ook veel zelfstandig op te pakken
-* Ondernemende en pionierende instelling passend bij een start-up
-* Representatief naar opdrachtgevers en belanghebbenden
-* Uitstekende spreek- en schrijfvaardigheid Engels en Nederlands
+* 2-8 jaar werkervaring, waarvan ten minste 1 jaar ervaring met het evalueren van generatieve AI-toepassingen;
+*	Kennis, kunde en praktijkervaring met specifieke benchmark-frameworks, zoals Hugging Face, Inspect AI, LM Eval, DeepEval, LangSmith, etc;
+* Ervaring met het bouwen van RAG-applicaties, foundation models en/of guardrails is een pré;
+* Relevante masterstudie afgerond (data science, AI, statistiek, computationele taalwetenschappen etc.);
+* Aantoonbare affiniteit met verantwoorde algoritmes en AI;
+* Sterk organisatorisch vermogen en inzicht in het snel ontwikkelende vakgebied;
+* In staat om in klein team in goede afstemming te werken en ook veel zelfstandig op te pakken;
+* Ondernemende en pionierende instelling passend bij een start-up;
+* Representatief naar opdrachtgevers en belanghebbenden;
+* Uitstekende spreek- en schrijfvaardigheid Engels en Nederlands.
+
+<span style="color:#005AA7">NB:</span> Bovenstaande lijst is het profiel van een ideale kandidaat. Voldoe je aan enkele kenmerken en denk je relatief snel naar dit functieprofiel toe te kunnen groeien, solliciteer en licht dit toe in je brief!
 
 #### Wat verwachten wij?
 
@@ -177,7 +178,7 @@ De exacte invulling van de werkzaamheden worden nader met het team afgestemd.
 
 #### Praktische opmerkingen
 
-* Deze vacature staat open tot en met 20-04-2026;
+* Deze vacature staat open tot en met 31-04-2026;
 * Op basis van de aangeleverde documenten kun je worden uitgenodigd voor een (online) kennismakingsgesprek;
 * Bij een wederzijdse match volgen 1-2 vervolggesprekken op locatie;
 * De startdatum wordt in overleg bepaald (voor, na of tijdens de zomer afhankelijk van beschikbaarheid).
