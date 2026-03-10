@@ -190,7 +190,7 @@ De exacte invulling van de werkzaamheden worden nader met het team afgestemd.
 
 #### Praktische opmerkingen
 
-* Deze vacature staat open tot en met 31-04-2026;
+* Deze vacature staat open tot en met 30-04-2026;
 * Op basis van de aangeleverde documenten kun je worden uitgenodigd voor een (online) kennismakingsgesprek;
 * Bij een wederzijdse match volgen 1-2 vervolggesprekken op locatie;
 * De startdatum wordt in overleg bepaald (voor, na of tijdens de zomer afhankelijk van beschikbaarheid).
@@ -291,7 +291,7 @@ Binnen het team verdelen we de werkzaamheden. Afhankelijk van je ervaring en aff
 
 #### Praktische opmerkingen
 
-* Deze vacature staat open tot en met 31-04-2026;
+* Deze vacature staat open tot en met 30-04-2026;
 * Op basis van de aangeleverde documenten kun je worden uitgenodigd voor een online kennismakingsgesprek;
 * Bij een wederzijdse match volgen 1-2 vervolggesprekken op locatie;
 * De startdatum wordt in overleg bepaald.
