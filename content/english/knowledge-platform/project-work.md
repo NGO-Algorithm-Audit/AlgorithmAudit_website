@@ -40,7 +40,10 @@ quick_navigation:
   title: Overview
   links:
     - title: 2026
-      url: "#AI-safety"
+      url: "#Gouda"
+    - title: Inventory algorithms and AI - Municipality of Gouda
+      url: "#Gouda"
+      indent: 1
     - title: Sociotechnical risk - European Commission
       url: "#AI-safety"
       indent: 1
@@ -75,9 +78,19 @@ quick_navigation:
 
 # 2026
 
+<!-- Gemeente Gouda -->
+
+{{< container_open title="Inventory algorithms and AI - Municipality of Gouda" id="Gouda" icon="fas fa-database" >}}
+
+Algorithm Audit supports the Municipality of Gouda with organisation-wide identification and risk classification of algorithms and AI systems. The municipality makes use of the open source AI and Algorithm Qualification Tooklit [(AI AQT)](/technical-tools/implementation-tool/) with custom back-end.
+
+{{< image image1="/images/partner logo-cropped/GemeenteGouda.jpg" alt1="Gemeente Gouda" caption1="Gemeente Gouda" link1="" width_desktop="3" >}}
+
+{{< container_close >}}
+
 <!-- EC1 Evaluating sociotechnical risks of GPAI -->
 
-{{< container_open title="Evaluating sociotechnical risks of GPAI – European Commission" id="AI-safety" icon="fas fa-asterisk" >}}
+{{< container_open title="Evaluating sociotechnical risks of General Purpose (GP)AI – European Commission" id="AI-safety" icon="fas fa-asterisk" >}}
 
 As part of a broader consortium, Algorithm Audit supports the AI Office of the European Commission in the course of 2026-28 in evaluating the sociotechnical risks of General Purpose AI (GPAI) models. The project will be carried out in collaboration with, among others, Technopolis Group, TNO, Leiden University and Oxford Internet Institute.
 
