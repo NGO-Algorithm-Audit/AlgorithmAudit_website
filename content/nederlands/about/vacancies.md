@@ -7,7 +7,9 @@ quick_navigation:
  title: Overzicht
  links:
    - title: Lead generatieve AI evaluatie
-     url: '#gen-AI'
+     url: '#accordion_area_gen-AI'
+   - title: AI adviseur
+     url: '#accordion_area_AI-adviseur'
 dynamic_form_engine:
   - title: Sollicitatieformulier Lead generatieve AI evaluatie
     id: form1
@@ -58,62 +60,62 @@ dynamic_form_engine:
       type: submit
       button_text: Solliciteer
       backend_link: 'https://formspree.io/f/mdoqdpnn'
-  # - title: Sollicitatieformulier stagiair
-  #   id: form2
-  #   icon: fas fa-user-tag
-  #   content: |
-  #     Solliciteer door onderstaand formulier in te vullen.
-  #   section:
-  #     - questions:
-  #         - identifier: name2
-  #           title: Naam
-  #           content: ''
-  #           required: true
-  #           type: text
-  #         - identifier: mail2
-  #           title: Mailadres
-  #           content: ''
-  #           required: true
-  #           type: email
-  #         - identifier: motivation2
-  #           title: Motivatiebrief
-  #           content: |
-  #             Maximaal één A4.
-  #           file_upload_text: Selecteer bestand
-  #           required: true
-  #           type: file
-  #         - identifier: CV2
-  #           title: CV
-  #           content: ''
-  #           file_upload_text: Selecteer bestand
-  #           required: true
-  #           file_type: ''
-  #           type: file
-  #         - identifier: terms-and-conditions2
-  #           title: Toestemming verwerking persoonsgegevens
-  #           content: >
-  #             Ingezonden gegevens zullen alleen verwerkt worden in het kader van
-  #             het sollicitatieproces. Je gegevens zullen veilig worden
-  #             opgeslagen en worden verwijderd nadat de procedure is afgerond.
-  #           use_card_style: false
-  #           options:
-  #             - id: agree2
-  #               value: agree
-  #               title: Akkoord
-  #               content: ''
-  #           required: true
-  #           type: checkbox
-  #   complete_form_options:
-  #     type: submit
-  #     button_text: Solliciteer
-  #     backend_link: 'https://formspree.io/f/maneqoyd'
+  - title: Sollicitatieformulier AI adviseur
+    id: form2
+    icon: fas fa-user-tag
+    content: |
+      Solliciteer door onderstaand formulier in te vullen.
+    section:
+      - questions:
+          - identifier: name2
+            title: Naam
+            content: ''
+            required: true
+            type: text
+          - identifier: mail2
+            title: Mailadres
+            content: ''
+            required: true
+            type: email
+          - identifier: motivation2
+            title: Motivatiebrief
+            content: |
+              Maximaal één A4.
+            file_upload_text: Selecteer bestand
+            required: true
+            type: file
+          - identifier: CV2
+            title: CV
+            content: ''
+            file_upload_text: Selecteer bestand
+            required: true
+            file_type: ''
+            type: file
+          - identifier: terms-and-conditions2
+            title: Toestemming verwerking persoonsgegevens
+            content: >
+              Ingezonden gegevens zullen alleen verwerkt worden in het kader van
+              het sollicitatieproces. Je gegevens zullen veilig worden
+              opgeslagen en worden verwijderd nadat de procedure is afgerond.
+            use_card_style: false
+            options:
+              - id: agree2
+                value: agree
+                title: Akkoord
+                content: ''
+            required: true
+            type: checkbox
+    complete_form_options:
+      type: submit
+      button_text: Solliciteer
+      backend_link: 'https://formspree.io/f/maneqoyd'
 ---
 
 <!-- Item 1 -->
 
 {{< accordions_area_open id="gen-AI" >}}
 
-{{< accordion_item_open title="Lead generatieve AI evaluatie (1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="deadline 30-04-2026" >}}
+{{< accordion_item_open title="Lead generatieve AI evaluatie" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="deadline 30-04-2026" tag2="1.0 fte">}}
 
 {{< button button_text="Solliciteer" button_link="#form1" >}}
 
@@ -198,7 +200,108 @@ Vragen over de vacature of de procedure? Stuur een email naar [a.voogt@algorithm
 {{< accordions_area_close >}}
 
 
-<!-- Item 2 -->
+<!-- Item 2 - AI adviseur -->
+
+{{< accordions_area_open id="AI-adviseur" >}}
+
+{{< accordion_item_open title="Junior of medior AI adviseur" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="deadline 30-04-2026" tag2="1.0 fte">}}
+
+{{< button button_text="Solliciteer" button_link="#form2" >}}
+
+#### Functietitel: Junior of medior AI adviseur
+
+Wil jij concreet bijdragen aan de verantwoorde inzet van AI en algoritmes? En wil jij dat doen vanuit een onafhankelijke en maatschappelijke rol? Kom stichting Algorithm Audit versterken als AI adviseur en draag bij aan de collectieve kennisopbouw over verantwoorde AI.
+
+#### Over stichting Algorithm Audit
+
+Stichting Algorithm Audit is een Europees kennisplatform voor verantwoorde AI en AI-evaluatie. We zijn een technisch onderlegde, sterk interdisciplinaire en maatschappelijk betrokken organisatie die zich inspant voor publieke kennis over verantwoorde AI en algoritmes. In enkele jaren zijn we uitgegroeid tot een internationaal erkende kennispartner op het gebied van AI bias testing, non-discriminatie, en de evaluatie van AI-systemen op socio-technische risico’s. We adviseren voornamelijk publieke sector organisaties en zetten ons actief in om kennisuitwisseling tussen overheidsorganisaties aan te jagen. We verrichten <a href="https://algorithmaudit.eu/nl/knowledge-platform/project-work/" target="_blank">projectwerk</a> voor o.a. de AI Office van de Europese Commissie, de Raad van Europa, Nederlandse uitvoeringsorganisaties en gemeenten.
+
+Wat ons als nonprofit drijft is het maatschappelijk belang en niet winstmaximalisatie. Wij publiceren onze adviezen en delen onze kennis via white papers. Door ons businessmodel zijn wij een alternatief voor commerciële consulting, waarin we onze maatschappelijke drive combineren met praktijkervaring. We ontwikkelen open source tools en evaluatiemethodieken: bijvoorbeeld een <a href="https://algorithmaudit.eu/nl/technical-tools/eval-gen-ai/#validation-framework" target="_blank">validatiekader</a> voor taalmodellen die voor publieke informatievoorziening worden ingezet en Nederlandse benchmark datasets voor evaluatie van generatieve AI. Door casusonderzoek en oordeelsvorming door onafhankelijke adviescommissies dragen we bij aan publieke kennisopbouw en normering van concrete use cases. Voor deze werkzaamheden ontvingen we de <a href="https://khmw.nl/winnaar-eerste-prijs-khmw-brouwer-vertrouwensprijzen-2026-algorithm-audit/" target="_blank">Brouwer Vertrouwensprijs 2026</a> van de Koninklijke Hollandsche Maatschappij der Wetenschappen.
+
+Wij zijn een jonge, enthousiaste en snelgroeiende organisatie met een klein kernteam maar met een groot netwerk van academici, beleidsmakers en experts in Nederland en Europa waar we mee samenwerken. Ons kantoor is gevestigd in Den Haag.
+
+#### Wat zoeken wij?
+
+Als AI adviseur bij Algorithm Audit:
+
+* Verricht je projectwerk met betrekking tot de verantwoorde inzet van algoritmen en AI voor verschillende klanten, voornamelijk in de publieke sector;
+* Analyseer je documentatie over algoritmes en heb je affiniteit met toepasselijke wet- en regelgeving;
+* Je bent in staat een brug te vormen tussen juristen, ethici en technici die vanuit hun eigen disciplines werken aan de verantwoorde inzet van algoritmes en AI;
+* Draai je mee in een team met ervaren adviseurs;
+* Draag je schriftelijk bij aan o.a. technisch en/of juridische analyses, presentaties, beschrijvingen van technische tools;
+* Heb je inzicht in de statistische basis van algoritmen, AI en data-analyse (het zelfstandig kunnen ontwikkelen van Python-code is een pré);
+* Onderzoek je naar eigen inzicht onderwerpen waarvoor in het bedrijfsleven geen tijd is;
+* Ondersteun je het team met praktische aspecten die komen kijken bij het runnen van een jonge organisatie, zoals het hosten van events, PR en communicatie;
+* Licht je door Algorithm Audit opgedane inzichten in begrijpelijke taal toe, zodat deze met de samenleving, beleidsmakers en juristen kunnen worden gedeeld.
+
+#### Thematische werkzaamheden
+
+Binnen het team verdelen we de werkzaamheden. Afhankelijk van je ervaring en affiniteit krijg je een eigen takenpakket. De volgende onderwerpen zijn voorbeelden van thema’s waaraan Algorithm Audit werkt:
+
+* Implementatie van de AI-verordening:
+  * Verdiepen in wettekst en koppeling maken tussen concepten uit de wet en de algoritmische praktijk;
+  * Verdiepen in standaarden, inhoudelijke evaluatie van AI-systemen en de rapportage hierover;
+  * Inzichten verwerken in Algorithm Audit’s open source AI-verordening implementatie tool, incl. business development.
+* Socio-technologische evaluatie van Large Language Models (LLMs):
+  * Begrip van kerncomponenten uit LLM-applicaties, zoals embeddings, Retrieval-Augmented Generation (RAG), knowledge bases, chunking etc.;
+  * Opstellen van domein-specifieke evaluatiecriteria voor LLM-toepassingen;
+  * Pro-actief contact leggen en onderhouden met LLM-gemeenschap in Nederland en Europa die zich verdiepen in socio-technologische evaluatie van LLM-toepassingen.
+* Non-discriminatie en bias-analyse:
+  * Verdiepen in algoritmische discriminatie en non-discriminatierecht;
+  * Uitvoeren van bias toesten;
+  * Doorontwikkelen van methodologie voor het toetsen en voorkomen van algoritmische discriminatie.
+
+#### Vaardigheden
+
+* Relevante universitaire studie afgerond (technisch, juridisch en/of bestuurskundig etc.);
+* Aantoonbare affiniteit met verantwoorde algoritmes en AI, vanuit een juridische, beleidsmatige en/of technische invalshoek;
+* Werkervaring:
+  * Junior: 1-2 jaar werkervaring, bij voorkeur concrete ervaring met het ontwerpen van of adviseren over verantwoorde algoritmes en AI;
+  * Medior: 2-5 jaar werkervaring, ten minste 2 jaar ervaring met het ontwerpen van of adviseren over verantwoorde algoritmes en AI;
+* Programmeervaardigheden en inzicht in statistiek zijn een pré;
+* Sterk organisatorisch vermogen;
+* In staat om in klein team in goede afstemming te werken en ook veel zelfstandig op te pakken;
+* Ondernemende en pionierende instelling passend bij een start-up;
+* Representatief naar opdrachtgevers en belanghebbenden;
+* Uitstekende schrijfvaardigheid Engels en Nederlands.
+
+#### Wat verwachten wij?
+
+* Je bent 3-5 dagen per week op kantoor in Den Haag;
+* Bereidheid om binnenlands te reizen, en incidenteel Europees;
+* Nederlandse nationaliteit of werkvergunning.
+
+#### Arbeidsvoorwaarden
+
+* Salaris op basis van 1.0 fte, excl. vakantietoeslag, 13e maand, pensioenopbouw (6% bruto per maand), thuiswerkvergoeding. Het salaris kan worden bijgesteld naar boven bij buitengewone werkervaring:
+  * Junior: Bruto maandsalaris van €3.200-4.200/maand
+  * Medior: Bruto maandsalaris van €3.800-5.000/maand
+* 26 vakantiedagen;
+* Hybride werkopstelling, waarbij minimaal drie dagen aanwezigheid op kantoor wordt verwacht;
+* Arbeidsovereenkomst voor één jaar.
+
+#### Praktische opmerkingen
+
+* Deze vacature staat open tot en met 31-04-2026;
+* Op basis van de aangeleverde documenten kun je worden uitgenodigd voor een online kennismakingsgesprek;
+* Bij een wederzijdse match volgen 1-2 vervolggesprekken op locatie;
+* De startdatum wordt in overleg bepaald.
+
+#### Diversiteit en inclusie
+
+Nadenken over verantwoorde algoritmes kunnen we alleen als we ieders perspectief meenemen. We hechten daarom sterk aan diversiteit en inclusie in al onze werkzaamheden, met name in het betrekken van verschillende belanghebbende groepen. Ook als organisatie willen we diversiteit weerspiegelen m.b.t. bijvoorbeeld gender, culturele en disciplinaire achtergrond.
+
+#### Contact
+
+Vragen over de vacature of de procedure? Stuur een email naar [a.voogt@algorithmaudit.eu](mailto:a.voogt@algorithmaudit.eu).
+
+{{< dynamic_form_engine index="1" >}}
+
+{{< accordion_item_close >}}
+
+{{< accordions_area_close >}}
+
+<!-- Item 3 - Stagiair -->
 
 <!-- {{< accordions_area_open id="stagiair" >}}
 
