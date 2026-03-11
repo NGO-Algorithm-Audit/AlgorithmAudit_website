@@ -102,7 +102,7 @@ De uitkomsten van de tool worden weergegeven in onderstaande figuur. Er wordt on
 
 De AI en Algoritme Kwalificatie Toolkit (AI AQT) is ontwikkeld in samenwerking met de gemeente Amsterdam. De broncode van de tool is beschikbaar in <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> en kan worden (her)gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. De AI AQT wordt gebruikt door onder meer:
 
-{{< image image1="/images/partner%20logo-cropped/GemeenteAmsterdam.png" image2="/images/partner%20logo-cropped/De Nederlandsche Bank.png" image3="/images/partner%20logo-cropped/GemeenteDenHaag.png" width_desktop="4" width_mobile="4" alt1="Gemeente Amsterdam" alt2="De Nederlandsche Bank" alt3="Gemeente Den Haag" caption1="Gemeente Amsterdam" caption2="De Nederlandsche Bank" caption3="Gemeente Den Haag" >}}
+{{< image image1="/images/partner%20logo-cropped/GemeenteAmsterdam.png" image2="/images/partner%20logo-cropped/De Nederlandsche Bank.png" image3="/images/partner%20logo-cropped/GemeenteDenHaag.png" image4="/images/partner%20logo-cropped/GemeenteGouda.jpg" width_desktop="3" width_mobile="8" alt1="Gemeente Amsterdam" alt2="De Nederlandsche Bank" alt3="Gemeente Den Haag" alt4="Gemeente Gouda" caption1="Gemeente Amsterdam" caption2="De Nederlandsche Bank" caption3="Gemeente Den Haag" caption4="Gemeente Gouda" >}}
 
 {{< container_close >}}
 
