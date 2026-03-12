@@ -85,39 +85,31 @@ Activity_Feed:
 Areas_of_AI_expertise:
   title: Expertise
   enable: true
-  width_m: 4
+  width_m: 6
   width_s: 12
   feature_item:
     - name: Sociotechnical evaluation of generative AI
       icon: fas fa-robot
       content: >
-        Evaluating Large Language Models (LLMs) and other general-purpose AI
-        models for robustness, privacy and AI Act compliance. Based on
-        real-world examples, are developing a framework to analyze content
-        filters, guardrails and user interaction design choices. <a href="/technical-tools/eval-gen-ai" style="text-decoration:
-        underline;">Learn more</a> about our evaluation
-        framework.
-    - name: AI Act implementation and standards
+        We evaluate Large Language Models (LLMs) and other generative AI
+        applications relating to guardrails, privacy and AI Act compliance. Based on a mature RAG application of the Dutch judiciary, we have developed a <a href="/technical-tools/eval-gen-ai" style="text-decoration: underline;">validation framework</a> to analyze content filters, embedding strategies and user interaction design choices. <a href="/knowledge-platform/project-work/#AI-safety" style="text-decoration: underline;">Read more</a> about AI Safety project work we conduct for the AI Office of the European Commission. 
+    - name: AI Act implementation and AI standards
       icon: fas fa-certificate
       content: >
         Our open-source <a href="/technical-tools/implementation-tool/"
-        style="text-decoration: underline;">AI and Algorithms Qualification Toolkit (AI AQT)</a> helps
-        organizations identifying AI systems and assigning the right risk
-        category. As a member of Dutch and European standardization
-        organisations NEN and CEN-CENELEC, Algorithm Audit monitors and
-        contributes to the development of standards for AI systems. See also our
-        public <a href="/knowledge-platform/standards/" style="text-decoration:
-        underline;">knowledge base</a> on standardization
-    - name: Bias analysis
+        style="text-decoration: underline;">AI and Algorithms Qualification Toolkit (AI AQT)</a> helps organizations identify algorithms and AI systems at scale and helps in assigning the appropriate risk category. As a member of Dutch and European standardization organisations NEN and CEN-CENELEC, Algorithm Audit monitors and contributes to the development of standards for the AI Act. See also our public <a href="/knowledge-platform/standards/" style="text-decoration: underline;">knowledge base</a> on standardization.
+    - name: Bias analysis and non-discrimination
       icon: fas fa-chart-pie
       content: >
         We evaluate algorithmic systems both from a qualitative and quantitative
-        dimension. Besides expertise about data analysis and AI engineering, we
-        possess have in-depth knowledge of legal frameworks concerning
-        non-discrimination, automated decision-making and organizational risk
-        management. See our <a href="/knowledge-platform/knowledge-base/"
-        style="text-decoration: underline;">public standards</a> how to deploy
-        algorithmic systems responsibly.
+        dimension, including analysis of objective justification as a key element of EU non-discrimination law. In addition to expertise in data analysis and statistics, Algorithm Audit has legal expertise relating to the GDPR, specifically prohibited automated decision-making, and organizational risk management. See our <a href="/knowledge-platform/knowledge-base/"
+        style="text-decoration: underline;">public standards</a> for the responsible use of algorithmic systems.
+    - name: Auditing and legal compliance
+      icon: fas fa-scroll
+      content: >
+        We audit algorithmic systems from organisational, technial and legal
+        perspective. We also offer support with interpretation and implementation of the AI Act and GDPR legal texts, annexes and guidelines from the European Commission, including issues regarding definitions, high-risk applications and conformity assessment. Our <a href="/knowledge-platform/knowledge-base/"
+        style="text-decoration: underline;">audit reports and white papers</a> contribute to public knowledge how legal compliance can be realised.
   button_text: Explore collaboration
   button_link: /knowledge-platform/project-work/#form
 Distinctive_in:
@@ -131,7 +123,7 @@ Distinctive_in:
       content: >
         We are pioneering the future of responsible AI by bringing together
         expertise in statistics, software development, law and ethics. Our work
-        is widely read throughout Europe and beyond.
+        is widely read throughout the Netherlands, Europe and beyond.
     - name: Not-for-profit
       icon: fas fa-seedling
       content: >

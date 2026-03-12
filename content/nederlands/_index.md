@@ -91,65 +91,26 @@ Areas_of_AI_expertise:
   width_m: 6
   width_s: 12
   feature_item:
-    - name: Socio-technische evaluatie generatieve AI
+    - name: Socio-technische evaluatie van generatieve AI
       icon: fas fa-robot
       content: >
-        Evaluatie van Large Language Models (LLMs) en andere generatieve
-        AI-modellen met betrekking tot robuustheid, privacy en naleving van de
-        AI-verordening. Op basis van praktijkvoorbeelden ontwikkelen we een
-        validatiekader om contentfilters, guardrails en ontwerpkeuzes voor
-        gebruikersinteractie te beoordelen. <a
-
-        href="/nl/technical-tools/eval-gen-ai"
-
-        style="text-decoration: underline;">Lees meer</a> over ons
-        validatiekader.
+        We evalueren Large Language Models (LLMs) en andere generatieve AI-toepassingen met betrekking tot vangrails, privacy en naleving van de AI-verordening. Gebaseerd op een volwassen RAG-applicatie van de Rechtspraak, hebben we een <a href="/nl/technical-tools/eval-gen-ai" style="text-decoration: underline;">validatiekader</a> ontwikkeld voor keuzes inzake contentfilters, embedding strategieën en gebruikersinteractie designkeuzes. <a href="/nl/knowledge-platform/project-work/#AI-safety"
+        style="text-decoration: underline;">Lees meer</a> over ons AI Safety projectwerk dat we verrichten in opdracht van de AI Office van de Europese Commissie. 
     - name: AI-verordening implementatie en normen
       icon: fas fa-certificate
       content: >
-        Onze open-source <a
-
-        href="/technical-tools/implementation-tool/"
-
-        style="text-decoration: underline;">AI-verordening implementatie
-        tool</a> helpt organisaties bij het identificeren van AI-systemen en het
-        toewijzen van de juiste risicocategorie. Als lid van Nederlandse en
-        Europese normalisatieorganisaties NEN en CEN-CENELEC volgt en draagt
-        Algorithm Audit actief bij aan de ontwikkeling van geharmoniseerde
-        normen voor AI-systemen. Zie ook onze publieke <a
-
-        href="/nl/knowledge-platform/standards/"
-
-        style="text-decoration: underline;">kennisbank</a> over standaardisatie.
-    - name: Bias analysis
+        Onze open-source <a href="/nl/technical-tools/implementation-tool/"
+        style="text-decoration: underline;">AI en Algoritme Kwalificatie Toolkit (AI AQT)</a> ondersteunt organizaties om algoritmes en AI-systemen op schaal te identificeren en helpt bij het toekennen van de correcte risicocategorie. Als lid van de Nederlandse en Europese normalisatie-instituten NEN en CEN-CENELEC monitoren en dragen we bij aan de ontwikkeling van normen voor de AI-verordening. Zie ook onze publieke <a href="/knowledge-platform/standards/" style="text-decoration: underline;">kennisbank</a> over normen voor AI.
+    - name: Biasanalyse en non-discriminatie
       icon: fas fa-chart-pie
       content: >
-        We evalueren algoritmische systemen vanuit zowel een kwalitatieve als
-        kwantitatieve dimensie. Naast expertise in data-analyse en software
-        ontwikkeling beschikken we over kennis van juridische kaders rondom
-        non-discriminatie, geautomatiseerde besluitvorming en organisatorisch
-        risicomanagement. Zie onze <a
-
-        href="/nl/knowledge-platform/knowledge-base/"
-
-        style="text-decoration: underline;">publieke standaarden</a> voor
-        verantwoord gebruik van algoritmische systemen.
-    - name: Op maat gemaakte technische hulpmiddelen
-      icon: fas fa-code
+        We evalueren algoritmische systemen vanuit zowel kwalitatief als kwantitatief oogpunt, met inbegrip van de objectieve rechtvaardigingstoets als kern van het Europees non-discriminatie recht. Naast data analyse en statistische expertise heeft Algorithm Audit juridische expertise met betrekking tot de AVG, in het bijzonder het voorkomen van verboden volledige geautomatiseerde besluitvorming en organisatorisch risicomanagement. Zie ook onze <a href="/nl/knowledge-platform/knowledge-base/"
+        style="text-decoration: underline;">publieke standaarden</a> voor verantwoord gebruik van algoritmische systemen.
+    - name: Auditing en wettelijke naleving
+      icon: fas fa-scroll
       content: >
-        Voor specifieke toepassingen ten behoeven van de verantwoorde inzet van
-        algoritmes en AI ontwikkelt Algorith Audit technische tools. Zie
-        bijvoorbeeld onze open source tools voor <a
-        href="/nl/technical-tools/sdg/"
-        style="text-decoration: underline;">synthetische data
-        generatie</a> en <a
-        href="/nl/technical-tools/bdt/"
-        style="text-decoration: underline;">unsupervised bias
-        detectie</a>, zoals ontwikkeld in samenwerking
-        met het Ministerie van Binnenlandse Zaken en de Diesnt Uitvoering
-        Onderwijs (DUO). Onze tools zijn local-only. Dat betekent dat data de
-        omgeving van organisaties niet verlaten en er geen afhankelijkheden zijn
-        van cloudplatforms.
+        We auditen algoritmische systemen vanuit zowel een organisatorisch, technisch als juridisch perspectief. Daarnaast ondersteunen we bij interpretatie en implementatie van de AI-verordening en de AVG wetteksten, bijlages en richtlijnen van de Europese Commissie, zo ook definitiekwesties, hoogrisico bepalingen en conformiteitsbeoordelingen. Onze <a href="/nl/knowledge-platform/knowledge-base/"
+        style="text-decoration: underline;">auditrapporten en white papers</a>  dragen bij aan publieke kennisopbouw over hoe wettelijke naleving gerealiseerd kan worden.
   button_text: Bespreek samenwerking
   button_link: /nl/knowledge-platform/project-work/#form
 Distinctive_in:
@@ -163,7 +124,7 @@ Distinctive_in:
       content: >
         Wij geven vorm aan de toekomst van verantwoorde AI door expertise in
         statistiek, softwareontwikkeling, recht en ethiek samen te brengen. Ons
-        werk wordt gelezen door heel Europa en daarbuiten.
+        werk wordt gelezen door Nederland, Europa en daarbuiten.
     - name: Geen winstoogmerk
       icon: fas fa-seedling
       content: >
