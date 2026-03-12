@@ -10,14 +10,14 @@
 {{ $width_mobile = .Get "width_mobile" }}
 {{ end }}
 
-<div class="row mb-5 align-items-center" id={{ .Get "id" }}>
+<div class="row mb-5 justify-content-center align-items-center" id={{ .Get "id" }}>
     {{ range (seq 1 4)}}
         {{ if $.Get (print "image" .) }}
         {{ $image := $.Get (print "image" .) | relURL }}
         {{ $alt := $.Get (print "alt" .) | relURL }}
         {{ $caption := $.Get (print "caption" .) | relURL }}
         {{ $link := $.Get (print "link" .) | relURL }}
-        <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block ">
+        <div class="col-lg-{{ $width_desktop }} col-{{ $width_mobile }} center-block my-4 my-lg-0">
             {{ if $link }}
             <a href={{ $link }} target="_blank">
             {{ end }}
