@@ -31,6 +31,7 @@ quick_navigation:
       url: "#flowchart-questionnaire-2"
 promo_bar:
   - content: "**\U0001F44B Wil je AI AQT binnen je eigen organisatie gebruiken? Dat is eenvoudiger dan je denkt! Neem [contact ](/nl/about/contact)met ons op.**\n"
+  - content: "**✉️ Mis je features in AI AQT? Stuur je verzoek in naar info@algorithmaudit.eu.**"
 ---
 
 {{< promo_bar index="0" >}}
@@ -41,9 +42,9 @@ promo_bar:
 
 Wettelijke naleving veronderstelt correcte vaststelling of algoritmische systemen onder de reikwijdte van wet- en regelgeving vallen, inclusief bijbehorende risicocategorieën. AI AQT bestaat uit dynamische vragenlijsten die helpen bij:
 
-1 – Identificatie van AI-systemen, impactvolle algoritmes en volledig geautomatiseerde besluitvorming;
+<span style="color:#005aa7; font-weight:600;">1 – Identificatie:</span> AI-systemen, volledig geautomatiseerde besluitvorming en impactvolle algoritmes.
 
-2 – Risicoclassificatie van AI-systemen.
+<span style="color:#005aa7; font-weight:600;">2 – Riscoclassificatie:</span> Verboden AI-systemen, hoogrisico AI-systemen, aanvullende transparantievereisten en AI-model voor algemene doeleinden (GPAI).
 
 De tool is [open-source](/nl/technical-tools/implementation-tool/#source-code) beschikbaar en kan kosteloos binnen uw organisatie worden gebruikt voor AI governance. Alle uitkomsten van de vragenlijsten worden weergegeven in onderstaand [figuur](/nl/technical-tools/implementation-tool/#outcome). De flowcharts van de vragenlijsten kunnen ook [hieronder](/nl/technical-tools/implementation-tool/#flowchart-questionnaire-1) worden gevonden.
 
@@ -53,11 +54,15 @@ De tool is [open-source](/nl/technical-tools/implementation-tool/#source-code) b
 
 {{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="60vh" height_mobile="100vh" >}}
 
+<!-- Promo bar -->
+
+{{< promo_bar index="1" >}}
+
 <!-- Infographic: Waarom correcte kwalificatie van algoritmische systemen belangrijk is-->
 
 {{< container_open icon="fa-solid fa-clipboard-check" title="Waarom correcte kwalificatie van algoritmische systemen belangrijk is" id="infographic" >}}
 
-Het toepassen van juridische definities in de praktijk roept lastige vragen op. Bijvoorbeeld: Welke kenmerken onderscheiden AI van andere algoritmische systemen? En welke criteria bepalen de risicocategorie van een AI-systeem? Gestandaardiseerde vragenlijsten helpen om algoritmemanagement efficiënt uit te voeren en wettelijke naleving op schaal te borgen. Vragenlijsten kunnen met behulp van AI AQT binnen organisaties decentraal worden ingevuld. De opgeslagen resultaten kunnen kunnen centraal door expertteams worden geanalyseerd. AI AQT bevat niet alleen vragenlijsten voor naleving van de AI-verordening, ook in het kader van de AVG en aanvullende beleidsinstrumenten (zoals de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a>) zijn vragenlijsten opgenomen (zie onderstaand figuur).
+Het toepassen van juridische definities in de praktijk roept lastige vragen op. Bijvoorbeeld: welke kenmerken onderscheiden AI van andere algoritmische systemen? En welke criteria bepalen de risicocategorie van een AI-systeem? Gestandaardiseerde vragenlijsten helpen om algoritmemanagement efficiënt uit te voeren en wettelijke naleving op schaal te borgen. Vragenlijsten kunnen met behulp van AI AQT binnen organisaties decentraal worden ingevuld. De opgeslagen resultaten kunnen kunnen centraal door expertteams worden geanalyseerd. AI AQT bevat niet alleen vragenlijsten voor naleving van de AI-verordening, ook in het kader van de AVG en aanvullende beleidsinstrumenten (zoals de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a>) zijn vragenlijsten opgenomen (zie onderstaand figuur).
 
 #### Infographic – Overzicht AI AQT vragenlijsten
 

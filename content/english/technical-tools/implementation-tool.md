@@ -2,7 +2,7 @@
 type: regular
 title: AI and Algorithms Qualification Toolkit (AI AQT)
 subtitle: >
-  AI AQT is a tool supporting identification and risk classification of algorithmic systems. Complex legal definitions from the AI Act, GDPR and other policy frameworks are simplified into understandable questions. The tool is developed open source and can be used for free, locally by your organization. 
+  AI AQT is a tool supporting identification and risk classification of algorithmic systems. Complex legal definitions from the AI Act, GDPR and other policy frameworks are simplified into understandable questions. The tool is developed open source and can be used for free by your organization. 
 image: /images/svg-illustrations/AI research.svg
 quick_navigation:
   title: Content overview
@@ -26,7 +26,8 @@ quick_navigation:
     - title: Flowchart Questionnaire 2
       url: "#flowchart-questionnaire-2"
 promo_bar:
-  - content: "**\U0001F44B Do you also want to start using AI AQT within your organisation? It's easier than you think! Get in [contact ](/en/about/contact) to learn more. .**\n"
+  - content: "**\U0001F44B Do you also want to start using AI AQT within your organisation? It's easier than you think! Get in [contact ](/about/contact) to learn more.**\n"
+  - content: "**✉️ Mis je features in AI AQT? Stuur je verzoek in naar info@algorithmaudit.eu.**"
 ---
 
 {{< promo_bar index="0" >}}
@@ -37,9 +38,9 @@ promo_bar:
 
 Ensuring legal compliance when using algorithmic systems requires correct qualification of in-scope systems and correct risks categorization. AI AQT consists of dynamic questionnaires that help with:  
 
-1 – Identification of AI systems and assessment of high-impact algorithms and solely automated decision-making (sADM); 
+<span style="color:#005aa7; font-weight:600;">1 – Identification:</span> AI systems, solely automated decision-making and high-impact algorithms.
 
-2 – Risk classification of AI systems. 
+<span style="color:#005aa7; font-weight:600;">2 – Risk classification:</span> Prohibited AI systems, high risk AI systems, additional transparency requirements and General Purpose AI (GPAI) models.
 
 The tool is developed [open-source](/technical-tools/implementation-tool/#source-code) and can be used for free within your organization for AI governance. All outcomes of the questionnaires are shown in the [figure](/technical-tools/implementation-tool/#outcome) below. The flowcharts of the questionnaires can also be found [below](/technical-tools/implementation-tool/#flowchart-questionnaire-1).
 
@@ -48,6 +49,10 @@ The tool is developed [open-source](/technical-tools/implementation-tool/#source
 <!-- Web app -->
 
 {{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="60vh" height_mobile="100vh" >}}
+
+<!-- Promo bar -->
+
+{{< promo_bar index="1" >}}
 
 <!-- Infographic: Why correct qualification of algorithmic systems matters -->
 
