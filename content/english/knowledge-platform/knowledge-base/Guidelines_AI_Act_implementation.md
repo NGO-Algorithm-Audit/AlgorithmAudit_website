@@ -9,6 +9,8 @@ facets:
     label: white paper
   - value: subject_AIAct
     label: AI Act implementation
+  - value: subject_AI_system
+    label: AI system definition
 weight: -13
 title: Implementation of the AI Act 
 subtitle: |
