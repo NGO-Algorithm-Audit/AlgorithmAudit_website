@@ -26,8 +26,8 @@ quick_navigation:
     - title: Flowchart Questionnaire 2
       url: "#flowchart-questionnaire-2"
 promo_bar:
-  - content: "**\U0001F44B Do you also want to start using AI AQT within your organisation? It's easier than you think! Get in [contact ](/about/contact) to learn more.**\n"
-  - content: "**✉️ Mis je features in AI AQT? Stuur je verzoek in naar info@algorithmaudit.eu.**"
+  - content: "**👋 Interested in using AI AQT in your organization? It's easier than you think! Get in [contact](/about/contact) to learn more.**"
+  - content: "**✉️ Missing features in AI AQT? Send your request to info@algorithmaudit.eu.**"
 ---
 
 {{< promo_bar index="0" >}}
@@ -96,7 +96,13 @@ The outcomes of the tool are displayed in the figure below. The following catego
 
 The first version of AI AQT was developed in collaboration with the Municipality of Amsterdam and has since been further developed by Algorithm Audit. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be (re)used under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. AI AQT is used by the following organisations:
 
-{{< image image1="/images/partner%20logo-cropped/GemeenteAmsterdam.png" image2="/images/partner%20logo-cropped/De Nederlandsche Bank.png" image3="/images/partner%20logo-cropped/GemeenteDenHaag.png" image4="/images/partner%20logo-cropped/GemeenteGouda.jpg" width_desktop="3" width_mobile="8" alt1="Gemeente Amsterdam" alt2="De Nederlandsche Bank" alt3="Gemeente Den Haag" alt4="Gemeente Gouda" caption1="Gemeente Amsterdam" caption2="De Nederlandsche Bank" caption3="Gemeente Den Haag" caption4="Gemeente Gouda" >}}
+<!-- first row partner logos -->
+
+{{< image width_desktop="3" width_mobile="8" image1="/images/partner%20logo-cropped/GemeenteAmsterdam.png" image2="/images/partner%20logo-cropped/De Nederlandsche Bank.png" image3="/images/partner%20logo-cropped/GemeenteDenHaag.png" image4="/images/partner%20logo-cropped/GemeenteGouda.jpg"  alt1="Gemeente Amsterdam" alt2="De Nederlandsche Bank" alt3="Gemeente Den Haag" alt4="Gemeente Gouda" caption1="Gemeente Amsterdam" caption2="De Nederlandsche Bank" caption3="Gemeente Den Haag" caption4="Gemeente Gouda" >}}
+
+<!-- second row partner logos -->
+
+{{< image width_desktop="3" width_mobile="8" image1="/images/partner%20logo-cropped/GemeenteHelsinki.png" alt1="Gemeente Helsinki" caption1="Gemeente Helsinki" >}}
 
 {{< container_close >}}
 
