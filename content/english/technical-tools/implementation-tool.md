@@ -15,7 +15,7 @@ quick_navigation:
       url: '#infographic'
     - title: Outcomes of the tool
       url: '#outcome'
-    - title: Source code
+    - title: Source code, partners and license
       url: '#source-code'
     - title: Documentation
       url: '#documentation'
@@ -90,9 +90,9 @@ The outcomes of the tool are displayed in the figure below. The following catego
 
 {{< container_close >}}
 
-<!-- Source code -->
+<!-- Source code, partners and license -->
 
-{{< container_open icon="fas fa-terminal" title="Development, usage and source code:" id="source-code" >}}
+{{< container_open icon="fas fa-terminal" title="Source code, partners and license" id="source-code" >}}
 
 The first version of AI AQT was developed in collaboration with the Municipality of Amsterdam and has since been further developed by Algorithm Audit. The source code of the tool can be found on <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> and can be (re)used under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. AI AQT is used by the following organisations:
 
