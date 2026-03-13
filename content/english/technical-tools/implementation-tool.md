@@ -26,8 +26,8 @@ quick_navigation:
     - title: Flowchart Questionnaire 2
       url: "#flowchart-questionnaire-2"
 promo_bar:
-  - content: "**\U0001F44B Do you also want to start using AI AQT within your organisation? It's easier than you think! Get in [contact ](/about/contact) to learn more.**\n"
-  - content: "**✉️ Mis je features in AI AQT? Stuur je verzoek in naar info@algorithmaudit.eu.**"
+  - content: "**👋 Interested in using AI AQT in your organization? It's easier than you think! Get in [contact](/about/contact) to learn more.**"
+  - content: "**✉️ Missing features in AI AQT? Send your request to info@algorithmaudit.eu.**"
 ---
 
 {{< promo_bar index="0" >}}
