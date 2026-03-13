@@ -14,7 +14,7 @@ facets:
     label: AVG
 weight: -15
 title: >-
-  Publiek standaard 'Betekenisvolle menselijke tussenkomst risicoprofileringsalgoritmes'
+  Publieke standaard 'Betekenisvolle menselijke tussenkomst risicoprofileringsalgoritmes'
 subtitle: >
   Stappenplan om uitsluitend op profilering gebaseerde besluitvorming te voorkomen
 image: /images/knowledge_base/Publieke_standaard_Betekenisvolle_menselijke_tussenkomst.png

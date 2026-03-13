@@ -1210,6 +1210,8 @@ $accent: #FF4081;
     position: sticky;
     top: 80px;
     z-index: 1000;
+    overflow-y: scroll;
+    max-height: 90vh;
   }
 }
 body {

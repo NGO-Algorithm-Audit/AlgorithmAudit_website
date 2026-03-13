@@ -40,8 +40,11 @@ quick_navigation:
   title: Inhoudsopgave
   links:
     - title: 2026
-      url: "#AI-safety"
-    - title: Sociotechnical risk - European Commission
+      url: "#Gouda"
+    - title: Inventarisatie algoritmes en AI - Gemeente Gouda
+      url: "#Gouda"
+      indent: 1
+    - title: Socio-technische risico's - Europese Commissie
       url: "#AI-safety"
       indent: 1
     - title: 2025
@@ -75,11 +78,21 @@ quick_navigation:
 
 # 2026
 
+<!-- Gemeente Gouda -->
+
+{{< container_open title="Inventarisatie algoritmes en AI - Gemeente Gouda" id="Gouda" icon="fas fa-database" >}}
+
+Algorithm Audit ondersteunt de Gemeente Gouda met organisatiebrede identificatie en risicoclassificatie van algoritmes en AI. De gemeente maakt gebruik van de open source AI and Algorithm Kwalification Toolkit [(AI AQT)](/nl/technical-tools/implementation-tool/) met op maat gemaakte back-end.
+
+{{< image image1="/images/partner logo-cropped/GemeenteGouda.jpg" alt1="Gemeente Gouda" caption1="Gemeente Gouda" link1="" width_desktop="3" >}}
+
+{{< container_close >}}
+
 <!-- EC1 Evaluating sociotechnical risks of GPAI -->
 
-{{< container_open title="Evaluating sociotechnical risks of GPAI – European Commission" id="AI-safety" icon="fas fa-asterisk" >}}
+{{< container_open title="Evaluatie socio-technische risico's van General Purpose (GP)AI – European Commission" id="AI-safety" icon="fas fa-asterisk" >}}
 
-In consortiumverband ondersteunt Algorithm Audit de Europese Commissie in 2026-28 bij het evalueren van socio-technische risico’s van General Purpose AI (GPAI) modellen. Het project wordt uitgevoerd o.a. in samenwerking met Technopolis Group, TNO, Universiteit Leiden en Oxford Internet Institute.
+In consortiumverband ondersteunt Algorithm Audit de AI Office van de Europese Commissie in 2026-28 bij het evalueren van socio-technische risico’s van General Purpose AI (GPAI) modellen. Het project wordt uitgevoerd o.a. in samenwerking met Technopolis Group, TNO, Universiteit Leiden en Oxford Internet Institute.
 
 {{< image image1="/images/partner logo-cropped/EC.png" alt1="European Commission" caption1="European Commission" link1="" width_desktop="3" >}}
 
