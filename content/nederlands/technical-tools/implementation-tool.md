@@ -19,7 +19,7 @@ quick_navigation:
       url: '#infographic'
     - title: Uitkomsten tool
       url: "#outcome"
-    - title: Broncode
+    - title: Broncode, partners en licentie
       url: "#source-code"
     - title: Documentatie
       url: "#documentation"
@@ -94,9 +94,9 @@ De uitkomsten van de tool worden weergegeven in onderstaand figuur. Er wordt ond
 
 {{< container_close >}}
 
-<!-- Broncode -->
+<!-- Broncode, partners en licentie -->
 
-{{< container_open icon="fas fa-terminal" title="Ontwikkeling, gebruik en broncode" id="source-code" >}}
+{{< container_open icon="fas fa-terminal" title="Broncode, partners en licentie" id="source-code" >}}
 
 De eerste versie van AI AQT is ontwikkeld in samenwerking met de gemeente Amsterdam en is daarna door Algorithm Audit doorontwikkeld. De broncode van de tool is beschikbaar in <a href="https://github.com/NGO-Algorithm-Audit/AI-Act-Implementation-Tool" target="_blank">Github</a> en kan worden (her)gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. De AI AQT wordt gebruikt door onder meer de volgende organisaties:
 
