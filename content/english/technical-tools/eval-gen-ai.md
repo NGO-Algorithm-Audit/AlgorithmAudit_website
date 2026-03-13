@@ -1,7 +1,7 @@
 ---
 title: Evaluation of generative AI
 subtitle: |
-  Overview of Algorithm Audit's expertise pertaining to generative AI.
+  Overview of Algorithm Audit's expertise realting to generative AI.
 image: /images/technical tools/eval-gen-ai/Kader.png
 quick_navigation:
   title: Content overview
@@ -33,8 +33,7 @@ Algorithm Audit has versatile expertise in evaluating generative AI. We have con
 
 Soon available in English.
 
-<!-- {{< embed_pdf url="/pdf-files/technical-tools/UBDT/20260215 Auditing a Dutch Public Sector Risk Profiling Algorithm.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}} -->
-
+{{< embed_pdf url="/pdf-files/technical-tools/eval-gen-ai/20260226 Validatiekader 'Verantwoorde inzet van LLMs voor publieke informatievoorziening'.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 {{< container_close >}}
 
 <!-- Development and usage -->
