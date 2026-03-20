@@ -112,7 +112,7 @@ The first version of AI AQT was developed in collaboration with the Municipality
 
 Considerations and choices made during development of the questionnaires relating to the AI Act, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> from the European Commission on the definition of an AI system, Article 22 GDPR and guidelines of the <a href="https://ec.europa.eu/newsroom/article29/items/612053" target="_blank">EPDB</a> and <a href="https://www.autoriteitpersoonsgegevens.nl/documenten/advies-geautomatiseerde-besluitvorming" target="_blank">Dutch DPA</a> (AP) and the Dutch <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Register Guidelines</a> are described in 'AI AQT Documentation'. The policy briefing elaborates why the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> of the European Commission blur the interpretation of the AI system definition.
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260312 AI AQT documentation.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20250228 Policy briefing guidelines EC AI system definition.pdf" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260312 AI AQT documentation EN.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20250228 Policy briefing guidelines EC AI system definition.pdf" >}}
 
 {{< container_close >}}
 
