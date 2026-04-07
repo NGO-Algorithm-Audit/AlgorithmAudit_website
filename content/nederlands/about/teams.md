@@ -138,10 +138,10 @@ team:
         bio: |
           Postdoctorale onderzoeker AI, Media en Democratie Lab, Universiteit van Amsterdam
         linkedIn: "https://www.linkedin.com/in/laurens-naudts-9a935729"
-  - id: executive-team
-    title: Coördinerend team
+  - title: Coördinerend team
     content: Team dat full-time de verschillende werkzaamheden van Algorithm Audit coördineert.
     icon: fas fa-users
+    id: executive-team
     team_members:
       - image: /images/people/JParie.jpg
         name: Jurriaan Parie
@@ -158,11 +158,11 @@ team:
         bio: |
           AI Adviseur / Validator
         linkedIn: "https://www.linkedin.com/in/kaloyan-filipov/"
-      - image: /images/people/YBergstra.jpg
-        name: Ydo Bergstra
+      - image: /images/people/LPam.jpeg
+        name: Lenny Pam
         bio: |
           Werkstudent
-        linkedIn: "https://www.linkedin.com/in/ydo-bergstra-471215246/"
+        linkedIn: "https://www.linkedin.com/in/lenny-pam-030a0a134/"
         accordion_content: ""
 quick_navigation:
   title: Overzicht

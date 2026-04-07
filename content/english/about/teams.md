@@ -201,11 +201,11 @@ team:
           AI Advisor / Validator
         linkedIn: "https://www.linkedin.com/in/kaloyan-filipov/"
         accordion_content: ""
-      - image: /images/people/YBergstra.jpg
-        name: Ydo Bergstra
+      - image: /images/people/LPam.jpeg
+        name: Lenny Pam
         bio: |
           Intern
-        linkedIn: "https://www.linkedin.com/in/ydo-bergstra-471215246/"
+        linkedIn: "https://www.linkedin.com/in/lenny-pam-030a0a134/"
         accordion_content: ""
 ---
 
