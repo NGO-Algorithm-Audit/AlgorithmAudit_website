@@ -31,9 +31,8 @@ Algorithm Audit has versatile expertise in evaluating generative AI. We have con
 
 {{< container_open icon="far fa-check" title="Validation framework" id="validation-framework" >}}
 
-Soon available in English.
+{{< embed_pdf url="/pdf-files/technical-tools/eval-gen-ai/20260413 Validatiekader 'Verantwoorde inzet van LLMs voor publieke informatievoorziening' EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/eval-gen-ai/20260226 Validatiekader 'Verantwoorde inzet van LLMs voor publieke informatievoorziening'.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 {{< container_close >}}
 
 <!-- Development and usage -->
