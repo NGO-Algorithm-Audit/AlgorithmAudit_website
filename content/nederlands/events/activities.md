@@ -28,6 +28,21 @@ facet_groups:
       - value: training
         label: Training
 events:
+  - title: >- 
+      Het Nederlandse AI Congres 2026 - Impact met AI, the Fair Tech way
+    description: >
+      Het Nederlandse AI Congress 2026 gaf een scherp zicht van waar Nederland staat met verantwoorde AI. Ylja Remmits, Head of Projects bij Algorithm Audit, was panellid tijdens <a href="https://aic4nl.nl/congres-break-out/general-purpose-ai/" target="_blank">een discussie over verantwoorde General Purpose AI (GPAI) in de praktijk</a>, samen met Cas Mevissen (Ministerie van Economische Zaken en Klimaat) en Sven Stevenson (Autoriteit Persoonsgegevens). De discussies gingen over praktische handvatten om aan de AI-verordening te voldoen, bevorderen van Europese waarden en waarborgen van verantwoorde implementatie, met een focus op inkoop en het ontwikkelen van apps.
+    image: /images/partner logo-cropped/AIC4NL.png
+    date: 14-04-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q2_2026
+        label: Q2-2026
+        hide: true
+      - value: type_event
+        label: Event
   - title: >-
       Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening'
     description: >
