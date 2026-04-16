@@ -6,6 +6,8 @@ facet_groups:
     facets:
       - value: q1_2026
         label: Q1-2026
+      - value: q2_2026
+        label: Q2-2026
       - value: q4_2025
         label: Q4-2025
       - value: q3_2025
@@ -28,6 +30,21 @@ facet_groups:
       - value: training
         label: Training
 events:
+  - title: >- 
+      The Dutch AI Congres 2026 - Impact with AI, the Fair Tech way
+    description: >
+      The Dutch AI Congress 2026 offered a sharp view of where the Netherlands sits with responsible AI. Algorithm Audit's own Head of Projects, Ylja Remmits, was a panelist for <a href="https://aic4nl.nl/congres-break-out/general-purpose-ai/" target="_blank">a discussion on responsible General Purpose AI (GPAI) in practice</a>, alongside Cas Mevissen (Ministerie van Econimische Zaken en Klimaat) and Sven Stevenson (Autoriteit Persoonsgegevens). The discussions centered around practical approaches for complying with the AI Act, aligning with European values and ensuring responsible deployment, with a focus on procurement and application development.
+    image: /images/partner logo-cropped/AIC4NL.png
+    date: 14-04-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q2_2026
+        label: Q2-2026
+        hide: true
+      - value: type_event
+        label: Event
   - title: >-
       Presentation Validation framework 'Responsible use of Large Language Models (LLM) for public information provision' (Dutch only)
     description: >
