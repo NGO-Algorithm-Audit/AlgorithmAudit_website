@@ -7,8 +7,6 @@ dynamic_form_engine:
   - title: Aanmelden
     id: form1
     icon: fas fa-user-tag
-    content: |
-      Er zijn nog een paar plekken over voor het event. Aanmelden betekent geen automatische bevestiging voor deelname aan het event. U wordt uiterlijk dinsdag 24 februari geïnformeerd of u bij het event aanwezig kunt zijn.
     section:
       - questions:
           - identifier: name
@@ -31,11 +29,13 @@ dynamic_form_engine:
             type: email
           - identifier: terms-and-conditions
             id: terms-and-conditions
-            title: Toestemming verwerking persoonsgegevens
+            title: Door dit vakje aan te vinken ga je akkoord met
             content: >
-              Ingezonden gegevens zullen alleen verwerkt worden in het kader van
-              het event. Je gegevens zullen veilig worden
-              opgeslagen en worden verwijderd nadat de procedure is afgerond.
+              - Ingezonden gegevens worden alleen verwerkt in het kader van het event. 
+
+              - Je aanmelding is definitief zodra de deelnamekosten zijn voldaan zoals beschreven in de bevestigingsmail. 
+              
+              - Informeer Algorithm Audit zo snel mogelijk als je niet bij het event aanwezig kunt zijn door een mail te sturen naar info@algorithmaudit.eu.
             use_card_style: false
             options:
               - id: agree
@@ -48,43 +48,48 @@ dynamic_form_engine:
       type: submit
       button_text: Aanmelden
       backend_link: 'https://formspree.io/f/mdoqdpnn'
-promo_bar:
-  - content: |
-      Er zijn nog een paar plekken over voor het event. Aanmelden betekent geen automatische bevestiging voor deelname aan het event. U wordt uiterlijk dinsdag 24 februari geïnformeerd of u bij het event aanwezig kunt zijn.
-# quick_navigation:
-#   title: Inhoudsopgave
-#   links:
-#     - title: Validatiekader
-#       url: "#event"
+# promo_bar:
+#   - content: |
+#       Er zijn nog een paar plekken over voor het event. Aanmelden betekent geen automatische bevestiging voor deelname aan het event. U wordt uiterlijk dinsdag 24 februari geïnformeerd of u bij het event aanwezig kunt zijn.
+quick_navigation:
+  title: Inhoudsopgave
+  links:
+    - title: Masterclass GPAI
+      url: "#event"
 ---
 
-<!-- {{< accordions_area_open id="event" >}}
+{{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Presentatie Validatiekader 'Verantwoorde inzet Large Language Models (LLM) voor publieke informatievoorziening'" id="event" background_color="#ffffff" tag1="26-02-2026" tag2="event" tag3="Validatiekader LLMs" image="/images/events/20260226_Validatiekader.png" >}}
+{{< accordion_item_open title="Masterclass 'Testen van General Purpose AI (GPAI) toepassingen'" id="event" background_color="#ffffff" tag1="25-06-2026" tag2="masterclass" tag3="hybride" image="/images/events/20260625_GPAI_event.png" >}}
 
 {{< promo_bar index="0" >}}
 
 <br>
 
 #### Beschrijving
-Overheden experimenteren volop met de toepassing van taalmodellen en andere generatieve AI-toepassingen. Gebaseerd op een aantal voor-aanstaande pilots zijn best-practices vastgelegd in een validatiekader. Het validatiekader helpt organisaties om taalmodellen zo verantwoord mogelijk in te zetten. Meld je aan voor het presentatiemoment van het kader.
+De capaciteiten van GPAI-modellen en -systemen blijven zich ontwikkelen. GPAI-systemen evenaren of overtreffen inmiddels expertniveau op vaardigheden als “redeneren”, “probleemoplossen” en “academische vaardigheden”. Toch is vaak onduidelijk wat deze begrippen daadwerkelijk omvatten. In deze masterclass krijgen deelnemers state-of-the-art inzichten in de nieuwste ontwikkelingen op het snel evoluerende gebied van GPAI-benchmarking.
 
 #### Datum
-Donderdag 26 februari 14:00-16:00 uur
+Donderdag 25 juni, 10:00-17:00 uur
 
 #### Adres
-Raad voor de Rechtspraak (Kneuterdijk 1, 2514 EM Den Haag)
+Hybride of The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den Haag
 
 #### Programma
-- 13:30-14:00 Inloop
-- 14:00-14:45 Deel I (presentatie van validatiekader)
-- 14:45-15:00 Pauze
-- 15:15-16:00 Deel II (paneldiscussie en Q&A met publiek)
-- 16:00-16:15 Borrel
+- 09:30-10:00 Inloop
+- 10:00-11:15 Introductie General Purpose AI (GPAI) en het testen van GPAI-toepassingen
+- 11:15-11:30 Pauze – koffie, thee en versnaperingen
+- 11:30-12:30 State-of-the-art concepten en ontwikkelingen in GPAI-benchmarking
+- 12:30-13:30 Lunch – verzorgd
+- 13:30-14:45 Casus uit de Nederlandse publieke sector
+- 14:45-15:15 Pauze – koffie, thee en versnaperingen
+- 15:15-16:30 Praktijkoefeningen om hands-on ervaring op te doen
+- 16:30-17:30 Borrel – verzorgd
+
 
 #### Doelgroep
-Brede doelgroep, o.a. ontwikkelteams, bestuurders, data scientists, juristen, beleidsmedewerkers
+Professionals uit de private en publieke sector die regelmatig werken met GPAI-toepassingen, zoals het implementeren van generatieve AI-oplossingen in werkprocessen, het testen van GPAI-capaciteiten en/of het werken aan AI-beleid.
 
 {{< dynamic_form_engine index="0" >}}
 
-{{< accordion_item_close >}} -->
+{{< accordion_item_close >}}
