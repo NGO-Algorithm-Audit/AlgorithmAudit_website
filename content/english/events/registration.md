@@ -1,29 +1,95 @@
 ---
 title: Registration
 subtitle: >
-  Register for events of Algorithm Audit.
+  Register for events of Algorithm Audit
 image: /images/svg-illustrations/about.svg
+dynamic_form_engine:
+  - title: Register
+    id: form1
+    icon: fas fa-user-tag
+    section:
+      - questions:
+          - identifier: name
+            id: name
+            title: Name
+            content: ''
+            required: true
+            type: text
+          - identifier: function
+            id: function
+            title: Position and organisation
+            content: ''
+            required: true
+            type: text
+          - identifier: mail
+            id: contact-details
+            title: Email address
+            content: ''
+            required: true
+            type: email
+          - identifier: terms-and-conditions
+            id: terms-and-conditions
+            title: By checking this box you agree with
+            content: >
+              - Submitted data will only be processed in the context of the event. 
+
+              - Your registration is complete once the participation fee has been paid as outlined in the confirmation email. 
+              
+              - Inform Algorithm Audit as soon as possible if you are unable to attend the event by sending an email to info@algorithmaudit.eu.
+            use_card_style: false
+            options:
+              - id: agree
+                value: agree
+                title: Agree
+                content: ''
+            required: true
+            type: checkbox
+    complete_form_options:
+      type: submit
+      button_text: Register
+      backend_link: 'https://formspree.io/f/mdoqdpnn'
+# promo_bar:
+#   - content: |
+#       A few spots are still available for the event. Registering does not automatically confirm participation. You will be informed by Tuesday February 24 at the latest whether you can attend the event.
+quick_navigation:
+  title: Overview
+  links:
+    - title: Masterclass GPAI
+      url: "#event"
 ---
 
-<!-- {{< accordions_area_open id="webinar" >}}
+{{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Lunch webinar 'Open source tools for AI validation" id="webinar" background_color="#ffffff" date="13-06-2025" tag1="webinar" tag2="technical tools" image="/images/logo/logo.svg" >}}
+{{< accordion_item_open title="Masterclass 'Testing General Purpose AI (GPAI) applications'" id="event" background_color="#ffffff" tag1="25-06-2026" tag2="masterclass" tag3="hybrid" image="/images/events/20260625_GPAI_event.png" >}}
 
-{{< button button_text="Register" button_link="#form" >}}
+{{< promo_bar index="0" >}}
+
+<br>
 
 #### Description
-In this webinar, you will learn more about validating AI systems. Which tools can you use to detect bias in an algorithm or AI system when protected characteristics are not available? And what is the purpose and necessity of synthetic data generation? Additionally, the webinar will address developing software without relying on cloud providers or commercial parties. During the webinar, two open-source tools will be introduced (an unsupervised bias detection tool and a synthetic data generation tool) that have been developed as part of the Innovation Budget 2024-25 by the Ministry of the Interior and Kingdom Relations, the Education Executive Agency, and the Algorithm Audit foundation. The last 20 minutes will be reserved for questions.
+The capabilities of GPAI models and systems continue to improve. GPAI systems now match or exceed expert-level performance on capabilities such as “reasoning”, “problem solving” and “graduate-level skills”. Yet it is often unclear what these concepts actually capture. In this masterclass, attendees gain state-of-the-art insights about the latest developments in the rapidly advancing field of GPAI benchmarking.
 
 #### Date
-Friday June 13th 12h00-13h00 CET
+Thursday June 25th, 10:00-17:00 CET
 
-#### Program
-- 12:00-12:05 Online check-in and introduction (AA)
-- 12:05-12:20 Introduction and launch of the 'Unsupervised Bias Detection Tool' + DUO use case (AA)
-- 12:20-12:40 Introduction and launch of the 'Synthetic Data Generation Tool' + DUO use case (AA + DUO)
-- 12:40-13:00 Q&A session with the audience
+#### Address
+Hybrid or The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den Haag
+
+#### Programme
+- 09:30-10:00 Doors open
+- 10:00-11:15 Introduction General Purpose AI (GPAI) and testing GPAI applications
+- 11:15-11:30 Break – coffee, tea and refreshments
+- 11:30-12:30 State-of-the-art concepts and developments in GPAI benchmarking
+- 12:30-13:30 Lunch – catered
+- 13:30-14:45 Case study from Dutch public sector
+- 14:45-15:15 Break – coffee, tea and refreshments
+- 15:15-16:30 Hands-on exercises to build practical experience
+- 16:30-17:30 Drinks – catered
+
 
 #### Audience
-Primarily data scientists who can start using the tools, but secondarily also less technical audiences (policy officers, implementation experts, etc.)
+Professionals from private and public sector who regularly work with GPAI application, such as implementation of generative AI solutions in work processes, testing GPAI capabilities and/or working on AI policy.
 
-{{< accordion_item_close >}} -->
+{{< dynamic_form_engine index="0" >}}
+
+{{< accordion_item_close >}}
