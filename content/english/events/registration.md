@@ -27,13 +27,29 @@ dynamic_form_engine:
             content: ''
             required: true
             type: email
+          - identifier: participation-type
+            id: participation-type
+            title: Participation type
+            content: ''
+            use_card_style: false
+            options:
+              - id: in-person
+                value: In-person
+                title: In-person
+                content: ''
+              - id: online
+                value: Online
+                title: Online
+                content: ''
+            required: true
+            type: radio
           - identifier: terms-and-conditions
             id: terms-and-conditions
             title: By checking this box you agree with
             content: >
               - Submitted data will only be processed in the context of the event. 
 
-              - Your registration is complete once the participation fee has been paid as outlined in the confirmation email. 
+              - Your registration is complete once the participation fee (€300 for in-person participation or €200 for online participation) has been paid. Payment instructions will be send to you by email. 
               
               - Inform Algorithm Audit as soon as possible if you are unable to attend the event by sending an email to info@algorithmaudit.eu.
             use_card_style: false

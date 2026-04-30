@@ -27,13 +27,29 @@ dynamic_form_engine:
             content: ''
             required: true
             type: email
+          - identifier: participation-type
+            id: participation-type
+            title: Type deelname
+            content: ''
+            use_card_style: false
+            options:
+              - id: in-person
+                value: Fysiek
+                title: Fysiek
+                content: ''
+              - id: online
+                value: Online
+                title: Online
+                content: ''
+            required: true
+            type: radio
           - identifier: terms-and-conditions
             id: terms-and-conditions
             title: Door dit vakje aan te vinken ga je akkoord met
             content: >
               - Ingezonden gegevens worden alleen verwerkt in het kader van het event. 
 
-              - Je aanmelding is definitief zodra de deelnamekosten zijn voldaan zoals beschreven in de bevestigingsmail. 
+              - Je inschrijving is volledig zodra de deelnamekosten (€300 voor fysieke deelname of €200 voor online deelname) zijn betaald. Betalingsinstructies worden je per e-mail toegestuurd.    
               
               - Informeer Algorithm Audit zo snel mogelijk als je niet bij het event aanwezig kunt zijn door een mail te sturen naar info@algorithmaudit.eu.
             use_card_style: false
