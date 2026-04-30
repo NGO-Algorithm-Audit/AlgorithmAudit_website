@@ -47,7 +47,7 @@ dynamic_form_engine:
     complete_form_options:
       type: submit
       button_text: Aanmelden
-      backend_link: 'https://formspree.io/f/mdoqdpnn'
+      backend_link: 'https://formspree.io/f/xeogpapg'
 # promo_bar:
 #   - content: |
 #       Er zijn nog een paar plekken over voor het event. Aanmelden betekent geen automatische bevestiging voor deelname aan het event. U wordt uiterlijk dinsdag 24 februari geïnformeerd of u bij het event aanwezig kunt zijn.

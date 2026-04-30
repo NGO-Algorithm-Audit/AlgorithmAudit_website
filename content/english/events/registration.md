@@ -47,7 +47,7 @@ dynamic_form_engine:
     complete_form_options:
       type: submit
       button_text: Register
-      backend_link: 'https://formspree.io/f/mdoqdpnn'
+      backend_link: 'https://formspree.io/f/xeogpapg'
 # promo_bar:
 #   - content: |
 #       A few spots are still available for the event. Registering does not automatically confirm participation. You will be informed by Tuesday February 24 at the latest whether you can attend the event.
