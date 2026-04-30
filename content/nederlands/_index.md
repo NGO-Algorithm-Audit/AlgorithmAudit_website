@@ -55,6 +55,13 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
+    - title: Masterclass GPAI
+      intro: >
+        Schrijf je in voor Algorithm Audit's masterclass over 'Testen van General Purpose AI (GPAI) toepassingen' 
+      link: /nl/events/registration/
+      image: /images/events/20260625_GPAI_event.png
+      date: 25-06-2026
+      type: masterclass
     - title: Validatiekader 'Verantwoord gebruik van LLMs voor publieke informatievoorziening'
       intro: >
         Algorithm Audit heeft in consortiumverband een validatiekader ontwikkeld voor de verantwoorde inzet van LLMs.
@@ -62,13 +69,6 @@ Activity_Feed:
       image: /images/events/20260226_Validatiekader.png
       date: 26-02-2026
       type: tool launch
-    - title: Brouwer Vertrouwensprijs
-      intro: >
-        Algorithm Audit heeft de Brouwer Vertouwensprijs gewonnen uitgereikt door de Koninklijke Hollandsche Maatschappij der Wetenschappen  (KHMW) 
-      link: /nl/events/press_room/#KHMW
-      image: /images/partner logo-cropped/KHMW.png
-      date: 19-01-2026
-      type: prijs
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
