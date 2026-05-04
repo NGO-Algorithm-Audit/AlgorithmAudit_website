@@ -3,13 +3,13 @@ title: Vacancies
 subtitle: |
   Overview of current job openings at Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-quick_navigation:
- title: Overview
- links:
-  #  - title: Lead generative AI evaluation
-  #    url: '#accordion_area_gen-AI'
-  #  - title: AI advisor
-  #    url: '#accordion_area_AI-advisor'
+# quick_navigation:
+#  title: Overview
+#  links:
+#    - title: Lead generative AI evaluation
+#      url: '#accordion_area_gen-AI'
+#    - title: AI advisor
+#      url: '#accordion_area_AI-advisor'
 dynamic_form_engine:
   - title: Sollicitatieformulier Lead generatieve AI evaluatie
     id: form1

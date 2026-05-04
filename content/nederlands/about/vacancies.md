@@ -3,13 +3,13 @@ title: Vacatures
 subtitle: |
   Overzicht van vacatures bij Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-quick_navigation:
- title: Overzicht
- links:
-  #  - title: Lead generatieve AI evaluatie
-  #    url: '#accordion_area_gen-AI'
-  #  - title: AI adviseur
-  #    url: '#accordion_area_AI-adviseur'
+# quick_navigation:
+#  title: Overzicht
+#  links:
+#    - title: Lead generatieve AI evaluatie
+#      url: '#accordion_area_gen-AI'
+#    - title: AI adviseur
+#      url: '#accordion_area_AI-adviseur'
 dynamic_form_engine:
   - title: Sollicitatieformulier Lead generatieve AI evaluatie
     id: form1
