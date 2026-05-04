@@ -6,10 +6,10 @@ image: /images/svg-illustrations/about.svg
 quick_navigation:
  title: Overzicht
  links:
-   - title: Lead generatieve AI evaluatie
-     url: '#accordion_area_gen-AI'
-   - title: AI adviseur
-     url: '#accordion_area_AI-adviseur'
+  #  - title: Lead generatieve AI evaluatie
+  #    url: '#accordion_area_gen-AI'
+  #  - title: AI adviseur
+  #    url: '#accordion_area_AI-adviseur'
 dynamic_form_engine:
   - title: Sollicitatieformulier Lead generatieve AI evaluatie
     id: form1
@@ -113,7 +113,7 @@ dynamic_form_engine:
 
 <!-- Item 1 -->
 
-{{< accordions_area_open id="gen-AI" >}}
+<!-- {{< accordions_area_open id="gen-AI" >}}
 
 {{< accordion_item_open title="Lead generatieve AI evaluatie" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="deadline 30-04-2026" tag2="1.0 fte">}}
 
@@ -197,12 +197,12 @@ Vragen over de vacature of de procedure? Stuur een email naar [a.voogt@algorithm
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}
+{{< accordions_area_close >}} -->
 
 
 <!-- Item 2 - AI adviseur -->
 
-{{< accordions_area_open id="AI-adviseur" >}}
+<!-- {{< accordions_area_open id="AI-adviseur" >}}
 
 {{< accordion_item_open title="Junior of medior AI adviseur" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="deadline 30-04-2026" tag2="1.0 fte">}}
 
@@ -299,7 +299,7 @@ Vragen over de vacature of de procedure? Stuur een email naar [a.voogt@algorithm
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}
+{{< accordions_area_close >}} -->
 
 <!-- Item 3 - Stagiair -->
 
