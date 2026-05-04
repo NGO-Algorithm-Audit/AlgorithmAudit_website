@@ -80,11 +80,21 @@ Activity_Feed:
        image: /images/partner logo-cropped/NCDR.svg
        date: 18-05-2026
        type: event
+     - title: 'AFM Meets: verantwoord gebruik van AI'
+       link:
+       image: /images/partner logo-cropped/AFM.jpeg
+       date: 28-06-2026
+       type: event
      - title: INACH Roundtable
        link:
        image: /images/partner logo-cropped/INACH.svg
        date: 03-06-2026
-       type: event
+       type: event 
+     - title: AI Risk Management in the EU
+       link:
+       image: /images/partner logo-cropped/EIPA.png
+       date: 03-06-2026
+       type: event 
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:
