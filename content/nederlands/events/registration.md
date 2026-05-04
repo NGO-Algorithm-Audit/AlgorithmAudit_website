@@ -102,6 +102,9 @@ Hybride of The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2
 - 15:15-16:30 Praktijkoefeningen om hands-on ervaring op te doen
 - 16:30-17:30 Borrel – verzorgd
 
+#### Kosten
+- €300 fysieke deelname (incl. lunch en catering, koffie, thee etc.)
+- €200 hybride deelname
 
 #### Doelgroep
 Professionals uit de private en publieke sector die regelmatig werken met GPAI-toepassingen, zoals het implementeren van generatieve AI-oplossingen in werkprocessen, het testen van GPAI-capaciteiten en/of het werken aan AI-beleid.
