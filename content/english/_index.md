@@ -75,6 +75,16 @@ Activity_Feed:
        image: /images/partner logo-cropped/EC.png
        date: 06-05-2026
        type: event
+     - title: National Congress against Discrimination and Racism
+       link: https://www.bureauncdr.nl/activiteiten/nationaal-congres-tegen-discriminatie-en-racisme
+       image: /images/partner logo-cropped/NCDR.svg
+       date: 18-05-2026
+       type: event
+     - title: INACH Roundtable
+       link:
+       image: /images/partner logo-cropped/INACH.svg
+       date: 03-06-2026
+       type: event
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:
