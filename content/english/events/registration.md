@@ -102,6 +102,9 @@ Hybrid or The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 25
 - 15:15-16:30 Hands-on exercises to build practical experience
 - 16:30-17:30 Drinks – catered
 
+#### Fee
+- €300 in-person participation (including, lunch, drinks, refreshments)
+- €200 hybrid participation
 
 #### Audience
 Professionals from private and public sector who regularly work with GPAI application, such as implementation of generative AI solutions in work processes, testing GPAI capabilities and/or working on AI policy.
