@@ -28,5 +28,11 @@ subpage_links:
     icon: fa-light fa-file
     color: '#FFF'
     url: /technical-tools/implementation-tool/
+  - title: Evaluating generative AI
+    titleline2: >-
+      Overview of Algorithm Audit's expertise relating to generative AI
+    icon: fa-light fa-robot
+    color: '#FFF'
+    url: /technical-tools/eval-gen-ai/
 ---
 
