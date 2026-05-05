@@ -2,7 +2,7 @@
 title: Evaluatie van generatieve AI
 subtitle: |
   Overzicht van Algorithm Audit's expertise met betrekking tot generatieve AI.
-image: /images/technical tools/eval-gen-ai/Kader.png
+image: /images/svg-illustrations/LLM.svg
 quick_navigation:
   title: Inhoudsopgave
   links:
@@ -32,6 +32,14 @@ Algorithm Audit heeft diverse expertise over het evalueren van generatieve AI. W
 {{< container_open icon="far fa-check" title="Validatiekader" id="validation-framework" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/eval-gen-ai/20260313 Validatiekader 'Verantwoorde inzet van LLMs voor publieke informatievoorziening'.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+<!-- Explainer -->
+
+{{< container_open icon="far fa-chalkboard-teacher" title="Explainer" id="explainer" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/eval-gen-ai/20260413 Carrousel validatiekader.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 

@@ -27,4 +27,10 @@ subpage_links:
     icon: fa-light fa-file
     color: '#FFF'
     url: /nl/technical-tools/implementation-tool/
+  - title: Evaluatie generatieve AI
+    titleline2: >-
+      Overzicht van Algorithm Audit's expertise met betrekking tot generatieve AI
+    icon: fa-light fa-robot
+    color: '#FFF'
+    url: /nl/technical-tools/eval-gen-ai/
 ---

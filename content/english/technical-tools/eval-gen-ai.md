@@ -2,7 +2,7 @@
 title: Evaluation of generative AI
 subtitle: |
   Overview of Algorithm Audit's expertise realting to generative AI.
-image: /images/technical tools/eval-gen-ai/Kader.png
+image: /images/svg-illustrations/LLM.svg
 quick_navigation:
   title: Content overview
   links:
@@ -32,6 +32,14 @@ Algorithm Audit has versatile expertise in evaluating generative AI. We have con
 {{< container_open icon="far fa-check" title="Validation framework" id="validation-framework" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/eval-gen-ai/20260413 Validatiekader 'Verantwoorde inzet van LLMs voor publieke informatievoorziening' EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+<!-- Explainer -->
+
+{{< container_open icon="far fa-chalkboard-teacher" title="Explainer" id="explainer" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/eval-gen-ai/20260413 Carrousel validatiekader.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< container_close >}}
 
