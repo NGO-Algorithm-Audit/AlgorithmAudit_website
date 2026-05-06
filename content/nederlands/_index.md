@@ -96,7 +96,7 @@ Activity_Feed:
      - title: AI Risk Management in the EU
        link:
        image: /images/partner logo-cropped/EIPA.png
-       date: 03-06-2026
+       date: 17-06-2026
        type: event
   items_button_text: Meer events
   items_button_link: /nl/events/activities/
