@@ -21,10 +21,14 @@ quick_navigation:
       url: '#documentation'
     - title: Examples and explainers
       url: '#explainers'
-    - title: Flowchart Questionnaire 1
-      url: "#flowchart-questionnaire-1"
-    - title: Flowchart Questionnaire 2
-      url: "#flowchart-questionnaire-2"
+    - title: Flowchart Questionnaire Identification
+      url: "#flowchart-questionnaire-identification"
+    - title: Flowchart Questionnaire Role and status
+      url: "#flowchart-questionnaire-role-and-status"
+    - title: Flowchart Questionnaire Risk category
+      url: "#flowchart-questionnaire-risk-category"
+    - title: Flowchart Obligations
+      url: "#flowchart-obligations"
 promo_bar:
   - content: "**👋 Interested in using AI AQT in your organization? It's easier than you think! Get in [contact](/about/contact) to learn more.**"
   - content: "**✉️ Missing features in AI AQT? Send your request to info@algorithmaudit.eu.**"
@@ -34,21 +38,23 @@ promo_bar:
 
 <!-- Introductie -->
 
-{{< container_open icon="fa-solid fa-toolbox" title="Introduction - a solution for the AI Act and beyond " id="intro" >}}
+{{< container_open icon="fa-solid fa-toolbox" title="Introduction – a solution for the AI Act and beyond " id="intro" >}}
 
 Ensuring legal compliance when using algorithmic systems requires correct qualification of in-scope systems and correct risks categorization. AI AQT consists of dynamic questionnaires that help with:  
 
-<span style="color:#005aa7; font-weight:600;">1 – Identification:</span> AI systems, solely automated decision-making and high-impact algorithms.
+- <span style="color:#005aa7; font-weight:600;">Identification:</span> AI systems, GDPR (profiling and solely automated decision-making) and high-impact algorithms.
 
-<span style="color:#005aa7; font-weight:600;">2 – Risk classification:</span> Prohibited AI systems, high risk AI systems, additional transparency requirements and General Purpose AI (GPAI) models.
+- <span style="color:#005aa7; font-weight:600;">Role and status:</span> Your role in relation to the AI system (provider, deployer etc.) and usage status of the system (in use or in development).
 
-The tool is developed [open-source](/technical-tools/implementation-tool/#source-code) and can be used for free within your organization for AI governance. All outcomes of the questionnaires are shown in the [figure](/technical-tools/implementation-tool/#outcome) below. The flowcharts of the questionnaires can also be found [below](/technical-tools/implementation-tool/#flowchart-questionnaire-1).
+- <span style="color:#005aa7; font-weight:600;">Risk category and obligations:</span> Prohibited and high risk AI systems, transparency requirements for certain AI systems, incl. relevant obligations depending on role and status.
+
+AI AQT is developed [open-source](/technical-tools/implementation-tool/#source-code) and can be used for free within your under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. All outcomes of the tool are shown in the below [figure](/technical-tools/implementation-tool/#outcome). The flowcharts of the questionnaires can also be found [below](/technical-tools/implementation-tool/#flowchart-questionnaire-1).
 
 {{< container_close >}}
 
 <!-- Web app -->
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="60vh" height_mobile="100vh" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=en" title="" id="tool" icon="" height="75vh" height_mobile="100vh" >}}
 
 <!-- Promo bar -->
 
@@ -62,7 +68,7 @@ Applying legal definitions in practice raises difficult questions. For example: 
 
 #### Infographic – Flow of the AI AQT questionnaires 
 
-<img src="/images/ai-act-implementation-tool/Infographic EN.png" alt="drawing"/>
+<img src="/images/ai-act-implementation-tool/Infographic EN2.png" alt="drawing"/>
 
 {{< container_close >}}
 
@@ -72,21 +78,7 @@ Applying legal definitions in practice raises difficult questions. For example: 
 
 The outcomes of the tool are displayed in the figure below. The following categories are distinguished: 
 
-#### Questionnaire 1:
-
-- <span style="color:#005AA7">AI systems</span>: Fall inside the scope of the AI Act. Additional control measures are legally required dependent on the risk category. Continue with Questionnaire 2.
-- <span style="color:#005AA7">High-impact algorithms</span>: Fall outside the scope of the AI Act but inside the scope of the Dutch Algorithm Register. Additional control measures are needed.
-- <span style="color:#005AA7">Solely automated decision-making (sADM)</span>: Fall inside the scope of Article 22 of the GDPR. Additional control measures are needed.
-- <span style="color:#005AA7">Other systems</span>: Fall outside the scopes of the AI Act, Dutch Algorithm Register and Article 22 of the GDPR.
-
-#### Questionnaire 2:
-
-- <span style="color:#005AA7">Prohibited AI systems</span>: Usage of this type of AI system is prohibited in the European Union. More information about this category is provided by the <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Dutch government</a>.
-- <span style="color:#005AA7">High-risk AI systems</span>: Additional control measures for high-risk AI systems are needed through harmonized standards.
-- <span style="color:#005AA7">Additional transparency requirements</span>: This type of AI system requires additional transparency, but no control measures are required.
-- <span style="color:#005AA7">General Purpose AI (GPAI)</span>: Additional requirements apply to the provider.
-
-<img src="/images/ai-act-implementation-tool/Venn diagram EN.png" alt="drawing" width="600"/>
+<img src="/images/ai-act-implementation-tool/Venn diagram EN2.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
@@ -110,7 +102,9 @@ The first version of AI AQT was developed in collaboration with the Municipality
 
 {{< container_open icon="far fa-file" title="Documentation AI AQT" id="documentation" >}}
 
-Considerations and choices made during development of the questionnaires relating to the AI Act, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> from the European Commission on the definition of an AI system, Article 22 GDPR and guidelines of the <a href="https://ec.europa.eu/newsroom/article29/items/612053" target="_blank">EPDB</a> and <a href="https://www.autoriteitpersoonsgegevens.nl/documenten/advies-geautomatiseerde-besluitvorming" target="_blank">Dutch DPA</a> (AP) and the Dutch <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Register Guidelines</a> are described in 'AI AQT Documentation'. The policy briefing elaborates why the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> of the European Commission blur the interpretation of the AI system definition.
+Considerations and choices made during development of the questionnaires relating to the AI Act, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> from the European Commission on the definition of an AI system and AI Act Article 50 transparency obligations, GDPR Article 22 and guidelines of the <a href="https://ec.europa.eu/newsroom/article29/items/612053" target="_blank">EPDB</a> and <a href="https://www.autoriteitpersoonsgegevens.nl/documenten/advies-geautomatiseerde-besluitvorming" target="_blank">Dutch DPA</a> (AP) and the Dutch <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Register Guidelines</a> are described in 'AI AQT Documentation'. 
+
+Below's policy briefing elaborates why the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> of the European Commission blur the interpretation of the AI system definition.
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260312 AI AQT documentation EN.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20250228 Policy briefing guidelines EC AI system definition.pdf" >}}
 
@@ -130,19 +124,35 @@ Using examples, we explain how the AI system definition and risk categories from
 
 {{< container_close >}}
 
-<!-- Flowchart Questionnaire 1 -->
+<!-- Flowchart Questionnaire Identification -->
 
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart Questionnaire 1 - Identification of AI systems, high-impact algorithms and solely automated decision-making" id="flowchart-questionnaire-1" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart Questionnaire Identification – AI system, GDPR (profiling, sADM) high-impact algorithms" id="flowchart-questionnaire-identification" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260203 - Flowcharts identification EN merged - Questionnaire 1.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowcharts identification EN merged - Questionnaire Identification.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
-The above flowcharts for Questionnaire 1 are simplified representations of the logic needed to assess whether an algorithmic system falls under one of the legal definitions: AI system, solely automated decision-making or high-impact algorithm). When using the questionnaire, users encounter questions only once. A complete flowchart of Questionnaire 1 with all paths and outcomes can be found <a href="https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260203 - Full flowchart identification EN.pdf" target="_blank">here</a>.
+The above flowcharts for Questionnaire Identification are simplified representations of the logic needed to assess whether an algorithmic system falls under one of the legal definitions: AI system, GDPR (profiling, solely automated decision-making) or high-impact algorithm. When using the questionnaire, users encounter questions only once. A complete flowchart of Questionnaire Identification with all paths and outcomes can be found <a href="https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260203 - Full flowchart identification EN.pdf" target="_blank">here</a>.
 {{< container_close >}}
 
-<!-- Flowchart Questionnaire 2 -->
+<!-- Flowchart Questionnaire Role and status -->
 
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart Questionnaire 2 – Risk classification of AI systems" id="flowchart-questionnaire-2" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Questionnaire Role and status is relation to the AI system" id="flowchart-questionnaire-role-and-status" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20250310 Flowchart classificatie NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowchart Role and status EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+<!-- Flowchart Questionnaire Risk category -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Questionnaire Risk category of AI systems" id="flowchart-questionnaire-risk-category" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowchart Risk category EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+<!-- Flowchart Questionnaire Obligations -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Obligations for certain AI systems" id="flowchart-questionnaire-risk-category" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowchart Obligations EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
