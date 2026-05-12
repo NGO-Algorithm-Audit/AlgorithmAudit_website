@@ -25,10 +25,14 @@ quick_navigation:
       url: "#documentation"
     - title: Voorbeelden en explainers
       url: "#explainers"
-    - title: Flowchart Vragenlijst 1
-      url: "#flowchart-questionnaire-1"
-    - title: Flowchart Vragenlijst 2
-      url: "#flowchart-questionnaire-2"
+    - title: Flowchart Vragenlijst Identificatie
+      url: "#flowchart-questionnaire-identification"
+    - title: Flowchart Vragenlijst Rol en status
+      url: "#flowchart-questionnaire-role-and-status"
+    - title: Flowchart Vragenlijst Risicocategorie
+      url: "#flowchart-questionnaire-risk-category"
+    - title: Flowchart Verplichtingen
+      url: "#flowchart-obligations"
 promo_bar:
   - content: "**\U0001F44B Wil je AI AQT binnen je eigen organisatie gebruiken? Dat is eenvoudiger dan je denkt! Neem [contact ](/nl/about/contact)met ons op.**\n"
   - content: "**✉️ Mis je features in AI AQT? Stuur je verzoek in naar info@algorithmaudit.eu.**"
@@ -38,21 +42,23 @@ promo_bar:
 
 <!-- Introductie -->
 
-{{< container_open icon="fa-solid fa-toolbox" title="Introductie - een oplossing voor de AI-verordening en meer" id="intro" >}}
+{{< container_open icon="fa-solid fa-toolbox" title="Introductie – een oplossing voor de AI-verordening en meer" id="intro" >}}
 
 Wettelijke naleving veronderstelt correcte vaststelling of algoritmische systemen onder de reikwijdte van wet- en regelgeving vallen, inclusief bijbehorende risicocategorieën. AI AQT bestaat uit dynamische vragenlijsten die helpen bij:
 
-<span style="color:#005aa7; font-weight:600;">1 – Identificatie:</span> AI-systemen, volledig geautomatiseerde besluitvorming en impactvolle algoritmes.
+- <span style="color:#005aa7; font-weight:600;">Identificatie:</span> AI-systemen, AVG (profilering en volledig geautomatiseerde besluitvorming) en impactvolle algoritmes.
 
-<span style="color:#005aa7; font-weight:600;">2 – Riscoclassificatie:</span> Verboden AI-systemen, hoogrisico AI-systemen, aanvullende transparantievereisten en AI-model voor algemene doeleinden (GPAI).
+- <span style="color:#005aa7; font-weight:600;">Rol en status:</span> Uw rol ten aanzien van het AI-systeem (aanbieder, gebruiksverantwoordelijke etc.) en gebruiksstatus van het systeem (in gebruik of in ontwikkeling).
 
-De tool is [open-source](/nl/technical-tools/implementation-tool/#source-code) beschikbaar en kan kosteloos binnen uw organisatie worden gebruikt voor AI governance. Alle uitkomsten van de vragenlijsten worden weergegeven in onderstaand [figuur](/nl/technical-tools/implementation-tool/#outcome). De flowcharts van de vragenlijsten kunnen ook [hieronder](/nl/technical-tools/implementation-tool/#flowchart-questionnaire-1) worden gevonden.
+- <span style="color:#005aa7; font-weight:600;">Risicocategorie en verplichtingen:</span> Verboden en hoogrisico AI-systemen, transparantievereisten voor bepaalde AI-systemen, incl. relevante verplichtingen afhankelijk van rol en status.
+
+AI AQT is [open-source](/nl/technical-tools/implementation-tool/#source-code) ontwikkeld en kan kosteloos binnen uw organisatie worden gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. Alle uitkomsten van de tool worden weergegeven in onderstaand [figuur](/nl/technical-tools/implementation-tool/#outcome). De flowcharts van de vragenlijsten kunnen ook [hieronder](/nl/technical-tools/implementation-tool/#flowchart-questionnaire-identification) worden gevonden.
 
 {{< container_close >}}
 
 <!-- Web app -->
 
-{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="60vh" height_mobile="100vh" >}}
+{{< iframe src="https://ai-documentation.s3.eu-central-1.amazonaws.com/index.html?lang=nl" title="" id="tool" icon="" height="75vh" height_mobile="100vh" >}}
 
 <!-- Promo bar -->
 
@@ -66,7 +72,7 @@ Het toepassen van juridische definities in de praktijk roept lastige vragen op. 
 
 #### Infographic – Overzicht AI AQT vragenlijsten
 
-<img src="/images/ai-act-implementation-tool/Infographic NL.png" alt="drawing"/>
+<img src="/images/ai-act-implementation-tool/Infographic NL2.png" alt="drawing"/>
 
 {{< container_close >}}
 
@@ -76,21 +82,7 @@ Het toepassen van juridische definities in de praktijk roept lastige vragen op. 
 
 De uitkomsten van de tool worden weergegeven in onderstaand figuur. Er wordt onderscheid gemaakt tussen de volgende categorieën:
 
-#### Vragenlijst 1:
-
-- <span style="color:#005AA7">AI-systemen</span>: Vallen onder de reikwijdte van de AI-verordening. Afhankelijk van de risicocategorie zijn aanvullende beheersmaatregelen wettelijk verplicht. Ga verder met Vragenlijst 2.
-- <span style="color:#005AA7">Impactvolle algoritmes</span>: Vallen buiten de reikwijdte van de AI-verordening, maar binnen de reikwijdte van het Nederlandse Algoritmesregister. Aanvullende controlemaatregelen zijn nodig.
-- <span style="color:#005AA7">Volledig geautomatiseerde besluitvorming (sADM)</span>: Vallen onder de reikwijdte van artikel 22 van de AVG. Aanvullende beheersmaatregelen zijn nodig.
-- <span style="color:#005AA7">Overige systemen</span>: Vallen buiten de reikwijdte van de AI-verordening, het Nederlandse Algoritmesregister en artikel 22 van de AVG.
-
-#### Vragenlijst 2:
-
-- <span style="color:#005AA7">Verboden AI-systemen</span>: Het gebruik van dit type AI-systeem is verboden in de Europese Unie. Meer informatie over deze categorie wordt verstrekt door de <a href="https://www.digitaleoverheid.nl/achtergrondartikelen/welke-ai-praktijken-zijn-volgend-jaar-verboden/" target="_blank">Nederlandse overheid</a>.
-- <span style="color:#005AA7">Hoog-risico AI-systemen</span>: Er zijn aanvullende controlemaatregelen voor AI-systemen met een hoog risico nodig door middel van geharmoniseerde normen.
-- <span style="color:#005AA7">Aanvullende transparantievereisten</span>: Dit type AI-systeem vereist aanvullende transparantie, maar er zijn geen controlemaatregelen nodig.
-- <span style="color:#005AA7">AI-modellen voor algemene doeleinden (General Purpose AI)</span>: Er gelden aanvullende eisen voor de ontwikkelaars.
-
-<img src="/images/ai-act-implementation-tool/Venn diagram NL.png" alt="drawing" width="600"/>
+<img src="/images/ai-act-implementation-tool/Venn diagram NL2.png" alt="drawing" width="600"/>
 
 {{< container_close >}}
 
@@ -114,7 +106,9 @@ De eerste versie van AI AQT is ontwikkeld in samenwerking met de gemeente Amster
 
 {{< container_open icon="far fa-file" title="Documentatie AI AQT vragenlijsten" id="documentation" >}}
 
-Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijsten met betrekking tot interpretatie van de AI-verordening, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie over de definitie van een AI-systeem, artikel 22 AVG richtlijnen van de <a href="https://ec.europa.eu/newsroom/article29/items/612053" target="_blank">EPDB</a> en <a href="https://www.autoriteitpersoonsgegevens.nl/documenten/advies-geautomatiseerde-besluitvorming" target="_blank">Autoriteit Persoonsgegevens</a> (AP) en de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a> worden beschreven in de white paper 'AI AQT documentatie'. In de policy briefing wordt toegelicht waarom passages uit de <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie de interpretatie van de definitie van een AI-systeem vertroebelen.
+Overwegingen en keuzes die zijn gemaakt tijdens het opstellen van de vragenlijsten met betrekking tot interpretatie van de AI-verordening, <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie over de definitie van een AI-systeem en de transparantieverplichtingen uit artikel 50 AI-verordening, artikel 22 AVG en richtlijnen van de <a href="https://ec.europa.eu/newsroom/article29/items/612053" target="_blank">EPDB</a> en <a href="https://www.autoriteitpersoonsgegevens.nl/documenten/advies-geautomatiseerde-besluitvorming" target="_blank">Autoriteit Persoonsgegevens</a> (AP) en de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a> worden beschreven in de white paper 'AI AQT documentatie'.
+
+In onderstaande policy briefing wordt toegelicht waarom passages uit de <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">richtlijnen</a> van de Europese Commissie de interpretatie van de definitie van een AI-systeem vertroebelen.
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260320 AI AQT documentation NL.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20250228 Policy briefing richtlijnen EC AI-systeem definitie.pdf" >}}
 
@@ -134,20 +128,35 @@ Aan de hand van voorbeelden lichten we de praktische uitwerking van de definitie
 
 {{< container_close >}}
 
-<!-- Flowchart Vragenlijst 1 -->
+<!-- Flowchart Vragenlijst Identificatie -->
 
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart Vragenlijst 1 - Identificatie van AI-systemen, impactvolle algoritmes en volledig geautomatiseerde besluitvorming" id="flowchart-questionnaire-1" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart Vragenlijst Identificatie – AI-systeem, AVG (profilering, sADM) impactvolle algoritmes" id="flowchart-questionnaire-identification" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260203 - Flowcharts identificatie NL merged - Vragenlijst 1.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowcharts Identification NL merged.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
-De bovenstaande flowcharts voor Vragenlijst 1 zijn vereenvoudigde weergaven van de logica die nodig is om vast te stellen of een algoritmisch systeem onder een van de volgende definities valt: AI-systeem, volledig geautomatiseerde besluitvorming of impactvol algoritme. Bij een daadwerkelijk doorlop van de vragenlijst overlappen de vragen elkaar en komen gebruikers iedere vraag slechts één keer tegen. Een volledige flowchart van Vragenlijst 1 met alle paden en uitkomsten is <a href="https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260203 - Full flowchart identificatie NL.pdf" target="_blank">hier</a> te vinden. 
+De bovenstaande flowcharts voor Vragenlijst Identificatie weergeven de logica die nodig is om vast te stellen of een algoritmisch systeem onder een van de volgende definities valt: AI-systeem, AVG (profilering, volledig geautomatiseerde besluitvorming) of impactvol algoritme. Bij het doorloop van de vragenlijst komt de gebruiker iedere vraag slechts één keer tegen. Een volledige flowchart van Vragenlijst Identificatie met alle paden en uitkomsten is <a href="https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260511 Flowcharts Identification NL whole.pdf" target="_blank">hier</a> te vinden.
+{{< container_close >}}
+
+<!-- Flowchart Vragenlijst Rol en status -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst Rol en status ten aanzien van het AI-systeem" id="flowchart-questionnaire-role-and-status" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowchart Role and status NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 
-<!-- Flowchart Vragenlijst 2 -->
+<!-- Flowchart Vragenlijst Risicocategorie -->
 
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart Vragenlijst 2 - Risicoclassificatie van AI-systemen" id="flowchart-questionnaire-2" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst Risicocategorie van AI-systemen" id="flowchart-questionnaire-risk-category" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20250310 Flowchart classificatie NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowchart Risk category NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+<!-- Flowchart Verplichtingen -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Verplichtingen voor bepaalde AI-systemen" id="flowchart-obligations" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowchart Obligations NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
