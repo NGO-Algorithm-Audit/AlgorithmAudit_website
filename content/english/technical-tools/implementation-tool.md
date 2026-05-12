@@ -128,9 +128,9 @@ Using examples, we explain how the AI system definition and risk categories from
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart Questionnaire Identification – AI system, GDPR (profiling, sADM) high-impact algorithms" id="flowchart-questionnaire-identification" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowcharts identification EN merged - Questionnaire Identification.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowcharts Identification EN merged.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
-The above flowcharts for Questionnaire Identification are simplified representations of the logic needed to assess whether an algorithmic system falls under one of the legal definitions: AI system, GDPR (profiling, solely automated decision-making) or high-impact algorithm. When using the questionnaire, users encounter questions only once. A complete flowchart of Questionnaire Identification with all paths and outcomes can be found <a href="https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260203 - Full flowchart identification EN.pdf" target="_blank">here</a>.
+The above flowcharts for Questionnaire Identification represent the logic needed to assess whether an algorithmic system falls under one of the legal definitions: AI system, GDPR (profiling, solely automated decision-making) or high-impact algorithm. When using the questionnaire, users encounter questions only once. A complete flowchart of Questionnaire Identification with all paths and outcomes can be found <a href="https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260511 Flowcharts Identification EN whole.pdf" target="_blank">here</a>.
 {{< container_close >}}
 
 <!-- Flowchart Questionnaire Role and status -->
