@@ -21,14 +21,14 @@ quick_navigation:
       url: '#documentation'
     - title: Examples and explainers
       url: '#explainers'
-    - title: Flowchart Questionnaire Identification
+    - title: Flowchart Identification
       url: "#flowchart-questionnaire-identification"
-    - title: Flowchart Questionnaire Role and status
+    - title: Flowchart Role and status
       url: "#flowchart-questionnaire-role-and-status"
-    - title: Flowchart Questionnaire Risk category
+    - title: Flowchart Risk category
       url: "#flowchart-questionnaire-risk-category"
     - title: Flowchart Obligations
-      url: "#flowchart-obligations"
+      url: "#flowchart-questionnaire-obligations"
 promo_bar:
   - content: "**👋 Interested in using AI AQT in your organization? It's easier than you think! Get in [contact](/about/contact) to learn more.**"
   - content: "**✉️ Missing features in AI AQT? Send your request to info@algorithmaudit.eu.**"
@@ -46,7 +46,9 @@ Ensuring legal compliance when using algorithmic systems requires correct qualif
 
 - <span style="color:#005aa7; font-weight:600;">Role and status:</span> Your role in relation to the AI system (provider, deployer etc.) and usage status of the system (in use or in development).
 
-- <span style="color:#005aa7; font-weight:600;">Risk category and obligations:</span> Prohibited and high risk AI systems, transparency requirements for certain AI systems, incl. relevant obligations depending on role and status.
+- <span style="color:#005aa7; font-weight:600;">Risk category:</span> Prohibited and high risk AI systems, transparency requirements for certain AI systems.
+
+- <span style="color:#005aa7; font-weight:600;">Obligations:</span> Requirements that follow from the AI Act depending on the role, status and risk category of the AI system.
 
 AI AQT is developed [open-source](/technical-tools/implementation-tool/#source-code) and can be used for free within your under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. All outcomes of the tool are shown in the below [figure](/technical-tools/implementation-tool/#outcome). The flowcharts of the questionnaires can also be found [below](/technical-tools/implementation-tool/#flowchart-questionnaire-1).
 
@@ -151,7 +153,7 @@ The above flowcharts for Questionnaire Identification represent the logic needed
 
 <!-- Flowchart Questionnaire Obligations -->
 
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Obligations for certain AI systems" id="flowchart-questionnaire-risk-category" >}}
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Obligations for certain AI systems" id="flowchart-questionnaire-obligations" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowchart Obligations EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
