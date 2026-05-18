@@ -70,6 +70,11 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
+     - title: National Congress against Discrimination and Racism
+       link:
+       image: /images/partner logo-cropped/NCDR.svg
+       date: 18-06-2026
+       type: event
      - title: 'AFM Meets: verantwoord gebruik van AI'
        link:
        image: /images/partner logo-cropped/AFM.jpeg
