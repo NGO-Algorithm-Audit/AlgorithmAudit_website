@@ -31,21 +31,6 @@ facet_groups:
         label: Training
 events:
   - title: >-
-      National Congress against Discrimination and Racism
-    description: >
-      
-    image: /images/partner logo-cropped/NCDR.svg
-    date: 18-05-2026
-    facets:
-      - value: year_2026
-        label: '2026'
-        hide: true
-      - value: year_q2_2026
-        label: Q2-2026
-        hide: true
-      - value: type_event
-        label: Event
-  - title: >-
       Responsible use of AI and Algorithmic Management, DG EMPL
     description: >
       Algorithm Audit participated in the workshop on responsible use of AI and algorithmic management in organisations hosted by DG EMPL of the European Commission. We shared insights how stakeholder input could help shaping standards for auditing AI in HR and the workplace.

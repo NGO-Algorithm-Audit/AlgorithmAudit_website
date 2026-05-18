@@ -73,6 +73,11 @@ Activity_Feed:
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
+     - title: Nationaal Congress tegen Discriminatie en Racisme
+       link:
+       image: /images/partner logo-cropped/NCDR.svg
+       date: 18-06-2026
+       type: event
      - title: 'AFM Meets: verantwoord gebruik van AI'
        link:
        image: /images/partner logo-cropped/AFM.jpeg
