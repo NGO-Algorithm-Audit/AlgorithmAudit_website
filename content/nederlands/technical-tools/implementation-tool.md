@@ -25,11 +25,11 @@ quick_navigation:
       url: "#documentation"
     - title: Voorbeelden en explainers
       url: "#explainers"
-    - title: Flowchart Vragenlijst Identificatie
+    - title: Flowchart Identificatie
       url: "#flowchart-questionnaire-identification"
-    - title: Flowchart Vragenlijst Rol en status
+    - title: Flowchart Rol en status
       url: "#flowchart-questionnaire-role-and-status"
-    - title: Flowchart Vragenlijst Risicocategorie
+    - title: Flowchart Risicocategorie
       url: "#flowchart-questionnaire-risk-category"
     - title: Flowchart Verplichtingen
       url: "#flowchart-obligations"
@@ -50,7 +50,9 @@ Wettelijke naleving veronderstelt correcte vaststelling of algoritmische systeme
 
 - <span style="color:#005aa7; font-weight:600;">Rol en status:</span> Uw rol ten aanzien van het AI-systeem (aanbieder, gebruiksverantwoordelijke etc.) en gebruiksstatus van het systeem (in gebruik of in ontwikkeling).
 
-- <span style="color:#005aa7; font-weight:600;">Risicocategorie en verplichtingen:</span> Verboden en hoogrisico AI-systemen, transparantievereisten voor bepaalde AI-systemen, incl. relevante verplichtingen afhankelijk van rol en status.
+- <span style="color:#005aa7; font-weight:600;">Risicocategorie:</span> Verboden en hoogrisico AI-systemen, transparantievereisten voor bepaalde AI-systemen.
+
+- <span style="color:#005aa7; font-weight:600;">Verplichtingen:</span> Verplichtingen volgens de AI-verordening afhankelijk van de rol, status en risicocategorie van het AI-systeem.
 
 AI AQT is [open-source](/nl/technical-tools/implementation-tool/#source-code) ontwikkeld en kan kosteloos binnen uw organisatie worden gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. Alle uitkomsten van de tool worden weergegeven in onderstaand [figuur](/nl/technical-tools/implementation-tool/#outcome). De flowcharts van de vragenlijsten kunnen ook [hieronder](/nl/technical-tools/implementation-tool/#flowchart-questionnaire-identification) worden gevonden.
 
