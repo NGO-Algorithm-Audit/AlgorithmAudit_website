@@ -70,6 +70,11 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
+     - title: 'AFM Meets: verantwoord gebruik van AI'
+       link:
+       image: /images/partner logo-cropped/AFM.jpeg
+       date: 28-05-2026
+       type: event
      - title: INACH Roundtable
        link:
        image: /images/partner logo-cropped/INACH.svg
@@ -88,7 +93,7 @@ Activity_Feed:
      - title: 'AFM Meets: verantwoord gebruik van AI'
        link:
        image: /images/partner logo-cropped/AFM.jpeg
-       date: 28-06-2026
+       date: 28-05-2026
        type: event
   items_button_text: More events
   items_button_link: /events/activities/
