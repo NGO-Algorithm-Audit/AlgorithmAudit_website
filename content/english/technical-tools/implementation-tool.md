@@ -108,7 +108,7 @@ Considerations and choices made during development of the questionnaires relatin
 
 Below's policy briefing elaborates why the <a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" target="_blank">guidelines</a> of the European Commission blur the interpretation of the AI system definition.
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260312 AI AQT documentation EN.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20250228 Policy briefing guidelines EC AI system definition.pdf" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260528 Introducing AI AQT.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20250228 Policy briefing guidelines EC AI system definition.pdf" >}}
 
 {{< container_close >}}
 
