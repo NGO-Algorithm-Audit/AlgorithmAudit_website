@@ -29,6 +29,20 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      AFM Meets: verantwoord gebruik van AI
+    description: >
+    image: /images/partner logo-cropped/AFM.jpeg
+    date: 28-05-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q2_2026
+        label: Q2-2026
+        hide: true
+      - value: type_event
+        label: Event
+  - title: >-
       Responsible use of AI and Algorithmic Management, DG EMPL
     description: >
       Algorithm Audit nam deel aan de workshop over verantwoord gebruik van AI en algoritmisch beheer in organisaties, georganiseerd door DG EMPL van de Europese Commissie. We hebben onze ideeën gedeeld over hoe input van belanghebbenden kan helpen bij het opstellen van normen voor het controleren van AI op HR-gebied en op de werkplek.
