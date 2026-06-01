@@ -15,6 +15,8 @@ quick_navigation:
 promo_bar:
   - content: "**\U0001F44B Do you want to learn more about Algorithm Audit's expertise on generative AI? Get in [contact](/en/about/contact).**\n"
 type: regular
+search:
+  searchableText: validation
 ---
 
 {{< promo_bar index="0" >}}
