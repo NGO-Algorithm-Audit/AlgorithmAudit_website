@@ -52,6 +52,13 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
+    - title: Empirical Methods for Supervising Algorithmic Profiling Systems
+      intro: >
+        Contribution to the book Data Protection, Privacy and Artificial Intelligence, Volume 18
+      link: /knowledge-platform/knowledge-base/empirical_methods_cpdp_book/
+      image: /images/knowledge_base/CPDP_book.jpg
+      date: 01-06-2026
+      type: book
     - title: Masterclass GPAI
       intro: >
         Register for Algorithm Audit's masterclass on 'Testing General Purpose AI (GPAI) applications' 
@@ -59,13 +66,6 @@ Activity_Feed:
       image: /images/events/20260625_GPAI_event.png
       date: 25-06-2026
       type: masterclass
-    - title: Validation framework 'Responsible use of Large Language Models (LLM) for public information provision'
-      intro: >
-        Algorithm Audit has developed a validation framework for the responsible use of LLMs in a consortium.
-      link: /technical-tools/eval-gen-ai/
-      image: /images/events/20260226_Validatiekader.png
-      date: 26-02-2026
-      type: tool launch
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
@@ -85,10 +85,10 @@ Activity_Feed:
        image: /images/partner logo-cropped/NCDR.svg
        date: 18-06-2026
        type: event
-     - title: 'AFM Meets: verantwoord gebruik van AI'
+     - title: Workshop 'Levensloop van verantwoorde AI'
        link:
-       image: /images/partner logo-cropped/AFM.jpeg
-       date: 28-05-2026
+       image: /images/partner logo-cropped/MinJenV.png
+       date: 22-06-2026
        type: event
   items_button_text: More events
   items_button_link: /events/activities/

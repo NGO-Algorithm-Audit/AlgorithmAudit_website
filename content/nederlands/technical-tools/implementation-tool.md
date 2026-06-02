@@ -96,11 +96,11 @@ De eerste versie van AI AQT is ontwikkeld in samenwerking met de gemeente Amster
 
 <!-- first row partner logos -->
 
-{{< image width_desktop="3" width_mobile="8" image1="/images/partner%20logo-cropped/GemeenteAmsterdam.png" image2="/images/partner%20logo-cropped/De Nederlandsche Bank.png" image3="/images/partner%20logo-cropped/GemeenteDenHaag.png" image4="/images/partner%20logo-cropped/GemeenteGouda.jpg"  alt1="Gemeente Amsterdam" alt2="De Nederlandsche Bank" alt3="Gemeente Den Haag" alt4="Gemeente Gouda" caption1="Gemeente Amsterdam" caption2="De Nederlandsche Bank" caption3="Gemeente Den Haag" caption4="Gemeente Gouda" >}}
+{{< image width_desktop="3" width_mobile="8" image1="/images/partner%20logo-cropped/GemeenteAmsterdam.png" image2="/images/partner%20logo-cropped/De Nederlandsche Bank.png" image3="/images/partner%20logo-cropped/GemeenteDenHaag.png" image4="/images/partner%20logo-cropped/GemeenteHelsinki.png"  alt1="Gemeente Amsterdam" alt2="De Nederlandsche Bank" alt3="Gemeente Den Haag" alt4="Gemeente Helsinki" caption1="Gemeente Amsterdam" caption2="De Nederlandsche Bank" caption3="Gemeente Den Haag" caption4="Gemeente Helsinki" >}}
 
 <!-- second row partner logos -->
 
-{{< image width_desktop="3" width_mobile="8" image1="/images/partner%20logo-cropped/GemeenteHelsinki.png" alt1="Gemeente Helsinki" caption1="Gemeente Helsinki" >}}
+<!-- {{< image width_desktop="3" width_mobile="8" image1="/images/partner%20logo-cropped/GemeenteGouda.jpg" alt1="Gemeente Gouda" caption1="Gemeente Gouda" >}} -->
 
 {{< container_close >}}
 

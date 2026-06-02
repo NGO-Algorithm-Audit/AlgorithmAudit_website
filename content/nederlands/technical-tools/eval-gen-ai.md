@@ -15,6 +15,8 @@ quick_navigation:
 promo_bar:
   - content: "**\U0001F44B Wil je meer weten over Algorithm Audit's expertise over generatieve AI? Stuur een [bericht](/nl/about/contact).**\n"
 type: regular
+search:
+  searchableText: validatie
 ---
 
 {{< promo_bar index="0" >}}
