@@ -20,20 +20,20 @@ about_AA:
         over de verantwoorde inzet van algoritmes aan te jagen, zie onze
         [white papers](/nl/knowledge-platform/knowledge-base/) en
         [publieke standaarden](/nl/knowledge-platform/knowledge-base/).
-    - subtitle: Normatieve adviescommissies
-      image: /images/about/commission.svg
-      content: >
-        Adviseren over ethische vraagstukken die zich voordoen in de algoritmische praktijk door het faciliteren van deliberatieve en inclusieve adviescommissies, met [algoprudentie](/nl/algoprudence/) als resultaat
     - subtitle: Technische tools
       image: /images/about/technical-tools.svg
       content: >
-        Implementeren en testen van open source software voor de verantwoorde inzet van algoritmes en AI, o.a. socio-technische evaluatie van generatieve AI, [unsupervised bias
+        Implementeren en testen van open source software voor de verantwoorde inzet van algoritmes en AI, o.a. [socio-technische evaluatie van generatieve AI](/nl/technical-tools/eval-gen-ai/), [unsupervised bias
         detectie](/nl/technical-tools/bdt/) en [synthetische data generatie](/nl/technical-tools/sdg/).
     - subtitle: Projectwerk
       image: /images/about/project.svg
       content: >
         [Ondersteuning](/nl/knowledge-platform/project-work/) bij specifieke vragen vanuit de publieke en private sector
         over de verantwoorde inzet van algoritmes, zonder winstoogmerk.
+    - subtitle: Normatieve adviescommissies
+      image: /images/about/commission.svg
+      content: >
+        Adviseren over ethische vraagstukken die zich voordoen in de algoritmische praktijk door het faciliteren van deliberatieve en inclusieve adviescommissies, met [algoprudentie](/nl/algoprudence/) als resultaat.
 team:
   - id: team-SDG
     title: Team synthetische data generatie
@@ -101,28 +101,6 @@ team:
           Freelance software developer
         linkedIn: "https://www.linkedin.com/in/eptorck"
         accordion_content: ""
-  - title: Team Large Language Models (LLMs)
-    id: team-LLMs
-    content: Team dat part-time werkt aan socio-technologische evaluatie van Large Language Models
-    icon: fas fa-robot
-    button_text: Meer over onze evaluaties
-    button_link: /nl/knowledge-platform/project-work/#LLM-validation
-    team_members:
-      - image: /images/people/JChristoph.png
-        name: Joël Christoph
-        bio: |
-          PhD-candidate European University Institute
-        linkedIn: "https://www.linkedin.com/in/joelchristoph/"
-      - image: /images/people/TvanOsch.jpg
-        name: Thomas van Osch
-        bio: |
-          ML engineer
-        linkedIn: "https://www.linkedin.com/in/thomas-van-osch"
-      - image: /images/people/TDriessen.jpg
-        name: Tom Driessen
-        bio: |
-          PhD-candidate Cognitive Robotics, TU Delft
-        linkedIn: "https://www.linkedin.com/in/tdries"
   - id: team-legal
     title: Juridische experts
     content: Team dat part-time werkt aan mensenrechten- en privacy-vraagstukken
@@ -148,11 +126,6 @@ team:
         bio: |
           Directeur-bestuurder
         linkedIn: "https://www.linkedin.com/in/jfparie/"
-      - image: /images/people/YRemmits.jpg
-        name: Ylja Remmits
-        bio: |
-          Head of Projects
-        linkedIn: "https://www.linkedin.com/in/ylja-remmits-21185188"
       - image: /images/people/KFilipov.jpeg
         name: Kaloyan Filipov
         bio: |
@@ -173,8 +146,6 @@ quick_navigation:
       url: "#executive-team"
     - title: Juridische experts
       url: "#team-legal"
-    - title: Team LLMs
-      url: "#team-LLMs"
     - title: Team software development
       url: "#team-SD"
     - title: Team unsupervised bias detectie
@@ -184,8 +155,6 @@ quick_navigation:
 ---
 
 {{< about_AA id="about" >}}
-
-{{< team index="5" >}}
 
 {{< team index="4" >}}
 

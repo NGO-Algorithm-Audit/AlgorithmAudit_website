@@ -1,26 +1,9 @@
 ---
 title: Teams
 subtitle: >
-  Algorithm Audit consists of an executive team and a collection of
+  Algorithm Audit consists of an executive team and different teams with
   multidisciplinary experts that contribute to projects on a part-time basis.
 image: /images/svg-illustrations/about.svg
-quick_navigation:
-  title: Overview
-  links:
-    - title: Core activities
-      url: "#about"
-    - title: Executive team
-      url: "#executive-team"
-    - title: Legal experts
-      url: "#team-legal"
-    - title: Team LLMs
-      url: "#team-LLMs"
-    - title: Team software development
-      url: "#team-SD"
-    - title: Team unsupervised bias detection
-      url: "#team-BDT"
-    - title: Team synthetic data generation
-      url: "#team-SDG"
 about_AA:
   title: Core activities
   content: >-
@@ -37,17 +20,11 @@ about_AA:
         learning process on the responsible use of algorithms, see our [white
         papers](/knowledge-platform/knowledge-base/) and [public
         standards](/knowledge-platform/knowledge-base/).
-    - subtitle: Normative advice commissions
-      image: /images/about/commission.svg
-      content: >
-        Advising on ethical issues that arise in concrete algorithmic practice
-        through deliberative and diverse normative advice commissions, resulting
-        in [algoprudence](/algoprudence/).
     - subtitle: Technical tooling
       image: /images/about/technical-tools.svg
       content: >
         Implementing and testing technical tools to detect and mitigate bias,
-        e.g., sociotechnical evaluation of generative AI, [unsupervised bias
+        e.g., [sociotechnical evaluation of generative AI](/technical-tools/eval-gen-ai/), [unsupervised bias
         detection](/technical-tools/bdt/) and [synthetic data
         generation](/technical-tools/sdg/).
     - subtitle: Project work
@@ -56,6 +33,12 @@ about_AA:
         [Supporting](/knowledge-platform/project-work/) public and private
         sector organisations with specific questions regarding responsible use
         of AI, from a not-for-profit perspective.
+    - subtitle: Normative advice commissions
+      image: /images/about/commission.svg
+      content: >
+        Advising on ethical issues that arise in concrete algorithmic practice
+        through deliberative and diverse normative advice commissions, resulting
+        in [algoprudence](/algoprudence/).
 team:
   - title: Team synthetic data generation
     content: Part-time team working on synthetic data generation tool
@@ -132,33 +115,6 @@ team:
           Freelance software developer
         linkedIn: "https://www.linkedin.com/in/eptorck"
         accordion_content: ""
-  - title: Team Large Language Models (LLMs)
-    content: >-
-      Part-time team working on socio-technical evaluation of Large Language
-      Models
-    icon: fas fa-robot
-    button_text: More about our evaluations
-    id: team-LLMs
-    button_link: /knowledge-platform/project-work/#LLM-validation
-    team_members:
-      - image: /images/people/JChristoph.png
-        name: Joël Christoph
-        bio: |
-          PhD-candidate European University Institute
-        linkedIn: "https://www.linkedin.com/in/joelchristoph/"
-        accordion_content: ""
-      - image: /images/people/TvanOsch.jpg
-        name: Thomas van Osch
-        bio: |
-          ML engineer
-        linkedIn: "https://www.linkedin.com/in/thomas-van-osch"
-        accordion_content: ""
-      - image: /images/people/TDriessen.jpg
-        name: Tom Driessen
-        bio: |
-          PhD-candidate Cognitive Robotics, TU Delft
-        linkedIn: "https://www.linkedin.com/in/tdries"
-        accordion_content: ""
   - title: Legal experts
     content: Part-time team working on human rights and data privacy
     icon: fas fa-search
@@ -176,8 +132,8 @@ team:
           Postdoctoral researcher AI, Media and Democracy Lab, University of
           Amsterdam
         linkedIn: "https://www.linkedin.com/in/laurens-naudts-9a935729"
-        accordion_content: |
-          TEST
+        # accordion_content: |
+        #   ""
   - title: Executive team
     content: Full-time team coordinating the different activities of Algorithm Audit
     icon: fas fa-users
@@ -188,12 +144,6 @@ team:
         bio: |
           Director-board member
         linkedIn: "https://www.linkedin.com/in/jfparie/"
-        accordion_content: ""
-      - image: /images/people/YRemmits.jpg
-        name: Ylja Remmits
-        bio: |
-          Head of Projects
-        linkedIn: "https://www.linkedin.com/in/ylja-remmits-21185188"
         accordion_content: ""
       - image: /images/people/KFilipov.jpeg
         name: Kaloyan Filipov
@@ -207,11 +157,24 @@ team:
           Intern
         linkedIn: "https://www.linkedin.com/in/lenny-pam-030a0a134/"
         accordion_content: ""
+quick_navigation:
+  title: Overview
+  links:
+    - title: Core activities
+      url: "#about"
+    - title: Executive team
+      url: "#executive-team"
+    - title: Legal experts
+      url: "#team-legal"
+    - title: Team software development
+      url: "#team-SD"
+    - title: Team unsupervised bias detection
+      url: "#team-BDT"
+    - title: Team synthetic data generation
+      url: "#team-SDG"
 ---
 
-{{< about_AA >}}
-
-{{< team index="5" >}}
+{{< about_AA id="about">}}
 
 {{< team index="4" >}}
 
