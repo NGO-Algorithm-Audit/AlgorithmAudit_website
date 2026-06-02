@@ -33,6 +33,10 @@ events:
   - title: >-
       AFM Meets: Responsible use of AI
     description: >
+      Algorithm Audit facilitated a workshop on risk management of GenAI for over a 100 employees of the Dutch Financial and Capital Markets Authority.
+
+      ![](/images/events/AFM.JPG)
+
     image: /images/partner logo-cropped/AFM.jpeg
     date: 28-05-2026
     facets:
