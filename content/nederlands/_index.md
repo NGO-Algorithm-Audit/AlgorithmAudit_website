@@ -88,6 +88,11 @@ Activity_Feed:
        image: /images/partner logo-cropped/NCDR.svg
        date: 18-06-2026
        type: event
+     - title: 'Watching Machines: Life under Algorithmic Eyes, Security Vision (Leiden University and ReCNTR)'
+       link: 'https://www.securityvision.io/projects/18-19-june-watching-machines-life-under-algorithmic-eyes'
+       image: /images/partner logo-cropped/security vision.svg
+       date: 20-06-2026
+       type: event
      - title: Workshop 'Levensloop van verantwoorde AI'
        link:
        image: /images/partner logo-cropped/MinJenV.png
