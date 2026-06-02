@@ -31,6 +31,10 @@ events:
   - title: >-
       AFM Meets: verantwoord gebruik van AI
     description: >
+      Algorithm Audit heeft een workshop over risicobeheer van GenAI georganiseerd voor meer dan 100 medewerkers van de Autoriteit Financiële Markten. 
+
+      ![](/images/events/AFM.JPG)
+
     image: /images/partner logo-cropped/AFM.jpeg
     date: 28-05-2026
     facets:
