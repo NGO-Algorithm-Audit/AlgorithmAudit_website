@@ -8,7 +8,7 @@ image: /images/svg-illustrations/knowledge_base.svg
 search:
   searchableText: Amsterdam
 dynamic_form_engine:
-  - title: Get in touch to explore potential collaboration
+  - title: Reach out to discuss project work
     content: >-
       Your message will be forwarded to Algorithm Audit's auditing team, who will
       promptly provide a response.
@@ -40,43 +40,86 @@ quick_navigation:
   title: Overview
   links:
     - title: 2026
-      url: "#Gouda"
-    - title: Inventory algorithms and AI - Municipality of Gouda
+      url: "#genai-vangrails"
+    - title: Guardrails for generative AI
+      url: "#genai-vangrails"
+      indent: 1
+    - title: Investigation Court of Auditors
+      url: "#A2-samenwerking"
+      indent: 1
+    - title: Bias testing
+      url: "#Belastingdienst"
+      indent: 1
+    - title: Indexing algorithms and AI
       url: "#Gouda"
       indent: 1
-    - title: Sociotechnical risk - European Commission
+    - title: Sociotechnical risks of generative AI
       url: "#AI-safety"
       indent: 1
     - title: 2025
       url: "#implementation-protocol"
-    - title: Implementation protocol – UNIA
-      url: "#implementation-protocol"
-      indent: 1
-    - title: LLM validation – Dutch judiciary
-      url: "#LLM-validation"
-      indent: 1
-    - title: Assessment protocol – Council of Europe
-      url: "#assessment-protocol"
-      indent: 1
-    - title: Bias analysis – Municipality of Utrecht
-      url: "#utrecht"
-      indent: 1
-    - title: Research support – Court of Auditors Deventer
-      url: "#deventer"
-      indent: 1
-    - title: Knowledge partner – DUO
-      url: "#DUO2"
-      indent: 1
-    - title: eLearning – Council of Europe
-      url: "#elearning"
-      indent: 1
+    # - title: Implementation protocol – UNIA
+    #   url: "#implementation-protocol"
+    #   indent: 1
+    # - title: LLM validation – Dutch judiciary
+    #   url: "#LLM-validation"
+    #   indent: 1
+    # - title: Assessment protocol – Council of Europe
+    #   url: "#assessment-protocol"
+    #   indent: 1
+    # - title: Bias analysis – Municipality of Utrecht
+    #   url: "#utrecht"
+    #   indent: 1
+    # - title: Research support – Court of Auditors Deventer
+    #   url: "#deventer"
+    #   indent: 1
+    # - title: Knowledge partner – DUO
+    #   url: "#DUO2"
+    #   indent: 1
+    # - title: eLearning – Council of Europe
+    #   url: "#elearning"
+    #   indent: 1
     - title: 2024
       url: "#amsterdam"
-    - title: Discuss collaboration
+    - title: Get in contact
       url: "#form"
 ---
 
 # 2026
+
+<!-- GenAI Vangrails -->
+
+{{< container_open title="Guardrails for generative AI – Dutch judiciary, Leiden University and T&T Data Consultancy" id="genai-vangrails" icon="fas fa-route" >}}
+
+From Q3-26 up to Q4-27, Algorithm Audit pairs up with the Dutch judiciary, Leiden University and T&T Data Consultancy to develop generative AI guardrails tailored to the Dutch language.
+
+More info about the project: <a href="https://digital-holland.nl/nieuws/dit-zijn-de-8-toegekende-projecten-van-de-call-de-transitie-naar-digitale-autonomie-van-sidn-fonds-en-digital-holland" target="_blank">link</a>. 
+
+More information about Algorithm Audit's [work](/nl/technical-tools/eval-gen-ai/) on evaluating generatieve AI.
+
+{{< image image1="/images/partner logo-cropped/voorRecht.svg" alt1="voorRecht-rechtspraak" caption1="voorRecht-rechtspraak" link1="" image2="/images/partner logo-cropped/UniversiteitLeidenLogo.svg.png" alt2="Leiden University" caption2="Leiden University" link2="" image3="/images/partner logo-cropped/T&TDataConsultancy.png" alt3="T&T Data Consultancy" caption3="T&T Data Consultancy" link3="" width_desktop="3" >}}
+
+{{< container_close >}}
+
+<!-- A2-samenwerking -->
+
+{{< container_open title="Court of Auditors - Municipality A2-samenwerking" id="A2-samenwerking" icon="fas fa-check" >}}
+
+Algorithm Audit supports the Court of Auditors of the A2-samenwerking municipality with an investigation into usage of algorithms and AI systems by the municipality.
+
+{{< image image1="/images/partner logo-cropped/GemeenteA2Samenwerking.svg" alt1="Municipality A2-samenwerking" caption1="Municipality A2-samenwerking" link1="" width_desktop="3" >}}
+
+{{< container_close >}}
+
+<!-- Belastingdienst -->
+
+{{< container_open title="Bias testing - Netherlands Tax Authority" id="Belastingdienst" icon="fas fa-money-bill" >}}
+
+Algorithm Audit is supporting the Netherlands Tax Authority with bias testing algorithmic-driven decision-making processes.
+
+{{< image image1="/images/partner logo-cropped/Belastingdienst.png" alt1="Netherlands Tax Authority" caption1="Netherlands Tax Authority" link1="" width_desktop="3" >}}
+
+{{< container_close >}}
 
 <!-- Gemeente Gouda -->
 
