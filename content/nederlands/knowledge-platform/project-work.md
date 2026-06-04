@@ -40,36 +40,42 @@ quick_navigation:
   title: Inhoudsopgave
   links:
     - title: 2026
-      url: "#Gouda"
-    - title: Inventarisatie algoritmes en AI - Gemeente Gouda
+      url: "#genai-vangrails"
+    - title: Vangrails voor generatieve AI
+      url: "#genai-vangrails"
+      indent: 1
+    - title: Rekenkamer-onderzoek
+      url: "#A2-samenwerking"
+      indent: 1
+    - title: Biasonderzoek
+      url: "#Belastingdienst"
+      indent: 1
+    - title: Inventariseren van algoritmes en AI
       url: "#Gouda"
       indent: 1
-    - title: Socio-technische risico's - Europese Commissie
+    - title: Sociotechnische risico's van generatieve AI
       url: "#AI-safety"
       indent: 1
     - title: 2025
       url: "#implementation-protocol"
-    - title: Implementatie protocol – UNIA
-      url: "#implementation-protocol"
-      indent: 1
-    - title: LLM validatie – Rechtspraak
-      url: "#LLM-validation"
-      indent: 1
-    - title: Discriminatie beoordelingsprotocol – Raad van Europa
-      url: "#assessment-protocol"
-      indent: 1
-    - title: Biasanalyse – Municipality of Utrecht
-      url: "#utrecht"
-      indent: 1
-    - title: Onderzoeksondersteuning – Rekenkamer Deventer
-      url: "#deventer"
-      indent: 1
-    - title: Kennispartner – DUO
-      url: "#DUO2"
-      indent: 1
-    - title: eLearning – Raad van Europa
-      url: "#elearning"
-      indent: 1
+    # - title: LLM validatie – Rechtspraak
+    #   url: "#LLM-validation"
+    #   indent: 1
+    # - title: Discriminatie beoordelingsprotocol – Raad van Europa
+    #   url: "#assessment-protocol"
+    #   indent: 1
+    # - title: Biasanalyse – Municipality of Utrecht
+    #   url: "#utrecht"
+    #   indent: 1
+    # - title: Onderzoeksondersteuning – Rekenkamer Deventer
+    #   url: "#deventer"
+    #   indent: 1
+    # - title: Kennispartner – DUO
+    #   url: "#DUO2"
+    #   indent: 1
+    # - title: eLearning – Raad van Europa
+    #   url: "#elearning"
+    #   indent: 1
     - title: 2024
       url: "#amsterdam"
     - title: Bespreek samenwerking
@@ -77,6 +83,40 @@ quick_navigation:
 ---
 
 # 2026
+
+<!-- GenAI Vangrails -->
+
+{{< container_open title="Vangrails voor generatieve AI – Rechtspraak, Universiteit Leiden en T&T Data Consultancy" id="genai-vangrails" icon="fas fa-route" >}}
+
+Van Q3'26 t/m Q4'27 werkt Algorithm Audit samen met de Rechtspraak (voorRecht-Rechtspraak), Universiteit Leiden en T&T Data Consultancy om vangrails te ontwikkelen voor generatieve AI afgestemd op de Nederlandse taal.
+
+Meer info over het project: <a href="https://digital-holland.nl/nieuws/dit-zijn-de-8-toegekende-projecten-van-de-call-de-transitie-naar-digitale-autonomie-van-sidn-fonds-en-digital-holland" target="_blank">link</a>. 
+
+Meer informatie over Algorithm Audit's [werkzaamheden](/nl/technical-tools/eval-gen-ai/) op het gebied van generatieve AI evaluatie.
+
+{{< image image1="/images/partner logo-cropped/voorRecht.svg" alt1="voorRecht-rechtspraak" caption1="voorRecht-rechtspraak" link1="" image2="/images/partner logo-cropped/UniversiteitLeidenLogo.svg.png" alt2="Universiteit Leiden" caption2="Universiteit Leiden" link2="" image3="/images/partner logo-cropped/T&TDataConsultancy.png" alt3="T&T Data Consultancy" caption3="T&T Data Consultancy" link3="" width_desktop="3" >}}
+
+{{< container_close >}}
+
+<!-- A2-samenwerking -->
+
+{{< container_open title="Rekenkamer - Gemeente A2-samenwerking" id="A2-samenwerking" icon="fas fa-check" >}}
+
+Algorithm Audit ondersteunt de rekenkamer van de gemeente A2-samenwerking met een onderzoek naar de inzet van algoritmes en AI door de gemeente.
+
+{{< image image1="/images/partner logo-cropped/GemeenteA2Samenwerking.svg" alt1="Gemeente A2-samenwerking" caption1="Gemeente A2-samenwerking" link1="" width_desktop="3" >}}
+
+{{< container_close >}}
+
+<!-- Belastingdienst -->
+
+{{< container_open title="Bias testing - Netherlands Tax Authority" id="Belastingdienst" icon="fas fa-money-bill" >}}
+
+Algorithm Audit ondersteunt de Belastingdienst met het uitvoeren van biasonderzoek naar algortime-gedreven besluitvormingsprocessen.
+
+{{< image image1="/images/partner logo-cropped/Belastingdienst.png" alt1="Netherlands Tax Authority" caption1="Netherlands Tax Authority" link1="" width_desktop="3" >}}
+
+{{< container_close >}}
 
 <!-- Gemeente Gouda -->
 
