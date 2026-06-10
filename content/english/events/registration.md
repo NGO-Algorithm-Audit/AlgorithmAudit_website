@@ -37,10 +37,6 @@ dynamic_form_engine:
                 value: In-person
                 title: In-person
                 content: ''
-              - id: online
-                value: Online
-                title: Online
-                content: ''
             required: true
             type: radio
           - identifier: terms-and-conditions
@@ -49,7 +45,7 @@ dynamic_form_engine:
             content: >
               - Submitted data will only be processed in the context of the event. 
 
-              - Your registration is complete once the participation fee (€300 for in-person participation or €200 for online participation) has been paid. Payment instructions will be send to you by email. 
+              - Your registration is complete once the participation fee (€300 for in-person participation) has been paid. Payment instructions will be send to you by email. 
               
               - Inform Algorithm Audit as soon as possible if you are unable to attend the event by sending an email to info@algorithmaudit.eu.
             use_card_style: false
@@ -104,7 +100,6 @@ Hybrid or The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 25
 
 #### Fee
 - €300 in-person participation (including, lunch, drinks, refreshments)
-- €200 hybrid participation
 
 #### Audience
 Professionals from private and public sector who regularly work with GPAI application, such as implementation of generative AI solutions in work processes, testing GPAI capabilities and/or working on AI policy.
