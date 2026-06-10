@@ -37,10 +37,6 @@ dynamic_form_engine:
                 value: Fysiek
                 title: Fysiek
                 content: ''
-              - id: online
-                value: Online
-                title: Online
-                content: ''
             required: true
             type: radio
           - identifier: terms-and-conditions
@@ -49,7 +45,7 @@ dynamic_form_engine:
             content: >
               - Ingezonden gegevens worden alleen verwerkt in het kader van het event. 
 
-              - Je inschrijving is volledig zodra de deelnamekosten (€300 voor fysieke deelname of €200 voor online deelname) zijn betaald. Betalingsinstructies worden je per e-mail toegestuurd.    
+              - Je inschrijving is volledig zodra de deelnamekosten (€300 voor fysieke deelname) zijn betaald. Betalingsinstructies worden je per e-mail toegestuurd.    
               
               - Informeer Algorithm Audit zo snel mogelijk als je niet bij het event aanwezig kunt zijn door een mail te sturen naar info@algorithmaudit.eu.
             use_card_style: false
@@ -104,7 +100,6 @@ Hybride of The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2
 
 #### Kosten
 - €300 fysieke deelname (incl. lunch en catering, koffie, thee etc.)
-- €200 hybride deelname
 
 #### Doelgroep
 Professionals uit de private en publieke sector die regelmatig werken met GPAI-toepassingen, zoals het implementeren van generatieve AI-oplossingen in werkprocessen, het testen van GPAI-capaciteiten en/of het werken aan AI-beleid.
