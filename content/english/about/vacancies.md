@@ -312,7 +312,7 @@ Vragen over de vacature of de procedure? Stuur een email naar [a.voogt@algorithm
 
 <!-- Item 3 - Stagiair -->
 
-<!-- {{< accordions_area_open id="stagiair" >}}
+{{< accordions_area_open id="stagiair" >}}
 
 {{< accordion_item_open title="Intern (0.6-1.0 fte) (Dutch speaking only)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="rolling application" >}}
 
@@ -372,18 +372,6 @@ Als stagiair/werkstudent bij Algorithm Audit:
   * €750,- per maand voor een fulltime stage;
   * Bij minder beschikbaarheid komen we samen tot een redelijke afstemming. 
 
-#### Eigen project onder onze begeleiding? 
-
-Het is ook mogelijk om binnen je stage bij Algorithm Audit een masterscriptie te schrijven op het gebied van verantwoorde AI en algoritmes. We stemmen dan samen af hoeveel tijd jij nodig hebt voor je scriptie en hoeveel tijd je hebt om als stagiair mee te draaien in de organisatie.   
-
-Je scriptie onderwerp sluit zowel aan bij jouw studierichting als bij de algemene focusgebieden van Algorithm Audit. We staan open voor eigen ideeën voor een scriptieonderwerp en we kunnen je ook ondersteunen bij het specifiek definiëren hiervan. Denk bijvoorbeeld aan: 
-
-* Juridisch: Vraagstukken rondom de AI-verordening, digitaal bestuursrecht, of gelijke behandeling bij algoritmes; 
-* Bestuurskundig: Onderzoek naar publieke beleidsvorming rondom algoritmes en AI of naar goed algoritmemanagementbeleid; 
-* Technisch: Onderzoek naar bias en fairness of naar evaluatiemethodes voor LLMs. In je onderzoek weet je de brug te leggen naar concrete use cases en de praktijk. 
-
-Hierbij bieden wij begeleiding door met jou in de inhoud te duiken, en samen te kijken naar de aan te leveren documenten voor jouw scriptie.  
-
 #### Praktische opmerkingen
 
 * Deze vacature staat open voor doorlopende sollicitaties;
@@ -403,4 +391,4 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}  -->
+{{< accordions_area_close >}}
