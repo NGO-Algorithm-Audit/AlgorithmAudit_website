@@ -29,6 +29,20 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      INACH Roundtable
+    description: >
+    image: /images/partner logo-cropped/INACH.svg
+    date: 03-06-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q2_2026
+        label: Q2-2026
+        hide: true
+      - value: type_event
+        label: Event
+  - title: >-
       AFM Meets: verantwoord gebruik van AI
     description: >
       Algorithm Audit heeft een workshop over risicobeheer van GenAI georganiseerd voor meer dan 100 medewerkers van de Autoriteit Financiële Markten. 
