@@ -73,11 +73,6 @@ Activity_Feed:
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
-     - title: INACH Roundtable
-       link:
-       image: /images/partner logo-cropped/INACH.svg
-       date: 03-06-2026
-       type: event 
      - title: AI Risk Management in the EU
        link:
        image: /images/partner logo-cropped/EIPA.png
