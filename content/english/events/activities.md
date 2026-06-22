@@ -46,8 +46,9 @@ events:
       - value: type_event
         label: Event
   - title: >-
-      Nationaal Congress tegen Discriminatie en Racisme
+      Nationaal Congress against Discrimination and Racism
     description: >
+      Panel discussion about usage of algorithmic profiling by Dutch government, and whether this type of technology can or cannot be deployed responsibly.
     image: /images/partner logo-cropped/NCDR.svg
     date: 18-06-2026
     facets:
@@ -62,6 +63,7 @@ events:
   - title: >-
       AI Risk Management in the EU
     description: >
+      Interactive lecture on risk management for generative AI applications, incl. discussion of commonly used RAG pipelines, custom guardrails and 2nd line validation.
     image: /images/partner logo-cropped/EIPA.png
     date: 17-06-2026
     facets:
