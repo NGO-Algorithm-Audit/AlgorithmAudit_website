@@ -31,6 +31,49 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      'Watching Machines: Life under Algorithmic Eyes, Security Vision (Leiden University and ReCNTR)'
+    description: > 
+      Along with researchers and artists, Algoritm Audit's Kaloyan Filipov contributed his policy advisory and data science expertise to a panel discussion about emotion recognition systems in law enforcement. The session centered around the implications of treating emotions as learnable data data, the governance debate around security systems, and strategies for artistic and civil resistance. 
+    image: /images/partner logo-cropped/security vision.svg
+    date: 20-06-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q2_2026
+        label: Q2-2026
+        hide: true
+      - value: type_event
+        label: Event
+  - title: >-
+      Nationaal Congress tegen Discriminatie en Racisme
+    description: >
+    image: /images/partner logo-cropped/NCDR.svg
+    date: 18-06-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q2_2026
+        label: Q2-2026
+        hide: true
+      - value: type_event
+        label: Event
+  - title: >-
+      AI Risk Management in the EU
+    description: >
+    image: /images/partner logo-cropped/EIPA.png
+    date: 17-06-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q2_2026
+        label: Q2-2026
+        hide: true
+      - value: type_event
+        label: Event
+  - title: >-
       INACH Roundtable
     description: >
     image: /images/partner logo-cropped/INACH.svg
