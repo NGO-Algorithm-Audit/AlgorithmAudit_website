@@ -70,21 +70,6 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
-     - title: AI Risk Management in the EU
-       link:
-       image: /images/partner logo-cropped/EIPA.png
-       date: 17-06-2026
-       type: event
-     - title: National Congress against Discrimination and Racism
-       link:
-       image: /images/partner logo-cropped/NCDR.svg
-       date: 18-06-2026
-       type: event
-     - title: 'Watching Machines: Life under Algorithmic Eyes, Security Vision (Leiden University and ReCNTR)'
-       link: 'https://www.securityvision.io/projects/18-19-june-watching-machines-life-under-algorithmic-eyes'
-       image: /images/partner logo-cropped/security vision.svg
-       date: 20-06-2026
-       type: event
      - title: Workshop 'Lifecycle of responsible AI'
        link:
        image: /images/partner logo-cropped/MinJenV.png
