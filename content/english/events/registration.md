@@ -17,7 +17,7 @@ dynamic_form_engine:
             type: text
           - identifier: function
             id: function
-            title: Position and organisation
+            title: Role and organisation
             content: ''
             required: true
             type: text
@@ -27,42 +27,42 @@ dynamic_form_engine:
             content: ''
             required: true
             type: email
-          - identifier: participation-type
-            id: participation-type
-            title: Participation type
-            content: ''
-            use_card_style: false
-            options:
-              - id: in-person
-                value: In-person
-                title: In-person
-                content: ''
-            required: true
-            type: radio
-          - identifier: terms-and-conditions
-            id: terms-and-conditions
-            title: By checking this box you agree with
-            content: >
-              - Submitted data will only be processed in the context of the event. 
+          # - identifier: participation-type
+          #   id: participation-type
+          #   title: Participation type
+          #   content: ''
+          #   use_card_style: false
+          #   options:
+          #     - id: in-person
+          #       value: In-person
+          #       title: In-person
+          #       content: ''
+          #   required: true
+          #   type: radio
+          # - identifier: terms-and-conditions
+          #   id: terms-and-conditions
+          #   title: By checking this box you agree with
+          #   content: >
+          #     - Submitted data will only be processed in the context of the event. 
 
-              - Your registration is complete once the participation fee (€300 for in-person participation) has been paid. Payment instructions will be send to you by email. 
+          #     - By registering, you agree to pay the €300 participation fee. Payment instructions will be sent to you by email.
               
-              - Inform Algorithm Audit as soon as possible if you are unable to attend the event by sending an email to info@algorithmaudit.eu.
-            use_card_style: false
-            options:
-              - id: agree
-                value: agree
-                title: Agree
-                content: ''
-            required: true
-            type: checkbox
+          #     - Inform Algorithm Audit as soon as possible if you are unable to attend the event by sending an email to info@algorithmaudit.eu.
+          #   use_card_style: false
+          #   options:
+          #     - id: agree
+          #       value: agree
+          #       title: Agree
+          #       content: ''
+          #   required: true
+          #   type: checkbox
     complete_form_options:
       type: submit
       button_text: Register
       backend_link: 'https://formspree.io/f/xeogpapg'
-# promo_bar:
-#   - content: |
-#       A few spots are still available for the event. Registering does not automatically confirm participation. You will be informed by Tuesday February 24 at the latest whether you can attend the event.
+promo_bar:
+  - content: |
+      [Sign up](/events/registration/#form1) to stay informed about a new edition of this event coming this autumn.
 quick_navigation:
   title: Overview
   links:
@@ -72,7 +72,7 @@ quick_navigation:
 
 {{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Masterclass 'Testing General Purpose AI (GPAI) applications'" id="event" background_color="#ffffff" tag1="25-06-2026" tag2="masterclass" tag3="hybrid" image="/images/events/20260625_GPAI_event.png" >}}
+{{< accordion_item_open title="Masterclass 'Testing General Purpose AI (GPAI) applications'" id="event" background_color="#ffffff" tag1="fall 2026" tag2="masterclass" tag3="in-person" image="/images/events/20260625_GPAI_event.png" >}}
 
 {{< promo_bar index="0" >}}
 
@@ -82,10 +82,10 @@ quick_navigation:
 The capabilities of GPAI models and systems continue to improve. GPAI systems now match or exceed expert-level performance on capabilities such as “reasoning”, “problem solving” and “graduate-level skills”. Yet it is often unclear what these concepts actually capture. In this masterclass, attendees gain state-of-the-art insights about the latest developments in the rapidly advancing field of GPAI benchmarking.
 
 #### Date
-Thursday June 25th, 10:00-17:00 CET
+Fall 2026
 
 #### Address
-Hybrid or The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den Haag
+The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den Haag
 
 #### Programme
 - 09:30-10:00 Doors open
