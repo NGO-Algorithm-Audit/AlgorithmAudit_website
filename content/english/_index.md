@@ -70,11 +70,11 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
-     - title: Workshop 'Lifecycle of responsible AI'
-       link:
-       image: /images/partner logo-cropped/MinJenV.png
-       date: 22-06-2026
-       type: event
+  #   - title: Workshop 'Levensloop van verantwoorde AI'
+  #     link:
+  #     image: /images/partner logo-cropped/MinJenV.png
+  #     date: 22-06-2026
+  #     type: event
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:
