@@ -29,6 +29,20 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Workshop 'Levensloop van verantwoorde AI'
+    description: > 
+    image: /images/partner logo-cropped/MinJenV.png
+    date: 22-06-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q2_2026
+        label: Q2-2026
+        hide: true
+      - value: type_event
+        label: Event
+  - title: >-
       'Watching Machines: Life under Algorithmic Eyes, Security Vision (Leiden University and ReCNTR)'
     description: >
       Samen met onderzoekers en kustenaars, Kaloyan Filipov van Algoritm Audit deelde zijn expertise op het gebied van beleidsadvies en datawetenschap tijdens een paneldiscussie over emotieherkenningssystemen  in de veilgheidsdomein. De sessie ging vooral over de gevolgen van het behandelen van emoties als data die je kunt leren, het governance debat over emotieherkenningsapplicaties en strategieën voor artistiek en maatschappelijk verzet. 

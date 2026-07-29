@@ -31,6 +31,20 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Workshop 'Lifecycle of responsible AI'
+    description: > 
+    image: /images/partner logo-cropped/MinJenV.png
+    date: 22-06-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q2_2026
+        label: Q2-2026
+        hide: true
+      - value: type_event
+        label: Event
+  - title: >-
       'Watching Machines: Life under Algorithmic Eyes, Security Vision (Leiden University and ReCNTR)'
     description: > 
       Along with researchers and artists, Algoritm Audit's Kaloyan Filipov contributed his policy advisory and data science expertise to a panel discussion about emotion recognition systems in law enforcement. The session centered around the implications of treating emotions as learnable data data, the governance debate around security systems, and strategies for artistic and civil resistance. 
