@@ -33,6 +33,7 @@ events:
   - title: >-
       Workshop 'Lifecycle of responsible AI'
     description: > 
+    During a workshop at the Dutch Ministry of Justice and Security, Algorithm Audit set out how very simple but impactful algorithms can be deployed responsibly through validation and evaluation – from an organisational, legal and technical perspective.
     image: /images/partner logo-cropped/MinJenV.png
     date: 22-06-2026
     facets:
