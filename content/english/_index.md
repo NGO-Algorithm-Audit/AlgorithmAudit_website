@@ -70,11 +70,11 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
-  #   - title: Workshop 'Levensloop van verantwoorde AI'
-  #     link:
-  #     image: /images/partner logo-cropped/MinJenV.png
-  #     date: 22-06-2026
-  #     type: event
+     - title: Governance and tools for AI risk management
+       link:
+       image: /images/partner logo-cropped/PRMIA.png
+       date: 09-09-2026
+       type: event
   items_button_text: More events
   items_button_link: /events/activities/
 Areas_of_AI_expertise:
