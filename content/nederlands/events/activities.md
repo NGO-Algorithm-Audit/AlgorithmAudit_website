@@ -31,6 +31,7 @@ events:
   - title: >-
       Workshop 'Levensloop van verantwoorde AI'
     description: > 
+    Tijdens een workshop bij het Nederlandse ministerie van Justitie en Veiligheid heeft Algorithm Audit uitgelegd hoe je heel simpele maar invloedrijke algoritmen op een verantwoorde manier kunt inzetten door ze te valideren en te evalueren – zowel vanuit organisatorisch, juridisch als technisch oogpunt.
     image: /images/partner logo-cropped/MinJenV.png
     date: 22-06-2026
     facets:
