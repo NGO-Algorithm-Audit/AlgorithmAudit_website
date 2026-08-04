@@ -78,6 +78,11 @@ Activity_Feed:
        image: /images/partner logo-cropped/PRMIA.png
        date: 09-09-2026
        type: event
+     - title: AI gelleterheid, verantwoord digitaliseren en AI
+       link:
+       image: /images/partner logo-cropped/UtrechtUniversity.png
+       date: 26-10-2026
+       type: event
   items_button_text: Meer events
   items_button_link: /nl/events/activities/
 Areas_of_AI_expertise:
