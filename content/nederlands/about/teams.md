@@ -129,13 +129,13 @@ team:
       - image: /images/people/KFilipov.jpeg
         name: Kaloyan Filipov
         bio: |
-          AI Adviseur / Validator
+          AI Adviseur
         linkedIn: "https://www.linkedin.com/in/kaloyan-filipov/"
-      - image: /images/people/LPam.jpeg
-        name: Lenny Pam
+      - image: /images/people/TvanRoozendaal.jpg
+        name: Tessel van Roozendaal
         bio: |
-          Werkstudent
-        linkedIn: "https://www.linkedin.com/in/lenny-pam-030a0a134/"
+          Medior AI Adviseur
+        linkedIn: "https://www.linkedin.com/in/tessel-van-roozendaal-6ab656187/"
         accordion_content: ""
 quick_navigation:
   title: Overzicht

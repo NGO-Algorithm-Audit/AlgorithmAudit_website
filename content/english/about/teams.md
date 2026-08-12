@@ -148,14 +148,14 @@ team:
       - image: /images/people/KFilipov.jpeg
         name: Kaloyan Filipov
         bio: |
-          AI Advisor / Validator
+          AI Advisor
         linkedIn: "https://www.linkedin.com/in/kaloyan-filipov/"
         accordion_content: ""
-      - image: /images/people/LPam.jpeg
-        name: Lenny Pam
+      - image: /images/people/TvanRoozendaal.jpg
+        name: Tessel van Roozendaal
         bio: |
-          Intern
-        linkedIn: "https://www.linkedin.com/in/lenny-pam-030a0a134/"
+          Medior AI Advisor
+        linkedIn: "https://www.linkedin.com/in/tessel-van-roozendaal-6ab656187/"
         accordion_content: ""
 quick_navigation:
   title: Overview
