@@ -4,7 +4,7 @@ subtitle: >
   Meld je aan voor events van Algorithm Audit
 image: /images/svg-illustrations/about.svg
 dynamic_form_engine:
-  - title: Interesselijst
+  - title: Registratie
     id: form1
     icon: fas fa-user-tag
     section:

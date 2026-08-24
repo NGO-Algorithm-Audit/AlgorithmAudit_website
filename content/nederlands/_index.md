@@ -78,6 +78,11 @@ Activity_Feed:
        image: /images/partner logo-cropped/PRMIA.png
        date: 09-09-2026
        type: event
+     - title: Masterclass 'Testen van General Purpose AI (GPAI) toepassingen'
+       link: /nl/events/registration/
+       image: /images/logo/favicon.ico
+       date: 03-11-2026
+       type: event
   items_button_text: Meer events
   items_button_link: /nl/events/activities/
 Areas_of_AI_expertise:
