@@ -4,7 +4,7 @@ subtitle: >
   Register for events of Algorithm Audit
 image: /images/svg-illustrations/about.svg
 dynamic_form_engine:
-  - title: Register
+  - title: Registration
     id: form1
     icon: fas fa-user-tag
     section:
