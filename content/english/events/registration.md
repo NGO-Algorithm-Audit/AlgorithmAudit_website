@@ -27,42 +27,44 @@ dynamic_form_engine:
             content: ''
             required: true
             type: email
-          # - identifier: participation-type
-          #   id: participation-type
-          #   title: Participation type
-          #   content: ''
-          #   use_card_style: false
-          #   options:
-          #     - id: in-person
-          #       value: In-person
-          #       title: In-person
-          #       content: ''
-          #   required: true
-          #   type: radio
-          # - identifier: terms-and-conditions
-          #   id: terms-and-conditions
-          #   title: By checking this box you agree with
-          #   content: >
-          #     - Submitted data will only be processed in the context of the event. 
+          - identifier: participation-type
+            id: participation-type
+            title: Participation type
+            content: ''
+            use_card_style: false
+            options:
+               - id: in-person
+                 value: In-person
+                 title: In-person
+                 content: ''
+            required: true
+            type: radio
+          - identifier: terms-and-conditions
+            id: terms-and-conditions
+            title: By checking this box, you agree that
+            content: >
+               - You consent for submitted data to be processed only in the context of the event. 
+               
+               - You confirm attendance and accept that Algorithm Audit will make arrangements for facilities and catering on your behalf, covered under the participation fee. The registration is definitive and not contingent on further confirmation.
 
-          #     - By registering, you agree to pay the €300 participation fee. Payment instructions will be sent to you by email.
+               - You are required to pay the €300 participation fee. Payment instructions will be sent to you by email.
               
-          #     - Inform Algorithm Audit as soon as possible if you are unable to attend the event by sending an email to info@algorithmaudit.eu.
-          #   use_card_style: false
-          #   options:
-          #     - id: agree
-          #       value: agree
-          #       title: Agree
-          #       content: ''
-          #   required: true
-          #   type: checkbox
+               - You will inform Algorithm Audit as soon as possible if you are unable to attend the event by sending an email to info@algorithmaudit.eu. Lifting of payment obligation or refund may not be granted depending on the circumstances of cancellation.
+            use_card_style: false
+            options:
+               - id: agree
+                 value: agree
+                 title: Agree
+                 content: ''
+            required: true
+            type: checkbox
     complete_form_options:
       type: submit
       button_text: Register
       backend_link: 'https://formspree.io/f/xeogpapg'
 promo_bar:
   - content: |
-      [Sign up](/events/registration/#form1) to stay informed about a new edition of this event coming this autumn.
+      [Sign up](/events/registration/#form1) for the next edition of this Masterclass on November 3rd 2026.
 quick_navigation:
   title: Overview
   links:
@@ -72,7 +74,7 @@ quick_navigation:
 
 {{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Masterclass 'Testing General Purpose AI (GPAI) applications'" id="event" background_color="#ffffff" tag1="fall 2026" tag2="masterclass" tag3="in-person" image="/images/events/20260625_GPAI_event.png" >}}
+{{< accordion_item_open title="Masterclass 'Testing General Purpose AI (GPAI) applications'" id="event" background_color="#ffffff" tag1="3 November 2026" tag2="masterclass" tag3="in-person" image="/images/events/20260625_GPAI_event.png" >}}
 
 {{< promo_bar index="0" >}}
 
@@ -82,7 +84,7 @@ quick_navigation:
 The capabilities of GPAI models and systems continue to improve. GPAI systems now match or exceed expert-level performance on capabilities such as “reasoning”, “problem solving” and “graduate-level skills”. Yet it is often unclear what these concepts actually capture. In this masterclass, attendees gain state-of-the-art insights about the latest developments in the rapidly advancing field of GPAI benchmarking.
 
 #### Date
-Fall 2026
+3 November 2026
 
 #### Address
 The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den Haag
@@ -102,7 +104,7 @@ The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den 
 - €300 in-person participation (including, lunch, drinks, refreshments)
 
 #### Audience
-Professionals from private and public sector who regularly work with GPAI application, such as implementation of generative AI solutions in work processes, testing GPAI capabilities and/or working on AI policy.
+Professionals from private and public sector who regularly work with GPAI applications, such as implementation of generative AI solutions in work processes, testing GPAI capabilities and/or working on AI policy.
 
 {{< embed_pdf url="/pdf-files/events/activities/20260625_Masterclass_Benchmarking.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
