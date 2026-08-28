@@ -1,7 +1,7 @@
 ---
 title: Vacancies
 subtitle: |
-  Overview of current job openings at Algorithm Audit.
+  There are currently no job openings at Algorithm Audit.
 image: /images/svg-illustrations/about.svg
 # quick_navigation:
 #  title: Overview
@@ -312,7 +312,7 @@ Vragen over de vacature of de procedure? Stuur een email naar [a.voogt@algorithm
 
 <!-- Item 3 - Stagiair -->
 
-{{< accordions_area_open id="stagiair" >}}
+<!-- {{< accordions_area_open id="stagiair" >}}
 
 {{< accordion_item_open title="Intern (0.6-1.0 fte) (Dutch speaking only)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="rolling application" >}}
 
@@ -391,4 +391,4 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}
+{{< accordions_area_close >}}-->
