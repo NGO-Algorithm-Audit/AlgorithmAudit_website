@@ -74,14 +74,30 @@ quick_navigation:
 
 {{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Masterclass 'Testing General Purpose AI (GPAI) applications'" id="event" background_color="#ffffff" tag1="3 November 2026" tag2="masterclass" tag3="in-person" image="/images/events/20260625_GPAI_event.png" >}}
+{{< accordion_item_open title="Masterclass 'Testing General Purpose AI (GPAI) applications'" id="event" background_color="#ffffff" tag1="3 November 2026" tag2="masterclass" tag3="in-person" image="/images/events/20261103_GPAI_event.png" >}}
 
 {{< promo_bar index="0" >}}
 
 <br>
 
 #### Description
-The capabilities of GPAI models and systems continue to improve. GPAI systems now match or exceed expert-level performance on capabilities such as “reasoning”, “problem solving” and “graduate-level skills”. Yet it is often unclear what these concepts actually capture. In this masterclass, attendees gain state-of-the-art insights about the latest developments in the rapidly advancing field of GPAI benchmarking.
+As GPAI models continue to improve, systems are increasingly touted as matching or exceeding expert performance in “problem solving”, “scientific reasoning” or  “real-world software engineering.” These claims are based on common tests for different capabilities, known as “benchmarks”.
+
+Yet, there is often misconception of what benchmarks actually measure, what conclusions about a system we can actually make and how to evaluate what actually matters for a use case. Just as other technology-driven industries, like healthcare and aviation, AI benchmarking needs reliable standards. With best practices in their infancy, it can be daunting for professionals to navigate GPAI evaluation. 
+
+In this masterclass, we distill and make accessible the most valuable insights from the field of GPAI benchmarking. The course covers:
+-	GPAI under the AI Act and benchmarking for systems with systemic risk
+-	Prominent industry benchmarks and adaptations to GPT-NL
+-	Insights from Algorithm Audit’s own benchmarking work
+-	Current issues in the field from a scientific perspective
+-	The design aspects that determine the quality of a benchmark
+
+After attending, participants will be able to:
+-	Understand relevant obligations for GPAI systems under the AI Act
+-	Grasp how benchmarks tend to work “under the hood”
+-	Navigate common evaluation repositories and documentation
+-	Assess the suitability of existing benchmarks for their own work
+-	Reason when a custom approach is needed and how it may look
 
 #### Date
 3 November 2026
@@ -106,7 +122,7 @@ The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den 
 #### Audience
 Professionals from private and public sector who regularly work with GPAI applications, such as implementation of generative AI solutions in work processes, testing GPAI capabilities and/or working on AI policy.
 
-{{< embed_pdf url="/pdf-files/events/activities/20260625_Masterclass_Benchmarking.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/events/activities/20261103_Masterclass_Benchmarking.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< dynamic_form_engine index="0" >}}
 
