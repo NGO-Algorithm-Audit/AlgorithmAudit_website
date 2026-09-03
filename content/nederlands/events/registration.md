@@ -74,14 +74,31 @@ quick_navigation:
 
 {{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Masterclass 'Testen van General Purpose AI (GPAI) toepassingen'" id="event" background_color="#ffffff" tag1="3 november 2026" tag2="masterclass" tag3="op locatie" image="/images/events/20260625_GPAI_event.png" >}}
+{{< accordion_item_open title="Masterclass 'Testen van General Purpose AI (GPAI) toepassingen'" id="event" background_color="#ffffff" tag1="3 november 2026" tag2="masterclass" tag3="op locatie" image="/images/events/20261103_GPAI_event.png" >}}
 
 {{< promo_bar index="0" >}}
 
 <br>
 
 #### Beschrijving
-De capaciteiten van GPAI-modellen en -systemen blijven zich ontwikkelen. GPAI-systemen evenaren of overtreffen inmiddels expertniveau op vaardigheden als “redeneren”, “probleemoplossen” en “academische vaardigheden”. Toch is vaak onduidelijk wat deze begrippen daadwerkelijk omvatten. In deze masterclass krijgen deelnemers state-of-the-art inzichten in de nieuwste ontwikkelingen op het snel evoluerende gebied van GPAI-benchmarking.
+Naarmate GPAI-modellen steeds beter worden, wordt er steeds vaker beweerd dat systemen de prestaties van experts evenaren of overtreffen op het gebied van ‘probleemoplossing’, ‘wetenschappelijk redeneren’ of ‘softwareontwikkeling in de praktijk’. Deze beweringen zijn gebaseerd op gangbare tests voor verschillende vaardigheden, ook wel ‘benchmarks’ genoemd.
+
+Toch bestaat er vaak een misvatting over wat benchmarks nu eigenlijk meten, welke conclusies we daadwerkelijk over een systeem kunnen trekken en hoe we kunnen beoordelen wat er voor een specifieke toepassing echt toe doet. Net als in andere technologiegedreven sectoren, zoals de gezondheidszorg en de luchtvaart, heeft AI-benchmarking betrouwbare standaarden nodig. Omdat best practices nog in de kinderschoenen staan, kan het voor professionals best lastig zijn om hun weg te vinden in GPAI-evaluaties.
+
+In deze masterclass distilleren we de meest waardevolle inzichten uit het gebied van GPAI-benchmarking en maken we die toegankelijk. De cursus behandelt:
+-    GPAI volgens de AI-wet en benchmarking voor systemen met systeemrisico’s
+-    Toonaangevende benchmarks uit de sector en toepassing op GPT-NL
+-    Inzichten uit het eigen benchmarkwerk van Algorithm Audit
+-    Actuele kwesties in het vakgebied vanuit een wetenschappelijk perspectief
+-    De ontwerpaspecten die de kwaliteit van een benchmark bepalen
+
+Na het volgen van de training kun je:
+-    De relevante verplichtingen voor GPAI-systemen onder de AI-wet begrijpen
+-    Begrijpen hoe benchmarks ‘achter de schermen’ werken
+-    Je weg vinden in gangbare evaluatiedatabases en documentatie
+-    Beoordelen of bestaande benchmarks geschikt zijn voor je eigen werk
+-    Bepalen wanneer een aangepaste aanpak nodig is en hoe die eruit zou kunnen zien
+
 
 #### Datum
 3 november 2026
@@ -106,7 +123,7 @@ The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den 
 #### Doelgroep
 Professionals uit de private en publieke sector die regelmatig werken met GPAI-toepassingen, zoals het implementeren van generatieve AI-oplossingen in werkprocessen, het testen van GPAI-capaciteiten en/of het werken aan AI-beleid.
 
-{{< embed_pdf url="/pdf-files/events/activities/20260625_Masterclass_Benchmarking.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/events/activities/20261103_Masterclass_Benchmarking.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< dynamic_form_engine index="0" >}}
 
