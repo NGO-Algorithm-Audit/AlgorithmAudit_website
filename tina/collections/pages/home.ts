@@ -115,7 +115,8 @@ export default {
               name: "labels",
               required: true,
               list: true,
-              description: "The slider only works for two elements",
+              description:
+                "Labels cycle in the homepage slogan slider; any number works (2-4 reads best)",
               fields: [
                 {
                   label: "Label",

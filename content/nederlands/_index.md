@@ -16,8 +16,9 @@ Banner:
   slogan:
     title: Een Europees kennisplatform voor
     labels:
-      - text: AI bias testing
       - text: AI standaarden
+      - text: GPAI testing
+      - text: AI bias testing
 About:
   content: >
     Wie besluit over de algoritmes die onze dagelijkse realiteit steeds meer
