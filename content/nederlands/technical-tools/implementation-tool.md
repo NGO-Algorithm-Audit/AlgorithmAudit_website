@@ -151,7 +151,7 @@ De bovenstaande flowcharts voor Vragenlijst Identificatie weergeven de logica di
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst Risicocategorie van AI-systemen" id="flowchart-questionnaire-risk-category" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowchart Risk category NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260914 Flowchart Risk category NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 
