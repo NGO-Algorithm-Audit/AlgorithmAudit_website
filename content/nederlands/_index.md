@@ -73,11 +73,6 @@ Activity_Feed:
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
-     - title: Governance and tools for AI risk management
-       link:
-       image: /images/partner logo-cropped/PRMIA.png
-       date: 09-09-2026
-       type: event
      - title: Masterclass 'Testen van General Purpose AI (GPAI) toepassingen'
        link: /nl/events/registration/
        image: /images/logo/favicon.ico
