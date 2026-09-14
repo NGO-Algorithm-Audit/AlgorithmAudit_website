@@ -8,6 +8,8 @@ facet_groups:
         label: Q1-2026
       - value: q2_2026
         label: Q2-2026
+      - value: q3_2026
+        label: Q3-2026
       - value: q4_2025
         label: Q4-2025
       - value: q3_2025
@@ -30,6 +32,22 @@ facet_groups:
       - value: training
         label: Training
 events:
+  - title: >-
+      Governance and tools for AI risk management
+    description: > 
+      Presentation on Auditing AI for Public Good for the Professional Risk Managers' International Association (PRMIA) at ING, Amsterdam.
+      ![](/images/events/PRMIA.jpeg)
+    image: /images/partner logo-cropped/PRMIA.png
+    date: 09-09-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q3_2026
+        label: Q3-2026
+        hide: true
+      - value: type_event
+        label: Event
   - title: >-
       Workshop 'Lifecycle of responsible AI'
     description: > 
