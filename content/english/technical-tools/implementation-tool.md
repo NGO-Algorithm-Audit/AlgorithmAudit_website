@@ -147,7 +147,7 @@ The above flowcharts for Questionnaire Identification represent the logic needed
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Questionnaire Risk category of AI systems" id="flowchart-questionnaire-risk-category" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260914 Flowchart Risk category EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260917 Flowchart Risk category EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 
