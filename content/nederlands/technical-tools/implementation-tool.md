@@ -159,6 +159,6 @@ De bovenstaande flowcharts voor Vragenlijst Identificatie weergeven de logica di
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Verplichtingen voor bepaalde AI-systemen" id="flowchart-obligations" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260511 Flowchart Obligations NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260918 Flowchart Obligations NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
