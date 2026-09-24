@@ -143,7 +143,7 @@ team:
           AI Adviseur
         linkedIn: "https://www.linkedin.com/in/tim-de-jonge-47170a169/"
         accordion_content: ""
-      - image: 
+      - image: /images/people/RIbelings.jpg
         name: Roemer Ibelings
         bio: |
           Stagiar
