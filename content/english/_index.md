@@ -112,7 +112,7 @@ Areas_of_AI_expertise:
     - name: Auditing and legal compliance
       icon: fas fa-scroll
       content: >
-        We audit algorithmic systems from organisational, technial and legal
+        We audit algorithmic systems from organisational, technical and legal
         perspective. We also offer support with interpretation and implementation of the AI Act and GDPR legal texts, annexes and guidelines from the European Commission, including issues regarding definitions, high-risk applications and conformity assessment. Our <a href="/knowledge-platform/knowledge-base/"
         style="text-decoration: underline;">audit reports and white papers</a> contribute to public knowledge how legal compliance can be realised.
   button_text: Explore collaboration

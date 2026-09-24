@@ -157,6 +157,18 @@ team:
           Medior AI Advisor
         linkedIn: "https://www.linkedin.com/in/tessel-van-roozendaal-6ab656187/"
         accordion_content: ""
+      - image: /images/people/TdeJonge.jpg
+        name: Tim de Jonge
+        bio: |
+          AI Advisor
+        linkedIn: "https://www.linkedin.com/in/tim-de-jonge-47170a169/"
+        accordion_content: ""
+      - image: 
+        name: Roemer Ibelings
+        bio: |
+          Intern
+        linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
+        accordion_content: ""
 quick_navigation:
   title: Overview
   links:
