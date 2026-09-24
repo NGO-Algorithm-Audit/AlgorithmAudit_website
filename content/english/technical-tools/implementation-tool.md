@@ -155,6 +155,6 @@ The above flowcharts for Questionnaire Identification represent the logic needed
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Obligations for certain AI systems" id="flowchart-questionnaire-obligations" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260918 Flowchart Obligations EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20260924 Flowchart Obligations EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
