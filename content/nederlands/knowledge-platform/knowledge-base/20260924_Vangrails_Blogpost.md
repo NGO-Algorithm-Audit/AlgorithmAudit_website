@@ -2,6 +2,7 @@
 layout: article
 type: knowledgebase_item
 date: 2026-09-24
+featured: true
 author: Universiteit Leiden, T&T Data Consultancy, Algorithm Audit
 summary: >-
   Blogpost die de noodzaak en de aanpak toelicht voor het ontwikkelen van Nederlandse vangrails voor generatieve AI, als onderdeel van het SIDN project 'Vangrails voor Nederlandse generatieve AI'.

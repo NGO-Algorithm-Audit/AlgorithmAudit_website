@@ -1,7 +1,7 @@
 ---
 intro: >-
   Chapter to book Data Protection, Privacy and Artificial Intelligence, Volume 18
-featured: true
+featured: false
 layout: article
 type: knowledgebase_item
 facets:

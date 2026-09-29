@@ -2,6 +2,7 @@
 layout: article
 type: knowledgebase_item
 date: 2026-09-24
+featured: true
 author: University Leiden, T&T Data Consultancy, Algorithm Audit
 summary: >-
   Blog posts explaining the necessity and path forward for developing Dutch generative AI guardrails, as part of the SIDN project 'Guardrails for Dutch generative AI'.
