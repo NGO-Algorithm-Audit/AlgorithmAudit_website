@@ -80,7 +80,7 @@ Activity_Feed:
        date: 03-11-2026
        type: event
      - title: Najaarscongres Vereniging van Rekenkamers
-       link: /events/registration/
+       link: https://www.rekenkamers.nl/agenda/19662/najaarscongres-2026/
        image: /images/partner logo-cropped/VVR.svg
        date: 27-11-2026
        type: event
