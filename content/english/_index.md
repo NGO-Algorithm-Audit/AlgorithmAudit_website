@@ -53,19 +53,19 @@ overview_block:
 Activity_Feed:
   featured_title: Featured
   featured_activities:
-    - title: Empirical Methods for Supervising Algorithmic Profiling Systems
+    - title: The need for Dutch guardrails for generative AI
       intro: >
-        Contribution to the book Data Protection, Privacy and Artificial Intelligence, Volume 18
-      link: /knowledge-platform/knowledge-base/empirical_methods_cpdp_book/
-      image: /images/knowledge_base/CPDP_book.jpg
-      date: 01-06-2026
-      type: book
+        Blog posts explaining the necessity and path forward for developing Dutch generative AI guardrails
+      link: /knowledge-platform/knowledge-base/20260924_vangrails_blogpost/
+      image: /images/partner logo-cropped/ai-guardrails-logo.svg
+      date: 29-09-2026
+      type: blog
     - title: Masterclass GPAI
       intro: >
         Register for Algorithm Audit's masterclass on 'Testing General Purpose AI (GPAI) applications' 
       link: /events/registration/
       image: /images/events/20260625_GPAI_event.png
-      date: 25-06-2026
+      date: 03-11-2026
       type: masterclass
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
