@@ -16,8 +16,9 @@ Banner:
   slogan:
     title: Een Europees kennisplatform voor
     labels:
-      - text: AI bias testing
       - text: AI standaarden
+      - text: GPAI testing
+      - text: AI bias testing
 About:
   content: >
     Wie besluit over de algoritmes die onze dagelijkse realiteit steeds meer
@@ -55,19 +56,19 @@ overview_block:
 Activity_Feed:
   featured_title: Uitgelicht
   featured_activities:
-    - title: Empirical Methods for Supervising Algorithmic Profiling Systems
+    - title: De noodzaak van Nederlandse vangrails voor generatieve AI
       intro: >
-        Bijdrage aan het boek Data Protection, Privacy and Artificial Intelligence, Volume 18
-      link: /nl/knowledge-platform/knowledge-base/empirical_methods_cpdp_book/
-      image: /images/knowledge_base/CPDP_book.jpg
-      date: 01-06-2026
-      type: boek
+        Blogpost die de noodzaak en de aanpak toelicht voor het ontwikkelen van Nederlandse vangrails voor generatieve AI
+      link: /nl/knowledge-platform/knowledge-base/20260924_vangrails_blogpost/
+      image: /images/partner logo-cropped/ai-guardrails-logo.svg
+      date: 29-09-2026
+      type: blog
     - title: Masterclass GPAI
       intro: >
         Schrijf je in voor Algorithm Audit's masterclass over 'Testen van General Purpose AI (GPAI) toepassingen' 
       link: /nl/events/registration/
       image: /images/events/20260625_GPAI_event.png
-      date: 25-06-2026
+      date: 03-11-2026
       type: masterclass
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
@@ -84,7 +85,7 @@ Activity_Feed:
        date: 03-11-2026
        type: event
      - title: Najaarscongres Vereniging van Rekenkamers
-       link: /events/registration/
+       link: https://www.rekenkamers.nl/agenda/19662/najaarscongres-2026/
        image: /images/partner logo-cropped/VVR.svg
        date: 27-11-2026
        type: event

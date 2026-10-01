@@ -38,19 +38,19 @@
 
         <!-- slider -->
         <div class="ms-slider d-inline-block landing-page-slogan-slider">
-          <ul class="ms-slider__words">
+          <ul class="ms-slider__words ms-slider__words--{{ len .labels }}">
             {{ range .labels }}
             <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
-              <div class="slider-wrapper mb-1 py-1">
+              <div class="slider-wrapper">
                 <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
                     class="highlight-red">{{.text}}</i></h2>
               </div>
             </li>
             {{ end }}
-            <!-- repeat the last item for the slider logic -->
+            <!-- repeat the first item so the loop wraps seamlessly -->
             {{ with index .labels 0 }}
             <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
-              <div class="slider-wrapper mb-1 py-1">
+              <div class="slider-wrapper">
                 <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
                     class="highlight-red">{{.text}}</i></h2>
               </div>
@@ -127,19 +127,19 @@
 
         <!-- slider -->
         <div class="ms-slider d-block landing-page-slogan-slider">
-          <ul class="ms-slider__words">
+          <ul class="ms-slider__words ms-slider__words--{{ len .labels }}">
             {{ range .labels }}
             <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
-              <div class="slider-wrapper mb-1 py-1">
+              <div class="slider-wrapper">
                 <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
                     class="highlight-red">{{.text}}</i></h2>
               </div>
             </li>
             {{ end }}
-            <!-- repeat the last item for the slider logic -->
+            <!-- repeat the first item so the loop wraps seamlessly -->
             {{ with index .labels 0 }}
             <li class="ms-slider__word pl-0 landing-page-slogan-slider-li">
-              <div class="slider-wrapper mb-1 py-1">
+              <div class="slider-wrapper">
                 <h2 class="landing-page-slide-title" style="color:#005aa7; font-weight:100;"><i
                     class="highlight-red">{{.text}}</i></h2>
               </div>

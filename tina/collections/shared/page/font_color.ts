@@ -7,7 +7,7 @@ let font_color: TinaField = {
   type: "string",
   name: "font_color",
   label: "Font color",
-  required: true,
-  description: "Hex color code (e.g. #FF0000)",
+  required: false,
+  description: "Hex color code (e.g. #FF0000). Defaults to #FFF if left empty.",
 };
 export default font_color;

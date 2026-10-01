@@ -11,13 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tinacms": "^2.7.0",
     "algoliasearch": "4",
-    "instantsearch.js": "4.79.0"
+    "instantsearch.js": "4.79.0",
+    "tinacms": "^3.14.1"
   },
   "devDependencies": {
+    "@tinacms/cli": "^3.1.0",
     "@types/node": "^22.5.1",
-    "@tinacms/cli": "^1.9.0",
     "hugo": "^0.0.3",
     "hugo-extended": "^0.145.0"
   },

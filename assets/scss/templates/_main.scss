@@ -915,8 +915,9 @@ padding: 20px 0px 0px 0px;
     padding: 0;
   
     list-style: none;
-    
-    animation-name: wordSlider;
+
+    // animation-name / -duration come from the .ms-slider__words--N
+    // modifier below, which the banner partial sets from the label count.
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     animation-duration: 5s;
@@ -929,20 +930,36 @@ padding: 20px 0px 0px 0px;
   }
 }
 
-@keyframes wordSlider {
-  $steps: -0%, -33%, -66%;
-  
-  @for $index from 0 to length($steps)-1 {
-    $next: $index+1;
-    $step: floor(100/(length($steps)-1));
-    $animation_step: floor($step*.2);
-  
-    #{$step*$index}%,
-    #{($step*$next) - $animation_step}% {
-      transform: translateY(nth($steps, $index+1));
+// One keyframe set per label count, so the slider stays in sync with however
+// many labels are listed in the page frontmatter. $count is the number of
+// labels; the markup renders $count + 1 <li> (the first label is duplicated so
+// the loop wraps seamlessly).
+//
+// Each step moves by exactly one slide height. Deriving it from --slide-h (set
+// per breakpoint in _landingpage.scss, where it also fixes the window and slot
+// height) rather than from a percentage of the rendered <ul> is what keeps the
+// slides landing on an item boundary: a percentage of the list also counts any
+// stray leading margin, which drifts a little further out of step on every slide.
+// Custom properties resolve per element inside keyframes, so one set serves
+// every breakpoint.
+@for $count from 1 through 10 {
+  $segment: 100/$count; // one slide's share of the cycle
+  $move: $segment * .2; // 20% of that share spent transitioning
+
+  @keyframes wordSlider-#{$count} {
+    @for $index from 0 to $count {
+      #{$segment * $index}%,
+      #{$segment * ($index + 1) - $move}% {
+        transform: translateY(calc(var(--slide-h) * -#{$index}));
+      }
+    }
+    100% {
+      transform: translateY(calc(var(--slide-h) * -#{$count}));
     }
   }
-  100% {
-    transform: translateY(nth($steps, length($steps)));
+
+  .ms-slider__words--#{$count} {
+    animation-name: wordSlider-#{$count};
+    animation-duration: #{$count * 2.5}s; // ~2.5s per label
   }
 };

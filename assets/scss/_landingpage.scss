@@ -68,37 +68,76 @@
     margin-top: 1rem;
 }
 
+// --slide-h is the single source of truth for the slogan slider's geometry: it
+// sets the height of the visible window, the height of each slide, and (via the
+// wordSlider-N keyframes in templates/_main.scss) how far each step travels. As
+// long as those three agree, a slide always lands exactly on the window and no
+// part of the next label can peek through. It must be >= the pink pill's height.
 .landing-page-slogan-slider {
-    @media (max-width: 1200px) {
-        margin-top: -0.3rem;
-        height: 2.8rem;
-    }
+    --slide-h: 3.5rem;
+    height: var(--slide-h);
+    margin-top: -0.3rem;
+    position: relative;
 
     @media (min-width: 1200px) {
+        --slide-h: 5.25rem;
         margin-top: -0.5rem;
-        height: 5rem;
+
+        // From ~1600px up, the static slogan title and this slider share a line.
+        // Both are inline-blocks aligned with `vertical-align: middle`, which lines
+        // up box centres rather than text baselines, leaving the label sitting
+        // 6.75px below the title's baseline. `position: relative` corrects exactly
+        // that much: it stays out of layout, so the line box is untouched (a margin
+        // would drag the title along with it and only close half the gap) and the
+        // slide geometry inside the window is unaffected.
+        top: -0.42rem;
     }
 }
 
-.landing-page-slogan-slider-li {
-    margin-top: 0.3rem;
+// Two classes, so this outranks `.content ul li` in templates/_main.scss, which
+// would otherwise add a margin between slides and push them out of step.
+.ms-slider .ms-slider__word {
+    margin: 0;
+    height: var(--slide-h);
+    box-sizing: border-box;
+    // Centres the pill in its slide, and stops inner margins escaping the slide
+    // box and inflating the spacing between slides.
+    display: flex;
+    align-items: center;
+}
+
+.ms-slider .slider-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+// line-height 0 removes the text strut, so the slide centres the pill itself
+// rather than a taller invisible line box. The old padding / negative margin
+// pair cancelled each other out, so both go.
+.ms-slider .landing-page-slide-title {
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+// Scoped to the slider so other .highlight-red uses across the site keep their
+// inline behaviour. As an inline element its 0.5rem border painted outside its
+// line box and spilled into the neighbouring slide; as inline-block the border
+// and padding count toward layout and stay inside the slide.
+.ms-slider .highlight-red {
+    display: inline-block;
+    line-height: 1.2;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .landing-page-slide-title {
     @media (max-width: 1200px) {
         font-size: 1.1rem;
-        padding: 0.4rem;
-        margin: 0;
-        margin-top: -0.45rem;
-        margin-left: -0.75rem;
     }
 
     @media (min-width: 1200px) {
         font-size: 2.5rem;
-        padding: 0.75rem;
-        margin: 0;
-        margin-top: -0.75rem;
-        margin-left: -0.75rem;
     }
 }
 

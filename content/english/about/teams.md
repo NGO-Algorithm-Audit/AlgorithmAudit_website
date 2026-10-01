@@ -40,25 +40,6 @@ about_AA:
         through deliberative and diverse normative advice commissions, resulting
         in [algoprudence](/algoprudence/).
 team:
-  - title: Team synthetic data generation
-    content: Part-time team working on synthetic data generation tool
-    icon: fas fa-table
-    button_text: More about the tool
-    id: team-SDG
-    button_link: /technical-tools/sdg/
-    team_members:
-      - image: /images/people/EMenvouta.jpeg
-        name: Emmanuel Menvouta PhD
-        bio: |
-          Freelance machine learning engineer, PhD in synthetic data
-        linkedIn: "https://www.linkedin.com/in/emmanuelmenvouta"
-        accordion_content: ""
-      - image: /images/people/MLisdonk.png
-        name: Maikel van de Lisdonk
-        bio: |
-          Freelance software developer
-        linkedIn: "https://www.linkedin.com/in/devhelpr"
-        accordion_content: ""
   - title: Team unsupervised bias detection
     content: Part-time team working on unsupervised the bias detection tool
     icon: fas fa-search
@@ -115,25 +96,25 @@ team:
           Freelance software developer
         linkedIn: "https://www.linkedin.com/in/eptorck"
         accordion_content: ""
-  - title: Legal experts
-    content: Part-time team working on human rights and data privacy
-    icon: fas fa-search
-    id: team-legal
-    team_members:
-      - image: /images/people/IPapageorgiou.jpg
-        name: Ioanna Papageorgiou
-        bio: |
-          Doctoral researcher AI Fairness & Privacy, University of Hannover
-        linkedIn: "https://www.linkedin.com/in/ioanna-papageorgiou-b25201201"
-        accordion_content: ""
-      - image: /images/people/LNaudts.jpg
-        name: Laurens Naudts
-        bio: >
-          Postdoctoral researcher AI, Media and Democracy Lab, University of
-          Amsterdam
-        linkedIn: "https://www.linkedin.com/in/laurens-naudts-9a935729"
-        # accordion_content: |
-        #   ""
+  # - title: Legal experts
+  #   content: Part-time team working on human rights and data privacy
+  #   icon: fas fa-search
+  #   id: team-legal
+  #   team_members:
+  #     - image: /images/people/IPapageorgiou.jpg
+  #       name: Ioanna Papageorgiou
+  #       bio: |
+  #         Doctoral researcher AI Fairness & Privacy, University of Hannover
+  #       linkedIn: "https://www.linkedin.com/in/ioanna-papageorgiou-b25201201"
+  #       accordion_content: ""
+  #     - image: /images/people/LNaudts.jpg
+  #       name: Laurens Naudts
+  #       bio: >
+  #         Postdoctoral researcher AI, Media and Democracy Lab, University of
+  #         Amsterdam
+  #       linkedIn: "https://www.linkedin.com/in/laurens-naudts-9a935729"
+  #       # accordion_content: |
+  #       #   ""
   - title: Executive team
     content: Full-time team coordinating the different activities of Algorithm Audit
     icon: fas fa-users
@@ -158,12 +139,24 @@ team:
         linkedIn: "https://www.linkedin.com/in/tessel-van-roozendaal-6ab656187/"
         accordion_content: ""
       - image: /images/people/TdeJonge.jpg
-        name: Tim de Jonge
+      - image: /images/people/TdeJonge.jpg
+        name: Tim de Jonge PhD
         bio: |
           AI Advisor
         linkedIn: "https://www.linkedin.com/in/tim-de-jonge-47170a169/"
         accordion_content: ""
-      - image: /images/people/RIbelings.jpg
+      - image: /images/people/FHolstege.jpeg
+        name: Floris Holstege PhD
+        bio: |
+          AI Researcher
+        linkedIn: "https://www.linkedin.com/in/fholstege/"
+        accordion_content: ""
+      - image: /images/people/RIbelings.jpeg
+        name: Roemer Ibelings
+        bio: |
+          Intern
+        linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
+        accordion_content: ""
         name: Roemer Ibelings
         bio: |
           Intern
@@ -176,21 +169,13 @@ quick_navigation:
       url: "#about"
     - title: Executive team
       url: "#executive-team"
-    - title: Legal experts
-      url: "#team-legal"
     - title: Team software development
       url: "#team-SD"
     - title: Team unsupervised bias detection
       url: "#team-BDT"
-    - title: Team synthetic data generation
-      url: "#team-SDG"
 ---
 
 {{< about_AA id="about">}}
-
-{{< team index="4" >}}
-
-{{< team index="3" >}}
 
 {{< team index="2" >}}
 

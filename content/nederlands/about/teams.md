@@ -35,23 +35,6 @@ about_AA:
       content: >
         Adviseren over ethische vraagstukken die zich voordoen in de algoritmische praktijk door het faciliteren van deliberatieve en inclusieve adviescommissies, met [algoprudentie](/nl/algoprudence/) als resultaat.
 team:
-  - id: team-SDG
-    title: Team synthetische data generatie
-    content: Team dat part-time werkt aan synthetische data generatie tool
-    icon: fas fa-table
-    button_text: Meer over de tool
-    button_link: /nl/technical-tools/sdg/
-    team_members:
-      - image: /images/people/EMenvouta.jpeg
-        name: Emmanuel Menvouta PhD
-        bio: |
-          Freelance machine learning engineer, gespecialiseerd in SDG methodologie
-        linkedIn: "https://www.linkedin.com/in/emmanuelmenvouta"
-      - image: /images/people/MLisdonk.png
-        name: Maikel van de Lisdonk
-        bio: |
-          Freelance software developer
-        linkedIn: "https://www.linkedin.com/in/devhelpr"
   - id: team-BDT
     title: Team unsupervised bias detectie
     content: Team dat part-time werkt aan de unsupervised bias detectie tool
@@ -101,21 +84,6 @@ team:
           Freelance software developer
         linkedIn: "https://www.linkedin.com/in/eptorck"
         accordion_content: ""
-  - id: team-legal
-    title: Juridische experts
-    content: Team dat part-time werkt aan mensenrechten- en privacy-vraagstukken
-    icon: fas fa-search
-    team_members:
-      - image: /images/people/IPapageorgiou.jpg
-        name: Ioanna Papageorgiou
-        bio: |
-          PhD-kandidaat AI Fairness & Privacy, Universiteit Hannover
-        linkedIn: "https://www.linkedin.com/in/ioanna-papageorgiou-b25201201"
-      - image: /images/people/LNaudts.jpg
-        name: Laurens Naudts
-        bio: |
-          Postdoctorale onderzoeker AI, Media en Democratie Lab, Universiteit van Amsterdam
-        linkedIn: "https://www.linkedin.com/in/laurens-naudts-9a935729"
   - title: Coördinerend team
     content: Team dat full-time de verschillende werkzaamheden van Algorithm Audit coördineert.
     icon: fas fa-users
@@ -138,15 +106,24 @@ team:
         linkedIn: "https://www.linkedin.com/in/tessel-van-roozendaal-6ab656187/"
         accordion_content: ""
       - image: /images/people/TdeJonge.jpg
-        name: Tim de Jonge
+      - image: /images/people/TdeJonge.jpg
+        name: Tim de Jonge PhD
         bio: |
           AI Adviseur
         linkedIn: "https://www.linkedin.com/in/tim-de-jonge-47170a169/"
         accordion_content: ""
-      - image: /images/people/RIbelings.jpg
+      - image: /images/people/FHolstege.jpeg
+        name: Floris Holstege PhD
+        bio: |
+          AI Onderzoeker
+        linkedIn: "https://www.linkedin.com/in/fholstege/"
+        accordion_content: ""
+      - image: /images/people/RIbelings.jpeg
         name: Roemer Ibelings
         bio: |
           Stagiar
+        linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
+        accordion_content: ""
         linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
         accordion_content: ""
 quick_navigation:
@@ -156,21 +133,13 @@ quick_navigation:
       url: "#about"
     - title: Coördinerend team
       url: "#executive-team"
-    - title: Juridische experts
-      url: "#team-legal"
     - title: Team software development
       url: "#team-SD"
     - title: Team unsupervised bias detectie
       url: "#team-BDT"
-    - title: Team synthetische data generatie
-      url: "#team-SDG"
 ---
 
 {{< about_AA id="about" >}}
-
-{{< team index="4" >}}
-
-{{< team index="3" >}}
 
 {{< team index="2" >}}
 
