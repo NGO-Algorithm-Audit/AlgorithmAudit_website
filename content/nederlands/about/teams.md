@@ -124,8 +124,6 @@ team:
           Stagiar
         linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
         accordion_content: ""
-        linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
-        accordion_content: ""
 quick_navigation:
   title: Overzicht
   links:
