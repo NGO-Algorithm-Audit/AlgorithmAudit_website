@@ -74,6 +74,11 @@ Activity_Feed:
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
+     - title: Cursus 'AI Risk Management in the EU', EIPA
+       link: 
+       image: /images/partner logo-cropped/EIPA.png
+       date: 23-10-2026
+       type: event
      - title: Masterclass 'Testen van General Purpose AI (GPAI) toepassingen'
        link: /nl/events/registration/
        image: /images/logo/favicon.ico

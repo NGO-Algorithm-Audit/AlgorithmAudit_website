@@ -106,9 +106,10 @@ team:
         linkedIn: "https://www.linkedin.com/in/tessel-van-roozendaal-6ab656187/"
         accordion_content: ""
       - image: /images/people/TdeJonge.jpg
+      - image: /images/people/TdeJonge.jpg
         name: Tim de Jonge PhD
         bio: |
-          Medior AI Adviseur
+          AI Adviseur
         linkedIn: "https://www.linkedin.com/in/tim-de-jonge-47170a169/"
         accordion_content: ""
       - image: /images/people/FHolstege.jpeg
@@ -120,7 +121,9 @@ team:
       - image: /images/people/RIbelings.jpeg
         name: Roemer Ibelings
         bio: |
-          Werkstudent
+          Stagiar
+        linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
+        accordion_content: ""
         linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
         accordion_content: ""
 quick_navigation:
