@@ -71,6 +71,11 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
+     - title: Course on 'AI Risk Management in the EU', European Institute of Public Administration
+       link:
+       image: images/partner logo-cropped/EIPA.png
+       date: 23-10-2026
+       type: event
      - title: Masterclass 'Testing General Purpose AI (GPAI) applications'
        link: /events/registration/
        image: /images/logo/favicon.ico

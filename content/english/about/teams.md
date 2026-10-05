@@ -157,11 +157,6 @@ team:
           Intern
         linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
         accordion_content: ""
-        name: Roemer Ibelings
-        bio: |
-          Intern
-        linkedIn: "https://www.linkedin.com/in/roemer-ibelings-97b980153/"
-        accordion_content: ""
 quick_navigation:
   title: Overview
   links:
