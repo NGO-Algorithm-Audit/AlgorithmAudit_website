@@ -139,7 +139,6 @@ team:
         linkedIn: "https://www.linkedin.com/in/tessel-van-roozendaal-6ab656187/"
         accordion_content: ""
       - image: /images/people/TdeJonge.jpg
-      - image: /images/people/TdeJonge.jpg
         name: Tim de Jonge PhD
         bio: |
           AI Advisor
