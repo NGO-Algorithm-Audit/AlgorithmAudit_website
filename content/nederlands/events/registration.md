@@ -74,30 +74,33 @@ quick_navigation:
 
 {{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Masterclass 'Testen van General Purpose AI (GPAI) toepassingen'" id="event" background_color="#ffffff" tag1="3 november 2026" tag2="masterclass" tag3="op locatie" image="/images/events/20261103_GPAI_event.png" >}}
+{{< accordion_item_open title="Masterclass AI-evaluatie: van General Purpose naar Specifieke Toepassingen" id="event" background_color="#ffffff" tag1="3 november 2026" tag2="masterclass" tag3="op locatie" image="/images/events/20261103_GPAI_event.png" >}}
+
+> <span style="color:#005aa7;">Hoe weet je of een AI-model geschikt is voor een bepaalde toepassing? Wanneer weet je of het werkt naar behoren? Toonaangevende systemen worden beoordeeld op algemene mogelijkheden, niet op hoe goed ze aansluiten bij echte probleemgebieden, organisatorische waarden en de zorgen van belanghebbenden.</span>
 
 {{< promo_bar index="0" >}}
 
 <br>
 
 #### Beschrijving
-Naarmate GPAI-modellen steeds beter worden, wordt er steeds vaker beweerd dat systemen de prestaties van experts evenaren of overtreffen op het gebied van ‘probleemoplossing’, ‘wetenschappelijk redeneren’ of ‘softwareontwikkeling in de praktijk’. Deze beweringen zijn gebaseerd op gangbare tests voor verschillende vaardigheden, ook wel ‘benchmarks’ genoemd.
+Zowel organisaties in de particuliere als de publieke sector willen graag gebruikmaken van de mogelijkheden van AI. Dit vereist dat **AI-systemen voor algemeen gebruik (general purpose AI - GPAI) worden aangepast aan werkprocessen waarvoor ze niet per se zijn ontworpen of getest**. Zo kan de chatbot van de Rechtspraak de vraag van een inwoner over wie het ‘privé gedeelte’ van een appartementencomplex onderhoudt, afwijzen, omdat een in het Engels ontworpen content filter de woorden [‘private parts’ als seksuele inhoud markeert](https://algorithmaudit.eu/knowledge-platform/knowledge-base/20260924_vangrails_blogpost/). Of een gemeentelijke chatbot kan Mehmet – een geboren en getogen Rotterdamer die vraagt waar hij zijn paspoort kan verlengen – doorverwijzen naar de immigratiedienst, terwijl Daan meteen het juiste antwoord krijgt, omdat de aanbieder niet heeft getest op risico’s die specifiek zijn voor de Nederlandse context.
 
-Toch bestaat er vaak een misvatting over wat benchmarks nu eigenlijk meten, welke conclusies we daadwerkelijk over een systeem kunnen trekken en hoe we kunnen beoordelen wat er voor een specifieke toepassing echt toe doet. Net als in andere technologiegedreven sectoren, zoals de gezondheidszorg en de luchtvaart, heeft AI-benchmarking betrouwbare standaarden nodig. Omdat best practices nog in de kinderschoenen staan, kan het voor professionals best lastig zijn om hun weg te vinden in GPAI-evaluaties.
+Om AI op een verantwoorde manier in te zetten, **moeten professionals begrijpen hoe bestaande evaluaties zich vertalen naar een bepaalde context en waar er hiaten ontstaan**. GPAI wordt beoordeeld aan de hand van gangbare tests, ook wel ‘benchmarks’ genoemd. Maar populaire benchmarks zijn meestal beperkt qua taalkundige of culturele reikwijdte, bestrijken slechts een beperkt aantal soorten gebruikersinteracties en lopen enorm uiteen in wetenschappelijke kwaliteit en robuustheid. Voor een goede evaluatie is het vaak nodig om op maat gemaakte benchmarks te ontwikkelen op basis van nieuwe datasets, maar er is ook praktische validatie nodig met aangepaste testcases om ervoor te zorgen dat systemen na implementatie werken zoals de bedoeling is.
 
-In deze masterclass distilleren we de meest waardevolle inzichten uit het gebied van GPAI-benchmarking en maken we die toegankelijk. De cursus behandelt:
--    GPAI volgens de AI-wet en benchmarking voor systemen met systeemrisico’s
--    Toonaangevende benchmarks uit de sector en toepassing op GPT-NL
--    Inzichten uit het eigen benchmarkwerk van Algorithm Audit
--    Actuele kwesties in het vakgebied vanuit een wetenschappelijk perspectief
--    De ontwerpaspecten die de kwaliteit van een benchmark bepalen
+Door het ontwikkelen van benchmarks voor risicomonitoring voor het European AI Office, een validatiekader voor de Rechtspraak-chatbot van de Nederlandse rechterlijke macht en waarborgen voor Nederlandse generatieve AI, heeft Algorithm Audit deskundige kennis opgebouwd om organisaties te helpen bij het navigeren door evaluaties binnen hun specifieke gebruikssituatie. **In deze masterclass distilleren we de meest waardevolle inzichten uit ons werk op het gebied van GPAI-evaluatie. De cursus behandelt:**
 
-Na het volgen van de training kun je:
--    De relevante verplichtingen voor GPAI-systemen onder de AI-wet begrijpen
--    Begrijpen hoe benchmarks ‘achter de schermen’ werken
--    Je weg vinden in gangbare evaluatiedatabases en documentatie
--    Beoordelen of bestaande benchmarks geschikt zijn voor je eigen werk
--    Bepalen wanneer een aangepaste aanpak nodig is en hoe die eruit zou kunnen zien
+- GPAI onder de AI-verordening en benchmarking voor systemen met systemische risico’s
+- Toonaangevende benchmarks uit de sector en aanpassingen aan GPT-NL
+- Ontwikkeling van op maat gemaakte evaluatiemethoden en validatiebenaderingen voor jouw AI-toepassing
+- Actuele kwesties in het vakgebied vanuit wetenschappelijk perspectief
+- De ontwerpaspecten die de kwaliteit van een benchmark bepalen
+
+**Na afloop kun je:**
+- De relevante verplichtingen voor GPAI-systemen onder de AI-verordening begrijpen
+- Kritisch nadenken over de validiteit en betrouwbaarheid van benchmarks
+- Je weg vinden in populaire evaluatiedatabases en documentatie
+- Beoordelen of bestaande benchmarks geschikt zijn voor je eigen werk
+- Bepalen wanneer een aangepaste evaluatie of validatie nodig is en hoe die eruit zou kunnen zien
 
 
 #### Datum
@@ -123,7 +126,7 @@ The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den 
 #### Doelgroep
 Professionals uit de private en publieke sector die regelmatig werken met GPAI-toepassingen, zoals het implementeren van generatieve AI-oplossingen in werkprocessen, het testen van GPAI-capaciteiten en/of het werken aan AI-beleid.
 
-{{< embed_pdf url="/pdf-files/events/activities/20261103_Masterclass_Benchmarking.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/events/activities/20261103_Masterclass_AI_Evaluation.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< dynamic_form_engine index="0" >}}
 
