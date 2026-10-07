@@ -74,30 +74,33 @@ quick_navigation:
 
 {{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Masterclass 'Testing General Purpose AI (GPAI) applications'" id="event" background_color="#ffffff" tag1="3 November 2026" tag2="masterclass" tag3="in-person" image="/images/events/20261103_GPAI_event.png" >}}
+{{< accordion_item_open title="Masterclass AI Evaluation: from General Purpose to Specific Use Cases" id="event" background_color="#ffffff" tag1="3 November 2026" tag2="masterclass" tag3="in-person" image="/images/events/20261103_GPAI_event.png" >}}
+
+> <span style="color:#005aa7;">How can you tell if an AI model is suitable for a use case? When do you know it works as intended? Leading systems are evaluated on general capabilities, not how they fit real-world problem areas, organizational values and stakeholder concerns.</span>
 
 {{< promo_bar index="0" >}}
 
 <br>
 
 #### Description
-As GPAI models continue to improve, systems are increasingly touted as matching or exceeding expert performance in “problem solving”, “scientific reasoning” or  “real-world software engineering.” These claims are based on common tests for different capabilities, known as “benchmarks”.
+Private and public sector organizations alike are eager to leverage the capabilities of AI. This requires **adapting general-purpose AI (GPAI) systems to work processes they are not necessarily designed or tested for**. For example, a Dutch judiciary authority's chatbot may refuse a resident's question about who maintains the 'privé gedeelte' of an apartment building, because a content filter designed in English [flags the words 'private parts' as sexual content](https://algorithmaudit.eu/knowledge-platform/knowledge-base/20260924_vangrails_blogpost/). Alternatively, a municipal chatbot may send Mehmet - a lifelong Rotterdamer asking where to renew his passport - to the immigration service, while Daan gets the right answer immediately, since the provider didn't test for harms specific to the Dutch context. 
 
-Yet, there is often misconception of what benchmarks actually measure, what conclusions about a system we can actually make and how to evaluate what actually matters for a use case. Just as other technology-driven industries, like healthcare and aviation, AI benchmarking needs reliable standards. With best practices in their infancy, it can be daunting for professionals to navigate GPAI evaluation. 
+To deploy AI responsibly, **practitioners need understanding of how existing evaluations translate to a context and where gaps arise**. GPAI is evaluated on common tests known as 'benchmarks'. But popular benchmarks are usually limited in their linguistic or cultural scope, cover limited types of user interaction, and vary wildly in their scientific quality and robustness. Appropriate evaluation often requires building tailored benchmarks from new datasets but also asks for practical validation using custom test cases to ensure systems function as intended once deployed.  
 
-In this masterclass, we distill and make accessible the most valuable insights from the field of GPAI benchmarking. The course covers:
--	GPAI under the AI Act and benchmarking for systems with systemic risk
--	Prominent industry benchmarks and adaptations to GPT-NL
--	Insights from Algorithm Audit’s own benchmarking work
--	Current issues in the field from a scientific perspective
--	The design aspects that determine the quality of a benchmark
+Between developing risk-monitoring benchmarks for the European AI Office, a validation framework for the Dutch Judiciary's Rechtspraak chatbot and safeguards for Dutch generative AI, Algorithm Audit has built expert knowledge in helping organizations navigate evaluation within their specific use case. **In this masterclass, we distill the most valuable insights from our work in the field of GPAI evaluation. The course covers:**
 
-After attending, participants will be able to:
--	Understand relevant obligations for GPAI systems under the AI Act
--	Grasp how benchmarks tend to work “under the hood”
--	Navigate common evaluation repositories and documentation
--	Assess the suitability of existing benchmarks for their own work
--	Reason when a custom approach is needed and how it may look
+- GPAI under the AI Act and benchmarking for systems with systemic risk 
+- Prominent industry benchmarks and adaptations to GPT-NL 
+- Development of custom evaluation methods and validation approaches for your AI application 
+- Current issues in the field from a scientific perspective 
+- The design aspects that determine the quality of a benchmark 
+
+**After attending, participants will be able to:** 
+- Understand relevant obligations for GPAI systems under the AI Act 
+- Think critically about the validity and reliability of benchmarks 
+- Navigate popular evaluation repositories and documentation 
+- Assess the suitability of existing benchmarks for their own work 
+- Determine when custom evaluation or validation is needed and how it may look
 
 #### Date
 3 November 2026
@@ -122,7 +125,7 @@ The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den 
 #### Audience
 Professionals from private and public sector who regularly work with GPAI applications, such as implementation of generative AI solutions in work processes, testing GPAI capabilities and/or working on AI policy.
 
-{{< embed_pdf url="/pdf-files/events/activities/20261103_Masterclass_Benchmarking.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/events/activities/20261103_Masterclass_AI_Evaluation.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< dynamic_form_engine index="0" >}}
 
