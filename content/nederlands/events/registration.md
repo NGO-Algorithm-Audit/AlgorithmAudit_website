@@ -126,7 +126,7 @@ The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den 
 #### Doelgroep
 Professionals uit de private en publieke sector die regelmatig werken met GPAI-toepassingen, zoals het implementeren van generatieve AI-oplossingen in werkprocessen, het testen van GPAI-capaciteiten en/of het werken aan AI-beleid.
 
-{{< embed_pdf url="/pdf-files/events/activities/20261103_Masterclass_AI_Evaluation.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
+{{< embed_pdf url="/pdf-files/events/activities/20261103_Masterclass_AI_Evaluation_20261015.pdf" width_mobile_pdf="12" width_desktop_pdf="6" >}}
 
 {{< dynamic_form_engine index="0" >}}
 
