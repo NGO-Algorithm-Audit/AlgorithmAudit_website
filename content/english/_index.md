@@ -76,10 +76,20 @@ Activity_Feed:
        image: /images/logo/favicon.ico
        date: 03-11-2026
        type: event
+     - title: Global AI Summit for Cities
+       link: https://aiforcities.earth
+       image: /images/partner logo-cropped/Global AI Summit for Cities.png
+       date: 17-11-2026
+       type: event
      - title: Najaarscongres Vereniging van Rekenkamers
        link: https://www.rekenkamers.nl/agenda/19662/najaarscongres-2026/
        image: /images/partner logo-cropped/VVR.svg
        date: 27-11-2026
+       type: event
+     - title: College 'AI toetsen - recht en ethiek onderzoeken in de praktijk'
+       link: https://www.universiteitleiden.nl/onderwijs/opleidingen/professionals/lla/specialisatieopleiding-artificial-intelligence-recht-en-ethiek/programma#bijeenkomst-4-vrijdag-27-november-2026,bijeenkomst-5-vrijdag-4-december-2026
+       image: /images/partner logo-cropped/UniversiteitLeidenLogo.svg.png
+       date: 4-12-2026
        type: event
   items_button_text: More events
   items_button_link: /events/activities/
