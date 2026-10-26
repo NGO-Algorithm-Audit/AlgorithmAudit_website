@@ -33,8 +33,10 @@ facet_groups:
         label: Training
 events:
   - title: >-
-      Cursus 'AI Risk Management in the EU', European Institute of Public Administration
+      Course on 'AI Risk Management in the EU', European Institute of Public Administration
     description: > 
+      Presentation on how to manage the regulatory landscape of AI and algorithms for the timeslot 'Auditing AI for Public Good'. The presentation was part of the course 'AI Risk Management in the EU' organised by the European Institute of Public Administration. The participants consisted of European and National civil servants.
+      ![](/images/events/EIPA.jpeg)
     image: /images/partner logo-cropped/EIPA.png
     date: 23-10-2026
     facets:
