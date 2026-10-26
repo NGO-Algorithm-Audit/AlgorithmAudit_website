@@ -10,6 +10,8 @@ facet_groups:
         label: Q2-2026
       - value: q3_2026
         label: Q3-2026
+      - value: q4_2026
+        label: Q4_2026
       - value: q4_2025
         label: Q4-2025
       - value: q3_2025
@@ -32,6 +34,20 @@ facet_groups:
       - value: training
         label: Training
 events:
+  - title: >-
+      Course on 'AI Risk Management in the EU', European Institute of Public Administration
+    description: > 
+    image: /images/partner logo-cropped/EIPA.png
+    date: 23-10-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q4_2026
+        label: Q4-2026
+        hide: true
+      - value: type_event
+        label: Event
   - title: >-
       Governance and tools for AI risk management
     description: > 
