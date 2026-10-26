@@ -33,6 +33,20 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Cursus 'AI Risk Management in the EU', European Institute of Public Administration
+    description: > 
+    image: /images/partner logo-cropped/EIPA.png
+    date: 23-10-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q4_2026
+        label: Q4-2026
+        hide: true
+      - value: type_event
+        label: Event
+  - title: >-
       Governance and tools for AI risk management
     description: > 
       Presentation on Auditing AI for Public Good for the Professional Risk Managers' International Association (PRMIA) at ING, Amsterdam.
