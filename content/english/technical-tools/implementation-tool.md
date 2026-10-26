@@ -104,7 +104,7 @@ The first version of AI AQT was developed in collaboration with the Municipality
 
 {{< container_open icon="far fa-file" title="Documentation AI AQT" id="documentation" >}}
 
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261022 Introducing AI AQT.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20250228 Policy briefing guidelines EC AI system definition.pdf" >}}
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261026 Introducing AI AQT.pdf" width_mobile_pdf="12" width_desktop_pdf="6" url2="/pdf-files/technical-tools/AI-AQT/20250228 Policy briefing guidelines EC AI system definition.pdf" >}}
 
 Considerations and choices made during development of AI AQT in relation to the legal text of AI Act, GDPR and soft law frameworks for high-impact algorithm are documented in the above files. 
 
