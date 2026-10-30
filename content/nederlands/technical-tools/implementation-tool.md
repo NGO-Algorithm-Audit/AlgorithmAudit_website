@@ -33,6 +33,8 @@ quick_navigation:
       url: "#flowchart-questionnaire-risk-category"
     - title: Flowchart Verplichtingen
       url: "#flowchart-obligations"
+    - title: Flowchart Pre-scan DPIA
+      url: "#flowchart-questionnaire-pre-scan-dpia"
     - title: Flowchart NIS2
       url: "#flowchart-questionnaire-nis2"
 promo_bar:
@@ -167,10 +169,20 @@ De bovenstaande flowcharts voor Vragenlijst Identificatie weergeven de logica di
 
 {{< container_close >}}
 
+<!-- Flowchart Questionnaire Pre-scan DPIA -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst Pre-scan DPIA" id="flowchart-questionnaire-pre-scan-dpia" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart Pre-scan DPIA NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
 <!-- Flowchart Vragenlijst NIS2 -->
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst NIS2" id="flowchart-questionnaire-nis2" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart NIS2 NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
 
 {{< container_close >}}
