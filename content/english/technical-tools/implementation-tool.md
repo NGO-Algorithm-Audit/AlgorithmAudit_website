@@ -29,6 +29,8 @@ quick_navigation:
       url: "#flowchart-questionnaire-risk-category"
     - title: Flowchart Obligations
       url: "#flowchart-questionnaire-obligations"
+    - title: Flowchart NIS2
+      url: "#flowchart-questionnaire-nis2"
 promo_bar:
   - content: "**👋 Interested in using AI AQT in your organization? It's easier than you think! Get in [contact](/about/contact) to learn more.**"
   - content: "**✉️ Missing features in AI AQT? Send your request to info@algorithmaudit.eu.**"
@@ -49,6 +51,8 @@ Ensuring legal compliance when using algorithmic systems requires correct qualif
 - <span style="color:#005aa7; font-weight:600;">Risk category:</span> Prohibited and high risk AI systems, transparency requirements for certain AI systems.
 
 - <span style="color:#005aa7; font-weight:600;">Obligations:</span> Requirements that follow from the AI Act depending on the role, status and risk category of the AI system.
+
+- <span style="color:#005aa7; font-weight:600;">NIS2:</span> Whether your organization and services fall within scope of the NIS2 Directive.
 
 AI AQT is developed [open-source](/technical-tools/implementation-tool/#source-code) and can be used for free within your under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. All outcomes of the tool are shown in the below [figure](/technical-tools/implementation-tool/#outcome). The flowcharts of the questionnaires can also be found [below](/technical-tools/implementation-tool/#flowchart-questionnaire-1).
 
@@ -178,5 +182,13 @@ The above flowcharts for Questionnaire Identification represent the logic needed
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Obligations for certain AI systems" id="flowchart-questionnaire-obligations" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261022 Flowchart Obligations EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+<!-- Flowchart Questionnaire NIS2 -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Questionnaire NIS2" id="flowchart-questionnaire-nis2" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart NIS2 EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}

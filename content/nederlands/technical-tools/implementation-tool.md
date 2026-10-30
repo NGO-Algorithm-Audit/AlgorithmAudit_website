@@ -33,6 +33,8 @@ quick_navigation:
       url: "#flowchart-questionnaire-risk-category"
     - title: Flowchart Verplichtingen
       url: "#flowchart-obligations"
+    - title: Flowchart NIS2
+      url: "#flowchart-questionnaire-nis2"
 promo_bar:
   - content: "**\U0001F44B Wil je AI AQT binnen je eigen organisatie gebruiken? Dat is eenvoudiger dan je denkt! Neem [contact ](/nl/about/contact)met ons op.**\n"
   - content: "**✉️ Mis je features in AI AQT? Stuur je verzoek in naar info@algorithmaudit.eu.**"
@@ -53,6 +55,8 @@ Wettelijke naleving veronderstelt correcte vaststelling of algoritmische systeme
 - <span style="color:#005aa7; font-weight:600;">Risicocategorie:</span> Verboden en hoogrisico AI-systemen, transparantievereisten voor bepaalde AI-systemen.
 
 - <span style="color:#005aa7; font-weight:600;">Verplichtingen:</span> Verplichtingen volgens de AI-verordening afhankelijk van de rol, status en risicocategorie van het AI-systeem.
+
+- <span style="color:#005aa7; font-weight:600;">NIS2:</span> Of uw organisatie en diensten onder de reikwijdte van de NIS2-richtlijn vallen.
 
 AI AQT is [open-source](/nl/technical-tools/implementation-tool/#source-code) ontwikkeld en kan kosteloos binnen uw organisatie worden gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. Alle uitkomsten van de tool worden weergegeven in onderstaand [figuur](/nl/technical-tools/implementation-tool/#outcome). De flowcharts van de vragenlijsten kunnen ook [hieronder](/nl/technical-tools/implementation-tool/#flowchart-questionnaire-identification) worden gevonden.
 
@@ -160,5 +164,13 @@ De bovenstaande flowcharts voor Vragenlijst Identificatie weergeven de logica di
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Verplichtingen voor bepaalde AI-systemen" id="flowchart-obligations" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261022 Flowchart Obligations NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+<!-- Flowchart Vragenlijst NIS2 -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst NIS2" id="flowchart-questionnaire-nis2" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart NIS2 NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
