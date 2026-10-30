@@ -29,6 +29,8 @@ quick_navigation:
       url: "#flowchart-questionnaire-risk-category"
     - title: Flowchart Obligations
       url: "#flowchart-questionnaire-obligations"
+    - title: Flowchart Pre-scan DPIA
+      url: "#flowchart-questionnaire-pre-scan-dpia"
     - title: Flowchart NIS2
       url: "#flowchart-questionnaire-nis2"
 promo_bar:
@@ -182,6 +184,14 @@ The above flowcharts for Questionnaire Identification represent the logic needed
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Obligations for certain AI systems" id="flowchart-questionnaire-obligations" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261022 Flowchart Obligations EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
+<!-- Flowchart Questionnaire Pre-scan DPIA -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Questionnaire Pre-scan DPIA" id="flowchart-questionnaire-pre-scan-dpia" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart Pre-scan DPIA EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}
 
