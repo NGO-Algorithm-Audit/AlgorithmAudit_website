@@ -23,6 +23,8 @@ quick_navigation:
       url: '#explainers'
     - title: Flowchart Identification
       url: "#flowchart-questionnaire-identification"
+    - title: Flowchart NIS2
+      url: "#flowchart-questionnaire-nis2"
     - title: Flowchart Role and status
       url: "#flowchart-questionnaire-role-and-status"
     - title: Flowchart Risk category
@@ -31,8 +33,6 @@ quick_navigation:
       url: "#flowchart-questionnaire-obligations"
     - title: Flowchart Pre-scan DPIA
       url: "#flowchart-questionnaire-pre-scan-dpia"
-    - title: Flowchart NIS2
-      url: "#flowchart-questionnaire-nis2"
 promo_bar:
   - content: "**👋 Interested in using AI AQT in your organization? It's easier than you think! Get in [contact](/about/contact) to learn more.**"
   - content: "**✉️ Missing features in AI AQT? Send your request to info@algorithmaudit.eu.**"
@@ -42,11 +42,15 @@ promo_bar:
 
 <!-- Introductie -->
 
-{{< container_open icon="fa-solid fa-toolbox" title="Introduction – a solution for the AI Act and beyond " id="intro" >}}
+{{< container_open icon="fa-solid fa-toolbox" title="Introduction – collect evidence for AI compliance" id="intro" >}}
 
 Ensuring legal compliance when using algorithmic systems requires correct qualification of in-scope systems and correct risks categorization. AI AQT consists of dynamic questionnaires that help with:  
 
-- <span style="color:#005aa7; font-weight:600;">Identification:</span> AI systems, GDPR (profiling and solely automated decision-making) and high-impact algorithms.
+- <span style="color:#005aa7; font-weight:600;">Identification:</span> AI systems that fall under the AI Act, GDPR (personal data, profiling and solely automated decision-making) and high-impact algorithms.
+
+- <span style="color:#005aa7; font-weight:600;">NIS2:</span> Entities that are deemed essential and/or important under NIS2 (EU cyber security law).
+
+##### AI Act
 
 - <span style="color:#005aa7; font-weight:600;">Role and status:</span> Your role in relation to the AI system (provider, deployer etc.) and usage status of the system (in use or in development).
 
@@ -54,7 +58,13 @@ Ensuring legal compliance when using algorithmic systems requires correct qualif
 
 - <span style="color:#005aa7; font-weight:600;">Obligations:</span> Requirements that follow from the AI Act depending on the role, status and risk category of the AI system.
 
-- <span style="color:#005aa7; font-weight:600;">NIS2:</span> Whether your organization and services fall within scope of the NIS2 Directive.
+##### GDPR
+
+- <span style="color:#005aa7; font-weight:600;">Pre-scan DPIA:</span> Assessment of whether a Data Protection Impact Assessment (DPIA) must be carried out.
+
+##### High-impact algorithms
+
+- <span style="color:#005aa7; font-weight:600;">NTA:</span> Dutch Technical Agreement (NTA) 8047 for profiling algorithms.
 
 AI AQT is developed [open-source](/technical-tools/implementation-tool/#source-code) and can be used for free within your under the <a href="https://eupl.eu/1.2/en/" target="_blank">EUPL-1.2 license</a>. All outcomes of the tool are shown in the below [figure](/technical-tools/implementation-tool/#outcome). The flowcharts of the questionnaires can also be found [below](/technical-tools/implementation-tool/#flowchart-questionnaire-1).
 
@@ -72,9 +82,9 @@ AI AQT is developed [open-source](/technical-tools/implementation-tool/#source-c
 
 {{< container_open icon="fa-solid fa-clipboard-check" title="Why correct qualification of algorithmic systems matters" id="infographic" >}}
 
-Applying legal definitions in practice raises difficult questions. For example: What features distinguish AI from other algoritmic systems? And what criteria determine the risk category of an AI system? Standardized questionnaires can help govern algorithms efficiently. Questionnaires can be shared across the entire organization and can be processed centrally. AI AQT provides a clear and user-friendly approach and serves as a building block for compliance. Identification and risk classification are relevant not only in the context of the AI Act, but also in relation to the GDPR and additional policy instruments, such as the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Register Guidelines</a>  of the Dutch government.
+Applying legal definitions in practice raises difficult questions. For example: What features distinguish AI from other algoritmic systems? And what criteria determine the risk category of an AI system? Standardized questionnaires can help govern algorithms efficiently. Questionnaires can be shared across the entire organization and can be processed centrally. AI AQT provides a clear and user-friendly approach and serves as a building block for compliance. Identification and risk classification are relevant not only in the context of the AI Act, but also in relation to the GDPR, NIS2 and additional policy instruments, such as the <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Algorithm Register Guidelines</a>  of the Dutch government (see the figure below).
 
-#### Infographic – Flow of the AI AQT questionnaires 
+#### Infographic – Overview of the AI AQT questionnaires 
 
 <img src="/images/ai-act-implementation-tool/Infographic EN2.png" alt="drawing"/>
 
@@ -163,6 +173,14 @@ Using examples, we explain how the AI system definition and risk categories from
 The above flowcharts for Questionnaire Identification represent the logic needed to assess whether an algorithmic system falls under one of the legal definitions: AI system, GDPR (profiling, solely automated decision-making) or high-impact algorithm. When using the questionnaire, users encounter questions only once. A complete flowchart of Questionnaire Identification with all paths and outcomes can be found <a href="https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260511 Flowcharts Identification EN whole.pdf" target="_blank">here</a>.
 {{< container_close >}}
 
+<!-- Flowchart Questionnaire NIS2 -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Questionnaire NIS2" id="flowchart-questionnaire-nis2" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart NIS2 EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
 <!-- Flowchart Questionnaire Role and status -->
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Questionnaire Role and status is relation to the AI system" id="flowchart-questionnaire-role-and-status" >}}
@@ -192,13 +210,5 @@ The above flowcharts for Questionnaire Identification represent the logic needed
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Questionnaire Pre-scan DPIA" id="flowchart-questionnaire-pre-scan-dpia" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart Pre-scan DPIA EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
-
-{{< container_close >}}
-
-<!-- Flowchart Questionnaire NIS2 -->
-
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Questionnaire NIS2" id="flowchart-questionnaire-nis2" >}}
-
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart NIS2 EN.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
 
 {{< container_close >}}

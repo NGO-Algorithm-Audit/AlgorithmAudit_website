@@ -27,6 +27,8 @@ quick_navigation:
       url: "#explainers"
     - title: Flowchart Identificatie
       url: "#flowchart-questionnaire-identification"
+    - title: Flowchart NIS2
+      url: "#flowchart-questionnaire-nis2"
     - title: Flowchart Rol en status
       url: "#flowchart-questionnaire-role-and-status"
     - title: Flowchart Risicocategorie
@@ -35,8 +37,6 @@ quick_navigation:
       url: "#flowchart-obligations"
     - title: Flowchart Pre-scan DPIA
       url: "#flowchart-questionnaire-pre-scan-dpia"
-    - title: Flowchart NIS2
-      url: "#flowchart-questionnaire-nis2"
 promo_bar:
   - content: "**\U0001F44B Wil je AI AQT binnen je eigen organisatie gebruiken? Dat is eenvoudiger dan je denkt! Neem [contact ](/nl/about/contact)met ons op.**\n"
   - content: "**✉️ Mis je features in AI AQT? Stuur je verzoek in naar info@algorithmaudit.eu.**"
@@ -46,11 +46,15 @@ promo_bar:
 
 <!-- Introductie -->
 
-{{< container_open icon="fa-solid fa-toolbox" title="Introductie – een oplossing voor de AI-verordening en meer" id="intro" >}}
+{{< container_open icon="fa-solid fa-toolbox" title="Introductie – verzamel bewijs voor AI compliance" id="intro" >}}
 
 Wettelijke naleving veronderstelt correcte vaststelling of algoritmische systemen onder de reikwijdte van wet- en regelgeving vallen, inclusief bijbehorende risicocategorieën. AI AQT bestaat uit dynamische vragenlijsten die helpen bij:
 
-- <span style="color:#005aa7; font-weight:600;">Identificatie:</span> AI-systemen, AVG (profilering en volledig geautomatiseerde besluitvorming) en impactvolle algoritmes.
+- <span style="color:#005aa7; font-weight:600;">Identificatie:</span> AI-systemen die onder de AI-verordening vallen, AVG (persoonsgegevens, profilering en volledig geautomatiseerde besluitvorming) en impactvolle algoritmes.
+
+- <span style="color:#005aa7; font-weight:600;">NIS2:</span> Organisaties die als essentiaal of belangrijk worden gekenmerkt volgens de Europese NIS2-richtlijn (Cyberbeveiligingswet).
+
+##### AI-verordening
 
 - <span style="color:#005aa7; font-weight:600;">Rol en status:</span> Uw rol ten aanzien van het AI-systeem (aanbieder, gebruiksverantwoordelijke etc.) en gebruiksstatus van het systeem (in gebruik of in ontwikkeling).
 
@@ -58,7 +62,13 @@ Wettelijke naleving veronderstelt correcte vaststelling of algoritmische systeme
 
 - <span style="color:#005aa7; font-weight:600;">Verplichtingen:</span> Verplichtingen volgens de AI-verordening afhankelijk van de rol, status en risicocategorie van het AI-systeem.
 
-- <span style="color:#005aa7; font-weight:600;">NIS2:</span> Of uw organisatie en diensten onder de reikwijdte van de NIS2-richtlijn vallen.
+##### AVG
+
+- <span style="color:#005aa7; font-weight:600;">Pre-scan DPIA:</span> Beoordeling of een Data Protection Impact Assessment (DPIA) uitgevoerd moet worden.
+
+##### High-impact algorithms
+
+- <span style="color:#005aa7; font-weight:600;">NTA:</span> Nederlands Technische Afspraak (NTA) 8047 voor profileringsalgoritmes.
 
 AI AQT is [open-source](/nl/technical-tools/implementation-tool/#source-code) ontwikkeld en kan kosteloos binnen uw organisatie worden gebruikt onder de <a href="https://eupl.eu/1.2/nl/" target="_blank">EUPL-1.2 licentie</a>. Alle uitkomsten van de tool worden weergegeven in onderstaand [figuur](/nl/technical-tools/implementation-tool/#outcome). De flowcharts van de vragenlijsten kunnen ook [hieronder](/nl/technical-tools/implementation-tool/#flowchart-questionnaire-identification) worden gevonden.
 
@@ -76,7 +86,7 @@ AI AQT is [open-source](/nl/technical-tools/implementation-tool/#source-code) on
 
 {{< container_open icon="fa-solid fa-clipboard-check" title="Waarom correcte kwalificatie van algoritmische systemen belangrijk is" id="infographic" >}}
 
-Het toepassen van juridische definities in de praktijk roept lastige vragen op. Bijvoorbeeld: welke kenmerken onderscheiden AI van andere algoritmische systemen? En welke criteria bepalen de risicocategorie van een AI-systeem? Gestandaardiseerde vragenlijsten helpen om algoritmemanagement efficiënt uit te voeren en wettelijke naleving op schaal te borgen. Vragenlijsten kunnen met behulp van AI AQT binnen organisaties decentraal worden ingevuld. De opgeslagen resultaten kunnen kunnen centraal door expertteams worden geanalyseerd. AI AQT bevat niet alleen vragenlijsten voor naleving van de AI-verordening, ook in het kader van de AVG en aanvullende beleidsinstrumenten (zoals de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a>) zijn vragenlijsten opgenomen (zie onderstaand figuur).
+Het toepassen van juridische definities in de praktijk roept lastige vragen op. Bijvoorbeeld: welke kenmerken onderscheiden AI van andere algoritmische systemen? En welke criteria bepalen de risicocategorie van een AI-systeem? Gestandaardiseerde vragenlijsten helpen om algoritmemanagement efficiënt uit te voeren en wettelijke naleving op schaal te borgen. Vragenlijsten kunnen met behulp van AI AQT binnen organisaties decentraal worden ingevuld. De opgeslagen resultaten kunnen centraal door expertteams worden geanalyseerd. AI AQT bevat niet alleen vragenlijsten voor naleving van de AI-verordening, ook in het kader van de AVG, NIS2 en aanvullende beleidsinstrumenten (zoals de <a href="https://algoritmes.pleio.nl/attachment/entity/f1a35292-7ea6-4e47-93fa-b3358e9ab2e0" target="_blank">Handreiking Algoritmeregister</a>) zijn vragenlijsten opgenomen (zie onderstaand figuur).
 
 #### Infographic – Overzicht AI AQT vragenlijsten
 
@@ -145,6 +155,14 @@ Aan de hand van voorbeelden lichten we de praktische uitwerking van de definitie
 De bovenstaande flowcharts voor Vragenlijst Identificatie weergeven de logica die nodig is om vast te stellen of een algoritmisch systeem onder een van de volgende definities valt: AI-systeem, AVG (profilering, volledig geautomatiseerde besluitvorming) of impactvol algoritme. Bij het doorloop van de vragenlijst komt de gebruiker iedere vraag slechts één keer tegen. Een volledige flowchart van Vragenlijst Identificatie met alle paden en uitkomsten is <a href="https://algorithmaudit.eu/pdf-files/technical-tools/AI-AQT/20260511 Flowcharts Identification NL whole.pdf" target="_blank">hier</a> te vinden.
 {{< container_close >}}
 
+<!-- Flowchart Vragenlijst NIS2 -->
+
+{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst NIS2" id="flowchart-questionnaire-nis2" >}}
+
+{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart NIS2 NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
+
+{{< container_close >}}
+
 <!-- Flowchart Vragenlijst Rol en status -->
 
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst Rol en status ten aanzien van het AI-systeem" id="flowchart-questionnaire-role-and-status" >}}
@@ -174,15 +192,5 @@ De bovenstaande flowcharts voor Vragenlijst Identificatie weergeven de logica di
 {{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst Pre-scan DPIA" id="flowchart-questionnaire-pre-scan-dpia" >}}
 
 {{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart Pre-scan DPIA NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
-
-{{< container_close >}}
-
-<!-- Flowchart Vragenlijst NIS2 -->
-
-{{< container_open icon="fas fa-arrows-alt" title="Flowchart – Vragenlijst NIS2" id="flowchart-questionnaire-nis2" >}}
-
-{{< embed_pdf url="/pdf-files/technical-tools/AI-AQT/20261030 Flowchart NIS2 NL.pdf" width_mobile_pdf="12" width_desktop_pdf="12" >}}
-
-{{< container_close >}}
 
 {{< container_close >}}
