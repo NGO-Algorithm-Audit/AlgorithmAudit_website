@@ -35,8 +35,14 @@ facet_groups:
         label: Training
 events:
   - title: >-
-      Masterclass 'Testing General Purpose AI (GPAI) applications'
+      Masterclass 'AI Evaluation: from General Purpose to Specific Use Cases'
     description: >
+      AI-adviseur Kaloyan Filipov en directeur Jurriaan Parie leidden onze masterclass 'AI Evaluation: from General Purpose to Specific Use Cases' voor meer dan 15 ambtenaren van ministeries, overheidsinstanties, auditors en toezichthouders.
+
+      We deelden inzichten over onze evaluatie van AI-modellen voor algemene doeleinden (GPAI) voor de Europese Commissie, onze kwaliteitsborgingsprincipes voor het ontwerpen van benchmarks, en het valideren van RAG-toepassingen, zoals de chatbot ‘voorRecht’ van de Rechtspraak.
+
+      We bespraken welke rol evaluatie speelt in de AI-waardeketen en waarom benchmarks kritisch moeten worden bekeken, van MathQA tot volledig Nederlandse benchmarks zoals ‘Duidelijke taal’.
+      ![](/images/events/20261103_Masterclass_AI_Evaluation.jpeg)
     image: /images/logo/favicon.ico
     date: 03-11-2026
     facets:

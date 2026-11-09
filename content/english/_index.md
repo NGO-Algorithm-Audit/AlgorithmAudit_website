@@ -60,13 +60,12 @@ Activity_Feed:
       image: /images/partner logo-cropped/ai-guardrails-logo.svg
       date: 29-09-2026
       type: blog
-    # - title: Masterclass GPAI
-      # intro: >
-        # Register for Algorithm Audit's masterclass on 'Testing General Purpose AI (GPAI) applications' 
-      # link: /events/registration/
-      # image: /images/events/20260625_GPAI_event.png
-      # date: 03-11-2026
-      # type: masterclass
+    - title: Masterclass GPAI
+      intro: >
+        Express your interest in the next edition of our Masterclass AI Evaluation and be added to the waiting list, date TBD. 
+      link: /events/registration/
+      image: /images/events/20260625_GPAI_event.png
+      type: masterclass
   featured_button_text: More items
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
