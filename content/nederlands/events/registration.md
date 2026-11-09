@@ -4,7 +4,7 @@ subtitle: >
   Meld je aan voor events van Algorithm Audit
 image: /images/svg-illustrations/about.svg
 dynamic_form_engine:
-  - title: Registratie
+  - title: Wachtlijst
     id: form1
     icon: fas fa-user-tag
     section:
@@ -43,13 +43,13 @@ dynamic_form_engine:
             id: terms-and-conditions
             title: Door dit vakje aan te vinken ga je akkoord met de volgende
             content: >
-               - Je geeeft toestemming dat de ingezonden gegevens worden uitsluitend in het kader van het event verwerkt.
+               - U geeeft toestemming dat de ingezonden gegevens worden uitsluitend in het kader van het event verwerkt.
                
-               - Je bevestigt je deelname en gaat ermee akkoord dat Algorithm Audit namens jou verzorgds voor faciliteiten en catering, die onder het deelnamekosten vallen. De inschrijving is definitief en hoeft niet nogmaals te worden bevestigd.
+               - U geeft aan dat u wilt deelnemen en, op voorwaarde dat u uw aanwezigheid uitdrukkelijk bevestigt zodra u op de hoogte bent gesteld van een nieuwe evenementdatum, gaat u ermee akkoord dat Algorithm Audit namens u de nodige regelingen treft voor faciliteiten en catering, die onder de deelnamekosten vallen.
               
-               - Je verplicht bent om de de deelnamekosten van € 300 te betalen. Je ontvangt de betalingsinstructies per e-mail.
+               - Op voorwaarde dat u uw aanwezigheid uitdrukkelijk bevestigt zodra u op de hoogte bent gesteld van een nieuwe evenementdatum, bent u verplicht de deelnamekosten van € 300 te betalen. De betalingsinstructies worden u per e-mail toegestuurd.
 
-               - Je zal Algorithm Audit zo snel mogelijk op de hoogte stellen als je het evenement niet kunt bijwonen, door een e-mail te sturen naar info@algorithmaudit.eu. Afhankelijk van de omstandigheden van de annulering is het mogelijk dat er geen vrijstelling van de betalingsverplichting of restitutie wordt verleend.
+               - Indien u het evenement niet kunt bijwonen nadat u uw deelname hebt bevestigd, dient u Algorithm Audit hiervan zo spoedig mogelijk op de hoogte te stellen door een e-mail te sturen naar info@algorithmaudit.eu. Afhankelijk van de omstandigheden van de annulering is het mogelijk dat de betalingsverplichting niet wordt opgeheven of dat er geen restitutie wordt verleend.
             use_card_style: false
             options:
                - id: agree
@@ -64,7 +64,7 @@ dynamic_form_engine:
       backend_link: 'https://formspree.io/f/xeogpapg'
 promo_bar:
   - content: |
-      [Meld je aan](/nl/events/registration/#form1) voor de volgende editie van deze masterclass op 3 november 2026.
+      [Meld je aan](/nl/events/registration/#form1) voor de wachtlijst voor de volgende editie van deze masterclass, datum nog nader te bepalen.
 quick_navigation:
   title: Inhoudsopgave
   links:
@@ -74,7 +74,7 @@ quick_navigation:
 
 {{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Masterclass AI-evaluatie: van General Purpose naar Specifieke Toepassingen" id="event" background_color="#ffffff" tag1="3 november 2026" tag2="masterclass" tag3="op locatie" image="/images/events/20261103_GPAI_event.png" >}}
+{{< accordion_item_open title="Masterclass AI-evaluatie: van General Purpose naar Specifieke Toepassingen" id="event" background_color="#ffffff" tag1="datum TBD" tag2="masterclass" tag3="op locatie" image="/images/events/20261103_GPAI_event.png" >}}
 
 > <span style="color:#005aa7;">Hoe weet je of een AI-model geschikt is voor een bepaalde toepassing? Wanneer weet je of het werkt naar behoren? Toonaangevende systemen worden beoordeeld op algemene mogelijkheden, niet op hoe goed ze aansluiten bij echte probleemgebieden, organisatorische waarden en de zorgen van belanghebbenden.</span>
 
@@ -104,10 +104,10 @@ Door het ontwikkelen van benchmarks voor risicomonitoring voor het European AI O
 
 
 #### Datum
-3 november 2026
+Datum volgende editie TBD
 
 #### Adres
-The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den Haag
+Locatie volgende editie TBD
 
 #### Programma
 - 09:30-10:00 Inloop

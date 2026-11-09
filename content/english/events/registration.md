@@ -4,7 +4,7 @@ subtitle: >
   Register for events of Algorithm Audit
 image: /images/svg-illustrations/about.svg
 dynamic_form_engine:
-  - title: Registration
+  - title: Waiting list
     id: form1
     icon: fas fa-user-tag
     section:
@@ -45,11 +45,11 @@ dynamic_form_engine:
             content: >
                - You consent for submitted data to be processed only in the context of the event. 
                
-               - You confirm attendance and accept that Algorithm Audit will make arrangements for facilities and catering on your behalf, covered under the participation fee. The registration is definitive and not contingent on further confirmation.
+               - You express desire to participate, and contingent on your explicit confirmation of attendance once you are alerted of a new event date, accept that Algorithm Audit will make arrangements for facilities and catering on your behalf, covered under the participation fee. 
 
-               - You are required to pay the €300 participation fee. Payment instructions will be sent to you by email.
+               - Contingent on your explicit confirmation of attendance once you are alerted of a new event date, you are required to pay the €300 participation fee. Payment instructions will be sent to you by email.
               
-               - You will inform Algorithm Audit as soon as possible if you are unable to attend the event by sending an email to info@algorithmaudit.eu. Lifting of payment obligation or refund may not be granted depending on the circumstances of cancellation.
+               - In the event you are unable to attend the event after expressing confirmation of your attendence, you will inform Algorithm Audit as soon as possible by sending an email to info@algorithmaudit.eu. Lifting of payment obligation or refund may not be granted depending on the circumstances of cancellation.
             use_card_style: false
             options:
                - id: agree
@@ -64,7 +64,7 @@ dynamic_form_engine:
       backend_link: 'https://formspree.io/f/xeogpapg'
 promo_bar:
   - content: |
-      [Sign up](/events/registration/#form1) for the next edition of this Masterclass on November 3rd 2026.
+      [Sign up](/events/registration/#form1) to the waiting list for the next edition of this Masterclass, date TBD. 
 quick_navigation:
   title: Overview
   links:
@@ -74,7 +74,7 @@ quick_navigation:
 
 {{< accordions_area_open id="event" >}}
 
-{{< accordion_item_open title="Masterclass AI Evaluation: from General Purpose to Specific Use Cases" id="event" background_color="#ffffff" tag1="3 November 2026" tag2="masterclass" tag3="in-person" image="/images/events/20261103_GPAI_event.png" >}}
+{{< accordion_item_open title="Masterclass AI Evaluation: from General Purpose to Specific Use Cases" id="event" background_color="#ffffff" tag1="date TBD" tag2="masterclass" tag3="in-person" image="/images/events/20261103_GPAI_event.png" >}}
 
 > <span style="color:#005aa7;">How can you tell if an AI model is suitable for a use case? When do you know it works as intended? Leading systems are evaluated on general capabilities, not how they fit real-world problem areas, organizational values and stakeholder concerns.</span>
 
@@ -103,10 +103,10 @@ Between developing risk-monitoring benchmarks for the European AI Office, a vali
 - Determine when custom evaluation or validation is needed and how it may look
 
 #### Date
-3 November 2026
+Date next edition TBD
 
 #### Address
-The Hague Conference Centre (New Babylon), Anna van Buerenplein 29, 2595 DA Den Haag
+Location next edition TBD
 
 #### Programme
 - 09:30-10:00 Doors open
