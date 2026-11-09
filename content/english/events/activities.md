@@ -33,6 +33,20 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Masterclass 'Testing General Purpose AI (GPAI) applications'
+    description: >
+    image: /images/logo/favicon.ico
+    date: 03-11-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q4_2026
+        label: Q4-2026
+        hide: true
+      - value: type_event
+        label: Event
+  - title: >-
       Course on 'AI Risk Management in the EU', European Institute of Public Administration
     description: > 
       Presentation on how to manage the regulatory landscape of AI and algorithms for the timeslot 'Auditing AI for Public Good'. The presentation was part of the course 'AI Risk Management in the EU' organised by the European Institute of Public Administration. The participants consisted of European and National civil servants.

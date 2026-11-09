@@ -1,15 +1,13 @@
 ---
 title: Vacatures
 subtitle: |
-  Er zijn op dit moment geen vacatures bij Algorithm Audit.
+  Hieronder vind je een overzicht van de vacatures bij Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-# quick_navigation:
-#  title: Overzicht
-#  links:
-#    - title: Lead generatieve AI evaluatie
-#      url: '#accordion_area_gen-AI'
-#    - title: AI adviseur
-#      url: '#accordion_area_AI-adviseur'
+quick_navigation:
+  title: Overzicht
+  links:
+    - title: Stagiar/werkstudent
+      url: '#stagiar'
 dynamic_form_engine:
   - title: Sollicitatieformulier Lead generatieve AI evaluatie
     id: form1
@@ -303,7 +301,7 @@ Vragen over de vacature of de procedure? Stuur een email naar [a.voogt@algorithm
 
 <!-- Item 3 - Stagiair -->
 
-<!--{{< accordions_area_open id="stagiair" >}}
+{{< accordions_area_open id="stagiair" >}}
 
 {{< accordion_item_open title="Stagiair/werkstudent (0.6-1.0 fte)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="doorlopende sollicitatie" >}}
 
@@ -382,4 +380,4 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}-->
+{{< accordions_area_close >}}
