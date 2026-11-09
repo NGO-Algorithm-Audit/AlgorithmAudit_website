@@ -8,13 +8,13 @@
 
   <!-- if development -->
   <script type="module">
-    import RefreshRuntime from 'http://localhost:4001/@react-refresh'
+    import RefreshRuntime from 'http://localhost:4001/admin/@react-refresh'
     RefreshRuntime.injectIntoGlobalHook(window)
     window.$RefreshReg$ = () => {}
     window.$RefreshSig$ = () => (type) => type
     window.__vite_plugin_react_preamble_installed__ = true
   </script>
-  <script type="module" src="http://localhost:4001/@vite/client"></script>
+  <script type="module" src="http://localhost:4001/admin/@vite/client"></script>
   <script>
   function handleLoadError() {
     // Assets have failed to load
@@ -23,7 +23,7 @@
   </script>
   <script
     type="module"
-    src="http://localhost:4001/src/main.tsx"
+    src="http://localhost:4001/admin/src/main.tsx"
     onerror="handleLoadError()"
   ></script>
   <body class="tina-tailwind">
