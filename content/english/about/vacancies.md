@@ -1,15 +1,13 @@
 ---
 title: Vacancies
 subtitle: |
-  There are currently no job openings at Algorithm Audit.
+  Below is an overview of vacancies at Algorithm Audit.
 image: /images/svg-illustrations/about.svg
-# quick_navigation:
-#  title: Overview
-#  links:
-#    - title: Lead generative AI evaluation
-#      url: '#accordion_area_gen-AI'
-#    - title: AI advisor
-#      url: '#accordion_area_AI-advisor'
+quick_navigation:
+  title: Overview
+  links:
+    - title: Intern/working student
+      url: '#stagiar'
 dynamic_form_engine:
   - title: Sollicitatieformulier Lead generatieve AI evaluatie
     id: form1
@@ -312,7 +310,7 @@ Vragen over de vacature of de procedure? Stuur een email naar [a.voogt@algorithm
 
 <!-- Item 3 - Stagiair -->
 
-<!-- {{< accordions_area_open id="stagiair" >}}
+{{< accordions_area_open id="stagiair" >}}
 
 {{< accordion_item_open title="Intern (0.6-1.0 fte) (Dutch speaking only)" image="/images/logo/logo.svg" id="" background_color="#ffffff" tag1="rolling application" >}}
 
@@ -391,4 +389,4 @@ Vragen over de vacature of de procedure? Stuur een email naar [info@algorithmaud
 
 {{< accordion_item_close >}}
 
-{{< accordions_area_close >}}-->
+{{< accordions_area_close >}}

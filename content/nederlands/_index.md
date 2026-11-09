@@ -63,21 +63,21 @@ Activity_Feed:
       image: /images/partner logo-cropped/ai-guardrails-logo.svg
       date: 29-09-2026
       type: blog
-    - title: Masterclass GPAI
-      intro: >
-        Schrijf je in voor Algorithm Audit's masterclass over 'Testen van General Purpose AI (GPAI) toepassingen' 
-      link: /nl/events/registration/
-      image: /images/events/20260625_GPAI_event.png
-      date: 03-11-2026
-      type: masterclass
+    # - title: Masterclass GPAI
+      # intro: >
+        # Schrijf je in voor Algorithm Audit's masterclass over 'Testen van General Purpose AI (GPAI) toepassingen' 
+      # link: /nl/events/registration/
+      # image: /images/events/20260625_GPAI_event.png
+      # date: 03-11-2026
+      # type: masterclass
   featured_button_text: Meer items
   featured_button_link: /nl/knowledge-platform/knowledge-base/
   items_title: Aankomende events
   activities:
-     - title: Masterclass 'Testen van General Purpose AI (GPAI) toepassingen'
-       link: /nl/events/registration/
-       image: /images/logo/favicon.ico
-       date: 03-11-2026
+     - title: Alumnus van het Jaar-lezing Jurriaan Parie, Directeur Algorithm Audit
+       link: https://www.uu.nl/agenda/alumnus-van-het-jaar-lezing-2026
+       image: /images/partner logo-cropped/UtrechtUniversity.PNG
+       date: 12-11-2026
        type: event
      - title: Global AI Summit for Cities
        link: https://aiforcities.earth
