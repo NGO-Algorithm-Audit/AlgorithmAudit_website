@@ -35,6 +35,24 @@ facet_groups:
         label: Training
 events:
   - title: >-
+      Alumnus van het Jaar-lezing Jurriaan Parie, Directeur Algorithm Audit, Universiteit Utrecht
+    description: >
+      Directeur Jurriaan Parie gaf de Alumnus van het Jaar-lezing 2026 aan de Universiteit Utrecht. [Lees meer](https://www.uu.nl/agenda/alumnus-van-het-jaar-lezing-2026)
+      ![](/images/events/20261112_Alumnus_lecture_UU.jpeg)
+    image: /images/partner logo-cropped/UtrechtUniversity.PNG
+    date: 12-11-2026
+    facets:
+      - value: year_2026
+        label: '2026'
+        hide: true
+      - value: year_q4_2026
+        label: Q4-2026
+        hide: true
+      - value: type_presentation
+        label: presentatie
+      - value: type_interview
+        label: interview
+  - title: >-
       Masterclass 'AI Evaluation: from General Purpose to Specific Use Cases'
     description: >
       AI-adviseur Kaloyan Filipov en directeur Jurriaan Parie leidden onze masterclass 'AI Evaluation: from General Purpose to Specific Use Cases' voor meer dan 15 ambtenaren van ministeries, overheidsinstanties, auditors en toezichthouders.
