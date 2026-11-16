@@ -70,11 +70,6 @@ Activity_Feed:
   featured_button_link: /knowledge-platform/knowledge-base/
   items_title: Upcoming events
   activities:
-     - title: Alumnus of the Year Lecture by Jurriaan Parie, Director of Algorithm Audit
-       link: https://www.uu.nl/agenda/alumnus-van-het-jaar-lezing-2026
-       image: /images/partner logo-cropped/UtrechtUniversity.PNG
-       date: 12-11-2026
-       type: event
      - title: Global AI Summit for Cities
        link: https://aiforcities.earth
        image: /images/partner logo-cropped/Global AI Summit for Cities.png
